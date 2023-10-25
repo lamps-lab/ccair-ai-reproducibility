@@ -1,0 +1,1242 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "72b18667ad609c1fcb1df66a8995369b84dedfd7",
+                "externalIds": {
+                    "ArXiv": "2310.02541",
+                    "CorpusId": 263611938
+                },
+                "corpusId": 263611938,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/72b18667ad609c1fcb1df66a8995369b84dedfd7",
+                "title": "Benign Overfitting and Grokking in ReLU Networks for XOR Cluster Data",
+                "abstract": "Neural networks trained by gradient descent (GD) have exhibited a number of surprising generalization behaviors. First, they can achieve a perfect fit to noisy training data and still generalize near-optimally, showing that overfitting can sometimes be benign. Second, they can undergo a period of classical, harmful overfitting -- achieving a perfect fit to training data with near-random performance on test data -- before transitioning (\"grokking\") to near-optimal generalization later in training. In this work, we show that both of these phenomena provably occur in two-layer ReLU networks trained by GD on XOR cluster data where a constant fraction of the training labels are flipped. In this setting, we show that after the first step of GD, the network achieves 100% training accuracy, perfectly fitting the noisy labels in the training data, but achieves near-random test accuracy. At a later training step, the network achieves near-optimal test accuracy while still fitting the random labels in the training data, exhibiting a\"grokking\"phenomenon. This provides the first theoretical result of benign overfitting in neural network classification when the data distribution is not linearly separable. Our proofs rely on analyzing the feature learning process under GD, which reveals that the network implements a non-generalizable linear classifier after one step and gradually learns generalizable features in later steps.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2254325443",
+                        "name": "Zhiwei Xu"
+                    },
+                    {
+                        "authorId": "2253841896",
+                        "name": "Yutong Wang"
+                    },
+                    {
+                        "authorId": "2253489194",
+                        "name": "Spencer Frei"
+                    },
+                    {
+                        "authorId": "11585315",
+                        "name": "Gal Vardi"
+                    },
+                    {
+                        "authorId": "2255434653",
+                        "name": "Wei Hu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f9ab990ca3c0715e31854ec1087af572af8de8a6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-08632",
+                    "ArXiv": "2309.08632",
+                    "DOI": "10.48550/arXiv.2309.08632",
+                    "CorpusId": 262045629
+                },
+                "corpusId": 262045629,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f9ab990ca3c0715e31854ec1087af572af8de8a6",
+                "title": "Pretraining on the Test Set Is All You Need",
+                "abstract": "Inspired by recent work demonstrating the promise of smaller Transformer-based language models pretrained on carefully curated data, we supercharge such approaches by investing heavily in curating a novel, high quality, non-synthetic data mixture based solely on evaluation benchmarks. Using our novel dataset mixture consisting of less than 100 thousand tokens, we pretrain a 1 million parameter transformer-based LLM \\textbf{phi-CTNL} (pronounced ``fictional\") that achieves perfect results across diverse academic benchmarks, strictly outperforming all known foundation models. \\textbf{phi-CTNL} also beats power-law scaling and exhibits a never-before-seen grokking-like ability to accurately predict downstream evaluation benchmarks' canaries.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2242754002",
+                        "name": "Rylan Schaeffer"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c413a339d7784574ed43debea494ef405ee09d81",
+                "externalIds": {
+                    "ArXiv": "2309.07311",
+                    "DBLP": "journals/corr/abs-2309-07311",
+                    "DOI": "10.48550/arXiv.2309.07311",
+                    "CorpusId": 261822542
+                },
+                "corpusId": 261822542,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/c413a339d7784574ed43debea494ef405ee09d81",
+                "title": "Sudden Drops in the Loss: Syntax Acquisition, Phase Transitions, and Simplicity Bias in MLMs",
+                "abstract": "Most interpretability research in NLP focuses on understanding the behavior and features of a fully trained model. However, certain insights into model behavior may only be accessible by observing the trajectory of the training process. We present a case study of syntax acquisition in masked language models (MLMs) that demonstrates how analyzing the evolution of interpretable artifacts throughout training deepens our understanding of emergent behavior. In particular, we study Syntactic Attention Structure (SAS), a naturally emerging property of MLMs wherein specific Transformer heads tend to focus on specific syntactic relations. We identify a brief window in pretraining when models abruptly acquire SAS, concurrent with a steep drop in loss. This breakthrough precipitates the subsequent acquisition of linguistic capabilities. We then examine the causal role of SAS by manipulating SAS during training, and demonstrate that SAS is necessary for the development of grammatical capabilities. We further find that SAS competes with other beneficial traits during training, and that briefly suppressing SAS improves model quality. These findings offer an interpretation of a real-world example of both simplicity bias and breakthrough training dynamics.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "13336152",
+                        "name": "Angelica Chen"
+                    },
+                    {
+                        "authorId": "2240524527",
+                        "name": "Ravid Schwartz-Ziv"
+                    },
+                    {
+                        "authorId": "1979489",
+                        "name": "Kyunghyun Cho"
+                    },
+                    {
+                        "authorId": "2240527814",
+                        "name": "Matthew L. Leavitt"
+                    },
+                    {
+                        "authorId": "2362960",
+                        "name": "Naomi Saphra"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We are left with the question: why does the network\u2019s test performance improve dramatically upon continued training, having already achieved nearly perfect training performance? Recent answers to this question vary widely, including the difficulty of representation learning (Liu et al., 2022), the scale of parameters at initialisation (Liu et al."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "77b603850094ff749c9040772f8169a75145d506",
+                "externalIds": {
+                    "ArXiv": "2309.02390",
+                    "DBLP": "journals/corr/abs-2309-02390",
+                    "DOI": "10.48550/arXiv.2309.02390",
+                    "CorpusId": 261557247
+                },
+                "corpusId": 261557247,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/77b603850094ff749c9040772f8169a75145d506",
+                "title": "Explaining grokking through circuit efficiency",
+                "abstract": "One of the most surprising puzzles in neural network generalisation is grokking: a network with perfect training accuracy but poor generalisation will, upon further training, transition to perfect generalisation. We propose that grokking occurs when the task admits a generalising solution and a memorising solution, where the generalising solution is slower to learn but more efficient, producing larger logits with the same parameter norm. We hypothesise that memorising circuits become more inefficient with larger training datasets while generalising circuits do not, suggesting there is a critical dataset size at which memorisation and generalisation are equally efficient. We make and confirm four novel predictions about grokking, providing significant evidence in favour of our explanation. Most strikingly, we demonstrate two novel and surprising behaviours: ungrokking, in which a network regresses from perfect to low test accuracy, and semi-grokking, in which a network shows delayed generalisation to partial rather than perfect test accuracy.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "144711236",
+                        "name": "Vikrant Varma"
+                    },
+                    {
+                        "authorId": "40947489",
+                        "name": "Rohin Shah"
+                    },
+                    {
+                        "authorId": "40947466",
+                        "name": "Z. Kenton"
+                    },
+                    {
+                        "authorId": "2223767739",
+                        "name": "J'anos Kram'ar"
+                    },
+                    {
+                        "authorId": "2238177576",
+                        "name": "Ramana Kumar"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Liu [16] proposes interpretations and metrics to characterize grokking."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "cfe6d6796e37ff6ff40d3ca30e59c3df4cd47ad6",
+                "externalIds": {
+                    "ArXiv": "2308.15594",
+                    "DBLP": "journals/corr/abs-2308-15594",
+                    "DOI": "10.48550/arXiv.2308.15594",
+                    "CorpusId": 261340042
+                },
+                "corpusId": 261340042,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/cfe6d6796e37ff6ff40d3ca30e59c3df4cd47ad6",
+                "title": "Can transformers learn the greatest common divisor?",
+                "abstract": "I investigate the capability of small transformers to compute the greatest common divisor (GCD) of two positive integers. When the training distribution and the representation base are carefully chosen, models achieve 98% accuracy and correctly predict 91 of the 100 first GCD. Model predictions are deterministic and fully interpretable. During training, the models learn to cluster input pairs with the same GCD, and classify them by their divisors. Basic models, trained from uniform operands encoded on small bases, only compute a handful of GCD (up to 38 out of 100): the products of divisors of the base. Longer training and larger bases allow some models to\"grok\"small prime GCD. Training from log-uniform operands boosts performance to 73 correct GCD, and balancing the training distribution of GCD, from inverse square to log-uniform, to 91 GCD. Training models from a uniform distribution of GCD breaks the deterministic model behavior.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1441095666",
+                        "name": "Franccois Charton"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This avenue of study offers a macroscopic understanding of how neural networks work and has helped identify and interpret significant phenomena such as \u201cgrokking\u201d, also known as delayed generalization where models exhibit improved generalization long after over-fitting their training set (Liu et al. 2022).",
+                "\u2026of study offers a macroscopic understanding of how neural networks work and has helped identify and interpret significant phenomena such as \u201cgrokking\u201d, also known as delayed generalization where models exhibit improved generalization long after over-fitting their training set (Liu et al. 2022).",
+                "From a macroscopic perspective, Liu et al. (2022) tackle delayed generalization or \u201cgrokking\u201d using addition and modular addition tasks."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "edea0781ef29b06dc5d8aa7e9ddab3cffe87b80a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-08268",
+                    "ArXiv": "2308.08268",
+                    "DOI": "10.48550/arXiv.2308.08268",
+                    "CorpusId": 260925920
+                },
+                "corpusId": 260925920,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/edea0781ef29b06dc5d8aa7e9ddab3cffe87b80a",
+                "title": "It Ain't That Bad: Understanding the Mysterious Performance Drop in OOD Generalization for Generative Transformer Models",
+                "abstract": "Generative Transformer-based models have achieved remarkable proficiency on solving diverse problems. However, their generalization ability is not fully understood and not always satisfying. Researchers take basic mathematical tasks like n-digit addition or multiplication as important perspectives for investigating their generalization behaviors. Curiously, it is observed that when training on n-digit operations (e.g., additions) in which both input operands are n-digit in length, models generalize successfully on unseen n-digit inputs (in-distribution (ID) generalization), but fail miserably and mysteriously on longer, unseen cases (out-of-distribution (OOD) generalization). Studies try to bridge this gap with workarounds such as modifying position embedding, fine-tuning, and priming with more extensive or instructive data. However, without addressing the essential mechanism, there is hardly any guarantee regarding the robustness of these solutions. We bring this unexplained performance drop into attention and ask whether it is purely from random errors. Here we turn to the mechanistic line of research which has notable successes in model interpretability. We discover that the strong ID generalization stems from structured representations, while behind the unsatisfying OOD performance, the models still exhibit clear learned algebraic structures. Specifically, these models map unseen OOD inputs to outputs with equivalence relations in the ID domain. These highlight the potential of the models to carry useful information for improved generalization.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2231244590",
+                        "name": "Xingcheng Xu"
+                    },
+                    {
+                        "authorId": "2069545227",
+                        "name": "Zihao Pan"
+                    },
+                    {
+                        "authorId": "2108825180",
+                        "name": "Haipeng Zhang"
+                    },
+                    {
+                        "authorId": "2231637795",
+                        "name": "Yanqing Yang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d96454e89f1228bc7cdbaad211f3779574aa2b2c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-09550",
+                    "ArXiv": "2307.09550",
+                    "DOI": "10.48550/arXiv.2307.09550",
+                    "CorpusId": 259982648
+                },
+                "corpusId": 259982648,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/d96454e89f1228bc7cdbaad211f3779574aa2b2c",
+                "title": "The semantic landscape paradigm for neural networks",
+                "abstract": "Deep neural networks exhibit a fascinating spectrum of phenomena ranging from predictable scaling laws to the unpredictable emergence of new capabilities as a function of training time, dataset size and network size. Analysis of these phenomena has revealed the existence of concepts and algorithms encoded within the learned representations of these networks. While significant strides have been made in explaining observed phenomena separately, a unified framework for understanding, dissecting, and predicting the performance of neural networks is lacking. Here, we introduce the semantic landscape paradigm, a conceptual and mathematical framework that describes the training dynamics of neural networks as trajectories on a graph whose nodes correspond to emergent algorithms that are instrinsic to the learned representations of the networks. This abstraction enables us to describe a wide range of neural network phenomena in terms of well studied problems in statistical physics. Specifically, we show that grokking and emergence with scale are associated with percolation phenomena, and neural scaling laws are explainable in terms of the statistics of random walks on graphs. Finally, we discuss how the semantic landscape paradigm complements existing theoretical and practical approaches aimed at understanding and interpreting deep neural networks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145075334",
+                        "name": "Shreyas Gokhale"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "1 Review of the Clock Algorithm As in past work, we find that after training both Model A and Model B, embeddings (Ea,Eb in Figure 1) usually describe a circle [8] in the plane spanned by the first two principal components of the embedding matrix.",
+                "Mechanistic interpretability is closely related to training dynamics [8, 13, 1]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a72ba8dc49a6a842f69c312ac9a037a0f33b74f5",
+                "externalIds": {
+                    "ArXiv": "2306.17844",
+                    "DBLP": "journals/corr/abs-2306-17844",
+                    "DOI": "10.48550/arXiv.2306.17844",
+                    "CorpusId": 259309406
+                },
+                "corpusId": 259309406,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a72ba8dc49a6a842f69c312ac9a037a0f33b74f5",
+                "title": "The Clock and the Pizza: Two Stories in Mechanistic Explanation of Neural Networks",
+                "abstract": "Do neural networks, trained on well-understood algorithmic tasks, reliably rediscover known algorithms for solving those tasks? Several recent studies, on tasks ranging from group arithmetic to in-context linear regression, have suggested that the answer is yes. Using modular addition as a prototypical problem, we show that algorithm discovery in neural networks is sometimes more complex. Small changes to model hyperparameters and initializations can induce the discovery of qualitatively different algorithms from a fixed training set, and even parallel implementations of multiple such algorithms. Some networks trained to perform modular addition implement a familiar Clock algorithm; others implement a previously undescribed, less intuitive, but comprehensible procedure which we term the Pizza algorithm, or a variety of even more complex procedures. Our results show that even simple learning problems can admit a surprising diversity of solutions, motivating the development of new tools for characterizing the behavior of neural networks across their algorithmic phase space.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2106564875",
+                        "name": "Ziqian Zhong"
+                    },
+                    {
+                        "authorId": "2145253202",
+                        "name": "Ziming Liu"
+                    },
+                    {
+                        "authorId": "2011933",
+                        "name": "Max Tegmark"
+                    },
+                    {
+                        "authorId": "2112400",
+                        "name": "Jacob Andreas"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Training phases Previous work (Power et al., 2022; Liu et al., 2022) used the terms confusion, memorization and comprehension in the phase diagram based on different hyperparameters, but in this paper they also refer to the phases along the training trajectory.",
+                "We found that the dimensionality of the network layers (mainly the last layer) correlates with oscillations in training and validation performances (loss and accuracy) both in toy models (Liu et al., 2022) and transformer (Power et al.",
+                "Others have studied microscopic phenomena that coincide or come in tandem with delayed generalization, such as the emergence of structure in embedding space (Liu et al., 2022) and the slingshot effect (Thilak et al.",
+                "Recent work has shown that grokking is observed only with a certain range of hyperparameters (Power et al., 2022; Liu et al., 2022)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "e91972eaf32db6d46cdcc70c0ffa6d0de6a16382",
+                "externalIds": {
+                    "ArXiv": "2306.13253",
+                    "DBLP": "journals/corr/abs-2306-13253",
+                    "DOI": "10.48550/arXiv.2306.13253",
+                    "CorpusId": 259243744
+                },
+                "corpusId": 259243744,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e91972eaf32db6d46cdcc70c0ffa6d0de6a16382",
+                "title": "Predicting Grokking Long Before it Happens: A look into the loss landscape of models which grok",
+                "abstract": "This paper focuses on predicting the occurrence of grokking in neural networks, a phenomenon in which perfect generalization emerges long after signs of overfitting or memorization are observed. It has been reported that grokking can only be observed with certain hyper-parameters. This makes it critical to identify the parameters that lead to grokking. However, since grokking occurs after a large number of epochs, searching for the hyper-parameters that lead to it is time-consuming. In this paper, we propose a low-cost method to predict grokking without training for a large number of epochs. In essence, by studying the learning curve of the first few epochs, we show that one can predict whether grokking will occur later on. Specifically, if certain oscillations occur in the early epochs, one can expect grokking to occur if the model is trained for a much longer period of time. We propose using the spectral signature of a learning curve derived by applying the Fourier transform to quantify the amplitude of low-frequency components to detect the presence of such oscillations. We also present additional experiments aimed at explaining the cause of these oscillations and characterizing the loss landscape.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2152232813",
+                        "name": "Pascal Junior Tikeng Notsawo"
+                    },
+                    {
+                        "authorId": "113866171",
+                        "name": "Hattie Zhou"
+                    },
+                    {
+                        "authorId": "2066044581",
+                        "name": "Mohammad Pezeshki"
+                    },
+                    {
+                        "authorId": "2109771",
+                        "name": "I. Rish"
+                    },
+                    {
+                        "authorId": "35447899",
+                        "name": "G. Dumas"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Multiple recent papers have introduced synthetic tasks in order to better understand and interpret transformers [7, 29, 35, 53].",
+                "This focuses our study on attention and feed-forward mechanisms, while avoiding the difficulty of learning representations, which may require complex nonlinear dynamics [13, 29, 40].",
+                ", word embeddings [33, 27], or grokking [29, 35]), factorized key-query and value-output matrices that may induce additional regularization effects [17], and non-linear feedforward layers, which may provide richer associative memories between sets of embeddings."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "11ae58636a5daf0ea1297f1c4ee94042fcebefa8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-00802",
+                    "ArXiv": "2306.00802",
+                    "DOI": "10.48550/arXiv.2306.00802",
+                    "CorpusId": 258999187
+                },
+                "corpusId": 258999187,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/11ae58636a5daf0ea1297f1c4ee94042fcebefa8",
+                "title": "Birth of a Transformer: A Memory Viewpoint",
+                "abstract": "Large language models based on transformers have achieved great empirical successes. However, as they are deployed more widely, there is a growing need to better understand their internal mechanisms in order to make them more reliable. These models appear to store vast amounts of knowledge from their training data, and to adapt quickly to new information provided in their context or prompt. We study how transformers balance these two types of knowledge by considering a synthetic setup where tokens are generated from either global or context-specific bigram distributions. By a careful empirical analysis of the training process on a simplified two-layer transformer, we illustrate the fast learning of global bigrams and the slower development of an\"induction head\"mechanism for the in-context bigrams. We highlight the role of weight matrices as associative memories, provide theoretical insights on how gradients enable their learning during training, and study the role of data-distributional properties.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2269602",
+                        "name": "A. Bietti"
+                    },
+                    {
+                        "authorId": "1387995815",
+                        "name": "Vivien A. Cabannes"
+                    },
+                    {
+                        "authorId": "3365029",
+                        "name": "Diane Bouchacourt"
+                    },
+                    {
+                        "authorId": "1681054",
+                        "name": "H. J\u00e9gou"
+                    },
+                    {
+                        "authorId": "52184096",
+                        "name": "L. Bottou"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In contrast to (Liu et al., 2022; Nanda et al., 2023) where post-processing (e.",
+                "For modular addition, (Liu et al., 2022) discovers that ring-like representations emerge in training.",
+                "In contrast to (Liu et al., 2022; Nanda et al., 2023) where post-processing (e.g., principal component analysis) is needed to obtain ring-like representations, the ring structures here automatically align to privileged bases, which is probably because embeddings are also regularized with L1.",
+                "A generalization puzzle called grokking (Power et al., 2022) has also been understood by reverse engineering neural networks (Nanda et al., 2023; Chughtai et al., 2023; Liu et al., 2023; 2022)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "f8029060e91209f048b3f9882f2cdd3607785ccd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-08746",
+                    "ArXiv": "2305.08746",
+                    "DOI": "10.48550/arXiv.2305.08746",
+                    "CorpusId": 258686335
+                },
+                "corpusId": 258686335,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f8029060e91209f048b3f9882f2cdd3607785ccd",
+                "title": "Seeing is Believing: Brain-Inspired Modular Training for Mechanistic Interpretability",
+                "abstract": "We introduce Brain-Inspired Modular Training (BIMT), a method for making neural networks more modular and interpretable. Inspired by brains, BIMT embeds neurons in a geometric space and augments the loss function with a cost proportional to the length of each neuron connection. We demonstrate that BIMT discovers useful modular neural networks for many simple tasks, revealing compositional structures in symbolic formulas, interpretable decision boundaries and features for classification, and mathematical structure in algorithmic datasets. The ability to directly see modules with the naked eye can complement current mechanistic interpretability strategies such as probes, interventions or staring at all weights.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2145253202",
+                        "name": "Ziming Liu"
+                    },
+                    {
+                        "authorId": "2214450654",
+                        "name": "Eric Gan"
+                    },
+                    {
+                        "authorId": "2011933",
+                        "name": "Max Tegmark"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "But what does a generalizing circuit imply about the origins of GPT-2\u2019s greater-than capabilities\u2014do they stem from from memorization [31, 4], or rich, generalizable representations of numbers [16]? The presence of a greater-than circuit does not preclude memorization.",
+                "[16] train a toy transformer model on modular addition, and find that its number representations become structured only after it moves from overfitting to generalization."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "857d4589b62085e900805fd5432f496e8fc07bd9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-00586",
+                    "ArXiv": "2305.00586",
+                    "DOI": "10.48550/arXiv.2305.00586",
+                    "CorpusId": 258426987
+                },
+                "corpusId": 258426987,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/857d4589b62085e900805fd5432f496e8fc07bd9",
+                "title": "How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model",
+                "abstract": "Pre-trained language models can be surprisingly adept at tasks they were not explicitly trained on, but how they implement these capabilities is poorly understood. In this paper, we investigate the basic mathematical abilities often acquired by pre-trained language models. Concretely, we use mechanistic interpretability techniques to explain the (limited) mathematical abilities of GPT-2 small. As a case study, we examine its ability to take in sentences such as\"The war lasted from the year 1732 to the year 17\", and predict valid two-digit end years (years>32). We first identify a circuit, a small subset of GPT-2 small's computational graph that computes this task's output. Then, we explain the role of each circuit component, showing that GPT-2 small's final multi-layer perceptrons boost the probability of end years greater than the start year. Finally, we find related tasks that activate our circuit. Our results suggest that GPT-2 small computes greater-than using a complex but general mechanism that activates across diverse contexts.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2140766524",
+                        "name": "Michael Hanna"
+                    },
+                    {
+                        "authorId": "2065919693",
+                        "name": "Ollie Liu"
+                    },
+                    {
+                        "authorId": "2030991782",
+                        "name": "Alexandre Variengien"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0ffd57884d7957f6b5634b9fa24843dc3759668f",
+                "externalIds": {
+                    "DBLP": "conf/chi/HamalainenTK23",
+                    "DOI": "10.1145/3544548.3580688",
+                    "CorpusId": 258218228
+                },
+                "corpusId": 258218228,
+                "publicationVenue": {
+                    "id": "b55b50b1-aae7-47a7-b042-8aecc930073d",
+                    "name": "International Conference on Human Factors in Computing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CHI",
+                        "Int Conf Hum Factor Comput Syst",
+                        "Human Factors in Computing Systems",
+                        "Conference on Human Interface",
+                        "Conf Hum Interface",
+                        "Hum Factor Comput Syst"
+                    ],
+                    "url": "http://www.acm.org/sigchi/"
+                },
+                "url": "https://www.semanticscholar.org/paper/0ffd57884d7957f6b5634b9fa24843dc3759668f",
+                "title": "Evaluating Large Language Models in Generating Synthetic HCI Research Data: a Case Study",
+                "abstract": "Collecting data is one of the bottlenecks of Human-Computer Interaction (HCI) research. Motivated by this, we explore the potential of large language models (LLMs) in generating synthetic user research data. We use OpenAI\u2019s GPT-3 model to generate open-ended questionnaire responses about experiencing video games as art, a topic not tractable with traditional computational user models. We test whether synthetic responses can be distinguished from real responses, analyze errors of synthetic data, and investigate content similarities between synthetic and real data. We conclude that GPT-3 can, in this context, yield believable accounts of HCI experiences. Given the low cost and high speed of LLM data generation, synthetic data should be useful in ideating and piloting new experiments, although any findings must obviously always be validated with real data. The results also raise concerns: if employed by malicious users of crowdsourcing services, LLMs may make crowdsourcing of self-report data fundamentally unreliable.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "35224558",
+                        "name": "Perttu H\u00e4m\u00e4l\u00e4inen"
+                    },
+                    {
+                        "authorId": "151139561",
+                        "name": "Mikke Tavast"
+                    },
+                    {
+                        "authorId": "51067844",
+                        "name": "Anton Kunnari"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Grokking is thought to relate to the build-up of generalizable representations [Liu et al., 2022, Chughtai et al., 2023]; in a similar vein, we found that emergence of many tasks coincided with improvement in structural representations."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0ea7fc93d4947d9024ccaa202987a2070683bc1f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-07971",
+                    "ArXiv": "2303.07971",
+                    "DOI": "10.48550/arXiv.2303.07971",
+                    "CorpusId": 257505037
+                },
+                "corpusId": 257505037,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0ea7fc93d4947d9024ccaa202987a2070683bc1f",
+                "title": "A Theory of Emergent In-Context Learning as Implicit Structure Induction",
+                "abstract": "Scaling large language models (LLMs) leads to an emergent capacity to learn in-context from example demonstrations. Despite progress, theoretical understanding of this phenomenon remains limited. We argue that in-context learning relies on recombination of compositional operations found in natural language data. We derive an information-theoretic bound showing how in-context learning abilities arise from generic next-token prediction when the pretraining distribution has sufficient amounts of compositional structure, under linguistically motivated assumptions. A second bound provides a theoretical justification for the empirical success of prompting LLMs to output intermediate steps towards an answer. To validate theoretical predictions, we introduce a controlled setup for inducing in-context learning; unlike previous approaches, it accounts for the compositional nature of language. Trained transformers can perform in-context learning for a range of tasks, in a manner consistent with the theoretical results. Mirroring real-world LLMs in a miniature setup, in-context learning emerges when scaling parameters and data, and models perform better when prompted to output intermediate steps. Probing shows that in-context learning is supported by a representation of the input's compositional structure. Taken together, these results provide a step towards theoretical understanding of emergent behavior in large language models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "46686009",
+                        "name": "Michael Hahn"
+                    },
+                    {
+                        "authorId": "144260125",
+                        "name": "Navin Goyal"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Liu et al. (2022) demonstrate that grokking generalization speed can be accelerated in a simple embeddingdecoder model by using a larger learning rate for the embedding than for the decoder.",
+                "Liu et al. (2022) demonstrate that grokking generalization speed can be accelerated in a simple embeddingdecoder model by using a larger learning rate for the embedding than for the decoder. This is in line with findings by Heckel & Yilmaz (2020) on epoch-wise double descent, where decreasing learning rates in later layers (which learn faster) aligns pattern learning speeds. We consider this further evidence that both grokking and epoch-wise double descent occur as a result of similar learning dynamics resulting from different speeds of pattern development. Nanda & Lieberum (2022) investigate grokking through mechanistic interpretability, with findings in line with our results (specifically observing the development of a Type 3 pattern).",
+                "Liu et al. (2022) demonstrate that grokking generalization speed can be accelerated in a simple embeddingdecoder model by using a larger learning rate for the embedding than for the decoder. This is in line with findings by Heckel & Yilmaz (2020) on epoch-wise double descent, where decreasing learning rates in later layers (which learn faster) aligns pattern learning speeds."
+            ],
+            "intents": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "fb6ecf67c275fe775a12ad4ddf2c8dc7cfad1348",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-06173",
+                    "ArXiv": "2303.06173",
+                    "DOI": "10.48550/arXiv.2303.06173",
+                    "CorpusId": 254240472
+                },
+                "corpusId": 254240472,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fb6ecf67c275fe775a12ad4ddf2c8dc7cfad1348",
+                "title": "Unifying Grokking and Double Descent",
+                "abstract": "A principled understanding of generalization in deep learning may require unifying disparate observations under a single conceptual framework. Previous work has studied \\emph{grokking}, a training dynamic in which a sustained period of near-perfect training performance and near-chance test performance is eventually followed by generalization, as well as the superficially similar \\emph{double descent}. These topics have so far been studied in isolation. We hypothesize that grokking and double descent can be understood as instances of the same learning dynamics within a framework of pattern learning speeds. We propose that this framework also applies when varying model capacity instead of optimization steps, and provide the first demonstration of model-wise grokking.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2019153",
+                        "name": "P. Battaglia"
+                    },
+                    {
+                        "authorId": "2158860",
+                        "name": "Jessica B. Hamrick"
+                    },
+                    {
+                        "authorId": "2603033",
+                        "name": "V. Bapst"
+                    },
+                    {
+                        "authorId": "1398105826",
+                        "name": "Alvaro Sanchez-Gonzalez"
+                    },
+                    {
+                        "authorId": "145478807",
+                        "name": "Mateusz Malinowski"
+                    },
+                    {
+                        "authorId": "2844530",
+                        "name": "A. Tacchetti"
+                    },
+                    {
+                        "authorId": "143724694",
+                        "name": "David Raposo"
+                    },
+                    {
+                        "authorId": "48627702",
+                        "name": "Ryan Faulkner"
+                    },
+                    {
+                        "authorId": "2193477577",
+                        "name": "Caglar"
+                    },
+                    {
+                        "authorId": "2193477440",
+                        "name": "Gulcehre"
+                    },
+                    {
+                        "authorId": "2059836321",
+                        "name": "Francis Song"
+                    },
+                    {
+                        "authorId": "3577056",
+                        "name": "Andy Ballard"
+                    },
+                    {
+                        "authorId": "2058362",
+                        "name": "J. Gilmer"
+                    },
+                    {
+                        "authorId": "35188630",
+                        "name": "George E. Dahl"
+                    },
+                    {
+                        "authorId": "40348417",
+                        "name": "Ashish Vaswani"
+                    },
+                    {
+                        "authorId": "2193474939",
+                        "name": "Kelsey"
+                    },
+                    {
+                        "authorId": "2193478345",
+                        "name": "Allen"
+                    },
+                    {
+                        "authorId": "36942233",
+                        "name": "C. Nash"
+                    },
+                    {
+                        "authorId": "2066201331",
+                        "name": "Victoria Langston"
+                    },
+                    {
+                        "authorId": "1745899",
+                        "name": "Chris Dyer"
+                    },
+                    {
+                        "authorId": "1688276",
+                        "name": "Daan Wierstra"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Our findings agree with Liu et al. (2022c) in that grokking seems intrinsically linked to the relationship between performance and weight norms; and with Barak et al. (2023) and Nanda et al. (2023) in showing that the networks make continuous progress toward a generalizing algorithm, which may be\u2026",
+                "Liu et al. (2022b) construct further small examples of grokking, which they use to compute phase diagrams with four separate \u2018phases\u2019 of learning.",
+                "Liu et al. (2022a) study how Transformers learn group theoretic automata."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5969eff0e72e4a5bc0c7392c700be74a01ac2822",
+                "externalIds": {
+                    "DBLP": "conf/icml/ChughtaiCN23",
+                    "ArXiv": "2302.03025",
+                    "DOI": "10.48550/arXiv.2302.03025",
+                    "CorpusId": 256615287
+                },
+                "corpusId": 256615287,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/5969eff0e72e4a5bc0c7392c700be74a01ac2822",
+                "title": "A Toy Model of Universality: Reverse Engineering How Networks Learn Group Operations",
+                "abstract": "Universality is a key hypothesis in mechanistic interpretability -- that different models learn similar features and circuits when trained on similar tasks. In this work, we study the universality hypothesis by examining how small neural networks learn to implement group composition. We present a novel algorithm by which neural networks may implement composition for any finite group via mathematical representation theory. We then show that networks consistently learn this algorithm by reverse engineering model logits and weights, and confirm our understanding using ablations. By studying networks of differing architectures trained on various groups, we find mixed evidence for universality: using our algorithm, we can completely characterize the family of circuits and features that networks learn on this task, but for a given network the precise circuits learned -- as well as the order they develop -- are arbitrary.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "6880276",
+                        "name": "B. Chughtai"
+                    },
+                    {
+                        "authorId": "2072836382",
+                        "name": "Lawrence Chan"
+                    },
+                    {
+                        "authorId": "2051128902",
+                        "name": "Neel Nanda"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In contrast to Power et al. (2022) but in line with Liu et al. (2022), grokking does not occur when both train and test loss improve together without the initial divergence, as shown in many of the figures in this paper, for example Figures 2 and 18.",
+                "(2022) but in line with Liu et al. (2022), grokking does not occur when both train and test loss improve together without the initial divergence, as shown in many of the figures in this paper, for example Figures 2 and 18. The core issue is that the model has two possible solutions: memorization (with low train loss and high test loss) and a generalization (with low train loss and low test loss). In our case, the Fourier Multiplication Algorithm is the generalization solution. Intuitively, with very little training data, the model will overfit and memorize. With more training data, the model must generalize or suffer poor performance on both train and test loss. Since neural networks have an inductive bias favoring \u201csimpler\u201d solutions, memorization complexity scales with the size of the training set, whereas generalization complexity is constant. The two must cross at some point! Yet, the surprising aspect of grokking is the abrupt shift during training, when the model switches from memorization to generalization. The other component of grokking is phase transitions - the phenomena where models trained on a certain task develop a specific capability fairly rapidly during a brief period of training, as shown for the case of induction heads forming in transformer language models in Olsson et al. (2022) and our results in Appendix D.",
+                "\u2026decay is necessary for grokking: smaller amounts of weight decay causes the network to take significantly longer to grok (echoing the results on toy models from Liu et al. (2022)), and our networks do not grok on the modular arithmetic task without weight decay or some other form of regularization.",
+                "Liu et al. (2022) construct small\nexamples of grokking, which they use to compute phase diagrams with four separate \u201cphases\u201d of learning.",
+                "(2022) but in line with Liu et al. (2022), grokking does not occur when both train and test loss improve together without the initial divergence, as shown in many of the figures in this paper, for example Figures 2 and 18.",
+                "1, we provide additional evidence that weight decay is necessary for grokking: smaller amounts of weight decay causes the network to take significantly longer to grok (echoing the results on toy models from Liu et al. (2022)), and our networks do not grok on the modular arithmetic task without weight decay or some other form of regularization."
+            ],
+            "intents": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "c9ef79d6d47c90722a10c32c64c752eb0343fd61",
+                "externalIds": {
+                    "ArXiv": "2301.05217",
+                    "DBLP": "journals/corr/abs-2301-05217",
+                    "DOI": "10.48550/arXiv.2301.05217",
+                    "CorpusId": 255749430
+                },
+                "corpusId": 255749430,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c9ef79d6d47c90722a10c32c64c752eb0343fd61",
+                "title": "Progress measures for grokking via mechanistic interpretability",
+                "abstract": "Neural networks often exhibit emergent behavior, where qualitatively new capabilities arise from scaling up the amount of parameters, training data, or training steps. One approach to understanding emergence is to find continuous \\textit{progress measures} that underlie the seemingly discontinuous qualitative changes. We argue that progress measures can be found via mechanistic interpretability: reverse-engineering learned behaviors into their individual components. As a case study, we investigate the recently-discovered phenomenon of ``grokking'' exhibited by small transformers trained on modular addition tasks. We fully reverse engineer the algorithm learned by these networks, which uses discrete Fourier transforms and trigonometric identities to convert addition to rotation about a circle. We confirm the algorithm by analyzing the activations and weights and by performing ablations in Fourier space. Based on this understanding, we define progress measures that allow us to study the dynamics of training and split training into three continuous phases: memorization, circuit formation, and cleanup. Our results show that grokking, rather than being a sudden shift, arises from the gradual amplification of structured mechanisms encoded in the weights, followed by the later removal of memorizing components.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2051128902",
+                        "name": "Neel Nanda"
+                    },
+                    {
+                        "authorId": "2072836382",
+                        "name": "Lawrence Chan"
+                    },
+                    {
+                        "authorId": "2162470507",
+                        "name": "Tom Lieberum"
+                    },
+                    {
+                        "authorId": "2200391337",
+                        "name": "Jess Smith"
+                    },
+                    {
+                        "authorId": "5164568",
+                        "name": "J. Steinhardt"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In subsequent work [7], the authors simplified the architecture to a single linear learnable encoder followed by a multilayer perceptron (MLP) decoder and showed that, even if the task is recast as a classification problem, grokking persists.",
+                "[7] argued that grokking is due to the competition between encoder and decoder."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "30f468c83afea5c3c94daa5ac285cdaa8019a573",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2301-02679",
+                    "ArXiv": "2301.02679",
+                    "DOI": "10.48550/arXiv.2301.02679",
+                    "CorpusId": 255546130
+                },
+                "corpusId": 255546130,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/30f468c83afea5c3c94daa5ac285cdaa8019a573",
+                "title": "Grokking modular arithmetic",
+                "abstract": "We present a simple neural network that can learn modular arithmetic tasks and exhibits a sudden jump in generalization known as ``grokking''. Concretely, we present (i) fully-connected two-layer networks that exhibit grokking on various modular arithmetic tasks under vanilla gradient descent with the MSE loss function in the absence of any regularization; (ii) evidence that grokking modular arithmetic corresponds to learning specific feature maps whose structure is determined by the task; (iii) analytic expressions for the weights -- and thus for the feature maps -- that solve a large class of modular arithmetic tasks; and (iv) evidence that these feature maps are also found by vanilla gradient descent as well as AdamW, thereby establishing complete interpretability of the representations learnt by the network.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "39510544",
+                        "name": "A. Gromov"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Liu et al. (2022) further studied this phenomenon by focusing on addition and permutation as toy models."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "965e409a3e7b5670d609837fac9823b160d6639c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-07727",
+                    "ArXiv": "2211.07727",
+                    "DOI": "10.48550/arXiv.2211.07727",
+                    "CorpusId": 253523349
+                },
+                "corpusId": 253523349,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/965e409a3e7b5670d609837fac9823b160d6639c",
+                "title": "Logical Tasks for Measuring Extrapolation and Rule Comprehension",
+                "abstract": "Logical reasoning is essential in a variety of human activities. A representative example of a logical task is mathematics. Recent large-scale models trained on large datasets have been successful in various fields, but their reasoning ability in arithmetic tasks is limited, which we reproduce experimentally. Here, we recast this limitation as not unique to mathematics but common to tasks that require logical operations. We then propose a new set of tasks, termed logical tasks, which will be the next challenge to address. This higher point of view helps the development of inductive biases that have broad impact beyond the solution of individual tasks. We define and characterize logical tasks and discuss system requirements for their solution. Furthermore, we discuss the relevance of logical tasks to concepts such as extrapolation, explainability, and inductive bias. Finally, we provide directions for solving logical tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "102310610",
+                        "name": "Ippei Fujisawa"
+                    },
+                    {
+                        "authorId": "1800112",
+                        "name": "R. Kanai"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In [8], an effective theory of grokking has been proposed.",
+                "In [8] a consistent observation has been made, namely larger weight decay leads in most cases to a larger parameter region where grokking is observed.",
+                "The works [6, 8] do not study the differences between L1 and L2 regularisations.",
+                "This result partially explains the observation in [8] which relates grokking to structure formation and effective dimension decrease at the transition.",
+                "On the other hand, we do observe phenomena related to neural collapse [5] and structure formation [8].",
+                "The grokking phenomenon has been discussed within an effective theory approach [8], where an empirical connection between representation/structure formation and generalisation has been made.",
+                "This is consistent with the observations of [6, 8] where a shorter grokking time has been reported for increased number of training samples and a larger weight decay.",
+                "These results provide, some justification of the numerical observation in [6, 8, 9] that weight decay increases the parameter region where grokking is observed.",
+                "Similarly, in [8] the authors argue that the grokking in deep models is related to structure formation.",
+                "Our findings differ from those of [8] in that we discuss ensemble/average phenomena."
+            ],
+            "intents": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "9a5bf5abd0b1548214f35c835f815a880a9d64a4",
+                "externalIds": {
+                    "ArXiv": "2210.15435",
+                    "DBLP": "journals/corr/abs-2210-15435",
+                    "DOI": "10.48550/arXiv.2210.15435",
+                    "CorpusId": 253157641
+                },
+                "corpusId": 253157641,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/9a5bf5abd0b1548214f35c835f815a880a9d64a4",
+                "title": "Grokking phase transitions in learning local rules with gradient descent",
+                "abstract": "We discuss two solvable grokking (generalisation beyond overfitting) models in a rule learning scenario. We show that grokking is a phase transition and find exact analytic expressions for the critical exponents, grokking probability, and grokking time distribution. Further, we introduce a tensor-network map that connects the proposed grokking setup with the standard (perceptron) statistical learning theory and show that grokking is a consequence of the locality of the teacher model. As an example, we analyse the cellular automata learning task, numerically determine the critical exponent and the grokking time distributions and compare them with the prediction of the proposed grokking model. Finally, we numerically analyse the connection between structure formation and grokking.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "5221292",
+                        "name": "Bojan \u017dunkovi\u010d"
+                    },
+                    {
+                        "authorId": "11590761",
+                        "name": "E. Ilievski"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Preliminary theoretical work (31) suggests that the task structure imposes highly specific constraints on the representations that can achieve perfect generalization, and \u201csudden insight\u201d occurs when these constraints are fulfilled."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "88d38f6ab2f34e985c65c8bd3a4b36d94e2e72aa",
+                "externalIds": {
+                    "PubMedCentral": "9894243",
+                    "DOI": "10.1073/pnas.2215352119",
+                    "CorpusId": 248672002,
+                    "PubMed": "36442113"
+                },
+                "corpusId": 248672002,
+                "publicationVenue": {
+                    "id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+                    "name": "bioRxiv",
+                    "type": "journal",
+                    "url": "http://biorxiv.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/88d38f6ab2f34e985c65c8bd3a4b36d94e2e72aa",
+                "title": "A reinforcement-based mechanism for discontinuous learning",
+                "abstract": "Problem-solving and reasoning involve mental exploration and navigation in sparse relational spaces. A physical analogue is spatial navigation in structured environments such as a network of burrows. Recent experiments with mice navigating a labyrinth show a sharp discontinuity during learning, corresponding to a distinct moment of \u2018sudden insight\u2019 when mice figure out long, direct paths to the goal. This discontinuity is seemingly at odds with reinforcement learning (RL), which involves a gradual build-up of a value signal during learning. Here, we show that biologically-plausible RL rules combined with persistent exploration generically exhibit discontinuous learning. In tree-like structured environments, positive feedback from learning on behavior generates a \u2018reinforcement wave\u2019 with a steep profile. The discontinuity occurs when the wave reaches the starting point. By examining the nonlinear dynamics of reinforcement propagation, we establish a quantitative relationship between the learning rule, the agent\u2019s exploration biases and learning speed. Predictions explain existing data and motivate specific experiments to isolate the phenomenon. Additionally, we characterize the exact learning dynamics of various RL rules for a complex sequential task.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2052873740",
+                        "name": "G. Reddy"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "11422fff4d42b70c31af69381ff32d35031c939d",
+                "externalIds": {
+                    "DBLP": "conf/icml/GadhikarMB23",
+                    "ArXiv": "2210.02412",
+                    "CorpusId": 258987596
+                },
+                "corpusId": 258987596,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/11422fff4d42b70c31af69381ff32d35031c939d",
+                "title": "Why Random Pruning Is All We Need to Start Sparse",
+                "abstract": "Random masks define surprisingly effective sparse neural network models, as has been shown empirically. The resulting sparse networks can often compete with dense architectures and state-of-the-art lottery ticket pruning algorithms, even though they do not rely on computationally expensive prune-train iterations and can be drawn initially without significant computational overhead. We offer a theoretical explanation of how random masks can approximate arbitrary target networks if they are wider by a logarithmic factor in the inverse sparsity $1 / \\log(1/\\text{sparsity})$. This overparameterization factor is necessary at least for 3-layer random networks, which elucidates the observed degrading performance of random networks at higher sparsity. At moderate to high sparsity levels, however, our results imply that sparser networks are contained within random source networks so that any dense-to-sparse training scheme can be turned into a computationally more efficient sparse-to-sparse one by constraining the search to a fixed random mask. We demonstrate the feasibility of this approach in experiments for different pruning methods and propose particularly effective choices of initial layer-wise sparsity ratios of the random source network. As a special case, we show theoretically and experimentally that random source networks also contain strong lottery tickets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2048027747",
+                        "name": "Advait Gadhikar"
+                    },
+                    {
+                        "authorId": "79760097",
+                        "name": "Sohom Mukherjee"
+                    },
+                    {
+                        "authorId": "8813467",
+                        "name": "R. Burkholz"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Setup We take the toy addition setup in (Liu et al., 2022), where each input digit 0 \u2264 i \u2264 p \u2212 1 (output label 0 \u2264 k \u2264 2(q \u2212 1)) is embedded as a vector Ei (Yk).",
+                "Architecture Similar to Liu et al. (2022), the decoder architecture is an MLP with hard coded addition.",
+                "As reported in (Power et al., 2022; Liu et al., 2022), we see that there exists a critical training set size below which generalization is impossible.",
+                "Several formal or informal attempts have been made to understand grokking: (a) (Liu et al., 2022) attributes grokking to the slow formation of good representations.",
+                "The effective theory analysis in (Liu et al., 2022) only applies to algorithmic datasets, but not to other datasets with unknown optimal representations.",
+                "This formula agrees with the observation that large weight decays \u03b3 and/or larger decoder learning rates \u03b7D can make generalization happen faster (Power et al., 2022; Liu et al., 2022).",
+                "Partial answers to Q1 are provided in recent studies: Liu et al. (2022) attribute grokking to the slow formation of good representations, Thilak et al. (2022) attempts to link grokking to the slingshot mechanism of adaptive optimizers, and Barak et al. (2022) uses Fourier gap to describe hidden\u2026",
+                "1 ALGORITHMIC DATASETS Setup We take the toy addition setup in (Liu et al., 2022), where each input digit 0 \u2264 i \u2264 p \u2212 1 (output label 0 \u2264 k \u2264 2(q \u2212 1)) is embedded as a vector Ei (Yk)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "ad065eed8e1f727a8b0d8675802e4ffb1fcb87b4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-01117",
+                    "ArXiv": "2210.01117",
+                    "DOI": "10.48550/arXiv.2210.01117",
+                    "CorpusId": 252683312
+                },
+                "corpusId": 252683312,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/ad065eed8e1f727a8b0d8675802e4ffb1fcb87b4",
+                "title": "Omnigrok: Grokking Beyond Algorithmic Data",
+                "abstract": "Grokking, the unusual phenomenon for algorithmic datasets where generalization happens long after overfitting the training data, has remained elusive. We aim to understand grokking by analyzing the loss landscapes of neural networks, identifying the mismatch between training and test losses as the cause for grokking. We refer to this as the\"LU mechanism\"because training and test losses (against model weight norm) typically resemble\"L\"and\"U\", respectively. This simple mechanism can nicely explain many aspects of grokking: data size dependence, weight decay dependence, the emergence of representations, etc. Guided by the intuitive picture, we are able to induce grokking on tasks involving images, language and molecules. In the reverse direction, we are able to eliminate grokking for algorithmic datasets. We attribute the dramatic nature of grokking for algorithmic datasets to representation learning.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2145253202",
+                        "name": "Ziming Liu"
+                    },
+                    {
+                        "authorId": "2064378938",
+                        "name": "Eric J. Michaud"
+                    },
+                    {
+                        "authorId": "2011933",
+                        "name": "Max Tegmark"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Modern research points towards a direction where, following an initial short-lived drop, validation performance picks up again after more training [28]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "246d7f80cd97a02450f322d3d84d4339438807ac",
+                "externalIds": {
+                    "DBLP": "conf/ijcnn/SamothrakisMAFF22",
+                    "DOI": "10.1109/IJCNN55064.2022.9891910",
+                    "CorpusId": 252625323
+                },
+                "corpusId": 252625323,
+                "publicationVenue": {
+                    "id": "f80ba4a3-7aed-4021-b4d8-e4f50668847a",
+                    "name": "IEEE International Joint Conference on Neural Network",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IJCNN",
+                        "IEEE Int Jt Conf Neural Netw",
+                        "Int Jt Conf Neural Netw",
+                        "International Joint Conference on Neural Network"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1573"
+                },
+                "url": "https://www.semanticscholar.org/paper/246d7f80cd97a02450f322d3d84d4339438807ac",
+                "title": "Grokking-like effects in counterfactual inference",
+                "abstract": "We show that a typical neural network, which ignores any covariate/feature re-balancing, can be as effective as any explicit counterfactual method. We adopt the architecture of TARNet\u2014a simple neural network with two heads (one for treatment, one for control) which is trained with a relatively high batch size. Combined with ensemble methods, this produces competitive results in four counterfactual inference benchmarks: IHDP, NEWS, JOBS, and TWINS. Our results indicate that relatively simple methods might be good enough for counterfactual prediction, with quality constraints coming from hyperparameter tuning. Our analysis indicates that the reason behind the observed phenomenon might be \u201cgrokking\u201d, a recently developed theory.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2032434",
+                        "name": "Spyridon Samothrakis"
+                    },
+                    {
+                        "authorId": "1403051484",
+                        "name": "A. Matran-Fernandez"
+                    },
+                    {
+                        "authorId": "2057339698",
+                        "name": "Umar I. Abdullahi"
+                    },
+                    {
+                        "authorId": "1699223",
+                        "name": "Michael Fairbank"
+                    },
+                    {
+                        "authorId": "1706986",
+                        "name": "M. Fasli"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "released their paper \"Towards Understanding Grokking: An Effective Theory of Representation Learning\"[4].",
+                "A few weeks after, a subset of the same authors released another paper [6] in which they explain grokking behaviour by looking at loss landscapes and analizing model weight size, again with the toy setting they introduced before [4].",
+                "[4] to look at grokking as tightly interconnected to the representations that have to be learned by the model to solve the task, but it challenges the notion that a clear encoder-decoder dichotomy is responsible for grokking.",
+                "Additionally, related work [4, 5] seems to agree that grokking strongly correlates to representation learning, which is the process of finding relevant structures in complicated data like pictures, videos and text and thus essential to many applied machine learning tasks.",
+                "In the paper Liu et al. released in October [4], the authors break down grokking behaviour as a problem of representation learning.",
+                "released in October [4], the authors break down grokking behaviour as a problem of representation learning.",
+                "To analyze the grokking phenomenon, the authors Liu et al. released their paper \"Towards Understanding Grokking: An Effective Theory of Representation Learning\"[4]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "9bac2c1da2a6c819e0fa8aaa608188828fd9c3e4",
+                "externalIds": {
+                    "CorpusId": 259256441
+                },
+                "corpusId": 259256441,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/9bac2c1da2a6c819e0fa8aaa608188828fd9c3e4",
+                "title": "Investigating \"Grokking\" \u2013 Late Generalisation in Deep Learning",
+                "abstract": "\"Grokking\" is the phenomenon of late generalization, where machine learning models jump to perfect accuracy after being in the overfitting regime for a long time. Lacking any obvious explanation, understanding this phenomenon may lead to new insights for modern machine learning theory. Grokking was discovered fairly recently in 2022 by Powers et al. [1], and in this thesis, I replicated their experiments to get a more in-depth understanding of this phenomenon. My experiments and analysis uncovered irregular training loss spikes as a fundamental part of grokking behaviour and I describe the details of their occurrence. In addition, I point out different irregular learning behaviours that suggest to look at grokking as an intricate, context-sensitive behaviour instead of a well-defined incidence.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2220581244",
+                        "name": "Benjamin Arn"
+                    }
+                ]
+            }
+        }
+    ]
+}

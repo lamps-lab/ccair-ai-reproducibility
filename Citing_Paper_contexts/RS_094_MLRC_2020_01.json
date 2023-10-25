@@ -1,0 +1,919 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "LIME [19], Vanilla Gradients [20]), while others produce global explanations of a models activity [23, 17]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "410d605354a16523dac4fc5aab74c57bdbcaeb25",
+                "externalIds": {
+                    "PubMedCentral": "10502234",
+                    "DOI": "10.1093/bioadv/vbad097",
+                    "CorpusId": 258718461,
+                    "PubMed": "37720006"
+                },
+                "corpusId": 258718461,
+                "publicationVenue": {
+                    "id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+                    "name": "bioRxiv",
+                    "type": "journal",
+                    "url": "http://biorxiv.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/410d605354a16523dac4fc5aab74c57bdbcaeb25",
+                "title": "Toward computing attributions for dimensionality reduction techniques",
+                "abstract": "We describe the problem of computing local feature attributions for dimensionality reduction methods. We use one such method that is well established within the context of supervised classification \u2013 using the gradients of target outputs with respect to the inputs \u2013 on the popular dimensionality reduction technique t-SNE, widely used in analyses of biological data. We provide an efficient implementation for the gradient computation for this dimensionality reduction technique. We show that our explanations identify significant features using novel validation methodology; using synthetic datasets and the popular MNIST benchmark dataset. We then demonstrate the practical utility of our algorithm by showing that it can produce explanations that agree with domain knowledge on a SARS-CoV-2 sequence dataset. Throughout, we provide a road map so that similar explanation methods could be applied to other dimensionality reduction techniques to rigorously analyze biological datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51179214",
+                        "name": "Matthew Scicluna"
+                    },
+                    {
+                        "authorId": "14545816",
+                        "name": "Jean-Christophe Grenier"
+                    },
+                    {
+                        "authorId": "4411814",
+                        "name": "Rapha\u00ebl Poujol"
+                    },
+                    {
+                        "authorId": "145104077",
+                        "name": "S. Lemieux"
+                    },
+                    {
+                        "authorId": "3275926",
+                        "name": "J. Hussin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Both Plumb et al. (2020) and Ley et al. (2022) have sought global translations which transform inputs within one group to another desired target group, though neither accommodate categorical features.",
+                "Further possible candidates are the GCE translations proposed in (Plumb et al., 2020; Ley et al., 2022), and a non-interpretable accumulation of the costs of local CEs, used solely to assess minimum costs per input, and not naively averaged over to produce GCEs.",
+                "Other translation works (Plumb et al., 2020; Ley et al., 2022) do not utilise any form of scaling, and can be prone to failure since they target training data and not the model\u2019s decision boundary.",
+                "\u2026explanations (Pedreschi et al., 2019; Lundberg et al., 2020; Gao et al., 2021) and approaches suggesting to learn global summaries directly (Rawal & Lakkaraju, 2020; Kanamori et al., 2022; Plumb et al., 2020; Ley et al., 2022) tend to perceive global explanations as distinctly different challenges.",
+                "The algorithms in (Plumb et al., 2020; Ley et al., 2022) minimise distance between initial inputs (post-translation) and target inputs, resulting in a heavy reliance on the distribution of training data.",
+                "\u2026the GLOBE-CE framework recovers minimum cost recourses very close to the theoretical global optima of the SVM.\nModel Agnostic Other black box GCE methods that adopt translation based approaches, such as those in Plumb et al. (2020) and Ley et al. (2022), are easily integrated into our framework."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "a4b63425b1e583b4388030a5b29976b20fdca137",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-17021",
+                    "ArXiv": "2305.17021",
+                    "DOI": "10.48550/arXiv.2305.17021",
+                    "CorpusId": 258947157
+                },
+                "corpusId": 258947157,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a4b63425b1e583b4388030a5b29976b20fdca137",
+                "title": "GLOBE-CE: A Translation-Based Approach for Global Counterfactual Explanations",
+                "abstract": "Counterfactual explanations have been widely studied in explainability, with a range of application dependent methods prominent in fairness, recourse and model understanding. The major shortcoming associated with these methods, however, is their inability to provide explanations beyond the local or instance-level. While many works touch upon the notion of a global explanation, typically suggesting to aggregate masses of local explanations in the hope of ascertaining global properties, few provide frameworks that are both reliable and computationally tractable. Meanwhile, practitioners are requesting more efficient and interactive explainability tools. We take this opportunity to propose Global&Efficient Counterfactual Explanations (GLOBE-CE), a flexible framework that tackles the reliability and scalability issues associated with current state-of-the-art, particularly on higher dimensional datasets and in the presence of continuous features. Furthermore, we provide a unique mathematical analysis of categorical feature translations, utilising it in our method. Experimental evaluation with publicly available datasets and user studies demonstrate that GLOBE-CE performs significantly better than the current state-of-the-art across multiple metrics (e.g., speed, reliability).",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2081992675",
+                        "name": "D. Ley"
+                    },
+                    {
+                        "authorId": "28265392",
+                        "name": "Saumitra Mishra"
+                    },
+                    {
+                        "authorId": "1738142",
+                        "name": "D. Magazzeni"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "[51] propose another counterfactual-summarymethod for a different use case with the same stakeholders (i."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7943143a26df3611b5f7a73d7d7b20d817148619",
+                "externalIds": {
+                    "ArXiv": "2303.09297",
+                    "DBLP": "journals/corr/abs-2303-09297",
+                    "DOI": "10.48550/arXiv.2303.09297",
+                    "CorpusId": 257557196
+                },
+                "corpusId": 257557196,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7943143a26df3611b5f7a73d7d7b20d817148619",
+                "title": "Explaining Groups of Instances Counterfactually for XAI: A Use Case, Algorithm and User Study for Group-Counterfactuals",
+                "abstract": "Counterfactual explanations are an increasingly popular form of post hoc explanation due to their (i) applicability across problem domains, (ii) proposed legal compliance (e.g., with GDPR), and (iii) reliance on the contrastive nature of human explanation. Although counterfactual explanations are normally used to explain individual predictive-instances, we explore a novel use case in which groups of similar instances are explained in a collective fashion using ``group counterfactuals'' (e.g., to highlight a repeating pattern of illness in a group of patients). These group counterfactuals meet a human preference for coherent, broad explanations covering multiple events/instances. A novel, group-counterfactual algorithm is proposed to generate high-coverage explanations that are faithful to the to-be-explained model. This explanation strategy is also evaluated in a large, controlled user study (N=207), using objective (i.e., accuracy) and subjective (i.e., confidence, explanation satisfaction, and trust) psychological measures. The results show that group counterfactuals elicit modest but definite improvements in people's understanding of an AI system. The implications of these findings for counterfactual methods and for XAI are discussed.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2047914525",
+                        "name": "Greta Warren"
+                    },
+                    {
+                        "authorId": "147505117",
+                        "name": "Markt. Keane"
+                    },
+                    {
+                        "authorId": "71095691",
+                        "name": "Christophe Gu\u00e9ret"
+                    },
+                    {
+                        "authorId": "1971974212",
+                        "name": "Eoin Delaney"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "61fe60a1d1968914958e9d01be0f67593601c5c0",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2301-08833",
+                    "ArXiv": "2301.08833",
+                    "DOI": "10.48550/arXiv.2301.08833",
+                    "CorpusId": 256105173
+                },
+                "corpusId": 256105173,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/61fe60a1d1968914958e9d01be0f67593601c5c0",
+                "title": "Bayesian Hierarchical Models for Counterfactual Estimation",
+                "abstract": "Counterfactual explanations utilize feature perturbations to analyze the outcome of an original decision and recommend an actionable recourse. We argue that it is beneficial to provide several alternative explanations rather than a single point solution and propose a probabilistic paradigm to estimate a diverse set of counterfactuals. Specifically, we treat the perturbations as random variables endowed with prior distribution functions. This allows sampling multiple counterfactuals from the posterior density, with the added benefit of incorporating inductive biases, preserving domain specific constraints and quantifying uncertainty in estimates. More importantly, we leverage Bayesian hierarchical modeling to share information across different subgroups of a population, which can both improve robustness and measure fairness. A gradient based sampler with superior convergence characteristics efficiently computes the posterior samples. Experiments across several datasets demonstrate that the counterfactuals estimated using our approach are valid, sparse, diverse and feasible.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "32319713",
+                        "name": "Natraj Raman"
+                    },
+                    {
+                        "authorId": "1738142",
+                        "name": "D. Magazzeni"
+                    },
+                    {
+                        "authorId": "36532736",
+                        "name": "Sameena Shah"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Notice that GCE has the highest Silhouette Score meaning that it has the best structures for clusters.",
+                "Specifically, ACE and GCE [27], another related work that focuses on the model explanation step, both use the latent space embedding to reduce dimensions.",
+                "To generate the simulated sc-RNA-seq dataset, we use the SymSim (Synthetic model of multiple variability factors for Simulation) simulator that explicitly models the data generating processes observed in sc-RNA-seq experiments [43], also used by [19, 27] for their evaluation.",
+                "In Table 2, the ARI & AMI of Kratos can be observed to be larger than those of ACE & GCE, indicating that clusters are best separated in Kratos\u2019s embedding.",
+                "62% superior to Global Counterfactual Explanation (GCE) [27] and 3.",
+                "Also, we compare GCE to Kratos, combined with the different explanation methods, and the Figure 5d indicates that Kratos outperforms, 5.62% on average, relative to GCE within top-1% marker genes.",
+                "(1) Based on the current SOTA sc-RNA-seq explanation workflows, our system combines the first two steps, and reaches a superior performance, which is 5.62% superior to Global Counterfactual Explanation (GCE) [27] and 3.31% superior to ACE [19], measured by the AUROC of the SVM classifier used to compare the target cluster with the rest of the clusters.",
+                "We see that when the selected number of genes is small, ACE has a lower redundancy than our work, while GCE has a higher redundancy.",
+                "Although ACE\u2019s workflow is more compact and improved the performance, in terms of the AUROC of the SVM classifier, of selected markers genes by \u223c 2.8% over its baseline, GCE, the problem of independent optimization (which would be served well by a single optimization function) is not fully realized.",
+                "To wrap up, these results indicate that Kratos outshines ACE and GCE in creating a good low-dimension embedding and best cluster assignment.",
+                "We next applied the differentiation analysis part in ACE toward identifying top-ranked genes for different cell types based on the results of Kratos and of the ACE and GCE pipeline.",
+                "Figure 4d shows that GCE has higher redundancy among the top-\ud835\udc58 genes than Kratos."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "b08f722266540d6fa685bc7b9972e5d6050a4595",
+                "externalIds": {
+                    "DBLP": "conf/kdd/0013DC22",
+                    "DOI": "10.1145/3534678.3539455",
+                    "CorpusId": 251518154
+                },
+                "corpusId": 251518154,
+                "publicationVenue": {
+                    "id": "a0edb93b-1e95-4128-a295-6b1659149cef",
+                    "name": "Knowledge Discovery and Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "KDD",
+                        "Knowl Discov Data Min"
+                    ],
+                    "url": "http://www.acm.org/sigkdd/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b08f722266540d6fa685bc7b9972e5d6050a4595",
+                "title": "KRATOS: Context-Aware Cell Type Classification and Interpretation using Joint Dimensionality Reduction and Clustering",
+                "abstract": "A common workflow for single-cell RNA-sequencing (sc-RNA-seq) data analysis is to orchestrate a three-step pipeline. First, conduct a dimension reduction of the input cell profile matrix; second, cluster the cells in the latent space; and third, extract the \"gene panels\" that distinguish a certain cluster from others. This workflow has the primary drawback that the three steps are performed independently, neglecting the dependencies among the steps and among the marker genes or gene panels. In our system, KRATOS, we alter the three-step workflow to a two-step one, where we jointly optimize the first two steps and add the third (interpretability) step to form an integrated sc-RNA-seq analysis pipeline. We show that the more compact workflow of KRATOS extracts marker genes that can better discriminate the target cluster, distilling underlying mechanisms guiding cluster membership. In doing so, KRATOS is significantly better than the two SOTA baselines we compare against, specifically 5.62% superior to Global Counterfactual Explanation (GCE) [ICML-20], and 3.31% better than Adversarial Clustering Explanation (ACE) [ICML-21], measured by the AUROC of a kernel-SVM classifier. We opensource our code and datasets here: https://github.com/icanforce/single-cell-genomics-kratos.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2112253130",
+                        "name": "Zihan Zhou"
+                    },
+                    {
+                        "authorId": "2164491735",
+                        "name": "Zijia Du"
+                    },
+                    {
+                        "authorId": "2228303",
+                        "name": "S. Chaterji"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Plumb et al. (2020) and Ley et al. (2022) have sought global translations which transform each input point within a group to another desired target group, in the context of low-dimensional spaces."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5aaae0d2b3a1bdc4ee9e6bf4a3bf8b1a0b7f9ec3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2204-06917",
+                    "ArXiv": "2204.06917",
+                    "DOI": "10.48550/arXiv.2204.06917",
+                    "CorpusId": 248178167
+                },
+                "corpusId": 248178167,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5aaae0d2b3a1bdc4ee9e6bf4a3bf8b1a0b7f9ec3",
+                "title": "Global Counterfactual Explanations: Investigations, Implementations and Improvements",
+                "abstract": "Counterfactual explanations have been widely studied in explainability, with a range of application dependent methods emerging in fairness, recourse and model understanding. However, the major shortcoming associated with these methods is their inability to provide explanations beyond the local or instance-level. While some works touch upon the notion of a global explanation, typically suggesting to aggregate masses of local explanations in the hope of ascertaining global properties, few provide frameworks that are either reliable or computationally tractable. Meanwhile, practitioners are requesting more efficient and interactive explainability tools. We take this opportunity to investigate existing global methods, with a focus on implementing and improving Actionable Recourse Summaries (AReS), the only known global counterfactual explanation framework for recourse.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2081992675",
+                        "name": "D. Ley"
+                    },
+                    {
+                        "authorId": "28265392",
+                        "name": "Saumitra Mishra"
+                    },
+                    {
+                        "authorId": "1738142",
+                        "name": "D. Magazzeni"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7caaafd5a3ee033c98e792c7ea5b699d005753d5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-08164",
+                    "ArXiv": "2201.08164",
+                    "DOI": "10.1145/3583558",
+                    "CorpusId": 246063780
+                },
+                "corpusId": 246063780,
+                "publicationVenue": {
+                    "id": "7b2adce0-d53f-49d6-8784-b0645604fe62",
+                    "name": "ACM Computing Surveys",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Comput Surv"
+                    ],
+                    "issn": "0360-0300",
+                    "url": "http://www.acm.org/pubs/surveys/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/csur",
+                        "https://csur.acm.org/",
+                        "http://csur.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7caaafd5a3ee033c98e792c7ea5b699d005753d5",
+                "title": "From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI",
+                "abstract": "The rising popularity of explainable artificial intelligence (XAI) to understand high-performing black boxes raised the question of how to evaluate explanations of machine learning (ML) models. While interpretability and explainability are often presented as a subjectively validated binary property, we consider it a multi-faceted concept. We identify 12 conceptual properties, such as Compactness and Correctness, that should be evaluated for comprehensively assessing the quality of an explanation. Our so-called Co-12 properties serve as categorization scheme for systematically reviewing the evaluation practices of more than 300 papers published in the past 7 years at major AI and ML conferences that introduce an XAI method. We find that one in three papers evaluate exclusively with anecdotal evidence, and one in five papers evaluate with users. This survey also contributes to the call for objective, quantifiable evaluation methods by presenting an extensive overview of quantitative XAI evaluation methods. Our systematic collection of evaluation methods provides researchers and practitioners with concrete tools to thoroughly validate, benchmark, and compare new and existing XAI methods. The Co-12 categorization scheme and our identified evaluation methods open up opportunities to include quantitative metrics as optimization criteria during model training to optimize for accuracy and interpretability simultaneously.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "17698891",
+                        "name": "Meike Nauta"
+                    },
+                    {
+                        "authorId": "52019849",
+                        "name": "Jan Trienes"
+                    },
+                    {
+                        "authorId": "66163851",
+                        "name": "Shreyasi Pathak"
+                    },
+                    {
+                        "authorId": "13407092",
+                        "name": "Elisa Nguyen"
+                    },
+                    {
+                        "authorId": "2066935841",
+                        "name": "Michelle Peters"
+                    },
+                    {
+                        "authorId": "2150574981",
+                        "name": "Yasmin Schmitt"
+                    },
+                    {
+                        "authorId": "3044872",
+                        "name": "J\u00f6rg Schl\u00f6tterer"
+                    },
+                    {
+                        "authorId": "1711719",
+                        "name": "M. V. Keulen"
+                    },
+                    {
+                        "authorId": "145566115",
+                        "name": "C. Seifert"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Although drawing inspiration from Transitive Global Translations (TGTs), as proposed by Plumb et al. (2020), our method performs a different operation; instead of learning translations in input space that result in high quality mappings in a lower dimensional latent space, we find that results are\u2026",
+                "Plumb et al. (2020) introduce coverage as a measure of the quality of global CEs.",
+                "Most counterfactual explanation techniques center around determining ways to change the class label of a prediction; for example, Transitive Global Translations (TGTs) consider each possible combination of classes and the mappings between them (Plumb et al. 2020).",
+                "Plumb et al. (2020) define a mapper that transforms points from one lowdimensional group to another."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "ccbd2b988ab12549a305f3009da414698a1e4616",
+                "externalIds": {
+                    "DBLP": "conf/aaai/LeyBW22",
+                    "ArXiv": "2112.02646",
+                    "DOI": "10.1609/aaai.v36i7.20702",
+                    "CorpusId": 244908702
+                },
+                "corpusId": 244908702,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/ccbd2b988ab12549a305f3009da414698a1e4616",
+                "title": "Diverse, Global and Amortised Counterfactual Explanations for Uncertainty Estimates",
+                "abstract": "To interpret uncertainty estimates from differentiable probabilistic models, recent work has proposed generating a single Counterfactual Latent Uncertainty Explanation (CLUE) for a given data point where the model is uncertain. We broaden the exploration to examine \u03b4-CLUE, the set of potential CLUEs within a \u03b4 ball of the original input in latent space. We study the diversity of such sets and find that many CLUEs are redundant; as such, we propose DIVerse CLUE (\u2207-CLUE), a set of CLUEs which each propose a distinct explanation as to how one can decrease the uncertainty associated with an input. We then further propose GLobal AMortised CLUE (GLAM-CLUE), a distinct, novel method which learns amortised mappings that apply to specific groups of uncertain inputs, taking them and efficiently transforming them in a single function call into inputs for which a model will be certain. Our experiments show that \u03b4-CLUE, \u2207-CLUE, and GLAM-CLUE all address shortcomings of CLUE and provide beneficial explanations of uncertainty estimates to practitioners.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2081992675",
+                        "name": "D. Ley"
+                    },
+                    {
+                        "authorId": "32326200",
+                        "name": "Umang Bhatt"
+                    },
+                    {
+                        "authorId": "145689461",
+                        "name": "Adrian Weller"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "result"
+            ],
+            "contexts": [
+                "We note that our proposed explanations fall into the broad definition of a global counterfactual explanation described in [27], though our technical approach is distinct from that of [27]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1e58f1e94a03ef6434ce5e3360781d546f8a2f5b",
+                "externalIds": {
+                    "DBLP": "journals/tmlr/PlumbRT22",
+                    "ArXiv": "2106.02112",
+                    "CorpusId": 235352578
+                },
+                "corpusId": 235352578,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1e58f1e94a03ef6434ce5e3360781d546f8a2f5b",
+                "title": "Finding and Fixing Spurious Patterns with Explanations",
+                "abstract": "Image classifiers often use spurious patterns, such as\"relying on the presence of a person to detect a tennis racket, which do not generalize. In this work, we present an end-to-end pipeline for identifying and mitigating spurious patterns for such models, under the assumption that we have access to pixel-wise object-annotations. We start by identifying patterns such as\"the model's prediction for tennis racket changes 63% of the time if we hide the people.\"Then, if a pattern is spurious, we mitigate it via a novel form of data augmentation. We demonstrate that our method identifies a diverse set of spurious patterns and that it mitigates them by producing a model that is both more accurate on a distribution where the spurious pattern is not helpful and more robust to distribution shift.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "31929250",
+                        "name": "Gregory Plumb"
+                    },
+                    {
+                        "authorId": "78846919",
+                        "name": "Marco Tulio Ribeiro"
+                    },
+                    {
+                        "authorId": "145532827",
+                        "name": "Ameet Talwalkar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "More recent methods improve on this, such as global counterfactual explanation (GCE) [30] and gene relevance score (GRS) [1].",
+                "However, GCE requires a linear embedding, and the embedding of GRS is constrained to ensure the gradients are easy to calculate."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "218a6151de577205bb1ac54c6b031c3cdc584b8f",
+                "externalIds": {
+                    "MAG": "3164535579",
+                    "DBLP": "journals/bib/WithnellZ0G21",
+                    "ArXiv": "2105.12807",
+                    "PubMedCentral": "8575033",
+                    "DOI": "10.1093/bib/bbab315",
+                    "CorpusId": 235212471,
+                    "PubMed": "34402865"
+                },
+                "corpusId": 235212471,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/218a6151de577205bb1ac54c6b031c3cdc584b8f",
+                "title": "XOmiVAE: an interpretable deep learning model for cancer classification using high-dimensional omics data",
+                "abstract": "Abstract The lack of explainability is one of the most prominent disadvantages of deep learning applications in omics. This \u2018black box\u2019 problem can undermine the credibility and limit the practical implementation of biomedical deep learning models. Here we present XOmiVAE, a variational autoencoder (VAE)-based interpretable deep learning model for cancer classification using high-dimensional omics data. XOmiVAE is capable of revealing the contribution of each gene and latent dimension for each classification prediction and the correlation between each gene and each latent dimension. It is also demonstrated that XOmiVAE can explain not only the supervised classification but also the unsupervised clustering results from the deep learning network. To the best of our knowledge, XOmiVAE is one of the first activation level-based interpretable deep learning models explaining novel clusters generated by VAE. The explainable results generated by XOmiVAE were validated by both the performance of downstream tasks and the biomedical knowledge. In our experiments, XOmiVAE explanations of deep learning-based cancer classification and clustering aligned with current domain knowledge including biological annotation and academic literature, which shows great potential for novel biomedical knowledge discovery from deep learning models.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2105843855",
+                        "name": "Eloise Withnell"
+                    },
+                    {
+                        "authorId": "2109108207",
+                        "name": "Xiaoyu Zhang"
+                    },
+                    {
+                        "authorId": "145932999",
+                        "name": "K. Sun"
+                    },
+                    {
+                        "authorId": "2179965463",
+                        "name": "Yike Guo"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "efcdb62b59e4dfb3f51b53850a81d6149ec3dfc8",
+                "externalIds": {
+                    "ArXiv": "2103.06254",
+                    "DBLP": "journals/cacm/ChenLKPT22",
+                    "DOI": "10.1145/3546036",
+                    "CorpusId": 236511842
+                },
+                "corpusId": 236511842,
+                "publicationVenue": {
+                    "id": "4d9ce1c4-dc84-46b9-903e-e3751c00c7dd",
+                    "name": "Communications of the ACM",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Commun ACM",
+                        "Communications of The ACM"
+                    ],
+                    "issn": "0001-0782",
+                    "url": "http://www.acm.org/pubs/cacm/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/cacm",
+                        "http://www.acm.org/pubs/contents/journals/cacm/",
+                        "https://cacm.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/efcdb62b59e4dfb3f51b53850a81d6149ec3dfc8",
+                "title": "Interpretable machine learning",
+                "abstract": "Despite increasing interest in the field of Interpretable Machine Learning (IML), a significant gap persists between the technical objectives targeted by researchers' methods and the high-level goals of consumers' use cases. In this work, we synthesize foundational work on IML methods and evaluation into an actionable taxonomy. This taxonomy serves as a tool to conceptualize the gap between researchers and consumers, illustrated by the lack of connections between its methods and use cases components. It also provides the foundation from which we describe a three-step workflow to better enable researchers and consumers to work together to discover what types of methods are useful for what use cases. Eventually, by building on the results generated from this workflow, a more complete version of the taxonomy will increasingly allow consumers to find relevant methods for their target use cases and researchers to identify applicable use cases for their proposed methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "15110752",
+                        "name": "Valerie Chen"
+                    },
+                    {
+                        "authorId": "2109008582",
+                        "name": "Jeffrey Li"
+                    },
+                    {
+                        "authorId": "2117060486",
+                        "name": "Joon Sik Kim"
+                    },
+                    {
+                        "authorId": "31929250",
+                        "name": "Gregory Plumb"
+                    },
+                    {
+                        "authorId": "145532827",
+                        "name": "Ameet Talwalkar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Global counterfactual explanation (GCE) (Plumb et al., 2020) is a compressed sensing method that aims to identify consistent differences among all pairs of groups.",
+                "identifying groups of cells in terms of their inherent latent semantics and thereafter reasoning about the differences between these groups is an important area of research (Plumb et al., 2020).",
+                "Accordingly, identifying groups of cells in terms of their inherent latent semantics and thereafter reasoning about the differences between these groups is an important area of research (Plumb et al., 2020).",
+                "To our knowledge, the only exception is the global counterfactual explanation (GCE) algorithm (Plumb et al., 2020) which is motivated by compressed sensing (Cand\u00e8s, 2006).",
+                "Unlike ACE, GCE is mainly designed for the one-vs-one setting because it relies on an objective function that characterizes each group via the cluster centroid.",
+                "The simulation of the clean dataset uses a protocol similar to that of Plumb et al. (2020).",
+                "To our knowledge, the only exception is the global counterfactual explanation (GCE) algorithm (Plumb et al., 2020), but that algorithm is limited to using a linear transformation."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "7eace3ac48d350ec72e1ba396c88d87db8c9a4d0",
+                "externalIds": {
+                    "DBLP": "conf/icml/LuYBN21",
+                    "DOI": "10.1101/2021.02.08.428881",
+                    "CorpusId": 231939009
+                },
+                "corpusId": 231939009,
+                "publicationVenue": {
+                    "id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+                    "name": "bioRxiv",
+                    "type": "journal",
+                    "url": "http://biorxiv.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7eace3ac48d350ec72e1ba396c88d87db8c9a4d0",
+                "title": "ACE: Explaining cluster from an adversarial perspective",
+                "abstract": "A common workflow in single-cell RNA-seq analysis is to project the data to a latent space, cluster the cells in that space, and identify sets of marker genes that explain the differences among the discovered clusters. A primary drawback to this three-step procedure is that each step is carried out independently, thereby neglecting the effects of the nonlinear embedding and inter-gene dependencies on the selection of marker genes. Here we propose an integrated deep learning framework, Adversarial Clustering Explanation (ACE), that bundles all three steps into a single work-flow. The method thus moves away from the notion of \u201cmarker genes\u201d to instead identify a panel of explanatory genes. This panel may include genes that are not only enriched but also depleted relative to other cell types, as well as genes that exhibit differences between closely related cell types. Empirically, we demonstrate that ACE is able to identify gene panels that are both highly discriminative and nonredundant, and we demonstrate the applicability of ACE to an image recognition task. 1",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "48518326",
+                        "name": "Yang Young Lu"
+                    },
+                    {
+                        "authorId": "1576517435",
+                        "name": "Timothy C. Yu"
+                    },
+                    {
+                        "authorId": "35111108",
+                        "name": "G. Bonora"
+                    },
+                    {
+                        "authorId": "144458655",
+                        "name": "William Stafford Noble"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Counterfactual explanations have also been leveraged to help in unsupervised exploratory data analysis of datasets in low dimensional latent spaces [26]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2a4b609a7e0df199332222c05caf4c58d2f4cb6c",
+                "externalIds": {
+                    "DBLP": "conf/nips/RawalL20",
+                    "MAG": "3103602184",
+                    "CorpusId": 226191777
+                },
+                "corpusId": 226191777,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/2a4b609a7e0df199332222c05caf4c58d2f4cb6c",
+                "title": "Beyond Individualized Recourse: Interpretable and Interactive Summaries of Actionable Recourses",
+                "abstract": "As predictive models are increasingly being deployed in high-stakes decision-making, there has been a lot of interest in developing algorithms which can provide recourses to affected individuals. While developing such tools is important, it is even more critical to analyse and interpret a predictive model, and vet it thoroughly to ensure that the recourses it offers are meaningful and non-discriminatory before it is deployed in the real world. To this end, we propose a novel model agnostic framework called Actionable Recourse Summaries (AReS) to construct global counterfactual explanations which provide an interpretable and accurate summary of recourses for the entire population. We formulate a novel objective which simultaneously optimizes for correctness of the recourses and interpretability of the explanations, while minimizing overall recourse costs across the entire population. More specifically, our objective enables us to learn, with optimality guarantees on recourse correctness, a small number of compact rule sets each of which capture recourses for well defined subpopulations within the data. We also demonstrate theoretically that several of the prior approaches proposed to generate recourses for individuals are special cases of our framework. Experimental evaluation with real world datasets and user studies demonstrate that our framework can provide decision makers with a comprehensive overview of recourses corresponding to any black box model, and consequently help detect undesirable model biases and discrimination.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "1390180597",
+                        "name": "Kaivalya Rawal"
+                    },
+                    {
+                        "authorId": "1892673",
+                        "name": "Himabindu Lakkaraju"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Plumb et al. (2020) and Ley et al. (2022) have sought global translations which transform each input point within a group to another desired target group, in the context of low-dimensional spaces."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "553b54b994295cae7fc8f097f84c88c09663d679",
+                "externalIds": {
+                    "CorpusId": 249059215
+                },
+                "corpusId": 249059215,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/553b54b994295cae7fc8f097f84c88c09663d679",
+                "title": "G LOBAL C OUNTERFACTUAL E XPLANATIONS : I NVESTIGATIONS , I MPLEMENTATIONS AND I MPROVEMENTS",
+                "abstract": "used in our experiments. Although German Credit includes continuous fea- tures, we find that they have limited effect on the model both during training and in the resulting explanations.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "28265392",
+                        "name": "Saumitra Mishra"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "et al, which is the implementation of technique presented in (4).",
+                "Note that the shown clusters (1-4) are determined in latent space, and back-engineered to original space.",
+                "For the purpose of reproducing (4), several steps were taken in order to best cover the scope of the original paper with limited resources.",
+                "The proposed explanatory technique by Plumb et al. (2020) does exactly this: it reverse-engineers the obtained cluster labels in latent space to label the corresponding data in original space; then \u2018tweaks\u2019 an initial cluster by translating the initial cluster in original space, so that it is\u2026"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "fa299970022497e4fb252c272154e0c009226a33",
+                "externalIds": {
+                    "CorpusId": 232173605
+                },
+                "corpusId": 232173605,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/fa299970022497e4fb252c272154e0c009226a33",
+                "title": "[Re] Explaining Groups of Points in Low-Dimensional Representations",
+                "abstract": "We have upgraded the original code such that it is compatible with the latest popular code libraries, among which the Tensorflow 2.x-library. Furthermore, we have created our own implementation of the algorithm in which we have incorporated additional experiments in order to evaluate the algorithm\u2019s relevance in the scope of different dimensionality reduction techniques and differently structured data. We have performed the same experiments as described in the paper using both versions of the code.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2078509392",
+                        "name": "D. Reijnaers"
+                    },
+                    {
+                        "authorId": "2078509385",
+                        "name": "D. V. D. Pavert"
+                    },
+                    {
+                        "authorId": "2078509394",
+                        "name": "Giguru Scheuer"
+                    },
+                    {
+                        "authorId": "2109048243",
+                        "name": "Liang Huang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "contexts": [
+                "1 Dimensionality reduction algorithms Throughout (6), DR algorithms are only mentioned in the general sense.",
+                "For the sake of ensuring future reproducibility of the experiments originally presented in (6), as an addition, we have also provided an upgraded version of the original code, without further modifications, which is now compatible with more recent versions of TensorFlow.",
+                "As a result of this separation, given a working environment, one could easily reproduce the experiments performed in (6).",
+                "Results The results presented in (6) were reproducible, both by using the provided code and our own implementation.",
+                "The proposed explanatory technique in (6) does exactly this: it reverse-engineers the obtained cluster labels in latent space to label the corresponding data in original space; then \u2018tweaks\u2019 an initial cluster by translating the initial cluster in original space, so that it is mapped to (approximately) the same point in latent space.",
+                "2 Scope of reproducibility As follows from the introduction, the authors of (6) opted for a counterfactual, sparse explanation for key differences between (naturally arising) groups.",
+                "Throughout (6), DR algorithms are only mentioned in the general sense.",
+                "r(Xi) is also referred to in (6) asRi.",
+                "3 Methodology In accordance with section 2, for the purpose of reproducing (6), several steps were taken in order to best cover the scope of the original paper with limited resources.",
+                "All relevant code complementing (6)\u2014the chunks which we have chosen to rewrite\u2014are explicitly stated in the paper, making the method by Plumb et al.",
+                "Reproducibility Summary Scope of Reproducibility In this paper we present an analysis and elaboration of (6), in which an algorithm is posed by Plumb et al."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "1b7bffeea08d191828e7132ae0deedbcf49f8af8",
+                "externalIds": {
+                    "CorpusId": 235433805
+                },
+                "corpusId": 235433805,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1b7bffeea08d191828e7132ae0deedbcf49f8af8",
+                "title": "[Re] Explaining Groups of Points in Low-Dimensional Representations",
+                "abstract": "We have upgraded the original code provided by the author such that it is compatible with recent versions of popular deep learning frameworks, namely the TensorFlow 2.xand PyTorch 1.7.x-libraries. Furthermore, we have created our own implementation of the algorithm in which we have incorporated additional experiments in order to evaluate the algorithm\u2019s relevance in the scope of different dimensionality reduction techniques and differently structured data. We have performed the same experiments as described in the original paper using both the upgraded version of the code provided by the author and our own implementation taking the authors\u2019 code and paper as references.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2078509392",
+                        "name": "D. Reijnaers"
+                    },
+                    {
+                        "authorId": "2078509385",
+                        "name": "D. V. D. Pavert"
+                    },
+                    {
+                        "authorId": "2109048243",
+                        "name": "Liang Huang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Scope of Reproducibility The main claims of the paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) include introduction of a new type of explanation - Global Counterfactual Explanation (GCE) which is relatively sparse and is consistent i.",
+                "\u2026Summary\nScope of Reproducibility\nThe main claims of the paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) include introduction of a new type of explanation - Global Counterfactual Explanation (GCE) which is relatively sparse and is\u2026",
+                "Reproducibility of Explaining Groups of Points in Low-Dimensional Representations\nRuud van Bakel Master Artificial Intelligence\nUniversity of Amsterdam ruud.van.bakel@student.uva.nl\nAbhijith Chintam Master Artificial Intelligence\nUniversity of Amsterdam abhijith.chintam@student.uva.nl\nAndreas Hadjipieris Master Artificial Intelligence\nUniversity of Amsterdam andreas.hadjipieris@student.uva.nl\nRoel Kuiper Master Artificial Intelligence\nUniversity of Amsterdam roel.kuiper@student.uva.nl\nReproducibility Summary\nScope of Reproducibility\nThe main claims of the paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) include introduction of a new type of explanation - Global Counterfactual Explanation (GCE) which is relatively sparse and is consistent i.e., symmetrical and transitive among all the groups.",
+                "The central focus of the original paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) is to introduce a novel way to explain groups of points in low-dimensional representations by leveraging the model that produced them in the first place."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "488ea2939fd8e09a91d3398babfc4f856f401469",
+                "externalIds": {
+                    "CorpusId": 237056891
+                },
+                "corpusId": 237056891,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/488ea2939fd8e09a91d3398babfc4f856f401469",
+                "title": "Reproducibility of Explaining Groups of Points in Low-Dimensional Representations",
+                "abstract": "The main claims of the paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) include introduction of a new type of explanation Global Counterfactual Explanation (GCE) which is relatively sparse and is consistent i.e., symmetrical and transitive among all the groups.The paper also claims that the explanations based on Transitive Global Translations (TGT) algorithm are better than Difference Between the Mean (DBM) baseline for varying degrees of sparsity. The TGT algorithm is also claimed to be capturing the real signals in the data.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2051416750",
+                        "name": "Ruud van Bakel"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "For example, ELDR [45] identifies which features (genes in its original medical use case) differentiate different clusters of data (cell types), and AReS [47] aims to do this to detect model bias.",
+                "One important proxy metric to consider for global methods is coverage [45], which measures the degree to which the explanations capture all of the differences between different cluster of points."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ef59f05a30972742a714b8903848e4b5dfc5cdaf",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2103-06254",
+                    "CorpusId": 232170676
+                },
+                "corpusId": 232170676,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ef59f05a30972742a714b8903848e4b5dfc5cdaf",
+                "title": "Towards Connecting Use Cases and Methods in Interpretable Machine Learning",
+                "abstract": "Despite increasing interest in the field of Interpretable Machine Learning (IML), a significant gap persists between the technical objectives targeted by researchers\u2019 methods and the high-level goals of consumers\u2019 use cases. In this work, we synthesize foundational work on IML methods and evaluation into an actionable taxonomy. This taxonomy serves as a tool to conceptualize the gap between researchers and consumers, illustrated by the lack of connections between its methods and use cases components. It also provides the foundation from which we describe a three-step workflow to better enable researchers and consumers to work together to discover what types of methods are useful for what use cases. Eventually, by building on the results generated from this workflow, a more complete version of the taxonomy will increasingly allow consumers to find relevant methods for their target use cases and researchers to identify applicable use cases for their proposed methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "15110752",
+                        "name": "Valerie Chen"
+                    },
+                    {
+                        "authorId": "2109008582",
+                        "name": "Jeffrey Li"
+                    },
+                    {
+                        "authorId": "2117060486",
+                        "name": "Joon Sik Kim"
+                    },
+                    {
+                        "authorId": "31929250",
+                        "name": "Gregory Plumb"
+                    },
+                    {
+                        "authorId": "145532827",
+                        "name": "Ameet Talwalkar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0e324549e16ef311eaf2bada431098b0d15b856d",
+                "externalIds": {
+                    "CorpusId": 237224135
+                },
+                "corpusId": 237224135,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/0e324549e16ef311eaf2bada431098b0d15b856d",
+                "title": "Explaining Low Dimensional Representation, a reproduction",
+                "abstract": "This report covers our reproduction of the paper \u2019Explaining Low dimensional Representation\u2019 [8] by Plumb et al. 3 In this paper, a method (Transitive Global Translations, TGT) is proposed for explaining different clusters in low 4 dimensional representations of high dimensional data. They show their method outperforms the Difference Between the 5 Means (DBM) method, is consistent in explaining differences with few features and matches real patterns in data. We 6 verify these claims by reproducing their experiments and testing their method on new data. We also investigate the use 7 of more complex transformations to explain differences between clusters. 8",
+                "year": 2021,
+                "authors": []
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ab29e3b48a72a2d513151c763832c88f543e2c88",
+                "externalIds": {
+                    "CorpusId": 250210225
+                },
+                "corpusId": 250210225,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ab29e3b48a72a2d513151c763832c88f543e2c88",
+                "title": "[Re] Explaining Groups of Points in Low-Dimensional Representations",
+                "abstract": "This report covers our reproduction of the paper \u02bcExplaining Low dimensional Representation\u02bc [1] by Plumb et al. In this paper, a method (Transitive Global Translations, TGT) is proposed for explaining different clusters in low dimensional representations of high dimensional data. They show their method outperforms the Difference Between the Means (DBM) method, is consistent in explaining differences with few features and matches real patterns in data. We verify these claims by reproducing their experiments and testing their method on new data. We also investigate the use of more complex transformations to explain differences between clusters.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "49983176",
+                        "name": "Rajeev Verma"
+                    },
+                    {
+                        "authorId": "2174474604",
+                        "name": "Jim J. O. Wagemans"
+                    },
+                    {
+                        "authorId": "66844865",
+                        "name": "Paras Dahal"
+                    },
+                    {
+                        "authorId": "2145327241",
+                        "name": "Auke Elfrink"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,1881 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "We compare ENG-based attacks with four variants of anchor attack (AA), a recent heuristic generic poisoning attack on classical fair machine learning (Mehrabi et al., 2021).",
+                "Recently researchers successfully attacked classical fair machine learning methods such as fair logistic regression (Mehrabi et al., 2021) and exacerbated bias in model predictions, thereby hurting fairness.",
+                "These attacks have been successfully applied to classical fair machine learning (Chang et al., 2020; Solans et al., 2021; Mehrabi et al., 2021), but the non-convexity of neural networks and expensive influence function computations make them unsuitable for poisoning FRL.",
+                "Heuristics such as label flipping (Mehrabi et al., 2021) lack a direct connection to the attack goal, thereby having no success guarantee and often performing unsatisfactorily.",
+                "We follow previous attacks on classical fair machine learning (Chang et al., 2020; Mehrabi et al., 2021) and suppose a worst-case threat model, which has full knowledge and control of the victim model, as well as the access to part of the training samples.",
+                "Despite the success of fair machine learning methods, not much is known about their vulnerability under data poisoning attacks until very recent studies (Chang et al., 2020; Solans et al., 2021; Mehrabi et al., 2021)."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "56139ba87d2b3898de4264fc42192270eb81f5bf",
+                "externalIds": {
+                    "ArXiv": "2309.16487",
+                    "CorpusId": 263135509
+                },
+                "corpusId": 263135509,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/56139ba87d2b3898de4264fc42192270eb81f5bf",
+                "title": "Towards Poisoning Fair Representations",
+                "abstract": "Fair machine learning seeks to mitigate model prediction bias against certain demographic subgroups such as elder and female. Recently, fair representation learning (FRL) trained by deep neural networks has demonstrated superior performance, whereby representations containing no demographic information are inferred from the data and then used as the input to classification or other downstream tasks. Despite the development of FRL methods, their vulnerability under data poisoning attack, a popular protocol to benchmark model robustness under adversarial scenarios, is under-explored. Data poisoning attacks have been developed for classical fair machine learning methods which incorporate fairness constraints into shallow-model classifiers. Nonetheless, these attacks fall short in FRL due to notably different fairness goals and model architectures. This work proposes the first data poisoning framework attacking FRL. We induce the model to output unfair representations that contain as much demographic information as possible by injecting carefully crafted poisoning samples into the training data. This attack entails a prohibitive bilevel optimization, wherefore an effective approximated solution is proposed. A theoretical analysis on the needed number of poisoning samples is derived and sheds light on defending against the attack. Experiments on benchmark fairness datasets and state-of-the-art fair representation learning models demonstrate the superiority of our attack.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2249489165",
+                        "name": "Tianci Liu"
+                    },
+                    {
+                        "authorId": "2138204614",
+                        "name": "Haoyu Wang"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Feijie Wu"
+                    },
+                    {
+                        "authorId": "7214272",
+                        "name": "Hengtong Zhang"
+                    },
+                    {
+                        "authorId": "2247858906",
+                        "name": "Pan Li"
+                    },
+                    {
+                        "authorId": "2152221884",
+                        "name": "Lu Su"
+                    },
+                    {
+                        "authorId": "2248638869",
+                        "name": "Jing Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "1f33fdd591b679f4c94f6fd459277dad5fa61256",
+                "externalIds": {
+                    "DBLP": "conf/ijcai/ZengYSZW23",
+                    "DOI": "10.24963/ijcai.2023/59",
+                    "CorpusId": 260858120
+                },
+                "corpusId": 260858120,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/1f33fdd591b679f4c94f6fd459277dad5fa61256",
+                "title": "On Adversarial Robustness of Demographic Fairness in Face Attribute Recognition",
+                "abstract": "Demographic fairness has become a critical objective when developing modern visual models for identity-sensitive applications, such as face attribute recognition (FAR). While great efforts have been made to improve the fairness of the models, the investigation on the adversarial robustness of the fairness (e.g., whether the fairness of the models could still be maintained under potential malicious fairness attacks) is largely ignored. Therefore, this paper explores the adversarial robustness of demographic fairness in FAR applications from both attacking and defending perspectives. In particular, we firstly present a novel fairness attack, who aims at corrupting the demographic fairness of face attribute classifiers. Next, to mitigate the effect of the fairness attack, we design an efficient defense algorithm called robust-fair training. With this defense, face attribute classifiers learn how to combat the bias introduced by the fairness attack. As such, the face attribute classifiers are not only trained to be fair, but the fairness is also robust. Our extensive experimental results show the effectiveness of both our proposed attack and defense methods across various model architectures and FAR applications. We believe our work could be strong baselines for future work on robust-fair AI models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2113559163",
+                        "name": "Huimin Zeng"
+                    },
+                    {
+                        "authorId": "2028213158",
+                        "name": "Zhenrui Yue"
+                    },
+                    {
+                        "authorId": "65855502",
+                        "name": "Lanyu Shang"
+                    },
+                    {
+                        "authorId": "2145953897",
+                        "name": "Yang Zhang"
+                    },
+                    {
+                        "authorId": "2152686930",
+                        "name": "Dong Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "1df88172eccd35ea5cb74bfc1d4a31b6e8c4742c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-06123",
+                    "ArXiv": "2306.06123",
+                    "DOI": "10.48550/arXiv.2306.06123",
+                    "CorpusId": 259138334
+                },
+                "corpusId": 259138334,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/1df88172eccd35ea5cb74bfc1d4a31b6e8c4742c",
+                "title": "Adversarial Attacks and Defenses in Explainable Artificial Intelligence: A Survey",
+                "abstract": "Explainable artificial intelligence (XAI) methods are portrayed as a remedy for debugging and trusting statistical and deep learning models, as well as interpreting their predictions. However, recent advances in adversarial machine learning (AdvML) highlight the limitations and vulnerabilities of state-of-the-art explanation methods, putting their security and trustworthiness into question. The possibility of manipulating, fooling or fairwashing evidence of the model's reasoning has detrimental consequences when applied in high-stakes decision-making and knowledge discovery. This survey provides a comprehensive overview of research concerning adversarial attacks on explanations of machine learning models, as well as fairness metrics. We introduce a unified notation and taxonomy of methods facilitating a common ground for researchers and practitioners from the intersecting research fields of AdvML and XAI. We discuss how to defend against attacks and design robust interpretation methods. We contribute a list of existing insecurities in XAI and outline the emerging research directions in adversarial XAI (AdvXAI). Future work should address improving explanation methods and evaluation protocols to take into account the reported safety issues.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1453583908",
+                        "name": "Hubert Baniecki"
+                    },
+                    {
+                        "authorId": "144356944",
+                        "name": "P. Biecek"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "However, sensitive attributes are sometimes indirectly represented by other information within the data, and they could still learn to discriminate even when the sensitive attribute is no longer present [31, 32]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "15eb2be5fcdd499dc1b41c712e110aa8c286f444",
+                "externalIds": {
+                    "DBLP": "conf/websci/PerezFABA23",
+                    "DOI": "10.1145/3578503.3583605",
+                    "CorpusId": 258333908
+                },
+                "corpusId": 258333908,
+                "publicationVenue": {
+                    "id": "9edb146e-1733-42d6-9ac6-91bced84ca22",
+                    "name": "Web Science Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Web Sci",
+                        "Web Science",
+                        "Web Sci Conf",
+                        "WebSci"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/15eb2be5fcdd499dc1b41c712e110aa8c286f444",
+                "title": "Tracking Machine Learning Bias Creep in Traditional and Online Lending Systems with Covariance Analysis",
+                "abstract": "Machine Learning (ML) algorithms are embedded within online banking services, proposing decisions about consumers\u2019 credit cards, car loans, and mortgages. These algorithms are sometimes biased, resulting in unfair decisions toward certain groups. One common approach for addressing such bias is simply dropping the sensitive attributes from the training data (e.g. gender). However, sensitive attributes can indirectly be represented by other attributes in the data (e.g. maternity leave taken). This paper addresses the problem of identifying attributes that can mimic sensitive attributes by proposing a new approach based on covariance analysis. Our evaluation conducted on two different credit datasets, extracted from a traditional and an online banking institution respectively, shows how our approach: (i) effectively identifies the attributes from the data that encapsulate sensitive information and, (ii) leads to the reduction of biases in ML models, while maintaining their overall performance.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2179337410",
+                        "name": "\u00c1ngel Pav\u00f3n P\u00e9rez"
+                    },
+                    {
+                        "authorId": "152179862",
+                        "name": "Miriam Fern\u00e1ndez"
+                    },
+                    {
+                        "authorId": "1403825149",
+                        "name": "H. Al-Madfai"
+                    },
+                    {
+                        "authorId": "3165334",
+                        "name": "Gr\u00e9goire Burel"
+                    },
+                    {
+                        "authorId": "145842685",
+                        "name": "Harith Alani"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "0898134e11fe1a04aea9e65de77b92497cea97e1",
+                "externalIds": {
+                    "ArXiv": "2304.12622",
+                    "DBLP": "journals/corr/abs-2304-12622",
+                    "DOI": "10.1109/CVPR52729.2023.02334",
+                    "CorpusId": 258309395
+                },
+                "corpusId": 258309395,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0898134e11fe1a04aea9e65de77b92497cea97e1",
+                "title": "Bias in Pruned Vision Models: In-Depth Analysis and Countermeasures",
+                "abstract": "Pruning\u2014that is, setting a significant subset of the parameters of a neural network to zero\u2014is one of the most popular methods of model compression. Yet, several recent works have raised the issue that pruning may induce or exacerbate bias in the output of the compressed model. Despite existing evidence for this phenomenon, the relationship between neural network pruning and induced bias is not well-understood. In this work, we systematically investigate and characterize this phenomenon in Convolutional Neural Networks for computer vision. First, we show that it is in fact possible to obtain highly-sparse models, e.g. with less than 10% remaining weights, which do not decrease in accuracy nor substantially increase in bias when compared to dense models. At the same time, we also find that, at higher sparsities, pruned models exhibit higher uncertainty in their outputs, as well as increased correlations, which we directly link to increased bias. We propose easy-to-use criteria which, based only on the uncompressed model, establish whether bias will increase with pruning, and identify the samples most susceptible to biased predictions post-compression. Our code can be found at https://github.com/IST-DASLab/pruned-vision-model-bias.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2082370867",
+                        "name": "Eugenia Iofinova"
+                    },
+                    {
+                        "authorId": "3341722",
+                        "name": "Alexandra Peste"
+                    },
+                    {
+                        "authorId": "3311387",
+                        "name": "Dan Alistarh"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Solans et al. (2020) and Mehrabi et al. (2021b) made the first attempt to propose novel ways to generate adversarial samples taking into account fairness objectives to disturb the training process and exacerbate bias on clean testing data.",
+                "However, machine learning models have shown biased predictions against disadvantaged groups on several real-world tasks (Larson et al., 2016; Dressel and Farid, 2018; Mehrabi et al., 2021a).",
+                "Some work discusses the problem of fairness poisoning attack during training (Solans et al., 2020; Mehrabi et al., 2021b); however, it is not clear how fairness attack would influence the predicted soft labels, and the relationship between fairness and accuracy attack/robustness remains unclear."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3449a7567255dea5dc739fe5627df8f590872070",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-00061",
+                    "ArXiv": "2304.00061",
+                    "DOI": "10.48550/arXiv.2304.00061",
+                    "CorpusId": 257912502
+                },
+                "corpusId": 257912502,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/3449a7567255dea5dc739fe5627df8f590872070",
+                "title": "To be Robust and to be Fair: Aligning Fairness with Robustness",
+                "abstract": "Adversarial training has been shown to be reliable in improving robustness against adversarial samples. However, the problem of adversarial training in terms of fairness has not yet been properly studied, and the relationship between fairness and accuracy attack still remains unclear. Can we simultaneously improve robustness w.r.t. both fairness and accuracy? To tackle this topic, in this paper, we study the problem of adversarial training and adversarial attack w.r.t. both metrics. We propose a unified structure for fairness attack which brings together common notions in group fairness, and we theoretically prove the equivalence of fairness attack against different notions. Moreover, we show the alignment of fairness and accuracy attack, and theoretically demonstrate that robustness w.r.t. one metric benefits from robustness w.r.t. the other metric. Our study suggests a novel way to unify adversarial training and attack w.r.t. fairness and accuracy, and experimental results show that our proposed method achieves better performance in terms of robustness w.r.t. both metrics.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1807421",
+                        "name": "Junyi Chai"
+                    },
+                    {
+                        "authorId": "2108158629",
+                        "name": "Xiaoqian Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "5ffcf3149b89b260164785d25a32d80ce80e42b9",
+                "externalIds": {
+                    "DOI": "10.1016/j.sasc.2023.200050",
+                    "CorpusId": 257472499
+                },
+                "corpusId": 257472499,
+                "publicationVenue": {
+                    "id": "2a5ae3d7-1f1a-41de-ae93-da0f0961cd7d",
+                    "name": "Systems and Soft Computing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Syst Soft Comput"
+                    ],
+                    "issn": "2772-9419"
+                },
+                "url": "https://www.semanticscholar.org/paper/5ffcf3149b89b260164785d25a32d80ce80e42b9",
+                "title": "Emerging challenges and perspectives in Deep Learning model security: A brief survey",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1728002",
+                        "name": "L. Caviglione"
+                    },
+                    {
+                        "authorId": "152406140",
+                        "name": "C. Comito"
+                    },
+                    {
+                        "authorId": "1794971",
+                        "name": "M. Guarascio"
+                    },
+                    {
+                        "authorId": "2062659381",
+                        "name": "G. Manco"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Another line of research is supporting robustness in fair training, including handling noisy groups (Celis et al., 2021; Wang et al., 2020) or poisoning attacks (Mehrabi et al., 2021; Solans et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "b40bccd71db0247639555963368333cad7f9d7cd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-02323",
+                    "ArXiv": "2302.02323",
+                    "DOI": "10.48550/arXiv.2302.02323",
+                    "CorpusId": 256615602
+                },
+                "corpusId": 256615602,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b40bccd71db0247639555963368333cad7f9d7cd",
+                "title": "Improving Fair Training under Correlation Shifts",
+                "abstract": "Model fairness is an essential element for Trustworthy AI. While many techniques for model fairness have been proposed, most of them assume that the training and deployment data distributions are identical, which is often not true in practice. In particular, when the bias between labels and sensitive groups changes, the fairness of the trained model is directly influenced and can worsen. We make two contributions for solving this problem. First, we analytically show that existing in-processing fair algorithms have fundamental limits in accuracy and group fairness. We introduce the notion of correlation shifts, which can explicitly capture the change of the above bias. Second, we propose a novel pre-processing step that samples the input data to reduce correlation shifts and thus enables the in-processing approaches to overcome their limitations. We formulate an optimization problem for adjusting the data ratio among labels and sensitive groups to reflect the shifted correlation. A key benefit of our approach lies in decoupling the roles of pre- and in-processing approaches: correlation adjustment via pre-processing and unfairness mitigation on the processed data via in-processing. Experiments show that our framework effectively improves existing in-processing fair algorithms w.r.t. accuracy and fairness, both on synthetic and real datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "30840932",
+                        "name": "Yuji Roh"
+                    },
+                    {
+                        "authorId": "2115495251",
+                        "name": "Kangwook Lee"
+                    },
+                    {
+                        "authorId": "3288247",
+                        "name": "Steven Euijong Whang"
+                    },
+                    {
+                        "authorId": "47808468",
+                        "name": "Changho Suh"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "A data poisoning attack can malfunction the system or exhaust resources, and decreases the system\u2019s qualities, such as performance, safety, and fairness [59, 60]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "9630019d166f48d995f2df8552a82ac5aea9b915",
+                "externalIds": {
+                    "ArXiv": "2301.07474",
+                    "DBLP": "journals/corr/abs-2301-07474",
+                    "DOI": "10.48550/arXiv.2301.07474",
+                    "CorpusId": 255998605
+                },
+                "corpusId": 255998605,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/9630019d166f48d995f2df8552a82ac5aea9b915",
+                "title": "Threats, Vulnerabilities, and Controls of Machine Learning Based Systems: A Survey and Taxonomy",
+                "abstract": "In this article, we propose the Artificial Intelligence Security Taxonomy to systematize the knowledge of threats, vulnerabilities, and security controls of ML-based systems. We first classify the damage caused by attacks against ML-based systems, define ML-specific security, and discuss its characteristics. Next, we enumerate all relevant assets and stakeholders and provide a general taxonomy for ML-specific threats. Then, we collect a wide range of security controls against ML-specific threats through an extensive review of recent literature. Finally, we classify the vulnerabilities and controls of an ML-based system in terms of each vulnerable asset in the system\u2019s entire lifecycle.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "49224245",
+                        "name": "Yusuke Kawamoto"
+                    },
+                    {
+                        "authorId": "2201714619",
+                        "name": "Kazumasa Miyake"
+                    },
+                    {
+                        "authorId": "2656134",
+                        "name": "K. Konishi"
+                    },
+                    {
+                        "authorId": "2007790",
+                        "name": "Y. Oiwa"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Fair methods have shown to be vulnerable to data corruption [75] and, in the light of this issue, there is an emerging research line concerned about the development of fair classifiers that are robust to such adversity."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7b5cbc587ee7c51945f6b6fecb3ff5ddce52e68c",
+                "externalIds": {
+                    "ArXiv": "2211.07530",
+                    "DBLP": "journals/corr/abs-2211-07530",
+                    "DOI": "10.48550/arXiv.2211.07530",
+                    "CorpusId": 253510328
+                },
+                "corpusId": 253510328,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7b5cbc587ee7c51945f6b6fecb3ff5ddce52e68c",
+                "title": "A Survey on Preserving Fairness Guarantees in Changing Environments",
+                "abstract": "Human lives are increasingly being affected by the outcomes of automated decision-making systems and it is essential for the latter to be, not only accurate, but also fair. The literature of algorithmic fairness has grown considerably over the last decade, where most of the approaches are evaluated under the strong assumption that the train and test samples are independently and identically drawn from the same underlying distribution. However, in practice, dissimilarity between the training and deployment environments exists, which compromises the performance of the decision-making algorithm as well as its fairness guarantees in the deployment data. There is an emergent research line that studies how to preserve fairness guarantees when the data generating processes differ between the source (train) and target (test) domains, which is growing remarkably. With this survey, we aim to provide a wide and unifying overview on the topic. For such purpose, we propose a taxonomy of the existing approaches for fair classification under distribution shift, highlight benchmarking alternatives, point out the relation with other similar research fields and eventually, identify future venues of research.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2190750645",
+                        "name": "Ainhize Barrainkua"
+                    },
+                    {
+                        "authorId": "51130398",
+                        "name": "Paula Gordaliza"
+                    },
+                    {
+                        "authorId": "144762651",
+                        "name": "J. A. Lozano"
+                    },
+                    {
+                        "authorId": "1704531",
+                        "name": "Novi Quadrianto"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For example, [15] develops a gradient-based poisoning attack, [16] presents anchoring attack and influence attack, [17] provides three online attacks based on different group-based fairness measures, and [18] shows that adversarial attacks can worsen the model\u2019s fairness gap on test data while satisfying the fairness constraint on training data."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "6f9c78c61b7f6c850e1cd8a9fb5bcea75d90cd0e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-04449",
+                    "ArXiv": "2211.04449",
+                    "DOI": "10.48550/arXiv.2211.04449",
+                    "CorpusId": 253397469
+                },
+                "corpusId": 253397469,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6f9c78c61b7f6c850e1cd8a9fb5bcea75d90cd0e",
+                "title": "Fairness-aware Regression Robust to Adversarial Attacks",
+                "abstract": "In this paper, we take a first step towards answering the question of how to design fair machine learning algorithms that are robust to adversarial attacks. Using a minimax framework, we aim to design an adversarially robust fair regression model that achieves optimal performance in the presence of an attacker who is able to add a carefully designed adversarial data point to the dataset or perform a rank-one attack on the dataset. By solving the proposed nonsmooth nonconvex-nonconcave minimax problem, the optimal adversary as well as the robust fairness-aware regression model are obtained. For both synthetic data and real-world datasets, numerical results illustrate that the proposed adversarially robust fair models have better performance on poisoned datasets than other fair machine learning models in both prediction accuracy and group-based fairness measure.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "122923863",
+                        "name": "Yulu Jin"
+                    },
+                    {
+                        "authorId": "2153755469",
+                        "name": "Lifeng Lai"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Note that \u03c6 can be defined to be any fairness utility metric, such as Balance and Entropy [Chhabra et al., 2021a, Mehrabi et al., 2021a].",
+                "To our best knowledge, although there are a few pioneering attempts toward fairness attack [Mehrabi et al., 2021b, Solans et al., 2020], all of them consider the supervised setting.",
+                "For this reason, it is of paramount importance to ensure that decisions derived from such predictive models are unbiased and fair for all individuals treated [Mehrabi et al., 2021a].",
+                "Although there are some pioneering attempts on fairness attacks against supervised learning models [Solans et al., 2020, Mehrabi et al., 2021b], unfortunately, none of these works propose defense approaches."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "6545eebb1162c70751119e173f8d51f5c112fcc1",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-01953",
+                    "ArXiv": "2210.01953",
+                    "DOI": "10.48550/arXiv.2210.01953",
+                    "CorpusId": 252715605
+                },
+                "corpusId": 252715605,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/6545eebb1162c70751119e173f8d51f5c112fcc1",
+                "title": "Robust Fair Clustering: A Novel Fairness Attack and Defense Framework",
+                "abstract": "Clustering algorithms are widely used in many societal resource allocation applications, such as loan approvals and candidate recruitment, among others, and hence, biased or unfair model outputs can adversely impact individuals that rely on these applications. To this end, many fair clustering approaches have been recently proposed to counteract this issue. Due to the potential for significant harm, it is essential to ensure that fair clustering algorithms provide consistently fair outputs even under adversarial influence. However, fair clustering algorithms have not been studied from an adversarial attack perspective. In contrast to previous research, we seek to bridge this gap and conduct a robustness analysis against fair clustering by proposing a novel black-box fairness attack. Through comprehensive experiments, we find that state-of-the-art models are highly susceptible to our attack as it can reduce their fairness performance significantly. Finally, we propose Consensus Fair Clustering (CFC), the first robust fair clustering approach that transforms consensus clustering into a fair graph partitioning problem, and iteratively learns to generate fair cluster outputs. Experimentally, we observe that CFC is highly robust to the proposed attack and is thus a truly robust fair clustering alternative.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "152593835",
+                        "name": "Anshuman Chhabra"
+                    },
+                    {
+                        "authorId": "48981982",
+                        "name": "Peizhao Li"
+                    },
+                    {
+                        "authorId": "144752813",
+                        "name": "P. Mohapatra"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Arguably [26], and [30] are the most related to our work, as they aim to design data poisoning attacks targeting fairness but not on graph data.",
+                "[26] propose two families of data poisoning attacks targeting fairness (anchoring and influence attacks), which inject poisoned data points aiming to degrade",
+                "We base our research on two separate yet related streams of research: adversarial attacks on GNNs that aim to reduce GNN classification accuracy [7], [23], [36], [39], [44], [45], and attacks on fairness in the context of classical machine learning [5], [26], [27], [30].",
+                "A growing body of work has been studying the robustness of more traditional machine learning models to attacks on fairness [5], [26], [27], [30]."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "ee21a30bc29f9c210caa36264ccd68a5662bf688",
+                "externalIds": {
+                    "ArXiv": "2209.05957",
+                    "DBLP": "conf/icdm/HussainCSHLSK22",
+                    "DOI": "10.1109/ICDM54844.2022.00117",
+                    "CorpusId": 252211714
+                },
+                "corpusId": 252211714,
+                "publicationVenue": {
+                    "id": "67d15a94-d523-4b5f-be58-03fe2ef9dcfb",
+                    "name": "Industrial Conference on Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Ind Conf Data Min",
+                        "ICDM"
+                    ],
+                    "url": "http://www.data-mining-forum.de/"
+                },
+                "url": "https://www.semanticscholar.org/paper/ee21a30bc29f9c210caa36264ccd68a5662bf688",
+                "title": "Adversarial Inter-Group Link Injection Degrades the Fairness of Graph Neural Networks",
+                "abstract": "We present evidence for the existence and effectiveness of adversarial attacks on graph neural networks (GNNs) that aim to degrade fairness. These attacks can disadvantage a particular subgroup of nodes in GNN-based node classification, where nodes of the underlying network have sensitive attributes, such as race or gender. We conduct qualitative and experimental analyses explaining how adversarial link injection impairs the fairness of GNN predictions. For example, an attacker can compromise the fairness of GNN-based node classification by injecting adversarial links between nodes belonging to opposite subgroups and opposite class labels. Our experiments on empirical datasets demonstrate that adversarial fairness attacks can significantly degrade the fairness of GNN predictions (attacks are effective) with a low perturbation rate (attacks are efficient) and without a significant drop in accuracy (attacks are deceptive). This work demonstrates the vulnerability of GNN models to adversarial fairness attacks. We hope our findings raise awareness about this issue in our community and lay a foundation for the future development of GNN models that are more robust to such attacks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2065159398",
+                        "name": "Hussain Hussain"
+                    },
+                    {
+                        "authorId": "2057070058",
+                        "name": "Meng Cao"
+                    },
+                    {
+                        "authorId": "2632448",
+                        "name": "Sandipan Sikdar"
+                    },
+                    {
+                        "authorId": "1747800",
+                        "name": "D. Helic"
+                    },
+                    {
+                        "authorId": "3124784",
+                        "name": "E. Lex"
+                    },
+                    {
+                        "authorId": "1743043",
+                        "name": "M. Strohmaier"
+                    },
+                    {
+                        "authorId": "153815524",
+                        "name": "Roman Kern"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "f86dd357dd183ded38167d98ed2038c5894f855c",
+                "externalIds": {
+                    "DBLP": "journals/tmlr/WangHZW23",
+                    "ArXiv": "2207.01168",
+                    "DOI": "10.48550/arXiv.2207.01168",
+                    "CorpusId": 250264467,
+                    "PubMed": "37056515"
+                },
+                "corpusId": 250264467,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/f86dd357dd183ded38167d98ed2038c5894f855c",
+                "title": "How Robust is Your Fairness? Evaluating and Sustaining Fairness under Unseen Distribution Shifts",
+                "abstract": "Increasing concerns have been raised on deep learning fairness in recent years. Existing fairness-aware machine learning methods mainly focus on the fairness of in-distribution data. However, in real-world applications, it is common to have distribution shift between the training and test data. In this paper, we first show that the fairness achieved by existing methods can be easily broken by slight distribution shifts. To solve this problem, we propose a novel fairness learning method termed CUrvature MAtching (CUMA), which can achieve robust fairness generalizable to unseen domains with unknown distributional shifts. Specifically, CUMA enforces the model to have similar generalization ability on the majority and minority groups, by matching the loss curvature distributions of the two groups. We evaluate our method on three popular fairness datasets. Compared with existing methods, CUMA achieves superior fairness under unseen distribution shifts, without sacrificing either the overall accuracy or the in-distribution fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "113727681",
+                        "name": "Haotao Wang"
+                    },
+                    {
+                        "authorId": "2110805917",
+                        "name": "Junyuan Hong"
+                    },
+                    {
+                        "authorId": "2143462929",
+                        "name": "Jiayu Zhou"
+                    },
+                    {
+                        "authorId": "2969311",
+                        "name": "Zhangyang Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "To the best of our knowledge, research in this domain is very scarce for fairness attacks [17, 22] compared to backdoor attacks and BlindSpot is the first technique leveraging fairness attacks for watermarking models.",
+                "[17] and consists in distorting the watermarked model\u2019s decision boundary by generating poisoned points near specific target points to bias (proportionally to a sensitivity bias s) the outcome."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "45cbb5a3b5abdcab871b7fc9b59b099e11ce0fe1",
+                "externalIds": {
+                    "DBLP": "conf/ih/LouniciOET22",
+                    "DOI": "10.1145/3531536.3532950",
+                    "CorpusId": 249960389
+                },
+                "corpusId": 249960389,
+                "publicationVenue": {
+                    "id": "a787c1d1-6429-4d3e-b5f5-56ac11fc9bca",
+                    "name": "Information Hiding and Multimedia Security Workshop",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IH&MMSec",
+                        "Inf Hiding Multimedia Secur Workshop"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1549"
+                },
+                "url": "https://www.semanticscholar.org/paper/45cbb5a3b5abdcab871b7fc9b59b099e11ce0fe1",
+                "title": "BlindSpot: Watermarking Through Fairness",
+                "abstract": "With the increasing development of machine learning models in daily businesses, a strong need for intellectual property protection arised. For this purpose, current works suggest to leverage backdoor techniques to embed a watermark into the model, by overfitting to a set of particularly crafted and secret input-output pairs called triggers. By sending verification queries containing triggers, the model owner can analyse the behavior of any suspect model on the queries to claim its ownership. However, when it comes to scenarios where frequent monitoring is needed, the computational overhead of these verification queries in terms of volume demonstrates that backdoor-based watermarking appears to be too sensitive to outlier detection attacks and cannot guarantee the secrecy of the triggers. To solve this issue, we introduce BlindSpot, to watermark machine learning models through fairness. Our trigger-less approach is compatible with a high number of verification queries while being robust to outlier detection attacks. We show on Fashion-MNIST and CIFAR-10 datasets that BlindSpot is efficiently watermarking models while robust to outlier detection attacks, at a performance cost on the accuracy of 2%.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2051873710",
+                        "name": "Sofiane Lounici"
+                    },
+                    {
+                        "authorId": "3249805",
+                        "name": "Melek \u00d6nen"
+                    },
+                    {
+                        "authorId": "2422805",
+                        "name": "Orhan Ermis"
+                    },
+                    {
+                        "authorId": "39663451",
+                        "name": "S. Trabelsi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                ", 2018; Zhang and Bareinboim, 2018; Zhang and Ntoutsi, 2019) and fairness reducing attacks (Hua et al., 2021; Mehrabi et al., 2020; Solans et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "64e5097bd40dfb5bf897bc310ab8ea673102f851",
+                "externalIds": {
+                    "ArXiv": "2206.00667",
+                    "DBLP": "conf/fat/GhoshBM23",
+                    "DOI": "10.1145/3593013.3593983",
+                    "CorpusId": 256808348
+                },
+                "corpusId": 256808348,
+                "publicationVenue": {
+                    "id": "cdc83875-a82d-445c-b097-cbe91afe99a8",
+                    "name": "Conference on Fairness, Accountability and Transparency",
+                    "type": "conference",
+                    "alternate_names": [
+                        "FAccT",
+                        "Conf Fairness Account Transpar"
+                    ],
+                    "url": "https://facctconference.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/64e5097bd40dfb5bf897bc310ab8ea673102f851",
+                "title": "\u201cHow Biased are Your Features?\u201d: Computing Fairness Influence Functions with Global Sensitivity Analysis",
+                "abstract": "Fairness in machine learning has attained significant focus due to the widespread application in high-stake decision-making tasks. Unregulated machine learning classifiers can exhibit bias towards certain demographic groups in data, thus the quantification and mitigation of classifier bias is a central concern in fairness in machine learning. In this paper, we aim to quantify the influence of different features in a dataset on the bias of a classifier. To do this, we introduce the Fairness Influence Function (FIF). This function breaks down bias into its components among individual features and the intersection of multiple features. The key idea is to represent existing group fairness metrics as the difference of the scaled conditional variances in the classifier\u2019s prediction and apply a decomposition of variance according to global sensitivity analysis. To estimate FIFs, we instantiate an algorithm that applies variance decomposition of classifier\u2019s prediction following local regression. Experiments demonstrate that captures FIFs of individual feature and intersectional features, provides a better approximation of bias based on FIFs, demonstrates higher correlation of FIFs with fairness interventions, and detects changes in bias due to fairness affirmative/punitive actions in the classifier. The code is available at https://github.com/ReAILe/bias-explainer. The extended version of the paper is at https://arxiv.org/pdf/2206.00667.pdf.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "49522533",
+                        "name": "Bishwamittra Ghosh"
+                    },
+                    {
+                        "authorId": "3214072",
+                        "name": "D. Basu"
+                    },
+                    {
+                        "authorId": "2065685010",
+                        "name": "Kuldeep S. Meel"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "ee5a743129e5785b92aff156a947ca8c6beabbbc",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-02392",
+                    "ArXiv": "2205.02392",
+                    "ACL": "2022.naacl-main.204",
+                    "DOI": "10.48550/arXiv.2205.02392",
+                    "CorpusId": 248524755
+                },
+                "corpusId": 248524755,
+                "publicationVenue": {
+                    "id": "01103732-3808-4930-b8e4-7e9e68d5c68d",
+                    "name": "North American Chapter of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "North Am Chapter Assoc Comput Linguistics",
+                        "NAACL"
+                    ],
+                    "url": "https://www.aclweb.org/portal/naacl"
+                },
+                "url": "https://www.semanticscholar.org/paper/ee5a743129e5785b92aff156a947ca8c6beabbbc",
+                "title": "Robust Conversational Agents against Imperceptible Toxicity Triggers",
+                "abstract": "Warning: this paper contains content that maybe offensive or upsetting.Recent research in Natural Language Processing (NLP) has advanced the development of various toxicity detection models with the intention of identifying and mitigating toxic language from existing systems. Despite the abundance of research in this area, less attention has been given to adversarial attacks that force the system to generate toxic language and the defense against them. Existing work to generate such attacks is either based on human-generated attacks which is costly and not scalable or, in case of automatic attacks, the attack vector does not conform to human-like language, which can be detected using a language model loss. In this work, we propose attacks against conversational agents that are imperceptible, i.e., they fit the conversation in terms of coherency, relevancy, and fluency, while they are effective and scalable, i.e., they can automatically trigger the system into generating toxic language. We then propose a defense mechanism against such attacks which not only mitigates the attack but also attempts to maintain the conversational flow. Through automatic and human evaluations, we show that our defense is effective at avoiding toxic language generation even against imperceptible toxicity triggers while the generated language fits the conversation in terms of coherency and relevancy. Lastly, we establish the generalizability of such a defense mechanism on language generation models beyond conversational agents.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51997673",
+                        "name": "Ninareh Mehrabi"
+                    },
+                    {
+                        "authorId": "1791052",
+                        "name": "Ahmad Beirami"
+                    },
+                    {
+                        "authorId": "2775559",
+                        "name": "Fred Morstatter"
+                    },
+                    {
+                        "authorId": "143728483",
+                        "name": "A. Galstyan"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In these attacks, the adversary supplies poisoned training data, which then results in models that either compromise the accuracy of targeted subgroups [48, 64] or exacerbate pre-existing unfairness between sub-"
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "806419d5cc363a945b6b76d61ad57589907fb73b",
+                "externalIds": {
+                    "DBLP": "conf/fat/GhoshJW22",
+                    "ArXiv": "2205.02414",
+                    "DOI": "10.1145/3531146.3533128",
+                    "CorpusId": 248524844
+                },
+                "corpusId": 248524844,
+                "publicationVenue": {
+                    "id": "cdc83875-a82d-445c-b097-cbe91afe99a8",
+                    "name": "Conference on Fairness, Accountability and Transparency",
+                    "type": "conference",
+                    "alternate_names": [
+                        "FAccT",
+                        "Conf Fairness Account Transpar"
+                    ],
+                    "url": "https://facctconference.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/806419d5cc363a945b6b76d61ad57589907fb73b",
+                "title": "Subverting Fair Image Search with Generative Adversarial Perturbations",
+                "abstract": "In this work we explore the intersection fairness and robustness in the context of ranking: when a ranking model has been calibrated to achieve some definition of fairness, is it possible for an external adversary to make the ranking model behave unfairly without having access to the model or training data? To investigate this question, we present a case study in which we develop and then attack a state-of-the-art, fairness-aware image search engine using images that have been maliciously modified using a Generative Adversarial Perturbation (GAP) model [75]. These perturbations attempt to cause the fair re-ranking algorithm to unfairly boost the rank of images containing people from an adversary-selected subpopulation. We present results from extensive experiments demonstrating that our attacks can successfully confer significant unfair advantage to people from the majority class relative to fairly-ranked baseline search results. We demonstrate that our attacks are robust across a number of variables, that they have close to zero impact on the relevance of search results, and that they succeed under a strict threat model. Our findings highlight the danger of deploying fair machine learning algorithms in-the-wild when (1) the data necessary to achieve fairness may be adversarially manipulated, and (2) the models themselves are not robust against attacks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "47581570",
+                        "name": "A. Ghosh"
+                    },
+                    {
+                        "authorId": "40844378",
+                        "name": "Matthew Jagielski"
+                    },
+                    {
+                        "authorId": "2111228581",
+                        "name": "Chris L. Wilson"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "data [108], [135], and cannot be directly grafted to the graph-structured data."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "8e11c4f14567d1257d4c8d8ac4e14446e1b99c36",
+                "externalIds": {
+                    "ArXiv": "2204.09888",
+                    "DBLP": "journals/corr/abs-2204-09888",
+                    "DOI": "10.1109/TKDE.2023.3265598",
+                    "CorpusId": 248300164
+                },
+                "corpusId": 248300164,
+                "publicationVenue": {
+                    "id": "c6840156-ee10-4d78-8832-7f8909811576",
+                    "name": "IEEE Transactions on Knowledge and Data Engineering",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Knowl Data Eng"
+                    ],
+                    "issn": "1041-4347",
+                    "url": "https://www.computer.org/web/tkde",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=69"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/8e11c4f14567d1257d4c8d8ac4e14446e1b99c36",
+                "title": "Fairness in Graph Mining: A Survey",
+                "abstract": "Graph mining algorithms have been playing a significant role in myriad fields over the years. However, despite their promising performance on various graph analytical tasks, most of these algorithms lack fairness considerations. As a consequence, they could lead to discrimination towards certain populations when exploited in human-centered applications. Recently, algorithmic fairness has been extensively studied in graph-based applications. In contrast to algorithmic fairness on independent and identically distributed (i.i.d.) data, fairness in graph mining has exclusive backgrounds, taxonomies, and fulfilling techniques. In this survey, we provide a comprehensive and up-to-date introduction of existing literature under the context of fair graph mining. Specifically, we propose a novel taxonomy of fairness notions on graphs, which sheds light on their connections and differences. We further present an organized summary of existing techniques that promote fairness in graph mining. Finally, we discuss current research challenges and open questions, aiming at encouraging cross-breeding ideas and further advances.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "123918726",
+                        "name": "Yushun Dong"
+                    },
+                    {
+                        "authorId": "2157405959",
+                        "name": "Jing Ma"
+                    },
+                    {
+                        "authorId": "2117075272",
+                        "name": "Song Wang"
+                    },
+                    {
+                        "authorId": "2127380428",
+                        "name": "Chen Chen"
+                    },
+                    {
+                        "authorId": "1737121128",
+                        "name": "Jundong Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For instance, the attacker may poison the training data to degrade the fairness of the model [129, 167] or mislead the GNN explainer model [53]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "cfb35f8c18fbc5baa453280ecd0aa8148bbba659",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2204-08570",
+                    "ArXiv": "2204.08570",
+                    "DOI": "10.48550/arXiv.2204.08570",
+                    "CorpusId": 248239981
+                },
+                "corpusId": 248239981,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/cfb35f8c18fbc5baa453280ecd0aa8148bbba659",
+                "title": "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability",
+                "abstract": "Graph Neural Networks (GNNs) have made rapid developments in the recent years. Due to their great ability in modeling graph-structured data, GNNs are vastly used in various applications, including high-stakes scenarios such as financial analysis, traffic predictions, and drug discovery. Despite their great potential in benefiting humans in the real world, recent study shows that GNNs can leak private information, are vulnerable to adversarial attacks, can inherit and magnify societal bias from training data and lack interpretability, which have risk of causing unintentional harm to the users and society. For example, existing works demonstrate that attackers can fool the GNNs to give the outcome they desire with unnoticeable perturbation on training graph. GNNs trained on social networks may embed the discrimination in their decision process, strengthening the undesirable societal bias. Consequently, trustworthy GNNs in various aspects are emerging to prevent the harm from GNN models and increase the users' trust in GNNs. In this paper, we give a comprehensive survey of GNNs in the computational aspects of privacy, robustness, fairness, and explainability. For each aspect, we give the taxonomy of the related methods and formulate the general frameworks for the multiple categories of trustworthy GNNs. We also discuss the future research directions of each aspect and connections between these aspects to help achieve trustworthiness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "152961073",
+                        "name": "Enyan Dai"
+                    },
+                    {
+                        "authorId": "1999191869",
+                        "name": "Tianxiang Zhao"
+                    },
+                    {
+                        "authorId": "1643792176",
+                        "name": "Huaisheng Zhu"
+                    },
+                    {
+                        "authorId": "2150636336",
+                        "name": "Jun Xu"
+                    },
+                    {
+                        "authorId": "2149465392",
+                        "name": "Zhimeng Guo"
+                    },
+                    {
+                        "authorId": "2146672392",
+                        "name": "Hui Liu"
+                    },
+                    {
+                        "authorId": "1736632",
+                        "name": "Jiliang Tang"
+                    },
+                    {
+                        "authorId": "2893721",
+                        "name": "Suhang Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recent works proposed online gradient descent algorithms for poisoning attacks against FERM, with respect to various fairness notions [11, 33, 44]."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "4cbc7d8b449a7a0e86901b23f31266cdaa128cd1",
+                "externalIds": {
+                    "ArXiv": "2204.05472",
+                    "DBLP": "journals/corr/abs-2204-05472",
+                    "DOI": "10.48550/arXiv.2204.05472",
+                    "CorpusId": 248118790
+                },
+                "corpusId": 248118790,
+                "publicationVenue": {
+                    "id": "234ccdc0-f58f-4f94-b86a-428d11a0c5ad",
+                    "name": "International Symposium on Information Theory",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International Symposium on Information Technology",
+                        "Int Symp Inf Theory",
+                        "Int Symp Inf Technol",
+                        "ISIT"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1719"
+                },
+                "url": "https://www.semanticscholar.org/paper/4cbc7d8b449a7a0e86901b23f31266cdaa128cd1",
+                "title": "Breaking Fair Binary Classification with Optimal Flipping Attacks",
+                "abstract": "Minimizing risk with fairness constraints is one of the popular approaches to learning a fair classifier. Recent works showed that this approach yields an unfair classifier if the training set is corrupted. In this work, we study the minimum amount of data corruption required for a successful flipping attack. First, we find lower/upper bounds on this quantity and show that these bounds are tight when the target model is the unique unconstrained risk minimizer. Second, we propose a computationally efficient data poisoning attack algorithm that can compromise the performance of fair learning algorithms.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "71663282",
+                        "name": "Changhun Jo"
+                    },
+                    {
+                        "authorId": "8414722",
+                        "name": "Jy-yong Sohn"
+                    },
+                    {
+                        "authorId": "2115495251",
+                        "name": "Kangwook Lee"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026having adversarial clients, or in general they did not consider cases where auditing and verification is needed, such as cases where the client data itself might be intentionally biased or poisoned (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020) and can corrupt the final global FL model.",
+                "the test, we needed different varieties of clients, the cooperative clients who would train less biased models, the uncooperative clients who would intentionally train their models on skewed/imbalanced data to bias their trained models (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020; Zhang and Zhou 2019) and normal clients.",
+                "\u2026of clients, the cooperative clients who would train less biased models, the uncooperative clients who would intentionally train their models on skewed/imbalanced data to bias their trained models (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020; Zhang and Zhou 2019) and normal clients.",
+                "\u2026train their models on imbalanced (Zhang and Zhou 2019), poisoned (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020), or poor quality data (Mehrabi et al. 2021a) that can contribute to the unfairness of their models, we decided to dedicate a central validation set for the server using\u2026",
+                "2021a), or poisoned data-points from data poisoning attacks against fairness (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020).",
+                "\u2026and regression (Agarwal, Dudik, and Wu 2019) in general ML, and many other NLP applications, such as translation (Basta, Costa-jussa\u0300, and Fonollosa 2020), language generation (Liu et al. 2020), named entity recognition (Mehrabi et al. 2020), and commonsense reasoning tasks (Mehrabi et al. 2021c).",
+                "To be able to satisfy different objectives including existing statistical fairness measures and be able to detect and downweight the effect of uncooperative or adversarial clients who might train their models on imbalanced (Zhang and Zhou 2019), poisoned (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020), or poor quality data (Mehrabi et al.",
+                "2021), they either considered satisfying such metrics locally by trusting the clients which might not be effective in case of having adversarial clients, or in general they did not consider cases where auditing and verification is needed, such as cases where the client data itself might be intentionally biased or poisoned (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020) and can corrupt the final global FL model.",
+                "\u2026detect and downweight the effect of uncooperative or adversarial clients who might train their models on imbalanced (Zhang and Zhou 2019), poisoned (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020), or poor quality data (Mehrabi et al. 2021a) that can contribute to the unfairness of their\u2026",
+                "Thus, although most of the previous work in fair federated learning focused on having a framework in which clients with different data distributions can be treated fairly and similarly to each other, not much attention has been given to standard statistical fairness metrics with regards to the existing sensitive attributes in the data and the destructive outcomes the unfair FL model can have in the existence of adversarial, uncooperative, or unfair clients who can train unfair models by poisoning their data instances (Mehrabi et al. 2021b).",
+                "Similar to federated learning, research in fair Machine Learning (ML) and Natural Language Processing (NLP)\nhas gained significant popularity in recent years (Mehrabi et al. 2021a).",
+                "This framework is also able to identify uncooperative or adversarial clients who might inject poisoned, unfair, or poor quality models to the overall FL system (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020).",
+                "\u2026fairness metrics with regards to the existing sensitive attributes in the data and the destructive outcomes the unfair FL model can have in the existence of adversarial, uncooperative, or unfair clients who can train unfair models by poisoning their data instances (Mehrabi et al. 2021b).",
+                "Even if the clients may not be adversarial, chances are that some clients may be training their models on an unintentionally biased data (Mehrabi et al. 2021a) that can corrupt the overall FL model."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "5c6776d5b3512af057e40587e070f7bb0a82387b",
+                "externalIds": {
+                    "ArXiv": "2201.09917",
+                    "DBLP": "journals/corr/abs-2201-09917",
+                    "CorpusId": 246276057
+                },
+                "corpusId": 246276057,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5c6776d5b3512af057e40587e070f7bb0a82387b",
+                "title": "Towards Multi-Objective Statistically Fair Federated Learning",
+                "abstract": "Federated Learning (FL) has emerged as a result of data ownership and privacy concerns to prevent data from being shared between multiple parties included in a training procedure. Although issues, such as privacy, have gained significant attention in this domain, not much attention has been given to satisfying statistical fairness measures in the FL setting. With this goal in mind, we conduct studies to show that FL is able to satisfy different fairness metrics under different data regimes consisting of different types of clients. More specifically, uncooperative or adversarial clients might contaminate the global FL model by injecting biased or poisoned models due to existing biases in their training datasets. Those biases might be a result of imbalanced training set (Zhang and Zhou 2019), historical biases (Mehrabi et al. 2021a), or poisoned data-points from data poisoning attacks against fairness (Mehrabi et al. 2021b; Solans, Biggio, and Castillo 2020). Thus, we propose a new FL framework that is able to satisfy multiple objectives including various statistical fairness metrics. Through experimentation, we then show the effectiveness of this method comparing it with various baselines, its ability in satisfying different objectives collectively and individually, and its ability in identifying uncooperative or adversarial clients and down-weighing their effect",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51997673",
+                        "name": "Ninareh Mehrabi"
+                    },
+                    {
+                        "authorId": "37302488",
+                        "name": "Cyprien de Lichy"
+                    },
+                    {
+                        "authorId": "2151090602",
+                        "name": "John McKay"
+                    },
+                    {
+                        "authorId": "2107094252",
+                        "name": "C. He"
+                    },
+                    {
+                        "authorId": "2151894885",
+                        "name": "William Campbell"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Explanations generated by our framework, which complement existing approaches in XAI, are crucial for helping system developers and ML practitioners to debug ML algorithms by identifying data errors and bias in training data, such as measurement errors andmisclassifications [35, 42, 94], data imbalance [27],missing data and selection bias [29, 61, 62], covariate shift [74, 82], technical biases introduced during data preparation [85], and poisonous data points injected through adversarial attacks [36, 43, 64, 83].",
+                "The most relevant classes of attacks are based on data poisoning [18, 84], which injects a minimum set of synthetic data points into the training data to compromise the performance or fairness of a model trained on the contaminated data [43, 64, 83].",
+                "However, anomaly detection fails in the presence of sophisticated attacks that are targeted at deteriorating model accuracy and/or fairness [36, 43, 64, 83]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a480cf099dceb512917ac119e6a9b524f4ac5aea",
+                "externalIds": {
+                    "DBLP": "conf/sigmod/PradhanZGS22",
+                    "ArXiv": "2112.09745",
+                    "DOI": "10.1145/3514221.3517886",
+                    "CorpusId": 245334934
+                },
+                "corpusId": 245334934,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a480cf099dceb512917ac119e6a9b524f4ac5aea",
+                "title": "Interpretable Data-Based Explanations for Fairness Debugging",
+                "abstract": "A wide variety of fairness metrics and eXplainable Artificial Intelligence (XAI) approaches have been proposed in the literature to identify bias in machine learning models that are used in critical real-life contexts. However, merely reporting on a model's bias or generating explanations using existing XAI techniques is insufficient to locate and eventually mitigate sources of bias. We introduce Gopher, a system that produces compact, interpretable, and causal explanations for bias or unexpected model behavior by identifying coherent subsets of the training data that are root-causes for this behavior. Specifically, we introduce the concept of causal responsibility that quantifies the extent to which intervening on training data by removing or updating subsets of it can resolve the bias. Building on this concept, we develop an efficient approach for generating the top-k patterns that explain model bias by utilizing techniques from the machine learning (ML) community to approximate causal responsibility, and using pruning rules to manage the large search space for patterns. Our experimental evaluation demonstrates the effectiveness of Gopher in generating interpretable explanations for identifying and debugging sources of bias.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "10787402",
+                        "name": "Romila Pradhan"
+                    },
+                    {
+                        "authorId": "2117052998",
+                        "name": "Jiongli Zhu"
+                    },
+                    {
+                        "authorId": "1798930",
+                        "name": "Boris Glavic"
+                    },
+                    {
+                        "authorId": "2124624117",
+                        "name": "Babak Salimi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Interestingly, the above optimization problem is a bi-level optimization [30], similar to attack optimizations formulated for fairness degrading attacks for supervised learning models [13, 14].",
+                "Similar to our work in this paper, most fairness degrading attack problems for these learning models are also bi-level optimization problems [13, 14], which are generally challenging to solve."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "result",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "caeb2571671c50769610ba5b49a92b2f2b7bcd5c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2110-12020",
+                    "ArXiv": "2110.12020",
+                    "CorpusId": 239768614
+                },
+                "corpusId": 239768614,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/caeb2571671c50769610ba5b49a92b2f2b7bcd5c",
+                "title": "Fairness Degrading Adversarial Attacks Against Clustering Algorithms",
+                "abstract": "Clustering algorithms are ubiquitous in modern data science pipelines, and are utilized in numerous fields ranging from biology to facility location. Due to their widespread use, especially in societal resource allocation problems, recent research has aimed at making clustering algorithms fair, with great success. Furthermore, it has also been shown that clustering algorithms, much like other machine learning algorithms, are susceptible to adversarial attacks where a malicious entity seeks to subvert the performance of the learning algorithm. However, despite these known vulnerabilities, there has been no research undertaken that investigates fairness degrading adversarial attacks for clustering. We seek to bridge this gap by formulating a generalized attack optimization problem aimed at worsening the group-level fairness of centroid-based clustering algorithms. As a first step, we propose a fairness degrading attack algorithm for k-median clustering that operates under a whitebox threat model -- where the clustering algorithm, fairness notion, and the input dataset are known to the adversary. We provide empirical results as well as theoretical analysis for our simple attack algorithm, and find that the addition of the generated adversarial samples can lead to significantly lower fairness values. In this manner, we aim to motivate fairness degrading adversarial attacks as a direction for future research in fair clustering.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "10698930",
+                        "name": "Anshuman Chhabra"
+                    },
+                    {
+                        "authorId": "1703727",
+                        "name": "A. Singla"
+                    },
+                    {
+                        "authorId": "144752813",
+                        "name": "P. Mohapatra"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "There have been a few works on attacking fair machine learning models very recently (Chang et al. 2020; Solans, Biggio, and Castillo 2020; Roh et al. 2020; Mehrabi et al. 2020).",
+                "Mehrabi et al. (2020) also focused on attacking FML models trained with fairness constraint of demographic disparity.",
+                "Mehrabi et al. (2020) also focused on demographic disparity and presented anchoring attack and influence attack."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "44c5b8c6fa185ccf557c18e59887e24ab52004ce",
+                "externalIds": {
+                    "DBLP": "conf/dasfaa/VanDWL22",
+                    "ArXiv": "2110.08932",
+                    "DOI": "10.1007/978-3-031-00123-9_30",
+                    "CorpusId": 239016907
+                },
+                "corpusId": 239016907,
+                "publicationVenue": {
+                    "id": "8107ca1c-f651-4769-86dc-3d94a7b5ac26",
+                    "name": "International Conference on Database Systems for Advanced Applications",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Database Syst Adv Appl",
+                        "Database Syst Adv Appl",
+                        "Database Systems for Advanced Applications",
+                        "DASFAA"
+                    ],
+                    "url": "http://www.dasfaa.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/44c5b8c6fa185ccf557c18e59887e24ab52004ce",
+                "title": "Poisoning Attacks on Fair Machine Learning",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2133332408",
+                        "name": "Minh-Hao Van"
+                    },
+                    {
+                        "authorId": "2072591567",
+                        "name": "Wei Du"
+                    },
+                    {
+                        "authorId": "7916525",
+                        "name": "Xintao Wu"
+                    },
+                    {
+                        "authorId": "49783579",
+                        "name": "Aidong Lu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Data poisoning attacks that target fairness controls have been recently developed [78,54]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "19e539f11068875cfd5ab1a8ee4dfaaa96a59743",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2107-01979",
+                    "ArXiv": "2107.01979",
+                    "DOI": "10.1007/978-3-030-87839-9_2",
+                    "CorpusId": 235732274
+                },
+                "corpusId": 235732274,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/19e539f11068875cfd5ab1a8ee4dfaaa96a59743",
+                "title": "Machine Learning for Fraud Detection in E-Commerce: A Research Agenda",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1836097",
+                        "name": "Niek Tax"
+                    },
+                    {
+                        "authorId": "143647685",
+                        "name": "Kees Jan de Vries"
+                    },
+                    {
+                        "authorId": "2117590780",
+                        "name": "Mathijs de Jong"
+                    },
+                    {
+                        "authorId": "3417792",
+                        "name": "Nikoleta Dosoula"
+                    },
+                    {
+                        "authorId": "81269354",
+                        "name": "Bram van den Akker"
+                    },
+                    {
+                        "authorId": "2118968057",
+                        "name": "Jon Smith"
+                    },
+                    {
+                        "authorId": "2117590813",
+                        "name": "Olivier Thuong"
+                    },
+                    {
+                        "authorId": "38239271",
+                        "name": "Lucas Bernardi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "If the training data is not representative of the actual data distribution, e.g. it is noisy, biased, or has been manipulated, then fairness-enforcing mechanisms fall short (Kallus et al., 2020; Mehrabi et al., 2021b).",
+                "\u2026harmful is impossible to solve in general, see e.g. Charikar et al. (2017)\nFairness-aware learning In the last years, a plethora of algorithms have been developed that are able to learn classifiers that are not only accurate but also fair, see, for example Mehrabi et al. (2021a) for an overview.",
+                "\u2022 random anchor (RA0/RA1): these adversaries follow the protocol introduced in Mehrabi et al. (2021b)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "ec5735d77d486201bf68b566861c7b4bf6d4ee7a",
+                "externalIds": {
+                    "ArXiv": "2106.11732",
+                    "DBLP": "journals/tmlr/IofinovaKL22",
+                    "CorpusId": 253155981
+                },
+                "corpusId": 253155981,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ec5735d77d486201bf68b566861c7b4bf6d4ee7a",
+                "title": "FLEA: Provably Robust Fair Multisource Learning from Unreliable Training Data",
+                "abstract": "Fairness-aware learning aims at constructing classifiers that not only make accurate predictions, but also do not discriminate against specific groups. It is a fast-growing area of machine learning with far-reaching societal impact. However, existing fair learning methods are vulnerable to accidental or malicious artifacts in the training data, which can cause them to unknowingly produce unfair classifiers. In this work we address the problem of fair learning from unreliable training data in the robust multisource setting, where the available training data comes from multiple sources, a fraction of which might not be representative of the true data distribution. We introduce FLEA, a filtering-based algorithm that identifies and suppresses those data sources that would have a negative impact on fairness or accuracy if they were used for training. As such, FLEA is not a replacement of prior fairness-aware learning methods but rather an augmentation that makes any of them robust against unreliable training data. We show the effectiveness of our approach by a diverse range of experiments on multiple datasets. Additionally, we prove formally that -- given enough data -- FLEA protects the learner against corruptions as long as the fraction of affected data sources is less than half. Our source code and documentation are available at https://github.com/ISTAustria-CVML/FLEA.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2082370867",
+                        "name": "Eugenia Iofinova"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In fact, recent work has demonstrated empirically that strong poisoning attacks can negatively impact the fairness of specific learners based on loss minimization (Solans et al., 2020; Chang et al., 2020; Mehrabi et al., 2021).",
+                "In particular, Solans et al. (2020), Chang et al. (2020) and Mehrabi et al. (2021) consider practical, gradient-based poisoning attacks against machine learning algorithms."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "cf90ea47e52f52164e457036a93d1a8e9912341f",
+                "externalIds": {
+                    "DBLP": "journals/jmlr/KonstantinovL22",
+                    "ArXiv": "2102.06004",
+                    "CorpusId": 238418970
+                },
+                "corpusId": 238418970,
+                "publicationVenue": {
+                    "id": "c22e7c36-3bfa-43e1-bb7b-edccdea2a780",
+                    "name": "Journal of machine learning research",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Journal of Machine Learning Research",
+                        "J mach learn res",
+                        "J Mach Learn Res"
+                    ],
+                    "issn": "1532-4435",
+                    "alternate_issns": [
+                        "1533-7928"
+                    ],
+                    "url": "http://www.ai.mit.edu/projects/jmlr/",
+                    "alternate_urls": [
+                        "http://jmlr.csail.mit.edu/",
+                        "http://www.jmlr.org/",
+                        "http://portal.acm.org/affiliated/jmlr"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/cf90ea47e52f52164e457036a93d1a8e9912341f",
+                "title": "Fairness-Aware PAC Learning from Corrupted Data",
+                "abstract": "Addressing fairness concerns about machine learning models is a crucial step towards their long-term adoption in real-world automated systems. While many approaches have been developed for training fair models from data, little is known about the robustness of these methods to data corruption. In this work we consider fairness-aware learning under worst-case data manipulations. We show that an adversary can in some situations force any learner to return an overly biased classifier, regardless of the sample size and with or without degrading accuracy, and that the strength of the excess bias increases for learning problems with underrepresented protected groups in the data. We also prove that our hardness results are tight up to constant factors. To this end, we study two natural learning algorithms that optimize for both accuracy and fairness and show that these algorithms enjoy guarantees that are order-optimal in terms of the corruption ratio and the protected groups frequencies in the large data limit.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145292827",
+                        "name": "Nikola Konstantinov"
+                    },
+                    {
+                        "authorId": "48523189",
+                        "name": "Christoph H. Lampert"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[39] Ninareh Mehrabi, Muhammad Naveed, Fred Morstatter, and Aram Galstyan.",
+                "Recent works have proposed poisoning attacks on fairness [39, 52]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "8090e47b31a31941e6812e7b8bbace41b917857c",
+                "externalIds": {
+                    "DBLP": "conf/fat/NandaD0FD21",
+                    "MAG": "3035765133",
+                    "ArXiv": "2006.12621",
+                    "DOI": "10.1145/3442188.3445910",
+                    "CorpusId": 219980398
+                },
+                "corpusId": 219980398,
+                "publicationVenue": {
+                    "id": "cdc83875-a82d-445c-b097-cbe91afe99a8",
+                    "name": "Conference on Fairness, Accountability and Transparency",
+                    "type": "conference",
+                    "alternate_names": [
+                        "FAccT",
+                        "Conf Fairness Account Transpar"
+                    ],
+                    "url": "https://facctconference.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8090e47b31a31941e6812e7b8bbace41b917857c",
+                "title": "Fairness Through Robustness: Investigating Robustness Disparity in Deep Learning",
+                "abstract": "Deep neural networks (DNNs) are increasingly used in real-world applications (e.g. facial recognition). This has resulted in concerns about the fairness of decisions made by these models. Various notions and measures of fairness have been proposed to ensure that a decision-making system does not disproportionately harm (or benefit) particular subgroups of the population. In this paper, we argue that traditional notions of fairness that are only based on models' outputs are not sufficient when the model is vulnerable to adversarial attacks. We argue that in some cases, it may be easier for an attacker to target a particular subgroup, resulting in a form of robustness bias. We show that measuring robustness bias is a challenging task for DNNs and propose two methods to measure this form of bias. We then conduct an empirical study on state-of-the-art neural networks on commonly used real-world datasets such as CIFAR-10, CIFAR-100, Adience, and UTKFace and show that in almost all cases there are subgroups (in some cases based on sensitive attributes like race, gender, etc) which are less robust and are thus at a disadvantage. We argue that this kind of bias arises due to both the data distribution and the highly complex nature of the learned decision boundary in the case of DNNs, thus making mitigation of such biases a non-trivial task. Our results show that robustness bias is an important criterion to consider while auditing real-world systems that rely on DNNs for decision making. Code to reproduce all our results can be found here: https://github.com/nvedant07/Fairness-Through-Robustness",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "17974944",
+                        "name": "Vedant Nanda"
+                    },
+                    {
+                        "authorId": "2066631240",
+                        "name": "S. Dooley"
+                    },
+                    {
+                        "authorId": "144190575",
+                        "name": "Sahil Singla"
+                    },
+                    {
+                        "authorId": "34389431",
+                        "name": "S. Feizi"
+                    },
+                    {
+                        "authorId": "1718974",
+                        "name": "John P. Dickerson"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We conducted a reproducibility study of the paper Exacerbating Algorithmic Bias through Fairness Attacks [11].",
+                "Although the response was259 fairly quick, we were prompted to check the existing code in-depth, while further communication was discouraged.260\n7 Conclusion261\nIn this reproduction study, we extensively reviewed the paper Exacerbating Algorithmic Bias through Fairness Attacks.262 We provided a clear foundation, upon which we described the proposed data poisoning attacks, namely the influence263 attack on fairness and the anchoring attack, as well as the experimental setup of the original paper.",
+                "Figure 1: Impact on performance and fairness of a logistic regression classifier, using the attacks proposed in [11] and other state-of-the-art methods, for increasing \u03b5 values.",
+                "Current research is primarily focused on adversarial attacks 35 targeting the performance of machine learning systems [3, 10], but recent studies indicate that adversarial attacks can 36 also be used to target fairness [11, 12, 13].",
+                "[Re] Exacerbating Algorithmic Bias through Fairness Attacks\nAnonymous Author(s) Affiliation Address email\nReproducibility Summary1\nScope of Reproducibility2\nWe conducted a reproducibility study of the paper Exacerbating Algorithmic Bias through Fairness Attacks [11].3 According to the paper, current research on adversarial attacks is primarily focused on targeting model performance,4 which motivates the need for adversarial attacks on fairness."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "365fddd089a10b11833abf976e5d47368fff3475",
+                "externalIds": {
+                    "CorpusId": 247496480
+                },
+                "corpusId": 247496480,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/365fddd089a10b11833abf976e5d47368fff3475",
+                "title": "[Re] Exacerbating Algorithmic Bias through Fairness Attacks",
+                "abstract": "We conducted a reproducibility study of the paper Exacerbating Algorithmic Bias through Fairness Attacks [11]. 3 According to the paper, current research on adversarial attacks is primarily focused on targeting model performance, 4 which motivates the need for adversarial attacks on fairness. To that end, the authors propose two novel data poisoning 5 adversarial attacks, the influence attack on fairness and the anchoring attack. We aim to verify the main claims of the 6 paper, namely that: a) the proposed methods indeed affect a model\u2019s fairness and outperform existing attacks, b) the 7 anchoring attack hardly affects performance, while impacting fairness, and c) the influence attack on fairness provides a 8 controllable trade-off between performance and fairness degradation. 9",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145505225",
+                        "name": "Kalapriya Kannan"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "FIFs do not only allow practitioners to identify the features to act up on but also to quantify the effect of various affirmative [8, 19, 23, 45\u201348] or punitive actions [21, 32, 42] on the resulting bias."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "f98f98e6f9494f715637f5a29b799b3469774ca9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-00667",
+                    "DOI": "10.48550/arXiv.2206.00667",
+                    "CorpusId": 249282346
+                },
+                "corpusId": 249282346,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f98f98e6f9494f715637f5a29b799b3469774ca9",
+                "title": "How Biased is Your Feature?: Computing Fairness Influence Functions with Global Sensitivity Analysis",
+                "abstract": "Fairness in machine learning has attained signi\ufb01cant focus due to the widespread application of machine learning in high-stake decision-making tasks. Unless reg-ulated with a fairness objective, machine learning classi\ufb01ers might demonstrate unfairness/bias towards certain demographic populations in the data. Thus, the quanti\ufb01cation and mitigation of the bias induced by classi\ufb01ers have become a central concern. In this paper, we aim to quantify the in\ufb02uence of different features on the bias of a classi\ufb01er . To this end, we propose a framework of Fairness In\ufb02uence Function (FIF), and compute it as a scaled difference of conditional variances in the classi\ufb01er\u2019s prediction. We also instantiate an algorithm, FairXplainer , that uses variance decomposition among the subset of features and a local regressor to compute FIFs accurately, while also capturing the intersectional effects of the features. Our experimental analysis validates that FairXplainer captures the in\ufb02uences of both individual features and higher-order feature interactions, estimates the bias more accurately than existing local explanation methods, and detects the increase/decrease in bias due to af\ufb01rmative/punitive actions in the classi\ufb01er.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "49522533",
+                        "name": "Bishwamittra Ghosh"
+                    },
+                    {
+                        "authorId": "3214072",
+                        "name": "D. Basu"
+                    },
+                    {
+                        "authorId": "2065685010",
+                        "name": "Kuldeep S. Meel"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recently, Mehrabi et al. (Mehrabi et al., 2021) propose two families of attacks targeting fairness measures, which urges us to audit algorithm fairness carefully.",
+                "(Mehrabi et al., 2021) propose two families of attacks targeting fairness measures, which urges us to audit algorithm fairness carefully."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "269310b6fac809819421dab92db88a6db037a936",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-13177",
+                    "DOI": "10.48550/arXiv.2209.13177",
+                    "CorpusId": 252544868
+                },
+                "corpusId": 252544868,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/269310b6fac809819421dab92db88a6db037a936",
+                "title": "A Survey of Fairness in Medical Image Analysis: Concepts, Algorithms, Evaluations, and Challenges",
+                "abstract": "Fairness, a criterion focuses on evaluating algorithm performance on di \ufb00 erent demographic groups, has gained attention in natural language processing, recommendation system and facial recognition. Since there are plenty of demographic attributes in medical image samples, it is important to understand the concepts of fairness, be acquainted with unfairness mitigation techniques, evaluate fairness degree of an algorithm and rec-ognize challenges in fairness issues in medical image analysis (MedIA). In this paper, we \ufb01rst give a comprehensive and precise de\ufb01nition of fairness, following by introducing currently used techniques in fairness issues in MedIA. After that, we list public medical image datasets that contain demographic attributes for facilitating the fairness research and summarize current algorithms concerning fairness in MedIA. To help achieve a better understanding of fairness, and call attention to fairness related issues in MedIA, experiments are conducted comparing the di \ufb00 erence between fairness and data imbalance, verifying the existence of unfairness in various MedIA tasks, especially in classi\ufb01cation, segmentation and detection, and evaluating the e \ufb00 ectiveness of unfairness mitigation algorithms. Finally, we conclude with opportunities and challenges in fairness in MedIA.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2155442465",
+                        "name": "Zikang Xu"
+                    },
+                    {
+                        "authorId": "2152753361",
+                        "name": "Jun Li"
+                    },
+                    {
+                        "authorId": "2053124709",
+                        "name": "Qingsong Yao"
+                    },
+                    {
+                        "authorId": "2118385088",
+                        "name": "Han Li"
+                    },
+                    {
+                        "authorId": "8183127",
+                        "name": "Xinfa Shi"
+                    },
+                    {
+                        "authorId": "2107323185",
+                        "name": "S. K. Zhou"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Another limitation is that of robustness and further research on adversarial attacks on fairness [38] should be investigated."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3040f6116564a7d33dc718a5a119690ed5d64ad8",
+                "externalIds": {
+                    "DBLP": "conf/eccv/CheongKG22",
+                    "DOI": "10.1007/978-3-031-25072-9_16",
+                    "CorpusId": 253528179
+                },
+                "corpusId": 253528179,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3040f6116564a7d33dc718a5a119690ed5d64ad8",
+                "title": "Counterfactual Fairness for Facial Expression Recognition",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2006271645",
+                        "name": "J. Cheong"
+                    },
+                    {
+                        "authorId": "48382704",
+                        "name": "S. Kalkan"
+                    },
+                    {
+                        "authorId": "1781916",
+                        "name": "H. Gunes"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In the experiment, we use the Drug consumption dataset, as used in (Mehrabi et al., 2020; Donini et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "886726f924c09e1bbb0cf5a121f53b9c5adf8f1c",
+                "externalIds": {
+                    "DBLP": "conf/data/ColakovicK22",
+                    "DOI": "10.5220/0011287400003269",
+                    "CorpusId": 250572808
+                },
+                "corpusId": 250572808,
+                "publicationVenue": {
+                    "id": "dea8d7a8-c89e-4de9-bde3-0787594a055f",
+                    "name": "International Conference on Data Technologies and Applications",
+                    "type": "conference",
+                    "alternate_names": [
+                        "DATA",
+                        "International Conference on Data Science, E-Learning and Information Systems",
+                        "Int Conf Data Sci E-learning Inf Syst",
+                        "Data",
+                        "Int Conf Data Technol Appl"
+                    ],
+                    "issn": "2306-5729",
+                    "url": "http://www.dataconference.org/",
+                    "alternate_urls": [
+                        "https://www.mdpi.com/journal/data",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-495069",
+                        "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-495069"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/886726f924c09e1bbb0cf5a121f53b9c5adf8f1c",
+                "title": "Improved Boosted Classification to Mitigate the Ethnicity and Age Group Unfairness",
+                "abstract": ": This paper deals with the group fairness issue that arises when classifying data, which contains socially in-duced biases for age and ethnicity. To tackle the unfair focus on certain age and ethnicity groups, we propose an adaptive boosting method that balances the fair treatment of all groups. The proposed approach builds upon the AdaBoost method but supplements it with the factor of fairness between the sensitive groups. The results show that the proposed method focuses more on the age and ethnicity groups, given less focus with traditional classi\ufb01cation techniques. Thus the resulting classi\ufb01cation model is more balanced, treating all of the sensitive groups more equally without sacri\ufb01cing the overall quality of the classi\ufb01cation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2176450298",
+                        "name": "Ivona Colakovic"
+                    },
+                    {
+                        "authorId": "1681718",
+                        "name": "S. Karakati\u010d"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In particular, (Solans et al., 2020; Chang et al., 2020; Mehrabi et al., 2020) considering practical, gradientbased poisoning attacks against fairness-aware learners."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "92a5ae303da29f0b79239be7de7171da97179c81",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2102-06004",
+                    "CorpusId": 231879578
+                },
+                "corpusId": 231879578,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/92a5ae303da29f0b79239be7de7171da97179c81",
+                "title": "Fairness-Aware Learning from Corrupted Data",
+                "abstract": "Addressing fairness concerns about machine learning models is a crucial step towards their long-term adoption in real-world automated systems. While many approaches have been developed for training fair models from data, little is known about the effects of data corruption on these methods. In this work we consider fairness-aware learning under arbitrary data manipulations. We show that an adversary can force any learner to return a biased classifier, with or without degrading accuracy, and that the strength of this bias increases for learning problems with underrepresented protected groups in the data. We also provide upper bounds that match these hardness results up to constant factors, by proving that two natural learning algorithms achieve order-optimal guarantees in terms of both accuracy and fairness under adversarial data manipulations.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145292827",
+                        "name": "Nikola Konstantinov"
+                    },
+                    {
+                        "authorId": "1787591",
+                        "name": "Christoph H. Lampert"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This effect has been observed multiple times in the literature [22, 32, 35, 39]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "ae941ec76eea5f82c1f0968373f945df488dfd9b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2106-11732",
+                    "CorpusId": 235592857
+                },
+                "corpusId": 235592857,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ae941ec76eea5f82c1f0968373f945df488dfd9b",
+                "title": "FLEA: Provably Fair Multisource Learning from Unreliable Training Data",
+                "abstract": "Fairness-aware learning aims at constructing classifiers that not only make accurate predictions, but do not to discriminate against specific groups. It is a fast-growing area of machine learning with far-reaching societal impact. However, existing fair learning methods are vulnerable to accidental or malicious artifacts in the training data, which can cause them to unknowingly produce unfair classifiers. In this work we address the problem of fair learning from unreliable training data in the robust multisource setting, where the available training data comes from multiple sources, a fraction of which might be not representative of the true data distribution. We introduce FLEA, a filtering-based algorithm that allows the learning system to identify and suppress those data sources that would have a negative impact on fairness or accuracy if they were used for training. We show the effectiveness of our approach by a diverse range of experiments on multiple datasets. Additionally we prove formally that \u2013given enough data\u2013 FLEA protects the learner against unreliable data as long as the fraction of affected data sources is less than half.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2082370867",
+                        "name": "Eugenia Iofinova"
+                    },
+                    {
+                        "authorId": "145292827",
+                        "name": "Nikola Konstantinov"
+                    },
+                    {
+                        "authorId": "48523189",
+                        "name": "Christoph H. Lampert"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Research reproducibility: Given the increasing number of papers on fairness in AI [6, 32, 48, 49, 63, 65, 79, 105], software engineering [10, 14, 16, 94], and other conferences [2, 18, 52], reproducibility becomes increasingly important [4, 78]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "dc1623fdc58b8114e0e7cb84a1232c59d5353252",
+                "externalIds": {
+                    "DBLP": "conf/nips/QianPLHKTYCS21",
+                    "CorpusId": 244101462
+                },
+                "corpusId": 244101462,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/dc1623fdc58b8114e0e7cb84a1232c59d5353252",
+                "title": "Are My Deep Learning Systems Fair? An Empirical Study of Fixed-Seed Training",
+                "abstract": "Deep learning (DL) systems have been gaining popularity in critical tasks such as credit evaluation and crime prediction. Such systems demand fairness. Recent work shows that DL software implementations introduce variance: identical DL training runs (i.e., identical network, data, configuration, software, and hardware) with a fixed seed produce different models. Such variance could make DL models and networks violate fairness compliance laws, resulting in negative social impact. In this paper, we conduct the first empirical study to quantify the impact of software implementation on the fairness and its variance of DL systems. Our study of 22 mitigation techniques and five baselines reveals up to 12.6% fairness variance across identical training runs with identical seeds. In addition, most debiasing algorithms have a negative impact on the model such as reducing model accuracy, increasing fairness variance, or increasing accuracy variance. Our literature survey shows that while fairness is gaining popularity in artificial intelligence (AI) related conferences, only 34.4% of the papers use multiple identical training runs to evaluate their approach, raising concerns about their results\u2019 validity. We call for better fairness evaluation and testing protocols to improve fairness and fairness variance of DL systems as well as DL research validity and reproducibility at large.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2112296840",
+                        "name": "Shangshu Qian"
+                    },
+                    {
+                        "authorId": "49976542",
+                        "name": "H. Pham"
+                    },
+                    {
+                        "authorId": "2492099",
+                        "name": "Thibaud Lutellier"
+                    },
+                    {
+                        "authorId": "1753512618",
+                        "name": "Zeou Hu"
+                    },
+                    {
+                        "authorId": "2164069492",
+                        "name": "Jungwon Kim"
+                    },
+                    {
+                        "authorId": "2106349652",
+                        "name": "Lin Tan"
+                    },
+                    {
+                        "authorId": "40508553",
+                        "name": "Yaoliang Yu"
+                    },
+                    {
+                        "authorId": "49252617",
+                        "name": "Jiahao Chen"
+                    },
+                    {
+                        "authorId": "36532736",
+                        "name": "Sameena Shah"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In particular, Solans et al. (2020); Chang et al. (2020); Mehrabi et al. (2020) consider practical, gradient-based poisoning attacks against machine learning algorithms."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "cec4d48a63b99382e0f615b74e4b1e773d1cef55",
+                "externalIds": {
+                    "DBLP": "conf/afci/KonstantinovL21",
+                    "CorpusId": 247155554
+                },
+                "corpusId": 247155554,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/cec4d48a63b99382e0f615b74e4b1e773d1cef55",
+                "title": "On the Impossibility of Fairness-Aware Learning from Corrupted Data",
+                "abstract": "Addressing fairness concerns about machine learning models is a crucial step towards their long-term adoption in real-world automated systems. Many approaches for training fair models from data have been developed and an implicit assumption about such algorithms is that they are able to recover a fair model, despite potential historical biases in the data. In this work we show a number of impossibility results that indicate that there is no learning algorithm that can recover a fair model when a proportion of the dataset is subject to arbitrary manipulations. Specifically, we prove that there are situations in which an adversary can force any learner to return a biased classifier, with or without degrading accuracy, and that the strength of this bias increases for learning problems with underrepresented protected groups in the data. Our results emphasize on the importance of studying further data corruption models of various strength and of establishing stricter data collection practices for fairness-aware learning.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145292827",
+                        "name": "Nikola Konstantinov"
+                    },
+                    {
+                        "authorId": "48523189",
+                        "name": "Christoph H. Lampert"
+                    }
+                ]
+            }
+        }
+    ]
+}

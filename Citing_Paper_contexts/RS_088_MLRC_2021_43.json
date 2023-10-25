@@ -1,0 +1,2212 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "ing [147], data debiasing [38, 149], synthetic sampling [268, 290], and using specialized optimization functions for creating fair classifiers (according to traditional metrics) with unbalanced data [143, 174]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5531dd953832d86253d08b739eaa9312c7c6f610",
+                "externalIds": {
+                    "ArXiv": "2309.17337",
+                    "DOI": "10.1145/3617694.3623259",
+                    "CorpusId": 263311003
+                },
+                "corpusId": 263311003,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/5531dd953832d86253d08b739eaa9312c7c6f610",
+                "title": "Toward Operationalizing Pipeline-aware ML Fairness: A Research Agenda for Developing Practical Guidelines and Tools",
+                "abstract": "While algorithmic fairness is a thriving area of research, in practice, mitigating issues of bias often gets reduced to enforcing an arbitrarily chosen fairness metric, either by enforcing fairness constraints during the optimization step, post-processing model outputs, or by manipulating the training data. Recent work has called on the ML community to take a more holistic approach to tackle fairness issues by systematically investigating the many design choices made through the ML pipeline, and identifying interventions that target the issue's root cause, as opposed to its symptoms. While we share the conviction that this pipeline-based approach is the most appropriate for combating algorithmic unfairness on the ground, we believe there are currently very few methods of \\emph{operationalizing} this approach in practice. Drawing on our experience as educators and practitioners, we first demonstrate that without clear guidelines and toolkits, even individuals with specialized ML knowledge find it challenging to hypothesize how various design choices influence model behavior. We then consult the fair-ML literature to understand the progress to date toward operationalizing the pipeline-aware approach: we systematically collect and organize the prior work that attempts to detect, measure, and mitigate various sources of unfairness through the ML pipeline. We utilize this extensive categorization of previous contributions to sketch a research agenda for the community. We hope this work serves as the stepping stone toward a more comprehensive set of resources for ML researchers, practitioners, and students interested in exploring, designing, and testing pipeline-oriented approaches to algorithmic fairness.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2249533192",
+                        "name": "Emily Black"
+                    },
+                    {
+                        "authorId": "2249533181",
+                        "name": "Rakshit Naidu"
+                    },
+                    {
+                        "authorId": "1791498",
+                        "name": "R. Ghani"
+                    },
+                    {
+                        "authorId": "6783324",
+                        "name": "Kit T. Rodolfa"
+                    },
+                    {
+                        "authorId": "2249533466",
+                        "name": "Daniel E. Ho"
+                    },
+                    {
+                        "authorId": "2249539262",
+                        "name": "Hoda Heidari"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "While some researchers generate data to make their data discrimination free or more fair from a causal lens [38, 43, 44], we generate synthetic datasets, not with a de-biasing goal, but to represent different dataset compositions from which models can learn and we can study their effects on impact."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d2459ca6704c4354d1c52c2d7e64954dddd571f6",
+                "externalIds": {
+                    "DBLP": "conf/aies/JorgensenRBCS23",
+                    "DOI": "10.1145/3600211.3604699",
+                    "CorpusId": 261279496
+                },
+                "corpusId": 261279496,
+                "publicationVenue": {
+                    "id": "ace94611-0469-4818-ae70-43bdb8082d73",
+                    "name": "AAAI/ACM Conference on AI, Ethics, and Society",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AAAI/ACM conference Artificial Intelligence, Ethics, and Society",
+                        "AIES",
+                        "AAAI/ACM Conf AI Ethics Soc",
+                        "AAAI/ACM conf Artif Intell Ethics Soc",
+                        "AIES "
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d2459ca6704c4354d1c52c2d7e64954dddd571f6",
+                "title": "Not So Fair: The Impact of Presumably Fair Machine Learning Models",
+                "abstract": "When bias mitigation methods are applied to make fairer machine learning models in fairness-related classification settings, there is an assumption that the disadvantaged group should be better off than if no mitigation method was applied. However, this is a potentially dangerous assumption because a \u201cfair\u201d model outcome does not automatically imply a positive impact for a disadvantaged individual\u2014they could still be negatively impacted. Modeling and accounting for those impacts is key to ensure that mitigated models are not unintentionally harming individuals; we investigate if mitigated models can still negatively impact disadvantaged individuals and what conditions affect those impacts in a loan repayment example. Our results show that most mitigated models negatively impact disadvantaged group members in comparison to the unmitigated models. The domain-dependent impacts of model outcomes should help drive future bias mitigation method development.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "39769237",
+                        "name": "Mackenzie Jorgensen"
+                    },
+                    {
+                        "authorId": "2235102005",
+                        "name": "Hannah Richert"
+                    },
+                    {
+                        "authorId": "2193249636",
+                        "name": "Elizabeth Black"
+                    },
+                    {
+                        "authorId": "1799571",
+                        "name": "N. Criado"
+                    },
+                    {
+                        "authorId": "144622087",
+                        "name": "J. Such"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "60a87d195a68317a1fcfc56705b7952a3daccf4b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-16526",
+                    "ArXiv": "2307.16526",
+                    "DOI": "10.48550/arXiv.2307.16526",
+                    "CorpusId": 260333937
+                },
+                "corpusId": 260333937,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/60a87d195a68317a1fcfc56705b7952a3daccf4b",
+                "title": "No Fair Lunch: A Causal Perspective on Dataset Bias in Machine Learning for Medical Imaging",
+                "abstract": "As machine learning methods gain prominence within clinical decision-making, addressing fairness concerns becomes increasingly urgent. Despite considerable work dedicated to detecting and ameliorating algorithmic bias, today's methods are deficient with potentially harmful consequences. Our causal perspective sheds new light on algorithmic bias, highlighting how different sources of dataset bias may appear indistinguishable yet require substantially different mitigation strategies. We introduce three families of causal bias mechanisms stemming from disparities in prevalence, presentation, and annotation. Our causal analysis underscores how current mitigation methods tackle only a narrow and often unrealistic subset of scenarios. We provide a practical three-step framework for reasoning about fairness in medical imaging, supporting the development of safe and equitable AI prediction models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2152376592",
+                        "name": "Charles Jones"
+                    },
+                    {
+                        "authorId": "39135119",
+                        "name": "Daniel Coelho de Castro"
+                    },
+                    {
+                        "authorId": "47841458",
+                        "name": "Fabio De Sousa Ribeiro"
+                    },
+                    {
+                        "authorId": "2941969",
+                        "name": "O. Oktay"
+                    },
+                    {
+                        "authorId": "2161548803",
+                        "name": "M. McCradden"
+                    },
+                    {
+                        "authorId": "1381873274",
+                        "name": "B. Glocker"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "In our paper (including this appendix) we reproduced the following works for comparison:\n1XGBoost library: https://xgboost.readthedocs.io/en/stable/python/python_api.html\n\u2022 TVAE [9], code from the Synthetic Data Vault [23]: https://github.com/sdv-dev/ SDV,\n\u2022 CTGAN [9], code from the Synthetic Data Vault [23]: https://github.com/sdv-dev/ SDV,\n\u2022 GReaT [27], code: https://github.com/kathrinse/be_great,\n\u2022 AIM [6], code: https://github.com/ryan112358/private-pgm,\n\u2022 MST [30], code: https://github.com/ryan112358/private-pgm,\n\u2022 GEM [8], code: https://github.com/terranceliu/iterative-dp,\n\u2022 Prefair [15], code: https://github.com/David-Pujol/Prefair,\n\u2022 DECAF [11], code from a reproduction study [45] (downloadable from the supplementary materials on OpenReview: https://openreview.net/forum?id=SVx46hzmhRK),\n\u2022 TabFairGAN [13], code: https://github.com/amirarsalan90/TabFairGAN.",
+                "We compare ProgSyn to two recent non-private (DECAF [11], and TabFairGAN [13]), and one private (Prefair [15]) fair synthetic data generation methods.",
+                "In a different approach, DECAF [11] trains a causally-aware GAN, and removes undesired causal relationships at generation time to reduce bias.",
+                "Prior work has already addressed some of the data sharing concerns: differentially private synthetic data [3, 4, 5, 6, 7, 8, 6], generating data with reduced bias [9, 10, 11, 12, 13, 14], and combining these two objectives [15]."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "ff958013ee882c2ce01afb66b199f4415e7249c3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-03577",
+                    "ArXiv": "2307.03577",
+                    "DOI": "10.48550/arXiv.2307.03577",
+                    "CorpusId": 259375642
+                },
+                "corpusId": 259375642,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ff958013ee882c2ce01afb66b199f4415e7249c3",
+                "title": "Programmable Synthetic Tabular Data Generation",
+                "abstract": "Large amounts of tabular data remain underutilized due to privacy, data quality, and data sharing limitations. While training a generative model producing synthetic data resembling the original distribution addresses some of these issues, most applications require additional constraints from the generated data. Existing synthetic data approaches are limited as they typically only handle specific constraints, e.g., differential privacy (DP) or increased fairness, and lack an accessible interface for declaring general specifications. In this work, we introduce ProgSyn, the first programmable synthetic tabular data generation algorithm that allows for comprehensive customization over the generated data. To ensure high data quality while adhering to custom specifications, ProgSyn pre-trains a generative model on the original dataset and fine-tunes it on a differentiable loss automatically derived from the provided specifications. These can be programmatically declared using statistical and logical expressions, supporting a wide range of requirements (e.g., DP or fairness, among others). We conduct an extensive experimental evaluation of ProgSyn on a number of constraints, achieving a new state-of-the-art on some, while remaining general. For instance, at the same fairness level we achieve 2.3% higher downstream accuracy than the state-of-the-art in fair synthetic data generation on the Adult dataset. Overall, ProgSyn provides a versatile and accessible framework for generating constrained synthetic tabular data, allowing for specifications that generalize beyond the capabilities of prior work.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2073893621",
+                        "name": "Mark Vero"
+                    },
+                    {
+                        "authorId": "2138580250",
+                        "name": "Mislav Balunovi'c"
+                    },
+                    {
+                        "authorId": "1736447",
+                        "name": "Martin T. Vechev"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Another line of research that repairs training data is through training data pre-proccessing [13, 14, 32, 24], synthetic fair data [53, 31, 67, 57], and data augmentation [54, 21]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f7aa171a55347ab8c61eceb8a922b54f0e04d4eb",
+                "externalIds": {
+                    "ArXiv": "2306.17828",
+                    "DBLP": "journals/corr/abs-2306-17828",
+                    "DOI": "10.48550/arXiv.2306.17828",
+                    "CorpusId": 259309082
+                },
+                "corpusId": 259309082,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f7aa171a55347ab8c61eceb8a922b54f0e04d4eb",
+                "title": "Understanding Unfairness via Training Concept Influence",
+                "abstract": "Knowing the causes of a model's unfairness helps practitioners better understand their data and algorithms. This is an important yet relatively unexplored task. We look into this problem through the lens of the training data - one of the major sources of unfairness. We ask the following questions: how would a model's fairness performance change if, in its training data, some samples (1) were collected from a different (e.g. demographic) group, (2) were labeled differently, or (3) some features were changed? In other words, we quantify the fairness influence of training samples by counterfactually intervening and changing samples based on predefined concepts, i.e. data attributes such as features (X), labels (Y), or sensitive attributes (A). To calculate a training sample's influence on the model's unfairness w.r.t a concept, we first generate counterfactual samples based on the concept, i.e. the counterfactual versions of the sample if the concept were changed. We then calculate the resulting impact on the unfairness, via influence function, if the counterfactual samples were used in training. Our framework not only helps practitioners understand the observed unfairness and repair their training data, but also leads to many other applications, e.g. detecting mislabeling, fixing imbalanced representations, and detecting fairness-targeted poisoning attacks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3460027",
+                        "name": "Yuanshun Yao"
+                    },
+                    {
+                        "authorId": "2152797134",
+                        "name": "Yang Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "prose, many real world applications benefit greatly from synthetic data generation, for tasks including data augmentation in the training of classifiers/regressors[22], privacy protection of sensitive data[3] or removing bias from data sets [20]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "41b9a2ef4cf496ed98f4827ac4788d1f5b520019",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-16827",
+                    "ArXiv": "2306.16827",
+                    "DOI": "10.48550/arXiv.2306.16827",
+                    "CorpusId": 259286883
+                },
+                "corpusId": 259286883,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/41b9a2ef4cf496ed98f4827ac4788d1f5b520019",
+                "title": "SaGess: Sampling Graph Denoising Diffusion Model for Scalable Graph Generation",
+                "abstract": "Over recent years, denoising diffusion generative models have come to be considered as state-of-the-art methods for synthetic data generation, especially in the case of generating images. These approaches have also proved successful in other applications such as tabular and graph data generation. However, due to computational complexity, to this date, the application of these techniques to graph data has been restricted to small graphs, such as those used in molecular modeling. In this paper, we propose SaGess, a discrete denoising diffusion approach, which is able to generate large real-world networks by augmenting a diffusion model (DiGress) with a generalized divide-and-conquer framework. The algorithm is capable of generating larger graphs by sampling a covering of subgraphs of the initial graph in order to train DiGress. SaGess then constructs a synthetic graph using the subgraphs that have been generated by DiGress. We evaluate the quality of the synthetic data sets against several competitor methods by comparing graph statistics between the original and synthetic samples, as well as evaluating the utility of the synthetic data set produced by using it to train a task-driven model, namely link prediction. In our experiments, SaGess, outperforms most of the one-shot state-of-the-art graph generating methods by a significant factor, both on the graph metrics and on the link prediction task.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "46182296",
+                        "name": "Stratis Limnios"
+                    },
+                    {
+                        "authorId": "2220825490",
+                        "name": "Praveen Selvaraj"
+                    },
+                    {
+                        "authorId": "2162064",
+                        "name": "Mihai Cucuringu"
+                    },
+                    {
+                        "authorId": "2091059383",
+                        "name": "C. Maple"
+                    },
+                    {
+                        "authorId": "2666765",
+                        "name": "G. Reinert"
+                    },
+                    {
+                        "authorId": "2064013905",
+                        "name": "Andrew Elliott"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8237e8643eab115018fb0c9eef548ec66595eaee",
+                "externalIds": {
+                    "ArXiv": "2306.15636",
+                    "DBLP": "journals/corr/abs-2306-15636",
+                    "DOI": "10.48550/arXiv.2306.15636",
+                    "CorpusId": 259262225
+                },
+                "corpusId": 259262225,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8237e8643eab115018fb0c9eef548ec66595eaee",
+                "title": "On the Usefulness of Synthetic Tabular Data Generation",
+                "abstract": "Despite recent advances in synthetic data generation, the scientific community still lacks a unified consensus on its usefulness. It is commonly believed that synthetic data can be used for both data exchange and boosting machine learning (ML) training. Privacy-preserving synthetic data generation can accelerate data exchange for downstream tasks, but there is not enough evidence to show how or why synthetic data can boost ML training. In this study, we benchmarked ML performance using synthetic tabular data for four use cases: data sharing, data augmentation, class balancing, and data summarization. We observed marginal improvements for the balancing use case on some datasets. However, we conclude that there is not enough evidence to claim that synthetic tabular data is useful for ML training.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "41073684",
+                        "name": "Dionysis Manousakas"
+                    },
+                    {
+                        "authorId": "120169766",
+                        "name": "Serg\u00fcl Ayd\u00f6re"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Another line of fair generative modeling focuses on label bias, instead of representation bias (Xu et al. 2018, 2019a,b; Sattigeri et al. 2019; Jang, Zheng, and Wang 2021; Kyono et al. 2021)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "14f5e4afdd089120aa171edb7bfd424f243a618d",
+                "externalIds": {
+                    "DBLP": "conf/aaai/UmS23",
+                    "DOI": "10.1609/aaai.v37i8.26196",
+                    "CorpusId": 259731513
+                },
+                "corpusId": 259731513,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/14f5e4afdd089120aa171edb7bfd424f243a618d",
+                "title": "A Fair Generative Model Using LeCam Divergence",
+                "abstract": "We explore a fairness-related challenge that arises in generative models. The challenge is that biased training data with imbalanced demographics may yield a high asymmetry in size of generated samples across distinct groups. We focus on practically-relevant scenarios wherein demographic labels are not available and therefore the design of a fair generative model is non-straightforward. In this paper, we propose an optimization framework that regulates the unfairness under such practical settings via one statistical measure, LeCam (LC)-divergence. Specifically to quantify the degree of unfairness, we employ a balanced-yet-small reference dataset and then measure its distance with generated samples using the LC-divergence, which is shown to be particularly instrumental to a small size of the reference dataset. We take a variational optimization approach to implement the LC-based measure. Experiments on benchmark real datasets demonstrate that the proposed framework can significantly improve the fairness performance while maintaining realistic sample quality for a wide range of the reference set size all the way down to 1% relative to training set.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2222695045",
+                        "name": "Soobin Um"
+                    },
+                    {
+                        "authorId": "47808468",
+                        "name": "Changho Suh"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Simulation [26,28,35,42,44,45,50,59,61,62,70] is a useful tool in situations where training data for learning-based methods is expensive to annotate or even hard to acquire."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "976d4d4055c764f069458f71c604b2f94109f09d",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/ZengCBLXYK23",
+                    "DOI": "10.1109/CVPR52729.2023.01226",
+                    "CorpusId": 259140653
+                },
+                "corpusId": 259140653,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/976d4d4055c764f069458f71c604b2f94109f09d",
+                "title": "3D-aware Facial Landmark Detection via Multi-view Consistent Training on Synthetic Data",
+                "abstract": "Accurate facial landmark detection on wild images plays an essential role in human-computer interaction, entertainment, and medical applications. Existing approaches have limitations in enforcing 3D consistency while detecting 3D/2D facial landmarks due to the lack of multi-view in-the-wild training data. Fortunately, with the recent advances in generative visual models and neural rendering, we have witnessed rapid progress towards high quality 3D image synthesis. In this work, we leverage such approaches to construct a synthetic dataset and propose a novel multi-view consistent learning strategy to improve 3D facial landmark detection accuracy on in-the-wild images. The proposed 3D-aware module can be plugged into any learning-based landmark detection algorithm to enhance its accuracy. We demonstrate the superiority of the proposed plug-in module with extensive comparison against state-of-the-art methods on several real and synthetic datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2114138299",
+                        "name": "Libing Zeng"
+                    },
+                    {
+                        "authorId": "152875073",
+                        "name": "Lele Chen"
+                    },
+                    {
+                        "authorId": "2342453",
+                        "name": "Wentao Bao"
+                    },
+                    {
+                        "authorId": "2145423092",
+                        "name": "Zhong Li"
+                    },
+                    {
+                        "authorId": "121983635",
+                        "name": "Yinghao Xu"
+                    },
+                    {
+                        "authorId": "48837492",
+                        "name": "Junsong Yuan"
+                    },
+                    {
+                        "authorId": "1717070",
+                        "name": "N. Kalantari"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a290cac002e42f9df75caab9846942475f2a24de",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-12157",
+                    "ArXiv": "2305.12157",
+                    "DOI": "10.48550/arXiv.2305.12157",
+                    "CorpusId": 258832923
+                },
+                "corpusId": 258832923,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a290cac002e42f9df75caab9846942475f2a24de",
+                "title": "(Machine) Learning to Be Like Thee? For Algorithm Education, Not Training",
+                "abstract": "This paper argues that Machine Learning (ML) algorithms must be educated. ML-trained algorithms moral decisions are ubiquitous in human society. Sometimes reverting the societal advances governments, NGOs and civil society have achieved with great effort in the last decades or are yet on the path to be achieved. While their decisions have an incommensurable impact on human societies, these algorithms are within the least educated agents known (data incomplete, un-inclusive, or biased). ML algorithms are not something separate from our human idiosyncrasy but an enactment of our most implicit prejudices and biases. Some research is devoted to responsibility assignment as a strategy to tackle immoral AI behaviour. Yet this paper argues that the solution for AI ethical decision-making resides in algorithm education (as opposed to the training) of ML. Drawing from an analogy between ML and child education for social responsibility, the paper offers clear directions for responsible and sustainable AI design, specifically with respect to how to educate algorithms to decide ethically.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2218123032",
+                        "name": "Susana Perez Blazquez"
+                    },
+                    {
+                        "authorId": "2218040362",
+                        "name": "Inas Hipolito"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5deaacd4c1a3ae6691a7ae9f4442bc8e3c09b6b2",
+                "externalIds": {
+                    "ArXiv": "2305.09235",
+                    "DBLP": "conf/icml/BreugelQS23",
+                    "DOI": "10.48550/arXiv.2305.09235",
+                    "CorpusId": 258714748
+                },
+                "corpusId": 258714748,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/5deaacd4c1a3ae6691a7ae9f4442bc8e3c09b6b2",
+                "title": "Synthetic data, real errors: how (not) to publish and use synthetic data",
+                "abstract": "Generating synthetic data through generative models is gaining interest in the ML community and beyond, promising a future where datasets can be tailored to individual needs. Unfortunately, synthetic data is usually not perfect, resulting in potential errors in downstream tasks. In this work we explore how the generative process affects the downstream ML task. We show that the naive synthetic data approach -- using synthetic data as if it is real -- leads to downstream models and analyses that do not generalize well to real data. As a first step towards better ML in the synthetic data regime, we introduce Deep Generative Ensemble (DGE) -- a framework inspired by Deep Ensembles that aims to implicitly approximate the posterior distribution over the generative process model parameters. DGE improves downstream model training, evaluation, and uncertainty quantification, vastly outperforming the naive approach on average. The largest improvements are achieved for minority classes and low-density regions of the original data, for which the generative uncertainty is largest.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2047304902",
+                        "name": "B. V. Breugel"
+                    },
+                    {
+                        "authorId": "8797071",
+                        "name": "Z. Qian"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "42d6fcad21c3a6667cb064548f28f8ccd5ea8e69",
+                "externalIds": {
+                    "ArXiv": "2305.02474",
+                    "DBLP": "journals/corr/abs-2305-02474",
+                    "DOI": "10.48550/arXiv.2305.02474",
+                    "CorpusId": 258480273
+                },
+                "corpusId": 258480273,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/42d6fcad21c3a6667cb064548f28f8ccd5ea8e69",
+                "title": "MLHOps: Machine Learning for Healthcare Operations",
+                "abstract": "Machine Learning Health Operations (MLHOps) is the combination of processes for reliable, efficient, usable, and ethical deployment and maintenance of machine learning models in healthcare settings. This paper provides both a survey of work in this area and guidelines for developers and clinicians to deploy and maintain their own models in clinical practice. We cover the foundational concepts of general machine learning operations, describe the initial setup of MLHOps pipelines (including data sources, preparation, engineering, and tools). We then describe long-term monitoring and updating (including data distribution shifts and model updating) and ethical considerations (including bias, fairness, interpretability, and privacy). This work therefore provides guidance across the full pipeline of MLHOps from conception to initial and ongoing deployment.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2374769",
+                        "name": "Faiza Khan Khattak"
+                    },
+                    {
+                        "authorId": "30847009",
+                        "name": "V. Subasri"
+                    },
+                    {
+                        "authorId": "2188991663",
+                        "name": "A. Krishnan"
+                    },
+                    {
+                        "authorId": "4367992",
+                        "name": "E. Dolatabadi"
+                    },
+                    {
+                        "authorId": "93533703",
+                        "name": "D. Pandya"
+                    },
+                    {
+                        "authorId": "1450822685",
+                        "name": "L. Seyyed-Kalantari"
+                    },
+                    {
+                        "authorId": "2479037",
+                        "name": "Frank Rudzicz"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "80d9053c89c7df0767be962edbac8899923836ad",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-10819",
+                    "ArXiv": "2304.10819",
+                    "DOI": "10.48550/arXiv.2304.10819",
+                    "CorpusId": 258291897
+                },
+                "corpusId": 258291897,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/80d9053c89c7df0767be962edbac8899923836ad",
+                "title": "Auditing and Generating Synthetic Data with Controllable Trust Trade-offs",
+                "abstract": "Data collected from the real world tends to be biased, unbalanced, and at risk of exposing sensitive and private information. This reality has given rise to the idea of creating synthetic datasets to alleviate risk, bias, harm, and privacy concerns inherent in the real data. This concept relies on Generative AI models to produce unbiased, privacy-preserving synthetic data while being true to the real data. In this new paradigm, how can we tell if this approach delivers on its promises? We present an auditing framework that offers a holistic assessment of synthetic datasets and AI models trained on them, centered around bias and discrimination prevention, fidelity to the real data, utility, robustness, and privacy preservation. We showcase our framework by auditing multiple generative models on diverse use cases, including education, healthcare, banking, human resources, and across different modalities, from tabular, to time-series, to natural language. Our use cases demonstrate the importance of a holistic assessment in order to ensure compliance with socio-technical safeguards that regulators and policymakers are increasingly enforcing. For this purpose, we introduce the trust index that ranks multiple synthetic datasets based on their prescribed safeguards and their desired trade-offs. Moreover, we devise a trust-index-driven model selection and cross-validation procedure via auditing in the training loop that we showcase on a class of transformer models that we dub TrustFormers, across different modalities. This trust-driven model selection allows for controllable trust trade-offs in the resulting synthetic data. We instrument our auditing framework with workflows that connect different stakeholders from model development to audit and certification via a synthetic data auditing report.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2679155",
+                        "name": "Brian M. Belgodere"
+                    },
+                    {
+                        "authorId": "1839363",
+                        "name": "Pierre L. Dognin"
+                    },
+                    {
+                        "authorId": "80550261",
+                        "name": "Adam Ivankay"
+                    },
+                    {
+                        "authorId": "2576373",
+                        "name": "Igor Melnyk"
+                    },
+                    {
+                        "authorId": "2211263",
+                        "name": "Youssef Mroueh"
+                    },
+                    {
+                        "authorId": "144053687",
+                        "name": "A. Mojsilovic"
+                    },
+                    {
+                        "authorId": "2215168140",
+                        "name": "Jiri Navartil"
+                    },
+                    {
+                        "authorId": "1704335255",
+                        "name": "Apoorva Nitsure"
+                    },
+                    {
+                        "authorId": "8350409",
+                        "name": "Inkit Padhi"
+                    },
+                    {
+                        "authorId": "2535094",
+                        "name": "Mattia Rigotti"
+                    },
+                    {
+                        "authorId": "39320489",
+                        "name": "Jerret Ross"
+                    },
+                    {
+                        "authorId": "1999174380",
+                        "name": "Yair Schiff"
+                    },
+                    {
+                        "authorId": "2215168665",
+                        "name": "Radhika Vedpathak"
+                    },
+                    {
+                        "authorId": "152554317",
+                        "name": "Richard A. Young"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6a6c0736a4e9e850db15a30ea8ff180c2080ba4f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-07060",
+                    "ArXiv": "2304.07060",
+                    "DOI": "10.1109/CVPR52729.2023.01223",
+                    "CorpusId": 258170376
+                },
+                "corpusId": 258170376,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6a6c0736a4e9e850db15a30ea8ff180c2080ba4f",
+                "title": "DCFace: Synthetic Face Generation with Dual Condition Diffusion Model",
+                "abstract": "Generating synthetic datasets for training face recognition models is challenging because dataset generation entails more than creating high fidelity images. It involves generating multiple images of same subjects under different factors (e.g., variations in pose, illumination, expression, aging and occlusion) which follows the real image conditional distribution. Previous works have studied the generation of synthetic datasets using GAN or 3D models. In this work, we approach the problem from the aspect of combining subject appearance (ID) and external factor (style) conditions. These two conditions provide a direct way to control the inter-class and intra-class variations. To this end, we propose a Dual Condition Face Generator (DCFace) based on a diffusion model. Our novel Patch-wise style extractor and Time-step dependent ID loss enables DCFace to consistently produce face images of the same subject under different styles with precise control. Face recognition models trained on synthetic images from the proposed DCFace provide higher verification accuracies compared to previous works by 6.11% on average in 4 out of 5 test datasets, LFW, CFP-FP, CPLFW, AgeDB and CALFW. Code Link",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1390602813",
+                        "name": "Minchul Kim"
+                    },
+                    {
+                        "authorId": "2152943473",
+                        "name": "Feng Liu"
+                    },
+                    {
+                        "authorId": "2116747913",
+                        "name": "Anil Jain"
+                    },
+                    {
+                        "authorId": "2111119747",
+                        "name": "Xiaoming Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "5 In [82, 88, 89, 92], authors show that by carefully constraining a generative model\u2014with constraints given by the fairness requirement\u2014it is possible to generate fair synthetic data based on unfair real data.",
+                "1), for example providing better fairness [82, 88, 89], augmenting the dataset size [4, 9, 18, 21], and creating or simulating data for different domains [86, 90].",
+                "[82] Boris van Breugel, Trent Kyono, Jeroen Berrevoets, and Mihaela van der Schaar.",
+                "[82] introduce a causal generative model (DECAF)",
+                "This can be solved [82], but requires knowledge of the downstream model\u2019s deployment setting, which the data publisher does not always have."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "88462d5da4f65c84f8cbaa8f6e16fd6f21712192",
+                "externalIds": {
+                    "ArXiv": "2304.03722",
+                    "DBLP": "journals/corr/abs-2304-03722",
+                    "DOI": "10.48550/arXiv.2304.03722",
+                    "CorpusId": 258041089
+                },
+                "corpusId": 258041089,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/88462d5da4f65c84f8cbaa8f6e16fd6f21712192",
+                "title": "Beyond Privacy: Navigating the Opportunities and Challenges of Synthetic Data",
+                "abstract": "Generating synthetic data through generative models is gaining interest in the ML community and beyond. In the past, synthetic data was often regarded as a means to private data release, but a surge of recent papers explore how its potential reaches much further than this -- from creating more fair data to data augmentation, and from simulation to text generated by ChatGPT. In this perspective we explore whether, and how, synthetic data may become a dominant force in the machine learning world, promising a future where datasets can be tailored to individual needs. Just as importantly, we discuss which fundamental challenges the community needs to overcome for wider relevance and application of synthetic data -- the most important of which is quantifying how much we can trust any finding or prediction drawn from synthetic data.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2047304902",
+                        "name": "B. V. Breugel"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "There is a body of literature to help address these biases [106, 107], but tools for model creators are still limited."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8ff8499b5f38ff84858f6bf95e49e2bb413d2d28",
+                "externalIds": {
+                    "ArXiv": "2304.03243",
+                    "DBLP": "journals/corr/abs-2304-03243",
+                    "DOI": "10.48550/arXiv.2304.03243",
+                    "CorpusId": 257985199
+                },
+                "corpusId": 257985199,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8ff8499b5f38ff84858f6bf95e49e2bb413d2d28",
+                "title": "Synthetic Data in Healthcare",
+                "abstract": "Synthetic data are becoming a critical tool for building artificially intelligent systems. Simulators provide a way of generating data systematically and at scale. These data can then be used either exclusively, or in conjunction with real data, for training and testing systems. Synthetic data are particularly attractive in cases where the availability of ``real'' training examples might be a bottleneck. While the volume of data in healthcare is growing exponentially, creating datasets for novel tasks and/or that reflect a diverse set of conditions and causal relationships is not trivial. Furthermore, these data are highly sensitive and often patient specific. Recent research has begun to illustrate the potential for synthetic data in many areas of medicine, but no systematic review of the literature exists. In this paper, we present the cases for physical and statistical simulations for creating data and the proposed applications in healthcare and medicine. We discuss that while synthetics can promote privacy, equity, safety and continual and causal learning, they also run the risk of introducing flaws, blind spots and propagating or exaggerating biases.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1801452",
+                        "name": "Daniel J. McDuff"
+                    },
+                    {
+                        "authorId": "67184024",
+                        "name": "Theodore R. Curran"
+                    },
+                    {
+                        "authorId": "2425405",
+                        "name": "A. Kadambi"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "13aeb868a6cad9a2478c27ef5b5183bff8ff839b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-15592",
+                    "ArXiv": "2303.15592",
+                    "DOI": "10.1145/3610914",
+                    "CorpusId": 257771531
+                },
+                "corpusId": 257771531,
+                "publicationVenue": {
+                    "id": "4c51a870-1809-485b-8c20-3c1326b3fe16",
+                    "name": "Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies",
+                    "alternate_names": [
+                        "Proc ACM Interact Mob Wearable Ubiquitous Technol"
+                    ],
+                    "issn": "2474-9567",
+                    "url": "https://dl.acm.org/journal/imwut",
+                    "alternate_urls": [
+                        "http://imwut.acm.org/",
+                        "https://dl.acm.org/pub.cfm?id=J1566"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/13aeb868a6cad9a2478c27ef5b5183bff8ff839b",
+                "title": "Uncovering Bias in Personal Informatics",
+                "abstract": "Personal informatics (PI) systems, powered by smartphones and wearables, enable people to lead healthier lifestyles by providing meaningful and actionable insights that break down barriers between users and their health information. Today, such systems are used by billions of users for monitoring not only physical activity and sleep but also vital signs and women's and heart health, among others. Despite their widespread usage, the processing of sensitive PI data may suffer from biases, which may entail practical and ethical implications. In this work, we present the first comprehensive empirical and analytical study of bias in PI systems, including biases in raw data and in the entire machine learning life cycle. We use the most detailed framework to date for exploring the different sources of bias and find that biases exist both in the data generation and the model learning and implementation streams. According to our results, the most affected minority groups are users with health issues, such as diabetes, joint issues, and hypertension, and female users, whose data biases are propagated or even amplified by learning models, while intersectional biases can also be observed.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2083568181",
+                        "name": "Sofia Yfantidou"
+                    },
+                    {
+                        "authorId": "1764068",
+                        "name": "Pavlos Sermpezis"
+                    },
+                    {
+                        "authorId": "1741423",
+                        "name": "A. Vakali"
+                    },
+                    {
+                        "authorId": "1389957009",
+                        "name": "R. Baeza-Yates"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Causal generative models have seen a variety of success with both learning and utilizing causal information and structural models to generate counterfactual images and datasets [5]\u2013[9]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "88d16cff42240e6efdc233760d222ca0d0ff8555",
+                "externalIds": {
+                    "ArXiv": "2303.03462",
+                    "DBLP": "journals/corr/abs-2303-03462",
+                    "DOI": "10.48550/arXiv.2303.03462",
+                    "CorpusId": 257378388
+                },
+                "corpusId": 257378388,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/88d16cff42240e6efdc233760d222ca0d0ff8555",
+                "title": "Towards Composable Distributions of Latent Space Augmentations",
+                "abstract": "We propose a composable framework for latent space image augmentation that allows for easy combination of multiple augmentations. Image augmentation has been shown to be an effective technique for improving the performance of a wide variety of image classification and generation tasks. Our framework is based on the Variational Autoencoder architecture and uses a novel approach for augmentation via linear transformation within the latent space itself. We explore losses and augmentation latent geometry to enforce the transformations to be composable and involuntary, thus allowing the transformations to be readily combined or inverted. Finally, we show these properties are better performing with certain pairs of augmentations, but we can transfer the latent space to other sets of augmentations to modify performance, effectively constraining the VAE's bottleneck to preserve the variance of specific augmentations and features of the image which we care about. We demonstrate the effectiveness of our approach with initial results on the MNIST dataset against both a standard VAE and a Conditional VAE. This latent augmentation method allows for much greater control and geometric interpretability of the latent space, making it a valuable tool for researchers and practitioners in the field.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2164382932",
+                        "name": "Omead Brandon Pooladzandi"
+                    },
+                    {
+                        "authorId": "1807735",
+                        "name": "Jeffrey Q. Jiang"
+                    },
+                    {
+                        "authorId": "2055252526",
+                        "name": "Sunay Bhat"
+                    },
+                    {
+                        "authorId": "144223987",
+                        "name": "G. Pottie"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Recent studies have demonstrated the importance of treating fairness as causation-based notions that concern the causal effect of the sensitive feature on the model outcomes [8,11,2]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e0b35be05aa8724aeb1f20ff4f28e4991086ae7d",
+                "externalIds": {
+                    "ArXiv": "2303.02318",
+                    "DBLP": "journals/corr/abs-2303-02318",
+                    "DOI": "10.48550/arXiv.2303.02318",
+                    "CorpusId": 257364871
+                },
+                "corpusId": 257364871,
+                "publicationVenue": {
+                    "id": "1e517cb2-1ca1-45b8-964a-456366bdcdc1",
+                    "name": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "PAKDD",
+                        "Pacific-asia Conf Knowl Discov Data Min"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/e0b35be05aa8724aeb1f20ff4f28e4991086ae7d",
+                "title": "Achieving Counterfactual Fairness for Anomaly Detection",
+                "abstract": "Ensuring fairness in anomaly detection models has received much attention recently as many anomaly detection applications involve human beings. However, existing fair anomaly detection approaches mainly focus on association-based fairness notions. In this work, we target counterfactual fairness, which is a prevalent causation-based fairness notion. The goal of counterfactually fair anomaly detection is to ensure that the detection outcome of an individual in the factual world is the same as that in the counterfactual world where the individual had belonged to a different group. To this end, we propose a counterfactually fair anomaly detection (CFAD) framework which consists of two phases, counterfactual data generation and fair anomaly detection. Experimental results on a synthetic dataset and two real datasets show that CFAD can effectively detect anomalies as well as ensure counterfactual fairness.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2152555604",
+                        "name": "Xiao Han"
+                    },
+                    {
+                        "authorId": "2190831326",
+                        "name": "Lu Zhang"
+                    },
+                    {
+                        "authorId": "3431334",
+                        "name": "Yongkai Wu"
+                    },
+                    {
+                        "authorId": "2241342380",
+                        "name": "Shuhan Yuan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "\u2026Alaa et al., 2021a; Jarrett et al., 2021), evaluation methods for synthetic data generation (Jordon et al., 2018a; Alaa et al., 2021b), fairness van Breugel et al. (2021), and methods that include models of some of the physical processes underlying clinical parameters in the generation process\u2026"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "cddc8138147186e72d5bd9f9789698bcfafd5e6b",
+                "externalIds": {
+                    "ArXiv": "2303.01954",
+                    "DBLP": "journals/corr/abs-2303-01954",
+                    "DOI": "10.48550/arXiv.2303.01954",
+                    "CorpusId": 257353636
+                },
+                "corpusId": 257353636,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/cddc8138147186e72d5bd9f9789698bcfafd5e6b",
+                "title": "Synthetic Data Generator for Adaptive Interventions in Global Health",
+                "abstract": "Artificial Intelligence and digital health have the potential to transform global health. However, having access to representative data to test and validate algorithms in realistic production environments is essential. We introduce HealthSyn, an open-source synthetic data generator of user behavior for testing reinforcement learning algorithms in the context of mobile health interventions. The generator utilizes Markov processes to generate diverse user actions, with individual user behavioral patterns that can change in reaction to personalized interventions (i.e., reminders, recommendations, and incentives). These actions are translated into actual logs using an ML-purposed data schema specific to the mobile health application functionality included with HealthKit, and open-source SDK. The logs can be fed to pipelines to obtain user metrics. The generated data, which is based on real-world behaviors and simulation techniques, can be used to develop, test, and evaluate, both ML algorithms in research and end-to-end operational RL-based intervention delivery frameworks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "11437515",
+                        "name": "Aditya Rastogi"
+                    },
+                    {
+                        "authorId": "2759350",
+                        "name": "J. F. Garamendi"
+                    },
+                    {
+                        "authorId": "2210729497",
+                        "name": "Ana Fern'andez del R'io"
+                    },
+                    {
+                        "authorId": "153675975",
+                        "name": "Anna Guitart"
+                    },
+                    {
+                        "authorId": "2210773829",
+                        "name": "Moiz Hassan Khan"
+                    },
+                    {
+                        "authorId": "2146484197",
+                        "name": "Dexian Tang"
+                    },
+                    {
+                        "authorId": "35897158",
+                        "name": "\u00c1. Peri\u00e1\u00f1ez"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "110e47eb13e0e1aed94608a213e7baa709e0bc38",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-02186",
+                    "ArXiv": "2303.02186",
+                    "DOI": "10.48550/arXiv.2303.02186",
+                    "CorpusId": 257365217
+                },
+                "corpusId": 257365217,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/110e47eb13e0e1aed94608a213e7baa709e0bc38",
+                "title": "Causal Deep Learning",
+                "abstract": "Causality has the potential to truly transform the way we solve a large number of real-world problems. Yet, so far, its potential remains largely unlocked since most work so far requires strict assumptions which do not hold true in practice. To address this challenge and make progress in solving real-world problems, we propose a new way of thinking about causality - we call this causal deep learning. The framework which we propose for causal deep learning spans three dimensions: (1) a structural dimension, which allows incomplete causal knowledge rather than assuming either full or no causal knowledge; (2) a parametric dimension, which encompasses parametric forms which are typically ignored; and finally, (3) a temporal dimension, which explicitly allows for situations which capture exposure times or temporal structure. Together, these dimensions allow us to make progress on a variety of real-world problems by leveraging (sometimes incomplete) causal knowledge and/or combining diverse causal deep learning methods. This new framework also enables researchers to compare systematically across existing works as well as identify promising research areas which can lead to real-world impact.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2122909265",
+                        "name": "Jeroen Berrevoets"
+                    },
+                    {
+                        "authorId": "2052541552",
+                        "name": "Krzysztof Kacprzyk"
+                    },
+                    {
+                        "authorId": "8797071",
+                        "name": "Z. Qian"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "de1f64522b5594a9f572a92f8816cb1f36adcbac",
+                "externalIds": {
+                    "DBLP": "conf/aistats/BreugelSQS23",
+                    "ArXiv": "2302.12580",
+                    "DOI": "10.48550/arXiv.2302.12580",
+                    "CorpusId": 257205896
+                },
+                "corpusId": 257205896,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/de1f64522b5594a9f572a92f8816cb1f36adcbac",
+                "title": "Membership Inference Attacks against Synthetic Data through Overfitting Detection",
+                "abstract": "Data is the foundation of most science. Unfortunately, sharing data can be obstructed by the risk of violating data privacy, impeding research in fields like healthcare. Synthetic data is a potential solution. It aims to generate data that has the same distribution as the original data, but that does not disclose information about individuals. Membership Inference Attacks (MIAs) are a common privacy attack, in which the attacker attempts to determine whether a particular real sample was used for training of the model. Previous works that propose MIAs against generative models either display low performance -- giving the false impression that data is highly private -- or need to assume access to internal generative model parameters -- a relatively low-risk scenario, as the data publisher often only releases synthetic data, not the model. In this work we argue for a realistic MIA setting that assumes the attacker has some knowledge of the underlying data distribution. We propose DOMIAS, a density-based MIA model that aims to infer membership by targeting local overfitting of the generative model. Experimentally we show that DOMIAS is significantly more successful at MIA than previous work, especially at attacking uncommon samples. The latter is disconcerting since these samples may correspond to underrepresented groups. We also demonstrate how DOMIAS' MIA performance score provides an interpretable metric for privacy, giving data publishers a new tool for achieving the desired privacy-utility trade-off in their synthetic data.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2047304902",
+                        "name": "B. V. Breugel"
+                    },
+                    {
+                        "authorId": "2156232174",
+                        "name": "Hao Sun"
+                    },
+                    {
+                        "authorId": "8797071",
+                        "name": "Z. Qian"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Synthetic data has significant promise, with the potential to improve: (1) fairness & bias by generating data from underrepresented groups (van Breugel et al., 2021); (2) robustness by augmenting an original dataset (Perez and Wang, 2017); (3) privacy by not using identifiable data to train a\u2026"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0946c7e7f56ac534f3a7cada0f6262b829db379a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-12749",
+                    "ArXiv": "2302.12749",
+                    "DOI": "10.48550/arXiv.2302.12749",
+                    "CorpusId": 257205802
+                },
+                "corpusId": 257205802,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0946c7e7f56ac534f3a7cada0f6262b829db379a",
+                "title": "SurvivalGAN: Generating Time-to-Event Data for Survival Analysis",
+                "abstract": "Synthetic data is becoming an increasingly promising technology, and successful applications can improve privacy, fairness, and data democratization. While there are many methods for generating synthetic tabular data, the task remains non-trivial and unexplored for specific scenarios. One such scenario is survival data. Here, the key difficulty is censoring: for some instances, we are not aware of the time of event, or if one even occurred. Imbalances in censoring and time horizons cause generative models to experience three new failure modes specific to survival analysis: (1) generating too few at-risk members; (2) generating too many at-risk members; and (3) censoring too early. We formalize these failure modes and provide three new generative metrics to quantify them. Following this, we propose SurvivalGAN, a generative model that handles survival data firstly by addressing the imbalance in the censoring and event horizons, and secondly by using a dedicated mechanism for approximating time-to-event/censoring. We evaluate this method via extensive experiments on medical datasets. SurvivalGAN outperforms multiple baselines at generating survival data, and in particular addresses the failure modes as measured by the new metrics, in addition to improving downstream performance of survival models trained on the synthetic data.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1748965720",
+                        "name": "Alexander Norcliffe"
+                    },
+                    {
+                        "authorId": "2026404040",
+                        "name": "B. Cebere"
+                    },
+                    {
+                        "authorId": "80471080",
+                        "name": "F. Imrie"
+                    },
+                    {
+                        "authorId": "2165664267",
+                        "name": "P. Li\u00f2"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Second, CDG-VAE can be applied to chain graphs (i.e., Partial DAGs) unlikely Xu et al. (2019a); van Breugel et al. (2021); Wen et al. (2021) that re-\nar X\niv :2\n30 2.",
+                "\u2026of the ground-truth factors g.\nDue to undirected edges between covariates (e.g., the edge between Mortgage and Income), the SCM of covariates is not defined well, and the covariatewise topological generation of Xu et al. (2019a); van Breugel et al. (2021); Wen et al. (2021) is not applicable.",
+                "Furthermore, the alignment of the latent structure is also adapted by topological generation, which produces causally-aware generative models Xu et al. (2019a); van Breugel et al. (2021); Wen et al. (2021).",
+                "Even though van Breugel et al. (2021) proves that their generator converges to the right distribution for any graph belonging to MECs, incorrect edge directions have the potential risk of misunderstandings of causations.",
+                "To exploit causations in the synthetic data generation, Xu et al. (2019a); Wen et al. (2021); van Breugel et al. (2021) generate data in the\norder of causal topology, and consequently, they require the completely identified DAG, not the Partial DAG."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "df85f0adee90991617786833ef6bc26fa5b691f9",
+                "externalIds": {
+                    "ArXiv": "2302.11737",
+                    "DBLP": "journals/corr/abs-2302-11737",
+                    "DOI": "10.48550/arXiv.2302.11737",
+                    "CorpusId": 257102874
+                },
+                "corpusId": 257102874,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/df85f0adee90991617786833ef6bc26fa5b691f9",
+                "title": "Causally Disentangled Generative Variational AutoEncoder",
+                "abstract": "We propose a new supervised learning method for Variational AutoEncoder (VAE) which has a causally disentangled representation and achieves the causally disentangled generation (CDG) simultaneously. In this paper, CDG is defined as a generative model able to decode an output precisely according to the causally disentangled representation. We found that the supervised regularization of the encoder is not enough to obtain a generative model with CDG. Consequently, we explore sufficient and necessary conditions for the decoder and the causal effect to achieve CDG. Moreover, we propose a generalized metric measuring how a model is causally disentangled generative. Numerical results with the image and tabular datasets corroborate our arguments.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2104448478",
+                        "name": "Seunghwan An"
+                    },
+                    {
+                        "authorId": "2490092",
+                        "name": "Kyungwoo Song"
+                    },
+                    {
+                        "authorId": "3344539",
+                        "name": "Jong-June Jeon"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5f7ce7c66e0c8c60535798757a080bf402a26f18",
+                "externalIds": {
+                    "ArXiv": "2301.12351",
+                    "CorpusId": 256390218
+                },
+                "corpusId": 256390218,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/5f7ce7c66e0c8c60535798757a080bf402a26f18",
+                "title": "Emerging Synergies in Causality and Deep Generative Models: A Survey",
+                "abstract": "In the field of artificial intelligence (AI), the quest to understand and model data-generating processes (DGPs) is of paramount importance. Deep generative models (DGMs) have proven adept in capturing complex data distributions but often fall short in generalization and interpretability. On the other hand, causality offers a structured lens to comprehend the mechanisms driving data generation and highlights the causal-effect dynamics inherent in these processes. While causality excels in interpretability and the ability to extrapolate, it grapples with intricacies of high-dimensional spaces. Recognizing the synergistic potential, we delve into the confluence of causality and DGMs. We elucidate the integration of causal principles within DGMs, investigate causal identification using DGMs, and navigate an emerging research frontier of causality in large-scale generative models, particularly generative large language models (LLMs). We offer insights into methodologies, highlight open challenges, and suggest future directions, positioning our comprehensive review as an essential guide in this swiftly emerging and evolving area.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "93925973",
+                        "name": "Guanglin Zhou"
+                    },
+                    {
+                        "authorId": "25106675",
+                        "name": "Shaoan Xie"
+                    },
+                    {
+                        "authorId": "2241095115",
+                        "name": "Guangyuan Hao"
+                    },
+                    {
+                        "authorId": "2241215749",
+                        "name": "Shiming Chen"
+                    },
+                    {
+                        "authorId": "1938684",
+                        "name": "Biwei Huang"
+                    },
+                    {
+                        "authorId": "3087664",
+                        "name": "Xiwei Xu"
+                    },
+                    {
+                        "authorId": "2109117515",
+                        "name": "Chen Wang"
+                    },
+                    {
+                        "authorId": "2145199748",
+                        "name": "Liming Zhu"
+                    },
+                    {
+                        "authorId": "2106357243",
+                        "name": "Lina Yao"
+                    },
+                    {
+                        "authorId": "2119016656",
+                        "name": "Kun Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f96e0a6b39259f1b07815fc88f0e8e7b411183aa",
+                "externalIds": {
+                    "ArXiv": "2301.07573",
+                    "DBLP": "journals/corr/abs-2301-07573",
+                    "DOI": "10.48550/arXiv.2301.07573",
+                    "CorpusId": 255998576
+                },
+                "corpusId": 255998576,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f96e0a6b39259f1b07815fc88f0e8e7b411183aa",
+                "title": "Synthcity: facilitating innovative use cases of synthetic data in different data modalities",
+                "abstract": "Synthcity is an open-source software package for innovative use cases of synthetic data in ML fairness, privacy and augmentation across diverse tabular data modalities, including static data, regular and irregular time series, data with censoring, multi-source data, composite data, and more. Synthcity provides the practitioners with a single access point to cutting edge research and tools in synthetic data. It also offers the community a playground for rapid experimentation and prototyping, a one-stop-shop for SOTA benchmarks, and an opportunity for extending research impact. The library can be accessed on GitHub (https://github.com/vanderschaarlab/synthcity) and pip (https://pypi.org/project/synthcity/). We warmly invite the community to join the development effort by providing feedback, reporting bugs, and contributing code.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "8797071",
+                        "name": "Z. Qian"
+                    },
+                    {
+                        "authorId": "2026404040",
+                        "name": "B. Cebere"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Otherwise the model can just learn the protected features by using different proxies which are correlated to them (van Breugel et al., 2021).",
+                "CFGAN (Xu et al., 2019) and DECAF (van Breugel et al., 2021) are two methods to generate fair data that are rooted in this approach to fairness."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "156922bf936adb893befa7b95b1b0896433e1ea7",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2301-01109",
+                    "ArXiv": "2301.01109",
+                    "DOI": "10.48550/arXiv.2301.01109",
+                    "CorpusId": 255393637
+                },
+                "corpusId": 255393637,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/156922bf936adb893befa7b95b1b0896433e1ea7",
+                "title": "On the causality-preservation capabilities of generative modelling",
+                "abstract": "Modeling lies at the core of both the financial and the insurance industry for a wide variety of tasks. The rise and development of machine learning and deep learning models have created many opportunities to improve our modeling toolbox. Breakthroughs in these fields often come with the requirement of large amounts of data. Such large datasets are often not publicly available in finance and insurance, mainly due to privacy and ethics concerns. This lack of data is currently one of the main hurdles in developing better models. One possible option to alleviating this issue is generative modeling. Generative models are capable of simulating fake but realistic-looking data, also referred to as synthetic data, that can be shared more freely. Generative Adversarial Networks (GANs) is such a model that increases our capacity to fit very high-dimensional distributions of data. While research on GANs is an active topic in fields like computer vision, they have found limited adoption within the human sciences, like economics and insurance. Reason for this is that in these fields, most questions are inherently about identification of causal effects, while to this day neural networks, which are at the center of the GAN framework, focus mostly on high-dimensional correlations. In this paper we study the causal preservation capabilities of GANs and whether the produced synthetic data can reliably be used to answer causal questions. This is done by performing causal analyses on the synthetic data, produced by a GAN, with increasingly more lenient assumptions. We consider the cross-sectional case, the time series case and the case with a complete structural model. It is shown that in the simple cross-sectional scenario where correlation equals causation the GAN preserves causality, but that challenges arise for more advanced analyses.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2199181755",
+                        "name": "Yves-C'edric Bauwelinckx"
+                    },
+                    {
+                        "authorId": "3251464",
+                        "name": "Jan Dhaene"
+                    },
+                    {
+                        "authorId": "3204201",
+                        "name": "Tim Verdonck"
+                    },
+                    {
+                        "authorId": "144811646",
+                        "name": "Milan van den Heuvel"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Likewise, there have been approaches for generating non-private fair synthetic data [53, 56] GAN based approaches such as FairGAN [56] have been used to generate data that satisfies these associational measures."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0433a33fed5a5e2c881cf34d0007d28e4411025b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-10310",
+                    "ArXiv": "2212.10310",
+                    "DOI": "10.48550/arXiv.2212.10310",
+                    "CorpusId": 254877127
+                },
+                "corpusId": 254877127,
+                "publicationVenue": {
+                    "id": "fcbcaf18-8ab1-43e1-a973-604bbc7e344e",
+                    "name": "Proceedings of the VLDB Endowment",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Proceedings of The Vldb Endowment",
+                        "Proc VLDB Endow",
+                        "Proc Vldb Endow"
+                    ],
+                    "issn": "2150-8097",
+                    "url": "http://dl.acm.org/toc.cfm?id=J1174",
+                    "alternate_urls": [
+                        "http://portal.acm.org/toc.cfm?CFID=21632689&CFTOKEN=99329904&WantType=Affiliated%20Organizations&coll=ACM&dl=ACM&id=J1174&idx=J1174&part=affil&title=VLDB%20Endowment&type=periodical"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0433a33fed5a5e2c881cf34d0007d28e4411025b",
+                "title": "PreFair: Privately Generating Justifiably Fair Synthetic Data",
+                "abstract": "When a database is protected by Differential Privacy (DP), its usability is limited in scope. In this scenario, generating a synthetic version of the data that mimics the properties of the private data allows users to perform any operation on the synthetic data, while maintaining the privacy of the original data. Therefore, multiple works have been devoted to devising systems for DP synthetic data generation. However, such systems may preserve or even magnify properties of the data that make it unfair, rendering the synthetic data unfit for use. In this work, we present PreFair, a system that allows for DP fair synthetic data generation. PreFair extends the state-of-the-art DP data generation mechanisms by incorporating a causal fairness criterion that ensures fair synthetic data. We adapt the notion of justifiable fairness to fit the synthetic data generation scenario. We further study the problem of generating DP fair synthetic data, showing its intractability and designing algorithms that are optimal under certain assumptions. We also provide an extensive experimental evaluation, showing that PreFair generates synthetic data that is significantly fairer than the data generated by leading DP data generation mechanisms, while remaining faithful to the private data.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2064199291",
+                        "name": "David Pujol"
+                    },
+                    {
+                        "authorId": "32466098",
+                        "name": "Amir Gilad"
+                    },
+                    {
+                        "authorId": "2357165",
+                        "name": "Ashwin Machanavajjhala"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a7cf8f52c7797f2015ab9600cfb4f2993379acb9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-02090",
+                    "ArXiv": "2212.02090",
+                    "DOI": "10.48550/arXiv.2212.02090",
+                    "CorpusId": 254246294
+                },
+                "corpusId": 254246294,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a7cf8f52c7797f2015ab9600cfb4f2993379acb9",
+                "title": "Breaking the Spurious Causality of Conditional Generation via Fairness Intervention with Corrective Sampling",
+                "abstract": "To capture the relationship between samples and labels, conditional generative models often inherit spurious correlations from the training dataset. This can result in label-conditional distributions that are imbalanced with respect to another latent attribute. To mitigate this issue, which we call spurious causality of conditional generation, we propose a general two-step strategy. (a) Fairness Intervention (FI): emphasize the minority samples that are hard to generate due to the spurious correlation in the training dataset. (b) Corrective Sampling (CS): explicitly filter the generated samples and ensure that they follow the desired latent attribute distribution. We have designed the fairness intervention to work for various degrees of supervision on the spurious attribute, including unsupervised, weakly-supervised, and semi-supervised scenarios. Our experimental results demonstrate that FICS can effectively resolve spurious causality of conditional generation across various datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "9932392",
+                        "name": "J. Nam"
+                    },
+                    {
+                        "authorId": "9962692",
+                        "name": "Sangwoo Mo"
+                    },
+                    {
+                        "authorId": "48173961",
+                        "name": "Jaeho Lee"
+                    },
+                    {
+                        "authorId": "143720148",
+                        "name": "Jinwoo Shin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "4c3723a1e7d2cf49d19050eadb6dd008a800abd8",
+                "externalIds": {
+                    "ArXiv": "2212.00911",
+                    "DBLP": "journals/corr/abs-2212-00911",
+                    "DOI": "10.48550/arXiv.2212.00911",
+                    "CorpusId": 254221209
+                },
+                "corpusId": 254221209,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/4c3723a1e7d2cf49d19050eadb6dd008a800abd8",
+                "title": "Navigating causal deep learning",
+                "abstract": "Causal deep learning (CDL) is a new and important research area in the larger field of machine learning. With CDL, researchers aim to structure and encode causal knowledge in the extremely flexible representation space of deep learning models. Doing so will lead to more informed, robust, and general predictions and inference -- which is important! However, CDL is still in its infancy. For example, it is not clear how we ought to compare different methods as they are so different in their output, the way they encode causal knowledge, or even how they represent this knowledge. This is a living paper that categorises methods in causal deep learning beyond Pearl's ladder of causation. We refine the rungs in Pearl's ladder, while also adding a separate dimension that categorises the parametric assumptions of both input and representation, arriving at the map of causal deep learning. Our map covers machine learning disciplines such as supervised learning, reinforcement learning, generative modelling and beyond. Our paradigm is a tool which helps researchers to: find benchmarks, compare methods, and most importantly: identify research gaps. With this work we aim to structure the avalanche of papers being published on causal deep learning. While papers on the topic are being published daily, our map remains fixed. We open-source our map for others to use as they see fit: perhaps to offer guidance in a related works section, or to better highlight the contribution of their paper.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2122909265",
+                        "name": "Jeroen Berrevoets"
+                    },
+                    {
+                        "authorId": "2052541552",
+                        "name": "Krzysztof Kacprzyk"
+                    },
+                    {
+                        "authorId": "8797071",
+                        "name": "Z. Qian"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "810382243d0a0b78c4167e7b9f58fd475402ccca",
+                "externalIds": {
+                    "ArXiv": "2211.05764",
+                    "DBLP": "journals/corr/abs-2211-05764",
+                    "DOI": "10.48550/arXiv.2211.05764",
+                    "CorpusId": 253447283
+                },
+                "corpusId": 253447283,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/810382243d0a0b78c4167e7b9f58fd475402ccca",
+                "title": "DC-Check: A Data-Centric AI checklist to guide the development of reliable machine learning systems",
+                "abstract": "While there have been a number of remarkable breakthroughs in machine learning (ML), much of the focus has been placed on model development. However, to truly realize the potential of machine learning in real-world settings, additional aspects must be considered across the ML pipeline. Data-centric AI is emerging as a unifying paradigm that could enable such reliable end-to-end pipelines. However, this remains a nascent area with no standardized framework to guide practitioners to the necessary data-centric considerations or to communicate the design of data-centric driven ML systems. To address this gap, we propose DC-Check, an actionable checklist-style framework to elicit data-centric considerations at different stages of the ML pipeline: Data, Training, Testing, and Deployment. This data-centric lens on development aims to promote thoughtfulness and transparency prior to system development. Additionally, we highlight specific data-centric AI challenges and research opportunities. DC-Check is aimed at both practitioners and researchers to guide day-to-day development. As such, to easily engage with and use DC-Check and associated resources, we provide a DC-Check companion website (https://www.vanderschaar-lab.com/dc-check/). The website will also serve as an updated resource as methods and tooling evolve over time.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "50842362",
+                        "name": "Nabeel Seedat"
+                    },
+                    {
+                        "authorId": "80471080",
+                        "name": "F. Imrie"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e1c25e1027ee6271126ef7e1c409e9700990bc26",
+                "externalIds": {
+                    "ArXiv": "2210.11275",
+                    "CorpusId": 253383648
+                },
+                "corpusId": 253383648,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/e1c25e1027ee6271126ef7e1c409e9700990bc26",
+                "title": "Causal Structural Hypothesis Testing and Data Generation Models",
+                "abstract": "A vast amount of expert and domain knowledge is captured by causal structural priors, yet there has been little research on testing such priors for generalization and data synthesis purposes. We propose a novel model architecture, Causal Structural Hypothesis Testing, that can use nonparametric, structural causal knowledge and approximate a causal model\u2019s functional relationships using deep neural networks. We use these architectures for comparing structural priors, akin to hypothesis testing, using a deliberate (non-random) split of training and testing data. Extensive simulations demonstrate the effectiveness of out-of-distribution generalization error as a proxy for causal structural prior hypothesis testing and offers a statistical baseline for interpreting results. We show that the variational version of the architecture, Causal Structural Variational Hypothesis Testing can improve performance in low SNR regimes. Due to the simplicity and low parameter count of the models, practitioners can test and compare structural prior hypotheses on small dataset and use the priors with the best generalization capacity to synthesize much larger, causally-informed datasets. Finally, we validate our methods on a synthetic pendulum dataset, and show a use-case on a real-world trauma surgery ground-level falls dataset. Our code is available on GitHub. 2",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1807735",
+                        "name": "Jeffrey Q. Jiang"
+                    },
+                    {
+                        "authorId": "2164382932",
+                        "name": "Omead Brandon Pooladzandi"
+                    },
+                    {
+                        "authorId": "2055252526",
+                        "name": "Sunay Bhat"
+                    },
+                    {
+                        "authorId": "144223987",
+                        "name": "G. Pottie"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "These methods include re-sampling, which changes the sampling rate of data during training to ensure each protected class is equally represented [1,23,26] and augmentation methods which add synthetic data to the dataset [22,31,3,34] to balance the protected classes."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "06b847dfc9a8d2ec34f8ee3c137dd83b126c513f",
+                "externalIds": {
+                    "DBLP": "conf/accv/RosaDH22",
+                    "ArXiv": "2210.04369",
+                    "DOI": "10.48550/arXiv.2210.04369",
+                    "CorpusId": 252781035
+                },
+                "corpusId": 252781035,
+                "publicationVenue": {
+                    "id": "a8f26d13-e373-4e48-b57b-ef89bf48f4db",
+                    "name": "Asian Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Asian Conf Comput Vis",
+                        "ACCV"
+                    ],
+                    "url": "http://www.cvl.iis.u-tokyo.ac.jp/afcv/"
+                },
+                "url": "https://www.semanticscholar.org/paper/06b847dfc9a8d2ec34f8ee3c137dd83b126c513f",
+                "title": "A Differentiable Distance Approximation for Fairer Image Classification",
+                "abstract": "Naively trained AI models can be heavily biased. This can be particularly problematic when the biases involve legally or morally protected attributes such as ethnic background, age or gender. Existing solutions to this problem come at the cost of extra computation, unstable adversarial optimisation or have losses on the feature space structure that are disconnected from fairness measures and only loosely generalise to fairness. In this work we propose a differentiable approximation of the variance of demographics, a metric that can be used to measure the bias, or unfairness, in an AI model. Our approximation can be optimised alongside the regular training objective which eliminates the need for any extra models during training and directly improves the fairness of the regularised models. We demonstrate that our approach improves the fairness of AI models in varied task and dataset scenarios, whilst still maintaining a high level of classification accuracy. Code is available at https://bitbucket.org/nelliottrosa/base_fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2187301122",
+                        "name": "Nicholas Rosa"
+                    },
+                    {
+                        "authorId": "144418842",
+                        "name": "T. Drummond"
+                    },
+                    {
+                        "authorId": "23911916",
+                        "name": "Mehrtash Harandi"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f78e92a5f37342492e2de9086a9f033716a6e35b",
+                "externalIds": {
+                    "ArXiv": "2209.06850",
+                    "DBLP": "journals/corr/abs-2209-06850",
+                    "DOI": "10.48550/arXiv.2209.06850",
+                    "CorpusId": 252280643
+                },
+                "corpusId": 252280643,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/f78e92a5f37342492e2de9086a9f033716a6e35b",
+                "title": "CAT: Controllable Attribute Translation for Fair Facial Attribute Classification",
+                "abstract": "As the social impact of visual recognition has been under scrutiny, several protected-attribute balanced datasets emerged to address dataset bias in imbalanced datasets. However, in facial attribute classification, dataset bias stems from both protected attribute level and facial attribute level, which makes it challenging to construct a multi-attribute-level balanced real dataset. To bridge the gap, we propose an effective pipeline to generate high-quality and sufficient facial images with desired facial attributes and supplement the original dataset to be a balanced dataset at both levels, which theoretically satisfies several fairness criteria. The effectiveness of our method is verified on sex classification and facial attribute classification by yielding comparable task performance as the original dataset and further improving fairness in a comprehensive fairness evaluation with a wide range of metrics. Furthermore, our method outperforms both resampling and balanced dataset construction to address dataset bias, and debiasing models to address task bias.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2109589200",
+                        "name": "Jiazhi Li"
+                    },
+                    {
+                        "authorId": "17806729",
+                        "name": "Wael AbdAlmageed"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Finally, causal generative models have been used to address the issue of fair or \u201cde-biased\" data sets such as DECAF, a causally aware GAN architecture applied explicitly to tabular data [10]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5c0d6dc0e19d8749c9e8a8da25ccf7ac5d205671",
+                "externalIds": {
+                    "ArXiv": "2207.01575",
+                    "DBLP": "journals/corr/abs-2207-01575",
+                    "DOI": "10.48550/arXiv.2207.01575",
+                    "CorpusId": 250264902
+                },
+                "corpusId": 250264902,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5c0d6dc0e19d8749c9e8a8da25ccf7ac5d205671",
+                "title": "De-Biasing Generative Models using Counterfactual Methods",
+                "abstract": "Variational autoencoders (VAEs) and other generative methods have garnered growing interest not just for their generative properties but also for the ability to dis-entangle a low-dimensional latent variable space. However, few existing generative models take causality into account. We propose a new decoder based framework named the Causal Counterfactual Generative Model (CCGM), which includes a partially trainable causal layer in which a part of a causal model can be learned without significantly impacting reconstruction fidelity. By learning the causal relationships between image semantic labels or tabular variables, we can analyze biases, intervene on the generative model, and simulate new scenarios. Furthermore, by modifying the causal structure, we can generate samples outside the domain of the original training data and use such counterfactual models to de-bias datasets. Thus, datasets with known biases can still be used to train the causal generative model and learn the causal relationships, but we can produce de-biased datasets on the generative side. Our proposed method combines a causal latent space VAE model with specific modification to emphasize causal fidelity, enabling finer control over the causal layer and the ability to learn a robust intervention framework. We explore how better disentanglement of causal learning and encoding/decoding generates higher causal intervention quality. We also compare our model against similar research to demonstrate the need for explicit generative de-biasing beyond interventions. Our initial experiments show that our model can generate images and tabular data with high fidelity to the causal framework and accommodate explicit de-biasing to ignore undesired relationships in the causal data compared to the baseline.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2055252526",
+                        "name": "Sunay Bhat"
+                    },
+                    {
+                        "authorId": "1807735",
+                        "name": "Jeffrey Q. Jiang"
+                    },
+                    {
+                        "authorId": "2164382932",
+                        "name": "Omead Brandon Pooladzandi"
+                    },
+                    {
+                        "authorId": "144223987",
+                        "name": "G. Pottie"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "[47] Boris van Breugel, Trent Kyono, Jeroen Berrevoets, and Mihaela van der Schaar."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2ae74f4c497289e2d901db5a740b0bb2c54553b1",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-06354",
+                    "ArXiv": "2206.06354",
+                    "DOI": "10.48550/arXiv.2206.06354",
+                    "CorpusId": 249625530
+                },
+                "corpusId": 249625530,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/2ae74f4c497289e2d901db5a740b0bb2c54553b1",
+                "title": "Differentiable and Transportable Structure Learning",
+                "abstract": "Directed acyclic graphs (DAGs) encode a lot of information about a particular distribution in their structure. However, compute required to infer these structures is typically super-exponential in the number of variables, as inference requires a sweep of a combinatorially large space of potential structures. That is, until recent advances made it possible to search this space using a differentiable metric, drastically reducing search time. While this technique -- named NOTEARS -- is widely considered a seminal work in DAG-discovery, it concedes an important property in favour of differentiability: transportability. To be transportable, the structures discovered on one dataset must apply to another dataset from the same domain. We introduce D-Struct which recovers transportability in the discovered structures through a novel architecture and loss function while remaining fully differentiable. Because D-Struct remains differentiable, our method can be easily adopted in existing differentiable architectures, as was previously done with NOTEARS. In our experiments, we empirically validate D-Struct with respect to edge accuracy and structural Hamming distance in a variety of settings.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2122909265",
+                        "name": "Jeroen Berrevoets"
+                    },
+                    {
+                        "authorId": "50842362",
+                        "name": "Nabeel Seedat"
+                    },
+                    {
+                        "authorId": "80471080",
+                        "name": "F. Imrie"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "However, such a match is difficult, especially in the presence of privacy requirements [82], and even undesirable in the presence of biases [23].",
+                "Definition 3 (Fairness Through Unawareness [23]) A predictor f : X \u2192 Y is fair if and only if protected attributes A \u2282 X are not explicitly used by f to predict Y \u2208 Y.",
+                "; and/or model fairness properties such as demographic parity, fairness through unawareness, or conditional fairness [23].",
+                "Fairness Through Unawareness (FTU) [23, 141] requires that the protected attributes, and only the protected attributes, not be used by the predictor.",
+                "Definition 4 (Demographic Parity [23]) A predictor f : X \u2192 Y is fair if and only if protected attributes A \u2282 X are independent of the predictions.",
+                "Rather than attempting to debias each trained model individually, one could generate a de-biased synthetic dataset and use it to train each model [22, 23], creating a unified approach for handling biases across an organisation.",
+                "DPa is a significantly stronger notion of fairness than FTU, which requires adjusting the distributions of all variables that are correlated with the protected attributes.",
+                "Definition 3 (Fairness Through Unawareness [23]) A predictor f : X \u2192 Y is fair if and only if protected attributes A \u2282 X are not explicitly used by f to predict Y \u2208 Y.\nDemographic Parity (DPa) [142], instead, requires that a predictors output\u2019s not be correlated with the protected attributes.",
+                "Indeed, with FTU, an attribute that is correlated with the protected attributes can be used as input to a predictor and thus the predictor can indirectly be correlated with the protected attributes (despite not having direct access to them).",
+                "FTU, however, fails to take into account the effect that protected attributes might have on other unprotected attributes, such as an individual\u2019s race resulting in them not being afforded the same educational opportunities as an individual of a different race (and thus resulting in them appearing to be disparately qualified).",
+                "This aligns with the idea that two equally qualified people deserve the same job opportunities, independent of race or gender [23].",
+                "In [23], they explore several notions of fairness and, via causal modelling, identify strategies for generating data that satisfy the given notions.",
+                "further and explicitly model the problem of data de-biasing as a one of \u201cgroundup\u201d generation [22, 23].",
+                "fairness through unawareness, demographic parity, conditional fairness [23])."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "a31f17f370268757e8210e3917e893951c318c78",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-03257",
+                    "ArXiv": "2205.03257",
+                    "DOI": "10.48550/arXiv.2205.03257",
+                    "CorpusId": 248563010
+                },
+                "corpusId": 248563010,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a31f17f370268757e8210e3917e893951c318c78",
+                "title": "Synthetic Data - what, why and how?",
+                "abstract": "This explainer document aims to provide an overview of the current state of the rapidly expanding work on synthetic data technologies, with a particular focus on privacy. The article is intended for a non-technical audience, though some formal definitions have been given to provide clarity to specialists. This article is intended to enable the reader to quickly become familiar with the notion of synthetic data, as well as understand some of the subtle intricacies that come with it. We do believe that synthetic data is a very useful tool, and our hope is that this report highlights that, while drawing attention to nuances that can easily be overlooked in its deployment.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "37996637",
+                        "name": "James Jordon"
+                    },
+                    {
+                        "authorId": "2413018",
+                        "name": "L. Szpruch"
+                    },
+                    {
+                        "authorId": "40893330",
+                        "name": "F. Houssiau"
+                    },
+                    {
+                        "authorId": "1415014709",
+                        "name": "M. Bottarelli"
+                    },
+                    {
+                        "authorId": "2591635",
+                        "name": "Giovanni Cherubin"
+                    },
+                    {
+                        "authorId": "2091059383",
+                        "name": "C. Maple"
+                    },
+                    {
+                        "authorId": "2164352216",
+                        "name": "Samuel N. Cohen"
+                    },
+                    {
+                        "authorId": "145689461",
+                        "name": "Adrian Weller"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "582a2b986f71878fd3f4b6146fd55cc6ef850508",
+                "externalIds": {
+                    "PubMedCentral": "9931259",
+                    "DBLP": "journals/corr/abs-2201-08186",
+                    "ArXiv": "2201.08186",
+                    "DOI": "10.1371/journal.pdig.0000074",
+                    "CorpusId": 246063330,
+                    "PubMed": "36812549"
+                },
+                "corpusId": 246063330,
+                "publicationVenue": {
+                    "id": "3cb7f6e9-aaa2-4e34-a258-88761d1d4b9a",
+                    "name": "PLOS Digital Health",
+                    "type": "journal",
+                    "alternate_names": [
+                        "PLO Digit Health"
+                    ],
+                    "issn": "2767-3170",
+                    "url": "https://journals.plos.org/digitalhealth/"
+                },
+                "url": "https://www.semanticscholar.org/paper/582a2b986f71878fd3f4b6146fd55cc6ef850508",
+                "title": "Conditional generation of medical time series for extrapolation to underrepresented populations",
+                "abstract": "The widespread adoption of electronic health records (EHRs) and subsequent increased availability of longitudinal healthcare data has led to significant advances in our understanding of health and disease with direct and immediate impact on the development of new diagnostics and therapeutic treatment options. However, access to EHRs is often restricted due to their perceived sensitive nature and associated legal concerns, and the cohorts therein typically are those seen at a specific hospital or network of hospitals and therefore not representative of the wider population of patients. Here, we present HealthGen, a new approach for the conditional generation of synthetic EHRs that maintains an accurate representation of real patient characteristics, temporal information and missingness patterns. We demonstrate experimentally that HealthGen generates synthetic cohorts that are significantly more faithful to real patient EHRs than the current state-of-the-art, and that augmenting real data sets with conditionally generated cohorts of underrepresented subpopulations of patients can significantly enhance the generalisability of models derived from these data sets to different patient populations. Synthetic conditionally generated EHRs could help increase the accessibility of longitudinal healthcare data sets and improve the generalisability of inferences made from these data sets to underrepresented populations.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2048052998",
+                        "name": "Simon Bing"
+                    },
+                    {
+                        "authorId": "3431679",
+                        "name": "Andrea Dittadi"
+                    },
+                    {
+                        "authorId": "153125952",
+                        "name": "Stefan Bauer"
+                    },
+                    {
+                        "authorId": "144861285",
+                        "name": "P. Schwab"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Causal structure has been leveraged for tasks other than domain adaptation, such as improving machine learning robustness [26], missing data imputation [25], or even fairness [53]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1e59454261f389bea85ceeb64ddcc5c7ccce65b9",
+                "externalIds": {
+                    "ArXiv": "2102.06271",
+                    "DBLP": "journals/corr/abs-2102-06271",
+                    "DOI": "10.1145/3587695",
+                    "CorpusId": 231918588
+                },
+                "corpusId": 231918588,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1e59454261f389bea85ceeb64ddcc5c7ccce65b9",
+                "title": "Selecting Treatment Effects Models for Domain Adaptation Using Causal Knowledge",
+                "abstract": "While a large number of causal inference models for estimating individualized treatment effects (ITE) have been developed, selecting the best one poses a unique challenge, since the counterfactuals are never observed. The problem is challenged further in the unsupervised domain adaptation (UDA) setting where we have access to labeled samples in the source domain but desire selecting an ITE model that achieves good performance on a target domain where only unlabeled samples are available. Existing selection techniques for UDA are designed for predictive models and are sub-optimal for causal inference because they (1) do not account for the missing counterfactuals and (2) only examine the discriminative density ratios between the input covariates in the source and target domain and do not factor in the model\u2019s predictions in the target domain. We leverage the invariance of causal structures across domains to introduce a novel model selection metric specifically designed for ITE models under UDA. We propose selecting models whose predictions of the effects of interventions satisfy invariant causal structures in the target domain. Experimentally, our method selects ITE models that are more robust to covariate shifts on a variety of datasets, including estimating the effect of ventilation in COVID-19 patients.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1904912212",
+                        "name": "Trent Kyono"
+                    },
+                    {
+                        "authorId": "1751623812",
+                        "name": "I. Bica"
+                    },
+                    {
+                        "authorId": "8797071",
+                        "name": "Z. Qian"
+                    },
+                    {
+                        "authorId": "1753599243",
+                        "name": "M. van der Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Furthermore, these approaches often lack any theoretical fairness guarantees; or requires casual structures to be known (van Breugel et al., 2021)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "80846d7f596a0ac664b20c8926a6dd599047beec",
+                "externalIds": {
+                    "DBLP": "conf/icml/SoenHN23",
+                    "ArXiv": "2012.00188",
+                    "CorpusId": 256847035
+                },
+                "corpusId": 256847035,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/80846d7f596a0ac664b20c8926a6dd599047beec",
+                "title": "Fair Densities via Boosting the Sufficient Statistics of Exponential Families",
+                "abstract": "We introduce a boosting algorithm to pre-process data for fairness. Starting from an initial fair but inaccurate distribution, our approach shifts towards better data fitting while still ensuring a minimal fairness guarantee. To do so, it learns the sufficient statistics of an exponential family with boosting-compliant convergence. Importantly, we are able to theoretically prove that the learned distribution will have a representation rate and statistical rate data fairness guarantee. Unlike recent optimization based pre-processing methods, our approach can be easily adapted for continuous domain features. Furthermore, when the weak learners are specified to be decision trees, the sufficient statistics of the learned distribution can be examined to provide clues on sources of (un)fairness. Empirical results are present to display the quality of result on real-world data.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "151382042",
+                        "name": "Alexander Soen"
+                    },
+                    {
+                        "authorId": "47287134",
+                        "name": "Hisham Husain"
+                    },
+                    {
+                        "authorId": "1718786",
+                        "name": "R. Nock"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Accordingly, recent methods of data imputation such as DECAF[46] could be leveraged to synthesize much more naturalistic datasets with known causal structures."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "fe4ec8dd69f476fdaca7b73d9a68ad41b5175ab2",
+                "externalIds": {
+                    "CorpusId": 259267809
+                },
+                "corpusId": 259267809,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/fe4ec8dd69f476fdaca7b73d9a68ad41b5175ab2",
+                "title": "Neural Causal Discovery and Social Science Research",
+                "abstract": "This review explores the use of deep learning in causal discovery research, with a particular focus on how these methods may advance applications within the social science domain. Over the course of the review we find that deep learning is advancing causal discovery techniques by replacing the explicit priors and assumptions of earlier methods with the data-driven representational capacity of neural networks. This is especially relevant within the context of social science research, where complex and messy data with unknown ground truth causal structures pose a challenge for accurately navigating any large hyperparameter space and strict assumptions associated with other causal discovery methods. The advantage is most evident in recent supervised causal discovery techniques which employ transformer architectures to learn a mapping between synthesized training data and underlying causal structures. One drawback of this approach is the corresponding dependence on training data with ground truth causal structures, which is not readily available in the social science domain. We suggest that the development of a more complicated, realistic benchmark library for causal discovery research would be a promising avenue for advancing the current SOTA towards real-world applications.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2220683809",
+                        "name": "Joshua Pierce"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "For example, synthetic data can be used to simulate settings where real data is scarce or unavailable [7, 10], support better supervised learning by increasing quality in datasets [8], improving robustness and predictive performance [69, 60], and promoting fairness [72]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d41c2ecc159e545ef02dac198a6be7b066d9563d",
+                "externalIds": {
+                    "DBLP": "conf/iclr/LiuQBS23",
+                    "CorpusId": 259298730
+                },
+                "corpusId": 259298730,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/d41c2ecc159e545ef02dac198a6be7b066d9563d",
+                "title": "GOGGLE: Generative Modelling for Tabular Data by Learning Relational Structure",
+                "abstract": "Deep generative models learn highly complex and non-linear representations to generate realistic synthetic data. While they have achieved notable success in computer vision and natural language processing, similar advances have been less demonstrable in the tabular domain. This is partially because generative modelling of tabular data entails a particular set of challenges, including heterogeneous relationships, limited number of samples, and difficulties in incorporating prior knowledge. Additionally, unlike their counterparts in image and sequence domain, deep generative models for tabular data almost exclusively employ fully-connected layers, which encode weak inductive biases about relationships between inputs. Real-world data generating processes can often be represented using relational structures, which encode sparse, heterogeneous relationships between variables. In this work, we learn and exploit relational structure underlying tabular data (where typical dimensionality d < 100) to better model variable dependence, and as a natural means to introduce regularization on relationships and include prior knowledge. Specifically, we introduce GOGGLE, an end-to-end message passing scheme that jointly learns the relational structure and corresponding functional relationships as the basis of generating synthetic samples. Using real-world datasets, we provide empirical evidence that the proposed method is effective in generating realistic synthetic data and exploiting domain knowledge for downstream tasks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2121678977",
+                        "name": "Tennison Liu"
+                    },
+                    {
+                        "authorId": "8797071",
+                        "name": "Z. Qian"
+                    },
+                    {
+                        "authorId": "2122909265",
+                        "name": "Jeroen Berrevoets"
+                    },
+                    {
+                        "authorId": "1729969",
+                        "name": "M. Schaar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "contexts": [
+                "This is true for all GAN based methods that we discussed, including FairGAN [10], DECAF [11], and CFGAN [12].",
+                "Finally, DECAF [11], is a casually-aware method which is proposed to create fair data for a few notions which does not include CF.",
+                "Our definition of fair SDG can be formulated as a constrained optimization, where the goal is to find 79 a distribution P \u2032(X,A, Y ) such that it satisfies a certain fairness notion (adopting the notation in 80 [11], we denote it by I ((X,Y,A), P \u2032)-fairness), while minimizing the distance of P \u2032 from the real 81 data P , where d is any distance of choice: 82",
+                "Our definition here is in line with the definition of fairness for SDG in FairGAN [10] and [12], while it is different from the definition proposed in DECAF [11].",
+                "This is true for all 177 GAN based methods that we discussed, including FairGAN [10], DECAF [11], and CFGAN [12].",
+                "While this is doable for some of the definitions like 76 demographic parity, it is not possible for notions that depend explicitly to downstream task like equal 77 opportunity as it is also pointed out in previous works [11].",
+                "Finally, DECAF [11], 45 is a casually-aware method which is proposed to create fair data for a few notions which does not 46 include CF.",
+                "Using the technique proposed in [11][Section 5.",
+                "The most relevant works to the problem we consider here are [10, 11, 12].",
+                "49 We also review the existing definitions in previous work [10, 11, 12] and compare them with our 50 definition.",
+                "Our definition here is in line with the definition of fairness for SDG in FairGAN [10] and [12], while 103 it is different from the definition proposed in DECAF [11]."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "4ecc978634662e0b087aafc9175d264233c3a894",
+                "externalIds": {
+                    "CorpusId": 253083218
+                },
+                "corpusId": 253083218,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/4ecc978634662e0b087aafc9175d264233c3a894",
+                "title": "Counterfactual Fairness in Synthetic Data Generation",
+                "abstract": "Synthetic data generation (SDG) is proposed as a promising solution for data sharing as in many high-stake applications due to privacy concerns, releasing the real dataset is not an option. While the main goal of private SDG is to create a dataset that preserves the privacy of individuals contributing to the dataset, the use of synthetic data also creates an opportunity to improve the fairness issue at the source. Since there exist historical biases in the datasets, using the biased data to train an ML model can lead to an unfair model which may exacerbate the discrimination. Using synthetic data, we can attempt to remove the bias from the dataset before releasing the data. In this work, we formalize the definition of fairness in synthetic data generation and propose a method to achieve counterfactual fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3323467",
+                        "name": "Mahed Abroshan"
+                    },
+                    {
+                        "authorId": "2064013832",
+                        "name": "Andrew Elliott"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Causally-aware Generator Besides Causal-TGAN, we explicitly leave out CGNN (Goudet et al., 2018), CausalGAN (Kocaoglu et al., 2017) and DECAF (van Breugel et al., 2021), which incorporate similar causally-aware generator."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "59b594bbeacf18e31bc46268bf5fa71fbaf8a4bb",
+                "externalIds": {
+                    "CorpusId": 249089381
+                },
+                "corpusId": 249089381,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/59b594bbeacf18e31bc46268bf5fa71fbaf8a4bb",
+                "title": "C AUSAL -TGAN: M ODELING T ABULAR D ATA U SING C AUSALLY -A WARE GAN",
+                "abstract": "Generative adversarial net (GAN)-based tabular data generation has recently received significant attention for its power for data augmentation when available data is limited. Most prior works have applied generic GAN frameworks for tabular data generation without explicitly considering inter-variable relationships, which is important for modeling tabular data distribution. In this work, we design Causal-TGAN, a causally-aware generator architecture that can capture the relationships among variables (continuous-type, discrete-type, and mixed-type) by explicitly modeling the pre-defined inter-variable causal relationships. The flexibility of Causal-TGAN is its capability to support different degrees of subject matter expert domain knowledge (e.g., complete or partial) about the inter-variable causal relations. Extensive experimental results on both simulated and real-world datasets demonstrate that exploiting causal relations in deep generative models could improve the generated tabular data quality compared to the state-of-the-art. Code is available at https://github.com/BiggyBing/Causal-TGAN-Public.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2112825227",
+                        "name": "Yupeng Cao"
+                    },
+                    {
+                        "authorId": "145338224",
+                        "name": "F. Yang"
+                    },
+                    {
+                        "authorId": "1754622",
+                        "name": "K.P. Subbalakshmi"
+                    },
+                    {
+                        "authorId": "3271688",
+                        "name": "R. Chandramouli"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ea60af1cbd92c783804408f138b683eb1789dc7a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-11275",
+                    "DOI": "10.48550/arXiv.2210.11275",
+                    "CorpusId": 253018328
+                },
+                "corpusId": 253018328,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ea60af1cbd92c783804408f138b683eb1789dc7a",
+                "title": "Hypothesis Testing using Causal and Causal Variational Generative Models",
+                "abstract": "Hypothesis testing and the usage of expert knowledge, or causal priors, has not 1 been well explored in the context of generative models. We propose a novel set 2 of generative architectures, Causal Gen and Causal Variational Gen, that can uti- 3 lize nonparametric structural causal knowledge combined with a deep learning 4 functional approximation. We show how, using a deliberate (non-random) split 5 of training and testing data, these models can generalize better to similar, but 6 out-of-distribution data points, than non-causal generative models and prediction 7 models such as Variational autoencoders and Fully Connected Neural Networks. 8 We explore using this generalization error as a proxy for causal model hypothesis 9 testing. We further show how dropout can be used to learn functional relation- 10 ships of structural models that are difficult to learn with traditional methods. We 11 validate our methods on a synthetic pendulum dataset, as well as a trauma surgery 12 ground level fall dataset. 13",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1807735",
+                        "name": "Jeffrey Q. Jiang"
+                    },
+                    {
+                        "authorId": "2164382932",
+                        "name": "Omead Brandon Pooladzandi"
+                    },
+                    {
+                        "authorId": "2055252526",
+                        "name": "Sunay Bhat"
+                    },
+                    {
+                        "authorId": "144223987",
+                        "name": "G. Pottie"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,389 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "Moreover, enforcing strict consistency for exponential family models p and q, is a severe restriction, leading to a joint m, which collapses to an EF-Harmonium (Shekhovtsov et al., 2022)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "37a5fa964a8dcd0bbf33d2a73a5f169368249ade",
+                "externalIds": {
+                    "ArXiv": "2307.09883",
+                    "DBLP": "journals/corr/abs-2307-09883",
+                    "DOI": "10.48550/arXiv.2307.09883",
+                    "CorpusId": 259982837
+                },
+                "corpusId": 259982837,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/37a5fa964a8dcd0bbf33d2a73a5f169368249ade",
+                "title": "Symmetric Equilibrium Learning of VAEs",
+                "abstract": "We view variational autoencoders (VAE) as decoder-encoder pairs, which map distributions in the data space to distributions in the latent space and vice versa. The standard learning approach for VAEs, i.e. maximisation of the evidence lower bound (ELBO), has an obvious asymmetry in that respect. Moreover, it requires a closed form a-priori latent distribution. This limits the applicability of VAEs in more complex scenarios, such as general semi-supervised learning and employing complex generative models as priors. We propose a Nash equilibrium learning approach that relaxes these restrictions and allows learning VAEs in situations where both the data and the latent distributions are accessible only by sampling. The flexibility and simplicity of this approach allows its application to a wide range of learning scenarios and downstream tasks. We show experimentally that the models learned by this method are comparable to those obtained by ELBO learning and demonstrate its applicability for tasks that are not accessible by standard VAE learning.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3017745",
+                        "name": "B. Flach"
+                    },
+                    {
+                        "authorId": "34033578",
+                        "name": "D. Schlesinger"
+                    },
+                    {
+                        "authorId": "145965041",
+                        "name": "A. Shekhovtsov"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "However, in practice, determining such a form is often infeasible [41]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "b7e1b964393846e4ed9abd648c233fcca39fa34d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-16530",
+                    "ArXiv": "2305.16530",
+                    "DOI": "10.48550/arXiv.2305.16530",
+                    "CorpusId": 258947381
+                },
+                "corpusId": 258947381,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b7e1b964393846e4ed9abd648c233fcca39fa34d",
+                "title": "Bi-fidelity Variational Auto-encoder for Uncertainty Quantification",
+                "abstract": "Quantifying the uncertainty of quantities of interest (QoIs) from physical systems is a primary objective in model validation. However, achieving this goal entails balancing the need for computational efficiency with the requirement for numerical accuracy. To address this trade-off, we propose a novel bi-fidelity formulation of variational auto-encoders (BF-VAE) designed to estimate the uncertainty associated with a QoI from low-fidelity (LF) and high-fidelity (HF) samples of the QoI. This model allows for the approximation of the statistics of the HF QoI by leveraging information derived from its LF counterpart. Specifically, we design a bi-fidelity auto-regressive model in the latent space that is integrated within the VAE's probabilistic encoder-decoder structure. An effective algorithm is proposed to maximize the variational lower bound of the HF log-likelihood in the presence of limited HF data, resulting in the synthesis of HF realizations with a reduced computational cost. Additionally, we introduce the concept of the bi-fidelity information bottleneck (BF-IB) to provide an information-theoretic interpretation of the proposed BF-VAE model. Our numerical results demonstrate that BF-VAE leads to considerably improved accuracy, as compared to a VAE trained using only HF data when limited HF data is available.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1880113453",
+                        "name": "Nuojin Cheng"
+                    },
+                    {
+                        "authorId": "33948059",
+                        "name": "Osman Asif Malik"
+                    },
+                    {
+                        "authorId": "50333204",
+                        "name": "Stephen Becker"
+                    },
+                    {
+                        "authorId": "2575324",
+                        "name": "A. Doostan"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The ELBO optimization is a well known method which was deeply investigated, and is applicable in many models, mainly in VAE [8].",
+                "Minimizing the KL divergence is equivalent to maximizing the Evidence Lower Bound (ELBO) [8]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "c17947d61cd95185120d6a56c7e7260c1f102c4c",
+                "externalIds": {
+                    "DBLP": "conf/icmla/ZalmanF22",
+                    "DOI": "10.1109/ICMLA55696.2022.00136",
+                    "CorpusId": 257720212
+                },
+                "corpusId": 257720212,
+                "publicationVenue": {
+                    "id": "f6752838-f268-4a1b-87e7-c5f30a36713c",
+                    "name": "International Conference on Machine Learning and Applications",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Mach Learn Appl",
+                        "ICMLA"
+                    ],
+                    "url": "http://www.icmla-conference.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c17947d61cd95185120d6a56c7e7260c1f102c4c",
+                "title": "Variational Inference via R\u00e9nyi Upper-Lower Bound Optimization",
+                "abstract": "Variational inference provides a way to approximate probability densities. It does so by optimizing an upper or a lower bound on the likelihood of the observed data (the evidence). The classic variational inference approach suggests to maximize the Evidence Lower BOund (ELBO). Recent proposals suggest to optimize the variational R\u00e9nyi bound (VR) and \u03c7 upper bound. However, these estimates are either biased or difficult to approximate, due to a high variance.In this paper we introduce a new upper bound (termed VRLU) which is based on the existing variational R\u00e9nyi bound. In contrast to the existing VR bound, the Monte Carlo (MC) approximation of the VRLU bound is unbiased. Furthermore, we devise a (sandwiched) upper-lower bound variational inference method (termed VRS) to jointly optimize the upper and lower bounds. We present a set of experiments, designed to evaluate the new VRLU bound, and to compare the VRS method with the classic VAE and the VR methods over a set of digit recognition tasks. The experiments and results demonstrate the VRLU bound advantage, and the wide applicability of the VRS method.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2212623567",
+                        "name": "Dana Oshri Zalman"
+                    },
+                    {
+                        "authorId": "1684722",
+                        "name": "S. Fine"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Most of the insightful points focus on more complex target posterior distributions, leading to an increase in the complexity of the model and the computational burden of model training [27].",
+                "Unfortunately, VAE's generation process needs to make assumptions about the distribution space of latent variables, which will cause the approximation error [24-27]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "850d2c7c96a1c649f3517538d557f425fa0c871d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-08794",
+                    "ArXiv": "2210.08794",
+                    "DOI": "10.48550/arXiv.2210.08794",
+                    "CorpusId": 252918184
+                },
+                "corpusId": 252918184,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/850d2c7c96a1c649f3517538d557f425fa0c871d",
+                "title": "Break The Spell Of Total Correlation In betaTCVAE",
+                "abstract": "In the absence of artificial labels, the independent and dependent features in the data are cluttered. How to construct the inductive biases of the model to flexibly divide and effectively contain features with different complexity is the main focal point of unsupervised disentangled representation learning. This paper proposes a new iterative decomposition path of total correlation and explains the disentangled representation ability of VAE from the perspective of model capacity allocation. The newly developed objective function combines latent variable dimensions into joint distribution while relieving the independence constraints of marginal distributions in combination, leading to latent variables with a more manipulable prior distribution. The novel model enables VAE to adjust the parameter capacity to divide dependent and independent data features flexibly. Experimental results on various datasets show an interesting relevance between model capacity and the latent variable grouping size, called the\"V\"-shaped best ELBO trajectory. Additionally, we empirically demonstrate that the proposed method obtains better disentangling performance with reasonable parameter capacity allocation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2188008450",
+                        "name": "Zihao Chen"
+                    },
+                    {
+                        "authorId": "2146263544",
+                        "name": "Qiang Li"
+                    },
+                    {
+                        "authorId": "145759084",
+                        "name": "Bing Guo"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Yan Shen"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "(Shekhovtsov et al., 2022) demonstrated the relationship between model consistency and posterior collapse and suggested that a proper choice of data processing or architecture may alleviate collapse."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "94280b0daa32d3a71ce28524e360a5cf7b28ed33",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-04009",
+                    "ArXiv": "2205.04009",
+                    "DOI": "10.48550/arXiv.2205.04009",
+                    "CorpusId": 248571804
+                },
+                "corpusId": 248571804,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/94280b0daa32d3a71ce28524e360a5cf7b28ed33",
+                "title": "Posterior Collapse of a Linear Latent Variable Model",
+                "abstract": "This work identifies the existence and cause of a type of posterior collapse that frequently occurs in the Bayesian deep learning practice. For a general linear latent variable model that includes linear variational autoencoders as a special case, we precisely identify the nature of posterior collapse to be the competition between the likelihood and the regularization of the mean due to the prior. Our result suggests that posterior collapse may be related to neural collapse and dimensional collapse and could be a subclass of a general problem of learning for deeper architectures.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1390878075",
+                        "name": "Zihao Wang"
+                    },
+                    {
+                        "authorId": "12907562",
+                        "name": "Liu Ziyin"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For VAEs there are several lines of work in this respect which investigate ELBO optimization (Hoffman and Johnson, 2016; Mescheder et al., 2017; Dai et al., 2018; Lucas et al., 2019; Shekhovtsov et al., 2022)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "d718c2f2c38d4d943a86405aad270adc79bc7104",
+                "externalIds": {
+                    "ArXiv": "2010.14860",
+                    "DBLP": "conf/aistats/DammFVDFL23",
+                    "CorpusId": 259107071
+                },
+                "corpusId": 259107071,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d718c2f2c38d4d943a86405aad270adc79bc7104",
+                "title": "The ELBO of Variational Autoencoders Converges to a Sum of Entropies",
+                "abstract": "The central objective function of a variational autoencoder (VAE) is its variational lower bound (the ELBO). Here we show that for standard (i.e., Gaussian) VAEs the ELBO converges to a value given by the sum of three entropies: the (negative) entropy of the prior distribution, the expected (negative) entropy of the observable distribution, and the average entropy of the variational distributions (the latter is already part of the ELBO). Our derived analytical results are exact and apply for small as well as for intricate deep networks for encoder and decoder. Furthermore, they apply for finitely and infinitely many data points and at any stationary point (including local maxima and saddle points). The result implies that the ELBO can for standard VAEs often be computed in closed-form at stationary points while the original ELBO requires numerical approximations of integrals. As a main contribution, we provide the proof that the ELBO for VAEs is at stationary points equal to entropy sums. Numerical experiments then show that the obtained analytical results are sufficiently precise also in those vicinities of stationary points that are reached in practice. Furthermore, we discuss how the novel entropy form of the ELBO can be used to analyze and understand learning behavior. More generally, we believe that our contributions can be useful for future theoretical and practical studies on VAE learning as they provide novel information on those points in parameters space that optimization of VAEs converges to.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2188834006",
+                        "name": "Simon Damm"
+                    },
+                    {
+                        "authorId": "152990978",
+                        "name": "D. Forster"
+                    },
+                    {
+                        "authorId": "2500969",
+                        "name": "Dmytro Velychko"
+                    },
+                    {
+                        "authorId": "2024189708",
+                        "name": "Zhenwen Dai"
+                    },
+                    {
+                        "authorId": "35988982",
+                        "name": "Asja Fischer"
+                    },
+                    {
+                        "authorId": "1790122",
+                        "name": "J\u00f6rg L\u00fccke"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "It has been shown that flexible and invertible transformation g(\u00b7) can overcome this issue [41, 7].",
+                "If the decoder and encoder are from an exponential family, the simple affine mapping is enough to ensure the encoder and decoder consistency for any exponential distribution [41] and ELBO maximization forces themodel to be simple."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fc31f47728c60cf141ea145810dc7dd9aaa09668",
+                "externalIds": {
+                    "CorpusId": 260602078
+                },
+                "corpusId": 260602078,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/fc31f47728c60cf141ea145810dc7dd9aaa09668",
+                "title": "Semi-Supervised Learning for Spatio-Temporal Segmentation of Satellite Images",
+                "abstract": "This thesis investigates the applicability of semi-supervised machine learning algorithms for forest land cover segmentation in satellite images. Instead of directly evaluating satellite imagery, the CityScape dataset is utilized for result verification and reproducibility. We review the semi-supervised machine learning algorithms, introduce MixMatch as a referencemethod and a novel algorithm based on symmetric learning of variational autoencoders, along with a self-contained introduction to variational autoencoders. The research aims to compare the segmentation potential and capabilities of both the new and the reference algorithms using a U-net network-based model architecture. The results show that MixMatch effectively enhances segmentation performance to supervised baseline, particularly in scenarios with limited labeled data. Although the symmetrical learning does not exceed the supervised baseline, the experiments still serve as a proof of concept, highlighting areas for further investigation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145965041",
+                        "name": "A. Shekhovtsov"
+                    },
+                    {
+                        "authorId": "34033578",
+                        "name": "D. Schlesinger"
+                    },
+                    {
+                        "authorId": "3017745",
+                        "name": "B. Flach"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Other notable VAE analysis work pointed out by reviewers includes (Damm et al., 2023; Shekhovtsov et al., 2022; Zietlow et al., 2021)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "419757bb967bf77ee726581e6f2039dd90c7805e",
+                "externalIds": {
+                    "DBLP": "conf/icml/Wipf23",
+                    "CorpusId": 260835642
+                },
+                "corpusId": 260835642,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/419757bb967bf77ee726581e6f2039dd90c7805e",
+                "title": "Marginalization is not Marginal: No Bad VAE Local Minima when Learning Optimal Sparse Representations",
+                "abstract": "Although the variational autoencoder (VAE) represents a widely-used deep generative model, the underlying energy function when applied to continuous data remains poorly understood. In fact, most prior theoretical analysis has assumed a simplified affine decoder such that the model collapses to probabilistic PCA, a restricted regime whereby existing classical algorithms can also be trivially applied to guarantee globally optimal solutions. To push our understanding into more complex, practically-relevant settings, this paper instead adopts a deceptively sophisticated single-layer de-coder that nonetheless allows the VAE to address the fundamental challenge of learning optimally sparse representations of continuous data originating from popular multiple-response regression models. In doing so, we can then examine VAE properties within the non-trivial context of solving difficult, NP-hard inverse problems. More specifically, we prove rigorous conditions which guarantee that any minimum of the VAE energy (local or global) will produce the optimally sparse latent representation, meaning zero reconstruction error using a minimal number of active latent dimensions. This is ultimately possible because VAE marginalization over the latent posterior selectively smooths away bad local minima as has been conjectured but not actually proven in prior work. We then discuss how equivalent-capacity deterministic autoencoders, even with appropriate sparsity-promoting regularization of the latent space, maintain bad local minima that do not correspond with such parsimonious representations. Overall, these results serve to elucidate key properties of the VAE loss surface relative to finding low-dimensional structure in data.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2242717",
+                        "name": "D. Wipf"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Unfortunately, it also causes the approximation error of VAE since the generation process needs to make assumptions about the distribution space of latent variables [24],[25],[26],[27].",
+                "Most of the highlights focus on more complex target posterior distributions, leading to an increase in the complexity of the model and the computational burden of model training [27]."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": null,
+                "externalIds": null,
+                "corpusId": "252919037",
+                "publicationVenue": null,
+                "url": null,
+                "title": "3 MANIPULABILITY OF PARAMETER CAPACITY AND NEW METHODS 3 . 1 Parameter capacity allocation challenge",
+                "abstract": null,
+                "year": 2022,
+                "authors": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,944 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "Notice that in [30], it uses the deep neural network to learn a data-adaptive reference so that algorithm proposed can perform better."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e8e58549e8b85fca3f16e03e6c17dd7d79901ada",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-08328",
+                    "ArXiv": "2308.08328",
+                    "DOI": "10.48550/arXiv.2308.08328",
+                    "CorpusId": 260926442
+                },
+                "corpusId": 260926442,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e8e58549e8b85fca3f16e03e6c17dd7d79901ada",
+                "title": "Phase Retrieval with Background Information: Decreased References and Efficient Methods",
+                "abstract": "Fourier phase retrieval(PR) is a severely ill-posed inverse problem that arises in various applications. To guarantee a unique solution and relieve the dependence on the initialization, background information can be exploited as a structural priors. However, the requirement for the background information may be challenging when moving to the high-resolution imaging. At the same time, the previously proposed projected gradient descent(PGD) method also demands much background information. In this paper, we present an improved theoretical result about the demand for the background information, along with two Douglas Rachford(DR) based methods. Analytically, we demonstrate that the background required to ensure a unique solution can be decreased by nearly $1/2$ for the 2-D signals compared to the 1-D signals. By generalizing the results into $d$-dimension, we show that the length of the background information more than $(2^{\\frac{d+1}{d}}-1)$ folds of the signal is sufficient to ensure the uniqueness. At the same time, we also analyze the stability and robustness of the model when measurements and background information are corrupted by the noise. Furthermore, two methods called Background Douglas-Rachford (BDR) and Convex Background Douglas-Rachford (CBDR) are proposed. BDR which is a kind of non-convex method is proven to have the local R-linear convergence rate under mild assumptions. Instead, CBDR method uses the techniques of convexification and can be proven to own a global convergence guarantee as long as the background information is sufficient. To support this, a new property called F-RIP is established. We test the performance of the proposed methods through simulations as well as real experimental measurements, and demonstrate that they achieve a higher recovery rate with less background information compared to the PGD method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "8591253",
+                        "name": "Ziyang Yuan"
+                    },
+                    {
+                        "authorId": "2115537783",
+                        "name": "Haoxing Yang"
+                    },
+                    {
+                        "authorId": "2036153510",
+                        "name": "N.-Y. Leng"
+                    },
+                    {
+                        "authorId": "2113218129",
+                        "name": "Hongxia Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "96af6901e5a894546e1f50a4a0fd2cddcd6618b8",
+                "externalIds": {
+                    "DOI": "10.1117/12.2668352",
+                    "CorpusId": 260789225
+                },
+                "corpusId": 260789225,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/96af6901e5a894546e1f50a4a0fd2cddcd6618b8",
+                "title": "CNN-assisted quantitative phase microscopy for biological cell imaging",
+                "abstract": "Phase imaging is a solution for the reconstruction of phase information from intensity observations. To make phase imaging possible, sophisticated extra systems are embedded into the existing imaging systems. Contrary, we propose a phase problem solution by DCNN-based framework, which is simple in terms of an optical system. We propose to replace optical lenses with computational algorithms such as CNN phase reconstruction and wavefront propagation. The framework is tested in simulation and real-life experimental phase imaging. To have real experiments with objects close to real-life biological cells, we simulated experimental training datasets on a phase-only spatial light modulator, where phase objects are modeled with corresponding phase distribution to biological cells.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "14270009",
+                        "name": "I. Shevkunov"
+                    },
+                    {
+                        "authorId": "2553642",
+                        "name": "M. Kandhavelu"
+                    },
+                    {
+                        "authorId": "2237778153",
+                        "name": "K. Egiazarian"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[18] uses supervised learning with pairs of data {bi,xi} to train an end-to-end neural network (NN) that represents an implicit prior."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "591ed5222fbc45ba87a66dc55dba94cbb5fb64a2",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-08717",
+                    "ArXiv": "2307.08717",
+                    "DOI": "10.48550/arXiv.2307.08717",
+                    "CorpusId": 259950950
+                },
+                "corpusId": 259950950,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/591ed5222fbc45ba87a66dc55dba94cbb5fb64a2",
+                "title": "Untrained neural network embedded Fourier phase retrieval from few measurements",
+                "abstract": "Fourier phase retrieval (FPR) is a challenging task widely used in various applications. It involves recovering an unknown signal from its Fourier phaseless measurements. FPR with few measurements is important for reducing time and hardware costs, but it suffers from serious ill-posedness. Recently, untrained neural networks have offered new approaches by introducing learned priors to alleviate the ill-posedness without requiring any external data. However, they may not be ideal for reconstructing fine details in images and can be computationally expensive. This paper proposes an untrained neural network (NN) embedded algorithm based on the alternating direction method of multipliers (ADMM) framework to solve FPR with few measurements. Specifically, we use a generative network to represent the image to be recovered, which confines the image to the space defined by the network structure. To improve the ability to represent high-frequency information, total variation (TV) regularization is imposed to facilitate the recovery of local structures in the image. Furthermore, to reduce the computational cost mainly caused by the parameter updates of the untrained NN, we develop an accelerated algorithm that adaptively trades off between explicit and implicit regularization. Experimental results indicate that the proposed algorithm outperforms existing untrained NN-based algorithms with fewer computational resources and even performs competitively against trained NN-based algorithms.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2109643145",
+                        "name": "Liyuan Ma"
+                    },
+                    {
+                        "authorId": "2113218129",
+                        "name": "Hongxia Wang"
+                    },
+                    {
+                        "authorId": "2036153510",
+                        "name": "N.-Y. Leng"
+                    },
+                    {
+                        "authorId": "8591253",
+                        "name": "Ziyang Yuan"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The supervised methods (Rivenson et al. 2018; Is\u0327\u0131l, Oktem, and Koc\u0327 2019; Naimipour, Khobahi, and Soltanalian 2020; Hyder, Cai, and Asif 2020; Zhang et al. 2021a; Shi and Lian 2022) train an end-to-end NN over a paired dataset."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c02b92e4ffb3edd22280154b535017de8a1938c9",
+                "externalIds": {
+                    "DBLP": "conf/aaai/QuanCPJ23",
+                    "DOI": "10.1609/aaai.v37i2.25306",
+                    "CorpusId": 259697005
+                },
+                "corpusId": 259697005,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c02b92e4ffb3edd22280154b535017de8a1938c9",
+                "title": "Unsupervised Deep Learning for Phase Retrieval via Teacher-Student Distillation",
+                "abstract": "Phase retrieval (PR) is a challenging nonlinear inverse problem in scientific imaging that involves reconstructing the phase of a signal from its intensity measurements. Recently, there has been an increasing interest in deep learning-based PR. Motivated by the challenge of collecting ground-truth (GT) images in many domains, this paper proposes a fully-unsupervised learning approach for PR, which trains an end-to-end deep model via a GT-free teacher-student online distillation framework. Specifically, a teacher model is trained using a self-expressive loss with noise resistance, while a student model is trained with a consistency loss on augmented data to exploit the teacher's dark knowledge. Additionally, we develop an enhanced unfolding network for both the teacher and student models. Extensive experiments show that our proposed approach outperforms existing unsupervised PR methods with higher computational efficiency and performs competitively against supervised methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2217653",
+                        "name": "Yuhui Quan"
+                    },
+                    {
+                        "authorId": "2136453688",
+                        "name": "Zhile Chen"
+                    },
+                    {
+                        "authorId": "153063366",
+                        "name": "T. Pang"
+                    },
+                    {
+                        "authorId": "90137165",
+                        "name": "Hui Ji"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This limitation gives rise to inverse problems such as phaseretrieval [22, 51, 53, 15, 50] ptychography [37, 8], Fourier ptychography [41, 47, 40, 56, 16], coded diffraction imaging [2] and holography."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "418e690f7db33de1273f3b43b1bac4c26315d651",
+                "externalIds": {
+                    "ArXiv": "2212.03235",
+                    "CorpusId": 260315787
+                },
+                "corpusId": 260315787,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/418e690f7db33de1273f3b43b1bac4c26315d651",
+                "title": "Complex-valued Retrievals From Noisy Images Using Diffusion Models",
+                "abstract": "In diverse microscopy modalities, sensors measure only real-valued intensities. Additionally, the sensor readouts are affected by Poissonian-distributed photon noise. Traditional restoration algorithms typically aim to minimize the mean squared error (MSE) between the original and recovered images. This often leads to blurry outcomes with poor perceptual quality. Recently, deep diffusion models (DDMs) have proven to be highly capable of sampling images from the a-posteriori probability of the sought variables, resulting in visually pleasing high-quality images. These models have mostly been suggested for real-valued images suffering from Gaussian noise. In this study, we generalize annealed Langevin Dynamics, a type of DDM, to tackle the fundamental challenges in optical imaging of complex-valued objects (and real images) affected by Poisson noise. We apply our algorithm to various optical scenarios, such as Fourier Ptychography, Phase Retrieval, and Poisson denoising. Our algorithm is evaluated on simulations and biological empirical data.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2193623639",
+                        "name": "Nadav Torem"
+                    },
+                    {
+                        "authorId": "2032217931",
+                        "name": "Roi Ronen"
+                    },
+                    {
+                        "authorId": "2159538",
+                        "name": "Y. Schechner"
+                    },
+                    {
+                        "authorId": "1753908",
+                        "name": "Michael Elad"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ee3958bd905bd33cb6c08f0f72d45a9ec0b7b754",
+                "externalIds": {
+                    "PubMedCentral": "9788068",
+                    "DBLP": "journals/sensors/HyderCA22",
+                    "DOI": "10.3390/s22249964",
+                    "CorpusId": 254921582,
+                    "PubMed": "36560332"
+                },
+                "corpusId": 254921582,
+                "publicationVenue": {
+                    "id": "3dbf084c-ef47-4b74-9919-047b40704538",
+                    "name": "Italian National Conference on Sensors",
+                    "type": "conference",
+                    "alternate_names": [
+                        "SENSORS",
+                        "IEEE Sens",
+                        "Ital National Conf Sens",
+                        "IEEE Sensors",
+                        "Sensors"
+                    ],
+                    "issn": "1424-8220",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-142001",
+                    "alternate_urls": [
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-142001",
+                        "http://www.mdpi.com/journal/sensors",
+                        "https://www.mdpi.com/journal/sensors"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/ee3958bd905bd33cb6c08f0f72d45a9ec0b7b754",
+                "title": "Learning to Sense for Coded Diffraction Imaging",
+                "abstract": "In this paper, we present a framework to learn illumination patterns to improve the quality of signal recovery for coded diffraction imaging. We use an alternating minimization-based phase retrieval method with a fixed number of iterations as the iterative method. We represent the iterative phase retrieval method as an unrolled network with a fixed number of layers where each layer of the network corresponds to a single step of iteration, and we minimize the recovery error by optimizing over the illumination patterns. Since the number of iterations/layers is fixed, the recovery has a fixed computational cost. Extensive experimental results on a variety of datasets demonstrate that our proposed method significantly improves the quality of image reconstruction at a fixed computational cost with illumination patterns learned only using a small number of training images.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1605999515",
+                        "name": "Rakib Hyder"
+                    },
+                    {
+                        "authorId": "1739216160",
+                        "name": "Zikui Cai"
+                    },
+                    {
+                        "authorId": "27996204",
+                        "name": "M. Salman Asif"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a4f718b776b0fc8deea07b6c9df96a7628571094",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-15617",
+                    "ArXiv": "2205.15617",
+                    "DOI": "10.48550/arXiv.2205.15617",
+                    "CorpusId": 249209995
+                },
+                "corpusId": 249209995,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a4f718b776b0fc8deea07b6c9df96a7628571094",
+                "title": "Optimizing Intermediate Representations of Generative Models for Phase Retrieval",
+                "abstract": "Phase retrieval is the problem of reconstructing images from magnitude-only measurements. In many real-world applications the problem is underdetermined. When training data is available, generative models allow optimization in a lower-dimensional latent space, hereby constraining the solution set to those images that can be synthesized by the generative model. However, not all possible solutions are within the range of the generator. Instead, they are represented with some error. To reduce this representation error in the context of phase retrieval, we first leverage a novel variation of intermediate layer optimization (ILO) to extend the range of the generator while still producing images consistent with the training data. Second, we introduce new initialization schemes that further improve the quality of the reconstruction. With extensive experiments on the Fourier phase retrieval problem and thorough ablation studies, we can show the benefits of our modified ILO and the new initialization schemes. Additionally, we analyze the performance of our approach on the Gaussian phase retrieval problem.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "148250214",
+                        "name": "Tobias Uelwer"
+                    },
+                    {
+                        "authorId": "2433528",
+                        "name": "S. Konietzny"
+                    },
+                    {
+                        "authorId": "1734990",
+                        "name": "S. Harmeling"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "On the other hand, there is active research on replacing optimization steps and further enhancing optimization routines with learned-references [14]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "639109408b9165813fb7e5a39c7a152179166ce6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-07030",
+                    "ArXiv": "2205.07030",
+                    "DOI": "10.1109/VR55154.2023.00057",
+                    "CorpusId": 248811232
+                },
+                "corpusId": 248811232,
+                "publicationVenue": {
+                    "id": "8b5a4b01-a494-4d68-b69a-e32afb408419",
+                    "name": "IEEE Conference on Virtual Reality and 3D User Interfaces",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Conf Virtual Real 3D User Interface",
+                        "IEEE Virtual Real Conf",
+                        "VR",
+                        "IEEE Virtual Reality Conference"
+                    ],
+                    "url": "http://ieeevr.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/639109408b9165813fb7e5a39c7a152179166ce6",
+                "title": "Realistic Defocus Blur for Multiplane Computer-Generated Holography",
+                "abstract": "This paper introduces a new multiplane CGH computation method to reconstruct artifact-free high-quality holograms with natural-looking defocus blur. Our method introduces a new targeting scheme and a new loss function. While the targeting scheme accounts for defocused parts of the scene at each depth plane, the new loss function analyzes focused and defocused parts separately in reconstructed images. Our method support phase-only CGH calculations using various iterative (e.g., Gerchberg-Saxton, Gradient Descent) and non-iterative (e.g., Double Phase) CGH techniques. We achieve our best image quality using a modified gradient descent-based optimization recipe where we introduce a constraint inspired by the double phase method. We validate our method experimentally using our proof-of-concept holographic display, comparing various algorithms, including multi-depth scenes with sparse and dense contents.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2044764675",
+                        "name": "Koray Kavakl\u0131"
+                    },
+                    {
+                        "authorId": "2792579",
+                        "name": "Yuta Itoh"
+                    },
+                    {
+                        "authorId": "34743962",
+                        "name": "H. Urey"
+                    },
+                    {
+                        "authorId": "2413675",
+                        "name": "K. Ak\u015fit"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Affine phase retrieval arises in holography [2, 17]/phase retrieval with reference signal [1,12,13], phase retrieval with background information [8,23]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6347c998d2a9d57b8ccb12cab20604b56020481e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-11001",
+                    "ArXiv": "2201.11001",
+                    "CorpusId": 246285619
+                },
+                "corpusId": 246285619,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6347c998d2a9d57b8ccb12cab20604b56020481e",
+                "title": "The Newton method for affine phase retrieval",
+                "abstract": "We consider the problem of recovering a signal from the magnitudes of affine measurements, which is also known as {\\em affine phase retrieval}. In this paper, we formulate affine phase retrieval as an optimization problem and develop a second-order algorithm based on Newton method to solve it. Besides being able to convert into a phase retrieval problem, affine phase retrieval has its unique advantages in its solution. For example, the linear information in the observation makes it possible to solve this problem with second-order algorithms under complex measurements. Another advantage is that our algorithm doesn't have any special requirements for the initial point, while an appropriate initial value is essential for most non-convex phase retrieval algorithms. Starting from zero, our algorithm generates iteration point by Newton method, and we prove that the algorithm can quadratically converge to the true signal without any ambiguity for both Gaussian measurements and CDP measurements. In addition, we also use some numerical simulations to verify the conclusions and to show the effectiveness of the algorithm.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2067891724",
+                        "name": "Bing Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[5] showed that such a reference can be learned from a rather small dataset using an unrolled gradient descent algorithm.",
+                "[5] is a gradient descent method that requires extensive parameter tuning of its step size."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "92825ccbcebb7914362ba7bf389681ec8df376c8",
+                "externalIds": {
+                    "ArXiv": "2110.13688",
+                    "DBLP": "journals/corr/abs-2110-13688",
+                    "CorpusId": 239885277
+                },
+                "corpusId": 239885277,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/92825ccbcebb7914362ba7bf389681ec8df376c8",
+                "title": "A Closer Look at Reference Learning for Fourier Phase Retrieval",
+                "abstract": "Reconstructing images from their Fourier magnitude measurements is a problem that often arises in different research areas. This process is also referred to as phase retrieval. In this work, we consider a modified version of the phase retrieval problem, which allows for a reference image to be added onto the image before the Fourier magnitudes are measured. We analyze an unrolled Gerchberg-Saxton (GS) algorithm that can be used to learn a good reference image from a dataset. Furthermore, we take a closer look at the learned reference images and propose a simple and efficient heuristic to construct reference images that, in some cases, yields reconstructions of comparable quality as approaches that learn references. Our code is available at https://github.com/tuelwer/reference-learning.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "148250214",
+                        "name": "Tobias Uelwer"
+                    },
+                    {
+                        "authorId": "2135146337",
+                        "name": "Nick Rucks"
+                    },
+                    {
+                        "authorId": "1734990",
+                        "name": "S. Harmeling"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In our recent work [21], we used the idea of unrolled network to solve phase retrieval problem from the holographic measurements."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "dca297ae6666f52ed0c1b85e876f41fdb8baae85",
+                "externalIds": {
+                    "MAG": "3194199407",
+                    "DBLP": "conf/icip/CaiHA21",
+                    "DOI": "10.1109/ICIP42928.2021.9506350",
+                    "CorpusId": 237439633
+                },
+                "corpusId": 237439633,
+                "publicationVenue": {
+                    "id": "b6369c33-5d70-463c-8e82-95a54efa3cc8",
+                    "name": "International Conference on Information Photonics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Image Process",
+                        "ICIP",
+                        "Int Conf Inf Photonics",
+                        "International Conference on Image Processing"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/dca297ae6666f52ed0c1b85e876f41fdb8baae85",
+                "title": "Data-Driven Illumination Patterns For Coded Diffraction Imaging",
+                "abstract": "Signal recovery from nonlinear measurements involves solving an iterative optimization problem. In this paper, we present a framework to optimize the sensing parameters to improve the quality of the signal recovered by the given iterative method. In particular, we learn illumination patterns to recover signals from coded diffraction patterns using a fixed-cost alternating minimization-based phase retrieval method. Coded diffraction phase retrieval is a physically realistic system in which the signal is first modulated by a sequence of codes before the sensor records its Fourier amplitude. We represent the phase retrieval method as an unrolled network with a fixed number of layers and minimize the recovery error by optimizing over the measurement parameters. Since the number of iterations/layers are fixed, the recovery runs under a fixed cost. We present extensive simulation results on a variety of datasets under different conditions and a comparison with existing methods. Our results demonstrate that the proposed method provides near-perfect reconstruction using patterns learned with a small number of training images. Our proposed method provides significant improvements over existing methods both in terms of accuracy and speed.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1739216160",
+                        "name": "Zikui Cai"
+                    },
+                    {
+                        "authorId": "1605999515",
+                        "name": "Rakib Hyder"
+                    },
+                    {
+                        "authorId": "27996204",
+                        "name": "M. Salman Asif"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Examples of unrolling algorithms into feedforward networks include image deblurring [16], phase retrieval [17], channel estimation [18], and clutter suppression in ultrasound [19]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "91fdba7c2e137ebf03e6409ef0f09f52e6b1516c",
+                "externalIds": {
+                    "DBLP": "journals/tip/MarkowitzSED22",
+                    "ArXiv": "2108.06031",
+                    "DOI": "10.1109/TIP.2022.3172851",
+                    "CorpusId": 237048135,
+                    "PubMed": "35544506"
+                },
+                "corpusId": 237048135,
+                "publicationVenue": {
+                    "id": "e117fa7f-05b7-4dd6-b64b-0a0a7c0393d8",
+                    "name": "IEEE Transactions on Image Processing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Image Process"
+                    ],
+                    "issn": "1057-7149",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=83",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/91fdba7c2e137ebf03e6409ef0f09f52e6b1516c",
+                "title": "Multimodal Unrolled Robust PCA for Background Foreground Separation",
+                "abstract": "Background foreground separation (BFS) is a popular computer vision problem where dynamic foreground objects are separated from the static background of a scene. Typically, this is performed using consumer cameras because of their low cost, human interpretability, and high resolution. Yet, cameras and the BFS algorithms that process their data have common failure modes due to lighting changes, highly reflective surfaces, and occlusion. One solution is to incorporate an additional sensor modality that provides robustness to such failure modes. In this paper, we explore the ability of a cost-effective radar system to augment the popular Robust PCA technique for BFS. We apply the emerging technique of algorithm unrolling to yield real-time computation, feedforward inference, and strong generalization in comparison with traditional deep learning methods. We benchmark on the RaDICaL dataset to demonstrate both quantitative improvements of incorporating radar data and qualitative improvements that confirm robustness to common failure modes of image-based methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2089386608",
+                        "name": "Spencer Markowitz"
+                    },
+                    {
+                        "authorId": "71205708",
+                        "name": "Corey Snyder"
+                    },
+                    {
+                        "authorId": "143783379",
+                        "name": "Yonina C. Eldar"
+                    },
+                    {
+                        "authorId": "1834451",
+                        "name": "M. Do"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In [27], an unrolled network is introduced for a Fourier phase retrieval problem with a reference signal."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0c14c52bab6dbee311ac97788b73e66d20bbc662",
+                "externalIds": {
+                    "ArXiv": "2108.01735",
+                    "DBLP": "journals/tci/KazemiYY22",
+                    "DOI": "10.1109/TCI.2022.3189217",
+                    "CorpusId": 236912594
+                },
+                "corpusId": 236912594,
+                "publicationVenue": {
+                    "id": "f2b47cba-3a35-4bd0-9e7e-fd2b23338309",
+                    "name": "IEEE Transactions on Computational Imaging",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Comput Imaging"
+                    ],
+                    "issn": "2333-9403",
+                    "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6745852"
+                },
+                "url": "https://www.semanticscholar.org/paper/0c14c52bab6dbee311ac97788b73e66d20bbc662",
+                "title": "Unrolled Wirtinger Flow With Deep Decoding Priors for Phaseless Imaging",
+                "abstract": "We introduce a deep learning (DL) based network and an associated exact recovery theory for imaging from intensity-only measurements. The network architecture uses a recurrent structure that unrolls the Wirtinger Flow (WF) algorithm with a deep decoding prior that enables performing the algorithm updates in a lower dimensional encoded image space. We use a separate deep network (DN), referred to as the encoding network, for transforming the spectral initialization used in the WF algorithm to an appropriate initial value for the encoded domain. The unrolling scheme models a fixed number of iterations of the underlying optimization algorithm into a recurrent neural network (RNN). Furthermore, it facilitates simultaneous learning of the parameters of the decoding and encoding networks and the RNN. We establish a sufficient condition to guarantee exact recovery under deterministic forward models. Additionally, we demonstrate the relation between the Lipschitz constants of the trained decoding prior and encoding networks to the convergence rate of the WF algorithm. We show the practical applicability of our method in synthetic aperture imaging using high fidelity simulation data from the PCSWAT software. Our numerical study shows that the decoding prior and the encoding network facilitate improvements in sample complexity.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "23105729",
+                        "name": "Samia Kazemi"
+                    },
+                    {
+                        "authorId": "24015755",
+                        "name": "Bariscan Yonel"
+                    },
+                    {
+                        "authorId": "1730963",
+                        "name": "B. Yaz\u0131c\u0131"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "3) Current deep learning based approaches for PR rely on supervised learning with a large amount of training examples [21, 14, 9, 13].",
+                "To achieve this goal, three major problems should be carefully considered: 1) Existing DNNbased methods solve the PR problems by directly mapping observed amplitude to desirable phase [21, 14, 9, 13], in which the physics characterizing the imaging processes is ignored.",
+                "[9] propose to learn a reference signal by using a small number of training images, which is further used to assist solving the Fourier phase retrieval problem by an unrolled network from gradient descent."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6a049b867dea5b529b0689c1e1e28443c0a973ff",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/ZhangLGLJJ21",
+                    "DOI": "10.1109/CVPR46437.2021.01038",
+                    "CorpusId": 235719074
+                },
+                "corpusId": 235719074,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6a049b867dea5b529b0689c1e1e28443c0a973ff",
+                "title": "Physics-based Iterative Projection Complex Neural Network for Phase Retrieval in Lensless Microscopy Imaging",
+                "abstract": "Phase retrieval from intensity-only measurements plays a central role in many real-world imaging tasks. In recent years, deep neural networks based methods emerge and show promising performance for phase retrieval. However, their interpretability and generalization still remain a major challenge. In this paper, we propose to combine the advantages of both model-based alternative projection method and deep neural network for phase retrieval, so as to achieve network interpretability and inference effectiveness simultaneously. Specifically, we unfold the iterative process of the alternative projection phase retrieval into a feed-forward neural network, whose layers mimic the processing flow. The physical model of the imaging process is then naturally embedded into the neural network structure. Moreover, a complex-valued U-Net is proposed for defining image priori for forward and backward projection in dual planes. Finally, we designate physics-based formulation as an untrained deep neural network, whose weights are enforced to fit to the given intensity measurements. In summary, our scheme for phase retrieval is effective, interpretable, physics-based and unsupervised. Experimental results demonstrate that our method achieves superior performance compared with the state-of-the-arts in a practical phase retrieval application\u2014lensless microscopy imaging.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2115709759",
+                        "name": "Feilong Zhang"
+                    },
+                    {
+                        "authorId": "2108681776",
+                        "name": "Xianming Liu"
+                    },
+                    {
+                        "authorId": "2140450082",
+                        "name": "Cheng Guo"
+                    },
+                    {
+                        "authorId": "2108834489",
+                        "name": "Shiyi Lin"
+                    },
+                    {
+                        "authorId": "2141510194",
+                        "name": "Junjun Jiang"
+                    },
+                    {
+                        "authorId": "7807689",
+                        "name": "Xiangyang Ji"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "14bff4d1967e67346677235d160ef84ebf4d1438",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2101-04348",
+                    "ArXiv": "2101.04348",
+                    "DOI": "10.1109/TSP.2021.3118494",
+                    "CorpusId": 231583042
+                },
+                "corpusId": 231583042,
+                "publicationVenue": {
+                    "id": "1f6f3f05-6a23-42f0-8d31-98ab8089c1f2",
+                    "name": "IEEE Transactions on Signal Processing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Signal Process"
+                    ],
+                    "issn": "1053-587X",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=78",
+                    "alternate_urls": [
+                        "http://www.signalprocessingsociety.org/publications/periodicals/tsp/",
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/14bff4d1967e67346677235d160ef84ebf4d1438",
+                "title": "Phase Retrieval Using Expectation Consistent Signal Recovery Algorithm Based on Hypernetwork",
+                "abstract": "Phase retrieval (PR) is an important component in modern computational imaging systems. Recent advances in deep learning have introduced new possibilities for a robust and fast PR. An emerging technique called deep unfolding provides a systematic connection between conventional model-based iterative algorithms and modern data-based deep learning. Unfolded algorithms, which are powered by data learning, have shown remarkable performance and convergence speed improvement over original algorithms. Despite their potential, most existing unfolded algorithms are strictly confined to a fixed number of iterations when layer-dependent parameters are used. In this study, we develop a novel framework for deep unfolding to overcome existing limitations. Our development is based on an unfolded generalized expectation consistent signal recovery (GEC-SR) algorithm, wherein damping factors are left for data-driven learning. In particular, we introduce a hypernetwork to generate the damping factors for GEC-SR. Instead of learning a set of optimal damping factors directly, the hypernetwork learns how to generate the optimal damping factors according to the clinical settings, thereby ensuring its adaptivity to different scenarios. To enable the hypernetwork to adapt to varying layer numbers, we use a recurrent architecture to develop a dynamic hypernetwork that generates a damping factor that can vary online across layers. We also exploit a self-attention mechanism to enhance the robustness of the hypernetwork. Extensive experiments show that the proposed algorithm outperforms existing ones in terms of convergence speed and accuracy and still works well under very harsh settings, even under which many classical PR algorithms are unstable.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1801458",
+                        "name": "Chang-Jen Wang"
+                    },
+                    {
+                        "authorId": "145382786",
+                        "name": "Chao-Kai Wen"
+                    },
+                    {
+                        "authorId": "144174020",
+                        "name": "S. Tsai"
+                    },
+                    {
+                        "authorId": "145824256",
+                        "name": "Shi Jin"
+                    },
+                    {
+                        "authorId": "1410112765",
+                        "name": "Geoffrey Y. Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The above affine phase retrieval problem arises in holography [41], data separation [24, 43], phaseless sampling [20], phase retrieval with background information [25, 56], and phase retrieval with reference signal [3, 5, 6, 36, 37]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b92d1522424508f9fdc0bf685362999026f01c52",
+                "externalIds": {
+                    "ArXiv": "2012.13771",
+                    "DBLP": "journals/corr/abs-2012-13771",
+                    "DOI": "10.1007/s10114-023-1401-x",
+                    "CorpusId": 229678717
+                },
+                "corpusId": 229678717,
+                "publicationVenue": {
+                    "id": "7d7f32b2-f05a-422d-862b-de5b92d8a841",
+                    "name": "Acta Mathematica Sinica. English series",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Acta Math Sin Engl ser",
+                        "Acta Math Sin",
+                        "Acta Mathematica Sinica"
+                    ],
+                    "issn": "1439-7617",
+                    "url": "http://www.springer.com/math/journal/10114",
+                    "alternate_urls": [
+                        "http://www.springer.com/mathematics/journal/10114",
+                        "http://link.springer.com/journal/10114"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/b92d1522424508f9fdc0bf685362999026f01c52",
+                "title": "Inertial Proximal ADMM for Separable Multi-Block Convex Optimizations and Compressive Affine Phase Retrieval",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2149247477",
+                        "name": "Peng Li"
+                    },
+                    {
+                        "authorId": "2109631587",
+                        "name": "Wengu Chen"
+                    },
+                    {
+                        "authorId": "1716296",
+                        "name": "Qiyu Sun"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recently, various forms of deep learning approaches have been investigated as a fast and effective approach for phase retrieval [25], [26], [27], [28], [29], [30], [31], [32], [33].",
+                "In the first category, a pretrained network is employed as a regularization or prior for the reconstruction [25], [26], [30].",
+                "In [30], the reference provided by the trained network was exploited as a prior during the reconstruction process."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2bd06c4070aeada12e2203a05001423cfb31931c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2011-10475",
+                    "ArXiv": "2011.10475",
+                    "MAG": "3109133674",
+                    "DOI": "10.1109/TPAMI.2021.3138897",
+                    "CorpusId": 227118902,
+                    "PubMed": "34962865"
+                },
+                "corpusId": 227118902,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2bd06c4070aeada12e2203a05001423cfb31931c",
+                "title": "DeepPhaseCut: Deep Relaxation in Phase for Unsupervised Fourier Phase Retrieval",
+                "abstract": "Fourier phase retrieval is a classical problem of restoring a signal only from the measured magnitude of its Fourier transform. Although Fienup-type algorithms, which use prior knowledge in both spatial and Fourier domains, have been widely used in practice, they can often stall in local minima. Convex relaxation methods such as PhaseLift and PhaseCut may offer performance guarantees, but these algorithms are usually computationally expensive for practical use. To address this problem, here we propose a novel unsupervised feed-forward neural network for Fourier phase retrieval which generates high quality reconstruction immediately. Unlike the existing deep learning approaches that use a neural network as a regularization term or an end-to-end blackbox model for supervised training, our algorithm is a feed-forward neural network implementation of physics-driven constraints in an unsupervised learning framework. Specifically, our network is composed of two generators: one for the phase estimation using PhaseCut loss, followed by another generator for image reconstruction, all of which are trained simultaneously without matched data. The link to the classical Fienup-type algorithms and the recent symmetry-breaking learning approach is also revealed. Extensive experiments demonstrate that the proposed method outperforms all existing approaches in Fourier phase retrieval problems.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "49642223",
+                        "name": "E. Cha"
+                    },
+                    {
+                        "authorId": "73258549",
+                        "name": "ChanSeo Lee"
+                    },
+                    {
+                        "authorId": "4324254",
+                        "name": "Mooseok Jang"
+                    },
+                    {
+                        "authorId": "2998762",
+                        "name": "J. C. Ye"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[8] assumed that a known reference is added to the signal before capturing the measurements.",
+                "Also, the inherent ambiguities about shift and flip in the Fourier measurements make PR very difficult [8]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e7f56555b748cf9c99231b05e53cc35e70dca7b5",
+                "externalIds": {
+                    "DBLP": "journals/tsp/ChenLQPJ22",
+                    "DOI": "10.1109/tsp.2022.3170710",
+                    "CorpusId": 248753916
+                },
+                "corpusId": 248753916,
+                "publicationVenue": {
+                    "id": "1f6f3f05-6a23-42f0-8d31-98ab8089c1f2",
+                    "name": "IEEE Transactions on Signal Processing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Signal Process"
+                    ],
+                    "issn": "1053-587X",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=78",
+                    "alternate_urls": [
+                        "http://www.signalprocessingsociety.org/publications/periodicals/tsp/",
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/e7f56555b748cf9c99231b05e53cc35e70dca7b5",
+                "title": "Unsupervised Phase Retrieval Using Deep Approximate MMSE Estimation",
+                "abstract": "Phase retrieval (PR) is about reconstructing a signal from the magnitude of a number of its complex-valued linear measurements. Recent rapid progress has been made on the development of neural network (NN) based methods for PR. Most of these methods employ pre-trained NNs for modeling target signals, and they require collecting large-scale datasets with ground-truth signals for pre-training, which can be very challenging in many scenarios. There are a few unsupervised learning methods employing untrained NN priors for PR which avoid using external datasets; however, their performance is unsatisfactory compared to pre-trained-NN-based methods. This paper proposes an unsupervised learning method for PR which does not rely on pre-trained NNs while providing state-of-the-art performance. The proposed method trains a randomly-initialized generative NN for signal reconstruction directly on the magnitude measurements of a target signal, which approximates the minimum mean squared error estimator via dropout-based model averaging. Such a model-averaging-based approach provides a better internal prior for the target signal than existing untrained-NN-based methods. The experiments on image reconstruction demonstrate both the advantage of our method over existing unsupervised methods and its competitive performance to pre-trained-NN-based methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108181211",
+                        "name": "Mingqin Chen"
+                    },
+                    {
+                        "authorId": "2087248168",
+                        "name": "Peikang Lin"
+                    },
+                    {
+                        "authorId": "2217653",
+                        "name": "Yuhui Quan"
+                    },
+                    {
+                        "authorId": "153063366",
+                        "name": "T. Pang"
+                    },
+                    {
+                        "authorId": "90137165",
+                        "name": "Hui Ji"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This leads to inverse problems such as phase-retrieval [13,45,47], ptychography [31], Fourier ptychography [33, 41], and quantitative phase microscopy."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ce7479821f26037895945a9394738e6f143fbe02",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-03235",
+                    "DOI": "10.48550/arXiv.2212.03235",
+                    "CorpusId": 254274875
+                },
+                "corpusId": 254274875,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ce7479821f26037895945a9394738e6f143fbe02",
+                "title": "Towards A Most Probable Recovery in Optical Imaging",
+                "abstract": "Light is a complex-valued \ufb01eld. The intensity and phase of the \ufb01eld are affected by imaged objects. However, imaging sensors measure only real-valued non-negative intensities. This results in a nonlinear relation between the measurements and the unknown imaged objects. Moreover, the sensor readouts are corrupted by Poissonian-distributed photon noise. In this work, we seek the most probable object (or clear image), given noisy measurements, that is, maximizing the a-posteriori probability of the sought variables. Hence, we generalize annealed Langevin dynamics, tack-ling fundamental challenges in optical imaging, including phase recovery and Poisson (photon) denoising. We leverage deep neural networks, not for explicit recovery of the imaged object, but as an approximate gradient for a prior term. We show results on empirical data, acquired by a real experiment. We further show results of simulations. 1",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2193623639",
+                        "name": "Nadav Torem"
+                    },
+                    {
+                        "authorId": "2032217931",
+                        "name": "Roi Ronen"
+                    },
+                    {
+                        "authorId": "2159538",
+                        "name": "Y. Schechner"
+                    },
+                    {
+                        "authorId": "1753908",
+                        "name": "Michael Elad"
+                    }
+                ]
+            }
+        }
+    ]
+}

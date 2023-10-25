@@ -1,0 +1,2472 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "Overall, RCExplainer seems to be the model of choice when topological noise is introduced, and it is significantly faster than CF 2 because it is inductive.",
+                "The stability of RCEXPLAINER can be attributed to its strategy of selecting a subset of edges that is resistant to changes, such that the removal of these edges significantly impacts the prediction made by the remaining graph [6].",
+                "com/chrisjtan/gnn_cff RCExplainer [6] https://developer.",
+                "\u2022 Perturbation-based: These methods [59, 30, 62, 18, 29, 43, 27, 6, 31, 1, 50] utilize perturbations of the input to identify important subgraphs that serve as factual or counterfactual explanations.",
+                "Gradient: SA [7] , Guided-BP [7] , Grad-CAM [33]; Decomposition: Excitation-BP [33], GNN-LRP [38], CAM [33]; Perturbation: GNNExplainer [59], PGExplainer [30], SubgraphX [62], GEM [27], TAGExplainer [51], CF(2) [43], RCExplainer [6],CF-GNNexplainer [29], CLEAR [31]; Surrogate: GraphLime [18], Relex [64], PGM-Explainer [47]; Global: XGNN [60], GLG-Explainer [5], Xuanyuan et al.",
+                "Overall, RCExplainer performs best in terms of the Jaccard index.",
+                "RCExplainer [6], being both factual and counterfactual method, aims to identify a resilient subset of edges to remove such that it alters the prediction of the remaining graph.",
+                "RCExplainer outperforms other baselines by a significant margin in terms of size and sufficiency across datasets, as shown in Fig.",
+                "Explanations can be broadly classified into two categories: factual reasoning [59, 30, 40, 62, 18] and counterfactual reasoning [29, 43, 31, 6, 1, 50].",
+                "[6] Mohit Bajaj, Lingyang Chu, Zi Yu Xue, Jian Pei, Lanjun Wang, Peter Cho-Ho Lam, and Yong Zhang.",
+                "RCExplainer [6] Instance level GC+NC Neural Network Inductive CF(2) [43] Instance level GC+NC Original graph Transductive CF-GNNExplainer [29] Instance level NC Inference subgraph Transductive CLEAR [31] Instance level GC+NC Variational Autoencoder Inductive",
+                "Gradient: SA [7] , Guided-BP [7] , Grad-CAM [33]; Decomposition: Excitation-BP [33], GNN-LRP [38], CAM [33]; Perturbation: GNNExplainer [59], PGExplainer [30], SubgraphX [62], GEM [27], TAGExplainer [51], CF 2 [43], RCExplainer [6],CF-GNNexplainer [29], CLEAR [31]; Surro-gate: GraphLime [18], Relex [64], PGM-Explainer [47]; Global: XGNN [60], GLG-Explainer [5], Xuanyuan et al. [54], GCFExplainer [19].",
+                "However, the Jaccard similarity between RCExplainer and CF 2 for counterfactual graphs is nearly identical, as shown in Fig.",
+                "Similarly, Table T shows that RCExplainer continues to outperform in the case of graph classification (earlier results show a similar trend in Table 4).",
+                "\u2022 Instance-level: Instance-level or local explainers [59, 30, 40, 62, 18, 61, 29, 43, 27, 6, 1, 50] provide explanations for specific predictions made by a model."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "8733ec39a7c9d19fcc8fea902cae12b31268fafa",
+                "externalIds": {
+                    "ArXiv": "2310.01794",
+                    "CorpusId": 263608316
+                },
+                "corpusId": 263608316,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/8733ec39a7c9d19fcc8fea902cae12b31268fafa",
+                "title": "GNNX-BENCH: Unravelling the Utility of Perturbation-based GNN Explainers through In-depth Benchmarking",
+                "abstract": "Numerous explainability methods have been proposed to shed light on the inner workings of GNNs. Despite the inclusion of empirical evaluations in all the proposed algorithms, the interrogative aspects of these evaluations lack diversity. As a result, various facets of explainability pertaining to GNNs, such as a comparative analysis of counterfactual reasoners, their stability to variational factors such as different GNN architectures, noise, stochasticity in non-convex loss surfaces, feasibility amidst domain constraints, and so forth, have yet to be formally investigated. Motivated by this need, we present a benchmarking study on perturbation-based explainability methods for GNNs, aiming to systematically evaluate and compare a wide range of explainability techniques. Among the key findings of our study, we identify the Pareto-optimal methods that exhibit superior efficacy and stability in the presence of noise. Nonetheless, our study reveals that all algorithms are affected by stability issues when faced with noisy data. Furthermore, we have established that the current generation of counterfactual explainers often fails to provide feasible recourses due to violations of topological constraints encoded by domain-specific considerations. Overall, this benchmarking study empowers stakeholders in the field of GNNs with a comprehensive understanding of the state-of-the-art explainability methods, potential research problems for further enhancement, and the implications of their application in real-world scenarios.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2134769449",
+                        "name": "Mert Kosan"
+                    },
+                    {
+                        "authorId": "143665702",
+                        "name": "S. Verma"
+                    },
+                    {
+                        "authorId": "2219690090",
+                        "name": "Burouj Armgaan"
+                    },
+                    {
+                        "authorId": "1491635783",
+                        "name": "Khushbu Pahwa"
+                    },
+                    {
+                        "authorId": "2238534218",
+                        "name": "Ambuj Singh"
+                    },
+                    {
+                        "authorId": "3390598",
+                        "name": "Sourav Medya"
+                    },
+                    {
+                        "authorId": "2253455409",
+                        "name": "Sayan Ranu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5bbd1b9f44d320f1c6fa84aec9a48add0b1a0294",
+                "externalIds": {
+                    "ArXiv": "2309.16918",
+                    "DOI": "10.1145/3583780.3614772",
+                    "CorpusId": 263310884
+                },
+                "corpusId": 263310884,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/5bbd1b9f44d320f1c6fa84aec9a48add0b1a0294",
+                "title": "ACGAN-GNNExplainer: Auxiliary Conditional Generative Explainer for Graph Neural Networks",
+                "abstract": "Graph neural networks (GNNs) have proven their efficacy in a variety of real-world applications, but their underlying mechanisms remain a mystery. To address this challenge and enable reliable decision-making, many GNN explainers have been proposed in recent years. However, these methods often encounter limitations, including their dependence on specific instances, lack of generalizability to unseen graphs, producing potentially invalid explanations, and yielding inadequate fidelity. To overcome these limitations, we, in this paper, introduce the Auxiliary Classifier Generative Adversarial Network (ACGAN) into the field of GNN explanation and propose a new GNN explainer dubbed~\\emph{ACGAN-GNNExplainer}. Our approach leverages a generator to produce explanations for the original input graphs while incorporating a discriminator to oversee the generation process, ensuring explanation fidelity and improving accuracy. Experimental evaluations conducted on both synthetic and real-world graph datasets demonstrate the superiority of our proposed method compared to other existing GNN explainers.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2179302425",
+                        "name": "Yiqiao Li"
+                    },
+                    {
+                        "authorId": "51239629",
+                        "name": "Jianlong Zhou"
+                    },
+                    {
+                        "authorId": "2249599312",
+                        "name": "Yifei Dong"
+                    },
+                    {
+                        "authorId": "2716743",
+                        "name": "N. Shafiabady"
+                    },
+                    {
+                        "authorId": "2249757048",
+                        "name": "Fang Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We also consider generative methods: PGExplainer (Luo et al., 2020), GSAT (Miao et al., 2022), GraphCFE (CLEAR) (Ma et al., 2022), D4Explainer and RCExplainer (Bajaj et al., 2021).",
+                "We observe that a random edge modification removes more informative edges than GradCAM, Integrated Gradient, Occlusion, RCExplainer, and PGExplainer.",
+                ", 2022), D4Explainer and RCExplainer (Bajaj et al., 2021).",
+                "We also observe that RCExplainer and PGExplainer which perform well on the GInX score have a low edge ranking power, except for the BA-HouseGrid dataset."
+            ],
+            "intents": [],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "66ce2f0bf2123f9e4965d0b244d435d0140c933c",
+                "externalIds": {
+                    "ArXiv": "2309.16223",
+                    "CorpusId": 263136272
+                },
+                "corpusId": 263136272,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/66ce2f0bf2123f9e4965d0b244d435d0140c933c",
+                "title": "GInX-Eval: Towards In-Distribution Evaluation of Graph Neural Network Explanations",
+                "abstract": "Diverse explainability methods of graph neural networks (GNN) have recently been developed to highlight the edges and nodes in the graph that contribute the most to the model predictions. However, it is not clear yet how to evaluate the correctness of those explanations, whether it is from a human or a model perspective. One unaddressed bottleneck in the current evaluation procedure is the problem of out-of-distribution explanations, whose distribution differs from those of the training data. This important issue affects existing evaluation metrics such as the popular faithfulness or fidelity score. In this paper, we show the limitations of faithfulness metrics. We propose GInX-Eval (Graph In-distribution eXplanation Evaluation), an evaluation procedure of graph explanations that overcomes the pitfalls of faithfulness and offers new insights on explainability methods. Using a retraining strategy, the GInX score measures how informative removed edges are for the model and the EdgeRank score evaluates if explanatory edges are correctly ordered by their importance. GInX-Eval verifies if ground-truth explanations are instructive to the GNN model. In addition, it shows that many popular methods, including gradient-based methods, produce explanations that are not better than a random designation of edges as important subgraphs, challenging the findings of current works in the area. Results with GInX-Eval are consistent across multiple datasets and align with human evaluation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2146257620",
+                        "name": "Kenza Amara"
+                    },
+                    {
+                        "authorId": "1401917601",
+                        "name": "Mennatallah El-Assady"
+                    },
+                    {
+                        "authorId": "2248206514",
+                        "name": "Rex Ying"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "03616a57807504e76ec2275ef2723cc7c8b8a0bb",
+                "externalIds": {
+                    "ArXiv": "2309.12545",
+                    "DBLP": "journals/corr/abs-2309-12545",
+                    "DOI": "10.48550/arXiv.2309.12545",
+                    "CorpusId": 262217309
+                },
+                "corpusId": 262217309,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/03616a57807504e76ec2275ef2723cc7c8b8a0bb",
+                "title": "Provably Robust and Plausible Counterfactual Explanations for Neural Networks via Robust Optimisation",
+                "abstract": "Counterfactual Explanations (CEs) have received increasing interest as a major methodology for explaining neural network classifiers. Usually, CEs for an input-output pair are defined as data points with minimum distance to the input that are classified with a different label than the output. To tackle the established problem that CEs are easily invalidated when model parameters are updated (e.g. retrained), studies have proposed ways to certify the robustness of CEs under model parameter changes bounded by a norm ball. However, existing methods targeting this form of robustness are not sound or complete, and they may generate implausible CEs, i.e., outliers wrt the training dataset. In fact, no existing method simultaneously optimises for proximity and plausibility while preserving robustness guarantees. In this work, we propose Provably RObust and PLAusible Counterfactual Explanations (PROPLACE), a method leveraging on robust optimisation techniques to address the aforementioned limitations in the literature. We formulate an iterative algorithm to compute provably robust CEs and prove its convergence, soundness and completeness. Through a comparative experiment involving six baselines, five of which target robustness, we show that PROPLACE achieves state-of-the-art performances against metrics on three evaluation aspects.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2183572681",
+                        "name": "Junqi Jiang"
+                    },
+                    {
+                        "authorId": "2244622404",
+                        "name": "Jianglin Lan"
+                    },
+                    {
+                        "authorId": "3470147",
+                        "name": "Francesco Leofante"
+                    },
+                    {
+                        "authorId": "1911563",
+                        "name": "Antonio Rago"
+                    },
+                    {
+                        "authorId": "49973505",
+                        "name": "Francesca Toni"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This is because the local interpretation approach optimizes the interpretation of each example independent of others, meaning that overfitting the noise associated with individual examples is very likely [23]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "3f863db0ddefce3007dfb021a0d91385a480a451",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-10644",
+                    "ArXiv": "2309.10644",
+                    "DOI": "10.48550/arXiv.2309.10644",
+                    "CorpusId": 262055101
+                },
+                "corpusId": 262055101,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/3f863db0ddefce3007dfb021a0d91385a480a451",
+                "title": "Robin: A Novel Method to Produce Robust Interpreters for Deep Learning-Based Code Classifiers",
+                "abstract": "Deep learning has been widely used in source code classification tasks, such as code classification according to their functionalities, code authorship attribution, and vulnerability detection. Unfortunately, the black-box nature of deep learning makes it hard to interpret and understand why a classifier (i.e., classification model) makes a particular prediction on a given example. This lack of interpretability (or explainability) might have hindered their adoption by practitioners because it is not clear when they should or should not trust a classifier's prediction. The lack of interpretability has motivated a number of studies in recent years. However, existing methods are neither robust nor able to cope with out-of-distribution examples. In this paper, we propose a novel method to produce \\underline{Rob}ust \\underline{in}terpreters for a given deep learning-based code classifier; the method is dubbed Robin. The key idea behind Robin is a novel hybrid structure combining an interpreter and two approximators, while leveraging the ideas of adversarial training and data augmentation. Experimental results show that on average the interpreter produced by Robin achieves a 6.11\\% higher fidelity (evaluated on the classifier), 67.22\\% higher fidelity (evaluated on the approximator), and 15.87x higher robustness than that of the three existing interpreters we evaluated. Moreover, the interpreter is 47.31\\% less affected by out-of-distribution examples than that of LEMNA.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "49969637",
+                        "name": "Zhuguo Li"
+                    },
+                    {
+                        "authorId": "2243291467",
+                        "name": "Ruqian Zhang"
+                    },
+                    {
+                        "authorId": "2068865",
+                        "name": "Deqing Zou"
+                    },
+                    {
+                        "authorId": "2244199069",
+                        "name": "Ning Wang"
+                    },
+                    {
+                        "authorId": "2243285670",
+                        "name": "Yating Li"
+                    },
+                    {
+                        "authorId": "2242999556",
+                        "name": "Shouhuai Xu"
+                    },
+                    {
+                        "authorId": "40262099",
+                        "name": "Cheng Chen"
+                    },
+                    {
+                        "authorId": "2243012122",
+                        "name": "Hai Jin"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1a8de3ce09316fa190b949540a756943f02851f7",
+                "externalIds": {
+                    "DBLP": "conf/recsys/Mohammadi23",
+                    "DOI": "10.1145/3604915.3608875",
+                    "CorpusId": 261823754
+                },
+                "corpusId": 261823754,
+                "publicationVenue": {
+                    "id": "61275a16-1e0d-479f-ac4e-f295310761f0",
+                    "name": "ACM Conference on Recommender Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conf Recomm Syst",
+                        "RecSys",
+                        "ACM Conf Recomm Syst",
+                        "Conference on Recommender Systems"
+                    ],
+                    "url": "http://recsys.acm.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/1a8de3ce09316fa190b949540a756943f02851f7",
+                "title": "Explainable Graph Neural Network Recommenders; Challenges and Opportunities",
+                "abstract": "Graph Neural Networks (GNNs) have demonstrated significant potential in recommendation tasks by effectively capturing intricate connections among users, items, and their associated features. Given the escalating demand for interpretability, current research endeavors in the domain of GNNs for Recommender Systems (RecSys) necessitate the development of explainer methodologies to elucidate the decision-making process underlying GNN-based recommendations. In this work, we aim to present our research focused on techniques to extend beyond the existing approaches for addressing interpretability in GNN-based RecSys.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2240537973",
+                        "name": "Amir Reza Mohammadi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "RCExplainer in [1] models the decision logic of GNNs on similar input graphs but only flips edges to generate the counterfactual graphs.",
+                "So as to illustrate the effectiveness of our model, we compare our proposed method with interpretable graph learning methods including GRAD [51], ATT [40], GNNExplainer [51], PGExplainer [31], RCExplainer [1], and CF-GNNExplainer [30].",
+                "However, these methods are not designed to handle graph data with interconnected nodes, except for two recent works in [1, 30].",
+                "\u2022 RCExplainer proposes to generate robust counterfactual explanations on GNNs by explicitly modeling the common decision logic of GNNs on similar input graphs [1], RCExp for short.",
+                "proposed generating robust counterfactual explanations on GNNs by explicitly modeling the common decision logic of GNNs on similar input graphs, which are robust to noises [1]."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "34213c6ba759e2b7ac5ea0cdafbdf78448a0fdfd",
+                "externalIds": {
+                    "DBLP": "conf/kdd/0015MZ0Z023",
+                    "DOI": "10.1145/3580305.3599289",
+                    "CorpusId": 260499632
+                },
+                "corpusId": 260499632,
+                "publicationVenue": {
+                    "id": "a0edb93b-1e95-4128-a295-6b1659149cef",
+                    "name": "Knowledge Discovery and Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "KDD",
+                        "Knowl Discov Data Min"
+                    ],
+                    "url": "http://www.acm.org/sigkdd/"
+                },
+                "url": "https://www.semanticscholar.org/paper/34213c6ba759e2b7ac5ea0cdafbdf78448a0fdfd",
+                "title": "Counterfactual Learning on Heterogeneous Graphs with Greedy Perturbation",
+                "abstract": "Due to the growing importance of using graph neural networks in high-stakes applications, there is a pressing need to interpret the predicted results of these models. Existing methods for explanation have mainly focused on generating sub-graphs comprising important edges for a specific prediction. However, these methods face two issues. Firstly, they lack counterfactual validity as removing the subgraph may not affect the prediction, and generating plausible counterfactual examples has not been adequately explored. Secondly, they cannot be extended to heterogeneous graphs as the complex information involved in such graphs increases the difficulty of generating interpretations. This paper proposes a novel counterfactual learning method, named CF-HGExplainer, for heterogeneous graphs. The method incorporates a semantic-aware attentive pooling strategy for the heterogeneous graph classifier and designs a heterogeneous decision boundaries extraction module to find the common logic for similar graphs based on the extracted graph embeddings from the classifier. Additionally, we propose to greedily perturb nodes and edges based on the distribution of node features and edge plausibility to train a neural network for heterogeneous edge weight learning. Extensive experiments on two public academic datasets demonstrate the effectiveness of CF-HGExplainer compared to state-of-the-art methods on the graph classification task and graph interpretation task.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1998961496",
+                        "name": "Qiang Yang"
+                    },
+                    {
+                        "authorId": "2109467053",
+                        "name": "Changsheng Ma"
+                    },
+                    {
+                        "authorId": "119718473",
+                        "name": "Qiannan Zhang"
+                    },
+                    {
+                        "authorId": "2118502950",
+                        "name": "Xin Gao"
+                    },
+                    {
+                        "authorId": "2117879943",
+                        "name": "Chuxu Zhang"
+                    },
+                    {
+                        "authorId": "2928371",
+                        "name": "Xiangliang Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "RCExplainer [11] generates robust counterfactual explanations on GNNs by explicitly modeling the common decision logic of GNNs."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "db9876e6fe40be5b74730f25bd2d54b20b841b90",
+                "externalIds": {
+                    "ArXiv": "2308.00391",
+                    "DBLP": "journals/corr/abs-2308-00391",
+                    "DOI": "10.48550/arXiv.2308.00391",
+                    "CorpusId": 260351429
+                },
+                "corpusId": 260351429,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/db9876e6fe40be5b74730f25bd2d54b20b841b90",
+                "title": "Counterfactual Graph Transformer for Traffic Flow Prediction",
+                "abstract": "Traffic flow prediction (TFP) is a fundamental problem of the Intelligent Transportation System (ITS), as it models the latent spatial-temporal dependency of traffic flow for potential congestion prediction. Recent graph-based models with multiple kinds of attention mechanisms have achieved promising performance. However, existing methods for traffic flow prediction tend to inherit the bias pattern from the dataset and lack interpretability. To this end, we propose a Counterfactual Graph Transformer (CGT) model with an instance-level explainer (e.g., finding the important subgraphs) specifically designed for TFP. We design a perturbation mask generator over input sensor features at the time dimension and the graph structure on the graph transformer module to obtain spatial and temporal counterfactual explanations. By searching the optimal perturbation masks on the input data feature and graph structures, we can obtain the concise and dominant data or graph edge links for the subsequent TFP task. After re-training the utilized graph transformer model after counterfactual perturbation, we can obtain improved and interpretable traffic flow prediction. Extensive results on three real-world public datasets show that CGT can produce reliable explanations and is promising for traffic flow prediction.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2118772104",
+                        "name": "Yingbin Yang"
+                    },
+                    {
+                        "authorId": "2197890027",
+                        "name": "Kai Du"
+                    },
+                    {
+                        "authorId": "22200602",
+                        "name": "Xingyuan Dai"
+                    },
+                    {
+                        "authorId": "2389269",
+                        "name": "Jianwu Fang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b27a27195e288f4594bad807e9dce1dbfc735d56",
+                "externalIds": {
+                    "DOI": "10.14778/3611479.3611503",
+                    "CorpusId": 261197657
+                },
+                "corpusId": 261197657,
+                "publicationVenue": {
+                    "id": "fcbcaf18-8ab1-43e1-a973-604bbc7e344e",
+                    "name": "Proceedings of the VLDB Endowment",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Proceedings of The Vldb Endowment",
+                        "Proc VLDB Endow",
+                        "Proc Vldb Endow"
+                    ],
+                    "issn": "2150-8097",
+                    "url": "http://dl.acm.org/toc.cfm?id=J1174",
+                    "alternate_urls": [
+                        "http://portal.acm.org/toc.cfm?CFID=21632689&CFTOKEN=99329904&WantType=Affiliated%20Organizations&coll=ACM&dl=ACM&id=J1174&idx=J1174&part=affil&title=VLDB%20Endowment&type=periodical"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/b27a27195e288f4594bad807e9dce1dbfc735d56",
+                "title": "HENCE-X: Toward Heterogeneity-Agnostic Multi-Level Explainability for Deep Graph Networks",
+                "abstract": "Deep graph networks (DGNs) have demonstrated their outstanding effectiveness on both heterogeneous and homogeneous graphs. However their black-box nature does not allow human users to understand their working mechanisms. Recently, extensive efforts have been devoted to explaining DGNs' prediction, yet heterogeneity-agnostic multi-level explainability is still less explored. Since the two types of graphs are both irreplaceable in real-life applications, having a more general and end-to-end explainer becomes a natural and inevitable choice. In the meantime, feature-level explanation is often ignored by existing techniques, while topological-level explanation alone can be incomplete and deceptive. Thus, we propose a heterogeneity-agnostic multi-level explainer in this paper, named HENCE-X, which is a causality-guided method that can capture the non-linear dependencies of model behavior on the input using conditional probabilities. We theoretically prove that HENCE-X is guaranteed to find the Markov blanket of the explained prediction, meaning that all information that the prediction is dependent on is identified. Experiments on three real-world datasets show that HENCE-X outperforms state-of-the-art (SOTA) methods in generating faithful factual and counterfactual explanations of DGNs.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2142661696",
+                        "name": "Gengsi Lv"
+                    },
+                    {
+                        "authorId": "50445897",
+                        "name": "C. Zhang"
+                    },
+                    {
+                        "authorId": "143891665",
+                        "name": "Lei Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Rodriguez 2021), graph data (Bajaj et al. 2021) and so on."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6cb1a49f248413f851eb6c345a2006aca8e96192",
+                "externalIds": {
+                    "DBLP": "conf/aaai/LiuSL23",
+                    "DOI": "10.1609/aaai.v37i2.25265",
+                    "CorpusId": 259720282
+                },
+                "corpusId": 259720282,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/6cb1a49f248413f851eb6c345a2006aca8e96192",
+                "title": "Counterfactual Dynamics Forecasting - a New Setting of Quantitative Reasoning",
+                "abstract": "Rethinking and introspection are important elements of human intelligence. To mimic these capabilities, counterfactual reasoning has attracted attention of AI researchers recently, which aims to forecast the alternative outcomes for hypothetical scenarios (\u201cwhat-if\u201d). However, most existing approaches focused on qualitative reasoning (e.g., casual-effect relationship). It lacks a well-defined description of the differences between counterfactuals and facts, as well as how these differences evolve over time. This paper defines a new problem formulation - counterfactual dynamics forecasting - which is described in middle-level abstraction under the structural causal models (SCM) framework and derived as ordinary differential equations (ODEs) as low-level quantitative computation. Based on it, we propose a method to infer counterfactual dynamics considering the factual dynamics as demonstration. Moreover, the evolution of differences between facts and counterfactuals are modelled by an explicit temporal component. The experimental results on two dynamical systems demonstrate the effectiveness of the proposed method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2108172209",
+                        "name": "Yanzhu Liu"
+                    },
+                    {
+                        "authorId": "2000311149",
+                        "name": "Ying Sun"
+                    },
+                    {
+                        "authorId": "2109781618",
+                        "name": "J. Lim"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5409798cf2d25e60bd5f2ff5cbbf8dbca2774b49",
+                "externalIds": {
+                    "DBLP": "conf/ijcnn/DingLYWX23",
+                    "DOI": "10.1109/IJCNN54540.2023.10191684",
+                    "CorpusId": 260387935
+                },
+                "corpusId": 260387935,
+                "publicationVenue": {
+                    "id": "f80ba4a3-7aed-4021-b4d8-e4f50668847a",
+                    "name": "IEEE International Joint Conference on Neural Network",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IJCNN",
+                        "IEEE Int Jt Conf Neural Netw",
+                        "Int Jt Conf Neural Netw",
+                        "International Joint Conference on Neural Network"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1573"
+                },
+                "url": "https://www.semanticscholar.org/paper/5409798cf2d25e60bd5f2ff5cbbf8dbca2774b49",
+                "title": "MEGA: Explaining Graph Neural Networks with Network Motifs",
+                "abstract": "Graph Neural Networks (GNNs) are powerful tools for graph representation. However, GNNs have remained black boxes, leading to the lack of explainability. As a consequence, the application of GNNs has been severely limited. Existing methods focus on generating an explanation with important nodes and edges but pay less attention to high-order structures (e.g., network motif), which are more intuitive and important for graph data. The explanations generated by the explainer will thus ignore the high-order information contained in multi-node neighbours, resulting in a decrease in the human comprehensibility of the explanation subgraph. In this paper, we propose a motif-aware GNNs explainer (MEGA), wherein a motif-aware subgraph generation module and a counterfactual optimization layer are employed. MEGA can provide high-quality counterfactual explanations for GNNs while focusing on high-order features of graph data. We justify the effectiveness of the proposed MEGA on both synthetic and real-world datasets. Experimental results show that MEGA outperforms state-of-the-art baselines while keeping explanations at a smaller level.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2064425407",
+                        "name": "Feng Ding"
+                    },
+                    {
+                        "authorId": "2192325640",
+                        "name": "Naiwen Luo"
+                    },
+                    {
+                        "authorId": "50443544",
+                        "name": "Shuo Yu"
+                    },
+                    {
+                        "authorId": "2226804056",
+                        "name": "Tingting Wang"
+                    },
+                    {
+                        "authorId": "2143633281",
+                        "name": "Feng Xia"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Existing Works: At a high level, GNN explainers can be classified into the two groups of instancelevel [32, 14, 18, 36, 7, 35, 13, 21, 12, 4, 1, 27] or model-level explanations [33].",
+                "We do not consider [34] and [4] since they are limited to graph classification.",
+                "Instance-level methods can broadly be grouped into two categories: factual reasoning [32, 14, 18, 36, 7, 35] and counterfactual reasoning [13, 21, 4, 1, 27]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "83a2f57677ea625a80bb438f6080a5649d14b3bb",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-04835",
+                    "ArXiv": "2306.04835",
+                    "DOI": "10.48550/arXiv.2306.04835",
+                    "CorpusId": 259108268
+                },
+                "corpusId": 259108268,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/83a2f57677ea625a80bb438f6080a5649d14b3bb",
+                "title": "Empowering Counterfactual Reasoning over Graph Neural Networks through Inductivity",
+                "abstract": "Graph neural networks (GNNs) have various practical applications, such as drug discovery, recommendation engines, and chip design. However, GNNs lack transparency as they cannot provide understandable explanations for their predictions. To address this issue, counterfactual reasoning is used. The main goal is to make minimal changes to the input graph of a GNN in order to alter its prediction. While several algorithms have been proposed for counterfactual explanations of GNNs, most of them have two main drawbacks. Firstly, they only consider edge deletions as perturbations. Secondly, the counterfactual explanation models are transductive, meaning they do not generalize to unseen data. In this study, we introduce an inductive algorithm called INDUCE, which overcomes these limitations. By conducting extensive experiments on several datasets, we demonstrate that incorporating edge additions leads to better counterfactual results compared to the existing methods. Moreover, the inductive modeling approach allows INDUCE to directly predict counterfactual perturbations without requiring instance-specific training. This results in significant computational speed improvements compared to baseline methods and enables scalable counterfactual analysis for GNNs.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "143665702",
+                        "name": "S. Verma"
+                    },
+                    {
+                        "authorId": "2219690090",
+                        "name": "Burouj Armgaan"
+                    },
+                    {
+                        "authorId": "3390598",
+                        "name": "Sourav Medya"
+                    },
+                    {
+                        "authorId": "1699732",
+                        "name": "Sayan Ranu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "While RCExplainer [4] uses a neural network that takes pairwise node embeddings and predict the existence of an edge between them, CLEAR [57] uses a variational autoencoder to generate a complete graph.",
+                "Due to these challenges, explaining graph neural networks is non-trivial and a large variety of methods have been proposed in the literature to tackle it [115, 69, 107, 77, 5, 97, 56, 119, 93, 4, 73].",
+                "RCExplainer reduces this over-fitting by first clustering input graphs using polytopes, and finding good counterfactuals close to the cluster (polytope) instead of individual instances.",
+                "Search-based: MMACE [102] , MEG [73]; Neural Network-based: RCExplainer [4], CLEAR [57]; Perturbation-based: GREASE [9], CF2 [93], CF-GNNexplainer [55]",
+                "In terms of the objective, the primary focus in RCExplainer [4] is the robustness of the generated counterfactual, but CLEAR [57] aims to generate counterfactuals that explain the underlying causality.",
+                "RCExplainer [4] Instance level Graph classification Node classification Edge prediction with Neural Network Mutag [14], BA-2motifs [56], NCI1 [99] Tree-Cycles [115], Tree-Grids [115] BA-Shapes [56], BA-Community [115]",
+                "The objective of RCExplainer [4] is to identify a resilient subset of edges that, when removed, alter the prediction of the remaining graph.",
+                "RCExplainer addresses the issue of fragility where an interpretation is fragile (or non-robust) if systematic perturbations in the input graph can lead to dramatically different interpretations without changing the label."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "ea3ecb8b809e7d5ae1bbc267863c0c4e72401a68",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-01958",
+                    "ArXiv": "2306.01958",
+                    "DOI": "10.48550/arXiv.2306.01958",
+                    "CorpusId": 259075297
+                },
+                "corpusId": 259075297,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ea3ecb8b809e7d5ae1bbc267863c0c4e72401a68",
+                "title": "A Survey on Explainability of Graph Neural Networks",
+                "abstract": "Graph neural networks (GNNs) are powerful graph-based deep-learning models that have gained significant attention and demonstrated remarkable performance in various domains, including natural language processing, drug discovery, and recommendation systems. However, combining feature information and combinatorial graph structures has led to complex non-linear GNN models. Consequently, this has increased the challenges of understanding the workings of GNNs and the underlying reasons behind their predictions. To address this, numerous explainability methods have been proposed to shed light on the inner mechanism of the GNNs. Explainable GNNs improve their security and enhance trust in their recommendations. This survey aims to provide a comprehensive overview of the existing explainability techniques for GNNs. We create a novel taxonomy and hierarchy to categorize these methods based on their objective and methodology. We also discuss the strengths, limitations, and application scenarios of each category. Furthermore, we highlight the key evaluation metrics and datasets commonly used to assess the explainability of GNNs. This survey aims to assist researchers and practitioners in understanding the existing landscape of explainability methods, identifying gaps, and fostering further advancements in interpretable graph-based machine learning.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2219548757",
+                        "name": "Jaykumar Kakkad"
+                    },
+                    {
+                        "authorId": "2219549243",
+                        "name": "Jaspal Jannu"
+                    },
+                    {
+                        "authorId": "1571168324",
+                        "name": "Kartik Sharma"
+                    },
+                    {
+                        "authorId": "1682418",
+                        "name": "C. Aggarwal"
+                    },
+                    {
+                        "authorId": "3390598",
+                        "name": "Sourav Medya"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "are mainly based on heuristic perturbation approaches as in [1], [4], [26])."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "861bf9e9f8c931af9832ddfb6ef77c52caabf4d2",
+                "externalIds": {
+                    "DBLP": "conf/cbms/BianchiMMSPMMVNS23",
+                    "DOI": "10.1109/CBMS58004.2023.00222",
+                    "CorpusId": 259953596
+                },
+                "corpusId": 259953596,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/861bf9e9f8c931af9832ddfb6ef77c52caabf4d2",
+                "title": "Trustworthy Machine Learning Predictions to Support Clinical Research and Decisions",
+                "abstract": "Nowadays, physicians have at their hands a huge amount of data produced by a large set of diagnostic and instrumental tests integrated with data obtained by high-throughput technologies. If such data were opportunely linked and analysed, they might be used to strengthen predictions, so that to improve the prevention and the time-to-diagnosis, reduce the costs of the health system, and bring out hidden knowledge. Machine learning is the principal technique used nowadays to leverage data and gain useful information. However, it has led to various challenges, such as improving the interpretability and explainability of the employed predictive models and integrating expert knowledge into the final system. Solving those challenges is of paramount importance to enhance the trust of both clinicians and patients in the system predictions. To solve the aforementioned issues, in this paper we propose a software workflow able to cope with the trustworthiness aspects of machine learning models and considering a multitude of heterogeneous data and models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2064346571",
+                        "name": "Andrea Bianchi"
+                    },
+                    {
+                        "authorId": "8496299",
+                        "name": "A. Marco"
+                    },
+                    {
+                        "authorId": "35001999",
+                        "name": "Francesca Marzi"
+                    },
+                    {
+                        "authorId": "1765155",
+                        "name": "G. Stilo"
+                    },
+                    {
+                        "authorId": "2223808239",
+                        "name": "Cristina Pellegrini"
+                    },
+                    {
+                        "authorId": "36771400",
+                        "name": "S. Masi"
+                    },
+                    {
+                        "authorId": "39868920",
+                        "name": "A. Mengozzi"
+                    },
+                    {
+                        "authorId": "1712276",
+                        "name": "A. Virdis"
+                    },
+                    {
+                        "authorId": "1399662388",
+                        "name": "M. S. Nobile"
+                    },
+                    {
+                        "authorId": "33937482",
+                        "name": "Marta Simeoni"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "RCExplainer [3] identifies decision regions based on graph embeddings that generate a subgraph explanation such that removing it changes the prediction of the remaining graph (i.",
+                "Unfortunately, we were unable to apply RCExplainer and ProtGNN to this dataset due to an out-of-memory error and scalability issues, respectively.",
+                "RCExplainer [3] identifies decision regions based on graph embeddings that generate a subgraph explanation such that removing it changes the prediction of the remaining graph (i.e., counterfactual).",
+                "Furthermore, post-hoc explainers, PGExplainer and RCExplainer, are sentitive to noise, lacking stability.",
+                "Two other post-hoc explainers, PGExplainer and RCExplainer, perform poorly.",
+                "Several post-hoc explainers have been proposed for explaining Graph Neural Networks\u2019 predictions using subgraphs [1, 2, 30, 3, 31, 29].",
+                "Finally, we consider inductive GNN explainers: PGExplainer [2], RCExplainer [3], TAGE [29].",
+                "Recent papers [1, 2, 3] have proposed different alternative notions of explainability that do not take the user into consideration and instead are validated using examples."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "02bed25ef9cc83d25515216dae0d14df1892a502",
+                "externalIds": {
+                    "ArXiv": "2305.15745",
+                    "DBLP": "journals/corr/abs-2305-15745",
+                    "DOI": "10.48550/arXiv.2305.15745",
+                    "CorpusId": 258888221
+                },
+                "corpusId": 258888221,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/02bed25ef9cc83d25515216dae0d14df1892a502",
+                "title": "Robust Ante-hoc Graph Explainer using Bilevel Optimization",
+                "abstract": "Explaining the decisions made by machine learning models for high-stakes applications is critical for increasing transparency and guiding improvements to these decisions. This is particularly true in the case of models for graphs, where decisions often depend on complex patterns combining rich structural and attribute data. While recent work has focused on designing so-called post-hoc explainers, the question of what constitutes a good explanation remains open. One intuitive property is that explanations should be sufficiently informative to enable humans to approximately reproduce the predictions given the data. However, we show that post-hoc explanations do not achieve this goal as their explanations are highly dependent on fixed model parameters (e.g., learned GNN weights). To address this challenge, this paper proposes RAGE (Robust Ante-hoc Graph Explainer), a novel and flexible ante-hoc explainer designed to discover explanations for a broad class of graph neural networks using bilevel optimization. RAGE is able to efficiently identify explanations that contain the full information needed for prediction while still enabling humans to rank these explanations based on their influence. Our experiments, based on graph classification and regression, show that RAGE explanations are more robust than existing post-hoc and ante-hoc approaches and often achieve similar or better accuracy than state-of-the-art models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2134769449",
+                        "name": "Mert Kosan"
+                    },
+                    {
+                        "authorId": "2110040391",
+                        "name": "A. Silva"
+                    },
+                    {
+                        "authorId": "1399890865",
+                        "name": "Ambuj K. Singh"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[11] also demonstrate the possibility to extend this work on node classification tasks.",
+                "Many graph counterfactual explanations methods have been proposed [2, 11, 113, 130, 164, 169].",
+                "To address these challenges, many graph counterfactual candidate representation approaches have been proposed [2, 11, 113, 130, 164, 169].",
+                "We can achieve this goal by considering the decision boundary [11], manipulating the input with masks [113] or any other manipulations [2].",
+                "Most of the graph counterfactual explanation methods incorporate counterfactual regularization, which requires changes in model predictions [2, 11, 24, 71, 107, 113, 115, 130, 131, 139, 164, 169].",
+                "RCExplainer [11] Targeting at instance-level post-hoc explanation for graph classification task, this work gives a detailed analysis of the decision region of GNNs.",
+                "To avoid the spurious explanation and find the causal explanation which contributes significantly to the prediction, researchers have built various models to get counterfactual explanations on graphs [2, 11, 113, 130, 164, 169].",
+                "Researchers have come up with a series of carefully-designed models to get counterfactual explanations on graphs [2, 11, 113, 130, 164, 169].",
+                "search-based methods [2], neural network-based methods [11, 115, 131], and other methods [24, 71].",
+                "Then we will summarize existing works into a general framework of graph counterfactual explanation followed by a detailed review of existing approaches [2, 11, 24, 71, 107, 113, 115, 130, 131, 139, 164, 169]."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "f4e18d4aefc1ee0f88f0bb09fa5c17c74aad767e",
+                "externalIds": {
+                    "ArXiv": "2304.01391",
+                    "DBLP": "journals/corr/abs-2304-01391",
+                    "DOI": "10.48550/arXiv.2304.01391",
+                    "CorpusId": 257921453
+                },
+                "corpusId": 257921453,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f4e18d4aefc1ee0f88f0bb09fa5c17c74aad767e",
+                "title": "Counterfactual Learning on Graphs: A Survey",
+                "abstract": "Graph-structured data are pervasive in the real-world such as social networks, molecular graphs and transaction networks. Graph neural networks (GNNs) have achieved great success in representation learning on graphs, facilitating various downstream tasks. However, GNNs have several drawbacks such as lacking interpretability, can easily inherit the bias of the training data and cannot model the casual relations. Recently, counterfactual learning on graphs has shown promising results in alleviating these drawbacks. Various graph counterfactual learning approaches have been proposed for counterfactual fairness, explainability, link prediction and other applications on graphs. To facilitate the development of this promising direction, in this survey, we categorize and comprehensively review papers on graph counterfactual learning. We divide existing methods into four categories based on research problems studied. For each category, we provide background and motivating examples, a general framework summarizing existing works and a detailed review of these works. We point out promising future research directions at the intersection of graph-structured data, counterfactual learning, and real-world applications. To offer a comprehensive view of resources for future studies, we compile a collection of open-source implementations, public datasets, and commonly-used evaluation metrics. This survey aims to serve as a ``one-stop-shop'' for building a unified understanding of graph counterfactual learning categories and current resources. We also maintain a repository for papers and resources and will keep updating the repository https://github.com/TimeLovercc/Awesome-Graph-Causal-Learning.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2149465392",
+                        "name": "Zhimeng Guo"
+                    },
+                    {
+                        "authorId": "33664431",
+                        "name": "Teng Xiao"
+                    },
+                    {
+                        "authorId": "1682418",
+                        "name": "C. Aggarwal"
+                    },
+                    {
+                        "authorId": "2146672392",
+                        "name": "Hui Liu"
+                    },
+                    {
+                        "authorId": "2116430057",
+                        "name": "Suhang Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Lucic et al. (2022); Bajaj et al. (2021) investigated counterfactual explanations for GNNs, aiming to find minimal perturbations to the input graph such that the prediction changes, e.g., using edge deletions."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f945b6788d4042c950e57e6032c0ad122566661e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-10139",
+                    "ArXiv": "2303.10139",
+                    "DOI": "10.48550/arXiv.2303.10139",
+                    "CorpusId": 257622939
+                },
+                "corpusId": 257622939,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/f945b6788d4042c950e57e6032c0ad122566661e",
+                "title": "Distill n' Explain: explaining graph neural networks using simple surrogates",
+                "abstract": "Explaining node predictions in graph neural networks (GNNs) often boils down to finding graph substructures that preserve predictions. Finding these structures usually implies back-propagating through the GNN, bonding the complexity (e.g., number of layers) of the GNN to the cost of explaining it. This naturally begs the question: Can we break this bond by explaining a simpler surrogate GNN? To answer the question, we propose Distill n' Explain (DnX). First, DnX learns a surrogate GNN via knowledge distillation. Then, DnX extracts node or edge-level explanations by solving a simple convex program. We also propose FastDnX, a faster version of DnX that leverages the linear decomposition of our surrogate model. Experiments show that DnX and FastDnX often outperform state-of-the-art GNN explainers while being orders of magnitude faster. Additionally, we support our empirical findings with theoretical results linking the quality of the surrogate model (i.e., distillation error) to the faithfulness of explanations.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2061161328",
+                        "name": "Tamara A. Pereira"
+                    },
+                    {
+                        "authorId": "2211967383",
+                        "name": "Erik Nasciment"
+                    },
+                    {
+                        "authorId": "2164014168",
+                        "name": "Lucas Emanuel Resck"
+                    },
+                    {
+                        "authorId": "144128644",
+                        "name": "Diego Mesquita"
+                    },
+                    {
+                        "authorId": "3383481",
+                        "name": "A. Souza"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[1] proposed RCExplainer generating robust counterfactual explanations."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "396b5f4ac19f1c6c16569790c14ec6013a466563",
+                "externalIds": {
+                    "ArXiv": "2301.00012",
+                    "DBLP": "journals/corr/abs-2301-00012",
+                    "DOI": "10.48550/arXiv.2301.00012",
+                    "CorpusId": 255372423
+                },
+                "corpusId": 255372423,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/396b5f4ac19f1c6c16569790c14ec6013a466563",
+                "title": "GANExplainer: GAN-based Graph Neural Networks Explainer",
+                "abstract": ". With the rapid deployment of graph neural networks (GNNs) based techniques into a wide range of applications such as link prediction, node classi\ufb01cation, and graph classi\ufb01cation the explainability of GNNs has become an indispensable component for predictive and trustworthy decision-making. Thus, it is critical to explain why graph neural network (GNN) makes particular predictions for them to be believed in many applications. Some GNNs explainers have been proposed recently. However, they lack to generate accurate and real explanations. To mitigate these limitations, we propose GANExplainer, based on Generative Adversarial Network (GAN) architecture. GANExplainer is composed of a generator to create explanations and a discriminator to assist with the Generator development. We investigate the explanation accuracy of our models by comparing the performance of GANExplainer with other state-of-the-art methods. Our empirical results on synthetic datasets indicate that GANExplainer improves explanation accuracy by up to 35% compared to its alternatives.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2179302425",
+                        "name": "Yiqiao Li"
+                    },
+                    {
+                        "authorId": "51239629",
+                        "name": "Jianlong Zhou"
+                    },
+                    {
+                        "authorId": "2114719042",
+                        "name": "Boyuan Zheng"
+                    },
+                    {
+                        "authorId": "145093625",
+                        "name": "Fang Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "com/lyingdoog/PGExplainer [4, 69] ADHD [10] -omics https://github.",
+                "RCExplainer needs a collection of labelled instances to determine the decision regions governing each of the classes predicted by the oracle.",
+                "(see RCExplainer [4]) meaning that methods can merge two diferent strategies into a single one to produce counterfactuals.",
+                "com/RexYing/gnn-model-explainer [4, 12, 39] Tree-Ininity synthetic https://github.",
+                "RCExplainer [4] generates robust counterfactuals.",
+                "Factual-based explanations and minimal CE: RCExplainer aims to find a subset of edges of the input graph such that the prediction on the subgraph induced by these edges remains the same as in the input graph (factual explanation).",
+                "com/RexYing/gnn-model-explainer [4] BA-2motifs [40] synthetic https://github.",
+                "com/RexYing/gnn-model-explainer [4, 12, 39, 69] Tree-Grid [86] synthetic https://github.",
+                "- RCExplainer [11]: This explanation method is based on factual explanations, so the authors conducted series of experiments to compare their method with the state-of-the-art factual GNN explanation methods including GNNExplainer [150], PGExplainer [77], PGM-Explainer [136] and CF-GNNExplainer [75].",
+                "RCExplainer [11] is a method to generate robust GCE.",
+                "com/RexYing/gnn-model-explainer [4, 12, 39, 69] BA-Community [86] synthetic https://github.",
+                "[4] are the only ones that provide a formal deinition for GCE instead of optimising a loss function.",
+                "On a first step, the method models the decision logic of a GNN employing a set of decision regions, each induced by a set of linear decision boundaries of the GNN. RCExplainer uses an unsupervised method to find the decision regions for each class such that each decision region governs the decision on multiple graph samples predicted to belong to the same class.",
+                "Model Agnosticism and Model Access: Regarding model access, RCExplainer extracts the decision region of a GNN in the d-dimensional output space of the last convolution layer of the GNN.",
+                "Finally, we collected fourteen papers (ifteen methods) [1, 4, 12, 13, 28, 36, 39, 41, 50, 53, 68, 69, 79, 82] that are at the base of this survey.",
+                "RCExplainer [4] \u2713 \u2713 \u2713 \u00b7 \u2713 \u2713 Instance \ufffd , \ufffd \ufffd (\u2212) Heuristic & Learning GNN-MOExp [36] \u2713 \u00b7 \u2713 \u00b7 \u2713 \u00b7 Instance \ufffd sub-graph Search MEG [53] \u2713 \u2713 \u00b7 \u2713 \u00b7 \u223c Instance \ufffd \ufffd (+,\u2212), \ufffd (+,\u2212) Learning GNNAdv [68] \u2713 \u2713 \u00b7 \u2713 \u2713 \u00b7 Instance \ufffd \ufffd (+,\u2212) Learning CMGE [82] \u00b7 \u2713 \u2713 \u00b7 \u00b7 \u2713 Instance \ufffd \ufffd (+,\u2212), \ufffd (\u2212) Learning NSEG [12] \u2713 \u2713 \u2713 \u00b7 \u2713 \u00b7 Instance \ufffd , \ufffd \ufffd (\u2212), \ufffd (\u2217) Learning CF-GNNExplainer [39] \u2713 \u2713 \u00b7 \u2713 \u2713 \u00b7 Instance \ufffd \ufffd (\u2212) Learning CLEAR [41] \u2713 \u00b7 \u00b7 \u2713 \u2713 \u2713 Instance \ufffd \ufffd (+,\u2212), \ufffd (\u2217) Learning MACDA [50] \u2713 \u00b7 \u00b7 \u2713 \u00b7 \u223c Instance (\ufffd1,\ufffd2) \ufffd (+,\u2212), \ufffd (+,\u2212) Learning CF(2) [69] \u2713 \u00b7 \u2713 \u00b7 \u2713 \u00b7 Instance \ufffd , \ufffd \ufffd (\u2212), \ufffd (\u2212), \ufffd (\u2212) Learning MACCS [79] \u2713 \u00b7 \u00b7 \u2713 \u00b7 \u00b7 Instance \ufffd \ufffd (+,\u2212), \ufffd (+,\u2212) Heuristic GREASE [13] \u2713 \u00b7 \u2713 \u2713 \u00b7 \u00b7 Instance \ufffd \ufffd (\u2212) Learning GCFExplainer [28] \u2713 \u00b7 \u00b7 \u00b7 \u2713 \u00b7 Model \ufffd \ufffd (+,\u2212), \ufffd (+,\u2212) Heuristic",
+                "The GCE generation method of RCExplainer is based on perturbation over the edges of the input graph."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "601e18e5158d03d4db62c9bd85519f40f8e32fe4",
+                "externalIds": {
+                    "ArXiv": "2210.12089",
+                    "DBLP": "journals/corr/abs-2210-12089",
+                    "DOI": "10.1145/3618105",
+                    "CorpusId": 253080529
+                },
+                "corpusId": 253080529,
+                "publicationVenue": {
+                    "id": "7b2adce0-d53f-49d6-8784-b0645604fe62",
+                    "name": "ACM Computing Surveys",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Comput Surv"
+                    ],
+                    "issn": "0360-0300",
+                    "url": "http://www.acm.org/pubs/surveys/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/csur",
+                        "https://csur.acm.org/",
+                        "http://csur.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/601e18e5158d03d4db62c9bd85519f40f8e32fe4",
+                "title": "A Survey on Graph Counterfactual Explanations: Definitions, Methods, Evaluation, and Research Challenges",
+                "abstract": "Graph Neural Networks (GNNs) perform well in community detection and molecule classification. Counterfactual Explanations (CE) provide counter-examples to overcome the transparency limitations of black-box models. Due to the growing attention in graph learning, we focus on the concepts of CE for GNNs. We analysed the SoA to provide a taxonomy, a uniform notation, and the benchmarking datasets and evaluation metrics. We discuss fourteen methods, their evaluation protocols, twenty-two datasets, and nineteen metrics. We integrated the majority of methods into the GRETEL library to conduct an empirical evaluation to understand their strengths and pitfalls. We highlight open challenges and future work.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1390033678",
+                        "name": "Mario Alfonso Prado-Romero"
+                    },
+                    {
+                        "authorId": "32208207",
+                        "name": "Bardh Prenkaj"
+                    },
+                    {
+                        "authorId": "1765155",
+                        "name": "G. Stilo"
+                    },
+                    {
+                        "authorId": "1685102",
+                        "name": "F. Giannotti"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "211599bc961320d04067c583601c4465a73dd584",
+                "externalIds": {
+                    "ArXiv": "2210.11695",
+                    "DBLP": "journals/corr/abs-2210-11695",
+                    "DOI": "10.1145/3539597.3570376",
+                    "CorpusId": 253080473
+                },
+                "corpusId": 253080473,
+                "publicationVenue": {
+                    "id": "ea38228f-6ed3-4222-a3ce-d963d8cc9516",
+                    "name": "Web Search and Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Web Search Data Min",
+                        "WSDM"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=3158"
+                },
+                "url": "https://www.semanticscholar.org/paper/211599bc961320d04067c583601c4465a73dd584",
+                "title": "Global Counterfactual Explainer for Graph Neural Networks",
+                "abstract": "Graph neural networks (GNNs) find applications in various domains such as computational biology, natural language processing, and computer security. Owing to their popularity, there is an increasing need to explain GNN predictions since GNNs are black-box machine learning models. One way to address this is counterfactual reasoning where the objective is to change the GNN prediction by minimal changes in the input graph. Existing methods for counterfactual explanation of GNNs are limited to instance-specific local reasoning. This approach has two major limitations of not being able to offer global recourse policies and overloading human cognitive ability with too much information. In this work, we study the global explainability of GNNs through global counterfactual reasoning. Specifically, we want to find a small set of representative counterfactual graphs that explains all input graphs. Towards this goal, we propose GCFExplainer, a novel algorithm powered by vertex-reinforced random walks on an edit map of graphs with a greedy summary. Extensive experiments on real graph datasets show that the global explanation from GCFExplainer provides important high-level insights of the model behavior and achieves a 46.9% gain in recourse coverage and a 9.5% reduction in recourse cost compared to the state-of-the-art local counterfactual explainers.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2134769449",
+                        "name": "Mert Kosan"
+                    },
+                    {
+                        "authorId": "2129461984",
+                        "name": "Zexi Huang"
+                    },
+                    {
+                        "authorId": "3390598",
+                        "name": "Sourav Medya"
+                    },
+                    {
+                        "authorId": "1699732",
+                        "name": "Sayan Ranu"
+                    },
+                    {
+                        "authorId": "1399890865",
+                        "name": "Ambuj K. Singh"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6599397389c7670cd5bd98eb4472f0f40f00a48e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-08906",
+                    "ArXiv": "2210.08906",
+                    "DOI": "10.48550/arXiv.2210.08906",
+                    "CorpusId": 252917583
+                },
+                "corpusId": 252917583,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6599397389c7670cd5bd98eb4472f0f40f00a48e",
+                "title": "A.I. Robustness: a Human-Centered Perspective on Technological Challenges and Opportunities",
+                "abstract": "Despite the impressive performance of Artificial Intelligence (AI) systems, their robustness remains elusive and constitutes a key issue that impedes large-scale adoption. Robustness has been studied in many domains of AI, yet with different interpretations across domains and contexts. In this work, we systematically survey the recent progress to provide a reconciled terminology of concepts around AI robustness. We introduce three taxonomies to organize and describe the literature both from a fundamental and applied point of view: 1) robustness by methods and approaches in different phases of the machine learning pipeline; 2) robustness for specific model architectures, tasks, and systems; and in addition, 3) robustness assessment methodologies and insights, particularly the trade-offs with other trustworthiness properties. Finally, we identify and discuss research gaps and opportunities and give an outlook on the field. We highlight the central role of humans in evaluating and enhancing AI robustness, considering the necessary knowledge humans can provide, and discuss the need for better understanding practices and developing supportive tools in the future.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "71223212",
+                        "name": "Andrea Tocchetti"
+                    },
+                    {
+                        "authorId": "81397590",
+                        "name": "L. Corti"
+                    },
+                    {
+                        "authorId": "9572457",
+                        "name": "Agathe Balayn"
+                    },
+                    {
+                        "authorId": "2115474673",
+                        "name": "Mireia Yurrita"
+                    },
+                    {
+                        "authorId": "2187932096",
+                        "name": "Philip Lippmann"
+                    },
+                    {
+                        "authorId": "40350773",
+                        "name": "Marco Brambilla"
+                    },
+                    {
+                        "authorId": "1688428",
+                        "name": "Jie Yang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Few graph CFE methods which enable gradient-based optimization either rely on domain knowledge [6] or assumptions [10] about the prediction model to facilitate optimization.",
+                "Recently, a few studies [9, 6, 10, 11, 12, 13] explore to extend CFEs into graphs.",
+                "There have been a few studies related to CFEs on graphs [6, 9, 10, 11, 12, 13].",
+                "Similarly, RCExplainer [10] generates CFEs by removing important edges from the original graph, but it is based on an assumption that GNN prediction model is partially accessible.",
+                "Recently, a few studies [4, 10] develop generative CFE generators based on variational autoencoder."
+            ],
+            "intents": [],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "82f700c3eaf9c8e2d187566aedc18027f0b290ef",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-08443",
+                    "ArXiv": "2210.08443",
+                    "DOI": "10.48550/arXiv.2210.08443",
+                    "CorpusId": 252918233
+                },
+                "corpusId": 252918233,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/82f700c3eaf9c8e2d187566aedc18027f0b290ef",
+                "title": "CLEAR: Generative Counterfactual Explanations on Graphs",
+                "abstract": "Counterfactual explanations promote explainability in machine learning models by answering the question\"how should an input instance be perturbed to obtain a desired predicted label?\". The comparison of this instance before and after perturbation can enhance human interpretation. Most existing studies on counterfactual explanations are limited in tabular data or image data. In this work, we study the problem of counterfactual explanation generation on graphs. A few studies have explored counterfactual explanations on graphs, but many challenges of this problem are still not well-addressed: 1) optimizing in the discrete and disorganized space of graphs; 2) generalizing on unseen graphs; and 3) maintaining the causality in the generated counterfactuals without prior knowledge of the causal model. To tackle these challenges, we propose a novel framework CLEAR which aims to generate counterfactual explanations on graphs for graph-level prediction models. Specifically, CLEAR leverages a graph variational autoencoder based mechanism to facilitate its optimization and generalization, and promotes causality by leveraging an auxiliary variable to better identify the underlying causal model. Extensive experiments on both synthetic and real-world graphs validate the superiority of CLEAR over the state-of-the-art methods in different aspects.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2157405959",
+                        "name": "Jing Ma"
+                    },
+                    {
+                        "authorId": "2773849",
+                        "name": "Ruocheng Guo"
+                    },
+                    {
+                        "authorId": "28265392",
+                        "name": "Saumitra Mishra"
+                    },
+                    {
+                        "authorId": "2091839592",
+                        "name": "Aidong Zhang"
+                    },
+                    {
+                        "authorId": "1737121128",
+                        "name": "Jundong Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[27] Mohit Bajaj, Lingyang Chu, Zi Yu Xue, Jian Pei, Lanjun Wang, Peter Cho-Ho Lam, and Yong Zhang."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1b5f8d3693ce9dfc07e7606039322b7e7b60270b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-13586",
+                    "ArXiv": "2207.13586",
+                    "DOI": "10.48550/arXiv.2207.13586",
+                    "CorpusId": 251104693
+                },
+                "corpusId": 251104693,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/1b5f8d3693ce9dfc07e7606039322b7e7b60270b",
+                "title": "Encoding Concepts in Graph Neural Networks",
+                "abstract": "The opaque reasoning of Graph Neural Networks induces a lack of human trust. Existing graph network explainers attempt to address this issue by providing post-hoc explanations, however, they fail to make the model itself more interpretable. To fill this gap, we introduce the Concept Encoder Module, the first differentiable concept-discovery approach for graph networks. The proposed approach makes graph networks explainable by design by first discovering graph concepts and then using these to solve the task. Our results demonstrate that this approach allows graph networks to: (i) attain model accuracy comparable with their equivalent vanilla versions, (ii) discover meaningful concepts that achieve high concept completeness and purity scores, (iii) provide high-quality concept-based logic explanations for their prediction, and (iv) support effective interventions at test time: these can increase human trust as well as significantly improve model performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2098834685",
+                        "name": "Lucie Charlotte Magister"
+                    },
+                    {
+                        "authorId": "2123005765",
+                        "name": "Pietro Barbiero"
+                    },
+                    {
+                        "authorId": "1641643092",
+                        "name": "Dmitry Kazhdan"
+                    },
+                    {
+                        "authorId": "1752951302",
+                        "name": "F. Siciliano"
+                    },
+                    {
+                        "authorId": "79277428",
+                        "name": "Gabriele Ciravegna"
+                    },
+                    {
+                        "authorId": "144925193",
+                        "name": "F. Silvestri"
+                    },
+                    {
+                        "authorId": "2075355155",
+                        "name": "Pietro Lio'"
+                    },
+                    {
+                        "authorId": "1708741",
+                        "name": "M. Jamnik"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In the paper [5], authors evaluate efficiency by comparing the average computation time taken for inference on unseen graph samples.",
+                "Authors [5] computer robustness by quantifying how much an explanation changes after adding noise to the input graph."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8f13afe3ce7391873ce92807fe3938851bafd079",
+                "externalIds": {
+                    "ArXiv": "2207.12599",
+                    "DBLP": "journals/corr/abs-2207-12599",
+                    "DOI": "10.48550/arXiv.2207.12599",
+                    "CorpusId": 251067111
+                },
+                "corpusId": 251067111,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8f13afe3ce7391873ce92807fe3938851bafd079",
+                "title": "A Survey of Explainable Graph Neural Networks: Taxonomy and Evaluation Metrics",
+                "abstract": "Graph neural networks (GNNs) have demonstrated a significant boost in prediction performance on graph data. At the same time, the predictions made by these models are often hard to interpret. In that regard, many efforts have been made to explain the prediction mechanisms of these models from perspectives such as GNNExplainer, XGNN and PGExplainer. Although such works present systematic frameworks to interpret GNNs, a holistic review for explainable GNNs is unavailable. In this survey, we present a comprehensive review of explainability techniques developed for GNNs. We focus on explainable graph neural networks and categorize them based on the use of explainable methods. We further provide the common performance metrics for GNNs explanations and point out several future research directions.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2179302425",
+                        "name": "Yiqiao Li"
+                    },
+                    {
+                        "authorId": "51239629",
+                        "name": "Jianlong Zhou"
+                    },
+                    {
+                        "authorId": "3455244",
+                        "name": "Sunny Verma"
+                    },
+                    {
+                        "authorId": "145093625",
+                        "name": "Fang Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In terms of methodologies, several techniques based on input perturbations [11, 12, 13], input gradients[36, 37], causal techniques [34, 38, 33] as well as utilizing simpler surrogate models [14] have been explored."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "af10e2205b6162ac4b76e01ba140056c9a43a32b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-10896",
+                    "ArXiv": "2207.10896",
+                    "DOI": "10.48550/arXiv.2207.10896",
+                    "CorpusId": 251018344
+                },
+                "corpusId": 251018344,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/af10e2205b6162ac4b76e01ba140056c9a43a32b",
+                "title": "Privacy and Transparency in Graph Machine Learning: A Unified Perspective",
+                "abstract": "Graph Machine Learning (GraphML), whereby classical machine learning is generalized to irregular graph domains, has enjoyed a recent renaissance, leading to a dizzying array of models and their applications in several domains. With its growing applicability to sensitive domains and regulations by governmental agencies for trustworthy AI systems, researchers have started looking into the issues of transparency and privacy of graph learning. However, these topics have been mainly investigated independently. In this position paper, we provide a unified perspective on the interplay of privacy and transparency in GraphML. In particular, we describe the challenges and possible research directions for a formal investigation of privacy-transparency tradeoffs in GraphML.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "35070805",
+                        "name": "Megha Khosla"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Method assessment on synthetic datasets eludes the power of gradient-based methods and their ability to extract decisive graph features when node dependency is not elementary and node features are meaningful.",
+                "To make them comparable, most papers propose to fix a sparsity level to apply to all explanations and compare the same-sized explanations [5, 25, 49].",
+                "87 Method [5] 2021 RCExplainer 3 3 3 3 0."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c559dc62c0d64295f9c0dfb5f322b3f30ddf44eb",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-09677",
+                    "ArXiv": "2206.09677",
+                    "DOI": "10.48550/arXiv.2206.09677",
+                    "CorpusId": 249889598
+                },
+                "corpusId": 249889598,
+                "publicationVenue": {
+                    "id": "50534c12-f4ba-4c64-806b-01647d1baacf",
+                    "name": "LOG IN",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Log in",
+                        "Log",
+                        "LOG"
+                    ],
+                    "issn": "0720-8642",
+                    "alternate_issns": [
+                        "1547-4690",
+                        "0024-5798"
+                    ],
+                    "url": "https://www.log-in-verlag.de/informatische_bildung/",
+                    "alternate_urls": [
+                        "https://www.anycorp.com/log/about",
+                        "https://www.jstor.org/journal/log",
+                        "https://www.anycorp.com/",
+                        "http://www.jstor.org/action/showPublication?journalCode=log",
+                        "http://www.anycorp.com/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c559dc62c0d64295f9c0dfb5f322b3f30ddf44eb",
+                "title": "GraphFramEx: Towards Systematic Evaluation of Explainability Methods for Graph Neural Networks",
+                "abstract": "As one of the most popular machine learning models today, graph neural networks (GNNs) have attracted intense interest recently, and so does their explainability. Users are increasingly interested in a better understanding of GNN models and their outcomes. Unfortunately, today's evaluation frameworks for GNN explainability often rely on few inadequate synthetic datasets, leading to conclusions of limited scope due to a lack of complexity in the problem instances. As GNN models are deployed to more mission-critical applications, we are in dire need for a common evaluation protocol of explainability methods of GNNs. In this paper, we propose, to our best knowledge, the first systematic evaluation framework for GNN explainability, considering explainability on three different\"user needs\". We propose a unique metric that combines the fidelity measures and classifies explanations based on their quality of being sufficient or necessary. We scope ourselves to node classification tasks and compare the most representative techniques in the field of input-level explainability for GNNs. For the inadequate but widely used synthetic benchmarks, surprisingly shallow techniques such as personalized PageRank have the best performance for a minimum computation time. But when the graph structure is more complex and nodes have meaningful features, gradient-based methods are the best according to our evaluation criteria. However, none dominates the others on all evaluation dimensions and there is always a trade-off. We further apply our evaluation protocol in a case study for frauds explanation on eBay transaction graphs to reflect the production environment.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2146257620",
+                        "name": "Kenza Amara"
+                    },
+                    {
+                        "authorId": "83539859",
+                        "name": "Rex Ying"
+                    },
+                    {
+                        "authorId": "1445089663",
+                        "name": "Zitao Zhang"
+                    },
+                    {
+                        "authorId": "2171816624",
+                        "name": "Zhihao Han"
+                    },
+                    {
+                        "authorId": "2412958",
+                        "name": "Yinan Shan"
+                    },
+                    {
+                        "authorId": "1689559",
+                        "name": "U. Brandes"
+                    },
+                    {
+                        "authorId": "50323214",
+                        "name": "S. Schemm"
+                    },
+                    {
+                        "authorId": "1776014",
+                        "name": "Ce Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Unfortunately, some works do not try to find minimal counterfactual explanations [8,26,30,2]."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "28362783e390c02fe0ac129f0268e8fdfdd8293d",
+                "externalIds": {
+                    "ArXiv": "2206.02957",
+                    "DBLP": "journals/corr/abs-2206-02957",
+                    "DOI": "10.1145/3511808.3557608",
+                    "CorpusId": 249431911
+                },
+                "corpusId": 249431911,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/28362783e390c02fe0ac129f0268e8fdfdd8293d",
+                "title": "GRETEL: A unified framework for Graph Counterfactual Explanation Evaluation",
+                "abstract": ". Nowadays, Machine Learning (ML) systems are a fundamental part of those tools with an impact on our daily life in several application domains. Unfortunately those systems, due to their black-box nature, are hardly adopted in those application domains (e.g. health, \ufb01nance) where having an understanding of the decision process is of paramount importance. For this reason, explanation methods were developed to give insight into how the ML model has taken a speci\ufb01c decision for a given case/instance. In particular, Graph Counterfactual Explanations (GCE) is one of the possible explanation techniques in the Graph Learning domain. Those techniques can be useful to discover, for example: i) molecular compounds similar in terms of speci\ufb01c desired properties, or ii) new insights into the interplay of di\ufb00erent brain regions for certain diseases. Unfortunately, the existing works of Graph Counterfactual Explanations diverge mostly in the problem de\ufb01nition, application domain, test data, and evaluation metrics, and most existing works do not compare against other counterfactual explanation techniques present in the literature. For these reasons, we present GRETEL , a uni\ufb01ed framework to develop and test GCEs\u2019. Our framework provides a set of well-de\ufb01ned mechanisms to easily integrate and manage: both real and synthetic datasets, ML models, state-of-the-art explanation techniques, and a set of evaluation measures. GRETEL is a well-organized and highly extensible platform, which promotes the Open Science and experiments reproducibility thus it can be adopted e\ufb00ortlessly by future researchers who want to create and test their new explanation methods by comparing them to existing techniques across several application domains, data and evaluation measures. To present GRETEL , we show the experiments conducted to integrate and test several synthetic and real datasets with several existing explanation techniques and base ML models. University of L\u2019Aquila.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1390033678",
+                        "name": "Mario Alfonso Prado-Romero"
+                    },
+                    {
+                        "authorId": "1765155",
+                        "name": "G. Stilo"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Compared with other explanation methods, CF-GNNExplainer interprets the GNN models in terms of the prediction dynamics, leading to more robust explanation for the noisy input [6].",
+                "RCExplainer [6] enhances the counterfactual explanation to be robust to the input noise."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d22efa7a35464ab9b40f8a4c926bbdcb91b84699",
+                "externalIds": {
+                    "ArXiv": "2205.10014",
+                    "DBLP": "journals/corr/abs-2205-10014",
+                    "DOI": "10.48550/arXiv.2205.10014",
+                    "CorpusId": 248965359
+                },
+                "corpusId": 248965359,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/d22efa7a35464ab9b40f8a4c926bbdcb91b84699",
+                "title": "A Survey of Trustworthy Graph Learning: Reliability, Explainability, and Privacy Protection",
+                "abstract": "Deep graph learning has achieved remarkable progresses in both business and scienti\ufb01c areas ranging from \ufb01nance and e-commerce, to drug and advanced material discovery. Despite these progresses, how to ensure various deep graph learning algorithms behave in a socially responsible manner and meet regulatory compliance requirements becomes an emerging problem, especially in risk-sensitive domains. Trustworthy graph learning (TwGL) aims to solve the above problems from a technical viewpoint. In contrast to conventional graph learning research which mainly cares about model performance, TwGL considers various reliability and safety aspects of the graph learning framework including but not limited to robustness, explainability, and privacy. In this survey, we provide a comprehensive review of recent leading approaches in the TwGL \ufb01eld from three dimensions, namely, reliability, explainability, and privacy protection. We give a general categorization for existing work and review typical work for each category. To give further insights for TwGL research, we provide a uni\ufb01ed view to inspect previous works and build the connection between them. We also point out some important open problems remaining to be solved in the future developments of TwGL.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "27055880",
+                        "name": "Bingzhe Wu"
+                    },
+                    {
+                        "authorId": "2115953679",
+                        "name": "Jintang Li"
+                    },
+                    {
+                        "authorId": "28822585",
+                        "name": "Junchi Yu"
+                    },
+                    {
+                        "authorId": "2419616",
+                        "name": "Yatao Bian"
+                    },
+                    {
+                        "authorId": "7214272",
+                        "name": "Hengtong Zhang"
+                    },
+                    {
+                        "authorId": "2145762399",
+                        "name": "Chaochao Chen"
+                    },
+                    {
+                        "authorId": "144549366",
+                        "name": "Chengbin Hou"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Guoji Fu"
+                    },
+                    {
+                        "authorId": "1853048147",
+                        "name": "Liang Chen"
+                    },
+                    {
+                        "authorId": "1754673",
+                        "name": "Tingyang Xu"
+                    },
+                    {
+                        "authorId": "48537464",
+                        "name": "Yu Rong"
+                    },
+                    {
+                        "authorId": "1687974",
+                        "name": "Xiaolin Zheng"
+                    },
+                    {
+                        "authorId": "1768190",
+                        "name": "Junzhou Huang"
+                    },
+                    {
+                        "authorId": "2053865709",
+                        "name": "Ran He"
+                    },
+                    {
+                        "authorId": "143905981",
+                        "name": "Baoyuan Wu"
+                    },
+                    {
+                        "authorId": "2113638448",
+                        "name": "Guangyu Sun"
+                    },
+                    {
+                        "authorId": "2153522384",
+                        "name": "Peng Cui"
+                    },
+                    {
+                        "authorId": "144291579",
+                        "name": "Zibin Zheng"
+                    },
+                    {
+                        "authorId": "47781621",
+                        "name": "Zhe Liu"
+                    },
+                    {
+                        "authorId": "144259957",
+                        "name": "P. Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                ", 2018]; and perturbation-based methods generate small corrections to the input causing the output to change [Zhang et al., 2018; Goyal et al., 2019; Lucic et al., 2022; Bajaj et al., 2021]."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "bcce3fa1682617f18b7b5539f5cd7670eaaf70f7",
+                "externalIds": {
+                    "DBLP": "conf/ijcai/HarzliG023",
+                    "ArXiv": "2205.09901",
+                    "DOI": "10.24963/ijcai.2023/409",
+                    "CorpusId": 258437308
+                },
+                "corpusId": 258437308,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/bcce3fa1682617f18b7b5539f5cd7670eaaf70f7",
+                "title": "Cardinality-Minimal Explanations for Monotonic Neural Networks",
+                "abstract": "In recent years, there has been increasing interest in explanation methods for neural model predictions that offer precise formal guarantees. These include abductive (respectively, contrastive) methods, which aim to compute minimal subsets of input features that are sufficient for a given prediction to hold (respectively, to change a given prediction). The corresponding decision problems are, however, known to be intractable. In this paper, we investigate whether tractability can be regained by focusing on neural models implementing a monotonic function. Although the relevant decision problems remain intractable, we can show that they become solvable in polynomial time by means of greedy algorithms if we additionally assume that the activation functions are continuous everywhere and differentiable almost everywhere. Our experiments suggest favourable performance of our algorithms.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2050176905",
+                        "name": "Ouns El Harzli"
+                    },
+                    {
+                        "authorId": "1784440",
+                        "name": "B. C. Grau"
+                    },
+                    {
+                        "authorId": "145655431",
+                        "name": "Ian Horrocks"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The counterfactual explanation describes causality as \u201cIf X had not occurred, Y would not have occurred\u201d [130], [136].",
+                ", RCExplainer [136], CF(2) [164]) show superiority in terms of explanation robustness [136] and quality (e.",
+                "For post-hoc explainers of GNNs, the difference on target tasks means that some explainers (e.g., GraphLime [135]) can only provide explanations for GNNs in one specified task (e.g., node classification), while others (e.g., RCExplainer [136]) are available for multiple GNN tasks.",
+                "Existing approaches that consider both forms of reasoning (e.g., RCExplainer [136], CF2 [164]) show superiority in terms of explanation robustness [136] and quality (e.g., accuracy, precision) [164].",
+                "t the inputs is zero) and explanation misleading [166], [136].",
+                "GNNExplainer [22] Explainability Perturbation-based Grey-box Instance/Group NC/GC Edge/Feature PGExplainer [56] Explainability Perturbation-based Grey-box Instance NC/GC Edge ZORRO [159] Explainability Perturbation-based Grey-box Instance NC Node/Feature Causal Screening [149] Explainability Perturbation-based Grey-box Instance GC Edge GraphMask [160] Explainability Perturbation-based White-box Instance SRL/MQA Edge SubgraphX [161] Explainability Perturbation-based Black-box Instance NC/GC Subgraph CF-GNNExplainer [162] Explainability Perturbation-based Grey-box Instance NC Edge RCExplainer [136] Explainability Perturbation-based Grey-box Instance NC/GC Edge ReFine [163] Explainability Perturbation-based Grey-box Instance GC Edge CF2 [164] Explainability Perturbation-based Grey-box Instance NC/GC Edge/Feature"
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "21913eb287f8fc33db8f6274fd2a07072c4e11eb",
+                "externalIds": {
+                    "ArXiv": "2205.07424",
+                    "DBLP": "journals/corr/abs-2205-07424",
+                    "DOI": "10.48550/arXiv.2205.07424",
+                    "CorpusId": 248811191
+                },
+                "corpusId": 248811191,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/21913eb287f8fc33db8f6274fd2a07072c4e11eb",
+                "title": "Trustworthy Graph Neural Networks: Aspects, Methods and Trends",
+                "abstract": "Graph neural networks (GNNs) have emerged as a series of competent graph learning methods for diverse real-world scenarios, ranging from daily applications like recommendation systems and question answering to cutting-edge technologies such as drug discovery in life sciences and n-body simulation in astrophysics. However, task performance is not the only requirement for GNNs. Performance-oriented GNNs have exhibited potential adverse effects like vulnerability to adversarial attacks, unexplainable discrimination against disadvantaged groups, or excessive resource consumption in edge computing environments. To avoid these unintentional harms, it is necessary to build competent GNNs characterised by trustworthiness. To this end, we propose a comprehensive roadmap to build trustworthy GNNs from the view of the various computing technologies involved. In this survey, we introduce basic concepts and comprehensively summarise existing efforts for trustworthy GNNs from six aspects, including robustness, explainability, privacy, fairness, accountability, and environmental well-being. Additionally, we highlight the intricate cross-aspect relations between the above six aspects of trustworthy GNNs. Finally, we present a thorough overview of trending directions for facilitating the research and industrialisation of trustworthy GNNs.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2156713249",
+                        "name": "He Zhang"
+                    },
+                    {
+                        "authorId": "2115265646",
+                        "name": "Bang Wu"
+                    },
+                    {
+                        "authorId": "3032058",
+                        "name": "Xingliang Yuan"
+                    },
+                    {
+                        "authorId": "2153326034",
+                        "name": "Shirui Pan"
+                    },
+                    {
+                        "authorId": "8163721",
+                        "name": "Hanghang Tong"
+                    },
+                    {
+                        "authorId": "2112496348",
+                        "name": "Jian Pei"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The evaluation of CQs has benefited many research fields and tasks, such as the determination of person liable [10], marketing and economics [11], personalized policies [12], medical imaging analysis [13, 14], Bayesian network [7], high dimensional data analysis [15], abduction reasoning [16], the intervention of tabular data [8], epidemiology [17], natural language processing (NLP) [18, 19] and graph neural networks (GNN) [20, 21]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "703dafc76358b8cdda1f16a451d3e5e154c51dea",
+                "externalIds": {
+                    "DBLP": "journals/apin/WangLSW22",
+                    "PubMedCentral": "8853228",
+                    "DOI": "10.1007/s10489-022-03161-8",
+                    "CorpusId": 246947077,
+                    "PubMed": "35194320"
+                },
+                "corpusId": 246947077,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/703dafc76358b8cdda1f16a451d3e5e154c51dea",
+                "title": "Rethinking the framework constructed by counterfactual functional model",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2144446949",
+                        "name": "Chao Wang"
+                    },
+                    {
+                        "authorId": "29297311",
+                        "name": "Linfang Liu"
+                    },
+                    {
+                        "authorId": "48904791",
+                        "name": "Shichao Sun"
+                    },
+                    {
+                        "authorId": "2158625822",
+                        "name": "Wei Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Following previous works [7], [8], [9], [10], [12], we focus on instance-level methods with explanations using graph sub-structures."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2d23a740ade86345d53bceda3326952be8659f28",
+                "externalIds": {
+                    "ArXiv": "2202.00519",
+                    "DBLP": "journals/corr/abs-2202-00519",
+                    "CorpusId": 246442194
+                },
+                "corpusId": 246442194,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2d23a740ade86345d53bceda3326952be8659f28",
+                "title": "MotifExplainer: a Motif-based Graph Neural Network Explainer",
+                "abstract": "We consider the explanation problem of Graph Neural Networks (GNNs). Most existing GNN explanation methods identify the most important edges or nodes but fail to consider substructures, which are more important for graph data. The only method that considers subgraphs tries to search all possible subgraphs and identify the most significant subgraphs. However, the subgraphs identified may not be recurrent or statistically important. In this work, we propose a novel method, known as MotifExplainer, to explain GNNs by identifying important motifs, recurrent and statistically significant patterns in graphs. Our proposed motif-based methods can provide better human-understandable explanations than methods based on nodes, edges, and regular subgraphs. Given an input graph and a pre-trained GNN model, our method first extracts motifs in the graph using well-designed motif extraction rules. Then we generate motif embedding by feeding motifs into the pre-trained GNN. Finally, we employ an attention-based method to identify the most influential motifs as explanations for the final prediction results. The empirical studies on both synthetic and real-world datasets demonstrate the effectiveness of our method.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "8873470",
+                        "name": "Zhaoning Yu"
+                    },
+                    {
+                        "authorId": "3920758",
+                        "name": "Hongyang Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "While the graphpruning explainers explain the individual predictions, the counterfactual-based explainers [22, 6] recognize a minimal subgraph, if moved, can lead to the drastic change in GNN\u2019s prediction."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "170ce0eebe1c6e65ecf70f2ded7864f6d4428f1f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2112-09895",
+                    "ArXiv": "2112.09895",
+                    "CorpusId": 245334653
+                },
+                "corpusId": 245334653,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/170ce0eebe1c6e65ecf70f2ded7864f6d4428f1f",
+                "title": "Towards the Explanation of Graph Neural Networks in Digital Pathology with Information Flows",
+                "abstract": "As Graph Neural Networks (GNNs) are widely adopted in digital pathology, there is increasing attention to developing explanation models (explainers) of GNNs for improved transparency in clinical decisions. Existing explainers discover an explanatory subgraph relevant to the prediction. However, such a subgraph is insufficient to reveal all the critical biological substructures for the prediction because the prediction will remain unchanged after removing that subgraph. Hence, an explanatory subgraph should be not only necessary for prediction, but also sufficient to uncover the most predictive regions for the explanation. Such explanation requires a measurement of information transferred from different input subgraphs to the predictive output, which we define as information flow. In this work, we address these key challenges and propose IFEXPLAINER, which generates a necessary and sufficient explanation for GNNs. To evaluate the information flow within GNN's prediction, we first propose a novel notion of predictiveness, named $f$-information, which is directional and incorporates the realistic capacity of the GNN model. Based on it, IFEXPLAINER generates the explanatory subgraph with maximal information flow to the prediction. Meanwhile, it minimizes the information flow from the input to the predictive result after removing the explanation. Thus, the produced explanation is necessarily important to the prediction and sufficient to reveal the most crucial substructures. We evaluate IFEXPLAINER to interpret GNN's predictions on breast cancer subtyping. Experimental results on the BRACS dataset show the superior performance of the proposed method.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "28822585",
+                        "name": "Junchi Yu"
+                    },
+                    {
+                        "authorId": "1754673",
+                        "name": "Tingyang Xu"
+                    },
+                    {
+                        "authorId": "2053865709",
+                        "name": "Ran He"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7b846287f84a4c3b3cc0e25149a87db601c4fa92",
+                "externalIds": {
+                    "ArXiv": "2108.13025",
+                    "DBLP": "journals/corr/abs-2108-13025",
+                    "CorpusId": 237353456
+                },
+                "corpusId": 237353456,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7b846287f84a4c3b3cc0e25149a87db601c4fa92",
+                "title": "Transport-based Counterfactual Models",
+                "abstract": "Counterfactual frameworks have grown popular in machine learning for both explaining algorithmic decisions but also de\ufb01ning individual notions of fairness, more intuitive than typical group fairness conditions. However, state-of-the-art models to compute counterfactuals are either unrealistic or unfeasible. In particular, while Pearl\u2019s causal inference provides appealing rules to calculate counterfactuals, it relies on a model that is unknown and hard to discover in practice. We address the problem of designing realistic and feasible counterfactuals in the absence of a causal model. We de\ufb01ne transport-based counterfactual models as collections of joint probability distributions between observable distributions, and show their connection to causal counterfactuals. More speci\ufb01cally, we argue that optimal-transport theory de\ufb01nes relevant transport-based counterfactual models, as they are numerically feasible, statistically-faithful, and can coincide under some assumptions with causal counterfactual models. Finally, these models make counterfactual approaches to fairness feasible, and we illustrate their practicality and e\ufb03ciency on fair learning. With this paper, we aim at laying out the theoretical foundations for a new, implementable approach to counterfactual thinking.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2113689649",
+                        "name": "Lucas de Lara"
+                    },
+                    {
+                        "authorId": "2063977133",
+                        "name": "Alberto Gonz\u00e1lez-Sanz"
+                    },
+                    {
+                        "authorId": "4322924",
+                        "name": "Nicholas Asher"
+                    },
+                    {
+                        "authorId": "144736569",
+                        "name": "J. Loubes"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "3ee94d9f73a8ba6b291e254cdb0df18acce58056",
+                "externalIds": {
+                    "ArXiv": "2107.04680",
+                    "DBLP": "journals/corr/abs-2107-04680",
+                    "DOI": "10.3390/app11167274",
+                    "CorpusId": 235794770
+                },
+                "corpusId": 235794770,
+                "publicationVenue": {
+                    "id": "136edf8d-0f88-4c2c-830f-461c6a9b842e",
+                    "name": "Applied Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl Sci"
+                    ],
+                    "issn": "2076-3417",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217814",
+                    "alternate_urls": [
+                        "http://www.mathem.pub.ro/apps/",
+                        "https://www.mdpi.com/journal/applsci",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217814"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3ee94d9f73a8ba6b291e254cdb0df18acce58056",
+                "title": "A Framework and Benchmarking Study for Counterfactual Generating Methods on Tabular Data",
+                "abstract": "Counterfactual explanations are viewed as an effective way to explain machine learning predictions. This interest is reflected by a relatively young literature with already dozens of algorithms aiming to generate such explanations. These algorithms are focused on finding how features can be modified to change the output classification. However, this rather general objective can be achieved in different ways, which brings about the need for a methodology to test and benchmark these algorithms. The contributions of this work are manifold: First, a large benchmarking study of 10 algorithmic approaches on 22 tabular datasets is performed, using nine relevant evaluation metrics; second, the introduction of a novel, first of its kind, framework to test counterfactual generation algorithms; third, a set of objective metrics to evaluate and compare counterfactual results; and, finally, insight from the benchmarking results that indicate which approaches obtain the best performance on what type of dataset. This benchmarking study and framework can help practitioners in determining which technique and building blocks most suit their context, and can help researchers in the design and evaluation of current and future counterfactual generation algorithms. Our findings show that, overall, there\u2019s no single best algorithm to generate counterfactual explanations as the performance highly depends on properties related to the dataset, model, score, and factual point specificities.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2118958649",
+                        "name": "Raphael Mazzine"
+                    },
+                    {
+                        "authorId": "145147309",
+                        "name": "David Martens"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "works focus on finding counterfactual explanations for the task of graph classification [2] and link prediction [16]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7c85ad5f11ef9afb4f568c33304d86105da956ce",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2105-08621",
+                    "ArXiv": "2105.08621",
+                    "DOI": "10.1109/TKDE.2022.3201170",
+                    "CorpusId": 234762791
+                },
+                "corpusId": 234762791,
+                "publicationVenue": {
+                    "id": "c6840156-ee10-4d78-8832-7f8909811576",
+                    "name": "IEEE Transactions on Knowledge and Data Engineering",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Knowl Data Eng"
+                    ],
+                    "issn": "1041-4347",
+                    "url": "https://www.computer.org/web/tkde",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=69"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7c85ad5f11ef9afb4f568c33304d86105da956ce",
+                "title": "Zorro: Valid, Sparse, and Stable Explanations in Graph Neural Networks",
+                "abstract": "With the ever-increasing popularity and applications of graph neural networks, several proposals have been made to explain and understand the decisions of a graph neural network. Explanations for graph neural networks differ in principle from other input settings. It is important to attribute the decision to input features and other related instances connected by the graph structure. We find that the previous explanation generation approaches that maximize the mutual information between the label distribution produced by the model and the explanation to be restrictive. Specifically, existing approaches do not enforce explanations to be valid, sparse, or robust to input perturbations. In this paper, we lay down some of the fundamental principles that an explanation method for graph neural networks should follow and introduce a metric RDT-Fidelity as a measure of the explanation's effectiveness. We propose a novel approach Zorro based on the principles from rate-distortion theory that uses a simple combinatorial procedure to optimize for RDT-Fidelity. Extensive experiments on real and synthetic datasets reveal that Zorro produces sparser, stable, and more faithful explanations than existing graph neural network explanation approaches.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "143923185",
+                        "name": "Thorben Funke"
+                    },
+                    {
+                        "authorId": "35070805",
+                        "name": "Megha Khosla"
+                    },
+                    {
+                        "authorId": "39775488",
+                        "name": "Avishek Anand"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This family of algorithms can only be applied to certain types of models, e.g., convolutional neural networks (CNNs), generative adversarial networks (GANs), Graph Neural Networks (GNNs).",
+                "We hope the taxonomy can shed light on future improvements/extensions on explaining\nTable 2 List of interpretation algorithm publications\nMethods Publications (non-exhaustive)\nLIME and variants LIME [137], Anchors [138], SHAP [110], RISE [127], MAPLE [130]\nGlobal interpretation LIME-SP [137], NormLIME [6], GALE [166]\nInput-gradient based SmoothGrad [155], IG [160], DeepLIFT [150], VarGrad [3], GradSHAP [110], FullGrad [156]\nLRP and variants LRP [16, 27, 118], Contrastive LRP [67], Softmax-Gradient LRP [79], RAP [123], Chefer et al. [34]\nCAM and variants CAM [197], GradCAM [145], ScoreCAM [174], GradCAM++ [32], CBAM [178], Respond-CAM [196], Ablation-CAM [44]\nPerturbation-based Fong et al. [54, 55], Samek et al. [143], Vu et al. [172],\nCounterfactual examples FIDO [31], DiCE [121], Goyal et al. [64], Laugel et al. [97]\nAdversarial examples Geirhos et al. [58], Ilyas et al. [77]\nTACV TACV [87]\nPrototype-based ProtoPNet [35], ABELE [69]\nProxy models for rationale process Zhang et al. [190, 192], BETA [96]\nTraining dynamics based Forgetting Events [164], Datasets Cartography [161], AUM [128]\nInfluence functions and variants Influence Functions [91], Group Influences [90], HYDRA [38]\nContributions of training examples Carlini et al. [28], Feldman et al. [52, 53]\nInterpretations on GNNs GNN Explainer [184], GraphLIME [76], CoGE [51]\nInterpretations on GANs GAN Dissection [25], Voynov et al. [170, 171], Shen et al. [149]\nInformation flow Rollout [2], Seq2Seq-Vis [157], Chefer et al. [33, 34], TAM [185]\nSelf-generated explanations Atanasova et al. [14], Kumar et al. [93], Liu et al. [109]\nSelf-interpretable models Capsule [73, 142], Neural additive models [5], CALM [88]\nAlgorithms are listed following the order of presentation in Sect.",
+                "Like other deep learning models, GNNs show the black-box fashion and are required to explain their prediction results and rationale processes.",
+                "Interpretations on GNNsGraph Neural Networks (GNNs) are a powerful tool for learning tasks on structured graph data.",
+                "Recently, more researches focus on the interpretations of GNN models, such as GraphLIME [76], CoGE [51], Counterfactual explanations on GNNs [18] and others [20, 111, 132].",
+                "By simple abstraction, the objective function for this purpose can be written as\nTable 1 Categorization of interpretation algorithms with respect to the proposed taxonomy\nAlgorithms Representation Model type Relation\nLIME and variants Feature Model-Agnostic Proxy\nGlobal interpretation Feature Model-Agnostic Proxy\nInput-gradient based Feature Differentiable Dependence\nLRP and variants Feature Differentiable Dependence\nCAM and variants Feature Specific (CNNs) or Differentiable\nClosed-form or dependence\nPerturbation-based Feature Model-Agnostic Dependence\nCounterfactual examples Response Model-Agnostic or Differentiable\nDependence\nAdversarial examples Response Model-Agnostic or Differentiable\nDependence\nTACV Feature Differentiable Proxy\nPrototype-based Response Model-Agnostic or Differentiable\nProxy\nProxy models for rationale process Rationale Specific (CNNs) Proxy\nTraining dynamics based Dataset Model-Agnostic Dependence\nInfluence functions and variants\nDataset Differentiable Closed-Form or Dependence\nContributions of training examples\nDataset Differentiable Dependence\nInterpretations on GNNs Feature Specific (GNNs) Dependence\nInterpretations on GANs Feature Specific (GANs) Dependence\nInformation flow Feature Specific (Transformers) Dependence\nSelf-generated explanations Feature Specific (NLP) Composition\nSelf-interpretable models Rationale Specific (Self-Interpretable) Composition\nAlgorithms are listed following the order of presentation in Sect."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "3d9f067d97cf21f3b0c4d406ccff98b06abafb5c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2103-10689",
+                    "ArXiv": "2103.10689",
+                    "DOI": "10.1007/s10115-022-01756-8",
+                    "CorpusId": 232290756
+                },
+                "corpusId": 232290756,
+                "publicationVenue": {
+                    "id": "1f55639d-134e-44ae-b050-ccf2a6676bc5",
+                    "name": "Knowledge and Information Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Knowl Inf Syst"
+                    ],
+                    "issn": "0219-3116",
+                    "url": "https://link.springer.com/journal/10115"
+                },
+                "url": "https://www.semanticscholar.org/paper/3d9f067d97cf21f3b0c4d406ccff98b06abafb5c",
+                "title": "Interpretable deep learning: interpretation, interpretability, trustworthiness, and beyond",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "48568841",
+                        "name": "Xuhong Li"
+                    },
+                    {
+                        "authorId": "40518823",
+                        "name": "Haoyi Xiong"
+                    },
+                    {
+                        "authorId": "2155445773",
+                        "name": "Xingjian Li"
+                    },
+                    {
+                        "authorId": "2117921638",
+                        "name": "Xuanyu Wu"
+                    },
+                    {
+                        "authorId": "2115476207",
+                        "name": "Xiao Zhang"
+                    },
+                    {
+                        "authorId": "2118971193",
+                        "name": "Ji Liu"
+                    },
+                    {
+                        "authorId": "2143957850",
+                        "name": "Jiang Bian"
+                    },
+                    {
+                        "authorId": "1721158",
+                        "name": "D. Dou"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Gem [60], CF-GNNExplainer [61], and RCExplainer [62] provide explanations through causal inference."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "9d6039c022cdab1ea78a562aedd3b5e6a7b67eb6",
+                "externalIds": {
+                    "ArXiv": "2012.03476",
+                    "DOI": "10.1109/TNNLS.2022.3179306",
+                    "CorpusId": 249544281,
+                    "PubMed": "35679381"
+                },
+                "corpusId": 249544281,
+                "publicationVenue": {
+                    "id": "79c5a18d-0295-432c-aaa5-961d73de6d88",
+                    "name": "IEEE Transactions on Neural Networks and Learning Systems",
+                    "alternate_names": [
+                        "IEEE Trans Neural Netw Learn Syst"
+                    ],
+                    "issn": "2162-237X",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=5962385",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9d6039c022cdab1ea78a562aedd3b5e6a7b67eb6",
+                "title": "NCGNN: Node-Level Capsule Graph Neural Network for Semisupervised Classification.",
+                "abstract": "Message passing has evolved as an effective tool for designing graph neural networks (GNNs). However, most existing methods for message passing simply sum or average all the neighboring features to update node representations. They are restricted by two problems: 1) lack of interpretability to identify node features significant to the prediction of GNNs and 2) feature overmixing that leads to the oversmoothing issue in capturing long-range dependencies and inability to handle graphs under heterophily or low homophily. In this article, we propose a node-level capsule graph neural network (NCGNN) to address these problems with an improved message passing scheme. Specifically, NCGNN represents nodes as groups of node-level capsules, in which each capsule extracts distinctive features of its corresponding node. For each node-level capsule, a novel dynamic routing procedure is developed to adaptively select appropriate capsules for aggregation from a subgraph identified by the designed graph filter. NCGNN aggregates only the advantageous capsules and restrains irrelevant messages to avoid overmixing features of interacting nodes. Therefore, it can relieve the oversmoothing issue and learn effective node representations over graphs with homophily or heterophily. Furthermore, our proposed message passing scheme is inherently interpretable and exempt from complex post hoc explanations, as the graph filter and the dynamic routing procedure identify a subset of node features that are most significant to the model prediction from the extracted subgraph. Extensive experiments on synthetic as well as real-world graphs demonstrate that NCGNN can well address the oversmoothing issue and produce better node representations for semisupervised node classification. It outperforms the state of the arts under both homophily and heterophily.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2115430809",
+                        "name": "Rui Yang"
+                    },
+                    {
+                        "authorId": "3207464",
+                        "name": "Wenrui Dai"
+                    },
+                    {
+                        "authorId": "144535686",
+                        "name": "Chenglin Li"
+                    },
+                    {
+                        "authorId": "38871632",
+                        "name": "Junni Zou"
+                    },
+                    {
+                        "authorId": "144045763",
+                        "name": "H. Xiong"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f9145d932ae9e454d9a45ae23fdb0ec0171e4ef4",
+                "externalIds": {
+                    "ArXiv": "2010.10596",
+                    "CorpusId": 253510293
+                },
+                "corpusId": 253510293,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/f9145d932ae9e454d9a45ae23fdb0ec0171e4ef4",
+                "title": "Counterfactual Explanations and Algorithmic Recourses for Machine Learning: A Review",
+                "abstract": "Machine learning plays a role in many deployed decision systems, often in ways that are difficult or impossible to understand by human stakeholders. Explaining, in a human-understandable way, the relationship between the input and output of machine learning models is essential to the development of trustworthy machine learning based systems. A burgeoning body of research seeks to define the goals and methods of explainability in machine learning. In this paper, we seek to review and categorize research on counterfactual explanations, a specific class of explanation that provides a link between what could have happened had input to a model been changed in a particular way. Modern approaches to counterfactual explainability in machine learning draw connections to the established legal doctrine in many countries, making them appealing to fielded systems in high-impact areas such as finance and healthcare. Thus, we design a rubric with desirable properties of counterfactual explanation algorithms and comprehensively evaluate all currently proposed algorithms against that rubric. Our rubric provides easy comparison and comprehension of the advantages and disadvantages of different approaches and serves as an introduction to major research themes in this field. We also identify gaps and discuss promising research directions in the space of counterfactual explainability.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "1780214785",
+                        "name": "Sahil Verma"
+                    },
+                    {
+                        "authorId": "2190750501",
+                        "name": "Varich Boonsanong"
+                    },
+                    {
+                        "authorId": "2190750431",
+                        "name": "Minh Hoang"
+                    },
+                    {
+                        "authorId": "4634403",
+                        "name": "Keegan E. Hines"
+                    },
+                    {
+                        "authorId": "1718974",
+                        "name": "John P. Dickerson"
+                    },
+                    {
+                        "authorId": "2145672392",
+                        "name": "Chirag Shah"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models. Faber et al. (2020) explain a node by giving examples of similar nodes with the same and different labels.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models. Faber et al. (2020) explain a node by giving examples of similar nodes with the same and different labels. Dai & Wang (2021) create a k-nearest neighbor model and measure similarity with GNNs.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models. Faber et al. (2020) explain a node by giving examples of similar nodes with the same and different labels. Dai & Wang (2021) create a k-nearest neighbor model and measure similarity with GNNs. Yuan et al. (2020a) and Wang & Shen (2022) propose to generate a representative graph for each class in the dataset which maximize the models confidence in the class prediction.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al.",
+                "Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "57a9eb4f3d9f614d5507f1f79b20a91a08edfffc",
+                "externalIds": {
+                    "CorpusId": 259926240
+                },
+                "corpusId": 259926240,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/57a9eb4f3d9f614d5507f1f79b20a91a08edfffc",
+                "title": "GraphChef: Learning the Recipe of Your Dataset",
+                "abstract": "We propose a new graph model, GraphChef, that enables us to understand graph datasets as a whole. Given a dataset, GraphChef returns a set of rules (a recipe) that describes each class in the dataset. Existing GNNs and explanation methods reason on individual graphs not on the entire dataset. GraphChef uses decision trees to build recipes that are understandable by humans. We show how to compute decision trees in the message passing framework in order to create GraphChef. We also present a new pruning method to produce small and easy to digest trees. In the experiments, we present and analyze GraphChef\u2019s recipes for Reddit-Binary, MUTAG, BA-2Motifs, BA-Shapes, Tree-Cycle, and Tree-Grid. We verify the correctness of the discovered recipes against the datasets\u2019 ground truth.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2223560094",
+                        "name": "Peter M\u00fcller"
+                    },
+                    {
+                        "authorId": "36352356",
+                        "name": "Lukas Faber"
+                    },
+                    {
+                        "authorId": "1995092493",
+                        "name": "Karolis Martinkus"
+                    },
+                    {
+                        "authorId": "2075356250",
+                        "name": "Roger Wattenhofer"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Several studies (Bajaj et al., 2021; Abrate & Bonchi, 2021) have attempted to predict counterfactual effects on graphs, but their methods are mainly designed for GNN interpretability."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "4b80bf28b8e507ac5576e861d0182e56d2bac668",
+                "externalIds": {
+                    "DBLP": "conf/icml/SongKY23",
+                    "CorpusId": 260816701
+                },
+                "corpusId": 260816701,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4b80bf28b8e507ac5576e861d0182e56d2bac668",
+                "title": "RGE: A Repulsive Graph Rectification for Node Classification via Influence",
+                "abstract": "In real-world graphs, noisy connections are inevitable, which makes it difficult to obtain unbiased node representations. Among various attempts to resolve this problem, a method of estimating the counterfactual effects of these connectivities has recently attracted attention, which mainly uses influence functions for single graph elements (i.e., node and edge). However, in this paper, we argue that there is a strongly interacting group effect between the influences of graph elements due to their connectivity. In the same vein, we observe that edge groups connecting to the same train node exhibit significant differences in their influences, hence no matter how negative each is, removing them at once may have a rather negative effect as a group. Based on this motivation, we propose a new edge-removing strategy, Repulsive edge Group Elimination (RGE), that preferentially removes edges with no interference in groups. Empirically, we demonstrate that RGE consistently outperforms existing methods on the various benchmark datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "102906971",
+                        "name": "Jae-gyun Song"
+                    },
+                    {
+                        "authorId": "2110000220",
+                        "name": "Sungyub Kim"
+                    },
+                    {
+                        "authorId": "1720494",
+                        "name": "Eunho Yang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Finally, perturbation-based methods generate corrections to an input causing the model to change its output [48, 22, 34, 8].",
+                "We then further generalise our results to more advanced neural architectures such as Convolutional Neural Networks (CNNs) [20, 30] and Graph Neural Networks (GNNs) [21, 26] and show that the problem remains tractable under suitable generalisations of our monotonicity requirements.",
+                "In addition, as we will see, our approach applies to arbitrary neural architectures under very mild restrictions; this is in contrast to perturbation-based approaches restricted to fully-connected networks with ReLU activation [48], Graph Neural Networks [34, 8], or image analysis [15, 22].",
+                "Our notion of explanation is, however, rather different from related perturbation approaches [48, 34, 8, 15, 22] in that the aim is to identify the essence of the prediction by \u2018toggling off\u2019 irrelevant features using the baseline."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "24ac2b0672f663718a02bfeaacb94815accdf6a3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-09901",
+                    "DOI": "10.48550/arXiv.2205.09901",
+                    "CorpusId": 248965175
+                },
+                "corpusId": 248965175,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/24ac2b0672f663718a02bfeaacb94815accdf6a3",
+                "title": "Minimal Explanations for Neural Network Predictions",
+                "abstract": "Explaining neural network predictions is known to be a challenging problem. In this paper, we propose a novel approach which can be effectively exploited, either in isolation or in combination with other methods, to enhance the interpretability of neural model predictions. For a given input to a trained neural model, our aim is to compute a smallest set of input features so that the model prediction changes when these features are disregarded by setting them to an uninformative baseline value. While computing such minimal explanations is computationally intractable in general for fully-connected neural networks, we show that the problem becomes solvable in polynomial time by a greedy algorithm under mild assumptions on the network\u2019s activation functions. We then show that our tractability result extends seamlessly to more advanced neural architectures such as convolutional and graph neural networks. We conduct experiments to showcase the capability of our method for identifying the input features that are essential to the model\u2019s prediction.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2050176905",
+                        "name": "Ouns El Harzli"
+                    },
+                    {
+                        "authorId": "1784440",
+                        "name": "B. C. Grau"
+                    },
+                    {
+                        "authorId": "145655431",
+                        "name": "Ian Horrocks"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Similar to ours, RCExplainer [2] also seeks for more faithful explanations by examining inference process of the target GNN."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "533181183d2d76e752913f273a6d5ab3344829e0",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-13733",
+                    "DOI": "10.48550/arXiv.2205.13733",
+                    "CorpusId": 249151859
+                },
+                "corpusId": 249151859,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/533181183d2d76e752913f273a6d5ab3344829e0",
+                "title": "On Consistency in Graph Neural Network Interpretation",
+                "abstract": "Uncovering rationales behind predictions of graph neural networks (GNNs) has received increasing attention over recent years. Instance-level GNN explanation aims to discover critical input elements, like nodes or edges, that the target GNN relies upon for making predictions. These identi\ufb01ed sub-structures can provide interpretations of GNN\u2019s behavior. Though various algorithms are proposed, most of them formalize this task by searching the minimal subgraph which can preserve original predictions. An inductive bias is deep-rooted in this framework: the same output cannot guarantee that two inputs are processed under the same rationale. Consequently, they have the danger of providing spurious explanations and fail to provide consistent explanations. Applying them to explain weakly-performed GNNs would further amplify these issues. To address the issues, we propose to obtain more faithful and consistent explanations of GNNs. After a close examination on predictions of GNNs from the causality perspective, we attribute spurious explanations to two typical reasons: confounding effect of latent variables like distribution shift, and causal factors distinct from the original input. Motivated by the observation that both confounding effects and diverse causal rationales are encoded in internal representations, we propose a simple yet effective countermeasure by aligning embeddings. This new objective can be incorporated into existing GNN explanation algorithms with no effort. We implement both a simpli\ufb01ed version based on absolute distance and a distribution-aware version based on anchors. Experiments on 5 datasets validate its effectiveness, and theoretical analysis shows that it is in effect optimizing a more faithful explanation objective in design, which further justi\ufb01es the proposed approach.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1999191869",
+                        "name": "Tianxiang Zhao"
+                    },
+                    {
+                        "authorId": "153640788",
+                        "name": "Dongsheng Luo"
+                    },
+                    {
+                        "authorId": "48505793",
+                        "name": "Xiang Zhang"
+                    },
+                    {
+                        "authorId": "2116430057",
+                        "name": "Suhang Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Our notion of feature removal is, however, rather different from related perturbation-based approaches [47, 35, 7, 16, 21] in that the aim is to \u2018toggle off\u2019 features using the baseline rather than identifying arbitrary value changes.",
+                "A wealth of different explanation approaches have been proposed in recent years: rule-based methods generate explanations in the form of logic rules, which are inherently interpretable [11, 13]; attribution-based methods assign a score to input features quantifying their contribution to the prediction relative to a baseline [44, 43, 4]; example-based methods explain predictions by retrieving training examples that are most similar to the given input [29, 34]; and perturbation-based methods generate corrections to an input causing the model to change its output [47, 21, 35, 7]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "71d5cb00480d2dc06340d812f9f73d8facc8c791",
+                "externalIds": {
+                    "CorpusId": 253523583
+                },
+                "corpusId": 253523583,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/71d5cb00480d2dc06340d812f9f73d8facc8c791",
+                "title": "The Minimal Feature Removal Problem in Neural Networks",
+                "abstract": "We present the minimal feature removal problem for neural networks, a combinatorial problem which has interesting potential applications for improving interpretability and robustness of neural network predictions. For a given input to a trained neural network, our aim is to compute a smallest set of input features so that the model prediction changes when these features are disregarded by setting them to a given uninformative baseline value. We show that computing such minimal subsets of features is computationally intractable for fully-connected neural networks with ReLU nonlinearities. We show, however, that the problem becomes solvable in polynomial time by a greedy algorithm for monotonic networks. We then show that our tractability result extends seamlessly to more advanced neural network architectures such as convolutional and graph neural networks under suitable monotonicity assumptions.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2050176905",
+                        "name": "Ouns El Harzli"
+                    },
+                    {
+                        "authorId": "1784440",
+                        "name": "B. C. Grau"
+                    },
+                    {
+                        "authorId": "145655431",
+                        "name": "Ian Horrocks"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[23] find decision regions for each class."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "cf7bdb04793dcf4906fba5683d6e657893ea14c8",
+                "externalIds": {
+                    "DBLP": "conf/aiia/Prado-RomeroPSC22",
+                    "CorpusId": 254156012
+                },
+                "corpusId": 254156012,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/cf7bdb04793dcf4906fba5683d6e657893ea14c8",
+                "title": "Ensemble Approaches for Graph Counterfactual Explanations",
+                "abstract": "In recent years, Graph Neural Networks have reported outstanding performances in tasks like community detection, molecule classification and link prediction. However, the black-box nature of these models prevents their application in domains like health and finance, where understanding the model\u2019s decisions is essential. Explainable AI, or Explainable Machine Learning, is artificial intelligence in which humans can understand the decisions or predictions made by the AI. A special case is the Counterfactual examples which provide suggestions on the steps the system needs to take to change its decision. Historically ensemble learning and explainability have been jointly exploited to explain the decision of ensemble models. Contrarily, in this work, we focus on the ensemble mechanisms of the explainers to improve the quality of explanations. In this work, we explore, thus, which are the possible ensemble mechanism that can be adopted in several explainability scenarios. Furthermore, we introduce and discuss a new explainability problem where a single coherent counterfactual explanation must be provided for a set of input instances and their explanations.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1390033678",
+                        "name": "Mario Alfonso Prado-Romero"
+                    },
+                    {
+                        "authorId": "32208207",
+                        "name": "Bardh Prenkaj"
+                    },
+                    {
+                        "authorId": "1765155",
+                        "name": "G. Stilo"
+                    },
+                    {
+                        "authorId": "6044387",
+                        "name": "Alessandro Celi"
+                    },
+                    {
+                        "authorId": "2008697772",
+                        "name": "Ernesto L. Estevanell-Valladares"
+                    },
+                    {
+                        "authorId": "2197852392",
+                        "name": "Daniel Alejandro Vald\u00e9s P\u00e9rez"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In terms of methodologies, several techniques based on input perturbations [11, 12, 13], input gradients[36, 37], causal techniques [34, 38, 33] as well as utilizing simpler surrogate models [14] have been explored."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "43cc3e235f743c86edca32eed8e4931afcdf3639",
+                "externalIds": {
+                    "DBLP": "conf/cikm/Kosla22",
+                    "CorpusId": 255547926
+                },
+                "corpusId": 255547926,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/43cc3e235f743c86edca32eed8e4931afcdf3639",
+                "title": "Privacy and transparency in graph machine learning: A unified perspective",
+                "abstract": "Graph Machine Learning (GraphML), whereby classical machine learning is generalized to irregular graph domains, has enjoyed a recent renaissance, leading to a dizzying array of models and their applications in several domains. With its growing applicability to sensitive domains and regulations by governmental agencies for trustworthy AI systems, researchers have started looking into the issues of transparency and privacy of graph learning. However, these topics have been mainly investigated independently. In this position paper, we provide a unified perspective on the interplay of privacy and transparency in GraphML. In particular, we describe the challenges and possible research directions for a formal investigation of privacy-transparency tradeoffs in GraphML.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2199752197",
+                        "name": "Megha Kosla"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF2 [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",
+                "We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF(2) [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",
+                "RCExplainer partitions the logic of a GNN into a set of decision regions, then by exploring a common decision logic for samples in the same class, it generates robust counterfactual explanations for them."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a4fadb1331a3faee62fdd90c226417a593e35b51",
+                "externalIds": {
+                    "CorpusId": 260890101
+                },
+                "corpusId": 260890101,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a4fadb1331a3faee62fdd90c226417a593e35b51",
+                "title": "Interpretability Methods for Graph Neural Networks",
+                "abstract": "\u2014The emerging graph neural network models (GNNs) have demonstrated great potential and success for downstream graph machine learning tasks, such as graph and node classification, link prediction, entity resolution, and question answering. However, neural networks are \u201cblack-box\u201d \u2013 it is difficult to understand which aspects of the input data and the model guide the decisions of the network. Recently, several interpretability methods for GNNs have been developed, aiming at improving the model\u2019s transparency and fairness, thus making them trustworthy in decision-critical applications, leading to democratization of deep learning approaches and easing their adoptions. The tutorial is designed to offer an overview of the state-of-the-art interpretability techniques for graph neural networks, including their taxonomy, evaluation metrics, benchmarking study, and ground truth. In addition, the tutorial discusses open problems and important research directions.",
+                "year": null,
+                "authors": [
+                    {
+                        "authorId": "2108514592",
+                        "name": "Arijit Khan"
+                    },
+                    {
+                        "authorId": "2231550366",
+                        "name": "Ehsan B. Mobaraki"
+                    }
+                ]
+            }
+        }
+    ]
+}

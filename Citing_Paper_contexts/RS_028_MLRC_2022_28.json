@@ -1,0 +1,493 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "5531dd953832d86253d08b739eaa9312c7c6f610",
+                "externalIds": {
+                    "ArXiv": "2309.17337",
+                    "DOI": "10.1145/3617694.3623259",
+                    "CorpusId": 263311003
+                },
+                "corpusId": 263311003,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/5531dd953832d86253d08b739eaa9312c7c6f610",
+                "title": "Toward Operationalizing Pipeline-aware ML Fairness: A Research Agenda for Developing Practical Guidelines and Tools",
+                "abstract": "While algorithmic fairness is a thriving area of research, in practice, mitigating issues of bias often gets reduced to enforcing an arbitrarily chosen fairness metric, either by enforcing fairness constraints during the optimization step, post-processing model outputs, or by manipulating the training data. Recent work has called on the ML community to take a more holistic approach to tackle fairness issues by systematically investigating the many design choices made through the ML pipeline, and identifying interventions that target the issue's root cause, as opposed to its symptoms. While we share the conviction that this pipeline-based approach is the most appropriate for combating algorithmic unfairness on the ground, we believe there are currently very few methods of \\emph{operationalizing} this approach in practice. Drawing on our experience as educators and practitioners, we first demonstrate that without clear guidelines and toolkits, even individuals with specialized ML knowledge find it challenging to hypothesize how various design choices influence model behavior. We then consult the fair-ML literature to understand the progress to date toward operationalizing the pipeline-aware approach: we systematically collect and organize the prior work that attempts to detect, measure, and mitigate various sources of unfairness through the ML pipeline. We utilize this extensive categorization of previous contributions to sketch a research agenda for the community. We hope this work serves as the stepping stone toward a more comprehensive set of resources for ML researchers, practitioners, and students interested in exploring, designing, and testing pipeline-oriented approaches to algorithmic fairness.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2249533192",
+                        "name": "Emily Black"
+                    },
+                    {
+                        "authorId": "2249533181",
+                        "name": "Rakshit Naidu"
+                    },
+                    {
+                        "authorId": "1791498",
+                        "name": "R. Ghani"
+                    },
+                    {
+                        "authorId": "6783324",
+                        "name": "Kit T. Rodolfa"
+                    },
+                    {
+                        "authorId": "2249533466",
+                        "name": "Daniel E. Ho"
+                    },
+                    {
+                        "authorId": "2249539262",
+                        "name": "Hoda Heidari"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recently (Salvador et al. 2021) followed a similar approach of slicing datasets and identified sensitive subgroups through clustering of image features and calibrated a face verification model on the FPR incurred on these subgroups."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "7ae37491348782ee9140ff0bcd0854bfe19587a0",
+                "externalIds": {
+                    "DBLP": "conf/aaai/MuralidharCAA23",
+                    "DOI": "10.1609/aaai.v37i13.26844",
+                    "CorpusId": 259760037
+                },
+                "corpusId": 259760037,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7ae37491348782ee9140ff0bcd0854bfe19587a0",
+                "title": "Real-Time Detection of Robotic Traffic in Online Advertising",
+                "abstract": "Detecting robotic traffic at scale on online ads needs an approach that is scalable, comprehensive, precise, and can rapidly respond to changing traffic patterns. In this paper we describe SLIDR or SLIce-Level Detection of Robots, a real-time deep neural network model trained with weak supervision to identify invalid clicks on online ads. We ensure fairness across different traffic slices by formulating a convex optimization problem that allows SLIDR to achieve optimal performance on individual traffic slices with a budget on overall false positives. SLIDR has been deployed since 2021 and safeguards advertiser campaigns on Amazon against robots clicking on ads on the e-commerce site. We describe some of the important lessons learned by deploying SLIDR that include guardrails that prevent updates of anomalous models and disaster recovery mechanisms to mitigate or correct decisions made by a faulty model.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2189090081",
+                        "name": "Anand Muralidhar"
+                    },
+                    {
+                        "authorId": "1389561411",
+                        "name": "Sharad Chitlangia"
+                    },
+                    {
+                        "authorId": "2217281991",
+                        "name": "Rajat Agarwal"
+                    },
+                    {
+                        "authorId": "2115209356",
+                        "name": "Muneeb Ahmed"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "While more and more face recognition algorithms are used in everyday life, many of them have much higher false positive rates for non-white faces than white faces, which would affect judicial fairness (Salvador et al. 2021)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "57ff9d8e827c726659750509157f220478030e86",
+                "externalIds": {
+                    "DBLP": "conf/aaai/ZhuGWLHZ23",
+                    "DOI": "10.1609/aaai.v37i12.26712",
+                    "CorpusId": 259765265
+                },
+                "corpusId": 259765265,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/57ff9d8e827c726659750509157f220478030e86",
+                "title": "People Taking Photos That Faces Never Share: Privacy Protection and Fairness Enhancement from Camera to User",
+                "abstract": "The soaring number of personal mobile devices and public cameras poses a threat to fundamental human rights and ethical principles. For example, the stolen of private information such as face image by malicious third parties will lead to catastrophic consequences. By manipulating appearance of face in the image, most of existing protection algorithms are effective but irreversible. Here, we propose a practical and systematic solution to invertiblely protect face information in the full-process pipeline from camera to final users. Specifically, We design a novel lightweight Flow-based Face Encryption Method (FFEM) on the local embedded system privately connected to the camera, minimizing the risk of eavesdropping during data transmission. FFEM uses a flow-based face encoder to encode each face to a Gaussian distribution and encrypts the encoded face feature by random rotating the Gaussian distribution with the rotation matrix is as the password. While encrypted latent-variable face images are sent to users through public but less reliable channels, password will be protected through more secure channels through technologies such as asymmetric encryption, blockchain, or other sophisticated security schemes. User could select to decode an image with fake faces from the encrypted image on the public channel. Only trusted users are able to recover the original face using the encrypted matrix transmitted in secure channel. More interestingly, by tuning Gaussian ball in latent space, we could control the fairness of the replaced face on attributes such as gender and race. Extensive experiments demonstrate that our solution could protect privacy and enhance fairness with minimal effect on high-level downstream task.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1956067",
+                        "name": "Junjie Zhu"
+                    },
+                    {
+                        "authorId": "151484085",
+                        "name": "Lin Gu"
+                    },
+                    {
+                        "authorId": "1702905",
+                        "name": "Sissi Xiaoxiao Wu"
+                    },
+                    {
+                        "authorId": "2146247705",
+                        "name": "Zheng Li"
+                    },
+                    {
+                        "authorId": "2147394803",
+                        "name": "Tatsuya Harada"
+                    },
+                    {
+                        "authorId": "2174154683",
+                        "name": "Yingying Zhu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[156] introduced a conditional calibration method for fair face veriication."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "c63de70f5e4a9b36b5ca7f50cc8dac72e4a9254b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-14123",
+                    "ArXiv": "2306.14123",
+                    "DOI": "10.1145/3606017",
+                    "CorpusId": 259245951
+                },
+                "corpusId": 259245951,
+                "publicationVenue": {
+                    "id": "7b2adce0-d53f-49d6-8784-b0645604fe62",
+                    "name": "ACM Computing Surveys",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Comput Surv"
+                    ],
+                    "issn": "0360-0300",
+                    "url": "http://www.acm.org/pubs/surveys/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/csur",
+                        "https://csur.acm.org/",
+                        "http://csur.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c63de70f5e4a9b36b5ca7f50cc8dac72e4a9254b",
+                "title": "Privacy and Fairness in Federated Learning: On the Perspective of Tradeoff",
+                "abstract": "Federated learning (FL) has been a hot topic in recent years. Ever since it was introduced, researchers have endeavored to devise FL systems that protect privacy or ensure fair results, with most research focusing on one or the other. As two crucial ethical notions, the interactions between privacy and fairness are comparatively less studied. However, since privacy and fairness compete, considering each in isolation will inevitably come at the cost of the other. To provide a broad view of these two critical topics, we presented a detailed literature review of privacy and fairness issues, highlighting unique challenges posed by FL and solutions in federated settings. We further systematically surveyed different interactions between privacy and fairness, trying to reveal how privacy and fairness could affect each other and point out new research directions in fair and private FL.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2159078480",
+                        "name": "Huiqiang Chen"
+                    },
+                    {
+                        "authorId": "2185053609",
+                        "name": "Tianqing Zhu"
+                    },
+                    {
+                        "authorId": "101643752",
+                        "name": "Tao Zhang"
+                    },
+                    {
+                        "authorId": "2134555583",
+                        "name": "Wanlei Zhou"
+                    },
+                    {
+                        "authorId": "2721708",
+                        "name": "P. Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Salvador, [166] proposes a Fairness Calibration (FairCal) method that applies the K-means algorithm to the image feature representation vectors Z and makes partitions of the embedding space"
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "8f44c5f9ba241b141609b5b3cb40d9f90997b162",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-00817",
+                    "ArXiv": "2305.00817",
+                    "DOI": "10.48550/arXiv.2305.00817",
+                    "CorpusId": 258427060
+                },
+                "corpusId": 258427060,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8f44c5f9ba241b141609b5b3cb40d9f90997b162",
+                "title": "Racial Bias within Face Recognition: A Survey",
+                "abstract": "Facial recognition is one of the most academically studied and industrially developed areas within computer vision where we readily find associated applications deployed globally. This widespread adoption has uncovered significant performance variation across subjects of different racial profiles leading to focused research attention on racial bias within face recognition spanning both current causation and future potential solutions. In support, this study provides an extensive taxonomic review of research on racial bias within face recognition exploring every aspect and stage of the face recognition processing pipeline. Firstly, we discuss the problem definition of racial bias, starting with race definition, grouping strategies, and the societal implications of using race or race-related groupings. Secondly, we divide the common face recognition processing pipeline into four stages: image acquisition, face localisation, face representation, face verification and identification, and review the relevant corresponding literature associated with each stage. The overall aim is to provide comprehensive coverage of the racial bias problem with respect to each and every stage of the face recognition processing pipeline whilst also highlighting the potential pitfalls and limitations of contemporary mitigation strategies that need to be considered within future research endeavours or commercial applications alike.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "9269684",
+                        "name": "Seyma Yucer"
+                    },
+                    {
+                        "authorId": "19198215",
+                        "name": "Furkan Tektas"
+                    },
+                    {
+                        "authorId": "1711819",
+                        "name": "N. A. Moubayed"
+                    },
+                    {
+                        "authorId": "1803808",
+                        "name": "T. Breckon"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Another line of approaches (Dhar et al. 2021; Salvador et al. 2022) attempts to remove bias from a pre-trained face recognition model by building a fairer decision system: PASS (Dhar et al.",
+                "FairCal (Salvador et al. 2022) proposed to post-calibrate the verification score between each pair of images in the testing dataset."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7915a4fafae62df0b3d2a84d2b0fe6357c10a996",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-15181",
+                    "ArXiv": "2211.15181",
+                    "DOI": "10.48550/arXiv.2211.15181",
+                    "CorpusId": 254043712
+                },
+                "corpusId": 254043712,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7915a4fafae62df0b3d2a84d2b0fe6357c10a996",
+                "title": "MixFairFace: Towards Ultimate Fairness via MixFair Adapter in Face Recognition",
+                "abstract": "Although significant progress has been made in face recognition, demographic bias still exists in face recognition systems. For instance, it usually happens that the face recognition performance for a certain demographic group is lower than the others. In this paper, we propose MixFairFace framework to improve the fairness in face recognition models. First of all, we argue that the commonly used attribute-based fairness metric is not appropriate for face recognition. A face recognition system can only be considered fair while every person has a close performance. Hence, we propose a new evaluation protocol to fairly evaluate the fairness performance of different approaches. Different from previous approaches that require sensitive attribute labels such as race and gender for reducing the demographic bias, we aim at addressing the identity bias in face representation, i.e., the performance inconsistency between different identities, without the need for sensitive attribute labels. To this end, we propose MixFair Adapter to determine and reduce the identity bias of training samples. Our extensive experiments demonstrate that our MixFairFace approach achieves state-of-the-art fairness performance on all benchmark datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3459139",
+                        "name": "Fu-En Wang"
+                    },
+                    {
+                        "authorId": "48586406",
+                        "name": "Chien-Yi Wang"
+                    },
+                    {
+                        "authorId": "2192641622",
+                        "name": "Min Sun"
+                    },
+                    {
+                        "authorId": "1696527",
+                        "name": "S. Lai"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "There are two possible alternatives to this approach:\n(i) Prompting prepends or alters the model input with specific triggers that stimulate a bias-free result; (ii) Vector-Space Manipulation manipulates the embedding space to remove undesired biases.",
+                "Vector-Space Manipulation [174] [3, 21, 22, 47, 52, 89, 119, 120, 197] [203] [48, 77, 91, 106, 107, 111, 189, 216]",
+                "5.4.2 Vector-Space Manipulation.",
+                "Category Sub-category Vision Language Multimodal\nDistributional Heuristic [45] [126, 186] \u2014 Generative [32, 62, 147, 165, 217] [160] \u2014 Resampling [28, 117, 192] \u2014 [214]\nOne-Step-Training\nAdversarial [55, 115, 205] [58, 60, 67, 129, 150, 167, 209] [14, 214] Causal Approaches [42, 93, 98] [76] [215] Disentanglement [41, 98, 153, 193, 213] [51] \u2014\nOptimization [4, 5, 73, 79, 130, 192, 204] [24, 31, 51, 67, 90, 118, 182, 207] [99, 203, 220][96, 97, 115, 127, 133, 154, 161, 178]\nTwo-Step-Training Distillation [88, 116, 132] [76] \u2014 Fair-Modules [94, 116] [33, 57, 112, 163, 210] [152, 191, 214] Fine-Tuning \u2014 [56, 68, 122, 211] [14]\nInferential Prompting \u2014 [66, 176, 181, 184, 202] [137]\nVector-Space Manipulation [174] [3, 21, 22, 47, 52, 89, 119, 120, 197] [203][48, 77, 91, 106, 107, 111, 189, 216]\nACM Comput.",
+                "[174] rely on clustering and embeddings to fix unfairness issues in the visual domain."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "7a1bf9474ae0cc07aa01d010449970a9ddf9baa5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-05617",
+                    "ArXiv": "2211.05617",
+                    "DOI": "10.48550/arXiv.2211.05617",
+                    "CorpusId": 253447275
+                },
+                "corpusId": 253447275,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7a1bf9474ae0cc07aa01d010449970a9ddf9baa5",
+                "title": "Debiasing Methods for Fairer Neural Models in Vision and Language Research: A Survey",
+                "abstract": "Despite being responsible for state-of-the-art results in several computer vision and natural language processing tasks, neural networks have faced harsh criticism due to some of their current shortcomings. One of them is that neural networks are correlation machines prone to model biases within the data instead of focusing on actual useful causal relationships. This problem is particularly serious in application domains affected by aspects such as race, gender, and age. To prevent models from incurring on unfair decision-making, the AI community has concentrated efforts in correcting algorithmic biases, giving rise to the research area now widely known as fairness in AI. In this survey paper, we provide an in-depth overview of the main debiasing methods for fairness-aware neural networks in the context of vision and language research. We propose a novel taxonomy to better organize the literature on debiasing methods for fairness, and we discuss the current challenges, trends, and important future work directions for the interested researcher and practitioner.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2154617774",
+                        "name": "Ot\u00e1vio Parraga"
+                    },
+                    {
+                        "authorId": "41050099",
+                        "name": "Martin D. M\u00f3re"
+                    },
+                    {
+                        "authorId": "2154309948",
+                        "name": "C. M. Oliveira"
+                    },
+                    {
+                        "authorId": "1660809827",
+                        "name": "Nathan Gavenski"
+                    },
+                    {
+                        "authorId": "2175084934",
+                        "name": "L. S. Kupssinsku"
+                    },
+                    {
+                        "authorId": "2190427449",
+                        "name": "Adilson Medronha"
+                    },
+                    {
+                        "authorId": "2190427616",
+                        "name": "Luis V. Moura"
+                    },
+                    {
+                        "authorId": "153255514",
+                        "name": "Gabriel S. Sim\u00f5es"
+                    },
+                    {
+                        "authorId": "1380051745",
+                        "name": "Rodrigo C. Barros"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Other approaches accomplish that by training a post-hoc classifier in an adversarial manner [14], clustering the embedding space [47] or employing conditional calibration [44]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "97d4d8eebb322c72470374b6813729c7c1e97a61",
+                "externalIds": {
+                    "ArXiv": "2210.10090",
+                    "DBLP": "journals/corr/abs-2210-10090",
+                    "DOI": "10.48550/arXiv.2210.10090",
+                    "CorpusId": 252992711
+                },
+                "corpusId": 252992711,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/97d4d8eebb322c72470374b6813729c7c1e97a61",
+                "title": "How to Boost Face Recognition with StyleGAN?",
+                "abstract": "State-of-the-art face recognition systems require vast amounts of labeled training data. Given the priority of privacy in face recognition applications, the data is limited to celebrity web crawls, which have issues such as limited numbers of identities. On the other hand, self-supervised revolution in the industry motivates research on the adaptation of related techniques to facial recognition. One of the most popular practical tricks is to augment the dataset by the samples drawn from generative models while preserving the identity. We show that a simple approach based on fine-tuning pSp encoder for StyleGAN allows us to improve upon the state-of-the-art facial recognition and performs better compared to training on synthetic face identities. We also collect large-scale unlabeled datasets with controllable ethnic constitution -- AfricanFaceSet-5M (5 million images of different people) and AsianFaceSet-3M (3 million images of different people) -- and we show that pretraining on each of them improves recognition of the respective ethnicities (as well as others), while combining all unlabeled datasets results in the biggest performance increase. Our self-supervised strategy is the most useful with limited amounts of labeled training data, which can be beneficial for more tailored face recognition tasks and when facing privacy concerns. Evaluation is based on a standard RFW dataset and a new large-scale RB-WebFace benchmark. The code and data are made publicly available at https://github.com/seva100/stylegan-for-facerec.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "10784511",
+                        "name": "A. Sevastopolsky"
+                    },
+                    {
+                        "authorId": "2104662",
+                        "name": "Yury Malkov"
+                    },
+                    {
+                        "authorId": "52031874",
+                        "name": "N. Durasov"
+                    },
+                    {
+                        "authorId": "1730255",
+                        "name": "L. Verdoliva"
+                    },
+                    {
+                        "authorId": "2209612",
+                        "name": "M. Nie\u00dfner"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Treatments against bias were applied in pre-processing, by modifying input data, in-processing, by constraining model training, and post-processing, by calibrating thresholds [23]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "8e55024620114ecfb3e07482c7a366ad3bf10c11",
+                "externalIds": {
+                    "ArXiv": "2208.11099",
+                    "DBLP": "journals/corr/abs-2208-11099",
+                    "DOI": "10.1109/IJCB54206.2022.10007937",
+                    "CorpusId": 251741251
+                },
+                "corpusId": 251741251,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/8e55024620114ecfb3e07482c7a366ad3bf10c11",
+                "title": "Explaining Bias in Deep Face Recognition via Image Characteristics",
+                "abstract": "In this paper, we propose a novel explanatory framework aimed to provide a better understanding of how face recognition models perform as the underlying data characteristics (protected attributes: gender, ethnicity, age; nonprotected attributes: facial hair, makeup, accessories, face orientation and occlusion, image distortion, emotions) on which they are tested change. With our framework, we evaluate ten state-of-the-art face recognition models, comparing their fairness in terms of security and usability on two data sets, involving six groups based on gender and ethnicity. We then analyze the impact of image characteristics on models performance. Our results show that trends appearing in a single-attribute analysis disappear or reverse when multi-attribute groups are considered, and that performance disparities are also related to non-protected attributes. Source code: https://cutt.1y/2XwRLiA.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2925167",
+                        "name": "A. Atzori"
+                    },
+                    {
+                        "authorId": "40433308",
+                        "name": "G. Fenu"
+                    },
+                    {
+                        "authorId": "28922901",
+                        "name": "M. Marras"
+                    }
+                ]
+            }
+        }
+    ]
+}

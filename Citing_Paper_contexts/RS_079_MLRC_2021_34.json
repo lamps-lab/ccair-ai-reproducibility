@@ -1,0 +1,1305 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "01b1ebf416bed0aa3a51512bd869ab14a1f063ce",
+                "externalIds": {
+                    "ArXiv": "2310.00887",
+                    "CorpusId": 263605413
+                },
+                "corpusId": 263605413,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/01b1ebf416bed0aa3a51512bd869ab14a1f063ce",
+                "title": "GRID: A Platform for General Robot Intelligence Development",
+                "abstract": "Developing machine intelligence abilities in robots and autonomous systems is an expensive and time consuming process. Existing solutions are tailored to specific applications and are harder to generalize. Furthermore, scarcity of training data adds a layer of complexity in deploying deep machine learning models. We present a new platform for General Robot Intelligence Development (GRID) to address both of these issues. The platform enables robots to learn, compose and adapt skills to their physical capabilities, environmental constraints and goals. The platform addresses AI problems in robotics via foundation models that know the physical world. GRID is designed from the ground up to be extensible to accommodate new types of robots, vehicles, hardware platforms and software protocols. In addition, the modular design enables various deep ML components and existing foundation models to be easily usable in a wider variety of robot-centric problems. We demonstrate the platform in various aerial robotics scenarios and demonstrate how the platform dramatically accelerates development of machine intelligent robots.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "8355354",
+                        "name": "Sai Vemprala"
+                    },
+                    {
+                        "authorId": "2256217056",
+                        "name": "Shuhang Chen"
+                    },
+                    {
+                        "authorId": "2253397606",
+                        "name": "Abhinav Shukla"
+                    },
+                    {
+                        "authorId": "2253393099",
+                        "name": "Dinesh Narayanan"
+                    },
+                    {
+                        "authorId": "2253595046",
+                        "name": "Ashish Kapoor"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "of robotics, Transformers have found practical applications in diverse areas such as path planning [15], [16], object recognition [17], and grasping [18]."
+            ],
+            "citingPaper": {
+                "paperId": "b4115b608b934627bcdfb0750f0e5305ea7351f9",
+                "externalIds": {
+                    "ArXiv": "2308.01552",
+                    "DBLP": "journals/corr/abs-2308-01552",
+                    "DOI": "10.48550/arXiv.2308.01552",
+                    "CorpusId": 260438734
+                },
+                "corpusId": 260438734,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b4115b608b934627bcdfb0750f0e5305ea7351f9",
+                "title": "InterAct: Exploring the Potentials of ChatGPT as a Cooperative Agent",
+                "abstract": "This research paper delves into the integration of OpenAI's ChatGPT into embodied agent systems, evaluating its influence on interactive decision-making benchmark. Drawing a parallel to the concept of people assuming roles according to their unique strengths, we introduce InterAct. In this approach, we feed ChatGPT with varied prompts, assigning it a numerous roles like a checker and a sorter, then integrating them with the original language model. Our research shows a remarkable success rate of 98% in AlfWorld, which consists of 6 different tasks in a simulated household environment, emphasizing the significance of proficient prompt engineering. The results highlight ChatGPT's competence in comprehending and performing intricate tasks effectively in real-world settings, thus paving the way for further advancements in task planning.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2226688069",
+                        "name": "Po-Lin Chen"
+                    },
+                    {
+                        "authorId": "2226709488",
+                        "name": "Cheng-Shang Chang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "CNN [25], PointNet [26, 27], and Transformer [28, 29, 30] are also employed to construct end-to-end models."
+            ],
+            "citingPaper": {
+                "paperId": "bb7062983fd0be435633e0d105c60581e4bf6a1f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-17625",
+                    "ArXiv": "2306.17625",
+                    "DOI": "10.48550/arXiv.2306.17625",
+                    "CorpusId": 259309022
+                },
+                "corpusId": 259309022,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/bb7062983fd0be435633e0d105c60581e4bf6a1f",
+                "title": "An Integrated FPGA Accelerator for Deep Learning-based 2D/3D Path Planning",
+                "abstract": "Path planning is a crucial component for realizing the autonomy of mobile robots. However, due to limited computational resources on mobile robots, it remains challenging to deploy state-of-the-art methods and achieve real-time performance. To address this, we propose P3Net (PointNet-based Path Planning Networks), a lightweight deep-learning-based method for 2D/3D path planning, and design an IP core (P3NetCore) targeting FPGA SoCs (Xilinx ZCU104). P3Net improves the algorithm and model architecture of the recently-proposed MPNet. P3Net employs an encoder with a PointNet backbone and a lightweight planning network in order to extract robust point cloud features and sample path points from a promising region. P3NetCore is comprised of the fully-pipelined point cloud encoder, batched bidirectional path planner, and parallel collision checker, to cover most part of the algorithm. On the 2D (3D) datasets, P3Net with the IP core runs 24.54-149.57x and 6.19-115.25x (10.03-59.47x and 3.38-28.76x) faster than ARM Cortex CPU and Nvidia Jetson while only consuming 0.255W (0.809W), and is up to 1049.42x (133.84x) power-efficient than the workstation. P3Net improves the success rate by up to 28.2% and plans a near-optimal path, leading to a significantly better tradeoff between computation and solution quality than MPNet and the state-of-the-art sampling-based methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "8188181",
+                        "name": "K. Sugiura"
+                    },
+                    {
+                        "authorId": "144926639",
+                        "name": "Hiroki Matsutani"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The success of transformers in vision and NLP has led its way into robot learning [42, 43, 44, 17]."
+            ],
+            "citingPaper": {
+                "paperId": "a118acfe34381d4508c2e084f9247c9f7bfc6f48",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-14896",
+                    "ArXiv": "2306.14896",
+                    "DOI": "10.48550/arXiv.2306.14896",
+                    "CorpusId": 259262273
+                },
+                "corpusId": 259262273,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a118acfe34381d4508c2e084f9247c9f7bfc6f48",
+                "title": "RVT: Robotic View Transformer for 3D Object Manipulation",
+                "abstract": "For 3D object manipulation, methods that build an explicit 3D representation perform better than those relying only on camera images. But using explicit 3D representations like voxels comes at large computing cost, adversely affecting scalability. In this work, we propose RVT, a multi-view transformer for 3D manipulation that is both scalable and accurate. Some key features of RVT are an attention mechanism to aggregate information across views and re-rendering of the camera input from virtual views around the robot workspace. In simulations, we find that a single RVT model works well across 18 RLBench tasks with 249 task variations, achieving 26% higher relative success than the existing state-of-the-art method (PerAct). It also trains 36X faster than PerAct for achieving the same performance and achieves 2.3X the inference speed of PerAct. Further, RVT can perform a variety of manipulation tasks in the real world with just a few ($\\sim$10) demonstrations per task. Visual results, code, and trained model are provided at https://robotic-view-transformer.github.io/.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "47989608",
+                        "name": "Ankit Goyal"
+                    },
+                    {
+                        "authorId": "2145754514",
+                        "name": "Jie Xu"
+                    },
+                    {
+                        "authorId": "1857914",
+                        "name": "Yijie Guo"
+                    },
+                    {
+                        "authorId": "32481910",
+                        "name": "Valts Blukis"
+                    },
+                    {
+                        "authorId": "2820136",
+                        "name": "Yu-Wei Chao"
+                    },
+                    {
+                        "authorId": "145197953",
+                        "name": "D. Fox"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Other works [15], [24] only solve for planar manipulators and 2D mobile robots because, inherently, their network models follow those used in image understanding in 2D discrete spaces."
+            ],
+            "citingPaper": {
+                "paperId": "7ffc729898455f40733c96def6f83468747a7347",
+                "externalIds": {
+                    "ArXiv": "2306.00851",
+                    "DBLP": "journals/corr/abs-2306-00851",
+                    "DOI": "10.48550/arXiv.2306.00851",
+                    "CorpusId": 258999319
+                },
+                "corpusId": 258999319,
+                "publicationVenue": {
+                    "id": "93c335b7-edf4-45f5-8ddc-7c5835154945",
+                    "name": "IEEE Robotics and Automation Letters",
+                    "alternate_names": [
+                        "IEEE Robot Autom Lett"
+                    ],
+                    "issn": "2377-3766",
+                    "url": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=7083369"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7ffc729898455f40733c96def6f83468747a7347",
+                "title": "Learning Sampling Dictionaries for Efficient and Generalizable Robot Motion Planning with Transformers",
+                "abstract": "Motion planning is integral to robotics applications such as autonomous driving, surgical robots, and industrial manipulators. Existing planning methods lack scalability to higher-dimensional spaces, while recent learning based planners have shown promise in accelerating sampling-based motion planners (SMP) but lack generalizability to out-of-distribution environments. To address this, we present a novel approach, Vector Quantized-Motion Planning Transformers (VQ-MPT) that overcomes the key generalization and scaling drawbacks of previous learning-based methods. VQ-MPT consists of two stages. Stage 1 is a Vector Quantized-Variational AutoEncoder model that learns to represent the planning space using a finite number of sampling distributions, and stage 2 is an Auto-Regressive model that constructs a sampling region for SMPs by selecting from the learned sampling distribution sets. By splitting large planning spaces into discrete sets and selectively choosing the sampling regions, our planner pairs well with out-of-the-box SMPs, generating near-optimal paths faster than without VQ-MPT's aid. It is generalizable in that it can be applied to systems of varying complexities, from 2D planar to 14D bi-manual robots with diverse environment representations, including costmaps and point clouds. Trained VQ-MPT models generalize to environments unseen during training and achieve higher success rates than previous methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2115731777",
+                        "name": "Jacob J. Johnson"
+                    },
+                    {
+                        "authorId": "51014775",
+                        "name": "A. H. Qureshi"
+                    },
+                    {
+                        "authorId": "35860894",
+                        "name": "Michael C. Yip"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Planners (NMPs) [26, 28, 10, 25, 17, 3] surfaced that find a path extremely fast at test time than traditional approaches and scale to high-dimensional problems with multi-DOF robot",
+                "Various approaches exist, from classical methods [12, 18, 6, 11] to learning-based neural motion planners (NMPs) [26, 28, 10, 25, 17, 3], that solve motion planning problems."
+            ],
+            "citingPaper": {
+                "paperId": "4ce9d91e6319819b2fa85c024e4bd1d88bab4104",
+                "externalIds": {
+                    "DBLP": "conf/rss/NiQ23",
+                    "ArXiv": "2306.00616",
+                    "DOI": "10.48550/arXiv.2306.00616",
+                    "CorpusId": 258999955
+                },
+                "corpusId": 258999955,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/4ce9d91e6319819b2fa85c024e4bd1d88bab4104",
+                "title": "Progressive Learning for Physics-informed Neural Motion Planning",
+                "abstract": "Motion planning (MP) is one of the core robotics problems requiring fast methods for finding a collision-free robot motion path connecting the given start and goal states. Neural motion planners (NMPs) demonstrate fast computational speed in finding path solutions but require a huge amount of expert trajectories for learning, thus adding a significant training computational load. In contrast, recent advancements have also led to a physics-informed NMP approach that directly solves the Eikonal equation for motion planning and does not require expert demonstrations for learning. However, experiments show that the physics-informed NMP approach performs poorly in complex environments and lacks scalability in multiple scenarios and high-dimensional real robot settings. To overcome these limitations, this paper presents a novel and tractable Eikonal equation formulation and introduces a new progressive learning strategy to train neural networks without expert data in complex, cluttered, multiple high-dimensional robot motion planning scenarios. The results demonstrate that our method outperforms state-of-the-art traditional MP, data-driven NMP, and physics-informed NMP methods by a significant margin in terms of computational planning speed, path quality, and success rates. We also show that our approach scales to multiple complex, cluttered scenarios and the real robot set up in a narrow passage environment. The proposed method's videos and code implementations are available at https://github.com/ruiqini/P-NTFields.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51152285",
+                        "name": "Ruiqi Ni"
+                    },
+                    {
+                        "authorId": "51014775",
+                        "name": "A. H. Qureshi"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Differentiable planning has shown promise in general planning task [18]\u2013[21] as well as vision-based planning tasks and planning under uncertainty [22]\u2013[24]."
+            ],
+            "citingPaper": {
+                "paperId": "d5b1ce1556e9b884f13928788e2d6c4af35dcd20",
+                "externalIds": {
+                    "ArXiv": "2303.00981",
+                    "DBLP": "journals/corr/abs-2303-00981",
+                    "DOI": "10.48550/arXiv.2303.00981",
+                    "CorpusId": 257279955
+                },
+                "corpusId": 257279955,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/d5b1ce1556e9b884f13928788e2d6c4af35dcd20",
+                "title": "Differentiable Trajectory Generation for Car-like Robots with Interpolating Radial Basis Function Networks",
+                "abstract": "The design of Autonomous Vehicle software has largely followed the Sense-Plan-Act model. Traditional modular AV stacks develop perception, planning, and control software separately with little integration when optimizing for different objectives. On the other hand, end-to-end methods usually lack the principle provided by model-based white-box planning and control strategies. We propose a computationally efficient method for approximating closed-form trajectory generation with interpolating Radial Basis Function Networks to create a middle ground between the two approaches. The approach creates smooth approximations of local Lipschitz continuous maps of feasible solutions to parametric optimization problems. We show that this differentiable approximation is efficient to compute and allows for tighter integration with perception and control algorithms when used as the planning strategy.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1960610013",
+                        "name": "Hongrui Zheng"
+                    },
+                    {
+                        "authorId": "1785009",
+                        "name": "R. Mangharam"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "38e0e644c78ff9da521ed314a8390d3d8522e1bd",
+                "externalIds": {
+                    "DBLP": "journals/arc/SavioloL23",
+                    "DOI": "10.1016/j.arcontrol.2023.03.009",
+                    "CorpusId": 257752987
+                },
+                "corpusId": 257752987,
+                "publicationVenue": {
+                    "id": "f58a382e-f45f-4a3e-9104-31bd28d19534",
+                    "name": "Annual Reviews in Control",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Annu Rev Control"
+                    ],
+                    "issn": "1367-5788",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/429/description#description",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/13675788"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/38e0e644c78ff9da521ed314a8390d3d8522e1bd",
+                "title": "Learning quadrotor dynamics for precise, safe, and agile flight control",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2047587403",
+                        "name": "Alessandro Saviolo"
+                    },
+                    {
+                        "authorId": "1759737",
+                        "name": "Giuseppe Loianno"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", value iteration [19], LSTM [20], [21], and Transformer [22], to plan paths in a discrete grid space.",
+                "1) Learning-based path planning: Learning-based methods apply deep learning techniques, e.g., value iteration [19], LSTM [20], [21], and Transformer [22], to plan paths in a discrete grid space."
+            ],
+            "citingPaper": {
+                "paperId": "5d63282d0a81b1122e8a4c41f724d39a5de205ea",
+                "externalIds": {
+                    "DBLP": "conf/fpt/SugiuraM22",
+                    "DOI": "10.1109/ICFPT56656.2022.9974251",
+                    "CorpusId": 254737096
+                },
+                "corpusId": 254737096,
+                "publicationVenue": {
+                    "id": "5ea3b256-b7b3-4ce5-b0cb-a6bee512e027",
+                    "name": "International Conference on Field-Programmable Technology",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Field-Programmable Technology",
+                        "Field-programmable Technol",
+                        "FPT",
+                        "Int Conf Field-programmable Technol"
+                    ],
+                    "url": "http://www.icfpt.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/5d63282d0a81b1122e8a4c41f724d39a5de205ea",
+                "title": "P3Net: PointNet-based Path Planning on FPGA",
+                "abstract": "Path planning is of crucial importance for au-tonomous mobile robots, and comes with a wide range of real-world applications including transportation, surveillance, and rescue. Currently, its high computational complexity is a major bottleneck for the application on such resource-limited robots. As a promising and effective solution to tackle this issue, in this paper, we propose a novel learning-based method for 2D/3D path planning, P3Net (PointNet-based Path Planning Network), along with its resource-efficient implementation targeting Xilinx ZCU104 boards. Our proposal is built upon two improvements to the recently proposed MPNet: we use a parameter-efficient PointNet-based encoder network to extract high-fidelity obstacle features from a point cloud, in conjunction with a lightweight planning network to iteratively plan a path. Experimental results using 2D/3D datasets demonstrate that our FPGA-based P3Net performs significantly better than MPNet and even comparable to the state-of-the-art sampling-based methods such as BIT*. P3Net is able to plan near-optimal paths 6.24x-9.34x faster than MPNet, and eventually improves the success rate by up to 24.45%, while reducing the parameter size by 5.43x-32.32x. This enables the subsecond real-time performance in many cases and opens up a new research direction for the edge-based efficient path planning.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "8188181",
+                        "name": "K. Sugiura"
+                    },
+                    {
+                        "authorId": "144926639",
+                        "name": "Hiroki Matsutani"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                ", 2016) is a representative work that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021).",
+                "Spatial Planning Transformers (SPT) (Chaplot et al., 2021) also fits into the pipeline, but it performs less well, as discussed in Section C.",
+                "These tasks require planning on either given (2D navigation and 2-DOF configuration-space manipulation) or learned maps (visual navigation and 2-DOF workspace manipulation), where the maps are 2D regular grid as in prior work (Tamar et al., 2016; Lee et al., 2018; Chaplot et al., 2021).",
+                "C IMPLEMENTATION DETAILS\nC.1 IMPLEMENTATION OF ID-SPT\nBeyond VIN, SymVIN and ConvGPPN, we also tried implementing an implicit differentiation version of Spatial Planning Transformers (SPT) (Chaplot et al., 2021).",
+                "We follow the setup in (Lee et al., 2018; Chaplot et al., 2021) and further discuss in Section D.",
+                "Value iteration network (VIN) (Tamar et al., 2016) is a representative work that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021).",
+                "We also run on other tasks including visual navigation, 2-DOF configuration space manipulation, and 2-DOF workspace manipulation, where all these tasks can be represented as taking a form of map \u201csignal\u201d over grid Z(2), as previously been done (Zhao et al., 2022; Chaplot et al., 2021).",
+                "We also run on other tasks including visual navigation, 2-DOF configuration space manipulation, and 2-DOF workspace manipulation, where all these tasks can be represented as taking a form of map \u201csignal\u201d over grid Z2, as previously been done (Zhao et al., 2022; Chaplot et al., 2021).",
+                "We can handle tasks with more challenging input, such as visual navigation and workspace manipulation (Lee et al., 2018; Chaplot et al., 2021; Zhao et al., 2022), by learning an additional mapping network (mapper) to first map the input to a 2D map.",
+                "Spatial Planning Transformers (SPT) (Chaplot et al., 2021) also fits into the pipeline, but it performs less well, as discussed in Section C.\nFigure 3 shows the general pipeline, where the network layer f\u03b8 can be replaced by any single layer that is capable of iterating values.",
+                "During testing, we follow the pipeline in Chaplot et al. (2021) that the mapper-planner only have access to the manipulator workspace."
+            ],
+            "citingPaper": {
+                "paperId": "330bf00e4dab2f24c2fe30971a7f7f164370a37d",
+                "externalIds": {
+                    "DBLP": "conf/iclr/ZhaoXW23",
+                    "ArXiv": "2210.13542",
+                    "DOI": "10.48550/arXiv.2210.13542",
+                    "CorpusId": 253107706
+                },
+                "corpusId": 253107706,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/330bf00e4dab2f24c2fe30971a7f7f164370a37d",
+                "title": "Scaling up and Stabilizing Differentiable Planning with Implicit Differentiation",
+                "abstract": "Differentiable planning promises end-to-end differentiability and adaptivity. However, an issue prevents it from scaling up to larger-scale problems: they need to differentiate through forward iteration layers to compute gradients, which couples forward computation and backpropagation, and needs to balance forward planner performance and computational cost of the backward pass. To alleviate this issue, we propose to differentiate through the Bellman fixed-point equation to decouple forward and backward passes for Value Iteration Network and its variants, which enables constant backward cost (in planning horizon) and flexible forward budget and helps scale up to large tasks. We study the convergence stability, scalability, and efficiency of the proposed implicit version of VIN and its variants and demonstrate their superiorities on a range of planning tasks: 2D navigation, visual navigation, and 2-DOF manipulation in configuration space and workspace.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2111640814",
+                        "name": "Linfeng Zhao"
+                    },
+                    {
+                        "authorId": "3286703",
+                        "name": "Huazhe Xu"
+                    },
+                    {
+                        "authorId": "145307121",
+                        "name": "Lawson L. S. Wong"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "[35] and goal-conditioned RL policies [36]."
+            ],
+            "citingPaper": {
+                "paperId": "9a11350189c68e11ccf1000c0c1651dadcb00aad",
+                "externalIds": {
+                    "ArXiv": "2210.12209",
+                    "DBLP": "conf/corl/FishmanMEPBF22",
+                    "DOI": "10.48550/arXiv.2210.12209",
+                    "CorpusId": 253098016
+                },
+                "corpusId": 253098016,
+                "publicationVenue": {
+                    "id": "fbfbf10a-faa4-4d2a-85be-3ac660454ce3",
+                    "name": "Conference on Robot Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CoRL",
+                        "Conf Robot Learn"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9a11350189c68e11ccf1000c0c1651dadcb00aad",
+                "title": "Motion Policy Networks",
+                "abstract": "Collision-free motion generation in unknown environments is a core building block for robot manipulation. Generating such motions is challenging due to multiple objectives; not only should the solutions be optimal, the motion generator itself must be fast enough for real-time performance and reliable enough for practical deployment. A wide variety of methods have been proposed ranging from local controllers to global planners, often being combined to offset their shortcomings. We present an end-to-end neural model called Motion Policy Networks (M$\\pi$Nets) to generate collision-free, smooth motion from just a single depth camera observation. M$\\pi$Nets are trained on over 3 million motion planning problems in over 500,000 environments. Our experiments show that M$\\pi$Nets are significantly faster than global planners while exhibiting the reactivity needed to deal with dynamic scenes. They are 46% better than prior neural planners and more robust than local control policies. Despite being only trained in simulation, M$\\pi$Nets transfer well to the real robot with noisy partial point clouds. Code and data are publicly available at https://mpinets.github.io.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "150900899",
+                        "name": "Adam Fishman"
+                    },
+                    {
+                        "authorId": "32424449",
+                        "name": "Adithya Murali"
+                    },
+                    {
+                        "authorId": "1735570",
+                        "name": "Clemens Eppner"
+                    },
+                    {
+                        "authorId": "8295801",
+                        "name": "Bryan N. Peele"
+                    },
+                    {
+                        "authorId": "3288815",
+                        "name": "Byron Boots"
+                    },
+                    {
+                        "authorId": "145197953",
+                        "name": "D. Fox"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "Classical approaches [28, 67, 34, 63, 45] solve the navigation problem via path planning [11, 34] on a constructed map, which usually requires handcraft design."
+            ],
+            "citingPaper": {
+                "paperId": "cd56f3ba999c3e7b0d381c425b106c6d952dd478",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-07505",
+                    "ArXiv": "2210.07505",
+                    "DOI": "10.48550/arXiv.2210.07505",
+                    "CorpusId": 252907775
+                },
+                "corpusId": 252907775,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/cd56f3ba999c3e7b0d381c425b106c6d952dd478",
+                "title": "Learning Active Camera for Multi-Object Navigation",
+                "abstract": "Getting robots to navigate to multiple objects autonomously is essential yet difficult in robot applications. One of the key challenges is how to explore environments efficiently with camera sensors only. Existing navigation methods mainly focus on fixed cameras and few attempts have been made to navigate with active cameras. As a result, the agent may take a very long time to perceive the environment due to limited camera scope. In contrast, humans typically gain a larger field of view by looking around for a better perception of the environment. How to make robots perceive the environment as efficiently as humans is a fundamental problem in robotics. In this paper, we consider navigating to multiple objects more efficiently with active cameras. Specifically, we cast moving camera to a Markov Decision Process and reformulate the active camera problem as a reinforcement learning problem. However, we have to address two new challenges: 1) how to learn a good camera policy in complex environments and 2) how to coordinate it with the navigation policy. To address these, we carefully design a reward function to encourage the agent to explore more areas by moving camera actively. Moreover, we exploit human experience to infer a rule-based camera action to guide the learning process. Last, to better coordinate two kinds of policies, the camera policy takes navigation actions into account when making camera moving decisions. Experimental results show our camera policy consistently improves the performance of multi-object navigation over four baselines on two datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2158502526",
+                        "name": "Peihao Chen"
+                    },
+                    {
+                        "authorId": "2187874507",
+                        "name": "Dongyu Ji"
+                    },
+                    {
+                        "authorId": "151478390",
+                        "name": "Kun-Li Channing Lin"
+                    },
+                    {
+                        "authorId": "51378559",
+                        "name": "Weiwen Hu"
+                    },
+                    {
+                        "authorId": "123175679",
+                        "name": "Wen-bing Huang"
+                    },
+                    {
+                        "authorId": "50289966",
+                        "name": "Thomas H. Li"
+                    },
+                    {
+                        "authorId": "2068026733",
+                        "name": "Ming Tan"
+                    },
+                    {
+                        "authorId": "2056157586",
+                        "name": "Chuang Gan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Within robotics we see the first transformers architectures being used for trajectory forecasting [30], motion planning [31, 32], and reinforcement learning [33, 34].",
+                "We us a lightweight 3layer MLP hloc ([64, 32, 3]) as the localization task decoder (Fig."
+            ],
+            "citingPaper": {
+                "paperId": "626d405aa05d96f8c1f27fa09e93b292084670b0",
+                "externalIds": {
+                    "ArXiv": "2209.11133",
+                    "DBLP": "journals/corr/abs-2209-11133",
+                    "DOI": "10.48550/arXiv.2209.11133",
+                    "CorpusId": 252438701
+                },
+                "corpusId": 252438701,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/626d405aa05d96f8c1f27fa09e93b292084670b0",
+                "title": "PACT: Perception-Action Causal Transformer for Autoregressive Robotics Pre-Training",
+                "abstract": "Robotics has long been a field riddled with complex systems architectures whose modules and connections, whether traditional or learning-based, require significant human expertise and prior knowledge. Inspired by large pre-trained language models, this work introduces a paradigm for pre-training a general purpose representation that can serve as a starting point for multiple tasks on a given robot. We present the Perception-Action Causal Transformer (PACT), a generative transformer-based architecture that aims to build representations directly from robot data in a self-supervised fashion. Through autoregressive prediction of states and actions over time, our model implicitly encodes dynamics and behaviors for a particular robot. Our experimental evaluation focuses on the domain of mobile agents, where we show that this robot-specific representation can function as a single starting point to achieve distinct tasks such as safe navigation, localization and mapping. We evaluate two form factors: a wheeled robot that uses a LiDAR sensor as perception input (MuSHR), and a simulated agent that uses first-person RGB images (Habitat). We show that finetuning small task-specific networks on top of the larger pretrained model results in significantly better performance compared to training a single model from scratch for all tasks simultaneously, and comparable performance to training a separate large model for each task independently. By sharing a common good-quality representation across tasks we can lower overall model capacity and speed up the real-time deployment of such systems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3444893",
+                        "name": "Rogerio Bonatti"
+                    },
+                    {
+                        "authorId": "8355354",
+                        "name": "Sai Vemprala"
+                    },
+                    {
+                        "authorId": "2118867113",
+                        "name": "Shuang Ma"
+                    },
+                    {
+                        "authorId": "1844283112",
+                        "name": "F. Frujeri"
+                    },
+                    {
+                        "authorId": "122665192",
+                        "name": "Shuhang Chen"
+                    },
+                    {
+                        "authorId": "2189118",
+                        "name": "Ashish Kapoor"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Furthermore, a differentiable approach can be combined with other differentiable methods to enable efficient with end-to-end learning from data [2]."
+            ],
+            "citingPaper": {
+                "paperId": "85d68cf96c1654943f17d1272b9085a0a16dcdef",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-09292",
+                    "ArXiv": "2209.09292",
+                    "DOI": "10.1109/ICRA48891.2023.10160341",
+                    "CorpusId": 252383510
+                },
+                "corpusId": 252383510,
+                "publicationVenue": {
+                    "id": "3f2626a8-9d78-42ca-9e0d-4b853b59cdcc",
+                    "name": "IEEE International Conference on Robotics and Automation",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International Conference on Robotics and Automation",
+                        "Int Conf Robot Autom",
+                        "ICRA",
+                        "IEEE Int Conf Robot Autom"
+                    ],
+                    "issn": "2152-4092",
+                    "alternate_issns": [
+                        "2379-9544"
+                    ],
+                    "url": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+                    "alternate_urls": [
+                        "http://www.ncsu.edu/IEEE-RAS/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/85d68cf96c1654943f17d1272b9085a0a16dcdef",
+                "title": "D2CoPlan: A Differentiable Decentralized Planner for Multi-Robot Coverage",
+                "abstract": "Centralized approaches for multi-robot coverage planning problems suffer from the lack of scalability. Learning-based distributed algorithms provide a scalable avenue in addition to bringing data-oriented feature generation capabilities to the table, allowing integration with other learning-based approaches. To this end, we present a learning-based, differentiable distributed coverage planner (D2CoPLAN) which scales efficiently in runtime and number of agents compared to the expert algorithm, and performs on par with the classical distributed algorithm. In addition, we show that D2CoPLANcan be seamlessly combined with other learning methods to learn end-to-end, resulting in a better solution than the individually trained modules, opening doors to further research for tasks that remain elusive with classical methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "153403222",
+                        "name": "V. Sharma"
+                    },
+                    {
+                        "authorId": "4659428",
+                        "name": "Lifeng Zhou"
+                    },
+                    {
+                        "authorId": "2390456",
+                        "name": "Pratap Tokekar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In robotics, Transformers have been applied to assistive teleop [41], legged locomotion [42], pathplanning [43, 44], imitation learning [45, 46], and grasping [47]."
+            ],
+            "citingPaper": {
+                "paperId": "60c8d0619481eaafdd1189af610d0e636271fed5",
+                "externalIds": {
+                    "DBLP": "conf/corl/ShridharMF22",
+                    "ArXiv": "2209.05451",
+                    "DOI": "10.48550/arXiv.2209.05451",
+                    "CorpusId": 252199474
+                },
+                "corpusId": 252199474,
+                "publicationVenue": {
+                    "id": "fbfbf10a-faa4-4d2a-85be-3ac660454ce3",
+                    "name": "Conference on Robot Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CoRL",
+                        "Conf Robot Learn"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/60c8d0619481eaafdd1189af610d0e636271fed5",
+                "title": "Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation",
+                "abstract": "Transformers have revolutionized vision and natural language processing with their ability to scale with large datasets. But in robotic manipulation, data is both limited and expensive. Can manipulation still benefit from Transformers with the right problem formulation? We investigate this question with PerAct, a language-conditioned behavior-cloning agent for multi-task 6-DoF manipulation. PerAct encodes language goals and RGB-D voxel observations with a Perceiver Transformer, and outputs discretized actions by ``detecting the next best voxel action''. Unlike frameworks that operate on 2D images, the voxelized 3D observation and action space provides a strong structural prior for efficiently learning 6-DoF actions. With this formulation, we train a single multi-task Transformer for 18 RLBench tasks (with 249 variations) and 7 real-world tasks (with 18 variations) from just a few demonstrations per task. Our results show that PerAct significantly outperforms unstructured image-to-action agents and 3D ConvNet baselines for a wide range of tabletop tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "33516562",
+                        "name": "Mohit Shridhar"
+                    },
+                    {
+                        "authorId": "2033958",
+                        "name": "Lucas Manuelli"
+                    },
+                    {
+                        "authorId": "145197953",
+                        "name": "D. Fox"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In the original paper [1], the problem of spatial path planning in a differentiable way is considered."
+            ],
+            "citingPaper": {
+                "paperId": "f52887523e4052a448b8dced56e196661b8109ea",
+                "externalIds": {
+                    "ArXiv": "2208.09536",
+                    "DBLP": "journals/corr/abs-2208-09536",
+                    "DOI": "10.5281/zenodo.6475614",
+                    "CorpusId": 251718692
+                },
+                "corpusId": 251718692,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f52887523e4052a448b8dced56e196661b8109ea",
+                "title": "[Re] Differentiable Spatial Planning using Transformers",
+                "abstract": "This report covers our reproduction effort of the paper \u2018Differentiable Spatial Planning using Transformers\u2019 by Chaplot et al. [1]. In this paper, the problem of spatial path planning in a differentiable way is considered. They show that their proposed method of using Spatial Planning Transformers outperforms prior data-driven models and leverages differentiable structures to learn mapping without a ground truth map simultaneously. We verify these claims by reproducing their experiments and testing their method on new data. We also investigate the stability of planning accuracy with maps with increased obstacle complexity. Efforts to investigate and verify the learnings of the Mapper module were met with failure stemming from a paucity of computational resources and unreachable authors.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145518544",
+                        "name": "R. Ranjan"
+                    },
+                    {
+                        "authorId": "2182290425",
+                        "name": "Himadri Bhakta"
+                    },
+                    {
+                        "authorId": "2131121790",
+                        "name": "Animesh Jha"
+                    },
+                    {
+                        "authorId": "2126964836",
+                        "name": "Parv Maheshwari"
+                    },
+                    {
+                        "authorId": "2086973907",
+                        "name": "Debashish Chakravarty"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Transformers are well-suited to this problem, as they have been shown to learn long-range relationships [2], although not in temporal robotic tasks.",
+                "matmul(A, X_hw) y_sim = process_height(xyz_hw[1]) X_sim = [X_sim_homo[0]/X_sim_homo[2], y_sim, X_sim_homo[1]/X_sim_homo[2]] return X_sim",
+                "array) -> List: xz_hw = [xyz_hw[0], xyz_hw[2]] X_hw = get_homogenous_coordinates(xz_hw) X_sim_homo = np.",
+                "Once we compute the transformation A, we store it for later to process arbitrary coordinates from real to sim, as shown below.\ndef get_simulation_coordinates(xyz_hw: List[float], A: np.array) -> List:\nxz_hw = [xyz_hw[0], xyz_hw[2]]\nX_hw = get_homogenous_coordinates(xz_hw)\nX_sim_homo = np.matmul(A, X_hw)\ny_sim = process_height(xyz_hw[1])\nX_sim = [X_sim_homo[0]/X_sim_homo[2], y_sim, X_sim_homo[1]/X_sim_homo[2]]\nreturn X_sim\nThe objects used in simulation training are different from hardware objects, even though they belong to the same categories."
+            ],
+            "citingPaper": {
+                "paperId": "c2366e759a97c2b21e9fc35c5e2f6b377eca38ab",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-02442",
+                    "ArXiv": "2207.02442",
+                    "DOI": "10.48550/arXiv.2207.02442",
+                    "CorpusId": 250311260
+                },
+                "corpusId": 250311260,
+                "publicationVenue": {
+                    "id": "fbfbf10a-faa4-4d2a-85be-3ac660454ce3",
+                    "name": "Conference on Robot Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CoRL",
+                        "Conf Robot Learn"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c2366e759a97c2b21e9fc35c5e2f6b377eca38ab",
+                "title": "Transformers are Adaptable Task Planners",
+                "abstract": "Every home is different, and every person likes things done in their particular way. Therefore, home robots of the future need to both reason about the sequential nature of day-to-day tasks and generalize to user's preferences. To this end, we propose a Transformer Task Planner(TTP) that learns high-level actions from demonstrations by leveraging object attribute-based representations. TTP can be pre-trained on multiple preferences and shows generalization to unseen preferences using a single demonstration as a prompt in a simulated dishwasher loading task. Further, we demonstrate real-world dish rearrangement using TTP with a Franka Panda robotic arm, prompted using a single human demonstration.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2061364783",
+                        "name": "Vidhi Jain"
+                    },
+                    {
+                        "authorId": "1491144944",
+                        "name": "Yixin Lin"
+                    },
+                    {
+                        "authorId": "29994440",
+                        "name": "Eric Undersander"
+                    },
+                    {
+                        "authorId": "3312309",
+                        "name": "Yonatan Bisk"
+                    },
+                    {
+                        "authorId": "2762463",
+                        "name": "Akshara Rai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "In the latter case, the planner needs to jointly learn a mapper that converts egocentric panoramic images (visual navigation) or workspace states (workspace manipulation) into a map that the planners can operate on, as in (Lee et al., 2018; Chaplot et al., 2021).",
+                "Our choice of small and toyish maps (100\u00d7 100 or smaller) is in line with prior work, such as VIN, GPPN, and SPT, which mainly experimented on 15 \u00d7 15 and 28 \u00d7 28 maps.",
+                "For all environments, the planning domain is the 2D regular grid as in VIN, GPPN and SPT S = \u2126 = Z2, and the action space is to move in 4 directions1: A = (north, west, south, east).",
+                "This is used as input to the Configuration-space (C-space) Manipulation task and as target in the auxiliary loss for the Workspace Manipulation task (as done in SPT (Chaplot et al., 2021)).",
+                "In 2-DOF manipulation in configuration space, we adopt the setting in (Chaplot et al., 2021) and train networks to take as input of configuration space, represented by two joints.",
+                "\u2026package (Weiler and Cesa, 2021) uses counterclockwise rotations as generators for rotation groups Cn, the action space needs to be counterclockwise .\nin Chaplot et al. (2021) and train networks to take as input \u201cmaps\u201d in configuration space, represented by the state of the two manipulator joints.",
+                "Value iteration networks (VIN) (Tamar et al., 2016b) is a representative approach that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021; Zhao et al., 2023).",
+                "\u2026ability of handling symmetry in differentiable planning, we consider more complicated state space input: visual navigation and workspace manipulation, and discuss how to use mapper networks to convert the state input and use end-to-end learned maps, as in (Lee et al., 2018; Chaplot et al., 2021).",
+                "To demonstrate the ability of handling symmetry in differentiable planning, we consider more complicated state space input: visual navigation and workspace manipulation, and discuss how to use mapper networks to convert the state input and use end-to-end learned maps, as in (Lee et al., 2018; Chaplot et al., 2021).",
+                ", 2016b) is a representative approach that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021; Zhao et al., 2023).",
+                "One potential method is to use Transformers that learn attention weights to all states in S, which has been partially explored in SPT (Chaplot et al., 2021).",
+                "During testing, we follow the pipeline in Chaplot et al. (2021) that the mapper-planner only have access to the manipulator workspace."
+            ],
+            "citingPaper": {
+                "paperId": "a807a1c5048bc4f6022ff9194fc39b1b54f16c8c",
+                "externalIds": {
+                    "ArXiv": "2206.03674",
+                    "DBLP": "conf/iclr/ZhaoZKWW23",
+                    "CorpusId": 253158057
+                },
+                "corpusId": 253158057,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a807a1c5048bc4f6022ff9194fc39b1b54f16c8c",
+                "title": "Integrating Symmetry into Differentiable Planning with Steerable Convolutions",
+                "abstract": "We study how group symmetry helps improve data efficiency and generalization for end-to-end differentiable planning algorithms when symmetry appears in decision-making tasks. Motivated by equivariant convolution networks, we treat the path planning problem as \\textit{signals} over grids. We show that value iteration in this case is a linear equivariant operator, which is a (steerable) convolution. This extends Value Iteration Networks (VINs) on using convolutional networks for path planning with additional rotation and reflection symmetry. Our implementation is based on VINs and uses steerable convolution networks to incorporate symmetry. The experiments are performed on four tasks: 2D navigation, visual navigation, and 2 degrees of freedom (2DOFs) configuration space and workspace manipulation. Our symmetric planning algorithms improve training efficiency and generalization by large margins compared to non-equivariant counterparts, VIN and GPPN.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2111640814",
+                        "name": "Linfeng Zhao"
+                    },
+                    {
+                        "authorId": "2145238065",
+                        "name": "Xu Zhu"
+                    },
+                    {
+                        "authorId": "2163741160",
+                        "name": "Lingzhi Kong"
+                    },
+                    {
+                        "authorId": "153401894",
+                        "name": "R. Walters"
+                    },
+                    {
+                        "authorId": "145307121",
+                        "name": "Lawson L. S. Wong"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Lastly, other related directions tackle learning cost fields for motion planning [6, 9, 33] from SDFs [11, 16], navigating in a neural radiance fields [1] and learning neural fields for articulated [18] or deformable objects [35] for manipulation."
+            ],
+            "citingPaper": {
+                "paperId": "83a184e490540b9ec7daf25bf1fda122dba08bea",
+                "externalIds": {
+                    "DBLP": "conf/rss/OrtizC0SNZM22",
+                    "ArXiv": "2204.02296",
+                    "DOI": "10.48550/arXiv.2204.02296",
+                    "CorpusId": 247957757
+                },
+                "corpusId": 247957757,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/83a184e490540b9ec7daf25bf1fda122dba08bea",
+                "title": "iSDF: Real-Time Neural Signed Distance Fields for Robot Perception",
+                "abstract": "We present iSDF, a continual learning system for real-time signed distance field (SDF) reconstruction. Given a stream of posed depth images from a moving camera, it trains a randomly initialised neural network to map input 3D coordinate to approximate signed distance. The model is self-supervised by minimising a loss that bounds the predicted signed distance using the distance to the closest sampled point in a batch of query points that are actively sampled. In contrast to prior work based on voxel grids, our neural method is able to provide adaptive levels of detail with plausible filling in of partially observed regions and denoising of observations, all while having a more compact representation. In evaluations against alternative methods on real and synthetic datasets of indoor environments, we find that iSDF produces more accurate reconstructions, and better approximations of collision costs and gradients useful for downstream planners in domains from navigation to manipulation. Code and video results can be found at our project page: https://joeaortiz.github.io/iSDF/ .",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2057797257",
+                        "name": "Joseph Ortiz"
+                    },
+                    {
+                        "authorId": "30933599",
+                        "name": "Alexander Clegg"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Jing Dong"
+                    },
+                    {
+                        "authorId": "31998772",
+                        "name": "Edgar Sucar"
+                    },
+                    {
+                        "authorId": "35117729",
+                        "name": "David Novotn\u00fd"
+                    },
+                    {
+                        "authorId": "2065899365",
+                        "name": "Michael Zollhoefer"
+                    },
+                    {
+                        "authorId": "2874057",
+                        "name": "Mustafa Mukadam"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "9d270c56dd80a2f493e206781faf82a22351a6b2",
+                "externalIds": {
+                    "ArXiv": "2201.09862",
+                    "DBLP": "journals/corr/abs-2201-09862",
+                    "DOI": "10.1109/IROS47612.2022.9981261",
+                    "CorpusId": 246240350
+                },
+                "corpusId": 246240350,
+                "publicationVenue": {
+                    "id": "37275deb-3fcf-4d16-ae77-95db9899b1f3",
+                    "name": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IROS",
+                        "Intelligent Robots and Systems",
+                        "Intell Robot Syst",
+                        "IEEE/RJS Int Conf Intell Robot Syst"
+                    ],
+                    "url": "http://www.iros.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/9d270c56dd80a2f493e206781faf82a22351a6b2",
+                "title": "Learning to Act with Affordance-Aware Multimodal Neural SLAM",
+                "abstract": "Recent years have witnessed an emerging paradigm shift toward embodied artificial intelligence, in which an agent must learn to solve challenging tasks by interacting with its environment. There are several challenges in solving embodied multimodal tasks, including long-horizon planning, vision-and-language grounding, and efficient exploration. We focus on a critical bottleneck, namely the performance of planning and navigation. To tackle this challenge, we propose a Neural SLAM approach that, for the first time, utilizes several modalities for exploration, predicts an affordance-aware semantic map, and plans over it at the same time. This signif-icantly improves exploration efficiency, leads to robust long-horizon planning, and enables effective vision-and-language grounding. With the proposed Affordance-aware Multimodal Neural SLAM (AMSLAM) approach, we obtain more than 40% improvement over prior published work on the ALFRED benchmark and set a new state-of-the-art generalization per-formance at a success rate of 23.48% on the test unseen scenes.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "50323665",
+                        "name": "Zhiwei Jia"
+                    },
+                    {
+                        "authorId": "3002019",
+                        "name": "Kaixiang Lin"
+                    },
+                    {
+                        "authorId": "2109831678",
+                        "name": "Yizhou Zhao"
+                    },
+                    {
+                        "authorId": "3193409",
+                        "name": "Qiaozi Gao"
+                    },
+                    {
+                        "authorId": "2028300167",
+                        "name": "G. Thattai"
+                    },
+                    {
+                        "authorId": "1732493",
+                        "name": "G. Sukhatme"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "The proposed environment field can also be considered as a value function used in learning-based path planning methods (Tamar et al., 2016; Campero et al., 2020; Al-Shedivat et al., 2018; Chaplot et al., 2021)."
+            ],
+            "citingPaper": {
+                "paperId": "2cba4246d75a950fecf4c3ee5ea812a2f6e608ff",
+                "externalIds": {
+                    "DBLP": "conf/iclr/LiMW0KL22",
+                    "ArXiv": "2111.13997",
+                    "CorpusId": 244714829
+                },
+                "corpusId": 244714829,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/2cba4246d75a950fecf4c3ee5ea812a2f6e608ff",
+                "title": "Learning Continuous Environment Fields via Implicit Functions",
+                "abstract": "We propose a novel scene representation that encodes reaching distance -- the distance between any position in the scene to a goal along a feasible trajectory. We demonstrate that this environment field representation can directly guide the dynamic behaviors of agents in 2D mazes or 3D indoor scenes. Our environment field is a continuous representation and learned via a neural implicit function using discretely sampled training data. We showcase its application for agent navigation in 2D mazes, and human trajectory prediction in 3D indoor environments. To produce physically plausible and natural trajectories for humans, we additionally learn a generative model that predicts regions where humans commonly appear, and enforce the environment field to be defined within such regions. Extensive experiments demonstrate that the proposed method can generate both feasible and plausible trajectories efficiently and accurately.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2108125179",
+                        "name": "Xueting Li"
+                    },
+                    {
+                        "authorId": "24817039",
+                        "name": "Shalini De Mello"
+                    },
+                    {
+                        "authorId": "122024152",
+                        "name": "Xiaolong Wang"
+                    },
+                    {
+                        "authorId": "37144787",
+                        "name": "Ming-Hsuan Yang"
+                    },
+                    {
+                        "authorId": "1690538",
+                        "name": "J. Kautz"
+                    },
+                    {
+                        "authorId": "2391885",
+                        "name": "Sifei Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Transformers have been used to learn and predict optimal value functions given a static map with obstacles and a goal point [3]."
+            ],
+            "citingPaper": {
+                "paperId": "29edef0189cb854b2464d25373afd78c5cc756ca",
+                "externalIds": {
+                    "DBLP": "conf/atal/ChowdhuryMS23",
+                    "DOI": "10.5555/3545946.3598826",
+                    "CorpusId": 258845489
+                },
+                "corpusId": 258845489,
+                "publicationVenue": {
+                    "id": "6c3a9833-5fac-49d3-b7e7-64910bd40b4e",
+                    "name": "Adaptive Agents and Multi-Agent Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Adapt Agent Multi-agent Syst",
+                        "International Joint Conference on Autonomous Agents & Multiagent Systems",
+                        "Adapt Agent Multi-agents Syst",
+                        "AAMAS",
+                        "Adaptive Agents and Multi-Agents Systems",
+                        "Int Jt Conf Auton Agent  Multiagent Syst"
+                    ],
+                    "url": "http://www.ifaamas.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/29edef0189cb854b2464d25373afd78c5cc756ca",
+                "title": "Intelligent Onboard Routing in Stochastic Dynamic Environments using Transformers",
+                "abstract": "Autonomous marine agents find extensive applications in environmental data collection, naval security, and exploration of harsh ocean regions. As intelligent agents, they must perform onboard routing, collect data about their surroundings and update their route to minimize mission travel time, energy, or data collection. While Markov Decision Processes (MDPs) and Reinforcement Learning (RL) are often used for path planning, they are computationally expensive for onboard routing as they need in-mission re-planning. In the present paper, we develop a novel, deep learning method based on the decision transformers for optimal path planning and onboard routing of autonomous marine agents. The transformer architectures convert the RL-based optimal path planning problem into a supervised learning problem via sequence modeling. Before the mission, during the offline planning phase, the environment is first modeled as a stochastic dynamic ocean flow with dynamically orthogonal flow equations. A training dataset for the transformer model is created by solving the stochastic dynamically orthogonal Hamilton-Jacobi level set partial differential equations or a dynamic programming solution for MDPs. These paths are then processed to obtain sequences of states, actions and returns for our transformer models, where the agent\u2019s state is typically its spatio-temporal coordinate and other collectible data. We propose and analyze multiple state modeling choices against the agent\u2019s state estimation capabilities and scenarios with multiple target locations. We demonstrate that (i) a trained agent learns to infer the surrounding flow and perform optimal onboard routing when the agent\u2019s state estimation is accurate, (ii) specifying the target locations (in case of multiple targets) as a part of the state enables a trained agent to route itself to the correct destination, and (iii) a trained agent is robust to limited noise in state transitions and is capable of reaching target locations in completely new flow scenarios. We extensively showcase end-to-end planning and onboard routing in various canonical and idealized ocean flow scenarios. We analyze the predictions of the transformer models and explain the inner mechanics of learning through a novel visualization of self-attention of actions and states on the trajectories.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "121269924",
+                        "name": "Rohit Chowdhury"
+                    },
+                    {
+                        "authorId": "2218477624",
+                        "name": "Raswanth Murugan"
+                    },
+                    {
+                        "authorId": "144877456",
+                        "name": "D. Subramani"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[11] use transformers to predict distances by exploiting their property of learning long-distance relationships instead of local convolutional features."
+            ],
+            "citingPaper": {
+                "paperId": "6e9c62397e04eb7ba71030342371cf559f355fcf",
+                "externalIds": {
+                    "CorpusId": 260938365
+                },
+                "corpusId": 260938365,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6e9c62397e04eb7ba71030342371cf559f355fcf",
+                "title": "Semantically Informed MPC for Context-Aware Robot Exploration",
+                "abstract": "\u2014We investigate the task of object goal navigation in unknown environments where a target object is given as a semantic label (e.g. find a couch). This task is challenging as it requires the robot to consider the semantic context in diverse settings (e.g. TVs are often nearby couches). Most of the prior work tackles this problem under the assumption of a discrete action policy whereas we present an approach with continuous control which brings it closer to real world applications. In this paper, we use information-theoretic model predictive control on dense cost maps to bring object goal navigation closer to real robots with kinodynamic constraints. We propose a deep neural network framework to learn cost maps that encode semantic context and guide the robot towards the target object. We also present a novel way of fusing mid-level visual representations in our architecture to provide additional semantic cues for cost map prediction. The experiments show that our method leads to more efficient and accurate goal navigation with higher quality paths than the reported baselines. The results also indicate the importance of mid-level representations for navigation by improving the success rate by 8 percentage points.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2231833863",
+                        "name": "\u2217. YashGoel"
+                    },
+                    {
+                        "authorId": "2231827078",
+                        "name": "\u2217. NarunasVaskevicius"
+                    },
+                    {
+                        "authorId": "46740059",
+                        "name": "Luigi Palmieri"
+                    },
+                    {
+                        "authorId": "25884999",
+                        "name": "Nived Chebrolu"
+                    },
+                    {
+                        "authorId": "1699080",
+                        "name": "K. Arras"
+                    },
+                    {
+                        "authorId": "1722062",
+                        "name": "C. Stachniss"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "images (visual navigation) or workspace states (workspace manipulation) into plannable loss, as in [18, 19].",
+                "We focus on the 2D regular grid setting for path planning, as adopted in prior work [17, 18, 19].",
+                "In 2-DOF manipulation in configuration space, we adopt the setting in [19] and train networks to take as input of configuration space, represented by two joints.",
+                "[19] propose SPT based on Transformers, while integrating symmetry to Transformers is beyond steerable convolutions, thus we do not consider it but still adopt some useful setup."
+            ],
+            "citingPaper": {
+                "paperId": "fde3b9295ba76c07b528b2a7d3c76831d26b6f42",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-03674",
+                    "DOI": "10.48550/arXiv.2206.03674",
+                    "CorpusId": 249461868
+                },
+                "corpusId": 249461868,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fde3b9295ba76c07b528b2a7d3c76831d26b6f42",
+                "title": "Integrating Symmetry into Differentiable Planning",
+                "abstract": "Model-based planning usually struggles in complex problems, and planning in more structured and abstract space is a major solution [1, 2, 3, 4]. Symmetry is ubiquitous in learning and decision-making problems and can effectively reduce search space for planning. However, existing planning algorithms using symmetry assumes perfect dynamics knowledge, needs to explicitly build equivalence classes, or does not consider problem structure [5, 4, 6, 7, 8]. For example, if we use A* on path planning, we cannot specify visually obvious rotation symmetry in Figure 1, and need to detect in manually from the provided dynamics model. This would be even more challenging to detect in differentiable planning. Nevertheless, symmetry in model-free deep reinforcement learning (RL) has been studied recently [9, 10]. However, it can only handle pixel-level \u201celement-wise\u201d symmetry, such as flipping or rotating state and action together. However, a critical benefit of model-free RL agents that enables great asymptotic performance is its end-to-end differentiability. This motivates us to combine the spirit of both: is it possible to design an end-to-end differentiable planning algorithm that makes use of symmetry in environments? In this work, we propose to (1) avoid explicitly building equivalence classes for symmetric states while (2) realize planning in an end-to-end differentiable manner. We are motivated by work in the equivariant network and geometric deep learning community [11, 12, 13, 14, 15, 16], which treat an RGB image as a mapping Z \u2192 R and apply equivariant convolutions between feature maps. It satisfies our desiderata: equivariant networks on images do not need to explicitly consider \u201csymmetric pixels\u201d while guarantee symmetry properties. Based on the intuition, we propose a framework, Symmetric Planning (SymPlan), to understand a straightforward but general problem, path planning, as operating like images, called steerable feature fields [14, 16]. We focus on 2D grid and prove that value iteration (VI) for 2D path planning is equivariant under the isometries of Z: translations, rotations, and reflections, and further show that VI here is a special form of steerable convolution network [14]. This provides us a foundation to equip Value Iteration Network (VIN, [17]) with steerable convolution. We implement the equivariant steerable version of VIN, named SymVIN, and use a variant, GPPN, to build SymGPPN. Both SymPlan methods Figure 1: The path planning problem has symmetry, so we study how to exploit its symmetry in (differentiable) planning. Red dots are goal. The optimal actions A = SymPlan(M) (bottom row) for the maps M (top row) are guaranteed to be equivariant SymPlan(g.M) = g.SymPlan(M) under \u27f2 rotations for (2D) path planning. For example, the action in the NW corner of A is the same as the action in the SW corner of g.A, after also rotating the arrow \u27f2 90\u25e6.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2111640814",
+                        "name": "Linfeng Zhao"
+                    },
+                    {
+                        "authorId": "2145238065",
+                        "name": "Xu Zhu"
+                    },
+                    {
+                        "authorId": "2163741160",
+                        "name": "Lingzhi Kong"
+                    },
+                    {
+                        "authorId": "153401894",
+                        "name": "R. Walters"
+                    },
+                    {
+                        "authorId": "145307121",
+                        "name": "Lawson L. S. Wong"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In the original paper [1], the problem of spatial path planning in a differentiable way is considered."
+            ],
+            "citingPaper": {
+                "paperId": "75c44c1e51d7c9081bdfb4ab432e61fe2a394216",
+                "externalIds": {
+                    "CorpusId": 247496306
+                },
+                "corpusId": 247496306,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/75c44c1e51d7c9081bdfb4ab432e61fe2a394216",
+                "title": "ML Reproducibility Challenge 2021 [Re] Differentiable Spatial Planning using Transformers",
+                "abstract": "This report covers our reproduction effort of the paper \u2018Differentiable Spatial Planning using Transformers\u2019 by Chaplot 3 et al. [1]. In this paper, the problem of spatial path planning in a differentiable way is considered. They show that 4 their proposed method of using Spatial Planning Transformers outperforms prior data-driven models and leverages 5 differentiable structures to learn mapping without a ground truth map simultaneously. We verify these claims by 6 reproducing their experiments and testing their method on new data. We also investigate the stability of planning 7 accuracy with maps with increased obstacle complexity. Efforts to investigate and verify the learnings of the Mapper 8 module were met with failure stemming from a paucity of computational resources and unreachable authors. 9",
+                "year": 2022,
+                "authors": []
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "f0d4534e7caf045f685c2562a7f0aa2535029191",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2106-02791",
+                    "CorpusId": 235358799
+                },
+                "corpusId": 235358799,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f0d4534e7caf045f685c2562a7f0aa2535029191",
+                "title": "Motion Planning Transformers: One Model to Plan Them All",
+                "abstract": "Transformers have become the powerhouse of natural language processing and recently found use in computer vision tasks. Their effective use of attention can be used in other contexts as well, and in this paper, we propose a transformer-based approach for efficiently solving the complex motion planning problems. Traditional neural network-based motion planning uses convolutional networks to encode the planning space, but these methods are limited to fixed map sizes, which is often not realistic in the real-world. Our approach first identifies regions on the map using transformers to provide attention to map areas likely to include the best path, and then applies local planners to generate the final collision-free path. We validate our method on a variety of randomly generated environments with different map sizes, demonstrating reduction in planning complexity and achieving comparable accuracy to traditional planners.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2115731777",
+                        "name": "Jacob J. Johnson"
+                    },
+                    {
+                        "authorId": "2107924137",
+                        "name": "Linjun Li"
+                    },
+                    {
+                        "authorId": "51014775",
+                        "name": "A. H. Qureshi"
+                    },
+                    {
+                        "authorId": "35860894",
+                        "name": "Michael C. Yip"
+                    }
+                ]
+            }
+        }
+    ]
+}

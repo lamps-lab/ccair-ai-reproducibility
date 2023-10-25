@@ -1,0 +1,520 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "5ced8639beb776774d2d2489000e000bb186f52f",
+                "externalIds": {
+                    "ArXiv": "2309.14531",
+                    "DBLP": "journals/corr/abs-2309-14531",
+                    "DOI": "10.48550/arXiv.2309.14531",
+                    "CorpusId": 262840393
+                },
+                "corpusId": 262840393,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5ced8639beb776774d2d2489000e000bb186f52f",
+                "title": "Pixel-Grounded Prototypical Part Networks",
+                "abstract": "Prototypical part neural networks (ProtoPartNNs), namely PROTOPNET and its derivatives, are an intrinsically interpretable approach to machine learning. Their prototype learning scheme enables intuitive explanations of the form, this (prototype) looks like that (testing image patch). But, does this actually look like that? In this work, we delve into why object part localization and associated heat maps in past work are misleading. Rather than localizing to object parts, existing ProtoPartNNs localize to the entire image, contrary to generated explanatory visualizations. We argue that detraction from these underlying issues is due to the alluring nature of visualizations and an over-reliance on intuition. To alleviate these issues, we devise new receptive field-based architectural constraints for meaningful localization and a principled pixel space mapping for ProtoPartNNs. To improve interpretability, we propose additional architectural improvements, including a simplified classification head. We also make additional corrections to PROTOPNET and its derivatives, such as the use of a validation set, rather than a test set, to evaluate generalization during training. Our approach, PIXPNET (Pixel-grounded Prototypical part Network), is the only ProtoPartNN that truly learns and localizes to prototypical object parts. We demonstrate that PIXPNET achieves quantifiably improved interpretability without sacrificing accuracy.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51222863",
+                        "name": "Zachariah Carmichael"
+                    },
+                    {
+                        "authorId": "1890366",
+                        "name": "Suhas Lohit"
+                    },
+                    {
+                        "authorId": "2691929",
+                        "name": "A. Cherian"
+                    },
+                    {
+                        "authorId": "145319478",
+                        "name": "Michael J. Jones"
+                    },
+                    {
+                        "authorId": "2613438",
+                        "name": "W. Scheirer"
+                    },
+                    {
+                        "authorId": "2246898946",
+                        "name": "Upsampling Pixel"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "2021) and had extensive applications in computer vision (Li et al. 2018; Chen et al. 2019; Nauta, Van Bree, and Seifert 2021; Keswani et al. 2022).",
+                "\u2026the learning of latent representations from the data space that were widely adopted in interpretable machine learning (Molnar 2022; Zhang et al. 2021) and had extensive applications in computer vision (Li et al. 2018; Chen et al. 2019; Nauta, Van Bree, and Seifert 2021; Keswani et al. 2022)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "ae71a73cdae1bf82fe8088c9b56ea0dd90f64754",
+                "externalIds": {
+                    "ArXiv": "2308.07048",
+                    "DBLP": "journals/corr/abs-2308-07048",
+                    "DOI": "10.48550/arXiv.2308.07048",
+                    "CorpusId": 260886783
+                },
+                "corpusId": 260886783,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ae71a73cdae1bf82fe8088c9b56ea0dd90f64754",
+                "title": "UIPC-MF: User-Item Prototype Connection Matrix Factorization for Explainable Collaborative Filtering",
+                "abstract": "Recommending items to potentially interested users has been an important commercial task that faces two main challenges: accuracy and explainability. While most collaborative filtering models rely on statistical computations on a large scale of interaction data between users and items and can achieve high performance, they often lack clear explanatory power. We propose UIPC-MF, a prototype-based matrix factorization method for explainable collaborative filtering recommendations. In UIPC-MF, both users and items are associated with sets of prototypes, capturing general collaborative attributes. To enhance explainability, UIPC-MF learns connection weights that reflect the associative relations between user and item prototypes for recommendations. UIPC-MF outperforms other prototype-based baseline methods in terms of Hit Ratio and Normalized Discounted Cumulative Gain on three datasets, while also providing better transparency.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2200617213",
+                        "name": "Lei Pan"
+                    },
+                    {
+                        "authorId": "1700936",
+                        "name": "V. Soo"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Prototype-based interpretable models also include Proto2Proto [24], ProtoTree [25], TesNet [26] and Deformable ProtoPNet [27].",
+                "In addition, Proto2Proto and ProtoTree do not improve the quality of prototype generation compared with ProtoPNet, and their accuracy is only compared individually.",
+                "5 (bb); Proto2Proto [24]: 84 (full); TesNet* [26]: 93.",
+                "Proto2Proto uses model distillation to transfer the prototype knowledge of a large model to a relatively small model."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "c1ba12e5c4a8be8d00789ba53092239b1465e58e",
+                "externalIds": {
+                    "DBLP": "conf/ijcnn/WangPLZ23",
+                    "DOI": "10.1109/IJCNN54540.2023.10191863",
+                    "CorpusId": 260386747
+                },
+                "corpusId": 260386747,
+                "publicationVenue": {
+                    "id": "f80ba4a3-7aed-4021-b4d8-e4f50668847a",
+                    "name": "IEEE International Joint Conference on Neural Network",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IJCNN",
+                        "IEEE Int Jt Conf Neural Netw",
+                        "Int Jt Conf Neural Netw",
+                        "International Joint Conference on Neural Network"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1573"
+                },
+                "url": "https://www.semanticscholar.org/paper/c1ba12e5c4a8be8d00789ba53092239b1465e58e",
+                "title": "HQProtoPNet: An Evidence-Based Model for Interpretable Image Recognition",
+                "abstract": "In image recognition, improving the interpretability of the recognition model can help people understand the model better and increase the trust of human beings for model prediction. The prototype-based interpretable model is a self-explanatory image recognition model that simulates the evidence reasoning used in human recognition. Each prototype is evidence that contains category features, which can help in determining the image category. Based on the prototype-based model, this paper introduces a deep interpretable network architecture called the high-quality prototypical part network (HQProtoPNet). Compared to existing work, this paper adds random erasing to enhance the picture, helping to improve prototype generation and increase model prediction. The multiple scale conversion operation is also introduced and the similarity calculation is improved to make the prototype have multiscale information and matching ability. Furthermore, the accuracy of HQProtoPNet can reach or even exceed the accuracy of several black-box models. Additionally, due to the improvement in the quality of the prototype, the model's prediction accuracy is improved by stacking without reducing the interpretability of the stacked model, which gives the model real stackability.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2226658793",
+                        "name": "Jingqi Wang"
+                    },
+                    {
+                        "authorId": "3255510",
+                        "name": "Jiajie Peng"
+                    },
+                    {
+                        "authorId": "2221148121",
+                        "name": "Zhiming Liu"
+                    },
+                    {
+                        "authorId": "11359832",
+                        "name": "Hengjun Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Therefore, we introduce an additional regularization cost LIR (see Figure 3), inspired by [39], that minimizes the changes in the similarities for the prototypical parts of the previous tasks.",
+                "Other methods consider hierarchical classification with prototypes [33], prototypical part transformation [47], and knowledge distillation techniques from prototypes [39]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "064db5889f7cd12d8322490ed52f78dceef0c3f5",
+                "externalIds": {
+                    "ArXiv": "2303.07811",
+                    "DBLP": "journals/corr/abs-2303-07811",
+                    "DOI": "10.48550/arXiv.2303.07811",
+                    "CorpusId": 257504978
+                },
+                "corpusId": 257504978,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/064db5889f7cd12d8322490ed52f78dceef0c3f5",
+                "title": "ICICLE: Interpretable Class Incremental Continual Learning",
+                "abstract": "Continual learning enables incremental learning of new tasks without forgetting those previously learned, resulting in positive knowledge transfer that can enhance performance on both new and old tasks. However, continual learning poses new challenges for interpretability, as the rationale behind model predictions may change over time, leading to interpretability concept drift. We address this problem by proposing Interpretable Class-InCremental LEarning (ICICLE), an exemplar-free approach that adopts a prototypical part-based approach. It consists of three crucial novelties: interpretability regularization that distills previously learned concepts while preserving user-friendly positive reasoning; proximity-based prototype initialization strategy dedicated to the fine-grained setting; and task-recency bias compensation devoted to prototypical parts. Our experimental results demonstrate that ICICLE reduces the interpretability concept drift and outperforms the existing exemplar-free methods of common class-incremental learning when applied to concept-based models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "146543800",
+                        "name": "Dawid Rymarczyk"
+                    },
+                    {
+                        "authorId": "2820687",
+                        "name": "Joost van de Weijer"
+                    },
+                    {
+                        "authorId": "2211435316",
+                        "name": "Bartosz Zieli'nski"
+                    },
+                    {
+                        "authorId": "2470703",
+                        "name": "Bartlomiej Twardowski"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "8ddbdaaacbe980ced6fafae2432ea3cae4a45094",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2301-11145",
+                    "ArXiv": "2301.11145",
+                    "DOI": "10.48550/arXiv.2301.11145",
+                    "CorpusId": 256274501
+                },
+                "corpusId": 256274501,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8ddbdaaacbe980ced6fafae2432ea3cae4a45094",
+                "title": "Learning from Mistakes: Self-Regularizing Hierarchical Semantic Representations in Point Cloud Segmentation",
+                "abstract": "\u2014Recent advances in autonomous robotic technologies have highlighted the growing need for precise environmental analysis. LiDAR semantic segmentation has gained attention to accomplish \ufb01ne-grained scene understanding by acting directly on raw content provided by sensors. Recent solutions showed how different learning techniques can be used to improve the performance of the model, without any architectural or dataset change. Following this trend, we present a coarse-to-\ufb01ne setup that LEArns from classi\ufb01cation mistaKes (LEAK) derived from a standard model. First, classes are clustered into macro groups according to mutual prediction errors; then, the learning process is regularized by: (1) aligning class-conditional prototypical feature representation for both \ufb01ne and coarse classes, (2) weighting instances with a per-class fairness index. Our LEAK approach is very general and can be seamlessly applied on top of any segmentation architecture; indeed, experimental results showed that it enables state-of-the-art performances on different architectures, datasets and tasks, while ensuring more balanced class-wise results and faster convergence.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2152057906",
+                        "name": "E. Camuffo"
+                    },
+                    {
+                        "authorId": "30175138",
+                        "name": "Umberto Michieli"
+                    },
+                    {
+                        "authorId": "39711870",
+                        "name": "S. Milani"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "90a792229a606a9ba4075a575be7c1e4b2ebd347",
+                "externalIds": {
+                    "ArXiv": "2301.04011",
+                    "DBLP": "journals/corr/abs-2301-04011",
+                    "DOI": "10.48550/arXiv.2301.04011",
+                    "CorpusId": 255569763
+                },
+                "corpusId": 255569763,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/90a792229a606a9ba4075a575be7c1e4b2ebd347",
+                "title": "Learning Support and Trivial Prototypes for Interpretable Image Classification",
+                "abstract": "Prototypical part network (ProtoPNet) methods have been designed to achieve interpretable classification by associating predictions with a set of training prototypes, which we refer to as trivial prototypes because they are trained to lie far from the classification boundary in the feature space. Note that it is possible to make an analogy between ProtoPNet and support vector machine (SVM) given that the classification from both methods relies on computing similarity with a set of training points (i.e., trivial prototypes in ProtoPNet, and support vectors in SVM). However, while trivial prototypes are located far from the classification boundary, support vectors are located close to this boundary, and we argue that this discrepancy with the well-established SVM theory can result in ProtoPNet models with inferior classification accuracy. In this paper, we aim to improve the classification of ProtoPNet with a new method to learn support prototypes that lie near the classification boundary in the feature space, as suggested by the SVM theory. In addition, we target the improvement of classification results with a new model, named ST-ProtoPNet, which exploits our support prototypes and the trivial prototypes to provide more effective classification. Experimental results on CUB-200-2011, Stanford Cars, and Stanford Dogs datasets demonstrate that ST-ProtoPNet achieves state-of-the-art classification accuracy and interpretability results. We also show that the proposed support prototypes tend to be better localised in the object of interest rather than in the background region.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1819197623",
+                        "name": "Chongjian Wang"
+                    },
+                    {
+                        "authorId": "2143077720",
+                        "name": "Yuyuan Liu"
+                    },
+                    {
+                        "authorId": "50581035",
+                        "name": "Yuanhong Chen"
+                    },
+                    {
+                        "authorId": "1587750985",
+                        "name": "Fengbei Liu"
+                    },
+                    {
+                        "authorId": "2152947915",
+                        "name": "Yu Tian"
+                    },
+                    {
+                        "authorId": "1947387",
+                        "name": "Davis J. McCarthy"
+                    },
+                    {
+                        "authorId": "39732853",
+                        "name": "H. Frazer"
+                    },
+                    {
+                        "authorId": "145575177",
+                        "name": "G. Carneiro"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Other methods consider hierarchical classification with prototypes [30], prototypical part transformation from the latent space to data space [41], and knowledge distillation technique from prototypes [36]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "7ec03dcac7fdf9e6b2032d2185bcd64a894a4833",
+                "externalIds": {
+                    "ArXiv": "2301.12276",
+                    "DBLP": "journals/corr/abs-2301-12276",
+                    "DOI": "10.1109/WACV56688.2023.00153",
+                    "CorpusId": 256390547
+                },
+                "corpusId": 256390547,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/7ec03dcac7fdf9e6b2032d2185bcd64a894a4833",
+                "title": "ProtoSeg: Interpretable Semantic Segmentation with Prototypical Parts",
+                "abstract": "We introduce ProtoSeg, a novel model for interpretable semantic image segmentation, which constructs its predictions using similar patches from the training set. To achieve accuracy comparable to baseline methods, we adapt the mechanism of prototypical parts and introduce a diversity loss function that increases the variety of prototypes within each class. We show that ProtoSeg discovers semantic concepts, in contrast to standard segmentation models. Experiments conducted on Pascal VOC and Cityscapes datasets confirm the precision and transparency of the presented method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1780093804",
+                        "name": "Mikolaj Sacha"
+                    },
+                    {
+                        "authorId": "146543800",
+                        "name": "Dawid Rymarczyk"
+                    },
+                    {
+                        "authorId": "2096834",
+                        "name": "Lukasz Struski"
+                    },
+                    {
+                        "authorId": "145541197",
+                        "name": "J. Tabor"
+                    },
+                    {
+                        "authorId": "2064445681",
+                        "name": "Bartosz Zieli'nski"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Combining model approximation methods with sample-based models can balance model performance and interpretability [33]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "9381e25e797ecea257c094f65862e7cc5c092188",
+                "externalIds": {
+                    "DBLP": "conf/uic/GaoZJHCL22",
+                    "DOI": "10.1109/SmartWorld-UIC-ATC-ScalCom-DigitalTwin-PriComp-Metaverse56740.2022.00091",
+                    "CorpusId": 260254823
+                },
+                "corpusId": 260254823,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/9381e25e797ecea257c094f65862e7cc5c092188",
+                "title": "ProtoPLSTM: An Interpretable Deep Learning Approach for Wearable Fine-Grained Fall Detection",
+                "abstract": "Existing models have obtained satisfactory results on whether users have fallen or not. However, in our lives, due to the unpredictability of falls, the binary fall detection models cannot identify different patterns of falls and thus cannot take corresponding protective measures. Therefore, the recognition of more subtle falls has become an urgent challenge. Moreover, the complexity of fall detection models makes it difficult to explain the decision process. In this paper, we propose a new interpretable fine-grained fall detection network, called ProtoPLSTM. The model consists of three main modules: CNN-LSTM encoder backbone network, contextual enhancement module, and ProtoPNet-based network. The first module learns a multi-sensor feature representation through a carefully designed embedding network. The contextual enhancement module expands the receptive field to capture more discriminative features through contextual information and then mines the inter-class differences and intra-class associations of different kinds of falls. The last module globally explains why a fall is detected as some kind of fall from the prototype\u2019s perspective. Our experiments on SisFall, a publicly available dataset with the largest number of fall classes, demonstrate that the proposed method can outperform state-of-the-art methods while having interpretability. The visualization and qualitative analysis explained the important factors and decision-making processes for the occurrence of different kinds of falls from a prototypical perspective.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "26155233",
+                        "name": "Chenlong Gao"
+                    },
+                    {
+                        "authorId": "2157676454",
+                        "name": "Teng Zhang"
+                    },
+                    {
+                        "authorId": "1974490",
+                        "name": "Xinlong Jiang"
+                    },
+                    {
+                        "authorId": "2112111387",
+                        "name": "Wuliang Huang"
+                    },
+                    {
+                        "authorId": "2163832137",
+                        "name": "Yiqiang Chen"
+                    },
+                    {
+                        "authorId": "2225620481",
+                        "name": "Jie Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "d79aee8d08fdfcc93da7e21eee73536594c45fc5",
+                "externalIds": {
+                    "DBLP": "journals/cacm/Balasubramanian22",
+                    "DOI": "10.1145/3550491",
+                    "CorpusId": 253022328
+                },
+                "corpusId": 253022328,
+                "publicationVenue": {
+                    "id": "4d9ce1c4-dc84-46b9-903e-e3751c00c7dd",
+                    "name": "Communications of the ACM",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Commun ACM",
+                        "Communications of The ACM"
+                    ],
+                    "issn": "0001-0782",
+                    "url": "http://www.acm.org/pubs/cacm/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/cacm",
+                        "http://www.acm.org/pubs/contents/journals/cacm/",
+                        "https://cacm.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d79aee8d08fdfcc93da7e21eee73536594c45fc5",
+                "title": "Toward explainable deep learning",
+                "abstract": "68 COMMUNICATIONS OF THE ACM | NOVEMBER 2022 | VOL. 65 | NO. 11 I M A G E C O U R T E S Y O F N I T I A A Y O G the model; a regulator may want the explanation to support the fairness of decisionmaking, while a customer support agent may want to respond accordingly to a customer query. This subjectivity necessitates a multipronged technical approach, so a suitable approach can be chosen for a specific application and user context. Researchers across academic and industry organizations in India have explored the explainability of DL models in recent years. A specific catalyst of these efforts was the development of explainable COVID-19 risk prediction models to support decisionmaking during the pandemic over the last two years.10,12,17 Noteworthy efforts from research groups in India have focused on the transparency of DL models, especially in computer vision and natural language processing. tions using logic and neurosymbolic reasoning.1,21,22 Industry researchers in India have also led and contributed to developing practical, useful software toolkits for explainability and its use in AIOps.3,4 Our extensive efforts at IIT-Hyderabad have mirrored the need to address the explainability of DL models from multiple perspectives, to benefit different groups of users in different settings. From a post-hoc explainability perspective (methods to explain a previously trained model), one of our earliest efforts, GradCAM++,19 aimed to develop a generalized gradient-based visual explanation method for convolutional neural networks (CNNs) by considering pixel-level contributions from a given CNN layer toward the predicted output. This method has been widely used around the world for applications including healthcare, bioinformatics, agriculture, and energy informatics. We have since extended such a gradient-based post-hoc perspective to obtain 3D model-normalized saliency maps for face image understanding in John et al.7 Complementarily, ante-hoc interpretability methods seek to bake the capability to provide explanations, along with a prediction, into a model\u2019s training process itself. Such methods help provide accountability to a model\u2019s decision, whereas post-hoc methods may have two different modules to predict and explain, respectively, Answering the question: \u201cWhich part of the input image or document did the model look at while making its prediction?\u201d is essential to validate DL model predictions with human understanding, and thereby increase the trust of human users in model predictions. To this end, efforts have been developed on providing saliency maps (regions of an image a DL model looks at while making a prediction) through gradient-based19 and gradient-free methods6 in computer vision. Similar methods to provide transparency in attention-based language models13 also have been proposed. Looking forward, moving toward nextgeneration AI systems that can reason and strategize, Indian researchers have also addressed the integration of commonsense reasoning in language models,2 as well as obtaining model explanaD E E P LE A R NING ( D L) models have enjoyed tremendous success across application domains within the broader umbrella of artificial intelligence (AI) technologies. However, their \u201cblack-box\u201d nature, coupled with their extensive use across application sectors\u2014including safety-critical and risk-sensitive ones such as healthcare, finance, aerospace, law enforcement, and governance\u2014 has elicited an increasing need for explainability, interpretability, and transparency of decision-making in these models.11,14,18,24 With the recent progression of legal and policy frameworks that mandate explaining decisions made by AI-driven systems (for example, the European Union\u2019s GDPR Article 15(1)(h) and the Algorithmic Accountability Act of 2019 in the U.S.), explainability has become a cornerstone of responsible AI use and deployment. In the Indian context, NITI Aayog recently released a two-part strategy document on envisioning and operationalizing Responsible AI in India,15,16 which puts significant emphasis on the explainability and transparency of AI models. Explainability of DL models lies at the human-machine interface, and different users may expect different explanations in different contexts. A data scientist may want an explanation to help improve Artificial Intelligence | DOI:10.1145/3550491",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1699429",
+                        "name": "V. Balasubramanian"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Many follow-up studies extend ProtoPNet to medical image processing, explanatory debugging, etc [2, 12, 17, 25, 31, 38]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "e983cdf156d932819a032837a9e11c8ee38566d6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-10431",
+                    "ArXiv": "2208.10431",
+                    "DOI": "10.48550/arXiv.2208.10431",
+                    "CorpusId": 251718906
+                },
+                "corpusId": 251718906,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e983cdf156d932819a032837a9e11c8ee38566d6",
+                "title": "ProtoPFormer: Concentrating on Prototypical Parts in Vision Transformers for Interpretable Image Recognition",
+                "abstract": "Prototypical part network (ProtoPNet) has drawn wide attention and boosted many follow-up studies due to its self-explanatory property for explainable artificial intelligence (XAI). However, when directly applying ProtoPNet on vision transformer (ViT) backbones, learned prototypes have a\"distraction\"problem: they have a relatively high probability of being activated by the background and pay less attention to the foreground. The powerful capability of modeling long-term dependency makes the transformer-based ProtoPNet hard to focus on prototypical parts, thus severely impairing its inherent interpretability. This paper proposes prototypical part transformer (ProtoPFormer) for appropriately and effectively applying the prototype-based method with ViTs for interpretable image recognition. The proposed method introduces global and local prototypes for capturing and highlighting the representative holistic and partial features of targets according to the architectural characteristics of ViTs. The global prototypes are adopted to provide the global view of objects to guide local prototypes to concentrate on the foreground while eliminating the influence of the background. Afterwards, local prototypes are explicitly supervised to concentrate on their respective prototypical visual parts, increasing the overall interpretability. Extensive experiments demonstrate that our proposed global and local prototypes can mutually correct each other and jointly make final decisions, which faithfully and transparently reason the decision-making processes associatively from the whole and local perspectives, respectively. Moreover, ProtoPFormer consistently achieves superior performance and visualization results over the state-of-the-art (SOTA) prototype-based baselines. Our code has been released at https://github.com/zju-vipa/ProtoPFormer.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2065788410",
+                        "name": "Mengqi Xue"
+                    },
+                    {
+                        "authorId": "1720973203",
+                        "name": "Qihan Huang"
+                    },
+                    {
+                        "authorId": "1739347431",
+                        "name": "Haofei Zhang"
+                    },
+                    {
+                        "authorId": "26953623",
+                        "name": "Lechao Cheng"
+                    },
+                    {
+                        "authorId": "40403685",
+                        "name": "Jie Song"
+                    },
+                    {
+                        "authorId": "49227857",
+                        "name": "Ming-hui Wu"
+                    },
+                    {
+                        "authorId": "2152127912",
+                        "name": "Mingli Song"
+                    }
+                ]
+            }
+        }
+    ]
+}

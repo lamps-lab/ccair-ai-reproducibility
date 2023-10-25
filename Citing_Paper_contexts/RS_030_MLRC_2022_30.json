@@ -1,0 +1,413 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "isInfluential": true,
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "It is also a natural upper bound for certified individual fairness (Ruoss et al., 2020; Peychev et al., 2021)",
+                "It is also a natural upper bound for certified individual fairness (Ruoss et al., 2020; Peychev et al., 2021)\n2https://www.kaggle.com/competitions/jigsaw-unintended-bias-in-toxicity-classification/data\nand prediction consistency (Yurochkin & Sun, 2020) which consider equal predictions across all\u2026",
+                "(Ruoss et al., 2020; Yeom & Fredrikson, 2020; Peychev et al., 2021) not only enforce, but also certify the adherence to individual fairness constraints expressed in logical formulas, weighted Lp metrics or similarity sets defined in the latent space of a generative model.",
+                "(Ruoss et al., 2020; Yeom & Fredrikson, 2020; Peychev et al., 2021) not only enforce, but also certify the adherence to individual fairness constraints expressed in logical formulas, weighted L metrics or similarity sets defined in the latent space of a generative model."
+            ],
+            "citingPaper": {
+                "paperId": "4ae163ad7dac91bae435eff844d0fd084f0399ec",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-10154",
+                    "ArXiv": "2212.10154",
+                    "DOI": "10.48550/arXiv.2212.10154",
+                    "CorpusId": 254877694
+                },
+                "corpusId": 254877694,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4ae163ad7dac91bae435eff844d0fd084f0399ec",
+                "title": "Human-Guided Fair Classification for Natural Language Processing",
+                "abstract": "Text classifiers have promising applications in high-stake tasks such as resume screening and content moderation. These classifiers must be fair and avoid discriminatory decisions by being invariant to perturbations of sensitive attributes such as gender or ethnicity. However, there is a gap between human intuition about these perturbations and the formal similarity specifications capturing them. While existing research has started to address this gap, current methods are based on hardcoded word replacements, resulting in specifications with limited expressivity or ones that fail to fully align with human intuition (e.g., in cases of asymmetric counterfactuals). This work proposes novel methods for bridging this gap by discovering expressive and intuitive individual fairness specifications. We show how to leverage unsupervised style transfer and GPT-3's zero-shot capabilities to automatically generate expressive candidate pairs of semantically similar sentences that differ along sensitive attributes. We then validate the generated pairs via an extensive crowdsourcing study, which confirms that a lot of these pairs align with human intuition about fairness in the context of toxicity classification. Finally, we show how limited amounts of human feedback can be leveraged to learn a similarity specification that can be used to train downstream fairness-aware models.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2197082358",
+                        "name": "Florian E.Dorner"
+                    },
+                    {
+                        "authorId": "30122763",
+                        "name": "Momchil Peychev"
+                    },
+                    {
+                        "authorId": "153329035",
+                        "name": "N. Konstantinov"
+                    },
+                    {
+                        "authorId": "1828017",
+                        "name": "Naman Goel"
+                    },
+                    {
+                        "authorId": "2137551162",
+                        "name": "Elliott Ash"
+                    },
+                    {
+                        "authorId": "1736447",
+                        "name": "Martin T. Vechev"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Namely, variants of RS have been proposed for various scenarios [9, 23, 43, 44, 72, 99, 104, 122].",
+                "[99] combines RS with generative models to achieve provably fair representation learning, and Bojchevski et al."
+            ],
+            "citingPaper": {
+                "paperId": "30101e8bea3ad990f266e2a9002c83dc4091b1a6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-15614",
+                    "ArXiv": "2210.15614",
+                    "DOI": "10.1145/3548606.3560709",
+                    "CorpusId": 252125464
+                },
+                "corpusId": 252125464,
+                "publicationVenue": {
+                    "id": "73f7fe95-b68b-468f-b7ba-3013ca879e50",
+                    "name": "Conference on Computer and Communications Security",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Workshop Cogn Cell Syst",
+                        "CCS",
+                        "Comput Commun Secur",
+                        "CcS",
+                        "International Symposium on Community-centric Systems",
+                        "International Workshop on Cognitive Cellular Systems",
+                        "Conf Comput Commun Secur",
+                        "Comb Comput Sci",
+                        "Int Symp Community-centric Syst",
+                        "Combinatorics and Computer Science",
+                        "Circuits, Signals, and Systems",
+                        "Computer and Communications Security",
+                        "Circuit Signal Syst"
+                    ],
+                    "url": "https://dl.acm.org/conference/ccs"
+                },
+                "url": "https://www.semanticscholar.org/paper/30101e8bea3ad990f266e2a9002c83dc4091b1a6",
+                "title": "Private and Reliable Neural Network Inference",
+                "abstract": "Reliable neural networks (NNs) provide important inference-time reliability guarantees such as fairness and robustness. Complementarily, privacy-preserving NN inference protects the privacy of client data. So far these two emerging areas have been largely disconnected, yet their combination will be increasingly important. In this work, we present the first system which enables privacy-preserving inference on reliable NNs. Our key idea is to design efficient fully homomorphic encryption (FHE) counterparts for the core algorithmic building blocks of randomized smoothing, a state-of-the-art technique for obtaining reliable models. The lack of required control flow in FHE makes this a demanding task, as na\u00efve solutions lead to unacceptable runtime. We employ these building blocks to enable privacy-preserving NN inference with robustness and fairness guarantees in a system called Phoenix. Experimentally, we demonstrate that Phoenix achieves its goals without incurring prohibitive latencies. To our knowledge, this is the first work which bridges the areas of client data privacy and reliability guarantees for NNs.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2056903313",
+                        "name": "Nikola Jovanovic"
+                    },
+                    {
+                        "authorId": "48849093",
+                        "name": "Marc Fischer"
+                    },
+                    {
+                        "authorId": "39612977",
+                        "name": "Samuel Steffen"
+                    },
+                    {
+                        "authorId": "1736447",
+                        "name": "Martin T. Vechev"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Several FRL methods have proposed approaches for learning individually fair representations (Lahoti et al., 2019; Ruoss et al., 2020; Peychev et al., 2021), a different notion of fairness than group fairness."
+            ],
+            "citingPaper": {
+                "paperId": "3e6f55f2717d0a0886179ca8172f67d426f6347d",
+                "externalIds": {
+                    "DBLP": "conf/icml/0001BDV23",
+                    "ArXiv": "2210.07213",
+                    "CorpusId": 259108836
+                },
+                "corpusId": 259108836,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/3e6f55f2717d0a0886179ca8172f67d426f6347d",
+                "title": "FARE: Provably Fair Representation Learning with Practical Certificates",
+                "abstract": "Fair representation learning (FRL) is a popular class of methods aiming to produce fair classifiers via data preprocessing. Recent regulatory directives stress the need for FRL methods that provide practical certificates, i.e., provable upper bounds on the unfairness of any downstream classifier trained on preprocessed data, which directly provides assurance in a practical scenario. Creating such FRL methods is an important challenge that remains unsolved. In this work, we address that challenge and introduce FARE (Fairness with Restricted Encoders), the first FRL method with practical fairness certificates. FARE is based on our key insight that restricting the representation space of the encoder enables the derivation of practical guarantees, while still permitting favorable accuracy-fairness tradeoffs for suitable instantiations, such as one we propose based on fair trees. To produce a practical certificate, we develop and apply a statistical procedure that computes a finite sample high-confidence upper bound on the unfairness of any downstream classifier trained on FARE embeddings. In our comprehensive experimental evaluation, we demonstrate that FARE produces practical certificates that are tight and often even comparable with purely empirical results obtained by prior methods, which establishes the practical value of our approach.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1931565183",
+                        "name": "Nikola Jovanovi'c"
+                    },
+                    {
+                        "authorId": "2138580250",
+                        "name": "Mislav Balunovi'c"
+                    },
+                    {
+                        "authorId": "2057210414",
+                        "name": "Dimitar I. Dimitrov"
+                    },
+                    {
+                        "authorId": "1736447",
+                        "name": "Martin T. Vechev"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Peychev et al. (2021) address robustness from the perspective of individual fairness: they certify that samples close in a feature directions are close in representation space."
+            ],
+            "citingPaper": {
+                "paperId": "bd3f7423fd505355ad76a93a31c2acdc788aa413",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-04076",
+                    "ArXiv": "2210.04076",
+                    "DOI": "10.48550/arXiv.2210.04076",
+                    "CorpusId": 253837255
+                },
+                "corpusId": 253837255,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/bd3f7423fd505355ad76a93a31c2acdc788aa413",
+                "title": "Robustness of Unsupervised Representation Learning without Labels",
+                "abstract": "Unsupervised representation learning leverages large unlabeled datasets and is competitive with supervised learning. But non-robust encoders may affect downstream task robustness. Recently, robust representation encoders have become of interest. Still, all prior work evaluates robustness using a downstream classification task. Instead, we propose a family of unsupervised robustness measures, which are model- and task-agnostic and label-free. We benchmark state-of-the-art representation encoders and show that none dominates the rest. We offer unsupervised extensions to the FGSM and PGD attacks. When used in adversarial training, they improve most unsupervised robustness measures, including certified robustness. We validate our results against a linear probe and show that, for MOCOv2, adversarial training results in 3 times higher certified accuracy, a 2-fold decrease in impersonation attack success rate and considerable improvements in certified robustness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2070086275",
+                        "name": "Aleksandar Petrov"
+                    },
+                    {
+                        "authorId": "49444240",
+                        "name": "M. Kwiatkowska"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Recent studies have explored the certified fair representation of ML [39, 4, 36].",
+                "In the literature, the concepts of fairness are usually directly defined at the model prediction level, where the criterion is whether the model prediction is fair against individual attribute changes [39, 36, 50] or fair at population level [54].",
+                "[36] Momchil Peychev, Anian Ruoss, Mislav Balunovi\u0107, Maximilian Baader, and Martin Vechev.",
+                "In addition, there is a line of work trying to certify the fair representation [39, 4, 36]."
+            ],
+            "citingPaper": {
+                "paperId": "e171c0bcbf2f44b03b923e5e97e9764fbc555bbf",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-15494",
+                    "ArXiv": "2205.15494",
+                    "DOI": "10.48550/arXiv.2205.15494",
+                    "CorpusId": 249210141
+                },
+                "corpusId": 249210141,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/e171c0bcbf2f44b03b923e5e97e9764fbc555bbf",
+                "title": "Certifying Some Distributional Fairness with Subpopulation Decomposition",
+                "abstract": "Extensive efforts have been made to understand and improve the fairness of machine learning models based on observational metrics, especially in high-stakes domains such as medical insurance, education, and hiring decisions. However, there is a lack of certified fairness considering the end-to-end performance of an ML model. In this paper, we first formulate the certified fairness of an ML model trained on a given data distribution as an optimization problem based on the model performance loss bound on a fairness constrained distribution, which is within bounded distributional distance with the training distribution. We then propose a general fairness certification framework and instantiate it for both sensitive shifting and general shifting scenarios. In particular, we propose to solve the optimization problem by decomposing the original data distribution into analytical subpopulations and proving the convexity of the subproblems to solve them. We evaluate our certified fairness on six real-world datasets and show that our certification is tight in the sensitive shifting scenario and provides non-trivial certification under general shifting. Our framework is flexible to integrate additional non-skewness constraints and we show that it provides even tighter certification under different real-world scenarios. We also compare our certified fairness bound with adapted existing distributional robustness bounds on Gaussian data and demonstrate that our method is significantly tighter.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2153110066",
+                        "name": "Mintong Kang"
+                    },
+                    {
+                        "authorId": "2008285677",
+                        "name": "Linyi Li"
+                    },
+                    {
+                        "authorId": "2110605429",
+                        "name": "Maurice Weber"
+                    },
+                    {
+                        "authorId": "2152797134",
+                        "name": "Yang Liu"
+                    },
+                    {
+                        "authorId": "2146064174",
+                        "name": "Ce Zhang"
+                    },
+                    {
+                        "authorId": "71788673",
+                        "name": "Bo Li"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Recent studies have explored the certified fair representation of ML [39, 4, 36].",
+                "In the literature, the concepts of fairness are usually directly defined at the model prediction level, where the criterion is whether the model prediction is fair against individual attribute changes [39, 36, 50] or fair at population level [54].",
+                "In addition, there is a line of work trying to certify the fair representation [39, 4, 36]."
+            ],
+            "citingPaper": {
+                "paperId": "ddc347327bb5215930ece17c265c3487db651bca",
+                "externalIds": {
+                    "CorpusId": 259373132
+                },
+                "corpusId": 259373132,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ddc347327bb5215930ece17c265c3487db651bca",
+                "title": "Certifying Some Distributional Fairness with Subpopulation Decomposition",
+                "abstract": "Extensive efforts have been made to understand and improve the fairness of machine learning models based on different fairness measurement metrics, especially in high-stakes domains such as medical insurance, education, and hiring decisions. However, there is a lack of certified fairness on the end-to-end performance of an ML model. In this paper, we first formulate the certified fairness of an ML model trained on a given data distribution as an optimization problem based on the model performance loss bound on a fairness constrained distribution, which is within bounded distributional distance with the training distribution. We then propose a general fairness certification framework and instantiate it for both sensitive shifting and general shifting scenarios. In particular, we propose to solve the optimization problem by decomposing the original data distribution into analytical subpopulations and proving the convexity of the sub-problems to solve them. We evaluate our certified fairness on six real-world datasets and show that our certification is tight in the sensitive shifting scenario and provides non-trivial certification under general shifting. Our framework is flexible to integrate additional non-skewness constraints and we show that it provides even tighter certification under different real-world scenarios. We also compare our certified fairness bound with adapted existing distributional robustness bounds on Gaussian data and demonstrate that our method is significantly tighter.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "31638968",
+                        "name": "Samuel Drews"
+                    },
+                    {
+                        "authorId": "34894873",
+                        "name": "A. Nori"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "First, several FRL methods have proposed approaches for learning individually fair representations (Lahoti et al., 2019; Ruoss et al., 2020; Peychev et al., 2021), a different notion of fairness than group fairness which we focus on."
+            ],
+            "citingPaper": {
+                "paperId": "f99b39a5b888b955321615af7b02126a6f55d1b8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-07213",
+                    "DOI": "10.48550/arXiv.2210.07213",
+                    "CorpusId": 252873437
+                },
+                "corpusId": 252873437,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f99b39a5b888b955321615af7b02126a6f55d1b8",
+                "title": "FARE: Provably Fair Representation Learning",
+                "abstract": "Fair representation learning (FRL) is a popular class of methods that can replace 1 the original dataset with a debiased synthetic one, which is then to be used to train 2 fair classi\ufb01ers. However, recent work has shown that prior methods achieve worse 3 accuracy-fairness tradeoffs than originally suggested, dictating the need for FRL 4 methods that provide provable bounds on unfairness of any downstream classi- 5 \ufb01er, a challenge yet unsolved. In this work we address this challenge and propose 6 Fairness with Restricted Encoders (FARE), the \ufb01rst FRL method with provable 7 fairness guarantees. Our key insight is that restricting the representation space 8 of the encoder enables us to derive fairness guarantees, while allowing empiri- 9 cal accuracy-fairness tradeoffs comparable to prior work. FARE instantiates this 10 idea with a tree-based encoder, a choice motivated by advantages of decision trees 11 when applied in our setting. Crucially, we develop and apply a practical statisti- 12 cal procedure that computes a high-con\ufb01dence upper bound on the unfairness of 13 any downstream classi\ufb01er. In our experimental evaluation on several datasets we 14 demonstrate that FARE produces tight upper bounds, often comparable with em- 15 pirical results of prior methods, establishing the practical value of our approach. 16",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1931565183",
+                        "name": "Nikola Jovanovi'c"
+                    },
+                    {
+                        "authorId": "2138580250",
+                        "name": "Mislav Balunovi'c"
+                    },
+                    {
+                        "authorId": "2057210414",
+                        "name": "Dimitar I. Dimitrov"
+                    },
+                    {
+                        "authorId": "1736447",
+                        "name": "Martin T. Vechev"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "First, in the setting of FRL, several methods have proposed approaches for learning individually fair representations (Lahoti et al., 2019; Ruoss et al., 2020; Peychev et al., 2021), a different notion of fairness than group fairness which we focus on."
+            ],
+            "citingPaper": {
+                "paperId": "bd7caf7ab91974ac8c374a6c7366ffb00799dbc1",
+                "externalIds": {
+                    "CorpusId": 253064648
+                },
+                "corpusId": 253064648,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/bd7caf7ab91974ac8c374a6c7366ffb00799dbc1",
+                "title": "FARE: P ROVABLY F AIR R EPRESENTATION L EARNING",
+                "abstract": "Fair representation learning (FRL) is a popular class of methods aiming to produce fair classifiers via data preprocessing. However, recent work has shown that prior methods achieve worse accuracy-fairness tradeoffs than originally suggested by their results. This dictates the need for FRL methods that provide provable upper bounds on unfairness of any downstream classifier, a challenge yet unsolved. In this work we address this challenge and propose Fairness with Restricted Encoders (FARE), the first FRL method with provable fairness guarantees. Our key insight is that restricting the representation space of the encoder enables us to derive suitable fairness guarantees, while allowing empirical accuracy-fairness tradeoffs comparable to prior work. FARE instantiates this idea with a tree-based encoder, a choice motivated by inherent advantages of decision trees when applied in our setting. Crucially, we develop and apply a practical statistical procedure that computes a high-confidence upper bound on the unfairness of any downstream classifier. In our experimental evaluation on several datasets and settings we demonstrate that FARE produces tight upper bounds, often comparable with empirical results of prior methods, which establishes the practical value of our approach.",
+                "year": 2022,
+                "authors": []
+            }
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "(Ruoss et al., 2020; Yeom & Fredrikson, 2020; Peychev et al., 2021) not only enforce, but also certify the adherence to individual fairness constraints expressed in logical formulas, weighted Lp metrics or similarity sets defined in the latent space of a generative model.",
+                "(Ruoss et al., 2020; Yeom & Fredrikson, 2020; Peychev et al., 2021) not only enforce, but also certify the adherence to individual fairness constraints expressed in logical formulas, weighted L metrics or similarity sets defined in the latent space of a generative model."
+            ],
+            "citingPaper": {
+                "paperId": "4863c890e7e0b8f2e3538097686ff76b5634ea64",
+                "externalIds": {
+                    "CorpusId": 253065192
+                },
+                "corpusId": 253065192,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/4863c890e7e0b8f2e3538097686ff76b5634ea64",
+                "title": "G ENERATING I NTUITIVE F AIRNESS S PECIFICATIONS FOR N ATURAL L ANGUAGE P ROCESSING",
+                "abstract": "Text classifiers have promising applications in high-stake tasks such as resume screening and content moderation. These classifiers must be fair and avoid discriminatory decisions by being invariant to perturbations of sensitive attributes such as gender or ethnicity. However, there is a gap between human intuition about these perturbations and the formal similarity specifications capturing them. While existing research has started to address this gap, current methods are based on hardcoded word replacements, resulting in specifications with limited expressivity or ones that fail to fully align with human intuition (e.g., in cases of asymmetric counterfactuals). This work proposes novel methods for bridging this gap by discovering expressive and intuitive individual fairness specifications. We show how to leverage unsupervised style transfer and GPT-3\u2019s zero-shot capabilities to automatically generate expressive candidate pairs of semantically similar sentences that differ along sensitive attributes. We then validate the generated pairs via an extensive crowdsourcing study, which confirms that a lot of these pairs align with human intuition about fairness in the context of toxicity classification. Finally, we show how limited amounts of human feedback can be leveraged to learn a similarity specification that can be used to train downstream fairness-aware models.",
+                "year": 2022,
+                "authors": []
+            }
+        }
+    ]
+}

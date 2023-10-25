@@ -1,0 +1,2483 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Ranjan et al. have proposed RepRPN [8], which achieves exemplar-free counting by identifying exemplars from the most frequent objects via a Region Proposal Network (RPN)-based [40] model.",
+                "We use the FSC-147 dataset [5] to train the base counting model and the error predictor.",
+                "Similar to previous works [5], [6], the base counting model uses the input image and the exemplars to obtain a density map for object counting.",
+                "To verify that, we use our selected patches as the exemplars for four other different exemplar-based methods: FamNet+ [5], BMNet [6], BMNet+ [6] and SAFECount [38].",
+                "By using our patch selection method with the SD-generated class prototype, the error rates are further reduced for most cases, e.g., we observe for FamNet+ [5], there is an error reduction of 12 .",
+                ", we observe for FamNet+ [5], there is an error reduction of 12.",
+                "Xian et al. [54] use a conditional Wasserstein Generative Adversarial Network (GAN) [56] to generate unseen features which can then be used to train a discriminative classifier for ZSL.",
+                "Recently, class-agnostic counting [5], [6], [7] has been proposed to count objects of arbitrary categories.",
+                "Class-agnostic object counting aims to count arbitrary categories given only a few exemplars [5], [6], [7], [34], [35], [36], [37], [38], [39].",
+                "To select the class-relevant patches, we use the Region Proposal Network of Faster RCNN pre-trained on MS-COCO dataset to generate 100 object proposals per image.",
+                "FamNet [5] adopts a similar way to do correlation matching and further applies test-time adaptation.",
+                "Exemplar-based methods include FamNet (Few-shot adaptation and matching Network [5]), BMNet (Bilinear Matching Network [6]), CounTR (Counting TRansformer [37]) and SAFECount (Similarity-Aware Feature Enhancement block for object Counting [38]).",
+                "Network Architecture."
+            ],
+            "citingPaper": {
+                "paperId": "5d7982e88ad9297f017e7aa3e87c5e213142d574",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-13097",
+                    "ArXiv": "2309.13097",
+                    "DOI": "10.48550/arXiv.2309.13097",
+                    "CorpusId": 262466060
+                },
+                "corpusId": 262466060,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5d7982e88ad9297f017e7aa3e87c5e213142d574",
+                "title": "Zero-Shot Object Counting with Language-Vision Models",
+                "abstract": "Class-agnostic object counting aims to count object instances of an arbitrary class at test time. It is challenging but also enables many potential applications. Current methods require human-annotated exemplars as inputs which are often unavailable for novel categories, especially for autonomous systems. Thus, we propose zero-shot object counting (ZSC), a new setting where only the class name is available during test time. This obviates the need for human annotators and enables automated operation. To perform ZSC, we propose finding a few object crops from the input image and use them as counting exemplars. The goal is to identify patches containing the objects of interest while also being visually representative for all instances in the image. To do this, we first construct class prototypes using large language-vision models, including CLIP and Stable Diffusion, to select the patches containing the target objects. Furthermore, we propose a ranking model that estimates the counting error of each patch to select the most suitable exemplars for counting. Experimental results on a recent class-agnostic counting dataset, FSC-147, validate the effectiveness of our method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2211912719",
+                        "name": "Jingyi Xu"
+                    },
+                    {
+                        "authorId": "143631873",
+                        "name": "Hieu M. Le"
+                    },
+                    {
+                        "authorId": "145654220",
+                        "name": "D. Samaras"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Motivated by the previous crowd counting methods [Liu et al. 2019; Ranjan et al. 2021], we generate the groundtruth density map, P\u2217 \u2208 RH\u00d7W , from the 2D root coordinates by using a Gaussian kernel with adaptive window size."
+            ],
+            "citingPaper": {
+                "paperId": "06e3d54773d0f79b71d9661e01cf6ee3f82bd6b6",
+                "externalIds": {
+                    "ArXiv": "2309.12787",
+                    "DBLP": "journals/corr/abs-2309-12787",
+                    "DOI": "10.48550/arXiv.2309.12787",
+                    "CorpusId": 262216955
+                },
+                "corpusId": 262216955,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/06e3d54773d0f79b71d9661e01cf6ee3f82bd6b6",
+                "title": "EMS: 3D Eyebrow Modeling from Single-view Images",
+                "abstract": "Eyebrows play a critical role in facial expression and appearance. Although the 3D digitization of faces is well explored, less attention has been drawn to 3D eyebrow modeling. In this work, we propose EMS, the first learning-based framework for single-view 3D eyebrow reconstruction. Following the methods of scalp hair reconstruction, we also represent the eyebrow as a set of fiber curves and convert the reconstruction to fibers growing problem. Three modules are then carefully designed: RootFinder firstly localizes the fiber root positions which indicates where to grow; OriPredictor predicts an orientation field in the 3D space to guide the growing of fibers; FiberEnder is designed to determine when to stop the growth of each fiber. Our OriPredictor is directly borrowing the method used in hair reconstruction. Considering the differences between hair and eyebrows, both RootFinder and FiberEnder are newly proposed. Specifically, to cope with the challenge that the root location is severely occluded, we formulate root localization as a density map estimation task. Given the predicted density map, a density-based clustering method is further used for finding the roots. For each fiber, the growth starts from the root point and moves step by step until the ending, where each step is defined as an oriented line with a constant length according to the predicted orientation field. To determine when to end, a pixel-aligned RNN architecture is designed to form a binary classifier, which outputs stop or not for each growing step. To support the training of all proposed networks, we build the first 3D synthetic eyebrow dataset that contains 400 high-quality eyebrow models manually created by artists. Extensive experiments have demonstrated the effectiveness of the proposed EMS pipeline on a variety of different eyebrow styles and lengths, ranging from short and sparse to long bushy eyebrows.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2245412389",
+                        "name": "Chenghong Li"
+                    },
+                    {
+                        "authorId": "2244663730",
+                        "name": "Leyang Jin"
+                    },
+                    {
+                        "authorId": "2245255921",
+                        "name": "Yujian Zheng"
+                    },
+                    {
+                        "authorId": "2244641432",
+                        "name": "Yizhou Yu"
+                    },
+                    {
+                        "authorId": "2246526645",
+                        "name": "Xiaoguang Han"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "988fc3ffba8545bc735a9651f41d416e099981fd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-05277",
+                    "ArXiv": "2309.05277",
+                    "DOI": "10.48550/arXiv.2309.05277",
+                    "CorpusId": 261681718
+                },
+                "corpusId": 261681718,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/988fc3ffba8545bc735a9651f41d416e099981fd",
+                "title": "Interactive Class-Agnostic Object Counting",
+                "abstract": "We propose a novel framework for interactive class-agnostic object counting, where a human user can interactively provide feedback to improve the accuracy of a counter. Our framework consists of two main components: a user-friendly visualizer to gather feedback and an efficient mechanism to incorporate it. In each iteration, we produce a density map to show the current prediction result, and we segment it into non-overlapping regions with an easily verifiable number of objects. The user can provide feedback by selecting a region with obvious counting errors and specifying the range for the estimated number of objects within it. To improve the counting result, we develop a novel adaptation loss to force the visual counter to output the predicted count within the user-specified range. For effective and efficient adaptation, we propose a refinement module that can be used with any density-based visual counter, and only the parameters in the refinement module will be updated during adaptation. Our experiments on two challenging class-agnostic object counting benchmarks, FSCD-LVIS and FSC-147, show that our method can reduce the mean absolute error of multiple state-of-the-art visual counters by roughly 30% to 40% with minimal user input. Our project can be found at https://yifehuang97.github.io/ICACountProjectPage/.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2239057739",
+                        "name": "Yifeng Huang"
+                    },
+                    {
+                        "authorId": "2673180",
+                        "name": "Viresh Ranjan"
+                    },
+                    {
+                        "authorId": "2356016",
+                        "name": "Minh Hoai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "97d62ca2cb2d0a1707a639251535ae5edd84bf58",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-04820",
+                    "ArXiv": "2309.04820",
+                    "DOI": "10.48550/arXiv.2309.04820",
+                    "CorpusId": 261682465
+                },
+                "corpusId": 261682465,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/97d62ca2cb2d0a1707a639251535ae5edd84bf58",
+                "title": "ABC Easy as 123: A Blind Counter for Exemplar-Free Multi-Class Class-agnostic Counting",
+                "abstract": "Class-agnostic counting methods enumerate objects of an arbitrary class, providing tremendous utility in many fields. Prior works have limited usefulness as they require either a set of examples of the type to be counted or that the image contains only a single type of object. A significant factor in these shortcomings is the lack of a dataset to properly address counting in settings with more than one kind of object present. To address these issues, we propose the first Multi-class, Class-Agnostic Counting dataset (MCAC) and A Blind Counter (ABC123), a method that can count multiple types of objects simultaneously without using examples of type during training or inference. ABC123 introduces a new paradigm where instead of requiring exemplars to guide the enumeration, examples are found after the counting stage to help a user understand the generated outputs. We show that ABC123 outperforms contemporary methods on MCAC without the requirement of human in-the-loop annotations. We also show that this performance transfers to FSC-147, the standard class-agnostic counting dataset.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "122498389",
+                        "name": "Michael A. Hobley"
+                    },
+                    {
+                        "authorId": "2824784",
+                        "name": "V. Prisacariu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "To evaluate the counting ability, we use the standard FSC-147 dataset [46], which contains 6135 images covering 147 object categories, with counts ranging from 7 to 3731 and an average count of 56 objects per image.",
+                "Next, we compare with previous methods on two standard counting datasets: FSC-147 [46] and MSO [61]."
+            ],
+            "citingPaper": {
+                "paperId": "5404c7566b14e5ba0b708d3ccf1228a29b4c18f8",
+                "externalIds": {
+                    "ArXiv": "2307.08727",
+                    "DBLP": "journals/corr/abs-2307-08727",
+                    "DOI": "10.48550/arXiv.2307.08727",
+                    "CorpusId": 259951378
+                },
+                "corpusId": 259951378,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5404c7566b14e5ba0b708d3ccf1228a29b4c18f8",
+                "title": "Semantic Counting from Self-Collages",
+                "abstract": "While recent supervised methods for reference-based object counting continue to improve the performance on benchmark datasets, they have to rely on small datasets due to the cost associated with manually annotating dozens of objects in images. We propose Unsupervised Counter (UnCo), a model that can learn this task without requiring any manual annotations. To this end, we construct\"SelfCollages\", images with various pasted objects as training samples, that provide a rich learning signal covering arbitrary object types and counts. Our method builds on existing unsupervised representations and segmentation techniques to successfully demonstrate the ability to count objects without manual supervision. Our experiments show that our method not only outperforms simple baselines and generic models such as FasterRCNN, but also matches the performance of supervised counting models in some domains.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2223775270",
+                        "name": "Lukas Knobel"
+                    },
+                    {
+                        "authorId": "22237490",
+                        "name": "Tengda Han"
+                    },
+                    {
+                        "authorId": "47792365",
+                        "name": "Yuki M. Asano"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "We first train a base counting model using images from the single-class counting dataset [30].",
+                "Similar to previous works [30, 32], the base counting model uses the input image and the exemplars to obtain a density map for object counting.",
+                "Specifically, we use our synthetic multi-class images to fine-tune three pre-trained single-class counting models: BMNet+ [32], FamNet+ [30] and SAFECount [41].",
+                "Most of the current CAC methods focus on capturing the intra-class similarity between image features [23, 32, 30, 14].",
+                "We compare our method with recent class-agnostic counting methods, including CounTR (Counting TRansformer [23]), FamNet (Few-shot adaptation and matching Network [30]), SAFECount (Similarity-Aware Feature Enhancement block for object Counting [41]) and BMNet (Bilinear Matching Network [32]).",
+                "Network architecture For the base counting model, we use ResNet-50 as the backbone of the feature extractor, initialized with weights of a pre-trained ImageNet model.",
+                "However, this is not the case for the current counting datasets [30, 17], and collecting such annotations is time-consuming and laborintensive.",
+                "Class-agnostic object counting aims to count arbitrary categories given only a few exemplars [26, 30, 40, 32, 14, 28, 23, 42, 2]."
+            ],
+            "citingPaper": {
+                "paperId": "7a1f9945dd732a35c852c7281ab0013b9921783a",
+                "externalIds": {
+                    "ArXiv": "2307.07677",
+                    "DBLP": "journals/corr/abs-2307-07677",
+                    "DOI": "10.48550/arXiv.2307.07677",
+                    "CorpusId": 259937258
+                },
+                "corpusId": 259937258,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7a1f9945dd732a35c852c7281ab0013b9921783a",
+                "title": "Learning from Pseudo-labeled Segmentation for Multi-Class Object Counting",
+                "abstract": "Class-agnostic counting (CAC) has numerous potential applications across various domains. The goal is to count objects of an arbitrary category during testing, based on only a few annotated exemplars. In this paper, we point out that the task of counting objects of interest when there are multiple object classes in the image (namely, multi-class object counting) is particularly challenging for current object counting models. They often greedily count every object regardless of the exemplars. To address this issue, we propose localizing the area containing the objects of interest via an exemplar-based segmentation model before counting them. The key challenge here is the lack of segmentation supervision to train this model. To this end, we propose a method to obtain pseudo segmentation masks using only box exemplars and dot annotations. We show that the segmentation model trained on these pseudo-labeled masks can effectively localize objects of interest for an arbitrary multi-class image based on the exemplars. To evaluate the performance of different methods on multi-class counting, we introduce two new benchmarks, a synthetic multi-class dataset and a new test set of real images in which objects from multiple classes are present. Our proposed method shows a significant advantage over the previous CAC methods on these two benchmarks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2155955514",
+                        "name": "Jingyi Xu"
+                    },
+                    {
+                        "authorId": "143631873",
+                        "name": "Hieu M. Le"
+                    },
+                    {
+                        "authorId": "145654220",
+                        "name": "D. Samaras"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Evaluation experiments have been done on FSC147 datasets, and the results demonstrate the superiority of our methods over existing ones.",
+                "We use the FSC147 data with the \u201ccar\u201d category excluded to train our model, and test on CARPK without fine-tuning and fine-tuning respectively.",
+                "Following the previous work [7, 9, 10], we also test the generalization performance of our model on the CARPK dataset.",
+                "In the FSC147 dataset, there are only three box labels in each image.",
+                "The quantitative results regarding the counting metrics of FSC147 are shown in Table II and localization metrics are shown in Table III.",
+                "Few Shot Adaptation and Matching Network (FamNet) [9] proposes a matching network with a multi-scale strategy and designs an adaptive loss function for fast adaptation to new categories.",
+                "These previous networks are all based on density map, although GMN [7] uses a fixed threshold to obtain point coordinates when applying the trained model to a specific category of data sets, which is not applicable to class-agnostic datasets such as FSC147 [10], due to the large difference in the maxima of density maps for different class.",
+                "Our method was compared with GMN [7], MAML [25], FamNet [9], CFOCNet [8] and BMNet+ [10].",
+                "The FSC147 Dataset [9] is the first large-scale, multi-category counting dataset for class-agnostic counting.",
+                "We trained the model on the training set of FSC147 and\n2925\nAuthorized licensed use limited to the terms of the applicable license agreement with IEEE.",
+                "CAC belongs to the few-shot problem, also known as few-shot counting (FSC) [8, 9].",
+                "In Table I, we compare the counting results obtained with our post-processing method to the density map integration results on FamNet and BMNet+.",
+                "For the FSC147 dataset, we define \u03c3 as follows:\n\u03c3s = min(wi, hi)/2, i \u2208 {1, 2, 3} (11)\n\u03c3l = mean( \u221a w2i + h 2 i /2), i \u2208 {1, 2, 3} (12)\n\u03c3s is a more stringent standard than \u03c3l.",
+                "Note that GMN and FamNet use 5 and 12\n2924\nAuthorized licensed use limited to the terms of the applicable license agreement with IEEE."
+            ],
+            "citingPaper": {
+                "paperId": "a31e4f3ea212237dab603779f96f41857a6169b3",
+                "externalIds": {
+                    "DBLP": "conf/icmcs/ZhangZZ23",
+                    "DOI": "10.1109/ICME55011.2023.00496",
+                    "CorpusId": 261127022
+                },
+                "corpusId": 261127022,
+                "publicationVenue": {
+                    "id": "975e1529-a14b-436f-ad7e-a09d8eabc50d",
+                    "name": "IEEE International Conference on Multimedia and Expo",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICME",
+                        "Int Conf Multimedia Expo",
+                        "IEEE Int Conf Multimedia Expo",
+                        "International Conference on Multimedia and Expo"
+                    ],
+                    "issn": "1945-7871",
+                    "alternate_issns": [
+                        "2330-7927"
+                    ],
+                    "url": "http://csdl2.computer.org/persagen/ProceedingByFilter.jsp?filter=I",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/conferences.jsp",
+                        "http://www.wikicfp.com/cfp/program?id=1418"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a31e4f3ea212237dab603779f96f41857a6169b3",
+                "title": "Counting and Locating Anything: Class-agnostic Few-shot Object Counting and Localization",
+                "abstract": "We focus on a new task for class-agnostic object localization (CAOL), which not only counts objects of any class but also outputs their point locations. Given one or more examples of objects of interest, the CAOL model should output the count and point locations of objects of interest in the query image. We propose two solutions: (1) a post-processing method for class-agnostic object counting models based on density maps, called Maximum Search Strategy (MSS), which converts density maps into specific point coordinates without the need for a threshold. (2) a point-based Class-Agnostic Counting and Localization (CACL) model that directly predicts points for each object of interest, providing an end-to-end solution without the need for post-processing; While MSS obtains promising localization results as long as good quality density map is available, CACL achieves state-of-the-art results for both counting and localization tasks. Our experiments on the CARPK dataset demonstrate the strong generalization performance of CACL model.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2233738802",
+                        "name": "Yiwen Zhang"
+                    },
+                    {
+                        "authorId": "2208103934",
+                        "name": "Hailun Zhang"
+                    },
+                    {
+                        "authorId": "7345195",
+                        "name": "Qijun Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "The FSC147 dataset comprises 6135 images from 147 distinct object categories.",
+                "The compared approaches include GMN [9], FamNet+ [15], CFOCNet+ [24], and BMNet+ [17].",
+                "Research focuses on improving similarity map quality [9, 15,17,24,26] and addressing issues like test-time adaptation [14] and the need for human-annotated exemplars [14, 22].",
+                "works [9, 14, 15, 17, 22, 24, 26], offer a more flexible solution by enabling the counting of objects from arbitrary categories with the aid of a few support exemplars.",
+                "We evaluate our approaches on two commonly used counting datasets, namely, FSC147 [15] and CARPK [4].",
+                "Research efforts have focused on improving the quality of similarity maps to enhance counting accuracy [2,9,15,17,24,26,28,29]."
+            ],
+            "citingPaper": {
+                "paperId": "4aa7bf09d77f88599d27049021bd1b302988721f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-00038",
+                    "ArXiv": "2307.00038",
+                    "DOI": "10.48550/arXiv.2307.00038",
+                    "CorpusId": 259316221
+                },
+                "corpusId": 259316221,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/4aa7bf09d77f88599d27049021bd1b302988721f",
+                "title": "Training-free Object Counting with Prompts",
+                "abstract": "This paper tackles the problem of object counting in images. Existing approaches rely on extensive training data with point annotations for each object, making data collection labor-intensive and time-consuming. To overcome this, we propose a training-free object counter that treats the counting task as a segmentation problem. Our approach leverages the Segment Anything Model (SAM), known for its high-quality masks and zero-shot segmentation capability. However, the vanilla mask generation method of SAM lacks class-specific information in the masks, resulting in inferior counting accuracy. To overcome this limitation, we introduce a prior-guided mask generation method that incorporates three types of priors into the segmentation process, enhancing efficiency and accuracy. Additionally, we tackle the issue of counting objects specified through text by proposing a two-stage approach that combines reference object selection and prior-guided mask generation. Extensive experiments on standard datasets demonstrate the competitive performance of our training-free counter compared to learning-based approaches. This paper presents a promising solution for counting objects in various scenarios without the need for extensive data collection and counting-specific training. Code is available at \\url{https://github.com/shizenglin/training-free-object-counter}",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3480262",
+                        "name": "Zenglin Shi"
+                    },
+                    {
+                        "authorId": "2000311149",
+                        "name": "Ying Sun"
+                    },
+                    {
+                        "authorId": "2418491",
+                        "name": "Mengmi Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "FSC147[44] is a dataset of 1190 images containing various objects, including animals, vehicles, and household items.",
+                "The Binary Locating Metric covers the data from VOC2012, FSC147, and LSP.",
+                "In the FSC147 dataset, there are data samples with dozens or even hundreds of objects, and these MLLM models would reply with \u201cI cannot accurately count the number\u201d for such data samples.",
+                "Therefore, we conducted tests on the subset of the FSC147 dataset with less than 10 objects to evaluate the performance of the models on simple data, as shown in Figure 5 (b).",
+                "[44] Viresh Ranjan, Udbhav Sharma, Thu Nguyen, and Minh Hoai."
+            ],
+            "citingPaper": {
+                "paperId": "fd755dc7b5b206c17fd953db04e1c888d45b6e4e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-06687",
+                    "ArXiv": "2306.06687",
+                    "DOI": "10.48550/arXiv.2306.06687",
+                    "CorpusId": 259138958
+                },
+                "corpusId": 259138958,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fd755dc7b5b206c17fd953db04e1c888d45b6e4e",
+                "title": "LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark",
+                "abstract": "Large language models have become a potential pathway toward achieving artificial general intelligence. Recent works on multi-modal large language models have demonstrated their effectiveness in handling visual modalities. In this work, we extend the research of MLLMs to point clouds and present the LAMM-Dataset and LAMM-Benchmark for 2D image and 3D point cloud understanding. We also establish an extensible framework to facilitate the extension of MLLMs to additional modalities. Our main contribution is three-fold: 1) We present the LAMM-Dataset and LAMM-Benchmark, which cover almost all high-level vision tasks for 2D and 3D vision. Extensive experiments validate the effectiveness of our dataset and benchmark. 2) We demonstrate the detailed methods of constructing instruction-tuning datasets and benchmarks for MLLMs, which will enable future research on MLLMs to scale up and extend to other domains, tasks, and modalities faster. 3) We provide a primary but potential MLLM training framework optimized for modalities' extension. We also provide baseline models, comprehensive experimental observations, and analysis to accelerate future research. Codes and datasets are now available at https://github.com/OpenLAMM/LAMM.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "13050405",
+                        "name": "Zhen-fei Yin"
+                    },
+                    {
+                        "authorId": "2110170885",
+                        "name": "Jiong Wang"
+                    },
+                    {
+                        "authorId": "2115872322",
+                        "name": "Jianjian Cao"
+                    },
+                    {
+                        "authorId": "2144146362",
+                        "name": "Zhelun Shi"
+                    },
+                    {
+                        "authorId": "2115296810",
+                        "name": "Dingning Liu"
+                    },
+                    {
+                        "authorId": "2027599235",
+                        "name": "Mukai Li"
+                    },
+                    {
+                        "authorId": "37145669",
+                        "name": "Lu Sheng"
+                    },
+                    {
+                        "authorId": "50010487",
+                        "name": "Lei Bai"
+                    },
+                    {
+                        "authorId": "2116084167",
+                        "name": "Xiaoshui Huang"
+                    },
+                    {
+                        "authorId": "2184760304",
+                        "name": "Zhiyong Wang"
+                    },
+                    {
+                        "authorId": "3001348",
+                        "name": "Wanli Ouyang"
+                    },
+                    {
+                        "authorId": "1388486428",
+                        "name": "Jing Shao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "CounTX is evaluated on FSC-147 [29], a class-agnostic object counting dataset containing 6135 images.",
+                "Instead, it proposes optimal visual exemplars for use by existing class-agnostic object counting networks such as FamNet [29], BMNet [32], BMNet+ [32], and Xu et al.",
+                "The goal of class-agnostic object counting is to count the instances of an arbitrary class in an image given a number of visual exemplars at the time of inference [1, 7, 8, 18, 19, 20, 24, 29, 32, 35, 36].",
+                "In addition to this model, we make the following contributions: (i) we compare the performance of CounTX to prior work on open-world object counting, and show that our approach exceeds the state of the art on all measures on the FSC-147 [29] benchmark for methods that use text to specify the task; (ii) we present and release FSC-147-D, an enhanced version of FSC-147 with text descriptions, so that object classes can be described with more detailed language than their simple class names.",
+                "We are the first to tackle this open-world counting problem using a single-stage approach, without relying on an exemplar-based counting model; Second, we augment the FSC-147 [29] dataset with class descriptions and release the modified dataset, FSC-147-D, for future research; Third, we verify the effectiveness of our model and training procedure on the FSC-147 dataset through both quantitative and qualitative results."
+            ],
+            "citingPaper": {
+                "paperId": "2274769488f95221c2f5090c1d9bc16c3ef6b16c",
+                "externalIds": {
+                    "ArXiv": "2306.01851",
+                    "DBLP": "journals/corr/abs-2306-01851",
+                    "DOI": "10.48550/arXiv.2306.01851",
+                    "CorpusId": 259075464
+                },
+                "corpusId": 259075464,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2274769488f95221c2f5090c1d9bc16c3ef6b16c",
+                "title": "Open-world Text-specified Object Counting",
+                "abstract": "Our objective is open-world object counting in images, where the target object class is specified by a text description. To this end, we propose CounTX, a class-agnostic, single-stage model using a transformer decoder counting head on top of pre-trained joint text-image representations. CounTX is able to count the number of instances of any class given only an image and a text description of the target object class, and can be trained end-to-end. In addition to this model, we make the following contributions: (i) we compare the performance of CounTX to prior work on open-world object counting, and show that our approach exceeds the state of the art on all measures on the FSC-147 benchmark for methods that use text to specify the task; (ii) we present and release FSC-147-D, an enhanced version of FSC-147 with text descriptions, so that object classes can be described with more detailed language than their simple class names. FSC-147-D and the code are available at https://www.robots.ox.ac.uk/~vgg/research/countx.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2219554546",
+                        "name": "Niki Amini-Naieni"
+                    },
+                    {
+                        "authorId": "2219550571",
+                        "name": "Kiana Amini-Naieni"
+                    },
+                    {
+                        "authorId": "22237490",
+                        "name": "Tengda Han"
+                    },
+                    {
+                        "authorId": "1688869",
+                        "name": "Andrew Zisserman"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "A recent approach [18] proposed a few-shot learning strategy using exemplar and density map pairs, which could be extended to novel object classes."
+            ],
+            "citingPaper": {
+                "paperId": "ce2da85a3155ededa5347d30035728bba51721e4",
+                "externalIds": {
+                    "DBLP": "conf/crv/AlessandroMH23",
+                    "DOI": "10.1109/CRV60082.2023.00021",
+                    "CorpusId": 260098807
+                },
+                "corpusId": 260098807,
+                "publicationVenue": {
+                    "id": "3eaf5a5d-62f7-41b6-817e-92d78060c075",
+                    "name": "Canadian Conference on Computer and Robot Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CRV",
+                        "Can Conf Comput Robot Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=583"
+                },
+                "url": "https://www.semanticscholar.org/paper/ce2da85a3155ededa5347d30035728bba51721e4",
+                "title": "Learning-to-Count by Learning-to-Rank",
+                "abstract": "Object counting methods rely on density maps, which are heatmaps produced by placing Gaussian density over object locations. However, density maps are expensive to collect. To reduce the annotation burden, we propose a form of weak supervision that only requires object-based pairwise image rankings. These annotations can be collected rapidly with a single click per image pair and supply a weak signal for object quantity. However, a model learn to fit spurious patterns that satisfy the ranking constraint but do not rely on the objects. To encourage the network to solve the ranking constraints by localizing objects, we propose adversarial density map estimation. This method regularizes a ranking network's intermediate feature representation such that it corresponds to a plausible density map. We demonstrate the effectiveness of our method on several benchmark object counting datasets, and show results with a performance that approaches that of fully-supervised methods using data that can be collected with a fraction of the annotation burden. We release code for reproducibility: github.com/sfu-mial/Rank2Count",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1410459055",
+                        "name": "Adrian d'Alessandro"
+                    },
+                    {
+                        "authorId": "1399132068",
+                        "name": "Ali Mahdavi-Amiri"
+                    },
+                    {
+                        "authorId": "3049056",
+                        "name": "G. Hamarneh"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Methods Counting Detection MAE (\u2193) RMSE(\u2193) mAP (\u2191) AP50 (\u2191) FAMNet[13] 22.",
+                "Recently, a new task called Few-Shot Object Counting (FSC) [13] has been introduced to expand the traditional object counting task, which aimed at counting objects of any unseen classes.",
+                "FamNet [13] correlates features from a few exemplars with the feature map to generate a density map for object counting.",
+                "To solve the generalization problem of visual counting, the task of Few-shot Counting is introduced [10, 13, 20].",
+                "We conducts our experiments on the FSCD147 dataset, which is recently introduced in [13] for the exemplar-based class-agnostic counting task and extended to FSCD task by [12].",
+                "FSC [13] only provides point-wise annotations and a few box-wise annotations, which makes most of the existing advance detectors invalid.",
+                "FAMNet andCFOCNet are density-map-based approaches that cannot detect objects.",
+                "We compare our model against previous methods on the FSCD147 benchmark, which included FAMNet [13], CFOCNet [19], and CountingDETR [12]."
+            ],
+            "citingPaper": {
+                "paperId": "8cac6fa3dc844488e4ac181c3b765e5275a4cec0",
+                "externalIds": {
+                    "DBLP": "conf/cniot/Lin23",
+                    "DOI": "10.1145/3603781.3603865",
+                    "CorpusId": 260204790
+                },
+                "corpusId": 260204790,
+                "publicationVenue": {
+                    "id": "6c1d471f-79a9-449a-b0b3-d5e78390b141",
+                    "name": "International Conferences on Computing, Networks and Internet of Things",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CNIOT",
+                        "Int Conf Comput Netw Internet Thing"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/8cac6fa3dc844488e4ac181c3b765e5275a4cec0",
+                "title": "Few-shot Object Counting and Detection with Query-Guided Attention",
+                "abstract": "The focus of this paper is on Few-Shot Counting and Detection (FSCD), a task that involves counting and localizing target objects based on a few exemplar bounding boxes. In particular, we address two major challenges in developing a FSCD model: the high cost of bounding box labeling and the large variations in object appearance. To mitigate the former issue, we propose a neighbor distance-aware mechanism for generating pseudo bounding boxes. This mechanism utilizes neighboring objects as context to estimate the location and size of the target object without requiring training. To address the challenge of appearance variation, we introduce a novel query-guided attention module that enhances the visual features of the search image by employing multi-head cross attention with query features. The module is designed to encourage attentive inspection of the search image by directing the model to focus more on regions that share similarities with the target objects. We integrate the query-guided attention module into the Faster-RCNN object detection model, resulting in a new few-shot object detector named Counting-RCNN. The proposed approach outperforms the state-of-the-art method on a large-scale FSCD147 dataset, achieving 0.60 MAE, 5.36 RMSE, and 13.01% AP50 improvement.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2166060948",
+                        "name": "Yuhao Lin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The paper compares the proposed SAMbased method with other few-shot counting methods on two datasets, FSC-147 [111] and MS-COCO [112], and finds that",
+                "The paper compares the proposed SAMbased method with other few-shot counting methods on two datasets, FSC-147 [111] and MS-COCO [112], and finds that it falls behind the SOTA baselines, especially for small and congested objects."
+            ],
+            "citingPaper": {
+                "paperId": "1856bebc4cb35e68368d9c83bd2ac2d26cd4bcfa",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-08196",
+                    "ArXiv": "2305.08196",
+                    "DOI": "10.48550/arXiv.2305.08196",
+                    "CorpusId": 258686670
+                },
+                "corpusId": 258686670,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/1856bebc4cb35e68368d9c83bd2ac2d26cd4bcfa",
+                "title": "A Comprehensive Survey on Segment Anything Model for Vision and Beyond",
+                "abstract": "Artificial intelligence (AI) is evolving towards artificial general intelligence, which refers to the ability of an AI system to perform a wide range of tasks and exhibit a level of intelligence similar to that of a human being. This is in contrast to narrow or specialized AI, which is designed to perform specific tasks with a high degree of efficiency. Therefore, it is urgent to design a general class of models, which we term foundation models, trained on broad data that can be adapted to various downstream tasks. The recently proposed segment anything model (SAM) has made significant progress in breaking the boundaries of segmentation, greatly promoting the development of foundation models for computer vision. To fully comprehend SAM, we conduct a survey study. As the first to comprehensively review the progress of segmenting anything task for vision and beyond based on the foundation model of SAM, this work focuses on its applications to various tasks and data types by discussing its historical development, recent progress, and profound impact on broad applications. We first introduce the background and terminology for foundation models including SAM, as well as state-of-the-art methods contemporaneous with SAM that are significant for segmenting anything task. Then, we analyze and summarize the advantages and limitations of SAM across various image processing applications, including software scenes, real-world scenes, and complex scenes. Importantly, many insights are drawn to guide future research to develop more versatile foundation models and improve the architecture of SAM. We also summarize massive other amazing applications of SAM in vision and beyond. Finally, we maintain a continuously updated paper list and an open-source project summary for foundation model SAM at \\href{https://github.com/liliu-avril/Awesome-Segment-Anything}{\\color{magenta}{here}}.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "50445486",
+                        "name": "Chunhui Zhang"
+                    },
+                    {
+                        "authorId": "2150979609",
+                        "name": "Li Liu"
+                    },
+                    {
+                        "authorId": "9349527",
+                        "name": "Yawen Cui"
+                    },
+                    {
+                        "authorId": "32531527",
+                        "name": "Guanjie Huang"
+                    },
+                    {
+                        "authorId": "2181513519",
+                        "name": "Weilin Lin"
+                    },
+                    {
+                        "authorId": "2217280399",
+                        "name": "Yiqian Yang"
+                    },
+                    {
+                        "authorId": "2217453829",
+                        "name": "Yuehong Hu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "4566ecfcaadd7758380dd66c86b3bc48d91f7dc7",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-07304",
+                    "ArXiv": "2305.07304",
+                    "DOI": "10.1145/3581783.3611789",
+                    "CorpusId": 258676543
+                },
+                "corpusId": 258676543,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/4566ecfcaadd7758380dd66c86b3bc48d91f7dc7",
+                "title": "CLIP-Count: Towards Text-Guided Zero-Shot Object Counting",
+                "abstract": "Recent advances in visual-language models have shown remarkable zero-shot text-image matching ability that is transferable to downstream tasks such as object detection and segmentation. Adapting these models for object counting, however, remains a formidable challenge. In this study, we first investigate transferring vision-language models (VLMs) for class-agnostic object counting. Specifically, we propose CLIP-Count, the first end-to-end pipeline that estimates density maps for open-vocabulary objects with text guidance in a zero-shot manner. To align the text embedding with dense visual features, we introduce a patch-text contrastive loss that guides the model to learn informative patch-level visual representations for dense prediction. Moreover, we design a hierarchical patch-text interaction module to propagate semantic information across different resolution levels of visual features. Benefiting from the full exploitation of the rich image-text alignment knowledge of pretrained VLMs, our method effectively generates high-quality density maps for objects-of-interest. Extensive experiments on FSC-147, CARPK, and ShanghaiTech crowd counting datasets demonstrate state-of-the-art accuracy and generalizability of the proposed method. Code is available: https://github.com/songrise/CLIP-Count.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2052890880",
+                        "name": "Ruixia Jiang"
+                    },
+                    {
+                        "authorId": "2146017850",
+                        "name": "Lin Liu"
+                    },
+                    {
+                        "authorId": "153246625",
+                        "name": "Changan Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "We compare our CACViT with CNN-based method FamNet+ [24], RCAC [5], BMNet+ [25], SAFECount [31], SPDCN [15], and the most recent state-of-the-art ViT-based method CounTR [16].",
+                "given only few exemplars, has recently received much attention due to its potential to generalize to unseen scenes and reduced reliance on class-specific training data [16, 19, 24, 25].",
+                "In the early attempt, naive inner product [24, 30] is used for matching, which is not robust to the appearance variance of objects to be counted.",
+                "Experiments on the public benchmark FSC147 [24] show that CACVit outperforms the previous best approaches by large margins, with relative error reductions of 19.",
+                "As the first large-scale dataset for classagnostic counting, FSC147 [24] includes 6, 135 images from 147 categories varying from animals to vehicles.",
+                "Typical CAC approaches generally follow this paradigm [16, 24, 25].",
+                "To obtain a unified matching space, most previous work [24, 25, 31] uses the shared CNN-based feature extractors for query images and exemplars."
+            ],
+            "citingPaper": {
+                "paperId": "9a5bb6fb91740981adfccc5d7a6b847068c2749b",
+                "externalIds": {
+                    "ArXiv": "2305.04440",
+                    "DBLP": "journals/corr/abs-2305-04440",
+                    "DOI": "10.48550/arXiv.2305.04440",
+                    "CorpusId": 258557221
+                },
+                "corpusId": 258557221,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/9a5bb6fb91740981adfccc5d7a6b847068c2749b",
+                "title": "Vision Transformer Off-the-Shelf: A Surprising Baseline for Few-Shot Class-Agnostic Counting",
+                "abstract": "Class-agnostic counting (CAC) aims to count objects of interest from a query image given few exemplars. This task is typically addressed by extracting the features of query image and exemplars respectively with (un)shared feature extractors and by matching their feature similarity, leading to an extract-\\textit{then}-match paradigm. In this work, we show that CAC can be simplified in an extract-\\textit{and}-match manner, particularly using a pretrained and plain vision transformer (ViT) where feature extraction and similarity matching are executed simultaneously within the self-attention. We reveal the rationale of such simplification from a decoupled view of the self-attention and point out that the simplification is only made possible if the query and exemplar tokens are concatenated as input. The resulting model, termed CACViT, simplifies the CAC pipeline and unifies the feature spaces between the query image and exemplars. In addition, we find CACViT naturally encodes background information within self-attention, which helps reduce background disturbance. Further, to compensate the loss of the scale and the order-of-magnitude information due to resizing and normalization in ViT, we present two effective strategies for scale and magnitude embedding. Extensive experiments on the FSC147 and the CARPK datasets show that CACViT significantly outperforms state-of-the-art CAC approaches in both effectiveness (23.60% error reduction) and generalization, which suggests CACViT provides a concise and strong baseline for CAC. Code will be available.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2108248479",
+                        "name": "Zhicheng Wang"
+                    },
+                    {
+                        "authorId": "2216577685",
+                        "name": "Liwen Xiao"
+                    },
+                    {
+                        "authorId": "2152223896",
+                        "name": "Zhiguo Cao"
+                    },
+                    {
+                        "authorId": "2115605742",
+                        "name": "Hao Lu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "2c431ffdc384355089969130209da61bcdb1b749",
+                "externalIds": {
+                    "DBLP": "journals/prl/SolivenVOTAH23",
+                    "DOI": "10.1016/j.patrec.2023.04.018",
+                    "CorpusId": 258684408
+                },
+                "corpusId": 258684408,
+                "publicationVenue": {
+                    "id": "f35e3e87-9df4-497b-aa0d-bb8584197290",
+                    "name": "Pattern Recognition Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit Lett"
+                    ],
+                    "issn": "0167-8655",
+                    "url": "https://www.journals.elsevier.com/pattern-recognition-letters/",
+                    "alternate_urls": [
+                        "http://www.journals.elsevier.com/pattern-recognition-letters/",
+                        "http://www.sciencedirect.com/science/journal/01678655"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2c431ffdc384355089969130209da61bcdb1b749",
+                "title": "ConCoNet: Class-agnostic counting with positive and negative exemplars",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2089545507",
+                        "name": "Adrienne Francesca O. Soliven"
+                    },
+                    {
+                        "authorId": "107862918",
+                        "name": "John Jethro Virtusio"
+                    },
+                    {
+                        "authorId": "1596819304",
+                        "name": "Jose Jaena Mari Ople"
+                    },
+                    {
+                        "authorId": "46262540",
+                        "name": "Daniel Stanley Tan"
+                    },
+                    {
+                        "authorId": "4882201",
+                        "name": "D. Amalin"
+                    },
+                    {
+                        "authorId": "145525478",
+                        "name": "K. Hua"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Table 2 presents the performance of SAM on the FSC-147 datasets.",
+                "FSC-147 [6] comprises a total of 6,135 images that have been collected for the purpose of few-shot counting."
+            ],
+            "citingPaper": {
+                "paperId": "f1b8861ecc7afd21c1e70095cefffcdf0490bf05",
+                "externalIds": {
+                    "ArXiv": "2304.10817",
+                    "DBLP": "journals/corr/abs-2304-10817",
+                    "DOI": "10.48550/arXiv.2304.10817",
+                    "CorpusId": 258291486
+                },
+                "corpusId": 258291486,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f1b8861ecc7afd21c1e70095cefffcdf0490bf05",
+                "title": "Can SAM Count Anything? An Empirical Study on SAM Counting",
+                "abstract": "Meta AI recently released the Segment Anything model (SAM), which has garnered attention due to its impressive performance in class-agnostic segmenting. In this study, we explore the use of SAM for the challenging task of few-shot object counting, which involves counting objects of an unseen category by providing a few bounding boxes of examples. We compare SAM's performance with other few-shot counting methods and find that it is currently unsatisfactory without further fine-tuning, particularly for small and crowded objects. Code can be found at \\url{https://github.com/Vision-Intelligence-and-Robots-Group/count-anything}.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1880063",
+                        "name": "Zhiheng Ma"
+                    },
+                    {
+                        "authorId": "46761465",
+                        "name": "Xiaopeng Hong"
+                    },
+                    {
+                        "authorId": "2215169300",
+                        "name": "Qinnan Shangguan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "We consider two incremental learning sequences based on the FSC147 dataset.",
+                "There are 2468 images for buildings, 280 images for small vehicles, 172 images for large vehicles and 137 images for ships\nThe FSC147 [25] dataset is a counting dataset for fewshot learning, containing 147 categories.",
+                "There are 2468 images for buildings, 280 images for small vehicles, 172 images for large vehicles and 137 images for ships The FSC147 [25] dataset is a counting dataset for fewshot learning, containing 147 categories.",
+                "In [19, 25, 29], they consider the problem of class-agnostic counting.",
+                "Sample images from FSC147 dataset [25]."
+            ],
+            "citingPaper": {
+                "paperId": "4e754cdb0bb5067bf4291215f6a53fc0885574a0",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-05255",
+                    "ArXiv": "2304.05255",
+                    "DOI": "10.1109/CVPRW59228.2023.00249",
+                    "CorpusId": 258059805
+                },
+                "corpusId": 258059805,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/4e754cdb0bb5067bf4291215f6a53fc0885574a0",
+                "title": "Density Map Distillation for Incremental Object Counting",
+                "abstract": "We investigate the problem of incremental learning for object counting, where a method must learn to count a variety of object classes from a sequence of datasets. A na\u00efve approach to incremental object counting would suffer from catastrophic forgetting, where it would suffer from a dramatic performance drop on previous tasks. In this paper, we propose a new exemplar-free functional regularization method, called Density Map Distillation (DMD). During training, we introduce a new counter head for each task and introduce a distillation loss to prevent forgetting of previous tasks. Additionally, we introduce a cross-task adaptor that projects the features of the current backbone to the previous backbone. This projector allows for the learning of new features while the backbone retains the relevant features for previous tasks. Finally, we set up experiments of incremental learning for counting new objects. Results confirm that our method greatly reduces catastrophic forgetting and outperforms existing methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "46199723",
+                        "name": "Chenshen Wu"
+                    },
+                    {
+                        "authorId": "2820687",
+                        "name": "Joost van de Weijer"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Figure 3 shows the qualitative results on the FSC-147 dataset.",
+                "According to the division method of the original dataset (Ranjan et al., 2021), we divide the dataset into training set, validation set, and test set.",
+                "Results: Experiment results on FSC-147 show that our network performs best compared to the existing methods, and the mean absolute counting error on the test set improves from 14.32 to 12.74.",
+                "The FSC-147 (Ranjan et al., 2021) dataset is the first and only large-scale dataset for few-shot counting.",
+                "Our model is first pre-trained on FSC-147 and then finetuned on the CARPK dataset.",
+                "In Table 2, we have observed that our method sets a new state-of-art on the standard dataset FSC-147.",
+                "The ablation studies show our modules are useful, and the results get improved on the FSC-147 dataset.",
+                "Experiment results demonstrate that our HMFENet reaches a new sate-of-art on the standard dataset FSC-147 and performs best on the class-specific dataset CAPRK.",
+                "FamNet (Ranjan et al., 2021) maps the exemplars and query images to the similarity space, and generate a density map from it."
+            ],
+            "citingPaper": {
+                "paperId": "af1a4cd1966672737ea7940210e3769124e3d8c0",
+                "externalIds": {
+                    "PubMedCentral": "10098187",
+                    "DOI": "10.3389/fncom.2023.1145219",
+                    "CorpusId": 257806710,
+                    "PubMed": "37065544"
+                },
+                "corpusId": 257806710,
+                "publicationVenue": {
+                    "id": "8c456f98-9892-42ac-9b16-418755f01550",
+                    "name": "Frontiers in Computational Neuroscience",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Front Comput Neurosci"
+                    ],
+                    "issn": "1662-5188",
+                    "url": "http://www.frontiersin.org/computational_neuroscience",
+                    "alternate_urls": [
+                        "http://www.frontiersin.org/computationalneuroscience/",
+                        "https://www.frontiersin.org/journals/computational-neuroscience"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/af1a4cd1966672737ea7940210e3769124e3d8c0",
+                "title": "Accurate few-shot object counting with Hough matching feature enhancement",
+                "abstract": "Introduction Given some exemplars, few-shot object counting aims to count the corresponding class objects in query images. However, when there are many target objects or background interference in the query image, some target objects may have occlusion and overlap, which causes a decrease in counting accuracy. Methods To overcome the problem, we propose a novel Hough matching feature enhancement network. First, we extract the image feature with a fixed convolutional network and refine it through local self-attention. And we design an exemplar feature aggregation module to enhance the commonality of the exemplar feature. Then, we build a Hough space to vote for candidate object regions. The Hough matching outputs reliable similarity maps between exemplars and the query image. Finally, we augment the query feature with exemplar features according to the similarity maps, and we use a cascade structure to further enhance the query feature. Results Experiment results on FSC-147 show that our network performs best compared to the existing methods, and the mean absolute counting error on the test set improves from 14.32 to 12.74. Discussion Ablation experiments demonstrate that Hough matching helps to achieve more accurate counting compared with previous matching methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "48427549",
+                        "name": "Zhiquan He"
+                    },
+                    {
+                        "authorId": "2055036528",
+                        "name": "Donghong Zheng"
+                    },
+                    {
+                        "authorId": "2233772",
+                        "name": "Hengyou Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "To verify that, we use our selected patches as the exemplars for three other different exemplar-based methods: FamNet [34], BMNet and BMNet+ [38].",
+                "Recently, class-agnostic counting [34,38] has been proposed to count objects of arbitrary categories.",
+                "Recently, Ranjan et al. have proposed RepRPN [33], which achieves exemplar-free counting by identifying exemplars from the most frequent objects via a Region Proposal Network (RPN)-based model.",
+                "Class-agnostic object counting aims to count arbitrary categories given only a few exemplars [3, 13, 25, 28, 31, 34, 38, 50, 51].",
+                "Dataset We use FSC-147 dataset [34] to train the base counting model and the error predictor.",
+                "Network architecture For the base counting model, we use ResNet-50 as the backbone of the feature extractor, initialized with the weights of a pre-trained ImageNet model.",
+                "Xian et al. [44] use a conditional Wasserstein Generative Adversarial Network (GAN) [2] to generate unseen features which can then be used to train a discriminative classifier for ZSL.",
+                "By using the generated class prototype to select class-relevant patches, the error rate is reduced by 5.18, 8.59 and 5.60 on FamNet, BMNet and BMNet+, respectively.",
+                "FamNet [34] adopts a similar way to do correlation matching and further applies testtime adaptation.",
+                "FamNet [34] adopts a similar way to do correlation matching and further applies test-time adaptation.",
+                "Similar to previous works [34, 38], the base counting model uses the input image and the exemplars to obtain a density map for object counting.",
+                "To verify that, we use our selected patches as the exemplars for three\nother different exemplar-based methods: FamNet [34], BMNet and BMNet+ [38].",
+                "In order to make other exemplar based class-agnostic methods including GMN (General Matching Network [28]), FamNet (Fewshot adaptation and matching Network [34]) and BMNet\n(Bilinear Matching Network [38]) work in the exemplarfree setup, we replace the human-provided exemplars with the exemplars generated by a pre-trained object detector.",
+                "In order to make other exemplar based class-agnostic methods including GMN (General Matching Network [28]), FamNet (Fewshot adaptation and matching Network [34]) and BMNet (Bilinear Matching Network [38]) work in the exemplarfree setup, we replace the human-provided exemplars with the exemplars generated by a pre-trained object detector.",
+                "In addition, as the error predictor is additionally adopted, the error rate is further reduced by 1.76, 1.00 and 1.08 on FamNet, BMNet and BMNet+, respectively."
+            ],
+            "citingPaper": {
+                "paperId": "a8e4a19be7d89e6ef17e47184ef128fbf16772d8",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/XuL0RS23",
+                    "ArXiv": "2303.02001",
+                    "DOI": "10.1109/CVPR52729.2023.01492",
+                    "CorpusId": 257353801
+                },
+                "corpusId": 257353801,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a8e4a19be7d89e6ef17e47184ef128fbf16772d8",
+                "title": "Zero-Shot Object Counting",
+                "abstract": "Class-agnostic object counting aims to count object instances of an arbitrary class at test time. Current methods for this challenging problem require human-annotated exemplars as inputs, which are often unavailable for novel categories, especially for autonomous systems. Thus, we propose zero-shot object counting (ZSC), a new setting where only the class name is available during test time. Such a counting system does not require human annotators in the loop and can operate automatically. Starting from a class name, we propose a method that can accurately identify the optimal patches which can then be used as counting exemplars. Specifically, we first construct a class prototype to select the patches that are likely to contain the objects of interest, namely class-relevant patches. Furthermore, we introduce a model that can quantitatively measure how suitable an arbitrary patch is as a counting exemplar. By applying this model to all the candidate patches, we can select the most suitable patches as exemplars for counting. Experimental results on a recent class-agnostic counting dataset, FSC-147, validate the effectiveness of our method. Code is available at https://github.com/cvlabstonybrook/zero-shot-counting.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2211912719",
+                        "name": "Jingyi Xu"
+                    },
+                    {
+                        "authorId": "143631873",
+                        "name": "Hieu M. Le"
+                    },
+                    {
+                        "authorId": "143885441",
+                        "name": "Vu Nguyen"
+                    },
+                    {
+                        "authorId": "2673180",
+                        "name": "Viresh Ranjan"
+                    },
+                    {
+                        "authorId": "145654220",
+                        "name": "D. Samaras"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "f8b87e036ab1827792371628b4a5b27852397769",
+                "externalIds": {
+                    "DBLP": "journals/prl/McCarthyVOTAH23",
+                    "DOI": "10.1016/j.patrec.2023.03.017",
+                    "CorpusId": 257600073
+                },
+                "corpusId": 257600073,
+                "publicationVenue": {
+                    "id": "f35e3e87-9df4-497b-aa0d-bb8584197290",
+                    "name": "Pattern Recognition Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit Lett"
+                    ],
+                    "issn": "0167-8655",
+                    "url": "https://www.journals.elsevier.com/pattern-recognition-letters/",
+                    "alternate_urls": [
+                        "http://www.journals.elsevier.com/pattern-recognition-letters/",
+                        "http://www.sciencedirect.com/science/journal/01678655"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/f8b87e036ab1827792371628b4a5b27852397769",
+                "title": "MACnet: Mask augmented counting network for class-agnostic counting",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2212223083",
+                        "name": "Tadhg McCarthy"
+                    },
+                    {
+                        "authorId": "107862918",
+                        "name": "John Jethro Virtusio"
+                    },
+                    {
+                        "authorId": "1596819304",
+                        "name": "Jose Jaena Mari Ople"
+                    },
+                    {
+                        "authorId": "46262540",
+                        "name": "Daniel Stanley Tan"
+                    },
+                    {
+                        "authorId": "4882201",
+                        "name": "D. Amalin"
+                    },
+                    {
+                        "authorId": "145525478",
+                        "name": "K. Hua"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "\u2022 Performance: The state-of-the-art accuracy is achieved on the prevailing benchmark FSC147 [6] compared to the exemplar-free RepRPN-Counter and the BMNet-based baseline.",
+                "They achieve this by recognizing inherent visual repetition patterns without acquiring priors on object categories [6], [7].",
+                "4 as follows:\nLe = 0.5 1\nB i\u2211 B ||N\u0302e(i)\u2212N(i)||22 + 0.5L. (5)\nc) CAC-oriented FSC147.",
+                "The evolution of counting frameworks: (a) Class-specific methods [1], [2] count objects from fixed categories; (b) Inchoate exemplar-dependent class-agnostic counters learn to match user-provided exemplars with query scenes [3], [4], [5], [6], [7]; (c) Our GCNet removes the requirement of exemplar annotations and learns self-similarity from repetitive object patterns.",
+                "For example, contemporary BMNet [7] and FamNet [6] both demand three manually-labelled exemplars (rectangular image patches), and fail in their absence.",
+                "It is worth noting that, to fill the void of zero-shot counting datasets, Ranjan et al. [6] propose the first dataset, namely FSC147, for training or evaluating specialized CAC models instead of using the limited COCO.",
+                "To mimic humans\u2019 natural counting ability, a cohort of CAC frameworks [3], [4], [5], [6], [7] have been recently",
+                ": We perform ablation studies on the validation and test sets of FSC147 to assess the impacts of individual components.",
+                "Even though the training set of FSC147 includes crowd scenes, they are extremely scarce (19 images) and with low crowd densities.",
+                "Despite the persevering efforts [4], [5], [6], [7] to enhance",
+                "Impressive results on FSC147 also demonstrate the superiority of our GCNet compared to traditional CAC approaches using both exemplars and location annotations.",
+                "\u2022 Performance: The state-of-the-art accuracy is achieved on the prevailing benchmark FSC147 [6] compared to the exemplar-free RepRPN-Counter and the BMNet-based",
+                ": Following the state-of-the-art CAC approaches [6], [7], FSC147 [6] is adopted in our experiments since it is a unique large-scale dataset specifically designed for evaluating CAC.",
+                "Specifically, both CFOCNet [5] and FAMNet [6] leverage the spirit of Siamese to extract features for further similarity modelling.",
+                "CFOCNet [5] treats the feature maps of the input exemplar as a kernel to convolve the feature maps from an input query image, whereas FAMNet [6] requires explicit testtime adaptation to perform well on novel classes.",
+                "Motivated by the success of few-shot image classification [10], [11], [12], [13] and object detection [44], [45], several related works [5], [6], [7] aim to mimic generalizability of humans by exploiting the few-shot counting problems.",
+                "Class-Agnostic Counting (CAC) [3], [4], [5], [6], [7] has caught increasing attention from the research community.",
+                "Without adaptation, GMN cannot generalize very well to novel classes [6].",
+                "Note that even the baseline obtains lower MAE values (23.14 and 21.88) on Val and Test compared to the conventional FamNet (24.32 and 22.56) & FamNet+ (23.75 and 22.08) that require laborious annotations of both exemplar and density map.",
+                ": For fair comparisons, we use the same strategy to resize the original image as in FAMNet [6] and BMNet [7]."
+            ],
+            "citingPaper": {
+                "paperId": "8624e1542a55e27ae6b6b90248e5806dc1ac9d5e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-05132",
+                    "ArXiv": "2302.05132",
+                    "DOI": "10.48550/arXiv.2302.05132",
+                    "CorpusId": 256808225
+                },
+                "corpusId": 256808225,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8624e1542a55e27ae6b6b90248e5806dc1ac9d5e",
+                "title": "GCNet: Probing Self-Similarity Learning for Generalized Counting Network",
+                "abstract": "The class-agnostic counting (CAC) problem has caught increasing attention recently due to its wide societal applications and arduous challenges. To count objects of different categories, existing approaches rely on user-provided exemplars, which is hard-to-obtain and limits their generality. In this paper, we aim to empower the framework to recognize adaptive exemplars within the whole images. A zero-shot Generalized Counting Network (GCNet) is developed, which uses a pseudo-Siamese structure to automatically and effectively learn pseudo exemplar clues from inherent repetition patterns. In addition, a weakly-supervised scheme is presented to reduce the burden of laborious density maps required by all contemporary CAC models, allowing GCNet to be trained using count-level supervisory signals in an end-to-end manner. Without providing any spatial location hints, GCNet is capable of adaptively capturing them through a carefully-designed self-similarity learning strategy. Extensive experiments and ablation studies on the prevailing benchmark FSC147 for zero-shot CAC demonstrate the superiority of our GCNet. It performs on par with existing exemplar-dependent methods and shows stunning cross-dataset generality on crowd-specific datasets, e.g., ShanghaiTech Part A, Part B and UCF_QNRF.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "151474565",
+                        "name": "Mingjie Wang"
+                    },
+                    {
+                        "authorId": "32488570",
+                        "name": "Yande Li"
+                    },
+                    {
+                        "authorId": "2151548966",
+                        "name": "Jun Zhou"
+                    },
+                    {
+                        "authorId": "144639556",
+                        "name": "Graham W. Taylor"
+                    },
+                    {
+                        "authorId": "1473876432",
+                        "name": "Minglun Gong"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Density-based estimation methods utilize the spatial distribution information and semantic information of density maps, but most of the current density counting models can only deal with a single category, and cannot handle multiple categories and novel categories [18].",
+                "In the field of computer vision, designing a system that can classify a large number of visual categories faces two main challenges [18], the first problem is datasets, most modern model counting methods map raw images to density maps and then do the final counting, But such datasets are difficult to obtain off-the-shelf.",
+                "Ranjan [18] directly selects an exemplar to be counted from the current image, without additional reference images."
+            ],
+            "citingPaper": {
+                "paperId": "3a7bfce10cfde89b4fe7277887270f84a5b54b75",
+                "externalIds": {
+                    "DOI": "10.1109/ACCTCS58815.2023.00096",
+                    "CorpusId": 259122327
+                },
+                "corpusId": 259122327,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3a7bfce10cfde89b4fe7277887270f84a5b54b75",
+                "title": "Attention Enhanced Multi-Scale Feature Map Fusion Few Shot Learning",
+                "abstract": "Deep learning has made great contributions to the few-shot learning object detecting and counting. In this paper, we propose a novel network framework for few-shot learning in density object counting. Firstly, several exemplar image patches with different scales were convoluted with the feature map individually, then the results were fused to enhance the detection ability of multi-scale targets in the dataset. Secondly, the attention module was inserted into the density map blending procedure. The attention module can suppress the false response of the convolution and enhance the true response efficiently. Experiment results showed that the proposed method could improve the accuracy of the density map and adaption of multi-scale targets. It achieved a 15.3% improvement on average in the object counting task with 147 categories of objects. Code for this research can be found at https://github.com/1578630119/ASF-Few-Shot-Learning.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2220664963",
+                        "name": "Xiaopeng Feng"
+                    },
+                    {
+                        "authorId": "2118503284",
+                        "name": "Liang Han"
+                    },
+                    {
+                        "authorId": "2060157420",
+                        "name": "Pin Tao"
+                    },
+                    {
+                        "authorId": "1508360180",
+                        "name": "Yusheng Jiang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "222328b6b44ba8b2293a3f1194c44458050e0e9e",
+                "externalIds": {
+                    "DBLP": "conf/wacv/WangCDG23",
+                    "DOI": "10.1109/WACV56688.2023.00025",
+                    "CorpusId": 256658450
+                },
+                "corpusId": 256658450,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/222328b6b44ba8b2293a3f1194c44458050e0e9e",
+                "title": "Dynamic Mixture of Counter Network for Location-Agnostic Crowd Counting",
+                "abstract": "Crowd counting has attracted increasing attentions in recent years due to its challenges and wide societal applications. Despite persevering efforts made by the research community, most of existing methods require a large amount of location-level annotations. Collecting such type of fine-granularity supervisory signals is extremely time-consuming and labour-intensive, thereby hindering the well generalization of these location-adherent models. To shun this drawback, several pioneering studies open a promising research direction of location-agonistic crowd counting. Albeit the noticeable efforts, they somewhat ignore the merits of diverse learning paradigms and the issue of intractable density shift. To ameliorate these issues, in this paper, a novel Dynamic Mixture of Counter Network (DMCNet) is proposed for location-agnostic crowd counting. Specifically, our DMCNet inherits the hybrid advantages of CNNs (e.g. locality-oriented and pyramidal property) and MLP-based structure (e.g. global receptive fields and light weight). Particularly, the dynamic counter predictor and the mixture of counter heads are delicately designed to hammer at combating huge density shift and overfitting. Extensive experiments demonstrate that our DMCNet attains state-of-the-art performance against existing location-agnostic approaches and performs on par with many conventional location-adherent ones.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "151474565",
+                        "name": "Mingjie Wang"
+                    },
+                    {
+                        "authorId": "1978031361",
+                        "name": "Hao Cai"
+                    },
+                    {
+                        "authorId": "2205064711",
+                        "name": "Yong Dai"
+                    },
+                    {
+                        "authorId": "1473876432",
+                        "name": "Minglun Gong"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "For instance, FamNet [34]\nwas the first work to achieve this task which extracts visual features from a few exemplars and matches them with those of the query image.",
+                "The performance of FamNet [34] is subpar, possibly due to the significant influence of noise on the obtained correlation maps, making it challenging to detect all the targets of each input."
+            ],
+            "citingPaper": {
+                "paperId": "c79e7ad95e40d6b2fe17f1db817f6a107fb70ff2",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-14193",
+                    "ArXiv": "2212.14193",
+                    "DOI": "10.48550/arXiv.2212.14193",
+                    "CorpusId": 255340623
+                },
+                "corpusId": 255340623,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/c79e7ad95e40d6b2fe17f1db817f6a107fb70ff2",
+                "title": "A Unified Object Counting Network with Object Occupation Prior",
+                "abstract": "The counting task, which plays a fundamental role in numerous applications (e.g., crowd counting, traffic statistics), aims to predict the number of objects with various densities. Existing object counting tasks are designed for a single object class. However, it is inevitable to encounter newly coming data with new classes in our real world. We name this scenario as \\textit{evolving object counting}. In this paper, we build the first evolving object counting dataset and propose a unified object counting network as the first attempt to address this task. The proposed model consists of two key components: a class-agnostic mask module and a class-incremental module. The class-agnostic mask module learns generic object occupation prior via predicting a class-agnostic binary mask (e.g., 1 denotes there exists an object at the considering position in an image and 0 otherwise). The class-incremental module is used to handle new coming classes and provides discriminative class guidance for density map prediction. The combined outputs of class-agnostic mask module and image feature extractor are used to predict the final density map. When new classes come, we first add new neural nodes into the last regression and classification layers of class-incremental module. Then, instead of retraining the model from scratch, we utilize knowledge distillation to help the model remember what have already learned about previous object classes. We also employ a support sample bank to store a small number of typical training samples of each class, which are used to prevent the model from forgetting key information of old data. With this design, our model can efficiently and effectively adapt to new coming classes while keeping good performance on already seen data without large-scale retraining. Extensive experiments on the collected dataset demonstrate the favorable performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "8038247",
+                        "name": "Shengqin Jiang"
+                    },
+                    {
+                        "authorId": "2117944850",
+                        "name": "Qing Wang"
+                    },
+                    {
+                        "authorId": "2057584543",
+                        "name": "Fengna Cheng"
+                    },
+                    {
+                        "authorId": "35653798",
+                        "name": "Yuankai Qi"
+                    },
+                    {
+                        "authorId": "48873988",
+                        "name": "Qingshan Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Therefore, the previous works [22] adhere to the paradigm, which extracts invariant knowledge according to boxes and utilizes knowledge to compare similarity.",
+                "superiority of our framework on actively learning the similar and repeated matters, we deploy our work on FSC-147 [22] which is a multi-class objects counting benchmark.",
+                "To be specific, the main benchmark to multi-class object counting is FSC-147, in which the 147 classes are included in the dataset, and some typical images have been depicted as Fig.",
+                "The compared methods are FR [34], FSOD [35], GMN [36], MAML [37], FameNet [22].",
+                "The released benchmark FSC-147 [22] is for such task, in which a few boxes are annotated and other objects belonging to the same category are annotated via dots, as Fig.",
+                "To further show the\nsuperiority of our framework on actively learning the similar and repeated matters, we deploy our work on FSC-147 [22] which is a multi-class objects counting benchmark."
+            ],
+            "citingPaper": {
+                "paperId": "556bc591d1dd58c3d938c0e4a2e6b6505a098769",
+                "externalIds": {
+                    "ArXiv": "2212.02248",
+                    "DBLP": "journals/corr/abs-2212-02248",
+                    "DOI": "10.48550/arXiv.2212.02248",
+                    "CorpusId": 254247035
+                },
+                "corpusId": 254247035,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/556bc591d1dd58c3d938c0e4a2e6b6505a098769",
+                "title": "Counting Like Human: Anthropoid Crowd Counting on Modeling the Similarity of Objects",
+                "abstract": "The mainstream crowd counting methods regress density map and integrate it to obtain counting results. Since the density representation to one head accords to its adjacent distribution, it embeds the same category objects with variant values, while human beings counting models the invariant features namely similarity to objects. Inspired by this, we propose a rational and anthropoid crowd counting framework. To begin with, we leverage counting scalar as supervision signal, which provides global and implicit guidance to similar matters. Then, the large kernel CNN is utilized to imitate the paradigm of human beings which models invariant knowledge firstly and slides to compare similarity. Later, re-parameterization on pre-trained paralleled parameters is presented to cater to the inner-class variance on similarity comparison. Finally, the Random Scaling patches Yield (RSY) is proposed to facilitate similarity modeling on long distance dependencies. Extensive experiments on five challenging benchmarks in crowd counting show the proposed framework achieves state-of-the-art.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145346762",
+                        "name": "Qi Wang"
+                    },
+                    {
+                        "authorId": "2118045838",
+                        "name": "Juncheng Wang"
+                    },
+                    {
+                        "authorId": "72208574",
+                        "name": "Junyu Gao"
+                    },
+                    {
+                        "authorId": "46499863",
+                        "name": "Yuan Yuan"
+                    },
+                    {
+                        "authorId": "2108804511",
+                        "name": "Xuelong Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "The methods primarily differ in the intermediate image representation construction method, which is based either on Siamese similarity [18, 24], crossattention [13, 16] or feature and similarity fusion [26, 31].",
+                "Note that in contrast to most works [24, 26, 30, 31], LOCA does not attempt to transfer exemplar appearance onto image features, but rather constructs strong prototypes that generalize across the imagelevel intra-class appearance.",
+                "In that protocol, a method is trained on the FSC147 dataset [24] and evaluated on the CARPK dataset [12], which is a car-counting dataset containing aerial images of parking lots, which are considerably different from the FSC147 images.",
+                "The experiments are performed on the FSC147 dataset in the few-shot setting.",
+                "The FSC147 dataset [24] in fact provides image subsets Val-COCO and Test-COCO containing only categories for which abundant annotated training images are available in COCO [15].",
+                "On the COCO subsets of FSC147, LOCA out-performs recent state-of-the-art counting methods, as well as object detection methods, achieving a 36% RMSE improvement.",
+                "In the few-shot counting scenario, we compare LOCA with GMN [18], MAML [8], FamNet [24] and the most recent state-of-the-art methods CFOCNet [30], BMNet+ [26], SAFECount [31] and CounTR [16].",
+                "LOCA outperforms all state-of-the-art (in many cases more complicated methods) on the recent FSC147 benchmark [24].",
+                "Few-shot counters have recently gained momentum with the emergence of a challenging dataset [24] and follow a common pipeline [13, 18, 24, 26, 31].",
+                "LOCA is evaluated on the recent few-shot counting dataset FSC147 [24].",
+                "We follow the standard evaluation protocol [24, 26, 31] and compute Mean Absolute Error (MAE) and Root of Mean Squared Error (RMSE) given the predicted and ground truth object counts.",
+                "Experiments show that LOCA outperforms state-of-the-art on the FSC147 public benchmark in few-shot, one-shot and zero-shot settings.",
+                "[24] proposed a further improvement of correlation robustness by test-time Siamese backbone adaptation.",
+                "Proposals with the highest repetition scores are used as exemplars and sent through FamNet [24] to predict multiple density maps."
+            ],
+            "citingPaper": {
+                "paperId": "5713544d114fc9c5c1ffb1168fc64cd159101b44",
+                "externalIds": {
+                    "ArXiv": "2211.08217",
+                    "DBLP": "journals/corr/abs-2211-08217",
+                    "DOI": "10.48550/arXiv.2211.08217",
+                    "CorpusId": 253523039
+                },
+                "corpusId": 253523039,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5713544d114fc9c5c1ffb1168fc64cd159101b44",
+                "title": "A Low-Shot Object Counting Network With Iterative Prototype Adaptation",
+                "abstract": "We consider low-shot counting of arbitrary semantic categories in the image using only few annotated exemplars (few-shot) or no exemplars (no-shot). The standard few-shot pipeline follows extraction of appearance queries from exemplars and matching them with image features to infer the object counts. Existing methods extract queries by feature pooling which neglects the shape information (e.g., size and aspect) and leads to a reduced object localization accuracy and count estimates. We propose a Low-shot Object Counting network with iterative prototype Adaptation (LOCA). Our main contribution is the new object prototype extraction module, which iteratively fuses the exemplar shape and appearance information with image features. The module is easily adapted to zero-shot scenarios, enabling LOCA to cover the entire spectrum of low-shot counting problems. LOCA outperforms all recent state-of-the-art methods on FSC147 benchmark by 20-30% in RMSE on one-shot and few-shot and achieves state-of-the-art on zero-shot scenarios, while demonstrating better generalization capabilities.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "143798502",
+                        "name": "Nikola Djukic"
+                    },
+                    {
+                        "authorId": "2139688",
+                        "name": "A. Luke\u017ei\u010d"
+                    },
+                    {
+                        "authorId": "71702990",
+                        "name": "Vitjan Zavrtanik"
+                    },
+                    {
+                        "authorId": "2905558",
+                        "name": "M. Kristan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "9be22f93264a30665d875f9a1826a4585fba413d",
+                "externalIds": {
+                    "ArXiv": "2211.04291",
+                    "CorpusId": 253397903
+                },
+                "corpusId": 253397903,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/9be22f93264a30665d875f9a1826a4585fba413d",
+                "title": "Detection is truncation: studying source populations with truncated marginal neural ratio estimation",
+                "abstract": "Statistical inference of population parameters of astrophysical sources is challenging. It requires accounting for selection effects, which stem from the artificial separation between bright detected and dim undetected sources that is introduced by the analysis pipeline itself. We show that these effects can be modeled self-consistently in the context of sequential simulation-based inference. Our approach couples source detection and catalog-based inference in a principled framework that derives from the truncated marginal neural ratio estimation (TMNRE) algorithm. It relies on the realization that detection can be interpreted as prior truncation. We outline the algorithm, and show first promising results.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2165661696",
+                        "name": "Noemi Anau Montel"
+                    },
+                    {
+                        "authorId": "3554779",
+                        "name": "C. Weniger"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Class-agnostic and few-shot methods [62, 63, 64, 36, 65] often rely on references as input or are limited to single-class counting."
+            ],
+            "citingPaper": {
+                "paperId": "ab22defea0cfa99d1e40e9ba406426884a2f846a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-07991",
+                    "ArXiv": "2210.07991",
+                    "DOI": "10.48550/arXiv.2210.07991",
+                    "CorpusId": 252907715
+                },
+                "corpusId": 252907715,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ab22defea0cfa99d1e40e9ba406426884a2f846a",
+                "title": "Novel 3D Scene Understanding Applications From Recurrence in a Single Image",
+                "abstract": "We demonstrate the utility of recurring pattern discovery from a single image for spatial understanding of a 3D scene in terms of (1) vanishing point detection, (2) hypothesizing 3D translation symmetry and (3) counting the number of RP instances in the image. Furthermore, we illustrate the feasibility of leveraging RP discovery output to form a more precise, quantitative text description of the scene. Our quantitative evaluations on a new 1K+ Recurring Pattern (RP) benchmark with diverse variations show that visual perception of recurrence from one single view leads to scene understanding outcomes that are as good as or better than existing supervised methods and/or unsupervised methods that use millions of images.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "66686223",
+                        "name": "Shimian Zhang"
+                    },
+                    {
+                        "authorId": "1578199768",
+                        "name": "Skanda Bharadwaj"
+                    },
+                    {
+                        "authorId": "151467433",
+                        "name": "Keaton Kraiger"
+                    },
+                    {
+                        "authorId": "2187874812",
+                        "name": "Yashasvi Asthana"
+                    },
+                    {
+                        "authorId": "2146242361",
+                        "name": "Hong Zhang"
+                    },
+                    {
+                        "authorId": "143980462",
+                        "name": "R. Collins"
+                    },
+                    {
+                        "authorId": "1689241",
+                        "name": "Yanxi Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "As shown in Table 3, it can be easily found that our model still has a huge improvement even compared to the best-performing Mask-RCNN [10], halving its error on both Val-COCO and Test-COCO.",
+                "Val-COCO and Test-COCO.",
+                "90 FamNet [24] CVPR2021 Regression Generic 18.",
+                "Net [24], and our model outperforms it with a large advance (15.",
+                "We experiment on FSC-147 [24], which is a multi-class few-shot object counting dataset containing 6135 images.",
+                "Val-COCO and Test-COCO [24] are FSC-147 subsets collected from COCO, and they are often used as evaluation benchmarks for detection-based object counting models.",
+                "Recently, class-agnostic few-shot counting [19, 24, 30] has witnessed a rise in research interest in the community.",
+                "In [19], the authors propose a generic matching network (GMN), which regresses the density map by computing the similarity between the CNN features from image and exemplar shots; FamNet [24] utilizes feature correlation for prediction and uses adaptation loss to update the model\u2019s parameters at test time; SAFECount [30] uses the support feature to enhance the query feature, making the extracted features more refined and then regresses to obtain density maps; In a very recent work [12], the authors exploit a pre-trained DINO [21] model and a lightweight regression head to count without exemplars.",
+                "FSC-147 [24], and demonstrate state-of-the-art performance on both zero-shot and few-shot settings, improving the previous best approach by over 18."
+            ],
+            "citingPaper": {
+                "paperId": "270ab1aef114e81db421e2bffcc3525782cf837f",
+                "externalIds": {
+                    "DBLP": "conf/bmvc/LiuZZX22",
+                    "ArXiv": "2208.13721",
+                    "DOI": "10.48550/arXiv.2208.13721",
+                    "CorpusId": 251903478
+                },
+                "corpusId": 251903478,
+                "publicationVenue": {
+                    "id": "78a7fbcc-41c5-4258-b633-04b8637d4a9f",
+                    "name": "British Machine Vision Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Br Mach Vis Conf",
+                        "BMVC"
+                    ],
+                    "url": "http://www.bmva.org/bmvc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/270ab1aef114e81db421e2bffcc3525782cf837f",
+                "title": "CounTR: Transformer-based Generalised Visual Counting",
+                "abstract": "In this paper, we consider the problem of generalised visual object counting, with the goal of developing a computational model for counting the number of objects from arbitrary semantic categories, using arbitrary number of\"exemplars\", i.e. zero-shot or few-shot counting. To this end, we make the following four contributions: (1) We introduce a novel transformer-based architecture for generalised visual object counting, termed as Counting Transformer (CounTR), which explicitly capture the similarity between image patches or with given\"exemplars\"with the attention mechanism;(2) We adopt a two-stage training regime, that first pre-trains the model with self-supervised learning, and followed by supervised fine-tuning;(3) We propose a simple, scalable pipeline for synthesizing training images with a large number of instances or that from different semantic categories, explicitly forcing the model to make use of the given\"exemplars\";(4) We conduct thorough ablation studies on the large-scale counting benchmark, e.g. FSC-147, and demonstrate state-of-the-art performance on both zero and few-shot settings.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2118485386",
+                        "name": "Chang Liu"
+                    },
+                    {
+                        "authorId": "1624475253",
+                        "name": "Yujie Zhong"
+                    },
+                    {
+                        "authorId": "1688869",
+                        "name": "Andrew Zisserman"
+                    },
+                    {
+                        "authorId": "10096695",
+                        "name": "Weidi Xie"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "5f1aec6d94970acc4eb11519b220ec4694a2f757",
+                "externalIds": {
+                    "DOI": "10.3390/drones6080196",
+                    "CorpusId": 251452879
+                },
+                "corpusId": 251452879,
+                "publicationVenue": {
+                    "id": "20f4c07b-44b3-4e7d-8546-e3c11620a21c",
+                    "name": "Drones",
+                    "issn": "2504-446X",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-1077192",
+                    "alternate_urls": [
+                        "https://www.mdpi.com/journal/drones",
+                        "https://www.mdpi.com/journal/drones/about",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-1077192"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5f1aec6d94970acc4eb11519b220ec4694a2f757",
+                "title": "Multi-UAV Collaboration to Survey Tibetan Antelopes in Hoh Xil",
+                "abstract": "Reducing the total mission time is essential in wildlife surveys owing to the dynamic movement of animals throughout their migrating environment and potentially extreme changes in weather. This paper proposed a multi-UAV path planning method for counting various flora and fauna populations, which can fully use the UAVs\u2019 limited flight time to cover large areas. Unlike the current complete coverage path planning methods, based on sweep and polygon, our work encoded the path planning problem as the satisfiability modulo theory using a one-hot encoding scheme. Each instance generated a set of feasible paths at each iteration and recovered the set of shortest paths after sufficient time. We also flexibly optimized the paths based on the number of UAVs, endurance and camera parameters. We implemented the planning algorithm with four UAVs to conduct multiple photographic aerial wildlife surveys in areas around Zonag Lake, the birthplace of Tibetan antelope. Over 6 square kilometers was surveyed in about 2 h. In contrast, previous human-piloted single-drone surveys of the same area required over 4 days to complete. A generic few-shot detector that can perform effective counting without training on the target object is utilized in this paper, which can achieve an accuracy of over 97%.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2181820071",
+                        "name": "Rui Huang"
+                    },
+                    {
+                        "authorId": "2153072739",
+                        "name": "Han Zhou"
+                    },
+                    {
+                        "authorId": "2149902725",
+                        "name": "Tong Liu"
+                    },
+                    {
+                        "authorId": "101109162",
+                        "name": "Hanlin Sheng"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "7 shows the qualitative comparison between our approach and the other methods, including FSDetView [45], Attention-RPN [6], and FamNet [32]+RR.",
+                "ICFR [48] proposes an iterative framework to progressively refine the exemplar-related features, thus producing a better density map than a single correlation in [32].",
+                "A naive approach for FSCD is to extend FamNet [32], a density-map-based approach for FSC, whose counting number is obtained by summing over the predicted density map.",
+                "Limitations of a naive approach for FSCD by extending FamNet [32] with a regression function for object detection.",
+                "Also, the number of exemplar boxes is set to K = 3, as in FamNet [32] for a fair comparison.",
+                "FamNet [32] correlates the features extracted from a few exemplars with the feature map to obtain the density map for object counting.",
+                "VCN [30] improves upon [32] by augmenting the input image with different styles to make the counting more robust.",
+                "Since there is no existing method for the new FSCD task, we compare CountingDETR with several strong baselines adapted from few-shot object counting and few-shot object detection: FamNet [32]+RR, FamNet [32]+MLP, Attention-RPN [6]+RR, and FSDetView [45]+RR.",
+                "The FSC-147 dataset [32] was recently introduced for the few-shot object counting task with 6135 images across a diverse set of 147 object categories."
+            ],
+            "citingPaper": {
+                "paperId": "496e80952faddd648e23a8d765abeed8b2c3945b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-10988",
+                    "ArXiv": "2207.10988",
+                    "DOI": "10.48550/arXiv.2207.10988",
+                    "CorpusId": 251018420
+                },
+                "corpusId": 251018420,
+                "publicationVenue": {
+                    "id": "167fa0ca-e88a-4ef7-a16f-bc66c457c806",
+                    "name": "European Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ECCV",
+                        "Eur Conf Comput Vis"
+                    ],
+                    "url": "https://link.springer.com/conference/eccv"
+                },
+                "url": "https://www.semanticscholar.org/paper/496e80952faddd648e23a8d765abeed8b2c3945b",
+                "title": "Few-shot Object Counting and Detection",
+                "abstract": "We tackle a new task of few-shot object counting and detection. Given a few exemplar bounding boxes of a target object class, we seek to count and detect all objects of the target class. This task shares the same supervision as the few-shot object counting but additionally outputs the object bounding boxes along with the total object count. To address this challenging problem, we introduce a novel two-stage training strategy and a novel uncertainty-aware few-shot object detector: Counting-DETR. The former is aimed at generating pseudo ground-truth bounding boxes to train the latter. The latter leverages the pseudo ground-truth provided by the former but takes the necessary steps to account for the imperfection of pseudo ground-truth. To validate the performance of our method on the new task, we introduce two new datasets named FSCD-147 and FSCD-LVIS. Both datasets contain images with complex scenes, multiple object classes per image, and a huge variation in object shapes, sizes, and appearance. Our proposed approach outperforms very strong baselines adapted from few-shot object counting and few-shot object detection with a large margin in both counting and detection metrics. The code and models are available at https://github.com/VinAIResearch/Counting-DETR.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2175448945",
+                        "name": "T. Nguyen"
+                    },
+                    {
+                        "authorId": "2143231711",
+                        "name": "C. Pham"
+                    },
+                    {
+                        "authorId": "144295869",
+                        "name": "Khoi Duc Minh Nguyen"
+                    },
+                    {
+                        "authorId": "2356016",
+                        "name": "Minh Hoai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Recently, methods were developed for few-shot counting [22, 23] and also one-shot counting [24] for a variety of object categories, so-called generic or class-agnostic detectors/counters."
+            ],
+            "citingPaper": {
+                "paperId": "fbcf2f41b72c9f378af146d3c94cbbd3ee73c9fd",
+                "externalIds": {
+                    "DBLP": "conf/igarss/PerkoMAR22",
+                    "DOI": "10.1109/IGARSS46834.2022.9884172",
+                    "CorpusId": 252590809
+                },
+                "corpusId": 252590809,
+                "publicationVenue": {
+                    "id": "a47b9394-c5c7-4bc8-b8fc-b08f96954278",
+                    "name": "IEEE International Geoscience and Remote Sensing Symposium",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Geosci Remote Sens Symp",
+                        "IGARSS",
+                        "International Geoscience and Remote Sensing Symposium",
+                        "IEEE Int Geosci Remote Sens Symp"
+                    ],
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome/1000307/all-proceedings"
+                },
+                "url": "https://www.semanticscholar.org/paper/fbcf2f41b72c9f378af146d3c94cbbd3ee73c9fd",
+                "title": "Counting Everything in Remote Sensing - the Need for Benchmarks",
+                "abstract": "Object counting and object density estimation is a basic technology serving many applications. For that reason, a multitude of benchmarks are existing in the computer vision community allowing to evaluate and compare different solutions for object counting. However, in remote sensing, such benchmarks are not available, which hinders fair evaluations between different methods and paradigms. This work should lead to discussions on how to optimally design and set up object counting benchmarks in remote sensing for multiple object categories and also for various satellite data, including multi-resolution, multispectral, and multi-modal data from optical and SAR sensors.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2386156",
+                        "name": "R. Perko"
+                    },
+                    {
+                        "authorId": "2097047456",
+                        "name": "Sead Mustafic"
+                    },
+                    {
+                        "authorId": "2409229",
+                        "name": "A. Almer"
+                    },
+                    {
+                        "authorId": "1791182",
+                        "name": "P. Roth"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "We compare VCN with several state-of-the-art few-shot detection and counting approaches on the Val and Test splits of FSC147.",
+                "We compare VCN with several object detectors on FSC147-Val-COCO and FSC147-Test-COCO sets, which are subsets of images from FSC147 Val and Test set which share categories with MSCOCO dataset [21].",
+                "Note that using the correlation maps as the input makes the density prediction module agnostic to the visual category and helps in generalizing to novel categories [29].",
+                "We show the effectiveness of the proposed VCNs for few-shot counting task by conducting extensive experiments on the FSC147 dataset, and improve on the previous state-of-the-art results by a significant margin.",
+                "We compare VCN with object detectors [11, 20, 32] trained on MSCOCO dataset and also the state-of-the-art fewshot counting network FamNet [29].",
+                "independent few-shot approach like MAML [9] can be applied for few-shot counting task [29], most of the fewshot image classification approaches are not suitable for our pixel level prediction task of few-shot counting.",
+                "Currently, the largest dataset for this task is FSC147 [29] with only 3,659 training images.",
+                "Density estimation based approaches [29, 47] are better suited for such scenarios.",
+                "We perform experiments on the FSC147 dataset, which is the only dataset suitable for the few-shot counting task.",
+                "However, the largest existing fewshot counting dataset [29] on which few-shot visual counters like FamNet can be trained consists of only a few thousand training images which limits the performance of the existing few-shot counters.",
+                "However, GMN still requires a few dozens to hundreds of examples to generalize to novel categories, and does not perform well if only a few examples are provided [29].",
+                "More related to ours is FamNet [29], which is a few-shot visual counter that can generalize to novel categories given only a few examples.",
+                "The regressor network is similar to the FamNet architecture [29] with a few necessary changes in the density prediction module to facilitate the training of the generator.",
+                "Our work is inspired by the recent work of [29] that builds a few-shot visual counter which can generalize to novel classes using only a few examples.",
+                "Since the size of the objects can vary a lot across the images of a few-shot counting dataset, we follow [29] and use an adaptive window size for the Gaussian kernel across different images.",
+                "Note that FamNet also follows the same test time adaptation strategy.",
+                "VCN and VCN\u2217 outperform FamNet [29] by a large margin, even though the architecture of FamNet is same as that of our few-shot regressor."
+            ],
+            "citingPaper": {
+                "paperId": "147e6a9590f345b72d2ce40bb22d903da7e9be04",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/RanjanH22",
+                    "DOI": "10.1109/CVPRW56347.2022.00467",
+                    "CorpusId": 251019940
+                },
+                "corpusId": 251019940,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/147e6a9590f345b72d2ce40bb22d903da7e9be04",
+                "title": "Vicinal Counting Networks",
+                "abstract": "We tackle the task of Few-Shot Counting. Given an image containing multiple objects of a novel visual category and few exemplar bounding boxes depicting the visual category of interest, we want to count all of the instances of the desired visual category in the image. A key challenge in building an accurate few-shot visual counter is the scarcity of annotated training data due to the laborious effort needed for collecting and annotating the data. To address this challenge, we propose Vicinal Counting Networks, which learn to augment the existing training data along with learning to count. A Vicinal Counting Network consists of a generator and a counting network. The generator takes as input an image along with a random noise vector and generates an augmented version of the input image. The counting network learns to count the objects in the original and augmented images. The training signal for the generator comes from the counting loss of the counting network, and the generator aims to synthesize images which result in a small counting loss. Unlike GANs which are trained in an adversarial setting, Vicinal Counting Networks are trained in a cooperative setting where the generator aims to help the counting network in achieving accurate predictions on the synthesized images. We also show that our proposed data augmentation framework can be extended to other counting tasks like crowd counting.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2673180",
+                        "name": "Viresh Ranjan"
+                    },
+                    {
+                        "authorId": "2356016",
+                        "name": "Minh Hoai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "A more scalable approach for counting objects from many categories is to use class-agnostic visual counters [24, 30], which can count objects from many categories.",
+                "The only dataset suitable for training class-agnostic visual counters is FSC-147 [30], which contains annotation for a single object category in each image, and may contain unannotated objects from other categories.",
+                "One of the meta learning based few-shot approaches, Model Agnostic Meta Learning (MAML) [8], has been adapted for class-agnostic counting [30].",
+                "The only existing dataset consisting of images of densely populated objects from many visual categories that can be used for training class agnostic visual counters is FSC-147 [30].",
+                "Furthermore, these visual counters need to be adapted to each new visual category [24] or each test image [30], leading to slower inference.",
+                "Unlike existing class-agnostic counters [24, 30], our approach does not use any test time adaptation or finetuning.",
+                "Fewshot Adaptation and Matching Network (FamNet) [30] is a recently proposed class agnostic few-shot visual counter which generalizes to a novel category at test time given only a few exemplars from the category.",
+                "Most related to ours is the previous works on class agnostic counting [24, 30], which build counters that can be trained to count novel classes using relatively small number of examples from the novel classes.",
+                "To obtain annotation for unannotated objects in the FSC147 dataset, we propose a novel knowledge transfer strategy where we use a RepRPN trained on a large scale object detection dataset [19] and a density prediction network [30] trained on FSC-147 as teacher networks.",
+                "Similar to the previous works on class-agnostic counting [24, 30], DPN combines the convolutional features of an exemplar, with the convolutional features of the entire image to predict the density map for the exemplar."
+            ],
+            "citingPaper": {
+                "paperId": "3a0341161bb63674299050862da5267074a5ce32",
+                "externalIds": {
+                    "DBLP": "conf/accv/RanjanN22",
+                    "ArXiv": "2205.14212",
+                    "DOI": "10.48550/arXiv.2205.14212",
+                    "CorpusId": 249192402
+                },
+                "corpusId": 249192402,
+                "publicationVenue": {
+                    "id": "a8f26d13-e373-4e48-b57b-ef89bf48f4db",
+                    "name": "Asian Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Asian Conf Comput Vis",
+                        "ACCV"
+                    ],
+                    "url": "http://www.cvl.iis.u-tokyo.ac.jp/afcv/"
+                },
+                "url": "https://www.semanticscholar.org/paper/3a0341161bb63674299050862da5267074a5ce32",
+                "title": "Exemplar Free Class Agnostic Counting",
+                "abstract": "We tackle the task of Class Agnostic Counting, which aims to count objects in a novel object category at test time without any access to labeled training data for that category. All previous class agnostic counting methods cannot work in a fully automated setting, and require computationally expensive test time adaptation. To address these challenges, we propose a visual counter which operates in a fully automated setting and does not require any test time adaptation. Our proposed approach first identifies exemplars from repeating objects in an image, and then counts the repeating objects. We propose a novel region proposal network for identifying the exemplars. After identifying the exemplars, we obtain the corresponding count by using a density estimation based Visual Counter. We evaluate our proposed approach on FSC-147 dataset, and show that it achieves superior performance compared to the existing approaches.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2673180",
+                        "name": "Viresh Ranjan"
+                    },
+                    {
+                        "authorId": "2356016",
+                        "name": "Minh Hoai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "0aaea86a57bc0cd6cf7630b68d91d52f20a0709d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-10203",
+                    "ArXiv": "2205.10203",
+                    "DOI": "10.48550/arXiv.2205.10203",
+                    "CorpusId": 248965349
+                },
+                "corpusId": 248965349,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0aaea86a57bc0cd6cf7630b68d91d52f20a0709d",
+                "title": "Learning to Count Anything: Reference-less Class-agnostic Counting with Weak Supervision",
+                "abstract": "Current class-agnostic counting methods can generalise to unseen classes but usually require reference images to define the type of object to be counted, as well as instance annotations during training. Reference-less class-agnostic counting is an emerging field that identifies counting as, at its core, a repetition-recognition task. Such methods facilitate counting on a changing set composition. We show that a general feature space with global context can enumerate instances in an image without a prior on the object type present. Specifically, we demonstrate that regression from vision transformer features without point-level supervision or reference images is superior to other reference-less methods and is competitive with methods that use reference images. We show this on the current standard few-shot counting dataset FSC-147. We also propose an improved dataset, FSC-133, which removes errors, ambiguities, and repeated images from FSC-147 and demonstrate similar performance on it. To the best of our knowledge, we are the first weakly-supervised reference-less class-agnostic counting method.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "122498389",
+                        "name": "Michael A. Hobley"
+                    },
+                    {
+                        "authorId": "2824784",
+                        "name": "V. Prisacariu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "More recently, in [26], a few box annotations of a target class are forwarded as user inputs to the counting model.",
+                "Previous Interactive Detection [36] 1 1-to-1 many many-to-many bboxes Interactive Counting [4, 26] 1 1-to-1 many many-to-many positions Interactive Segmentation [23, 35] 1 1-to-1 1 many-to-1 contour Ours many many-to-many many many-to-many bboxes",
+                "Also, our method estimates accurate bounding boxes of all objects, while [26] outputs so-called density maps.",
+                "Recently, in [26], a correlation operation between FI and user input related features was used to improve object counting performance, using a few exemplars to count as many similar objects as possible in a given image.",
+                "Object counting methods [4, 26] count multiple instances from a few user clicks and do follow a \u201cmany interactions to many instances\u201d approach."
+            ],
+            "citingPaper": {
+                "paperId": "562f0f45f3be3624b8589276aac07b2d91815a11",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/LeePSRKKPY22",
+                    "ArXiv": "2203.15266",
+                    "DOI": "10.1109/CVPR52688.2022.01374",
+                    "CorpusId": 247778375
+                },
+                "corpusId": 247778375,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/562f0f45f3be3624b8589276aac07b2d91815a11",
+                "title": "Interactive Multi-Class Tiny-Object Detection",
+                "abstract": "Annotating tens or hundreds of tiny objects in a given image is laborious yet crucial for a multitude of Computer Vision tasks. Such imagery typically contains objects from various categories, yet the multi-class interactive annotation setting for the detection task has thus far been unex-plored. To address these needs, we propose a novel interactive annotation method for multiple instances of tiny objects from multiple classes, based on a few point-based user in-puts. Our approach, C3Det, relates the full image context with annotator inputs in a local and global manner via late-fusion andfeature-correlation, respectively. We perform ex-periments on the Tiny-DOTA. and LCell datasets using both two-stage and one-stage object detection architectures to verify the efficacy of our approach. Our approach outper-forms existing approaches in interactive annotation, achieving higher mAP with fewer clicks. Furthermore, we validate the annotation efficiency of our approach in a user study where it is shown to be 2.85x faster and yield only 0.36x task load (NASA-TLX, lower is better) compared to manual annotation. The code is available at https://github.com/ChungYi347/Interactive-Multi-Class-Tiny-Object-Detection.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2118660282",
+                        "name": "C. Lee"
+                    },
+                    {
+                        "authorId": "20466488",
+                        "name": "Seonwook Park"
+                    },
+                    {
+                        "authorId": "2107902388",
+                        "name": "Heon Song"
+                    },
+                    {
+                        "authorId": "2142522475",
+                        "name": "J. Ryu"
+                    },
+                    {
+                        "authorId": "2141893365",
+                        "name": "Sanghoon Kim"
+                    },
+                    {
+                        "authorId": "2367395",
+                        "name": "Haejoon Kim"
+                    },
+                    {
+                        "authorId": "145934576",
+                        "name": "S\u00e9rgio Pereira"
+                    },
+                    {
+                        "authorId": "2283756",
+                        "name": "Donggeun Yoo"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Recently, CAC (Class Agnostic Counting) [21,29,40], which counts objects of arbitrary categories given only few exemplars, is proposed to reduce the reliance on training data.",
+                "Compared with the state-of-the-art FamNet [29], our model (BMNet+) generates high-fidelity results.",
+                "From Fig 1, by examining a recent model FamNet [29], we observe obvious noise on background and weak responses on target positions.",
+                "[29] propose the first and only CAC dataset FSC147 that covers challenges like occlusion and scale variation.",
+                "Generally, existing CAC methods [21,29,40] work in an extract-and-match pipeline.",
+                "Experiments on the public benchmark FSC147 [29] show that our method outperforms the previous best approaches by large margins, with a relative improvement of +33.",
+                "For a fair comparison, we apply the same pre-processing to query images and the feature extractor as in FamNet [29].",
+                "FamNet [29] also adopts siamese way to model similarity and further proposes test-time adaptation given test exemplars.",
+                "FSC147 [29] is the first large-scale dataset for class-agnostic counting.",
+                "Existing methods either use a learnable [21, 40] or a fixed feature extractor [29], but apply a similarity metric with some pre-defined rules, e."
+            ],
+            "citingPaper": {
+                "paperId": "ad3d701137b6a274f3579e5c14bcb05bdafdf9a3",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/Shi0FL022",
+                    "ArXiv": "2203.08354",
+                    "DOI": "10.1109/CVPR52688.2022.00931",
+                    "CorpusId": 247475778
+                },
+                "corpusId": 247475778,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/ad3d701137b6a274f3579e5c14bcb05bdafdf9a3",
+                "title": "Represent, Compare, and Learn: A Similarity-Aware Framework for Class-Agnostic Counting",
+                "abstract": "Class-agnostic counting (CAC) aims to count all instances in a query image given few exemplars. A standard pipeline is to extract visual features from exemplars and match them with query images to infer object counts. Two essential components in this pipeline are feature representation and similarity metric. Existing methods either adopt a pretrained network to represent features or learn a new one, while applying a naive similarity metric with fixed inner product. We find this paradigm leads to noisy similarity matching and hence harms counting performance. In this work, we propose a similarity-aware CAC framework that jointly learns representation and similarity metric. We first instantiate our framework with a naive baseline called Bilinear Matching Network (BMNet), whose key component is a learnable bilinear similarity metric. To further embody the core of our framework, we extend BMNet to BMNet+ that models similarity from three aspects: 1) representing the instances via their self-similarity to enhance feature robustness against intra-class variations; 2) comparing the similarity dynamically to focus on the key patterns of each exemplar; 3) learning from a supervision signal to impose explicit constraints on matching results. Extensive experiments on a recent CAC dataset FSC147 show that our models significantly outperform state-of-the-art CAC approaches. In addition, we also validate the cross-dataset generality of BMNet and BMNet+ on a car counting dataset CARPK. Code is at tiny.one/BMNet",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1516268415",
+                        "name": "Min Shi"
+                    },
+                    {
+                        "authorId": "2115605742",
+                        "name": "Hao Lu"
+                    },
+                    {
+                        "authorId": "2087088902",
+                        "name": "Chen Feng"
+                    },
+                    {
+                        "authorId": "1785399445",
+                        "name": "Chengxin Liu"
+                    },
+                    {
+                        "authorId": "9210977",
+                        "name": "ZHIGUO CAO"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "(b) Similarity-based approach [26, 46], where a similarity map is developed from raw features for regression.",
+                "To help the model dynamically get adapted to an arbitrary class, a great choice is to compare the object and the query image in feature space [23, 26,46].",
+                "Experimental results on a range of benchmarks, including FSC-147 [26], CARPK [12], PUCPR+ [12], UCSD [3], Mall [4], and ShanghaiTech [51], demonstrate our sufficient superiority over state-of-the-art methods.",
+                "The other is similarity-based [26, 46], as shown in Fig.",
+                "the support image) and the query image with expressive features, and then pinpoint the candidates via analyzing the feature correlation [23,26,46].",
+                ", using the vanilla dot production) used in prior arts [26, 46] is not adapted to fit the FSC task.",
+                "To alleviate the generalization problem, few-shot object counting (FSC) is recently introduced [26].",
+                "FamNet [26] further improves the reliability of the similarity map through multi-scale augmentation and test-time adaptation.",
+                "Few-shot object counting (FSC) [26] aims to count the number of exemplar objects occurring in a query image with only a few support images describing the exemplar object.",
+                "Few-shot object counting (FSC) has recently been proposed [23, 26, 46] and presents a much stronger generalization ability."
+            ],
+            "citingPaper": {
+                "paperId": "09e299e7cf1064a02faaf94a81983f154f1e22ea",
+                "externalIds": {
+                    "DBLP": "conf/wacv/YouYLLCL23",
+                    "ArXiv": "2201.08959",
+                    "DOI": "10.1109/WACV56688.2023.00625",
+                    "CorpusId": 247315397
+                },
+                "corpusId": 247315397,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/09e299e7cf1064a02faaf94a81983f154f1e22ea",
+                "title": "Few-shot Object Counting with Similarity-Aware Feature Enhancement",
+                "abstract": "This work studies the problem of few-shot object counting, which counts the number of exemplar objects (i.e., described by one or several support images) occurring in the query image. The major challenge lies in that the target objects can be densely packed in the query image, making it hard to recognize every single one. To tackle the obstacle, we propose a novel learning block, equipped with a similarity comparison module and a feature enhancement module. Concretely, given a support image and a query image, we first derive a score map by comparing their projected features at every spatial position. The score maps regarding all support images are collected together and normalized across both the exemplar dimension and the spatial dimensions, producing a reliable similarity map. We then enhance the query feature with the support features by employing the developed point-wise similarities as the weighting coefficients. Such a design encourages the model to inspect the query image by focusing more on the regions akin to the support images, leading to much clearer boundaries between different objects. Extensive experiments on various benchmarks and training setups suggest that we surpass the state-of-the-art methods by a sufficiently large margin. For instance, on a recent large-scale FSC-147 dataset, we surpass the state-of-the-art method by improving the mean absolute error from 22.08 to 14.32 (35%\u2191). Code has been released in https://github.com/zhiyuanyou/SAFECount.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2062515754",
+                        "name": "Zhiyuan You"
+                    },
+                    {
+                        "authorId": "2117687899",
+                        "name": "Yujun Shen"
+                    },
+                    {
+                        "authorId": "2188992002",
+                        "name": "Kai Yang"
+                    },
+                    {
+                        "authorId": "145909988",
+                        "name": "Wenhan Luo"
+                    },
+                    {
+                        "authorId": "3399505",
+                        "name": "X. Lu"
+                    },
+                    {
+                        "authorId": "2106412819",
+                        "name": "Lei Cui"
+                    },
+                    {
+                        "authorId": "2052967041",
+                        "name": "Xinyi Le"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "methods specifically designed for one-shot counting, for comprehensive evaluation, we modify FamNet [4] and CFOCNet [5] for this setting and also compare with other few-shot counting approaches [25, 26, 16, 27, 17].",
+                "Compared to the fewshot setting which usually uses at least three instances for each object [4], the one-shot setting, where only one instance is available, is clearly more challenging.",
+                "We follow the few-shot setting in [4] and modify it to one-shot object counting.",
+                "FamNet [4] uses the adaptation strategy during testing.",
+                "Previous few-shot counting methods [4, 5] usually leverage on a convolution operation to match the similarities between image features and supporting features.",
+                "FSC-147 [4] contains a total of 6135 images collected for few-shot counting problem.",
+                "Previous few-shot counting methods [4, 5] usually adopt a convolution operation where the supporting features act as kernels to match the similarities for target category.",
+                "\u2022 The experimental results show that our model achieves state-of-the-art results with significant improvements on FSC-147 [4] and COCO [6] datasets under the oneshot setting without fine-tuning.",
+                "The work [4] presents a Few Shot Adaptation and Matching Network (FamNet) to learn feature correlations and few-shot adaptation and also introduces a few-shot counting dataset named FSC-147.",
+                "The result of FamNet [4] uses the adaptation strategy during testing."
+            ],
+            "citingPaper": {
+                "paperId": "9aeb78017c493705596e6fce70f07984eef68078",
+                "externalIds": {
+                    "ArXiv": "2112.05993",
+                    "DBLP": "journals/corr/abs-2112-05993",
+                    "CorpusId": 245124135
+                },
+                "corpusId": 245124135,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/9aeb78017c493705596e6fce70f07984eef68078",
+                "title": "Object Counting: You Only Need to Look at One",
+                "abstract": "This paper aims to tackle the challenging task of one-shot object counting. Given an image containing novel, previously unseen category objects, the goal of the task is to count all instances in the desired category with only one supporting bounding box example. To this end, we propose a counting model by which you only need to Look At One instance (LaoNet). First, a feature correlation module combines the Self-Attention and Correlative-Attention modules to learn both inner-relations and inter-relations. It enables the network to be robust to the inconsistency of rotations and sizes among different instances. Second, a Scale Aggregation mechanism is designed to help extract features with different scale information. Compared with existing few-shot counting methods, LaoNet achieves state-of-the-art results while learning with a high convergence speed. The code will be available soon.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2117122541",
+                        "name": "Hui Lin"
+                    },
+                    {
+                        "authorId": "46761465",
+                        "name": "Xiaopeng Hong"
+                    },
+                    {
+                        "authorId": "2145196237",
+                        "name": "Yabin Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "We choose Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to measure the performance of object counting approaches following [9, 24, 28]:",
+                "In FSC [28], object classes are divided into base classes Cb and novel classes Cn, where Cb and Cn have no intersection.",
+                "(a) Few-shot counting results on FSC-147 [28].",
+                "Following [28], we utilize the Gaussian smoothing with adaptive window size to generate the GT density maps.",
+                "FSC methods [25, 28] utilize the intuition that the regions more similar to exemplars are more likely to be target objects.",
+                "GMN [25] and FamNet [28] both utilize the correlation to regress the density map for FSC.",
+                "In [28], the correlation A is obtained by directly convoluting the image feature map fI with the exemplar feature map fe as the convolution kernel.",
+                "FSC-147 [28] is a multi-class FSC dataset with 147 classes and 6135 images.",
+                "\u2022 Extensive experiments conducted on FSC benchmark FSC-147 [28], car counting benchmarks CARPK [12] and PUCPR+ [5, 12], and crowd counting benchmarks UCSD [3], Mall [4], and ShanghaiTech [53] demonstrate that our approach achieves state-of-the-art counting performance.",
+                "In FSC [28], there are base classes in which both a few labeled exemplars and the locations of all objects are available and novel classes in which only a few labeled exemplars are available."
+            ],
+            "citingPaper": {
+                "paperId": "d4133f1101dd41470c86b03d56f709718f3241f2",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-08959",
+                    "CorpusId": 246240136
+                },
+                "corpusId": 246240136,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/d4133f1101dd41470c86b03d56f709718f3241f2",
+                "title": "Iterative Correlation-based Feature Refinement for Few-shot Counting",
+                "abstract": "Few-shot counting aims to count objects of any class in an image given only a few exemplars of the same class. Existing correlation-based few-shot counting approaches suf-fer from the coarseness and low semantic level of the correlation. To solve these problems, we propose an iterative framework to progressively re\ufb01ne the exemplar-related features based on the correlation between the image and exemplars. Then the density map is predicted from the \ufb01nal re\ufb01ned feature map. The iterative framework includes a Correlation Distillation module and a Feature Re\ufb01nement module. During the iterations, the exemplar-related features are gradually re\ufb01ned, while the exemplar-unrelated features are suppressed, bene\ufb01ting few-shot counting where the exemplar-related features are more important. Our approach surpasses all baselines signi\ufb01cantly on few-shot counting benchmark FSC-147. Surprisingly, though designed for general class-agnostic counting, our approach still achieves state-of-the-art performance on car counting benchmarks CARPK and PUCPR+, and crowd counting benchmarks UCSD and Mall. We also achieve competitive performance on crowd counting benchmark ShanghaiTech. The code will be released soon.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2062515754",
+                        "name": "Zhiyuan You"
+                    },
+                    {
+                        "authorId": "48783128",
+                        "name": "Kairan Yang"
+                    },
+                    {
+                        "authorId": "145909988",
+                        "name": "Wenhan Luo"
+                    },
+                    {
+                        "authorId": "145574672",
+                        "name": "Xin Lu"
+                    },
+                    {
+                        "authorId": "2106412819",
+                        "name": "Lei Cui"
+                    },
+                    {
+                        "authorId": "2052967041",
+                        "name": "Xinyi Le"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "FamNet [23] defines class-agnostic counting as predicting the number of given objects represented by only a few exemplars in the same image and constructs the first dataset called FSC-147 [23].",
+                "To solve the problem of class-agnostic counting, we design architecture different from previous works [16, 23], which is illustrated in Figure 1.",
+                "In FamNet [23], exemplars are directly used as convolution kernels so that the scale information is reflected by the kernel size.",
+                "Besides FSC-147, a car counting dataset CARPK [11] is also used to explore whether a model counting general objects can be applied to counting objects in a specific category.",
+                "Figure 2 presents several examples from the FSC-147 validation set.",
+                "Following FamNet [23], we next present experimental results on CARPK [11].",
+                "We first compare our method with state-of-the-art class-agnostic models on the FSC-147 dataset.",
+                "Self-similarity-based methods like GMN [16] and FamNet [23] perform better and obtain MAEs of 26.",
+                "As shown in Table 4, SPDCN is compared with FamNet [23] and BMNet [26] (the results of BMNet are reproduced with our code).",
+                "During training, both images and exemplars are input to the counting model, and then the loss is calculated between the predicted density maps and human-annotated dot maps [23].",
+                "The dataset for class-agnostic counting FSC-147 is introduced by FamNet [23], in which it is proposed for a few-shot counting task."
+            ],
+            "citingPaper": {
+                "paperId": "86c94636921c02e160c4e1e14b82f658d9215409",
+                "externalIds": {
+                    "DBLP": "conf/bmvc/LinYM0LLHYC22",
+                    "CorpusId": 256903360
+                },
+                "corpusId": 256903360,
+                "publicationVenue": {
+                    "id": "78a7fbcc-41c5-4258-b633-04b8637d4a9f",
+                    "name": "British Machine Vision Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Br Mach Vis Conf",
+                        "BMVC"
+                    ],
+                    "url": "http://www.bmva.org/bmvc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/86c94636921c02e160c4e1e14b82f658d9215409",
+                "title": "Scale-Prior Deformable Convolution for Exemplar-Guided Class-Agnostic Counting",
+                "abstract": "Class-agnostic counting has recently emerged as a more practical counting task, which aims to predict the number and distribution of any exemplar objects, instead of counting speci\ufb01c categories like pedestrians or cars. However, recent methods are de-veloped by designing suitable similarity matching rules between exemplars and query images, but ignoring the robustness of extracted features. To address this issue, we propose a scale-prior deformable convolution by integrating exemplars\u2019 information, e.g ., scale, into the counting network backbone. As a result, the proposed counting network can extract semantic features of objects similar to the given exemplars and effectively \ufb01lter irrelevant backgrounds. Besides, we \ufb01nd that traditional L2 and generalized loss are not suitable for class-agnostic counting due to the variety of object scales in different samples. Here we propose a scale-sensitive generalized loss to tackle this problem. It can adjust the cost function formulation according to the given exemplars, making the difference between prediction and ground truth more prominent. Extensive experiments show that our model obtains remarkable improvement and achieves state-of-the-art performance on a public class-agnostic counting benchmark",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108811194",
+                        "name": "Wei Lin"
+                    },
+                    {
+                        "authorId": "2120396705",
+                        "name": "Kunlin Yang"
+                    },
+                    {
+                        "authorId": "7832311",
+                        "name": "Xinzhu Ma"
+                    },
+                    {
+                        "authorId": "72208574",
+                        "name": "Junyu Gao"
+                    },
+                    {
+                        "authorId": "2146022094",
+                        "name": "Lingbo Liu"
+                    },
+                    {
+                        "authorId": "2131167331",
+                        "name": "Shinan Liu"
+                    },
+                    {
+                        "authorId": "2115103296",
+                        "name": "Jun Hou"
+                    },
+                    {
+                        "authorId": "2170077828",
+                        "name": "Shuai Yi"
+                    },
+                    {
+                        "authorId": "3651407",
+                        "name": "Antoni B. Chan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "[31] proposed a general object counting dataset and a model that predicts counting maps from the similarity of the reference patches and the testing image.",
+                ", people), general object counting has also been proposed recently [24,48,31]."
+            ],
+            "citingPaper": {
+                "paperId": "6b09de13d75a8c430af4d6e6cedf8a46b8859a38",
+                "externalIds": {
+                    "DBLP": "conf/eccv/ZhangC22",
+                    "DOI": "10.1007/978-3-031-20077-9_14",
+                    "CorpusId": 253386906
+                },
+                "corpusId": 253386906,
+                "publicationVenue": {
+                    "id": "167fa0ca-e88a-4ef7-a16f-bc66c457c806",
+                    "name": "European Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ECCV",
+                        "Eur Conf Comput Vis"
+                    ],
+                    "url": "https://link.springer.com/conference/eccv"
+                },
+                "url": "https://www.semanticscholar.org/paper/6b09de13d75a8c430af4d6e6cedf8a46b8859a38",
+                "title": "Calibration-Free Multi-view Crowd Counting",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48497716",
+                        "name": "Qi Zhang"
+                    },
+                    {
+                        "authorId": "3651407",
+                        "name": "Antoni B. Chan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "2d44736868e132e3f94090402b8d845acac8553a",
+                "externalIds": {
+                    "DBLP": "conf/eccv/GongZ0DS22",
+                    "DOI": "10.1007/978-3-031-19827-4_23",
+                    "CorpusId": 253270106
+                },
+                "corpusId": 253270106,
+                "publicationVenue": {
+                    "id": "167fa0ca-e88a-4ef7-a16f-bc66c457c806",
+                    "name": "European Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ECCV",
+                        "Eur Conf Comput Vis"
+                    ],
+                    "url": "https://link.springer.com/conference/eccv"
+                },
+                "url": "https://www.semanticscholar.org/paper/2d44736868e132e3f94090402b8d845acac8553a",
+                "title": "Class-Agnostic Object Counting Robust to Intraclass Diversity",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145070970",
+                        "name": "Shenjian Gong"
+                    },
+                    {
+                        "authorId": "47179941",
+                        "name": "Shanshan Zhang"
+                    },
+                    {
+                        "authorId": "2109726986",
+                        "name": "Jiansheng Yang"
+                    },
+                    {
+                        "authorId": "1778526",
+                        "name": "Dengxin Dai"
+                    },
+                    {
+                        "authorId": "48920094",
+                        "name": "B. Schiele"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2015), or heuristics such as counting-specific model components and processes (Zhang et al., 2018; Trott et al., 2018; Ranjan et al., 2021).",
+                "Helpful approaches improving performance on such tasks include using curated synthetic data (Geva et al., 2020; Zhang et al., 2015), or heuristics such as counting-specific model components and processes (Zhang et al., 2018; Trott et al., 2018; Ranjan et al., 2021)."
+            ],
+            "citingPaper": {
+                "paperId": "1e336827a740f0e4a3def14d261e55d1bda26d83",
+                "externalIds": {
+                    "CorpusId": 259305921
+                },
+                "corpusId": 259305921,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1e336827a740f0e4a3def14d261e55d1bda26d83",
+                "title": "Probing Representations of Numbers in Vision and Language Models",
+                "abstract": "The ability to represent and reason about numbers in different contexts is an important aspect of human and animal cognition. Literature in numerical cognition posits the existence of two number representation systems: one for representing small, exact numbers, which is largely based on visual processing, and another system for representing larger, approximate quantities. In this work, we investigate number sense in vision and language models by examining learned representations and asking: What is the structure of the space representing numbers? Which modality contributes mostly to the representation of a number? While our analyses reveal that small numbers are processed differently from large numbers, as in biological systems, we also found a strong linguistic contribution in the structure of number representations in vision and language models, highlighting a difference between representations in biology and artificial systems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2595569",
+                        "name": "Ivana Kaji\u0107"
+                    },
+                    {
+                        "authorId": "3208081",
+                        "name": "Aida Nematzadeh"
+                    }
+                ]
+            }
+        }
+    ]
+}

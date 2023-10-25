@@ -1,0 +1,2793 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "7250520be871806051ec077057929abc2eb7c11f",
+                "externalIds": {
+                    "ArXiv": "2309.04756",
+                    "DBLP": "journals/corr/abs-2309-04756",
+                    "DOI": "10.48550/arXiv.2309.04756",
+                    "CorpusId": 261682418
+                },
+                "corpusId": 261682418,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7250520be871806051ec077057929abc2eb7c11f",
+                "title": "Probabilistic Triangulation for Uncalibrated Multi-View 3D Human Pose Estimation",
+                "abstract": "3D human pose estimation has been a long-standing challenge in computer vision and graphics, where multi-view methods have significantly progressed but are limited by the tedious calibration processes. Existing multi-view methods are restricted to fixed camera pose and therefore lack generalization ability. This paper presents a novel Probabilistic Triangulation module that can be embedded in a calibrated 3D human pose estimation method, generalizing it to uncalibration scenes. The key idea is to use a probability distribution to model the camera pose and iteratively update the distribution from 2D features instead of using camera pose. Specifically, We maintain a camera pose distribution and then iteratively update this distribution by computing the posterior probability of the camera pose through Monte Carlo sampling. This way, the gradients can be directly back-propagated from the 3D pose estimation to the 2D heatmap, enabling end-to-end training. Extensive experiments on Human3.6M and CMU Panoptic demonstrate that our method outperforms other uncalibration methods and achieves comparable results with state-of-the-art calibration methods. Thus, our method achieves a trade-off between estimation accuracy and generalizability. Our code is in https://github.com/bymaths/probabilistic_triangulation",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2238956202",
+                        "name": "Boyuan Jiang"
+                    },
+                    {
+                        "authorId": "2136117156",
+                        "name": "Lei Hu"
+                    },
+                    {
+                        "authorId": "2237803265",
+                        "name": "Shihong Xia"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Object pose estimation has shown significant progress recently, based on different techniques, such as direct pose regression [56, 7, 26], 2D reprojection regression [44, 42, 18, 19, 40], 3D keypoint prediction [30, 41, 49, 11], and differentiable PnP solver [27, 17, 2, 3]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "31ab268ef1d9f800288469ae53f9956e3c08b865",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-10016",
+                    "ArXiv": "2308.10016",
+                    "DOI": "10.48550/arXiv.2308.10016",
+                    "CorpusId": 261049027
+                },
+                "corpusId": 261049027,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/31ab268ef1d9f800288469ae53f9956e3c08b865",
+                "title": "Pseudo Flow Consistency for Self-Supervised 6D Object Pose Estimation",
+                "abstract": "Most self-supervised 6D object pose estimation methods can only work with additional depth information or rely on the accurate annotation of 2D segmentation masks, limiting their application range. In this paper, we propose a 6D object pose estimation method that can be trained with pure RGB images without any auxiliary information. We first obtain a rough pose initialization from networks trained on synthetic images rendered from the target's 3D mesh. Then, we introduce a refinement strategy leveraging the geometry constraint in synthetic-to-real image pairs from multiple different views. We formulate this geometry constraint as pixel-level flow consistency between the training images with dynamically generated pseudo labels. We evaluate our method on three challenging datasets and demonstrate that it outperforms state-of-the-art self-supervised methods significantly, with neither 2D annotations nor additional depth images.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2142034579",
+                        "name": "Yang Hai"
+                    },
+                    {
+                        "authorId": "145072964",
+                        "name": "Rui Song"
+                    },
+                    {
+                        "authorId": "46275537",
+                        "name": "Jiaojiao Li"
+                    },
+                    {
+                        "authorId": "2935326",
+                        "name": "David Ferstl"
+                    },
+                    {
+                        "authorId": "7741488",
+                        "name": "Yinlin Hu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "a1eb002df85e204946eddc4006c9403aa0644373",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-11543",
+                    "ArXiv": "2307.11543",
+                    "DOI": "10.48550/arXiv.2307.11543",
+                    "CorpusId": 260091360
+                },
+                "corpusId": 260091360,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a1eb002df85e204946eddc4006c9403aa0644373",
+                "title": "KVN: Keypoints Voting Network with Differentiable RANSAC for Stereo Pose Estimation",
+                "abstract": "Object pose estimation is a fundamental computer vision task exploited in several robotics and augmented reality applications. Many established approaches rely on predicting 2D-3D keypoint correspondences using RANSAC (Random sample consensus) and estimating the object pose using the PnP (Perspective-n-Point) algorithm. Being RANSAC non-differentiable, correspondences cannot be directly learned in an end-to-end fashion. In this paper, we address the stereo image-based object pose estimation problem by (i) introducing a differentiable RANSAC layer into a well-known monocular pose estimation network; (ii) exploiting an uncertainty-driven multi-view PnP solver which can fuse information from multiple views. We evaluate our approach on a challenging public stereo object pose estimation dataset, yielding state-of-the-art results against other recent approaches. Furthermore, in our ablation study, we show that the differentiable RANSAC layer plays a significant role in the accuracy of the proposed method. We release with this paper the open-source implementation of our method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2199209406",
+                        "name": "Ivano Donadi"
+                    },
+                    {
+                        "authorId": "144446984",
+                        "name": "A. Pretto"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[9] proposed to differentiate PnP using the implicit function theorem."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "db442a4aee398f4a3a10bf11a56ec2c8a7427d2d",
+                "externalIds": {
+                    "DBLP": "journals/ras/PeriyasamyATB23",
+                    "ArXiv": "2307.11550",
+                    "DOI": "10.1016/j.robot.2023.104490",
+                    "CorpusId": 259959668
+                },
+                "corpusId": 259959668,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/db442a4aee398f4a3a10bf11a56ec2c8a7427d2d",
+                "title": "YOLOPose V2: Understanding and Improving Transformer-based 6D Pose Estimation",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "7141040",
+                        "name": "Arul Selvam Periyasamy"
+                    },
+                    {
+                        "authorId": "2075280134",
+                        "name": "A. Amini"
+                    },
+                    {
+                        "authorId": "2223812833",
+                        "name": "Vladimir Tsaturyan"
+                    },
+                    {
+                        "authorId": "1699019",
+                        "name": "Sven Behnke"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The camera pose estimation method is improved by adopting simplified constraint equations [14] or reducing the corresponding parameters [15], more recently using end-to-end probabilistic methods [13], [16], [17]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "d8eddcad77ea24bc33b438c8398a61ade4e0b722",
+                "externalIds": {
+                    "DOI": "10.1109/JSEN.2023.3266392",
+                    "CorpusId": 258159437
+                },
+                "corpusId": 258159437,
+                "publicationVenue": {
+                    "id": "b210fd3d-11d7-478e-a0aa-7e3d2a4f482d",
+                    "name": "IEEE Sensors Journal",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Sens J"
+                    ],
+                    "issn": "1530-437X",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=7361",
+                    "alternate_urls": [
+                        "http://ieee-sensors.org/sensors-journal/",
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?puNumber=7361",
+                        "http://www.ieee-sensors.org/journals",
+                        "https://ieee-sensors.org/sensors-journal/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d8eddcad77ea24bc33b438c8398a61ade4e0b722",
+                "title": "A Robust and Fast Method to the Perspective-n-Point Problem for Camera Pose Estimation",
+                "abstract": "This article investigates the perspective ${n}$ -point (PnP) problem and provides an effective, dependable, and fast optimal solution. The challenging pose estimation problem is changed into the ideal circumstance for solving the transition matrix by estimating the position and orientation of the camera based on known reference points. This method meets both the geometric optimality and the statistical optimal solution by accounting for observation and propagation uncertainty in the solution process. In addition, to further optimize the error caused by the mapping process, this article introduces the Broyden\u2013Fletcher\u2013Goldfarb\u2013Shanno (L-BFGS) algorithm for optimal processing. It saves time and cost because it can iterate the optimal transition matrix and systematic error synchronously. In this article, the algorithm simulation tests are carried out in the standard case, the quasi-singular case, and the planar case. The results of the experiments demonstrate that the strategy suggested in this article can successfully address the issue of camera position estimation. Compared with the existing advanced technology, the accuracy is improved by about 8%\u201313%, and the time cost is low.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2090169",
+                        "name": "Sheng Zhuang"
+                    },
+                    {
+                        "authorId": "2142549306",
+                        "name": "Zongmin Zhao"
+                    },
+                    {
+                        "authorId": "2153396471",
+                        "name": "Lin Cao"
+                    },
+                    {
+                        "authorId": "2111206337",
+                        "name": "Dongfeng Wang"
+                    },
+                    {
+                        "authorId": "2084646745",
+                        "name": "Chong Fu"
+                    },
+                    {
+                        "authorId": "3015385",
+                        "name": "Kangning Du"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "On the other hand, some recent methods try to make the PnP solvers differentiable [4, 5, 17]."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "2287f5e9c34078c8503585a459a11be20782d432",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-13266",
+                    "ArXiv": "2306.13266",
+                    "DOI": "10.1109/CVPR52729.2023.00468",
+                    "CorpusId": 259243565
+                },
+                "corpusId": 259243565,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2287f5e9c34078c8503585a459a11be20782d432",
+                "title": "Shape-Constraint Recurrent Flow for 6D Object Pose Estimation",
+                "abstract": "Most recent 6D object pose methods use 2D optical flow to refine their results. However, the general optical flow methods typically do not consider the target's 3D shape information during matching, making them less effective in 6D object pose estimation. In this work, we propose a shape-constraint recurrent matching framework for 6D object pose estimation. We first compute a pose-induced flow based on the displacement of 2D reprojection between the initial pose and the currently estimated pose, which embeds the target's 3D shape implicitly. Then we use this pose-induced flow to construct the correlation map for the following matching iterations, which reduces the matching space significantly and is much easier to learn. Further-more, we use networks to learn the object pose based on the current estimated flow, which facilitates the computation of the pose-induced flow for the next iteration and yields an end-to-end system for object pose. Finally, we optimize the optical flow and object pose simultaneously in a recurrent manner. We evaluate our method on three challenging 6D object pose datasets and show that it outperforms the state of the art significantly in both accuracy and efficiency.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2142034579",
+                        "name": "Yang Hai"
+                    },
+                    {
+                        "authorId": "145072964",
+                        "name": "Rui Song"
+                    },
+                    {
+                        "authorId": "46275537",
+                        "name": "Jiaojiao Li"
+                    },
+                    {
+                        "authorId": "7741488",
+                        "name": "Yinlin Hu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "77b52950a4f5d5397801d440de2831eb3c996137",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/0001YLOA23",
+                    "DOI": "10.1109/CVPR52729.2023.00472",
+                    "CorpusId": 260815592
+                },
+                "corpusId": 260815592,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/77b52950a4f5d5397801d440de2831eb3c996137",
+                "title": "Revisiting the P3P Problem",
+                "abstract": "One of the classical multi-view geometry problems is the so called P3P problem, where the absolute pose of a calibrated camera is determined from three 2D-to-3D correspondences. Since these solvers form a critical component of many vision systems (e.g. in localization and Structure-from-Motion), there have been significant effort in developing faster and more stable algorithms. While the current state-of-the-art solvers are both extremely fast and stable, there still exist configurations where they break down. In this paper we algebraically formulate the problem as finding the intersection of two conics. With this formulation we are able to analytically characterize the real roots of the polynomial system and employ a tailored solution strategy for each problem instance. The result is a fast and stable solver, that is able to correctly solve cases where competing methods might fail. Our experimental evaluation shows that we outperform the current state-of-the-art methods both in terms of speed and success rate.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "5019467",
+                        "name": "Yaqing Ding"
+                    },
+                    {
+                        "authorId": "2118802162",
+                        "name": "Jian Yang"
+                    },
+                    {
+                        "authorId": "1729316",
+                        "name": "Viktor Larsson"
+                    },
+                    {
+                        "authorId": "145618691",
+                        "name": "Carl Olsson"
+                    },
+                    {
+                        "authorId": "1725762",
+                        "name": "Kalle \u00c5str\u00f6m"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Instead of direct estimation, correspondence guided methods [48, 54, 64, 44, 22, 49, 21, 23, 77, 46, 38, 71, 10, 61] follow a two-stage framework: they first predict a set of correspondences between 3D object frame coordinates and 2D image plane coordinates, and then recover the pose from the 3D-2D correspondences with a PnP algorithm [32, 30, 11, 69, 6]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "77b03782eb364c510c3206f3eddc610341ab0882",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-16874",
+                    "ArXiv": "2303.16874",
+                    "DOI": "10.48550/arXiv.2303.16874",
+                    "CorpusId": 257804650
+                },
+                "corpusId": 257804650,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/77b03782eb364c510c3206f3eddc610341ab0882",
+                "title": "CheckerPose: Progressive Dense Keypoint Localization for Object Pose Estimation with Graph Neural Network",
+                "abstract": "Estimating the 6-DoF pose of a rigid object from a single RGB image is a crucial yet challenging task. Recent studies have shown the great potential of dense correspondence-based solutions, yet improvements are still needed to reach practical deployment. In this paper, we propose a novel pose estimation algorithm named CheckerPose, which improves on three main aspects. Firstly, CheckerPose densely samples 3D keypoints from the surface of the 3D object and finds their 2D correspondences progressively in the 2D image. Compared to previous solutions that conduct dense sampling in the image space, our strategy enables the correspondence searching in a 2D grid (i.e., pixel coordinate). Secondly, for our 3D-to-2D correspondence, we design a compact binary code representation for 2D image locations. This representation not only allows for progressive correspondence refinement but also converts the correspondence regression to a more efficient classification problem. Thirdly, we adopt a graph neural network to explicitly model the interactions among the sampled 3D keypoints, further boosting the reliability and accuracy of the correspondences. Together, these novel components make CheckerPose a strong pose estimation algorithm. When evaluated on the popular Linemod, Linemod-O, and YCB-V object pose estimation benchmarks, CheckerPose clearly boosts the accuracy of correspondence-based methods and achieves state-of-the-art performances. Code is available at https://github.com/RuyiLian/CheckerPose.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2040248664",
+                        "name": "Ruyi Lian"
+                    },
+                    {
+                        "authorId": "1805398",
+                        "name": "Haibin Ling"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "6392a2b4ace415d99a3972c6d65945bd506904d7",
+                "externalIds": {
+                    "ArXiv": "2303.12246",
+                    "DBLP": "conf/cvpr/YangP23",
+                    "DOI": "10.1109/CVPR52729.2023.00864",
+                    "CorpusId": 257663963
+                },
+                "corpusId": 257663963,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6392a2b4ace415d99a3972c6d65945bd506904d7",
+                "title": "Object Pose Estimation with Statistical Guarantees: Conformal Keypoint Detection and Geometric Uncertainty Propagation",
+                "abstract": "The two-stage object pose estimation paradigm first detects semantic keypoints on the image and then estimates the 6D pose by minimizing reprojection errors. Despite performing well on standard benchmarks, existing techniques offer no provable guarantees on the quality and uncertainty of the estimation. In this paper, we inject two fundamental changes, namely conformal keypoint detection and geometric uncertainty propagation, into the two-stage paradigm and propose the first pose estimator that endows an estimation with provable and computable worst-case error bounds. On one hand, conformal keypoint detection applies the statistical machinery of inductive conformal prediction to convert heuristic keypoint detections into circular or elliptical prediction sets that cover the groundtruth keypoints with a user-specified marginal probability (e.g., 90%). Geometric uncertainty propagation, on the other, propagates the geometric constraints on the keypoints to the 6D object pose, leading to a Pose UnceRtainty SEt (PURSE) that guarantees coverage of the groundtruth pose with the same probability. The PURSE, however, is a nonconvex set that does not directly lead to estimated poses and uncertainties. Therefore, we develop RANdom SAmple averaGing (RANSAG) to compute an average pose and apply semidefinite relaxation to upper bound the worst-case errors between the average pose and the groundtruth. On the LineMOD Occlusion dataset we demonstrate: (i) the PURSE covers the groundtruth with valid probabilities; (ii) the worst-case error bounds provide correct uncertainty quantification; and (iii) the average pose achieves better or similar accuracy as representative methods based on sparse keypoints.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2109768962",
+                        "name": "Heng Yang"
+                    },
+                    {
+                        "authorId": "1696085",
+                        "name": "M. Pavone"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "7, at the very beginning, when the correspondences have large errors, both EPro-PnP [7] and BPnP [6] have good correctness.",
+                "[6] observe that the gradient of the optimal pose can be calculated by applying the implicit function theorem [26] around the optimal solution.",
+                "Nevertheless, to the best of our knowledge, all of these differentiable PnP layers have a common property: They first solve the PnP problem to obtain either the pose [3, 4, 6] or the posterior pose distribution [7], and then compute the error to be backpropagated based on a dedicated loss funcar X iv :2 30 3.",
+                "To enable end-to-end training, several attempts have been made to incorporate the PnP solver as a differentiable network layer [3, 4, 6].",
+                "We also compare our loss function with the state-of-the-art differentiable PnP methods, namely, BPnP [6] and EPro-PnP [7].",
+                "The LC loss yields 99.9% gradient correctness, generating the most dilated maps; EPro-PnP produces less dilated maps, and BPnP with about 70% correctness generates the least dilation.",
+                "which can be computed following the implicit function theorem [6, 26].",
+                "Note that BPnP [6] does not fully constrain the weights, thus we remove the scale branch as stated in Sec.",
+                "[6] illustrated cases where the final pose has successfully converged to the ground truth while the correspondences had not."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "result",
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "b7b4ed9933eed2542d58495ce7629ff8a6e4c9ee",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-11516",
+                    "ArXiv": "2303.11516",
+                    "DOI": "10.48550/arXiv.2303.11516",
+                    "CorpusId": 257636992
+                },
+                "corpusId": 257636992,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b7b4ed9933eed2542d58495ce7629ff8a6e4c9ee",
+                "title": "Linear-Covariance Loss for End-to-End Learning of 6D Pose Estimation",
+                "abstract": "Most modern image-based 6D object pose estimation methods learn to predict 2D-3D correspondences, from which the pose can be obtained using a PnP solver. Because of the non-differentiable nature of common PnP solvers, these methods are supervised via the individual correspondences. To address this, several methods have designed differentiable PnP strategies, thus imposing supervision on the pose obtained after the PnP step. Here, we argue that this conflicts with the averaging nature of the PnP problem, leading to gradients that may encourage the network to degrade the accuracy of individual correspondences. To address this, we derive a loss function that exploits the ground truth pose before solving the PnP problem. Specifically, we linearize the PnP solver around the ground-truth pose and compute the covariance of the resulting pose distribution. We then define our loss based on the diagonal covariance elements, which entails considering the final pose estimate yet not suffering from the PnP averaging issue. Our experiments show that our loss consistently improves the pose estimation accuracy for both dense and sparse correspondence based methods, achieving state-of-the-art results on both Linemod-Occluded and YCB-Video.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "150102288",
+                        "name": "Fulin Liu"
+                    },
+                    {
+                        "authorId": "7741488",
+                        "name": "Yinlin Hu"
+                    },
+                    {
+                        "authorId": "2862871",
+                        "name": "M. Salzmann"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "BPnP [2] considers the optimization as a layer and enables the backpropagation of network as a whole with the help of the implicit theorem.",
+                "We also design a unique training scheme for this network by introducing a Back-propagated PnP (BPnP) layer [2] so that reprojection error can be adopted as the loss function.",
+                "We employ reprojection error as loss function which is enabled by building on the recent progress on the PnP [1], [2], [28] problem.",
+                "To obtain extrinsics and enable the network end-to-end training, we connect the network with a BPnP layer [2] to estimate [W R, C W t] from the predicted K."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "521ab040324a5afed89400f7833beee3ceadf9fd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-11307",
+                    "ArXiv": "2303.11307",
+                    "DOI": "10.48550/arXiv.2303.11307",
+                    "CorpusId": 257631659
+                },
+                "corpusId": 257631659,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/521ab040324a5afed89400f7833beee3ceadf9fd",
+                "title": "DIME-Net: Neural Network-Based Dynamic Intrinsic Parameter Rectification for Cameras with Optical Image Stabilization System",
+                "abstract": "Optical Image Stabilization (OIS) system in mobile devices reduces image blurring by steering lens to compensate for hand jitters. However, OIS changes intrinsic camera parameters (i.e. $\\mathrm{K}$ matrix) dynamically which hinders accurate camera pose estimation or 3D reconstruction. Here we propose a novel neural network-based approach that estimates $\\mathrm{K}$ matrix in real-time so that pose estimation or scene reconstruction can be run at camera native resolution for the highest accuracy on mobile devices. Our network design takes gratified projection model discrepancy feature and 3D point positions as inputs and employs a Multi-Layer Perceptron (MLP) to approximate $f_{\\mathrm{K}}$ manifold. We also design a unique training scheme for this network by introducing a Back propagated PnP (BPnP) layer so that reprojection error can be adopted as the loss function. The training process utilizes precise calibration patterns for capturing accurate $f_{\\mathrm{K}}$ manifold but the trained network can be used anywhere. We name the proposed Dynamic Intrinsic Manifold Estimation network as DIME-Net and have it implemented and tested on three different mobile devices. In all cases, DIME-Net can reduce reprojection error by at least $64\\%$ indicating that our design is successful.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2055073142",
+                        "name": "Shu-Hao Yeh"
+                    },
+                    {
+                        "authorId": "72330491",
+                        "name": "Shuangyun Xie"
+                    },
+                    {
+                        "authorId": "2119264385",
+                        "name": "Di Wang"
+                    },
+                    {
+                        "authorId": "2117115773",
+                        "name": "Wei Yan"
+                    },
+                    {
+                        "authorId": "2058123",
+                        "name": "Dezhen Song"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "2e462eff8fc41b8b7a0d3fa327ca433b2948101a",
+                "externalIds": {
+                    "DBLP": "conf/iclr/0015GMG23",
+                    "ArXiv": "2303.10778",
+                    "DOI": "10.48550/arXiv.2303.10778",
+                    "CorpusId": 257632075
+                },
+                "corpusId": 257632075,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/2e462eff8fc41b8b7a0d3fa327ca433b2948101a",
+                "title": "Deep Declarative Dynamic Time Warping for End-to-End Learning of Alignment Paths",
+                "abstract": "This paper addresses learning end-to-end models for time series data that include a temporal alignment step via dynamic time warping (DTW). Existing approaches to differentiable DTW either differentiate through a fixed warping path or apply a differentiable relaxation to the min operator found in the recursive steps used to solve the DTW problem. We instead propose a DTW layer based around bi-level optimisation and deep declarative networks, which we name DecDTW. By formulating DTW as a continuous, inequality constrained optimisation problem, we can compute gradients for the solution of the optimal alignment (with respect to the underlying time series) using implicit differentiation. An interesting byproduct of this formulation is that DecDTW outputs the optimal warping path between two time series as opposed to a soft approximation, recoverable from Soft-DTW. We show that this property is particularly useful for applications where downstream loss functions are defined on the optimal alignment path itself. This naturally occurs, for instance, when learning to improve the accuracy of predicted alignments against ground truth alignments. We evaluate DecDTW on two such applications, namely the audio-to-score alignment task in music information retrieval and the visual place recognition task in robotics, demonstrating state-of-the-art results in both.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2153556099",
+                        "name": "Ming Xu"
+                    },
+                    {
+                        "authorId": "1735947",
+                        "name": "Sourav Garg"
+                    },
+                    {
+                        "authorId": "1809144",
+                        "name": "Michael Milford"
+                    },
+                    {
+                        "authorId": "47873182",
+                        "name": "Stephen Gould"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "(12) Following [5], we construct a constrain function F to employ the implicit function theorem:",
+                "Since the optimal so-lution T c \u2217 b is a local minimum for the objective function O ( o , p , T cb , K ) , a stationary constraint of the optimization process can be constructed by taking the first order derivative of the objective function with respect to T cb : Following [5], we construct a constrain function F to employ the implicit function theorem: Substituting the Eq.",
+                "Inspired by [5], the implicit function theorem [25] is applied to obtain the gradient through implicit differentiation."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "4a8ec1426e819f6d0509b0ab0bb219ac6d771024",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-14332",
+                    "ArXiv": "2302.14332",
+                    "DOI": "10.1109/CVPR52729.2023.02040",
+                    "CorpusId": 257232804
+                },
+                "corpusId": 257232804,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4a8ec1426e819f6d0509b0ab0bb219ac6d771024",
+                "title": "Markerless Camera-to-Robot Pose Estimation via Self-Supervised Sim-to-Real Transfer",
+                "abstract": "Solving the camera-to-robot pose is a fundamental requirement for vision-based robot control, and is a process that takes considerable effort and cares to make accurate. Traditional approaches require modification of the robot via markers, and subsequent deep learning approaches enabled markerless feature extraction. Mainstream deep learning methods only use synthetic data and rely on Domain Randomization to fill the sim-to-real gap, because acquiring the 3D annotation is labor-intensive. In this work, we go beyond the limitation of 3D annotations for real-world data. We propose an end-to-end pose estimation framework that is capable of online camera-to-robot calibration and a self-supervised training method to scale the training to unlabeled real-world data. Our framework combines deep learning and geometric vision for solving the robot pose, and the pipeline is fully differentiable. To train the Camera-to-Robot Pose Estimation Network (CtRNet), we leverage foreground segmentation and differentiable rendering for image-level self-supervision. The pose prediction is visualized through a renderer and the image loss with the input image is back-propagated to train the neural network. Our experimental results on two public real datasets confirm the effectiveness of our approach over existing works. We also integrate our framework into a visual servoing system to demonstrate the promise of real-time precise robot pose estimation for automation tasks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "153155220",
+                        "name": "Jingpei Lu"
+                    },
+                    {
+                        "authorId": "1876589722",
+                        "name": "Florian Richter"
+                    },
+                    {
+                        "authorId": "35860894",
+                        "name": "Michael C. Yip"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We used the EPnP [28] implementation from Pytorch3D [44], since we found it to be faster and more stable than the methods based on declarative layers [8, 16]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "d9f86ac14fb79f762ba23c1edb74fdc408d1e91f",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/SiarohinMSORLCT23",
+                    "ArXiv": "2301.11326",
+                    "DOI": "10.1109/CVPR52729.2023.00452",
+                    "CorpusId": 256274770
+                },
+                "corpusId": 256274770,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d9f86ac14fb79f762ba23c1edb74fdc408d1e91f",
+                "title": "Unsupervised Volumetric Animation",
+                "abstract": "We propose a novel approach for unsupervised 3D animation of non-rigid deformable objects. Our method learns the 3D structure and dynamics of objects solely from single-view RGB videos, and can decompose them into semantically meaningful parts that can be tracked and animated. Using a 3D autodecoder framework, paired with a keypoint estimator via a differentiable PnP algorithm, our model learns the underlying object geometry and parts decomposition in an entirely unsupervised manner. This allows it to perform 3D segmentation, 3D keypoint estimation, novel view synthesis, and animation. We primarily evaluate the framework on two video datasets: VoxCeleb 2562 and TEDXPeople 2562. In addition, on the Cats 2562 image dataset, we show it even learns compelling 3D geometry from still images. Finally, we show our model can obtain animatable 3D objects from a single or few images 11Code and visual results available on our project website: https://snap-research.github.io/unsupervised-volumetric-animation..",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "10753214",
+                        "name": "Aliaksandr Siarohin"
+                    },
+                    {
+                        "authorId": "1698103472",
+                        "name": "Willi Menapace"
+                    },
+                    {
+                        "authorId": "51118864",
+                        "name": "Ivan Skorokhodov"
+                    },
+                    {
+                        "authorId": "38376240",
+                        "name": "Kyle Olszewski"
+                    },
+                    {
+                        "authorId": "2184570346",
+                        "name": "Jian Ren"
+                    },
+                    {
+                        "authorId": "49923155",
+                        "name": "Hsin-Ying Lee"
+                    },
+                    {
+                        "authorId": "1752091",
+                        "name": "Menglei Chai"
+                    },
+                    {
+                        "authorId": "145582202",
+                        "name": "S. Tulyakov"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Then, we employ the backpropagatable PnP algorithm from [5] to retrieve the estimated rotation matrix R pnp and translation vector t i pnp.",
+                "The loss has an additional regularisation term, comparing pest with ppnp, to ensure convergence of the estimated key-point coordinates the desired positions [5]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "755b7cfc119c7e834e3889cc422b8eb2faa1698f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-13415",
+                    "ArXiv": "2212.13415",
+                    "DOI": "10.48550/arXiv.2212.13415",
+                    "CorpusId": 255186405
+                },
+                "corpusId": 255186405,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/755b7cfc119c7e834e3889cc422b8eb2faa1698f",
+                "title": "Spacecraft Pose Estimation Based on Unsupervised Domain Adaptation and on a 3D-Guided Loss Combination",
+                "abstract": "Spacecraft pose estimation is a key task to enable space missions in which two spacecrafts must navigate around each other. Current state-of-the-art algorithms for pose estimation employ data-driven techniques. However, there is an absence of real training data for spacecraft imaged in space conditions due to the costs and difficulties associated with the space environment. This has motivated the introduction of 3D data simulators, solving the issue of data availability but introducing a large gap between the training (source) and test (target) domains. We explore a method that incorporates 3D structure into the spacecraft pose estimation pipeline to provide robustness to intensity domain shift and we present an algorithm for unsupervised domain adaptation with robust pseudo-labelling. Our solution has ranked second in the two categories of the 2021 Pose Estimation Challenge organised by the European Space Agency and the Stanford University, achieving the lowest average error over the two categories.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2051283296",
+                        "name": "Juan Ignacio Bravo P\u00e9rez-Villar"
+                    },
+                    {
+                        "authorId": "1380965229",
+                        "name": "\u00c1lvaro Garc\u00eda-Mart\u00edn"
+                    },
+                    {
+                        "authorId": "2064673549",
+                        "name": "Jes'us Besc'os"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "0ddb75bb3def72dfdacbe8c9ba1e0e15d7f068d6",
+                "externalIds": {
+                    "DOI": "10.1016/j.isprsjprs.2022.10.009",
+                    "CorpusId": 253315359
+                },
+                "corpusId": 253315359,
+                "publicationVenue": {
+                    "id": "227fb221-5e57-477c-b756-e39dd8ffd538",
+                    "name": "Isprs Journal of Photogrammetry and Remote Sensing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Isprs J Photogramm Remote Sens"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0ddb75bb3def72dfdacbe8c9ba1e0e15d7f068d6",
+                "title": "I2D-Loc: Camera localization via image to LiDAR depth flow",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2110719797",
+                        "name": "K. Chen"
+                    },
+                    {
+                        "authorId": "30863117",
+                        "name": "Huai Yu"
+                    },
+                    {
+                        "authorId": "49230398",
+                        "name": "Wen Yang"
+                    },
+                    {
+                        "authorId": "2109352265",
+                        "name": "Lei Yu"
+                    },
+                    {
+                        "authorId": "32634992",
+                        "name": "S. Scherer"
+                    },
+                    {
+                        "authorId": "51280933",
+                        "name": "Guisong Xia"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The formal description is: given coordinates of n 3D points p in world coordinate system C and their corresponding coordinates p in pixel coordinate system C , PnP wants to search the pose (rotation R, and translation t) of camera in C [47]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "9e2691446318107cc71e2c215b0c8c7a79f0ba9a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-16192",
+                    "ArXiv": "2211.16192",
+                    "DOI": "10.48550/arXiv.2211.16192",
+                    "CorpusId": 254070002
+                },
+                "corpusId": 254070002,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/9e2691446318107cc71e2c215b0c8c7a79f0ba9a",
+                "title": "Be Careful with Rotation: A Uniform Backdoor Pattern for 3D Shape",
+                "abstract": "\u2014For saving cost, many deep neural networks (DNNs) are trained on third-party datasets downloaded from internet, which enables attacker to implant backdoor into DNNs. In 2D domain, inherent structures of different image formats are similar. Hence, backdoor attack designed for one image format will suite for others. However, when it comes to 3D world, there is a huge disparity among different 3D data structures. As a result, backdoor pattern designed for one certain 3D data structure will be disable for other data structures of the same 3D scene. Therefore, this paper designs a uniform backdoor pattern: NRBdoor ( N oisy R otation B ackdoor) which is able to adapt for heterogeneous 3D data structures. Speci\ufb01cally, we start from the unit rotation and then search for the optimal pattern by noise generation and selection process. The proposed NRBdoor is natural and imperceptible, since rotation is a common operation which usually contains noise due to both the miss match between a pair of points and the sensor calibration error for real-world 3D scene. Extensive experiments on 3D mesh and point cloud show that the proposed NRBdoor achieves state-of-the-art performance, with negligible shape variation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2036438043",
+                        "name": "Linkun Fan"
+                    },
+                    {
+                        "authorId": "2105592983",
+                        "name": "Fazhi He"
+                    },
+                    {
+                        "authorId": "52203039",
+                        "name": "Qingchen Guo"
+                    },
+                    {
+                        "authorId": "1729425348",
+                        "name": "Wei Tang"
+                    },
+                    {
+                        "authorId": "2192704591",
+                        "name": "Xiaolin Hong"
+                    },
+                    {
+                        "authorId": "2156072517",
+                        "name": "Bing Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "b8afa4e959b4194868e25bbb916470b05cbcb1ff",
+                "externalIds": {
+                    "ArXiv": "2210.11718",
+                    "DBLP": "journals/corr/abs-2210-11718",
+                    "DOI": "10.1109/WACV56688.2023.00570",
+                    "CorpusId": 253080422
+                },
+                "corpusId": 253080422,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/b8afa4e959b4194868e25bbb916470b05cbcb1ff",
+                "title": "CRT-6D: Fast 6D Object Pose Estimation with Cascaded Refinement Transformers",
+                "abstract": "Learning based 6D object pose estimation methods rely on computing large intermediate pose representations and/or iteratively refining an initial estimation with a slow render-compare pipeline. This paper introduces a novel method we call Cascaded Pose Refinement Transformers, or CRT-6D. We replace the commonly used dense intermediate representation with a sparse set of features sampled from the feature pyramid we call OSKFs(Object Surface Keypoint Features) where each element corresponds to an object keypoint. We employ lightweight deformable transformers and chain them together to iteratively refine proposed poses over the sampled OSKFs. We achieve inference runtimes 2\u00d7 faster than the closest real-time state of the art methods while supporting up to 21 objects on a single model. We demonstrate the effectiveness of CRT-6D by performing extensive experiments on the LM-O and YCBV datasets. Compared to real-time methods, we achieve state of the art on LM-O and YCB-V, falling slightly behind methods with inference runtimes one order of magnitude higher. The source code is available at: https://github.com/PedroCastro/CRT-6D",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "74059907",
+                        "name": "Pedro Castro"
+                    },
+                    {
+                        "authorId": "143617697",
+                        "name": "Tae-Kyun Kim"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recent trends replace the classical solver with trainable versions [4, 6, 20, 43, 50] to infer the 6D pose directly from the intermediate geometric correspondences.",
+                "Recent object pose estimation research trends recognize those shortcomings and partially alleviate them by directly regressing the 6D pose from the intermediate pose correspondences to achieve tremendous results [4, 6, 20, 50]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "12c53b63aad94266d338f8cb7b57f90808a8c234",
+                "externalIds": {
+                    "ArXiv": "2208.08807",
+                    "DBLP": "journals/corr/abs-2208-08807",
+                    "DOI": "10.1109/WACV56688.2023.00288",
+                    "CorpusId": 251643843
+                },
+                "corpusId": 251643843,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/12c53b63aad94266d338f8cb7b57f90808a8c234",
+                "title": "COPE: End-to-end trainable Constant Runtime Object Pose Estimation",
+                "abstract": "State-of-the-art object pose estimation handles multiple instances in a test image by using multi-model formulations: detection as a first stage and then separately trained networks per object for 2D-3D geometric correspondence prediction as a second stage. Poses are subsequently estimated using the Perspective-n-Points algorithm at runtime. Unfortunately, multi-model formulations are slow and do not scale well with the number of object instances involved. Recent approaches show that direct 6D object pose estimation is feasible when derived from the aforementioned geometric correspondences. We present an approach that learns an intermediate geometric representation of multiple objects to directly regress 6D poses of all instances in a test image. The inherent end-to-end trainability overcomes the requirement of separately processing individual object instances. By calculating the mutual Intersection-over-Unions, pose hypotheses are clustered into distinct instances, which achieves negligible runtime overhead with respect to the number of object instances. Results on multiple challenging standard datasets show that the pose estimation performance is superior to single-model state-of-the-art approaches despite being more than ~35 times faster. We additionally provide an analysis showing real-time applicability (> 24 fps) for images where more than 90 object instances are present. Further results show the advantage of supervising geometric correspondence-based object pose estimation with the 6D pose.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3092530",
+                        "name": "S. Thalhammer"
+                    },
+                    {
+                        "authorId": "5726760",
+                        "name": "T. Patten"
+                    },
+                    {
+                        "authorId": "1742533",
+                        "name": "M. Vincze"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recently, a similar idea has been proposed to solve the perspective-n-points (PnP) problem [14], but we focus more on the solution to the point-to-plane registration problem defined as constrained error minimization.",
+                "The previous study [14] proposed a similar implicit gradient to ours for the PnP problem and calculated the gradient of a camera pose in SE(3) based on the 6 DoF axis-angle representation of the rigid transformation."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "95db70382727056aed29e6ea8741c8ea0b2cf2f1",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-06661",
+                    "ArXiv": "2207.06661",
+                    "DOI": "10.48550/arXiv.2207.06661",
+                    "CorpusId": 250526434
+                },
+                "corpusId": 250526434,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/95db70382727056aed29e6ea8741c8ea0b2cf2f1",
+                "title": "Deep Point-to-Plane Registration by Efficient Backpropagation for Error Minimizing Function",
+                "abstract": "Traditional algorithms of point set registration minimizing point-to-plane distances often achieve a better estimation of rigid transformation than those minimizing point-to-point distances. Nevertheless, recent deep-learning-based methods minimize the point-to-point distances. In contrast to these methods, this paper proposes the first deep-learning-based approach to point-to-plane registration. A challenging part of this problem is that a typical solution for point-to-plane registration requires an iterative process of accumulating small transformations obtained by minimizing a linearized energy function. The iteration significantly increases the size of the computation graph needed for backpropagation and can slow down both forward and backward network evaluations. To solve this problem, we consider the estimated rigid transformation as a function of input point clouds and derive its analytic gradients using the implicit function theorem. The analytic gradient that we introduce is independent of how the error minimizing function (i.e., the rigid transformation) is obtained, thus allowing us to calculate both the rigid transformation and its gradient efficiently. We implement the proposed point-to-plane registration module over several previous methods that minimize point-to-point distances and demonstrate that the extensions outperform the base methods even with point clouds with noise and low-quality point normals estimated with local point distributions.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2509691",
+                        "name": "Tatsuya Yatagawa"
+                    },
+                    {
+                        "authorId": "1803307",
+                        "name": "Y. Ohtake"
+                    },
+                    {
+                        "authorId": "2111628401",
+                        "name": "H. Suzuki"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "c58eb5e3d541b1dd34f5eb5b4486603420115765",
+                "externalIds": {
+                    "DBLP": "journals/ijon/JiangHZZWW22",
+                    "DOI": "10.1016/j.neucom.2022.06.096",
+                    "CorpusId": 250195622
+                },
+                "corpusId": 250195622,
+                "publicationVenue": {
+                    "id": "df12d289-f447-47d3-8846-75e39de3ab57",
+                    "name": "Neurocomputing",
+                    "type": "journal",
+                    "issn": "0925-2312",
+                    "url": "http://www.elsevier.com/locate/neucom",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/09252312"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c58eb5e3d541b1dd34f5eb5b4486603420115765",
+                "title": "MLFNet: Monocular lifting fusion network for 6DoF texture-less object pose estimation",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2107975649",
+                        "name": "Junjie Jiang"
+                    },
+                    {
+                        "authorId": "1907591",
+                        "name": "Zaixing He"
+                    },
+                    {
+                        "authorId": "3329685",
+                        "name": "Xinyue Zhao"
+                    },
+                    {
+                        "authorId": "2391398",
+                        "name": "Shuyou Zhang"
+                    },
+                    {
+                        "authorId": "2151103218",
+                        "name": "Chenrui Wu"
+                    },
+                    {
+                        "authorId": "2153675910",
+                        "name": "Yang Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "5a8ce38dcce57404c13f1cc26b9e6d04480558b0",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/MajcherK22",
+                    "DOI": "10.1109/CVPRW56347.2022.00337",
+                    "CorpusId": 251047624
+                },
+                "corpusId": 251047624,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/5a8ce38dcce57404c13f1cc26b9e6d04480558b0",
+                "title": "Shape Enhanced Keypoints Learning with Geometric Prior for 6D Object Pose Tracking",
+                "abstract": "Until now, there has not been much research in exploiting geometric reasoning on object shape and keypoints in object pose estimation. First, the current RGB image and quaternion representing rotation in the previous frame are fed to a multi-branch neural network responsible for regressing sparse object keypoints. The initial object pose is estimated using PnP, which is adjusted in a least-square optimization. The weights of boundary and keypoints components are determined in each iteration via geometric reasoning on the projected and segmented 3D object boundary, object shape extracted by a pretrained neural network and keypoints extracted by our network. Different from previous methods, our voting scheme is object boundary-based. We demonstrate experimentally that the accuracy of pose estimation is competitive in comparison to the accuracy of SOTA algorithms achieved on challenging YCB-Video dataset.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1523761501",
+                        "name": "Mateusz Majcher"
+                    },
+                    {
+                        "authorId": "1795702",
+                        "name": "B. Kwolek"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[3] proposed to differentiate PnP using the implicit function theorem."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "1eb1377380e0d1414497ea9eb7fde7ad0d22f379",
+                "externalIds": {
+                    "ArXiv": "2205.02536",
+                    "DBLP": "journals/corr/abs-2205-02536",
+                    "DOI": "10.48550/arXiv.2205.02536",
+                    "CorpusId": 248525158
+                },
+                "corpusId": 248525158,
+                "publicationVenue": {
+                    "id": "43b4f99c-962e-4289-8586-dba97b8a4f70",
+                    "name": "Annual Meeting of the IEEE Industry Applications Society",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IAS",
+                        "Annu Meet IEEE Ind Appl Soc",
+                        "IEEE Ind Appl Soc Annu Meet",
+                        "Int Conf Inf Assur Secur",
+                        "Information Assurance and Security",
+                        "Intelligent Autonomous Systems",
+                        "Intell Auton Syst",
+                        "IEEE Industry Applications Society Annual Meeting",
+                        "International Conference on Information Assurance and Security",
+                        "Inf Assur Secur",
+                        "International Conference on Intelligent Autonomous Systems",
+                        "Int Conf Intell Auton Syst"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1253",
+                    "alternate_urls": [
+                        "http://www.science.uva.nl/research/neuro/ias-ras/ias.html",
+                        "http://www.wikicfp.com/cfp/program?id=1254"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/1eb1377380e0d1414497ea9eb7fde7ad0d22f379",
+                "title": "YOLOPose: Transformer-based Multi-Object 6D Pose Estimation using Keypoint Regression",
+                "abstract": "6D object pose estimation is a crucial prerequisite for autonomous robot manipulation applications. The state-of-the-art models for pose estimation are convolutional neural network (CNN)-based. Lately, Transformers, an architecture originally proposed for natural language processing, is achieving state-of-the-art results in many computer vision tasks as well. Equipped with the multi-head self-attention mechanism, Transformers enable simple single-stage end-to-end architectures for learning object detection and 6D object pose estimation jointly. In this work, we propose YOLOPose (short form for You Only Look Once Pose estimation), a Transformer-based multi-object 6D pose estimation method based on keypoint regression. In contrast to the standard heatmaps for predicting keypoints in an image, we directly regress the keypoints. Additionally, we employ a learnable orientation estimation module to predict the orientation from the keypoints. Along with a separate translation estimation module, our model is end-to-end differentiable. Our method is suitable for real-time applications and achieves results comparable to state-of-the-art methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3443191",
+                        "name": "A. Amini"
+                    },
+                    {
+                        "authorId": "7141040",
+                        "name": "Arul Selvam Periyasamy"
+                    },
+                    {
+                        "authorId": "1699019",
+                        "name": "Sven Behnke"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "One type of keypoint parameterization is object coordinates [3,6,26,29].",
+                "Another approach is to impose geometric knowledge in the form of implicit or declarative layers [5, 6].",
+                "During training, BPNP uses the implicit function theorem to backpropagate gradients through the PnP solver such that the full system can be trained end-to-end.",
+                "BPNP [6] takes this idea a step further and implements the PnP solver as a differentiable network layer."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "cf6a902bb51fc8c75e29db3cb91b04f12782e066",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/LipsonTG022",
+                    "ArXiv": "2204.12516",
+                    "DOI": "10.1109/CVPR52688.2022.00661",
+                    "CorpusId": 248406199
+                },
+                "corpusId": 248406199,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/cf6a902bb51fc8c75e29db3cb91b04f12782e066",
+                "title": "Coupled Iterative Refinement for 6D Multi-Object Pose Estimation",
+                "abstract": "We address the task of 6D multi-object pose: given a set of known 3D objects and an RGB or RGB-D input image, we detect and estimate the 6D pose of each object. We propose a new approach to 6D object pose estimation which consists of an end-to-end differentiable architecture that makes use of geometric knowledge. Our approach iteratively refines both pose and correspondence in a tightly coupled manner, allowing us to dynamically remove outliers to improve accuracy. We use a novel differentiable layer to perform pose refinement by solving an optimization problem we refer to as Bidirectional Depth-Augmented Perspective-N-Point (BD-PnP). Our method achieves state-of-the-art accuracy on standard 6D Object Pose benchmarks. Code is available at https://github.com/princeton-vl/Coupled-Iterative-Refinement.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2127067390",
+                        "name": "Lahav Lipson"
+                    },
+                    {
+                        "authorId": "8048414",
+                        "name": "Zachary Teed"
+                    },
+                    {
+                        "authorId": "47989608",
+                        "name": "Ankit Goyal"
+                    },
+                    {
+                        "authorId": "2153627153",
+                        "name": "Jia Deng"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For DGECN, we replace the DG-PnP in our architecture with PnP variants [6,16,42]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "17a325cfe0997103a4a24fd0e7619a7919654ece",
+                "externalIds": {
+                    "ArXiv": "2204.09983",
+                    "DBLP": "journals/corr/abs-2204-09983",
+                    "DOI": "10.1109/CVPR52688.2022.00376",
+                    "CorpusId": 248299740
+                },
+                "corpusId": 248299740,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/17a325cfe0997103a4a24fd0e7619a7919654ece",
+                "title": "DGECN: A Depth-Guided Edge Convolutional Network for End-to-End 6D Pose Estimation",
+                "abstract": "Monocular 6D pose estimation is a fundamental task in computer vision. Existing works often adopt a two-stage pipeline by establishing correspondences and utilizing a RANSAC algorithm to calculate 6 degrees-of-freedom (6DoF) pose. Recent works try to integrate differentiable RANSAC algorithms to achieve an end-to-end 6D pose estimation. However, most of them hardly consider the geometric features in 3D space, and ignore the topology cues when performing differentiable RANSAC algorithms. To this end, we proposed a Depth-Guided Edge Convolutional Network (DGECN) for 6D pose estimation task. We have made efforts from the following three aspects: 1) We take advantages of estimated depth information to guide both the correspondences-extraction process and the cascaded differentiable RANSAC algorithm with geometric information. 2) We leverage the uncertainty of the estimated depth map to improve accuracy and robustness of the output 6D pose. 3) We propose a differentiable Perspective-n-Point(PnP) algorithm via edge convolution to explore the topology relations between 2D-3D correspondences. Experiments demonstrate that our proposed network outperforms current works on both effectiveness and efficiency.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2118576233",
+                        "name": "Tuo Cao"
+                    },
+                    {
+                        "authorId": "2072689432",
+                        "name": "Fei Luo"
+                    },
+                    {
+                        "authorId": "2117786615",
+                        "name": "Yanping Fu"
+                    },
+                    {
+                        "authorId": "2108144666",
+                        "name": "Wenxiao Zhang"
+                    },
+                    {
+                        "authorId": "2111074126",
+                        "name": "Shengjie Zheng"
+                    },
+                    {
+                        "authorId": "2420700",
+                        "name": "Chunxia Xiao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "There has been recent proposals for an end-to-end framework based on the Perspective-n-Points (PnP) approach [2, 4, 7, 10].",
+                "By differentiating the PnP operation, Brachmann and Rother [4] propose a dense correspondence network where 3D points are learnable, BPnP [10] predicts 2D keypoint locations, and BlindPnP [7] learns the corresponding weight matrix given a set of unordered 2D/3D points.",
+                "Previous work [4, 7, 10] only backpropagates through a local solution y\u2217, which is inherently unstable and non-differentiable.",
+                "Endto-end correspondence learning [2, 4, 7, 10] interprets the",
+                "It is worth noting that this regularization loss is very similar to the loss function derived from implicit differentiation [7, 10], and it can be used for training pose refinement networks within a limited scope [20].",
+                "However, existing work on differentiable PnP learns only a portion of the correspondences (either 2D coordinates [10], 3D coordinates [2, 4] or corresponding weights [7]), assuming other components are given a priori.",
+                "BPnP [10] is not included as it adopts a different train/test split.",
+                "Comparison to Implicit Differentiation Method Existing work on end-to-end PnP [7,10] derives a single solution of a particular solver y\u2217 = PnP(X) via implicit function theorem [16].",
+                "The former is often used as a surrogate loss in previous work [4, 10, 11].",
+                "(10) instead of the reprojection-metric pose loss in BPnP [10]."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "ff5ea1c9d8baa636d946e9de101de35a7238f2da",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2203-13254",
+                    "ArXiv": "2203.13254",
+                    "DOI": "10.1109/CVPR52688.2022.00280",
+                    "CorpusId": 247628136
+                },
+                "corpusId": 247628136,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/ff5ea1c9d8baa636d946e9de101de35a7238f2da",
+                "title": "EPro-PnP: Generalized End-to-End Probabilistic Perspective-n-Points for Monocular Object Pose Estimation",
+                "abstract": "Locating 3D objects from a single RGB image via Perspective-n-Points (PnP) is a long-standing problem in computer vision. Driven by end-to-end deep learning, recent studies suggest interpreting PnP as a differentiable layer, so that 2D-3D point correspondences can be partly learned by backpropagating the gradient w.r.t. object pose. Yet, learning the entire set of unrestricted 2D-3D points from scratch fails to converge with existing approaches, since the deterministic pose is inherently non-differentiable. In this paper, we propose the EPro-PnP a probabilistic PnP layer for general end-to-end pose estimation, which outputs a distribution of pose on the SE(3) manifold, essentially bringing categorical Softmax to the continuous domain. The 2D-3D coordinates and corresponding weights are treated as intermediate variables learned by minimizing the KL divergence between the predicted and target pose distribution. The underlying principle unifies the existing approaches and resembles the attention mechanism. EPro-PnP significantly outperforms competitive baselines, closing the gap between PnP-based method and the task-specific leaders on the LineMOD 6DoF pose estimation and nuScenes 3D object detection benchmarks.3",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2145252142",
+                        "name": "Hansheng Chen"
+                    },
+                    {
+                        "authorId": "8120382",
+                        "name": "Pichao Wang"
+                    },
+                    {
+                        "authorId": "2145903446",
+                        "name": "Fan Wang"
+                    },
+                    {
+                        "authorId": "2113787205",
+                        "name": "Wei Tian"
+                    },
+                    {
+                        "authorId": "145748029",
+                        "name": "Lu Xiong"
+                    },
+                    {
+                        "authorId": "1706574",
+                        "name": "Hao Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "1cdc8a6c221896045e3c6780985498d3f9930014",
+                "externalIds": {
+                    "ArXiv": "2203.12870",
+                    "DBLP": "journals/corr/abs-2203-12870",
+                    "DOI": "10.1109/CVPR52688.2022.01446",
+                    "CorpusId": 247627968
+                },
+                "corpusId": 247627968,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/1cdc8a6c221896045e3c6780985498d3f9930014",
+                "title": "RNNPose: Recurrent 6-DoF Object Pose Refinement with Robust Correspondence Field Estimation and Pose Optimization",
+                "abstract": "6-DoF object pose estimation from a monocular image is challenging, and a post-refinement procedure is generally needed for high-precision estimation. In this paper, we propose a framework based on a recurrent neural network (RNN) for object pose refinement, which is robust to erroneous initial poses and occlusions. During the recurrent iterations, object pose refinement is formulated as a nonlinear least squares problem based on the estimated correspondence field (between a rendered image and the observed image). The problem is then solved by a differentiable Levenberg-Marquardt (LM) algorithm enabling end-to-end training. The correspondence field estimation and pose refinement are conducted alternatively in each iteration to recover the object poses. Furthermore, to improve the robustness to occlusion, we introduce a consistency-check mechanism based on the learned descriptors of the 3D model and observed 2D images, which downweights the unreliable correspondences during pose optimization. Extensive experiments on LINEMOD, Occlusion-LINEMOD, and YCB-Video datasets validate the effectiveness of our method and demonstrate state-of-the-art performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2118039311",
+                        "name": "Yan Xu"
+                    },
+                    {
+                        "authorId": "2152621409",
+                        "name": "Junyi Lin"
+                    },
+                    {
+                        "authorId": "32162658",
+                        "name": "Guofeng Zhang"
+                    },
+                    {
+                        "authorId": "93768810",
+                        "name": "Xiaogang Wang"
+                    },
+                    {
+                        "authorId": "49404547",
+                        "name": "Hongsheng Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026a powerful and flexible tool that has been applied to a growing number of applications including video classification (Fernando et al. 2016), visual Sudoku (Amos and Kolter 2017; Wang et al. 2019), blind PnP (Campbell, Liu, and Gould 2020; Chen et al. 2020) and meta-learning (Lee et al. 2019).",
+                "Deep declarative networks provide a powerful and flexible tool that has been applied to a growing number of applications including video classification (Fernando et al. 2016), visual Sudoku (Amos and Kolter 2017; Wang et al. 2019), blind PnP (Campbell, Liu, and Gould 2020; Chen et al. 2020) and meta-learning (Lee et al. 2019).",
+                "It can also be used to find matches between sets of objects (e.g., in solving the blind PnP problem (Campbell, Liu, and Gould 2020)).",
+                "2019), blind PnP (Campbell, Liu, and Gould 2020; Chen et al. 2020) and meta-learning (Lee et al."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "952ab487848a0a74019c29a82abae8ef7544e4f6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-12404",
+                    "ArXiv": "2202.12404",
+                    "CorpusId": 247154770
+                },
+                "corpusId": 247154770,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/952ab487848a0a74019c29a82abae8ef7544e4f6",
+                "title": "Exploiting Problem Structure in Deep Declarative Networks: Two Case Studies",
+                "abstract": "Deep declarative networks and other recent related works have shown how to differentiate the solution map of a (continuous) parametrized optimization problem, opening up the possibility of embedding mathematical optimization problems into end-to-end learnable models. These differentiability results can lead to significant memory savings by providing an expression for computing the derivative without needing to unroll the steps of the forward-pass optimization procedure during the backward pass. However, the results typically require inverting a large Hessian matrix, which is computationally expensive when implemented naively. In this work we study two applications of deep declarative networks -- robust vector pooling and optimal transport -- and show how problem structure can be exploited to obtain very efficient backward pass computations in terms of both time and memory. Our ideas can be used as a guide for improving the computational performance of other novel deep declarative nodes.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145273587",
+                        "name": "Stephen Gould"
+                    },
+                    {
+                        "authorId": "2065093915",
+                        "name": "Dylan Campbell"
+                    },
+                    {
+                        "authorId": "2156534853",
+                        "name": "Itzik Ben-Shabat"
+                    },
+                    {
+                        "authorId": "1389559662",
+                        "name": "Chamin Pasidu Hewa Koneputugodage"
+                    },
+                    {
+                        "authorId": "2136441825",
+                        "name": "Zhiwei Xu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "EP:Baseline EP:PY EP:RHaug PVNet[44] CDPN[38] BPnP[11] RNNPose[55] DFPN-6D[12] 95."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "c8462cbf04ccbfc2d55235baf8c67fb666c69762",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-13065",
+                    "ArXiv": "2201.13065",
+                    "DOI": "10.1007/978-3-031-31438-4_5",
+                    "CorpusId": 246430354
+                },
+                "corpusId": 246430354,
+                "publicationVenue": {
+                    "id": "34a8e4b6-33c0-41d2-a418-fb738851fb68",
+                    "name": "Scandinavian Conference on Image Analysis",
+                    "type": "conference",
+                    "alternate_names": [
+                        "SCIA",
+                        "Scand Conf Image Anal"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c8462cbf04ccbfc2d55235baf8c67fb666c69762",
+                "title": "Rigidity Preserving Image Transformations and Equivariance in Perspective",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51478896",
+                        "name": "Lucas Brynte"
+                    },
+                    {
+                        "authorId": "12303525",
+                        "name": "G. Bokman"
+                    },
+                    {
+                        "authorId": "2743140",
+                        "name": "Axel Flinth"
+                    },
+                    {
+                        "authorId": "1713563",
+                        "name": "Fredrik Kahl"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "2D-3D correspondences based approaches are instead robust to camera changes as they simply run PnP using the new intrinsics.",
+                "Although inferring 2D-3D correspondences, SingleStage [56] and GDR-Net [8] directly estimate the 6D pose via learning of the PnP paradigm.",
+                "While it is possible to obtain gradients for PnP [88] as well as RANSAC [89], they also come with the burden of a high memory footprint and computational effort, rendering them impractical for our online learning formulation.",
+                "After estimating these correspondences, PnP is commonly employed to solve for the 6D pose.",
+                "Both show that learned PnP can produce more robust estimates than standard PnP, especially when the objects of interest are exposed to occlusions."
+            ],
+            "isInfluential": true,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "fcc75739bc6b669a362724f330e2c8572f81da33",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2203-10339",
+                    "ArXiv": "2203.10339",
+                    "DOI": "10.1109/TPAMI.2021.3136301",
+                    "CorpusId": 245327651,
+                    "PubMed": "34919518"
+                },
+                "corpusId": 245327651,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/fcc75739bc6b669a362724f330e2c8572f81da33",
+                "title": "Occlusion-Aware Self-Supervised Monocular 6D Object Pose Estimation",
+                "abstract": "6D object pose estimation is a fundamental yet challenging problem in computer vision. Convolutional Neural Networks (CNNs) have recently proven to be capable of predicting reliable 6D pose estimates even under monocular settings. Nonetheless, CNNs are identified as being extremely data-driven, and acquiring adequate annotations is oftentimes very time-consuming and labor intensive. To overcome this limitation, we propose a novel monocular 6D pose estimation approach by means of self-supervised learning, removing the need of real annotations. After training our proposed network fully supervised with synthetic RGB data, we leverage current trends in noisy student training and differentiable rendering to further self-supervise the model on these unsupervised real RGB(-D) samples, seeking for a visually and geometrically optimal alignment. Moreover, employing both visible and amodal mask information, our self-supervision can be very robust towards challenging scenarios such as occlusion. Extensive evaluations demonstrate that our proposed self-supervision is able to significantly enhance the model's original performance, outperforming all other methods relying on synthetic data or employing elaborate techniques from the domain adaptation realm. Noteworthy, our self-supervised approach achieves almost 50% relative improvement between methods purely trained with synthetic data and fully-supervised methods trained with real-world annotations.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "29644358",
+                        "name": "Gu Wang"
+                    },
+                    {
+                        "authorId": "2741443",
+                        "name": "Fabian Manhardt"
+                    },
+                    {
+                        "authorId": "31162518",
+                        "name": "Xingyu Liu"
+                    },
+                    {
+                        "authorId": "7807689",
+                        "name": "Xiangyang Ji"
+                    },
+                    {
+                        "authorId": "50516802",
+                        "name": "F. Tombari"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "With the introduction of deep learning, several methods have been proposed to bridge such pose optimization into an end-to-end learned pipeline, by establishing learned correspondences to inform various pose optimization tasks, such as point cloud registration [8], PnP optimization [6], or non-rigid tracking [4]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "89d7c92759e63ab368def3381d19b7c6fdcb8436",
+                "externalIds": {
+                    "ArXiv": "2112.01988",
+                    "DBLP": "conf/cvpr/GumeliDN22",
+                    "DOI": "10.1109/CVPR52688.2022.00399",
+                    "CorpusId": 244896200
+                },
+                "corpusId": 244896200,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/89d7c92759e63ab368def3381d19b7c6fdcb8436",
+                "title": "ROCA: Robust CAD Model Retrieval and Alignment from a Single Image",
+                "abstract": "We present ROCA 11The code is made available at https://github.com/cangurneli/ROCA., a novel end-to-end approach that re-trieves and aligns 3D CAD models from a shape database to a single input image. This enables 3D perception of an ob-served scene from a 2D RGB observation, characterized as a lightweight, compact, clean CAD representation. Core to our approach is our differentiable alignment optimization based on dense 2D-3D object correspondences and Pro-crustes alignment. ROCA can thus provide a robust CAD alignment while simultaneously informing CAD retrieval by leveraging the 2D-3D correspondences to learn geometri-cally similar CAD models. Experiments on challenging, real-world imagery from ScanNet show that ROCA signif-icantly improves on state of the art, from 9.5% to 17.6% in retrieval-aware CAD alignment accuracy.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "79749242",
+                        "name": "Can G\u00fcmeli"
+                    },
+                    {
+                        "authorId": "2208531",
+                        "name": "Angela Dai"
+                    },
+                    {
+                        "authorId": "2209612",
+                        "name": "M. Nie\u00dfner"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[8] propose a differentiable PnP method to achieve end-to-end learning."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "edd5f20cf934fc497d473e8dad0cb02ba727e0bc",
+                "externalIds": {
+                    "ArXiv": "2110.11636",
+                    "DBLP": "conf/wacv/0009CK22",
+                    "DOI": "10.1109/WACV51458.2022.00228",
+                    "CorpusId": 239616013
+                },
+                "corpusId": 239616013,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/edd5f20cf934fc497d473e8dad0cb02ba727e0bc",
+                "title": "Occlusion-Robust Object Pose Estimation with Holistic Representation",
+                "abstract": "Practical object pose estimation demands robustness against occlusions to the target object. State-of-the-art (SOTA) object pose estimators take a two-stage approach, where the first stage predicts 2D landmarks using a deep network and the second stage solves for 6DOF pose from 2D-3D correspondences. Albeit widely adopted, such two-stage approaches could suffer from novel occlusions when generalising and weak landmark coherence due to disrupted features. To address these issues, we develop a novel occlude-and-blackout batch augmentation technique to learn occlusion-robust deep features, and a multi-precision supervision architecture to encourage holistic pose representation learning for accurate and coherent landmark predictions. We perform careful ablation tests to verify the impact of our innovations and compare our method to SOTA pose estimators. Without the need of any post-processing or refinement, our method exhibits superior performance on the LINEMOD dataset. On the YCB-Video dataset our method outperforms all non-refinement methods in terms of the ADD(-S) metric. We also demonstrate the high data-efficiency of our method. Our code is available at http://github.com/BoChenYS/ROPE",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2152687615",
+                        "name": "Bo Chen"
+                    },
+                    {
+                        "authorId": "49671775",
+                        "name": "Tat-Jun Chin"
+                    },
+                    {
+                        "authorId": "2134750394",
+                        "name": "Marius Klimavi\u010dius"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "e5e3b09e9530f5d85b202bb0b7904147f28dfcb6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2108-08367",
+                    "ArXiv": "2108.08367",
+                    "DOI": "10.1109/ICCV48922.2021.01217",
+                    "CorpusId": 237213284
+                },
+                "corpusId": 237213284,
+                "publicationVenue": {
+                    "id": "7654260e-79f9-45c5-9663-d72027cf88f3",
+                    "name": "IEEE International Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICCV",
+                        "IEEE Int Conf Comput Vis",
+                        "ICCV Workshops",
+                        "ICCV Work"
+                    ],
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings"
+                },
+                "url": "https://www.semanticscholar.org/paper/e5e3b09e9530f5d85b202bb0b7904147f28dfcb6",
+                "title": "SO-Pose: Exploiting Self-Occlusion for Direct 6D Pose Estimation",
+                "abstract": "Directly regressing all 6 degrees-of-freedom (6DoF) for the object pose (i.e. the 3D rotation and translation) in a cluttered environment from a single RGB image is a challenging problem. While end-to-end methods have recently demonstrated promising results at high efficiency, they are still inferior when compared with elaborate PnP/RANSAC-based approaches in terms of pose accuracy. In this work, we address this shortcoming by means of a novel reasoning about self-occlusion, in order to establish a two-layer representation for 3D objects which considerably enhances the accuracy of end-to-end 6D pose estimation. Our framework, named SO-Pose, takes a single RGB image as input and respectively generates 2D-3D correspondences as well as self-occlusion information harnessing a shared encoder and two separate decoders. Both outputs are then fused to directly regress the 6DoF pose parameters. Incorporating cross-layer consistencies that align correspondences, self-occlusion and 6D pose, we can further improve accuracy and robustness, surpassing or rivaling all other state-of-the-art approaches on various challenging datasets.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1961761605",
+                        "name": "Yan Di"
+                    },
+                    {
+                        "authorId": "2741443",
+                        "name": "Fabian Manhardt"
+                    },
+                    {
+                        "authorId": "29644358",
+                        "name": "Gu Wang"
+                    },
+                    {
+                        "authorId": "7807689",
+                        "name": "Xiangyang Ji"
+                    },
+                    {
+                        "authorId": "145587210",
+                        "name": "Nassir Navab"
+                    },
+                    {
+                        "authorId": "2266326",
+                        "name": "Federico Tombari"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In 3D reconstruction recent works address the challenge of incorporating RANSAC in an end-to-end trainable pipeline for camera pose estimation based on the Perspective-n-Point (PnP) problem, such as differentiable blind PnP [41, 42] or DSAC [45].",
+                "Learnable Optimization: Common methods for incorporating optimization as layers in deep neural networks include implicit function differentiation [24, 25, 40, 41, 42] and optimization unrolling [43, 44, 35]; we refer to [25, 24] for a survey.",
+                "To backpropagate through L-BFGS we use the implicit function theorem as described in [41, 42]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fa0fa2c4dc2c464729299b3f14503f09bcf8c8be",
+                "externalIds": {
+                    "DBLP": "conf/nips/KokkinosK21",
+                    "ArXiv": "2106.05662",
+                    "CorpusId": 235390455
+                },
+                "corpusId": 235390455,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/fa0fa2c4dc2c464729299b3f14503f09bcf8c8be",
+                "title": "To The Point: Correspondence-driven monocular 3D category reconstruction",
+                "abstract": "We present To The Point (TTP), a method for reconstructing 3D objects from a single image using 2D to 3D correspondences learned from weak supervision. We recover a 3D shape from a 2D image by first regressing the 2D positions corresponding to the 3D template vertices and then jointly estimating a rigid camera transform and non-rigid template deformation that optimally explain the 2D positions through the 3D shape projection. By relying on 3D-2D correspondences we use a simple per-sample optimization problem to replace CNN-based regression of camera pose and non-rigid deformation and thereby obtain substantially more accurate 3D reconstructions. We treat this optimization as a differentiable layer and train the whole system in an end-to-end manner. We report systematic quantitative improvements on multiple categories and provide qualitative results comprising diverse shape, pose and texture prediction examples. Project website: https://fkokkinos.github.io/to_the_point/.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "3465297",
+                        "name": "Filippos Kokkinos"
+                    },
+                    {
+                        "authorId": "2010660",
+                        "name": "Iasonas Kokkinos"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recently, another branch of works [15, 59, 152] adopts such ideas in direct predicting methods."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "ce3f4b25bfb125f7d4adc6d370898ffba0440c97",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2105-14291",
+                    "ArXiv": "2105.14291",
+                    "DOI": "10.1145/3524496",
+                    "CorpusId": 235254117
+                },
+                "corpusId": 235254117,
+                "publicationVenue": {
+                    "id": "7b2adce0-d53f-49d6-8784-b0645604fe62",
+                    "name": "ACM Computing Surveys",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Comput Surv"
+                    ],
+                    "issn": "0360-0300",
+                    "url": "http://www.acm.org/pubs/surveys/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/csur",
+                        "https://csur.acm.org/",
+                        "http://csur.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/ce3f4b25bfb125f7d4adc6d370898ffba0440c97",
+                "title": "Deep Learning on Monocular Object Pose Detection and Tracking: A Comprehensive Overview",
+                "abstract": "Object pose detection and tracking has recently attracted increasing attention due to its wide applications in many areas, such as autonomous driving, robotics, and augmented reality. Among methods for object pose detection and tracking, deep learning is the most promising one that has shown better performance than others. However, survey study about the latest development of deep learning-based methods is lacking. Therefore, this study presents a comprehensive review of recent progress in object pose detection and tracking that belongs to the deep learning technical route. To achieve a more thorough introduction, the scope of this study is limited to methods taking monocular RGB/RGBD data as input and covering three kinds of major tasks: instance-level monocular object pose detection, category-level monocular object pose detection, and monocular object pose tracking. In our work, metrics, datasets, and methods of both detection and tracking are presented in detail. Comparative results of current state-of-the-art methods on several publicly available datasets are also presented, together with insightful observations and inspiring future research directions.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "46264450",
+                        "name": "Jason Zhaoxin Fan"
+                    },
+                    {
+                        "authorId": "2153095837",
+                        "name": "Yazhi Zhu"
+                    },
+                    {
+                        "authorId": "2119288635",
+                        "name": "Yulin He"
+                    },
+                    {
+                        "authorId": "2112428315",
+                        "name": "Qi Sun"
+                    },
+                    {
+                        "authorId": "46935958",
+                        "name": "Hongyan Liu"
+                    },
+                    {
+                        "authorId": "2109930553",
+                        "name": "Jun He"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "(7)\nTo further utilize the 3D structure information while reducing prediction errors, we employ BPnP [3] to compute the object pose from the predicted 2D keypoints, and then re-project the 3D keypoints on a CAD model back to 2D image space using the computed pose.",
+                "To further utilize the 3D structure information while reducing prediction errors, we employ BPnP [3] to compute the object pose from the predicted 2D keypoints, and then re-project the 3D keypoints on a CAD model back to 2D image space using the computed pose.",
+                "To be specific, given a set of keypoint predictions, k\u0303 = {k\u03031, ..., k\u0303N}, corresponding 3D keypoint set, k3D, on CAD model, and camera intrinsic matrix, K, the re-projected 2D keypoints k\u0303P are,\nk\u0303P = P(k\u0303) = R\u0303k3D + t\u0303, (8)\n(R\u0303, t\u0303) = BPnP (k\u0303,k3D,K), (9)\nwhere R\u0303 and t\u0303 are the predicted 3D rotation and translation."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "3f866fad2afa3fd304e9f101e5f38fbe386d36d1",
+                "externalIds": {
+                    "ArXiv": "2104.03658",
+                    "DBLP": "journals/corr/abs-2104-03658",
+                    "DOI": "10.1109/CVPR46437.2021.00390",
+                    "CorpusId": 233181892
+                },
+                "corpusId": 233181892,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3f866fad2afa3fd304e9f101e5f38fbe386d36d1",
+                "title": "DSC-PoseNet: Learning 6DoF Object Pose Estimation via Dual-scale Consistency",
+                "abstract": "Compared to 2D object bounding-box labeling, it is very difficult for humans to annotate 3D object poses, especially when depth images of scenes are unavailable. This paper investigates whether we can estimate the object poses effectively when only RGB images and 2D object annotations are given. To this end, we present a two-step pose estimation framework to attain 6DoF object poses from 2D object bounding-boxes. In the first step, the framework learns to segment objects from real and synthetic data in a weakly-supervised fashion, and the segmentation masks will act as a prior for pose estimation. In the second step, we design a dual-scale pose estimation network, namely DSC-PoseNet, to predict object poses by employing a differential renderer. To be specific, our DSC-PoseNet firstly predicts object poses in the original image scale by comparing the segmentation masks and the rendered visible object masks. Then, we resize object regions to a fixed scale to estimate poses once again. In this fashion, we eliminate large scale variations and focus on rotation estimation, thus facilitating pose estimation. Moreover, we exploit the initial pose estimation to generate pseudo ground-truth to train our DSC-PoseNet in a self-supervised manner. The estimation results in these two scales are ensembled as our final pose estimation. Extensive experiments on widely-used benchmarks demonstrate that our method outperforms state-of-the-art models trained on synthetic data by a large margin and even is on par with several fully-supervised methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2109479263",
+                        "name": "Zongxin Yang"
+                    },
+                    {
+                        "authorId": "1490933487",
+                        "name": "Xin Yu"
+                    },
+                    {
+                        "authorId": "7179962",
+                        "name": "Yi Yang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "keypoints, dense correspondences, edge vectors, symmetry correspondences), (ii) PnP algorithm [20, 11] for pose estimation."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "0f148915983c619efcfeac9d99dc004f52a3373f",
+                "externalIds": {
+                    "ArXiv": "2104.00633",
+                    "DBLP": "conf/iccv/IwaseLKYK21",
+                    "DOI": "10.1109/ICCV48922.2021.00329",
+                    "CorpusId": 237213721
+                },
+                "corpusId": 237213721,
+                "publicationVenue": {
+                    "id": "7654260e-79f9-45c5-9663-d72027cf88f3",
+                    "name": "IEEE International Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICCV",
+                        "IEEE Int Conf Comput Vis",
+                        "ICCV Workshops",
+                        "ICCV Work"
+                    ],
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings"
+                },
+                "url": "https://www.semanticscholar.org/paper/0f148915983c619efcfeac9d99dc004f52a3373f",
+                "title": "RePOSE: Fast 6D Object Pose Refinement via Deep Texture Rendering",
+                "abstract": "We present RePOSE, a fast iterative refinement method for 6D object pose estimation. Prior methods perform refinement by feeding zoomed-in input and rendered RGB images into a CNN and directly regressing an update of a refined pose. Their runtime is slow due to the computational cost of CNN, which is especially prominent in multiple-object pose refinement. To overcome this problem, RePOSE leverages image rendering for fast feature extraction using a 3D model with a learnable texture. We call this deep texture rendering, which uses a shallow multilayer perceptron to directly regress a view-invariant image representation of an object. Furthermore, we utilize differentiable Levenberg-Marquardt (LM) optimization to refine a pose fast and accurately by minimizing the distance between the input and rendered image representations without the need of zooming in. These image representations are trained such that differentiable LM optimization converges within few iterations. Consequently, RePOSE runs at 92 FPS and achieves state-of-the-art accuracy of 51.6% on the Occlusion LineMOD dataset - a 4.1% absolute improvement over the prior art, and comparable result on the YCB-Video dataset with a much faster runtime. The code is available at https://github.com/sh8/repose.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "87681606",
+                        "name": "Shun Iwase"
+                    },
+                    {
+                        "authorId": "2146036705",
+                        "name": "Xingyu Liu"
+                    },
+                    {
+                        "authorId": "51927417",
+                        "name": "Rawal Khirodkar"
+                    },
+                    {
+                        "authorId": "2274654",
+                        "name": "Rio Yokota"
+                    },
+                    {
+                        "authorId": "37991449",
+                        "name": "Kris M. Kitani"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "A further development is the BPnP [5], which is an exact PnP back-propagation approach.",
+                "End-to-End Training Incorporating the PnP backpropagation approach in [5], we apply smooth L1 loss on the Euclidean errors of estimated translation vector and yaw angle."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "13ee7edff6242c02db698bbfbeb12a638cfd3ad5",
+                "externalIds": {
+                    "ArXiv": "2103.12605",
+                    "DBLP": "journals/corr/abs-2103-12605",
+                    "DOI": "10.1109/CVPR46437.2021.01024",
+                    "CorpusId": 232341195
+                },
+                "corpusId": 232341195,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/13ee7edff6242c02db698bbfbeb12a638cfd3ad5",
+                "title": "MonoRUn: Monocular 3D Object Detection by Reconstruction and Uncertainty Propagation",
+                "abstract": "Object localization in 3D space is a challenging aspect in monocular 3D object detection. Recent advances in 6DoF pose estimation have shown that predicting dense 2D-3D correspondence maps between image and object 3D model and then estimating object pose via Perspective-n-Point (PnP) algorithm can achieve remarkable localization accuracy. Yet these methods rely on training with ground truth of object geometry, which is difficult to acquire in real outdoor scenes. To address this issue, we propose MonoRUn, a novel detection framework that learns dense correspondences and geometry in a self-supervised manner, with simple 3D bounding box annotations. To regress the pixel-related 3D object coordinates, we employ a regional reconstruction network with uncertainty awareness. For self-supervised training, the predicted 3D coordinates are projected back to the image plane. A Robust KL loss is proposed to minimize the uncertainty-weighted reprojection error. During testing phase, we exploit the network uncertainty by propagating it through all downstream modules. More specifically, the uncertainty-driven PnP algorithm is leveraged to estimate object pose and its covariance. Extensive experiments demonstrate that our proposed approach outperforms current state-of-the-art methods on KITTI benchmark.1",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2145252142",
+                        "name": "Hansheng Chen"
+                    },
+                    {
+                        "authorId": "121240846",
+                        "name": "Yuyao Huang"
+                    },
+                    {
+                        "authorId": "2113787205",
+                        "name": "Wei Tian"
+                    },
+                    {
+                        "authorId": "2116492756",
+                        "name": "Zhong Gao"
+                    },
+                    {
+                        "authorId": "145748029",
+                        "name": "Lu Xiong"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Learning camera pose optimization can be tackled by unrolling the optimizer for a fixed number of steps [21, 51, 53, 83,91,92], computing implicit derivatives [13,15,18,34,68], or crafting losses to mimic optimization steps [88, 89]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "01460c9fa85d030f1789ad65513d22380e58fcb2",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/SarlinULGTLPLHK21",
+                    "ArXiv": "2103.09213",
+                    "DOI": "10.1109/CVPR46437.2021.00326",
+                    "CorpusId": 232240441
+                },
+                "corpusId": 232240441,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/01460c9fa85d030f1789ad65513d22380e58fcb2",
+                "title": "Back to the Feature: Learning Robust Camera Localization from Pixels to Pose",
+                "abstract": "Camera pose estimation in known scenes is a 3D geometry task recently tackled by multiple learning algorithms. Many regress precise geometric quantities, like poses or 3D points, from an input image. This either fails to generalize to new viewpoints or ties the model parameters to a specific scene. In this paper, we go Back to the Feature: we argue that deep networks should focus on learning robust and invariant visual features, while the geometric estimation should be left to principled algorithms. We introduce PixLoc, a scene-agnostic neural network that estimates an accurate 6-DoF pose from an image and a 3D model. Our approach is based on the direct alignment of multiscale deep features, casting camera localization as metric learning. PixLoc learns strong data priors by end-to-end training from pixels to pose and exhibits exceptional generalization to new scenes by separating model parameters and scene geometry. The system can localize in large environments given coarse pose priors but also improve the accuracy of sparse feature matching by jointly refining keypoints and poses with little overhead. The code will be publicly available at github.com/cvg/pixloc.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "51435497",
+                        "name": "Paul-Edouard Sarlin"
+                    },
+                    {
+                        "authorId": "2033377942",
+                        "name": "Ajaykumar Unagar"
+                    },
+                    {
+                        "authorId": "152770914",
+                        "name": "Maans Larsson"
+                    },
+                    {
+                        "authorId": "2065832137",
+                        "name": "Hugo Germain"
+                    },
+                    {
+                        "authorId": "10040899",
+                        "name": "Carl Toft"
+                    },
+                    {
+                        "authorId": "1729316",
+                        "name": "Viktor Larsson"
+                    },
+                    {
+                        "authorId": "1742208",
+                        "name": "M. Pollefeys"
+                    },
+                    {
+                        "authorId": "1689738",
+                        "name": "V. Lepetit"
+                    },
+                    {
+                        "authorId": "2853619",
+                        "name": "Lars Hammarstrand"
+                    },
+                    {
+                        "authorId": "1713563",
+                        "name": "Fredrik Kahl"
+                    },
+                    {
+                        "authorId": "1959475",
+                        "name": "Torsten Sattler"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For PointNet-like PnP, we extend the PointNet in [19] to account for dense correspondences.",
+                "However, this either requires a complex training strategy in order to have good initialization of scene coordinates [4, 6, 7], or can only handle sparse correspondences of a predefined set of keypoints [8].",
+                "Additionally, replacing the scale-invariant \u03b4z in tSITE with the absolute distance tz or directly regressing the object center (ox, oz)\n3https://github.com/BoChenYS/BPnP\nleads to inferior poses w.r.t. translation (B0 vs. E1, E2).",
+                "For BPnP [8], we replace the Patch-PnP in our framework with their implementation of BPnP3.",
+                "We demonstrate the effectiveness of the image-like geometric features (M2D-3D,MSRA) by comparing our Patch-PnP with traditional PnP/RANSAC [28], the PointNet-like [41] PnP from [19], and a differentiable PnP (BPnP [8]).",
+                "As for PnP, [8] employs the Implicit Function Theorem [23] to enable the computation of analytical gradients w.",
+                "As for PnP, [8] employs the Implicit Function Theorem [23] to enable the computation of analytical gradients w.r.t. the pose loss.",
+                "The Rotations and translations are uniformly sampled in 3D space, and within an interval of [\u22122, 2] \u00d7 [\u22122, 2] \u00d7 [4, 8], respectively.",
+                "1b, Patch-PnP is more accurate than traditional PnP/RANSAC (B0 vs. A0), PointNet-like PnP (B0 vs. C0) and BPnP (B0 vs. C1) in estimating the 6D pose.",
+                "Noteworthy, Patch-PnP is much faster in inference and up to 4\u00d7 faster in training than BPnP, since the latter relies on PnP/RANSAC for both phases.",
+                "As BPnP was originally designed for sparse keypoints, we further adapt it appropriately to deal with dense coordinates."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "878e858b199a8529769657332730620da526de6f",
+                "externalIds": {
+                    "ArXiv": "2102.12145",
+                    "DBLP": "conf/cvpr/0001MTJ21",
+                    "DOI": "10.1109/CVPR46437.2021.01634",
+                    "CorpusId": 232035418
+                },
+                "corpusId": 232035418,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/878e858b199a8529769657332730620da526de6f",
+                "title": "GDR-Net: Geometry-Guided Direct Regression Network for Monocular 6D Object Pose Estimation",
+                "abstract": "6D pose estimation from a single RGB image is a fundamental task in computer vision. The current top-performing deep learning-based methods rely on an indirect strategy, i.e., first establishing 2D-3D correspondences between the coordinates in the image plane and object coordinate system, and then applying a variant of the PnP/RANSAC algorithm. However, this two-stage pipeline is not end-to-end trainable, thus is hard to be employed for many tasks requiring differentiable poses. On the other hand, methods based on direct regression are currently inferior to geometry-based methods. In this work, we perform an in-depth investigation on both direct and indirect methods, and propose a simple yet effective Geometry-guided Direct Regression Network (GDR-Net) to learn the 6D pose in an end-to-end manner from dense correspondence-based intermediate geometric representations. Extensive experiments show that our approach remarkably outperforms state-of-the-art methods on LM, LM-O and YCB-V datasets. Code is available at https://git.io/GDR-Net.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "29644358",
+                        "name": "Gu Wang"
+                    },
+                    {
+                        "authorId": "2741443",
+                        "name": "Fabian Manhardt"
+                    },
+                    {
+                        "authorId": "2266326",
+                        "name": "Federico Tombari"
+                    },
+                    {
+                        "authorId": "7807689",
+                        "name": "Xiangyang Ji"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "SSD-6D [29], BPnP [30] \u2022 Single-stage Approach",
+                "For pose estimation, a BPnP-based trainable pipeline achieves higher accuracy by incorporating the feature map loss with 2D\u20133D reprojection errors.",
+                "To this end, the BPnP [30] was proposed as an effective network module that computes the gradients of backpropagation by guiding parameter updates in the network using a PnP solver."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "9f6eedb362ec31edc575a599a497398e55f14fbd",
+                "externalIds": {
+                    "MAG": "3129282963",
+                    "DOI": "10.3390/ELECTRONICS10040517",
+                    "CorpusId": 233901795
+                },
+                "corpusId": 233901795,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/9f6eedb362ec31edc575a599a497398e55f14fbd",
+                "title": "A Survey on Deep Learning Based Methods and Datasets for Monocular 3D Object Detection",
+                "abstract": "Owing to recent advancements in deep learning methods and relevant databases, it is becoming increasingly easier to recognize 3D objects using only RGB images from single viewpoints. This study investigates the major breakthroughs and current progress in deep learning-based monocular 3D object detection. For relatively low-cost data acquisition systems without depth sensors or cameras at multiple viewpoints, we first consider existing databases with 2D RGB photos and their relevant attributes. Based on this simple sensor modality for practical applications, deep learning-based monocular 3D object detection methods that overcome significant research challenges are categorized and summarized. We present the key concepts and detailed descriptions of representative single-stage and multiple-stage detection solutions. In addition, we discuss the effectiveness of the detection models on their baseline benchmarks. Finally, we explore several directions for future research on monocular 3D object detection.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "3428208",
+                        "name": "Seong-heum Kim"
+                    },
+                    {
+                        "authorId": "1726191",
+                        "name": "Youngbae Hwang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This approach can be further split in two categories keypoint-based [26][35][4][28][40][39] and dense 2D-3D correspondence methods [44][20][25].",
+                "The keypoint-based methods predict either the eight 2D projections of the cuboid corners of the 3D model as keypoints [28][40][39] or choose keypoints on the object\u2019s surface, often selected with the farthest point sampling algorithm [26][35][4].",
+                "More recently the state-of-the-art accuracy regime of 6D object pose estimation using RGB input only is dominated by approaches that first detect 2D targets of the object in the given image and subsequently solve a Perspective-nPoint problem for their 6D pose [26][35][44][20][25][4]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "2eccf568c592b79de2ff4c514825651c677fc82d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2011-04307",
+                    "ArXiv": "2011.04307",
+                    "MAG": "3101338131",
+                    "CorpusId": 226281757
+                },
+                "corpusId": 226281757,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2eccf568c592b79de2ff4c514825651c677fc82d",
+                "title": "EfficientPose: An efficient, accurate and scalable end-to-end 6D multi object pose estimation approach",
+                "abstract": "In this paper we introduce EfficientPose, a new approach for 6D object pose estimation. Our method is highly accurate, efficient and scalable over a wide range of computational resources. Moreover, it can detect the 2D bounding box of multiple objects and instances as well as estimate their full 6D poses in a single shot. This eliminates the significant increase in runtime when dealing with multiple objects other approaches suffer from. These approaches aim to first detect 2D targets, e.g. keypoints, and solve a Perspective-n-Point problem for their 6D pose for each object afterwards. We also propose a novel augmentation method for direct 6D pose estimation approaches to improve performance and generalization, called 6D augmentation. Our approach achieves a new state-of-the-art accuracy of 97.35% in terms of the ADD(-S) metric on the widely-used 6D pose estimation benchmark dataset Linemod using RGB input, while still running end-to-end at over 27 FPS. Through the inherent handling of multiple objects and instances and the fused single shot 2D object detection as well as 6D pose estimation, our approach runs even with multiple objects (eight) end-to-end at over 26 FPS, making it highly attractive to many real world scenarios. Code will be made publicly available at this https URL.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "8777072",
+                        "name": "Yannick Bukschat"
+                    },
+                    {
+                        "authorId": "48490200",
+                        "name": "Marcus Vetter"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In computer vision, the technique has been applied to video classification [21,22], action recognition [14], visual attribute ranking [37], few-shot learning for visual recognition [31], and non-blind PnP in concurrent work [13]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "0c0c01827019b30b51479151b949bdac210093ad",
+                "externalIds": {
+                    "MAG": "3106634005",
+                    "DBLP": "journals/corr/abs-2007-14628",
+                    "ArXiv": "2007.14628",
+                    "DOI": "10.1007/978-3-030-58536-5_15",
+                    "CorpusId": 220845405
+                },
+                "corpusId": 220845405,
+                "publicationVenue": {
+                    "id": "167fa0ca-e88a-4ef7-a16f-bc66c457c806",
+                    "name": "European Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ECCV",
+                        "Eur Conf Comput Vis"
+                    ],
+                    "url": "https://link.springer.com/conference/eccv"
+                },
+                "url": "https://www.semanticscholar.org/paper/0c0c01827019b30b51479151b949bdac210093ad",
+                "title": "Solving the Blind Perspective-n-Point Problem End-To-End With Robust Differentiable Geometric Optimization",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "145185576",
+                        "name": "Dylan Campbell"
+                    },
+                    {
+                        "authorId": "1409897231",
+                        "name": "Liu Liu"
+                    },
+                    {
+                        "authorId": "145273587",
+                        "name": "Stephen Gould"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We use the implementation from [3] for differentiable PnP."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "7e98a2e1bb923cd49930bdc821d4ead9c3cf0e6e",
+                "externalIds": {
+                    "DBLP": "conf/3dim/SockGAK20",
+                    "MAG": "3092983688",
+                    "DOI": "10.1109/3DV50981.2020.00039",
+                    "CorpusId": 224471690
+                },
+                "corpusId": 224471690,
+                "publicationVenue": {
+                    "id": "4b02e809-1c26-4203-b9ba-311a418f664b",
+                    "name": "International Conference on 3D Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf 3D Vis",
+                        "3DV"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7e98a2e1bb923cd49930bdc821d4ead9c3cf0e6e",
+                "title": "Introducing Pose Consistency and Warp-Alignment for Self-Supervised 6D Object Pose Estimation in Color Images",
+                "abstract": "Most successful approaches to estimate the 6D pose of an object typically train a neural network by supervising the learning with annotated poses in real world images. These annotations are generally expensive to obtain and a common workaround is to generate and train on synthetic scenes, with the drawback of limited generalisation when the model is deployed in the real world. In this work, a two-stage 6D object pose estimator framework that can be applied on top of existing neural-network-based approaches and that does not require pose annotations on real images is proposed. The first self-supervised stage enforces the pose consistency between rendered predictions and real input images, narrowing the gap between the two domains. The second stage fine-tunes the previously trained model by enforcing the photometric consistency between pairs of different object views, where one image is warped and aligned to match the view of the other and thus enabling their comparison. In the absence of both real image annotations and depth information, applying the proposed framework on top of two recent approaches results in state-of-the-art performance when compared to methods trained only on synthetic data, domain adaptation baselines and a concurrent self-supervised approach on LINEMOD, LINEMOD OCCLUSION and HomebrewedDB datasets.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "3414660",
+                        "name": "Juil Sock"
+                    },
+                    {
+                        "authorId": "1403754530",
+                        "name": "Guillermo Garcia-Hernando"
+                    },
+                    {
+                        "authorId": "1935435",
+                        "name": "Anil Armagan"
+                    },
+                    {
+                        "authorId": "143617697",
+                        "name": "Tae-Kyun Kim"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[13] develop a differentiable perspective-n-point (PnP) solver for estimating the pose of a camera within a 3D scene."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3e411d95097a12e63cc4812ab4c3fdaba50df85e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-1909-04866",
+                    "ArXiv": "1909.04866",
+                    "MAG": "2972700194",
+                    "DOI": "10.1109/TPAMI.2021.3059462",
+                    "CorpusId": 202558604,
+                    "PubMed": "33591908"
+                },
+                "corpusId": 202558604,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3e411d95097a12e63cc4812ab4c3fdaba50df85e",
+                "title": "Deep Declarative Networks",
+                "abstract": "We explore a class of end-to-end learnable models wherein data processing nodes (or network layers) are defined in terms of desired behavior rather than an explicit forward function. Specifically, the forward function is implicitly defined as the solution to a mathematical optimization problem. Consistent with nomenclature in the programming languages community, we name these models deep declarative networks. Importantly, it can be shown that the class of deep declarative networks subsumes current deep learning models. Moreover, invoking the implicit function theorem, we show how gradients can be back-propagated through many declaratively defined data processing nodes thereby enabling end-to-end learning. We discuss how these declarative processing nodes can be implemented in the popular PyTorch deep learning software library allowing declarative and imperative nodes to co-exist within the same network. We also provide numerous insights and illustrative examples of declarative nodes and demonstrate their application for image and point cloud classification tasks.",
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "145273587",
+                        "name": "Stephen Gould"
+                    },
+                    {
+                        "authorId": "143750012",
+                        "name": "R. Hartley"
+                    },
+                    {
+                        "authorId": "2065093915",
+                        "name": "Dylan Campbell"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "matching method, BPnP [26] regressed the pose guided by 2D-3D corresponding relations.",
+                "Based on the sparse points matching method, BPnP [26] regressed the pose guided by 2D-3D corresponding relations."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "fda416780a313c356ce7fd9836fcca0e44a5854e",
+                "externalIds": {
+                    "DBLP": "journals/tim/LiuFXLW23",
+                    "DOI": "10.1109/TIM.2023.3244803",
+                    "CorpusId": 256894176
+                },
+                "corpusId": 256894176,
+                "publicationVenue": {
+                    "id": "3edbd5e0-8799-420a-9ca8-b35c646c354f",
+                    "name": "IEEE Transactions on Instrumentation and Measurement",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Instrum Meas"
+                    ],
+                    "issn": "0018-9456",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=19",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/fda416780a313c356ce7fd9836fcca0e44a5854e",
+                "title": "Fusing Dense Features and Pose Consistency: A Regression Method for Attitude Measurement of Aircraft Landing",
+                "abstract": "The aircraft pose is the important measurement indicator related to a safe landing. The existing pose estimation methods are limited by the extraction accuracy of salient sparse points or line features, and it is hard to obtain higher accuracy and robustness, especially at long distances. In this article, we implement attitude measurement using pose estimation. The aircraft pose estimation method based on dense features and pose consistency (PC) is proposed, which can infer the aircraft pose relative to the camera from the RGB image directly. This method uses the encoder-decoder network to predict the dense 3-D coordinates, the surface regions (SRs), and visible segmentation (VS). Guided by the dense 2D-3D correspondences (DCs) and SRs, the aircraft pose is estimated using the pose regression module (PRM). To improve the robustness of decoupled pose estimation relative to object detection, this article proposes a dual-channel regression framework connected with the PC constraint, which enables mutual supervision between the different dynamic zoomed-in views (DZIs). The experimental results on the aircraft dataset show the superiority of our aircraft pose estimation method significantly. The PC constraints further improve the prediction performance on the aircraft dataset, LINEMOD dataset, and YCB-V dataset. The pose estimation method can be used for real-time measurement of aircraft attitude directly with the mean error of 0.377\u00b0, the rms error of 0.491\u00b0, and the rate of 59 frames/s.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2143870568",
+                        "name": "Mingkun Liu"
+                    },
+                    {
+                        "authorId": "2146875115",
+                        "name": "Guangkun Feng"
+                    },
+                    {
+                        "authorId": "2118716662",
+                        "name": "Ting-Bing Xu"
+                    },
+                    {
+                        "authorId": "150102288",
+                        "name": "Fulin Liu"
+                    },
+                    {
+                        "authorId": "3294766",
+                        "name": "Zhenzhong Wei"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026et al., 2018), video classification (Fernando & Gould, 2016; 2017), action recognition (Cherian et al., 2017), visual attribute ranking (Santa Cruz et al., 2019), few-shot learning for visual recognition (Lee et al., 2019), and camera pose estimation (Campbell et al., 2020; Chen et al., 2020).",
+                ", 2019), and camera pose estimation (Campbell et al., 2020; Chen et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "2b6378b8224dc1f8cff5d97a2193522f94f0d70b",
+                "externalIds": {
+                    "CorpusId": 257632620
+                },
+                "corpusId": 257632620,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2b6378b8224dc1f8cff5d97a2193522f94f0d70b",
+                "title": "Optimal path Soft-DTW Regularisation and constraints Soft-DTW DecDTW Expected path Loss Train Inference DTW ( Soft-DTW ) Train Inference",
+                "abstract": "This paper addresses learning end-to-end models for time series data that include a temporal alignment step via dynamic time warping (DTW). Existing approaches to differentiable DTW either differentiate through a fixed warping path or apply a differentiable relaxation to the min operator found in the recursive steps used to solve the DTW problem. We instead propose a DTW layer based around bilevel optimisation and deep declarative networks, which we name DecDTW. By formulating DTW as a continuous, inequality constrained optimisation problem, we can compute gradients for the solution of the optimal alignment (with respect to the underlying time series) using implicit differentiation. An interesting byproduct of this formulation is that DecDTW outputs the optimal warping path between two time series as opposed to a soft approximation, recoverable from Soft-DTW. We show that this property is particularly useful for applications where downstream loss functions are defined on the optimal alignment path itself. This naturally occurs, for instance, when learning to improve the accuracy of predicted alignments against ground truth alignments. We evaluate DecDTW on two such applications, namely the audio-to-score alignment task in music information retrieval and the visual place recognition task in robotics, demonstrating state-of-the-art results in both.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2153556099",
+                        "name": "Ming Xu"
+                    },
+                    {
+                        "authorId": "1735947",
+                        "name": "Sourav Garg"
+                    },
+                    {
+                        "authorId": "1809144",
+                        "name": "Michael Milford"
+                    },
+                    {
+                        "authorId": "47873182",
+                        "name": "Stephen Gould"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Restrictions apply.\na feature extraction network and Heatmap [30] is proposed to accurately calculate the matched pixels of 3-",
+                "a feature extraction network and Heatmap [30] is proposed"
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "4958d519a6729bfc4fa4e8321be9b6d58f9d7eed",
+                "externalIds": {
+                    "DBLP": "journals/tim/ZhuLXS23",
+                    "DOI": "10.1109/TIM.2023.3302384",
+                    "CorpusId": 260721069
+                },
+                "corpusId": 260721069,
+                "publicationVenue": {
+                    "id": "3edbd5e0-8799-420a-9ca8-b35c646c354f",
+                    "name": "IEEE Transactions on Instrumentation and Measurement",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Instrum Meas"
+                    ],
+                    "issn": "0018-9456",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=19",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4958d519a6729bfc4fa4e8321be9b6d58f9d7eed",
+                "title": "Robust Online Calibration of LiDAR and Camera Based on Cross-Modal Graph Neural Network",
+                "abstract": "Accurate spatial parameters of LiDAR and camera is a prerequisite for information consistency and robust online calibration is the foundation of long-term effective fusion in intelligent perception system. However, dynamic scene conditions and various hardware prior parameters pose great challenges to the robustness and generalization of existing models. To solve these problems, we propose an online calibration method based on a cross-modal graph neural network (GNN). In the data preprocessing stage, the influence of prior parameters on the inductive bias is reduced by a unified spherical space process strategy of 3-D points and 2-D pixels, which strengthens the generalization. In the graph network, the correlation of multiple windows inside the modal and the explicit correlation matrix across the modal are solved by modeling the robust matching process of human visual positioning. In multilevel graphic constraints, the precise relative position and orientation information is obtained by imposing nodes, edges, and embedding constraints on the graph structure. Extensive evaluations on KITTI and PandaSet suggest that the proposed method not only effectively improves the robustness in various scenes, but also enhances the generalization of the online calibration algorithm.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2042713362",
+                        "name": "Jianxiao Zhu"
+                    },
+                    {
+                        "authorId": "50080245",
+                        "name": "Xu Li"
+                    },
+                    {
+                        "authorId": "3364760",
+                        "name": "Qimin Xu"
+                    },
+                    {
+                        "authorId": "2118237909",
+                        "name": "Zheng Sun"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "BPnPfaster \u2014 Authors in [1] provided an alternative method for calculating the gradients through the PnP layer, which essentially is the samemethod as the original, although ignoring the higher-order derivatives from the coefficients graph.",
+                "2 Results beyond the BPnP paper Apart from the experiments conducted by the authors in [1] we provide additional to further support the main claims.",
+                "More specifically, in the backpropagatable PnP [1], the authors claim that incorporating geometric optimization in a deep-learning pipeline and predicting an object s\u0313 pose in an end-to-end manner yields improved performance.",
+                "Recently, two works have been presented that seek to address these issues, BPnP [1] and HigherHRNet [2].",
+                "After conducting several experiments on the UAVA dataset, the central claims of [1] and [2] stand true; as they both outperform other methods.",
+                "We communicated with the authors of [1] through GitHub, and we would like to thank them as they provided a fast and detailed response.",
+                "In more details, the authors of BPnP [1] propose a novel differentiable module which calculates the derivatives of a PnP solver through implicit differentiation, enabling the backpropagation of its gradients to the network parameters, and as such allowing for end-to-end optimization and learning.",
+                "Our results support the claims presented by both authors in [1] and [2] respectively.",
+                "The main issue that required more effort was identifying the appropriate weights for BPnP [1] in order to balance the different optimization objectives.",
+                "BPnP: BPnP focuses on the Pose Retrieval stage, and following [1] we trained our model under the 3 different schemes used in the original work as well: 1We apply the proposed module in the object pose estimation task, while authors originally demonstrated it for the human-pose estimation task, but its concept still applies in our case as well."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "result",
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "0f95ba4ff556af52f5c16e093f80485db86789d6",
+                "externalIds": {
+                    "CorpusId": 232216911
+                },
+                "corpusId": 232216911,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/0f95ba4ff556af52f5c16e093f80485db86789d6",
+                "title": "[Re] On end-to-end 6DoF object pose estimation and robustness to object scale",
+                "abstract": "Further, our results indicate that indeed HigherHRNet improves keypoint localisation performance on small scale objects.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "150108254",
+                        "name": "G. Albanis"
+                    },
+                    {
+                        "authorId": "2418323",
+                        "name": "N. Zioulis"
+                    },
+                    {
+                        "authorId": "2345694",
+                        "name": "Anargyros Chatzitofis"
+                    },
+                    {
+                        "authorId": "47381330",
+                        "name": "A. Dimou"
+                    },
+                    {
+                        "authorId": "2143692337",
+                        "name": "Dimitrios"
+                    },
+                    {
+                        "authorId": "2173680559",
+                        "name": "Zarpalas"
+                    },
+                    {
+                        "authorId": "1747572",
+                        "name": "P. Daras"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "A further development is the BPnP [5], which is an exact PnP back-propagation approach.",
+                "End-to-End Training Incorporating the PnP backpropagation approach in [5], we apply smooth L1 loss on the Euclidean errors of estimated translation vector and yaw angle.",
+                "Regarding differentiable PnP, we generally follow the approach in BPnP [5], with the code completely reimplemented for higher efficiency and uncertainty awareness."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "81a218dd3cacd34b470dcb48f394c5a72b6cdd65",
+                "externalIds": {
+                    "CorpusId": 232320296
+                },
+                "corpusId": 232320296,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/81a218dd3cacd34b470dcb48f394c5a72b6cdd65",
+                "title": "MonoRUn: Monocular 3D Object Detection by Self-Supervised Reconstruction and Uncertainty Propagation",
+                "abstract": "Object localization in 3D space is a challenging aspect in monocular 3D object detection. Recent advances in 6DoF pose estimation have shown that predicting dense 2D-3D correspondence maps between image and object 3D model and then estimating object pose via Perspective-nPoint (PnP) algorithm can achieve remarkable localization accuracy. Yet these methods rely on training with ground truth of object geometry, which is difficult to acquire in real outdoor scenes. To address this issue, we propose MonoRUn, a novel detection framework that learns dense correspondences and geometry in a self-supervised manner, with simple 3D bounding box annotations. To regress the pixel-related 3D object coordinates, we employ a regional reconstruction network with uncertainty awareness. For self-supervised training, the predicted 3D coordinates are projected back to the image plane. A Robust KL loss is proposed to minimize the uncertainty-weighted reprojection error. During testing phase, we exploit the network uncertainty by propagating it through all downstream modules. More specifically, the uncertainty-driven PnP algorithm is leveraged to estimate object pose and its covariance. Extensive experiments demonstrate that our proposed approach outperforms current state-of-the-art methods on KITTI benchmark.1",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2145252142",
+                        "name": "Hansheng Chen"
+                    },
+                    {
+                        "authorId": "9861410",
+                        "name": "Yuyao Huang"
+                    },
+                    {
+                        "authorId": "2113787205",
+                        "name": "Wei Tian"
+                    },
+                    {
+                        "authorId": "2116492756",
+                        "name": "Zhong Gao"
+                    },
+                    {
+                        "authorId": "145748029",
+                        "name": "Lu Xiong"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "keypoints, dense correspondences, edge vectors, symmetry correspondences), (ii) PnP algorithm [13, 6] for pose refinment."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "b3df04d516165c5f45ac42508deabb9d9ebc3da6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2104-00633",
+                    "CorpusId": 232478569
+                },
+                "corpusId": 232478569,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b3df04d516165c5f45ac42508deabb9d9ebc3da6",
+                "title": "RePOSE: Real-Time Iterative Rendering and Refinement for 6D Object Pose Estimation",
+                "abstract": "The use of iterative pose refinement is a critical processing step for 6D object pose estimation, and its performance depends greatly on one\u2019s choice of image representation. Image representations learned via deep convolutional neural networks (CNN) are currently the method of choice as they are able to robustly encode object keypoint locations. However, CNN-based image representations are computational expensive to use for iterative pose refinement, as they require that image features are extracted using a deep network, once for the input image and multiple times for rendered images during the refinement process. Instead of using a CNN to extract image features from a rendered RGB image, we propose to directly render a deep feature image. We call this deep texture rendering, where a shallow multi-layer perceptron is used to directly regress a view invariant image representation of an object. Using an estimate of the pose and deep texture rendering, our system can render an image representation in under 1ms. This image representation is optimized such that it makes it easier to perform nonlinear 6D pose estimation by adding a differentiable Levenberg-Marquardt optimization network and back-propagating the 6D pose alignment error. We call our method, RePOSE, a Real-time Iterative Rendering and Refinement algorithm for 6D POSE estimation. RePOSE runs at 71 FPS and achieves state-of-the-art accuracy of 51.6% on the Occlusion LineMOD dataset a 4.1% absolute improvement over the prior art, and comparable result on the YCB-Video dataset with a much faster runtime.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "87681606",
+                        "name": "Shun Iwase"
+                    },
+                    {
+                        "authorId": "2146036705",
+                        "name": "Xingyu Liu"
+                    },
+                    {
+                        "authorId": "51927417",
+                        "name": "Rawal Khirodkar"
+                    },
+                    {
+                        "authorId": "2274654",
+                        "name": "Rio Yokota"
+                    },
+                    {
+                        "authorId": "37991449",
+                        "name": "Kris M. Kitani"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                ", BPnP [50] which uses 67% and 33% of samples for training and testing, in contrast",
+                "77736 VOLUME 9, 2021\nNoticeable in Table 2 where the ADD metric is compared, our performance will become the best without considering support from additional refinement procedure (e.g., DPOD [26]) or more training samples (e.g., BPnP [50] which uses 67% and 33% of samples for training and testing, in contrast to ours which uses 15% and 85% for training and testing)."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "5e907c675b455df48255ed7f0a7476ed245677ed",
+                "externalIds": {
+                    "DBLP": "journals/access/AingL21",
+                    "DOI": "10.1109/ACCESS.2021.3082406",
+                    "CorpusId": 235307673
+                },
+                "corpusId": 235307673,
+                "publicationVenue": {
+                    "id": "2633f5b2-c15c-49fe-80f5-07523e770c26",
+                    "name": "IEEE Access",
+                    "type": "journal",
+                    "issn": "2169-3536",
+                    "url": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=6287639"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5e907c675b455df48255ed7f0a7476ed245677ed",
+                "title": "Detecting Object Surface Keypoints From a Single RGB Image via Deep Learning Network for 6-DoF Pose Estimation",
+                "abstract": "Estimating the 6-DoF (Degree of Freedom) object pose from a single RGB image is one of the challenging tasks in the field of computer vision. Before the pose which is defined as the translation and rotation parameters can be derived by the traditional PnP algorithm, 2D image projections of a set of 3D object keypoints must be accurately detected. In this paper, we present techniques for defining 3D object surface keypoints and predicting their corresponding 2D counterparts via deep-learning network architectures. The main technique to designate 3D object keypoints is to employ quadratic fitting scheme for calculating the principal surface curvatures as the weights and then select from all surface points the ones mostly distributive with larger curvatures to describe the object shape as possible. However, the 2D projected keypoints are not directly regressed from the network, but encoded as the unit vector fields pointing to them, so that the voting scheme to recover back those 2D keypoints can be performed. Moreover, an effective loss function with the regularization term is adopted in training ResNet for predicting image projections of object keypoints by focusing on small-scale errors. Experimental results show that our proposed technique outperforms state-of-the-art approaches in both \u201c2D projection\u201d and \u201c3D transformation\u201d metrics.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "19234235",
+                        "name": "Lee Aing"
+                    },
+                    {
+                        "authorId": "144445240",
+                        "name": "W. Lie"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "1bf085a3756747f3697c360114ee76bc9ea52968",
+                "externalIds": {
+                    "DBLP": "conf/eurovr/FirintepeHPS21",
+                    "DOI": "10.1007/978-3-030-90739-6_6",
+                    "CorpusId": 242390746
+                },
+                "corpusId": 242390746,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1bf085a3756747f3697c360114ee76bc9ea52968",
+                "title": "Pose Tracking vs. Pose Estimation of AR Glasses with Convolutional, Recurrent, and Non-local Neural Networks: A Comparison",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1637443311",
+                        "name": "Ahmet Firintepe"
+                    },
+                    {
+                        "authorId": "2139688520",
+                        "name": "Sarfaraz Habib"
+                    },
+                    {
+                        "authorId": "1771057",
+                        "name": "A. Pagani"
+                    },
+                    {
+                        "authorId": "143749919",
+                        "name": "D. Stricker"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": null,
+                "externalIds": null,
+                "corpusId": "260055347",
+                "publicationVenue": null,
+                "url": null,
+                "title": "D EEP D ECLARATIVE D YNAMIC T IME W ARPING FOR E ND - TO -E ND L EARNING OF A LIGNMENT P ATHS",
+                "abstract": null,
+                "year": null,
+                "authors": []
+            }
+        }
+    ]
+}

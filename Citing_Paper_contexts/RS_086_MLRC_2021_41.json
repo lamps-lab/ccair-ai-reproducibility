@@ -1,0 +1,698 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "The perk of direct inference without training after feature fusion, as observed in [9], does not exist with the selected baseline TOMP.",
+                "For evaluation, we mainly use the Transparent Object Tracking Benchmark (TOTB) [9] dataset.",
+                "Given the lack of any labeled training data sets, we split TOTB into two sections: a small section comprising 45 video sequences belonging to 3 object classes (Beaker, GlassBall, and WubbleBubble) is used for training while the remaining 180 sequences (belonging to other 12 object classes) are used for testing.",
+                "1: Qualitative comparison of the proposed TOTEM tracking algorithm with state-of-the-arts [1], [9] on three challenging sequences from TOTB [9].",
+                "Motivated by the transfer learning approach in [9], we adopt a similar approach of using the feature extractor from a segmentation network.",
+                "All the trackers follow their original configuration and are not pre-trained on TOTB.",
+                "\u2022 We perform extensive experiments over the transparent object tracking benchmark TOTB [9] and perform ablation studies to showcase the benefit of our design choices.",
+                "To establish baselines for comparison, we employ the recent transparent object tracker TransATOM [9] and its base ATOM [12].",
+                "These works mainly benefit from the fusion techniques [23], [24], [25] like concatenation [9], feature pruning [26], and re-weighting [27], [28].",
+                "Further, we use different portions of the Transparent Object Tracking Benchmark (TOTB) dataset [9] for training and benchmarking our tracker algorithm.",
+                "[9] constructed a large tracking benchmark dedicated to transparent objects.",
+                "We train our tracker on above mentioned splits of TOTB and LaSOT datasets for 25 epochs with 4000 image triplets sampled at every epoch.",
+                "\u2022 We perform extensive experiments over the transparent\nobject tracking benchmark TOTB [9] and perform ablation studies to showcase the benefit of our design choices."
+            ],
+            "citingPaper": {
+                "paperId": "ac4b69fe4f3d556bf713bd060a75e29a3e0a8b37",
+                "externalIds": {
+                    "ArXiv": "2309.06701",
+                    "DBLP": "journals/corr/abs-2309-06701",
+                    "DOI": "10.48550/arXiv.2309.06701",
+                    "CorpusId": 261706157
+                },
+                "corpusId": 261706157,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ac4b69fe4f3d556bf713bd060a75e29a3e0a8b37",
+                "title": "Transparent Object Tracking with Enhanced Fusion Module",
+                "abstract": "Accurate tracking of transparent objects, such as glasses, plays a critical role in many robotic tasks such as robot-assisted living. Due to the adaptive and often reflective texture of such objects, traditional tracking algorithms that rely on general-purpose learned features suffer from reduced performance. Recent research has proposed to instill transparency awareness into existing general object trackers by fusing purpose-built features. However, with the existing fusion techniques, the addition of new features causes a change in the latent space making it impossible to incorporate transparency awareness on trackers with fixed latent spaces. For example, many of the current days transformer-based trackers are fully pre-trained and are sensitive to any latent space perturbations. In this paper, we present a new feature fusion technique that integrates transparency information into a fixed feature space, enabling its use in a broader range of trackers. Our proposed fusion module, composed of a transformer encoder and an MLP module, leverages key query-based transformations to embed the transparency information into the tracking pipeline. We also present a new two-step training strategy for our fusion module to effectively merge transparency features. We propose a new tracker architecture that uses our fusion techniques to achieve superior results for transparent object tracking. Our proposed method achieves competitive results with state-of-the-art trackers on TOTB, which is the largest transparent object tracking benchmark recently released. Our results and the implementation of code will be made publicly available at https://github.com/kalyan0510/TOTEM.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2239201616",
+                        "name": "Kalyan Garigapati"
+                    },
+                    {
+                        "authorId": "1752475",
+                        "name": "Erik Blasch"
+                    },
+                    {
+                        "authorId": "2239659652",
+                        "name": "Jie Wei"
+                    },
+                    {
+                        "authorId": "2239202043",
+                        "name": "Haibin Ling"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "62d61899084c117725d597f300d89909298b17d6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-14630",
+                    "ArXiv": "2307.14630",
+                    "DOI": "10.48550/arXiv.2307.14630",
+                    "CorpusId": 260203340
+                },
+                "corpusId": 260203340,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/62d61899084c117725d597f300d89909298b17d6",
+                "title": "360VOT: A New Benchmark Dataset for Omnidirectional Visual Object Tracking",
+                "abstract": "360{\\deg} images can provide an omnidirectional field of view which is important for stable and long-term scene perception. In this paper, we explore 360{\\deg} images for visual object tracking and perceive new challenges caused by large distortion, stitching artifacts, and other unique attributes of 360{\\deg} images. To alleviate these problems, we take advantage of novel representations of target localization, i.e., bounding field-of-view, and then introduce a general 360 tracking framework that can adopt typical trackers for omnidirectional tracking. More importantly, we propose a new large-scale omnidirectional tracking benchmark dataset, 360VOT, in order to facilitate future research. 360VOT contains 120 sequences with up to 113K high-resolution frames in equirectangular projection. The tracking targets cover 32 categories in diverse scenarios. Moreover, we provide 4 types of unbiased ground truth, including (rotated) bounding boxes and (rotated) bounding field-of-views, as well as new metrics tailored for 360{\\deg} images which allow for the accurate evaluation of omnidirectional tracking performance. Finally, we extensively evaluated 20 state-of-the-art visual trackers and provided a new baseline for future comparisons. Homepage: https://360vot.hkustvgd.com",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2146053535",
+                        "name": "Huajian Huang"
+                    },
+                    {
+                        "authorId": "2118669689",
+                        "name": "Yin Xu"
+                    },
+                    {
+                        "authorId": "50579545",
+                        "name": "Ying-Rui Chen"
+                    },
+                    {
+                        "authorId": "123914790",
+                        "name": "Sai-Kit Yeung"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Following other tracking datasets [35, 18, 11], we provide challenging factors (also called attributes in other datasets) for each sequence in PlanarTrack to enable further in-depth analysis of different algorithms."
+            ],
+            "citingPaper": {
+                "paperId": "bab1416472e2f26f6389d1710b2a4aa946796a44",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-07625",
+                    "ArXiv": "2303.07625",
+                    "DOI": "10.48550/arXiv.2303.07625",
+                    "CorpusId": 257505505
+                },
+                "corpusId": 257505505,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/bab1416472e2f26f6389d1710b2a4aa946796a44",
+                "title": "PlanarTrack: A Large-scale Challenging Benchmark for Planar Object Tracking",
+                "abstract": "Planar object tracking is a critical computer vision problem and has drawn increasing interest owing to its key roles in robotics, augmented reality, etc. Despite rapid progress, its further development, especially in the deep learning era, is largely hindered due to the lack of large-scale challenging benchmarks. Addressing this, we introduce PlanarTrack, a large-scale challenging planar tracking benchmark. Specifically, PlanarTrack consists of 1,000 videos with more than 490K images. All these videos are collected in complex unconstrained scenarios from the wild, which makes PlanarTrack, compared with existing benchmarks, more challenging but realistic for real-world applications. To ensure the high-quality annotation, each frame in PlanarTrack is manually labeled using four corners with multiple-round careful inspection and refinement. To our best knowledge, PlanarTrack, to date, is the largest and most challenging dataset dedicated to planar object tracking. In order to analyze the proposed PlanarTrack, we evaluate 10 planar trackers and conduct comprehensive comparisons and in-depth analysis. Our results, not surprisingly, demonstrate that current top-performing planar trackers degenerate significantly on the challenging PlanarTrack and more efforts are needed to improve planar tracking in the future. In addition, we further derive a variant named PlanarTrack$_{\\mathbf{BB}}$ for generic object tracking from PlanarTrack. Our evaluation of 10 excellent generic trackers on PlanarTrack$_{\\mathrm{BB}}$ manifests that, surprisingly, PlanarTrack$_{\\mathrm{BB}}$ is even more challenging than several popular generic tracking benchmarks and more attention should be paid to handle such planar objects, though they are rigid. All benchmarks and evaluations will be released at the project webpage.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2110654802",
+                        "name": "Xinran Liu"
+                    },
+                    {
+                        "authorId": "2109368799",
+                        "name": "Xiaoqiong Liu"
+                    },
+                    {
+                        "authorId": "2151792517",
+                        "name": "Ziruo Yi"
+                    },
+                    {
+                        "authorId": "3437040",
+                        "name": "Xinyi Zhou"
+                    },
+                    {
+                        "authorId": "2211498966",
+                        "name": "Thanh Le"
+                    },
+                    {
+                        "authorId": "2145635721",
+                        "name": "Libo Zhang"
+                    },
+                    {
+                        "authorId": "2145434860",
+                        "name": "Yanling Huang"
+                    },
+                    {
+                        "authorId": "47492455",
+                        "name": "Q. Yang"
+                    },
+                    {
+                        "authorId": "143911163",
+                        "name": "Heng Fan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "OTB2015 [36] VOT2021 [15] UAV123 [23] TrackingNet [24] GOT-10k [11] LaSOT [9] HOB [17] TOTB [10] HOOT",
+                "Another evaluation benchmark focused on transparent targets, TOTB [10], also provides per-frame absence and full-occlusion labels."
+            ],
+            "citingPaper": {
+                "paperId": "a5c22a5bab4428d9cf3be6a398d883e1f5ea9a00",
+                "externalIds": {
+                    "DBLP": "conf/wacv/SahinI23",
+                    "DOI": "10.1109/WACV56688.2023.00481",
+                    "CorpusId": 256650376
+                },
+                "corpusId": 256650376,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/a5c22a5bab4428d9cf3be6a398d883e1f5ea9a00",
+                "title": "HOOT: Heavy Occlusions in Object Tracking Benchmark",
+                "abstract": "In this paper, we present HOOT, the Heavy Occlusions in Object Tracking Benchmark, a new visual object tracking dataset aimed towards handling high occlusion scenarios for single-object tracking tasks. The dataset consists of 581 high-quality videos, which have 436K frames densely annotated with rotated bounding boxes for targets spanning 74 object classes. The dataset is geared for development, evaluation and analysis of visual tracking algorithms that are robust to occlusions. It is comprised of videos with high occlusion levels, where the median percentage of occluded frames per-video is 68%. It also provides critical attributes on occlusions, which include defining a taxonomy for occluders, providing occlusion masks for every bounding box, per-frame partial/full occlusion labels and more. HOOT has been compiled to encourage development of new methods targeting occlusion handling in visual tracking, by providing training and test splits with high occlusion levels. This makes HOOT the first densely-annotated, large dataset designed for single-object tracking under severe occlusion. We evaluate 15 state-of-the-art trackers on this new dataset to act as a baseline for future work focusing on occlusions.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "50648961",
+                        "name": "Gozde Sahin"
+                    },
+                    {
+                        "authorId": "7326223",
+                        "name": "L. Itti"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "In (Fan et al., 2021), the authors proposed the first dataset for transparent object tracking (TOTB).",
+                "We use the general one-pass evaluation (OPE) criteria as in Fan et al. (2021), Fan et al. (2019) to compare the trackers using precision measure, normalized precision measure and success measure.",
+                "In Fan et al. (2021), the existing datasets are divided into two types: generic and specific, while in Valmadre et al. (2018) the authors divide existing datasets into long-term and short-term.",
+                "In the following years, several other benchmark datasets are released, including TC128 (Liang et al., 2015), NFS (Galoogahi et al., 2017), LaSOT (Fan et al., 2019), UAV123 (Mueller et al., 2016), GOT10K (Huang et al., 2021), AMTSet (Wang et al., 2022) and TOTB (Fan et al., 2021)."
+            ],
+            "citingPaper": {
+                "paperId": "732f190d182b5b42891e5ba24f783bb370430878",
+                "externalIds": {
+                    "DBLP": "journals/ijcv/WangCLWHS23",
+                    "DOI": "10.1007/s11263-022-01732-3",
+                    "CorpusId": 255042516
+                },
+                "corpusId": 255042516,
+                "publicationVenue": {
+                    "id": "939ee07c-6009-43f8-b884-69238b40659e",
+                    "name": "International Journal of Computer Vision",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Int J Comput Vis"
+                    ],
+                    "issn": "0920-5691",
+                    "url": "https://www.springer.com/computer/image+processing/journal/11263",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/11263",
+                        "http://link.springer.com/journal/11263"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/732f190d182b5b42891e5ba24f783bb370430878",
+                "title": "WATB: Wild Animal Tracking Benchmark",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2595425",
+                        "name": "Fasheng Wang"
+                    },
+                    {
+                        "authorId": "2055004247",
+                        "name": "P. Cao"
+                    },
+                    {
+                        "authorId": "2115363296",
+                        "name": "Fu Li"
+                    },
+                    {
+                        "authorId": "2198050982",
+                        "name": "Xing Wang"
+                    },
+                    {
+                        "authorId": "2082463174",
+                        "name": "B. He"
+                    },
+                    {
+                        "authorId": "2075375099",
+                        "name": "Fuming Sun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "applied the detection of transparent objects to dynamic scenes, and proposed a recognition tracking network TransATOM, which can stably track the transparent objects appearing in the video and obtain more robust extraction results [17]."
+            ],
+            "citingPaper": {
+                "paperId": "38e827bffca5f23022cdd78418b9e1d26f913a08",
+                "externalIds": {
+                    "DBLP": "journals/trob/LiYDLYXWZ23",
+                    "ArXiv": "2211.16693",
+                    "DOI": "10.1109/TRO.2023.3286071",
+                    "CorpusId": 254096494
+                },
+                "corpusId": 254096494,
+                "publicationVenue": {
+                    "id": "2aa2a52c-3e35-4bed-8edf-5dc99550883a",
+                    "name": "IEEE Transactions on robotics",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans robot",
+                        "IEEE Trans Robot",
+                        "IEEE Transactions on Robotics"
+                    ],
+                    "issn": "1552-3098",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=8860",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/38e827bffca5f23022cdd78418b9e1d26f913a08",
+                "title": "Visual\u2013Tactile Fusion for Transparent Object Grasping in Complex Backgrounds",
+                "abstract": "The grasping of transparent objects is challenging but of significance to robots. In this article, a visual\u2013tactile fusion framework for transparent object grasping in complex backgrounds is proposed, which synergizes the advantages of vision and touch, and greatly improves the grasping efficiency of transparent objects. First, we propose a multiscene synthetic grasping dataset named SimTrans12 K together with a Gaussian-mask annotation method. Next, based on the TaTa gripper, we propose a grasping network named transparent object-grasping convolutional neural network for grasping position detection, which shows good performance in both synthetic and real scenes. Inspired by human grasping, a tactile calibration method and a visual\u2013tactile fusion classification method are designed, which improve the grasping success rate by 36.7% compared with direct grasping and the classification accuracy by 39.1%. Furthermore, the tactile height sensing module and the tactile position exploration module are added to solve the problem of grasping transparent objects in irregular and visually undetectable scenes. The experimental results demonstrate the validity of the framework.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2155443623",
+                        "name": "Shoujie Li"
+                    },
+                    {
+                        "authorId": "2119317168",
+                        "name": "Haixin Yu"
+                    },
+                    {
+                        "authorId": "2113832430",
+                        "name": "Wenbo Ding"
+                    },
+                    {
+                        "authorId": "2444925",
+                        "name": "Houde Liu"
+                    },
+                    {
+                        "authorId": "153153239",
+                        "name": "Linqi Ye"
+                    },
+                    {
+                        "authorId": "27011346",
+                        "name": "Chongkun Xia"
+                    },
+                    {
+                        "authorId": "2155638834",
+                        "name": "Xueqian Wang"
+                    },
+                    {
+                        "authorId": "2176480025",
+                        "name": "Xiao-Ping Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "We selected state-of-the-art learning-based trackers that cover the major trends in modern architecture designs for validating Trans2k: (i) two siamese trackers SiamRPN++ [31] and SiamBAN [6], (ii) two deep correlation filter trackers ATOM [10] and DiMP [11], (iii) the recent state-of-the-art transparent object tracker TransATOM [15], and (iv) a transfomer-\n1.9%\n9.9%\n2.4%\n4.0% 3.3%\n3.8% 2.4%\n0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5\nLocation error threshold\n0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1\nP re\nci si\no n\nNormalized Precision plots of OPE on TOTB\n0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1\nOverlap threshold\n0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1\nS u\nc ce\ns s\nra te\nSuccess plots of OPE on TOTB Absolute peformance improvements on TOTB\n[0.847] Stark* [0.817] Stark [0.813] DiMP* [0.791] SiamBAN* [0.773] TransATOM* [0.764] SiamRPN++* [0.762] SiamBAN [0.749] D3S* [0.747] ATOM* [0.735] TransATOM [0.719] SiamRPN++ [0.712] ATOM [0.695] D3S [0.679] DiMP\n[0.738] Stark* [0.719] Stark [0.699] DiMP* [0.680] SiamBAN* [0.667] D3S* [0.664] TransATOM* [0.656] SiamBAN [0.655] SiamRPN++* [0.642] ATOM* [0.631] TransATOM [0.627] D3S [0.618] ATOM [0.617] SiamRPN++ [0.600] DiMP\nOpaque Trans2k+OTD\nFigure 4: Trackers evaluated on TOTB dataset shown in precision and success plots.",
+                "The trained trackers were evaluated on TOTB [15].",
+                "Trans2k was validated on the recent transparent object tracking benchmark TOTB [48].",
+                "In summary, our contributions are: (i) Trans2k, the first training dataset for transparent object tracking that unlocks the power of deep trainable trackers and allows training bounding box or segmentation trackers, (ii) a complementary analysis on [15] with new findings indicating future research directions.",
+                "Presented with these challenges, various sequence selection and annotation protocols have emerged [15, 21, 25, 27].",
+                "Deep trackers excel across various benchmarks [14, 15, 21, 28, 35, 48] compared to their hand-crafted counterparts.",
+                "Recently, the TOTB benchmark [15] was proposed to facilitate research in transparent object tracking.",
+                "We selected state-of-the-art learning-based trackers that cover the major trends in modern architecture designs for validating Trans2k: (i) two siamese trackers SiamRPN++ [31] and SiamBAN [6], (ii) two deep correlation filter trackers ATOM [10] and DiMP [11], (iii) the recent state-of-the-art transparent object tracker TransATOM [15], and (iv) a transfomer-",
+                "In fact, a transparent object tracking benchmark [15] has been proposed only recently and reported a performance gap between transparent and opaque object tracking.",
+                "All these benchmarks focus on opaque objects, while recently as transparent object tracking evaluation dataset [15] has been proposed.",
+                "A set of trackers representing the major modern deep learning approaches is evaluated on [15].",
+                "Contrary to [15], we show that deep backbones outperform shallow ones on transparent object tracking, which is consistent with observations in opaque tracking.",
+                "The original versions trained by the authors were evaluated on TOTB [15] along with the versions re-trained using the following variations of the training set: (i) only Trans2k without OTD, (ii) only OTD, (iii) Trans2k+OTD.",
+                "We first validated the contribution of Trans2k by measuring performance of trackers on the recent transparent object tracking benchmark TOTB [15]."
+            ],
+            "citingPaper": {
+                "paperId": "b678c2a9ccf5ac68f462ef2abf1aaf72787f43cb",
+                "externalIds": {
+                    "ArXiv": "2210.03436",
+                    "DBLP": "conf/bmvc/LukezicTMK22",
+                    "DOI": "10.48550/arXiv.2210.03436",
+                    "CorpusId": 252762093
+                },
+                "corpusId": 252762093,
+                "publicationVenue": {
+                    "id": "78a7fbcc-41c5-4258-b633-04b8637d4a9f",
+                    "name": "British Machine Vision Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Br Mach Vis Conf",
+                        "BMVC"
+                    ],
+                    "url": "http://www.bmva.org/bmvc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b678c2a9ccf5ac68f462ef2abf1aaf72787f43cb",
+                "title": "Trans2k: Unlocking the Power of Deep Models for Transparent Object Tracking",
+                "abstract": "Visual object tracking has focused predominantly on opaque objects, while transparent object tracking received very little attention. Motivated by the uniqueness of transparent objects in that their appearance is directly affected by the background, the first dedicated evaluation dataset has emerged recently. We contribute to this effort by proposing the first transparent object tracking training dataset Trans2k that consists of over 2k sequences with 104,343 images overall, annotated by bounding boxes and segmentation masks. Noting that transparent objects can be realistically rendered by modern renderers, we quantify domain-specific attributes and render the dataset containing visual attributes and tracking situations not covered in the existing object training datasets. We observe a consistent performance boost (up to 16%) across a diverse set of modern tracking architectures when trained using Trans2k, and show insights not previously possible due to the lack of appropriate training sets. The dataset and the rendering engine will be publicly released to unlock the power of modern learning-based trackers and foster new designs in transparent object tracking.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2139688",
+                        "name": "A. Luke\u017ei\u010d"
+                    },
+                    {
+                        "authorId": "2187206742",
+                        "name": "Ziga Trojer"
+                    },
+                    {
+                        "authorId": "1691679",
+                        "name": "Juan E. Sala Matas"
+                    },
+                    {
+                        "authorId": "2905558",
+                        "name": "M. Kristan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "In this research, we proposed a novel object tracking model regarding sequential RNN [10, 11] forecasting and action-based target tracking structure.",
+                "The drone agent tracks the target by the\nfollowing prediction and feature information from RNN layers\nfeature prediction information allows choosing desired Q-value\nactions from the Dense layer as targeted Q-value actions for\ntracking, illustrated in Figure 5.",
+                "The network will decide what direction to move the drone agent by applying information from RNN-based layers prediction output as an active decision and tracking performance.",
+                "We propose a network architecture combination between RL and RNN layers where the RNN is applied to sequential processing and for forecasting environmental target attributes.",
+                "Furthermore, the combination of RNN layers to the RL tracking\narchitecture gives the advantage of predicting the object location from sequential input and transmitting as a bounding\nbox from each frame.",
+                "Proposal DQN model integrated with RNN to use sequential input images, while some authors applied CNN model [13] instead.",
+                "A following Figure 4 illustrates the RNN-based DQN learning model with the number of output actions at the end of the training process:\nThe given network architecture above allows the drone agent to learn the unknown environment properly with a policy where the gained rewards will be summed up if the rewards are positive with 1, negative the result with -1, and 0 output remained unchanged."
+            ],
+            "citingPaper": {
+                "paperId": "23076a1142e8d1c853a55426b3107a35d5edc220",
+                "externalIds": {
+                    "DOI": "10.1109/ICISCT55600.2022.10146777",
+                    "CorpusId": 259159213
+                },
+                "corpusId": 259159213,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/23076a1142e8d1c853a55426b3107a35d5edc220",
+                "title": "Virtual Simulation based Visual Object Tracking via Deep Reinforcement Learning",
+                "abstract": "The current research field of object tracking has become noticeably popular among researchers where AI techniques take place with high-level accuracy. An algorithm with multifunctional abilities had proposed in different proposals in recent years. We proposed a tracking technique integrated with a virtual reality simulator \u2013 the AirSim (Areal Informatics and Robotics Simulation) City Environ model using one of the DRL models to control with a drone agent to examine a realistic environment. Additionally, the suggested method had tested via the two public: VisDrone2019 and OTB-100 datasets to compare with conventional strategies to show better performance among recent works.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1620473363",
+                        "name": "Khurshedjon Farkhodov"
+                    },
+                    {
+                        "authorId": "2539839",
+                        "name": "Jin-Hyeok Park"
+                    },
+                    {
+                        "authorId": "34795039",
+                        "name": "Suk-Hwan Lee"
+                    },
+                    {
+                        "authorId": "1714367",
+                        "name": "Ki-Ryong Kwon"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "c89da5aa9697ab9d5366353ec29b3e9c1b610469",
+                "externalIds": {
+                    "PubMedCentral": "9816211",
+                    "DBLP": "journals/ijcv/DunnhoferFFM23",
+                    "ArXiv": "2209.13502",
+                    "DOI": "10.1007/s11263-022-01694-6",
+                    "CorpusId": 252544980,
+                    "PubMed": "36624862"
+                },
+                "corpusId": 252544980,
+                "publicationVenue": {
+                    "id": "939ee07c-6009-43f8-b884-69238b40659e",
+                    "name": "International Journal of Computer Vision",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Int J Comput Vis"
+                    ],
+                    "issn": "0920-5691",
+                    "url": "https://www.springer.com/computer/image+processing/journal/11263",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/11263",
+                        "http://link.springer.com/journal/11263"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c89da5aa9697ab9d5366353ec29b3e9c1b610469",
+                "title": "Visual Object Tracking in First Person Vision",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2141492218",
+                        "name": "Matteo Dunnhofer"
+                    },
+                    {
+                        "authorId": "1792681",
+                        "name": "Antonino Furnari"
+                    },
+                    {
+                        "authorId": "1729739",
+                        "name": "G. Farinella"
+                    },
+                    {
+                        "authorId": "1708507",
+                        "name": "C. Micheloni"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Existing benchmarks can be roughly divided into two types: generic benchmarks and specific benchmarks [42].",
+                "TOTB [42] collects 225 videos from 15 transparent object categories and focus on transparent object tracking."
+            ],
+            "citingPaper": {
+                "paperId": "0ea64630bbcdc289d7899986d31098559d5facc4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-04284",
+                    "ArXiv": "2209.04284",
+                    "DOI": "10.48550/arXiv.2209.04284",
+                    "CorpusId": 252185290
+                },
+                "corpusId": 252185290,
+                "publicationVenue": {
+                    "id": "a8f26d13-e373-4e48-b57b-ef89bf48f4db",
+                    "name": "Asian Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Asian Conf Comput Vis",
+                        "ACCV"
+                    ],
+                    "url": "http://www.cvl.iis.u-tokyo.ac.jp/afcv/"
+                },
+                "url": "https://www.semanticscholar.org/paper/0ea64630bbcdc289d7899986d31098559d5facc4",
+                "title": "Tracking Small and Fast Moving Objects: A Benchmark",
+                "abstract": "With more and more large-scale datasets available for training, visual tracking has made great progress in recent years. However, current research in the field mainly focuses on tracking generic objects. In this paper, we present TSFMO, a benchmark for \\textbf{T}racking \\textbf{S}mall and \\textbf{F}ast \\textbf{M}oving \\textbf{O}bjects. This benchmark aims to encourage research in developing novel and accurate methods for this challenging task particularly. TSFMO consists of 250 sequences with about 50k frames in total. Each frame in these sequences is carefully and manually annotated with a bounding box. To the best of our knowledge, TSFMO is the first benchmark dedicated to tracking small and fast moving objects, especially connected to sports. To understand how existing methods perform and to provide comparison for future research on TSFMO, we extensively evaluate 20 state-of-the-art trackers on the benchmark. The evaluation results exhibit that more effort are required to improve tracking small and fast moving objects. Moreover, to encourage future research, we proposed a novel tracker S-KeepTrack which surpasses all 20 evaluated approaches. By releasing TSFMO, we expect to facilitate future researches and applications of tracking small and fast moving objects. The TSFMO and evaluation results as well as S-KeepTrack are available at \\url{https://github.com/CodeOfGithub/S-KeepTrack}.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108995694",
+                        "name": "Zhewen Zhang"
+                    },
+                    {
+                        "authorId": "2184702770",
+                        "name": "Fuliang Wu"
+                    },
+                    {
+                        "authorId": "51031103",
+                        "name": "Yuming Qiu"
+                    },
+                    {
+                        "authorId": "6169841",
+                        "name": "Jingdong Liang"
+                    },
+                    {
+                        "authorId": "3004903",
+                        "name": "Shuiwang Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In this study, we created a novel tracker that was based on a sequential recurrent neural network [20,21] prediction and tracking architecture."
+            ],
+            "citingPaper": {
+                "paperId": "4725f9ce33588145207a951adcae4527b8f7e0f4",
+                "externalIds": {
+                    "DOI": "10.3390/app12073220",
+                    "CorpusId": 247655253
+                },
+                "corpusId": 247655253,
+                "publicationVenue": {
+                    "id": "136edf8d-0f88-4c2c-830f-461c6a9b842e",
+                    "name": "Applied Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl Sci"
+                    ],
+                    "issn": "2076-3417",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217814",
+                    "alternate_urls": [
+                        "http://www.mathem.pub.ro/apps/",
+                        "https://www.mdpi.com/journal/applsci",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217814"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4725f9ce33588145207a951adcae4527b8f7e0f4",
+                "title": "Deep Reinforcement Learning-Based DQN Agent Algorithm for Visual Object Tracking in a Virtual Environmental Simulation",
+                "abstract": "The complexity of object tracking models among hardware applications has become a more in-demand task to accomplish with multifunctional algorithm skills in various indeterminable environment tracking conditions. Experimenting with the virtual realistic simulator brings new dependencies and requirements, which may cause problems while experimenting with runtime processing. The goal of this paper is to present an object tracking framework that differs from the most advanced tracking models by experimenting with virtual environment simulation (Aerial Informatics and Robotics Simulation\u2014AirSim, City Environ) using one of the Deep Reinforcement Learning Models named as Deep Q-Learning algorithms. Our proposed network examines the environment using a deep reinforcement learning model to regulate activities in the virtual simulation environment and utilizes sequential pictures from the realistic VCE (Virtual City Environ) model as inputs. Subsequently, the deep reinforcement network model was pretrained using multiple sequential training image sets and fine-tuned for adaptability during runtime tracking. The experimental results were outstanding in terms of speed and accuracy. Moreover, we were unable to identify any results that could be compared to the state-of-the-art methods that use deep network-based trackers in runtime simulation platforms, since this testing experiment was conducted on the two public datasets VisDrone2019 and OTB-100, and achieved better performance among compared conventional methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2539839",
+                        "name": "Jin-Hyeok Park"
+                    },
+                    {
+                        "authorId": "1620473363",
+                        "name": "Khurshedjon Farkhodov"
+                    },
+                    {
+                        "authorId": "34795039",
+                        "name": "Suk-Hwan Lee"
+                    },
+                    {
+                        "authorId": "1714367",
+                        "name": "Ki-Ryong Kwon"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "As a sub-task of concealed object detection, transparent object detection [47] and transparent object tracking [95] have shown promise."
+            ],
+            "citingPaper": {
+                "paperId": "5a672eab7d11eefc1d9b5e4f2c6e3f97c88af157",
+                "externalIds": {
+                    "ArXiv": "2102.10274",
+                    "DBLP": "journals/corr/abs-2102-10274",
+                    "DOI": "10.1109/TPAMI.2021.3085766",
+                    "CorpusId": 231985788,
+                    "PubMed": "34061739"
+                },
+                "corpusId": 231985788,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5a672eab7d11eefc1d9b5e4f2c6e3f97c88af157",
+                "title": "Concealed Object Detection",
+                "abstract": "We present the first systematic study on concealed object detection (COD), which aims to identify objects that are visually embedded in their background. The high intrinsic similarities between the concealed objects and their background make COD far more challenging than traditional object detection/segmentation. To better understand this task, we collect a large-scale dataset, called COD10K, which consists of 10,000 images covering concealed objects in diverse real-world scenarios from 78 object categories. Further, we provide rich annotations including object categories, object boundaries, challenging attributes, object-level labels, and instance-level annotations. Our COD10K is the largest COD dataset to date, with the richest annotations, which enables comprehensive concealed object understanding and can even be used to help progress several other vision tasks, such as detection, segmentation, classification etc. Motivated by how animals hunt in the wild, we also design a simple but strong baseline for COD, termed the Search Identification Network (SINet). Without any bells and whistles, SINet outperforms twelve cutting-edge baselines on all datasets tested, making them robust, general architectures that could serve as catalysts for future research in COD. Finally, we provide some interesting findings, and highlight several potential applications and future directions. To spark research in this new field, our code, dataset, and online demo are available at our project page: http://mmcheng.net/cod.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "23999143",
+                        "name": "Deng-Ping Fan"
+                    },
+                    {
+                        "authorId": "94805190",
+                        "name": "Ge-Peng Ji"
+                    },
+                    {
+                        "authorId": "37535930",
+                        "name": "Ming-Ming Cheng"
+                    },
+                    {
+                        "authorId": "144082425",
+                        "name": "Ling Shao"
+                    }
+                ]
+            }
+        }
+    ]
+}

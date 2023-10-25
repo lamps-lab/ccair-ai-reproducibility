@@ -1,0 +1,334 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "contexts": [
+                "balancing methods, however, improve the overall performance but are usually at the risk of overfitting to the minority classes or the loss of information [52, 36, 20].",
+                "These methods have been shown to increase classification accuracy for DNNs and demonstrated their efficacy on long-tailed data [38, 11, 52, 25].",
+                "[52] directly exploit pure noise images as tail class samples."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "06079a18319fbb418097f1a4f72b2a328791f438",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-06963",
+                    "ArXiv": "2306.06963",
+                    "DOI": "10.48550/arXiv.2306.06963",
+                    "CorpusId": 259137776
+                },
+                "corpusId": 259137776,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/06079a18319fbb418097f1a4f72b2a328791f438",
+                "title": "Feature Fusion from Head to Tail: an Extreme Augmenting Strategy for Long-Tailed Visual Recognition",
+                "abstract": "The imbalanced distribution of long-tailed data poses a challenge for deep neural networks, as models tend to prioritize correctly classifying head classes over others so that perform poorly on tail classes. The lack of semantics for tail classes is one of the key factors contributing to their low recognition accuracy. To rectify this issue, we propose to augment tail classes by borrowing the diverse semantic information from head classes, referred to as head-to-tail fusion (H2T). We randomly replace a portion of the feature maps of the tail class with those of the head class. The fused feature map can effectively enhance the diversity of tail classes by incorporating features from head classes that are relevant to them. The proposed method is easy to implement due to its additive fusion module, making it highly compatible with existing long-tail recognition methods for further performance boosting. Extensive experiments on various long-tailed benchmarks demonstrate the effectiveness of the proposed H2T. The source code is temporarily available at https://github.com/Keke921/H2T.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "153121249",
+                        "name": "Mengke Li"
+                    },
+                    {
+                        "authorId": "30416451",
+                        "name": "Zhikai Hu"
+                    },
+                    {
+                        "authorId": "2146559818",
+                        "name": "Yang Lu"
+                    },
+                    {
+                        "authorId": "1988700392",
+                        "name": "Weichao Lan"
+                    },
+                    {
+                        "authorId": "120082097",
+                        "name": "Y. Cheung"
+                    },
+                    {
+                        "authorId": "40586368",
+                        "name": "Hui Huang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "A recent approach, OPeN [29], adds pure noise images to the original instances from rare classes."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "99be3c1d262c745ee6ec3d997784468037539808",
+                "externalIds": {
+                    "ArXiv": "2307.05322",
+                    "DBLP": "journals/corr/abs-2307-05322",
+                    "DOI": "10.1109/CRV60082.2023.00023",
+                    "CorpusId": 259766343
+                },
+                "corpusId": 259766343,
+                "publicationVenue": {
+                    "id": "3eaf5a5d-62f7-41b6-817e-92d78060c075",
+                    "name": "Canadian Conference on Computer and Robot Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CRV",
+                        "Can Conf Comput Robot Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=583"
+                },
+                "url": "https://www.semanticscholar.org/paper/99be3c1d262c745ee6ec3d997784468037539808",
+                "title": "Class Instance Balanced Learning for Long-Tailed Classification",
+                "abstract": "The long-tailed image classification task remains important in the development of deep neural networks as it explicitly deals with large imbalances in the class frequencies of the training data. While uncommon in engineered datasets, this imbalance is almost always present in real-world data. Previous approaches have shown that combining cross-entropy and contrastive learning can improve performance on the long-tailed task, but they do not explore the tradeoff between head and tail classes. We propose a novel class instance balanced loss (CIBL), which reweights the relative contributions of a cross-entropy and a contrastive loss as a function of the frequency of class instances in the training batch. This balancing favours the contrastive loss for more common classes, leading to a learned classifier with a more balanced performance across all class frequencies. Furthermore, increasing the relative weight on the contrastive head shifts performance from common (head) to rare (tail) classes, allowing the user to skew the performance towards these classes if desired. We also show that changing the linear classifier head with a cosine classifier yields a network that can be trained to similar performance in substantially fewer epochs. We obtain competitive results on both CIFAR-100-LT and ImageNet-LT.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1562670645",
+                        "name": "Marc-Antoine Lavoie"
+                    },
+                    {
+                        "authorId": "145292735",
+                        "name": "Steven L. Waslander"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "The multiple normalization module has been explored to improve the generalization of the model in the field of adversarial training (Xie et al., 2020) and insufficient data (Zada et al., 2022).",
+                "Recently, several studies have suggested using multiple normalization layers in a parallel manner (Pan et al., 2018; Xie et al., 2020; Wang et al., 2021; Zada et al., 2022)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "9ae53b9875a6d26c26d156b04705d61d85ed083f",
+                "externalIds": {
+                    "DBLP": "conf/iclr/JungLHJBY23",
+                    "ArXiv": "2302.08741",
+                    "DOI": "10.48550/arXiv.2302.08741",
+                    "CorpusId": 257019961
+                },
+                "corpusId": 257019961,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/9ae53b9875a6d26c26d156b04705d61d85ed083f",
+                "title": "New Insights for the Stability-Plasticity Dilemma in Online Continual Learning",
+                "abstract": "The aim of continual learning is to learn new tasks continuously (i.e., plasticity) without forgetting previously learned knowledge from old tasks (i.e., stability). In the scenario of online continual learning, wherein data comes strictly in a streaming manner, the plasticity of online continual learning is more vulnerable than offline continual learning because the training signal that can be obtained from a single data point is limited. To overcome the stability-plasticity dilemma in online continual learning, we propose an online continual learning framework named multi-scale feature adaptation network (MuFAN) that utilizes a richer context encoding extracted from different levels of a pre-trained network. Additionally, we introduce a novel structure-wise distillation loss and replace the commonly used batch normalization layer with a newly proposed stability-plasticity normalization module to train MuFAN that simultaneously maintains high plasticity and stability. MuFAN outperforms other state-of-the-art continual learning methods on the SVHN, CIFAR100, miniImageNet, and CORe50 datasets. Extensive experiments and ablation studies validate the significance and scalability of each proposed component: 1) multi-scale feature maps from a pre-trained encoder, 2) the structure-wise distillation loss, and 3) the stability-plasticity normalization module in MuFAN. Code is publicly available at https://github.com/whitesnowdrop/MuFAN.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51152160",
+                        "name": "Dahuin Jung"
+                    },
+                    {
+                        "authorId": "2109519891",
+                        "name": "Dongjin Lee"
+                    },
+                    {
+                        "authorId": "2207790128",
+                        "name": "Sunwon Hong"
+                    },
+                    {
+                        "authorId": "51151757",
+                        "name": "Hyemi Jang"
+                    },
+                    {
+                        "authorId": "103148609",
+                        "name": "Ho Bae"
+                    },
+                    {
+                        "authorId": "2999019",
+                        "name": "Sungroh Yoon"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Besides, the core\nalgorithmic principle of our CBN is different to that of DAR-BN and Auxiliary BN. DAR-BN and Auxiliary BN essentially depends on a main branch to implement the feature normalization for input images.",
+                "Targeted at preventing pure noise images from distorting the estimation of the feature distribution, DAR-BN [42] splits the mean and variance variables for normal images and pure noise images."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7fbb3ad1735753ebb48ede196bc8070588b4658e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-01007",
+                    "ArXiv": "2212.01007",
+                    "DOI": "10.1145/3503161.3547805",
+                    "CorpusId": 252782399
+                },
+                "corpusId": 252782399,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7fbb3ad1735753ebb48ede196bc8070588b4658e",
+                "title": "Compound Batch Normalization for Long-tailed Image Classification",
+                "abstract": "Significant progress has been made in learning image classification neural networks under long-tail data distribution using robust training algorithms such as data re-sampling, re-weighting, and margin adjustment. Those methods, however, ignore the impact of data imbalance on feature normalization. The dominance of majority classes (head classes) in estimating statistics and affine parameters causes internal covariate shifts within less-frequent categories to be overlooked. To alleviate this challenge, we propose a compound batch normalization method based on a Gaussian mixture. It can model the feature space more comprehensively and reduce the dominance of head classes. In addition, a moving average-based expectation maximization (EM) algorithm is employed to estimate the statistical parameters of multiple Gaussian distributions. However, the EM algorithm is sensitive to initialization and can easily become stuck in local minima where the multiple Gaussian components continue to focus on majority classes. To tackle this issue, we developed a dual-path learning framework that employs class-aware split feature normalization to diversify the estimated Gaussian distributions, allowing the Gaussian components to fit with training samples of less-frequent classes more comprehensively. Extensive experiments on commonly used datasets demonstrated that the proposed method outperforms existing methods on long-tailed image classification.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "26953623",
+                        "name": "Lechao Cheng"
+                    },
+                    {
+                        "authorId": "2082794",
+                        "name": "Chaowei Fang"
+                    },
+                    {
+                        "authorId": "39901030",
+                        "name": "Dingwen Zhang"
+                    },
+                    {
+                        "authorId": "144958813",
+                        "name": "Guanbin Li"
+                    },
+                    {
+                        "authorId": "2125119625",
+                        "name": "Gang Huang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b8fb4a5af3bafcda4db8e5785796133376b598b1",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-12808",
+                    "ArXiv": "2207.12808",
+                    "DOI": "10.48550/arXiv.2207.12808",
+                    "CorpusId": 251066882
+                },
+                "corpusId": 251066882,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b8fb4a5af3bafcda4db8e5785796133376b598b1",
+                "title": "Class-Aware Universum Inspired Re-Balance Learning for Long-Tailed Recognition",
+                "abstract": "Data augmentation for minority classes is an effective strategy for long-tailed recognition, thus developing a large number of methods. Although these methods all ensure the balance in sample quantity, the quality of the augmented samples is not always satisfactory for recognition, being prone to such problems as over-fitting, lack of diversity, semantic drift, etc. For these issues, we propose the Class-aware Universum Inspired Re-balance Learning(CaUIRL) for long-tailed recognition, which endows the Universum with class-aware ability to re-balance individual minority classes from both sample quantity and quality. In particular, we theoretically prove that the classifiers learned by CaUIRL are consistent with those learned under the balanced condition from a Bayesian perspective. In addition, we further develop a higher-order mixup approach, which can automatically generate class-aware Universum(CaU) data without resorting to any external data. Unlike the traditional Universum, such generated Universum additionally takes the domain similarity, class separability, and sample diversity into account. Extensive experiments on benchmark datasets demonstrate the surprising advantages of our method, especially the top1 accuracy in minority classes is improved by 1.9% 6% compared to the state-of-the-art method.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": null,
+                        "name": "Enhao Zhang"
+                    },
+                    {
+                        "authorId": "51021226",
+                        "name": "Chuanxing Geng"
+                    },
+                    {
+                        "authorId": "48848338",
+                        "name": "Songcan Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                ", 2021), perform data-augmentation (Chawla et al., 2002; M\u00fcller et al., 2019; Chu et al., 2020; Temraz & Keane, 2022; Zada et al., 2022), ensemble the base classifier (Fan et al."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b057d01576177dcf055dcc3601471b68190658f6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2106-10494",
+                    "ArXiv": "2106.10494",
+                    "CorpusId": 235490043
+                },
+                "corpusId": 235490043,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/b057d01576177dcf055dcc3601471b68190658f6",
+                "title": "Teacher's pet: understanding and mitigating biases in distillation",
+                "abstract": "Knowledge distillation is widely used as a means of improving the performance of a relatively simple student model using the predictions from a complex teacher model. Several works have shown that distillation significantly boosts the student's overall performance; however, are these gains uniform across all data subgroups? In this paper, we show that distillation can harm performance on certain subgroups, e.g., classes with few associated samples. We trace this behaviour to errors made by the teacher distribution being transferred to and amplified by the student model. To mitigate this problem, we present techniques which soften the teacher influence for subgroups where it is less reliable. Experiments on several image classification benchmarks show that these modifications of distillation maintain boost in overall accuracy, while additionally ensuring improvement in subgroup performance.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2744849",
+                        "name": "M. Lukasik"
+                    },
+                    {
+                        "authorId": "1798880",
+                        "name": "Srinadh Bhojanapalli"
+                    },
+                    {
+                        "authorId": "2844480",
+                        "name": "A. Menon"
+                    },
+                    {
+                        "authorId": "152663162",
+                        "name": "Sanjiv Kumar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Existing work focuses on collecting realistic training data [9] and introducing random but realistic noise [10]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "238ba23a302f954d029a27583542185d1b87f86f",
+                "externalIds": {
+                    "CorpusId": 259266914
+                },
+                "corpusId": 259266914,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/238ba23a302f954d029a27583542185d1b87f86f",
+                "title": "Searching for Problematic Simulation Conditions",
+                "abstract": "Many robot use-cases put a robot in close contact with people. These scenarios require the robot to make complex decisions that\u2014above all else\u2014must be safe. Often, sensor processing and decision making methods rely heavily on machine learning, and these techniques are only as useful as the training dataset. Current methods and datasets do not account for enough variation or \u201cextraordinary\u201d conditions. We propose using novelty search to discover scenarios causing a model to behave poorly.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2220721067",
+                        "name": "Elizabeth Johnson"
+                    }
+                ]
+            }
+        }
+    ]
+}

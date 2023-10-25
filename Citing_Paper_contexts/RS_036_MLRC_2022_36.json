@@ -1,0 +1,1273 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "1f79c96e061ca3a9310b2d54525ef0cce39417be",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-06703",
+                    "ArXiv": "2309.06703",
+                    "DOI": "10.48550/arXiv.2309.06703",
+                    "CorpusId": 261705822
+                },
+                "corpusId": 261705822,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/1f79c96e061ca3a9310b2d54525ef0cce39417be",
+                "title": "VLSlice: Interactive Vision-and-Language Slice Discovery",
+                "abstract": "Recent work in vision-and-language demonstrates that large-scale pretraining can learn generalizable models that are efficiently transferable to downstream tasks. While this may improve dataset-scale aggregate metrics, analyzing performance around hand-crafted subgroups targeting specific bias dimensions reveals systemic undesirable behaviors. However, this subgroup analysis is frequently stalled by annotation efforts, which require extensive time and resources to collect the necessary data. Prior art attempts to automatically discover subgroups to circumvent these constraints but typically leverages model behavior on existing task-specific annotations and rapidly degrades on more complex inputs beyond\"tabular\"data, none of which study vision-and-language models. This paper presents VLSlice, an interactive system enabling user-guided discovery of coherent representation-level subgroups with consistent visiolinguistic behavior, denoted as vision-and-language slices, from unlabeled image sets. We show that VLSlice enables users to quickly generate diverse high-coherency slices in a user study (n=22) and release the tool publicly.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2121924238",
+                        "name": "Eric Slyman"
+                    },
+                    {
+                        "authorId": "1768057",
+                        "name": "Minsuk Kahng"
+                    },
+                    {
+                        "authorId": "2239229081",
+                        "name": "Stefan Lee"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Authors of [16] have demonstrated how image captioning ampliies social prejudice."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "8e8fdda6818d1e40f38e583302bb1d10cadd42de",
+                "externalIds": {
+                    "DOI": "10.1145/3622936",
+                    "CorpusId": 261682769
+                },
+                "corpusId": 261682769,
+                "publicationVenue": {
+                    "id": "0f6a3a08-5e16-47c6-a0d5-fa6fdc7c16fc",
+                    "name": "ACM Transactions on Asian and Low-Resource Language Information Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ALRLIP",
+                        "ACM Trans Asian Low-resource Lang Inf Process"
+                    ],
+                    "issn": "2375-4699",
+                    "url": "https://tallip.acm.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8e8fdda6818d1e40f38e583302bb1d10cadd42de",
+                "title": "GAGPT-2: A Geometric Attention based GPT-2 Framework for Image Captioning in Hindi",
+                "abstract": "Image captioning frameworks usually employ an encoder-decoder paradigm, with the encoder receiving abstract image feature vectors as input and decoder for language modeling. Nowadays, most prominent architectures employ features from region proposals derived from object detection modules. In this work, we propose a novel architecture for image captioning. We employ the object detection module integrated with transformer architecture as an encoder and GPT-2 (Generative Pre-trained Transformer) as a decoder. Encoder utilizes the information of the spatial relationships among detected objects. We introduce a unique methodology for image caption generation in Hindi, which is widely spoken in South Asia and India and is the world\u2019s third most spoken language as well as India\u2019s official language. In terms of BLEU scores, the proposed approach\u2019s performance is comparable to those of other baselines, and the results illustrate that the proposed approach outperforms the other baselines. The efficacy of the proposed approach in generating correct captions is further determined by human assessment in terms of adequacy and fluency.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2115711820",
+                        "name": "S. Mishra"
+                    },
+                    {
+                        "authorId": "2238966610",
+                        "name": "Soham Chakraborty"
+                    },
+                    {
+                        "authorId": "145470045",
+                        "name": "S. Saha"
+                    },
+                    {
+                        "authorId": "145532184",
+                        "name": "P. Bhattacharyya"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "b2ca176ed2607840574fcaa4ad4fb7203cb29c0d",
+                "externalIds": {
+                    "ArXiv": "2308.00755",
+                    "DBLP": "journals/corr/abs-2308-00755",
+                    "DOI": "10.48550/arXiv.2308.00755",
+                    "CorpusId": 260378823
+                },
+                "corpusId": 260378823,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b2ca176ed2607840574fcaa4ad4fb7203cb29c0d",
+                "title": "The Bias Amplification Paradox in Text-to-Image Generation",
+                "abstract": "Bias amplification is a phenomenon in which models increase imbalances present in the training data. In this paper, we study bias amplification in the text-to-image domain using Stable Diffusion by comparing gender ratios in training vs. generated images. We find that the model appears to amplify gender-occupation biases found in the training data (LAION). However, we discover that amplification can largely be attributed to discrepancies between training captions and model prompts. For example, an inherent difference is that captions from the training data often contain explicit gender information while the prompts we use do not, which leads to a distribution shift and consequently impacts bias measures. Once we account for various distributional differences between texts used for training and generation, we observe that amplification decreases considerably. Our findings illustrate the challenges of comparing biases in models and the data they are trained on, and highlight confounding factors that contribute to bias amplification.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "35058407",
+                        "name": "P. Seshadri"
+                    },
+                    {
+                        "authorId": "144171580",
+                        "name": "Sameer Singh"
+                    },
+                    {
+                        "authorId": "51131518",
+                        "name": "Yanai Elazar"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Other studies, such as [18], [19], also highlight the issue of bias in caption generation."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fbbcbe88359d84782d24b5ef474fe348c49f46fe",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-10530",
+                    "ArXiv": "2306.10530",
+                    "DOI": "10.48550/arXiv.2306.10530",
+                    "CorpusId": 259203321
+                },
+                "corpusId": 259203321,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fbbcbe88359d84782d24b5ef474fe348c49f46fe",
+                "title": "Gender Bias in Transformer Models: A comprehensive survey",
+                "abstract": "Gender bias in artificial intelligence (AI) has emerged as a pressing concern with profound implications for individuals' lives. This paper presents a comprehensive survey that explores gender bias in Transformer models from a linguistic perspective. While the existence of gender bias in language models has been acknowledged in previous studies, there remains a lack of consensus on how to effectively measure and evaluate this bias. Our survey critically examines the existing literature on gender bias in Transformers, shedding light on the diverse methodologies and metrics employed to assess bias. Several limitations in current approaches to measuring gender bias in Transformers are identified, encompassing the utilization of incomplete or flawed metrics, inadequate dataset sizes, and a dearth of standardization in evaluation methods. Furthermore, our survey delves into the potential ramifications of gender bias in Transformers for downstream applications, including dialogue systems and machine translation. We underscore the importance of fostering equity and fairness in these systems by emphasizing the need for heightened awareness and accountability in developing and deploying language technologies. This paper serves as a comprehensive overview of gender bias in Transformer models, providing novel insights and offering valuable directions for future research in this critical domain.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2156841973",
+                        "name": "Praneeth Nemani"
+                    },
+                    {
+                        "authorId": "2220288860",
+                        "name": "Yericherla Deepak Joel"
+                    },
+                    {
+                        "authorId": "41153415",
+                        "name": "Pallavi Vijay"
+                    },
+                    {
+                        "authorId": "3445542",
+                        "name": "F. F. Liza"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "c854cc6c79a84b8e6685cbe893d5045049f5b6cd",
+                "externalIds": {
+                    "DBLP": "journals/ijon/XuT0ZZ023",
+                    "DOI": "10.1016/j.neucom.2023.126287",
+                    "CorpusId": 258504649
+                },
+                "corpusId": 258504649,
+                "publicationVenue": {
+                    "id": "df12d289-f447-47d3-8846-75e39de3ab57",
+                    "name": "Neurocomputing",
+                    "type": "journal",
+                    "issn": "0925-2312",
+                    "url": "http://www.elsevier.com/locate/neucom",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/09252312"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c854cc6c79a84b8e6685cbe893d5045049f5b6cd",
+                "title": "Deep image captioning: A review of methods, trends and future challenges",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "47775904",
+                        "name": "Liming Xu"
+                    },
+                    {
+                        "authorId": "2069578108",
+                        "name": "Quan Tang"
+                    },
+                    {
+                        "authorId": "2075420316",
+                        "name": "Jiancheng Lv"
+                    },
+                    {
+                        "authorId": "1726830",
+                        "name": "Bochuan Zheng"
+                    },
+                    {
+                        "authorId": "2706292",
+                        "name": "Xianhua Zeng"
+                    },
+                    {
+                        "authorId": "47113192",
+                        "name": "Weisheng Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Understanding the behavior of deep neural networks (DNNs) is a major challenge in the explainable AI (XAI) community, especially for medical applications [19,38], for identifying biases in DNNs [2, 18, 42], etc. Tremendous research efforts have been devoted to the post-hoc paradigm for a posteriori explanation [29, 33].",
+                "A large corpus of concepts [4, 39] is beneficial for delving into hidden semantics in DNNs [50].",
+                "Moreover, such handcrafted concepts may not always be useful for DNNs [47].",
+                "Understanding the behavior of deep neural networks (DNNs) is a major challenge in the explainable AI (XAI) community, especially for medical applications [19,38], for identifying biases in DNNs [2, 18, 42], etc."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "4833b15d617ee2a44bfe326bb397e7424a0a8e21",
+                "externalIds": {
+                    "ArXiv": "2304.10131",
+                    "DBLP": "journals/corr/abs-2304-10131",
+                    "DOI": "10.48550/arXiv.2304.10131",
+                    "CorpusId": 258236219
+                },
+                "corpusId": 258236219,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4833b15d617ee2a44bfe326bb397e7424a0a8e21",
+                "title": "Learning Bottleneck Concepts in Image Classification",
+                "abstract": "Interpreting and explaining the behavior of deep neural networks is critical for many tasks. Explainable AI provides a way to address this challenge, mostly by providing per-pixel relevance to the decision. Yet, interpreting such explanations may require expert knowledge. Some recent attempts toward interpretability adopt a concept-based framework, giving a higher-level relationship between some concepts and model decisions. This paper proposes Bottleneck Concept Learner (BotCL), which represents an image solely by the presence/absence of concepts learned through training over the target task without explicit supervision over the concepts. It uses self-supervision and tailored regularizers so that learned concepts can be human-understandable. Using some image classification tasks as our testbed, we demonstrate BotCL's potential to rebuild neural networks for better interpretability11Code is avaliable at https://github.com/wbw520/BotCL and a simple demo is available at https://botcl.liangzhili.com/.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2153213890",
+                        "name": "Bowen Wang"
+                    },
+                    {
+                        "authorId": "47681301",
+                        "name": "Liangzhi Li"
+                    },
+                    {
+                        "authorId": "2210102679",
+                        "name": "Yuta Nakashima"
+                    },
+                    {
+                        "authorId": "2124415764",
+                        "name": "Hajime Nagahara"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Consequently, several learnable bias measurements have been proposed recently [52, 17, 45].",
+                "Instead of measuring the absolute bias, BA [53], DBA [43], and LIC [17] introduce bias amplification metrics, which measure the relative bias w.",
+                "In addition, LIC [17], and [45] train additional language classifiers to measure the bias in the data and the model.",
+                "Accordingly, BA [53], DBA [43], and LIC [17] measure the model bias w.",
+                "This type of metric can be interpreted as Bias-amplification metrics [53] [43] [17] [45], where it answers the following question: \"Does the model introduce extra bias than ground-truth dataset?\" To this end, these models ground the model bias score to the data bias score.",
+                "However, to the best of our knowledge, non-of the existing image captioning bias metrics [16] [38] [52] [53] [43] [17], as shown in Table 1, include the image while measuring the bias.",
+                "In contrast, methods that rely on a pre-trained language model to determine whether the model is biased or not, such as [52], LIC [17], and [45], or the methods that rely on calculating the co-occurrences, i.",
+                "LIC [17] borrows ideas from [45] and [52], where it relies on a text classifier to predict the protected attribute.",
+                "For instance, the recent work, LIC [17], estimates the bias in image captioning models using trainable language classifiers, e.",
+                "We noticed an inconsistency in LIC [17], when varying the language encoders, where two language encoders are utilized as classifiers; BERT [11], and LSTM [18]."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "8786848846cb246c8f00c4a81a0c23bdc03bb8ce",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-04874",
+                    "ArXiv": "2304.04874",
+                    "DOI": "10.48550/arXiv.2304.04874",
+                    "CorpusId": 258060211
+                },
+                "corpusId": 258060211,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8786848846cb246c8f00c4a81a0c23bdc03bb8ce",
+                "title": "ImageCaptioner2: Image Captioner for Image Captioning Bias Amplification Assessment",
+                "abstract": "Most pre-trained learning systems are known to suffer from bias, which typically emerges from the data, the model, or both. Measuring and quantifying bias and its sources is a challenging task and has been extensively studied in image captioning. Despite the significant effort in this direction, we observed that existing metrics lack consistency in the inclusion of the visual signal. In this paper, we introduce a new bias assessment metric, dubbed $ImageCaptioner^2$, for image captioning. Instead of measuring the absolute bias in the model or the data, $ImageCaptioner^2$ pay more attention to the bias introduced by the model w.r.t the data bias, termed bias amplification. Unlike the existing methods, which only evaluate the image captioning algorithms based on the generated captions only, $ImageCaptioner^2$ incorporates the image while measuring the bias. In addition, we design a formulation for measuring the bias of generated captions as prompt-based image captioning instead of using language classifiers. Finally, we apply our $ImageCaptioner^2$ metric across 11 different image captioning architectures on three different datasets, i.e., MS-COCO caption dataset, Artemis V1, and Artemis V2, and on three different protected attributes, i.e., gender, race, and emotions. Consequently, we verify the effectiveness of our $ImageCaptioner^2$ metric by proposing AnonymousBench, which is a novel human evaluation paradigm for bias metrics. Our metric shows significant superiority over the recent bias metric; LIC, in terms of human alignment, where the correlation scores are 80% and 54% for our metric and LIC, respectively. The code is available at https://eslambakr.github.io/imagecaptioner2.github.io/.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2184841876",
+                        "name": "Eslam Mohamed Bakr"
+                    },
+                    {
+                        "authorId": "4280647",
+                        "name": "Pengzhan Sun"
+                    },
+                    {
+                        "authorId": "144180616",
+                        "name": "Erran L. Li"
+                    },
+                    {
+                        "authorId": "1712479",
+                        "name": "Mohamed Elhoseiny"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "As for LIC, the results are not as consistent, but still DCG trained on all types of combinations decreases the score.",
+                "Besides, in some cases where LIC is negative ( i.e ., NIC, SAT, FC, Att2in, and ClipCap), the gender \u2192 context bias in the generated cap-tions by LIBRA is less than those of human annotators.",
+                "8 in LIC) while mitigating gender misclassification ( 14 .",
+                "LIC and BiasAmp are scaled by 100 .",
+                "The results on LIC show that applying LIBRA consistently decreases gender \u2192 context bias in all the models.",
+                "We chose T5-generation and Merged as it well balances LIC and Error.",
+                "However, recent work [18, 51] showed that focusing on mitigating gender misclassification can lead to generating gender-stereotypical words and amplifying gender \u2192 context bias.",
+                "Given y \u2208 Dg, FPG instantiated by first masking gender words and replacing corresponding tokens with the mask token to avoid revealing the gender, following [18].",
+                "First, based on the observations in previous work [5,8,18,44,51], we hypothesize that there exist two different types of biases affecting captioning models:",
+                "4 in LIC and 14 .",
+                "As reported in previous work [18,51], Gender equalizer amplifies gender \u2192 context bias (1.",
+                "As for LIC, while LIBRA consistently mitigates gender \u2192 context bias, ENT can amplify the bias in some baselines (SAT, Att2in, OSCAR, ClipCap, GRIT).",
+                "However, focusing only on decreasing such bias can conversely amplify the other type of bias [18,51].",
+                "Models trained on such datasets not only reproduce societal bias but amplify it [8, 18, 51, 65].",
+                "Bias metrics We mainly rely on three metrics to evaluate our framework: 1) LIC [18], which compares two gender classifiers\u2019 accuracies trained on either generated captions by a captioning model or human-written captions.",
+                "Extensive experiments and analysis, including quantitative and qualitative results, show that LIBRA reduces both types of gender biases in most image captioning models on various metrics [8, 18, 44, 66].",
+                "Using biased samples from BCS to train DCG consistently produces the best results in LIC and Error."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "73120e069de74bb234986307a49b191395af8749",
+                "externalIds": {
+                    "ArXiv": "2304.03693",
+                    "DBLP": "conf/cvpr/HirotaNG23",
+                    "DOI": "10.1109/CVPR52729.2023.01458",
+                    "CorpusId": 258040970
+                },
+                "corpusId": 258040970,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/73120e069de74bb234986307a49b191395af8749",
+                "title": "Model-Agnostic Gender Debiased Image Captioning",
+                "abstract": "Image captioning models are known to perpetuate and amplify harmful societal bias in the training set. In this work, we aim to mitigate such gender bias in image captioning models. While prior work has addressed this problem by forcing models to focus on people to reduce gender mis-classification, it conversely generates gender-stereotypical words at the expense of predicting the correct gender. From this observation, we hypothesize that there are two types of gender bias affecting image captioning models: 1) bias that exploits context to predict gender, and 2) bias in the probability of generating certain (often stereotypical) words because of gender. To mitigate both types of gender biases, we propose a framework, called LIBRA, that learns from synthetically biased samples to decrease both types of biases, correcting gender misclassification and changing gender-stereotypical words to more neutral ones.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2056175726",
+                        "name": "Yusuke Hirota"
+                    },
+                    {
+                        "authorId": "2210102679",
+                        "name": "Yuta Nakashima"
+                    },
+                    {
+                        "authorId": "26385137",
+                        "name": "Noa Garc\u00eda"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "4aedabc733e033b23eee068311f64366403c98db",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/GarciaHWN23",
+                    "ArXiv": "2304.02828",
+                    "DOI": "10.1109/CVPR52729.2023.00672",
+                    "CorpusId": 257985091
+                },
+                "corpusId": 257985091,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4aedabc733e033b23eee068311f64366403c98db",
+                "title": "Uncurated Image-Text Datasets: Shedding Light on Demographic Bias",
+                "abstract": "The increasing tendency to collect large and uncurated datasets to train vision-and-language models has raised concerns about fair representations. It is known that even small but manually annotated datasets, such as MSCOCO, are affected by societal bias. This problem, far from being solved, may be getting worse with data crawled from the Internet without much control. In addition, the lack of tools to analyze societal bias in big collections of images makes addressing the problem extremely challenging. Our first contribution is to annotate part of the Google Conceptual Captions dataset, widely used for training vision-and-language models, with four demographic and two contextual attributes. Our second contribution is to conduct a comprehensive analysis of the annotations, focusing on how different demographic groups are represented. Our last contribution lies in evaluating three prevailing vision-and-language tasks: image captioning, text-image CLIP embeddings, and text-to-image generation, showing that societal bias is a persistent problem in all of them. https://github.com/noagarcia/phase",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "26385137",
+                        "name": "Noa Garc\u00eda"
+                    },
+                    {
+                        "authorId": "2056175726",
+                        "name": "Yusuke Hirota"
+                    },
+                    {
+                        "authorId": "9287561",
+                        "name": "Yankun Wu"
+                    },
+                    {
+                        "authorId": "2210102679",
+                        "name": "Yuta Nakashima"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This is particularly concerning as one of the best established phenomena in the study of bias in deep learning models is bias amplification\u2014the fact that social biases in deep learning models tend to be more extreme than those found in their training data (Zhao et al., 2017; Hirota et al., 2022; Hall et al., 2022).",
+                "\u2026concerning as one of the best established phenomena in the study of bias in deep learning models is bias amplification\u2014the fact that social biases in deep learning models tend to be more extreme than those found in their training data (Zhao et al., 2017; Hirota et al., 2022; Hall et al., 2022)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "be55e8ec4213868db08f2c3168ae666001bea4b8",
+                "externalIds": {
+                    "DBLP": "conf/icml/BidermanSABOHKP23",
+                    "ArXiv": "2304.01373",
+                    "DOI": "10.48550/arXiv.2304.01373",
+                    "CorpusId": 257921893
+                },
+                "corpusId": 257921893,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/be55e8ec4213868db08f2c3168ae666001bea4b8",
+                "title": "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling",
+                "abstract": "How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce \\textit{Pythia}, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside tools to download and reconstruct their exact training dataloaders for further study. We intend \\textit{Pythia} to facilitate research in many areas, and we present several case studies including novel results in memorization, term frequency effects on few-shot performance, and reducing gender bias. We demonstrate that this highly controlled setup can be used to yield novel insights toward LLMs and their training dynamics. Trained models, analysis code, training code, and training data can be found at \\url{https://github.com/EleutherAI/pythia}.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "103476203",
+                        "name": "Stella Rose Biderman"
+                    },
+                    {
+                        "authorId": "2184031883",
+                        "name": "Hailey Schoelkopf"
+                    },
+                    {
+                        "authorId": "1404060481",
+                        "name": "Quentin G. Anthony"
+                    },
+                    {
+                        "authorId": "2070768742",
+                        "name": "Herbie Bradley"
+                    },
+                    {
+                        "authorId": "2212970046",
+                        "name": "Kyle O'Brien"
+                    },
+                    {
+                        "authorId": "2162462983",
+                        "name": "Eric Hallahan"
+                    },
+                    {
+                        "authorId": "2168771748",
+                        "name": "Mohammad Aflah Khan"
+                    },
+                    {
+                        "authorId": "2162467233",
+                        "name": "Shivanshu Purohit"
+                    },
+                    {
+                        "authorId": "2162462141",
+                        "name": "USVSN Sai Prashanth"
+                    },
+                    {
+                        "authorId": "34885007",
+                        "name": "Edward Raff"
+                    },
+                    {
+                        "authorId": "2213349418",
+                        "name": "Aviya Skowron"
+                    },
+                    {
+                        "authorId": "35566806",
+                        "name": "Lintang Sutawika"
+                    },
+                    {
+                        "authorId": "1986356851",
+                        "name": "Oskar van der Wal"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Figures [12, 13, 14, 15, 16, 17] show the intraclass (top row) and inter-class similarities (bottom row) before and after finetuning a model on Open Images.",
+                "Data: Gender Analysis Sets We choose to analyze gender as our protected attribute since this is generally recognized as a universal attribute that can be applied to all humans and its biases have been studied and recognized as significant in the context of vision models [16, 17, 26, 31, 32, 36, 37, 41, 42].",
+                "1, 2, 4 [17] Yusuke Hirota, Yuta Nakashima, and Noa Garcia."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "16fa155e4b3ec74565283def01a12d3497074c07",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-07615",
+                    "ArXiv": "2303.07615",
+                    "DOI": "10.48550/arXiv.2303.07615",
+                    "CorpusId": 257504863
+                },
+                "corpusId": 257504863,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/16fa155e4b3ec74565283def01a12d3497074c07",
+                "title": "Variation of Gender Biases in Visual Recognition Models Before and After Finetuning",
+                "abstract": "We introduce a framework to measure how biases change before and after fine-tuning a large scale visual recognition model for a downstream task. Deep learning models trained on increasing amounts of data are known to encode societal biases. Many computer vision systems today rely on models typically pretrained on large scale datasets. While bias mitigation techniques have been developed for tuning models for downstream tasks, it is currently unclear what are the effects of biases already encoded in a pretrained model. Our framework incorporates sets of canonical images representing individual and pairs of concepts to highlight changes in biases for an array of off-the-shelf pretrained models across model sizes, dataset sizes, and training objectives. Through our analyses, we find that (1) supervised models trained on datasets such as ImageNet-21k are more likely to retain their pretraining biases regardless of the target dataset compared to self-supervised models. We also find that (2) models finetuned on larger scale datasets are more likely to introduce new biased associations. Our results also suggest that (3) biases can transfer to finetuned models and the finetuning objective and dataset can impact the extent of transferred biases.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1819649550",
+                        "name": "Jaspreet Ranjit"
+                    },
+                    {
+                        "authorId": "1785372925",
+                        "name": "Tianlu Wang"
+                    },
+                    {
+                        "authorId": "31631000",
+                        "name": "Baishakhi Ray"
+                    },
+                    {
+                        "authorId": "2004053",
+                        "name": "Vicente Ordonez"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[125] Yusuke Hirota, Yuta Nakashima, and Noa Garcia.",
+                "In addition, prominent examples in HCCV research demonstrate disparate algorithmic performance based on race and skin color [106, 293, 125, 327, 217, 34, 33, 261, 236, 44, 122]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "2c9a6b84b9c89d5bace7e679faebce5f5c66fed0",
+                "externalIds": {
+                    "ArXiv": "2302.03629",
+                    "CorpusId": 259108422
+                },
+                "corpusId": 259108422,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2c9a6b84b9c89d5bace7e679faebce5f5c66fed0",
+                "title": "Principlism Guided Responsible Data Curation",
+                "abstract": "Human-centric computer vision (HCCV) data curation practices often neglect privacy and bias concerns, leading to dataset retractions and unfair models. Further, HCCV datasets constructed through nonconsensual web scraping lack the necessary metadata for comprehensive fairness and robustness evaluations. Current remedies address issues post hoc, lack persuasive justification for adoption, or fail to provide proper contextualization for appropriate application. Our research focuses on proactive, domain-specific recommendations for curating HCCV datasets, addressing privacy and bias. We adopt an ante hoc reflective perspective and draw from current practices and guidelines, guided by the ethical framework of principlism.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "50819534",
+                        "name": "Jerone T. A. Andrews"
+                    },
+                    {
+                        "authorId": "2116403497",
+                        "name": "Dora Zhao"
+                    },
+                    {
+                        "authorId": "2067103717",
+                        "name": "William Thong"
+                    },
+                    {
+                        "authorId": "2618576",
+                        "name": "Apostolos Modas"
+                    },
+                    {
+                        "authorId": "20985588",
+                        "name": "O. Papakyriakopoulos"
+                    },
+                    {
+                        "authorId": "4990825",
+                        "name": "Alice Xiang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "However, this method has a potential issue where the captioning model may exhibit bias [35] and fail to recognize keywords that frequently appear in both accurately and inaccurately classified images."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "a082b61a7d9d6c890861661be919fd9190893b38",
+                "externalIds": {
+                    "ArXiv": "2301.11104",
+                    "CorpusId": 258832596
+                },
+                "corpusId": 258832596,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a082b61a7d9d6c890861661be919fd9190893b38",
+                "title": "Bias-to-Text: Debiasing Unknown Visual Biases through Language Interpretation",
+                "abstract": "Biases in models pose a critical issue when deploying machine learning systems, but diagnosing them in an explainable manner can be challenging. To address this, we introduce the bias-to-text (B2T) framework, which uses language interpretation to identify and mitigate biases in vision models, such as image classifiers and text-to-image generative models. Our language descriptions of visual biases provide explainable forms that enable the discovery of novel biases and effective model debiasing. To achieve this, we analyze common keywords in the captions of mispredicted or generated images. Here, we propose novel score functions to avoid biases in captions by comparing the similarities between bias keywords and those images. Additionally, we present strategies to debias zero-shot classifiers and text-to-image diffusion models using the bias keywords from the B2T framework. We demonstrate the effectiveness of our framework on various image classification and generation tasks. For classifiers, we discover a new spurious correlation between the keywords\"(sports) player\"and\"female\"in Kaggle Face and improve the worst-group accuracy on Waterbirds by 11% through debiasing, compared to the baseline. For generative models, we detect and effectively prevent unfair (e.g., gender-biased) and unsafe (e.g.,\"naked\") image generation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2157302397",
+                        "name": "Younghyun Kim"
+                    },
+                    {
+                        "authorId": "9962692",
+                        "name": "Sangwoo Mo"
+                    },
+                    {
+                        "authorId": "2185339408",
+                        "name": "Min-Kyung Kim"
+                    },
+                    {
+                        "authorId": "2110049370",
+                        "name": "Kyungmin Lee"
+                    },
+                    {
+                        "authorId": "48173961",
+                        "name": "Jaeho Lee"
+                    },
+                    {
+                        "authorId": "143720148",
+                        "name": "Jinwoo Shin"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "More recent efforts on image captioning are reflected from the perspective of novel model architecture design [13, 15, 47, 50] and the use of prior knowledge [24, 35, 42, 46, 72]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "f991d1622949a2dea285d2ad0cfb2e8157cb84b4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-11694",
+                    "ArXiv": "2211.11694",
+                    "DOI": "10.48550/arXiv.2211.11694",
+                    "CorpusId": 253735413
+                },
+                "corpusId": 253735413,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f991d1622949a2dea285d2ad0cfb2e8157cb84b4",
+                "title": "Exploring Discrete Diffusion Models for Image Captioning",
+                "abstract": "The image captioning task is typically realized by an auto-regressive method that decodes the text tokens one by one. We present a diffusion-based captioning model, dubbed the name DDCap, to allow more decoding flexibility. Unlike image generation, where the output is continuous and redundant with a fixed length, texts in image captions are categorical and short with varied lengths. Therefore, naively applying the discrete diffusion model to text decoding does not work well, as shown in our experiments. To address the performance gap, we propose several key techniques including best-first inference, concentrated attention mask, text length prediction, and image-free training. On COCO without additional caption pre-training, it achieves a CIDEr score of 117.8, which is +5.0 higher than the auto-regressive baseline with the same architecture in the controlled setting. It also performs +26.8 higher CIDEr score than the auto-regressive baseline (230.3 v.s.203.5) on a caption infilling task. With 4M vision-language pre-training images and the base-sized model, we reach a CIDEr score of 125.1 on COCO, which is competitive to the best well-developed auto-regressive frameworks. The code is available at https://github.com/buxiangzhiren/DDCap.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2157624864",
+                        "name": "Zixin Zhu"
+                    },
+                    {
+                        "authorId": "2107995927",
+                        "name": "Yixuan Wei"
+                    },
+                    {
+                        "authorId": "2124948371",
+                        "name": "Jianfeng Wang"
+                    },
+                    {
+                        "authorId": "144702900",
+                        "name": "Zhe Gan"
+                    },
+                    {
+                        "authorId": "2148904543",
+                        "name": "Zheng Zhang"
+                    },
+                    {
+                        "authorId": "2108571702",
+                        "name": "Le Wang"
+                    },
+                    {
+                        "authorId": "144988571",
+                        "name": "G. Hua"
+                    },
+                    {
+                        "authorId": "29957038",
+                        "name": "Lijuan Wang"
+                    },
+                    {
+                        "authorId": "2145253136",
+                        "name": "Zicheng Liu"
+                    },
+                    {
+                        "authorId": "1823518756",
+                        "name": "Han Hu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "0c452403a79f774da360934716f63191270fe0dc",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-06774",
+                    "ArXiv": "2211.06774",
+                    "DOI": "10.48550/arXiv.2211.06774",
+                    "CorpusId": 253510895
+                },
+                "corpusId": 253510895,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0c452403a79f774da360934716f63191270fe0dc",
+                "title": "Large-Scale Bidirectional Training for Zero-Shot Image Captioning",
+                "abstract": "When trained on large-scale datasets, image captioning models can understand the content of images from a general domain but often fail to generate accurate, detailed captions. To improve performance, pretraining-and-finetuning has been a key strategy for image captioning. However, we find that large-scale bidirectional training between image and text enables zero-shot image captioning. In this paper, we introduce Bidirectional Image Text Training in largER Scale, BITTERS, an efficient training and inference framework for zero-shot image captioning. We also propose a new evaluation benchmark which comprises of high quality datasets and an extensive set of metrics to properly evaluate zero-shot captioning accuracy and societal bias. We additionally provide an efficient finetuning approach for keyword extraction. We show that careful selection of large-scale training set and model architecture is the key to achieving zero-shot image captioning.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2111274995",
+                        "name": "Taehoon Kim"
+                    },
+                    {
+                        "authorId": "101085204",
+                        "name": "Mark A Marsden"
+                    },
+                    {
+                        "authorId": "8734666",
+                        "name": "Pyunghwan Ahn"
+                    },
+                    {
+                        "authorId": "49899827",
+                        "name": "Sangyun Kim"
+                    },
+                    {
+                        "authorId": "1800572",
+                        "name": "Sihaeng Lee"
+                    },
+                    {
+                        "authorId": "2182430928",
+                        "name": "Alessandra Sala"
+                    },
+                    {
+                        "authorId": "2141963023",
+                        "name": "S. Kim"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We observed only one other work [83] that makes use of this metric outside the scope of the VQA(-CP) datasets."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7a1bf9474ae0cc07aa01d010449970a9ddf9baa5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-05617",
+                    "ArXiv": "2211.05617",
+                    "DOI": "10.48550/arXiv.2211.05617",
+                    "CorpusId": 253447275
+                },
+                "corpusId": 253447275,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7a1bf9474ae0cc07aa01d010449970a9ddf9baa5",
+                "title": "Debiasing Methods for Fairer Neural Models in Vision and Language Research: A Survey",
+                "abstract": "Despite being responsible for state-of-the-art results in several computer vision and natural language processing tasks, neural networks have faced harsh criticism due to some of their current shortcomings. One of them is that neural networks are correlation machines prone to model biases within the data instead of focusing on actual useful causal relationships. This problem is particularly serious in application domains affected by aspects such as race, gender, and age. To prevent models from incurring on unfair decision-making, the AI community has concentrated efforts in correcting algorithmic biases, giving rise to the research area now widely known as fairness in AI. In this survey paper, we provide an in-depth overview of the main debiasing methods for fairness-aware neural networks in the context of vision and language research. We propose a novel taxonomy to better organize the literature on debiasing methods for fairness, and we discuss the current challenges, trends, and important future work directions for the interested researcher and practitioner.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2154617774",
+                        "name": "Ot\u00e1vio Parraga"
+                    },
+                    {
+                        "authorId": "41050099",
+                        "name": "Martin D. M\u00f3re"
+                    },
+                    {
+                        "authorId": "2154309948",
+                        "name": "C. M. Oliveira"
+                    },
+                    {
+                        "authorId": "1660809827",
+                        "name": "Nathan Gavenski"
+                    },
+                    {
+                        "authorId": "2175084934",
+                        "name": "L. S. Kupssinsku"
+                    },
+                    {
+                        "authorId": "2190427449",
+                        "name": "Adilson Medronha"
+                    },
+                    {
+                        "authorId": "2190427616",
+                        "name": "Luis V. Moura"
+                    },
+                    {
+                        "authorId": "153255514",
+                        "name": "Gabriel S. Sim\u00f5es"
+                    },
+                    {
+                        "authorId": "1380051745",
+                        "name": "Rodrigo C. Barros"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "cb33b226caddf6f7d9a22ff3faeda1fa662e013f",
+                "externalIds": {
+                    "ArXiv": "2211.00168",
+                    "DBLP": "journals/corr/abs-2211-00168",
+                    "DOI": "10.48550/arXiv.2211.00168",
+                    "CorpusId": 253244514
+                },
+                "corpusId": 253244514,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/cb33b226caddf6f7d9a22ff3faeda1fa662e013f",
+                "title": "Improving Fairness in Image Classification via Sketching",
+                "abstract": "Fairness is a fundamental requirement for trustworthy and human-centered Artificial Intelligence (AI) system. However, deep neural networks (DNNs) tend to make unfair predictions when the training data are collected from different sub-populations with different attributes (i.e. color, sex, age), leading to biased DNN predictions. We notice that such a troubling phenomenon is often caused by data itself, which means that bias information is encoded to the DNN along with the useful information (i.e. class information, semantic information). Therefore, we propose to use sketching to handle this phenomenon. Without losing the utility of data, we explore the image-to-sketching methods that can maintain useful semantic information for the target classification while filtering out the useless bias information. In addition, we design a fair loss to further improve the model fairness. We evaluate our method through extensive experiments on both general scene dataset and medical scene dataset. Our results show that the desired image-to-sketching method improves model fairness and achieves satisfactory results among state-of-the-art.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2189422849",
+                        "name": "Ruichen Yao"
+                    },
+                    {
+                        "authorId": "2152101108",
+                        "name": "Ziteng Cui"
+                    },
+                    {
+                        "authorId": "2144456526",
+                        "name": "Xiaoxiao Li"
+                    },
+                    {
+                        "authorId": "151484085",
+                        "name": "Lin Gu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Gender bias amplification analysis Using our proposed metric, we compare the performance of multi-label classifiers trained on COCO and imSitu, two standard benchmarks for bias amplification metrics (Zhao et al. 2017; Wang et al. 2019; Wang and Russakovsky 2021; Hirota, Nakashima, and Garcia 2022).",
+                "Bias amplification has been studied across many tasks (Zhao et al., 2017; Ramaswamy et al., 2021; Wang et al., 2020b; Choi et al., 2020; Jia et al., 2020; Leino et al., 2019; Wang & Russakovsky, 2021; Hirota et al., 2022; Wang et al., 2019; Renduchintala et al., 2021).",
+                "Bias amplification has been studied across many tasks (Zhao et al. 2017; Ramaswamy, Kim, and Russakovsky 2021; Wang et al. 2020; Choi et al.\n2020; Jia et al. 2020; Leino et al. 2019; Wang and Russakovsky 2021; Hirota, Nakashima, and Garcia 2022; Wang et al. 2019; Renduchintala et al. 2021).",
+                ", 2015), standard benchmarks for bias amplification metrics (Zhao et al., 2017; Wang et al., 2019; Wang & Russakovsky, 2021; Hirota et al., 2022; Ramaswamy et al., 2021).",
+                "An alternative line of work (Wang et al. 2019; Hirota, Nakashima, and Garcia 2022) has focused on using leakage\u2014the change in a classifier\u2019s ability to predict group membership from the training data to predictions."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a4f834d52e78dbec1b5f0a871d9ba6f5f4028ba5",
+                "externalIds": {
+                    "ArXiv": "2210.11924",
+                    "DBLP": "journals/corr/abs-2210-11924",
+                    "DOI": "10.48550/arXiv.2210.11924",
+                    "CorpusId": 253080369
+                },
+                "corpusId": 253080369,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a4f834d52e78dbec1b5f0a871d9ba6f5f4028ba5",
+                "title": "Men Also Do Laundry: Multi-Attribute Bias Amplification",
+                "abstract": "As computer vision systems become more widely deployed, there is increasing concern from both the research community and the public that these systems are not only reproducing but amplifying harmful social biases. The phenomenon of bias amplification, which is the focus of this work, refers to models amplifying inherent training set biases at test time. Existing metrics measure bias amplification with respect to single annotated attributes (e.g., $\\texttt{computer}$). However, several visual datasets consist of images with multiple attribute annotations. We show models can learn to exploit correlations with respect to multiple attributes (e.g., {$\\texttt{computer}$, $\\texttt{keyboard}$}), which are not accounted for by current metrics. In addition, we show current metrics can give the erroneous impression that minimal or no bias amplification has occurred as they involve aggregating over positive and negative values. Further, these metrics lack a clear desired value, making them difficult to interpret. To address these shortcomings, we propose a new metric: Multi-Attribute Bias Amplification. We validate our proposed metric through an analysis of gender bias amplification on the COCO and imSitu datasets. Finally, we benchmark bias mitigation methods using our proposed metric, suggesting possible avenues for future bias mitigation",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2116403497",
+                        "name": "Dora Zhao"
+                    },
+                    {
+                        "authorId": "50819534",
+                        "name": "Jerone T. A. Andrews"
+                    },
+                    {
+                        "authorId": "4990825",
+                        "name": "Alice Xiang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[23] proposed a metric to quantify gender and racial bias amplification of image captioning models.",
+                "In vision-and-language tasks, there has been some recent advancements, especially for image captioning [21, 23, 47, 59]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "23b18bf32bc09b9756b49a3764f77d2d4aeb456b",
+                "externalIds": {
+                    "DBLP": "conf/fat/HirotaNG22",
+                    "ArXiv": "2205.08148",
+                    "DOI": "10.1145/3531146.3533184",
+                    "CorpusId": 248834284
+                },
+                "corpusId": 248834284,
+                "publicationVenue": {
+                    "id": "cdc83875-a82d-445c-b097-cbe91afe99a8",
+                    "name": "Conference on Fairness, Accountability and Transparency",
+                    "type": "conference",
+                    "alternate_names": [
+                        "FAccT",
+                        "Conf Fairness Account Transpar"
+                    ],
+                    "url": "https://facctconference.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/23b18bf32bc09b9756b49a3764f77d2d4aeb456b",
+                "title": "Gender and Racial Bias in Visual Question Answering Datasets",
+                "abstract": "Vision-and-language tasks have increasingly drawn more attention as a means to evaluate human-like reasoning in machine learning models. A popular task in the field is visual question answering (VQA), which aims to answer questions about images. However, VQA models have been shown to exploit language bias by learning the statistical correlations between questions and answers without looking into the image content: e.g., questions about the color of a banana are answered with yellow, even if the banana in the image is green. If societal bias (e.g., sexism, racism, ableism, etc.) is present in the training data, this problem may be causing VQA models to learn harmful stereotypes. For this reason, we investigate gender and racial bias in five VQA datasets. In our analysis, we find that the distribution of answers is highly different between questions about women and men, as well as the existence of detrimental gender-stereotypical samples. Likewise, we identify that specific race-related attributes are underrepresented, whereas potentially discriminatory samples appear in the analyzed datasets. Our findings suggest that there are dangers associated to using VQA datasets without considering and dealing with the potentially harmful stereotypes. We conclude the paper by proposing solutions to alleviate the problem before, during, and after the dataset collection process.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2056175726",
+                        "name": "Yusuke Hirota"
+                    },
+                    {
+                        "authorId": "2210102679",
+                        "name": "Yuta Nakashima"
+                    },
+                    {
+                        "authorId": "26385137",
+                        "name": "Noa Garc\u00eda"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[9, 8, 76, 12, 92, 38, 80, 37] examine social biases in image-text datasets."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "212732c649d84382f4e74ca047b13f3c835591d7",
+                "externalIds": {
+                    "ArXiv": "2202.04053",
+                    "CorpusId": 253510037
+                },
+                "corpusId": 253510037,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/212732c649d84382f4e74ca047b13f3c835591d7",
+                "title": "DALL-Eval: Probing the Reasoning Skills and Social Biases of Text-to-Image Generation Models",
+                "abstract": "Recently, DALL-E, a multimodal transformer language model, and its variants, including diffusion models, have shown high-quality text-to-image generation capabilities. However, despite the realistic image generation results, there has not been a detailed analysis of how to evaluate such models. In this work, we investigate the visual reasoning capabilities and social biases of different text-to-image models, covering both multimodal transformer language models and diffusion models. First, we measure three visual reasoning skills: object recognition, object counting, and spatial relation understanding. For this, we propose PaintSkills, a compositional diagnostic evaluation dataset that measures these skills. Despite the high-fidelity image generation capability, a large gap exists between the performance of recent models and the upper bound accuracy in object counting and spatial relation understanding skills. Second, we assess the gender and skin tone biases by measuring the gender/skin tone distribution of generated images across various professions and attributes. We demonstrate that recent text-to-image generation models learn specific biases about gender and skin tone from web image-text pairs. We hope our work will help guide future progress in improving text-to-image generation models on visual reasoning skills and learning socially unbiased representations. Code and data: https://github.com/j-min/DallEval",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2706729",
+                        "name": "Jaemin Cho"
+                    },
+                    {
+                        "authorId": "2008198436",
+                        "name": "Abhaysinh Zala"
+                    },
+                    {
+                        "authorId": "143977268",
+                        "name": "Mohit Bansal"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "of disparate algorithmic performance [27, 90, 108, 184, 248, 283]."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "46c6ec05a04d220f96476654ea206963d4de0e62",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-03629",
+                    "DOI": "10.48550/arXiv.2302.03629",
+                    "CorpusId": 256627400
+                },
+                "corpusId": 256627400,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/46c6ec05a04d220f96476654ea206963d4de0e62",
+                "title": "Ethical Considerations for Collecting Human-Centric Image Datasets",
+                "abstract": "Human-centric image datasets are critical to the development of computer vision technologies. However, recent investigations have foregrounded signi\ufb01cant ethical issues related to privacy and bias, which have resulted in the complete retraction, or modi\ufb01cation, of several prominent datasets. Recent works have tried to reverse this trend, for example, by proposing analytical frameworks for ethically evaluating datasets, the standardization of dataset documentation and curation practices, privacy preservation methodologies, as well as tools for surfacing and mitigating representational biases. Little attention, however, has been paid to the realities of operationalizing ethical data collection. To \ufb01ll this gap, we present a set of key ethical considerations and practical recommendations for collecting more ethically-minded human-centric image data. Our research directly addresses issues of privacy and bias by contributing to the research community best practices for ethical data collection, covering purpose, privacy and consent, as well as diversity. We motivate each consideration by drawing on lessons from current practices, dataset withdrawals and audits, and analytical ethical frameworks. Our research is intended to augment recent scholarship, representing an important step toward more responsible data curation practices.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "50819534",
+                        "name": "Jerone T. A. Andrews"
+                    },
+                    {
+                        "authorId": "2116403497",
+                        "name": "Dora Zhao"
+                    },
+                    {
+                        "authorId": "2067103717",
+                        "name": "William Thong"
+                    },
+                    {
+                        "authorId": "2618576",
+                        "name": "Apostolos Modas"
+                    },
+                    {
+                        "authorId": "20985588",
+                        "name": "O. Papakyriakopoulos"
+                    },
+                    {
+                        "authorId": "1925017",
+                        "name": "Shruti Nagpal"
+                    },
+                    {
+                        "authorId": "4990825",
+                        "name": "Alice Xiang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "2548487143bab0dbcee5cf4cb5cc1ef3f7b5e686",
+                "externalIds": {
+                    "CorpusId": 260881416
+                },
+                "corpusId": 260881416,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2548487143bab0dbcee5cf4cb5cc1ef3f7b5e686",
+                "title": "Supplementary Material for Model-Agnostic Gender Debiased Image Captioning",
+                "abstract": "Following the masked language model in [4], we finetune T5 on captions in D. Specifically, we mask 10% of the tokens in the original caption y. Given the masked caption and the positions of masked tokens M = {m1, . . . ,m|M|}, T5 predicts the probability of masked tokens by \u220f m\u2208M p(ym|y\\M), where y\\M denotes all words in an input caption y except for masked tokens {ym}. The sample-wise loss is defined as:",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2056175726",
+                        "name": "Yusuke Hirota"
+                    },
+                    {
+                        "authorId": "2210102679",
+                        "name": "Yuta Nakashima"
+                    },
+                    {
+                        "authorId": "26385137",
+                        "name": "Noa Garc\u00eda"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[5] state that current bias evaluation metrics and methods have their shortcomings."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "56cf41faa3152f2893693a5ddbef102c85d9a970",
+                "externalIds": {
+                    "CorpusId": 263754809
+                },
+                "corpusId": 263754809,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/56cf41faa3152f2893693a5ddbef102c85d9a970",
+                "title": "[Re] Exploring the Explainability of Bias in Image",
+                "abstract": "Methodology \u2014We reproduced the results of the original authors with only minor modi\u2010 fications to the code they made available. We contribute to their research by highlight\u2010 ing a noteworthy limitation in the used data split and propose an integrated gradients method to increase explainability, allowing users to understand predictions better using the Captum library for Pytorch. As for the computational requirements, all experiments were run on a cluster with a NVIDIA Titan RTX GPU and the time required to run a total of 720 models was \u223c98 hours.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2256270276",
+                        "name": "Marten T\u00fcrk"
+                    },
+                    {
+                        "authorId": "2256274708",
+                        "name": "Luyang Busser"
+                    },
+                    {
+                        "authorId": "2256269641",
+                        "name": "Dani\u00ebl van Dijk"
+                    },
+                    {
+                        "authorId": "2256270630",
+                        "name": "Max J.A. Bosch"
+                    },
+                    {
+                        "authorId": "2256275271",
+                        "name": "Koustuv Sinha"
+                    },
+                    {
+                        "authorId": "1452678770",
+                        "name": "Maurits J. R. Bleeker"
+                    },
+                    {
+                        "authorId": "81679142",
+                        "name": "Samarth Bhargav"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[23] proposed a metric to quantify gender and racial bias amplification of image captioning models.",
+                "In vision-and-language tasks, there has been some recent advancements, especially for image captioning [9, 23, 47, 59]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "389f77dae73924bff47e6fa8e61d518671af37e0",
+                "externalIds": {
+                    "CorpusId": 249939761
+                },
+                "corpusId": 249939761,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/389f77dae73924bff47e6fa8e61d518671af37e0",
+                "title": "Gender and Racial Bias in VisualQuestion Answering Datasets",
+                "abstract": "Vision-and-language tasks have increasingly drawn more attention as a means to evaluate human-like reasoning in machine learning models. A popular task in the field is visual question answering (VQA), which aims to answer questions about images. However, VQA models have been shown to exploit language bias by learning the statistical correlations between questions and answers without looking into the image content: e.g., questions about the color of a banana are answered with yellow, even if the banana in the image is green. If societal bias (e.g., sexism, racism, ableism, etc.) is present in the training data, this problem may be causing VQA models to learn harmful stereotypes. For this reason, we investigate gender and racial bias in five VQA datasets. In our analysis, we find that the distribution of answers is highly different between questions about women and men, as well as the existence of detrimental gender-stereotypical samples. Likewise, we identify that specific race-related attributes are underrepresented, whereas potentially discriminatory samples appear in the analyzed datasets. Our findings suggest that there are dangers associated to using VQA datasets without considering and dealing with the potentially harmful stereotypes. We conclude the paper by proposing solutions to alleviate the problem before, during, and after the dataset collection process.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "49722914",
+                        "name": "Y. Hirota"
+                    },
+                    {
+                        "authorId": "2172232957",
+                        "name": "y-hirota"
+                    }
+                ]
+            }
+        }
+    ]
+}

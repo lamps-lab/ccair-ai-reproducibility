@@ -1,0 +1,1425 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Non-determinism of GPU operations also produces churn even when all initial parameters are the same [Summers and Dinneen, 2021]."
+            ],
+            "citingPaper": {
+                "paperId": "d131da4ff1f20d1255b359405414ea9c0b309d40",
+                "externalIds": {
+                    "ArXiv": "2310.00946",
+                    "CorpusId": 263605999
+                },
+                "corpusId": 263605999,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/d131da4ff1f20d1255b359405414ea9c0b309d40",
+                "title": "Distilling Influences to Mitigate Prediction Churn in Graph Neural Networks",
+                "abstract": "Models with similar performances exhibit significant disagreement in the predictions of individual samples, referred to as prediction churn. Our work explores this phenomenon in graph neural networks by investigating differences between models differing only in their initializations in their utilized features for predictions. We propose a novel metric called Influence Difference (ID) to quantify the variation in reasons used by nodes across models by comparing their influence distribution. Additionally, we consider the differences between nodes with a stable and an unstable prediction, positing that both equally utilize different reasons and thus provide a meaningful gradient signal to closely match two models even when the predictions for nodes are similar. Based on our analysis, we propose to minimize this ID in Knowledge Distillation, a domain where a new model should closely match an established one. As an efficient approximation, we introduce DropDistillation (DD) that matches the output for a graph perturbed by edge deletions. Our empirical evaluation of six benchmark datasets for node classification validates the differences in utilized features. DD outperforms previous methods regarding prediction stability and overall performance in all considered Knowledge Distillation experiments.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2054025136",
+                        "name": "Andreas Roth"
+                    },
+                    {
+                        "authorId": "2253401097",
+                        "name": "Thomas Liebig"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Summers and Dinneen [6], and Jordan [7] argue that variance matters only during initial conditions of the training procedure."
+            ],
+            "citingPaper": {
+                "paperId": "8be5215d4a9f78ca0ca67a52fbdf43b18871d8ee",
+                "externalIds": {
+                    "ArXiv": "2310.00541",
+                    "CorpusId": 263334446
+                },
+                "corpusId": 263334446,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/8be5215d4a9f78ca0ca67a52fbdf43b18871d8ee",
+                "title": "Robust Nonparametric Hypothesis Testing to Understand Variability in Training Neural Networks",
+                "abstract": "Training a deep neural network (DNN) often involves stochastic optimization, which means each run will produce a different model. Several works suggest this variability is negligible when models have the same performance, which in the case of classification is test accuracy. However, models with similar test accuracy may not be computing the same function. We propose a new measure of closeness between classification models based on the output of the network before thresholding. Our measure is based on a robust hypothesis-testing framework and can be adapted to other quantities derived from trained models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2256955097",
+                        "name": "Sinjini Banerjee"
+                    },
+                    {
+                        "authorId": "2249761676",
+                        "name": "Reilly Cannon"
+                    },
+                    {
+                        "authorId": "2249761580",
+                        "name": "Tim Marrinan"
+                    },
+                    {
+                        "authorId": "2249759999",
+                        "name": "Tony Chiang"
+                    },
+                    {
+                        "authorId": "2248108535",
+                        "name": "Anand D. Sarwate"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "Since the training of neural networks is strongly influenced by the initialized parameters Summers and Dinneen (2021), sometimes the pre-trained model outperforms the randomly initialized one by a large margin most likely because the initialized position leads to bad local minima."
+            ],
+            "citingPaper": {
+                "paperId": "094f5c1e0cd4a5d22a637c65cf6afd6c7313f124",
+                "externalIds": {
+                    "ArXiv": "2309.05256",
+                    "CorpusId": 261682048
+                },
+                "corpusId": 261682048,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/094f5c1e0cd4a5d22a637c65cf6afd6c7313f124",
+                "title": "Examining the Effect of Pre-training on Time Series Classification",
+                "abstract": "Although the pre-training followed by fine-tuning paradigm is used extensively in many fields, there is still some controversy surrounding the impact of pre-training on the fine-tuning process. Currently, experimental findings based on text and image data lack consensus. To delve deeper into the unsupervised pre-training followed by fine-tuning paradigm, we have extended previous research to a new modality: time series. In this study, we conducted a thorough examination of 150 classification datasets derived from the Univariate Time Series (UTS) and Multivariate Time Series (MTS) benchmarks. Our analysis reveals several key conclusions. (i) Pre-training can only help improve the optimization process for models that fit the data poorly, rather than those that fit the data well. (ii) Pre-training does not exhibit the effect of regularization when given sufficient training time. (iii) Pre-training can only speed up convergence if the model has sufficient ability to fit the data. (iv) Adding more pre-training data does not improve generalization, but it can strengthen the advantage of pre-training on the original data volume, such as faster convergence. (v) While both the pre-training task and the model structure determine the effectiveness of the paradigm on a given dataset, the model structure plays a more significant role.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "34260749",
+                        "name": "Jiashu Pu"
+                    },
+                    {
+                        "authorId": "2000896394",
+                        "name": "Shiwei Zhao"
+                    },
+                    {
+                        "authorId": "2239055014",
+                        "name": "Ling Cheng"
+                    },
+                    {
+                        "authorId": "2152554888",
+                        "name": "Yongzhu Chang"
+                    },
+                    {
+                        "authorId": "2239054423",
+                        "name": "Runze Wu"
+                    },
+                    {
+                        "authorId": "2238952248",
+                        "name": "Tangjie Lv"
+                    },
+                    {
+                        "authorId": "48263731",
+                        "name": "Rongsheng Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "normalisation, tooling and hardware [55,66].",
+                "For future work, we think it would be interesting to quantify to what extent classification decisions and explanations are influenced by nondeterminism in part-prototype models, taking inspiration from existing experiments on nondeterminism and randomness [55,66]."
+            ],
+            "citingPaper": {
+                "paperId": "b712177260c04cb122b20ca3f6d141a6ead1ea4b",
+                "externalIds": {
+                    "ArXiv": "2307.14517",
+                    "DBLP": "journals/corr/abs-2307-14517",
+                    "DOI": "10.48550/arXiv.2307.14517",
+                    "CorpusId": 260203231
+                },
+                "corpusId": 260203231,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b712177260c04cb122b20ca3f6d141a6ead1ea4b",
+                "title": "The Co-12 Recipe for Evaluating Interpretable Part-Prototype Image Classifiers",
+                "abstract": "Interpretable part-prototype models are computer vision models that are explainable by design. The models learn prototypical parts and recognise these components in an image, thereby combining classification and explanation. Despite the recent attention for intrinsically interpretable models, there is no comprehensive overview on evaluating the explanation quality of interpretable part-prototype models. Based on the Co-12 properties for explanation quality as introduced in arXiv:2201.08164 (e.g., correctness, completeness, compactness), we review existing work that evaluates part-prototype models, reveal research gaps and outline future approaches for evaluation of the explanation quality of part-prototype models. This paper, therefore, contributes to the progression and maturity of this relatively new research field on interpretable part-prototype models. We additionally provide a ``Co-12 cheat sheet'' that acts as a concise summary of our findings on evaluating part-prototype models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "17698891",
+                        "name": "Meike Nauta"
+                    },
+                    {
+                        "authorId": "2194180216",
+                        "name": "Christin Seifert"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "One of the mysteries in deep learning is the stability and consistency of their training processes and solutions, despite of the multiple sources of randomness such as random initialization, data ordering and data augmentation [11, 6, 50, 26]."
+            ],
+            "citingPaper": {
+                "paperId": "634112108d463c608769c1740811f5e3754a27f5",
+                "externalIds": {
+                    "ArXiv": "2305.14122",
+                    "DBLP": "journals/corr/abs-2305-14122",
+                    "DOI": "10.48550/arXiv.2305.14122",
+                    "CorpusId": 258841719
+                },
+                "corpusId": 258841719,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/634112108d463c608769c1740811f5e3754a27f5",
+                "title": "Transferring Learning Trajectories of Neural Networks",
+                "abstract": "Training deep neural networks (DNNs) is computationally expensive, which is problematic especially when performing duplicated or similar training runs in model ensemble or fine-tuning pre-trained models, for example. Once we have trained one DNN on some dataset, we have its learning trajectory (i.e., a sequence of intermediate parameters during training) which may potentially contain useful information for learning the dataset. However, there has been no attempt to utilize such information of a given learning trajectory for another training. In this paper, we formulate the problem of\"transferring\"a given learning trajectory from one initial parameter to another one (learning transfer problem) and derive the first algorithm to approximately solve it by matching gradients successively along the trajectory via permutation symmetry. We empirically show that the transferred parameters achieve non-trivial accuracy before any direct training, and can be trained significantly faster than training from scratch.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2113252066",
+                        "name": "Daiki Chijiwa"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "fe9bfbaf2c451e284673092a799787e17a282418",
+                "externalIds": {
+                    "ArXiv": "2305.11556",
+                    "DBLP": "journals/corr/abs-2305-11556",
+                    "DOI": "10.48550/arXiv.2305.11556",
+                    "CorpusId": 258823354
+                },
+                "corpusId": 258823354,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fe9bfbaf2c451e284673092a799787e17a282418",
+                "title": "Pitfalls in Experiments with DNN4SE: An Analysis of the State of the Practice",
+                "abstract": "Software engineering techniques are increasingly relying on deep learning approaches to support many software engineering tasks, from bug triaging to code generation. To assess the efficacy of such techniques researchers typically perform controlled experiments. Conducting these experiments, however, is particularly challenging given the complexity of the space of variables involved, from specialized and intricate architectures and algorithms to a large number of training hyper-parameters and choices of evolving datasets, all compounded by how rapidly the machine learning technology is advancing, and the inherent sources of randomness in the training process. In this work we conduct a mapping study, examining 194 experiments with techniques that rely on deep neural networks appearing in 55 papers published in premier software engineering venues to provide a characterization of the state-of-the-practice, pinpointing experiments common trends and pitfalls. Our study reveals that most of the experiments, including those that have received ACM artifact badges, have fundamental limitations that raise doubts about the reliability of their findings. More specifically, we find: weak analyses to determine that there is a true relationship between independent and dependent variables (87% of the experiments); limited control over the space of DNN relevant variables, which can render a relationship between dependent variables and treatments that may not be causal but rather correlational (100% of the experiments); and lack of specificity in terms of what are the DNN variables and their values utilized in the experiments (86% of the experiments) to define the treatments being applied, which makes it unclear whether the techniques designed are the ones being assessed, or how the sources of extraneous variation are controlled. We provide some practical recommendations to address these limitations.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2831847",
+                        "name": "S. Vegas"
+                    },
+                    {
+                        "authorId": "143754832",
+                        "name": "Sebastian G. Elbaum"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "These models are considered functionally similar in this context, as they are typically similar in terms of performance [122]."
+            ],
+            "citingPaper": {
+                "paperId": "2742460c702206fe19c0b5ceae97fef3499bdf76",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-06329",
+                    "ArXiv": "2305.06329",
+                    "DOI": "10.48550/arXiv.2305.06329",
+                    "CorpusId": 258587825
+                },
+                "corpusId": 258587825,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2742460c702206fe19c0b5ceae97fef3499bdf76",
+                "title": "Similarity of Neural Network Models: A Survey of Functional and Representational Measures",
+                "abstract": "Measuring similarity of neural networks to understand and improve their behavior has become an issue of great importance and research interest. In this survey, we provide a comprehensive overview of two complementary perspectives of measuring neural network similarity: (i) representational similarity, which considers how activations of intermediate layers differ, and (ii) functional similarity, which considers how models differ in their outputs. In addition to providing detailed descriptions of existing measures, we summarize and discuss results on the properties of and relationships between these measures, and point to open research problems. We hope our work lays a foundation for more systematic research on the properties and applicability of similarity measures for neural network models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1707027340",
+                        "name": "Max Klabunde"
+                    },
+                    {
+                        "authorId": "39124179",
+                        "name": "Tobias Schumacher"
+                    },
+                    {
+                        "authorId": "1743043",
+                        "name": "M. Strohmaier"
+                    },
+                    {
+                        "authorId": "2101037",
+                        "name": "F. Lemmerich"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "result"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Our findings confirm the work of Summers and Dinneen (2021), who reach similar conclusions.",
+                "In particular we show, confirming the results of Summers and Dinneen (2021), that varying just a single weight at initialization produces only 1% less churn than all three sources of randomness combined.",
+                "We recently became aware of Summers and Dinneen (2021), who reach the same conclusions; our results further confirm their findings via several new experiments."
+            ],
+            "citingPaper": {
+                "paperId": "2af66ba18c04435f90d19f50f7ca7c034271b391",
+                "externalIds": {
+                    "ArXiv": "2304.01910",
+                    "DBLP": "journals/corr/abs-2304-01910",
+                    "DOI": "10.48550/arXiv.2304.01910",
+                    "CorpusId": 257921858
+                },
+                "corpusId": 257921858,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2af66ba18c04435f90d19f50f7ca7c034271b391",
+                "title": "Calibrated Chaos: Variance Between Runs of Neural Network Training is Harmless and Inevitable",
+                "abstract": "Typical neural network trainings have substantial variance in test-set performance between repeated runs, impeding hyperparameter comparison and training reproducibility. We present the following results towards understanding this variation. (1) Despite having significant variance on their test-sets, we demonstrate that standard CIFAR-10 and ImageNet trainings have very little variance in their performance on the test-distributions from which those test-sets are sampled, suggesting that variance is less of a practical issue than previously thought. (2) We present a simplifying statistical assumption which closely approximates the structure of the test-set accuracy distribution. (3) We argue that test-set variance is inevitable in the following two senses. First, we show that variance is largely caused by high sensitivity of the training process to initial conditions, rather than by specific sources of randomness like the data order and augmentations. Second, we prove that variance is unavoidable given the observation that ensembles of trained networks are well-calibrated. (4) We conduct preliminary studies of distribution-shift, fine-tuning, data augmentation and learning rate through the lens of variance between runs.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2190819395",
+                        "name": "Keller Jordan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Most relevant to our work is (Qian et al., 2021; Zhuang et al., 2022; Madhyastha & Jain, 2019; Summers & Dinneen, 2021) that evaluates how stochasticity in training impacts fairness in DNN Systems."
+            ],
+            "citingPaper": {
+                "paperId": "44ca675c9989d706e646e4044d4cb2e3b994fb3a",
+                "externalIds": {
+                    "ArXiv": "2303.00586",
+                    "DBLP": "journals/corr/abs-2303-00586",
+                    "DOI": "10.48550/arXiv.2303.00586",
+                    "CorpusId": 257254836
+                },
+                "corpusId": 257254836,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/44ca675c9989d706e646e4044d4cb2e3b994fb3a",
+                "title": "FAIR-Ensemble: When Fairness Naturally Emerges From Deep Ensembling",
+                "abstract": "Ensembling independent deep neural networks (DNNs) is a simple and effective way to improve top-line metrics and to outperform larger single models. In this work, we go beyond top-line metrics and instead explore the impact of ensembling on subgroup performances. Surprisingly, even with a simple homogenous ensemble -- all the individual models share the same training set, architecture, and design choices -- we find compelling and powerful gains in worst-k and minority group performance, i.e. fairness naturally emerges from ensembling. We show that the gains in performance from ensembling for the minority group continue for far longer than for the majority group as more models are added. Our work establishes that simple DNN ensembles can be a powerful tool for alleviating disparate impact from DNN classifiers, thus curbing algorithmic harm. We also explore why this is the case. We find that even in homogeneous ensembles, varying the sources of stochasticity through parameter initialization, mini-batch sampling, and the data-augmentation realizations, results in different fairness outcomes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1500573542",
+                        "name": "Wei-Yin Ko"
+                    },
+                    {
+                        "authorId": "1432838153",
+                        "name": "Daniel D'souza"
+                    },
+                    {
+                        "authorId": "2196759978",
+                        "name": "Karina Nguyen"
+                    },
+                    {
+                        "authorId": "3201463",
+                        "name": "Randall Balestriero"
+                    },
+                    {
+                        "authorId": "50237813",
+                        "name": "Sara Hooker"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "An often overlooked robustness challenge with DNN optimization is their uncertainty in performance [Summers and Dinneen, 2021]."
+            ],
+            "citingPaper": {
+                "paperId": "a6f30bc1ddc475f902dd763d3d17f44df6508b39",
+                "externalIds": {
+                    "ArXiv": "2303.12797",
+                    "DBLP": "journals/corr/abs-2303-12797",
+                    "DOI": "10.48550/arXiv.2303.12797",
+                    "CorpusId": 257687424
+                },
+                "corpusId": 257687424,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a6f30bc1ddc475f902dd763d3d17f44df6508b39",
+                "title": "An algorithmic framework for the optimization of deep neural networks architectures and hyperparameters",
+                "abstract": "In this paper, we propose an algorithmic framework to automatically generate efficient deep neural networks and optimize their associated hyperparameters. The framework is based on evolving directed acyclic graphs (DAGs), defining a more flexible search space than the existing ones in the literature. It allows mixtures of different classical operations: convolutions, recurrences and dense layers, but also more newfangled operations such as self-attention. Based on this search space we propose neighbourhood and evolution search operators to optimize both the architecture and hyper-parameters of our networks. These search operators can be used with any metaheuristic capable of handling mixed search spaces. We tested our algorithmic framework with an evolutionary algorithm on a time series prediction benchmark. The results demonstrate that our framework was able to find models outperforming the established baseline on numerous datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2212528761",
+                        "name": "Julie Keisler"
+                    },
+                    {
+                        "authorId": "41218226",
+                        "name": "E. Talbi"
+                    },
+                    {
+                        "authorId": "74888791",
+                        "name": "Sandra Claudel"
+                    },
+                    {
+                        "authorId": "2212522852",
+                        "name": "Gilles Cabriel"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "To better assess the instability of fine-tuning pretrained language models (PLMs), we study more measures concerning instability at different granularity levels (Summers and Dinneen, 2021; Khurana et al., 2021; Raghu et al., 2017; Kornblith et al., 2019; Ding et al., 2021) and develop a framework to assess their validity."
+            ],
+            "citingPaper": {
+                "paperId": "3a5d09534c47e339672964b585dc52929e15a81e",
+                "externalIds": {
+                    "ACL": "2023.acl-long.342",
+                    "ArXiv": "2302.07778",
+                    "DBLP": "conf/acl/Du023",
+                    "DOI": "10.48550/arXiv.2302.07778",
+                    "CorpusId": 256868814
+                },
+                "corpusId": 256868814,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/3a5d09534c47e339672964b585dc52929e15a81e",
+                "title": "Measuring the Instability of Fine-Tuning",
+                "abstract": "Fine-tuning pre-trained language models on downstream tasks with varying random seeds has been shown to be unstable, especially on small datasets. Many previous studies have investigated this instability and proposed methods to mitigate it. However, most of these studies only used the standard deviation of performance scores (SD) as their measure, which is a narrow characterization of instability. In this paper, we analyze SD and six other measures quantifying instability of different granularity levels. Moreover, we propose a systematic evaluation framework of these measures\u2019 validity. Finally, we analyze the consistency and difference between different measures by reassessing existing instability mitigation methods. We hope our results will inform better measurements of the fine-tuning instability.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1389983751",
+                        "name": "Yupei Du"
+                    },
+                    {
+                        "authorId": "32174562",
+                        "name": "D. Nguyen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Across repeated stochastic retrainings, a training instance\u2019s influence may vary \u2013 potentially substantially [BPF21; SD21; Ras+22]."
+            ],
+            "citingPaper": {
+                "paperId": "8e60324b7f3c1b112f9248f0c9fd287795a347ee",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-04612",
+                    "ArXiv": "2212.04612",
+                    "DOI": "10.48550/arXiv.2212.04612",
+                    "CorpusId": 254535627
+                },
+                "corpusId": 254535627,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8e60324b7f3c1b112f9248f0c9fd287795a347ee",
+                "title": "Training Data Influence Analysis and Estimation: A Survey",
+                "abstract": "Good models require good training data. For overparameterized deep models, the causal relationship between training data and model predictions is increasingly opaque and poorly understood. Influence analysis partially demystifies training's underlying interactions by quantifying the amount each training instance alters the final model. Measuring the training data's influence exactly can be provably hard in the worst case; this has led to the development and use of influence estimators, which only approximate the true influence. This paper provides the first comprehensive survey of training data influence analysis and estimation. We begin by formalizing the various, and in places orthogonal, definitions of training data influence. We then organize state-of-the-art influence analysis methods into a taxonomy; we describe each of these methods in detail and compare their underlying assumptions, asymptotic complexities, and overall strengths and weaknesses. Finally, we propose future research directions to make influence analysis more useful in practice as well as more theoretically and empirically sound. A curated, up-to-date list of resources related to influence analysis is available at https://github.com/ZaydH/influence_analysis_papers.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "37882247",
+                        "name": "Zayd Hammoudeh"
+                    },
+                    {
+                        "authorId": "3021654",
+                        "name": "Daniel Lowd"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "When neural networks are trained with random data shuffling tricks [54, 55], we theoretically suggests the possibility that maximizing I (\u03c6 (X) ; X) in Eq.",
+                "During encoding, we suggest to continue to maximize I (\u03c6 (X) ; X) and apply random data shuffling, a standard trick in real training processes [54, 55], to make the neural network learn samples rather than over-fit sample index."
+            ],
+            "citingPaper": {
+                "paperId": "46f6ee6da02cfee91e86930a981168c304a4e534",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-01744",
+                    "ArXiv": "2212.01744",
+                    "DOI": "10.48550/arXiv.2212.01744",
+                    "CorpusId": 254246831
+                },
+                "corpusId": 254246831,
+                "publicationVenue": {
+                    "id": "349f119f-f4ee-48cf-aedb-89bcb56ab8e3",
+                    "name": "Physical Review Research",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Phys Rev Res"
+                    ],
+                    "issn": "2643-1564",
+                    "url": "https://journals.aps.org/prresearch"
+                },
+                "url": "https://www.semanticscholar.org/paper/46f6ee6da02cfee91e86930a981168c304a4e534",
+                "title": "Statistical Physics of Deep Neural Networks: Initialization toward Optimal Channels",
+                "abstract": "In deep learning, neural networks serve as noisy channels between input data and its representation. This perspective naturally relates deep learning with the pursuit of constructing channels with optimal performance in information transmission and representation. While considerable efforts are concentrated on realizing optimal channel properties during network optimization, we study a frequently overlooked possibility that neural networks can be initialized toward optimal channels. Our theory, consistent with experimental validation, identifies primary mechanics underlying this unknown possibility and suggests intrinsic connections between statistical physics and deep learning. Unlike the conventional theories that characterize neural networks applying the classic mean-filed approximation, we offer analytic proof that this extensively applied simplification scheme is not valid in studying neural networks as information channels. To fill this gap, we develop a corrected mean-field framework applicable for characterizing the limiting behaviors of information propagation in neural networks without strong assumptions on inputs. Based on it, we propose an analytic theory to prove that mutual information maximization is realized between inputs and propagated signals when neural networks are initialized at dynamic isometry, a case where information transmits via norm-preserving mappings. These theoretical predictions are validated by experiments on real neural networks, suggesting the robustness of our theory against finite-size effects. Finally, we analyze our findings with information bottleneck theory to confirm the precise relations among dynamic isometry, mutual information maximization, and optimal channel properties in deep learning.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2178906162",
+                        "name": "Kangyu Weng"
+                    },
+                    {
+                        "authorId": "2142327542",
+                        "name": "Aohua Cheng"
+                    },
+                    {
+                        "authorId": "2144371828",
+                        "name": "Ziyang Zhang"
+                    },
+                    {
+                        "authorId": "2153406541",
+                        "name": "Pei Sun"
+                    },
+                    {
+                        "authorId": "2115469584",
+                        "name": "Yang Tian"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "This is due to nondeterminism during training (Nagarajan and Warnell; Summers and Dinneen, 2021; Madhyastha and Jain, 2019), which includes:"
+            ],
+            "citingPaper": {
+                "paperId": "85f66671ed016359a5edb21169464fac9e0b83aa",
+                "externalIds": {
+                    "ArXiv": "2211.10828",
+                    "DBLP": "journals/corr/abs-2211-10828",
+                    "DOI": "10.48550/arXiv.2211.10828",
+                    "CorpusId": 253735281
+                },
+                "corpusId": 253735281,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/85f66671ed016359a5edb21169464fac9e0b83aa",
+                "title": "Instability in clinical risk stratification models using deep learning",
+                "abstract": "While it has been well known in the ML community that deep learning models suffer from instability, the consequences for healthcare deployments are under characterised. We study the stability of different model architectures trained on electronic health records, using a set of outpatient prediction tasks as a case study. We show that repeated training runs of the same deep learning model on the same training data can result in significantly different outcomes at a patient level even though global performance metrics remain stable. We propose two stability metrics for measuring the effect of randomness of model training, as well as mitigation strategies for improving model stability.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2064770099",
+                        "name": "D. Martinez"
+                    },
+                    {
+                        "authorId": "2139011202",
+                        "name": "A. Yakubovich"
+                    },
+                    {
+                        "authorId": "6454443",
+                        "name": "Martin G. Seneviratne"
+                    },
+                    {
+                        "authorId": "143828990",
+                        "name": "\u00c1. Lelkes"
+                    },
+                    {
+                        "authorId": "98835458",
+                        "name": "Akshit Tyagi"
+                    },
+                    {
+                        "authorId": "31951640",
+                        "name": "Jonas Kemp"
+                    },
+                    {
+                        "authorId": "34673824",
+                        "name": "E. Steinberg"
+                    },
+                    {
+                        "authorId": "3225040",
+                        "name": "N. L. Downing"
+                    },
+                    {
+                        "authorId": "35534358",
+                        "name": "Ron C. Li"
+                    },
+                    {
+                        "authorId": "47277580",
+                        "name": "K. Morse"
+                    },
+                    {
+                        "authorId": "1491329554",
+                        "name": "N. Shah"
+                    },
+                    {
+                        "authorId": "2108632848",
+                        "name": "Ming Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Many factors contribute to irreproducibility [29, 30, 54, 59, 60, 75], including random initialization,"
+            ],
+            "citingPaper": {
+                "paperId": "832744434f60e371141317de7ed50c7a3400f107",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-05310",
+                    "ArXiv": "2209.05310",
+                    "DOI": "10.48550/arXiv.2209.05310",
+                    "CorpusId": 252200167
+                },
+                "corpusId": 252200167,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/832744434f60e371141317de7ed50c7a3400f107",
+                "title": "On the Factory Floor: ML Engineering for Industrial-Scale Ads Recommendation Models",
+                "abstract": "For industrial-scale advertising systems, prediction of ad click-through rate (CTR) is a central problem. Ad clicks constitute a significant class of user engagements and are often used as the primary signal for the usefulness of ads to users. Additionally, in cost-per-click advertising systems where advertisers are charged per click, click rate expectations feed directly into value estimation. Accordingly, CTR model development is a significant investment for most Internet advertising companies. Engineering for such problems requires many machine learning (ML) techniques suited to online learning that go well beyond traditional accuracy improvements, especially concerning efficiency, reproducibility, calibration, credit attribution. We present a case study of practical techniques deployed in Google's search ads CTR model. This paper provides an industry case study highlighting important areas of current ML research and illustrating how impactful new ML methods are evaluated and made useful in a large-scale industrial setting.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1508890387",
+                        "name": "Rohan Anil"
+                    },
+                    {
+                        "authorId": "2230847",
+                        "name": "S. Gadanho"
+                    },
+                    {
+                        "authorId": "92895767",
+                        "name": "Danya Huang"
+                    },
+                    {
+                        "authorId": "2070235098",
+                        "name": "Nijith Jacob"
+                    },
+                    {
+                        "authorId": "2118391467",
+                        "name": "Zhuoshu Li"
+                    },
+                    {
+                        "authorId": "2116442426",
+                        "name": "Dong Lin"
+                    },
+                    {
+                        "authorId": "2054375101",
+                        "name": "Todd Phillips"
+                    },
+                    {
+                        "authorId": "2184674070",
+                        "name": "Cristina Pop"
+                    },
+                    {
+                        "authorId": "2065034805",
+                        "name": "Kevin Regan"
+                    },
+                    {
+                        "authorId": "1743255",
+                        "name": "G. Shamir"
+                    },
+                    {
+                        "authorId": "2934334",
+                        "name": "Rakesh Shivanna"
+                    },
+                    {
+                        "authorId": "34789908",
+                        "name": "Qiqi Yan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[83] Cecilia Summers and Michael J Dinneen.",
+                "intra-rater and inter-rater variability) [55] Consider multiple test set runs to address the variability of results resulting from non-determinism [50] and [83]"
+            ],
+            "citingPaper": {
+                "paperId": "2f2182f8e55be5a85c1316cd1b181cd5c85c106c",
+                "externalIds": {
+                    "ArXiv": "2206.01653",
+                    "CorpusId": 249375598
+                },
+                "corpusId": 249375598,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2f2182f8e55be5a85c1316cd1b181cd5c85c106c",
+                "title": "Metrics reloaded: Recommendations for image analysis validation",
+                "abstract": "Increasing evidence shows that flaws in machine learning (ML) algorithm validation are an underestimated global problem. Particularly in automatic biomedical image analysis, chosen performance metrics often do not reflect the domain interest, thus failing to adequately measure scientific progress and hindering translation of ML techniques into practice. To overcome this, our large international expert consortium created Metrics Reloaded, a comprehensive framework guiding researchers in the problem-aware selection of metrics. Following the convergence of ML methodology across application domains, Metrics Reloaded fosters the convergence of validation methodology. The framework was developed in a multi-stage Delphi process and is based on the novel concept of a problem fingerprint - a structured representation of the given problem that captures all aspects that are relevant for metric selection, from the domain interest to the properties of the target structure(s), data set and algorithm output. Based on the problem fingerprint, users are guided through the process of choosing and applying appropriate validation metrics while being made aware of potential pitfalls. Metrics Reloaded targets image analysis problems that can be interpreted as a classification task at image, object or pixel level, namely image-level classification, object detection, semantic segmentation, and instance segmentation tasks. To improve the user experience, we implemented the framework in the Metrics Reloaded online tool, which also provides a point of access to explore weaknesses, strengths and specific recommendations for the most common validation metrics. The broad applicability of our framework across domains is demonstrated by an instantiation for various biological and medical image analysis use cases.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1397958668",
+                        "name": "L. Maier-Hein"
+                    },
+                    {
+                        "authorId": "47131776",
+                        "name": "Annika Reinke"
+                    },
+                    {
+                        "authorId": "51248761",
+                        "name": "E. Christodoulou"
+                    },
+                    {
+                        "authorId": "1709824",
+                        "name": "Ben Glocker"
+                    },
+                    {
+                        "authorId": "2113240903",
+                        "name": "Patrick Godau"
+                    },
+                    {
+                        "authorId": "7886986",
+                        "name": "F. Isensee"
+                    },
+                    {
+                        "authorId": "2239665",
+                        "name": "J. Kleesiek"
+                    },
+                    {
+                        "authorId": "2718909",
+                        "name": "M. Kozubek"
+                    },
+                    {
+                        "authorId": "21119833",
+                        "name": "M. Reyes"
+                    },
+                    {
+                        "authorId": "10395256",
+                        "name": "M. Riegler"
+                    },
+                    {
+                        "authorId": "12078222",
+                        "name": "M. Wiesenfarth"
+                    },
+                    {
+                        "authorId": "2065793436",
+                        "name": "M. Baumgartner"
+                    },
+                    {
+                        "authorId": "33751657",
+                        "name": "M. Eisenmann"
+                    },
+                    {
+                        "authorId": "2072738748",
+                        "name": "Doreen Heckmann-Notzel"
+                    },
+                    {
+                        "authorId": "3409297",
+                        "name": "A. E. Kavur"
+                    },
+                    {
+                        "authorId": "2072737475",
+                        "name": "Tim Radsch"
+                    },
+                    {
+                        "authorId": "14332753",
+                        "name": "M. Tizabi"
+                    },
+                    {
+                        "authorId": "3748566",
+                        "name": "L. Aci\u00f3n"
+                    },
+                    {
+                        "authorId": "51504413",
+                        "name": "M. Antonelli"
+                    },
+                    {
+                        "authorId": "1699104",
+                        "name": "T. Arbel"
+                    },
+                    {
+                        "authorId": "3199900",
+                        "name": "S. Bakas"
+                    },
+                    {
+                        "authorId": "46741142",
+                        "name": "P. Bankhead"
+                    },
+                    {
+                        "authorId": "1944540",
+                        "name": "Allison Benis"
+                    },
+                    {
+                        "authorId": "66991479",
+                        "name": "M. Cardoso"
+                    },
+                    {
+                        "authorId": "2225413",
+                        "name": "V. Cheplygina"
+                    },
+                    {
+                        "authorId": "6648707",
+                        "name": "B. Cimini"
+                    },
+                    {
+                        "authorId": "2003566",
+                        "name": "G. Collins"
+                    },
+                    {
+                        "authorId": "1781663",
+                        "name": "K. Farahani"
+                    },
+                    {
+                        "authorId": "8038506",
+                        "name": "B. Ginneken"
+                    },
+                    {
+                        "authorId": "65836291",
+                        "name": "Daniel A. Hashimoto"
+                    },
+                    {
+                        "authorId": "35290352",
+                        "name": "M. M. Hoffman"
+                    },
+                    {
+                        "authorId": "38653263",
+                        "name": "M. Huisman"
+                    },
+                    {
+                        "authorId": "1791709",
+                        "name": "P. Jannin"
+                    },
+                    {
+                        "authorId": "1975818",
+                        "name": "Charles E. Kahn"
+                    },
+                    {
+                        "authorId": "2308391",
+                        "name": "A. Karargyris"
+                    },
+                    {
+                        "authorId": "6413143",
+                        "name": "A. Karthikesalingam"
+                    },
+                    {
+                        "authorId": "1711534",
+                        "name": "H. Kenngott"
+                    },
+                    {
+                        "authorId": "1397958699",
+                        "name": "A. Kopp-Schneider"
+                    },
+                    {
+                        "authorId": "3190177",
+                        "name": "A. Kreshuk"
+                    },
+                    {
+                        "authorId": "1753288",
+                        "name": "T. Kur\u00e7"
+                    },
+                    {
+                        "authorId": "1699344",
+                        "name": "B. Landman"
+                    },
+                    {
+                        "authorId": "145959882",
+                        "name": "G. Litjens"
+                    },
+                    {
+                        "authorId": "13533044",
+                        "name": "A. Madani"
+                    },
+                    {
+                        "authorId": "2139962185",
+                        "name": "K. Maier-Hein"
+                    },
+                    {
+                        "authorId": "32057916",
+                        "name": "Anne L. Martel"
+                    },
+                    {
+                        "authorId": "2065823421",
+                        "name": "Peter Mattson"
+                    },
+                    {
+                        "authorId": "1767527",
+                        "name": "E. Meijering"
+                    },
+                    {
+                        "authorId": "143893221",
+                        "name": "Bjoern H Menze"
+                    },
+                    {
+                        "authorId": "1825473",
+                        "name": "D. Moher"
+                    },
+                    {
+                        "authorId": "2091875914",
+                        "name": "K. Moons"
+                    },
+                    {
+                        "authorId": "2065420949",
+                        "name": "H. Muller"
+                    },
+                    {
+                        "authorId": "2067429691",
+                        "name": "Felix Nickel"
+                    },
+                    {
+                        "authorId": "2051891988",
+                        "name": "B. Nichyporuk"
+                    },
+                    {
+                        "authorId": "152800798",
+                        "name": "Jens Petersen"
+                    },
+                    {
+                        "authorId": "1580315694",
+                        "name": "N. Rajpoot"
+                    },
+                    {
+                        "authorId": "3180607",
+                        "name": "Nicola Rieke"
+                    },
+                    {
+                        "authorId": "1400885451",
+                        "name": "J. Saez-Rodriguez"
+                    },
+                    {
+                        "authorId": "2168027547",
+                        "name": "Clarisa S'anchez Guti'errez"
+                    },
+                    {
+                        "authorId": "2894170",
+                        "name": "S. Shetty"
+                    },
+                    {
+                        "authorId": "8665950",
+                        "name": "M. Smeden"
+                    },
+                    {
+                        "authorId": "1697589",
+                        "name": "C. Sudre"
+                    },
+                    {
+                        "authorId": "2134691069",
+                        "name": "Ronald M. Summers"
+                    },
+                    {
+                        "authorId": "39092963",
+                        "name": "A. Taha"
+                    },
+                    {
+                        "authorId": "1919157",
+                        "name": "S. Tsaftaris"
+                    },
+                    {
+                        "authorId": "3069639",
+                        "name": "B. Calster"
+                    },
+                    {
+                        "authorId": "3025780",
+                        "name": "G. Varoquaux"
+                    },
+                    {
+                        "authorId": "1661131601",
+                        "name": "Paul F. Jager"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "fb1dd165f12c7cf03dd75bfd7d96a755674a09bc",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/KirchheimFO22",
+                    "DOI": "10.1109/CVPRW56347.2022.00481",
+                    "CorpusId": 251031256
+                },
+                "corpusId": 251031256,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/fb1dd165f12c7cf03dd75bfd7d96a755674a09bc",
+                "title": "PyTorch-OOD: A Library for Out-of-Distribution Detection based on PyTorch",
+                "abstract": "Machine Learning models based on Deep Neural Networks behave unpredictably when presented with inputs that do not stem from the training distribution and sometimes make egregiously wrong predictions with high confidence. This property undermines the trustworthiness of systems depending on such models and potentially threatens the safety of their users. Out-of-Distribution (OOD) detection mechanisms can be used to prevent errors by detecting inputs that are so dissimilar from the training set that the model can not be expected to make reliable predictions. In this paper, we present PyTorch-OOD, a Python library for OOD detection based on PyTorch. Its primary goals are to accelerate OOD detection research and improve the reproducibility and comparability of experiments. PyTorch-OOD provides well-tested and documented implementations of OOD detection methods with a unified interface, as well as training and benchmark datasets, architectures, pre-trained models, and utility functions. The library is available online 1 under the permissive Apache 2.0 license and can be installed via Python Package Index (PyPI).",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51350573",
+                        "name": "Konstantin Kirchheim"
+                    },
+                    {
+                        "authorId": "3415688",
+                        "name": "Marco Filax"
+                    },
+                    {
+                        "authorId": "2421227",
+                        "name": "F. Ortmeier"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "As noted in many studies on the reproducibility of neural network training, the learning stochasticity can introduce large variations into the predictive performance of deep learning models (Summers and Dinneen, 2021; Zhuang et al., 2022; Raste et al., 2022)."
+            ],
+            "citingPaper": {
+                "paperId": "6fa3f84affb5af66ec3fe94e618e0124493bb28e",
+                "externalIds": {
+                    "DBLP": "conf/aistats/WangJ23",
+                    "ArXiv": "2205.15466",
+                    "CorpusId": 253098288
+                },
+                "corpusId": 253098288,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6fa3f84affb5af66ec3fe94e618e0124493bb28e",
+                "title": "Data Banzhaf: A Robust Data Valuation Framework for Machine Learning",
+                "abstract": "Data valuation has wide use cases in machine learning, including improving data quality and creating economic incentives for data sharing. This paper studies the robustness of data valuation to noisy model performance scores. Particularly, we find that the inherent randomness of the widely used stochastic gradient descent can cause existing data value notions (e.g., the Shapley value and the Leave-one-out error) to produce inconsistent data value rankings across different runs. To address this challenge, we introduce the concept of safety margin, which measures the robustness of a data value notion. We show that the Banzhaf value, a famous value notion that originated from cooperative game theory literature, achieves the largest safety margin among all semivalues (a class of value notions that satisfy crucial properties entailed by ML applications and include the famous Shapley value and Leave-one-out error). We propose an algorithm to efficiently estimate the Banzhaf value based on the Maximum Sample Reuse (MSR) principle. Our evaluation demonstrates that the Banzhaf value outperforms the existing semivalue-based data value notions on several ML tasks such as learning with weighted samples and noisy label detection. Overall, our study suggests that when the underlying ML algorithm is stochastic, the Banzhaf value is a promising alternative to the other semivalue-based data value schemes given its computational advantage and ability to robustly differentiate data quality.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2130518057",
+                        "name": "Jiachen T. Wang"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "For example, by regularizing labels [1,13], distillation [2,7], ensembling techniques [16,18], or data augmentation",
+                "Due to this importance, there has been a recent surge of work studying the prediction instability of machine learning models [2,7,10,13,16,18,22].",
+                "However, recent research has found that due to random factors, such as random initializations or undetermined orderings of parallel operations on GPUs, different training runs can lead to significantly different predictions for a significant part of the (test) instances, see for example [2,18,22].",
+                "For the CNNs in the work by Summers and Dineen [18], even single bit changes lead to significantly different models."
+            ],
+            "citingPaper": {
+                "paperId": "bb72cceaa0ae0bb82d02d55e84e8207f8bcad1ee",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-10070",
+                    "ArXiv": "2205.10070",
+                    "DOI": "10.48550/arXiv.2205.10070",
+                    "CorpusId": 248965070
+                },
+                "corpusId": 248965070,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/bb72cceaa0ae0bb82d02d55e84e8207f8bcad1ee",
+                "title": "On the Prediction Instability of Graph Neural Networks",
+                "abstract": "Instability of trained models, i.e., the dependence of individual node predictions on random factors, can affect reproducibility, reliability, and trust in machine learning systems. In this paper, we systematically assess the prediction instability of node classification with state-of-the-art Graph Neural Networks (GNNs). With our experiments, we establish that multiple instantiations of popular GNN models trained on the same data with the same model hyperparameters result in almost identical aggregated performance but display substantial disagreement in the predictions for individual nodes. We find that up to one third of the incorrectly classified nodes differ across algorithm runs. We identify correlations between hyperparameters, node properties, and the size of the training set with the stability of predictions. In general, maximizing model performance implicitly also reduces model instability.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1707027340",
+                        "name": "Max Klabunde"
+                    },
+                    {
+                        "authorId": "2101037",
+                        "name": "F. Lemmerich"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Reproducibility:Many factors contribute to irreproducibility in deep models [13, 18, 19, 44, 48, 49, 56].",
+                "The highly non-convex objective [18], combined with nondterminism in training [49] and"
+            ],
+            "citingPaper": {
+                "paperId": "4660204acfd78b9aa5785021d6167724fe05e99a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-06499",
+                    "ArXiv": "2202.06499",
+                    "CorpusId": 246823262
+                },
+                "corpusId": 246823262,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/4660204acfd78b9aa5785021d6167724fe05e99a",
+                "title": "Real World Large Scale Recommendation Systems Reproducibility and Smooth Activations",
+                "abstract": "Real world recommendation systems influence a constantly growing set of domains. With deep networks, that now drive such systems, recommendations have been more relevant to the user's interests and tasks. However, they may not always be reproducible even if produced by the same system for the same user, recommendation sequence, request, or query. This problem received almost no attention in academic publications, but is, in fact, very realistic and critical in real production systems. We consider reproducibility of real large scale deep models, whose predictions determine such recommendations. We demonstrate that the celebrated Rectified Linear Unit (ReLU) activation, used in deep models, can be a major contributor to irreproducibility. We propose the use of smooth activations to improve recommendation reproducibility. We describe a novel family of smooth activations; Smooth ReLU (SmeLU), designed to improve reproducibility with mathematical simplicity, with potentially cheaper implementation. SmeLU is a member of a wider family of smooth activations. While other techniques that improve reproducibility in real systems usually come at accuracy costs, smooth activations not only improve reproducibility, but can even give accuracy gains. We report metrics from real systems in which we were able to productionalize SmeLU with substantial reproducibility gains and better accuracy-reproducibility trade-offs. These include click-through-rate (CTR) prediction systems, content, and application recommendation systems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1743255",
+                        "name": "G. Shamir"
+                    },
+                    {
+                        "authorId": "2116442426",
+                        "name": "Dong Lin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "\u2026may be caused by multiple factors [D\u2019Amour et al., 2020, Fort et al., 2020, Frankle et al., 2020, Shallue et al., 2018, Snapp and Shamir, 2021, Summers and Dinneen, 2021], such as nonconvexity of the objective, random initialization, nondeterminism in training such as data shuffling,\u2026",
+                "Recent papers [Chen et al., 2020, D\u2019Amour et al., 2020, Dusenberry et al., 2020, Snapp and Shamir, 2021, Summers and Dinneen, 2021, Yu et al., 2021] have also demonstrated that even when models are trained on identical datasets with identical optimization algorithms, architectures, and\u2026"
+            ],
+            "citingPaper": {
+                "paperId": "4e1027255b0eba4212c2a168c9ac0a9e85aeca0d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-04598",
+                    "ArXiv": "2202.04598",
+                    "CorpusId": 246680050
+                },
+                "corpusId": 246680050,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4e1027255b0eba4212c2a168c9ac0a9e85aeca0d",
+                "title": "Reproducibility in Optimization: Theoretical Framework and Limits",
+                "abstract": "We initiate a formal study of reproducibility in optimization. We define a quantitative measure of reproducibility of optimization procedures in the face of noisy or error-prone operations such as inexact or stochastic gradient computations or inexact initialization. We then analyze several convex optimization settings of interest such as smooth, non-smooth, and strongly-convex objective functions and establish tight bounds on the limits of reproducibility in each setting. Our analysis reveals a fundamental trade-off between computation and reproducibility: more computation is necessary (and sufficient) for better reproducibility.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "9036928",
+                        "name": "Kwangjun Ahn"
+                    },
+                    {
+                        "authorId": "48964143",
+                        "name": "Prateek Jain"
+                    },
+                    {
+                        "authorId": "2099822432",
+                        "name": "Ziwei Ji"
+                    },
+                    {
+                        "authorId": "144055676",
+                        "name": "Satyen Kale"
+                    },
+                    {
+                        "authorId": "1751626",
+                        "name": "Praneeth Netrapalli"
+                    },
+                    {
+                        "authorId": "1743255",
+                        "name": "G. Shamir"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "328796c69ba042ea4735f1ba1c090379740cf584",
+                "externalIds": {
+                    "ArXiv": "2110.06435",
+                    "CorpusId": 249848300
+                },
+                "corpusId": 249848300,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/328796c69ba042ea4735f1ba1c090379740cf584",
+                "title": "Dropout Prediction Uncertainty Estimation Using Neuron Activation Strength",
+                "abstract": "Dropout has been commonly used to quantify prediction uncertainty, i.e, the variations of model predictions on a given input example. However, using dropout in practice can be expensive as it requires running dropout inferences many times. In this paper, we study how to estimate dropout prediction uncertainty in a resource-efficient manner. We demonstrate that we can use neuron activation strengths to estimate dropout prediction uncertainty under different dropout settings and on a variety of tasks using three large datasets, MovieLens, Criteo, and EMNIST. Our approach provides an inference-once method to estimate dropout prediction uncertainty as a cheap auxiliary task. We also demonstrate that using activation features from a subset of the neural network layers can be sufficient to achieve uncertainty estimation performance almost comparable to that of using activation features from all layers, thus reducing resources even further for uncertainty estimation.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2119315730",
+                        "name": "Haichao Yu"
+                    },
+                    {
+                        "authorId": "2117037227",
+                        "name": "Zhe Chen"
+                    },
+                    {
+                        "authorId": "2116442426",
+                        "name": "Dong Lin"
+                    },
+                    {
+                        "authorId": "1743255",
+                        "name": "G. Shamir"
+                    },
+                    {
+                        "authorId": "2111717256",
+                        "name": "Jie Han"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "26 Recent work has disproportionately focused on the impact of algorithm design choices on model 27 replicability [52, 46, 77, 74, 69, 45, 22].",
+                "[77] benchmark the separate impact of choices of initialization, data shuffling and augmentation.",
+                "Recent work has disproportionately focused on the impact of algorithm design choices on model replicability (Nagarajan et al., 2018; Madhyastha & Jain, 2019; Summers & Dinneen, 2021; Snapp & Shamir, 2021; Shamir et al., 2020; Lucic et al., 2018; Henderson et al., 2017).",
+                "(Summers & Dinneen, 2021) benchmark the separate impact of choices of initialization, data shuffling and augmentation."
+            ],
+            "citingPaper": {
+                "paperId": "24388c7d65f74239ecb3e7985f7e91a39e356287",
+                "externalIds": {
+                    "ArXiv": "2106.11872",
+                    "DBLP": "conf/mlsys/ZhuangZSH22",
+                    "CorpusId": 235593009
+                },
+                "corpusId": 235593009,
+                "publicationVenue": {
+                    "id": "3bcf77b3-860b-4dd7-84ae-9fe9414c6c6a",
+                    "name": "Conference on Machine Learning and Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MLSys",
+                        "Conf Mach Learn Syst"
+                    ],
+                    "url": "https://mlsys.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/24388c7d65f74239ecb3e7985f7e91a39e356287",
+                "title": "Randomness In Neural Network Training: Characterizing The Impact of Tooling",
+                "abstract": "The quest for determinism in machine learning has disproportionately focused on characterizing the impact of noise introduced by algorithmic design choices. In this work, we address a less well understood and studied question: how does our choice of tooling introduce randomness to deep neural network training. We conduct large scale experiments across different types of hardware, accelerators, state of art networks, and open-source datasets, to characterize how tooling choices contribute to the level of non-determinism in a system, the impact of said non-determinism, and the cost of eliminating different sources of noise. Our findings are surprising, and suggest that the impact of non-determinism in nuanced. While top-line metrics such as top-1 accuracy are not noticeably impacted, model performance on certain parts of the data distribution is far more sensitive to the introduction of randomness. Our results suggest that deterministic tooling is critical for AI safety. However, we also find that the cost of ensuring determinism varies dramatically between neural network architectures and hardware types, e.g., with overhead up to $746\\%$, $241\\%$, and $196\\%$ on a spectrum of widely used GPU accelerator architectures, relative to non-deterministic training. The source code used in this paper is available at https://github.com/usyd-fsalab/NeuralNetworkRandomness.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2057090115",
+                        "name": "Donglin Zhuang"
+                    },
+                    {
+                        "authorId": "2944745",
+                        "name": "Xingyao Zhang"
+                    },
+                    {
+                        "authorId": "1798309",
+                        "name": "S. Song"
+                    },
+                    {
+                        "authorId": "50237813",
+                        "name": "Sara Hooker"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "While augmentation of data in training and stochastic regularization randomly applied in training (Summers & Dinneen, 2021) also influence irreproducibility, we do not consider these here, as they are in a different category of directly and intentionally adding randomness.",
+                "For such models, nondeterminism in training may lead optimizers to different optima (Summers & Dinneen, 2021) (see also Nagarajan et al. (2018)), that depend on the training randomness (Achille et al., 2017; Bengio et al., 2009).",
+                "D\u2019Amour et al. (2020); Summers & Dinneen (2021) recently studied the irreproducibitily problem on benchmark data-sets."
+            ],
+            "citingPaper": {
+                "paperId": "b87fa953fc10d1fd8c17f254b8a8eb92c7dd33bb",
+                "externalIds": {
+                    "ArXiv": "2102.10696",
+                    "DBLP": "journals/corr/abs-2102-10696",
+                    "CorpusId": 231985882
+                },
+                "corpusId": 231985882,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b87fa953fc10d1fd8c17f254b8a8eb92c7dd33bb",
+                "title": "Synthesizing Irreproducibility in Deep Networks",
+                "abstract": "The success and superior performance of deep networks is spreading their popularity and use to an increasing number of applications. Very recent works, however, demonstrate that modern day deep networks suffer from irreproducibility (also referred to as nondeterminism or underspecification). Two or more models that are identical in architecture, structure, training hyper-parameters, and parameters, and that are trained on exactly the same training data, yield different predictions on individual previously unseen examples. Thus, a model that performs well on controlled test data, may perform in unexpected ways when deployed in the real world, whose data is expected to be similar to the test data. We study simple synthetic models and data to understand the origins of these problems. We show that even with a single nonlinearity and for very simple data and models, irreproducibility occurs. Our study demonstrates the effects of randomness in initialization, training data shuffling window size, and activation functions on prediction irreproducibility, even under very controlled synthetic data. While, as one would expect, randomness in initialization and in shuffling the training examples exacerbates the phenomenon, we show that model complexity and the choice of nonlinearity also play significant roles in making deep models irreproducible.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2802766",
+                        "name": "R. Snapp"
+                    },
+                    {
+                        "authorId": "1743255",
+                        "name": "G. Shamir"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "1c18418f062039e31bc9dc145c1f07b041c1a3fd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2110-06435",
+                    "CorpusId": 238744013
+                },
+                "corpusId": 238744013,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/1c18418f062039e31bc9dc145c1f07b041c1a3fd",
+                "title": "Dropout Prediction Variation Estimation Using Neuron Activation Strength",
+                "abstract": "It is well-known DNNs would generate different prediction results even given the same model configuration and training dataset. As a result, it becomes more and more important to study prediction variation, i.e. the variation of the predictions on a given input example, in neural network models. Dropout has been commonly used in various applications to quantify prediction variations. However, using dropout in practice can be expensive as it requires running dropout inference many times to estimate prediction variation. In this paper, we study how to estimate dropout prediction variation in a resource-efficient manner. In particular, we demonstrate that we can use neuron activation strength to estimate dropout prediction variation under different dropout settings and on a variety of tasks using three large datasets, MovieLens, Criteo, and EMNIST. Our approach provides an inference-once alternative to estimate dropout prediction variation as an auxiliary task when the main prediction model is served. Moreover, we show that using activation strength features from a subset of neural network layers can be sufficient to achieve similar variation estimation performance compared to using activation features from all layers. This can provide further resource reduction for variation estimation.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2119315730",
+                        "name": "Haichao Yu"
+                    },
+                    {
+                        "authorId": "2117037227",
+                        "name": "Zhe Chen"
+                    },
+                    {
+                        "authorId": "2116442426",
+                        "name": "Dong Lin"
+                    },
+                    {
+                        "authorId": "1743255",
+                        "name": "G. Shamir"
+                    },
+                    {
+                        "authorId": "2111717256",
+                        "name": "Jie Han"
+                    }
+                ]
+            }
+        }
+    ]
+}

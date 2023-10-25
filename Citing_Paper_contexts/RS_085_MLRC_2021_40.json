@@ -1,0 +1,2460 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "894df6e5d0f34014e6a67b2d5f43e2bde91f63e3",
+                "externalIds": {
+                    "ArXiv": "2310.00603",
+                    "CorpusId": 263334113
+                },
+                "corpusId": 263334113,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/894df6e5d0f34014e6a67b2d5f43e2bde91f63e3",
+                "title": "Faithful Explanations of Black-box NLP Models Using LLM-generated Counterfactuals",
+                "abstract": "Causal explanations of the predictions of NLP systems are essential to ensure safety and establish trust. Yet, existing methods often fall short of explaining model predictions effectively or efficiently and are often model-specific. In this paper, we address model-agnostic explanations, proposing two approaches for counterfactual (CF) approximation. The first approach is CF generation, where a large language model (LLM) is prompted to change a specific text concept while keeping confounding concepts unchanged. While this approach is demonstrated to be very effective, applying LLM at inference-time is costly. We hence present a second approach based on matching, and propose a method that is guided by an LLM at training-time and learns a dedicated embedding space. This space is faithful to a given causal graph and effectively serves to identify matches that approximate CFs. After showing theoretically that approximating CFs is required in order to construct faithful explanations, we benchmark our approaches and explain several models, including LLMs with billions of parameters. Our empirical results demonstrate the excellent performance of CF generation models as model-agnostic explainers. Moreover, our matching approach, which requires far less test-time resources, also provides effective explanations, surpassing many baselines. We also find that Top-K techniques universally improve every tested method. Finally, we showcase the potential of LLMs in constructing new benchmarks for model explanation and subsequently validate our conclusions. Our work illuminates new pathways for efficient and accurate approaches to interpreting NLP systems.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2166789313",
+                        "name": "Y. Gat"
+                    },
+                    {
+                        "authorId": "2135910736",
+                        "name": "Nitay Calderon"
+                    },
+                    {
+                        "authorId": "2249759103",
+                        "name": "Amir Feder"
+                    },
+                    {
+                        "authorId": "2249758894",
+                        "name": "Alexander Chapanin"
+                    },
+                    {
+                        "authorId": "2249959434",
+                        "name": "Amit Sharma"
+                    },
+                    {
+                        "authorId": "2249760179",
+                        "name": "Roi Reichart"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Similarly, the SOS bias scores measured using the NCSP metric in the inspected static word embeddings, are limited to the used word lists, and even if I use two different swear word lists and identity terms that are coherent according to (Antoniak and Mimno, 2021), using other word lists may give different results.",
+                "This lack of positive correlation could be due to limitations in the used metrics to measure social bias in static word embeddings (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "2447cefe817cf267cc46d8f2c9cdb4878c896b39",
+                "externalIds": {
+                    "ArXiv": "2308.16549",
+                    "DBLP": "journals/corr/abs-2308-16549",
+                    "DOI": "10.48550/arXiv.2308.16549",
+                    "CorpusId": 261395739
+                },
+                "corpusId": 261395739,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2447cefe817cf267cc46d8f2c9cdb4878c896b39",
+                "title": "Thesis Distillation: Investigating The Impact of Bias in NLP Models on Hate Speech Detection",
+                "abstract": "This paper is a summary of the work in my PhD thesis. In which, I investigate the impact of bias in NLP models on the task of hate speech detection from three perspectives: explainability, offensive stereotyping bias, and fairness. I discuss the main takeaways from my thesis and how they can benefit the broader NLP community. Finally, I discuss important future research directions. The findings of my thesis suggest that bias in NLP models impacts the task of hate speech detection from all three perspectives. And that unless we start incorporating social sciences in studying bias in NLP models, we will not effectively overcome the current limitations of measuring and mitigating bias in NLP models.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "117575452",
+                        "name": "Fatma Elsafoury"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "of target sets and attribute words are modified (Du et al., 2021; Antoniak and Mimno, 2021).",
+                "Additionally, it has been shown that distance-based metrics can change considerably with different initialization (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "423f507b0293743846e29c53de548c8bbc5551e3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-08158",
+                    "ArXiv": "2306.08158",
+                    "DOI": "10.48550/arXiv.2306.08158",
+                    "CorpusId": 259164882
+                },
+                "corpusId": 259164882,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/423f507b0293743846e29c53de548c8bbc5551e3",
+                "title": "Survey on Sociodemographic Bias in Natural Language Processing",
+                "abstract": "Deep neural networks often learn unintended bias during training, which might have harmful effects when deployed in real-world settings. This work surveys 214 papers related to sociodemographic bias in natural language processing (NLP). In this study, we aim to provide a more comprehensive understanding of the similarities and differences among approaches to sociodemographic bias in NLP. To better understand the distinction between bias and real-world harm, we turn to ideas from psychology and behavioral economics to propose a definition for sociodemographic bias. We identify three main categories of NLP bias research: types of bias, quantifying bias, and debiasing techniques. We highlight the current trends in quantifying bias and debiasing techniques, offering insights into their strengths and weaknesses. We conclude that current approaches on quantifying bias face reliability issues, that many of the bias metrics do not relate to real-world bias, and that debiasing techniques need to focus more on training methods. Finally, we provide recommendations for future work.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2110652561",
+                        "name": "Vipul Gupta"
+                    },
+                    {
+                        "authorId": "2053812167",
+                        "name": "P. Venkit"
+                    },
+                    {
+                        "authorId": "31950200",
+                        "name": "Shomir Wilson"
+                    },
+                    {
+                        "authorId": "1703046",
+                        "name": "R. Passonneau"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "This is prone to instability and data quality issues (Antoniak and Mimno, 2021; Blodgett et al., 2021) and difficult to adapt across languages."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "34841fc57eb734c8297d1c079b57cfc7ce53e67f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-13302",
+                    "ArXiv": "2305.13302",
+                    "DOI": "10.48550/arXiv.2305.13302",
+                    "CorpusId": 258832603
+                },
+                "corpusId": 258832603,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/34841fc57eb734c8297d1c079b57cfc7ce53e67f",
+                "title": "Language-Agnostic Bias Detection in Language Models",
+                "abstract": "Pretrained language models (PLMs) are key components in NLP, but they contain strong social biases. Quantifying these biases is challenging because current methods focusing on fill-the-mask objectives are sensitive to slight changes in input. To address this, we propose LABDet, a robust language-agnostic method for evaluating bias in PLMs. For nationality as a case study, we show that LABDet\"surfaces\"nationality bias by training a classifier on top of a frozen PLM on non-nationality sentiment detection. Collaborating with political scientists, we find consistent patterns of nationality bias across monolingual PLMs in six languages that align with historical and political context. We also show for English BERT that bias surfaced by LABDet correlates well with bias in the pretraining data; thus, our work is one of the few studies that directly links pretraining data to PLM behavior. Finally, we verify LABDet's reliability and applicability to different templates and languages through an extensive set of robustness checks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1999179692",
+                        "name": "Abdullatif K\u00f6ksal"
+                    },
+                    {
+                        "authorId": "2061810453",
+                        "name": "Omer F. Yalcin"
+                    },
+                    {
+                        "authorId": "2161676753",
+                        "name": "Ahmet Akbiyik"
+                    },
+                    {
+                        "authorId": "118748006",
+                        "name": "M. Kilavuz"
+                    },
+                    {
+                        "authorId": "145762466",
+                        "name": "A. Korhonen"
+                    },
+                    {
+                        "authorId": "144418438",
+                        "name": "Hinrich Sch\u00fctze"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "d0981a35d68d9fa6584d00ec1b2bd2fefde78f13",
+                "externalIds": {
+                    "DOI": "10.1080/10584609.2023.2207492",
+                    "CorpusId": 258636447
+                },
+                "corpusId": 258636447,
+                "publicationVenue": {
+                    "id": "6f7fcf58-7ff4-483c-83a1-fabdb777b6bb",
+                    "name": "Political Communication",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Political Commun"
+                    ],
+                    "issn": "1058-4609",
+                    "url": "http://www.catchword.com/rpsv/cw/tandf/10917675/contp1.htm",
+                    "alternate_urls": [
+                        "http://www.tandfonline.com/loi/upcp20",
+                        "http://www.tandfonline.com/toc/upcp20/current"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d0981a35d68d9fa6584d00ec1b2bd2fefde78f13",
+                "title": "Propagandization of Relative Gratification: How Chinese State Media Portray the International Pandemic",
+                "abstract": "ABSTRACT While many previous studies have investigated propaganda in connection with misinformation, disinformation, or \u201cfake news\u201d campaigns, they have given insufficient attention to the political messages which are not squarely factually inaccurate but manipulated. This study identifies a political communication strategy, the propagandization of relative gratification, through which propaganda media 1) highlight global chaos to nudge the public\u2019s downward comparison to a relatively stable domestic situation; 2) portray the nation\u2019s adversaries as worse than its allies; and 3) leverages the public\u2019s anti-foreign attitude. This study empirically examines Chinese state media\u2019s approach to the coverage of the COVID-19 pandemic in 46 countries in 2020 by analyzing more than 3 million Chinese social media posts using the semantic similarity found in word embedding models. The results reveal that the global pandemic was depicted by the state media as generally more severe than China\u2019s domestic situation. The more distant a foreign country\u2019s relationship with China, the more severe its COVID-19 representation in China\u2019s propaganda, deviating from the country\u2019s actual epidemiological severity and what the Chinese general public thinks about it, indicating that a country\u2019s relationship with China is an important predictor of how its COVID-19 severity was presented in China\u2019s state media. This study extends the understanding of the sophisticated nature of propaganda in the current era.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "40109654",
+                        "name": "King-wa Fu"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "In this work, we define social bias as the unbalanced disposition (or prejudice) in favor of or against a thing, person or group, relative to another, in a way that is deemed as unfair (Adewumi et al., 2019; Antoniak and Mimno, 2021; Maddox, 2004).",
+                "The lexica are adapted from public sources(4) and may be expanded as the need arises, given that bias terms and attitudes are ever evolving (Antoniak and Mimno, 2021; Haemmerlie and Montgomery, 1991)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7afac8aa4d64dd81023df2acb8615d23ceea3767",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-04029",
+                    "ArXiv": "2304.04029",
+                    "DOI": "10.48550/arXiv.2304.04029",
+                    "CorpusId": 258049205
+                },
+                "corpusId": 258049205,
+                "publicationVenue": {
+                    "id": "b9c462e2-3c38-4569-be08-59ccd0e270f5",
+                    "name": "Natural Language Processing Journal",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Nat Lang Process J"
+                    ],
+                    "issn": "2949-7191"
+                },
+                "url": "https://www.semanticscholar.org/paper/7afac8aa4d64dd81023df2acb8615d23ceea3767",
+                "title": "Bipol: A Novel Multi-Axes Bias Evaluation Metric with Explainability for NLP",
+                "abstract": "We introduce bipol, a new metric with explainability, for estimating social bias in text data. Harmful bias is prevalent in many online sources of data that are used for training machine learning (ML) models. In a step to address this challenge we create a novel metric that involves a two-step process: corpus-level evaluation based on model classification and sentence-level evaluation based on (sensitive) term frequency (TF). After creating new models to detect bias along multiple axes using SotA architectures, we evaluate two popular NLP datasets (COPA and SQUAD). As additional contribution, we created a large dataset (with almost 2 million labelled samples) for training models in bias detection and make it publicly available. We also make public our codes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2056905102",
+                        "name": "Lama Alkhaled"
+                    },
+                    {
+                        "authorId": "51221489",
+                        "name": "Tosin P. Adewumi"
+                    },
+                    {
+                        "authorId": "2094705823",
+                        "name": "Sana Sabry"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "specific choices of templates, prompts, lexicon seeds, metrics, sampling strategies is also a concern (Aky\u00fcrek et al., 2022; Antoniak and Mimno, 2021; Delobelle et al., 2021).",
+                "The lack of robustness of the proposed metrics w.r.t. specific choices of templates, prompts, lexicon seeds, metrics, sampling strategies is also a concern (Aky\u00fcrek et al., 2022; Antoniak and Mimno, 2021; Delobelle et al., 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "78665358e27c6c09fbb99b7642b70834666993b9",
+                "externalIds": {
+                    "DBLP": "conf/eacl/PikuliakBB23",
+                    "ACL": "2023.eacl-main.265",
+                    "ArXiv": "2302.12640",
+                    "DOI": "10.48550/arXiv.2302.12640",
+                    "CorpusId": 257205850
+                },
+                "corpusId": 257205850,
+                "publicationVenue": {
+                    "id": "8de18c35-6785-4e54-99f2-21ee961302c6",
+                    "name": "Conference of the European Chapter of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conf Eur Chapter Assoc Comput Linguistics",
+                        "EACL"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/eacl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/78665358e27c6c09fbb99b7642b70834666993b9",
+                "title": "In-Depth Look at Word Filling Societal Bias Measures",
+                "abstract": "Many measures of societal bias in language models have been proposed in recent years. A popular approach is to use a set of word filling prompts to evaluate the behavior of the language models. In this work, we analyze the validity of two such measures \u2013 StereoSet and CrowS-Pairs. We show that these measures produce unexpected and illogical results when appropriate control group samples are constructed. Based on this, we believe that they are problematic and using them in the future should be reconsidered. We propose a way forward with an improved testing protocol. Finally, we also introduce a new gender bias dataset for Slovak.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "41035038",
+                        "name": "Mat\u00fa\u0161 Pikuliak"
+                    },
+                    {
+                        "authorId": "2210083502",
+                        "name": "Ivana Benov\u00e1"
+                    },
+                    {
+                        "authorId": "2209876895",
+                        "name": "Viktor Bachrat'y"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Biased opinions arise from differing attitudes toward different groups, and in the biased expression, dominant and marginalized groups are usually assigned different attribute tags [5, 11, 18].",
+                "Aside from exploring at the linguistic level [5, 18, 93, 94], some works investigate stereotypes and biases against different groups based on supervised datasets related to gender, race, religion, and immigrants [11, 120], aiming to develop more robust detectors and fairer generation models."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "66257bde615ca0674292d121f49113c9d18cdf31",
+                "externalIds": {
+                    "ArXiv": "2302.09270",
+                    "DBLP": "journals/corr/abs-2302-09270",
+                    "DOI": "10.48550/arXiv.2302.09270",
+                    "CorpusId": 257038929
+                },
+                "corpusId": 257038929,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/66257bde615ca0674292d121f49113c9d18cdf31",
+                "title": "Recent Advances towards Safe, Responsible, and Moral Dialogue Systems: A Survey",
+                "abstract": "With the development of artificial intelligence, dialogue systems have been endowed with amazing chit-chat capabilities, and there is widespread interest and discussion about whether the generated contents are socially beneficial. In this paper, we present a new perspective of research scope towards building a safe, responsible, and modal dialogue system, including 1) abusive and toxic contents, 2) unfairness and discrimination, 3) ethics and morality issues, and 4) risk of misleading and privacy information. Besides, we review the mainstream methods for evaluating the safety of large models from the perspectives of exposure and detection of safety issues. The recent advances in methodologies for the safety improvement of both end-to-end dialogue systems and pipeline-based models are further introduced. Finally, we discussed six existing challenges towards responsible AI: explainable safety monitoring, continuous learning of safety issues, robustness against malicious attacks, multimodal information processing, unified research framework, and multidisciplinary theory integration. We hope this survey will inspire further research toward safer dialogue systems.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2090444914",
+                        "name": "Jiawen Deng"
+                    },
+                    {
+                        "authorId": "144990601",
+                        "name": "Hao Sun"
+                    },
+                    {
+                        "authorId": "101371510",
+                        "name": "Zhexin Zhang"
+                    },
+                    {
+                        "authorId": "2109077637",
+                        "name": "Jiale Cheng"
+                    },
+                    {
+                        "authorId": "2196817617",
+                        "name": "Minlie Huang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "b7b798b7f1c510eedf8852d9b4ef9013dd3e099b",
+                "externalIds": {
+                    "ArXiv": "2302.08497",
+                    "DBLP": "journals/corr/abs-2302-08497",
+                    "DOI": "10.1145/3544548.3581308",
+                    "CorpusId": 256901136
+                },
+                "corpusId": 256901136,
+                "publicationVenue": {
+                    "id": "b55b50b1-aae7-47a7-b042-8aecc930073d",
+                    "name": "International Conference on Human Factors in Computing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CHI",
+                        "Int Conf Hum Factor Comput Syst",
+                        "Human Factors in Computing Systems",
+                        "Conference on Human Interface",
+                        "Conf Hum Interface",
+                        "Hum Factor Comput Syst"
+                    ],
+                    "url": "http://www.acm.org/sigchi/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b7b798b7f1c510eedf8852d9b4ef9013dd3e099b",
+                "title": "Rethinking \"Risk\" in Algorithmic Systems Through A Computational Narrative Analysis of Casenotes in Child-Welfare",
+                "abstract": "Risk assessment algorithms are being adopted by public sector agencies to make high-stakes decisions about human lives. Algorithms model \u201crisk\u201d based on individual client characteristics to identify clients most in need. However, this understanding of risk is primarily based on easily quantifiable risk factors that present an incomplete and biased perspective of clients. We conducted a computational narrative analysis of child-welfare casenotes and draw attention to deeper systemic risk factors that are hard to quantify but directly impact families and street-level decision-making. We found that beyond individual risk factors, the system itself poses a significant amount of risk where parents are over-surveilled by caseworkers and lack agency in decision-making processes. We also problematize the notion of risk as a static construct by highlighting the temporality and mediating effects of different risk, protective, systemic, and procedural factors. Finally, we draw caution against using casenotes in NLP-based systems by unpacking their limitations and biases embedded within them.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "117108642",
+                        "name": "Devansh Saxena"
+                    },
+                    {
+                        "authorId": "2047117945",
+                        "name": "Erin Moon"
+                    },
+                    {
+                        "authorId": "2205921505",
+                        "name": "Aryan Chaurasia"
+                    },
+                    {
+                        "authorId": "2205946295",
+                        "name": "Yixin Guan"
+                    },
+                    {
+                        "authorId": "2345714",
+                        "name": "Shion Guha"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "7cfa0bbf0c250b770b34da9731f9f96b99aa82da",
+                "externalIds": {
+                    "ArXiv": "2301.12139",
+                    "DBLP": "journals/corr/abs-2301-12139",
+                    "DOI": "10.48550/arXiv.2301.12139",
+                    "CorpusId": 256390405
+                },
+                "corpusId": 256390405,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7cfa0bbf0c250b770b34da9731f9f96b99aa82da",
+                "title": "Bipol: Multi-axes Evaluation of Bias with Explainability in Benchmark Datasets",
+                "abstract": "We investigate five English NLP benchmark datasets (on the superGLUE leaderboard) and two Swedish datasets for bias, along multiple axes. The datasets are the following: Boolean Question (Boolq), CommitmentBank (CB), Winograd Schema Challenge (WSC), Wino-gender diagnostic (AXg), Recognising Textual Entailment (RTE), Swedish CB, and SWEDN. Bias can be harmful and it is known to be common in data, which ML models learn from. In order to mitigate bias in data, it is crucial to be able to estimate it objectively. We use bipol, a novel multi-axes bias metric with explainability, to estimate and explain how much bias exists in these datasets. Multilingual, multi-axes bias evaluation is not very common. Hence, we also contribute a new, large Swedish bias-labelled dataset (of 2 million samples), translated from the English version and train the SotA mT5 model on it. In addition, we contribute new multi-axes lexica for bias detection in Swedish. We make the codes, model, and new dataset publicly available.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51221489",
+                        "name": "Tosin P. Adewumi"
+                    },
+                    {
+                        "authorId": "2203364343",
+                        "name": "Isabella Sodergren"
+                    },
+                    {
+                        "authorId": "2056905102",
+                        "name": "Lama Alkhaled"
+                    },
+                    {
+                        "authorId": "2094705823",
+                        "name": "Sana Sabry"
+                    },
+                    {
+                        "authorId": "80342407",
+                        "name": "F. Liwicki"
+                    },
+                    {
+                        "authorId": "1743758",
+                        "name": "M. Liwicki"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "to scrutiny: measures have been shown to be brittle (Ethayarajh et al., 2019; Nissim et al., 2020; Antoniak and Mimno, 2021; Delobelle et al., 2022), contradictory (Bommasani et al.",
+                "In particular, several works (Ethayarajh et al., 2019; Nissim et al., 2020; Antoniak and Mimno, 2021) shows prior bias measures are highly sensitive to word list perturbations."
+            ],
+            "intents": [
+                "result",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "533c5cd35addd6f61f930536a86ddaca7c7fe682",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-11672",
+                    "ArXiv": "2212.11672",
+                    "DOI": "10.48550/arXiv.2212.11672",
+                    "CorpusId": 254974472
+                },
+                "corpusId": 254974472,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/533c5cd35addd6f61f930536a86ddaca7c7fe682",
+                "title": "Trustworthy Social Bias Measurement",
+                "abstract": "How do we design measures of social bias that we trust? While prior work has introduced several measures, no measure has gained widespread trust: instead, mounting evidence argues we should distrust these measures. In this work, we design bias measures that warrant trust based on the cross-disciplinary theory of measurement modeling. To combat the frequently fuzzy treatment of social bias in NLP, we explicitly define social bias, grounded in principles drawn from social science research. We operationalize our definition by proposing a general bias measurement framework DivDist, which we use to instantiate 5 concrete bias measures. To validate our measures, we propose a rigorous testing protocol with 8 testing criteria (e.g. predictive validity: do measures predict biases in US employment?). Through our testing, we demonstrate considerable evidence to trust our measures, showing they overcome conceptual, technical, and empirical deficiencies present in prior measures.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "150272855",
+                        "name": "Rishi Bommasani"
+                    },
+                    {
+                        "authorId": "145419642",
+                        "name": "Percy Liang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "f20d68e2f54d5534746a4fba1c7b01895823e769",
+                "externalIds": {
+                    "DBLP": "conf/nips/BommasaniCKJL22",
+                    "ArXiv": "2211.13972",
+                    "DOI": "10.48550/arXiv.2211.13972",
+                    "CorpusId": 254017395
+                },
+                "corpusId": 254017395,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/f20d68e2f54d5534746a4fba1c7b01895823e769",
+                "title": "Picking on the Same Person: Does Algorithmic Monoculture lead to Outcome Homogenization?",
+                "abstract": "As the scope of machine learning broadens, we observe a recurring theme of algorithmic monoculture: the same systems, or systems that share components (e.g. training data), are deployed by multiple decision-makers. While sharing offers clear advantages (e.g. amortizing costs), does it bear risks? We introduce and formalize one such risk, outcome homogenization: the extent to which particular individuals or groups experience negative outcomes from all decision-makers. If the same individuals or groups exclusively experience undesirable outcomes, this may institutionalize systemic exclusion and reinscribe social hierarchy. To relate algorithmic monoculture and outcome homogenization, we propose the component-sharing hypothesis: if decision-makers share components like training data or specific models, then they will produce more homogeneous outcomes. We test this hypothesis on algorithmic fairness benchmarks, demonstrating that sharing training data reliably exacerbates homogenization, with individual-level effects generally exceeding group-level effects. Further, given the dominant paradigm in AI of foundation models, i.e. models that can be adapted for myriad downstream tasks, we test whether model sharing homogenizes outcomes across tasks. We observe mixed results: we find that for both vision and language settings, the specific methods for adapting a foundation model significantly influence the degree of outcome homogenization. We conclude with philosophical analyses of and societal challenges for outcome homogenization, with an eye towards implications for deployed machine learning systems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "150272855",
+                        "name": "Rishi Bommasani"
+                    },
+                    {
+                        "authorId": "1383066965",
+                        "name": "Kathleen A. Creel"
+                    },
+                    {
+                        "authorId": "32423266",
+                        "name": "Ananya Kumar"
+                    },
+                    {
+                        "authorId": "1746807",
+                        "name": "Dan Jurafsky"
+                    },
+                    {
+                        "authorId": "145419642",
+                        "name": "Percy Liang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "92b37b91483fa3a52563f409c1345a1615a551cd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-13709",
+                    "ArXiv": "2211.13709",
+                    "DOI": "10.48550/arXiv.2211.13709",
+                    "CorpusId": 254017505
+                },
+                "corpusId": 254017505,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/92b37b91483fa3a52563f409c1345a1615a551cd",
+                "title": "Undesirable biases in NLP: Averting a crisis of measurement",
+                "abstract": "As Large Language Models and Natural Language Processing (NLP) technology rapidly develops and spreads into daily life, it becomes crucial to anticipate how its use could harm people. One problem that has received a lot of attention in recent years is that this technology has displayed harmful biases in its behavior. Although a lot of effort has been invested in assessing and mitigating these biases, our methods of measuring the biases of NLP models have serious problems (e.g., it is often unclear what they actually measure). In this paper, we provide an interdisciplinary approach to discussing the issue of NLP model bias by adopting the lens of psychometrics -- a field specialized in the measurement of concepts like bias that are not directly observable. In particular, we will explore two central notions from psychometrics, the construct validity and the reliability of measurement tools, and discuss how they can be applied in the context of measuring model bias. Our goal is to provide NLP practitioners with methodological tools for designing better bias measures, and to inspire them more generally to explore tools from psychometrics when working on bias measurement tools.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1986356851",
+                        "name": "Oskar van der Wal"
+                    },
+                    {
+                        "authorId": "32865491",
+                        "name": "Dominik Bachmann"
+                    },
+                    {
+                        "authorId": "28943361",
+                        "name": "Alina Leidinger"
+                    },
+                    {
+                        "authorId": "2621000",
+                        "name": "L. Maanen"
+                    },
+                    {
+                        "authorId": "83390207",
+                        "name": "W. Zuidema"
+                    },
+                    {
+                        "authorId": "47437701",
+                        "name": "K. Schulz"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Last, the majority of debiasing methods ground the bias by word list; different lists can lead to different debias performance (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7ea622c1f957313ecb78b1f9632ca67575c80def",
+                "externalIds": {
+                    "ArXiv": "2211.11087",
+                    "CorpusId": 258865159
+                },
+                "corpusId": 258865159,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/7ea622c1f957313ecb78b1f9632ca67575c80def",
+                "title": "Conceptor-Aided Debiasing of Large Language Models",
+                "abstract": "Pre-trained large language models (LLMs) reflect the inherent social biases of their training corpus. Many methods have been proposed to mitigate this issue, but they often fail to debias or they sacrifice model accuracy. We use conceptors--a soft projection method--to identify and remove the bias subspace in LLMs such as BERT and GPT. We propose two methods of applying conceptors (1) bias subspace projection by post-processing; and (2) a new architecture, conceptor-intervened BERT (CI-BERT), which explicitly incorporates the conceptor projection into all layers during training. We find that conceptor post-processing achieves state-of-the-art (SoTA) debiasing results while maintaining or improving LLMs' performance on the GLUE benchmark. Also, it is robust in various scenarios and can mitigate intersectional bias efficiently by its logical operation on the existing bias subspaces. Although CI-BERT's training takes all layers' bias into account and can beat its post-processing counterpart in bias mitigation, CI-BERT reduces the language model accuracy. We also show the importance of carefully constructing the bias subspace. The best results are obtained by removing outliers from the list of biased words, combining them (via the conceptor AND operation), and computing their embeddings using the sentences from a cleaner corpus.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2157866322",
+                        "name": "Yifei Li"
+                    },
+                    {
+                        "authorId": "1717822",
+                        "name": "Lyle Ungar"
+                    },
+                    {
+                        "authorId": "2662374",
+                        "name": "Jo\u00e3o Sedoc"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                ", 2020a), as well as assessing the reliability of the tests (Gonen and Goldberg, 2019; Ethayarajh et al., 2019; Antoniak and Mimno, 2021; Delobelle et al., 2021; Blodgett et al., 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a8c09c41f39d798dc4201eeec1452fe617e428df",
+                "externalIds": {
+                    "ArXiv": "2211.04256",
+                    "DBLP": "journals/corr/abs-2211-04256",
+                    "ACL": "2022.emnlp-main.533",
+                    "DOI": "10.48550/arXiv.2211.04256",
+                    "CorpusId": 253397743
+                },
+                "corpusId": 253397743,
+                "publicationVenue": {
+                    "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+                    "name": "Conference on Empirical Methods in Natural Language Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Empir Method Nat Lang Process",
+                        "Empirical Methods in Natural Language Processing",
+                        "Conf Empir Method Nat Lang Process",
+                        "EMNLP"
+                    ],
+                    "url": "https://www.aclweb.org/portal/emnlp"
+                },
+                "url": "https://www.semanticscholar.org/paper/a8c09c41f39d798dc4201eeec1452fe617e428df",
+                "title": "Bridging Fairness and Environmental Sustainability in Natural Language Processing",
+                "abstract": "Fairness and environmental impact are important research directions for the sustainable development of artificial intelligence. However, while each topic is an active research area in natural language processing (NLP), there is a surprising lack of research on the interplay between the two fields. This lacuna is highly problematic, since there is increasing evidence that an exclusive focus on fairness can actually hinder environmental sustainability, and vice versa. In this work, we shed light on this crucial intersection in NLP by (1) investigating the efficiency of current fairness approaches through surveying example methods for reducing unfair stereotypical bias from the literature, and (2) evaluating a common technique to reduce energy consumption (and thus environmental impact) of English NLP models, knowledge distillation (KD), for its impact on fairness. In this case study, we evaluate the effect of important KD factors, including layer and dimensionality reduction, with respect to: (a) performance on the distillation task (natural language inference and semantic similarity prediction), and (b) multiple measures and dimensions of stereotypical bias (e.g., gender bias measured via the Word Embedding Association Test). Our results lead us to clarify current assumptions regarding the effect of KD on unfair bias: contrary to other findings, we show that KD can actually decrease model fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2190173964",
+                        "name": "Marius Hessenthaler"
+                    },
+                    {
+                        "authorId": "2268272",
+                        "name": "Emma Strubell"
+                    },
+                    {
+                        "authorId": "2022288",
+                        "name": "Dirk Hovy"
+                    },
+                    {
+                        "authorId": "29891652",
+                        "name": "Anne Lauscher"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "This directly addresses concerns related to using predetermined keywords without ensuring their concurrent relevance to each other within a localized data set [5]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "11f7e79798bfcfb24a14c5e9c0887428851c2145",
+                "externalIds": {
+                    "DBLP": "journals/pacmhci/Stewart22a",
+                    "DOI": "10.1145/3555594",
+                    "CorpusId": 253460292
+                },
+                "corpusId": 253460292,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/11f7e79798bfcfb24a14c5e9c0887428851c2145",
+                "title": "Authenticity for Rent? Airbnb Hosts and the Commodification of Urban Displacement",
+                "abstract": "Airbnb as an online short-term rental marketplace has had significant impact on the housing dynamics of major metropolitan regions. This work examines Airbnb's relationship with urban residential displacement through the dual phenomena of neighborhood gentrification as the loss of low-income households along with neighborhood exclusion as the preservation of elite enclaves without affordable housing options available to low-income households. I feature approximately 15 thousand unique San Francisco Airbnb listings spanning from 2016 to 2021 to investigate how Airbnb hosts employ cultural rhetoric associated with urban displacement to advertise their units' neighborhoods. I employ a computational mixed-methods design by combining natural language processing techniques with qualitative content analysis to examine how hosts differ in their cultural representations of their listing's neighborhoods by its relationship with residential displacement. My findings highlight the pervasiveness of rhetoric focusing on the authenticity and diversity of gentrifying neighborhoods contrasted to the safety and family-friendliness of exclusionary neighborhoods as a key strategy Airbnb hosts use to commercialize their listings. These findings underscore the reinforcing dynamics between regional Airbnb markets and urban displacement, with subsequent implications towards the ongoing marginalization of longstanding residential communities within contemporary cities.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2146989959",
+                        "name": "Remy Stewart"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "c6629429d064b2ed3117e40d5558e21376aef337",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-02882",
+                    "ArXiv": "2211.02882",
+                    "DOI": "10.48550/arXiv.2211.02882",
+                    "CorpusId": 253384242
+                },
+                "corpusId": 253384242,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/c6629429d064b2ed3117e40d5558e21376aef337",
+                "title": "HERB: Measuring Hierarchical Regional Bias in Pre-trained Language Models",
+                "abstract": "Fairness has become a trending topic in natural language processing (NLP), which addresses biases targeting certain social groups such as genders and religions. However, regional bias in language models (LMs), a long-standing global discrimination problem, still remains unexplored. This paper bridges the gap by analysing the regional bias learned by the pre-trained language models that are broadly used in NLP tasks. In addition to verifying the existence of regional bias in LMs, we find that the biases on regional groups can be strongly influenced by the geographical clustering of the groups. We accordingly propose a HiErarchical Regional Bias evaluation method (HERB) utilising the information from the sub-region clusters to quantify the bias in pre-trained LMs. Experiments show that our hierarchical metric can effectively evaluate the regional bias with respect to comprehensive topics and measure the potential regional bias that can be propagated to downstream tasks. Our codes are available at https://github.com/Bernard-Yang/HERB.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2129449392",
+                        "name": "Yizhi Li"
+                    },
+                    {
+                        "authorId": "2143853895",
+                        "name": "Ge Zhang"
+                    },
+                    {
+                        "authorId": "84537195",
+                        "name": "Bohao Yang"
+                    },
+                    {
+                        "authorId": "2268783",
+                        "name": "Chenghua Lin"
+                    },
+                    {
+                        "authorId": "2144215438",
+                        "name": "Shizhuo Wang"
+                    },
+                    {
+                        "authorId": "1804969",
+                        "name": "A. Ragni"
+                    },
+                    {
+                        "authorId": "49252800",
+                        "name": "Jie Fu"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Relying on single-word poles for axes can be unstable to the choice of each word (An et al., 2018; Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7f5801f8036e71658a12d16203617b2ab25ef14f",
+                "externalIds": {
+                    "ArXiv": "2210.12170",
+                    "DBLP": "journals/corr/abs-2210-12170",
+                    "ACL": "2022.emnlp-main.228",
+                    "DOI": "10.48550/arXiv.2210.12170",
+                    "CorpusId": 253098158
+                },
+                "corpusId": 253098158,
+                "publicationVenue": {
+                    "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+                    "name": "Conference on Empirical Methods in Natural Language Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Empir Method Nat Lang Process",
+                        "Empirical Methods in Natural Language Processing",
+                        "Conf Empir Method Nat Lang Process",
+                        "EMNLP"
+                    ],
+                    "url": "https://www.aclweb.org/portal/emnlp"
+                },
+                "url": "https://www.semanticscholar.org/paper/7f5801f8036e71658a12d16203617b2ab25ef14f",
+                "title": "Discovering Differences in the Representation of People using Contextualized Semantic Axes",
+                "abstract": "A common paradigm for identifying semantic differences across social and temporal contexts is the use of static word embeddings and their distances. In particular, past work has compared embeddings against \u201csemantic axes\u201d that represent two opposing concepts. We extend this paradigm to BERT embeddings, and construct contextualized axes that mitigate the pitfall where antonyms have neighboring representations. We validate and demonstrate these axes on two people-centric datasets: occupations from Wikipedia, and multi-platform discussions in extremist, men\u2019s communities over fourteen years. In both studies, contextualized semantic axes can characterize differences among instances of the same word type. In the latter study, we show that references to women and the contexts around them have become more detestable over time.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "15983089",
+                        "name": "Li Lucy"
+                    },
+                    {
+                        "authorId": "2174240589",
+                        "name": "Divya Tadimeti"
+                    },
+                    {
+                        "authorId": "2064411219",
+                        "name": "David Bamman"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "b0096a2431773e34e5c72f559b87e01f5c15d5e0",
+                "externalIds": {
+                    "ArXiv": "2210.11471",
+                    "ACL": "2022.gebnlp-1.17",
+                    "DBLP": "journals/corr/abs-2210-11471",
+                    "DOI": "10.18653/v1/2022.gebnlp-1.17",
+                    "CorpusId": 250390436
+                },
+                "corpusId": 250390436,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/b0096a2431773e34e5c72f559b87e01f5c15d5e0",
+                "title": "Choose Your Lenses: Flaws in Gender Bias Evaluation",
+                "abstract": "Considerable efforts to measure and mitigate gender bias in recent years have led to the introduction of an abundance of tasks, datasets, and metrics used in this vein. In this position paper, we assess the current paradigm of gender bias evaluation and identify several flaws in it. First, we highlight the importance of extrinsic bias metrics that measure how a model\u2019s performance on some task is affected by gender, as opposed to intrinsic evaluations of model representations, which are less strongly connected to specific harms to people interacting with systems. We find that only a few extrinsic metrics are measured in most studies, although more can be measured. Second, we find that datasets and metrics are often coupled, and discuss how their coupling hinders the ability to obtain reliable conclusions, and how one may decouple them. We then investigate how the choice of the dataset and its composition, as well as the choice of the metric, affect bias measurement, finding significant variations across each of them. Finally, we propose several guidelines for more reliable gender bias evaluation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1398583303",
+                        "name": "Hadas Orgad"
+                    },
+                    {
+                        "authorId": "2083259",
+                        "name": "Yonatan Belinkov"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "7451fa243ef57ca76c704f1a3aaf5091fb3c1781",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-10040",
+                    "ArXiv": "2210.10040",
+                    "ACL": "2023.acl-short.118",
+                    "DOI": "10.48550/arXiv.2210.10040",
+                    "CorpusId": 252968208
+                },
+                "corpusId": 252968208,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7451fa243ef57ca76c704f1a3aaf5091fb3c1781",
+                "title": "The Tail Wagging the Dog: Dataset Construction Biases of Social Bias Benchmarks",
+                "abstract": "How reliably can we trust the scores obtained from social bias benchmarks as faithful indicators of problematic social biases in a given model? In this work, we study this question by contrasting social biases with non-social biases that stem from choices made during dataset construction (which might not even be discernible to the human eye). To do so, we empirically simulate various alternative constructions for a given benchmark based on seemingly innocuous modifications (such as paraphrasing or random-sampling) that maintain the essence of their social bias. On two well-known social bias benchmarks (Winogender and BiasNLI), we observe that these shallow modifications have a surprising effect on the resulting degree of bias across various models and consequently the relative ordering of these models when ranked by measured bias. We hope these troubling observations motivate more robust measures of social biases.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2141568329",
+                        "name": "Nikil Selvam"
+                    },
+                    {
+                        "authorId": "50991767",
+                        "name": "Sunipa Dev"
+                    },
+                    {
+                        "authorId": "1783281",
+                        "name": "Daniel Khashabi"
+                    },
+                    {
+                        "authorId": "2236429",
+                        "name": "Tushar Khot"
+                    },
+                    {
+                        "authorId": "2782886",
+                        "name": "Kai-Wei Chang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Antoniak and Mimno [2021] compile a comprehensive set of seed lexicons used to measure bias from prior work, and demonstrate that bias measurements tend to be unstable and highly dependent on the seed set in use.",
+                "Antoniak and Mimno [2021] compile a comprehensive set of seed lexicons used to measure bias from prior work, and demonstrate that bias measurements tend to be unstable and highly dependent on the seed set in use. Orgad and Belinkov [2022] highlight that the degree of balancing in test data and choice of metric to measure bias can also lead to different bias conclusions."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "c8e78803159f353a82b5da3cb3c05f32e10a679f",
+                "externalIds": {
+                    "ArXiv": "2210.04337",
+                    "DBLP": "journals/corr/abs-2210-04337",
+                    "DOI": "10.48550/arXiv.2210.04337",
+                    "CorpusId": 252780987
+                },
+                "corpusId": 252780987,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/c8e78803159f353a82b5da3cb3c05f32e10a679f",
+                "title": "Quantifying Social Biases Using Templates is Unreliable",
+                "abstract": "Recently, there has been an increase in efforts to understand how large language models (LLMs) propagate and amplify social biases. Several works have utilized templates for fairness evaluation, which allow researchers to quantify social biases in the absence of test sets with protected attribute labels. While template evaluation can be a convenient and helpful diagnostic tool to understand model deficiencies, it often uses a simplistic and limited set of templates. In this paper, we study whether bias measurements are sensitive to the choice of templates used for benchmarking. Specifically, we investigate the instability of bias measurements by manually modifying templates proposed in previous works in a semantically-preserving manner and measuring bias across these modifications. We find that bias values and resulting conclusions vary considerably across template modifications on four tasks, ranging from an 81% reduction (NLI) to a 162% increase (MLM) in (task-specific) bias measurements. Our results indicate that quantifying fairness in LLMs, as done in current practice, can be brittle and needs to be approached with more care and caution.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "35058407",
+                        "name": "P. Seshadri"
+                    },
+                    {
+                        "authorId": "1713436",
+                        "name": "Pouya Pezeshkpour"
+                    },
+                    {
+                        "authorId": "144171580",
+                        "name": "Sameer Singh"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "These words have a crucial impact on how and which biases\nare detected and mitigated, but they are not central in the efforts devoted to this task, as argued in Antoniak and Mimno (2021).",
+                "We give concrete examples in Appendix A.\nAntoniak and Mimno (2021) argues that the most important variable when exploring biases in word embeddings are not the automatizable parts of the problem but the manual part, that is the word lists used for modelling the type of bias to be explored and the\u2026",
+                "They can also\nhelp to understand the implications of using historical datasets to train models that will be used to predict data that is markedly different from the training data (Antoniak and Mimno, 2021).",
+                "Also aligned with the rest of the NLP area, work has been focused on the technical nuances instead of the more impacting qualitative aspects, like who develops the word list used for bias measurement and evaluation techniques (Antoniak and Mimno, 2021).",
+                "with the rest of the NLP area, work has been focused on the technical nuances instead of the more impacting qualitative aspects, like who develops the word list used for bias measurement and evaluation techniques (Antoniak and Mimno, 2021).",
+                "\u2026aforementioned gap information and convinced that the origins and rationale underlying the lists\u2019 selection must be explicit, tested, and documented, Antoniak and Mimno (2021) proposed a systematic framework that enables the analysis of the sources of information and the characteristics of the\u2026",
+                "We develop on the insights of Antoniak and Mimno (2021) by facilitating access to these technologies to domain experts with no technical expertise, so that they can provide well-founded word lists, by pouring their knowledge into those lists.",
+                "They can also help to understand the implications of using historical datasets to train models that will be used to predict data that is markedly different from the training data (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a82a08b5e6a11f4d6fdff95dd30177957ed7855e",
+                "externalIds": {
+                    "ArXiv": "2207.06591",
+                    "CorpusId": 257804597
+                },
+                "corpusId": 257804597,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a82a08b5e6a11f4d6fdff95dd30177957ed7855e",
+                "title": "A methodology to characterize bias and harmful stereotypes in natural language processing in Latin America",
+                "abstract": "Automated decision-making systems, especially those based on natural language processing, are pervasive in our lives. They are not only behind the internet search engines we use daily, but also take more critical roles: selecting candidates for a job, determining suspects of a crime, diagnosing autism and more. Such automated systems make errors, which may be harmful in many ways, be it because of the severity of the consequences (as in health issues) or because of the sheer number of people they affect. When errors made by an automated system affect a population more than others, we call the system \\textit{biased}. Most modern natural language technologies are based on artifacts obtained from enormous volumes of text using machine learning, namely language models and word embeddings. Since they are created by applying subsymbolic machine learning, mostly artificial neural networks, they are opaque and practically uninterpretable by direct inspection, thus making it very difficult to audit them. In this paper, we present a methodology that spells out how social scientists, domain experts, and machine learning experts can collaboratively explore biases and harmful stereotypes in word embeddings and large language models. Our methodology is based on the following principles: * focus on the linguistic manifestations of discrimination on word embeddings and language models, not on the mathematical properties of the models * reduce the technical barrier for discrimination experts%, be it social scientists, domain experts or other * characterize through a qualitative exploratory process in addition to a metric-based approach * address mitigation as part of the training process, not as an afterthought",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2276687",
+                        "name": "L. A. Alemany"
+                    },
+                    {
+                        "authorId": "2066254822",
+                        "name": "Luciana Benotti"
+                    },
+                    {
+                        "authorId": "2139773809",
+                        "name": "Hern\u00e1n Maina"
+                    },
+                    {
+                        "authorId": "143956405",
+                        "name": "Luc'ia Gonz'alez"
+                    },
+                    {
+                        "authorId": "73773689",
+                        "name": "M. Rajngewerc"
+                    },
+                    {
+                        "authorId": "2213485642",
+                        "name": "Lautaro Mart'inez"
+                    },
+                    {
+                        "authorId": "2216725309",
+                        "name": "Jos'e L. S'anchez"
+                    },
+                    {
+                        "authorId": "120494256",
+                        "name": "M. Schilman"
+                    },
+                    {
+                        "authorId": "2213060824",
+                        "name": "Guido Ivetta"
+                    },
+                    {
+                        "authorId": "2176182678",
+                        "name": "Alexia Halvorsen"
+                    },
+                    {
+                        "authorId": "2213329754",
+                        "name": "Amanda Rojo"
+                    },
+                    {
+                        "authorId": "2091620256",
+                        "name": "M. Bordone"
+                    },
+                    {
+                        "authorId": "2079934550",
+                        "name": "Beatriz Busaniche"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "For this, we reproduced an experiment by Antoniak and Mimno [1] ranking the cosine similarity between the first Principal Component (PC) of the bias subspace and all words in the corpus.",
+                "Our second contribution is an augmentation of the seed dataset provided by Antoniak and Mimno [1].",
+                "In addition to the original paper, Antoniak and Mimno [1] published a Github repository that contained a JSON with the metadata on seed sets gathered from prior works4.",
+                "The selection of seed terms varies considerably across the literature, and seed sets themselves may exhibit social and cognitive biases [1].",
+                "We seek to replicate the Antoniak and Mimno [1] paper, hereafter referred to as \u201dthe original paper/work\u201d.",
+                "Another source of instability claimed by Antoniak and Mimno [1] is the ordering and pairing of seed sets.",
+                "Furthermore, looking at the official dataset statistics, for example for WikiText [7], it is clear that our reproduced vocabulary size is a lot closer to the ground truth than the one by Antoniak and Mimno [1].",
+                "This reproducibility study focuses on Antoniak and Mimno [1]\u2019s main claim that the rationale for the construction of these lexicons needs thorough checking before usage, as the seeds used for bias measurement can themselves exhibit biases."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "10dc8987b46b59843b3b68e04c1346bd1fa8bde0",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-01767",
+                    "ArXiv": "2206.01767",
+                    "DOI": "10.5281/zenodo.6574705",
+                    "CorpusId": 249395215
+                },
+                "corpusId": 249395215,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/10dc8987b46b59843b3b68e04c1346bd1fa8bde0",
+                "title": "[Re] Badder Seeds: Reproducing the Evaluation of Lexical Methods for Bias Measurement",
+                "abstract": "Combating bias in NLP requires bias measurement. Bias measurement is almost always achieved by using lexicons of seed terms, i.e. sets of words specifying stereotypes or dimensions of interest. This reproducibility study focuses on the original authors' main claim that the rationale for the construction of these lexicons needs thorough checking before usage, as the seeds used for bias measurement can themselves exhibit biases. The study aims to evaluate the reproducibility of the quantitative and qualitative results presented in the paper and the conclusions drawn thereof. We reproduce most of the results supporting the original authors' general claim: seed sets often suffer from biases that affect their performance as a baseline for bias metrics. Generally, our results mirror the original paper's. They are slightly different on select occasions, but not in ways that undermine the paper's general intent to show the fragility of seed sets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2168277153",
+                        "name": "Jille van der Togt"
+                    },
+                    {
+                        "authorId": "2166301365",
+                        "name": "Lea Tiyavorabun"
+                    },
+                    {
+                        "authorId": "2168109752",
+                        "name": "Matteo Rosati"
+                    },
+                    {
+                        "authorId": "2168285763",
+                        "name": "Giulio Starace"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "1b781f61a5a36aeb93b8a1b07fe1469d20b00efc",
+                "externalIds": {
+                    "ArXiv": "2201.08451",
+                    "DBLP": "conf/icwsm/LoonGWE22",
+                    "DOI": "10.1609/icwsm.v16i1.19399",
+                    "CorpusId": 246210568,
+                    "PubMed": "37122435"
+                },
+                "corpusId": 246210568,
+                "publicationVenue": {
+                    "id": "7dc964d5-49e6-4c37-b1c4-a7f0de1fa425",
+                    "name": "International Conference on Web and Social Media",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Weblogs Soc Media",
+                        "International Conference on Weblogs and Social Media",
+                        "Int Conf Web Soc Media",
+                        "ICWSM"
+                    ],
+                    "url": "http://www.aaai.org/Library/ICWSM/icwsm-library.php"
+                },
+                "url": "https://www.semanticscholar.org/paper/1b781f61a5a36aeb93b8a1b07fe1469d20b00efc",
+                "title": "Negative Associations in Word Embeddings Predict Anti-black Bias across Regions-but Only via Name Frequency",
+                "abstract": "The word embedding association test (WEAT) is an important method for measuring linguistic biases against social groups such as ethnic minorities in large text corpora. It does so by comparing the semantic relatedness of words prototypical of the groups (e.g., names unique to those groups) and attribute words (e.g., 'pleasant' and 'unpleasant' words). We show that anti-Black WEAT estimates from geo-tagged social media data at the level of metropolitan statistical areas strongly correlate with several measures of racial animus-even when controlling for sociodemographic covariates. However, we also show that every one of these correlations is explained by a third variable: the frequency of Black names in the underlying corpora relative to White names. This occurs because word embeddings tend to group positive (negative) words and frequent (rare) words together in the estimated semantic space. As the frequency of Black names on social media is strongly correlated with Black Americans' prevalence in the population, this results in spuriously high anti-Black WEAT estimates wherever few Black Americans live. This suggests that research using the WEAT to measure bias should consider term frequency, and also demonstrates the potential consequences of using black-box models like word embeddings to study human cognition and behavior.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2008697693",
+                        "name": "Austin Van Loon"
+                    },
+                    {
+                        "authorId": "50360470",
+                        "name": "Salvatore Giorgi"
+                    },
+                    {
+                        "authorId": "47555956",
+                        "name": "Robb Willer"
+                    },
+                    {
+                        "authorId": "2615635",
+                        "name": "J. Eichstaedt"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Finally, the process of assembling word lists itself can be tricky, as seed lexica often have several practical (Antoniak and Mimno, 2021) and conceptual (Dinan et al."
+            ],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "7ef43bacd43393ff116e6fcda6a52a6902e016d7",
+                "externalIds": {
+                    "DBLP": "conf/emnlp/SmithHKPW22",
+                    "ACL": "2022.emnlp-main.625",
+                    "ArXiv": "2205.09209",
+                    "DOI": "10.18653/v1/2022.emnlp-main.625",
+                    "CorpusId": 253224433
+                },
+                "corpusId": 253224433,
+                "publicationVenue": {
+                    "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+                    "name": "Conference on Empirical Methods in Natural Language Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Empir Method Nat Lang Process",
+                        "Empirical Methods in Natural Language Processing",
+                        "Conf Empir Method Nat Lang Process",
+                        "EMNLP"
+                    ],
+                    "url": "https://www.aclweb.org/portal/emnlp"
+                },
+                "url": "https://www.semanticscholar.org/paper/7ef43bacd43393ff116e6fcda6a52a6902e016d7",
+                "title": "\u201cI\u2019m sorry to hear that\u201d: Finding New Biases in Language Models with a Holistic Descriptor Dataset",
+                "abstract": "As language models grow in popularity, it becomes increasingly important to clearly measure all possible markers of demographic identity in order to avoid perpetuating existing societal harms. Many datasets for measuring bias currently exist, but they are restricted in their coverage of demographic axes and are commonly used with preset bias tests that presuppose which types of biases models can exhibit. In this work, we present a new, more inclusive bias measurement dataset, HolisticBias, which includes nearly 600 descriptor terms across 13 different demographic axes. HolisticBias was assembled in a participatory process including experts and community members with lived experience of these terms. These descriptors combine with a set of bias measurement templates to produce over 450,000 unique sentence prompts, which we use to explore, identify, and reduce novel forms of bias in several generative models. We demonstrate that HolisticBias is effective at measuring previously undetectable biases in token likelihoods from language models, as well as in an offensiveness classifier. We will invite additions and amendments to the dataset, which we hope will serve as a basis for more easy-to-use and standardized methods for evaluating bias in NLP models.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51324296",
+                        "name": "Eric Michael Smith"
+                    },
+                    {
+                        "authorId": "120861776",
+                        "name": "Melissa Hall"
+                    },
+                    {
+                        "authorId": "2272979",
+                        "name": "Melanie Kambadur"
+                    },
+                    {
+                        "authorId": "6072807",
+                        "name": "Eleonora Presani"
+                    },
+                    {
+                        "authorId": "2110032535",
+                        "name": "Adina Williams"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Along099 this line, focus has been given to bias analysis in100 models\u2019 innards and ouputs (Vig et al., 2020; Costa-101 juss\u00e0 et al., 2020b), and to ascertain the validity of102 bias measurament practices (Blodgett et al., 2021;103 Antoniak and Mimno, 2021; Goldfarb-Tarrant et al.,104 2021).",
+                ", 2022), and to ascertain the validity of bias measurement practices (Blodgett et al., 2021; Antoniak and Mimno, 2021; Goldfarb-Tarrant et al., 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "8d9f0e34cfc659510d6c4ed085c6ef61734732b0",
+                "externalIds": {
+                    "ArXiv": "2203.09866",
+                    "ACL": "2022.acl-long.127",
+                    "DBLP": "journals/corr/abs-2203-09866",
+                    "DOI": "10.48550/arXiv.2203.09866",
+                    "CorpusId": 247595186
+                },
+                "corpusId": 247595186,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8d9f0e34cfc659510d6c4ed085c6ef61734732b0",
+                "title": "Under the Morphosyntactic Lens: A Multifaceted Evaluation of Gender Bias in Speech Translation",
+                "abstract": "Gender bias is largely recognized as a problematic phenomenon affecting language technologies, with recent studies underscoring that it might surface differently across languages. However, most of current evaluation practices adopt a word-level focus on a narrow set of occupational nouns under synthetic conditions. Such protocols overlook key features of grammatical gender languages, which are characterized by morphosyntactic chains of gender agreement, marked on a variety of lexical items and parts-of-speech (POS). To overcome this limitation, we enrich the natural, gender-sensitive MuST-SHE corpus (Bentivogli et al., 2020) with two new linguistic annotation layers (POS and agreement chains), and explore to what extent different lexical categories and agreement phenomena are impacted by gender skews. Focusing on speech translation, we conduct a multifaceted evaluation on three language directions (English-French/Italian/Spanish), with models trained on varying amounts of data and different word segmentation techniques. By shedding light on model behaviours, gender bias, and its detection at several levels of granularity, our findings emphasize the value of dedicated analyses beyond aggregated overall results.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1741330216",
+                        "name": "Beatrice Savoldi"
+                    },
+                    {
+                        "authorId": "1736801422",
+                        "name": "Marco Gaido"
+                    },
+                    {
+                        "authorId": "2486762",
+                        "name": "L. Bentivogli"
+                    },
+                    {
+                        "authorId": "2138026",
+                        "name": "Matteo Negri"
+                    },
+                    {
+                        "authorId": "145862931",
+                        "name": "M. Turchi"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Recent works investigating bias in language models have found issues with inconsistencies between seed words (Antoniak and Mimno, 2021),"
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "67ad491b16bf77e9a54a8b8b1dc23dadc5545467",
+                "externalIds": {
+                    "ArXiv": "2112.07447",
+                    "DBLP": "journals/corr/abs-2112-07447",
+                    "CorpusId": 245131370
+                },
+                "corpusId": 245131370,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/67ad491b16bf77e9a54a8b8b1dc23dadc5545467",
+                "title": "Measuring Fairness with Biased Rulers: A Survey on Quantifying Biases in Pretrained Language Models",
+                "abstract": "An increasing awareness of biased patterns in natural language processing resources, like BERT, has motivated many metrics to quantify `bias' and `fairness'. But comparing the results of different metrics and the works that evaluate with such metrics remains difficult, if not outright impossible. We survey the existing literature on fairness metrics for pretrained language models and experimentally evaluate compatibility, including both biases in language models as in their downstream tasks. We do this by a mixture of traditional literature survey and correlation analysis, as well as by running empirical evaluations. We find that many metrics are not compatible and highly depend on (i) templates, (ii) attribute and target seeds and (iii) the choice of embeddings. These results indicate that fairness or bias evaluation remains challenging for contextualized language models, if not at least highly subjective. To improve future comparisons and fairness evaluations, we recommend avoiding embedding-based metrics and focusing on fairness evaluations in downstream tasks.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "150258834",
+                        "name": "Pieter Delobelle"
+                    },
+                    {
+                        "authorId": "2145259446",
+                        "name": "E. Tokpo"
+                    },
+                    {
+                        "authorId": "1709830",
+                        "name": "T. Calders"
+                    },
+                    {
+                        "authorId": "2990203",
+                        "name": "Bettina Berendt"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Furthermore, we acknowledge that our analysis of gender associated biases is limited to binary gender and our intrinsic evaluations require discrete categorizations (Dev et al., 2021b; Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "20e1ddc105f0f145ea7647a9ea4b9c94a8aeab62",
+                "externalIds": {
+                    "DBLP": "conf/naacl/MalikDNPC22",
+                    "ACL": "2022.naacl-main.76",
+                    "ArXiv": "2110.07871",
+                    "DOI": "10.18653/v1/2022.naacl-main.76",
+                    "CorpusId": 239009591
+                },
+                "corpusId": 239009591,
+                "publicationVenue": {
+                    "id": "01103732-3808-4930-b8e4-7e9e68d5c68d",
+                    "name": "North American Chapter of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "North Am Chapter Assoc Comput Linguistics",
+                        "NAACL"
+                    ],
+                    "url": "https://www.aclweb.org/portal/naacl"
+                },
+                "url": "https://www.semanticscholar.org/paper/20e1ddc105f0f145ea7647a9ea4b9c94a8aeab62",
+                "title": "Socially Aware Bias Measurements for Hindi Language Representations",
+                "abstract": "Language representations are an efficient tool used across NLP, but they are strife with encoded societal biases. These biases are studied extensively, but with a primary focus on English language representations and biases common in the context of Western society. In this work, we investigate the biases present in Hindi language representations such as caste and religion associated biases. We demonstrate how biases are unique to specific language representations based on the history and culture of the region they are widely spoken in, and also how the same societal bias (such as binary gender associated biases) when investigated across languages is encoded by different words and text spans. With this work, we emphasize on the necessity of social-awareness along with linguistic and grammatical artefacts when modeling language representations, in order to understand the biases encoded.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2047073132",
+                        "name": "Vijit Malik"
+                    },
+                    {
+                        "authorId": "50991767",
+                        "name": "Sunipa Dev"
+                    },
+                    {
+                        "authorId": "4078834",
+                        "name": "A. Nishi"
+                    },
+                    {
+                        "authorId": "3157053",
+                        "name": "Nanyun Peng"
+                    },
+                    {
+                        "authorId": "2782886",
+                        "name": "Kai-Wei Chang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "d7aa0383dd5ed751bda53bbe5caacf68d6325956",
+                "externalIds": {
+                    "DBLP": "conf/emnlp/DuF021",
+                    "ACL": "2021.emnlp-main.785",
+                    "ArXiv": "2109.04732",
+                    "DOI": "10.18653/v1/2021.emnlp-main.785",
+                    "CorpusId": 237485538
+                },
+                "corpusId": 237485538,
+                "publicationVenue": {
+                    "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+                    "name": "Conference on Empirical Methods in Natural Language Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Empir Method Nat Lang Process",
+                        "Empirical Methods in Natural Language Processing",
+                        "Conf Empir Method Nat Lang Process",
+                        "EMNLP"
+                    ],
+                    "url": "https://www.aclweb.org/portal/emnlp"
+                },
+                "url": "https://www.semanticscholar.org/paper/d7aa0383dd5ed751bda53bbe5caacf68d6325956",
+                "title": "Assessing the Reliability of Word Embedding Gender Bias Measures",
+                "abstract": "Various measures have been proposed to quantify human-like social biases in word embeddings. However, bias scores based on these measures can suffer from measurement error. One indication of measurement quality is reliability, concerning the extent to which a measure produces consistent results. In this paper, we assess three types of reliability of word embedding gender bias measures, namely test-retest reliability, inter-rater consistency and internal consistency. Specifically, we investigate the consistency of bias scores across different choices of random seeds, scoring rules and words. Furthermore, we analyse the effects of various factors on these measures\u2019 reliability scores. Our findings inform better design of word embedding gender bias measures. Moreover, we urge researchers to be more critical about the application of such measures",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1389983751",
+                        "name": "Yupei Du"
+                    },
+                    {
+                        "authorId": "1720986506",
+                        "name": "Qixiang Fang"
+                    },
+                    {
+                        "authorId": "32174562",
+                        "name": "D. Nguyen"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Keyword-based approaches are appropriate in some cases \u2014 for example, when counterfactuals can be obtained by making local substitutions of closed-class words like pronouns \u2014 but they cannot guarantee fluency or coverage of all labels and covariates of interest (Antoniak and Mimno, 2021), and are difficult to generalize across languages."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "130d432ccbc836380a212bea618f84ff094a6a52",
+                "externalIds": {
+                    "DBLP": "journals/tacl/FederKMPSWEGRRS22",
+                    "ArXiv": "2109.00725",
+                    "DOI": "10.1162/tacl_a_00511",
+                    "CorpusId": 237386009
+                },
+                "corpusId": 237386009,
+                "publicationVenue": {
+                    "id": "e0dbf116-86aa-418d-859f-a49952d7e44a",
+                    "name": "Transactions of the Association for Computational Linguistics",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Trans Assoc Comput Linguistics",
+                        "TACL"
+                    ],
+                    "issn": "2307-387X",
+                    "url": "https://www.mitpressjournals.org/loi/tacl",
+                    "alternate_urls": [
+                        "http://www.transacl.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/130d432ccbc836380a212bea618f84ff094a6a52",
+                "title": "Causal Inference in Natural Language Processing: Estimation, Prediction, Interpretation and Beyond",
+                "abstract": "Abstract A fundamental goal of scientific research is to learn about causal relationships. However, despite its critical role in the life and social sciences, causality has not had the same importance in Natural Language Processing (NLP), which has traditionally placed more emphasis on predictive tasks. This distinction is beginning to fade, with an emerging area of interdisciplinary research at the convergence of causal inference and language processing. Still, research on causality in NLP remains scattered across domains without unified definitions, benchmark datasets and clear articulations of the challenges and opportunities in the application of causal inference to the textual domain, with its unique properties. In this survey, we consolidate research across academic areas and situate it in the broader NLP landscape. We introduce the statistical challenge of estimating causal effects with text, encompassing settings where text is used as an outcome, treatment, or to address confounding. In addition, we explore potential uses of causal inference to improve the robustness, fairness, and interpretability of NLP models. We thus provide a unified overview of causal inference for the NLP community.1",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "46609506",
+                        "name": "Amir Feder"
+                    },
+                    {
+                        "authorId": "145137850",
+                        "name": "Katherine A. Keith"
+                    },
+                    {
+                        "authorId": "2125374460",
+                        "name": "Emaad A. Manzoor"
+                    },
+                    {
+                        "authorId": "2253657208",
+                        "name": "Reid Pryzant"
+                    },
+                    {
+                        "authorId": "153485411",
+                        "name": "Dhanya Sridhar"
+                    },
+                    {
+                        "authorId": "1411379613",
+                        "name": "Zach Wood-Doughty"
+                    },
+                    {
+                        "authorId": "144154709",
+                        "name": "Jacob Eisenstein"
+                    },
+                    {
+                        "authorId": "2361828",
+                        "name": "Justin Grimmer"
+                    },
+                    {
+                        "authorId": "1762757",
+                        "name": "Roi Reichart"
+                    },
+                    {
+                        "authorId": "2464550",
+                        "name": "Margaret E. Roberts"
+                    },
+                    {
+                        "authorId": "28924497",
+                        "name": "Brandon M Stewart"
+                    },
+                    {
+                        "authorId": "2974320",
+                        "name": "Victor Veitch"
+                    },
+                    {
+                        "authorId": "2143919864",
+                        "name": "Diyi Yang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "c89f4202b73bd862bf5bf0b210f1391f37350454",
+                "externalIds": {
+                    "ArXiv": "2108.11056",
+                    "DBLP": "journals/datamine/ChengDMK23",
+                    "DOI": "10.1007/s10618-022-00910-8",
+                    "CorpusId": 237291764
+                },
+                "corpusId": 237291764,
+                "publicationVenue": {
+                    "id": "d263025a-9eaf-443f-9bbf-72377e8d22a6",
+                    "name": "Data mining and knowledge discovery",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Data Mining and Knowledge Discovery",
+                        "Data Min Knowl Discov",
+                        "Data min knowl discov"
+                    ],
+                    "issn": "1384-5810",
+                    "url": "https://www.springer.com/computer/database+management+&+information+retrieval/journal/10618",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/10618",
+                        "http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c89f4202b73bd862bf5bf0b210f1391f37350454",
+                "title": "Social norm bias: residual harms of fairness-aware algorithms",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2149615775",
+                        "name": "M. Cheng"
+                    },
+                    {
+                        "authorId": "1406443102",
+                        "name": "Maria De-Arteaga"
+                    },
+                    {
+                        "authorId": "143722101",
+                        "name": "Lester W. Mackey"
+                    },
+                    {
+                        "authorId": "2186481",
+                        "name": "A. Kalai"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "However, our tool can assist in selecting the most relevant group words by facilitating comparison against a set of alternatives (as recommended in [2]).",
+                "The user is advised to examine the default set of group words and update them via the visual interface as required [2]."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "328bbe6b96427d79f5b316105416e8401da81ae0",
+                "externalIds": {
+                    "DBLP": "conf/chi/GhaiHM21",
+                    "ArXiv": "2103.03598",
+                    "DOI": "10.1145/3411763.3451587",
+                    "CorpusId": 232135349
+                },
+                "corpusId": 232135349,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/328bbe6b96427d79f5b316105416e8401da81ae0",
+                "title": "WordBias: An Interactive Visual Tool for Discovering Intersectional Biases Encoded in Word Embeddings",
+                "abstract": "Intersectional bias is a bias caused by an overlap of multiple social factors like gender, sexuality, race, disability, religion, etc. A recent study has shown that word embedding models can be laden with biases against intersectional groups like African American females, etc. The first step towards tackling intersectional biases is to identify them. However, discovering biases against different intersectional groups remains a challenging task. In this work, we present WordBias, an interactive visual tool designed to explore biases against intersectional groups encoded in static word embeddings. Given a pretrained static word embedding, WordBias computes the association of each word along different groups like race, age, etc. and then visualizes them using a novel interactive interface. Using a case study, we demonstrate how WordBias can help uncover biases against intersectional groups like Black Muslim Males, Poor Females, etc. encoded in word embedding. In addition, we also evaluate our tool using qualitative feedback from expert interviews. The source code for this tool can be publicly accessed for reproducibility at github.com/bhavyaghai/WordBias.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "39962945",
+                        "name": "Bhavya Ghai"
+                    },
+                    {
+                        "authorId": "8702990",
+                        "name": "Md. Naimul Hoque"
+                    },
+                    {
+                        "authorId": "2014835564",
+                        "name": "Klaus Mueller"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Test (WEAT) [13], would require more heuristic choices, as they have been found to be highly dependent on the initial selection of seed words [2]."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "b41e07349b87a178d904e6b5d05a2f90b16f8e1e",
+                "externalIds": {
+                    "ArXiv": "2102.04130",
+                    "DBLP": "conf/nips/KirkJVIBDSA21",
+                    "CorpusId": 236950797
+                },
+                "corpusId": 236950797,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b41e07349b87a178d904e6b5d05a2f90b16f8e1e",
+                "title": "Bias Out-of-the-Box: An Empirical Analysis of Intersectional Occupational Biases in Popular Generative Language Models",
+                "abstract": "The capabilities of natural language models trained on large-scale data have increased immensely over the past few years. Open source libraries such as HuggingFace have made these models easily available and accessible. While prior research has identified biases in large language models, this paper considers biases contained in the most popular versions of these models when applied `out-of-the-box' for downstream tasks. We focus on generative language models as they are well-suited for extracting biases inherited from training data. Specifically, we conduct an in-depth analysis of GPT-2, which is the most downloaded text generation model on HuggingFace, with over half a million downloads per month. We assess biases related to occupational associations for different protected categories by intersecting gender with religion, sexuality, ethnicity, political affiliation, and continental name origin. Using a template-based data collection pipeline, we collect 396K sentence completions made by GPT-2 and find: (i) The machine-predicted jobs are less diverse and more stereotypical for women than for men, especially for intersections; (ii) Intersectional interactions are highly relevant for occupational associations, which we quantify by fitting 262 logistic models; (iii) For most occupations, GPT-2 reflects the skewed gender and ethnicity distribution found in US Labor Bureau data, and even pulls the societally-skewed distribution towards gender parity in cases where its predictions deviate from real labor market observations. This raises the normative question of what language models should learn - whether they should reflect or correct for existing inequalities.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "90729626",
+                        "name": "Hannah Rose Kirk"
+                    },
+                    {
+                        "authorId": "1664016559",
+                        "name": "Yennie Jun"
+                    },
+                    {
+                        "authorId": "2146192816",
+                        "name": "Haider Iqbal"
+                    },
+                    {
+                        "authorId": "133876374",
+                        "name": "Elias Benussi"
+                    },
+                    {
+                        "authorId": "2048000297",
+                        "name": "Filippo Volpin"
+                    },
+                    {
+                        "authorId": "102485516",
+                        "name": "F. Dreyer"
+                    },
+                    {
+                        "authorId": "2048000614",
+                        "name": "Aleksandar Shtedritski"
+                    },
+                    {
+                        "authorId": "47792365",
+                        "name": "Yuki M. Asano"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                ", 2020; Bird, 2020), rigorous and meaningful evaluation (Caglayan et al., 2020; Ethayarajh and Jurafsky, 2020; Antoniak and Mimno, 2021; Tan et al., 2021), environmental impact (Strubell et al."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "12902f724619344dfeae330043c4b7b1c9d99bd0",
+                "externalIds": {
+                    "ACL": "2023.eacl-tutorials.4",
+                    "DOI": "10.18653/v1/2023.eacl-tutorials.4",
+                    "CorpusId": 258378232
+                },
+                "corpusId": 258378232,
+                "publicationVenue": {
+                    "id": "8de18c35-6785-4e54-99f2-21ee961302c6",
+                    "name": "Conference of the European Chapter of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conf Eur Chapter Assoc Comput Linguistics",
+                        "EACL"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/eacl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/12902f724619344dfeae330043c4b7b1c9d99bd0",
+                "title": "Understanding Ethics in NLP Authoring and Reviewing",
+                "abstract": "With NLP research now quickly being transferred into real-world applications, it is important to be aware of and think through the consequences of our scientific investigation. Such ethical considerations are important in both authoring and reviewing. This tutorial will equip participants with basic guidelines for thinking deeply about ethical issues and review common considerations that recur in NLP research. The methodology is interactive and participatory, including case studies and working in groups. Importantly, the participants will be co-building the tutorial outcomes and will be working to create further tutorial materials to share as public outcomes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2066254822",
+                        "name": "Luciana Benotti"
+                    },
+                    {
+                        "authorId": "3196675",
+                        "name": "Kar\u00ebn Fort"
+                    },
+                    {
+                        "authorId": "37596605",
+                        "name": "Min-Yen Kan"
+                    },
+                    {
+                        "authorId": "145317727",
+                        "name": "Yulia Tsvetkov"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Norms around different intersectional identities guide how algorithms on these systems perceive individuals\u2019 digital identities and influence the creation of datasets that are often used to make decisions (CheneyLippold, 2017; Das et al., 2022; Antoniak and Mimno, 2021).",
+                "Prior research has highlighted that selecting these lexical seeds or keywords can implicitly introduce researchers\u2019 biases in an artifact (Das et al., 2022; Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "1669a5929c6706efaec0fe2ddb4a62130bd93cb3",
+                "externalIds": {
+                    "ACL": "2023.c3nlp-1.8",
+                    "DOI": "10.18653/v1/2023.c3nlp-1.8",
+                    "CorpusId": 258486951
+                },
+                "corpusId": 258486951,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1669a5929c6706efaec0fe2ddb4a62130bd93cb3",
+                "title": "Toward Cultural Bias Evaluation Datasets: The Case of Bengali Gender, Religious, and National Identity",
+                "abstract": "Critical studies found NLP systems to bias based on gender and racial identities. However, few studies focused on identities defined by cultural factors like religion and nationality. Compared to English, such research efforts are even further limited in major languages like Bengali due to the unavailability of labeled datasets. This paper describes a process for developing a bias evaluation dataset highlighting cultural influences on identity. We also provide a Bengali dataset as an artifact outcome that can contribute to future critical research.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "8415202",
+                        "name": "Dipto Das"
+                    },
+                    {
+                        "authorId": "2345714",
+                        "name": "Shion Guha"
+                    },
+                    {
+                        "authorId": "3356301",
+                        "name": "Bryan C. Semaan"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "These resources have a crucial impact on how and which biases are detected and mitigated (Antoniak and Mimno, 2021), but they are not central in the efforts devoted to this task.",
+                "Instead, we believe what can most contribute to an effective assessment of bias in NLP is precisely the linguistic characterization of the discrimination phenomena (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "c52cc36737f382a3652da5602bba0678aea0078e",
+                "externalIds": {
+                    "ACL": "2023.c3nlp-1.10",
+                    "DOI": "10.18653/v1/2023.c3nlp-1.10",
+                    "CorpusId": 258486946
+                },
+                "corpusId": 258486946,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/c52cc36737f382a3652da5602bba0678aea0078e",
+                "title": "Bias assessment for experts in discrimination, not in computer science",
+                "abstract": "Approaches to bias assessment usually require such technical skills that, by design, they leave discrimination experts out. In this paper we present EDIA, a tool that facilitates that experts in discrimination explore social biases in word embeddings and masked language models. Experts can then characterize those biases so that their presence can be assessed more systematically, and actions can be planned to address them. They can work interactively to assess the effects of different characterizations of bias in a given word embedding or language model, which helps to specify informal intuitions in concrete resources for systematic testing.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "81683516",
+                        "name": "Laura Alonso Alemany"
+                    },
+                    {
+                        "authorId": "2066254822",
+                        "name": "Luciana Benotti"
+                    },
+                    {
+                        "authorId": "2139773809",
+                        "name": "Hern\u00e1n Maina"
+                    },
+                    {
+                        "authorId": "2216190192",
+                        "name": "Luc\u00eda Gonzalez"
+                    },
+                    {
+                        "authorId": "2180147192",
+                        "name": "Lautaro Mart\u00ednez"
+                    },
+                    {
+                        "authorId": "2079934550",
+                        "name": "Beatriz Busaniche"
+                    },
+                    {
+                        "authorId": "2176182678",
+                        "name": "Alexia Halvorsen"
+                    },
+                    {
+                        "authorId": "2213329754",
+                        "name": "Amanda Rojo"
+                    },
+                    {
+                        "authorId": "73773689",
+                        "name": "M. Rajngewerc"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Proper validation is not consistent even in NLP research using lexicon-based methods (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "27553f8bd9cbee90f6e65b9cdecadff0e7cc55ee",
+                "externalIds": {
+                    "DBLP": "conf/acl/AntoniakFMWKS23",
+                    "ACL": "2023.acl-demo.36",
+                    "DOI": "10.18653/v1/2023.acl-demo.36",
+                    "CorpusId": 259106728
+                },
+                "corpusId": 259106728,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/27553f8bd9cbee90f6e65b9cdecadff0e7cc55ee",
+                "title": "Riveter: Measuring Power and Social Dynamics Between Entities",
+                "abstract": "Riveter provides a complete easy-to-use pipeline for analyzing verb connotations associated with entities in text corpora. We prepopulate the package with connotation frames of sentiment, power, and agency, which have demonstrated usefulness for capturing social phenomena, such as gender bias, in a broad range of corpora. For decades, lexical frameworks have been foundational tools in computational social science, digital humanities, and natural language processing, facilitating multifaceted analysis of text corpora. But working with verb-centric lexica specifically requires natural language processing skills, reducing their accessibility to other researchers. By organizing the language processing pipeline, providing complete lexicon scores and visualizations for all entities in a corpus, and providing functionality for users to target specific research questions, Riveter greatly improves the accessibility of verb lexica and can facilitate a broad range of future research.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "34199564",
+                        "name": "Maria Antoniak"
+                    },
+                    {
+                        "authorId": "49713890",
+                        "name": "Anjalie Field"
+                    },
+                    {
+                        "authorId": "2219642161",
+                        "name": "Jimin Mun"
+                    },
+                    {
+                        "authorId": "51038621",
+                        "name": "Melanie Walsh"
+                    },
+                    {
+                        "authorId": "3458698",
+                        "name": "Lauren F. Klein"
+                    },
+                    {
+                        "authorId": "2729164",
+                        "name": "Maarten Sap"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "These studies have used seed words from the literature for their tests without mitigating for their limitations as specified by (Antoniak and Mimno, 2021).",
+                "The motivation behind using NOI words is clearer than using seed words used in the literature (Antoniak and Mimno, 2021).",
+                "These metrics also use lists of seed words that are unreliable as explained by (Antoniak and Mimno, 2021).",
+                "Moreover, According to the reported coherence scores in (Antoniak and Mimno, 2021), The used NOI words for women, men, white and non-white ethnicity groups, score the highest coherence which are 0."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "c95b967dcd2bc0273ace995ef96c7aa7dd5b8e3d",
+                "externalIds": {
+                    "DBLP": "conf/acl/Elsafoury22",
+                    "ACL": "2022.acl-srw.4",
+                    "DOI": "10.18653/v1/2022.acl-srw.4",
+                    "CorpusId": 248780028
+                },
+                "corpusId": 248780028,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c95b967dcd2bc0273ace995ef96c7aa7dd5b8e3d",
+                "title": "Darkness can not drive out darkness: Investigating Bias in Hate SpeechDetection Models",
+                "abstract": "It has become crucial to develop tools for automated hate speech and abuse detection. These tools would help to stop the bullies and the haters and provide a safer environment for individuals especially from marginalized groups to freely express themselves. However, recent research shows that machine learning models are biased and they might make the right decisions for the wrong reasons. In this thesis, I set out to understand the performance of hate speech and abuse detection models and the different biases that could influence them. I show that hate speech and abuse detection models are not only subject to social bias but also to other types of bias that have not been explored before. Finally, I investigate the causal effect of the social and intersectional bias on the performance and unfairness of hate speech detection models.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "117575452",
+                        "name": "Fatma Elsafoury"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "In addition to 74 the original paper, Antoniak and Mimno [1] published a Github repository that contained a JSON with the metadata on 75 seed sets gathered from prior works 2.",
+                "Furthermore, 98 looking at the official dataset statistics, for example for WikiText [7], it is clear that our reproduced vocabulary size is a 99 lot closer to the ground truth than the one by Antoniak and Mimno [1].",
+                "The selection of seed terms varies considerably across the literature, 38 and seed sets themselves may exhibit social and cognitive biases [1].",
+                "Our second contribution is an augmentation of 232 the seed dataset provided by Antoniak and Mimno [1].",
+                "For this, we reproduced an experiment by Antoniak and Mimno [1] ranking the cosine similarity between 155",
+                "We seek to replicate the Antoniak and Mimno [1] paper, hereafter referred to as \u201dthe original paper/work\u201d.",
+                "Another source of instability claimed by Antoniak and Mimno [1] is the ordering and pairing of seed sets.",
+                "This reproducibility study focuses on 4 Antoniak and Mimno [1]\u2019s main claim that the rationale for the construction of these lexicons needs thorough checking 5 before usage, as the seeds used for bias measurement can themselves exhibit biases."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "4b9e5bdf53d8b5cfaade6bdb784dc48620eb8c22",
+                "externalIds": {
+                    "CorpusId": 249092385
+                },
+                "corpusId": 249092385,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/4b9e5bdf53d8b5cfaade6bdb784dc48620eb8c22",
+                "title": "Badder Seeds: Reproducing the Evaluation of Lexical Methods for Bias Measurement",
+                "abstract": "Combating bias in NLP requires bias measurement. Bias measurement is almost always achieved by using lexicons of 3 seed terms, i.e. sets of words specifying stereotypes or dimensions of interest. This reproducibility study focuses on 4 Antoniak and Mimno [1]\u2019s main claim that the rationale for the construction of these lexicons needs thorough checking 5 before usage, as the seeds used for bias measurement can themselves exhibit biases. The study aims to evaluate the 6 reproducibility of the quantitative and qualitative results presented in the paper and the conclusions drawn thereof. 7",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2168285763",
+                        "name": "Giulio Starace"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "Antoniak and Mimno (2021) argues that the most important variable when exploring biases in word embeddings are not the automatizable parts of the problem but the manual part, that is the word lists used for modelling the type of bias to be explored and the list of words that should be neutral.",
+                "These words have a crucial impact on how and which biases are detected and mitigated, but they are not central in the efforts devoted to this task, as argued in (Antoniak and Mimno, 2021).",
+                "We develop on the insights of Antoniak and Mimno (2021) by facilitating access to these technologies to domain experts with no technical expertise, so that they can provide well-founded word lists, by pouring their knowledge into those lists.",
+                "Also aligned with the rest of the NLP area, work has been focused on the technical nuances instead of the more impacting qualitative aspects, like who develops the word list used for bias measurement and evaluation techniques (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "94428842fb8f9edf70b7700bd63cab80f69a6eb9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-06591",
+                    "DOI": "10.48550/arXiv.2207.06591",
+                    "CorpusId": 250526323
+                },
+                "corpusId": 250526323,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/94428842fb8f9edf70b7700bd63cab80f69a6eb9",
+                "title": "A tool to overcome technical barriers for bias assessment in human language technologies",
+                "abstract": "Automatic processing of language is be-coming pervasive in our lives, often taking central roles in our decision making, like choosing the wording for our messages and mails, translating our readings, or even having full conversations with us. Word embeddings are a key component of modern natural language processing systems. They provide a representation of words that has boosted the performance of many applications, working as a semblance of meaning. Word embeddings seem to capture a semblance of the meaning of words from raw text, but, at the same time, they also dis-till stereotypes and societal biases which are subsequently relayed to the \ufb01nal applications. Such biases can be discriminatory. audit these technologies.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2276687",
+                        "name": "L. A. Alemany"
+                    },
+                    {
+                        "authorId": "2066254822",
+                        "name": "Luciana Benotti"
+                    },
+                    {
+                        "authorId": "143956405",
+                        "name": "Luc'ia Gonz'alez"
+                    },
+                    {
+                        "authorId": "2150296733",
+                        "name": "Jorge S'anchez"
+                    },
+                    {
+                        "authorId": "2079934550",
+                        "name": "Beatriz Busaniche"
+                    },
+                    {
+                        "authorId": "2176182678",
+                        "name": "Alexia Halvorsen"
+                    },
+                    {
+                        "authorId": "2091620256",
+                        "name": "M. Bordone"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "These can be general decisions involving prompting or decoding hyperparameters, or they can be bias-specific considerations such as the choice of words used to identify groups [2] or the specific mathematical form of the metrics you compute [16]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "4b2137280915ccc0e06e97b604778b05876a34ad",
+                "externalIds": {
+                    "CorpusId": 247456179
+                },
+                "corpusId": 247456179,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/4b2137280915ccc0e06e97b604778b05876a34ad",
+                "title": "Evaluating Large Language Models",
+                "abstract": "Natural language inference is a complex task with a broader space of decisions on how to prompt LLMs. We work with the three-way classification formulation of the task. Each input in the dataset is a pair of contexts (the premise and the hypothesis): the task is to predict whether the hypothesis is entailed (i.e. always true), contradicted (i.e. always false), or neutral (neither entailed nor contradicted) given the premise. See [6] for further discussion of this task. We use the ANLI dataset [17] with code provided to load the dataset. Two examples from the dataset are shown in Figure 1. ANLI was constructed through an adversarial and iterative data collection process: simply put, the examples in ANLI are quite challenging by design. We use Round 3 of ANLI: in the GPT-3 paper [7], the",
+                "year": 2022,
+                "authors": []
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "a7cba128423e6c43c04bf6508fd346172f216a0c",
+                "externalIds": {
+                    "DBLP": "journals/jossw/Chan22",
+                    "DOI": "10.21105/joss.04036",
+                    "CorpusId": 248090434
+                },
+                "corpusId": 248090434,
+                "publicationVenue": {
+                    "id": "1236e136-01b7-42d5-8c4a-593153a3ab37",
+                    "name": "Journal of Open Source Software",
+                    "type": "journal",
+                    "alternate_names": [
+                        "The Journal of Open Source Software",
+                        "J Open Source Softw"
+                    ],
+                    "issn": "2475-9066",
+                    "url": "https://joss.theoj.org/",
+                    "alternate_urls": [
+                        "https://joss.theoj.org/about"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a7cba128423e6c43c04bf6508fd346172f216a0c",
+                "title": "sweater: Speedy Word Embedding Association Test and Extras Using R",
+                "abstract": "The goal of this R package is to detect associations among words in word embedding spaces. Word embeddings can capture how similar or different two words are in terms of implicit and explicit meanings. Using the example in Collobert et al. (2011), the word vector for \u201cXBox\u201d is close to that for \u201cPlayStation\u201d, as measured by a distance measure such as cosine distance. Word embeddings can also be used to study associations among words that are otherwise difficult to detect. For instance, Jing & Ahn (2021) used word embeddings to study how Democrats and Republicans are divided along party lines about COVID-19.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2111781975",
+                        "name": "Chung-hong Chan"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Recent works investigating bias in language models have found issues with inconsistencies between seed words (Antoniak and Mimno, 2021), unvoiced assumptions and data quality issues in StereoSet and CrowS-Pairs templates (Blodgett et al."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "058dee85d522f6565fe1502cafcf9a5e3f6a6f0e",
+                "externalIds": {
+                    "ACL": "2022.naacl-main.122",
+                    "DBLP": "conf/naacl/DelobelleTCB22",
+                    "DOI": "10.18653/v1/2022.naacl-main.122",
+                    "CorpusId": 250390561
+                },
+                "corpusId": 250390561,
+                "publicationVenue": {
+                    "id": "01103732-3808-4930-b8e4-7e9e68d5c68d",
+                    "name": "North American Chapter of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "North Am Chapter Assoc Comput Linguistics",
+                        "NAACL"
+                    ],
+                    "url": "https://www.aclweb.org/portal/naacl"
+                },
+                "url": "https://www.semanticscholar.org/paper/058dee85d522f6565fe1502cafcf9a5e3f6a6f0e",
+                "title": "Measuring Fairness with Biased Rulers: A Comparative Study on Bias Metrics for Pre-trained Language Models",
+                "abstract": "An increasing awareness of biased patterns in natural language processing resources such as BERT has motivated many metrics to quantify \u2018bias\u2019 and \u2018fairness\u2019 in these resources. However, comparing the results of different metrics and the works that evaluate with such metrics remains difficult, if not outright impossible. We survey the literature on fairness metrics for pre-trained language models and experimentally evaluate compatibility, including both biases in language models and in their downstream tasks. We do this by combining traditional literature survey, correlation analysis and empirical evaluations. We find that many metrics are not compatible with each other and highly depend on (i) templates, (ii) attribute and target seeds and (iii) the choice of embeddings. We also see no tangible evidence of intrinsic bias relating to extrinsic bias. These results indicate that fairness or bias evaluation remains challenging for contextualized language models, among other reasons because these choices remain subjective. To improve future comparisons and fairness evaluations, we recommend to avoid embedding-based metrics and focus on fairness evaluations in downstream tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "150258834",
+                        "name": "Pieter Delobelle"
+                    },
+                    {
+                        "authorId": "2145259446",
+                        "name": "E. Tokpo"
+                    },
+                    {
+                        "authorId": "1709830",
+                        "name": "T. Calders"
+                    },
+                    {
+                        "authorId": "2990203",
+                        "name": "Bettina Berendt"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "4afb1dd5ec9093c2d61b86e8faf74fd5a6807cd0",
+                "externalIds": {
+                    "ACL": "2022.gebnlp-1.19",
+                    "DOI": "10.18653/v1/2022.gebnlp-1.19",
+                    "CorpusId": 250390517
+                },
+                "corpusId": 250390517,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/4afb1dd5ec9093c2d61b86e8faf74fd5a6807cd0",
+                "title": "On Gender Biases in Offensive Language Classification Models",
+                "abstract": "We explore whether neural Natural Language Processing models trained to identify offensive language in tweets contain gender biases. We add historically gendered and gender ambiguous American names to an existing offensive language evaluation set to determine whether models? predictions are sensitive or robust to gendered names. While we see some evidence that these models might be prone to biased stereotypes that men use more offensive language than women, our results indicate that these models? binary predictions might not greatly change based upon gendered names.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2175479222",
+                        "name": "Sanjana Marc\u00e9"
+                    },
+                    {
+                        "authorId": "48926630",
+                        "name": "Adam Poliak"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "539be81ddd02244322717f2bde57f69986071a15",
+                "externalIds": {
+                    "DBLP": "conf/naacl/SteinbornDJS22",
+                    "DOI": "10.18653/v1/2022.findings-naacl.69",
+                    "CorpusId": 250562900
+                },
+                "corpusId": 250562900,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/539be81ddd02244322717f2bde57f69986071a15",
+                "title": "An Information-Theoretic Approach and Dataset for Probing Gender Stereotypes in Multilingual Masked Language Models",
+                "abstract": "Warning: This work deals with statements of a stereotypical nature that may be upsetting. Bias research in NLP is a rapidly growing and developing \ufb01eld. Similar to CrowS-Pairs (Nangia et al., 2020), we assess gender bias in masked-language models (MLMs) by study-ing pairs of sentences that are identical ex-cept that the individuals referred to have different gender. Most bias research focuses on and often is speci\ufb01c to English. Using a novel methodology for creating sentence pairs that is applicable across languages, we create, based on CrowS-Pairs, a multilingual dataset for English, Finnish, German, Indonesian and Thai. Additionally, we propose S JSD , a new bias measure based on Jensen\u2013Shannon divergence, which we argue retains more information from the model output probabilities than other previously proposed bias measures for MLMs. Using multilingual MLMs, we \ufb01nd that S JSD diagnoses the same systematic biased behavior for non-English that previous studies have found for monolingual English pre-trained MLMs. S JSD outperforms the CrowS-Pairs measure, which struggles to \ufb01nd such biases for smaller non-English datasets. character. For this larger dataset both S JSD and CPS show the same systematic trends in bias scores between the models, in agreement with the results of Nangia et al. (2020). Under the effect of the perturbation, the dataset is of suf\ufb01cient size that both measures are ro-bust and retain their systematic trends. The number of signi\ufb01cant \ufb01gures for CPS was chosen to match the results of the original CPS study.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2176399629",
+                        "name": "Victor Steinborn"
+                    },
+                    {
+                        "authorId": "2126511013",
+                        "name": "Philipp Dufter"
+                    },
+                    {
+                        "authorId": "2135302984",
+                        "name": "Haris Jabbar"
+                    },
+                    {
+                        "authorId": "144418438",
+                        "name": "Hinrich Sch\u00fctze"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Although paired seed words like \u201cman-woman\u201d and \u201che-she\u201d are suitable to capture a male-female component [AM21], they might transport unwanted correlations (e."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7569c0f87f48dab4097be3b2fcc9d87b970c6138",
+                "externalIds": {
+                    "DBLP": "conf/gi/KraftZFSBU22",
+                    "DOI": "10.18420/inf2022_108",
+                    "CorpusId": 251401954
+                },
+                "corpusId": 251401954,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/7569c0f87f48dab4097be3b2fcc9d87b970c6138",
+                "title": "Measuring Gender Bias in German Language Generation",
+                "abstract": ": Most existing methods to measure social bias in natural language generation are specified for English language models. In this work, we developed a German regard classifier based on a newly crowd-sourced dataset. Our model meets the test set accuracy of the original English version. With the classifier, we measured binary gender bias in two large language models. The results indicate a positive bias toward female subjects for a German version of GPT-2 and similar tendencies for GPT-3. Yet, upon qualitative analysis, we found that positive regard partly corresponds to sexist stereotypes. Our findings suggest that the regard classifier should not be used as a single measure but, instead, combined with more qualitative analyses.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2180786421",
+                        "name": "Angelie Kraft"
+                    },
+                    {
+                        "authorId": "2067522993",
+                        "name": "Hans Zorn"
+                    },
+                    {
+                        "authorId": "1394268425",
+                        "name": "Pascal Fecht"
+                    },
+                    {
+                        "authorId": "17736848",
+                        "name": "Judith Simon"
+                    },
+                    {
+                        "authorId": "31565315",
+                        "name": "Chris Biemann"
+                    },
+                    {
+                        "authorId": "2370666",
+                        "name": "Ricardo Usbeck"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "These metrics also use lists of seed words that have been shown to be unreliable (Antoniak and Mimno, 2021).",
+                "Similarly, our SOS bias scores are limited to the used word lists and even if we used two different swear word lists and identity terms that are coherent according to (Antoniak and Mimno, 2021), using different word lists may give different results."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "8255aaeef862833a5593aa951dfbca1b76d78130",
+                "externalIds": {
+                    "DBLP": "conf/coling/ElsafouryWKR22",
+                    "ACL": "2022.coling-1.108",
+                    "CorpusId": 252534533
+                },
+                "corpusId": 252534533,
+                "publicationVenue": {
+                    "id": "f51ff783-cdff-4e22-94fb-28e6336d17b3",
+                    "name": "International Conference on Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Comput Linguistics",
+                        "COLING"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/coling/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8255aaeef862833a5593aa951dfbca1b76d78130",
+                "title": "SOS: Systematic Offensive Stereotyping Bias in Word Embeddings",
+                "abstract": "Systematic Offensive stereotyping (SOS) in word embeddings could lead to associating marginalised groups with hate speech and profanity, which might lead to blocking and silencing those groups, especially on social media platforms. In this [id=stk]work, we introduce a quantitative measure of the SOS bias, [id=stk]validate it in the most commonly used word embeddings, and investigate if it explains the performance of different word embeddings on the task of hate speech detection. Results show that SOS bias exists in almost all examined word embeddings and that [id=stk]the proposed SOS bias metric correlates positively with the statistics of published surveys on online extremism. We also show that the [id=stk]proposed metric reveals distinct information [id=stk]compared to established social bias metrics. However, we do not find evidence that SOS bias explains the performance of hate speech detection models based on the different word embeddings.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "117575452",
+                        "name": "Fatma Elsafoury"
+                    },
+                    {
+                        "authorId": "48408604",
+                        "name": "Steven R. Wilson"
+                    },
+                    {
+                        "authorId": "2067851",
+                        "name": "Stamos Katsigiannis"
+                    },
+                    {
+                        "authorId": "1728223",
+                        "name": "N. Ramzan"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "by word list; different lists can lead to different debias performance (Antoniak and Mimno, 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7230e1ab9d4311c8b4d624b902e1ec784d2821ee",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-11087",
+                    "DOI": "10.48550/arXiv.2211.11087",
+                    "CorpusId": 253734411
+                },
+                "corpusId": 253734411,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7230e1ab9d4311c8b4d624b902e1ec784d2821ee",
+                "title": "Conceptor-Aided Debiasing of Contextualized Embeddings",
+                "abstract": "Pre-trained language models re\ufb02ect the inher-ent social biases of their training corpus. Many methods have been proposed to mitigate this issue, but they often fail to debias or they sacri\ufb01ce model accuracy. We use conceptors \u2013a soft projection method\u2013to identify and remove the bias subspace in contextual embeddings in BERT and GPT. We propose two methods of applying conceptors (1) bias subspace projection by post-processing; and (2) a new architecture, conceptor-intervened BERT (CI-BERT), which explicitly incorporates the conceptor projection into all layers during training. We \ufb01nd that conceptor post-processing achieves state-of-the-art debiasing results while maintaining or improving BERT\u2019s performance on the GLUE benchmark. Although CI-BERT\u2019s training takes all layers\u2019 bias into account and can outperform its post-processing counterpart in bias mitigation, CI-BERT reduces the language model accuracy. We also show the im-portance of carefully constructing the bias subspace. The best results are obtained by removing outliers from the list of biased words, inter-secting them (using the conceptor AND operation), and computing their embeddings using the sentences from a cleaner corpus.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2157866322",
+                        "name": "Yifei Li"
+                    },
+                    {
+                        "authorId": "1717822",
+                        "name": "Lyle Ungar"
+                    },
+                    {
+                        "authorId": "2662374",
+                        "name": "Jo\u00e3o Sedoc"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "(2019) and Antoniak and Mimno (2021). We focused on these seed words as they were successfully used in prior work on extracting associations from word embedding models; we plan to create our own seed words in future work."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "52b0d8c7409031b17fac103a20a4d69bbd6a7d01",
+                "externalIds": {
+                    "ACL": "2022.nlpcss-1.18",
+                    "DOI": "10.18653/v1/2022.nlpcss-1.18",
+                    "CorpusId": 256461210
+                },
+                "corpusId": 256461210,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/52b0d8c7409031b17fac103a20a4d69bbd6a7d01",
+                "title": "Extracting Associations of Intersectional Identities with Discourse about Institution from Nigeria",
+                "abstract": "Word embedding models have been used in prior work to extract associations of intersectional identities within discourse concerning institutions of power, but restricted its focus on narratives of the nineteenth-century U.S. south. This paper leverages this prior work and introduces an initial study on the association of intersected identities with discourse concerning social institutions within social media from Nigeria. Specifically, we use word embedding models trained on tweets from Nigeria and extract associations of intersected social identities with institutions (e.g., domestic, culture, etc.) to provide insight into the alignment of identities with institutions. Our initial experiments indicate that identities at the intersection of gender and economic status groups have significant associations with discourse about the economic, political, and domestic institutions.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "17941036",
+                        "name": "Pavan Kantharaju"
+                    },
+                    {
+                        "authorId": "1403006514",
+                        "name": "S. Schmer-Galunder"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                ", 2020; Bird, 2020), rigorous and meaningful evaluation (Caglayan et al., 2020; Ethayarajh and Jurafsky, 2020; Antoniak and Mimno, 2021; Tan et al., 2021), environmental impact (Strubell et al."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "8f16c64af8021a881cc092a215bf57391d2668d0",
+                "externalIds": {
+                    "ACL": "2022.emnlp-main.299",
+                    "DBLP": "conf/emnlp/BenottiB22",
+                    "DOI": "10.18653/v1/2022.emnlp-main.299",
+                    "CorpusId": 256461360
+                },
+                "corpusId": 256461360,
+                "publicationVenue": {
+                    "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+                    "name": "Conference on Empirical Methods in Natural Language Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Empir Method Nat Lang Process",
+                        "Empirical Methods in Natural Language Processing",
+                        "Conf Empir Method Nat Lang Process",
+                        "EMNLP"
+                    ],
+                    "url": "https://www.aclweb.org/portal/emnlp"
+                },
+                "url": "https://www.semanticscholar.org/paper/8f16c64af8021a881cc092a215bf57391d2668d0",
+                "title": "Ethics consideration sections in natural language processing papers",
+                "abstract": "In this paper, we present the results of a manual classification of all ethical consideration sections for ACL 2021. We also compare how many papers had an ethics consideration section per track and per world region in ACL 2021. We classified papers according to the ethical issues covered (research benefits, potential harms, and vulnerable groups affected) and whether the paper was marked as requiring ethics review by at least one reviewer. Moreover, we discuss recurring obstacles we have observed (highlighting some interesting texts we found along the way) and conclude with three suggestions. We think that this paper may be useful for anyone who needs to write \u2014 or review \u2014 an ethics section and would like to get an overview of what others have done.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2066254822",
+                        "name": "Luciana Benotti"
+                    },
+                    {
+                        "authorId": "144779911",
+                        "name": "P. Blackburn"
+                    }
+                ]
+            }
+        }
+    ]
+}

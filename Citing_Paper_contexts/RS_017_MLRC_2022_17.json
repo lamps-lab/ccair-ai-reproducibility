@@ -1,0 +1,484 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "However, we note that ignoring points where non-differentiability may occur in the domain could introduce errors in some iterations during training, as it may also happen with ReLU [1]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "19bc80505f25d682640e69bbd765feebe1c82216",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-04870",
+                    "ArXiv": "2308.04870",
+                    "DOI": "10.48550/arXiv.2308.04870",
+                    "CorpusId": 260735780
+                },
+                "corpusId": 260735780,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/19bc80505f25d682640e69bbd765feebe1c82216",
+                "title": "Decorrelating neurons using persistence",
+                "abstract": "We propose a novel way to improve the generalisation capacity of deep learning models by reducing high correlations between neurons. For this, we present two regularisation terms computed from the weights of a minimum spanning tree of the clique whose vertices are the neurons of a given network (or a sample of those), where weights on edges are correlation dissimilarities. We provide an extensive set of experiments to validate the effectiveness of our terms, showing that they outperform popular ones. Also, we demonstrate that naive minimisation of all correlations between neurons obtains lower accuracies than our regularisation terms, suggesting that redundancies play a significant role in artificial neural networks, as evidenced by some studies in neuroscience for real networks. We include a proof of differentiability of our regularisers, thus developing the first effective topological persistence-based regularisation terms that consider the whole set of neurons and that can be applied to a feedforward architecture in any deep learning task such as classification, data generation, or regression.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2159671396",
+                        "name": "Rub'en Ballester"
+                    },
+                    {
+                        "authorId": "11996904",
+                        "name": "C. Casacuberta"
+                    },
+                    {
+                        "authorId": "7855312",
+                        "name": "Sergio Escalera"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "The impact of this choice has been shown to be neglectible in a simple setup with SGD presented in [31], especially if batch normalization is implemented as it is the case in Algorithm 3.",
+                "At zero error, these librairies fix arbitrarily the value of the function error gradient to zero [31]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "91356fdf3cac40a11d366b442cd5d246bb75ff40",
+                "externalIds": {
+                    "DOI": "10.1109/TPWRS.2022.3198839",
+                    "CorpusId": 251609049
+                },
+                "corpusId": 251609049,
+                "publicationVenue": {
+                    "id": "dbbda9ef-0504-4875-b893-5c964f6b8f0e",
+                    "name": "IEEE Transactions on Power Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Power Syst"
+                    ],
+                    "issn": "0885-8950",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=59"
+                },
+                "url": "https://www.semanticscholar.org/paper/91356fdf3cac40a11d366b442cd5d246bb75ff40",
+                "title": "Reliable Provision of Ancillary Services From Aggregated Variable Renewable Energy Sources Through Forecasting of Extreme Quantiles",
+                "abstract": "Virtual power plants aggregating multiple renewable energy sources such as Photovoltaics and Wind are promising candidates for the provision of balancing ancillary services. A requisite for the provision of these services is that forecasts of aggregated production need to be highly reliable in order to minimize the risk of not providing the service. Yet, a reliability greater than 99% is unattainable for standard forecasting models. This work proposes alternative models for the day-ahead prediction of the lowest quantiles (0.1% to 0.9%) of renewable Virtual power plant production. The proposed approaches derive conditional quantile forecasts of aggregated Wind/PV/Hydro production, obtained from tailored parametric models and machine learning models, including a Convolutional Neural Network architecture for predicting extremes. Reliability deviation is reduced up to 50% and probabilistic skill score up to 18% compared to Quantile Regression Forest. Forecasting models are subsequently applied to the provision of downward reserve capacity by a renewable Virtual power plant. Increased forecasting reliability leads to a higher reliability of the reserve capacity, but reduces the average reserve volume offered by the renewable aggregation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "12100026",
+                        "name": "S. Camal"
+                    },
+                    {
+                        "authorId": "2171186",
+                        "name": "A. Michiorri"
+                    },
+                    {
+                        "authorId": "30812190",
+                        "name": "G. Kariniotakis"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a28e15698470429acc943fd8f52d17db3547f91d",
+                "externalIds": {
+                    "DOI": "10.1016/j.ijplas.2023.103642",
+                    "CorpusId": 258563321
+                },
+                "corpusId": 258563321,
+                "publicationVenue": {
+                    "id": "bf59796d-795f-480d-8123-a62726a27beb",
+                    "name": "International journal of plasticity",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Int J Plast",
+                        "Int j plast",
+                        "International Journal of Plasticity"
+                    ],
+                    "issn": "0749-6419",
+                    "url": "https://www.journals.elsevier.com/international-journal-of-plasticity",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/07496419"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a28e15698470429acc943fd8f52d17db3547f91d",
+                "title": "Machine learning-driven stress integration method for anisotropic plasticity in sheet metal forming",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "90417164",
+                        "name": "Piemaan Fazily"
+                    },
+                    {
+                        "authorId": "1819990",
+                        "name": "J. Yoon"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Connections to Bertoin et al. (2021).",
+                "Recently, Bertoin et al. (2021) empirically studied how the choice of DADReLU(0) changes the output of AD and the training of neural networks."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c302291e4b87f79976982619b28423d9ef49050b",
+                "externalIds": {
+                    "DBLP": "conf/icml/0001PA23",
+                    "ArXiv": "2301.13370",
+                    "DOI": "10.48550/arXiv.2301.13370",
+                    "CorpusId": 256415917
+                },
+                "corpusId": 256415917,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c302291e4b87f79976982619b28423d9ef49050b",
+                "title": "On the Correctness of Automatic Differentiation for Neural Networks with Machine-Representable Parameters",
+                "abstract": "Recent work has shown that forward- and reverse- mode automatic differentiation (AD) over the reals is almost always correct in a mathematically precise sense. However, actual programs work with machine-representable numbers (e.g., floating-point numbers), not reals. In this paper, we study the correctness of AD when the parameter space of a neural network consists solely of machine-representable numbers. In particular, we analyze two sets of parameters on which AD can be incorrect: the incorrect set on which the network is differentiable but AD does not compute its derivative, and the non-differentiable set on which the network is non-differentiable. For a neural network with bias parameters, we first prove that the incorrect set is always empty. We then prove a tight bound on the size of the non-differentiable set, which is linear in the number of non-differentiabilities in activation functions, and give a simple necessary and sufficient condition for a parameter to be in this set. We further prove that AD always computes a Clarke subderivative even on the non-differentiable set. We also extend these results to neural networks possibly without bias parameters.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "31918896",
+                        "name": "Wonyeol Lee"
+                    },
+                    {
+                        "authorId": "2115258625",
+                        "name": "Sejun Park"
+                    },
+                    {
+                        "authorId": "2075403123",
+                        "name": "A. Aiken"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Abusing notation slightly, we write dPC2 dz \u2223\u2223\u2223\u2223 z=z\u0304 = diag(c\u0303(z)) \u2208 \u2202PC2 (z\u0304) This aligns with the default rule for assigning a sub-gradient to ReLU used in the popular machine learning libraries TensorFlow[1], PyTorch [39] and JAX [16], and has been observed to yield networks which are more stable to train than other choices [11]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ef8a4cd550d64aeec87d8a7f7702b1dc906b68ed",
+                "externalIds": {
+                    "ArXiv": "2301.13395",
+                    "CorpusId": 260133591
+                },
+                "corpusId": 260133591,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ef8a4cd550d64aeec87d8a7f7702b1dc906b68ed",
+                "title": "Faster Predict-and-Optimize with Davis-Yin Splitting",
+                "abstract": "In many applications, a combinatorial problem must be repeatedly solved with similar, but distinct parameters. Yet, the parameters $w$ are not directly observed; only contextual data $d$ that correlates with $w$ is available. It is tempting to use a neural network to predict $w$ given $d$, but training such a model requires reconciling the discrete nature of combinatorial optimization with the gradient-based frameworks used to train neural networks. When the problem in question is an Integer Linear Program (ILP), one approach to overcoming this issue is to consider a continuous relaxation of the combinatorial problem. While existing methods utilizing this approach have shown to be highly effective on small problems (10-100 variables), they do not scale well to large problems. In this work, we draw on ideas from modern convex optimization to design a network and training scheme which scales effortlessly to problems with thousands of variables.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "144913918",
+                        "name": "Daniel Mckenzie"
+                    },
+                    {
+                        "authorId": "143745940",
+                        "name": "Samy Wu Fung"
+                    },
+                    {
+                        "authorId": "22998389",
+                        "name": "Howard Heaton"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "fb76edcbfe53f0cbafa9502c7282d93c6a075a15",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-15651",
+                    "ArXiv": "2210.15651",
+                    "DOI": "10.48550/arXiv.2210.15651",
+                    "CorpusId": 253157845
+                },
+                "corpusId": 253157845,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/fb76edcbfe53f0cbafa9502c7282d93c6a075a15",
+                "title": "Learning Single-Index Models with Shallow Neural Networks",
+                "abstract": "Single-index models are a class of functions given by an unknown univariate ``link'' function applied to an unknown one-dimensional projection of the input. These models are particularly relevant in high dimension, when the data might present low-dimensional structure that learning algorithms should adapt to. While several statistical aspects of this model, such as the sample complexity of recovering the relevant (one-dimensional) subspace, are well-understood, they rely on tailored algorithms that exploit the specific structure of the target function. In this work, we introduce a natural class of shallow neural networks and study its ability to learn single-index models via gradient flow. More precisely, we consider shallow networks in which biases of the neurons are frozen at random initialization. We show that the corresponding optimization landscape is benign, which in turn leads to generalization guarantees that match the near-optimal sample complexity of dedicated semi-parametric methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2269602",
+                        "name": "A. Bietti"
+                    },
+                    {
+                        "authorId": "143627859",
+                        "name": "Joan Bruna"
+                    },
+                    {
+                        "authorId": "39310169",
+                        "name": "Clayton Sanford"
+                    },
+                    {
+                        "authorId": "2110310498",
+                        "name": "M. Song"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0a17ea1b52e43842efec3b5c395fbf5921d25243",
+                "externalIds": {
+                    "ArXiv": "2206.00939",
+                    "DBLP": "journals/corr/abs-2206-00939",
+                    "DOI": "10.48550/arXiv.2206.00939",
+                    "CorpusId": 249282602
+                },
+                "corpusId": 249282602,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/0a17ea1b52e43842efec3b5c395fbf5921d25243",
+                "title": "Gradient flow dynamics of shallow ReLU networks for square loss and orthogonal inputs",
+                "abstract": "The training of neural networks by gradient descent methods is a cornerstone of the deep learning revolution. Yet, despite some recent progress, a complete theory explaining its success is still missing. This article presents, for orthogonal input vectors, a precise description of the gradient flow dynamics of training one-hidden layer ReLU neural networks for the mean squared error at small initialisation. In this setting, despite non-convexity, we show that the gradient flow converges to zero loss and characterise its implicit bias towards minimum variation norm. Furthermore, some interesting phenomena are highlighted: a quantitative description of the initial alignment phenomenon and a proof that the process follows a specific saddle to saddle dynamics.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51219265",
+                        "name": "Etienne Boursier"
+                    },
+                    {
+                        "authorId": "1399505772",
+                        "name": "Loucas Pillaud-Vivien"
+                    },
+                    {
+                        "authorId": "2874440",
+                        "name": "Nicolas Flammarion"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2121052a7337cc9a668c0b2c9fce8cbb56afa2ee",
+                "externalIds": {
+                    "DBLP": "conf/iclr/BolteBPP23",
+                    "ArXiv": "2206.01730",
+                    "CorpusId": 256615681
+                },
+                "corpusId": 256615681,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/2121052a7337cc9a668c0b2c9fce8cbb56afa2ee",
+                "title": "On the complexity of nonsmooth automatic differentiation",
+                "abstract": "Using the notion of conservative gradient, we provide a simple model to estimate the computational costs of the backward and forward modes of algorithmic differentiation for a wide class of nonsmooth programs. The overhead complexity of the backward mode turns out to be independent of the dimension when using programs with locally Lipschitz semi-algebraic or definable elementary functions. This considerably extends Baur-Strassen's smooth cheap gradient principle. We illustrate our results by establishing fast backpropagation results of conservative gradients through feedforward neural networks with standard activation and loss functions. Nonsmooth backpropagation's cheapness contrasts with concurrent forward approaches, which have, to this day, dimensional-dependent worst-case overhead estimates. We provide further results suggesting the superiority of backward propagation of conservative gradients. Indeed, we relate the complexity of computing a large number of directional derivatives to that of matrix multiplication, and we show that finding two subgradients in the Clarke subdifferential of a function is an NP-hard problem.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "24369169",
+                        "name": "J. Bolte"
+                    },
+                    {
+                        "authorId": "2168262205",
+                        "name": "Ryan Boustany"
+                    },
+                    {
+                        "authorId": "144797102",
+                        "name": "Edouard Pauwels"
+                    },
+                    {
+                        "authorId": "1397404270",
+                        "name": "B. Pesquet-Popescu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "For instance, [8] empirically shows that gradient artifacts created by conservative calculus can impact the method."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "9c2fb7a8781335801ba1e404f488ae7fdf2875f0",
+                "externalIds": {
+                    "ArXiv": "2202.13744",
+                    "CorpusId": 247158816
+                },
+                "corpusId": 247158816,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/9c2fb7a8781335801ba1e404f488ae7fdf2875f0",
+                "title": "Subgradient sampling for nonsmooth nonconvex minimization",
+                "abstract": "Risk minimization for nonsmooth nonconvex problems naturally leads to firstorder sampling or, by an abuse of terminology, to stochastic subgradient descent. We establish the convergence of this method in the path-differentiable case, and describe more precise results under additional geometric assumptions. We recover and improve results from Ermoliev-Norkin by using a different approach: conservative calculus and the ODE method. In the definable case, we show that first-order subgradient sampling avoids artificial critical point with probability one and applies moreover to a large range of risk minimization problems in deep learning, based on the backpropagation oracle. As byproducts of our approach, we obtain several results on integration of independent interest, such as an interchange result for conservative derivatives and integrals, or the definability of set-valued parameterized integrals.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "24369169",
+                        "name": "J. Bolte"
+                    },
+                    {
+                        "authorId": "145437881",
+                        "name": "Tam Le"
+                    },
+                    {
+                        "authorId": "144797102",
+                        "name": "Edouard Pauwels"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1a108fea98a17365c7c08ed93152555a320fb5a5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-08539",
+                    "ArXiv": "2202.08539",
+                    "CorpusId": 246904405
+                },
+                "corpusId": 246904405,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1a108fea98a17365c7c08ed93152555a320fb5a5",
+                "title": "When, where, and how to add new neurons to ANNs",
+                "abstract": "Neurogenesis in ANNs is an understudied and difficult problem, even compared to other forms of structural learning like pruning. By decomposing it into triggers and initializations, we introduce a framework for studying the various facets of neurogenesis: when, where, and how to add neurons during the learning process. We present the Neural Orthogonality (NORTH*) suite of neurogenesis strategies, combining layer-wise triggers and initializations based on the orthogonality of activations or weights to dynamically grow performant networks that converge to an efficient size. We evaluate our contributions against other recent neurogenesis works across a variety of supervised learning tasks. 1",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "29993414",
+                        "name": "Kaitlin Maile"
+                    },
+                    {
+                        "authorId": "2558054",
+                        "name": "E. Rachelson"
+                    },
+                    {
+                        "authorId": "1865164",
+                        "name": "H. Luga"
+                    },
+                    {
+                        "authorId": "47585869",
+                        "name": "Dennis G. Wilson"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "They were further studied in [41, 24, 15] and empirically investigated in [11]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0121241a1a820164c44ee2916ea87d0966d515cc",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-01730",
+                    "DOI": "10.48550/arXiv.2206.01730",
+                    "CorpusId": 249394718
+                },
+                "corpusId": 249394718,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0121241a1a820164c44ee2916ea87d0966d515cc",
+                "title": "Nonsmooth automatic differentiation: a cheap gradient principle and other complexity results",
+                "abstract": "We provide a simple model to estimate the computational costs of the backward and forward modes of algorithmic differentiation for a wide class of nonsmooth programs. Prominent examples are the famous relu and convolutional neural networks together with their standard loss functions. Using the recent notion of conservative gradients, we then establish a \u201cnonsmooth cheap gradient principle\u201d for backpropagationencompassing most concrete applications. Nonsmooth backprop-agation\u2019s cheapness contrasts with concurrent forward approaches which have, at this day, dimensional-dependent worst case estimates. In order to understand this class of methods, we relate the complexity of computing a large number of directional derivatives to that of matrix multiplication. This shows a fundamental limitation for improving forward AD for that task. Finally, while the fastest algorithms for computing a Clarke subgradient are linear in the dimension, it appears that computing two distinct Clarke (resp. lexicographic) subgradients for simple neural networks is NP-Hard.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "24369169",
+                        "name": "J. Bolte"
+                    },
+                    {
+                        "authorId": "2168262205",
+                        "name": "Ryan Boustany"
+                    },
+                    {
+                        "authorId": "144797102",
+                        "name": "Edouard Pauwels"
+                    },
+                    {
+                        "authorId": "1397404270",
+                        "name": "B. Pesquet-Popescu"
+                    }
+                ]
+            }
+        }
+    ]
+}

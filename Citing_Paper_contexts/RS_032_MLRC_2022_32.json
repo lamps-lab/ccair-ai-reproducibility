@@ -1,0 +1,1724 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "36d75e6bddbd58e907c7d1bf79a6eef52c7e43c5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-11722",
+                    "ArXiv": "2309.11722",
+                    "DOI": "10.48550/arXiv.2309.11722",
+                    "CorpusId": 262084261
+                },
+                "corpusId": 262084261,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/36d75e6bddbd58e907c7d1bf79a6eef52c7e43c5",
+                "title": "Efficient Core-selecting Incentive Mechanism for Data Sharing in Federated Learning",
+                "abstract": "Federated learning is a distributed machine learning system that uses participants' data to train an improved global model. In federated learning, participants cooperatively train a global model, and they will receive the global model and payments. Rational participants try to maximize their individual utility, and they will not input their high-quality data truthfully unless they are provided with satisfactory payments based on their data quality. Furthermore, federated learning benefits from the cooperative contributions of participants. Accordingly, how to establish an incentive mechanism that both incentivizes inputting data truthfully and promotes stable cooperation has become an important issue to consider. In this paper, we introduce a data sharing game model for federated learning and employ game-theoretic approaches to design a core-selecting incentive mechanism by utilizing a popular concept in cooperative games, the core. In federated learning, the core can be empty, resulting in the core-selecting mechanism becoming infeasible. To address this, our core-selecting mechanism employs a relaxation method and simultaneously minimizes the benefits of inputting false data for all participants. However, this mechanism is computationally expensive because it requires aggregating exponential models for all possible coalitions, which is infeasible in federated learning. To address this, we propose an efficient core-selecting mechanism based on sampling approximation that only aggregates models on sampled coalitions to approximate the exact result. Extensive experiments verify that the efficient core-selecting mechanism can incentivize inputting high-quality data and stable cooperation, while it reduces computational overhead compared to the core-selecting mechanism.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2243337914",
+                        "name": "Mengda Ji"
+                    },
+                    {
+                        "authorId": "2243398005",
+                        "name": "Genjiu Xu"
+                    },
+                    {
+                        "authorId": "2243345743",
+                        "name": "Jianjun Ge"
+                    },
+                    {
+                        "authorId": "2243395990",
+                        "name": "Mingqiang Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "A number of authors have reported pitfalls with the use of SHAP and Shapley values as a measure of feature importance [73, 42, 66, 52, 27, 72, 55, 2, 70, 41, 14]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8c2782977a86f05acef2a07607c8550078de2523",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-03041",
+                    "ArXiv": "2309.03041",
+                    "DOI": "10.48550/arXiv.2309.03041",
+                    "CorpusId": 261556675
+                },
+                "corpusId": 261556675,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8c2782977a86f05acef2a07607c8550078de2523",
+                "title": "A Refutation of Shapley Values for Explainability",
+                "abstract": "Recent work demonstrated the existence of Boolean functions for which Shapley values provide misleading information about the relative importance of features in rule-based explanations. Such misleading information was broadly categorized into a number of possible issues. Each of those issues relates with features being relevant or irrelevant for a prediction, and all are significant regarding the inadequacy of Shapley values for rule-based explainability. This earlier work devised a brute-force approach to identify Boolean functions, defined on small numbers of features, and also associated instances, which displayed such inadequacy-revealing issues, and so served as evidence to the inadequacy of Shapley values for rule-based explainability. However, an outstanding question is how frequently such inadequacy-revealing issues can occur for Boolean functions with arbitrary large numbers of features. It is plain that a brute-force approach would be unlikely to provide insights on how to tackle this question. This paper answers the above question by proving that, for any number of features, there exist Boolean functions that exhibit one or more inadequacy-revealing issues, thereby contributing decisive arguments against the use of Shapley values as the theoretical underpinning of feature-attribution methods in explainability.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "82038527",
+                        "name": "Xuanxiang Huang"
+                    },
+                    {
+                        "authorId": "1393656234",
+                        "name": "Joao Marques-Silva"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "result"
+            ],
+            "contexts": [
+                "It is also worth noting that [2] extends the previous results to the least core with the same complexity guarantees.",
+                "It has been observed [2] that allocations that cannot be clearly communicated to participants are less likely to be perceived as fair and are thus less likely to incentivize participation.",
+                "To do this, we leverage resuls from [2], [3], where the authors show that cost sharing mechanisms can be efficiently learned for large-scale instances."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "113cb6a8fd90f78e42c7a1682b705c55a1f3fb69",
+                "externalIds": {
+                    "DOI": "10.1109/PESGM52003.2023.10253145",
+                    "CorpusId": 262974682
+                },
+                "corpusId": 262974682,
+                "publicationVenue": {
+                    "id": "b2cee8ae-3d79-4abb-bf4c-b31194b13960",
+                    "name": "IEEE Power & Energy Society General Meeting",
+                    "alternate_names": [
+                        "IEEE Power  Energy Soc Gen Meet"
+                    ],
+                    "issn": "1944-9925",
+                    "alternate_issns": [
+                        "1944-9933"
+                    ],
+                    "url": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000581",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=4584435"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/113cb6a8fd90f78e42c7a1682b705c55a1f3fb69",
+                "title": "Cost Sharing Mechanism with Statistical Learning for Peer-to-Peer Energy Trading",
+                "abstract": "Recent results in peer-to-peer energy trading present the least core as an attractive and computationally efficient cost sharing mechanism in these cooperative markets. In the literature of statistical learning applied to cooperative games, it has been found that some approximations of the core can be efficiently learned, reinforcing the idea that this is a scalable allocation mechanism. We bridge these two results by showing that while the exact computation of the least core for peer-to-peer energy trading has limitations as the number of participants increases, they can be overcome by leveraging asymptotic guarantees from statistical learning theory. Moreover, we show that these results can be applied to some explainable allocations, i.e. cost sharing mechanisms that can be clearly communicated to participants and have a higher likelihood of being successfully implemented. We present some theoretical results and a numerical implementation to validate our method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2179190540",
+                        "name": "Tomas Valencia Zuluaga"
+                    },
+                    {
+                        "authorId": "2533065",
+                        "name": "S. Oren"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8eba1bb64ecfafb097e565f167b61a6a450ae733",
+                "externalIds": {
+                    "ArXiv": "2307.02460",
+                    "DBLP": "journals/corr/abs-2307-02460",
+                    "DOI": "10.48550/arXiv.2307.02460",
+                    "CorpusId": 259341858
+                },
+                "corpusId": 259341858,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8eba1bb64ecfafb097e565f167b61a6a450ae733",
+                "title": "Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources",
+                "abstract": "Traditionally, data selection has been studied in settings where all samples from prospective sources are fully revealed to a machine learning developer. However, in practical data exchange scenarios, data providers often reveal only a limited subset of samples before an acquisition decision is made. Recently, there have been efforts to fit scaling laws that predict model performance at any size and data source composition using the limited available samples. However, these scaling functions are black-box, computationally expensive to fit, highly susceptible to overfitting, or/and difficult to optimize for data selection. This paper proposes a framework called, which predicts model performance and supports data selection decisions based on partial samples of prospective data sources. Our approach distinguishes itself from existing work by introducing a novel *two-stage* performance inference process. In the first stage, we leverage the Optimal Transport distance to predict the model's performance for any data mixture ratio within the range of disclosed data sizes. In the second stage, we extrapolate the performance to larger undisclosed data sizes based on a novel parameter-free mapping technique inspired by neural scaling laws. We further derive an efficient gradient-based method to select data sources based on the projected model performance. Evaluation over a diverse range of applications demonstrates thatsignificantly improves existing performance scaling approaches in terms of both the accuracy of performance inference and the computation costs associated with constructing the performance predictor. Also,outperforms by a wide margin in data selection effectiveness compared to a range of other off-the-shelf solutions.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2054842299",
+                        "name": "Feiyang Kang"
+                    },
+                    {
+                        "authorId": "1412591482",
+                        "name": "H. Just"
+                    },
+                    {
+                        "authorId": "2894821",
+                        "name": "Anit Kumar Sahu"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "For instance, relaxing the efficiency axiom gives rise to semi-values (Kwon & Zou, 2022; Wang & Jia, 2023); relaxing the linearity axiom gives rise to least cores (Yan & Procaccia, 2021).",
+                "\u2026new data value notions obtained by relaxing some of the aforementioned axioms and enabled improvements in terms of accuracy of bad data identification (Kwon & Zou, 2022), robustness to learning stochasticity (Wang & Jia, 2023; Wu et al., 2022a), and computational efficiency (Yan & Procaccia, 2021)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1f5b15f53536278df51f99736cfc440ea6d78bc5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-10473",
+                    "ArXiv": "2306.10473",
+                    "DOI": "10.48550/arXiv.2306.10473",
+                    "CorpusId": 259203937
+                },
+                "corpusId": 259203937,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/1f5b15f53536278df51f99736cfc440ea6d78bc5",
+                "title": "2D-Shapley: A Framework for Fragmented Data Valuation",
+                "abstract": "Data valuation -- quantifying the contribution of individual data sources to certain predictive behaviors of a model -- is of great importance to enhancing the transparency of machine learning and designing incentive systems for data sharing. Existing work has focused on evaluating data sources with the shared feature or sample space. How to valuate fragmented data sources of which each only contains partial features and samples remains an open question. We start by presenting a method to calculate the counterfactual of removing a fragment from the aggregated data matrix. Based on the counterfactual calculation, we further propose 2D-Shapley, a theoretical framework for fragmented data valuation that uniquely satisfies some appealing axioms in the fragmented data context. 2D-Shapley empowers a range of new use cases, such as selecting useful data fragments, providing interpretation for sample-wise data values, and fine-grained data issue diagnosis.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2185404843",
+                        "name": "Zhihong Liu"
+                    },
+                    {
+                        "authorId": "1412591482",
+                        "name": "H. Just"
+                    },
+                    {
+                        "authorId": "2208992121",
+                        "name": "Xiangyu Chang"
+                    },
+                    {
+                        "authorId": "1683647",
+                        "name": "X. Chen"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "aef8ace4e68cbf1a2da30b77f0aa2ab9eb6463df",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-01660",
+                    "ArXiv": "2305.01660",
+                    "DOI": "10.48550/arXiv.2305.01660",
+                    "CorpusId": 258461106
+                },
+                "corpusId": 258461106,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/aef8ace4e68cbf1a2da30b77f0aa2ab9eb6463df",
+                "title": "Data valuation: The partial ordinal Shapley value for machine learning",
+                "abstract": "Data valuation using Shapley value has emerged as a prevalent research domain in machine learning applications. However, it is a challenge to address the role of order in data cooperation as most research lacks such discussion. To tackle this problem, this paper studies the definition of the partial ordinal Shapley value by group theory in abstract algebra. Besides, since the calculation of the partial ordinal Shapley value requires exponential time, this paper also gives three algorithms for approximating the results. The Truncated Monte Carlo algorithm is derived from the classic Shapley value approximation algorithm. The Classification Monte Carlo algorithm and the Classification Truncated Monte Carlo algorithm are based on the fact that the data points in the same class provide similar information, then we can accelerate the calculation by leaving out some data points in each class.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2146651544",
+                        "name": "Jie Liu"
+                    },
+                    {
+                        "authorId": "30924928",
+                        "name": "Pei Wang"
+                    },
+                    {
+                        "authorId": "2215919032",
+                        "name": "Chao Wu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "\u2026LOO and influence function (Koh & Liang, 2017), the Shapley value (Jia et al., 2019b; Ghorbani & Zou, 2019; Wang & Jia, 2023), the Banzhaf value (Wang & Jia, 2022), Least Cores (Yan & Procaccia, 2021), Beta Shapley (Kwon & Zou, 2021), and reinforcement learning-based method (Yoon et al., 2020).",
+                "L G\n] 2\n8 A\npr 2\n02 3\n& Jia, 2022), general semivalues (Kwon & Zou, 2021), and Least cores (Yan & Procaccia, 2021) to value data.",
+                "We also consider the popular data valuation approaches: (6) Permutation Sampling-based Shapely value (Perm-SV) (Jia et al., 2019b), (7) Least Cores (LC) (Yan & Procaccia, 2021), (8) TMC-Shapley (TMC-SV) and (9) G-Shapley (G-SV) (Ghorbani & Zou, 2019).",
+                "5 RELATED WORK\nExisting data valuation methods include LOO and influence function (Koh & Liang, 2017), the Shapley value (Jia et al., 2019b; Ghorbani & Zou, 2019; Wang & Jia, 2023), the Banzhaf value (Wang & Jia, 2022), Least Cores (Yan & Procaccia, 2021), Beta Shapley (Kwon & Zou, 2021), and reinforcement learning-based method (Yoon et al., 2020)."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "4cc3fbdd9c07c16fd3c363363ac33e729b8021e6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-00054",
+                    "ArXiv": "2305.00054",
+                    "DOI": "10.48550/arXiv.2305.00054",
+                    "CorpusId": 258426444
+                },
+                "corpusId": 258426444,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4cc3fbdd9c07c16fd3c363363ac33e729b8021e6",
+                "title": "LAVA: Data Valuation without Pre-Specified Learning Algorithms",
+                "abstract": "Traditionally, data valuation is posed as a problem of equitably splitting the validation performance of a learning algorithm among the training data. As a result, the calculated data values depend on many design choices of the underlying learning algorithm. However, this dependence is undesirable for many use cases of data valuation, such as setting priorities over different data sources in a data acquisition process and informing pricing mechanisms in a data marketplace. In these scenarios, data needs to be valued before the actual analysis and the choice of the learning algorithm is still undetermined then. Another side-effect of the dependence is that to assess the value of individual points, one needs to re-run the learning algorithm with and without a point, which incurs a large computation burden. This work leapfrogs over the current limits of data valuation methods by introducing a new framework that can value training data in a way that is oblivious to the downstream learning algorithm. (1) We develop a proxy for the validation performance associated with a training set based on a non-conventional class-wise Wasserstein distance between the training and the validation set. We show that the distance characterizes the upper bound of the validation performance for any given model under certain Lipschitz conditions. (2) We develop a novel method to value individual data based on the sensitivity analysis of the class-wise Wasserstein distance. Importantly, these values can be directly obtained for free from the output of off-the-shelf optimization solvers when computing the distance. (3) We evaluate our new data valuation framework over various use cases related to detecting low-quality data and show that, surprisingly, the learning-agnostic feature of our framework enables a significant improvement over the state-of-the-art performance while being orders of magnitude faster.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1412591482",
+                        "name": "H. Just"
+                    },
+                    {
+                        "authorId": "2054842299",
+                        "name": "Feiyang Kang"
+                    },
+                    {
+                        "authorId": "2130518057",
+                        "name": "Jiachen T. Wang"
+                    },
+                    {
+                        "authorId": "2111107467",
+                        "name": "Yijun Zeng"
+                    },
+                    {
+                        "authorId": "31083289",
+                        "name": "Myeongseob Ko"
+                    },
+                    {
+                        "authorId": "2072905592",
+                        "name": "Ming Jin"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "approaches have been studied by relaxing some of the underlying fair division axioms (Yan and Procaccia, 2021; Kwon and Zou, 2022a; Wang and Jia, 2022; Rozemberczki et al., 2022).",
+                "The Shapley value is one of the most widely used marginal contributionbased methods, and many alternative approaches have been studied by relaxing some of the underlying fair division axioms (Yan & Procaccia, 2021; Kwon & Zou, 2022a; Wang & Jia, 2022; Rozemberczki et al., 2022)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0491baa257d4faaf61e4a8c78be48575b5a261ad",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-07718",
+                    "ArXiv": "2304.07718",
+                    "DOI": "10.48550/arXiv.2304.07718",
+                    "CorpusId": 258179754
+                },
+                "corpusId": 258179754,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/0491baa257d4faaf61e4a8c78be48575b5a261ad",
+                "title": "Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value",
+                "abstract": "Data valuation is a powerful framework for providing statistical insights into which data are beneficial or detrimental to model training. Many Shapley-based data valuation methods have shown promising results in various downstream tasks, however, they are well known to be computationally challenging as it requires training a large number of models. As a result, it has been recognized as infeasible to apply to large datasets. To address this issue, we propose Data-OOB, a new data valuation method for a bagging model that utilizes the out-of-bag estimate. The proposed method is computationally efficient and can scale to millions of data by reusing trained weak learners. Specifically, Data-OOB takes less than 2.25 hours on a single CPU processor when there are $10^6$ samples to evaluate and the input dimension is 100. Furthermore, Data-OOB has solid theoretical interpretations in that it identifies the same important data point as the infinitesimal jackknife influence function when two different points are compared. We conduct comprehensive experiments using 12 classification datasets, each with thousands of sample sizes. We demonstrate that the proposed method significantly outperforms existing state-of-the-art data valuation methods in identifying mislabeled data and finding a set of helpful (or harmful) data points, highlighting the potential for applying data values in real-world applications.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "33778474",
+                        "name": "Yongchan Kwon"
+                    },
+                    {
+                        "authorId": "145085305",
+                        "name": "James Y. Zou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Local explanations like this have been extensively studied in recent years [8, 7, 6, 10]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b0d85fd3f81b49eb630e5116e00af6c14bb37452",
+                "externalIds": {
+                    "ArXiv": "2304.02781",
+                    "DBLP": "journals/corr/abs-2304-02781",
+                    "DOI": "10.48550/arXiv.2304.02781",
+                    "CorpusId": 257985263
+                },
+                "corpusId": 257985263,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b0d85fd3f81b49eb630e5116e00af6c14bb37452",
+                "title": "Inapproximability of sufficient reasons for decision trees",
+                "abstract": "In this note, we establish the hardness of approximation of the problem of computing the minimal size of a $\\delta$-sufficient reason for decision trees.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1699029",
+                        "name": "A. Kozachinskiy"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [
+                "Zou and Hastie (2005). Table 7 contains an example of a scoring system learnt from tabular data using SLIM for predicting the risk of pediatric appendicitis in children."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7297439e3d43ac95080c9a572b2a925cdc8f9765",
+                "externalIds": {
+                    "DBLP": "journals/widm/MarcinkevicsV23",
+                    "DOI": "10.1002/widm.1493",
+                    "CorpusId": 257290340
+                },
+                "corpusId": 257290340,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/7297439e3d43ac95080c9a572b2a925cdc8f9765",
+                "title": "Interpretable and explainable machine learning: A methods\u2010centric overview with concrete examples",
+                "abstract": "Interpretability and explainability are crucial for machine learning (ML) and statistical applications in medicine, economics, law, and natural sciences and form an essential principle for ML model design and development. Although interpretability and explainability have escaped a precise and universal definition, many models and techniques motivated by these properties have been developed over the last 30\u2009years, with the focus currently shifting toward deep learning. We will consider concrete examples of state\u2010of\u2010the\u2010art, including specially tailored rule\u2010based, sparse, and additive classification models, interpretable representation learning, and methods for explaining black\u2010box models post hoc. The discussion will emphasize the need for and relevance of interpretability and explainability, the divide between them, and the inductive biases behind the presented \u201czoo\u201d of interpretable models and explanation methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "26545523",
+                        "name": "Ricards Marcinkevics"
+                    },
+                    {
+                        "authorId": "8258126",
+                        "name": "Julia E. Vogt"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "result"
+            ],
+            "contexts": [
+                "\u2026sampling estimator, it has been reported in several subsequent data valuation studies that the actual performance of the Group Testing-based estimator does not observably outperform permutation sampling technique [Wang et al., 2020, Yan and Procaccia, 2020, Wang et al., 2021, Wang and Jia, 2023]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "90d7835679fc72ce72d5832160ccb7605f2af764",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-11431",
+                    "ArXiv": "2302.11431",
+                    "DOI": "10.48550/arXiv.2302.11431",
+                    "CorpusId": 260441029
+                },
+                "corpusId": 260441029,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/90d7835679fc72ce72d5832160ccb7605f2af764",
+                "title": "A Note on \"Towards Efficient Data Valuation Based on the Shapley Value\"",
+                "abstract": "The Shapley value (SV) has emerged as a promising method for data valuation. However, computing or estimating the SV is often computationally expensive. To overcome this challenge, Jia et al. (2019) propose an advanced SV estimation algorithm called ``Group Testing-based SV estimator'' which achieves favorable asymptotic sample complexity. In this technical note, we present several improvements in the analysis and design choices of this SV estimator. Moreover, we point out that the Group Testing-based SV estimator does not fully reuse the collected samples. Our analysis and insights contribute to a better understanding of the challenges in developing efficient SV estimation algorithms for data valuation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2130518057",
+                        "name": "Jiachen T. Wang"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "In contrast, a number of authors have reported pitfalls with the use of SHAP and Shapley values as a measure of feature importance [105, 60, 95, 74, 37, 104, 78, 2, 101, 59, 20]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "38c08bdb2aa723b8a97c216f99ca71afa1ab66af",
+                "externalIds": {
+                    "ArXiv": "2302.08160",
+                    "DBLP": "journals/corr/abs-2302-08160",
+                    "DOI": "10.48550/arXiv.2302.08160",
+                    "CorpusId": 256900674
+                },
+                "corpusId": 256900674,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/38c08bdb2aa723b8a97c216f99ca71afa1ab66af",
+                "title": "The Inadequacy of Shapley Values for Explainability",
+                "abstract": "This paper develops a rigorous argument for why the use of Shapley values in explainable AI (XAI) will necessarily yield provably misleading information about the relative importance of features for predictions. Concretely, this paper demonstrates that there exist classifiers, and associated predictions, for which the relative importance of features determined by the Shapley values will incorrectly assign more importance to features that are provably irrelevant for the prediction, and less importance to features that are provably relevant for the prediction. The paper also argues that, given recent complexity results, the existence of efficient algorithms for the computation of rigorous feature attribution values in the case of some restricted classes of classifiers should be deemed unlikely at best.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "82038527",
+                        "name": "Xuanxiang Huang"
+                    },
+                    {
+                        "authorId": "1393656234",
+                        "name": "Joao Marques-Silva"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5e5e1ef8e856596df92fb65c4459052109014398",
+                "externalIds": {
+                    "DBLP": "conf/aaai/WuSGN23",
+                    "ArXiv": "2302.04418",
+                    "DOI": "10.48550/arXiv.2302.04418",
+                    "CorpusId": 256697449
+                },
+                "corpusId": 256697449,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/5e5e1ef8e856596df92fb65c4459052109014398",
+                "title": "Learning to Select Pivotal Samples for Meta Re-weighting",
+                "abstract": "Sample re-weighting strategies provide a promising mechanism to deal with imperfect training data in machine learning, such as noisily labeled or class-imbalanced data. One such strategy involves formulating a bi-level optimization problem called the meta re-weighting problem, whose goal is to optimize performance on a small set of perfect pivotal samples, called meta samples. Many approaches have been proposed to efficiently solve this problem. However, all of them assume that a perfect meta sample set is already provided while we observe that the selections of meta sample set is performance-critical. In this paper, we study how to learn to identify such a meta sample set from a large, imperfect training set, that is subsequently cleaned and used to optimize performance in the meta re-weighting setting. We propose a learning framework which reduces the meta samples selection problem to a weighted K-means clustering problem through rigorously theoretical analysis. We propose two clustering methods within our learning framework, Representation-based clustering method (RBC) and Gradient-based clustering method (GBC), for balancing performance and computational efficiency. Empirical studies demonstrate the performance advantage of our methods over various baseline methods",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3037003",
+                        "name": "Yinjun Wu"
+                    },
+                    {
+                        "authorId": "2161714960",
+                        "name": "Adam Stein"
+                    },
+                    {
+                        "authorId": "31693738",
+                        "name": "J. Gardner"
+                    },
+                    {
+                        "authorId": "145835621",
+                        "name": "M. Naik"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a66702b7c180f5b2907134f3926b4cdbe20c3743",
+                "externalIds": {
+                    "DOI": "10.1016/j.eng.2022.12.008",
+                    "CorpusId": 256760376
+                },
+                "corpusId": 256760376,
+                "publicationVenue": {
+                    "id": "349a6ffc-3527-4d3d-aef4-8372fbc1a084",
+                    "name": "Engineering",
+                    "type": "journal",
+                    "issn": "1947-394X",
+                    "alternate_issns": [
+                        "2079-1747",
+                        "2087-3859",
+                        "2095-8099",
+                        "0013-7782"
+                    ],
+                    "url": "https://www.scirp.org/journal/eng/",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/engineering",
+                        "http://e-journal.upstegal.ac.id/index.php/eng/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a66702b7c180f5b2907134f3926b4cdbe20c3743",
+                "title": "Data-Driven Learning for Data Rights, Data Pricing, and Privacy Computing",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2205512625",
+                        "name": "Jimin Xu"
+                    },
+                    {
+                        "authorId": "2154452962",
+                        "name": "Nuanxin Hong"
+                    },
+                    {
+                        "authorId": "2149236591",
+                        "name": "Zhening Xu"
+                    },
+                    {
+                        "authorId": "2157802713",
+                        "name": "Zhou Zhao"
+                    },
+                    {
+                        "authorId": "2115423484",
+                        "name": "Chao Wu"
+                    },
+                    {
+                        "authorId": "2139658409",
+                        "name": "Kun Kuang"
+                    },
+                    {
+                        "authorId": "2110089704",
+                        "name": "Jiaping Wang"
+                    },
+                    {
+                        "authorId": "2205083592",
+                        "name": "Mingjie Zhu"
+                    },
+                    {
+                        "authorId": "1709595",
+                        "name": "Jingren Zhou"
+                    },
+                    {
+                        "authorId": "2163102029",
+                        "name": "Kui Ren"
+                    },
+                    {
+                        "authorId": "2205185428",
+                        "name": "Xiaohu Yang"
+                    },
+                    {
+                        "authorId": "2205527084",
+                        "name": "Cewu Lu"
+                    },
+                    {
+                        "authorId": "2143384661",
+                        "name": "Jian Pei"
+                    },
+                    {
+                        "authorId": "2205692309",
+                        "name": "Harry Shum"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Additivity is not a requirement of influence analysis, and there are provably non-additive influence estimators [YP21]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8e60324b7f3c1b112f9248f0c9fd287795a347ee",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-04612",
+                    "ArXiv": "2212.04612",
+                    "DOI": "10.48550/arXiv.2212.04612",
+                    "CorpusId": 254535627
+                },
+                "corpusId": 254535627,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8e60324b7f3c1b112f9248f0c9fd287795a347ee",
+                "title": "Training Data Influence Analysis and Estimation: A Survey",
+                "abstract": "Good models require good training data. For overparameterized deep models, the causal relationship between training data and model predictions is increasingly opaque and poorly understood. Influence analysis partially demystifies training's underlying interactions by quantifying the amount each training instance alters the final model. Measuring the training data's influence exactly can be provably hard in the worst case; this has led to the development and use of influence estimators, which only approximate the true influence. This paper provides the first comprehensive survey of training data influence analysis and estimation. We begin by formalizing the various, and in places orthogonal, definitions of training data influence. We then organize state-of-the-art influence analysis methods into a taxonomy; we describe each of these methods in detail and compare their underlying assumptions, asymptotic complexities, and overall strengths and weaknesses. Finally, we propose future research directions to make influence analysis more useful in practice as well as more theoretically and empirically sound. A curated, up-to-date list of resources related to influence analysis is available at https://github.com/ZaydH/influence_analysis_papers.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "37882247",
+                        "name": "Zayd Hammoudeh"
+                    },
+                    {
+                        "authorId": "3021654",
+                        "name": "Daniel Lowd"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b8a070507b4cdcf4cc67b1e21aa7005fe2611c33",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-12354",
+                    "ArXiv": "2208.12354",
+                    "DOI": "10.48550/arXiv.2208.12354",
+                    "CorpusId": 251881748
+                },
+                "corpusId": 251881748,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b8a070507b4cdcf4cc67b1e21aa7005fe2611c33",
+                "title": "Fundamentals of Task-Agnostic Data Valuation",
+                "abstract": "We study valuing the data of a data owner/seller for a data seeker/buyer. Data valuation is often carried out for a specific task assuming a particular utility metric, such as test accuracy on a validation set, that may not exist in practice. In this work, we focus on task-agnostic data valuation without any validation requirements. The data buyer has access to a limited amount of data (which could be publicly available) and seeks more data samples from a data seller. We formulate the problem as estimating the differences in the statistical properties of the data at the seller with respect to the baseline data available at the buyer. We capture these statistical differences through second moment by measuring diversity and relevance of the seller\u2019s data for the buyer; we estimate these measures through queries to the seller without requesting the raw data. We design the queries with the proposed approach so that the seller is blind to the buyer\u2019s raw data and has no knowledge to fabricate responses to the queries to obtain a desired outcome of the diversity and relevance trade-off. We will show through extensive experiments on real tabular and image datasets that the proposed estimates capture the diversity and relevance of the seller\u2019s data for the buyer.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2240170",
+                        "name": "M. Amiri"
+                    },
+                    {
+                        "authorId": "2183082271",
+                        "name": "Fr'ed'eric Berdoz"
+                    },
+                    {
+                        "authorId": "2070747078",
+                        "name": "Ramesh Raskar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "We provide a brief overview of cooperative game theory (examined in details in various books [45, 12]) and discuss how solution concepts in cooperative game theory have been applied in Explainable AI [15, 35, 36, 14, 56]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "26fa22b2c062e97596f1d13dd88a04a6d3ebf318",
+                "externalIds": {
+                    "ArXiv": "2208.08798",
+                    "DBLP": "journals/corr/abs-2208-08798",
+                    "DOI": "10.48550/arXiv.2208.08798",
+                    "CorpusId": 251643526
+                },
+                "corpusId": 251643526,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/26fa22b2c062e97596f1d13dd88a04a6d3ebf318",
+                "title": "Neural Payoff Machines: Predicting Fair and Stable Payoff Allocations Among Team Members",
+                "abstract": "In many multi-agent settings, participants can form teams to achieve collective outcomes that may far surpass their individual capabilities. Measuring the relative contributions of agents and allocating them shares of the reward that promote long-lasting cooperation are difficult tasks. Cooperative game theory offers solution concepts identifying distribution schemes, such as the Shapley value, that fairly reflect the contribution of individuals to the performance of the team or the Core, which reduces the incentive of agents to abandon their team. Applications of such methods include identifying influential features and sharing the costs of joint ventures or team formation. Unfortunately, using these solutions requires tackling a computational barrier as they are hard to compute, even in restricted settings. In this work, we show how cooperative game-theoretic solutions can be distilled into a learned model by training neural networks to propose fair and stable payoff allocations. We show that our approach creates models that can generalize to games far from the training distribution and can predict solutions for more players than observed during training. An important application of our framework is Explainable AI: our approach can be used to speed-up Shapley value computations on many instances.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2181892593",
+                        "name": "Daphne Cornelisse"
+                    },
+                    {
+                        "authorId": "94295859",
+                        "name": "Thomas Rood"
+                    },
+                    {
+                        "authorId": "145478807",
+                        "name": "Mateusz Malinowski"
+                    },
+                    {
+                        "authorId": "1698412",
+                        "name": "Yoram Bachrach"
+                    },
+                    {
+                        "authorId": "2551829",
+                        "name": "Tal Kachman"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Least core \u2022 \u03b4-probable least core and (\u03b4, \u03b5)-probably approximate least core [Yan and Procaccia, 2021]",
+                "It is a group notion of fairness and ensures that each C gets its dues and hence would not deviate from the grand coalition [Yan and Procaccia, 2021].",
+                "Least core relaxations can be computed with (sub)linear time in n [Yan and Procaccia, 2021]."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "d46c8700250a35771187287e0b999d19d3dfc0dc",
+                "externalIds": {
+                    "DBLP": "conf/ijcai/SimXL22",
+                    "DOI": "10.24963/ijcai.2022/782",
+                    "CorpusId": 249319573
+                },
+                "corpusId": 249319573,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/d46c8700250a35771187287e0b999d19d3dfc0dc",
+                "title": "Data Valuation in Machine Learning: \"Ingredients\", Strategies, and Open Challenges",
+                "abstract": "Data valuation in machine learning (ML) is an emerging research area that studies the worth of data in ML. Data valuation is used in collaborative ML to determine a fair compensation for every data owner and in interpretable ML to identify the most responsible, noisy, or misleading training examples. This paper presents a comprehensive technical survey that provides a new formal study of data valuation in ML through its \u201cingredients\u201d and the corresponding properties, grounds the discussion of common desiderata satisfied by existing data valuation strategies on our proposed ingredients, and identifies open research challenges for designing new ingredients, data valuation strategies, and cost reduction techniques.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2003246244",
+                        "name": "Rachael Hwee Ling Sim"
+                    },
+                    {
+                        "authorId": "50180555",
+                        "name": "Xinyi Xu"
+                    },
+                    {
+                        "authorId": "145454065",
+                        "name": "K. H. Low"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                ", 2018), which are parts of an instance that are sufficient to explain its classification, as well as scores that intend to quantify the impact of a single feature in the output of such a classification (Lundberg and Lee, 2017; Yan and Procaccia, 2021)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "3a67b90db0b758ce6734b164ee7b640a7eaac555",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-12213",
+                    "ArXiv": "2207.12213",
+                    "DOI": "10.48550/arXiv.2207.12213",
+                    "CorpusId": 251041015
+                },
+                "corpusId": 251041015,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/3a67b90db0b758ce6734b164ee7b640a7eaac555",
+                "title": "On Computing Probabilistic Explanations for Decision Trees",
+                "abstract": "Formal XAI (explainable AI) is a growing area that focuses on computing explanations with mathematical guarantees for the decisions made by ML models. Inside formal XAI, one of the most studied cases is that of explaining the choices taken by decision trees, as they are traditionally deemed as one of the most interpretable classes of models. Recent work has focused on studying the computation of\"sufficient reasons\", a kind of explanation in which given a decision tree $T$ and an instance $x$, one explains the decision $T(x)$ by providing a subset $y$ of the features of $x$ such that for any other instance $z$ compatible with $y$, it holds that $T(z) = T(x)$, intuitively meaning that the features in $y$ are already enough to fully justify the classification of $x$ by $T$. It has been argued, however, that sufficient reasons constitute a restrictive notion of explanation, and thus the community has started to study their probabilistic counterpart, in which one requires that the probability of $T(z) = T(x)$ must be at least some value $\\delta \\in (0, 1]$, where $z$ is a random instance that is compatible with $y$. Our paper settles the computational complexity of $\\delta$-sufficient-reasons over decision trees, showing that both (1) finding $\\delta$-sufficient-reasons that are minimal in size, and (2) finding $\\delta$-sufficient-reasons that are minimal inclusion-wise, do not admit polynomial-time algorithms (unless P=NP). This is in stark contrast with the deterministic case ($\\delta = 1$) where inclusion-wise minimal sufficient-reasons are easy to compute. By doing this, we answer two open problems originally raised by Izza et al. On the positive side, we identify structural restrictions of decision trees that make the problem tractable, and show how SAT solvers might be able to tackle these problems in practical settings.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "144658846",
+                        "name": "M. Arenas"
+                    },
+                    {
+                        "authorId": "2066115163",
+                        "name": "Pablo Barcel'o"
+                    },
+                    {
+                        "authorId": "144750678",
+                        "name": "M. Romero"
+                    },
+                    {
+                        "authorId": "2064067794",
+                        "name": "Bernardo Subercaseaux"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "In addition, by relaxing the linearity axiom of the Shapley value, Yan and Procaccia (2020) propose to use the Least core (Deng and Papadimitriou, 1994), another classic concept in cooperative game theory, as an alternative to the Shapley value for data valuation.",
+                "Due to the great potential in real applications, there has been a surge of research efforts on developing data value notions for supervised ML (Jia et al., 2019b; Ghorbani and Zou, 2019; Yan and Procaccia, 2020; Ghorbani et al., 2021; Kwon and Zou, 2021; Yoon et al., 2020).",
+                "The estimation algorithm for the least core is the Monte Carlo algorithm from Yan and Procaccia (2020)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6fa3f84affb5af66ec3fe94e618e0124493bb28e",
+                "externalIds": {
+                    "DBLP": "conf/aistats/WangJ23",
+                    "ArXiv": "2205.15466",
+                    "CorpusId": 253098288
+                },
+                "corpusId": 253098288,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6fa3f84affb5af66ec3fe94e618e0124493bb28e",
+                "title": "Data Banzhaf: A Robust Data Valuation Framework for Machine Learning",
+                "abstract": "Data valuation has wide use cases in machine learning, including improving data quality and creating economic incentives for data sharing. This paper studies the robustness of data valuation to noisy model performance scores. Particularly, we find that the inherent randomness of the widely used stochastic gradient descent can cause existing data value notions (e.g., the Shapley value and the Leave-one-out error) to produce inconsistent data value rankings across different runs. To address this challenge, we introduce the concept of safety margin, which measures the robustness of a data value notion. We show that the Banzhaf value, a famous value notion that originated from cooperative game theory literature, achieves the largest safety margin among all semivalues (a class of value notions that satisfy crucial properties entailed by ML applications and include the famous Shapley value and Leave-one-out error). We propose an algorithm to efficiently estimate the Banzhaf value based on the Maximum Sample Reuse (MSR) principle. Our evaluation demonstrates that the Banzhaf value outperforms the existing semivalue-based data value notions on several ML tasks such as learning with weighted samples and noisy label detection. Overall, our study suggests that when the underlying ML algorithm is stochastic, the Banzhaf value is a promising alternative to the other semivalue-based data value schemes given its computational advantage and ability to robustly differentiate data quality.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2130518057",
+                        "name": "Jiachen T. Wang"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "09c72d9d46f6750e487afdb5f7cae7693ffccc10",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-05594",
+                    "ArXiv": "2202.05594",
+                    "DOI": "10.24963/ijcai.2022/778",
+                    "CorpusId": 246822765
+                },
+                "corpusId": 246822765,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/09c72d9d46f6750e487afdb5f7cae7693ffccc10",
+                "title": "The Shapley Value in Machine Learning",
+                "abstract": "Over the last few years, the Shapley value, a solution concept from cooperative game theory, has found numerous applications in machine learning. In this paper, we first discuss fundamental concepts of cooperative game theory and axiomatic properties of the Shapley value. Then we give an overview of the most important applications of the Shapley value in machine learning: feature selection, explainability, multi-agent reinforcement learning, ensemble pruning, and data valuation. We examine the most crucial limitations of the Shapley value and point out directions for future research.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "35806328",
+                        "name": "Benedek Rozemberczki"
+                    },
+                    {
+                        "authorId": "2058604454",
+                        "name": "Lauren Watson"
+                    },
+                    {
+                        "authorId": "2056355686",
+                        "name": "P\u00e9ter Bayer"
+                    },
+                    {
+                        "authorId": "2820299",
+                        "name": "Hao-Tsung Yang"
+                    },
+                    {
+                        "authorId": "104031520",
+                        "name": "Oliver Kiss"
+                    },
+                    {
+                        "authorId": "2136371907",
+                        "name": "Sebastian Nilsson"
+                    },
+                    {
+                        "authorId": "2056781762",
+                        "name": "Rik Sarkar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8f181c54d3d7ca79218207471f00c368392b76d1",
+                "externalIds": {
+                    "DBLP": "conf/aaai/TayXFL22",
+                    "ArXiv": "2112.09327",
+                    "DOI": "10.1609/aaai.v36i9.21177",
+                    "CorpusId": 245329680
+                },
+                "corpusId": 245329680,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8f181c54d3d7ca79218207471f00c368392b76d1",
+                "title": "Incentivizing Collaboration in Machine Learning via Synthetic Data Rewards",
+                "abstract": "This paper presents a novel collaborative generative modeling (CGM) framework that incentivizes collaboration among self-interested parties to contribute data to a pool for training a generative model (e.g., GAN), from which synthetic data are drawn and distributed to the parties as rewards commensurate to their contributions. Distributing synthetic data as rewards (instead of trained models or money) offers task- and model-agnostic benefits for downstream learning tasks and is less likely to violate data privacy regulation. To realize the framework, we firstly propose a data valuation function using maximum mean discrepancy (MMD) that values data based on its quantity and quality in terms of its closeness to the true data distribution and provide theoretical results guiding the kernel choice in our MMD-based data valuation function. Then, we formulate the reward scheme as a linear optimization problem that when solved, guarantees certain incentives such as fairness in the CGM framework. We devise a weighted sampling algorithm for generating synthetic data to be distributed to each party as reward such that the value of its data and the synthetic data combined matches its assigned reward value by the reward scheme. We empirically show using simulated and real-world datasets that the parties' synthetic data rewards are commensurate to their contributions.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2039950768",
+                        "name": "Sebastian Shenghong Tay"
+                    },
+                    {
+                        "authorId": "50180555",
+                        "name": "Xinyi Xu"
+                    },
+                    {
+                        "authorId": "2121484",
+                        "name": "Chuan-Sheng Foo"
+                    },
+                    {
+                        "authorId": "40222533",
+                        "name": "B. Low"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f3639e6900498c39f0d72e034e84d4bd5c648b1c",
+                "externalIds": {
+                    "DBLP": "conf/cdmake/YasodharaAHS21",
+                    "ArXiv": "2110.00086",
+                    "DOI": "10.1007/978-3-030-84060-0_19",
+                    "CorpusId": 237101212
+                },
+                "corpusId": 237101212,
+                "publicationVenue": {
+                    "id": "774cadb7-0e9c-4d06-be58-c9bc77655652",
+                    "name": "International Cross-Domain Conference on Machine Learning and Knowledge Extraction",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CD-MAKE",
+                        "Int Cross-domain Conf Mach Learn Knowl Extr"
+                    ],
+                    "url": "https://cd-make.net/"
+                },
+                "url": "https://www.semanticscholar.org/paper/f3639e6900498c39f0d72e034e84d4bd5c648b1c",
+                "title": "On the Trustworthiness of Tree Ensemble Explainability Methods",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "52137670",
+                        "name": "Angeline Yasodhara"
+                    },
+                    {
+                        "authorId": "24028504",
+                        "name": "Azin Asgarian"
+                    },
+                    {
+                        "authorId": "2148909366",
+                        "name": "Diego Huang"
+                    },
+                    {
+                        "authorId": "1690185",
+                        "name": "Parinaz Sobhani"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Some alternative methods [106, 104] enjoy better efficiency or coalition stability, but lose fairness guarantee.",
+                "Yan and Procaccia [104] tackle the efficiency issue by proposing a Monte Carlo approximation algorithm with guaranteed approximation errors.",
+                "Yan and Procaccia [104] design a data pricing model based on core [35], which is a celebrated revenue allocation solution in cooperative game theory.",
+                "However, Yan and Procaccia [104] argue that the necessity of additivity for data valuation is debatable.",
+                "Yan T, Procaccia AD (2021) If you like shapley then you\u2019ll love the core."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "f9e73688b69d22ea4499e6a7319ff3820ba84bda",
+                "externalIds": {
+                    "ArXiv": "2108.07915",
+                    "DBLP": "journals/kais/CongLPZZ22",
+                    "DOI": "10.1007/s10115-022-01679-4",
+                    "CorpusId": 237194666
+                },
+                "corpusId": 237194666,
+                "publicationVenue": {
+                    "id": "1f55639d-134e-44ae-b050-ccf2a6676bc5",
+                    "name": "Knowledge and Information Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Knowl Inf Syst"
+                    ],
+                    "issn": "0219-3116",
+                    "url": "https://link.springer.com/journal/10115"
+                },
+                "url": "https://www.semanticscholar.org/paper/f9e73688b69d22ea4499e6a7319ff3820ba84bda",
+                "title": "Data pricing in machine learning pipelines",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "121977751",
+                        "name": "Zicun Cong"
+                    },
+                    {
+                        "authorId": "2145071266",
+                        "name": "Xuan Luo"
+                    },
+                    {
+                        "authorId": "145525190",
+                        "name": "J. Pei"
+                    },
+                    {
+                        "authorId": "1409856741",
+                        "name": "Feida Zhu"
+                    },
+                    {
+                        "authorId": "2144288655",
+                        "name": "Yong Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Sampling-based heuristics comprise of all the existing unbiased heuristics (Castro et al., 2009; Jia et al., 2019b; Yan & Procaccia, 2020) as well as some of the biased heuristics (e.g., TMC Shapley (Ghorbani & Zou, 2019)).",
+                "For larger datasets, since it is impractical to compute the exact data value, we compare the performance of data value estimates on data removal task, following existing data valuation literature (Ghorbani & Zou, 2019; Jia et al., 2019a;c; Wang et al., 2020; Yan & Procaccia, 2020).",
+                "For LC estimation, we use Monte Carlo (MC) approach (Yan & Procaccia, 2020) as the baseline.",
+                "In the experiment, when we talk about the LC, we always refer to the vector \u03c8 that has the smallest `2 norm, following the tie-breaking rule in Yan & Procaccia (2020).",
+                "As a side note, the Shapley value estimated by Permutation sampling is superior to the Least core estimated by Monte-Carlo algorithm, which does not agree with the experiment results in Yan & Procaccia (2020).",
+                "We follow Yan & Procaccia (2020) and define the (\u03b5, \u03b4)-probably approximate least core to be the vector \u03c8 \u2208 Rn s.t. PrS\u223cD [\u2211 i\u2208S \u03c8i + e ?",
+                "Recently, Yan & Procaccia (2020) propose to use the Least core, another classic solution concept in cooperative game theory, as an alternative to Shapley value for data valuation.",
+                "This proof directly extends the proof of Theorem 2 of Yan & Procaccia (2020), which is based on the observation in Balcan et al. (2015) and Balkanski et al. (2017) that estimating least core from finite samples is equivalent to the problem of learning an unknown linear function (x, e) s.t.\u2211 i\u2208S xi\u2026",
+                "When \u03c3 = 0, Theorem 2 recovers Theorem 2 in Yan & Procaccia (2020) for the case of v\u0302 = v."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "ab788ff79e078e2997644669811327006435409a",
+                "externalIds": {
+                    "ArXiv": "2107.06336",
+                    "CorpusId": 248006536
+                },
+                "corpusId": 248006536,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ab788ff79e078e2997644669811327006435409a",
+                "title": "Improving Cooperative Game Theory-based Data Valuation via Data Utility Learning",
+                "abstract": "The Shapley value (SV) and Least core (LC) are classic methods in cooperative game theory for cost/profit sharing problems. Both methods have recently been proposed as a principled solution for data valuation tasks, i.e., quantifying the contribution of individual datum in machine learning. However, both SV and LC suffer computational challenges due to the need for retraining models on combinatorially many data subsets. In this work, we propose to boost the efficiency in computing Shapley value or Least core by learning to estimate the performance of a learning algorithm on unseen data combinations. Theoretically, we derive bounds relating the error in the predicted learning performance to the approximation error in SV and LC. Empirically, we show that the proposed method can significantly improve the accuracy of SV and LC estimation.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "49980880",
+                        "name": "Tianhao Wang"
+                    },
+                    {
+                        "authorId": "2116468887",
+                        "name": "Yu Yang"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "In this paper, when we talk about the least core, we always refer to the least core vector that has the smallest `2 norm, following the tie-breaking rule in the original literature [18].",
+                "More recently, [18] suggests that the Least core is also a viable alternative to Shapley value for measuring data importance.",
+                "(5) Least Core (LC) [18], another data value notion in cooperative game theory.",
+                ", influence functions [10], Shapley values [16, 17] and least cores [18], to quantify each training point according to the contributions toward the training processes, then decide which data to retain or remove based on the valuation rankings.",
+                "purpose Driven Agnostic Utility Traditional \u00d7 \u00d7 \u00d7 \u00d7 Data Cleaning \u00d7 \u25e6 \u25e6 \u00d7 Perm-Shapley [19] X X X \u00d7 TMC-Shapley [16] X X X \u00d7 G-Shapley [16] X X \u00d7 \u00d7 KNN-Shapley [20] \u00d7 \u00d7 X \u00d7 Least Core [18] X X X \u00d7 Leave-one-out [10] X X X \u00d7 Infl."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "9eff3c44f165c0c3d3e249a3d9f183960e2c3671",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2106-05484",
+                    "ArXiv": "2106.05484",
+                    "CorpusId": 235390485
+                },
+                "corpusId": 235390485,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/9eff3c44f165c0c3d3e249a3d9f183960e2c3671",
+                "title": "A Unified Framework for Task-Driven Data Quality Management",
+                "abstract": "High-quality data is critical to train performant Machine Learning (ML) models, highlighting the importance of Data Quality Management (DQM). Existing DQM schemes often cannot satisfactorily improve ML performance because, by design, they are oblivious to downstream ML tasks. Besides, they cannot handle various data quality issues (especially those caused by adversarial attacks) and have limited applications to only certain types of ML models. Recently, data valuation approaches (e.g., based on the Shapley value) have been leveraged to perform DQM; yet, empirical studies have observed that their performance varies considerably based on the underlying data and training process. In this paper, we propose a task-driven, multi-purpose, model-agnostic DQM framework, DataSifter, which is optimized towards a given downstream ML task, capable of effectively removing data points with various defects, and applicable to diverse models. Specifically, we formulate DQM as an optimization problem and devise a scalable algorithm to solve it. Furthermore, we propose a theoretical framework for comparing the worst-case performance of different DQM strategies. Remarkably, our results show that the popular strategy based on the Shapley value may end up choosing the worst data subset in certain practical scenarios. Our evaluation shows that DataSifter achieves and most often significantly improves the state-of-the-art performance over a wide range of DQM tasks, including backdoor, poison, noisy/mislabel data detection, data summarization, and data debiasing.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "49980880",
+                        "name": "Tianhao Wang"
+                    },
+                    {
+                        "authorId": "144965372",
+                        "name": "Yi Zeng"
+                    },
+                    {
+                        "authorId": "2072905592",
+                        "name": "Ming Jin"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8c6d02208e14dc225c86acba0a72f113ff4a3176",
+                "externalIds": {
+                    "DBLP": "conf/de/AzcoitiaL22",
+                    "ArXiv": "2012.08874",
+                    "MAG": "3112491269",
+                    "DOI": "10.1145/3565011.3569054",
+                    "CorpusId": 229220207
+                },
+                "corpusId": 229220207,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/8c6d02208e14dc225c86acba0a72f113ff4a3176",
+                "title": "Try before you buy: a practical data purchasing algorithm for real-world data marketplaces",
+                "abstract": "Data trading is becoming increasingly popular, as evident by the appearance of scores of data marketplaces (DMs) in the last few years satisfying the demand for third-party data. For buyers, however, deciding whether paying the requested price makes sense can only be done after having tested the data on their ML model. In this paper, we propose a method for optimizing data purchasing decisions. We show that if a marketplace provides to potential buyers a measure of the performance of their models on individual datasets, then they can select which of them to buy with an efficacy that approximates that of knowing the performance of each possible combination of datasets offered by the DM. We call the resulting algorithm Try Before You Buy (TBYB) and demonstrate over synthetic and real-world datasets how TBYB can lead to near optimal data purchasing with only O(N) instead of O(2N) information and execution time.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "3157364",
+                        "name": "Santiago Andr\u00e9s Azcoitia"
+                    },
+                    {
+                        "authorId": "48300570",
+                        "name": "Nikolaos Laoutaris"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "variants of the Banzhaf index as seen in this work and others [10, 35]) and even the core [41]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1e7b7b3197dd93b6924d4e2658c7da92a1cdcfd7",
+                "externalIds": {
+                    "MAG": "3035359713",
+                    "ArXiv": "2006.08969",
+                    "DBLP": "conf/fat/PatelSZ21",
+                    "DOI": "10.1145/3442188.3445903",
+                    "CorpusId": 219708791
+                },
+                "corpusId": 219708791,
+                "publicationVenue": {
+                    "id": "cdc83875-a82d-445c-b097-cbe91afe99a8",
+                    "name": "Conference on Fairness, Accountability and Transparency",
+                    "type": "conference",
+                    "alternate_names": [
+                        "FAccT",
+                        "Conf Fairness Account Transpar"
+                    ],
+                    "url": "https://facctconference.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/1e7b7b3197dd93b6924d4e2658c7da92a1cdcfd7",
+                "title": "High Dimensional Model Explanations: An Axiomatic Approach",
+                "abstract": "Complex black-box machine learning models are regularly used in critical decision-making domains. This has given rise to several calls for algorithmic explainability. Many explanation algorithms proposed in literature assign importance to each feature individually. However, such explanations fail to capture the joint effects of sets of features. Indeed, few works so far formally analyze high dimensional model explanations. In this paper, we propose a novel high dimension model explanation method that captures the joint effect of feature subsets. We propose a new axiomatization for a generalization of the Banzhaf index; our method can also be thought of as an approximation of a black-box model by a higher-order polynomial. In other words, this work justifies the use of the generalized Banzhaf index as a model explanation by showing that it uniquely satisfies a set of natural desiderata and that it is the optimal local approximation of a black-box model. Our empirical evaluation of our measure highlights how it manages to capture desirable behavior, whereas other measures that do not satisfy our axioms behave in an unpredictable manner.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "49475735",
+                        "name": "Neel Patel"
+                    },
+                    {
+                        "authorId": "35149351",
+                        "name": "Martin Strobel"
+                    },
+                    {
+                        "authorId": "34803282",
+                        "name": "Yair Zick"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "bb6b3655f1b3f405a890348391133e63a15224ca",
+                "externalIds": {
+                    "DBLP": "conf/nips/YanKP20",
+                    "ArXiv": "2006.09538",
+                    "MAG": "3099194180",
+                    "CorpusId": 219720919
+                },
+                "corpusId": 219720919,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/bb6b3655f1b3f405a890348391133e63a15224ca",
+                "title": "Evaluating and Rewarding Teamwork Using Cooperative Game Abstractions",
+                "abstract": "Can we predict how well a team of individuals will perform together? How should individuals be rewarded for their contributions to the team performance? Cooperative game theory gives us a powerful set of tools for answering these questions: the Characteristic Function (CF) and solution concepts like the Shapley Value (SV). There are two major difficulties in applying these techniques to real world problems: first, the CF is rarely given to us and needs to be learned from data. Second, the SV is combinatorial in nature. We introduce a parametric model called cooperative game abstractions (CGAs) for estimating CFs from data. CGAs are easy to learn, readily interpretable, and crucially allow linear-time computation of the SV. We provide identification results and sample complexity bounds for CGA models as well as error bounds in the estimation of the SV using CGAs. We apply our methods to study teams of artificial RL agents as well as real world teams from professional sports.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "12082007",
+                        "name": "Tom Yan"
+                    },
+                    {
+                        "authorId": "2211504",
+                        "name": "Christian Kroer"
+                    },
+                    {
+                        "authorId": "1970752",
+                        "name": "A. Peysakhovich"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Other work suggests using a different metric, the core [102] which is also apt for coalitional games."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "82727f5f897f2a6fca7cea57b50164a13b03935f",
+                "externalIds": {
+                    "MAG": "3039989498",
+                    "DBLP": "journals/pvldb/FernandezSF20",
+                    "ArXiv": "2002.01047",
+                    "DOI": "10.14778/3407790.3407800",
+                    "CorpusId": 211020702
+                },
+                "corpusId": 211020702,
+                "publicationVenue": {
+                    "id": "fcbcaf18-8ab1-43e1-a973-604bbc7e344e",
+                    "name": "Proceedings of the VLDB Endowment",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Proceedings of The Vldb Endowment",
+                        "Proc VLDB Endow",
+                        "Proc Vldb Endow"
+                    ],
+                    "issn": "2150-8097",
+                    "url": "http://dl.acm.org/toc.cfm?id=J1174",
+                    "alternate_urls": [
+                        "http://portal.acm.org/toc.cfm?CFID=21632689&CFTOKEN=99329904&WantType=Affiliated%20Organizations&coll=ACM&dl=ACM&id=J1174&idx=J1174&part=affil&title=VLDB%20Endowment&type=periodical"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/82727f5f897f2a6fca7cea57b50164a13b03935f",
+                "title": "Data market platforms",
+                "abstract": "Data only generates value for a few organizations with expertise and resources to make data shareable, discoverable, and easy to integrate. Sharing data that is easy to discover and integrate is hard because data owners lack information (who needs what data) and they do not have incentives to prepare the data in a way that is easy to consume by others. In this paper, we propose data market platforms to address the lack of information and incentives and tackle the problems of data sharing, discovery, and integration. In a data market platform, data owners want to share data because they will be rewarded if they do so. Consumers are encouraged to share their data needs because the market will solve the discovery and integration problem for them in exchange for some form of currency. We consider internal markets that operate within organizations to bring down data silos, as well as external markets that operate across organizations to increase the value of data for everybody. We outline a research agenda that revolves around two problems. The problem of market design, or how to design rules that lead to desired outcomes, and the systems problem, how to implement the market and enforce the rules. Treating data as a first-class asset is sorely needed to extend the value of data to more organizations, and we propose data market platforms as one mechanism to achieve this goal.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "34568734",
+                        "name": "R. Fernandez"
+                    },
+                    {
+                        "authorId": "144176620",
+                        "name": "Pranav Subramaniam"
+                    },
+                    {
+                        "authorId": "143666627",
+                        "name": "M. Franklin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b63f0ffe3d43a1b5559a34e2725565ed185b9b3c",
+                "externalIds": {
+                    "DBLP": "conf/aies/YonaG021",
+                    "ArXiv": "1910.04214",
+                    "DOI": "10.1145/3461702.3462574",
+                    "CorpusId": 204008591
+                },
+                "corpusId": 204008591,
+                "publicationVenue": {
+                    "id": "ace94611-0469-4818-ae70-43bdb8082d73",
+                    "name": "AAAI/ACM Conference on AI, Ethics, and Society",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AAAI/ACM conference Artificial Intelligence, Ethics, and Society",
+                        "AIES",
+                        "AAAI/ACM Conf AI Ethics Soc",
+                        "AAAI/ACM conf Artif Intell Ethics Soc",
+                        "AIES "
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/b63f0ffe3d43a1b5559a34e2725565ed185b9b3c",
+                "title": "Who's Responsible? Jointly Quantifying the Contribution of the Learning Algorithm and Data",
+                "abstract": "A learning algorithm A trained on a dataset D is revealed to have poor performance on some subpopulation at test time. Where should the responsibility for this lay? It can be argued that the data is responsible, if for example training A on a more representative dataset D' would have improved the performance. But it can similarly be argued that A itself is at fault, if training a different variant A' on the same dataset D would have improved performance. As ML becomes widespread and such failure cases more common, these types of questions are proving to be far from hypothetical. With this motivation in mind, in this work we provide a rigorous formulation of the joint credit assignment problem between a learning algorithm A and a dataset D. We propose Extended Shapley as a principled framework for this problem, and experiment empirically with how it can be used to address questions of ML accountability.",
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "36825265",
+                        "name": "G. Yona"
+                    },
+                    {
+                        "authorId": "27316199",
+                        "name": "Amirata Ghorbani"
+                    },
+                    {
+                        "authorId": "145085305",
+                        "name": "James Y. Zou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [
+                "Examples of global explanations include using a second interpretable model to approximate the black-box model, often termed \u201cmodel distillation\u201d [9, 19, 25, 26, 32, 40, 55], analyzing intermediate representations [10, 47] or concepts [37] encoded by the black-box model, prototype selection [12, 36, 65], counterfactual explanations [52] that summarize actions that can be taken to change the black-box model\u2019s predictions for an entire population, and feature importance measures [13, 18, 22, 45, 68, 71]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "048adfc013e74ff2eac9b808652d17ee008fda82",
+                "externalIds": {
+                    "ArXiv": "1801.08640",
+                    "DBLP": "journals/ml/TanHKGC23",
+                    "DOI": "10.1007/s10994-023-06335-8",
+                    "CorpusId": 238857329
+                },
+                "corpusId": 238857329,
+                "publicationVenue": {
+                    "id": "22c9862f-a25e-40cd-9d31-d09e68a293e6",
+                    "name": "Machine-mediated learning",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Mach learn",
+                        "Machine Learning",
+                        "Mach Learn"
+                    ],
+                    "issn": "0732-6718",
+                    "alternate_issns": [
+                        "0885-6125"
+                    ],
+                    "url": "http://www.springer.com/computer/artificial/journal/10994",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/10994",
+                        "http://www.springer.com/west/home/computer/artificial?SGWID=4-147-70-35726603-0"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/048adfc013e74ff2eac9b808652d17ee008fda82",
+                "title": "Considerations when learning additive explanations for black-box models",
+                "abstract": null,
+                "year": 2018,
+                "authors": [
+                    {
+                        "authorId": "145176257",
+                        "name": "S. Tan"
+                    },
+                    {
+                        "authorId": "145403451",
+                        "name": "G. Hooker"
+                    },
+                    {
+                        "authorId": "143831110",
+                        "name": "Paul Koch"
+                    },
+                    {
+                        "authorId": "1821267",
+                        "name": "Albert Gordo"
+                    },
+                    {
+                        "authorId": "145727186",
+                        "name": "R. Caruana"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "result"
+            ],
+            "contexts": [
+                "\u2026two works from the broader ML community have mentioned these other values, and neither are directly comparable to our case of explaining graph data: Yan & Procaccia (2021) studies the core value for data valuation, while Chen et al. (2019) mentions the Myerson value (Myerson, 1977) in the context\u2026"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "699a946c7e519e4f288baae422bae8920070bff3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-12380",
+                    "CorpusId": 246430826
+                },
+                "corpusId": 246430826,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/699a946c7e519e4f288baae422bae8920070bff3",
+                "title": "Explaining Graph-level Predictions with Communication Structure-Aware Cooperative Games",
+                "abstract": "Explaining predictions made by machine learning models is important and have attracted an increased interest. The Shapley value from cooperative game theory has been proposed as a prime approach to compute feature importances towards predictions, especially for images, text, tabular data, and recently graph neural networks (GNNs) on graphs. In this work, we revisit the appropriate-ness of the Shapley value for graph explanation, where the task is to identify the most important subgraph and constituent nodes for graph-level predictions. We purport that the Shapley value is a no-ideal choice for graph data because it is by def-inition not structure-aware. We propose a Graph Structure-aware eXplanation (GStarX) method to leverage the critical graph structure information to improve the explanation. Speci\ufb01cally, we propose a scoring function based on a new structure-aware value from the cooperative game theory called the HN value. When used to score node importance, the HN value utilizes graph structures to attribute cooperation surplus between neighbor nodes, re-sembling message passing in GNNs, so that node importance scores re\ufb02ect not only the node feature importance, but also the structural roles. We demonstrate that GstarX produces qualitatively more intuitive explanations, and quantitatively improves over strong baselines on chemical graph property prediction and text graph sentiment classi\ufb01cation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2145408511",
+                        "name": "Shichang Zhang"
+                    },
+                    {
+                        "authorId": "145474474",
+                        "name": "Neil Shah"
+                    },
+                    {
+                        "authorId": "152891495",
+                        "name": "Yozen Liu"
+                    },
+                    {
+                        "authorId": "2109461904",
+                        "name": "Yizhou Sun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Recently, there has been a surge of research efforts on formalizing the notion of data value for supervised ML [Jia et al., 2019b,a, Ghorbani and Zou, 2019, Yan and Procaccia, 2020, Ghorbani et al., 2021, Kwon and Zou, 2021, Yoon et al., 2020].",
+                "The estimation algorithms for the least core is the Monte Carlo algorithm from [Yan and Procaccia, 2020].",
+                "Yan and Procaccia [Yan and Procaccia, 2020] propose to use the Least core [Deng and Papadimitriou, 1994], another classic concept in cooperative game theory, as an alternative to the Shapley value for data valuation."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "3292ed309fb0f4e6a7a05a471e7bda9a4fdb9185",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-15466",
+                    "DOI": "10.48550/arXiv.2205.15466",
+                    "CorpusId": 249209950
+                },
+                "corpusId": 249209950,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/3292ed309fb0f4e6a7a05a471e7bda9a4fdb9185",
+                "title": "Data Banzhaf: A Data Valuation Framework with Maximal Robustness to Learning Stochasticity",
+                "abstract": "This paper studies the robustness of data valuation to noisy model performance scores. Particularly, we \ufb01nd that the inherent randomness of the widely used stochastic gradient descent can cause existing data value notions (e.g., the Shapley value and the Leave-one-out error) to produce inconsistent data value rankings across di\ufb00erent runs. To address this challenge, we \ufb01rst pose a formal framework within which one can measure the robustness of a data value notion. We show that the Banzhaf value, a value notion originated from cooperative game theory literature, achieves the maximal robustness among all semivalues\u2014a class of value notions that satisfy crucial properties entailed by ML applications. We propose an algorithm to e\ufb03ciently estimate the Banzhaf value based on the Maximum Sample Reuse (MSR) principle. We derive the lower bound sample complexity for Banzhaf value estimation, and we show that our MSR algorithm\u2019s sample complexity is close to the lower bound. Our evaluation demonstrates that the Banzhaf value outperforms the existing semivalue-based data value notions on several downstream ML tasks such as learning with weighted samples and noisy label detection. Overall, our study suggests that when the underlying ML algorithm is stochastic, the Banzhaf value is a promising alternative to the semivalue-based data value schemes given its computational advantage and ability to robustly di\ufb00erentiate data quality.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "49980880",
+                        "name": "Tianhao Wang"
+                    },
+                    {
+                        "authorId": "39823639",
+                        "name": "R. Jia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "\u2022 Following the game-theoretic approaches to capture the degree of influence on inconsistency [12] or of inputs on outputs in decision making systems [13, 14, 15, 16, 17], we can for instance use Shapley(-like) values:"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "36adfe6aee0742ae3528ca9e23e714bdf54301f9",
+                "externalIds": {
+                    "DBLP": "conf/comma/CyrasKW22",
+                    "CorpusId": 252599840
+                },
+                "corpusId": 252599840,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/36adfe6aee0742ae3528ca9e23e714bdf54301f9",
+                "title": "Dispute Trees as Explanations in Quantitative (Bipolar) Argumentation",
+                "abstract": "We present an approach to explaining inference in Quantitative Bipolar Argumentation Graphs (QBAGs): we propose the notion of a Quantitative Dispute Tree (QDT) that effectively collects the QBAG\u2019s directed paths between a topic argument and its children, labelled as proponent and opponent. A QDT is intended to be interpreted as a dispute that is sufficient to establish the direction of the change of strength of the topic argument. We propose to define pro and con arguments by using contribution functions that quantify a given argument\u2019s contribution to the strength of another argument. We advance some principles for contribution functions as well as gradual semantics to ensure some reasonable properties of QDTs. 1",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2066132",
+                        "name": "K. \u010cyras"
+                    },
+                    {
+                        "authorId": "2437582",
+                        "name": "Timotheus Kampik"
+                    },
+                    {
+                        "authorId": "2186428343",
+                        "name": "Qingtao Weng"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "76c0b2a77d8b3445c1cd12e53f27db0a7cb99143",
+                "externalIds": {
+                    "CorpusId": 252692070
+                },
+                "corpusId": 252692070,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/76c0b2a77d8b3445c1cd12e53f27db0a7cb99143",
+                "title": "Contribution Evaluation in Federated Learning: Examining Current Approaches",
+                "abstract": "Federated Learning (FL) has seen increasing interest in cases where entities want to collaboratively train models while maintaining privacy and governance over their data. In FL, clients with private and potentially heterogeneous data and compute resources come together to train a common model without raw data ever leaving their locale. Instead, the participants contribute by sharing local model updates, which, naturally, differ in quality. Quantitatively evaluating the worth of these contributions is termed the Contribution Evaluation (CE) problem. We review current CE approaches from the underlying mathematical framework to ef\ufb01ciently calculate a fair value for each client. Furthermore, we benchmark some of the most promising state-of-the-art approaches, along with a new one we introduce, on MNIST and CIFAR-10, to showcase their differences. Designing a fair and ef\ufb01cient CE method, while a small part of the overall FL system design, is tantamount to the mainstream adoption of FL.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2186864533",
+                        "name": "Vasilis Siomos"
+                    }
+                ]
+            }
+        }
+    ]
+}

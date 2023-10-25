@@ -1,0 +1,1422 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "For example, when using CelebA as a test set, the tested target models are ResNet50 and DesNet etc , while target models in training are Resnet20, 8-layer CoveNet and ResNet152 etc .",
+                "Pixel-level metrics, such as PSNR [13, 28] and MSE [33], evaluate differences between pixel values of the original and reconstructed images [6, 35, 31], to reflect the degree of privacy leakage.",
+                "We use the following backbones: ResNet20, ResNet50, ResNet152 [8], DenseNet [11] and 8-layer CoveNet [6].",
+                "Image quality and similarity metrics are usually used to indicate the performance of reconstruction attack approaches [40, 41, 39] and also in privacy assessment [6, 35, 31] of methods against reconstruction attacks.",
+                "For each original test image, the attack algorithm intercepts gradients of the target model to obtain a reconstructed image [6, 38].",
+                "In (A), according to PSNR, MSE, SSIM and LPIPS, the first reconstructed image is evaluated to have more privacy leakage [7, 6] than the second one (i.",
+                "They were trained using different strategies, such as data augmentation [6], gradients with Gaussian/Laplacian noise [41], and layer-wise pruning techniques [3]."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "ac02f88e60c7f8d688a21111bf3a8d8b203a519b",
+                "externalIds": {
+                    "ArXiv": "2309.13038",
+                    "DBLP": "journals/corr/abs-2309-13038",
+                    "DOI": "10.48550/arXiv.2309.13038",
+                    "CorpusId": 262217524
+                },
+                "corpusId": 262217524,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ac02f88e60c7f8d688a21111bf3a8d8b203a519b",
+                "title": "Privacy Assessment on Reconstructed Images: Are Existing Evaluation Metrics Faithful to Human Perception?",
+                "abstract": "Hand-crafted image quality metrics, such as PSNR and SSIM, are commonly used to evaluate model privacy risk under reconstruction attacks. Under these metrics, reconstructed images that are determined to resemble the original one generally indicate more privacy leakage. Images determined as overall dissimilar, on the other hand, indicate higher robustness against attack. However, there is no guarantee that these metrics well reflect human opinions, which, as a judgement for model privacy leakage, are more trustworthy. In this paper, we comprehensively study the faithfulness of these hand-crafted metrics to human perception of privacy information from the reconstructed images. On 5 datasets ranging from natural images, faces, to fine-grained classes, we use 4 existing attack methods to reconstruct images from many different classification models and, for each reconstructed image, we ask multiple human annotators to assess whether this image is recognizable. Our studies reveal that the hand-crafted metrics only have a weak correlation with the human evaluation of privacy leakage and that even these metrics themselves often contradict each other. These observations suggest risks of current metrics in the community. To address this potential risk, we propose a learning-based measure called SemSim to evaluate the Semantic Similarity between the original and reconstructed images. SemSim is trained with a standard triplet loss, using an original image as an anchor, one of its recognizable reconstructed images as a positive sample, and an unrecognizable one as a negative. By training on human annotations, SemSim exhibits a greater reflection of privacy leakage on the semantic level. We show that SemSim has a significantly higher correlation with human judgment compared with existing metrics. Moreover, this strong correlation generalizes to unseen datasets, models and attack methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51358637",
+                        "name": "Xiaoxiao Sun"
+                    },
+                    {
+                        "authorId": "2244623171",
+                        "name": "Nidham Gazagnadou"
+                    },
+                    {
+                        "authorId": "2244667356",
+                        "name": "Vivek Sharma"
+                    },
+                    {
+                        "authorId": "3366777",
+                        "name": "L. Lyu"
+                    },
+                    {
+                        "authorId": "2244767324",
+                        "name": "Hongdong Li"
+                    },
+                    {
+                        "authorId": "2244630452",
+                        "name": "Liang Zheng"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The astonishing success of the DGL started an intensive race between privacy defenders (Sun et al., 2020; Wei et al., 2021; Gao et al., 2021; Scheliga et al., 2022) and attackers (Geiping et al."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "70050b54438794a77ced84dd8e28a06a44f6fb2a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-13016",
+                    "ArXiv": "2309.13016",
+                    "DOI": "10.48550/arXiv.2309.13016",
+                    "CorpusId": 262217093
+                },
+                "corpusId": 262217093,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/70050b54438794a77ced84dd8e28a06a44f6fb2a",
+                "title": "Understanding Deep Gradient Leakage via Inversion Influence Functions",
+                "abstract": "Deep Gradient Leakage (DGL) is a highly effective attack that recovers private training images from gradient vectors. This attack casts significant privacy challenges on distributed learning from clients with sensitive data, where clients are required to share gradients. Defending against such attacks requires but lacks an understanding of when and how privacy leakage happens, mostly because of the black-box nature of deep networks. In this paper, we propose a novel Inversion Influence Function (I$^2$F) that establishes a closed-form connection between the recovered images and the private gradients by implicitly solving the DGL problem. Compared to directly solving DGL, I$^2$F is scalable for analyzing deep networks, requiring only oracle access to gradients and Jacobian-vector products. We empirically demonstrate that I$^2$F effectively approximated the DGL generally on different model architectures, datasets, attack implementations, and noise-based defenses. With this novel tool, we provide insights into effective gradient perturbation directions, the unfairness of privacy protection, and privacy-preferred model initialization. Our codes are provided in https://github.com/illidanlab/inversion-influence-function.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2237954046",
+                        "name": "Haobo Zhang"
+                    },
+                    {
+                        "authorId": "2110805917",
+                        "name": "Junyuan Hong"
+                    },
+                    {
+                        "authorId": "1598375183",
+                        "name": "Yuyang Deng"
+                    },
+                    {
+                        "authorId": "1694826",
+                        "name": "M. Mahdavi"
+                    },
+                    {
+                        "authorId": "2143462929",
+                        "name": "Jiayu Zhou"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "93a35e557ce41a0642165496e9df5046f38796aa",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-16680",
+                    "ArXiv": "2307.16680",
+                    "DOI": "10.48550/arXiv.2307.16680",
+                    "CorpusId": 260333997
+                },
+                "corpusId": 260333997,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/93a35e557ce41a0642165496e9df5046f38796aa",
+                "title": "On the Trustworthiness Landscape of State-of-the-art Generative Models: A Comprehensive Survey",
+                "abstract": "Diffusion models and large language models have emerged as leading-edge generative models and have sparked a revolutionary impact on various aspects of human life. However, the practical implementation of these models has also exposed inherent risks, highlighting their dual nature and raising concerns regarding their trustworthiness. Despite the abundance of literature on this subject, a comprehensive survey specifically delving into the intersection of large-scale generative models and their trustworthiness remains largely absent. To bridge this gap, This paper investigates both the long-standing and emerging threats associated with these models across four fundamental dimensions: privacy, security, fairness, and responsibility. In this way, we construct an extensive map outlining the trustworthiness of these models, while also providing practical recommendations and identifying future directions. These efforts are crucial for promoting the trustworthy deployment of these models, ultimately benefiting society as a whole.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2054874742",
+                        "name": "Mingyuan Fan"
+                    },
+                    {
+                        "authorId": "2447610",
+                        "name": "Cen Chen"
+                    },
+                    {
+                        "authorId": "121899912",
+                        "name": "Chengyu Wang"
+                    },
+                    {
+                        "authorId": "2078113",
+                        "name": "Jun Huang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "600a632ad97582e4365d058ce831547ef46b9e89",
+                "externalIds": {
+                    "DBLP": "journals/kbs/LiWSXYR23",
+                    "DOI": "10.1016/j.knosys.2023.110763",
+                    "CorpusId": 259519283
+                },
+                "corpusId": 259519283,
+                "publicationVenue": {
+                    "id": "12fff95b-d469-49a0-84a5-4fd4696c3f28",
+                    "name": "Knowledge-Based Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Knowl Based Syst",
+                        "Knowledge Based Systems",
+                        "Knowledge-based Syst"
+                    ],
+                    "issn": "0950-7051",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/525448/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/knowledge-based-systems",
+                        "http://www.sciencedirect.com/science/journal/09507051"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/600a632ad97582e4365d058ce831547ef46b9e89",
+                "title": "Trustiness-based hierarchical decentralized federated learning",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2110459052",
+                        "name": "Yanbin Li"
+                    },
+                    {
+                        "authorId": "2200103946",
+                        "name": "Xuemei Wang"
+                    },
+                    {
+                        "authorId": "2221939373",
+                        "name": "Runkang Sun"
+                    },
+                    {
+                        "authorId": "2111366519",
+                        "name": "Xiaojun Xie"
+                    },
+                    {
+                        "authorId": "2221952105",
+                        "name": "Shijia Ying"
+                    },
+                    {
+                        "authorId": "1954085",
+                        "name": "Shougang Ren"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "7dcaf503eeaa6f768e7985ffe1624556f8891865",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-15697",
+                    "ArXiv": "2305.15697",
+                    "DOI": "10.48550/arXiv.2305.15697",
+                    "CorpusId": 258888233
+                },
+                "corpusId": 258888233,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7dcaf503eeaa6f768e7985ffe1624556f8891865",
+                "title": "Privacy Protectability: An Information-theoretical Approach",
+                "abstract": "Recently, inference privacy has attracted increasing attention. The inference privacy concern arises most notably in the widely deployed edge-cloud video analytics systems, where the cloud needs the videos captured from the edge. The video data can contain sensitive information and subject to attack when they are transmitted to the cloud for inference. Many privacy protection schemes have been proposed. Yet, the performance of a scheme needs to be determined by experiments or inferred by analyzing the specific case. In this paper, we propose a new metric, \\textit{privacy protectability}, to characterize to what degree a video stream can be protected given a certain video analytics task. Such a metric has strong operational meaning. For example, low protectability means that it may be necessary to set up an overall secure environment. We can also evaluate a privacy protection scheme, e.g., assume it obfuscates the video data, what level of protection this scheme has achieved after obfuscation. Our definition of privacy protectability is rooted in information theory and we develop efficient algorithms to estimate the metric. We use experiments on real data to validate that our metric is consistent with empirical measurements on how well a video stream can be protected for a video analytics task.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "20916218",
+                        "name": "Siping Shi"
+                    },
+                    {
+                        "authorId": "2187086434",
+                        "name": "Bihai Zhang"
+                    },
+                    {
+                        "authorId": "2187139970",
+                        "name": "Dan Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[25] leverages image augmentation as a defense against optimization-based reconstruction attacks."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7f0f6619e3416df9c4d51fc11993d35f0cbd6f7b",
+                "externalIds": {
+                    "DBLP": "conf/bigdatasec/JeterT23",
+                    "DOI": "10.1109/BigDataSecurity-HPSC-IDS58521.2023.00015",
+                    "CorpusId": 258912753
+                },
+                "corpusId": 258912753,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/7f0f6619e3416df9c4d51fc11993d35f0cbd6f7b",
+                "title": "Privacy Analysis of Federated Learning via Dishonest Servers",
+                "abstract": "Federated Learning (FL) has gained popularity for its ability to improve model training while protecting user privacy. However, recent studies have shown that FL can be vulnerable to active reconstruction attacks by dishonest servers. Specifically, a dishonest server can obtain users\u2019 private data in numerous ways via gradient inversion based on the core neural network concept of neuron activation. Addressing this style of attack is imperative to preserve user privacy and remains a major challenge due to its sophisticated nature. In this paper, we examine various active reconstruction attacks by a dishonest server and provide comprehensive evaluations to demonstrate their effectiveness and practicality, highlighting the risks associated with FL systems.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2164872946",
+                        "name": "Tre' R. Jeter"
+                    },
+                    {
+                        "authorId": "1698253",
+                        "name": "M. Thai"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For each dataset and architecture, we consider the model training with standard transformations, randomly selected policies, hybrid policies chosen by our earlier work [15], the top-2 of our searched policies and their hybrid version.",
+                "TABLE VI COMPARISONS BETWEEN POLICIES CHOSEN FROM [15] AND THE VARIANCE INTEGRATED ALGORITHM ON CIFAR100 AND F-MNIST WITH RESNET20",
+                "This paper extends our earlier work [15] and introduces a systematic approach to overcoming these challenges."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "60fd369a5eeef42e0cfba62f71a2c216d98c6ebd",
+                "externalIds": {
+                    "DBLP": "journals/pami/GaoZGZXQWL23",
+                    "DOI": "10.1109/TPAMI.2023.3262813",
+                    "CorpusId": 257844073,
+                    "PubMed": "37030873"
+                },
+                "corpusId": 257844073,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/60fd369a5eeef42e0cfba62f71a2c216d98c6ebd",
+                "title": "Automatic Transformation Search Against Deep Leakage From Gradients",
+                "abstract": "Collaborative learning has gained great popularity due to its benefit of data privacy protection: participants can jointly train a Deep Learning model without sharing their training sets. However, recent works discovered that an adversary can fully recover the sensitive training samples from the shared gradients. Such reconstruction attacks pose severe threats to collaborative learning. Hence, effective mitigation solutions are urgently desired. In this paper, we systematically analyze existing reconstruction attacks and propose to leverage data augmentation to defeat these attacks: by preprocessing sensitive images with carefully-selected transformation policies, it becomes infeasible for the adversary to extract training samples from the corresponding gradients. We first design two new metrics to quantify the impacts of transformations on data privacy and model usability. With the two metrics, we design a novel search method to automatically discover qualified policies from a given data augmentation library. Our defense method can be further combined with existing collaborative training systems without modifying the training protocols. We conduct comprehensive experiments on various system settings. Evaluation results demonstrate that the policies discovered by our method can defeat state-of-the-art reconstruction attacks in collaborative learning, with high efficiency and negligible impact on the model performance.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2153578116",
+                        "name": "Wei Gao"
+                    },
+                    {
+                        "authorId": "2213162331",
+                        "name": "Xu Zhang"
+                    },
+                    {
+                        "authorId": "16042895",
+                        "name": "Shangwei Guo"
+                    },
+                    {
+                        "authorId": "2146333441",
+                        "name": "Tianwei Zhang"
+                    },
+                    {
+                        "authorId": "2120489252",
+                        "name": "Tao Xiang"
+                    },
+                    {
+                        "authorId": "51189305",
+                        "name": "Han Qiu"
+                    },
+                    {
+                        "authorId": "2114783855",
+                        "name": "Yonggang Wen"
+                    },
+                    {
+                        "authorId": "2152798056",
+                        "name": "Yang Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In [18], automatic transformation search (ATS) is introduced to generate heavily augmented images for training to hide information of the sensitive data, while the authors in [19] distorted the input"
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a73becd63b143abeafc26733c162f9f595f44c49",
+                "externalIds": {
+                    "DBLP": "conf/wcnc/MiaoC23",
+                    "DOI": "10.1109/WCNC55385.2023.10118613",
+                    "CorpusId": 258642016
+                },
+                "corpusId": 258642016,
+                "publicationVenue": {
+                    "id": "27235614-bd3e-4d6b-be38-5ede18f4e209",
+                    "name": "IEEE Wireless Communications and Networking Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Wirel Commun Netw Conf",
+                        "WCNC",
+                        "Wireless Communications and Networking Conference",
+                        "Wirel Commun Netw Conf"
+                    ],
+                    "url": "http://www.ieee-wcnc.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a73becd63b143abeafc26733c162f9f595f44c49",
+                "title": "Efficient Privacy-Preserving Federated Learning Against Inference Attacks for IoT",
+                "abstract": "Based on the vulnerability of federated learning (FL) to inference attacks and the high computation overhead, lack of label protection and degraded model performance occurred in existing defense methods, we design an efficient privacy-preserving federated learning scheme based on compressed sensing (CS), where CS is used as both a compression method and an encryption method. Double aggregation is adopted together to ensure that gradients are not generally disclosed in a way that would allow attackers to infer private information. Meanwhile, gradient perturbation is implemented through CS-based decompression algorithm, and it also zeros the gradients for the fully connected layer which is the most important in label restoration. The proposed scheme can provide image protection and label protection simultaneously, while few additional computing resources are required, making it appropriate for IoT scenarios. Simulation results demonstrate our scheme\u2019s effective and efficient defense under different settings with negligible impact on the model performance.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2153966194",
+                        "name": "Yifeng Miao"
+                    },
+                    {
+                        "authorId": "81002650",
+                        "name": "Siguang Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Besides, we can also follow the works [48] to further mitigate the indirect leakage from the gradients."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fcad44a0122c6cbff33ad84383127afb09fe3531",
+                "externalIds": {
+                    "DBLP": "journals/tits/HanZCQQLZ23",
+                    "DOI": "10.1109/TITS.2021.3122906",
+                    "CorpusId": 246348925
+                },
+                "corpusId": 246348925,
+                "publicationVenue": {
+                    "id": "3066c994-687a-417d-9f08-dabb65f37093",
+                    "name": "IEEE transactions on intelligent transportation systems (Print)",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE trans intell transp syst (print",
+                        "IEEE Trans Intell Transp Syst",
+                        "IEEE Transactions on Intelligent Transportation Systems"
+                    ],
+                    "issn": "1524-9050",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=6979"
+                },
+                "url": "https://www.semanticscholar.org/paper/fcad44a0122c6cbff33ad84383127afb09fe3531",
+                "title": "ADS-Lead: Lifelong Anomaly Detection in Autonomous Driving Systems",
+                "abstract": "Autonomous Vehicles (AVs) are closely connected in the Cooperative Intelligent Transportation System (C-ITS). They are equipped with various sensors and controlled by Autonomous Driving Systems (ADSs) to provide high-level autonomy. The vehicles exchange different types of real-time data with each other, which can help reduce traffic accidents and congestion, and improve the efficiency of transportation systems. However, when interacting with the environment, AVs suffer from a broad attack surface, and the sensory data are susceptible to anomalies caused by faults, sensor malfunctions, or attacks, which may jeopardize traffic safety and result in serious accidents. In this paper, we propose ADS-Lead, an efficient collaborative anomaly detection methodology to protect the lane-following mechanism of ADSs. ADS-Lead is equipped with a novel transformer-based one-class classification model to identify time series anomalies (GPS spoofing threat) and adversarial image examples (traffic sign and lane recognition attacks). Besides, AVs inside the C-ITS form a cognitive network, enabling us to apply the federated learning technology to our anomaly detection method, where the vehicles in the C-ITS jointly update the detection model with higher model generalization and data privacy. Experiments on Baidu Apollo and two public data sets (GTSRB and Tumsimple) indicate that our method can not only detect sensor anomalies effectively and efficiently but also outperform state-of-the-art anomaly detection methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2148651582",
+                        "name": "Xingshuo Han"
+                    },
+                    {
+                        "authorId": "2116567267",
+                        "name": "Yuan Zhou"
+                    },
+                    {
+                        "authorId": "2118441210",
+                        "name": "Kangjie Chen"
+                    },
+                    {
+                        "authorId": "51189305",
+                        "name": "Han Qiu"
+                    },
+                    {
+                        "authorId": "144326259",
+                        "name": "Meikang Qiu"
+                    },
+                    {
+                        "authorId": "2152798056",
+                        "name": "Yang Liu"
+                    },
+                    {
+                        "authorId": "2146331573",
+                        "name": "Tianwei Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Other emerging defense methods targets to specific attacks or scenarios, such as data augmentation [12] or disguising labels [19, 46] to defend against gradient inversion attacks, MARVELL [21] to defend against label inference in binary classification tasks, RVFR [23] to defend against backdoor attacks."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "c9700d8f75a42c0efc58ba969ed29abd0147f9d7",
+                "externalIds": {
+                    "ArXiv": "2301.01142",
+                    "DBLP": "journals/corr/abs-2301-01142",
+                    "DOI": "10.48550/arXiv.2301.01142",
+                    "CorpusId": 255393867
+                },
+                "corpusId": 255393867,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/c9700d8f75a42c0efc58ba969ed29abd0147f9d7",
+                "title": "Mutual Information Regularization for Vertical Federated Learning",
+                "abstract": "Vertical Federated Learning (VFL) is widely utilized in real-world applications to enable collaborative learning while protecting data privacy and safety. However, previous works show that parties without labels (passive parties) in VFL can infer the sensitive label information owned by the party with labels (active party) or execute backdoor attacks to VFL. Meanwhile, active party can also infer sensitive feature information from passive party. All these pose new privacy and security challenges to VFL systems. We propose a new general defense method which limits the mutual information between private raw data, including both features and labels, and intermediate outputs to achieve a better trade-off between model utility and privacy. We term this defense Mutual Information Regularization Defense (MID). We theoretically and experimentally testify the effectiveness of our MID method in defending existing attacks in VFL, including label inference attacks, backdoor attacks and feature reconstruction attacks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2044519039",
+                        "name": "Tianyuan Zou"
+                    },
+                    {
+                        "authorId": "1614034792",
+                        "name": "Yang Liu"
+                    },
+                    {
+                        "authorId": "2177392354",
+                        "name": "Ya-Qin Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "However, transformed images in [10], [11] still contain sensitive information which leaves traces for reconstruction attacks.",
+                "\u2022 ATS [11]: To achieve privacy-preserving deep learning, this scheme applies automatic transformation search (ATS) to find optimal image transformation (e.g., horizontal/vertical shifting, brightness adjustment, and contrast enhancement) strategies.",
+                "\u2022 ATS [11]: To achieve privacy-preserving deep learning, this scheme applies automatic transformation search (ATS) to find optimal image transformation (e.",
+                "Perceptual image encryption [10] and transformation policy selection [11] are considered respectively."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "9793e190b8605b86cf2235007d7e37e4b3de9b6a",
+                "externalIds": {
+                    "DBLP": "conf/globecom/MaYLY22",
+                    "DOI": "10.1109/GLOBECOM48099.2022.10001061",
+                    "CorpusId": 255597541
+                },
+                "corpusId": 255597541,
+                "publicationVenue": {
+                    "id": "b189dec0-41d0-4cea-a906-7c5186895904",
+                    "name": "Global Communications Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "GLOBECOM",
+                        "Glob Commun Conf"
+                    ],
+                    "url": "http://www.ieee-globecom.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/9793e190b8605b86cf2235007d7e37e4b3de9b6a",
+                "title": "Privacy-preserving Collaborative Learning with Scalable Image Transformation and Autoencoder",
+                "abstract": "Collaborative learning in which local clients jointly train a deep learning model by sharing parameters to the central- ized server has gained great popularity. However, recent works have shown that local private data can be leaked to the server by gradient sharing. In this paper, a privacy-preserving collaborative learning scheme is proposed to defend against gradient-based reconstruction attacks. The sensitive training images are firstly permutated by transformation with scalable block sizes. Then, features of permutated images are extracted by a classification- compliant autoencoder for meaningful representation of high- dimensional images and facilitating classification. The model accuracy constraint is incorporated in the training process to maintain decent classification accuracy. Experimental results demonstrate that the proposed scheme can achieve high privacy preservation with minimal impact on model accuracy.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2109169535",
+                        "name": "Yuting Ma"
+                    },
+                    {
+                        "authorId": "2974748",
+                        "name": "Yuanzhi Yao"
+                    },
+                    {
+                        "authorId": "2197473159",
+                        "name": "Xiaowei Liu"
+                    },
+                    {
+                        "authorId": "1708598",
+                        "name": "Nenghai Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "There are several image transformation approaches, such as pixel-level transformation [9], GAN-based transformation [16], and policy-based transformation [15].",
+                "Inspired by the technique proposed in [15] that can evaluate the correlations between the local linear map and the neural network performance without training, we adopt this technique to calculate the accuracy score of the transformation policy.",
+                "In this paper, we propose to leverage image transformation technologies [15] to preprocess the video frames in the edge, prior to the edge-cloud video analytics process."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "64eab93d4b8554f280a4c1a84ea27b9255092923",
+                "externalIds": {
+                    "DBLP": "conf/ieeesec/LuSWHZ22",
+                    "DOI": "10.1109/SEC54971.2022.00021",
+                    "CorpusId": 255418436
+                },
+                "corpusId": 255418436,
+                "publicationVenue": {
+                    "id": "c60f6e64-434b-4c82-931d-faefcb362d4c",
+                    "name": "IFIP International Information Security Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Symp Edge Comput",
+                        "Symposium on Edge Computing",
+                        "Inf Secur",
+                        "Information Security",
+                        "IFIP Int Inf Secur Conf",
+                        "SEC"
+                    ],
+                    "url": "http://www.tc11.uni-frankfurt.de/",
+                    "alternate_urls": [
+                        "https://acm-ieee-sec.org"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/64eab93d4b8554f280a4c1a84ea27b9255092923",
+                "title": "Preva: Protecting Inference Privacy through Policy-based Video-frame Transformation",
+                "abstract": "Real-time edge-cloud video analytics systems have been widely used to support such applications as traffic counting, surveillance, autonomous driving, Metaverse, etc. In such a system, the edge and the cloud cooperatively conduct model inference of the video frames captured by the camera of the edge, using a trained DNN model of the video analytics application. The edge conducts initial analytics on the video frames to a split layer of the DNN model; and then sends intermediate results to the cloud for follow-up analytics. In this paper, we show that an attacker can perform reconstruction attacks to the intermediate results; and private information of the raw video frames, e.g., a plate number of a car, can be leaked. In this paper, we present Preva, a new Privacy preserving Real-time Edge-cloud Video Analytics system. The core idea of Preva is to conduct image transformation on the video frames, as preprocessing, prior to the video frames starting the edge-cloud video analytics process, so that during edge-cloud video analytics, the intermediate results will not leak private information under attack. We design a policy-based video-frame transformation scheme. Given the resource constraints of the edge, Preva ensures high accuracy in the final video analytics results and minimizes privacy leakage in any split layer. We present a formal privacy analysis and we show that Preva can guarantee privacy leakage under the reconstruction attacks of both outsider attackers and insider attackers. We evaluate Preva through three video analytics applications and we show that Preva outperforms existing systems for 64.4% in analytics accuracy and 59.2% in privacy leakage.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2151227645",
+                        "name": "Rui Lu"
+                    },
+                    {
+                        "authorId": "20916218",
+                        "name": "Siping Shi"
+                    },
+                    {
+                        "authorId": "40562856",
+                        "name": "Dan Wang"
+                    },
+                    {
+                        "authorId": "1491235249",
+                        "name": "Chuang Hu"
+                    },
+                    {
+                        "authorId": "2187086434",
+                        "name": "Bihai Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "8cc3dbde0730e10a47d53a160282c644224ecae3",
+                "externalIds": {
+                    "DBLP": "journals/tifs/ChenZLFX23",
+                    "ArXiv": "2210.04052",
+                    "DOI": "10.1109/TIFS.2023.3297369",
+                    "CorpusId": 253420565
+                },
+                "corpusId": 253420565,
+                "publicationVenue": {
+                    "id": "d406a3f4-dc05-43be-b1f6-812f29de9c0e",
+                    "name": "IEEE Transactions on Information Forensics and Security",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Inf Forensics Secur"
+                    ],
+                    "issn": "1556-6013",
+                    "url": "http://www.ieee.org/organizations/society/sp/tifs.html",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=10206",
+                        "http://www.signalprocessingsociety.org/publications/periodicals/forensics/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/8cc3dbde0730e10a47d53a160282c644224ecae3",
+                "title": "FedDef: Defense Against Gradient Leakage in Federated Learning-Based Network Intrusion Detection Systems",
+                "abstract": "Deep learning (DL) methods have been widely applied to anomaly-based network intrusion detection system (NIDS) to detect malicious traffic. To expand the usage scenarios of DL-based methods, federated learning (FL) allows multiple users to train a global model on the basis of respecting individual data privacy. However, it has not yet been systematically evaluated how robust FL-based NIDSs are against existing privacy attacks under existing defenses. To address this issue, we propose two privacy evaluation metrics designed for FL-based NIDSs, including (1) privacy score that evaluates the similarity between the original and recovered traffic features using reconstruction attacks, and (2) evasion rate against NIDSs using adversarial attack with the recovered traffic. We conduct experiments to illustrate that existing defenses provide little protection and the corresponding adversarial traffic can even evade the SOTA NIDS Kitsune. To defend against such attacks and build a more robust FL-based NIDS, we further propose FedDef, a novel optimization-based input perturbation defense strategy with theoretical guarantee. It achieves both high utility by minimizing the gradient distance and strong privacy protection by maximizing the input distance. We experimentally evaluate four existing defenses on four datasets and show that our defense outperforms all the baselines in terms of privacy protection with up to 7 times higher privacy score, while maintaining model accuracy loss within 3% under optimal parameter combination.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2169180860",
+                        "name": "Jiahui Chen"
+                    },
+                    {
+                        "authorId": "2143936310",
+                        "name": "Yi Zhao"
+                    },
+                    {
+                        "authorId": "2118913398",
+                        "name": "Qi Li"
+                    },
+                    {
+                        "authorId": "1492128599",
+                        "name": "Xuewei Feng"
+                    },
+                    {
+                        "authorId": "2087261264",
+                        "name": "Ke Xu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                ", 2022) and ATS (Automatic Transformation Search) (Gao et al., 2021).",
+                "A.1 Compared with PRECODE and ATS\nA.2 Examples of different start point\nA.3 Examples of reconstructions\nFigure 3 and Figure 4 show the examples of reconstructions.",
+                "However, the study (Zhu et al., 2019; Gao et al., 2021; Sun et al., 2021) show that DP-based defences require a large number of participants in the training process to converge and achieve a desirable privacy-performance tradeoff.",
+                "As such, our proposed approach improves the privacy of sensitive data in FL. 2) Maintaining the FL performance.",
+                "Latest techniques such as Automatic Transformation Search (ATS) (Gao et al., 2021) (augmenting data to hide sensitive information), PRivacy EnhanCing mODulE (PRECODE) (Scheliga et al., 2022) (use of bottleneck to hide the sensitive data), and Soteria (Sun et al., 2021) (pruning gradients in a single layer) are shown to maintain the FL performance while simultaneously preserving the privacy.",
+                "In this work, we proposed a practical and effective defence against model inversion attacks in FL.",
+                "Our algorithm ensures that the gradient after introducing the concealing samples is still aligned with that of training samples (including sensitive data), and thus maintains the learning capabilities of the FL.",
+                "\u2026categories: gradient compression (Lin et al., 2017; Sun et al., 2021) and perturbation (Geyer et al., 2017; McMahan et al., 2017b), data encryption (Gao et al., 2021; Huang et al., 2020), architectural modifications (Scheliga et al., 2022), and secure aggregation via changing the communication and\u2026",
+                "Latest techniques such as Automatic Transformation Search (ATS) (Gao et al., 2021) (augmenting data to hide sensitive information), PRivacy EnhanCing mODulE (PRECODE) (Scheliga et al., 2022) (use of bottleneck to hide the sensitive data), and Soteria (Sun et al., 2021) (pruning gradients in a\u2026",
+                "Balunovic\u0301 et al. (2021) also show it is easy to reconstruct the data using the GS attack in the initial communication rounds against the defence ATS, while Carlini et al. (2020) show that they can recover private data when they know the encodings of InstaHide.",
+                "Differential Privacy (DP) (Geyer et al., 2017; McMahan et al., 2017b) adds Gaussian or Laplacian noise into the gradients, and has been shown as an effective privacy-preserving strategy in FL. Gao et al. (2021) introduce Automatic Transformation Search (ATS) to generate heavily augmented images for training to hide information of the sensitive data, while Huang et al. (2020, 2021) propose InstaHide to encrypt the private data with data from public datasets.",
+                ", 2017b), data encryption (Gao et al., 2021; Huang et al., 2020), architectural modifications (Scheliga et al.",
+                "Latest techniques such as Automatic Transformation Search (ATS) (Gao et al., 2021) (augmenting data to hide sensitive information), PRivacy EnhanCing mODulE (PRECODE) (Scheliga et al.",
+                "We hope our defence could provide a new perspective for defending against model inversion attacks in FL.",
+                "We can conclude that our defence method also provide an effective protection for the sensitive data on the ImageNet dataset against the model inversion attacks in FL.\nA.4 Model Architectures\nDetails of the models used in this study are shown in Table 6.",
+                "But in the appendix, we show the comparison with such defences like PRECODE (PRivacy EnhanCing mODulE) (Scheliga et al., 2022) and ATS (Automatic Transformation Search) (Gao et al., 2021).",
+                "We can conclude that the current defence mechanisms are not quite effective against model inversion attacks in FL.",
+                "Jin et al. (2021) introduce catastrophic data leakage (CAFE) in vertical federated learning (VFL) and they can improve the data recovery quality over a large batch in VFL. Balunovic\u0301 et al. (2021) firstly formalize the gradient leakage problem within the Bayesian framework, and then demonstrate existing optimization-based attacks could be approximated as the optimal adversary with different assumptions on the input and gradients.",
+                "\u2026McMahan et al., 2017b) adds Gaussian or Laplacian noise into the gradients, and has been shown as an effective privacy-preserving strategy in FL. Gao et al. (2021) introduce Automatic Transformation Search (ATS) to generate heavily augmented images for training to hide information of the\u2026"
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "5be3750de9ca66dd2d8eeb2e3835370927d258fb",
+                "externalIds": {
+                    "ArXiv": "2209.05724",
+                    "DBLP": "journals/corr/abs-2209-05724",
+                    "DOI": "10.48550/arXiv.2209.05724",
+                    "CorpusId": 252212269
+                },
+                "corpusId": 252212269,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5be3750de9ca66dd2d8eeb2e3835370927d258fb",
+                "title": "Defense against Privacy Leakage in Federated Learning",
+                "abstract": "Federated Learning (FL) provides a promising distributed learning paradigm, since it seeks to protect users privacy by not sharing their private training data. Recent research has demonstrated, however, that FL is susceptible to model inversion attacks, which can reconstruct users' private data by eavesdropping on shared gradients. Existing defense solutions cannot survive stronger attacks and exhibit a poor trade-off between privacy and performance. In this paper, we present a straightforward yet effective defense strategy based on obfuscating the gradients of sensitive data with concealing data. Specifically, we alter a few samples within a mini batch to mimic the sensitive data at the gradient levels. Using a gradient projection technique, our method seeks to obscure sensitive data without sacrificing FL performance. Our extensive evaluations demonstrate that, compared to other defenses, our technique offers the highest level of protection while preserving FL performance. Our source code is located in the repository.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2149264949",
+                        "name": "Jing Wu"
+                    },
+                    {
+                        "authorId": "145684318",
+                        "name": "Munawar Hayat"
+                    },
+                    {
+                        "authorId": "2152176164",
+                        "name": "Min Zhou"
+                    },
+                    {
+                        "authorId": "23911916",
+                        "name": "Mehrtash Harandi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Fortunately, recent research has found that DLG attacks can be well protected by novel data augmentation-based approaches as proposed in [36] and [37] to guarantee data privacy in distributed learning."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "d55e053e9b030c2d492be24c33a2f5c5188cd0a2",
+                "externalIds": {
+                    "DBLP": "journals/tnse/ChiWL22",
+                    "DOI": "10.1109/TNSE.2021.3128171",
+                    "CorpusId": 244388406
+                },
+                "corpusId": 244388406,
+                "publicationVenue": {
+                    "id": "83b61ff8-462d-4e1d-b43b-5d96fcc87766",
+                    "name": "IEEE Transactions on Network Science and Engineering",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Netw Sci Eng"
+                    ],
+                    "issn": "2327-4697",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=6488902"
+                },
+                "url": "https://www.semanticscholar.org/paper/d55e053e9b030c2d492be24c33a2f5c5188cd0a2",
+                "title": "Distributed Knowledge Inference Framework for Intelligent Fault Diagnosis in IIoT Systems",
+                "abstract": "Knowledge inference using knowledge graphs is one of the recent research trends for fault diagnosis. As complex Industrial Internet of Things (IIoT) systems evolve to incorporate distributed subsystems, each subsystem may have local measurements interpreted by a local Knowledge Base (KB). In this work, we propose a distributed fault diagnosis framework with distributed path-based reasoning. In contrast to centralized reasoning that requires merging of the distributed KBs, the proposed framework employs a centralized coordinator to transfer the model among decentralized agents and allows an agent to handover training paths for others to continue training by filling in missing links using their local KBs. Our work is the very first distributed knowledge inference framework to reason among distributed fault diagnosis systems to tackle the KB isolation, scalability and flexibility issues of centralized fault diagnosis systems. To validate our framework with IIoT datasets, we build a fault knowledge graph from the Tennessee Eastman (TE) process simulations. Evaluations show that our framework outperforms the non-cooperative distributed reasoning method in terms of prediction accuracy. With the TE process dataset, the mean reciprocal rank is improved from 0.1612 to 0.19 with transferred models, and further to 0.206 with hand-over queries between agents.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48745826",
+                        "name": "Yuanfang Chi"
+                    },
+                    {
+                        "authorId": "2153226940",
+                        "name": "Z. J. Wang"
+                    },
+                    {
+                        "authorId": "3598400",
+                        "name": "V. Leung"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "0399a57424e90f0710febe0e9164106475d3ab8f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-04767",
+                    "ArXiv": "2208.04767",
+                    "DOI": "10.48550/arXiv.2208.04767",
+                    "CorpusId": 251442426
+                },
+                "corpusId": 251442426,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0399a57424e90f0710febe0e9164106475d3ab8f",
+                "title": "Combining Variational Modeling with Partial Gradient Perturbation to Prevent Deep Gradient Leakage",
+                "abstract": "Exploiting gradient leakage to reconstruct supposedly private training data, gradient inversion attacks are an ubiquitous threat in collaborative learning of neural networks. To prevent gradient leakage without suffering from severe loss in model performance, recent work proposed a PRivacy EnhanCing mODulE (PRECODE) based on variational modeling as extension for arbitrary model architectures. In this work, we investigate the effect of PRECODE on gradient inversion attacks to reveal its underlying working principle. We show that variational modeling induces stochasticity on PRECODE's and its subsequent layers' gradients that prevents gradient attacks from convergence. By purposefully omitting those stochastic gradients during attack optimization, we formulate an attack that can disable PRECODE's privacy preserving effects. To ensure privacy preservation against such targeted attacks, we propose PRECODE with Partial Perturbation (PPP), as strategic combination of variational modeling and partial gradient perturbation. We conduct an extensive empirical study on four seminal model architectures and two image classification datasets. We find all architectures to be prone to gradient leakage, which can be prevented by PPP. In result, we show that our approach requires less gradient perturbation to effectively preserve privacy without harming model performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2122960418",
+                        "name": "Daniel Scheliga"
+                    },
+                    {
+                        "authorId": "2075421922",
+                        "name": "Patrick M\u00e4der"
+                    },
+                    {
+                        "authorId": "25631704",
+                        "name": "M. Seeland"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "f4a6efc19365f289c6a5d54e99a1d55d5f0be05b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-03134",
+                    "ArXiv": "2201.03134",
+                    "CorpusId": 245836888
+                },
+                "corpusId": 245836888,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f4a6efc19365f289c6a5d54e99a1d55d5f0be05b",
+                "title": "An Interpretable Federated Learning-based Network Intrusion Detection Framework",
+                "abstract": "Learning-based Network Intrusion Detection Systems (NIDSs) are widely deployed for defending various cyberattacks. Existing learning-based NIDS mainly uses Neural Network (NN) as a classifier that relies on the quality and quantity of cyberattack data. Such NN-based approaches are also hard to interpret for improving efficiency and scalability. In this paper, we design a new local-global computation paradigm, FEDFOREST, a novel learning-based NIDS by combining the interpretable Gradient Boosting Decision Tree (GBDT) and Federated Learning (FL) framework. Specifically, FEDFOREST is composed of multiple clients that extract local cyberattack data features for the server to train models and detect intrusions. A privacy-enhanced technology is also proposed in FEDFOREST to further defeat the privacy of the FL systems. Extensive experiments on 4 cyberattack datasets of different tasks demonstrate that FEDFOREST is effective, efficient, interpretable, and extendable. FEDFOREST ranks first in the collaborative learning and cybersecurity competition 2021 for Chinese college students.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2084640578",
+                        "name": "Tian Dong"
+                    },
+                    {
+                        "authorId": "2118193966",
+                        "name": "Song Li"
+                    },
+                    {
+                        "authorId": "49660254",
+                        "name": "Han Qiu"
+                    },
+                    {
+                        "authorId": "2582355",
+                        "name": "Jialiang Lu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Automatic transformation search against deep leakage from gradients [67].",
+                "Samples inference defenses [67], [178] can protect training samples from being inferred by existing attacks.",
+                "[67] proposed to search privacy-preserving transformation functions and pre-process the training samples with such functions to defend reconstruction attacks as well as preserving",
+                "Figure 4 illustrates a privacy-preserving collaborative learning method [67] using automatic transformation search against deep leakage from gradients."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "2f0593543cd77bdc37943effab25cb7090bbc407",
+                "externalIds": {
+                    "ArXiv": "2112.10183",
+                    "DBLP": "journals/corr/abs-2112-10183",
+                    "CorpusId": 245334419
+                },
+                "corpusId": 245334419,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2f0593543cd77bdc37943effab25cb7090bbc407",
+                "title": "Robust and Privacy-Preserving Collaborative Learning: A Comprehensive Survey",
+                "abstract": "With the rapid demand of data and computational resources in deep learning systems, a growing number of algorithms to utilize collaborative machine learning techniques, for example, federated learning, to train a shared deep model across multiple participants. It could effectively take advantage of the resources of each participant and obtain a more powerful learning system. However, integrity and privacy threats in such systems have greatly obstructed the applications of collaborative learning. And a large amount of works have been proposed to maintain the model integrity and mitigate the privacy leakage of training data during the training phase for different collaborative learning systems. Compared with existing surveys that mainly focus on one specific collaborative learning system, this survey aims to provide a systematic and comprehensive review of security and privacy researches in collaborative learning. Our survey first provides the system overview of collaborative learning, followed by a brief introduction of integrity and privacy threats. In an organized way, we then detail the existing integrity and privacy attacks as well as their defenses. We also list some open problems in this area and opensource the related papers on GitHub: https://github.com/csl-cqu/awesome-secure-collebrative-learning-papers.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "16042895",
+                        "name": "Shangwei Guo"
+                    },
+                    {
+                        "authorId": "2115463052",
+                        "name": "Xu Zhang"
+                    },
+                    {
+                        "authorId": "46319494",
+                        "name": "Feiyu Yang"
+                    },
+                    {
+                        "authorId": "2146331573",
+                        "name": "Tianwei Zhang"
+                    },
+                    {
+                        "authorId": "144435468",
+                        "name": "Yan Gan"
+                    },
+                    {
+                        "authorId": "2120489266",
+                        "name": "Tao Xiang"
+                    },
+                    {
+                        "authorId": "2152798056",
+                        "name": "Yang Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "db23ac2c318b1ae1ec6be149f677441b0b1a9c8c",
+                "externalIds": {
+                    "ArXiv": "2112.05409",
+                    "CorpusId": 246822929
+                },
+                "corpusId": 246822929,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/db23ac2c318b1ae1ec6be149f677441b0b1a9c8c",
+                "title": "Batch Label Inference and Replacement Attacks in Black-Boxed Vertical Federated Learning",
+                "abstract": "In a vertical federated learning (VFL) scenario where features and model are split into different parties, communications of sample-specific updates are required for correct gradient calculations but can be used to deduce important sample-level label information. An immediate defense strategy is to protect sample-level messages communicated with Homomorphic Encryption (HE), and in this way only the batch-averaged local gradients are exposed to each party (termed black-boxed VFL). In this paper, we first explore the possibility of recovering labels in the vertical federated learning setting with HE-protected communication, and show that private labels can be reconstructed with high accuracy by training a gradient inversion model. Furthermore, we show that label replacement backdoor attacks can be conducted in black-boxed VFL by directly replacing encrypted communicated messages (termed gradient-replacement attack). As it is a common presumption that batch-averaged information is safe to share, batch label inference and replacement attacks are a severe challenge to VFL. To defend against batch label inference attack, we further evaluate several defense strategies, including confusional autoencoder (CoAE), a technique we proposed based on autoencoder and entropy regularization. We demonstrate that label inference and replacement attacks can be successfully blocked by this technique without hurting as much main task accuracy as compared to existing methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1614034792",
+                        "name": "Yang Liu"
+                    },
+                    {
+                        "authorId": "2044519039",
+                        "name": "Tianyuan Zou"
+                    },
+                    {
+                        "authorId": "1505828520",
+                        "name": "Yan Kang"
+                    },
+                    {
+                        "authorId": "2109273020",
+                        "name": "Wenhan Liu"
+                    },
+                    {
+                        "authorId": "2145050945",
+                        "name": "Yuanqin He"
+                    },
+                    {
+                        "authorId": "2026585451",
+                        "name": "Zhi-qian Yi"
+                    },
+                    {
+                        "authorId": "2047496843",
+                        "name": "Qian Yang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Despite such advantages, existing FL approaches still suffer from privacy inference [52] [21] [20] and byzantine attacks [4] [8] [5]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "e8b653f8d8aaf33812ad6d6619fbc31bdac29474",
+                "externalIds": {
+                    "DBLP": "conf/acsac/HaoLXC021",
+                    "DOI": "10.1145/3485832.3488014",
+                    "CorpusId": 244910772
+                },
+                "corpusId": 244910772,
+                "publicationVenue": {
+                    "id": "91d4ecad-d022-4953-901e-c5c57c614f72",
+                    "name": "Asia-Pacific Computer Systems Architecture Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ACSAC",
+                        "Asia-pacific Comput Syst Archit Conf",
+                        "Annu Comput Secur Appl Conf",
+                        "Annual Computer Security Applications Conference"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=46",
+                    "alternate_urls": [
+                        "http://www.acsac.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/e8b653f8d8aaf33812ad6d6619fbc31bdac29474",
+                "title": "Efficient, Private and Robust Federated Learning",
+                "abstract": "Federated learning (FL) has demonstrated tremendous success in various mission-critical large-scale scenarios. However, such promising distributed learning paradigm is still vulnerable to privacy inference and byzantine attacks. The former aims to infer the privacy of target participants involved in training, while the latter focuses on destroying the integrity of the constructed model. To mitigate the above two issues, a few works recently explored unified solutions by utilizing generic secure computation techniques and common byzantine-robust aggregation rules, but there are two major limitations: 1) they suffer from impracticality due to efficiency bottlenecks, and 2) they are still vulnerable to various types of attacks because of model incomprehensiveness. To approach the above problems, in this paper, we present SecureFL, an efficient, private and byzantine-robust FL framework. SecureFL follows the state-of-the-art byzantine-robust FL method (FLTrust NDSS\u201921), which performs comprehensive byzantine defense by normalizing the updates\u2019 magnitude and measuring directional similarity, adapting it to the privacy-preserving context. More importantly, we carefully customize a series of cryptographic components. First, we design a crypto-friendly validity checking protocol that functionally replaces the normalization operation in FLTrust, and further devise tailored cryptographic protocols on top of it. Benefiting from the above optimizations, the communication and computation costs are reduced by half without sacrificing the robustness and privacy protection. Second, we develop a novel preprocessing technique for costly matrix multiplication. With this technique, the directional similarity measurement can be evaluated securely with negligible computation overhead and zero communication cost. Extensive evaluations conducted on three real-world datasets and various neural network architectures demonstrate that SecureFL outperforms prior art up to two orders of magnitude in efficiency with state-of-the-art byzantine robustness.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2062622282",
+                        "name": "Meng Hao"
+                    },
+                    {
+                        "authorId": "49404145",
+                        "name": "Hongwei Li"
+                    },
+                    {
+                        "authorId": "145249315",
+                        "name": "Guowen Xu"
+                    },
+                    {
+                        "authorId": "2118025304",
+                        "name": "Hanxiao Chen"
+                    },
+                    {
+                        "authorId": "2146331573",
+                        "name": "Tianwei Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For ATS, we built upon the repository released alongside (Gao et al., 2021).",
+                "We then turn to practical evaluation and experiment with several recently proposed defenses (Sun et al., 2021; Gao et al., 2021; Scheliga et al., 2021) based on different heuristics and demonstrate that they do not protect from gradient leakage against stronger attacks that we design specifically\u2026",
+                "Defenses In response to the rise of privacy-violating attacks on federated learning, many defenses have been proposed (Abadi et al., 2016; Sun et al., 2021; Gao et al., 2021).",
+                ", 2021) prunes the gradient for a single layer, ATS (Gao et al., 2021) generates highly augmented input images that train the network to produce non-invertible gradients, and PRECODE (Scheliga et al.",
+                "This also leads to a wide variety of proposed defenses: Soteria (Sun et al., 2021) prunes the gradient for a single layer, ATS (Gao et al., 2021) generates highly augmented input images that train the network to produce non-invertible gradients, and PRECODE (Scheliga et al., 2021) uses a VAE to\u2026",
+                "We use the ConvNet architecture with a width of 64 also proposed in (Gao et al., 2021) and train with the augmentations \u201d7-4-15\u201d, \u201d21-13-3\u201d, \u201d21-13-3+7-4-15\u201d which perform the best on ConvNet with CIFAR100.",
+                "Our experiments in Section 6 on the network architecture and augmentations introduced in Gao et al. (2021) indicate that an attacker can successfully extract large parts of the input despite heavy image augmentation.",
+                "Automated Transformation Search The Automatic Transformation Search (ATS) (Gao et al., 2021) attempts to hide sensitive information from input images by augmenting the images during training.",
+                "Similarly to Soteria, Gao et al. (2021) also demonstrate that ATS is safe against attacks proposed by Zhu et al. (2019) and Geiping et al. (2020).",
+                "We then turn to practical evaluation and experiment with several recently proposed defenses (Sun et al., 2021; Gao et al., 2021; Scheliga et al., 2021) based on different heuristics and demonstrate that they do not protect from gradient leakage against stronger attacks that we design specifically for each defense."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "2e9064208fd23c998f67f79531346504c9cfc7f3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2111-04706",
+                    "ArXiv": "2111.04706",
+                    "CorpusId": 243847413
+                },
+                "corpusId": 243847413,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/2e9064208fd23c998f67f79531346504c9cfc7f3",
+                "title": "Bayesian Framework for Gradient Leakage",
+                "abstract": "Federated learning is an established method for training machine learning models without sharing training data. However, recent work has shown that it cannot guarantee data privacy as shared gradients can still leak sensitive information. To formalize the problem of gradient leakage, we propose a theoretical framework that enables, for the first time, analysis of the Bayes optimal adversary phrased as an optimization problem. We demonstrate that existing leakage attacks can be seen as approximations of this optimal adversary with different assumptions on the probability distributions of the input data and gradients. Our experiments confirm the effectiveness of the Bayes optimal adversary when it has knowledge of the underlying distribution. Further, our experimental evaluation shows that several existing heuristic defenses are not effective against stronger attacks, especially early in the training process. Thus, our findings indicate that the construction of more effective defenses and their evaluation remains an open problem.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2138580250",
+                        "name": "Mislav Balunovi'c"
+                    },
+                    {
+                        "authorId": "2057210414",
+                        "name": "Dimitar I. Dimitrov"
+                    },
+                    {
+                        "authorId": "2133303955",
+                        "name": "Robin Staab"
+                    },
+                    {
+                        "authorId": "1736447",
+                        "name": "Martin T. Vechev"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "9bbb61d9bcfa1a2b63efbdb8a521af8c8a2e94ec",
+                "externalIds": {
+                    "MAG": "3165750456",
+                    "DBLP": "journals/natmi/KaissisZPRUTLMJ21",
+                    "DOI": "10.1038/s42256-021-00337-8",
+                    "CorpusId": 236396095
+                },
+                "corpusId": 236396095,
+                "publicationVenue": {
+                    "id": "6457124b-39bf-4d02-bff4-73752ff21562",
+                    "name": "Nature Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Nat Mach Intell"
+                    ],
+                    "issn": "2522-5839",
+                    "url": "https://www.nature.com/natmachintell/"
+                },
+                "url": "https://www.semanticscholar.org/paper/9bbb61d9bcfa1a2b63efbdb8a521af8c8a2e94ec",
+                "title": "End-to-end privacy preserving deep learning on multi-institutional medical imaging",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "9555451",
+                        "name": "Georgios Kaissis"
+                    },
+                    {
+                        "authorId": "39031498",
+                        "name": "Alexander Ziller"
+                    },
+                    {
+                        "authorId": "1389979241",
+                        "name": "Jonathan Passerat-Palmbach"
+                    },
+                    {
+                        "authorId": "81672773",
+                        "name": "T. Ryffel"
+                    },
+                    {
+                        "authorId": "2035505443",
+                        "name": "Dmitrii Usynin"
+                    },
+                    {
+                        "authorId": "145994651",
+                        "name": "Andrew Trask"
+                    },
+                    {
+                        "authorId": "2120892436",
+                        "name": "Ion\u00e9sio Lima"
+                    },
+                    {
+                        "authorId": "31748788",
+                        "name": "Jason V. Mancuso"
+                    },
+                    {
+                        "authorId": "1560540306",
+                        "name": "F. Jungmann"
+                    },
+                    {
+                        "authorId": "2121105409",
+                        "name": "Marc-Matthias Steinborn"
+                    },
+                    {
+                        "authorId": "2120933272",
+                        "name": "Andreas Saleh"
+                    },
+                    {
+                        "authorId": "2380008",
+                        "name": "M. Makowski"
+                    },
+                    {
+                        "authorId": "1717710",
+                        "name": "D. Rueckert"
+                    },
+                    {
+                        "authorId": "4516701",
+                        "name": "R. Braren"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "5b71af49ba33ecd92d6422eda35406645c2b1274",
+                "externalIds": {
+                    "DBLP": "journals/iotj/ZhuangGWZ22",
+                    "ArXiv": "2105.07603",
+                    "DOI": "10.1109/JIOT.2022.3143842",
+                    "CorpusId": 234742545
+                },
+                "corpusId": 234742545,
+                "publicationVenue": {
+                    "id": "228761ec-c40a-479b-8309-9dcbe9851bcd",
+                    "name": "IEEE Internet of Things Journal",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Internet Thing J"
+                    ],
+                    "issn": "2327-4662",
+                    "url": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER288-ELE",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/servlet/opac?punumber=6488907",
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907",
+                        "http://ieee-iotj.org/#"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5b71af49ba33ecd92d6422eda35406645c2b1274",
+                "title": "EasyFL: A Low-Code Federated Learning Platform for Dummies",
+                "abstract": "Academia and industry have developed several platforms to support the popular privacy-preserving distributed learning method\u2014federated learning (FL). However, these platforms are complex to use and require a deep understanding of FL, which imposes high barriers to entry for beginners, limits the productivity of researchers, and compromises deployment efficiency. In this article, we propose the first low-code FL platform, EasyFL, to enable users with various levels of expertise to experiment and prototype FL applications with little coding. We achieve this goal while ensuring great flexibility and extensibility for customization by unifying simple API design, modular design, and granular training flow abstraction. With only a few lines of code (LOC), EasyFL empowers them with many out-of-the-box functionalities to accelerate experimentation and deployment. These practical functionalities are heterogeneity simulation, comprehensive tracking, distributed training optimization, and seamless deployment. They are proposed based on challenges identified in the proposed FL life cycle. Compared with other platforms, EasyFL not only requires just three LOC (at least $10\\times $ lesser) to build a vanilla FL application but also incurs lower training overhead. Besides, our evaluations demonstrate that EasyFL expedites distributed training by $1.5\\times $ . It also improves the efficiency of deployment. We believe that EasyFL will increase the productivity of researchers and democratize FL to wider audiences.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1900312976",
+                        "name": "Weiming Zhuang"
+                    },
+                    {
+                        "authorId": "2062764376",
+                        "name": "Xin Gan"
+                    },
+                    {
+                        "authorId": "145868454",
+                        "name": "Yonggang Wen"
+                    },
+                    {
+                        "authorId": "2140178647",
+                        "name": "Shuai Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "To verify the claims made by the authors of [5], we reproduce their experiments.",
+                "44 In this reproducibility report, we evaluate the main claims made by the authors of [5] by reproducing their experiments.",
+                "Overall the results in [5] are reproducible, except Figure 4, with a large discrepancy between our result and the original 213 one - we are still in contact with the authors on this issue.",
+                "In [5], 86 k = 3 is chosen and the policies are denoted by the indices of the transformations within the AutoAugment library.",
+                "The experiments in [5] are performed on two datasets, CIFAR-1004 [11], and Fashion-MNIST5 [17].",
+                "40 The paper subject to this reproducibility study proposes a novel approach to mitigate the threat from reconstruction 41 attacks by augmenting the local training data of the user, before calculating the gradients [5].",
+                "Therefore, the authors propose the 88 hybrid strategy, where a policy is randomly selected from the candidate policies - this way, good privacy and accuracy 89 are guaranteed [5].",
+                "697 64 Each of these claims is supported by the results of one or more experiments in [5], represented in the tables and figures.",
+                "83 In [5], transformations from AutoAugment1 [3] are repurposed to protect sensitive training data from reconstruction 84 attacks."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "result",
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fbe5c11655fbe1eba070aca47590babe20ac7435",
+                "externalIds": {
+                    "CorpusId": 247741223
+                },
+                "corpusId": 247741223,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/fbe5c11655fbe1eba070aca47590babe20ac7435",
+                "title": "Replication study of \"Privacy-preserving Collaborative Learning",
+                "abstract": "We perform all experiments using the model architectures and hyperparameters proposed by the authors. We use 8 the same datasets and extend their work to include one new dataset. A codebase was available which enables us to 9 reproduce some of the results. However we deliver a contribution by fully re-implementing the codebase in PyTorch 10 Lightning to ensure all components are modular, and experiments can be easily executed and extended, to the benefit of 11 future research using the authors\u2019 method. All experiments are performed on Nvidia GTX 1080 GPUs. 12",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2624289",
+                        "name": "A. Beygelzimer"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In the meantime, [23] introduces a novel defense scheme that searches for optimal image transformation combination such as image rotation and shift to preserve privacy."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "2a30c3b2e75cd10214d935c8ea847fdf2dfbdb31",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-04052",
+                    "DOI": "10.48550/arXiv.2210.04052",
+                    "CorpusId": 252780905
+                },
+                "corpusId": 252780905,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2a30c3b2e75cd10214d935c8ea847fdf2dfbdb31",
+                "title": "FedDef: Robust Federated Learning-based Network Intrusion Detection Systems Against Gradient Leakage",
+                "abstract": "\u2014Deep learning methods have been widely applied to anomaly-based network intrusion detection systems (NIDS) to detect malicious traf\ufb01c. To expand the usage scenarios of DL- based methods, the federated learning (FL) framework allows intelligent techniques to jointly train a model by multiple individuals on the basis of respecting individual data privacy. However, it has not yet been systematically evaluated how robust FL-based NIDSs are against existing privacy attacks under existing defenses. To address this issue, in this paper we propose two privacy evaluation metrics designed for FL-based NIDSs, including leveraging two reconstruction attacks to recover the training data to obtain the privacy score for traf\ufb01c features, followed by Generative Adversarial Network (GAN) based at- tack that generates adversarial examples with the reconstructed benign traf\ufb01c to evaluate evasion rate against other NIDSs. We conduct experiments to show that existing defenses provide little protection that the corresponding adversarial traf\ufb01c can even evade the SOTA NIDS Kitsune. To build a more robust FL-based NIDS, we further propose a novel optimization-based input perturbation defense strategy with theoretical guarantee that achieves both high utility by minimizing the gradient distance and strong privacy protection by maximizing the input distance. We experimentally evaluate four existing defenses on four datasets and show that our defense outperforms all the baselines with strong privacy guarantee while maintaining model accuracy loss within 3% under optimal parameter combination.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2169180860",
+                        "name": "Jiahui Chen"
+                    },
+                    {
+                        "authorId": "2143936310",
+                        "name": "Yi Zhao"
+                    },
+                    {
+                        "authorId": "2118913398",
+                        "name": "Qi Li"
+                    },
+                    {
+                        "authorId": "2087261264",
+                        "name": "Ke Xu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "A data augmentation approach (Gao et al. 2020) is also recently proposed to defend the gradientbased information reconstruction attacks."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "076a15c25e9cd1a5d3fd4f48947a004d9872b4d9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2112-05409",
+                    "CorpusId": 245117367
+                },
+                "corpusId": 245117367,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/076a15c25e9cd1a5d3fd4f48947a004d9872b4d9",
+                "title": "Defending Label Inference and Backdoor Attacks in Vertical Federated Learning",
+                "abstract": "Since there are multiple parties in collaborative learning set- tings like federated learning, curious parities might be honest but are attempted to infer other parties\u2019 private data through inference attacks while malicious parties might manipulate the learning process for their own purposes through backdoor attacks. However, most existing works only consider the federated learning scenario where data are partitioned by sam- ples (HFL). The feature-partitioned federated learning (VFL) can be another important scenario in many real-world appli- cations. Attacks and defenses in such scenarios are especially challenging when the attackers and the defenders are not able to access the features or model parameters of other participants. Previous work have only shown that private labels can be reconstructed from communication of per-sample gradients. In this paper, we \ufb01rst show that private labels can be reconstructed even when only batch-averaged gradients instead of sample-level gradients are revealed. It is a common presumption that batch-averaged information is safe to share, therefore batch label inference attack is a severe challenge to VFL. In addition, we show that a passive party (a party without labels) in VFL can even replace its corresponding la- bels in the active party with a target label through a gradient-replacement attack. To defend against batch label inference attack, we introduce a novel technique termed confusional autoencoder (CoAE), based on autoencoder and entropy reg- ularization. We demonstrate that label inference attacks can be successfully blocked by this technique without hurting as much main task accuracy as compared to existing methods. Our CoAE technique is also effective in defending the gradient-replacement backdoor attack, making it an universal and practical defense strategy with no change to the origi- nal VFL protocol. We demonstrate the effectiveness of our approaches under both two-party and multi-party VFL set- tings. To the best of our knowledge, this is the \ufb01rst systematic study to deal with label inference and backdoor attacks in the feature-partitioned federated learning framework.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1614034792",
+                        "name": "Yang Liu"
+                    },
+                    {
+                        "authorId": "2026585451",
+                        "name": "Zhi-qian Yi"
+                    },
+                    {
+                        "authorId": "1505828520",
+                        "name": "Yan Kang"
+                    },
+                    {
+                        "authorId": "2145050945",
+                        "name": "Yuanqin He"
+                    },
+                    {
+                        "authorId": "2109273020",
+                        "name": "Wenhan Liu"
+                    },
+                    {
+                        "authorId": "2044519039",
+                        "name": "Tianyuan Zou"
+                    },
+                    {
+                        "authorId": "153096457",
+                        "name": "Qiang Yang"
+                    }
+                ]
+            }
+        }
+    ]
+}

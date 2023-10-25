@@ -1,0 +1,908 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e31b40fcb240a3b6d41890c6e30d8bd8556cdcf8",
+                "externalIds": {
+                    "DBLP": "conf/iclr/WeiNAC0K23",
+                    "ArXiv": "2309.08825",
+                    "DOI": "10.48550/arXiv.2309.08825",
+                    "CorpusId": 259298593
+                },
+                "corpusId": 259298593,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/e31b40fcb240a3b6d41890c6e30d8bd8556cdcf8",
+                "title": "Distributionally Robust Post-hoc Classifiers under Prior Shifts",
+                "abstract": "The generalization ability of machine learning models degrades significantly when the test distribution shifts away from the training distribution. We investigate the problem of training models that are robust to shifts caused by changes in the distribution of class-priors or group-priors. The presence of skewed training priors can often lead to the models overfitting to spurious features. Unlike existing methods, which optimize for either the worst or the average performance over classes or groups, our work is motivated by the need for finer control over the robustness properties of the model. We present an extremely lightweight post-hoc approach that performs scaling adjustments to predictions from a pre-trained model, with the goal of minimizing a distributionally robust loss around a chosen target distribution. These adjustments are computed by solving a constrained optimization problem on a validation set and applied to the model during test time. Our constrained optimization objective is inspired by a natural notion of robustness to controlled distribution shifts. Our method comes with provable guarantees and empirically makes a strong case for distributional robust post-hoc classifiers. An empirical implementation is available at https://github.com/weijiaheng/Drops.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "103410241",
+                        "name": "Jiaheng Wei"
+                    },
+                    {
+                        "authorId": "2163722153",
+                        "name": "Harikrishna Narasimhan"
+                    },
+                    {
+                        "authorId": "2142862",
+                        "name": "E. Amid"
+                    },
+                    {
+                        "authorId": "2057047252",
+                        "name": "Wenjun Chu"
+                    },
+                    {
+                        "authorId": "40457423",
+                        "name": "Yang Liu"
+                    },
+                    {
+                        "authorId": "2109224633",
+                        "name": "Abhishek Kumar"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "934c25c60fbb19bf7c34657fcd0eb6e5b1b5f6ea",
+                "externalIds": {
+                    "ArXiv": "2308.11158",
+                    "DBLP": "journals/corr/abs-2308-11158",
+                    "DOI": "10.48550/arXiv.2308.11158",
+                    "CorpusId": 261064978
+                },
+                "corpusId": 261064978,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/934c25c60fbb19bf7c34657fcd0eb6e5b1b5f6ea",
+                "title": "Domain Generalization via Rationale Invariance",
+                "abstract": "This paper offers a new perspective to ease the challenge of domain generalization, which involves maintaining robust results even in unseen environments. Our design focuses on the decision-making process in the final classifier layer. Specifically, we propose treating the element-wise contributions to the final results as the rationale for making a decision and representing the rationale for each sample as a matrix. For a well-generalized model, we suggest the rationale matrices for samples belonging to the same category should be similar, indicating the model relies on domain-invariant clues to make decisions, thereby ensuring robust results. To implement this idea, we introduce a rationale invariance loss as a simple regularization technique, requiring only a few lines of code. Our experiments demonstrate that the proposed approach achieves competitive results across various datasets, despite its simplicity. Code is available at \\url{https://github.com/liangchen527/RIDG}.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": null,
+                        "name": "Liang Chen"
+                    },
+                    {
+                        "authorId": "2144290563",
+                        "name": "Yong Zhang"
+                    },
+                    {
+                        "authorId": "2255687",
+                        "name": "Yibing Song"
+                    },
+                    {
+                        "authorId": "5546141",
+                        "name": "A. Hengel"
+                    },
+                    {
+                        "authorId": "2161037",
+                        "name": "Lingqiao Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "eb1ab7e422b47f1e4974154bdd9d7378c47a113e",
+                "externalIds": {
+                    "DOI": "10.3390/app13169166",
+                    "CorpusId": 260847452
+                },
+                "corpusId": 260847452,
+                "publicationVenue": {
+                    "id": "136edf8d-0f88-4c2c-830f-461c6a9b842e",
+                    "name": "Applied Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl Sci"
+                    ],
+                    "issn": "2076-3417",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217814",
+                    "alternate_urls": [
+                        "http://www.mathem.pub.ro/apps/",
+                        "https://www.mdpi.com/journal/applsci",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217814"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/eb1ab7e422b47f1e4974154bdd9d7378c47a113e",
+                "title": "GCARe: Mitigating Subgroup Unfairness in Graph Condensation through Adversarial Regularization",
+                "abstract": "Training Graph Neural Networks (GNNs) on large-scale graphs in the deep learning era can be expensive. While graph condensation has recently emerged as a promising approach through which to reduce training cost by compressing large graphs into smaller ones and for preserving most knowledge, its capability in treating different node subgroups fairly during compression remains unexplored. In this paper, we investigate current graph condensation techniques from a perspective of fairness, and show that they bear severe disparate impact toward node subgroups. Specifically, GNNs trained on condensed graphs become more biased than those trained on original graphs. Since the condensed graphs comprise synthetic nodes, which are absent of explicit group IDs, the current algorithms used to train fair GNNs fail in this case. To address this issue, we propose Graph Condensation with Adversarial Regularization (GCARe), which is a method that directly regularizes the condensation process to distill the knowledge of different subgroups fairly into resulting graphs. A comprehensive series of experiments substantiated that our method enhances the fairness in condensed graphs without compromising accuracy, thus yielding more equitable GNN models. Additionally, our discoveries underscore the significance of incorporating fairness considerations in data condensation, and offer invaluable guidance for future inquiries in this domain.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2057095627",
+                        "name": "Runze Mao"
+                    },
+                    {
+                        "authorId": "41031455",
+                        "name": "Wenqi Fan"
+                    },
+                    {
+                        "authorId": "2117897052",
+                        "name": "Qing Li"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The former approach accounts for changing proportions of subpopulations, relating it to notions of subpopulation fairness [Duchi et al., 2023, Santurkar et al., 2020, Piratla et al., 2021, Martinez et al., 2021]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f1e6fbf27b9ab72e078cd155c484e18d32eb78fe",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-13381",
+                    "ArXiv": "2307.13381",
+                    "DOI": "10.48550/arXiv.2307.13381",
+                    "CorpusId": 260155161
+                },
+                "corpusId": 260155161,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f1e6fbf27b9ab72e078cd155c484e18d32eb78fe",
+                "title": "Scaff-PD: Communication Efficient Fair and Robust Federated Learning",
+                "abstract": "We present Scaff-PD, a fast and communication-efficient algorithm for distributionally robust federated learning. Our approach improves fairness by optimizing a family of distributionally robust objectives tailored to heterogeneous clients. We leverage the special structure of these objectives, and design an accelerated primal dual (APD) algorithm which uses bias corrected local steps (as in Scaffold) to achieve significant gains in communication efficiency and convergence speed. We evaluate Scaff-PD on several benchmark datasets and demonstrate its effectiveness in improving fairness and robustness while maintaining competitive accuracy. Our results suggest that Scaff-PD is a promising approach for federated learning in resource-constrained and heterogeneous settings.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2142173500",
+                        "name": "Yaodong Yu"
+                    },
+                    {
+                        "authorId": "40911632",
+                        "name": "Sai Praneeth Karimireddy"
+                    },
+                    {
+                        "authorId": "2146275908",
+                        "name": "Yi Ma"
+                    },
+                    {
+                        "authorId": "123333909",
+                        "name": "Michael I. Jordan"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                ", 2020), common gradient descent (Piratla et al., 2021), and GradNorm (Chen et al.",
+                "CGD (Piratla et al., 2021) aims to improve multitask learning by encouraging update towards common directions of different tasks, which is opposite to our method that encourages task specialties.",
+                "Given that CGD aims to improve multi-task learning by encouraging update towards common directions of different tasks, we hypothesize that the need for task specialization is diminished here because the tasks are more similar in difficulty (e.g., in KILT, T-REx and zsRE are much easier than HotpotQA).",
+                "The best performance is obtained by CGD and it is the only multitask optimization method that yields noticeable improvements over the standard multitask model.",
+                "The performance of the recent general multitask algorithms, PCG (Yu et al., 2020), CGD (Piratla et al., 2021), and GradNorm (Chen et al., 2018), are obtained from our own implementation.",
+                ", 2020), CGD (Piratla et al., 2021) and GradNorm (Chen et al."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "105759bdb5e3bddc1d3244df2eff2d5c997a1d84",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-00342",
+                    "ArXiv": "2307.00342",
+                    "DOI": "10.1162/tacl_a_00597",
+                    "CorpusId": 259316561
+                },
+                "corpusId": 259316561,
+                "publicationVenue": {
+                    "id": "e0dbf116-86aa-418d-859f-a49952d7e44a",
+                    "name": "Transactions of the Association for Computational Linguistics",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Trans Assoc Comput Linguistics",
+                        "TACL"
+                    ],
+                    "issn": "2307-387X",
+                    "url": "https://www.mitpressjournals.org/loi/tacl",
+                    "alternate_urls": [
+                        "http://www.transacl.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/105759bdb5e3bddc1d3244df2eff2d5c997a1d84",
+                "title": "Improving Multitask Retrieval by Promoting Task Specialization",
+                "abstract": "Abstract In multitask retrieval, a single retriever is trained to retrieve relevant contexts for multiple tasks. Despite its practical appeal, naive multitask retrieval lags behind task-specific retrieval, in which a separate retriever is trained for each task. We show that it is possible to train a multitask retriever that outperforms task-specific retrievers by promoting task specialization. The main ingredients are: (1) a better choice of pretrained model\u2014one that is explicitly optimized for multitasking\u2014along with compatible prompting, and (2) a novel adaptive learning method that encourages each parameter to specialize in a particular task. The resulting multitask retriever is highly performant on the KILT benchmark. Upon analysis, we find that the model indeed learns parameters that are more task-specialized compared to naive multitasking without prompting or adaptive learning.1",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2107940644",
+                        "name": "Wenzheng Zhang"
+                    },
+                    {
+                        "authorId": "2139787803",
+                        "name": "Chenyan Xiong"
+                    },
+                    {
+                        "authorId": "1714215",
+                        "name": "K. Stratos"
+                    },
+                    {
+                        "authorId": "2734525",
+                        "name": "Arnold Overwijk"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e572a83ceb5de3ddad0930e562c9fa75995605c0",
+                "externalIds": {
+                    "DBLP": "conf/sigir/ZhangSFWW0023",
+                    "ArXiv": "2304.13643",
+                    "DOI": "10.1145/3539618.3591755",
+                    "CorpusId": 258332138
+                },
+                "corpusId": 258332138,
+                "publicationVenue": {
+                    "id": "8dce23a9-44e0-4381-a39e-2acc1edff700",
+                    "name": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                        "Int ACM SIGIR Conf Res Dev Inf Retr",
+                        "SIGIR",
+                        "Annu Int ACM SIGIR Conf Res Dev Inf Retr"
+                    ],
+                    "url": "http://www.acm.org/sigir/"
+                },
+                "url": "https://www.semanticscholar.org/paper/e572a83ceb5de3ddad0930e562c9fa75995605c0",
+                "title": "Reformulating CTR Prediction: Learning Invariant Feature Interactions for Recommendation",
+                "abstract": "Click-Through Rate (CTR) prediction plays a core role in recommender systems, serving as the final-stage filter to rank items for a user. The key to addressing the CTR task is learning feature interactions that are useful for prediction, which is typically achieved by fitting historical click data with the Empirical Risk Minimization (ERM) paradigm. Representative methods include Factorization Machines and Deep Interest Network, which have achieved wide success in industrial applications. However, such a manner inevitably learns unstable feature interactions, i.e., the ones that exhibit strong correlations in historical data but generalize poorly for future serving. In this work, we reformulate the CTR task --- instead of pursuing ERM on historical data, we split the historical data chronologically into several periods (a.k.a, environments), aiming to learn feature interactions that are stable across periods. Such feature interactions are supposed to generalize better to predict future behavior data. Nevertheless, a technical challenge is that existing invariant learning solutions like Invariant Risk Minimization are not applicable, since the click data entangles both environment-invariant and environment-specific correlations. To address this dilemma, we propose Disentangled Invariant Learning (DIL) which disentangles feature embeddings to capture the two types of correlations separately. To improve the modeling efficiency, we further design LightDIL which performs the disentanglement at the higher level of the feature field. Extensive experiments demonstrate the effectiveness of DIL in learning stable feature interactions for CTR.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2145957648",
+                        "name": "Yang Zhang"
+                    },
+                    {
+                        "authorId": "1657501566",
+                        "name": "Tianhao Shi"
+                    },
+                    {
+                        "authorId": "2163400298",
+                        "name": "Fuli Feng"
+                    },
+                    {
+                        "authorId": "2117833732",
+                        "name": "Wenjie Wang"
+                    },
+                    {
+                        "authorId": "2506522",
+                        "name": "Dingxian Wang"
+                    },
+                    {
+                        "authorId": "7792071",
+                        "name": "Xiangnan He"
+                    },
+                    {
+                        "authorId": "2164724337",
+                        "name": "Yongdong Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2022 Group distributionally robust optimization and the follow-up algorithms, including, GroupDRO [12] is an online optimization algorithm that dynamically assigns importance weights during training to improve the worst-case performance across all the subpopulations; V-REx [81] is an extension of distributionally robust optimization by conducting robust optimization over a perturbation set of extrapolated domain; CGD [63] assigns importance weights to each subpopulation so that the model could be trained on the direction leading to the largest decrease in average training loss.",
+                "Specifically, similar to previous works [63], [64], [65], instead of directly setting the weight of each sample to be inversely proportional to the sample size of each subpopulation, we empirically set the importance weight wi of each sample as a function of the square root of its training group size \u221a kgN , where kg and N denote the g-th subpopulation\u2019s proportion and training samples respectively.",
+                "To be same as previous works [42], [63] and WILDs leaderboard [75], we report the average accuracy over 10 different random seeds on the Camelyon17 dataset."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0d0cbe44226c0bf2277ac3a31bf132221a29d02b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-04148",
+                    "ArXiv": "2304.04148",
+                    "DOI": "10.48550/arXiv.2304.04148",
+                    "CorpusId": 258048584
+                },
+                "corpusId": 258048584,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0d0cbe44226c0bf2277ac3a31bf132221a29d02b",
+                "title": "Reweighted Mixup for Subpopulation Shift",
+                "abstract": "Subpopulation shift exists widely in many real-world applications, which refers to the training and test distributions that contain the same subpopulation groups but with different subpopulation proportions. Ignoring subpopulation shifts may lead to significant performance degradation and fairness concerns. Importance reweighting is a classical and effective way to handle the subpopulation shift. However, recent studies have recognized that most of these approaches fail to improve the performance especially when applied to over-parameterized neural networks which are capable of fitting any training samples. In this work, we propose a simple yet practical framework, called reweighted mixup (RMIX), to mitigate the overfitting issue in over-parameterized models by conducting importance weighting on the ''mixed'' samples. Benefiting from leveraging reweighting in mixup, RMIX allows the model to explore the vicinal space of minority samples more, thereby obtaining more robust model against subpopulation shift. When the subpopulation memberships are unknown, the training-trajectories-based uncertainty estimation is equipped in the proposed RMIX to flexibly characterize the subpopulation distribution. We also provide insightful theoretical analysis to verify that RMIX achieves better generalization bounds over prior works. Further, we conduct extensive empirical studies across a wide range of tasks to validate the effectiveness of the proposed method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1396788118",
+                        "name": "Zongbo Han"
+                    },
+                    {
+                        "authorId": "39763382",
+                        "name": "Zhipeng Liang"
+                    },
+                    {
+                        "authorId": "2158027562",
+                        "name": "Fan Yang"
+                    },
+                    {
+                        "authorId": "2149366820",
+                        "name": "Liu Liu"
+                    },
+                    {
+                        "authorId": "2117007545",
+                        "name": "Lanqing Li"
+                    },
+                    {
+                        "authorId": "2419616",
+                        "name": "Yatao Bian"
+                    },
+                    {
+                        "authorId": "144259957",
+                        "name": "P. Zhao"
+                    },
+                    {
+                        "authorId": "2113360928",
+                        "name": "Qinghua Hu"
+                    },
+                    {
+                        "authorId": "2152564746",
+                        "name": "Bing Wu"
+                    },
+                    {
+                        "authorId": "2175129664",
+                        "name": "Changqing Zhang"
+                    },
+                    {
+                        "authorId": "2200180645",
+                        "name": "Jianhua Yao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "achieve low error on the scarce corrupted data is distributionally robust optimization (DRO) [39,42,45,54,55,65], which commonly optimizes the model parameter \u03b8 by optimizing:",
+                "GroupDRO [13, 42, 45] deal with the situation when the correlation between class label y and unknown attribute a differs in the training and test set."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "716c25f3c9dda90a6980fbdd8664326868a1bde3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-13087",
+                    "ArXiv": "2303.13087",
+                    "DOI": "10.1109/CVPR52729.2023.01552",
+                    "CorpusId": 257687647
+                },
+                "corpusId": 257687647,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/716c25f3c9dda90a6980fbdd8664326868a1bde3",
+                "title": "Robust Generalization Against Photon-Limited Corruptions via Worst-Case Sharpness Minimization",
+                "abstract": "Robust generalization aims to tackle the most challenging data distributions which are rare in the training set and contain severe noises, i.e., photon-limited corruptions. Common solutions such as distributionally robust optimization (DRO) focus on the worst-case empirical risk to ensure low training error on the uncommon noisy distributions. However, due to the over-parameterized model being optimized on scarce worst-case data, DRO fails to produce a smooth loss landscape, thus struggling on generalizing well to the test set. Therefore, instead of focusing on the worst-case risk minimization, we propose SharpDRO by penalizing the sharpness of the worst-case distribution, which measures the loss changes around the neighbor of learning parameters. Through worst-case sharpness minimization, the proposed method successfully produces a flat loss curve on the corrupted distributions, thus achieving robust generalization. Moreover, by considering whether the distribution annotation is available, we apply SharpDRO to two problem settings and design a worst-case selection process for robust generalization. Theoretically, we show that SharpDRO has a great convergence guarantee. Experimentally, we simulate photon-limited corruptions using CIFAR10/100 and ImageNet30 datasets and show that SharpDRO exhibits a strong generalization ability against severe corruptions and exceeds well-known baseline methods with large performance gains.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2144686871",
+                        "name": "Zhuo Huang"
+                    },
+                    {
+                        "authorId": "2212531105",
+                        "name": "Miaoxi Zhu"
+                    },
+                    {
+                        "authorId": "2077454998",
+                        "name": "Xiaobo Xia"
+                    },
+                    {
+                        "authorId": "2144034222",
+                        "name": "Li Shen"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Jun Yu"
+                    },
+                    {
+                        "authorId": "2171109070",
+                        "name": "Chen Gong"
+                    },
+                    {
+                        "authorId": "2087238859",
+                        "name": "Bo Han"
+                    },
+                    {
+                        "authorId": "2212029373",
+                        "name": "Bo Du"
+                    },
+                    {
+                        "authorId": "121698214",
+                        "name": "Tongliang Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We denote this metric as \u201cWg Acc\u201d, which is a standard metric when evaluating on datasets with shortcut features (Sagawa et al., 2019; Piratla et al., 2021)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0fa49a6a6ae4935218d5ca831d3c4c7a2ce8210b",
+                "externalIds": {
+                    "ArXiv": "2303.06419",
+                    "CorpusId": 257496734
+                },
+                "corpusId": 257496734,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/0fa49a6a6ae4935218d5ca831d3c4c7a2ce8210b",
+                "title": "Use Perturbations when Learning from Explanations",
+                "abstract": "Machine learning from explanations (MLX) is an approach to learning that uses human-provided explanations of relevant or irrelevant features for each input to ensure that model predictions are right for the right reasons. Existing MLX approaches rely on local model interpretation methods and require strong model smoothing to align model and human explanations, leading to sub-optimal performance. We recast MLX as a robustness problem, where human explanations specify a lower dimensional manifold from which perturbations can be drawn, and show both theoretically and empirically how this approach alleviates the need for strong model smoothing. We consider various approaches to achieving robustness, leading to improved performance over prior MLX methods. Finally, we show how to combine robustness with an earlier MLX method, yielding state-of-the-art results on both synthetic and real-world benchmarks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2053276921",
+                        "name": "Juyeon Heo"
+                    },
+                    {
+                        "authorId": "2748067",
+                        "name": "Vihari Piratla"
+                    },
+                    {
+                        "authorId": "40537892",
+                        "name": "Matthew Wicker"
+                    },
+                    {
+                        "authorId": "145689461",
+                        "name": "Adrian Weller"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "There has been significant recent progress on this benchmark using optimization techniques apart from G-DRO \u2014 Zhang & R\u00e9 (2022); Zhang et al. (2022); Piratla et al. (2021); Kirichenko et al. (2022)."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8c87dcaba827e5c1683086c3118fd9bffa7cff5e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2212-00921",
+                    "ArXiv": "2212.00921",
+                    "DOI": "10.48550/arXiv.2212.00921",
+                    "CorpusId": 254221009
+                },
+                "corpusId": 254221009,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8c87dcaba827e5c1683086c3118fd9bffa7cff5e",
+                "title": "AGRO: Adversarial Discovery of Error-prone groups for Robust Optimization",
+                "abstract": "Models trained via empirical risk minimization (ERM) are known to rely on spurious correlations between labels and task-independent input features, resulting in poor generalization to distributional shifts. Group distributionally robust optimization (G-DRO) can alleviate this problem by minimizing the worst-case loss over a set of pre-defined groups over training data. G-DRO successfully improves performance of the worst-group, where the correlation does not hold. However, G-DRO assumes that the spurious correlations and associated worst groups are known in advance, making it challenging to apply it to new tasks with potentially multiple unknown spurious correlations. We propose AGRO -- Adversarial Group discovery for Distributionally Robust Optimization -- an end-to-end approach that jointly identifies error-prone groups and improves accuracy on them. AGRO equips G-DRO with an adversarial slicing model to find a group assignment for training examples which maximizes worst-case loss over the discovered groups. On the WILDS benchmark, AGRO results in 8% higher model performance on average on known worst-groups, compared to prior group discovery approaches used with G-DRO. AGRO also improves out-of-distribution performance on SST2, QQP, and MS-COCO -- datasets where potential spurious correlations are as yet uncharacterized. Human evaluation of ARGO groups shows that they contain well-defined, yet previously unstudied spurious correlations that lead to model errors.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2132497930",
+                        "name": "Bhargavi Paranjape"
+                    },
+                    {
+                        "authorId": "2697425",
+                        "name": "Pradeep Dasigi"
+                    },
+                    {
+                        "authorId": "3052879",
+                        "name": "Vivek Srikumar"
+                    },
+                    {
+                        "authorId": "1982950",
+                        "name": "Luke Zettlemoyer"
+                    },
+                    {
+                        "authorId": "2157455507",
+                        "name": "Hanna Hajishirzi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "It favors clusters sharing more \u2018common needs\u2019 (Piratla et al., 2022) with others to improve the model robustness across all clusters."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e6afdf59d67c84ec1902f709b78e87d4aa8ad189",
+                "externalIds": {
+                    "ArXiv": "2210.15212",
+                    "ACL": "2022.emnlp-main.95",
+                    "DBLP": "conf/emnlp/YuXSZO22",
+                    "DOI": "10.48550/arXiv.2210.15212",
+                    "CorpusId": 253157773
+                },
+                "corpusId": 253157773,
+                "publicationVenue": {
+                    "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+                    "name": "Conference on Empirical Methods in Natural Language Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Empir Method Nat Lang Process",
+                        "Empirical Methods in Natural Language Processing",
+                        "Conf Empir Method Nat Lang Process",
+                        "EMNLP"
+                    ],
+                    "url": "https://www.aclweb.org/portal/emnlp"
+                },
+                "url": "https://www.semanticscholar.org/paper/e6afdf59d67c84ec1902f709b78e87d4aa8ad189",
+                "title": "COCO-DR: Combating the Distribution Shift in Zero-Shot Dense Retrieval with Contrastive and Distributionally Robust Learning",
+                "abstract": "We present a new zero-shot dense retrieval (ZeroDR) method, COCO-DR, to improve the generalization ability of dense retrieval by combating the distribution shifts between source training tasks and target scenarios. To mitigate the impact of document differences, COCO-DR continues pretraining the language model on the target corpora to adapt the model to target distributions via COtinuous COtrastive learning. To prepare for unseen target queries, COCO-DR leverages implicit Distributionally Robust Optimization (iDRO) to reweight samples from different source query clusters for improving model robustness over rare queries during fine-tuning. COCO-DR achieves superior average performance on BEIR, the zero-shot retrieval benchmark. At BERT_Base scale, COCO-DR Base outperforms other ZeroDR models with 60x larger size. At BERT_Large scale, COCO-DR Large outperforms the giant GPT-3 embedding model which has 500x more parameters. Our analysis shows the correlation between COCO-DR\u2019s effectiveness in combating distribution shifts and improving zero-shot accuracy. Our code and model can be found at https://github.com/OpenMatch/COCO-DR.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1633124736",
+                        "name": "Yue Yu"
+                    },
+                    {
+                        "authorId": "2139787803",
+                        "name": "Chenyan Xiong"
+                    },
+                    {
+                        "authorId": "144481949",
+                        "name": "Si Sun"
+                    },
+                    {
+                        "authorId": "2152735278",
+                        "name": "Chao Zhang"
+                    },
+                    {
+                        "authorId": "2734525",
+                        "name": "Arnold Overwijk"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[56] Vihari Piratla, Praneeth Netrapalli, and Sunita Sarawagi.",
+                "To be consistent with existing works [33, 56, 70], we report the average accuracy of Camelyon17 over 10 different random seeds."
+            ],
+            "intents": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "466785139a2270b554aa274b3d312723afce8e77",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-08928",
+                    "ArXiv": "2209.08928",
+                    "DOI": "10.48550/arXiv.2209.08928",
+                    "CorpusId": 252367595
+                },
+                "corpusId": 252367595,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/466785139a2270b554aa274b3d312723afce8e77",
+                "title": "UMIX: Improving Importance Weighting for Subpopulation Shift via Uncertainty-Aware Mixup",
+                "abstract": "Subpopulation shift widely exists in many real-world machine learning applications, referring to the training and test distributions containing the same subpopulation groups but varying in subpopulation frequencies. Importance reweighting is a normal way to handle the subpopulation shift issue by imposing constant or adaptive sampling weights on each sample in the training dataset. However, some recent studies have recognized that most of these approaches fail to improve the performance over empirical risk minimization especially when applied to over-parameterized neural networks. In this work, we propose a simple yet practical framework, called uncertainty-aware mixup (UMIX), to mitigate the overfitting issue in over-parameterized models by reweighting the ''mixed'' samples according to the sample uncertainty. The training-trajectories-based uncertainty estimation is equipped in the proposed UMIX for each sample to flexibly characterize the subpopulation distribution. We also provide insightful theoretical analysis to verify that UMIX achieves better generalization bounds over prior works. Further, we conduct extensive empirical studies across a wide range of tasks to validate the effectiveness of our method both qualitatively and quantitatively. Code is available at https://github.com/TencentAILabHealthcare/UMIX.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1396788118",
+                        "name": "Zongbo Han"
+                    },
+                    {
+                        "authorId": "39763382",
+                        "name": "Zhipeng Liang"
+                    },
+                    {
+                        "authorId": "2158027562",
+                        "name": "Fan Yang"
+                    },
+                    {
+                        "authorId": "2149366818",
+                        "name": "Liu Liu"
+                    },
+                    {
+                        "authorId": "2117007545",
+                        "name": "Lanqing Li"
+                    },
+                    {
+                        "authorId": "2419616",
+                        "name": "Yatao Bian"
+                    },
+                    {
+                        "authorId": "144259957",
+                        "name": "P. Zhao"
+                    },
+                    {
+                        "authorId": "2152564746",
+                        "name": "Bing Wu"
+                    },
+                    {
+                        "authorId": "2175129664",
+                        "name": "Changqing Zhang"
+                    },
+                    {
+                        "authorId": "2200180645",
+                        "name": "Jianhua Yao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Common Gradient Descent (CGD), introduced by Piratla et al. (2022), is based on Group-DRO."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f26d1e49b28f3214e4307302e66f716c14ef129d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-12444",
+                    "ArXiv": "2206.12444",
+                    "DOI": "10.48550/arXiv.2206.12444",
+                    "CorpusId": 250072843
+                },
+                "corpusId": 250072843,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f26d1e49b28f3214e4307302e66f716c14ef129d",
+                "title": "Gated Domain Units for Multi-source Domain Generalization",
+                "abstract": "The phenomenon of distribution shift (DS) occurs when a dataset at test time differs from the dataset at training time, which can significantly impair the performance of a machine learning model in practical settings due to a lack of knowledge about the data's distribution at test time. To address this problem, we postulate that real-world distributions are composed of latent Invariant Elementary Distributions (I.E.D) across different domains. This assumption implies an invariant structure in the solution space that enables knowledge transfer to unseen domains. To exploit this property for domain generalization, we introduce a modular neural network layer consisting of Gated Domain Units (GDUs) that learn a representation for each latent elementary distribution. During inference, a weighted ensemble of learning machines can be created by comparing new observations with the representations of each elementary distribution. Our flexible framework also accommodates scenarios where explicit domain information is not present. Extensive experiments on image, text, and graph data show consistent performance improvement on out-of-training target domains. These findings support the practicality of the I.E.D assumption and the effectiveness of GDUs for domain generalisation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2173704788",
+                        "name": "Simon Foll"
+                    },
+                    {
+                        "authorId": "3417647",
+                        "name": "Alina Dubatovka"
+                    },
+                    {
+                        "authorId": "2173758784",
+                        "name": "Eugen Ernst"
+                    },
+                    {
+                        "authorId": "1686651311",
+                        "name": "Siu Lun Chau"
+                    },
+                    {
+                        "authorId": "2840998",
+                        "name": "Martin Maritsch"
+                    },
+                    {
+                        "authorId": "2173711120",
+                        "name": "Patrik Okanovic"
+                    },
+                    {
+                        "authorId": "2173757189",
+                        "name": "Gudrun Thater"
+                    },
+                    {
+                        "authorId": "1682548",
+                        "name": "J. Buhmann"
+                    },
+                    {
+                        "authorId": "2129265029",
+                        "name": "Felix Wortmann"
+                    },
+                    {
+                        "authorId": "2276351",
+                        "name": "Krikamol Muandet"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[26] Vihari Piratla, Praneeth Netrapalli, and Sunita Sarawagi.",
+                "Recent variants of this approach have sought to avoid over-fitting through group-specific regularization [30] or margin-based losses [24, 16], to handle unknown subgroups [34], and to balance between average and worst-case performance [26]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "125d08816d6413bb3dce9940374b203ca83cfa66",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-06479",
+                    "ArXiv": "2206.06479",
+                    "DOI": "10.48550/arXiv.2206.06479",
+                    "CorpusId": 249642736
+                },
+                "corpusId": 249642736,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/125d08816d6413bb3dce9940374b203ca83cfa66",
+                "title": "Robust Distillation for Worst-class Performance",
+                "abstract": "Knowledge distillation has proven to be an effective technique in improving the performance a student model using predictions from a teacher model. However, recent work has shown that gains in average efficiency are not uniform across subgroups in the data, and in particular can often come at the cost of accuracy on rare subgroups and classes. To preserve strong performance across classes that may follow a long-tailed distribution, we develop distillation techniques that are tailored to improve the student's worst-class performance. Specifically, we introduce robust optimization objectives in different combinations for the teacher and student, and further allow for training with any tradeoff between the overall accuracy and the robust worst-class objective. We show empirically that our robust distillation techniques not only achieve better worst-class performance, but also lead to Pareto improvement in the tradeoff between overall performance and worst-class performance compared to other baseline methods. Theoretically, we provide insights into what makes a good teacher when the goal is to train a robust student.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1678659710",
+                        "name": "S. Wang"
+                    },
+                    {
+                        "authorId": "2163722153",
+                        "name": "Harikrishna Narasimhan"
+                    },
+                    {
+                        "authorId": "46432827",
+                        "name": "Yichen Zhou"
+                    },
+                    {
+                        "authorId": "50237813",
+                        "name": "Sara Hooker"
+                    },
+                    {
+                        "authorId": "2744849",
+                        "name": "M. Lukasik"
+                    },
+                    {
+                        "authorId": "2844480",
+                        "name": "A. Menon"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "There are also some group-based works (Sagawa et al., 2019; Bao et al., 2021; Liu et al., 2021b; Sanh et al., 2021; Piratla et al., 2021; Zhou et al., 2021) that improve worst group performance and can be applied to domain generalization problem."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "63d30a86ec3e590c2032aeec80a50493d9889c9a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-05263",
+                    "ArXiv": "2206.05263",
+                    "DOI": "10.48550/arXiv.2206.05263",
+                    "CorpusId": 249605400
+                },
+                "corpusId": 249605400,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/63d30a86ec3e590c2032aeec80a50493d9889c9a",
+                "title": "Causal Balancing for Domain Generalization",
+                "abstract": "While machine learning models rapidly advance the state-of-the-art on various real-world tasks, out-of-domain (OOD) generalization remains a challenging problem given the vulnerability of these models to spurious correlations. We propose a balanced mini-batch sampling strategy to transform a biased data distribution into a spurious-free balanced distribution, based on the invariance of the underlying causal mechanisms for the data generation process. We argue that the Bayes optimal classifiers trained on such balanced distribution are minimax optimal across a diverse enough environment space. We also provide an identifiability guarantee of the latent variable model of the proposed data generation process, when utilizing enough train environments. Experiments are conducted on DomainBed, demonstrating empirically that our method obtains the best performance across 20 baselines reported on the benchmark.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2115553132",
+                        "name": "Xinyi Wang"
+                    },
+                    {
+                        "authorId": "48227633",
+                        "name": "Michael Stephen Saxon"
+                    },
+                    {
+                        "authorId": "2125031571",
+                        "name": "Jiachen Li"
+                    },
+                    {
+                        "authorId": "40975176",
+                        "name": "Hongyang Zhang"
+                    },
+                    {
+                        "authorId": "37844380",
+                        "name": "Kun Zhang"
+                    },
+                    {
+                        "authorId": "1682479",
+                        "name": "William Yang Wang"
+                    }
+                ]
+            }
+        }
+    ]
+}

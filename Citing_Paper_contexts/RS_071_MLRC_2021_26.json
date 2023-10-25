@@ -1,0 +1,2441 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Consequently, learning with label noise has received much attention recently and has been applied to various problems, including image segmentation [33] and entity alignment [35]."
+            ],
+            "citingPaper": {
+                "paperId": "d38ce0d9134391256cb3b501b099fef9cd9287b8",
+                "externalIds": {
+                    "ArXiv": "2309.14673",
+                    "CorpusId": 262824904
+                },
+                "corpusId": 262824904,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/d38ce0d9134391256cb3b501b099fef9cd9287b8",
+                "title": "ALEX: Towards Effective Graph Transfer Learning with Noisy Labels",
+                "abstract": "Graph Neural Networks (GNNs) have garnered considerable interest due to their exceptional performance in a wide range of graph machine learning tasks. Nevertheless, the majority of GNN-based approaches have been examined using well-annotated benchmark datasets, leading to suboptimal performance in real-world graph learning scenarios. To bridge this gap, the present paper investigates the problem of graph transfer learning in the presence of label noise, which transfers knowledge from a noisy source graph to an unlabeled target graph. We introduce a novel technique termed Balance Alignment and Information-aware Examination (ALEX) to address this challenge. ALEX first employs singular value decomposition to generate different views with crucial structural semantics, which help provide robust node representations using graph contrastive learning. To mitigate both label shift and domain shift, we estimate a prior distribution to build subgraphs with balanced label distributions. Building on this foundation, an adversarial domain discriminator is incorporated for the implicit domain alignment of complex multi-modal distributions. Furthermore, we project node representations into a different space, optimizing the mutual information between the projected features and labels. Subsequently, the inconsistency of similarity structures is evaluated to identify noisy samples with potential overfitting. Comprehensive experiments on various benchmark datasets substantiate the outstanding superiority of the proposed ALEX in different settings.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2214118441",
+                        "name": "Jingyang Yuan"
+                    },
+                    {
+                        "authorId": "2256770719",
+                        "name": "Xiao Luo"
+                    },
+                    {
+                        "authorId": "2420154",
+                        "name": "Yifang Qin"
+                    },
+                    {
+                        "authorId": "1441866552",
+                        "name": "Zhengyan Mao"
+                    },
+                    {
+                        "authorId": "2154453854",
+                        "name": "Wei Ju"
+                    },
+                    {
+                        "authorId": "1596795872",
+                        "name": "Ming Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "While the fullysupervised semantic segmentation methods have some remedy [12, 34], WSSS literature has paid less attention to this"
+            ],
+            "citingPaper": {
+                "paperId": "38b17598325104194dda5fb20608d0b4277036c8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-14117",
+                    "ArXiv": "2309.14117",
+                    "DOI": "10.48550/arXiv.2309.14117",
+                    "CorpusId": 262459161
+                },
+                "corpusId": 262459161,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/38b17598325104194dda5fb20608d0b4277036c8",
+                "title": "Small Objects Matters in Weakly-supervised Semantic Segmentation",
+                "abstract": "Weakly-supervised semantic segmentation (WSSS) performs pixel-wise classification given only image-level labels for training. Despite the difficulty of this task, the research community has achieved promising results over the last five years. Still, current WSSS literature misses the detailed sense of how well the methods perform on different sizes of objects. Thus we propose a novel evaluation metric to provide a comprehensive assessment across different object sizes and collect a size-balanced evaluation set to complement PASCAL VOC. With these two gadgets, we reveal that the existing WSSS methods struggle in capturing small objects. Furthermore, we propose a size-balanced cross-entropy loss coupled with a proper training strategy. It generally improves existing WSSS methods as validated upon ten baselines on three different datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145714689",
+                        "name": "Cheol Mun"
+                    },
+                    {
+                        "authorId": "115936558",
+                        "name": "S. Lee"
+                    },
+                    {
+                        "authorId": "2847986",
+                        "name": "Youngjung Uh"
+                    },
+                    {
+                        "authorId": "3338475",
+                        "name": "Junsuk Choe"
+                    },
+                    {
+                        "authorId": "144036125",
+                        "name": "H. Byun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "cffacdcc254568cbe3fd0dd8e3877be519079d0a",
+                "externalIds": {
+                    "DBLP": "journals/tip/WangZKSC23",
+                    "DOI": "10.1109/TIP.2023.3301342",
+                    "CorpusId": 261064235,
+                    "PubMed": "37603487"
+                },
+                "corpusId": 261064235,
+                "publicationVenue": {
+                    "id": "e117fa7f-05b7-4dd6-b64b-0a0a7c0393d8",
+                    "name": "IEEE Transactions on Image Processing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Image Process"
+                    ],
+                    "issn": "1057-7149",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=83",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/cffacdcc254568cbe3fd0dd8e3877be519079d0a",
+                "title": "BLPSeg: Balance the Label Preference in Scribble-Supervised Semantic Segmentation",
+                "abstract": "Scribble-supervised semantic segmentation is an appealing weakly supervised technique with low labeling cost. Existing approaches mainly consider diffusing the labeled region of scribble by low-level feature similarity to narrow the supervision gap between scribble labels and mask labels. In this study, we observe an annotation bias between scribble and object mask, i.e., label workers tend to scribble on the spacious region instead of corners. This label preference makes the model learn well on those frequently labeled regions but poor on rarely labeled pixels. Therefore, we propose BLPSeg to balance the label preference for complete segmentation. Specifically, the BLPSeg first predicts an annotation probability map to evaluate the rarity of labels on each image, then utilizes a novel BLP loss to balance the model training by up-weighting those rare annotations. Additionally, to further alleviate the impact of label preference, we design a local aggregation module (LAM) to propagate supervision from labeled to unlabeled regions in gradient backpropagation. We conduct extensive experiments to illustrate the effectiveness of our BLPSeg. Our single-stage method even outperforms other advanced multi-stage methods and achieves state-of-the-art performance.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2107971456",
+                        "name": "Yude Wang"
+                    },
+                    {
+                        "authorId": "49050482",
+                        "name": "Jie Zhang"
+                    },
+                    {
+                        "authorId": "1693589",
+                        "name": "Meina Kan"
+                    },
+                    {
+                        "authorId": "145455919",
+                        "name": "S. Shan"
+                    },
+                    {
+                        "authorId": "46772547",
+                        "name": "Xilin Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Weakly supervised semantic segmentation (WSSS) aims to relieve the laborious and expensive process of pixelwise labeling with different types of weak labels including image-level labels [23, 2, 19, 69, 54], points [4], scribbles [59, 36, 56] and bounding boxes [13, 41, 31, 40, 53].",
+                "The adopted weak labels include image-level labels [2, 41, 63, 7, 73, 72, 32, 75, 51], scribbles [36], points [4], and bounding boxes [13, 31, 40]."
+            ],
+            "citingPaper": {
+                "paperId": "91b7e05303e9100d6cca9b37625c3855f02948aa",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-04321",
+                    "ArXiv": "2308.04321",
+                    "DOI": "10.48550/arXiv.2308.04321",
+                    "CorpusId": 260704231
+                },
+                "corpusId": 260704231,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/91b7e05303e9100d6cca9b37625c3855f02948aa",
+                "title": "All-pairs Consistency Learning for Weakly Supervised Semantic Segmentation",
+                "abstract": "In this work, we propose a new transformer-based regularization to better localize objects for Weakly supervised semantic segmentation (WSSS). In image-level WSSS, Class Activation Map (CAM) is adopted to generate object localization as pseudo segmentation labels. To address the partial activation issue of the CAMs, consistency regularization is employed to maintain activation intensity invariance across various image augmentations. However, such methods ignore pair-wise relations among regions within each CAM, which capture context and should also be invariant across image views. To this end, we propose a new all-pairs consistency regularization (ACR). Given a pair of augmented views, our approach regularizes the activation intensities between a pair of augmented views, while also ensuring that the affinity across regions within each view remains consistent. We adopt vision transformers as the self-attention mechanism naturally embeds pair-wise affinity. This enables us to simply regularize the distance between the attention matrices of augmented image pairs. Additionally, we introduce a novel class-wise localization method that leverages the gradients of the class token. Our method can be seamlessly integrated into existing WSSS methods using transformers without modifying the architectures. We evaluate our method on PASCAL VOC and MS COCO datasets. Our method produces noticeably better class localization maps (67.3% mIoU on PASCAL VOC train), resulting in superior WSSS performances.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "8397429",
+                        "name": "Weixuan Sun"
+                    },
+                    {
+                        "authorId": "2135952852",
+                        "name": "Yanhao Zhang"
+                    },
+                    {
+                        "authorId": "2171650015",
+                        "name": "Zhen Qin"
+                    },
+                    {
+                        "authorId": "46271490",
+                        "name": "Zheyuan Liu"
+                    },
+                    {
+                        "authorId": "47768647",
+                        "name": "Lin Cheng"
+                    },
+                    {
+                        "authorId": "88985728",
+                        "name": "Fanyi Wang"
+                    },
+                    {
+                        "authorId": "2015152",
+                        "name": "Yiran Zhong"
+                    },
+                    {
+                        "authorId": "1712576",
+                        "name": "N. Barnes"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "e1c234dc2c07876997a7000fa25d0e8ae37a24f9",
+                "externalIds": {
+                    "DBLP": "conf/ijcai/WuLDLLX23",
+                    "DOI": "10.24963/ijcai.2023/171",
+                    "CorpusId": 260861409
+                },
+                "corpusId": 260861409,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/e1c234dc2c07876997a7000fa25d0e8ae37a24f9",
+                "title": "Hierarchical Semantic Contrast for Weakly Supervised Semantic Segmentation",
+                "abstract": "Weakly supervised semantic segmentation (WSSS) with image-level annotations has achieved great processes through class activation map (CAM). Since vanilla CAMs are hardly served as guidance to bridge the gap between full and weak supervision, recent studies explore semantic representations to make CAM fit for WSSS and demonstrate encouraging results. However, they generally exploit single-level semantics, which may hamper the model to learn a comprehensive semantic structure. Motivated by the prior that each image has multiple levels of semantics, we propose hierarchical semantic contrast (HSC) to ameliorate the above problem. It conducts semantic contrast from coarse-grained to fine-grained perspective, including ROI level, class level, and pixel level, making the model learn a better object pattern understanding. To further improve CAM quality, building upon HSC, we explore consistency regularization of cross supervision and develop momentum prototype learning to utilize abundant semantics across different images. Extensive studies manifest that our plug-and-play learning paradigm, HSC, can significantly boost CAM quality on both non-saliency-guided and saliency-guided baselines, and establish new state-of-the-art WSSS performance on PASCAL VOC 2012 dataset. Code is available at https://github.com/Wu0409/HSC_WSSS.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2115768648",
+                        "name": "Yuanchen Wu"
+                    },
+                    {
+                        "authorId": "2155112154",
+                        "name": "Xiaoqiang Li"
+                    },
+                    {
+                        "authorId": "82467997",
+                        "name": "Songmin Dai"
+                    },
+                    {
+                        "authorId": "1492114781",
+                        "name": "Jide Li"
+                    },
+                    {
+                        "authorId": "2222325940",
+                        "name": "Tong Liu"
+                    },
+                    {
+                        "authorId": "2114081696",
+                        "name": "Shaorong Xie"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "0c3970b80e66a0dd18cfa6830e9fc14020a314aa",
+                "externalIds": {
+                    "DOI": "10.1016/j.cviu.2023.103810",
+                    "CorpusId": 261438647
+                },
+                "corpusId": 261438647,
+                "publicationVenue": {
+                    "id": "5fbb417b-d7a5-44e6-856d-993f0624ed9c",
+                    "name": "Computer Vision and Image Understanding",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Comput Vis Image Underst"
+                    ],
+                    "issn": "1077-3142",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/622809/description#description",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/10773142",
+                        "http://www.idealibrary.com/links/toc/cviu",
+                        "https://www.journals.elsevier.com/computer-vision-and-image-understanding"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0c3970b80e66a0dd18cfa6830e9fc14020a314aa",
+                "title": "Webly-supervised semantic segmentation via curriculum learning",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2237067765",
+                        "name": "Zuxian Huang"
+                    },
+                    {
+                        "authorId": "39914710",
+                        "name": "Gangshan Wu"
+                    },
+                    {
+                        "authorId": "2109120086",
+                        "name": "Limin Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "To this end, many weakly-supervised segmentation (WSS) methods are developed to alleviate the annotation burden, including image level [9, 10], bounding box [7,16,20], scribble [13,23] and even points [1,12]."
+            ],
+            "citingPaper": {
+                "paperId": "c5b7a108d541ffbbc0ba2bd9f5864f30d7f40611",
+                "externalIds": {
+                    "ArXiv": "2307.16256",
+                    "DBLP": "journals/corr/abs-2307-16256",
+                    "DOI": "10.48550/arXiv.2307.16256",
+                    "CorpusId": 260334906
+                },
+                "corpusId": 260334906,
+                "publicationVenue": {
+                    "id": "61a709e3-2060-423c-8de5-ffd3885aa31c",
+                    "name": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Medical Image Computing and Computer-Assisted Intervention",
+                        "MICCAI",
+                        "Med Image Comput Comput Interv",
+                        "Int Conf Med Image Comput Comput Interv"
+                    ],
+                    "url": "http://www.miccai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c5b7a108d541ffbbc0ba2bd9f5864f30d7f40611",
+                "title": "3D Medical Image Segmentation with Sparse Annotation via Cross-Teaching between 3D and 2D Networks",
+                "abstract": "Medical image segmentation typically necessitates a large and precisely annotated dataset. However, obtaining pixel-wise annotation is a labor-intensive task that requires significant effort from domain experts, making it challenging to obtain in practical clinical scenarios. In such situations, reducing the amount of annotation required is a more practical approach. One feasible direction is sparse annotation, which involves annotating only a few slices, and has several advantages over traditional weak annotation methods such as bounding boxes and scribbles, as it preserves exact boundaries. However, learning from sparse annotation is challenging due to the scarcity of supervision signals. To address this issue, we propose a framework that can robustly learn from sparse annotation using the cross-teaching of both 3D and 2D networks. Considering the characteristic of these networks, we develop two pseudo label selection strategies, which are hard-soft confidence threshold and consistent label fusion. Our experimental results on the MMWHS dataset demonstrate that our method outperforms the state-of-the-art (SOTA) semi-supervised segmentation methods. Moreover, our approach achieves results that are comparable to the fully-supervised upper bound result.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2186642976",
+                        "name": "Heng Cai"
+                    },
+                    {
+                        "authorId": "1785352346",
+                        "name": "Lei Qi"
+                    },
+                    {
+                        "authorId": "1410184682",
+                        "name": "Qian Yu"
+                    },
+                    {
+                        "authorId": "2475959",
+                        "name": "Yinghuan Shi"
+                    },
+                    {
+                        "authorId": "2154880752",
+                        "name": "Yang Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Here, we compare our model with four of the latest weakly supervised models (IRNet [28], Puzzle-CAM [29], SEAM [30], and BABA [31]) for this purpose on the Corsican dataset and the Flame dataset.",
+                "There are a large number of false detections in the IRNet, Puzzle-CAM, and SEAM segmentation results, and the right part of the fire point is clearly missed in BABA.",
+                "The segmentation profile of the BABA network is also closer to that of GroundTruth, but its treatment of the flame boundary is more ambiguous."
+            ],
+            "citingPaper": {
+                "paperId": "94750eeb064c44b9489a049bd0faaa154c10ef64",
+                "externalIds": {
+                    "DOI": "10.3390/rs15143606",
+                    "CorpusId": 260052136
+                },
+                "corpusId": 260052136,
+                "publicationVenue": {
+                    "id": "8e1bd4b5-d5b2-4e22-ba0a-01fe5568d472",
+                    "name": "Remote Sensing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Remote Sens"
+                    ],
+                    "issn": "2315-4675",
+                    "alternate_issns": [
+                        "2072-4292"
+                    ],
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-169233",
+                    "alternate_urls": [
+                        "https://www.mdpi.com/journal/remotesensing",
+                        "http://www.mdpi.com/journal/remotesensing",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-169233"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/94750eeb064c44b9489a049bd0faaa154c10ef64",
+                "title": "Weakly Supervised Forest Fire Segmentation in UAV Imagery Based on Foreground-Aware Pooling and Context-Aware Loss",
+                "abstract": "In recent years, tragedies caused by forest fires have been frequently reported. Forest fires not only result in significant economic losses but also cause environmental damage. The utilization of computer vision techniques and unmanned aerial vehicles (UAVs) for forest fire monitoring has become a primary approach to accurately locate and extinguish fires during their early stages. However, traditional computer-based methods for UAV forest fire image segmentation require a large amount of pixel-level labeled data to train the networks, which can be time-consuming and costly to acquire. To address this challenge, we propose a novel weakly supervised approach for semantic segmentation of fire images in this study. Our method utilizes self-supervised attention foreground-aware pooling (SAP) and context-aware loss (CAL) to generate high-quality pseudo-labels, serving as substitutes for manual annotation. SAP collaborates with bounding box and class activation mapping (CAM) to generate a background attention map, which aids in the generation of accurate pseudo-labels. CAL further improves the quality of the pseudo-labels by incorporating contextual information related to the target objects, effectively reducing environmental noise. We conducted experiments on two publicly available UAV forest fire datasets: the Corsican dataset and the Flame dataset. Our proposed method achieved impressive results, with IoU values of 81.23% and 76.43% for the Corsican dataset and the Flame dataset, respectively. These results significantly outperform the latest weakly supervised semantic segmentation (WSSS) networks on forest fire datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2109760589",
+                        "name": "Junling Wang"
+                    },
+                    {
+                        "authorId": "2108819260",
+                        "name": "Yupeng Wang"
+                    },
+                    {
+                        "authorId": "2109355790",
+                        "name": "Liping Liu"
+                    },
+                    {
+                        "authorId": "8542495",
+                        "name": "Heng-fu Yin"
+                    },
+                    {
+                        "authorId": "50699057",
+                        "name": "Ning Ye"
+                    },
+                    {
+                        "authorId": "2158128724",
+                        "name": "Can Xu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "To solve this problem, a common approach is replacing fine-grained annotations with weak labels, such as image-level labels (Wang et al. 2020), scribbles (Lin et al. 2016), points (Bearman et al. 2016), and bounding boxes (Oh, Kim, and Ham\n2021)."
+            ],
+            "citingPaper": {
+                "paperId": "f27d61ba154ada6b375a4dc313b673be7dbfdd84",
+                "externalIds": {
+                    "DBLP": "conf/aaai/FangCWWJZ23",
+                    "DOI": "10.1609/aaai.v37i1.25136",
+                    "CorpusId": 259735474
+                },
+                "corpusId": 259735474,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/f27d61ba154ada6b375a4dc313b673be7dbfdd84",
+                "title": "Weakly-Supervised Semantic Segmentation for Histopathology Images Based on Dataset Synthesis and Feature Consistency Constraint",
+                "abstract": "Tissue segmentation is a critical task in computational pathology due to its desirable ability to indicate the prognosis of cancer patients. Currently, numerous studies attempt to use image-level labels to achieve pixel-level segmentation to reduce the need for fine annotations. However, most of these methods are based on class activation map, which suffers from inaccurate segmentation boundaries. To address this problem, we propose a novel weakly-supervised tissue segmentation framework named PistoSeg, which is implemented under a fully-supervised manner by transferring tissue category labels to pixel-level masks. Firstly, a dataset synthesis method is proposed based on Mosaic transformation to generate synthesized images with pixel-level masks. Next, considering the difference between synthesized and real images, this paper devises an attention-based feature consistency, which directs the training process of a proposed pseudo-mask refining module. Finally, the refined pseudo-masks are used to train a precise segmentation model for testing. Experiments based on WSSS4LUAD and BCSS-WSSS validate that PistoSeg outperforms the state-of-the-art methods. The code is released at https://github.com/Vison307/PistoSeg.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2041274523",
+                        "name": "Zijie Fang"
+                    },
+                    {
+                        "authorId": "145906066",
+                        "name": "Yang Chen"
+                    },
+                    {
+                        "authorId": "2115569461",
+                        "name": "Yifeng Wang"
+                    },
+                    {
+                        "authorId": "2108386945",
+                        "name": "Zhi Wang"
+                    },
+                    {
+                        "authorId": "2117709282",
+                        "name": "Xiang Ji"
+                    },
+                    {
+                        "authorId": "2162638271",
+                        "name": "Yongbing Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[124] (2021) Background-Aware Pooling (BAP) and Noise-Aware Loss (NAL) yes DeepLab-v1 Pascal VOC 2012val 68."
+            ],
+            "citingPaper": {
+                "paperId": "88d28e14b21a0c4478ac0f904009f3f96636a2f1",
+                "externalIds": {
+                    "DOI": "10.3390/electronics12122730",
+                    "CorpusId": 259226924
+                },
+                "corpusId": 259226924,
+                "publicationVenue": {
+                    "id": "ccd8e532-73c6-414f-bc91-271bbb2933e2",
+                    "name": "Electronics",
+                    "type": "journal",
+                    "issn": "1450-5843",
+                    "alternate_issns": [
+                        "2079-9292",
+                        "0883-4989"
+                    ],
+                    "url": "http://www.electronics.etfbl.net/",
+                    "alternate_urls": [
+                        "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-247562",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-247562",
+                        "https://www.mdpi.com/journal/electronics"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/88d28e14b21a0c4478ac0f904009f3f96636a2f1",
+                "title": "Deep-Learning-Based Approaches for Semantic Segmentation of Natural Scene Images: A Review",
+                "abstract": "The task of semantic segmentation holds a fundamental position in the field of computer vision. Assigning a semantic label to each pixel in an image is a challenging task. In recent times, significant advancements have been achieved in the field of semantic segmentation through the application of Convolutional Neural Networks (CNN) techniques based on deep learning. This paper presents a comprehensive and structured analysis of approximately 150 methods of semantic segmentation based on CNN within the last decade. Moreover, it examines 15 well-known datasets in the semantic segmentation field. These datasets consist of 2D and 3D image and video frames, including general, indoor, outdoor, and street scenes. Furthermore, this paper mentions several recent techniques, such as SAM, UDA, and common post-processing algorithms, such as CRF and MRF. Additionally, this paper analyzes the performance evaluation of reviewed state-of-the-art methods, pioneering methods, common backbone networks, and popular datasets. These have been compared according to the results of Mean Intersection over Union (MIoU), the most popular evaluation metric of semantic segmentation. Finally, it discusses the main challenges and possible solutions and underlines some future research directions in the semantic segmentation task. We hope that our survey article will be useful to provide a foreknowledge to the readers who will work in this field.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2221595501",
+                        "name": "Busra Emek Soylu"
+                    },
+                    {
+                        "authorId": "10406004",
+                        "name": "Mehmet Serdar Guzel"
+                    },
+                    {
+                        "authorId": "46941846",
+                        "name": "Gazi Erkan Bostanci"
+                    },
+                    {
+                        "authorId": "150997816",
+                        "name": "Fatih Ekinci"
+                    },
+                    {
+                        "authorId": "9297589",
+                        "name": "Tun\u00e7 A\u015furo\u011flu"
+                    },
+                    {
+                        "authorId": "3264188",
+                        "name": "K. A\u00e7\u0131c\u0131"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "aba4e6c947368ae0081c8948839abcc543a9aac2",
+                "externalIds": {
+                    "DOI": "10.1007/s11431-021-2139-0",
+                    "CorpusId": 259078152
+                },
+                "corpusId": 259078152,
+                "publicationVenue": {
+                    "id": "e66be951-1e6a-417b-b768-fa43c83c31f6",
+                    "name": "Science China Technological Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Sci China Technol Sci",
+                        "Sci China-technological Sci",
+                        "Science China-technological Sciences"
+                    ],
+                    "issn": "1869-1900",
+                    "url": "https://link.springer.com/journal/volumesAndIssues/11431"
+                },
+                "url": "https://www.semanticscholar.org/paper/aba4e6c947368ae0081c8948839abcc543a9aac2",
+                "title": "Label-noise robust classification with multi-view learning",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "153732010",
+                        "name": "Naiyao Liang"
+                    },
+                    {
+                        "authorId": "2611282",
+                        "name": "Zuyuan Yang"
+                    },
+                    {
+                        "authorId": "2187829517",
+                        "name": "Lingjiang Li"
+                    },
+                    {
+                        "authorId": "1896187",
+                        "name": "Zhenni Li"
+                    },
+                    {
+                        "authorId": "2188147620",
+                        "name": "Shengli Xie"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Recent work investigated deriving semantic segmentation maps from saliency maps [17, 21, 11], bounding boxes [14, 30, 19], scribes and points [31], and even image-level labeled annotations [12, 15, 41]."
+            ],
+            "citingPaper": {
+                "paperId": "892c72e4b69741748ec6659c14c366c4039d80e4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-12522",
+                    "ArXiv": "2305.12522",
+                    "DOI": "10.48550/arXiv.2305.12522",
+                    "CorpusId": 258832932
+                },
+                "corpusId": 258832932,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/892c72e4b69741748ec6659c14c366c4039d80e4",
+                "title": "P-NOC: Adversarial CAM Generation for Weakly Supervised Semantic Segmentation",
+                "abstract": "To mitigate the necessity for large amounts of supervised segmentation annotation sets, multiple Weakly Supervised Semantic Segmentation (WSSS) strategies have been devised. These will often rely on advanced data and model regularization strategies to instigate the development of useful properties (e.g., prediction completeness and fidelity to semantic boundaries) in segmentation priors, notwithstanding the lack of annotated information. In this work, we first create a strong baseline by analyzing complementary WSSS techniques and regularizing strategies, considering their strengths and limitations. We then propose a new Class-specific Adversarial Erasing strategy, comprising two adversarial CAM generating networks being gradually refined to produce robust semantic segmentation proposals. Empirical results suggest that our approach induces substantial improvement in the effectiveness of the baseline, resulting in a noticeable improvement over both Pascal VOC 2012 and MS COCO 2014 datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2142830481",
+                        "name": "L. David"
+                    },
+                    {
+                        "authorId": "2059195394",
+                        "name": "H\u00e9lio Pedrini"
+                    },
+                    {
+                        "authorId": "2136848806",
+                        "name": "Z. Dias"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "as bounding boxes[29, 23, 34, 35], scribbles, points[19, 5], or image-level class labels[22, 43, 16, 37]."
+            ],
+            "citingPaper": {
+                "paperId": "2d60d93c982d02ae0eb01bf2f009be9f109e7451",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-05803",
+                    "ArXiv": "2305.05803",
+                    "DOI": "10.48550/arXiv.2305.05803",
+                    "CorpusId": 258587943
+                },
+                "corpusId": 258587943,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2d60d93c982d02ae0eb01bf2f009be9f109e7451",
+                "title": "Segment Anything Model (SAM) Enhanced Pseudo Labels for Weakly Supervised Semantic Segmentation",
+                "abstract": "Weakly Supervised Semantic Segmentation (WSSS) with only image-level supervision has garnered increasing attention due to its low annotation cost compared to pixel-level annotation. Most existing methods rely on Class Activation Maps (CAM) to generate pixel-level pseudo labels for supervised training. However, it is well known that CAM often suffers from partial activation -- activating the most discriminative part instead of the entire object area, and false activation -- unnecessarily activating the background around the object. In this study, we introduce a simple yet effective approach to address these limitations by harnessing the recently released Segment Anything Model (SAM) to generate higher-quality pseudo labels with CAM. SAM is a segmentation foundation model that demonstrates strong zero-shot ability in partitioning images into segments but lacks semantic labels for these regions. To circumvent this, we employ pseudo labels for a specific class as the signal to select the most relevant masks and label them to generate the refined pseudo labels for this class. The segments generated by SAM are highly precise, leading to substantial improvements in partial and false activation. Moreover, existing post-processing modules for producing pseudo labels, such as AffinityNet, are often computationally heavy, with a significantly long training time. Surprisingly, we discovered that using the initial CAM with SAM can achieve on-par performance as the post-processed pseudo label generated from these modules with much less computational cost. Our approach is highly versatile and capable of seamless integration into existing WSSS models without modification to base networks or pipelines. Despite its simplicity, our approach improves the mean Intersection over Union (mIoU) of pseudo labels from five state-of-the-art WSSS methods by 6.2\\% on average on the PASCAL VOC 2012 dataset.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2117181730",
+                        "name": "Tianle Chen"
+                    },
+                    {
+                        "authorId": "1810897333",
+                        "name": "Zheda Mai"
+                    },
+                    {
+                        "authorId": "2150925304",
+                        "name": "Ruiwen Li"
+                    },
+                    {
+                        "authorId": "2113951006",
+                        "name": "Wei-Lun Chao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[48] proposed background-aware pooling to separate foreground and background information in bounding boxes, and used the noise-aware loss to remove noise in the results."
+            ],
+            "citingPaper": {
+                "paperId": "c2463c61519219dcca29977495baa54886c8ce9b",
+                "externalIds": {
+                    "DBLP": "conf/bigdatasec/ZhuXL23",
+                    "DOI": "10.1109/BigDataSecurity-HPSC-IDS58521.2023.00013",
+                    "CorpusId": 258911831
+                },
+                "corpusId": 258911831,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/c2463c61519219dcca29977495baa54886c8ce9b",
+                "title": "A Survey of Weakly-supervised Semantic Segmentation",
+                "abstract": "Weakly-supervised image semantic segmentation is a popular technology in computer vision and deep learning today. The main goal of weakly-supervised semantic segmentation is to train a model by images with only coarse or sparse annotations. Specifically, it assigns a label to each pixel through coarse label refinement or sparse label propagation, etc. The existing semantic segmentation has a wide range of applications, which includes pedestrian detection, autonomous driving, medical image segmentation, etc. However, fully-supervised semantic segmentation requires pixel-level annotation, which is expensive in manpower and time, and more and more works have focused on weakly-supervised semantic segmentation in recent years. Thus, this paper provides a review of weakly supervised semantic segmentation. Firstly, this paper summarizes the state-of-the-art research results of weakly-supervised semantic segmentation. Secondly, the widely-used datasets and semantic segmentation models are introduced. Finally, this paper analyzes the existing problems and future development directions in the field of weakly-supervised semantic segmentation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2218393905",
+                        "name": "Kaiyin Zhu"
+                    },
+                    {
+                        "authorId": "70359268",
+                        "name": "Naixue Xiong"
+                    },
+                    {
+                        "authorId": "2149494934",
+                        "name": "Mingming Lu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "201320a766fc8202e190e5b9ddd1b3f072bb451b",
+                "externalIds": {
+                    "DBLP": "journals/ijcv/ZhangXWZ23",
+                    "DOI": "10.1007/s11263-023-01796-9",
+                    "CorpusId": 258374239
+                },
+                "corpusId": 258374239,
+                "publicationVenue": {
+                    "id": "939ee07c-6009-43f8-b884-69238b40659e",
+                    "name": "International Journal of Computer Vision",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Int J Comput Vis"
+                    ],
+                    "issn": "0920-5691",
+                    "url": "https://www.springer.com/computer/image+processing/journal/11263",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/11263",
+                        "http://link.springer.com/journal/11263"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/201320a766fc8202e190e5b9ddd1b3f072bb451b",
+                "title": "Credible Dual-Expert Learning for Weakly Supervised Semantic Segmentation",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "48335370",
+                        "name": "Bingfeng Zhang"
+                    },
+                    {
+                        "authorId": "2825865",
+                        "name": "Jimin Xiao"
+                    },
+                    {
+                        "authorId": "49020088",
+                        "name": "Yunchao Wei"
+                    },
+                    {
+                        "authorId": "2143397524",
+                        "name": "Yao Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "eed7f9f0aaf6650756414d205fb399c03fe41be3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-07314",
+                    "ArXiv": "2304.07314",
+                    "DOI": "10.1109/CVPRW59228.2023.00393",
+                    "CorpusId": 258179379
+                },
+                "corpusId": 258179379,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/eed7f9f0aaf6650756414d205fb399c03fe41be3",
+                "title": "Uncovering the Inner Workings of STEGO for Safe Unsupervised Semantic Segmentation",
+                "abstract": "Self-supervised pre-training strategies have recently shown impressive results for training general-purpose feature extraction backbones in computer vision. In combination with the Vision Transformer architecture, the DINO self-distillation technique has interesting emerging proper-ties, such as unsupervised clustering in the latent space and semantic correspondences of the produced features without using explicit human-annotated labels. The STEGO method for unsupervised semantic segmentation contrastively distills feature correspondences of a DINO-pre-trained Vision Transformer and recently set a new state of the art. However, the detailed workings of STEGO have yet to be disentangled, preventing its usage in safety-critical applications.This paper provides a deeper understanding of the STEGO architecture and training strategy by conducting studies that uncover the working mechanisms behind STEGO, reproduce and extend its experimental validation, and investigate the ability of STEGO to transfer to different datasets. Results demonstrate that the STEGO architecture can be interpreted as a semantics-preserving dimensionality reduction technique.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2214584988",
+                        "name": "Alexander Koenig"
+                    },
+                    {
+                        "authorId": "102328502",
+                        "name": "Maximilian Schambach"
+                    },
+                    {
+                        "authorId": "51100085",
+                        "name": "J. Otterbach"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[13] incorporated a new pooling method BAP into the image segmentation algorithm."
+            ],
+            "citingPaper": {
+                "paperId": "1e41b53cc4bc6d696dbe29fdfb8e706ab5abe352",
+                "externalIds": {
+                    "DOI": "10.1117/12.2673228",
+                    "CorpusId": 258173736
+                },
+                "corpusId": 258173736,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1e41b53cc4bc6d696dbe29fdfb8e706ab5abe352",
+                "title": "Survey of image segmentation algorithm based on convolution neural network",
+                "abstract": "Image segmentation technology is an important branch of visual understanding system, with contributing to promote the accuracy of classification. In recent years, the integration of deep learning and image processing has produced a new generation of image segmentation algorithms. Compared with traditional methods, the performance has been improved and reached high accuracy. This work mainly introduces traditional or based on deep learning and compares the performance of related algorithms. To solve the problems of existing algorithms, the future development trend is prospected.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "48831791",
+                        "name": "Shaohua Li"
+                    },
+                    {
+                        "authorId": "2117885066",
+                        "name": "Junyang Yu"
+                    },
+                    {
+                        "authorId": "48933615",
+                        "name": "Ke-xin Zheng"
+                    },
+                    {
+                        "authorId": "2107954215",
+                        "name": "Libo Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "97883f51bcc97d139c3f872affb6f9cc4d7cae59",
+                "externalIds": {
+                    "ArXiv": "2303.16817",
+                    "DBLP": "journals/corr/abs-2303-16817",
+                    "DOI": "10.48550/arXiv.2303.16817",
+                    "CorpusId": 257805236
+                },
+                "corpusId": 257805236,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/97883f51bcc97d139c3f872affb6f9cc4d7cae59",
+                "title": "Adaptive Superpixel for Active Learning in Semantic Segmentation",
+                "abstract": "Learning semantic segmentation requires pixel-wise annotations, which can be time-consuming and expensive. To reduce the annotation cost, we propose a superpixel-based active learning (AL) framework, which collects a dominant label per superpixel instead. To be specific, it consists of adaptive superpixel and sieving mechanisms, fully dedicated to AL. At each round of AL, we adaptively merge neighboring pixels of similar learned features into superpixels. We then query a selected subset of these superpixels using an acquisition function assuming no uniform superpixel size. This approach is more efficient than existing methods, which rely only on innate features such as RGB color and assume uniform superpixel sizes. Obtaining a dominant label per superpixel drastically reduces annotators' burden as it requires fewer clicks. However, it inevitably introduces noisy annotations due to mismatches between superpixel and ground truth segmentation. To address this issue, we further devise a sieving mechanism that identifies and excludes potentially noisy annotations from learning. Our experiments on both Cityscapes and PASCAL VOC datasets demonstrate the efficacy of adaptive superpixel and sieving mechanisms.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2192361790",
+                        "name": "Ho\u2013Joong Kim"
+                    },
+                    {
+                        "authorId": "2212875345",
+                        "name": "Minhyeon Oh"
+                    },
+                    {
+                        "authorId": "2110701828",
+                        "name": "S. Hwang"
+                    },
+                    {
+                        "authorId": "2483916",
+                        "name": "Suha Kwak"
+                    },
+                    {
+                        "authorId": "2525635",
+                        "name": "Jungseul Ok"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "134e8523f4ab384f1983ddd7b154fc5dbd8720fd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-13090",
+                    "ArXiv": "2303.13090",
+                    "DOI": "10.1109/CVPR52729.2023.00322",
+                    "CorpusId": 257687463
+                },
+                "corpusId": 257687463,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/134e8523f4ab384f1983ddd7b154fc5dbd8720fd",
+                "title": "Orthogonal Annotation Benefits Barely-supervised Medical Image Segmentation",
+                "abstract": "Recent trends in semi-supervised learning have significantly boosted the performance of 3D semi-supervised medical image segmentation. Compared with 2D images, 3D medical volumes involve information from different directions, e.g., transverse, sagittal, and coronal planes, so as to naturally provide complementary views. These complementary views and the intrinsic similarity among adjacent 3D slices inspire us to develop a novel annotation way and its corresponding semi-supervised model for effective segmentation. Specifically, we firstly propose the orthogonal annotation by only labeling two orthogonal slices in a labeled volume, which significantly relieves the burden of annotation. Then, we perform registration to obtain the initial pseudo labels for sparsely labeled volumes. Subsequently, by introducing unlabeled volumes, we propose a dual-network paradigm named Dense-Sparse Co-training (DeSCO) that exploits dense pseudo labels in early stage and sparse labels in later stage and meanwhile forces consistent output of two networks. Experimental results on three benchmark datasets validated our effectiveness in performance and efficiency in annotation. For example, with only 10 annotated slices, our method reaches a Dice up to 86.93% on KiTS19 dataset. Our code and models are available at https://github.com/HengCai-NJU/DeSCO.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2186642976",
+                        "name": "Heng Cai"
+                    },
+                    {
+                        "authorId": "2578384",
+                        "name": "Shumeng Li"
+                    },
+                    {
+                        "authorId": "1785352346",
+                        "name": "Lei Qi"
+                    },
+                    {
+                        "authorId": "1410184682",
+                        "name": "Qian Yu"
+                    },
+                    {
+                        "authorId": "2475959",
+                        "name": "Yinghuan Shi"
+                    },
+                    {
+                        "authorId": "2154880752",
+                        "name": "Yang Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "[22] propose Background-Aware Pooling (BAP) that focuses on aggregating foreground features inside the bounding boxes using attention maps, to help extract high-quality pseudo-segmentation labels for semantic segmentation."
+            ],
+            "citingPaper": {
+                "paperId": "67b0eed64c0fb2b0c9f5db0e638cca25446b7f1d",
+                "externalIds": {
+                    "DBLP": "journals/tecs/WuZ0L023",
+                    "DOI": "10.1145/3587038",
+                    "CorpusId": 257354099
+                },
+                "corpusId": 257354099,
+                "publicationVenue": {
+                    "id": "13925159-5423-4d57-9ac9-3a05a713e0ef",
+                    "name": "ACM Transactions on Embedded Computing Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Transactions in Embedded Computing Systems",
+                        "ACM Trans Embed Comput Syst"
+                    ],
+                    "issn": "1539-9087",
+                    "url": "http://www.acm.org/pubs/contents/journals/tecs/",
+                    "alternate_urls": [
+                        "http://www.acm.org/tecs/",
+                        "http://portal.acm.org/tecs"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/67b0eed64c0fb2b0c9f5db0e638cca25446b7f1d",
+                "title": "Edge-AI-Driven Framework with Efficient Mobile Network Design for Facial Expression Recognition",
+                "abstract": "Facial Expression Recognition (FER) in the wild poses significant challenges due to realistic occlusions, illumination, scale, and head pose variations of the facial images. In this article, we propose an Edge-AI-driven framework for FER. On the algorithms aspect, we propose two attention modules, Arbitrary-oriented Spatial Pooling (ASP) and Scalable Frequency Pooling (SFP), for effective feature extraction to improve classification accuracy. On the systems aspect, we propose an edge-cloud joint inference architecture for FER to achieve low-latency inference, consisting of a lightweight backbone network running on the edge device, and two optional attention modules partially offloaded to the cloud. Performance evaluation demonstrates that our approach achieves a good balance between classification accuracy and inference latency.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2125057000",
+                        "name": "Yiru Wu"
+                    },
+                    {
+                        "authorId": "2179627648",
+                        "name": "Lilai Zhang"
+                    },
+                    {
+                        "authorId": "2068006307",
+                        "name": "Zonghua Gu"
+                    },
+                    {
+                        "authorId": "2115783046",
+                        "name": "Hu Lu"
+                    },
+                    {
+                        "authorId": "2112899620",
+                        "name": "Shaohua Wan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "Weakly Supervised Segmentation Weakly Supervised Segmentation methods deal with the practical setting of generating segmentation masks with models trained with weak forms of supervision such as bounding-box [29, 30, 31], scribbles [32, 33, 34], points [35] and image-level labels."
+            ],
+            "citingPaper": {
+                "paperId": "876983a3449b65a019037099f62c26af2422f98b",
+                "externalIds": {
+                    "ArXiv": "2302.14163",
+                    "DBLP": "journals/corr/abs-2302-14163",
+                    "DOI": "10.48550/arXiv.2302.14163",
+                    "CorpusId": 257232762
+                },
+                "corpusId": 257232762,
+                "publicationVenue": {
+                    "id": "75d7a8c1-d871-42db-a8e4-7cf5146fdb62",
+                    "name": "Social Science Research Network",
+                    "type": "journal",
+                    "alternate_names": [
+                        "SSRN, Social Science Research Network (SSRN) home page",
+                        "SSRN Electronic Journal",
+                        "Soc Sci Res Netw",
+                        "SSRN",
+                        "SSRN Home Page",
+                        "SSRN Electron J",
+                        "Social Science Electronic Publishing presents Social Science Research Network"
+                    ],
+                    "issn": "1556-5068",
+                    "url": "http://www.ssrn.com/",
+                    "alternate_urls": [
+                        "www.ssrn.com/",
+                        "https://fatcat.wiki/container/tol7woxlqjeg5bmzadeg6qrg3e",
+                        "https://www.wikidata.org/wiki/Q53949192",
+                        "www.ssrn.com/en",
+                        "http://www.ssrn.com/en/",
+                        "http://umlib.nl/ssrn",
+                        "umlib.nl/ssrn"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/876983a3449b65a019037099f62c26af2422f98b",
+                "title": "A Language-Guided Benchmark for Weakly Supervised Open Vocabulary Semantic Segmentation",
+                "abstract": "Increasing attention is being diverted to data-efficient problem settings like Open Vocabulary Semantic Segmentation (OVSS) which deals with segmenting an arbitrary object that may or may not be seen during training. The closest standard problems related to OVSS are Zero-Shot and Few-Shot Segmentation (ZSS, FSS) and their Cross-dataset variants where zero to few annotations are needed to segment novel classes. The existing FSS and ZSS methods utilize fully supervised pixel-labelled seen classes to segment unseen classes. Pixel-level labels are hard to obtain, and using weak supervision in the form of inexpensive image-level labels is often more practical. To this end, we propose a novel unified weakly supervised OVSS pipeline that can perform ZSS, FSS and Cross-dataset segmentation on novel classes without using pixel-level labels for either the base (seen) or the novel (unseen) classes in an inductive setting. We propose Weakly-Supervised Language-Guided Segmentation Network (WLSegNet), a novel language-guided segmentation pipeline that i) learns generalizable context vectors with batch aggregates (mean) to map class prompts to image features using frozen CLIP (a vision-language model) and ii) decouples weak ZSS/FSS into weak semantic segmentation and Zero-Shot segmentation. The learned context vectors avoid overfitting on seen classes during training and transfer better to novel classes during testing. WLSegNet avoids fine-tuning and the use of external datasets during training. The proposed pipeline beats existing methods for weak generalized Zero-Shot and weak Few-Shot semantic segmentation by 39 and 3 mIOU points respectively on PASCAL VOC and weak Few-Shot semantic segmentation by 5 mIOU points on MS COCO. On a harder setting of 2-way 1-shot weak FSS, WLSegNet beats the baselines by 13 and 22 mIOU points on PASCAL VOC and MS COCO, respectively.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1381281389",
+                        "name": "Prashant Pandey"
+                    },
+                    {
+                        "authorId": "2113828631",
+                        "name": "Mustafa Chasmai"
+                    },
+                    {
+                        "authorId": "2210070021",
+                        "name": "Monish Natarajan"
+                    },
+                    {
+                        "authorId": "143632380",
+                        "name": "B. Lall"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "ee74f6e7e5c80220e5382d8ad3a3b01834c40fc3",
+                "externalIds": {
+                    "DBLP": "journals/prl/FengWLJL23",
+                    "DOI": "10.1016/j.patrec.2022.11.024",
+                    "CorpusId": 254089786
+                },
+                "corpusId": 254089786,
+                "publicationVenue": {
+                    "id": "f35e3e87-9df4-497b-aa0d-bb8584197290",
+                    "name": "Pattern Recognition Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit Lett"
+                    ],
+                    "issn": "0167-8655",
+                    "url": "https://www.journals.elsevier.com/pattern-recognition-letters/",
+                    "alternate_urls": [
+                        "http://www.journals.elsevier.com/pattern-recognition-letters/",
+                        "http://www.sciencedirect.com/science/journal/01678655"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/ee74f6e7e5c80220e5382d8ad3a3b01834c40fc3",
+                "title": "Weakly-supervised semantic segmentation via online pseudo-mask correcting",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1447030685",
+                        "name": "Jiapei Feng"
+                    },
+                    {
+                        "authorId": "2443233",
+                        "name": "Xinggang Wang"
+                    },
+                    {
+                        "authorId": "2115646454",
+                        "name": "Te Li"
+                    },
+                    {
+                        "authorId": "2130586353",
+                        "name": "Shanshan Ji"
+                    },
+                    {
+                        "authorId": "2109194747",
+                        "name": "Wenyu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "According to the weak annotations applied for CNN training [10], these approaches can be divided into four main categories: bounding boxes [11], scribbles [12], points [13], and image-level labels [14]."
+            ],
+            "citingPaper": {
+                "paperId": "31b58e87000955515d5a9024e2e6fa3424711d42",
+                "externalIds": {
+                    "PubMedCentral": "9854669",
+                    "DOI": "10.3390/bioengineering10010116",
+                    "CorpusId": 256054623,
+                    "PubMed": "36671688"
+                },
+                "corpusId": 256054623,
+                "publicationVenue": {
+                    "id": "103075b0-1b66-4b69-9c47-f54875634fba",
+                    "name": "Bioengineering",
+                    "type": "journal",
+                    "issn": "2306-5354",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-354376",
+                    "alternate_urls": [
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-354376",
+                        "https://www.mdpi.com/journal/bioengineering"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/31b58e87000955515d5a9024e2e6fa3424711d42",
+                "title": "AI-Driven Robust Kidney and Renal Mass Segmentation and Classification on 3D CT Images",
+                "abstract": "Early intervention in kidney cancer helps to improve survival rates. Abdominal computed tomography (CT) is often used to diagnose renal masses. In clinical practice, the manual segmentation and quantification of organs and tumors are expensive and time-consuming. Artificial intelligence (AI) has shown a significant advantage in assisting cancer diagnosis. To reduce the workload of manual segmentation and avoid unnecessary biopsies or surgeries, in this paper, we propose a novel end-to-end AI-driven automatic kidney and renal mass diagnosis framework to identify the abnormal areas of the kidney and diagnose the histological subtypes of renal cell carcinoma (RCC). The proposed framework first segments the kidney and renal mass regions by a 3D deep learning architecture (Res-UNet), followed by a dual-path classification network utilizing local and global features for the subtype prediction of the most common RCCs: clear cell, chromophobe, oncocytoma, papillary, and other RCC subtypes. To improve the robustness of the proposed framework on the dataset collected from various institutions, a weakly supervised learning schema is proposed to leverage the domain gap between various vendors via very few CT slice annotations. Our proposed diagnosis system can accurately segment the kidney and renal mass regions and predict tumor subtypes, outperforming existing methods on the KiTs19 dataset. Furthermore, cross-dataset validation results demonstrate the robustness of datasets collected from different institutions trained via the weakly supervised learning schema.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "120809691",
+                        "name": "Jingya Liu"
+                    },
+                    {
+                        "authorId": "2044928481",
+                        "name": "O. Y\u0131ld\u0131r\u0131m"
+                    },
+                    {
+                        "authorId": "3416922",
+                        "name": "O. Akin"
+                    },
+                    {
+                        "authorId": "35484757",
+                        "name": "Yingli Tian"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "On the other hand, current methods that use point supervision employ strong implicit assumptions on object scale [35, 36] or dataset diversity [20, 37]."
+            ],
+            "citingPaper": {
+                "paperId": "e1bf827f2eb5816a1904152e4b2acf34f303e5ad",
+                "externalIds": {
+                    "DBLP": "conf/wacv/AkivaD23",
+                    "DOI": "10.1109/WACV56688.2023.00590",
+                    "CorpusId": 256653501
+                },
+                "corpusId": 256653501,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/e1bf827f2eb5816a1904152e4b2acf34f303e5ad",
+                "title": "Single Stage Weakly Supervised Semantic Segmentation of Complex Scenes",
+                "abstract": "The costly process of obtaining semantic segmentation labels has driven research towards weakly supervised semantic segmentation (WSSS) methods, using only image-level, point, or box labels. Such annotations introduce limitations and challenges that results in overly-tuned methods specialized in specific domains or scene types. The over reliance of image-level based methods on generation of high quality class activation maps (CAMs) results in limited applicable dataset complexity range, mostly focusing on object centric scenes. Additionally, the lack of dense annotations requires methods to increase network complexity to obtain additional semantic information, often done through multiple stages of training and refinement. Here, we present a single-stage approach generalizable to a wide range of dataset complexities, that is trainable from scratch, without any dependency on pre-trained backbones, classification, or separate refinement tasks. We utilize point annotations to generate reliable, on-the-fly pseudo-masks through refined and spatially filtered features. We are to demonstrate SOTA performance on benchmark datasets (PascalVOC 2012), as well as significantly outperform other SOTA WSSS methods on recent real-world datasets (CRAID, CityPersons, IAD, ADE20K, CityScapes) with up to 28.1% and 22.6% performance boosts compared to our single-stage and multi-stage baselines respectively.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1429837629",
+                        "name": "Peri Akiva"
+                    },
+                    {
+                        "authorId": "1710772",
+                        "name": "Kristin J. Dana"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The coarse-level annotations usually contain points [5], [6], scribbles [7], bounding boxes [8] or image labels [9], which are much easier to obtain compared to pixel-wise segmentation labels."
+            ],
+            "citingPaper": {
+                "paperId": "ea1016999109a842b3c6cb33a26bd30e6396f281",
+                "externalIds": {
+                    "DOI": "10.1109/DICTA56598.2022.10034599",
+                    "CorpusId": 256743913
+                },
+                "corpusId": 256743913,
+                "publicationVenue": {
+                    "id": "375cb686-e96e-4b79-825c-1589c99aca1d",
+                    "name": "International Conference on Digital Image Computing: Techniques and Applications",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Digit Image Comput Tech Appl",
+                        "DICTA",
+                        "Digital Image Computing: Techniques and Applications",
+                        "Digit Image Comput Tech Appl"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=710"
+                },
+                "url": "https://www.semanticscholar.org/paper/ea1016999109a842b3c6cb33a26bd30e6396f281",
+                "title": "D2E2-Net: Double Deep Edge Enhancement for Weakly-Supervised Cell Nuclei Segmentation with Incomplete Point Annotations",
+                "abstract": "Cell nuclei segmentation is important for histopathology image analysis. While deep learning has demonstrated promising results for automated cell nuclei segmentation, it is difficult to obtain accurate ground truth annotations due to the visual complexity of histopathology images and high density of cells. Weakly supervised cell segmentation can greatly reduce the effort required for annotation while maintaining high accuracy. However, current weakly supervised segmentation methods typically require the annotation of centroids for all cells, which is still a tedious task. In our study, we propose a semi- and weakly-supervised cell segmentation network named Deep Double Edge Enhancement Network (D2E2-Net) using only a small amount of points annotated. Our method focuses on tackling the issue of denoising the background noise to further enhance the cell boundary delineation. Our experimental results demonstrate state-of-the-art performance on three public histopathology image datasets.",
+                "year": 2022,
+                "authors": []
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "new semantic segmentation method using bounding box data [26]."
+            ],
+            "citingPaper": {
+                "paperId": "3be56003816b28e1f0ea4e1961f218059740cc8f",
+                "externalIds": {
+                    "DOI": "10.1109/ICCKE57176.2022.9960074",
+                    "CorpusId": 254102061
+                },
+                "corpusId": 254102061,
+                "publicationVenue": {
+                    "id": "730e1936-0c14-4ca4-ab8c-edc0c6b0b4b2",
+                    "name": "International Conference on Computer and Knowledge Engineering",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICCKE",
+                        "Int Conf Comput Knowl Eng"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3be56003816b28e1f0ea4e1961f218059740cc8f",
+                "title": "Semantic Segmentation Using Region Proposals and Weakly-Supervised Learning",
+                "abstract": "Region proposal plays an important role in computer vision and successfully improves performance. This paper presents an efficient method using the region proposal for semantic segmentation. The main aim is to generate annotated data for deep learning techniques effortlessly. For this purpose, a region proposal algorithm is used to convert an image into several regions. According to defined rules, regions are explored, and some precise regions are selected. A new algorithm is introduced to generate useful masks only by supervising annotated data in the form of the bounding box. After that, these masks are fed to a deep semantic segmentation network. The proposed method shows promising results for weakly supervised learning semantic segmentation on the VOC2012 dataset. Also, this method can be employed to generate massive annotated data automatically and used to train deep networks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2066032205",
+                        "name": "M. Taghizadeh"
+                    },
+                    {
+                        "authorId": "48219905",
+                        "name": "A. Chalechale"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "a331f49d92b46b7846e5bbc24693ad8f8b535388",
+                "externalIds": {
+                    "ArXiv": "2210.05944",
+                    "DBLP": "conf/cvpr/0002WCYZSLYC23",
+                    "DOI": "10.1109/CVPR52729.2023.00692",
+                    "CorpusId": 253734390
+                },
+                "corpusId": 253734390,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a331f49d92b46b7846e5bbc24693ad8f8b535388",
+                "title": "ACSeg: Adaptive Conceptualization for Unsupervised Semantic Segmentation",
+                "abstract": "Recently, self-supervised large-scale visual pre-training models have shown great promise in representing pixel-level semantic relationships, significantly promoting the development of unsupervised dense prediction tasks, e.g., unsupervised semantic segmentation (USS). The extracted relationship among pixel-level representations typically contains rich class-aware information that semantically identical pixel embeddings in the representation space gather together to form sophisticated concepts. However, leveraging the learned models to ascertain semantically consistent pixel groups or regions in the image is non-trivial since over/ under-clustering overwhelms the conceptualization procedure under various semantic distributions of different images. In this work, we investigate the pixel-level semantic aggregation in self-supervised ViT pre-trained models as image Segmentation and propose the Adaptive Conceptualization approach for USS, termed ACSeg. Concretely, we explicitly encode concepts into learnable prototypes and design the Adaptive Concept Generator (ACG), which adaptively maps these prototypes to informative concepts for each image. Meanwhile, considering the scene complexity of different images, we propose the modularity loss to optimize ACG independent of the concept number based on estimating the intensity of pixel pairs belonging to the same concept. Finally, we turn the USS task into classifying the discovered concepts in an unsupervised manner. Extensive experiments with state-of-the-art results demonstrate the effectiveness of the proposed ACSeg.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1742340859",
+                        "name": "Kehan Li"
+                    },
+                    {
+                        "authorId": "1390877160",
+                        "name": "Zhennan Wang"
+                    },
+                    {
+                        "authorId": "79673589",
+                        "name": "Ze-Long Cheng"
+                    },
+                    {
+                        "authorId": "1789168",
+                        "name": "R. Yu"
+                    },
+                    {
+                        "authorId": "2175304756",
+                        "name": "Yian Zhao"
+                    },
+                    {
+                        "authorId": "2847159",
+                        "name": "Guoli Song"
+                    },
+                    {
+                        "authorId": "2118484692",
+                        "name": "Chang Liu"
+                    },
+                    {
+                        "authorId": "2087091278",
+                        "name": "Li-ming Yuan"
+                    },
+                    {
+                        "authorId": "2155099408",
+                        "name": "Jie Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "receiving increasing attention and has been widely studied in various applications such as image segmentation [40], saliency detection [71] and node classification [7]."
+            ],
+            "citingPaper": {
+                "paperId": "a8bd72ac4cdd8849b49766b7470b6d8d3cb58f1b",
+                "externalIds": {
+                    "DBLP": "conf/mm/SunWLZXCH22",
+                    "DOI": "10.1145/3503161.3548127",
+                    "CorpusId": 252782671
+                },
+                "corpusId": 252782671,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a8bd72ac4cdd8849b49766b7470b6d8d3cb58f1b",
+                "title": "HEART: Towards Effective Hash Codes under Label Noise",
+                "abstract": "Hashing, which encodes raw data into compact binary codes, has grown in popularity for large-scale image retrieval due to its storage and computation efficiency. Although deep supervised hashing has lately shown promising performance, they mostly assume that the semantic labels of training data are ideally noise-free, which is often unrealistic in real-world applications. In this paper, considering the practical application, we focus on the problem of learning to hash with label noise and propose a novel method called HEART to address the problem. HEART is a holistic framework which explores latent semantic distributions to select both clean samples and pairs of high confidence for mitigating the impacts of label noise. From a statistical perspective, our HEART characterizes each image by its multiple augmented views that can be considered as examples from its latent distribution and then calculates semantic distances between images using energy distances between their latent distributions. With semantic distances, we can select confident similar pairs to guide hashing contrastive learning for high-quality hash codes. Moreover, to prevent the memorization of noisy examples, we propose a novel strategy to identify clean samples which have small variations of losses on the latent distributions and train the network on clean samples using a pointwise loss. Experimental results on several popular benchmark datasets demonstrate the effectiveness of our HEART compared with a wide range of baselines.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2262309",
+                        "name": "Jinan Sun"
+                    },
+                    {
+                        "authorId": "2109591599",
+                        "name": "Haixin Wang"
+                    },
+                    {
+                        "authorId": "2115826917",
+                        "name": "Xiao Luo"
+                    },
+                    {
+                        "authorId": "2184249162",
+                        "name": "Shikun Zhang"
+                    },
+                    {
+                        "authorId": "2187310139",
+                        "name": "Wei Xiang"
+                    },
+                    {
+                        "authorId": "48240541",
+                        "name": "C. Chen"
+                    },
+                    {
+                        "authorId": "143863244",
+                        "name": "Xiansheng Hua"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[46] introduced a pooling method, dubbed background-aware pooling (BAP)."
+            ],
+            "citingPaper": {
+                "paperId": "2ce14f09dd752867841d272a63f136f7ca0ca9bc",
+                "externalIds": {
+                    "DBLP": "journals/tcbb/CaiXYLGW23",
+                    "DOI": "10.1109/TCBB.2022.3198284",
+                    "CorpusId": 251494201,
+                    "PubMed": "35951571"
+                },
+                "corpusId": 251494201,
+                "publicationVenue": {
+                    "id": "dc4a9aad-72db-4530-a183-eaa4bf1d4490",
+                    "name": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE/ACM Trans Comput Biology  Bioinform",
+                        "IEEE/ACM Trans Comput Biology Bioinform",
+                        "IEEE/ACM Transactions on Computational Biology and Bioinformatics"
+                    ],
+                    "issn": "1545-5963",
+                    "url": "https://ieeexplore.ieee.org/servlet/opac?punumber=8857",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tcbb/home"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2ce14f09dd752867841d272a63f136f7ca0ca9bc",
+                "title": "DFTNet: Dual-Path Feature Transfer Network for Weakly Supervised Medical Image Segmentation",
+                "abstract": "Medical image segmentation has long suffered from the problem of expensive labels. Acquiring pixel-level annotations is time-consuming, labor-intensive, and relies on extensive expert knowledge. Bounding box annotations, in contrast, are relatively easy to acquire. Thus, in this paper, we explore to segment images through a novel Dual-path Feature Transfer design with only bounding box annotations. Specifically, a Target-aware Reconstructor is proposed to extract target-related features by reconstructing the pixels within the bounding box through the channel and spatial attention module. Then, a sliding Feature Fusion and Transfer Module (FFTM) fuses the extracted features from Reconstructor and transfers them to guide the Segmentor for segmentation. Finally, we present the Confidence Ranking Loss (CRLoss) which dynamically assigns weights to the loss of each pixel based on the network's confidence. CRLoss mitigates the impact of inaccurate pseudo-labels on performance. Extensive experiments demonstrate that our proposed model achieves state-of-the-art performance on the Medical Segmentation Decathlon (MSD) Brain Tumour and PROMISE12 datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2113721680",
+                        "name": "Wentian Cai"
+                    },
+                    {
+                        "authorId": "2152788144",
+                        "name": "Linsen Xie"
+                    },
+                    {
+                        "authorId": "1490774129",
+                        "name": "Weixiang Yang"
+                    },
+                    {
+                        "authorId": "2116186065",
+                        "name": "Yijiang Li"
+                    },
+                    {
+                        "authorId": "2118544533",
+                        "name": "Ying Gao"
+                    },
+                    {
+                        "authorId": "2155393801",
+                        "name": "Tingting Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Specifically, most of the weakly supervised semantic segmentation work utilizes image-level labels owing to the cheapest cost, while a variety of supervision levels have also been employed, such as points [40], scribbles [41, 42], and bounding boxes [43, 44, 45, 46]."
+            ],
+            "citingPaper": {
+                "paperId": "2f8ca9d6fec5c815bb50b14da7232447ab564fe5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-04286",
+                    "ArXiv": "2208.04286",
+                    "DOI": "10.1016/j.patcog.2022.108953",
+                    "CorpusId": 251297160
+                },
+                "corpusId": 251297160,
+                "publicationVenue": {
+                    "id": "266f640f-003e-453b-ab76-57e4053252f8",
+                    "name": "Pattern Recognition",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit"
+                    ],
+                    "issn": "0031-3203",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/pattern-recognition",
+                        "http://www.sciencedirect.com/science/journal/00313203"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2f8ca9d6fec5c815bb50b14da7232447ab564fe5",
+                "title": "Exploiting Shape Cues for Weakly Supervised Semantic Segmentation",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "66374505",
+                        "name": "S. Kho"
+                    },
+                    {
+                        "authorId": "1429148175",
+                        "name": "Pilhyeon Lee"
+                    },
+                    {
+                        "authorId": "2148959029",
+                        "name": "W. Lee"
+                    },
+                    {
+                        "authorId": "9559582",
+                        "name": "Minsong Ki"
+                    },
+                    {
+                        "authorId": "144036125",
+                        "name": "H. Byun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Instead, most recent methods [37], [125], [126] regarded the box-level supervision as a noisy starting point to mine the pseudo masks of foreground objects instead.",
+                "[37] tried to obtain pseudo masks by removing background regions from annotated bounding boxes."
+            ],
+            "citingPaper": {
+                "paperId": "41108bb9d75a7029bab949606a8e19f29d325ba5",
+                "externalIds": {
+                    "DBLP": "journals/pami/ShenPWWCJXYT23",
+                    "ArXiv": "2207.01223",
+                    "DOI": "10.1109/TPAMI.2023.3246102",
+                    "CorpusId": 250264410,
+                    "PubMed": "37027561"
+                },
+                "corpusId": 250264410,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/41108bb9d75a7029bab949606a8e19f29d325ba5",
+                "title": "A Survey on Label-Efficient Deep Image Segmentation: Bridging the Gap Between Weak Supervision and Dense Prediction",
+                "abstract": "The rapid development of deep learning has made a great progress in image segmentation, one of the fundamental tasks of computer vision. However, the current segmentation algorithms mostly rely on the availability of pixel-level annotations, which are often expensive, tedious, and laborious. To alleviate this burden, the past years have witnessed an increasing attention in building label-efficient, deep-learning-based image segmentation algorithms. This paper offers a comprehensive review on label-efficient image segmentation methods. To this end, we first develop a taxonomy to organize these methods according to the supervision provided by different types of weak labels (including no supervision, inexact supervision, incomplete supervision and inaccurate supervision) and supplemented by the types of segmentation problems (including semantic segmentation, instance segmentation and panoptic segmentation). Next, we summarize the existing label-efficient image segmentation methods from a unified perspective that discusses an important question: how to bridge the gap between weak supervision and dense prediction \u2013 the current methods are mostly based on heuristic priors, such as cross-pixel similarity, cross-label constraint, cross-view consistency, and cross-image relation. Finally, we share our opinions about the future research directions for label-efficient deep image segmentation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "41187410",
+                        "name": "Wei Shen"
+                    },
+                    {
+                        "authorId": "1490518998",
+                        "name": "Zelin Peng"
+                    },
+                    {
+                        "authorId": "2108010158",
+                        "name": "Xuehui Wang"
+                    },
+                    {
+                        "authorId": "2135596548",
+                        "name": "Huayu Wang"
+                    },
+                    {
+                        "authorId": "2142546054",
+                        "name": "Jiazhong Cen"
+                    },
+                    {
+                        "authorId": "49731273",
+                        "name": "Dongsheng Jiang"
+                    },
+                    {
+                        "authorId": "3041937",
+                        "name": "Lingxi Xie"
+                    },
+                    {
+                        "authorId": "2159107948",
+                        "name": "Xiaokang Yang"
+                    },
+                    {
+                        "authorId": "1400120070",
+                        "name": "Qi Tian"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Combating label noise is one of the fundamental problems in deep learning [15, 24, 38, 46, 54, 54, 58, 60, 61, 65], and is the focus of this study."
+            ],
+            "citingPaper": {
+                "paperId": "3dd759d344abf87ba393386a99e162d2906c047e",
+                "externalIds": {
+                    "ArXiv": "2203.14542",
+                    "DBLP": "journals/corr/abs-2203-14542",
+                    "DOI": "10.1109/CVPR52688.2022.00945",
+                    "CorpusId": 247761948
+                },
+                "corpusId": 247761948,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3dd759d344abf87ba393386a99e162d2906c047e",
+                "title": "UNICON: Combating Label Noise Through Uniform Selection and Contrastive Learning",
+                "abstract": "Supervised deep learning methods require a large repository of annotated data; hence, label noise is inevitable. Training with such noisy data negatively impacts the generalization performance of deep neural networks. To combat label noise, recent state-of-the-art methods employ some sort of sample selection mechanism to select a possibly clean subset of data. Next, an off-the-shelf semi-supervised learning method is used for training where rejected samples are treated as unlabeled data. Our comprehensive analysis shows that current selection methods disproportionately select samples from easy (fast learnable) classes while rejecting those from relatively harder ones. This creates class imbalance in the selected clean set and in turn, deteriorates performance under high label noise. In this work, we propose UNICON, a simple yet effective sample selection method which is robust to high label noise. To address the disproportionate selection of easy and hard samples, we introduce a Jensen-Shannon divergence based uniform selection mechanism which does not require any probabilistic modeling and hyperparameter tuning. We complement our selection method with contrastive learning to further combat the memorization of noisy labels. Extensive experimentation on multiple benchmark datasets demonstrates the effectiveness of UNICON; we obtain an 11.4% improvement over the current state-of-the-art on CIFAR100 dataset with a 90% noise rate. Our code is publicly available.11https://github.com/nazmul-karim170/UNICON-Noisy-Label",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1452356187",
+                        "name": "Nazmul Karim"
+                    },
+                    {
+                        "authorId": "9247631",
+                        "name": "Mamshad Nayeem Rizve"
+                    },
+                    {
+                        "authorId": "1789219",
+                        "name": "N. Rahnavard"
+                    },
+                    {
+                        "authorId": "1747500",
+                        "name": "A. Mian"
+                    },
+                    {
+                        "authorId": "2111863589",
+                        "name": "M. Shah"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", image labels [2, 25, 37, 66], scribbles [39, 40, 54], bounding boxes [14, 34, 44, 51]).",
+                ", imagelevel labels [7, 55, 65, 75, 83], scribbles [40, 54], bounding boxes [14, 28, 44, 51], point clicks [3, 27]."
+            ],
+            "citingPaper": {
+                "paperId": "68fde90fd67ab2b20e320e0c5dddb2e45c8bc6c6",
+                "externalIds": {
+                    "ArXiv": "2203.09653",
+                    "DBLP": "journals/corr/abs-2203-09653",
+                    "DOI": "10.1109/CVPR52688.2022.00426",
+                    "CorpusId": 247594512
+                },
+                "corpusId": 247594512,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/68fde90fd67ab2b20e320e0c5dddb2e45c8bc6c6",
+                "title": "Regional Semantic Contrast and Aggregation for Weakly Supervised Semantic Segmentation",
+                "abstract": "Learning semantic segmentation from weakly-labeled (e.g., image tags only) data is challenging since it is hard to infer dense object regions from sparse semantic tags. Despite being broadly studied, most current efforts directly learn from limited semantic annotations carried by individual image or image pairs, and struggle to obtain integral localization maps. Our work alleviates this from a novel perspective, by exploring rich semantic contexts synergistically among abundant weakly-labeled training data for network learning and inference. In particular, we propose regional semantic contrast and aggregation (RCA). RCA is equipped with a regional memory bank to store massive, diverse object patterns appearing in training data, which acts as strong support for exploration of dataset-level semantic structure. Particularly, we propose i) semantic contrast to drive network learning by contrasting massive categorical object regions, leading to a more holistic object pattern understanding, and ii) semantic aggregation to gather diverse relational contexts in the memory to enrich semantic repre-sentations. In this manner, RCA earns a strong capability of fine-grained semantic understanding, and eventually establishes new state-of-the-art results on two popular benchmarks, i.e., PASCAL VOC 2012 and COCO 2014.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2083603",
+                        "name": "Tianfei Zhou"
+                    },
+                    {
+                        "authorId": "2159664673",
+                        "name": "Meijie Zhang"
+                    },
+                    {
+                        "authorId": "2152339207",
+                        "name": "Fang Zhao"
+                    },
+                    {
+                        "authorId": "47785924",
+                        "name": "Jianwu Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2016), bounding boxes(Song et al., 2019; Oh et al., 2021; Lee et al., 2021b), and scribbles (Lin et al.",
+                "\u2026segmentation models with weak annotations, such as image-level labels (Papandreou et al. 2015; Pinheiro and Collobert 2015; Ahn and Kwak 2018; Lee et al. 2021a), points (Bearman et al. 2016), bounding boxes(Song et al. 2019; Oh et al. 2021; Lee et al. 2021b), and scribbles (Lin et al. 2016)."
+            ],
+            "citingPaper": {
+                "paperId": "4c6599f8f64226826f310d8e781e53d01bd5479b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-04812",
+                    "ArXiv": "2202.04812",
+                    "DOI": "10.1007/s11263-022-01586-9",
+                    "CorpusId": 246706097
+                },
+                "corpusId": 246706097,
+                "publicationVenue": {
+                    "id": "939ee07c-6009-43f8-b884-69238b40659e",
+                    "name": "International Journal of Computer Vision",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Int J Comput Vis"
+                    ],
+                    "issn": "0920-5691",
+                    "url": "https://www.springer.com/computer/image+processing/journal/11263",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/11263",
+                        "http://link.springer.com/journal/11263"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4c6599f8f64226826f310d8e781e53d01bd5479b",
+                "title": "Weakly-Supervised Semantic Segmentation with Visual Words Learning and Hybrid Pooling",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "52133336",
+                        "name": "Lixiang Ru"
+                    },
+                    {
+                        "authorId": "2142452296",
+                        "name": "Bo Du"
+                    },
+                    {
+                        "authorId": "1895813",
+                        "name": "Yibing Zhan"
+                    },
+                    {
+                        "authorId": "1748036",
+                        "name": "Chen Wu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[21] proposed a background-aware pooling strategy for the weakly supervised semantic segmentation (WSSS) with bounding-boxes annotations, which uses the region out of the ground-truth bounding boxes to catch the innerboxes background locations."
+            ],
+            "citingPaper": {
+                "paperId": "a7ddb2d0cb81bed4e87f83a0134cdb61c134e878",
+                "externalIds": {
+                    "ArXiv": "2112.14379",
+                    "DBLP": "journals/corr/abs-2112-14379",
+                    "CorpusId": 245537431
+                },
+                "corpusId": 245537431,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a7ddb2d0cb81bed4e87f83a0134cdb61c134e878",
+                "title": "Background-aware Classification Activation Map for Weakly Supervised Object Localization",
+                "abstract": "Weakly supervised object localization (WSOL) relaxes the requirement of dense annotations for object localization by using image-level classification masks to supervise its learning process. However, current WSOL methods suffer from excessive activation of background locations and need post-processing to obtain the localization mask. This paper attributes these issues to the unawareness of background cues, and propose the background-aware classification activation map (B-CAM) to simultaneously learn localization scores of both object and background with only image-level labels. In our B-CAM, two image-level features, aggregated by pixel-level features of potential background and object locations, are used to purify the object feature from the object-related background and to represent the feature of the pure-background sample, respectively. Then based on these two features, both the object classifier and the background classifier are learned to determine the binary object localization mask. Our B-CAM can be trained in end-to-end manner based on a proposed stagger classification loss, which not only improves the objects localization but also suppresses the background activation. Experiments show that our B-CAM outperforms one-stage WSOL methods on the CUB-200, OpenImages and VOC2012 datasets.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2112583628",
+                        "name": "Lei Zhu"
+                    },
+                    {
+                        "authorId": "1486411393",
+                        "name": "Qi She"
+                    },
+                    {
+                        "authorId": "2146378318",
+                        "name": "Qian Chen"
+                    },
+                    {
+                        "authorId": "151257917",
+                        "name": "Xiangxi Meng"
+                    },
+                    {
+                        "authorId": "2000312944",
+                        "name": "Mufeng Geng"
+                    },
+                    {
+                        "authorId": "2128093991",
+                        "name": "Lujia Jin"
+                    },
+                    {
+                        "authorId": "2112762498",
+                        "name": "Zhe Jiang"
+                    },
+                    {
+                        "authorId": "2064465921",
+                        "name": "B. Qiu"
+                    },
+                    {
+                        "authorId": "1521827374",
+                        "name": "Yunfei You"
+                    },
+                    {
+                        "authorId": "2154572656",
+                        "name": "Yibao Zhang"
+                    },
+                    {
+                        "authorId": "47273378",
+                        "name": "Q. Ren"
+                    },
+                    {
+                        "authorId": "2909282",
+                        "name": "Yanye Lu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Weakly supervised semantic segmentation: For weakly-supervised semantic segmentation (WSSS), the model is supervised by various types of partial labels, such as bounding boxes [12, 41, 51, 52, 61], scribbles [46, 64, 65, 68], points [5, 50], and image-level class labels [25, 27, 35, 36, 40, 42, 45]."
+            ],
+            "citingPaper": {
+                "paperId": "6478ba854160dc9791a3e10bf65ff902ac33ecc9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2112-09459",
+                    "ArXiv": "2112.09459",
+                    "CorpusId": 245329688
+                },
+                "corpusId": 245329688,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6478ba854160dc9791a3e10bf65ff902ac33ecc9",
+                "title": "Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching",
+                "abstract": "Current weakly supervised semantic segmentation (WSSS) frameworks usually contain the separated mask-refinement model and the main semantic region mining model. These approaches would contain redundant feature extraction backbones and biased learning objectives, making them computational complex yet sub-optimal to addressing the WSSS task. To solve this problem, this paper establishes a compact learning framework that embeds the classification and mask-refinement components into a unified deep model. With the shared feature extraction backbone, our model is able to facilitate knowledge sharing between the two components while preserving a low computational complexity. To encourage high-quality knowledge interaction, we propose a novel alternative self-dual teaching (ASDT) mechanism. Unlike the conventional distillation strategy, the knowledge of the two teacher branches in our model is alternatively distilled to the student branch by a Pulse Width Modulation (PWM), which generates PW wave-like selection signal to guide the knowledge distillation process. In this way, the student branch can help prevent the model from falling into local minimum solutions caused by the imperfect knowledge provided of either teacher branch. Comprehensive experiments on the PASCAL VOC 2012 and COCO-Stuff 10K demonstrate the effectiveness of the proposed alternative self-dual teaching mechanism as well as the new state-of-the-art performance of our approach.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "39901030",
+                        "name": "Dingwen Zhang"
+                    },
+                    {
+                        "authorId": "3468942",
+                        "name": "Wenyuan Zeng"
+                    },
+                    {
+                        "authorId": "50469612",
+                        "name": "Guangyu Guo"
+                    },
+                    {
+                        "authorId": "2082794",
+                        "name": "Chaowei Fang"
+                    },
+                    {
+                        "authorId": "26953623",
+                        "name": "Lechao Cheng"
+                    },
+                    {
+                        "authorId": "7181955",
+                        "name": "Junwei Han"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "fd711aa609221ea99f1be7c15d8beba3caca18bf",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2112-08996",
+                    "ArXiv": "2112.08996",
+                    "DOI": "10.1609/aaai.v36i2.20108",
+                    "CorpusId": 245218794
+                },
+                "corpusId": 245218794,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/fd711aa609221ea99f1be7c15d8beba3caca18bf",
+                "title": "Activation Modulation and Recalibration Scheme for Weakly Supervised Semantic Segmentation",
+                "abstract": "Image-level weakly supervised semantic segmentation (WSSS) is a fundamental yet challenging computer vision task facilitating scene understanding and automatic driving. Most existing methods resort to classification-based Class Activation Maps (CAMs) to play as the initial pseudo labels, which tend to focus on the discriminative image regions and lack customized characteristics for the segmentation task. To alleviate this issue, we propose a novel activation modulation and recalibration (AMR) scheme, which leverages a spotlight branch and a compensation branch to obtain weighted CAMs that can provide recalibration supervision and task-specific concepts. Specifically, an attention modulation module (AMM) is employed to rearrange the distribution of feature importance from the channel-spatial sequential perspective, which helps to explicitly model channel-wise interdependencies and spatial encodings to adaptively modulate segmentation-oriented activation responses. Furthermore, we introduce a cross pseudo supervision for dual branches, which can be regarded as a semantic similar regularization to mutually refine two branches. Extensive experiments show that AMR establishes a new state-of-the-art performance on the PASCAL VOC 2012 dataset, surpassing not only current methods trained with the image-level of supervision but also some methods relying on stronger supervision, such as saliency label. Experiments also reveal that our scheme is plug-and-play and can be incorporated with other approaches to boost their performance. Our code is available at: https://github.com/jieqin-ai/AMR.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "144411970",
+                        "name": "Jie Qin"
+                    },
+                    {
+                        "authorId": "2118432533",
+                        "name": "Jie Wu"
+                    },
+                    {
+                        "authorId": "2118724465",
+                        "name": "Xuefeng Xiao"
+                    },
+                    {
+                        "authorId": "9747208",
+                        "name": "Lujun Li"
+                    },
+                    {
+                        "authorId": "2144802410",
+                        "name": "Xingang Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Instead of using fixed sources of regional information such as the off-the-shelf saliency module [47] or pre-trained classifier [36], we obtain region masks from the CAMs of SupportNet."
+            ],
+            "citingPaper": {
+                "paperId": "98116d4b0f8163e4ea2ce0d9f0c0613398d52d38",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2112-05351",
+                    "ArXiv": "2112.05351",
+                    "CorpusId": 245117900
+                },
+                "corpusId": 245117900,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/98116d4b0f8163e4ea2ce0d9f0c0613398d52d38",
+                "title": "Exploring Pixel-level Self-supervision for Weakly Supervised Semantic Segmentation",
+                "abstract": "Existing studies in weakly supervised semantic segmentation (WSSS) have utilized class activation maps (CAMs) to localize the class objects. However, since a classification loss is insufficient for providing precise object regions, CAMs tend to be biased towards discriminative patterns (i.e., sparseness) and do not provide precise object boundary information (i.e., impreciseness). To resolve these limitations, we propose a novel framework (composed of MainNet and SupportNet.) that derives pixel-level self-supervision from given image-level supervision. In our framework, with the help of the proposed Regional Contrastive Module (RCM) and Multi-scale Attentive Module (MAM), MainNet is trained by self-supervision from the SupportNet. The RCM extracts two forms of self-supervision from SupportNet: (1) class region masks generated from the CAMs and (2) class-wise prototypes obtained from the features according to the class region masks. Then, every pixel-wise feature of the MainNet is trained by the prototype in a contrastive manner, sharpening the resulting CAMs. The MAM utilizes CAMs inferred at multiple scales from the SupportNet as self-supervision to guide the MainNet. Based on the dissimilarity between the multi-scale CAMs from MainNet and SupportNet, CAMs from the MainNet are trained to expand to the less-discriminative regions. The proposed method shows state-of-the-art WSSS performance both on the train and validation sets on the PASCAL VOC 2012 dataset. For reproducibility, code will be available publicly soon.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2152497729",
+                        "name": "Sung-Hoon Yoon"
+                    },
+                    {
+                        "authorId": "101274182",
+                        "name": "H. Kweon"
+                    },
+                    {
+                        "authorId": "72286913",
+                        "name": "Jaeseok Jeong"
+                    },
+                    {
+                        "authorId": "2051864030",
+                        "name": "Hyeonseong Kim"
+                    },
+                    {
+                        "authorId": "2119119946",
+                        "name": "Shinjeong Kim"
+                    },
+                    {
+                        "authorId": "51182421",
+                        "name": "Kuk-Jin Yoon"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "To relieve the labeling burden, multiple types of weak labels have been explored, including image-level labels [2,21,28], points [6], scribbles [39,58,61] and bounding boxes [16,36,46,47].",
+                "To save labeling cost, many WSSS methods have been proposed, including those using image-level labels [2, 8, 37, 47, 65, 70, 72], scribbles [39], points [6], and bounding boxes [16, 36, 46, 56]."
+            ],
+            "citingPaper": {
+                "paperId": "d3cf012f6b7a8b1e11914a7ce774a0ccd2999607",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2112-02841",
+                    "ArXiv": "2112.02841",
+                    "CorpusId": 244908580
+                },
+                "corpusId": 244908580,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/d3cf012f6b7a8b1e11914a7ce774a0ccd2999607",
+                "title": "GETAM: Gradient-weighted Element-wise Transformer Attention Map for Weakly-supervised Semantic segmentation",
+                "abstract": "Weakly Supervised Semantic Segmentation (WSSS) is challenging, particularly when image-level labels are used to supervise pixel level prediction. To bridge their gap, a Class Activation Map (CAM) is usually generated to provide pixel level pseudo labels. CAMs in Convolutional Neural Networks suffer from partial activation ie, only the most discriminative regions are activated. Transformer based methods, on the other hand, are highly effective at exploring global context with long range dependency modeling, potentially alleviating the\"partial activation\"issue. In this paper, we propose the first transformer based WSSS approach, and introduce the Gradient weighted Element wise Transformer Attention Map (GETAM). GETAM shows fine scale activation for all feature map elements, revealing different parts of the object across transformer layers. Further, we propose an activation aware label completion module to generate high quality pseudo labels. Finally, we incorporate our methods into an end to end framework for WSSS using double backward propagation. Extensive experiments on PASCAL VOC and COCO demonstrate that our results beat the state-of-the-art end-to-end approaches by a significant margin, and outperform most multi-stage methods.m most multi-stage methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "3466875",
+                        "name": "Weixuan Sun"
+                    },
+                    {
+                        "authorId": "2155698491",
+                        "name": "Jing Zhang"
+                    },
+                    {
+                        "authorId": "46271490",
+                        "name": "Zheyuan Liu"
+                    },
+                    {
+                        "authorId": "2015152",
+                        "name": "Yiran Zhong"
+                    },
+                    {
+                        "authorId": "1712576",
+                        "name": "N. Barnes"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "0f6060b393726fcf9186c0494ec7fca8dc96c291",
+                "externalIds": {
+                    "ArXiv": "2110.07110",
+                    "DBLP": "conf/cvpr/DuFLW22",
+                    "DOI": "10.1109/CVPR52688.2022.00428",
+                    "CorpusId": 238857181
+                },
+                "corpusId": 238857181,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0f6060b393726fcf9186c0494ec7fca8dc96c291",
+                "title": "Weakly Supervised Semantic Segmentation by Pixel-to-Prototype Contrast",
+                "abstract": "Though image-level weakly supervised semantic seg-mentation (WSSS) has achieved great progress with Class Activation Maps (CAMs) as the cornerstone, the large su-pervision gap between classification and segmentation still hampers the model to generate more complete and precise pseudo masks for segmentation. In this study, we propose weakly-supervised pixel-to-prototype contrast that can provide pixel-level supervisory signals to narrow the gap. Guided by two intuitive priors, our method is executed across different views and within per single view of an image, aiming to impose cross-view feature semantic consistency regularization and facilitate intra(inter)-class compactness(dispersion) of the feature space. Our method can be seamlessly incorporated into existing WSSS models with-out any changes to the base networks and does not incur any extra inference burden. Extensive experiments manifest that our method consistently improves two strong baselines by large margins, demonstrating the effectiveness. Specifically, built on top of SEAM, we improve the initial seed mIoU on PASCAL VOC 2012 from 55.4% to 61.5%. Moreover, armed with our method, we increase the segmentation mIoU of EPS from 70.8% to 73.6%, achieving new state-of-the-art.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2132788144",
+                        "name": "Ye Du"
+                    },
+                    {
+                        "authorId": "2566501",
+                        "name": "Zehua Fu"
+                    },
+                    {
+                        "authorId": "2333334",
+                        "name": "Qingjie Liu"
+                    },
+                    {
+                        "authorId": "2108702972",
+                        "name": "Yunhong Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "According to the weak supervision signal, weakly supervised semantic segmentation can be divided into scribblelevel [3], [4], [16], bounding-box level [25], [26], pointlevel [7] and image-level [9], [27]."
+            ],
+            "citingPaper": {
+                "paperId": "da901db7845c9d7fe34a6d5c9686e5c4e24ed6cd",
+                "externalIds": {
+                    "ArXiv": "2108.01296",
+                    "DBLP": "journals/corr/abs-2108-01296",
+                    "CorpusId": 236881602
+                },
+                "corpusId": 236881602,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/da901db7845c9d7fe34a6d5c9686e5c4e24ed6cd",
+                "title": "Dynamic Feature Regularized Loss for Weakly Supervised Semantic Segmentation",
+                "abstract": "We focus on tackling weakly supervised semantic segmentation with scribble-level annotation. The regularized loss has been proven to be an effective solution for this task. However, most existing regularized losses only leverage static shallow features (color, spatial information) to compute the regularized kernel, which limits its final performance since such static shallow features fail to describe pair-wise pixel relationship in complicated cases. In this paper, we propose a new regularized loss which utilizes both shallow and deep features that are dynamically updated in order to aggregate sufficient information to represent the relationship of different pixels. Moreover, in order to provide accurate deep features, we adopt vision transformer as the backbone and design a feature consistency head to train the pair-wise feature relationship. Unlike most approaches that adopt multi-stage training strategy with many bells and whistles, our approach can be directly trained in an end-to-end manner, in which the feature consistency head and our regularized loss can benefit from each other. Extensive experiments show that our approach achieves new state-of-the-art performances, outperforming other approaches by a significant margin with more than 6\\% mIoU increase.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "48335370",
+                        "name": "Bingfeng Zhang"
+                    },
+                    {
+                        "authorId": "2825865",
+                        "name": "Jimin Xiao"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Yao Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "For implementing BANA, the pseudo-masks obtained by DenseCRF that take BAM and CAMs as inputs are used for training the segmentation network.",
+                "The achievements of our method and BANA suggest that bounding box annotation is promising for extracting building from RS images.",
+                "Oh et al. [57] propose a BAP method using an attention map, enabling discriminating building and background inside the bounding boxes, and a noise-aware loss for training a segmentation network, making the networks less susceptible to incorrect labels.",
+                "The module uses retrieval operations on multilevel feature maps and then introduces a parallel background-aware pooling (BAP) for classification.",
+                "Specifically, for the lth-level feature maps, background and building features are generated via a retrieval operation and a BAP component, respectively.",
+                "BANA discriminates foreground and background inside the bounding boxes by BAP, and a noise-aware loss is introduced to train a segmentation network.",
+                "In these complex scenarios, the advantages of BANA are also considerable, which illustrates that bounding box annotation is recommended over image-level labels for identifying buildings in complex scenes.",
+                "The pseudo-mask results from BANA and our model outperform AdvCAM and ACGC by a large margin in terms of all the metrics.",
+                "Furthermore, a WSSS method using bounding box annotations is considered for comparison, called background-aware pooling and noiseaware loss (BANA) [57].",
+                "Specifically, it obtains the CAMs from the classification network using BAP and produces the pseudo-masks by an optimal threshold.",
+                "[57] propose a BAP method using an attention map, enabling discriminating building and background inside the bounding boxes, and a noise-aware loss for training a segmentation network, making the networks less susceptible to incorrect labels.",
+                "Motivated by BAP [57], based on multiscale features obtained in the last section, an MFR module to discriminate buildings and nonbuildings inside the bounding boxes is designed in this article.",
+                "2) The MFR module, which adopts retrieval operations on multilevel feature maps and aggregates multiscale building features with a parallel BAP, is developed.",
+                "In addition, BANA and the proposed\nAuthorized licensed use limited to the terms of the applicable license agreement with IEEE.",
+                "After obtaining BAM, building features are extracted via BAP, a weighted average formulation function\nbi =\n\u2211 p\u2208box j (1 \u2212 BAMl(p)) fl(p)\u2211\np\u2208box j (1 \u2212 BAMl(p)) , 1 \u2264 j \u2264 t. (4)\nWith BAM, the background noise inside box j is expected to be suppressed, so the obtained building features indicate building regions better.",
+                "Furthermore, compared with BANA that uses the same bounding box annotation, MFR-PGC-Net yields an improvement of 0.0163 in BP IoU and 0.0107 in BP F1-score on the WHU aerial building dataset; 0.0641 in BP IoU and 0.0416 in BP F1-score on the CrowdAI dataset; and 0.0136 in BP IoU and 0.0091 in BP F1-score on the self-annotated dataset."
+            ],
+            "citingPaper": {
+                "paperId": "f401aeb95259330aa6134d7c677961769bd51569",
+                "externalIds": {
+                    "DBLP": "journals/tgrs/ZhengLFZFWL23",
+                    "DOI": "10.1109/TGRS.2023.3271986",
+                    "CorpusId": 258459750
+                },
+                "corpusId": 258459750,
+                "publicationVenue": {
+                    "id": "70628d6a-97aa-4571-9701-bc0eb3989c32",
+                    "name": "IEEE Transactions on Geoscience and Remote Sensing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Geosci Remote Sens"
+                    ],
+                    "issn": "0196-2892",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=36",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/f401aeb95259330aa6134d7c677961769bd51569",
+                "title": "Utilizing Bounding Box Annotations for Weakly Supervised Building Extraction From Remote-Sensing Images",
+                "abstract": "Image-level weakly supervised semantic segmentation (WSSS) methods have greatly facilitated the extraction of buildings from remote-sensing (RS) images. However, the lack of the locations and extent of individual buildings in image-level labels results in some limitations of the methods, especially in the cases of cluttered backgrounds and diverse building shapes and sizes. By utilizing bounding box annotations, a novel WSSS model is developed to improve building extraction from RS images in this article. Specifically, during the training phase, a multiscale feature retrieval (MFR) module is designed to learn multiscale building features and suppress the background noise inside the bounding box. In the inference phase, multiscale class activation maps (CAMs) are generated from multiscale features to achieve accurate building localization. Finally, a pseudo-mask generation and correction (PGC) module refines the CAMs to generate and correct the building pseudo-masks. Experiments are conducted to examine the proposed model in three datasets, namely the WHU aerial building dataset, the CrowdAI building dataset, and a self-annotated building dataset. Experimental results demonstrate that the proposed method outperforms baselines, achieving 76.99%, 75.51%, and 67.35% in terms of intersection over union (IoU) scores on the three challenging datasets, respectively. This article provides a methodological reference for the application of weakly supervised learning on RS images.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2153430167",
+                        "name": "Daoyuan Zheng"
+                    },
+                    {
+                        "authorId": "2153699947",
+                        "name": "Shengwen Li"
+                    },
+                    {
+                        "authorId": "2067776383",
+                        "name": "Fang Fang"
+                    },
+                    {
+                        "authorId": "2155383503",
+                        "name": "Jiahui Zhang"
+                    },
+                    {
+                        "authorId": "2150671661",
+                        "name": "Yuting Feng"
+                    },
+                    {
+                        "authorId": "2056727709",
+                        "name": "Bo Wan"
+                    },
+                    {
+                        "authorId": "7895577",
+                        "name": "Yuanyuan Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Within the recent rapid developments of deep learning (DL), the convolutional neural networks (CNNs) emerged as a critical component in various computer vision, machine learning, and cyber-physical systems tasks including the novel view synthesis Zhou et al. (2016), SARS-CoV-2 vaccine design Yang et al.",
+                "The uncertainty mass in opinions is an evidence-based uncertainty and can be characterized by the spread of the Beta or Dirichlet PDFs Shi et al. (2020); Corbi\u00e8re et al.",
+                "\u2026the years, such as global second order pooling Cai et al. (2017); Gao et al. (2016), overlapping-pooling Krizhevsky et al. (2012), spatial pyramid pooling He et al. (2015), background-aware pooling Oh et al. (2021), they still perform the operation of pooling functions based on feature values.",
+                "The uncertainty mass in opinions is an evidence-based uncertainty and can be characterized by the spread of the Beta or Dirichlet PDFs Shi et al. (2020); Corbie\u0300re et al. (2021)."
+            ],
+            "citingPaper": {
+                "paperId": "35627c0863685731e0e81e12c74dc7670898f242",
+                "externalIds": {
+                    "CorpusId": 259114379
+                },
+                "corpusId": 259114379,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/35627c0863685731e0e81e12c74dc7670898f242",
+                "title": "T RUSTWORTHINESS E VALUATION AND T RUST -A WARE D ESIGN OF CNN A RCHITECTURES",
+                "abstract": "Convolutional neural networks (CNNs) are known to be effective tools in many deep learning application areas. Despite CNN\u2019s good performance in terms of classical evaluation metrics such as accuracy and loss, quantifying and ensuring a high degree of trustworthiness of such models remains an unsolved problem raising questions in applications where trust is an important factor. In this work, we propose a framework to evaluate the trustworthiness of CNNs. Towards this end, we develop a trust-based pooling layer for CNNs to achieve higher accuracy and trustworthiness in applications with noise in input features. We further propose TrustCNets consisting of trustworthiness-aware CNN building blocks, i.e",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "20156484",
+                        "name": "Mingxi Cheng"
+                    },
+                    {
+                        "authorId": "2207158573",
+                        "name": "Tingyang Sun"
+                    },
+                    {
+                        "authorId": "1798313",
+                        "name": "Shahin Nazarian"
+                    },
+                    {
+                        "authorId": "2065744995",
+                        "name": "P. Bogdan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The following paper is a reproducibility report for Background-Aware Pooling and Noise-Aware Loss for Weakly2 Supervised Semantic Segmentation [12] published in CVPR 2021 as part of the ML Reproducibility Challenge 2021."
+            ],
+            "citingPaper": {
+                "paperId": "0c05ecd10f420f71baaac1dc49e8b2dd42fd16c9",
+                "externalIds": {
+                    "CorpusId": 246861705
+                },
+                "corpusId": 246861705,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/0c05ecd10f420f71baaac1dc49e8b2dd42fd16c9",
+                "title": "[RE] Background-Aware Pooling and Noise-Aware Loss for Weakly-Supervised Semantic Segmentation",
+                "abstract": "The paper\u2019s central claim revolves around the newly introduced Background Aware Pooling method to generate 6 high-quality pseudo labels using bounding boxes as supervision and Noise Aware Loss to train a segmentation network 7 using those noisy labels. The authors assert that these two techniques combined set the new state-of-the-art for weakly 8 supervised semantic segmentation on PASCAL VOC 2012 [3]. 9",
+                "year": 2022,
+                "authors": []
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", image-level supervision [1, 41], scribblelevel supervision [22] and box-level supervision [28]."
+            ],
+            "citingPaper": {
+                "paperId": "28eed8a52af9340e5c737bbebbeb5da3faefd955",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-05944",
+                    "DOI": "10.48550/arXiv.2210.05944",
+                    "CorpusId": 252846314
+                },
+                "corpusId": 252846314,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/28eed8a52af9340e5c737bbebbeb5da3faefd955",
+                "title": "Dynamic Clustering Network for Unsupervised Semantic Segmentation",
+                "abstract": "Recently, the ability of self-supervised Vision Transformer (ViT) to represent pixel-level semantic relationships promotes the development of unsupervised dense prediction tasks. In this work, we investigate transferring self-supervised ViT to unsupervised semantic segmentation task. According to the analysis that the pixel-level representations of self-supervised ViT within a single image achieve good intra-class compactness and inter-class discrimination, we propose the Dynamic Clustering Network (DCN) to dynamically infer the underlying cluster centers for different images. By training with the proposed modularity loss, the DCN learns to project a set of prototypes to cluster centers for pixel representations in each image and assign pixels to different clusters, resulting on dividing each image to class-agnostic regions. For achieving unsupervised semantic segmentation task, we treat it as a region classi\ufb01cation problem. Based on the regions produced by the DCN, we explore different ways to extract region-level representations and classify them in an unsupervised manner. We demonstrate the effectiveness of the proposed method trough experiments on unsupervised semantic segmentation, and achieve state-of-the-art performance on PASCAL VOC 2012 unsupervised semantic segmentation task",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1742340859",
+                        "name": "Kehan Li"
+                    },
+                    {
+                        "authorId": "1390877160",
+                        "name": "Zhennan Wang"
+                    },
+                    {
+                        "authorId": "79673589",
+                        "name": "Ze-Long Cheng"
+                    },
+                    {
+                        "authorId": "1789168",
+                        "name": "R. Yu"
+                    },
+                    {
+                        "authorId": "2175304756",
+                        "name": "Yian Zhao"
+                    },
+                    {
+                        "authorId": "2847159",
+                        "name": "Guoli Song"
+                    },
+                    {
+                        "authorId": "2087091278",
+                        "name": "Li-ming Yuan"
+                    },
+                    {
+                        "authorId": "2155099408",
+                        "name": "Jie Chen"
+                    }
+                ]
+            }
+        }
+    ]
+}

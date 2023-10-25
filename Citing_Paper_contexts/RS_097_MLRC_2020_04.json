@@ -1,0 +1,2441 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "826a520633b8d5e7306ce549abaf551f87b4ff1c",
+                "externalIds": {
+                    "DBLP": "conf/ijcai/Byun023",
+                    "DOI": "10.24963/ijcai.2023/656",
+                    "CorpusId": 260848235
+                },
+                "corpusId": 260848235,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/826a520633b8d5e7306ce549abaf551f87b4ff1c",
+                "title": "Fast and Differentially Private Fair Clustering",
+                "abstract": "This study presents the first differentially private and fair clustering method, built on the recently proposed density-based fair clustering approach. The method addresses the limitations of fair clustering algorithms that necessitate the use of sensitive personal information during training or inference phases. Two novel solutions, the Gaussian mixture density function and Voronoi cell, are proposed to enhance the method's performance in terms of privacy, fairness, and utility compared to previous methods. The experimental results on both synthetic and real-world data confirm the compatibility of the proposed method with differential privacy, achieving a better fairness-utility trade-off than existing methods when privacy is not considered. Moreover, the proposed method requires significantly less computation time, being at least 3.7 times faster than the state-of-the-art.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "38900673",
+                        "name": "Junyoung Byun"
+                    },
+                    {
+                        "authorId": "40368067",
+                        "name": "Jaewook Lee"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[18], [19], [20], [21], [22], [23], [24], [25], [26], [27], [28], [29] is a natural way to solve the data annotation problem so as to make better use of massive unlabeled data."
+            ],
+            "citingPaper": {
+                "paperId": "9b5e4818b394119bdb525210f3f5ee44e129b7dd",
+                "externalIds": {
+                    "DBLP": "journals/pami/ShenLZZL23",
+                    "DOI": "10.1109/TPAMI.2023.3299263",
+                    "CorpusId": 260245251,
+                    "PubMed": "37498756"
+                },
+                "corpusId": 260245251,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9b5e4818b394119bdb525210f3f5ee44e129b7dd",
+                "title": "STAR-FC: Structure-Aware Face Clustering on Ultra-Large-Scale Graphs",
+                "abstract": "Face clustering is a promising method for annotating unlabeled face images. Recent supervised approaches have boosted the face clustering accuracy greatly, however their performance is still far from satisfactory. These methods can be roughly divided into global-based and local-based ones. Global-based methods suffer from the limitation of training data scale, while local-based ones are inefficient for inference due to the use of numerous overlapped subgraphs. Previous approaches fail to tackle these two challenges simultaneously. To address the dilemma of large-scale training and efficient inference, we propose the STructure-AwaRe Face Clustering (STAR-FC) method. Specifically, we design a structure-preserving subgraph sampling strategy to explore the power of large-scale training data, which can increase the training data scale from <inline-formula><tex-math notation=\"LaTeX\">${10^{5}}$</tex-math><alternatives><mml:math><mml:msup><mml:mn>10</mml:mn><mml:mn>5</mml:mn></mml:msup></mml:math><inline-graphic xlink:href=\"lu-ieq1-3299263.gif\"/></alternatives></inline-formula> to <inline-formula><tex-math notation=\"LaTeX\">${10^{7}}$</tex-math><alternatives><mml:math><mml:msup><mml:mn>10</mml:mn><mml:mn>7</mml:mn></mml:msup></mml:math><inline-graphic xlink:href=\"lu-ieq2-3299263.gif\"/></alternatives></inline-formula>. On this basis, a novel hierarchical GCN training paradigm is further proposed for better capturing the dynamic local structure. During inference, the STAR-FC performs efficient full-graph clustering with two steps: graph parsing and graph refinement. And the concept of node intimacy is introduced in the second step to mine the local structural information, where a calibration module is further proposed for fairer edge scores. The STAR-FC gets 93.21 pairwise F-score on standard partial MS1M within 312 seconds, which far surpasses the state-of-the-arts while maintaining high inference efficiency. Furthermore, we are the first to train on an ultra-large-scale graph with 20 M nodes, and achieve superior inference results on 12 M testing data. Overall, as a simple and effective method, the proposed STAR-FC provides a strong baseline for large-scale face clustering.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2072820693",
+                        "name": "Shuai Shen"
+                    },
+                    {
+                        "authorId": "7878225",
+                        "name": "Wanhua Li"
+                    },
+                    {
+                        "authorId": "1490318512",
+                        "name": "Zhengbiao Zhu"
+                    },
+                    {
+                        "authorId": "48128428",
+                        "name": "Jie Zhou"
+                    },
+                    {
+                        "authorId": "1697700",
+                        "name": "Jiwen Lu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "\u201d The sources of unfairness are many, including data sampling bias or under-representation [16, 70, 15, 7], data labeling bias [60, 65, 26], model architecture (or feature representation) [2, 47, 68, 56, 66, 39, 55, 41], distribution shift [23, 17, 50, 27] etc."
+            ],
+            "citingPaper": {
+                "paperId": "f7aa171a55347ab8c61eceb8a922b54f0e04d4eb",
+                "externalIds": {
+                    "ArXiv": "2306.17828",
+                    "DBLP": "journals/corr/abs-2306-17828",
+                    "DOI": "10.48550/arXiv.2306.17828",
+                    "CorpusId": 259309082
+                },
+                "corpusId": 259309082,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f7aa171a55347ab8c61eceb8a922b54f0e04d4eb",
+                "title": "Understanding Unfairness via Training Concept Influence",
+                "abstract": "Knowing the causes of a model's unfairness helps practitioners better understand their data and algorithms. This is an important yet relatively unexplored task. We look into this problem through the lens of the training data - one of the major sources of unfairness. We ask the following questions: how would a model's fairness performance change if, in its training data, some samples (1) were collected from a different (e.g. demographic) group, (2) were labeled differently, or (3) some features were changed? In other words, we quantify the fairness influence of training samples by counterfactually intervening and changing samples based on predefined concepts, i.e. data attributes such as features (X), labels (Y), or sensitive attributes (A). To calculate a training sample's influence on the model's unfairness w.r.t a concept, we first generate counterfactual samples based on the concept, i.e. the counterfactual versions of the sample if the concept were changed. We then calculate the resulting impact on the unfairness, via influence function, if the counterfactual samples were used in training. Our framework not only helps practitioners understand the observed unfairness and repair their training data, but also leads to many other applications, e.g. detecting mislabeling, fixing imbalanced representations, and detecting fairness-targeted poisoning attacks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3460027",
+                        "name": "Yuanshun Yao"
+                    },
+                    {
+                        "authorId": "2152797134",
+                        "name": "Yang Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Other works have also extended the learning paradigm beyond traditional clustering, such as deep clustering [36], spectral clustering [33], and hierarchical clustering [2].",
+                "In general, many existing methods achieve node fairness by pre-dividing, recombining [47], or adding constraints [33, 36] to the original clustering methods."
+            ],
+            "citingPaper": {
+                "paperId": "3e4ef682959aebc8e0f9df47e5e80192a0932d39",
+                "externalIds": {
+                    "ArXiv": "2306.10123",
+                    "DBLP": "journals/corr/abs-2306-10123",
+                    "DOI": "10.48550/arXiv.2306.10123",
+                    "CorpusId": 259202484
+                },
+                "corpusId": 259202484,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/3e4ef682959aebc8e0f9df47e5e80192a0932d39",
+                "title": "Dual Node and Edge Fairness-Aware Graph Partition",
+                "abstract": "Fair graph partition of social networks is a crucial step toward ensuring fair and non-discriminatory treatments in unsupervised user analysis. Current fair partition methods typically consider node balance, a notion pursuing a proportionally balanced number of nodes from all demographic groups, but ignore the bias induced by imbalanced edges in each cluster. To address this gap, we propose a notion edge balance to measure the proportion of edges connecting different demographic groups in clusters. We analyze the relations between node balance and edge balance, then with line graph transformations, we propose a co-embedding framework to learn dual node and edge fairness-aware representations for graph partition. We validate our framework through several social network datasets and observe balanced partition in terms of both nodes and edges along with good utility. Moreover, we demonstrate our fair partition can be used as pseudo labels to facilitate graph neural networks to behave fairly in node classification and link prediction tasks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2070491",
+                        "name": "Tingwei Liu"
+                    },
+                    {
+                        "authorId": "48981982",
+                        "name": "Peizhao Li"
+                    },
+                    {
+                        "authorId": "2144318307",
+                        "name": "Hongfu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "d85d7a205dfdde6cc41f46141756d14348557218",
+                "externalIds": {
+                    "DOI": "10.1038/s41551-023-01056-8",
+                    "CorpusId": 259277694,
+                    "PubMed": "37380750"
+                },
+                "corpusId": 259277694,
+                "publicationVenue": {
+                    "id": "5619586e-de5a-4bc3-ac80-04dd8530d80c",
+                    "name": "Nature Biomedical Engineering",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Nat Biomed Eng"
+                    ],
+                    "issn": "2157-846X",
+                    "url": "http://www.nature.com/natbiomedeng/"
+                },
+                "url": "https://www.semanticscholar.org/paper/d85d7a205dfdde6cc41f46141756d14348557218",
+                "title": "Algorithmic fairness in artificial intelligence for medicine and healthcare",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2108279369",
+                        "name": "Richard J. Chen"
+                    },
+                    {
+                        "authorId": "2109623647",
+                        "name": "Judy J. Wang"
+                    },
+                    {
+                        "authorId": "25259989",
+                        "name": "Drew F. K. Williamson"
+                    },
+                    {
+                        "authorId": "2242468870",
+                        "name": "Tiffany Y. Chen"
+                    },
+                    {
+                        "authorId": "1959705",
+                        "name": "Jana Lipkov\u00e1"
+                    },
+                    {
+                        "authorId": "16184125",
+                        "name": "Ming Y. Lu"
+                    },
+                    {
+                        "authorId": "2060422236",
+                        "name": "S. Sahai"
+                    },
+                    {
+                        "authorId": "37122655",
+                        "name": "Faisal Mahmood"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Fair clustering algorithms reduce bias in many applications, like computer vision [32].",
+                "Diferent fair clustering algorithms [6, 11, 14, 24, 26, 29, 32, 49] are designed for diferent fair objectives, like protecting minority groups or hiding sensitive attributes.",
+                "Nowadays, for the applications that require fair clustering, research interests are devoted to designing various fair objectives [6, 11, 24, 26, 27, 29, 32], to ensure the fairness for the social good."
+            ],
+            "citingPaper": {
+                "paperId": "d874aa229fd9590a3f5a51a9ff487644b57f15a2",
+                "externalIds": {
+                    "DBLP": "conf/www/Fu0MCBH23",
+                    "DOI": "10.1145/3543507.3583423",
+                    "CorpusId": 258333863
+                },
+                "corpusId": 258333863,
+                "publicationVenue": {
+                    "id": "e07422f9-c065-40c3-a37b-75e98dce79fe",
+                    "name": "The Web Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Web Conf",
+                        "WWW"
+                    ],
+                    "url": "http://www.iw3c2.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/d874aa229fd9590a3f5a51a9ff487644b57f15a2",
+                "title": "Fairness-Aware Clique-Preserving Spectral\u00a0Clustering\u00a0of\u00a0Temporal\u00a0Graphs",
+                "abstract": "With the widespread development of algorithmic fairness, there has been a surge of research interest that aims to generalize the fairness notions from the attributed data to the relational data (graphs). The vast majority of existing work considers the fairness measure in terms of the low-order connectivity patterns (e.g., edges), while overlooking the higher-order patterns (e.g., k-cliques) and the dynamic nature of real-world graphs. For example, preserving triangles from graph cuts during clustering is the key to detecting compact communities; however, if the clustering algorithm only pays attention to triangle-based compactness, then the returned communities lose the fairness guarantee for each group in the graph. Furthermore, in practice, when the graph (e.g., social networks) topology constantly changes over time, one natural question is how can we ensure the compactness and demographic parity at each timestamp efficiently. To address these problems, we start from the static setting and propose a spectral method that preserves clique connections and incorporates demographic fairness constraints in returned clusters at the same time. To make this static method fit for the dynamic setting, we propose two core techniques, Laplacian Update via Edge Filtering and Searching and Eigen-Pairs Update with Singularity Avoided. Finally, all proposed components are combined into an end-to-end clustering framework named F-SEGA, and we conduct extensive experiments to demonstrate the effectiveness, efficiency, and robustness of F-SEGA.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1893402501",
+                        "name": "Dongqi Fu"
+                    },
+                    {
+                        "authorId": "49407567",
+                        "name": "Dawei Zhou"
+                    },
+                    {
+                        "authorId": "1786514",
+                        "name": "Ross Maciejewski"
+                    },
+                    {
+                        "authorId": "1793399",
+                        "name": "A. Croitoru"
+                    },
+                    {
+                        "authorId": "2215456590",
+                        "name": "Marcus Boyd"
+                    },
+                    {
+                        "authorId": "31108652",
+                        "name": "Jingrui He"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "5f2ffecd734106f061dec51f6600dcec5b9a404f",
+                "externalIds": {
+                    "ArXiv": "2304.07408",
+                    "DBLP": "journals/corr/abs-2304-07408",
+                    "DOI": "10.48550/arXiv.2304.07408",
+                    "CorpusId": 258180440
+                },
+                "corpusId": 258180440,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5f2ffecd734106f061dec51f6600dcec5b9a404f",
+                "title": "Fairness in Visual Clustering: A Novel Transformer Clustering Approach",
+                "abstract": "Promoting fairness for deep clustering models in unsupervised clustering settings to reduce demographic bias is a challenging goal. This is because of the limitation of large-scale balanced data with well-annotated labels for sensitive or protected attributes. In this paper, we first evaluate demographic bias in deep clustering models from the perspective of cluster purity, which is measured by the ratio of positive samples within a cluster to their correlation degree. This measurement is adopted as an indication of demographic bias. Then, a novel loss function is introduced to encourage a purity consistency for all clusters to maintain the fairness aspect of the learned clustering model. Moreover, we present a novel attention mechanism, Cross-attention, to measure correlations between multiple clusters, strengthening faraway positive samples and improving the purity of clusters during the learning process. Experimental results on a large-scale dataset with numerous attribute settings have demonstrated the effectiveness of the proposed approach on both clustering accuracy and fairness enhancement on several sensitive attributes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1959025244",
+                        "name": "Xuan-Bac Nguyen"
+                    },
+                    {
+                        "authorId": "1876581",
+                        "name": "C. Duong"
+                    },
+                    {
+                        "authorId": "1794486",
+                        "name": "M. Savvides"
+                    },
+                    {
+                        "authorId": "2091913080",
+                        "name": "Kaushik Roy"
+                    },
+                    {
+                        "authorId": "1769788",
+                        "name": "Khoa Luu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "e990cd4e466cde1b301d76999deff43ba5d6f2bc",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-05788",
+                    "ArXiv": "2302.05788",
+                    "DOI": "10.48550/arXiv.2302.05788",
+                    "CorpusId": 256827742
+                },
+                "corpusId": 256827742,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e990cd4e466cde1b301d76999deff43ba5d6f2bc",
+                "title": "Fairness-aware Multi-view Clustering",
+                "abstract": "In the era of big data, we are often facing the challenge of data heterogeneity and the lack of label information simultaneously. In the financial domain (e.g., fraud detection), the heterogeneous data may include not only numerical data (e.g., total debt and yearly income), but also text and images (e.g., financial statement and invoice images). At the same time, the label information (e.g., fraud transactions) may be missing for building predictive models. To address these challenges, many state-of-the-art multi-view clustering methods have been proposed and achieved outstanding performance. However, these methods typically do not take into consideration the fairness aspect and are likely to generate biased results using sensitive information such as race and gender. Therefore, in this paper, we propose a fairness-aware multi-view clustering method named FairMVC. It incorporates the group fairness constraint into the soft membership assignment for each cluster to ensure that the fraction of different groups in each cluster is approximately identical to the entire data set. Meanwhile, we adopt the idea of both contrastive learning and non-contrastive learning and propose novel regularizers to handle heterogeneous data in complex scenarios with missing data or noisy features. Experimental results on real-world data sets demonstrate the effectiveness and efficiency of the proposed framework. We also derive insights regarding the relative performance of the proposed regularizers in various scenarios.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "65990885",
+                        "name": "Lecheng Zheng"
+                    },
+                    {
+                        "authorId": "24018646",
+                        "name": "Yada Zhu"
+                    },
+                    {
+                        "authorId": "31108652",
+                        "name": "Jingrui He"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "2 Deep Graph Clustering Recently, due to the strong representation power of deep neural networks, many deep clustering methods have been proposed and achieved impressive performance [14, 15, 26, 34, 37, 55, 63]."
+            ],
+            "citingPaper": {
+                "paperId": "2b484b5903f0c02c9c7d25a8fa171625f27c8826",
+                "externalIds": {
+                    "DOI": "10.1145/3580521",
+                    "CorpusId": 256391188
+                },
+                "corpusId": 256391188,
+                "publicationVenue": {
+                    "id": "cef4bc5a-77b3-4506-8d78-14d282235429",
+                    "name": "ACM Transactions on the Web",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Transactions on The Web",
+                        "ACM Trans Web"
+                    ],
+                    "issn": "1559-1131",
+                    "url": "http://www.acm.org/tweb/index.html",
+                    "alternate_urls": [
+                        "http://portal.acm.org/browse_dl.cfm?coll=ACM&dl=ACM&idx=J1062&linked=1&part=transaction",
+                        "https://tweb.acm.org/",
+                        "http://portal.acm.org/tweb"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2b484b5903f0c02c9c7d25a8fa171625f27c8826",
+                "title": "Deep Adaptive Graph Clustering via von Mises-Fisher Distributions",
+                "abstract": "Graph clustering has been a hot research topic and is widely used in many fields, such as community detection in social networks. Lots of works combining auto-encoder and graph neural networks have been applied to clustering tasks by utilizing node attributes and graph structure. These works usually assumed the inherent parameters (i.e. size and variance) of different clusters in the latent embedding space are homogeneous, and hence the assigned probability is monotonous over the Euclidean distance between node embeddings and centroids. Unfortunately, this assumption usually does not hold since the size and concentration of different clusters can be quite different, which limits the clustering accuracy. In addition, the node embeddings in deep graph clustering methods are usually L2 normalized so that it lies on the surface of a unit hyper-sphere. To solve this problem, we proposed Deep Adaptive Graph Clustering via von Mises-Fisher distributions, namely DAGC. DAGC assumes the node embeddings H can be drawn from a von Mises-Fisher distribution and each cluster k is associated with cluster inherent parameters \u03c1k which includes cluster center \u03bc and cluster cohesion degree \u03ba. Then we adopt an EM-like approach (i.e. \\(\\mathcal {P}(\\mathbf {H}|\\mathbf {\\rho }) \\) and \\(\\mathcal {P}(\\mathbf {\\rho }|\\mathbf {H}) \\) respectively) to learn the embedding and cluster inherent parameters alternately. Specifically, with the node embeddings, we proposed to update the cluster centers in an attraction-repulsion manner to make the cluster centers more separable. And given the cluster inherent parameters, a likelihood-based loss is proposed to make node embeddings more concentrated around cluster centers. Thus, DAGC can simultaneously improve the intra-cluster compactness and inter-cluster heterogeneity. Finally, extensive experiments conducted on four benchmark datasets have demonstrated that the proposed DAGC consistently outperforms the state-of-the-art methods, especially on imbalanced datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "46808435",
+                        "name": "P. Wang"
+                    },
+                    {
+                        "authorId": "2118209133",
+                        "name": "Daqing Wu"
+                    },
+                    {
+                        "authorId": "2135176888",
+                        "name": "Chong Chen"
+                    },
+                    {
+                        "authorId": "2029695204",
+                        "name": "Kunpeng Liu"
+                    },
+                    {
+                        "authorId": "2274395",
+                        "name": "Yanjie Fu"
+                    },
+                    {
+                        "authorId": "50535545",
+                        "name": "Jianqiang Huang"
+                    },
+                    {
+                        "authorId": "2145108199",
+                        "name": "Yuanchun Zhou"
+                    },
+                    {
+                        "authorId": "2056780339",
+                        "name": "Jianfeng Zhan"
+                    },
+                    {
+                        "authorId": "2053903039",
+                        "name": "Xiansheng Hua"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Machine Learning Fairness AI Fairness proposes ethical regulations to rectify algorithms not discriminating against any party or individual (Li et al., 2021; Hardt et al., 2016; Li & Liu, 2022; Li et al., 2020; Song et al., 2021; Chhabra et al., 2022)."
+            ],
+            "citingPaper": {
+                "paperId": "7d43161ed7284980c5c4bcb4aaea5d92b45e1189",
+                "externalIds": {
+                    "DBLP": "conf/icml/LiXL23",
+                    "ArXiv": "2211.15897",
+                    "DOI": "10.48550/arXiv.2211.15897",
+                    "CorpusId": 254070067
+                },
+                "corpusId": 254070067,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7d43161ed7284980c5c4bcb4aaea5d92b45e1189",
+                "title": "Learning Antidote Data to Individual Unfairness",
+                "abstract": "Fairness is essential for machine learning systems deployed in high-stake applications. Among all fairness notions, individual fairness, deriving from a consensus that `similar individuals should be treated similarly,' is a vital notion to describe fair treatment for individual cases. Previous studies typically characterize individual fairness as a prediction-invariant problem when perturbing sensitive attributes on samples, and solve it by Distributionally Robust Optimization (DRO) paradigm. However, such adversarial perturbations along a direction covering sensitive information used in DRO do not consider the inherent feature correlations or innate data constraints, therefore could mislead the model to optimize at off-manifold and unrealistic samples. In light of this drawback, in this paper, we propose to learn and generate antidote data that approximately follows the data distribution to remedy individual unfairness. These generated on-manifold antidote data can be used through a generic optimization procedure along with original training data, resulting in a pure pre-processing approach to individual unfairness, or can also fit well with the in-processing DRO paradigm. Through extensive experiments on multiple tabular datasets, we demonstrate our method resists individual unfairness at a minimal or zero cost to predictive utility compared to baselines.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48981982",
+                        "name": "Peizhao Li"
+                    },
+                    {
+                        "authorId": "2106775655",
+                        "name": "Ethan Xia"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "INTRODUCTION Clustering is a typical yet challenging machine learning topic with a series of real-world applications, including object detection [1], [2], [3], social network analysis [4], [5], [6], [7], and face recognition [8], [9], [10], [11]."
+            ],
+            "citingPaper": {
+                "paperId": "0c219f8f918c6090344f85f6a228c0fdad30a9d8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-10627",
+                    "ArXiv": "2211.10627",
+                    "DOI": "10.48550/arXiv.2211.10627",
+                    "CorpusId": 253734170
+                },
+                "corpusId": 253734170,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0c219f8f918c6090344f85f6a228c0fdad30a9d8",
+                "title": "Graph Augmentation Clustering Network",
+                "abstract": "Existing graph clustering networks heavily rely on a predefined graph and may fail if the initial graph is of low quality. To tackle this issue, we propose a novel graph augmentation clustering network capable of adaptively enhancing the initial graph to achieve better clustering performance. Specifically, we first integrate the node attribute and topology structure information to learn the latent feature representation. Then, we explore the local geometric structure information on the embedding space to construct an adjacency graph and subsequently develop an adaptive graph augmentation architecture to fuse that graph with the initial one dynamically. Finally, we minimize the Jeffreys divergence between multiple derived distributions to conduct network training in an unsupervised fashion. Extensive experiments on six commonly used benchmark datasets demonstrate that the proposed method consistently outperforms several state-of-the-art approaches. In particular, our method improves the ARI by more than 9.39\\% over the best baseline on DBLP. The source codes and data have been submitted to the appendix.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "47015139",
+                        "name": "Zhihao Peng"
+                    },
+                    {
+                        "authorId": "2146673352",
+                        "name": "Hui Liu"
+                    },
+                    {
+                        "authorId": "2779478",
+                        "name": "Yuheng Jia"
+                    },
+                    {
+                        "authorId": "40630305",
+                        "name": "Junhui Hou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "5.2.1 Adversarial.",
+                "Generative Adversarial Networks (GANs) can be an option when looking for ways to increase a dataset with synthetic data [62, 147, 165, 217], since they can create high-quality new images when properly trained, balancing the dataset with regard to its potential misrepresentation and allowing the training of a new model over both original and synthetic data.",
+                "Aside from proposing novel loss functions, it is possible to employ an algorithm to inject constraints during model training to ensure a fair distribution of predictions for the training data [115, 220].",
+                "The objective is to teach the main network not to use the protected attribute to do the task [60, 115, 150, 209, 212, 218].",
+                "One-Step-Training Adversarial [55, 115, 205] [58, 60, 67, 129, 150, 167, 209] [14, 214] Causal Approaches [42, 93, 98] [76] [215] Disentanglement [41, 98, 153, 193, 213] [51] \u2014",
+                "Optimization [4, 5, 73, 79, 130, 192, 204] [24, 31, 51, 67, 90, 118, 182, 207] [99, 203, 220] [96, 97, 115, 127, 133, 154, 161, 178]",
+                "These methods are further divided into four distinct groups according to the debiasing strategy that is used: (i) Adversarialmethods make use of the adversarial framework or of adversarial examples to teach the model\nnot to resort to undesired biases; (ii) Causal methods use causal graphs and counterfactual examples to teach the model which relationships\nare relevant within the data; (iii) Disentanglement methods separate the features in the latent space to manipulate them independently; (iv) Optimization methods include loss function adaptions, addition of regularization terms, and other modifi-\ncations for improving weight optimization.",
+                "Category Sub-category Vision Language Multimodal\nDistributional Heuristic [45] [126, 186] \u2014 Generative [32, 62, 147, 165, 217] [160] \u2014 Resampling [28, 117, 192] \u2014 [214]\nOne-Step-Training\nAdversarial [55, 115, 205] [58, 60, 67, 129, 150, 167, 209] [14, 214] Causal Approaches [42, 93, 98] [76] [215] Disentanglement [41, 98, 153, 193, 213] [51] \u2014\nOptimization [4, 5, 73, 79, 130, 192, 204] [24, 31, 51, 67, 90, 118, 182, 207] [99, 203, 220][96, 97, 115, 127, 133, 154, 161, 178]\nTwo-Step-Training Distillation [88, 116, 132] [76] \u2014 Fair-Modules [94, 116] [33, 57, 112, 163, 210] [152, 191, 214] Fine-Tuning \u2014 [56, 68, 122, 211] [14]\nInferential Prompting \u2014 [66, 176, 181, 184, 202] [137]\nVector-Space Manipulation [174] [3, 21, 22, 47, 52, 89, 119, 120, 197] [203][48, 77, 91, 106, 107, 111, 189, 216]\nACM Comput."
+            ],
+            "citingPaper": {
+                "paperId": "7a1bf9474ae0cc07aa01d010449970a9ddf9baa5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-05617",
+                    "ArXiv": "2211.05617",
+                    "DOI": "10.48550/arXiv.2211.05617",
+                    "CorpusId": 253447275
+                },
+                "corpusId": 253447275,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7a1bf9474ae0cc07aa01d010449970a9ddf9baa5",
+                "title": "Debiasing Methods for Fairer Neural Models in Vision and Language Research: A Survey",
+                "abstract": "Despite being responsible for state-of-the-art results in several computer vision and natural language processing tasks, neural networks have faced harsh criticism due to some of their current shortcomings. One of them is that neural networks are correlation machines prone to model biases within the data instead of focusing on actual useful causal relationships. This problem is particularly serious in application domains affected by aspects such as race, gender, and age. To prevent models from incurring on unfair decision-making, the AI community has concentrated efforts in correcting algorithmic biases, giving rise to the research area now widely known as fairness in AI. In this survey paper, we provide an in-depth overview of the main debiasing methods for fairness-aware neural networks in the context of vision and language research. We propose a novel taxonomy to better organize the literature on debiasing methods for fairness, and we discuss the current challenges, trends, and important future work directions for the interested researcher and practitioner.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2154617774",
+                        "name": "Ot\u00e1vio Parraga"
+                    },
+                    {
+                        "authorId": "41050099",
+                        "name": "Martin D. M\u00f3re"
+                    },
+                    {
+                        "authorId": "2154309948",
+                        "name": "C. M. Oliveira"
+                    },
+                    {
+                        "authorId": "1660809827",
+                        "name": "Nathan Gavenski"
+                    },
+                    {
+                        "authorId": "2175084934",
+                        "name": "L. S. Kupssinsku"
+                    },
+                    {
+                        "authorId": "2190427449",
+                        "name": "Adilson Medronha"
+                    },
+                    {
+                        "authorId": "2190427616",
+                        "name": "Luis V. Moura"
+                    },
+                    {
+                        "authorId": "153255514",
+                        "name": "Gabriel S. Sim\u00f5es"
+                    },
+                    {
+                        "authorId": "1380051745",
+                        "name": "Rodrigo C. Barros"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "267fc8b926f00da22ed465cdc8d1db2b928f0ccc",
+                "externalIds": {
+                    "DBLP": "conf/icml/XianY023",
+                    "ArXiv": "2211.01528",
+                    "CorpusId": 259075669
+                },
+                "corpusId": 259075669,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/267fc8b926f00da22ed465cdc8d1db2b928f0ccc",
+                "title": "Fair and Optimal Classification via Post-Processing",
+                "abstract": "To mitigate the bias exhibited by machine learning models, fairness criteria can be integrated into the training process to ensure fair treatment across all demographics, but it often comes at the expense of model performance. Understanding such tradeoffs, therefore, underlies the design of fair algorithms. To this end, this paper provides a complete characterization of the inherent tradeoff of demographic parity on classification problems, under the most general multi-group, multi-class, and noisy setting. Specifically, we show that the minimum error rate achievable by randomized and attribute-aware fair classifiers is given by the optimal value of a Wasserstein-barycenter problem. On the practical side, our findings lead to a simple post-processing algorithm that derives fair classifiers from score functions, which yields the optimal fair classifier when the score is Bayes optimal. We provide suboptimality analysis and sample complexity for our algorithm, and demonstrate its effectiveness on benchmark datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "147990887",
+                        "name": "Ruicheng Xian"
+                    },
+                    {
+                        "authorId": "2178278349",
+                        "name": "Lang Yin"
+                    },
+                    {
+                        "authorId": "2197554948",
+                        "name": "Han Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[31] make a step forward to explore fair clustering on visual data by achieving fairness through adversarial training.",
+                "His recent work on fairness includes deep fair clustering [31], dyadic fairness on link prediction [30], fair outlier detection [46], fair feature selection [51] and studies on the trade-off between utility and fairness [29]."
+            ],
+            "citingPaper": {
+                "paperId": "6e0804d43ff5dfa1aa95b91a3695b49884a5c85c",
+                "externalIds": {
+                    "DBLP": "conf/cikm/0008LTY22",
+                    "DOI": "10.1145/3511808.3557501",
+                    "CorpusId": 252904673
+                },
+                "corpusId": 252904673,
+                "publicationVenue": {
+                    "id": "7431ff67-91dc-41fa-b322-1b1ca657025f",
+                    "name": "International Conference on Information and Knowledge Management",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conference on Information and Knowledge Management",
+                        "Conf Inf Knowl Manag",
+                        "Int Conf Inf Knowl Manag",
+                        "CIKM"
+                    ],
+                    "url": "http://www.cikm.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/6e0804d43ff5dfa1aa95b91a3695b49884a5c85c",
+                "title": "Fairness of Machine Learning in Search Engines",
+                "abstract": "Fairness has gained increasing importance in a variety of AI and machine learning contexts. As one of the most ubiquitous applications of machine learning, search engines mediate much of the information experiences of members of society. Consequently, understanding and mitigating potential algorithmic unfairness in search have become crucial for both users and systems. In this tutorial, we will introduce the fundamentals of fairness in machine learning, for both supervised learning such as classification and ranking, and unsupervised learning such as clustering. We will then present the existing work on fairness in search engines, including the fairness definitions, evaluation metrics, and taxonomies of methodologies. This tutorial will help orient information retrieval researchers to algorithmic fairness, provide an introduction to the growing literature on this topic, and gathering researchers and practitioners interested in this research direction.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "144145642",
+                        "name": "Yi Fang"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    },
+                    {
+                        "authorId": "6018169",
+                        "name": "Zhiqiang Tao"
+                    },
+                    {
+                        "authorId": "8202372",
+                        "name": "Mikhail Yurochkin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Entropy is a fairness metric proposed by [Li et al., 2020] and similar to Balance, higher values of Entropy, mean that clusters have more fairness.",
+                "For fairness utility we consider Balance [Chierichetti et al., 2017] and Entropy [Li et al., 2020].",
+                "Similar to other deep clustering approaches [Xie et al., 2016, Li et al., 2020], we employ a clustering assignment layer based on Student t-distribution and obtain soft cluster assignments P .",
+                "There are also works that extend fair clustering into other clustering paradigms like spectral clustering [Kleindessner et al., 2019b] and deep\nclustering [Li et al., 2020, Wang and Davidson, 2019].",
+                "Since optimizing the fair clustering loss Lf can lead to a degenerate solution where the learned representation reduces to a constant function [Li et al., 2020], we employ a well-known structural preservation loss term for each protected group.",
+                "MNIST-USPS: Similar to previous work in deep fair clustering [Li et al., 2020], we construct MNIST-USPS dataset using all the training digital samples from MNIST [LeCun, 1998] and USPS dataset [LeCun, 1990], and set the sample source as the protected attribute (MNIST/USPS)."
+            ],
+            "citingPaper": {
+                "paperId": "6545eebb1162c70751119e173f8d51f5c112fcc1",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-01953",
+                    "ArXiv": "2210.01953",
+                    "DOI": "10.48550/arXiv.2210.01953",
+                    "CorpusId": 252715605
+                },
+                "corpusId": 252715605,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/6545eebb1162c70751119e173f8d51f5c112fcc1",
+                "title": "Robust Fair Clustering: A Novel Fairness Attack and Defense Framework",
+                "abstract": "Clustering algorithms are widely used in many societal resource allocation applications, such as loan approvals and candidate recruitment, among others, and hence, biased or unfair model outputs can adversely impact individuals that rely on these applications. To this end, many fair clustering approaches have been recently proposed to counteract this issue. Due to the potential for significant harm, it is essential to ensure that fair clustering algorithms provide consistently fair outputs even under adversarial influence. However, fair clustering algorithms have not been studied from an adversarial attack perspective. In contrast to previous research, we seek to bridge this gap and conduct a robustness analysis against fair clustering by proposing a novel black-box fairness attack. Through comprehensive experiments, we find that state-of-the-art models are highly susceptible to our attack as it can reduce their fairness performance significantly. Finally, we propose Consensus Fair Clustering (CFC), the first robust fair clustering approach that transforms consensus clustering into a fair graph partitioning problem, and iteratively learns to generate fair cluster outputs. Experimentally, we observe that CFC is highly robust to the proposed attack and is thus a truly robust fair clustering alternative.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "152593835",
+                        "name": "Anshuman Chhabra"
+                    },
+                    {
+                        "authorId": "48981982",
+                        "name": "Peizhao Li"
+                    },
+                    {
+                        "authorId": "144752813",
+                        "name": "P. Mohapatra"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "f389695d9388a65e1123e87dcee745228ca3f632",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-12396",
+                    "ArXiv": "2209.12396",
+                    "DOI": "10.1109/CVPR52729.2023.02297",
+                    "CorpusId": 252531470
+                },
+                "corpusId": 252531470,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/f389695d9388a65e1123e87dcee745228ca3f632",
+                "title": "Deep Fair Clustering via Maximizing and Minimizing Mutual Information: Theory, Algorithm and Metric",
+                "abstract": "Fair clustering aims to divide data into distinct clusters while preventing sensitive attributes (e.g., gender, race, RNA sequencing technique) from dominating the clustering. Although a number of works have been conducted and achieved huge success recently, most of them are heuristical, and there lacks a unified theory for algorithm design. In this work, we fill this blank by developing a mutual information theory for deep fair clustering and accordingly designing a novel algorithm, dubbed FCMI. In brief, through maximizing and minimizing mutual information, FCMI is designed to achieve four characteristics highly expected by deep fair clustering, i.e., compact, balanced, and fair clusters, as well as informative features. Besides the contributions to theory and algorithm, another contribution of this work is proposing a novel fair clustering metric built upon information theory as well. Unlike existing evaluation metrics, our metric measures the clustering quality and fairness as a whole instead of separate manner. To verify the effectiveness of the proposed FCMI, we conduct experiments on six benchmarks including a single-cell RNA-seq atlas compared with 11 state-of-the-art methods in terms of five metrics. The code could be accessed from https://pengxi.me.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2154996069",
+                        "name": "Pengxin Zeng"
+                    },
+                    {
+                        "authorId": "2110441450",
+                        "name": "Yunfan Li"
+                    },
+                    {
+                        "authorId": "143941721",
+                        "name": "Peng Hu"
+                    },
+                    {
+                        "authorId": "1800117",
+                        "name": "Dezhong Peng"
+                    },
+                    {
+                        "authorId": "2075420316",
+                        "name": "Jiancheng Lv"
+                    },
+                    {
+                        "authorId": "9245535",
+                        "name": "Xiaocui Peng"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "00d8c40a0672cfcf23a7a5d979130a8d0c70def1",
+                "externalIds": {
+                    "DBLP": "conf/icpr/ZhaoL0WS22",
+                    "DOI": "10.1109/ICPR56361.2022.9956670",
+                    "CorpusId": 254098492
+                },
+                "corpusId": 254098492,
+                "publicationVenue": {
+                    "id": "48782cc2-a3b4-44f3-95a4-2c4cb0f7245b",
+                    "name": "International Conference on Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Pattern Recognit (ICPR Proc Int Conf",
+                        "Int Conf Pattern Recognit",
+                        "ICPR",
+                        "International conference on pattern recognition",
+                        "Int conf pattern recognit",
+                        "Pattern Recognition (ICPR), Proceedings of the International Conference on"
+                    ],
+                    "issn": "1041-3278",
+                    "alternate_issns": [
+                        "1051-4651"
+                    ],
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome/1000545/all-proceedings",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=4740202"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/00d8c40a0672cfcf23a7a5d979130a8d0c70def1",
+                "title": "Density Division Face Clustering Based on Graph Convolutional Networks",
+                "abstract": "Supervised clustering methods cluster images using graph convolutional networks (GCN) via linkage prediction, and have shown significant improvements over the traditional clustering algorithms (e.g., K-means, DBScan, etc.) in terms of clustering effectiveness. However, existing supervised clustering approaches are always time-consuming, which may limit their usage. The high computation overhead is mainly resulted from generating and processing a large amount of subgraphs, each of which is generated for one image instance in order to infer the linkage between them. To tackle the high computation problem, we propose a new density division clustering approach based on GCN, and our experiments demonstrate that the new approach is both time-efficient and effective. The approach divides the data into high-density and low-density parts, and only performs GCN subgraph link inference on the low-density parts, which highly reduces redundant calculations. Meanwhile, to ensure sufficient contextual information extraction for low-density parts, it generates adaptive subgraphs instead of fixed-size subgraphs. Our experimental evaluations over multiple datasets show that our proposed approach is five-time faster than state-of-the-art algorithms with even higher accuracy.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2110560590",
+                        "name": "Qi Zhao"
+                    },
+                    {
+                        "authorId": "2181207284",
+                        "name": "Long Li"
+                    },
+                    {
+                        "authorId": "47237561",
+                        "name": "Yan Chu"
+                    },
+                    {
+                        "authorId": "2284974",
+                        "name": "Zhengkui Wang"
+                    },
+                    {
+                        "authorId": "2733767",
+                        "name": "W. Shan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "a2fb225891df72e5fc3d377487af10c1e0b3c163",
+                "externalIds": {
+                    "DBLP": "journals/remotesensing/ZhaoLCYWS22",
+                    "DOI": "10.3390/rs14153768",
+                    "CorpusId": 251484909
+                },
+                "corpusId": 251484909,
+                "publicationVenue": {
+                    "id": "8e1bd4b5-d5b2-4e22-ba0a-01fe5568d472",
+                    "name": "Remote Sensing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Remote Sens"
+                    ],
+                    "issn": "2315-4675",
+                    "alternate_issns": [
+                        "2072-4292"
+                    ],
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-169233",
+                    "alternate_urls": [
+                        "https://www.mdpi.com/journal/remotesensing",
+                        "http://www.mdpi.com/journal/remotesensing",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-169233"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a2fb225891df72e5fc3d377487af10c1e0b3c163",
+                "title": "Efficient Supervised Image Clustering Based on Density Division and Graph Neural Networks",
+                "abstract": "In recent research, supervised image clustering based on Graph Neural Networks (GNN) connectivity prediction has demonstrated considerable improvements over traditional clustering algorithms. However, existing supervised image clustering algorithms are usually time-consuming and limit their applications. In order to infer the connectivity between image instances, they usually created a subgraph for each image instance. Due to the creation and process of a large number of subgraphs as the input of GNN, the computation overheads are enormous. To address the high computation overhead problem in the GNN connectivity prediction, we present a time-efficient and effective GNN-based supervised clustering framework based on density division namely DDC-GNN. DDC-GNN divides all image instances into high-density parts and low-density parts, and only performs GNN subgraph connectivity prediction on the low-density parts, resulting in a significant reduction in redundant calculations. We test two typical models in the GNN connectivity prediction module in the DDC-GNN framework, which are the graph convolutional networks (GCN)-based model and the graph auto-encoder (GAE)-based model. Meanwhile, adaptive subgraphs are generated to ensure sufficient contextual information extraction for low-density parts instead of the fixed-size subgraphs. According to the experiments on different datasets, DDC-GNN achieves higher accuracy and is almost five times quicker than those without the density division strategy.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2110560590",
+                        "name": "Qi Zhao"
+                    },
+                    {
+                        "authorId": "2181207284",
+                        "name": "Long Li"
+                    },
+                    {
+                        "authorId": "47237561",
+                        "name": "Yan Chu"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Zhen Yang"
+                    },
+                    {
+                        "authorId": "2284974",
+                        "name": "Zhengkui Wang"
+                    },
+                    {
+                        "authorId": "2733767",
+                        "name": "W. Shan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In [17], they used a simple encoder-decoder network, [24,32] used adversarial learning of GAN, and [48] used a style transfer GAN to synthesize facial images independent of sensitive attributes such as gender and race.",
+                "In terms of algorithmic fairness, works such as [24,32,45] aim to learn the features in the data that are statistically independent of the sensitive attributes, while [18,2] focus on de-biasing the latent space of a generative model to achieve a fair outcome."
+            ],
+            "citingPaper": {
+                "paperId": "7f67c26c25dd266ff9158b6524667b5ca42437c8",
+                "externalIds": {
+                    "DBLP": "conf/accv/HanelKSLUEG22",
+                    "ArXiv": "2207.05727",
+                    "DOI": "10.48550/arXiv.2207.05727",
+                    "CorpusId": 250451227
+                },
+                "corpusId": 250451227,
+                "publicationVenue": {
+                    "id": "a8f26d13-e373-4e48-b57b-ef89bf48f4db",
+                    "name": "Asian Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Asian Conf Comput Vis",
+                        "ACCV"
+                    ],
+                    "url": "http://www.cvl.iis.u-tokyo.ac.jp/afcv/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7f67c26c25dd266ff9158b6524667b5ca42437c8",
+                "title": "Enhancing Fairness of Visual Attribute Predictors",
+                "abstract": "The performance of deep neural networks for image recognition tasks such as predicting a smiling face is known to degrade with under-represented classes of sensitive attributes. We address this problem by introducing fairness-aware regularization losses based on batch estimates of Demographic Parity, Equalized Odds, and a novel Intersection-over-Union measure. The experiments performed on facial and medical images from CelebA, UTKFace, and the SIIM-ISIC melanoma classification challenge show the effectiveness of our proposed fairness losses for bias mitigation as they improve model fairness while maintaining high classification performance. To the best of our knowledge, our work is the first attempt to incorporate these types of losses in an end-to-end training scheme for mitigating biases of visual attribute predictors. Our code is available at https://github.com/nish03/FVAP.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2175779596",
+                        "name": "Tobias Hanel"
+                    },
+                    {
+                        "authorId": "2142335267",
+                        "name": "Nishant Kumar"
+                    },
+                    {
+                        "authorId": "34033578",
+                        "name": "D. Schlesinger"
+                    },
+                    {
+                        "authorId": "31289209",
+                        "name": "Meng Li"
+                    },
+                    {
+                        "authorId": "48789179",
+                        "name": "Erdem Unal"
+                    },
+                    {
+                        "authorId": "38530236",
+                        "name": "A. Eslami"
+                    },
+                    {
+                        "authorId": "2952883",
+                        "name": "S. Gumhold"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "24cfcbb0aa4a039ee89602b2d6d7dc4e78060fac",
+                "externalIds": {
+                    "ArXiv": "2204.08504",
+                    "DBLP": "journals/corr/abs-2204-08504",
+                    "DOI": "10.1145/3485447.3512160",
+                    "CorpusId": 248240141
+                },
+                "corpusId": 248240141,
+                "publicationVenue": {
+                    "id": "e07422f9-c065-40c3-a37b-75e98dce79fe",
+                    "name": "The Web Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Web Conf",
+                        "WWW"
+                    ],
+                    "url": "http://www.iw3c2.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/24cfcbb0aa4a039ee89602b2d6d7dc4e78060fac",
+                "title": "CGC: Contrastive Graph Clustering forCommunity Detection and Tracking",
+                "abstract": "Given entities and their interactions in the web data, which may have occurred at different time, how can we find communities of entities and track their evolution? In this paper, we approach this important task from graph clustering perspective. Recently, state-of-the-art clustering performance in various domains has been achieved by deep clustering methods. Especially, deep graph clustering (DGC) methods have successfully extended deep clustering to graph-structured data by learning node representations and cluster assignments in a joint optimization framework. Despite some differences in modeling choices (e.g., encoder architectures), existing DGC methods are mainly based on autoencoders and use the same clustering objective with relatively minor adaptations. Also, while many real-world graphs are dynamic, previous DGC methods considered only static graphs. In this work, we develop CGC, a novel end-to-end framework for graph clustering, which fundamentally differs from existing methods. CGC learns node embeddings and cluster assignments in a contrastive graph learning framework, where positive and negative samples are carefully selected in a multi-level scheme such that they reflect hierarchical community structures and network homophily. Also, we extend CGC for time-evolving data, where temporal graph clustering is performed in an incremental learning fashion, with the ability to detect change points. Extensive evaluation on real-world graphs demonstrates that the proposed CGC consistently outperforms existing methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2867343",
+                        "name": "Namyong Park"
+                    },
+                    {
+                        "authorId": "2066337266",
+                        "name": "Ryan A. Rossi"
+                    },
+                    {
+                        "authorId": "35910905",
+                        "name": "Eunyee Koh"
+                    },
+                    {
+                        "authorId": "2939241",
+                        "name": "I. Burhanuddin"
+                    },
+                    {
+                        "authorId": "2109571021",
+                        "name": "Sungchul Kim"
+                    },
+                    {
+                        "authorId": "37298954",
+                        "name": "F. Du"
+                    },
+                    {
+                        "authorId": "144741751",
+                        "name": "Nesreen K. Ahmed"
+                    },
+                    {
+                        "authorId": "1702392",
+                        "name": "C. Faloutsos"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "6bdebf88b07e22f9955f9b06590e8ff030697299",
+                "externalIds": {
+                    "DBLP": "journals/nca/TianZLZ22",
+                    "DOI": "10.1007/s00521-022-07136-1",
+                    "CorpusId": 247723355
+                },
+                "corpusId": 247723355,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6bdebf88b07e22f9955f9b06590e8ff030697299",
+                "title": "Image fairness in deep learning: problems, models, and challenges",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51262864",
+                        "name": "Huan Tian"
+                    },
+                    {
+                        "authorId": "32620196",
+                        "name": "Tianqing Zhu"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Wei Liu"
+                    },
+                    {
+                        "authorId": "2134555583",
+                        "name": "Wanlei Zhou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The latest research work has also been on fairness research in unsupervised directions, such as clustering algorithm [7] and recommendation systems [8]."
+            ],
+            "citingPaper": {
+                "paperId": "679414a9b5daa9e36c9c4b86c088bf4f1f726d0d",
+                "externalIds": {
+                    "DBLP": "journals/symmetry/LiYDLQ22",
+                    "DOI": "10.3390/sym14020347",
+                    "CorpusId": 246765240
+                },
+                "corpusId": 246765240,
+                "publicationVenue": {
+                    "id": "1620da87-4387-4b9a-9bf4-22fdf74d4dc3",
+                    "name": "Symmetry",
+                    "type": "journal",
+                    "issn": "2073-8994",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-172134",
+                    "alternate_urls": [
+                        "https://www.mdpi.com/journal/symmetry",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-172134"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/679414a9b5daa9e36c9c4b86c088bf4f1f726d0d",
+                "title": "Fair Outlier Detection Based on Adversarial Representation Learning",
+                "abstract": "Outlier detection aims to identify rare, minority objects in a dataset that are significantly different from the majority. When a minority group (defined by sensitive attributes, such as gender, race, age, etc.) does not represent the target group for outlier detection, outlier detection methods are likely to propagate statistical biases in the data and generate unfair results. Our work focuses on studying the fairness of outlier detection. We characterize the properties of fair outlier detection and propose an appropriate outlier detection method that combines adversarial representation learning and the LOF algorithm (AFLOF). Unlike the FairLOF method that adds fairness constraints to the LOF algorithm, AFLOF uses adversarial networks to learn the optimal representation of the original data while hiding the sensitive attribute in the data. We introduce a dynamic weighting module that assigns lower weight values to data objects with higher local outlier factors to eliminate the influence of outliers on representation learning. Lastly, we conduct comparative experiments on six publicly available datasets. The results demonstrate that compared to the density-based LOF method and the recently proposed FairLOF method, our proposed AFLOF method has a significant advantage in both the outlier detection performance and fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2155334910",
+                        "name": "Shu Li"
+                    },
+                    {
+                        "authorId": "2134500987",
+                        "name": "Jiong Yu"
+                    },
+                    {
+                        "authorId": "46993514",
+                        "name": "Xusheng Du"
+                    },
+                    {
+                        "authorId": "2143774267",
+                        "name": "Yi Lu"
+                    },
+                    {
+                        "authorId": "2053274621",
+                        "name": "Rui Qiu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Additional settings that are less common include fair federated learning (Li et al. 2020b), where algorithms are trained acrossmultiple decentralized devices, fair incremental learning (Zhao et al. 2020a), where novel classes may be added to the learning problem over time, fair active learning\u2026",
+                "Fair task assignment and truthdiscovery (Goel andFaltings 2019; Li et al. 2020d) are different subproblems in the same area, focused on the subdivision of work and the aggregation of answers in crowdsourcing."
+            ],
+            "citingPaper": {
+                "paperId": "0b6582edc24a472c65f5aaf5f69c43047f3c6040",
+                "externalIds": {
+                    "ArXiv": "2202.01711",
+                    "DBLP": "journals/corr/abs-2202-01711",
+                    "DOI": "10.1007/s10618-022-00854-z",
+                    "CorpusId": 246485530
+                },
+                "corpusId": 246485530,
+                "publicationVenue": {
+                    "id": "d263025a-9eaf-443f-9bbf-72377e8d22a6",
+                    "name": "Data mining and knowledge discovery",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Data Mining and Knowledge Discovery",
+                        "Data Min Knowl Discov",
+                        "Data min knowl discov"
+                    ],
+                    "issn": "1384-5810",
+                    "url": "https://www.springer.com/computer/database+management+&+information+retrieval/journal/10618",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/10618",
+                        "http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0b6582edc24a472c65f5aaf5f69c43047f3c6040",
+                "title": "Algorithmic fairness datasets: the story so far",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "35340264",
+                        "name": "Alessandro Fabris"
+                    },
+                    {
+                        "authorId": "152392854",
+                        "name": "S. Messina"
+                    },
+                    {
+                        "authorId": "1508853659",
+                        "name": "Gianmaria Silvello"
+                    },
+                    {
+                        "authorId": "3126083",
+                        "name": "Gian Antonio Susto"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In-processing approaches insert fair constraints or penalties into the training pipeline, so the fair performance can be generalized to inference as achieved during training [50, 1, 52, 48, 27, 30, 20, 35, 36, 44]."
+            ],
+            "citingPaper": {
+                "paperId": "1b20a501c60d83ad0001778d654f45a7a42441fd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-00787",
+                    "ArXiv": "2202.00787",
+                    "CorpusId": 246473194
+                },
+                "corpusId": 246473194,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/1b20a501c60d83ad0001778d654f45a7a42441fd",
+                "title": "Achieving Fairness at No Utility Cost via Data Reweighing",
+                "abstract": "With the fast development of algorithmic governance, fairness has become a compulsory property for machine learning models to suppress unintentional discrimination. In this paper, we focus on the pre-processing aspect for achieving fairness, and propose a data reweighing approach that only adjusts the weight for samples in the training phase. Different from most previous reweighing methods which usually assign a uniform weight for each (sub)group, we granularly model the influence of each training sample with regard to fairness-related quantity and predictive utility, and compute individual weights based on influence under the constraints from both fairness and utility. Experimental results reveal that previous methods achieve fairness at a non-negligible cost of utility, while as a significant advantage, our approach can empirically release the tradeoff and obtain cost-free fairness for equal opportunity. We demonstrate the cost-free fairness through vanilla classifiers and standard training processes, compared to baseline methods on multiple real-world tabular datasets. Code available at https://github.com/brandeis-machine-learning/influence-fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48981982",
+                        "name": "Peizhao Li"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "fdb687518d2e73b275ea28e3a9f0006798e03a0a",
+                "externalIds": {
+                    "DBLP": "journals/eswa/YanSYY22",
+                    "DOI": "10.1016/j.eswa.2021.115973",
+                    "CorpusId": 240156355
+                },
+                "corpusId": 240156355,
+                "publicationVenue": {
+                    "id": "987139ae-a65d-49bb-aaf6-fb764dc40b19",
+                    "name": "Expert systems with applications",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Expert syst appl",
+                        "Expert Systems With Applications",
+                        "Expert Syst Appl"
+                    ],
+                    "issn": "0957-4174",
+                    "url": "https://www.journals.elsevier.com/expert-systems-with-applications/",
+                    "alternate_urls": [
+                        "https://www.sciencedirect.com/journal/expert-systems-with-applications",
+                        "http://www.sciencedirect.com/science/journal/09574174"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/fdb687518d2e73b275ea28e3a9f0006798e03a0a",
+                "title": "Deep correlation mining for multi-task image clustering",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145732825",
+                        "name": "Xiaoqiang Yan"
+                    },
+                    {
+                        "authorId": "153250593",
+                        "name": "Kaiyuan Shi"
+                    },
+                    {
+                        "authorId": "2382085",
+                        "name": "Yangdong Ye"
+                    },
+                    {
+                        "authorId": "2118681645",
+                        "name": "Hui Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "1efac60cc9d5f61c80f06d82acda475fd863b578",
+                "externalIds": {
+                    "DBLP": "journals/tcsv/PengLJH23",
+                    "ArXiv": "2111.05548",
+                    "DOI": "10.1109/TCSVT.2022.3232604",
+                    "CorpusId": 243938352
+                },
+                "corpusId": 243938352,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1efac60cc9d5f61c80f06d82acda475fd863b578",
+                "title": "Deep Attention-Guided Graph Clustering With Dual Self-Supervision",
+                "abstract": "Existing deep embedding clustering methods fail to sufficiently utilize the available off-the-shelf information from feature embeddings and cluster assignments, limiting their performance. To this end, we propose a novel method, namely deep attention-guided graph clustering with dual self-supervision (DAGC). Specifically, DAGC first utilizes a heterogeneity-wise fusion module to adaptively integrate the features of the auto-encoder and the graph convolutional network in each layer and then uses a scale-wise fusion module to dynamically concatenate the multi-scale features in different layers. Such modules are capable of learning an informative feature embedding via an attention-based mechanism. In addition, we design a distribution-wise fusion module that leverages cluster assignments to acquire clustering results directly. To better explore the off-the-shelf information from the cluster assignments, we develop a dual self-supervision solution consisting of a soft self-supervision strategy with a Kullback-Leibler divergence loss and a hard self-supervision strategy with a pseudo supervision loss. Extensive experiments on nine benchmark datasets validate that our method consistently outperforms state-of-the-art methods. Especially, our method improves the ARI by more than 10.29% over the best baseline. The code will be publicly available at https://github.com/ZhihaoPENG-CityU/DAGC.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "47015139",
+                        "name": "Zhihao Peng"
+                    },
+                    {
+                        "authorId": "2146673352",
+                        "name": "Hui Liu"
+                    },
+                    {
+                        "authorId": "2779478",
+                        "name": "Yuheng Jia"
+                    },
+                    {
+                        "authorId": "40630305",
+                        "name": "Junhui Hou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "A notable example is Deep Fair Clustering (DFC) [54]."
+            ],
+            "citingPaper": {
+                "paperId": "564ee18a1afd3016618fe0df2271e924a77b1fc6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2111-03015",
+                    "ArXiv": "2111.03015",
+                    "CorpusId": 242757719
+                },
+                "corpusId": 242757719,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/564ee18a1afd3016618fe0df2271e924a77b1fc6",
+                "title": "Modeling Techniques for Machine Learning Fairness: A Survey",
+                "abstract": "Machine learning models are becoming pervasive in high-stakes applications. Despite their clear benefits in terms of performance, the models could show discrimination against minority groups and result in fairness issues in a decision-making process, leading to severe negative impacts on the individuals and the society. In recent years, various techniques have been developed to mitigate the unfairness for machine learning models. Among them, in-processing methods have drawn increasing attention from the community, where fairness is directly taken into consideration during model design to induce intrinsically fair models and fundamentally mitigate fairness issues in outputs and representations. In this survey, we review the current progress of in-processing fairness mitigation techniques. Based on where the fairness is achieved in the model, we categorize them into explicit and implicit methods, where the former directly incorporates fairness metrics in training objectives, and the latter focuses on refining latent representation learning. Finally, we conclude the survey with a discussion of the research challenges in this community to motivate future exploration.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "101486331",
+                        "name": "Mingyang Wan"
+                    },
+                    {
+                        "authorId": "1759658",
+                        "name": "D. Zha"
+                    },
+                    {
+                        "authorId": "47717322",
+                        "name": "Ninghao Liu"
+                    },
+                    {
+                        "authorId": "49648991",
+                        "name": "Na Zou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "f37ce524fd285280b3a65c2ab67d1808da84920c",
+                "externalIds": {
+                    "ArXiv": "2110.00603",
+                    "DBLP": "journals/corr/abs-2110-00603",
+                    "CorpusId": 238259016
+                },
+                "corpusId": 238259016,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f37ce524fd285280b3a65c2ab67d1808da84920c",
+                "title": "Algorithm Fairness in AI for Medicine and Healthcare",
+                "abstract": "In the current development and deployment of many arti\ufb01cial intelligence (AI) systems in healthcare, algorithm fairness is a challenging problem in delivering equitable care. Recent evaluation of AI models strati\ufb01ed across race sub-populations have revealed inequalities in how patients are diagnosed, given treatments, and billed for healthcare costs. In this perspective article, we summarize the intersectional \ufb01eld of fairness in machine learning through the context of current issues in healthcare, outline how algorithmic biases ( e.g. - image acquisition, genetic variation, intra-observer labeling variability) arise in current clinical work\ufb02ows and their resulting healthcare disparities. Lastly, we also review emerging technology for mitigating bias via federated learning, disentanglement, and model explainability, and their role in AI-SaMD development.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2108279369",
+                        "name": "Richard J. Chen"
+                    },
+                    {
+                        "authorId": "2242468870",
+                        "name": "Tiffany Y. Chen"
+                    },
+                    {
+                        "authorId": "1959705",
+                        "name": "Jana Lipkov\u00e1"
+                    },
+                    {
+                        "authorId": "2109623647",
+                        "name": "Judy J. Wang"
+                    },
+                    {
+                        "authorId": "25259989",
+                        "name": "Drew F. K. Williamson"
+                    },
+                    {
+                        "authorId": "16184125",
+                        "name": "Ming Y. Lu"
+                    },
+                    {
+                        "authorId": "2060422236",
+                        "name": "S. Sahai"
+                    },
+                    {
+                        "authorId": "37122655",
+                        "name": "Faisal Mahmood"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Deep Clustering Several approaches perform clustering on top of feature extracted by deep neural network [11], [18]\u2013 [20].",
+                "Joint Representation Learning and Image Clustering Recent studies [18], [25], [30] have explored the combination of deep",
+                "Another recent study, similar to our work, is deep fair clustering [18], that aims to alleviate sensitive features during data partitioning by balancing the distribution of subgroups in each cluster."
+            ],
+            "citingPaper": {
+                "paperId": "33cbbc4a5e2ef416139bae2acdffc6e3a63ec0ca",
+                "externalIds": {
+                    "DBLP": "conf/icdm/RezaeiDRB22",
+                    "ArXiv": "2109.05232",
+                    "DOI": "10.1109/ICDMW58026.2022.00016",
+                    "CorpusId": 252090022
+                },
+                "corpusId": 252090022,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/33cbbc4a5e2ef416139bae2acdffc6e3a63ec0ca",
+                "title": "Joint Debiased Representation Learning and Imbalanced Data Clustering",
+                "abstract": "One of the most promising approaches for unsu-pervised learning is combining deep representation learning and deep clustering. Some recent works propose to simultaneously learn representation using deep neural networks and perform clustering by defining a clustering loss on top of embedded features. However, these approaches are sensitive to imbalanced data and out-of-distribution samples. As a consequence, these methods optimize clustering by pushing data close to randomly initialized cluster centers. This is problematic when the number of instances varies largely in different classes or a cluster with few samples has less chance to be assigned a good centroid. To overcome these limitations, we introduce a new unsupervised framework for joint debiased representation learning and image clustering. We simultaneously train two deep learning models, a deep representation network that captures the data distribution, and a deep clustering network that learns embedded features and performs clustering. Specifically, the clustering network and learning representation network both take advantage of our proposed statistics pooling block that represents mean, variance, and cardinality to handle the out-of-distribution samples and class imbalance. Our experiments show that using these repre-sentations, one can considerably improve results on imbalanced image clustering across a variety of image datasets. Moreover, the learned representations generalize well when transferred to the out-of-distribution dataset.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "35593430",
+                        "name": "Mina Rezaei"
+                    },
+                    {
+                        "authorId": "51020045",
+                        "name": "Emilio Dorigatti"
+                    },
+                    {
+                        "authorId": "2133609190",
+                        "name": "David R\u00fcgamer"
+                    },
+                    {
+                        "authorId": "2133449619",
+                        "name": "Bernd Bischl"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "7060df1d6b30d4586579a3e5abeba497b818d4ef",
+                "externalIds": {
+                    "DBLP": "journals/datamine/GuptaGKJ23",
+                    "ArXiv": "2109.00708",
+                    "DOI": "10.1007/s10618-023-00928-6",
+                    "CorpusId": 237385198
+                },
+                "corpusId": 237385198,
+                "publicationVenue": {
+                    "id": "d263025a-9eaf-443f-9bbf-72377e8d22a6",
+                    "name": "Data mining and knowledge discovery",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Data Mining and Knowledge Discovery",
+                        "Data Min Knowl Discov",
+                        "Data min knowl discov"
+                    ],
+                    "issn": "1384-5810",
+                    "url": "https://www.springer.com/computer/database+management+&+information+retrieval/journal/10618",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/10618",
+                        "http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7060df1d6b30d4586579a3e5abeba497b818d4ef",
+                "title": "Efficient algorithms for fair clustering with a new notion of fairness",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2118927614",
+                        "name": "Shivam Gupta"
+                    },
+                    {
+                        "authorId": "3402720",
+                        "name": "Ganesh Ghalme"
+                    },
+                    {
+                        "authorId": "2503137",
+                        "name": "N. C. Krishnan"
+                    },
+                    {
+                        "authorId": "8126815",
+                        "name": "Shweta Jain"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "3f879fcb43ef406f973b7713f6caa10a2546ff49",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2108-05499",
+                    "ArXiv": "2108.05499",
+                    "DOI": "10.1145/3474085.3475276",
+                    "CorpusId": 236986853
+                },
+                "corpusId": 236986853,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3f879fcb43ef406f973b7713f6caa10a2546ff49",
+                "title": "Attention-driven Graph Clustering Network",
+                "abstract": "The combination of the traditional convolutional network (i.e., an auto-encoder) and the graph convolutional network has attracted much attention in clustering, in which the auto-encoder extracts the node attribute feature and the graph convolutional network captures the topological graph feature. However, the existing works (i) lack a flexible combination mechanism to adaptively fuse those two kinds of features for learning the discriminative representation and (ii) overlook the multi-scale information embedded at different layers for subsequent cluster assignment, leading to inferior clustering results. To this end, we propose a novel deep clustering method named Attention-driven Graph Clustering Network (AGCN). Specifically, AGCN exploits a heterogeneity-wise fusion module to dynamically fuse the node attribute feature and the topological graph feature. Moreover, AGCN develops a scale-wise fusion module to adaptively aggregate the multi-scale features embedded at different layers. Based on a unified optimization framework, AGCN can jointly perform feature learning and cluster assignment in an unsupervised fashion. Compared with the existing deep clustering methods, our method is more flexible and effective since it comprehensively considers the numerous and discriminative information embedded in the network and directly produces the clustering results. Extensive quantitative and qualitative results on commonly used benchmark datasets validate that our AGCN consistently outperforms state-of-the-art methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "47015139",
+                        "name": "Zhihao Peng"
+                    },
+                    {
+                        "authorId": "2146673352",
+                        "name": "Hui Liu"
+                    },
+                    {
+                        "authorId": "2779478",
+                        "name": "Yuheng Jia"
+                    },
+                    {
+                        "authorId": "40630305",
+                        "name": "Junhui Hou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "4c2e9b401e6fe3b3b81799ae0837048fccaef0a6",
+                "externalIds": {
+                    "ArXiv": "2106.12674",
+                    "DBLP": "journals/corr/abs-2106-12674",
+                    "CorpusId": 235623731
+                },
+                "corpusId": 235623731,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4c2e9b401e6fe3b3b81799ae0837048fccaef0a6",
+                "title": "Fairness via Representation Neutralization",
+                "abstract": "Existing bias mitigation methods for DNN models primarily work on learning debiased encoders. This process not only requires a lot of instance-level annotations for sensitive attributes, it also does not guarantee that all fairness sensitive information has been removed from the encoder. To address these limitations, we explore the following research question: Can we reduce the discrimination of DNN models by only debiasing the classification head, even with biased representations as inputs? To this end, we propose a new mitigation technique, namely, Representation Neutralization for Fairness (RNF) that achieves fairness by debiasing only the task-specific classification head of DNN models. To this end, we leverage samples with the same ground-truth label but different sensitive attributes, and use their neutralized representations to train the classification head of the DNN model. The key idea of RNF is to discourage the classification head from capturing spurious correlation between fairness sensitive information in encoder representations with specific class labels. To address low-resource settings with no access to sensitive attribute annotations, we leverage a bias-amplified model to generate proxy annotations for sensitive attributes. Experimental results over several benchmark datasets demonstrate our RNF framework to effectively reduce discrimination of DNN models with minimal degradation in task-specific performance.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "3432460",
+                        "name": "Mengnan Du"
+                    },
+                    {
+                        "authorId": "2153292652",
+                        "name": "Subhabrata Mukherjee"
+                    },
+                    {
+                        "authorId": "32780441",
+                        "name": "Guanchu Wang"
+                    },
+                    {
+                        "authorId": "2057059798",
+                        "name": "Ruixiang Tang"
+                    },
+                    {
+                        "authorId": "2072795428",
+                        "name": "A. Awadallah"
+                    },
+                    {
+                        "authorId": "48539382",
+                        "name": "Xia Hu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Due to the rising societal concerns, fairness in machine learning has received increasing attention in recent years [7, 16, 21, 32].",
+                "In particular, representation learning with adversary has become a widely-used method in recent years and has demonstrated effectiveness on multiple tasks, including anonymization [11], clustering [32], classification [39], transfer learning [39], and domain adaptation [30, 49]."
+            ],
+            "citingPaper": {
+                "paperId": "575ea16c0ccee925498f8b7a022a635bcbf21e40",
+                "externalIds": {
+                    "DBLP": "conf/kdd/SongLL21",
+                    "ArXiv": "2106.05127",
+                    "DOI": "10.1145/3447548.3467225",
+                    "CorpusId": 235377378
+                },
+                "corpusId": 235377378,
+                "publicationVenue": {
+                    "id": "a0edb93b-1e95-4128-a295-6b1659149cef",
+                    "name": "Knowledge Discovery and Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "KDD",
+                        "Knowl Discov Data Min"
+                    ],
+                    "url": "http://www.acm.org/sigkdd/"
+                },
+                "url": "https://www.semanticscholar.org/paper/575ea16c0ccee925498f8b7a022a635bcbf21e40",
+                "title": "Deep Clustering based Fair Outlier Detection",
+                "abstract": "In this paper, we focus on the fairness issues regarding unsupervised outlier detection. Traditional algorithms, without a specific design for algorithmic fairness, could implicitly encode and propagate statistical bias in data and raise societal concerns. To correct such unfairness and deliver a fair set of potential outlier candidates, we propose Deep Clustering based Fair Outlier Detection (DCFOD) that learns a good representation for utility maximization while enforcing the learnable representation to be subgroup-invariant on the sensitive attribute. Considering the coupled and reciprocal nature between clustering and outlier detection, we leverage deep clustering to discover the intrinsic cluster structure and out-of-structure instances. Meanwhile, an adversarial training erases the sensitive pattern for instances for fairness adaptation. Technically, we propose an instance-level weighted representation learning strategy to enhance the joint deep clustering and outlier detection, where the dynamic weight module re-emphasizes contributions of likely-inliers while mitigating the negative impact from outliers. Demonstrated by experiments on eight datasets comparing to 17 outlier detection algorithms, our DCFOD method consistently achieves superior performance on both the outlier detection validity and two types of fairness notions in outlier detection.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2112979354",
+                        "name": "Hanyu Song"
+                    },
+                    {
+                        "authorId": "48981982",
+                        "name": "Peizhao Li"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Other related works focus on scalable fair clustering [Backurs et al., 2019], fair spectral clustering [Kleindessner et al., 2019], and deep fair clustering [Li et al., 2020].",
+                "We compare FUFS with different baseline methods in terms of feature utility (ACC and NMI) and fairness metrics (Balance and Propotion).",
+                "These four metrics are defined as follows:\nACC =\n\u2211n i=1 \u03b4 (yi,map(y\u0302i))\nn , (8)\nNMI =\n\u2211 c\u2208C \u2211 c\u2032\u2208C\u2032 p (c, c\u2032) log (p (c, c\u2032) /p (c) p (c\u2032))\nmean (H(C), H(C\u2032)) , (9)\nBalance = min i ming |Ci \u2229Xg| |Ci| , (10)\nProportion = \u2211 i maxg |Ci \u2229Xg| |Ci| , (11)\nwhere y\u0302i is the clustering result, yi is the true cluster label, map(\u00b7) is a permutation mapping function that maps yi to the equivalent label from the ground truth and \u03b4 is the indicator function such that \u03b4(x, y) = 1 if x = y, and \u03b4(x, y) = 0 otherwise.",
+                "Meanwhile, we use the widely used metrics Balance [Li et al., 2020] and define a new fairness metric Proportion as a compliment since Balance may be too restrict to reflect the distribution of the clustering.",
+                "We make the following observations:\n\u2022 FUFS significantly outperforms the baseline methods in terms of Balance and Proportion with the best performance in almost all cases and the second best performance in terms of Balance on CRIME.",
+                "These two metrics are used to quantify how well the selected features can eliminate discrimination\u2014the selected features are considered fairer if\n2http://archive.ics.uci.edu/ml/datasets/Communities+and+ Crime+Unnormalized\n3https://www.thearda.com/ 4http://snap.stanford.edu/data/ego-Gplus.html 5https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-\nclassification/\nthey can lead to a more balanced cluster structure toward protected attributes (i.e., higher value of Balance and lower value of Proportion).",
+                "Specifically, on ADOLESCENT and GOOGLE+, FUFS achieves the best results in terms of Balance and Proportion compared with the baseline methods with\nmerely 10% of the total number of features.",
+                "Due to space limit, we only show the parameter study results on GOOGLE+ in terms of ACC and Balance.",
+                "Meanwhile, we use the widely adopted metrics Balance [18] and define a new fairness metric Proportion to quantify fairness\u2014the selected features are considered fairer with higher value of Balance and lower value of Proportion.",
+                "When the parameter \u03b1 increases, the algorithm becomes more partial to the fairness consideration with decreasing ACC and increasing Balance.",
+                "Meanwhile, the fairness performance (w.r.t. Balance and Proportion) is the best when only 10% of features are selected (it should be noted that lower values of Proportion denotes fairer results).",
+                "Other related works focus on scalable fair clustering [2], fair spectral clustering [14], and deep fair clustering [18, 26]."
+            ],
+            "citingPaper": {
+                "paperId": "26b66792d6f7af8d901514ed3818dd99ffd315e6",
+                "externalIds": {
+                    "ArXiv": "2106.02216",
+                    "DBLP": "journals/corr/abs-2106-02216",
+                    "DOI": "10.1145/3459637.3482106",
+                    "CorpusId": 235352485
+                },
+                "corpusId": 235352485,
+                "publicationVenue": {
+                    "id": "7431ff67-91dc-41fa-b322-1b1ca657025f",
+                    "name": "International Conference on Information and Knowledge Management",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conference on Information and Knowledge Management",
+                        "Conf Inf Knowl Manag",
+                        "Int Conf Inf Knowl Manag",
+                        "CIKM"
+                    ],
+                    "url": "http://www.cikm.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/26b66792d6f7af8d901514ed3818dd99ffd315e6",
+                "title": "Fairness-Aware Unsupervised Feature Selection",
+                "abstract": "Feature selection is a prevalent data preprocessing paradigm for various learning tasks. Due to the expensive cost of acquiring supervision information, unsupervised feature selection sparks great interests recently. However, existing unsupervised feature selection algorithms do not have fairness considerations and suffer from a high risk of amplifying discrimination by selecting features that are over associated with protected attributes such as gender, race, and ethnicity. In this paper, we make an initial investigation of the fairness-aware unsupervised feature selection problem and develop a principled framework, which leverages kernel alignment to find a subset of high-quality features that can best preserve the information in the original feature space while being minimally correlated with protected attributes. Specifically, different from the mainstream in-processing debiasing methods, our proposed framework can be regarded as a model-agnostic debiasing strategy that eliminates biases and discrimination before downstream learning algorithms are involved. Experimental results on real-world datasets demonstrate that our framework achieves a good trade-off between feature utility and promoting feature fairness.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2055645775",
+                        "name": "Xiaoying Xing"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    },
+                    {
+                        "authorId": "2127380428",
+                        "name": "Chen Chen"
+                    },
+                    {
+                        "authorId": "1737121128",
+                        "name": "Jundong Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "We first evaluate our work on two visual data sets with binary PSV that has been used in recent work [18]: 1) MNIST-USPS consists of 67291 training images of hand-written digits.",
+                "Comparing our results with the recent deep fair clustering works [29, 18] we can see that our approach consistently outperforms these two baselines in terms of both clustering performance and fairness.",
+                "Recently, [18] encodes the fairness constraints as an adversarial loss and concatenates the fairness loss to a centroid-based deep clustering objective as a unified model.",
+                "For a fair comparison with non-deep clustering baselines, we use pre-trained auto-encoder\u2019s features like [18].",
+                "For deep fair clustering baselines, we compare our work with the latest work [18] and the geometric-based fair clustering [29].",
+                "The most recent work (and only other work) [18] proposes a deep fair visual clustering model with adversarial learning to encourage the clustering partition to be statistically independent of each sensitive attribute."
+            ],
+            "citingPaper": {
+                "paperId": "76d8108855f30b8a66a84e65f9197592fcc3229e",
+                "externalIds": {
+                    "ArXiv": "2105.14146",
+                    "DBLP": "journals/corr/abs-2105-14146",
+                    "CorpusId": 235254584
+                },
+                "corpusId": 235254584,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/76d8108855f30b8a66a84e65f9197592fcc3229e",
+                "title": "Deep Fair Discriminative Clustering",
+                "abstract": "Deep clustering has the potential to learn a strong representation and hence better clustering performance compared to traditional clustering methods such as $k$-means and spectral clustering. However, this strong representation learning ability may make the clustering unfair by discovering surrogates for protected information which we empirically show in our experiments. In this work, we study a general notion of group-level fairness for both binary and multi-state protected status variables (PSVs). We begin by formulating the group-level fairness problem as an integer linear programming formulation whose totally unimodular constraint matrix means it can be efficiently solved via linear programming. We then show how to inject this solver into a discriminative deep clustering backbone and hence propose a refinement learning algorithm to combine the clustering goal with the fairness objective to learn fair clusters adaptively. Experimental results on real-world datasets demonstrate that our model consistently outperforms state-of-the-art fair clustering algorithms. Our framework shows promising results for novel clustering tasks including flexible fairness constraints, multi-state PSVs and predictive clustering.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2108699129",
+                        "name": "Hongjing Zhang"
+                    },
+                    {
+                        "authorId": "143763341",
+                        "name": "I. Davidson"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "clustering [22, 30, 42, 48, 50, 51, 52] is a natural way to solve the data annotation problem so as to make better use of massive unlabeled data."
+            ],
+            "citingPaper": {
+                "paperId": "5484a3810dce9d8fc9fba554812032a69acb9362",
+                "externalIds": {
+                    "ArXiv": "2103.13225",
+                    "DBLP": "journals/corr/abs-2103-13225",
+                    "DOI": "10.1109/CVPR46437.2021.00897",
+                    "CorpusId": 232335689
+                },
+                "corpusId": 232335689,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5484a3810dce9d8fc9fba554812032a69acb9362",
+                "title": "Structure-Aware Face Clustering on a Large-Scale Graph with 107 Nodes",
+                "abstract": "Face clustering is a promising method for annotating un-labeled face images. Recent supervised approaches have boosted the face clustering accuracy greatly, however their performance is still far from satisfactory. These methods can be roughly divided into global-based and local-based ones. Global-based methods suffer from the limitation of training data scale, while local-based ones are difficult to grasp the whole graph structure information and usually take a long time for inference. Previous approaches fail to tackle these two challenges simultaneously. To address the dilemma of large-scale training and efficient inference, we propose the STructure-AwaRe Face Clustering (STAR-FC) method. Specifically, we design a structure-preserved subgraph sampling strategy to explore the power of large-scale training data, which can increase the training data scale from 105 to 107. During inference, the STAR-FC performs efficient full-graph clustering with two steps: graph parsing and graph refinement. And the concept of node intimacy is introduced in the second step to mine the local structural information. The STAR-FC gets 91.97 pairwise F-score on partial MS1M within 310s which surpasses the state-of-the-arts. Furthermore, we are the first to train on very large-scale graph with 20M nodes, and achieve superior inference results on 12M testing data. Overall, as a simple and effective method, the proposed STAR-FC provides a strong baseline for large-scale face clustering. Code is available at https://sstzal.github.io/STAR-FC/.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2072820693",
+                        "name": "Shuai Shen"
+                    },
+                    {
+                        "authorId": "7878225",
+                        "name": "Wanhua Li"
+                    },
+                    {
+                        "authorId": "2118932732",
+                        "name": "Zheng Zhu"
+                    },
+                    {
+                        "authorId": "143986385",
+                        "name": "Guan Huang"
+                    },
+                    {
+                        "authorId": "40359161",
+                        "name": "Dalong Du"
+                    },
+                    {
+                        "authorId": "1697700",
+                        "name": "Jiwen Lu"
+                    },
+                    {
+                        "authorId": "49178343",
+                        "name": "Jie Zhou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "b102f25a9f856ea17a0f9ac24ba5cacf76618da5",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2006-09565",
+                    "MAG": "3035854337",
+                    "ArXiv": "2006.09565",
+                    "CorpusId": 219721071
+                },
+                "corpusId": 219721071,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b102f25a9f856ea17a0f9ac24ba5cacf76618da5",
+                "title": "Mining Label Distribution Drift in Unsupervised Domain Adaptation",
+                "abstract": "Unsupervised domain adaptation targets to transfer task knowledge from labeled source domain to related yet unlabeled target domain, and is catching extensive interests from academic and industrial areas. Although tremendous efforts along this direction have been made to minimize the domain divergence, unfortunately, most of existing methods only manage part of the picture by aligning feature representations from different domains. Beyond the discrepancy in feature space, the gap between known source label and unknown target label distribution, recognized as label distribution drift, is another crucial factor raising domain divergence, and has not been paid enough attention and well explored. From this point, in this paper, we first experimentally reveal how label distribution drift brings negative effects on current domain adaptation methods. Next, we propose Label distribution Matching Domain Adversarial Network (LMDAN) to handle data distribution shift and label distribution drift jointly. In LMDAN, label distribution drift problem is addressed by the proposed source samples weighting strategy, which select samples to contribute to positive adaptation and avoid negative effects brought by the mismatched in label distribution. Finally, different from general domain adaptation experiments, we modify domain adaptation datasets to create the considerable label distribution drift between source and target domain. Numerical results and empirical model analysis show that LMDAN delivers superior performance compared to other state-of-the-art domain adaptation methods under such scenarios.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "48981982",
+                        "name": "Peizhao Li"
+                    },
+                    {
+                        "authorId": "2788685",
+                        "name": "Zhengming Ding"
+                    },
+                    {
+                        "authorId": "2754632",
+                        "name": "Hongfu Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": null,
+                "externalIds": null,
+                "corpusId": "260085537",
+                "publicationVenue": null,
+                "url": null,
+                "title": "Supplementary Material for Deep Fair Clustering via Maximizing and Minimizing Mutual Information: Theory, Algorithm and Metric",
+                "abstract": null,
+                "year": 2023,
+                "authors": []
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "7038818aa468922d95bfee64462e85f6fa154de3",
+                "externalIds": {
+                    "CorpusId": 261701255
+                },
+                "corpusId": 261701255,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/7038818aa468922d95bfee64462e85f6fa154de3",
+                "title": "Une revue syst\u00e9matique de la litt\u00e9rature autour du biais, de l\u2019\u00e9quit\u00e9 et de l\u2019explicabilit\u00e9",
+                "abstract": "This work provides an analysis of a bibliography concerning the bias, fairness and explainability of AI algorithms between 2015 and 2022. Using a Natural Language Processing approach, specifically LDA, we extracted 8 topics covered by this bibliography. An analysis of the frequency of these topics showed a faster increase in the number and proportion of publications dealing mainly with explainabi-lity and fairness in AI algorithms. A comparison revealed a similarity between our results and those provided by BER-Topic",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "115761747",
+                        "name": "M. Ndao"
+                    },
+                    {
+                        "authorId": "2075608264",
+                        "name": "G. Youness"
+                    },
+                    {
+                        "authorId": "119564915",
+                        "name": "N. Niang"
+                    },
+                    {
+                        "authorId": "2084668211",
+                        "name": "G. Saporta"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2018), unsupervised learning (Chierichetti et al., 2017; Li et al., 2020; Backurs et al., 2019), ranking (Zehlike et al.",
+                "\u2026paradigms of supervised learning (Hardt et al., 2016; Zhao et al., 2020; Madras et al., 2018), unsupervised learning (Chierichetti et al., 2017; Li et al., 2020; Backurs et al., 2019), ranking (Zehlike et al., 2017), and sequential decision making (Joseph et al., 2016; Gillen et al., 2018;\u2026"
+            ],
+            "citingPaper": {
+                "paperId": "e1aeac9d653b4af6ee79e03671c48b20f1a67379",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-01528",
+                    "DOI": "10.48550/arXiv.2211.01528",
+                    "CorpusId": 253265017
+                },
+                "corpusId": 253265017,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e1aeac9d653b4af6ee79e03671c48b20f1a67379",
+                "title": "Fair and Optimal Classification via Transports to Wasserstein-Barycenter",
+                "abstract": "Fairness in automated decision-making systems has gained increasing attention as their applications expand to real-world high-stakes domains. To facilitate the design of fair ML systems, it is essential to understand the potential trade-o\ufb00s between fairness and predictive power, and the construction of the optimal predictor under a given fairness constraint. In this paper, for general classi\ufb01cation problems under the group fairness criterion of demographic parity (DP), we precisely characterize the trade-o\ufb00 between DP and classi\ufb01cation accuracy, referred to as the minimum cost of fairness. Our insight comes from the key observation that \ufb01nding the optimal fair classi\ufb01er is equivalent to solving a Wasserstein-barycenter problem under (cid:96) 1 -norm restricted to the vertices of the probability simplex. Inspired by our characterization, we provide a construction of an optimal fair classi\ufb01er achieving this minimum cost via the composition of the Bayes regressor and optimal transports from its output distributions to the barycenter. Our construction naturally leads to an algorithm for post-processing any pre-trained predictor to satisfy DP fairness, complemented with \ufb01nite sample guarantees. Experiments on real-world datasets verify and demonstrate the e\ufb00ectiveness of our approaches.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": null,
+                        "name": "Ruicheng Xian"
+                    },
+                    {
+                        "authorId": "2178278349",
+                        "name": "Lang Yin"
+                    },
+                    {
+                        "authorId": "1390716752",
+                        "name": "Han Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Following otherwork indeep clustering, DFCemploys a clustering regularizer to strengthen prediction confidence and to prevent large cluster sizes [1].",
+                "The preservation loss, which was proposed by the authors [1] is given as follows:",
+                "Again following the literature, the authors have chosen to use the Student t-distribution for soft cluster assignment [1].",
+                "However, there exists a trade-off between the fairness and the performance of machine learning algorithms in a given task [1]."
+            ],
+            "citingPaper": {
+                "paperId": "76f46ce409913ca7fef092dd73d0b571651ed798",
+                "externalIds": {
+                    "CorpusId": 237249335
+                },
+                "corpusId": 237249335,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/76f46ce409913ca7fef092dd73d0b571651ed798",
+                "title": "[Re] Deep Fair Clustering for Visual Learning",
+                "abstract": "Deep Fair Clustering (DFC) aims to provide a clustering algorithm that is fair, clusteringfavourable, andwhich canbeused onhigh-dimensional and large-scale data. In existing frameworks there is a trade-offbetween clustering quality and fairness. In this reportwe aim to reproduce a selection of the results of DFC; using two of four datasets and all four metrics that were used in the original paper, namely accuracy, Normalized Mutual Information (NMI), balance and entropy. We use the authors\u02bc implementation and check whether it is consistent with the description in the paper. As extensions to the original paper we look into the effects of 1) using no pretrained cluster centers, 2) using different divergence functions as clustering regularizers and 3) using non-binary/corrupted sensitive attributes.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2180326600",
+                        "name": "Tobias Teule"
+                    },
+                    {
+                        "authorId": "2180324979",
+                        "name": "Nienke Reints"
+                    },
+                    {
+                        "authorId": "2129410790",
+                        "name": "Christelle Gerges"
+                    },
+                    {
+                        "authorId": "2180319932",
+                        "name": "Pauline Baanders"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "[111] developed a scalable, deep clustering model that used adversarial loss to constrain learning and ensure fairness while maintaining cluster quality.",
+                "In papers, [101], [102], [111] the authors constrained the deep clustering process itself, optimizing the trade-off between cluster quality and fairness through joint optimization, adversarial learning or other similar approaches.",
+                "To the best of our knowledge, there are only three research works covering deep fair clustering: [101], [102], [111].",
+                "Entropy is a fairness metric that was defined in [111], and has only been exclusively used for fairness in the context of deep clustering models."
+            ],
+            "citingPaper": {
+                "paperId": "554b3fd2342476f46f4877fa235e7fb9bf67ec12",
+                "externalIds": {
+                    "DBLP": "journals/access/ChhabraMM21",
+                    "DOI": "10.1109/ACCESS.2021.3114099",
+                    "CorpusId": 238222052
+                },
+                "corpusId": 238222052,
+                "publicationVenue": {
+                    "id": "2633f5b2-c15c-49fe-80f5-07523e770c26",
+                    "name": "IEEE Access",
+                    "type": "journal",
+                    "issn": "2169-3536",
+                    "url": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=6287639"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/554b3fd2342476f46f4877fa235e7fb9bf67ec12",
+                "title": "An Overview of Fairness in Clustering",
+                "abstract": "Clustering algorithms are a class of unsupervised machine learning (ML) algorithms that feature ubiquitously in modern data science, and play a key role in many learning-based application pipelines. Recently, research in the ML community has pivoted to analyzing the fairness of learning models, including clustering algorithms. Furthermore, research on fair clustering varies widely depending on the choice of clustering algorithm, fairness definitions employed, and other assumptions made regarding models. Despite this, a comprehensive survey of the field does not exist. In this paper, we seek to bridge this gap by categorizing existing research on fair clustering, and discussing possible avenues for future work. Through this survey, we aim to provide researchers with an organized overview of the field, and motivate new and unexplored lines of research regarding fairness in clustering.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "152593835",
+                        "name": "Anshuman Chhabra"
+                    },
+                    {
+                        "authorId": "2130180488",
+                        "name": "Karina Masalkovait\u0117"
+                    },
+                    {
+                        "authorId": "144752813",
+                        "name": "P. Mohapatra"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Techniques for bias assessment and debiasing should be employed whenever 196 possible to ensure this remains the case [32, 33, 34, 35]."
+            ],
+            "citingPaper": {
+                "paperId": "3584e782f8e5214e3374ac1ea57d4e789c3adbc1",
+                "externalIds": {
+                    "CorpusId": 237249837
+                },
+                "corpusId": 237249837,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3584e782f8e5214e3374ac1ea57d4e789c3adbc1",
+                "title": "The Promise and Perils of Reward Specification via Grounded Natural Language",
+                "abstract": "Learning from visually grounded textual descriptions offers promise to 1 achieve natural reward shaping for RL tasks. CLIP excels at grounding, yet comes 2 with considerable large-scale data bias perils. We advocate modular and debiasing 3 methods to limit the latter, show a factored model which learns a perceptual task 4 given only goal text, and discuss a research roadmap towards general grounding. 5 Introduction Reinforcement learning offers one of the most appealing premises in the study of 6 AI: from a reward signal alone, algorithms which learn optimal policies that maximize expected 7 reward can learn to perform navigation, dexterous manipulation, and a host of other impactful 8 tasks. Yet discovering, or specifying, a reward function for a given task is often a very challenging 9 problem, especially when one is considering agents that can learn from un-instrumented environments, 10 e.g., from raw image observations alone. We wish to have an agent that can learn purely from 11 pixels, with no access to the underlying state of the environment at any point during learning or 12 task execution. Achieving this goal without access to an instrumented reward function has been 13 exceedingly challenging. 14 Previous efforts have explored image-based goal specification, with significant successes in visual 15 navigation and manipulation tasks [1, 2, 3, 4]. Yet existing image-based goal specification paradigms 16 are limited in that a goal is typically limited to a particular scene instance in an environment, rather 17 than a semantic goal comprising multiple possible scene configurations. One can use image-based 18 reward specification to cause a robot agent to navigate to a particular chair next to a specific tall plant, 19 but that agent may not always succeed at the generic task of \u201cgo to a chair next to a tall flowering 20 plant\u201d: e.g., if the goal specification image shows a red chair next to a plant with a yellow flower 21 the agent may navigate away from a scene with a blue chair next to a red flower, depending on 22 the model\u2019s underlying image representation. To be sure that the true goal is properly specified 23 irrespective of the invariances of the model\u2019s underlying perceptual representation, a user may have 24 to provide a set of goal image examples that cover the variation of the target concept, potentially a 25 very expensive undertaking to collect or generate. 26 We advocate semantic reward specification via grounded natural language, where a user describes a 27 goal configuration in the world using a natural language description referring to entities in the world. 28 This direction has long been a \u201choly grail\u201d of AI research and a presumed capability of AI science 29 fiction\u2014the ability to instruct a robot with natural language\u2014yet attempts have been limited by the 30 state of the art in grounded language perception. It also falls under the general umbrella of leveraging 31 large-scale passive data to bootstrap embodied learning, where we rely on language as a means to 32 provide necessary reward shaping missing in visual data alone. 33 Several previous efforts train reward functions or policies that take natural language as input for goal 34 description [5, 6, 7, 8, 9, 10, 11]. They all however rely on reward signals that have access to state 35 of the system or demonstrations of the task distribution they are training on. There are works that 36 use human videos to learn reward functions to train their agent with [11, 12, 13], but they require a 37 curated dataset of humans performing the tasks. 38 Recently however, the advent of large-scale multimodal training data, together with large capacity 39 language and vision deep learning models, has significantly advanced the landscape of the possible. 40 A steady series of innovations have advanced grounded language modeling, from early work on 41 multimodal translation and fusion models [14, 15, 16], to large-scale joint embedding models [17, 18], 42 Submitted to the 5th Conference on Robot Learning (CoRL 2021). Do not distribute. to the plethora of multimodal transformer models currently under investigation [19, 20, 21, 22]. CLIP, 43 in particular, demonstrated a transformative advance on zero-shot object recognition [18]. 44 We can now consider specifying a goal state to a robot by simply offering a description of the goal 45 configuration in natural language, and using the CLIP embedding dot product with an observed image 46 to evaluate proximity to goal state. Surprisingly, this can work in simple cases\u2013e.g., see the top 47 example in Figure 3. But on closer inspection, one relies on naive CLIP-based reward specification at 48 one\u2019s peril: performance diminishes with complex captioned scenes involving spatial relationships 49 and on domains that differ from web images as shown in [18] and the bottom example in that figure. 50",
+                "year": 2021,
+                "authors": []
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "ecafddebe2320008b07b3678efa4e88657643028",
+                "externalIds": {
+                    "CorpusId": 237262673
+                },
+                "corpusId": 237262673,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ecafddebe2320008b07b3678efa4e88657643028",
+                "title": "Reproducibility Report: Deep Fair Clustering for Visual Learning",
+                "abstract": "Deep Fair Clustering (DFC) aims to provide a clustering algorithm that is fair, clustering-favourable, and which can be 3 used on high-dimensional and large-scale data. In existing frameworks there is a trade-off between clustering quality 4 and fairness. In this report we aim to reproduce a selection of the results of DFC; using two of four datasets and all four 5 metrics that were used in the original paper, namely accuracy, Normalized Mutual Information (NMI), balance and 6 entropy. We use the authors\u2019 implementation and check whether it is consistent with the description in the paper. As 7 extensions to the original paper we look into the effects of 1) using no pretrained cluster centers, 2) using different 8 divergence functions as clustering regularizers and 3) using non-binary/corrupted sensitive attributes. 9",
+                "year": 2021,
+                "authors": []
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "b) Deep Clustering: Several approaches perform clustering on top of feature extracted by deep neural network [12], [19]\u2013[21].",
+                "Another recent study, similar to our work, is deep fair clustering [19], that aims to alleviate sensitive features during data partitioning by balancing the distribution of subgroups in each cluster.",
+                "In recent years, several studies [19], [24], [29] have explored the combination of deep clustering with representation learning."
+            ],
+            "citingPaper": {
+                "paperId": "247b878effea61ee7da4dbe6e3a629bf6aa5feeb",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2109-05232",
+                    "CorpusId": 237492068
+                },
+                "corpusId": 237492068,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/247b878effea61ee7da4dbe6e3a629bf6aa5feeb",
+                "title": "Learning Statistical Representation with Joint Deep Embedded Clustering",
+                "abstract": "\u2014 One of the most promising approaches for unsu- pervised learning is combining deep representation learning and deep clustering. Some recent works propose to simultaneously learn representation using deep neural networks and perform clustering by de\ufb01ning a clustering loss on top of embedded features. However, these approaches are sensitive to imbalanced data and out-of-distribution samples. As a consequence, these methods optimize clustering by pushing data close to randomly initialized cluster centers. This is problematic when the number of instances varies largely in different classes or a cluster with few samples has less chance to be assigned a good cen- troid. To overcome these limitations, we introduce StatDEC, a new unsupervised framework for joint statistical representation learning and clustering. In our framework, we simultaneously train two deep learning models, a deep statistics network that captures the data distribution, and a deep clustering network that learns embedded features and performs clustering by explicitly de\ufb01ning a clustering loss. Speci\ufb01cally, the clustering network and learning representation network both take advantage of our proposed statistics pooling layer that represents mean, variance, and cardinality to handle the out-of-distribution samples and class imbalance. Our experiments show that using these representations, one can considerably improve results on imbalanced image clustering across a variety of image datasets. Moreover, the learned representations generalize well when transferred to the out-of-distribution dataset.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "35593430",
+                        "name": "Mina Rezaei"
+                    },
+                    {
+                        "authorId": "51020045",
+                        "name": "Emilio Dorigatti"
+                    },
+                    {
+                        "authorId": "2126503454",
+                        "name": "David Ruegamer"
+                    },
+                    {
+                        "authorId": "1686924",
+                        "name": "B. Bischl"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Debiasing algorithms: To mitigate biases of DL systems, many debiasing algorithms or bias resistant networks have been proposed and evaluated [10, 15, 16, 17, 45, 47, 54, 59, 66, 83, 98, 99, 106]."
+            ],
+            "citingPaper": {
+                "paperId": "dc1623fdc58b8114e0e7cb84a1232c59d5353252",
+                "externalIds": {
+                    "DBLP": "conf/nips/QianPLHKTYCS21",
+                    "CorpusId": 244101462
+                },
+                "corpusId": 244101462,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/dc1623fdc58b8114e0e7cb84a1232c59d5353252",
+                "title": "Are My Deep Learning Systems Fair? An Empirical Study of Fixed-Seed Training",
+                "abstract": "Deep learning (DL) systems have been gaining popularity in critical tasks such as credit evaluation and crime prediction. Such systems demand fairness. Recent work shows that DL software implementations introduce variance: identical DL training runs (i.e., identical network, data, configuration, software, and hardware) with a fixed seed produce different models. Such variance could make DL models and networks violate fairness compliance laws, resulting in negative social impact. In this paper, we conduct the first empirical study to quantify the impact of software implementation on the fairness and its variance of DL systems. Our study of 22 mitigation techniques and five baselines reveals up to 12.6% fairness variance across identical training runs with identical seeds. In addition, most debiasing algorithms have a negative impact on the model such as reducing model accuracy, increasing fairness variance, or increasing accuracy variance. Our literature survey shows that while fairness is gaining popularity in artificial intelligence (AI) related conferences, only 34.4% of the papers use multiple identical training runs to evaluate their approach, raising concerns about their results\u2019 validity. We call for better fairness evaluation and testing protocols to improve fairness and fairness variance of DL systems as well as DL research validity and reproducibility at large.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2112296840",
+                        "name": "Shangshu Qian"
+                    },
+                    {
+                        "authorId": "49976542",
+                        "name": "H. Pham"
+                    },
+                    {
+                        "authorId": "2492099",
+                        "name": "Thibaud Lutellier"
+                    },
+                    {
+                        "authorId": "1753512618",
+                        "name": "Zeou Hu"
+                    },
+                    {
+                        "authorId": "2164069492",
+                        "name": "Jungwon Kim"
+                    },
+                    {
+                        "authorId": "2106349652",
+                        "name": "Lin Tan"
+                    },
+                    {
+                        "authorId": "40508553",
+                        "name": "Yaoliang Yu"
+                    },
+                    {
+                        "authorId": "49252617",
+                        "name": "Jiahao Chen"
+                    },
+                    {
+                        "authorId": "36532736",
+                        "name": "Sameena Shah"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "\u2013 Fair clustering for visual learning (Li et al., 2020)."
+            ],
+            "citingPaper": {
+                "paperId": "b13180d6580628e8150408c0e157cf3cb1c40085",
+                "externalIds": {
+                    "DBLP": "phd/us/Zhao21d",
+                    "DOI": "10.1184/r1/14394497.v1",
+                    "CorpusId": 250499636
+                },
+                "corpusId": 250499636,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/b13180d6580628e8150408c0e157cf3cb1c40085",
+                "title": "Towards a Unified Framework for Learning and Reasoning",
+                "abstract": "The success of supervised machine learning in recent years crucially hinges on the availability of large-scale and unbiased data, which is often time-consuming and expensive to collect. Recent advances in deep learning focus on learning rich and invariant representations that have found abundant applications in domain adaptation, multitask learning, algorithmic fairness, and machine translations, just to name a few. However, it is not clear what price we have to pay in terms of task utility for such universal representations. On the other hand, learning is only one of the two most fundamental cognitive abilities of intelligent agents. An intelligent agent needs to have both the ability to learn from the experience, and the ability to reason from what has been learned. However, classic symbolic reasoning cannot model the inherent uncertainty that ubiquitously exists, and it is not robust to noisy observations. Perhaps more fundamentally, reasoning is computationally intractable in general. As a result, learning, which often takes reasoning as a sub-procedure, is also hard. Building on the fundamental concepts from information theory and theoretical computer science, this thesis aims to understand the inherent tradeoff between utility and invariance in learning the representations, and to develop efficient algorithms for learning tractable and exact probabilistic inference machines. This thesis contains two parts. The first part is devoted to understanding and learning invariant representations. In particular, we will focus on understanding the costs of existing invariant representations by characterizing a fundamental tradeoff between invariance and utility. First, we will use domain adaptation as an example to both theoretically and empirically show such tradeoff in achieving small joint generalization error. This result also implies an inherent tradeoff between demographic parity, a statistical notion of group fairness, and utility in both classification and regression settings. Going beyond, we will further show that such general tradeoff exists in learning with structured data. In particular, we shall derive an impossibility theorem for universal machine translation by learning language-invariant representations. Second, we will focus on designing learning algorithms to escape the existing tradeoff and to utilize the benefits of invariant representations. We will show how the algorithm can be used to guarantee equalized treatment of individuals between groups, and discuss what additional problem structure it requires to permit efficient domain adaptation and machine translation through learning invariant representations. The second part of the thesis is devoted to learning tractable and exact circuits for probabilistic reasoning. It is well-known that exact marginal and conditional inference in classic probabilistic graphical models (PGMs), including Bayesian Networks (BNs) and Markov Networks (MNs), is #P-complete. As a result, practitioners usually need to resort to various approximate inference schemes to ensure computational tractability. Probabilistic circuits, which include Sum-Product Networks (SPNs) as a special case, have been proposed as tractable deep models for exact probabilistic inference. They distinguish themselves from other types of probabilistic graphical models by the fact that inference can be done exactly in linear time with respect to the size of the circuit. This has generated a lot of interest since inference is not only a powerful tool to reason under uncertainty, but also a core task for parameter estimation and structure learning. In this part, we will concentrate on both theoretical and practical parts of learning tractable probabilistic circuits. In particular, we will investigate the representational power of SPNs, as well as its parameter learning procedures in both online and offline settings. Acknowledgments First and foremost, I am greatly indebted to my advisor, Geoff Gordon, who, throughout my five-year journey at Carnegie Mellon University, has provided me with constant supports, insightful discussions, as well as the freedom that allows me to pursue interesting research problems to fulfill my own curiosity. In addition to being a fantastic researcher, Geoff is also the kindest and most supportive individual that I have had the pleasure of working with. He has a great sense of research taste, which also shapes mine to work on important and elegant questions. I would like to sincerely thank Geoff for his intuitive insights in understanding complex problems, for sharing with me his broad knowledge in almost every aspect of machine learning, and for his unwavering faith in me that pushes me to become a better researcher. I hope that I could become a researcher, an advisor and a person like him in the future. I am very grateful to Ruslan Salakhutdinov, Barnab\u00e1s P\u00f3czos and Tommi S. Jaakkola for all the help they have provided during my Ph.D., including serving as my thesis committee members. Russ has been a brilliant collaborator on a number of research projects during my Ph.D. He is extremely knowledgeable and understands almost all aspects of deep learning. I would like to thank him for his tremendous help in research and his countless support in my career. Barnab\u00e1s has been a great friend and mentor. He is always willing to listen to me on both research and life, and give me his advice and thoughts. Tommi hosted me for a visit at MIT, the results of which include a research paper on the information-theoretic characterization of the fundamental limit of invariant representation learning, and another one on using adversarial learning to defend attribute inference attacks on graphs. During my visit, his sharpness and deep insights helped me achieve a better and clearer understanding about the tradeoff problem I was working on. I would also like to thank my master thesis advisor, Pascal Poupart at the University of Waterloo, who led me to explore this fantastic field of research on tractable probabilistic reasoning, for his patience and encouragement, and his endless support and guidance. Pascal has always been a kind mentor and friend, and it is my privilege to be able to continue collaborating with him after graduating from Waterloo. The results of our collaboration are presented in Chapter 9. A huge thanks goes to all of my other collaborators throughout my Ph.D.: Tameem Adel, Brandon Amos, Jianfeng Chi, Adam Coates, Remi Tachet des Combes, Jo\u00e3o P. Costeira, Amanda Coston, Chen Dan, Junjie Hu, Priyank Jaini, Stefanie Jegelka, Nebojsa Jojic, Chen Liang, Chin-Hui Lee, Peizhao Li, Peiyuan Alex Liao, Hongfu Liu, Jos\u00e9 M. F. Moura, Renato Negrinho, Rema Padman, Abdullah Rashwan, Pradeep Ravikumar, Andrej Risteski, Nihar B. Shah, Jian Shen, Xiaofei Shi, Alexander J. Smola, Otilia Stretcu, Ivan Tashev, Yuan Tian, Yao-Hung Tsai, Richard E. Turner, Wen Wang, Yu-Xiang Wang, Guanhang Wu, Keyulu Xu, Yichong Xu, Makoto Yamada, Jianbo Ye, Shuayb Zarar, Kun Zhang, Shanghang Zhang, Zhenyao Zhu, and Honglei Zhuang. It would not have been as fun or as productive without their help. Special thanks goes to Andrej Risteski, Nihar B. Shah, Yao-Hung Tsai and Yichong Xu. It has been my great privilege to be able to work with them, from whom I not only benefit inspiring discussions, but also countless fun moments in life. I also want to thank everyone in the Machine Learning Department at Carnegie Mellon University, who contribute to making it a vibrant and fun place to pursue graduate studies. In particular, I would like to thank Diane Stidle and other amazing staff in our department for their endless efforts in making our everyday life in the department easy and enjoyable. Special thanks to all my friends at CMU: Siddharth Ancha, Ifigeneia Apostolopoulou, Shaojie Bai, Devendra Chaplot, Maria De-Arteaga, Carlton Downey, Simon Du, Avinava Dubey, William Guss, Ahmed Hefny, Hanzhang Hu, Zhiting Hu, Lisa Lee, Leqi Liu, Yangyi Lu, Yifei Ma, Ritesh Noothigattu, Anthony Platanios, Mrinmaya Sachan, Wen Sun, Mariya Toneva, Po-Wei Wang, Yining Wang, Eric Wong, Yifan Wu, Yuexin Wu, Pengtao Xie, Qizhe Xie, Keyang Xu, Diyi Yang, Fan Yang, Zhilin Yang, Ian En-Hsu Yen, Yaodong Yu, Hongyang Zhang and Xun Zheng. Hope our friendship will last forever. Last but most importantly, I would like to thank my parents, Wei Zhao and Yuxia Wang, my younger brother, Rui Zhao and my lovely girlfriend Lu Sun, for all of your unconditional love and support during my Ph.D. journey. Needless to say, this thesis would not have been possible without your encouragement along the way. This thesis is dedicated to all of you.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2119254727",
+                        "name": "Han Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "\u2022 Two-task classifications: the MultiMNIST data set and the MultiFashion data set [49], [53], [54]; \u2022 Four-task classifications: the MTFL data set [55]\u2013[57]."
+            ],
+            "citingPaper": {
+                "paperId": "694d0f5dd98437a0bb1014e9e23feca69d2b46a1",
+                "externalIds": {
+                    "CorpusId": 260442718
+                },
+                "corpusId": 260442718,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/694d0f5dd98437a0bb1014e9e23feca69d2b46a1",
+                "title": "Multi-Task Variational Information Bottleneck",
+                "abstract": "Multi-task learning (MTL) is an important subject in machine learning and artificial intelligence. Its applications to computer vision, signal processing, and speech recognition are ubiquitous. Although this subject has attracted considerable attention recently, the performance and robustness of the existing models to different tasks have not been well balanced. This article proposes an MTL model based on the architecture of the variational information bottleneck (VIB), which can provide a more effective latent representation of the input features for the downstream tasks. Extensive observations on three public data sets under adversarial attacks show that the proposed model is competitive to the state-of-the-art algorithms concerning the prediction accuracy. Experimental results suggest that combining the VIB and the task-dependent uncertainties is a very effective way to abstract valid information from the input features for accomplishing multiple tasks.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1476823980",
+                        "name": "Weizhu Qian"
+                    },
+                    {
+                        "authorId": "2152689662",
+                        "name": "Bowei Chen"
+                    },
+                    {
+                        "authorId": "2108351063",
+                        "name": "Yichao Zhang"
+                    },
+                    {
+                        "authorId": "2226801269",
+                        "name": "Guanghui Wen"
+                    },
+                    {
+                        "authorId": "68981719",
+                        "name": "Franck Gechter"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "4e90482dce29d55bf5fecf4193417b2a9b303b98",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2109-00708",
+                    "CorpusId": 260972980
+                },
+                "corpusId": 260972980,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/4e90482dce29d55bf5fecf4193417b2a9b303b98",
+                "title": "Efficient Algorithms For Fair Clustering with a New Fairness Notion",
+                "abstract": "We revisit the problem of fair clustering, first introduced by Chierichetti et al. (2017) , that requires each protected attribute to have approximately equal representation in every cluster; i.e., a Balance property. Existing solutions to fair clustering are either not scalable or do not achieve an optimal trade-off between clustering objective and fairness. In this paper, we propose a new notion of fairness, which we call \u03c4 -ratio fairness, that strictly generalizes the Balance property and enables a finegrained efficiency vs. fairness trade-off. Furthermore, we show that simple greedy round-robin based algorithms achieve this trade-off efficiently. Under a more general setting of multi-valued protected attributes, we rigorously analyze the theoretical properties of the our algorithms. Our experimental results suggest that the proposed solution outperforms all the state-of-the-art algorithms and works exceptionally well even for a large number of clusters.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2118927614",
+                        "name": "Shivam Gupta"
+                    },
+                    {
+                        "authorId": "3402720",
+                        "name": "Ganesh Ghalme"
+                    },
+                    {
+                        "authorId": "2503137",
+                        "name": "N. C. Krishnan"
+                    },
+                    {
+                        "authorId": "2116971410",
+                        "name": "Shweta Jain"
+                    }
+                ]
+            }
+        }
+    ]
+}

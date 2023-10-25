@@ -1,0 +1,780 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "6bf775f62f30f50460bf94c7a7497498777995d7",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-05179",
+                    "ArXiv": "2309.05179",
+                    "DOI": "10.48550/arXiv.2309.05179",
+                    "CorpusId": 261682001
+                },
+                "corpusId": 261682001,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6bf775f62f30f50460bf94c7a7497498777995d7",
+                "title": "Effect of Adapting to Human Preferences on Trust in Human-Robot Teaming",
+                "abstract": "We present the effect of adapting to human preferences on trust in a human-robot teaming task. The team performs a task in which the robot acts as an action recommender to the human. It is assumed that the behavior of the human and the robot is based on some reward function they try to optimize. We use a new human trust-behavior model that enables the robot to learn and adapt to the human's preferences in real-time during their interaction using Bayesian Inverse Reinforcement Learning. We present three strategies for the robot to interact with a human: a non-learner strategy, in which the robot assumes that the human's reward function is the same as the robot's, a non-adaptive learner strategy that learns the human's reward function for performance estimation, but still optimizes its own reward function, and an adaptive-learner strategy that learns the human's reward function for performance estimation and also optimizes this learned reward function. Results show that adapting to the human's reward function results in the highest trust in the robot.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2238951958",
+                        "name": "Shreyas Bhat"
+                    },
+                    {
+                        "authorId": "2238951656",
+                        "name": "Joseph B. Lyons"
+                    },
+                    {
+                        "authorId": "2086996197",
+                        "name": "Cong Shi"
+                    },
+                    {
+                        "authorId": "2239055614",
+                        "name": "X. J. Yang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "6fd7ce289560de627a32f5d75062f2574e397e1c",
+                "externalIds": {
+                    "DBLP": "conf/ijcai/MahmudSZ23",
+                    "DOI": "10.24963/ijcai.2023/53",
+                    "CorpusId": 259257741
+                },
+                "corpusId": 259257741,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/6fd7ce289560de627a32f5d75062f2574e397e1c",
+                "title": "Explanation-Guided Reward Alignment",
+                "abstract": "Agents often need to infer a reward function from observations to learn desired behaviors. However, agents may infer a reward function that does not align with the original intent because there can be multiple reward functions consistent with its observations. Operating based on such misaligned rewards can be risky. Furthermore, black-box representations make it difficult to verify the learned rewards and prevent harmful behavior. We present a framework for verifying and improving reward alignment using explanations and show how explanations can help detect misalignment and reveal failure cases in novel scenarios. The problem is formulated as inverse reinforcement learning from ranked trajectories. Verification tests created from the trajectory dataset are used to iteratively validate and improve reward alignment. The agent explains its learned reward and a tester signals whether the explanation passes the test. In cases where the explanation fails, the agent offers alternative explanations to gather feedback, which is then used to improve the learned reward. We analyze the efficiency of our approach in improving reward alignment using different types of explanations and demonstrate its effectiveness in five domains.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "153434169",
+                        "name": "Saaduddin Mahmud"
+                    },
+                    {
+                        "authorId": "3305291",
+                        "name": "Sandhya Saisubramanian"
+                    },
+                    {
+                        "authorId": "1707550",
+                        "name": "S. Zilberstein"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This inherently poses the question of how we can trust what our neural network has learned if we can not comprehend and infer the representations it has learned? In the context of reward learning, it is especially critical that we can interpret the learned objective\u2014if we can not understand the objective that a robot or AI system has learned, then it is difficult to know if the AI\u2019s behavior will be aligned with human preferences and intent [48, 38, 16]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "6bc633d553350213f58ea84c2afa26b7e26cc4b5",
+                "externalIds": {
+                    "ArXiv": "2306.13004",
+                    "DBLP": "journals/corr/abs-2306-13004",
+                    "DOI": "10.48550/arXiv.2306.13004",
+                    "CorpusId": 259224487
+                },
+                "corpusId": 259224487,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6bc633d553350213f58ea84c2afa26b7e26cc4b5",
+                "title": "Can Differentiable Decision Trees Learn Interpretable Reward Functions?",
+                "abstract": "There is an increasing interest in learning reward functions that model human intent and human preferences. However, many frameworks use blackbox learning methods that, while expressive, are difficult to interpret. We propose and evaluate a novel approach for learning expressive and interpretable reward functions from preferences using Differentiable Decision Trees (DDTs). Our experiments across several domains, including Cartpole, Visual Gridworld environments and Atari games, provide evidence that that the tree structure of our learned reward function is useful in determining the extent to which the reward function is aligned with human preferences. We experimentally demonstrate that using reward DDTs results in competitive performance when compared with larger capacity deep neural network reward functions. We also observe that the choice between soft and hard (argmax) output of reward DDT reveals a tension between wanting highly shaped rewards to ensure good RL performance, while also wanting simple, non-shaped rewards to afford interpretability.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2140089441",
+                        "name": "Akansha Kalra"
+                    },
+                    {
+                        "authorId": "47627548",
+                        "name": "Daniel S. Brown"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                ", [21, 42] is needed for our increasing use cases."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "21e96719c0ccb3f23786f706473bba462458e8ca",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-12609",
+                    "ArXiv": "2306.12609",
+                    "DOI": "10.48550/arXiv.2306.12609",
+                    "CorpusId": 259224940
+                },
+                "corpusId": 259224940,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/21e96719c0ccb3f23786f706473bba462458e8ca",
+                "title": "Towards Regulatable AI Systems: Technical Gaps and Policy Opportunities",
+                "abstract": "There is increasing attention being given to how to regulate AI systems. As governing bodies grapple with what values to encapsulate into regulation, we consider the technical half of the question: To what extent can AI experts vet an AI system for adherence to regulatory requirements? We investigate this question through two public sector procurement checklists, identifying what we can do now, what we should be able to do with technical innovation in AI, and what requirements necessitate a more interdisciplinary approach.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2144058688",
+                        "name": "Xudong Shen"
+                    },
+                    {
+                        "authorId": "23877304",
+                        "name": "H. Brown"
+                    },
+                    {
+                        "authorId": "2117239386",
+                        "name": "Jiashu Tao"
+                    },
+                    {
+                        "authorId": "35149351",
+                        "name": "Martin Strobel"
+                    },
+                    {
+                        "authorId": "2220403668",
+                        "name": "Yao Tong"
+                    },
+                    {
+                        "authorId": "2483177",
+                        "name": "Akshay Narayan"
+                    },
+                    {
+                        "authorId": "2220405833",
+                        "name": "Harold Soh"
+                    },
+                    {
+                        "authorId": "1388372395",
+                        "name": "F. Doshi-Velez"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Despite the homogeneity, existing works often require human intervention for value alignment [Brown et al., 2021, Yuan et al., 2022]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "0cf9616021a281bf6cd4119c5cdd386f5a764481",
+                "externalIds": {
+                    "ArXiv": "2305.17147",
+                    "DBLP": "journals/corr/abs-2305-17147",
+                    "DOI": "10.48550/arXiv.2305.17147",
+                    "CorpusId": 258959189
+                },
+                "corpusId": 258959189,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0cf9616021a281bf6cd4119c5cdd386f5a764481",
+                "title": "Heterogeneous Value Evaluation for Large Language Models",
+                "abstract": "The emergent capabilities of Large Language Models (LLMs) have made it crucial to align their values with those of humans. Current methodologies typically attempt alignment with a homogeneous human value and requires human verification, yet lack consensus on the desired aspect and depth of alignment and resulting human biases. In this paper, we propose A2EHV, an Automated Alignment Evaluation with a Heterogeneous Value system that (1) is automated to minimize individual human biases, and (2) allows assessments against various target values to foster heterogeneous agents. Our approach pivots on the concept of value rationality, which represents the ability for agents to execute behaviors that satisfy a target value the most. The quantification of value rationality is facilitated by the Social Value Orientation framework from social psychology, which partitions the value space into four categories to assess social preferences from agents' behaviors. We evaluate the value rationality of eight mainstream LLMs and observe that large models are more inclined to align neutral values compared to those with strong personal values. By examining the behavior of these LLMs, we contribute to a deeper understanding of value alignment within a heterogeneous value system.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2174174943",
+                        "name": "Zhaowei Zhang"
+                    },
+                    {
+                        "authorId": "2106437037",
+                        "name": "N. Liu"
+                    },
+                    {
+                        "authorId": "3390244",
+                        "name": "Siyuan Qi"
+                    },
+                    {
+                        "authorId": "2000868582",
+                        "name": "Ceyao Zhang"
+                    },
+                    {
+                        "authorId": "2218455070",
+                        "name": "Ziqi Rong"
+                    },
+                    {
+                        "authorId": "47796324",
+                        "name": "Yaodong Yang"
+                    },
+                    {
+                        "authorId": "1745056",
+                        "name": "Shuguang Cui"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "df9e7e9ca26926e966cfba006ecda0b5f4d0434d",
+                "externalIds": {
+                    "DBLP": "journals/chb/SannemanS23",
+                    "DOI": "10.1016/j.chb.2023.107809",
+                    "CorpusId": 258535239
+                },
+                "corpusId": 258535239,
+                "publicationVenue": {
+                    "id": "435ffef1-21df-491d-b69a-605eee1b7f7f",
+                    "name": "Computers in Human Behavior",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Comput Hum Behav"
+                    ],
+                    "issn": "0747-5632",
+                    "url": "https://www.journals.elsevier.com/computers-in-human-behavior",
+                    "alternate_urls": [
+                        "https://www.sciencedirect.com/science/article/pii/S0747563216307695",
+                        "http://www.sciencedirect.com/science/journal/07475632"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/df9e7e9ca26926e966cfba006ecda0b5f4d0434d",
+                "title": "Validating metrics for reward alignment in human-autonomy teaming",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "49134546",
+                        "name": "Lindsay M. Sanneman"
+                    },
+                    {
+                        "authorId": "143873972",
+                        "name": "J. Shah"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "While human objectives and values can be represented in a variety of ways, reward functions are a common representation in the value alignment setting [10, 16, 20]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "144624fcf7ec1427424d76dceb7547d514db7af1",
+                "externalIds": {
+                    "DBLP": "conf/hri/SannemanS23",
+                    "DOI": "10.1145/3568294.3580147",
+                    "CorpusId": 257406303
+                },
+                "corpusId": 257406303,
+                "publicationVenue": {
+                    "id": "b49868ed-865c-4154-b70a-8d34e341cf68",
+                    "name": "IEEE/ACM International Conference on Human-Robot Interaction",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Human-Robot Interaction",
+                        "HRI",
+                        "Human-robot Interact",
+                        "IEEE/ACM Int Conf Human-robot Interact"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1232"
+                },
+                "url": "https://www.semanticscholar.org/paper/144624fcf7ec1427424d76dceb7547d514db7af1",
+                "title": "Transparent Value Alignment",
+                "abstract": "As robots become increasingly prevalent in our communities, aligning the values motivating their behavior with human values is critical. However, it is often difficult or impossible for humans, both expert and non-expert, to enumerate values comprehensively, accurately, and in forms that are readily usable for robot planning. Misspecification can lead to undesired, inefficient, or even dangerous behavior. In the value alignment problem, humans and robots work together to optimize human objectives, which are often represented as reward functions and which the robot can infer by observing human actions. In existing alignment approaches, no explicit feedback about this inference process is provided to the human. In this paper, we introduce an exploratory framework to address this problem, which we call Transparent Value Alignment (TVA). TVA suggests that techniques from explainable AI (XAI) be explicitly applied to provide humans with information about the robot's beliefs throughout learning, enabling efficient and effective human feedback.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "49134546",
+                        "name": "Lindsay M. Sanneman"
+                    },
+                    {
+                        "authorId": "143873972",
+                        "name": "J. Shah"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Unhackability provides a notion of what it means to be \u201caligned enough\u201d; Brown et al. (2020b) provide an alternative.",
+                "Proponents of such approaches have emphasized the importance of learning a reward model in order to exceed human performance and generalize to new settings (Brown et al., 2020a; Leike et al., 2018)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "004357dd9bbf3012c8fe0ccada4da401bf85dfff",
+                "externalIds": {
+                    "ArXiv": "2209.13085",
+                    "DBLP": "journals/corr/abs-2209-13085",
+                    "DOI": "10.48550/arXiv.2209.13085",
+                    "CorpusId": 252545256
+                },
+                "corpusId": 252545256,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/004357dd9bbf3012c8fe0ccada4da401bf85dfff",
+                "title": "Defining and Characterizing Reward Hacking",
+                "abstract": "We provide the first formal definition of reward hacking, a phenomenon where optimizing an imperfect proxy reward function, $\\mathcal{\\tilde{R}}$, leads to poor performance according to the true reward function, $\\mathcal{R}$. We say that a proxy is unhackable if increasing the expected proxy return can never decrease the expected true return. Intuitively, it might be possible to create an unhackable proxy by leaving some terms out of the reward function (making it\"narrower\") or overlooking fine-grained distinctions between roughly equivalent outcomes, but we show this is usually not the case. A key insight is that the linearity of reward (in state-action visit counts) makes unhackability a very strong condition. In particular, for the set of all stochastic policies, two reward functions can only be unhackable if one of them is constant. We thus turn our attention to deterministic policies and finite sets of stochastic policies, where non-trivial unhackable pairs always exist, and establish necessary and sufficient conditions for the existence of simplifications, an important special case of unhackability. Our results reveal a tension between using reward functions to specify narrow tasks and aligning AI systems with human values.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "147156275",
+                        "name": "Joar Skalse"
+                    },
+                    {
+                        "authorId": "2155647347",
+                        "name": "Nikolaus H. R. Howe"
+                    },
+                    {
+                        "authorId": "52510051",
+                        "name": "Dmitrii Krasheninnikov"
+                    },
+                    {
+                        "authorId": "145055042",
+                        "name": "David Krueger"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[46] Daniel S Brown, Jordan Schneider, Anca Dragan, and Scott Niekum.",
+                "The multiple experts setting has also been studied in [46] but in the context of value alignment verification where the aim is not to recover the reward function but rather verify that the value function of the agent is close to a target value."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "b5876b4940c37fc05b661a16d8262e42721f6aa7",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-10974",
+                    "ArXiv": "2209.10974",
+                    "DOI": "10.48550/arXiv.2209.10974",
+                    "CorpusId": 252438868
+                },
+                "corpusId": 252438868,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b5876b4940c37fc05b661a16d8262e42721f6aa7",
+                "title": "Identifiability and generalizability from multiple experts in Inverse Reinforcement Learning",
+                "abstract": "While Reinforcement Learning (RL) aims to train an agent from a reward function in a given environment, Inverse Reinforcement Learning (IRL) seeks to recover the reward function from observing an expert's behavior. It is well known that, in general, various reward functions can lead to the same optimal policy, and hence, IRL is ill-defined. However, (Cao et al., 2021) showed that, if we observe two or more experts with different discount factors or acting in different environments, the reward function can under certain conditions be identified up to a constant. This work starts by showing an equivalent identifiability statement from multiple experts in tabular MDPs based on a rank condition, which is easily verifiable and is shown to be also necessary. We then extend our result to various different scenarios, i.e., we characterize reward identifiability in the case where the reward function can be represented as a linear combination of given features, making it more interpretable, or when we have access to approximate transition matrices. Even when the reward is not identifiable, we provide conditions characterizing when data on multiple experts in a given environment allows to generalize and train an optimal agent in a new environment. Our theoretical results on reward identifiability and generalizability are validated in various numerical experiments.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1388317622",
+                        "name": "Paul Rolland"
+                    },
+                    {
+                        "authorId": "1785336654",
+                        "name": "Luca Viano"
+                    },
+                    {
+                        "authorId": "2185711481",
+                        "name": "Norman Schuerhoff"
+                    },
+                    {
+                        "authorId": "2185732928",
+                        "name": "Boris Nikolov"
+                    },
+                    {
+                        "authorId": "1678641",
+                        "name": "V. Cevher"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Therefore, it is also critical to determine whether a learned policy is well-aligned with human values [3]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "aaf9b9581a848bcf63a10ca6b02d8ef71ff6fdfc",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-00695",
+                    "ArXiv": "2206.00695",
+                    "DOI": "10.48550/arXiv.2206.00695",
+                    "CorpusId": 249282344
+                },
+                "corpusId": 249282344,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/aaf9b9581a848bcf63a10ca6b02d8ef71ff6fdfc",
+                "title": "Know Your Boundaries: The Necessity of Explicit Behavioral Cloning in Offline RL",
+                "abstract": "We introduce an offline reinforcement learning (RL) algorithm that explicitly clones a behavior policy to constrain value learning. In offline RL, it is often important to prevent a policy from selecting unobserved actions, since the consequence of these actions cannot be presumed without additional information about the environment. One straightforward way to implement such a constraint is to explicitly model a given data distribution via behavior cloning and directly force a policy not to select uncertain actions. However, many offline RL methods instantiate the constraint indirectly -- for example, pessimistic value estimation -- due to a concern about errors when modeling a potentially complex behavior policy. In this work, we argue that it is not only viable but beneficial to explicitly model the behavior policy for offline RL because the constraint can be realized in a stable way with the trained model. We first suggest a theoretical framework that allows us to incorporate behavior-cloned models into value-based offline RL methods, enjoying the strength of both explicit behavior cloning and value learning. Then, we propose a practical method utilizing a score-based generative model for behavior cloning. With the proposed method, we show state-of-the-art performance on several datasets within the D4RL and Robomimic benchmarks and achieve competitive performance across all datasets tested.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3461969",
+                        "name": "Wonjoon Goo"
+                    },
+                    {
+                        "authorId": "2791038",
+                        "name": "S. Niekum"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Also, for the limited observability setting it can be interesting to explore approaches that alleviate the need to query the full policy of the learner [64, 65]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "f60eeccd32c99bac701b50863babd9a031f2f7f4",
+                "externalIds": {
+                    "ArXiv": "2106.04696",
+                    "DBLP": "conf/nips/YengeraDKS21",
+                    "CorpusId": 235377410
+                },
+                "corpusId": 235377410,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/f60eeccd32c99bac701b50863babd9a031f2f7f4",
+                "title": "Curriculum Design for Teaching via Demonstrations: Theory and Applications",
+                "abstract": "We consider the problem of teaching via demonstrations in sequential decision-making settings. In particular, we study how to design a personalized curriculum over demonstrations to speed up the learner's convergence. We provide a unified curriculum strategy for two popular learner models: Maximum Causal Entropy Inverse Reinforcement Learning (MaxEnt-IRL) and Cross-Entropy Behavioral Cloning (CrossEnt-BC). Our unified strategy induces a ranking over demonstrations based on a notion of difficulty scores computed w.r.t. the teacher's optimal policy and the learner's current policy. Compared to the state of the art, our strategy doesn't require access to the learner's internal dynamics and still enjoys similar convergence guarantees under mild technical conditions. Furthermore, we adapt our curriculum strategy to the setting where no teacher agent is present using task-specific difficulty scores. Experiments on a synthetic car driving environment and navigation-based environments demonstrate the effectiveness of our curriculum strategy.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "31618054",
+                        "name": "Gaurav Yengera"
+                    },
+                    {
+                        "authorId": "66779461",
+                        "name": "R. Devidze"
+                    },
+                    {
+                        "authorId": "2197201",
+                        "name": "Parameswaran Kamalaruban"
+                    },
+                    {
+                        "authorId": "1703727",
+                        "name": "A. Singla"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "cent work focused on value alignment verification (VAV) with a minimum number of queries [8], our work differs in that: (1) we use human feedback in the form of",
+                "[8] introduced an approach to verify the agent\u2019s value or policy, but it does not amend the reward if it is misaligned."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "91a385f5241325e6123384a7438b70e37c799b47",
+                "externalIds": {
+                    "DBLP": "conf/aaai/MahmudSZ23",
+                    "CorpusId": 259100831
+                },
+                "corpusId": 259100831,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/91a385f5241325e6123384a7438b70e37c799b47",
+                "title": "REVEALE: Reward Verification and Learning Using Explanations",
+                "abstract": "When a human expert demonstrates the desired behavior, there often exist multiple reward functions consistent with the observed demonstrations. As a result, agents often learn a proxy reward function to encode their observations. Operating based on proxy rewards may be unsafe. Furthermore, black-box representations make it difficult for the demonstrator to verify the learned reward function and prevent harmful behavior. We investigate the efficiency of using explanations to update and verify a learned reward function, to ensure that it aligns with the demonstrator\u2019s intent. The problem is formulated as an inverse reinforcement learning from ranked expert demonstrations, with verification tests to validate the alignment of the learned reward. The agent explains its reward function and the human signals whether the explanation passes the verification test. When the explanation is rejected, the agent presents additional alternative explanations to acquire feedback, such as a preference ordering over explanations, which helps it learn the intended reward. We analyze the efficiency of our approach in learning reward functions from different types of explanations and present empirical results on five domains. Our results demonstrate the effectiveness of our approach in learning and generalizing human-aligned rewards.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "153434169",
+                        "name": "Saaduddin Mahmud"
+                    },
+                    {
+                        "authorId": "3305291",
+                        "name": "Sandhya Saisubramanian"
+                    },
+                    {
+                        "authorId": "1707550",
+                        "name": "S. Zilberstein"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "With the ever-increasing ubiquity of artificial intelligence in real-world usage scenarios, the awareness of the so-called alignment problem (Christian, 2020) is increasing, as is the need to develop novel strategies to measure and verify the alignment of machine learning (ML)/artificial intelligence (AI) systems (Brown et al., 2021) with human values.",
+                "In order to approach the challenge, several different natural language processing (NLP) and ML/AI approaches have been previously proposed and tested (Kiesel et al., 2022; Yu et al., 2020; Cortiz, 2021; Brown et al., 2021).",
+                "\u2026in real-world usage scenarios, the awareness of the so-called alignment problem (Christian, 2020) is increasing, as is the need to develop novel strategies to measure and verify the alignment of\nmachine learning (ML)/artificial intelligence (AI) systems (Brown et al., 2021) with human values."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "c048dc9266601e7cae1d154de3a02a8e169f118a",
+                "externalIds": {
+                    "DBLP": "conf/semeval/PapadopoulosKDP23",
+                    "ACL": "2023.semeval-1.75",
+                    "DOI": "10.18653/v1/2023.semeval-1.75",
+                    "CorpusId": 259376555
+                },
+                "corpusId": 259376555,
+                "publicationVenue": {
+                    "id": "70713d09-6e4b-4554-9d3f-94d08aba320c",
+                    "name": "International Workshop on Semantic Evaluation",
+                    "type": "conference",
+                    "alternate_names": [
+                        "SemEval ",
+                        "Int Workshop Semantic Evaluation"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c048dc9266601e7cae1d154de3a02a8e169f118a",
+                "title": "Andronicus of Rhodes at SemEval-2023 Task 4: Transformer-Based Human Value Detection Using Four Different Neural Network Architectures",
+                "abstract": "This paper presents our participation to the \u201cHuman Value Detection shared task (Kiesel et al., 2023), as \u201cAndronicus of Rhodes. We describe the approaches behind each entry in the official evaluation, along with the motivation behind each approach. Our best-performing approach has been based on BERT large, with 4 classification heads, implementing two different classification approaches (with different activation and loss functions), and two different partitioning of the training data, to handle class imbalance. Classification is performed through majority voting. The proposed approach outperforms the BERT baseline, ranking in the upper half of the competition.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "119636109",
+                        "name": "G. Papadopoulos"
+                    },
+                    {
+                        "authorId": "1886815",
+                        "name": "Marko Kokol"
+                    },
+                    {
+                        "authorId": "1907643",
+                        "name": "M. Dagioglou"
+                    },
+                    {
+                        "authorId": "2002439",
+                        "name": "G. Petasis"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "While there exists prior work [33, 5] on training value-aligned learning agents that learn to respect different reward models, they do not consider the differences in the domain dynamics."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "26928049100474c9366ec683e83353c57c3f28e3",
+                "externalIds": {
+                    "DBLP": "conf/nips/GongZ22",
+                    "CorpusId": 253110699
+                },
+                "corpusId": 253110699,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/26928049100474c9366ec683e83353c57c3f28e3",
+                "title": "Explicable Policy Search",
+                "abstract": "Human teammates often form conscious and subconscious expectations of each other during interaction. Teaming success is contingent on whether such expectations can be met. Similarly, for an intelligent agent to operate beside a human, it must consider the human\u2019s expectation of its behavior. Disregarding such expectations can lead to the loss of trust and degraded team performance. A key challenge here is that the human\u2019s expectation may not align with the agent\u2019s optimal behavior, e.g., due to the human\u2019s partial or inaccurate understanding of the task domain. Prior work on explicable planning described the ability of agents to respect their human teammate\u2019s expectations by trading off task performance for more expected or \u201c explicable \u201d behaviors. In this paper, we introduce Explicable Policy Search (EPS) to significantly extend such an ability to stochastic domains in a reinforcement learning (RL) setting with continuous state and action spaces. Furthermore, in contrast to the traditional RL methods, EPS must at the same time infer the human\u2019s hidden expectations. Such inferences require information about the human\u2019s belief about the domain dynamics and her reward model but directly querying them is impractical. We demonstrate that such information can be necessarily and sufficiently encoded by a surrogate reward function for EPS, which can be learned based on the human\u2019s feedback on the agent\u2019s behavior. The surrogate reward function is then used to reshape the agent\u2019s reward function, which is shown to be equivalent to searching for an explicable policy. We evaluate EPS in a set of navigation domains with synthetic human models and in an autonomous driving domain with a user study. The results suggest that our method can generate explicable behaviors that reconcile task performance with human expectations intelligently and has real-world relevance in human-agent teaming domains.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "39940468",
+                        "name": "Ze Gong"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "ii) The driver simulation previously used in [2, 4, 5, 15, 32], among others.",
+                "[32] recently proposed value alignment for Markov Decision Processes (MDP) to capture if the robot behaviour corresponds to a user\u2019s preference, avoiding the pitfalls of parameter-based measures."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "61f20fda5113701e672752c7a8d8292214236ac0",
+                "externalIds": {
+                    "DBLP": "conf/corl/WildeA22",
+                    "CorpusId": 257432897
+                },
+                "corpusId": 257432897,
+                "publicationVenue": {
+                    "id": "fbfbf10a-faa4-4d2a-85be-3ac660454ce3",
+                    "name": "Conference on Robot Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CoRL",
+                        "Conf Robot Learn"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/61f20fda5113701e672752c7a8d8292214236ac0",
+                "title": "Do we use the Right Measure? Challenges in Evaluating Reward Learning Algorithms",
+                "abstract": ": Reward learning is a highly active area of research in human-robot interaction (HRI), allowing a broad range of users to specify complex robot behaviour. Experiments with simulated user input play a major role in the development and evaluation of reward learning algorithms due to the availability of a ground truth. In this paper, we review measures for evaluating reward learning algorithms used in HRI, most of which fall into two classes. In a theoretical worst case analysis and several examples, we show that both classes of measures can fail to effectively indicate how good the learned robot behaviour is. Thus, our work contributes to the characterization of sim-to-real gaps of reward learning in HRI.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51314515",
+                        "name": "Nils Wilde"
+                    },
+                    {
+                        "authorId": "1400049336",
+                        "name": "Javier Alonso-Mora"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "I also recently proved sufficient conditions for the construction of sample efficient \u201cdrivers tests\u201d for AI systems: tests that efficiently verify that the policy and learned reward function of an AI system are aligned with a human\u2019s values [16]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fed4e00eb501e4bda24054d8feddfa35b58ec3f3",
+                "externalIds": {
+                    "CorpusId": 247127544
+                },
+                "corpusId": 247127544,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/fed4e00eb501e4bda24054d8feddfa35b58ec3f3",
+                "title": "Leveraging Human Input to Enable Robust AI Systems",
+                "abstract": "Figure 1: My work seeks to directly and efficiently incorporate human input into both the theory and practice of robust machine learning. I apply rigorous theory and state-of-the-art machine learning techniques to enable AI systems to maintain, be robust to, and actively reduce uncertainty over both the human\u2019s intent and the corresponding optimal policy. I evaluate my research across a range of applications, including autonomous driving, service robotics, and dexterous manipulation.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "47627548",
+                        "name": "Daniel S. Brown"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Not only are Alignment measures subjective at best, but they fundamentally conflate safety properties with system requirements, which are well-established engineering concepts.",
+                "\u25cf Value Alignment [8]: AI systems should be designed so that their goals and behaviors can be assured to align with human values throughout their operation.",
+                "2.1 Conflating \u2018Value Alignment\u2019 and \u2018Safety\u2019 6 2.2 On Risk Terminology 7 2.3 On Faults, Failures, and Failure Modes 8",
+                "Within the context of AI communities, some have defined \u201csafety\u201d as the prevention of failures due to accidents [3, 35], while others refer to the field of Alignment, aiming to steer AI systems toward human-oriented values and goals [23, 8].",
+                "Compare the following established definitions:\n\u25cf Value Alignment [8]: AI systems should be designed so that their goals and behaviors can be assured to align with human values throughout their operation.",
+                "Given that intent and stakeholders\u2019 needs are subjective human values, the term \u201cValue Alignment\u201d is a specific type of a system requirement.",
+                "Distinguishing Safety and Alignment."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "60980ec9268ca637038195fa5dc40faf7bf05b1b",
+                "externalIds": {
+                    "CorpusId": 259102957
+                },
+                "corpusId": 259102957,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/60980ec9268ca637038195fa5dc40faf7bf05b1b",
+                "title": "Toward Comprehensive Risk Assessments and Assurance of AI-Based Systems",
+                "abstract": null,
+                "year": null,
+                "authors": [
+                    {
+                        "authorId": "2103414",
+                        "name": "Heidy Khlaaf"
+                    }
+                ]
+            }
+        }
+    ]
+}

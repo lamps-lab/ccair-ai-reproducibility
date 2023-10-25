@@ -1,0 +1,475 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "This quantity is very similar to that given in [Aitchison, 2019], except that it allows for a slightly more general proposal, QMP, which allows for dependencies between the K samples for a single latent variable, z(1) i , .",
+                "Perhaps the most obvious related work is TMC [Aitchison, 2019], which also draws K samples for each of the n latent variables, and considers all K combinations.",
+                "We can see that the TMC (orange) [Aitchison, 2019] performs considerably worse than massively parallel VI (red) and IWAE (blue) [Burda et al.",
+                "This problem has been addressed in the IWAE context using TMC [Aitchison, 2019], which draws K samples for each of the n latent variables, and individually reasons about each of the K combinations of samples.",
+                "To sample all K copies of the full joint latent space, TMC [Aitchison, 2019] uses an IID distribution over the K samples, z(1) i , .",
+                ", z K i , while TMC [Aitchison, 2019] forces these K samples to be IID."
+            ],
+            "citingPaper": {
+                "paperId": "d5833955c719e2c85daa224ccb34eeb99aea430f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-11022",
+                    "ArXiv": "2305.11022",
+                    "DOI": "10.48550/arXiv.2305.11022",
+                    "CorpusId": 258762156
+                },
+                "corpusId": 258762156,
+                "publicationVenue": {
+                    "id": "f9af8000-42f8-410d-a622-e8811e41660a",
+                    "name": "Conference on Uncertainty in Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Uncertainty in Artificial Intelligence",
+                        "UAI",
+                        "Conf Uncertain Artif Intell",
+                        "Uncertain Artif Intell"
+                    ],
+                    "url": "http://www.auai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/d5833955c719e2c85daa224ccb34eeb99aea430f",
+                "title": "Massively Parallel Reweighted Wake-Sleep",
+                "abstract": "Reweighted wake-sleep (RWS) is a machine learning method for performing Bayesian inference in a very general class of models. RWS draws $K$ samples from an underlying approximate posterior, then uses importance weighting to provide a better estimate of the true posterior. RWS then updates its approximate posterior towards the importance-weighted estimate of the true posterior. However, recent work [Chattergee and Diaconis, 2018] indicates that the number of samples required for effective importance weighting is exponential in the number of latent variables. Attaining such a large number of importance samples is intractable in all but the smallest models. Here, we develop massively parallel RWS, which circumvents this issue by drawing $K$ samples of all $n$ latent variables, and individually reasoning about all $K^n$ possible combinations of samples. While reasoning about $K^n$ combinations might seem intractable, the required computations can be performed in polynomial time by exploiting conditional independencies in the generative model. We show considerable improvements over standard\"global\"RWS, which draws $K$ samples from the full joint.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2217761036",
+                        "name": "Thomas Heap"
+                    },
+                    {
+                        "authorId": "2065180594",
+                        "name": "Gavin Leech"
+                    },
+                    {
+                        "authorId": "2724259",
+                        "name": "L. Aitchison"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "\u2026log 1\nL L\u2211 \u2113=1 p\u03b8(z\u2113, x) q\u03d5(z\u2113|x)\n] , (2)\nwhich has been extensively used as an objective function (Burda et al., 2015; S\u00f8nderby et al., 2016; Aitchison, 2019; Lopez et al., 2020) and, importantly, as a metric for estimating the marginal log-likelihood, log p\u03b8(x), in VAEs (e.g.,\u2026",
+                ", 2016; Aitchison, 2019; Lopez et al., 2020) and, importantly, as a metric for estimating the marginal log-likelihood, log p\u03b8(x), in VAEs (e.g., Tomczak and Welling (2018); Bauer and Mnih (2019); Vahdat and Kautz (2020)) and in VI in general (Domke and Sheldon, 2018; Zhang, 2020).",
+                "which has been extensively used as an objective function (Burda et al., 2015; S\u00f8nderby et al., 2016; Aitchison, 2019; Lopez et al., 2020) and, importantly, as a metric for estimating the marginal log-likelihood, log p\u03b8(x), in VAEs (e."
+            ],
+            "citingPaper": {
+                "paperId": "a3b6140cbef302f85719b7a1aaaa61ea3674c8e4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-10951",
+                    "ArXiv": "2202.10951",
+                    "CorpusId": 247025952
+                },
+                "corpusId": 247025952,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a3b6140cbef302f85719b7a1aaaa61ea3674c8e4",
+                "title": "Multiple Importance Sampling ELBO and Deep Ensembles of Variational Approximations",
+                "abstract": "In variational inference (VI), the marginal log-likelihood is estimated using the standard evidence lower bound (ELBO), or improved versions as the importance weighted ELBO (IWELBO). We propose the multiple importance sampling ELBO (MISELBO), a \\textit{versatile} yet \\textit{simple} framework. MISELBO is applicable in both amortized and classical VI, and it uses ensembles, e.g., deep ensembles, of independently inferred variational approximations. As far as we are aware, the concept of deep ensembles in amortized VI has not previously been established. We prove that MISELBO provides a tighter bound than the average of standard ELBOs, and demonstrate empirically that it gives tighter bounds than the average of IWELBOs. MISELBO is evaluated in density-estimation experiments that include MNIST and several real-data phylogenetic tree inference problems. First, on the MNIST dataset, MISELBO boosts the density-estimation performances of a state-of-the-art model, nouveau VAE. Second, in the phylogenetic tree inference setting, our framework enhances a state-of-the-art VI algorithm that uses normalizing flows. On top of the technical benefits of MISELBO, it allows to unveil connections between VI and recent advances in the importance sampling literature, paving the way for further methodological advances. We provide our code at \\url{https://github.com/Lagergren-Lab/MISELBO}.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1396578363",
+                        "name": "Oskar Kviman"
+                    },
+                    {
+                        "authorId": "1398303352",
+                        "name": "Harald Melin"
+                    },
+                    {
+                        "authorId": "1830107",
+                        "name": "Hazal Koptagel"
+                    },
+                    {
+                        "authorId": "145303926",
+                        "name": "V. Elvira"
+                    },
+                    {
+                        "authorId": "1752568",
+                        "name": "J. Lagergren"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In the context of variational inference (see, e.g. Blei et al., 2017), it was also noted in Aitchison (2019) that operations akin to sequential importance sampling could be easily written as chaining matrix multiplications, allowing to parallelize these on a GPU, both in the time and particle\u2026",
+                ", 2017), it was also noted in Aitchison (2019) that operations akin to sequential importance sampling could be easily written as chaining matrix multiplications, allowing to parallelize these on a GPU, both in the time and particle dimensions. The work of Singh et al. (2017) considers blocking strategies for particle Gibbs algorithm, using the Markov property to allow the treatment",
+                ", 2017), it was also noted in Aitchison (2019) that operations akin to sequential importance sampling could be easily written as chaining matrix multiplications, allowing to parallelize these on a GPU, both in the time and particle dimensions."
+            ],
+            "citingPaper": {
+                "paperId": "437ff7afc3bbf5b46098c0817f0276a1c2f9207e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-02264",
+                    "ArXiv": "2202.02264",
+                    "CorpusId": 246608025
+                },
+                "corpusId": 246608025,
+                "publicationVenue": {
+                    "id": "c22e7c36-3bfa-43e1-bb7b-edccdea2a780",
+                    "name": "Journal of machine learning research",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Journal of Machine Learning Research",
+                        "J mach learn res",
+                        "J Mach Learn Res"
+                    ],
+                    "issn": "1532-4435",
+                    "alternate_issns": [
+                        "1533-7928"
+                    ],
+                    "url": "http://www.ai.mit.edu/projects/jmlr/",
+                    "alternate_urls": [
+                        "http://jmlr.csail.mit.edu/",
+                        "http://www.jmlr.org/",
+                        "http://portal.acm.org/affiliated/jmlr"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/437ff7afc3bbf5b46098c0817f0276a1c2f9207e",
+                "title": "De-Sequentialized Monte Carlo: a parallel-in-time particle smoother",
+                "abstract": "Particle smoothers are SMC (Sequential Monte Carlo) algorithms designed to approximate the joint distribution of the states given observations from a state-space model. We propose dSMC (de-Sequentialized Monte Carlo), a new particle smoother that is able to process $T$ observations in $\\mathcal{O}(\\log T)$ time on parallel architecture. This compares favourably with standard particle smoothers, the complexity of which is linear in $T$. We derive $\\mathcal{L}_p$ convergence results for dSMC, with an explicit upper bound, polynomial in $T$. We then discuss how to reduce the variance of the smoothing estimates computed by dSMC by (i) designing good proposal distributions for sampling the particles at the initialization of the algorithm, as well as by (ii) using lazy resampling to increase the number of particles used in dSMC. Finally, we design a particle Gibbs sampler based on dSMC, which is able to perform parameter inference in a state-space model at a $\\mathcal{O}(\\log(T))$ cost on parallel hardware.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2047549155",
+                        "name": "Adrien Corenflos"
+                    },
+                    {
+                        "authorId": "2593810",
+                        "name": "N. Chopin"
+                    },
+                    {
+                        "authorId": "30443320",
+                        "name": "S. S\u00e4rkk\u00e4"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Applications of the product-form estimators it builds on can be found peppered throughout the Monte Carlo literature [64, 49, 1, 62, 45], almost always unnamed and specialized to particular contexts."
+            ],
+            "citingPaper": {
+                "paperId": "c7eace4dcc1cd593dfe2f04380693fc91841d4e5",
+                "externalIds": {
+                    "ArXiv": "2110.15782",
+                    "CorpusId": 240288911
+                },
+                "corpusId": 240288911,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/c7eace4dcc1cd593dfe2f04380693fc91841d4e5",
+                "title": "The divide-and-conquer sequential Monte Carlo algorithm: theoretical properties and limit theorems",
+                "abstract": "We provide a comprehensive characterisation of the theoretical properties of the divide-and-conquer sequential Monte Carlo (DaC-SMC) algorithm. We firmly establish it as a well-founded method by showing that it possesses the same basic properties as conventional sequential Monte Carlo (SMC) algorithms do. In particular, we derive pertinent laws of large numbers, $L^p$ inequalities, and central limit theorems; and we characterize the bias in the normalized estimates produced by the algorithm and argue the absence thereof in the unnormalized ones. We further consider its practical implementation and several interesting variants; obtain expressions for its globally and locally optimal intermediate targets, auxiliary measures, and proposal kernels; and show that, in comparable conditions, DaC-SMC proves more statistically efficient than its direct SMC analogue. We close the paper with a discussion of our results, open questions, and future research directions.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "40416008",
+                        "name": "Juan Kuntz"
+                    },
+                    {
+                        "authorId": "89214304",
+                        "name": "F. R. Crucinio"
+                    },
+                    {
+                        "authorId": "2729416",
+                        "name": "A. M. Johansen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "With the setting of complete matching, IPF becomes tensor Monte Carlo (TMC) (Aitchison, 2019) for SSMs.",
+                ", h \u2261 1 in Equation (11)) can be derived from tensor Monte Carlo (TMC) (Aitchison, 2019) (See Supplement 3) or a recent result on auxiliary particle filters (Branchini and Elvira, 2021).",
+                "(TMC) (Aitchison, 2019) (factorized), differentiable particle filter (DPF) (Corenflos et al."
+            ],
+            "citingPaper": {
+                "paperId": "2af4278299c00a473926023fa8d8c1974206fed6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2109-15134",
+                    "ArXiv": "2109.15134",
+                    "CorpusId": 238226990
+                },
+                "corpusId": 238226990,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2af4278299c00a473926023fa8d8c1974206fed6",
+                "title": "Variational Marginal Particle Filters",
+                "abstract": "Variational inference for state space models (SSMs) is known to be hard in general. Recent works focus on deriving variational objectives for SSMs from unbiased sequential Monte Carlo estimators. We reveal that the marginal particle filter is obtained from sequential Monte Carlo by applying Rao-Blackwellization operations, which sacrifices the trajectory information for reduced variance and differentiability. We propose the variational marginal particle filter (VMPF), which is a differentiable and reparameterizable variational filtering objective for SSMs based on an unbiased estimator. We find that VMPF with biased gradients gives tighter bounds than previous objectives, and the unbiased reparameterization gradients are sometimes beneficial.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "134179065",
+                        "name": "Jinlin Lai"
+                    },
+                    {
+                        "authorId": "144799908",
+                        "name": "D. Sheldon"
+                    },
+                    {
+                        "authorId": "1722101",
+                        "name": "Justin Domke"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "2021) obtained by combining product-form estimators with SMC and Tensor Monte Carlo (Aitchison 2019) obtained by merging the estimators with variational autoencoders. When choosing among the resulting (and at times bewildering) constellation of estimators, we recommend following one simple principle: pick estimators that somehow \u2018resemble\u2019 or \u2018mirror\u2019 the target. Good examples of this are well parametrized Gibbs samplers which generate new samples using the target\u2019s exact conditional distributions and, consequently, often outperform other Monte Carlo algorithms (e.g., Sect. 3.4).While formany targets these conditional distributions cannot be obtained (nor are good parametrizations known), their (conditional) independence structure is usually obvious [e.g., see Gelman and Hill (2006), Gelman (2006), Koller and Friedman (2009), Hoffman et al. (2013), Blei et al. (2003), and themany references therein] and can bemirrored using product-form estimators within one\u2019s methodology of choice.",
+                "2021) obtained by combining product-form estimators with SMC and Tensor Monte Carlo (Aitchison 2019) obtained by merging the estimators with variational autoencoders. When choosing among the resulting (and at times bewildering) constellation of estimators, we recommend following one simple principle: pick estimators that somehow \u2018resemble\u2019 or \u2018mirror\u2019 the target. Good examples of this are well parametrized Gibbs samplers which generate new samples using the target\u2019s exact conditional distributions and, consequently, often outperform other Monte Carlo algorithms (e.g., Sect. 3.4).While formany targets these conditional distributions cannot be obtained (nor are good parametrizations known), their (conditional) independence structure is usually obvious [e.g., see Gelman and Hill (2006), Gelman (2006), Koller and Friedman (2009), Hoffman et al. (2013), Blei et al.",
+                "2021) obtained by combining product-form estimators with SMC and Tensor Monte Carlo (Aitchison 2019) obtained by merging the estimators with variational autoencoders. When choosing among the resulting (and at times bewildering) constellation of estimators, we recommend following one simple principle: pick estimators that somehow \u2018resemble\u2019 or \u2018mirror\u2019 the target. Good examples of this are well parametrized Gibbs samplers which generate new samples using the target\u2019s exact conditional distributions and, consequently, often outperform other Monte Carlo algorithms (e.g., Sect. 3.4).While formany targets these conditional distributions cannot be obtained (nor are good parametrizations known), their (conditional) independence structure is usually obvious [e.g., see Gelman and Hill (2006), Gelman (2006), Koller and Friedman (2009), Hoffman et al.",
+                "(2021) study their usewithin sequential Monte Carlo (SMC), and Aitchison (2019) builds on them to obtain tensor Monte Carlo (TMC), an extension of importance weighted variational autoencoders. The latter article is the aforementioned exception: its author defines the estimators in general and refers to them as \u2018TMC estimators,\u2019 but does not study them theoretically. To the best of our knowledge, there has been no previous systematic exploration of the estimators (2), their theoretical properties, and uses, a gap we intend to fill here. Furthermore, while in simple situations with fully, or almost-fully, factorized test functions [e.g., those in Tran et al. (2013) or Schmon et al. (2020)] it might be clear to most practitioners that employing a product-form estimator is the right thing to do, it may not be quite so immediately obvious how much of a difference this can make and that, in rather precise ways (cf. Theorems 2 and 4), judiciously using product-form estimators is the best thing one can do within Monte Carlo when tacklingmodelswith known independence structure but unknown conditional distributions (a common situation in practice). We aim to underscore these points through our analysis and examples. Lastly, we remark that product-form estimators are reminiscent of classical product cubature rules (Stroud 1971). These are obtained by taking products of quadrature rules and, consequently, require computing sums over NK points much like for product-form estimators [except for fully, or partially, factorized test functions \u03c6 where the cost can be similarly lowered, e.g., p. 24 in Stroud (1971)].",
+                "\u2026to estimate intractable acceptance probabilities for similarmodels, Lindsten et al. (2017) andKuntz et al. (2021) study their usewithin sequential Monte Carlo (SMC), and Aitchison (2019) builds on them to obtain tensor Monte Carlo (TMC), an extension of importance weighted variational autoencoders.",
+                "(2021) study their usewithin sequential Monte Carlo (SMC), and Aitchison (2019) builds on them to obtain tensor Monte Carlo (TMC), an extension of importance weighted variational autoencoders.",
+                "(2021) study their usewithin sequential Monte Carlo (SMC), and Aitchison (2019) builds on them to obtain tensor Monte Carlo (TMC), an extension of importance weighted variational autoencoders. The latter article is the aforementioned exception: its author defines the estimators in general and refers to them as \u2018TMC estimators,\u2019 but does not study them theoretically. To the best of our knowledge, there has been no previous systematic exploration of the estimators (2), their theoretical properties, and uses, a gap we intend to fill here. Furthermore, while in simple situations with fully, or almost-fully, factorized test functions [e.g., those in Tran et al. (2013) or Schmon et al. (2020)] it might be clear to most practitioners that employing a product-form estimator is the right thing to do, it may not be quite so immediately obvious how much of a difference this can make and that, in rather precise ways (cf.",
+                "(2021) study their usewithin sequential Monte Carlo (SMC), and Aitchison (2019) builds on them to obtain tensor Monte Carlo (TMC), an extension of importance weighted variational autoencoders. The latter article is the aforementioned exception: its author defines the estimators in general and refers to them as \u2018TMC estimators,\u2019 but does not study them theoretically. To the best of our knowledge, there has been no previous systematic exploration of the estimators (2), their theoretical properties, and uses, a gap we intend to fill here. Furthermore, while in simple situations with fully, or almost-fully, factorized test functions [e.g., those in Tran et al. (2013) or Schmon et al.",
+                "2021) obtained by combining product-form estimators with SMC and Tensor Monte Carlo (Aitchison 2019) obtained by merging the estimators with variational autoencoders.",
+                "For further examples, see the divide-and-conquer SMC algorithm (Lindsten et al. 2017; Kuntz et al. 2021) obtained by combining product-form estimators with SMC and Tensor Monte Carlo (Aitchison 2019) obtained by merging the estimators with variational autoencoders."
+            ],
+            "citingPaper": {
+                "paperId": "7519c62d7083909c6da30c349f6ee8401f92765f",
+                "externalIds": {
+                    "ArXiv": "2102.11575",
+                    "DBLP": "journals/sac/KuntzCJ22",
+                    "DOI": "10.1007/s11222-021-10069-9",
+                    "CorpusId": 232014558
+                },
+                "corpusId": 232014558,
+                "publicationVenue": {
+                    "id": "dd522c0a-e715-4d95-9ed7-e60346254ddf",
+                    "name": "Statistics and computing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Stat comput",
+                        "Stat Comput",
+                        "Statistics and Computing"
+                    ],
+                    "issn": "0960-3174",
+                    "alternate_issns": [
+                        "1431-8784"
+                    ],
+                    "url": "https://link.springer.com/journal/11222",
+                    "alternate_urls": [
+                        "http://www.springerlink.com/content/100219/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7519c62d7083909c6da30c349f6ee8401f92765f",
+                "title": "Product-form estimators: exploiting independence to scale up Monte Carlo",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "40416008",
+                        "name": "Juan Kuntz"
+                    },
+                    {
+                        "authorId": "89214304",
+                        "name": "F. R. Crucinio"
+                    },
+                    {
+                        "authorId": "2729416",
+                        "name": "A. M. Johansen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "673556e7c9bc1709c82ade8c23911bcaa3281d76",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2102-07850",
+                    "ArXiv": "2102.07850",
+                    "CorpusId": 231933733
+                },
+                "corpusId": 231933733,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/673556e7c9bc1709c82ade8c23911bcaa3281d76",
+                "title": "Differentiable Particle Filtering via Entropy-Regularized Optimal Transport",
+                "abstract": "Particle Filtering (PF) methods are an established class of procedures for performing inference in non-linear state-space models. Resampling is a key ingredient of PF, necessary to obtain low variance likelihood and states estimates. However, traditional resampling methods result in PF-based loss functions being non-differentiable with respect to model and PF parameters. In a variational inference context, resampling also yields high variance gradient estimates of the PF-based evidence lower bound. By leveraging optimal transport ideas, we introduce a principled differentiable particle filter and provide convergence results. We demonstrate this novel method on a variety of applications.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2047549155",
+                        "name": "Adrien Corenflos"
+                    },
+                    {
+                        "authorId": "2057117581",
+                        "name": "James Thornton"
+                    },
+                    {
+                        "authorId": "1701800",
+                        "name": "A. Doucet"
+                    },
+                    {
+                        "authorId": "66997081",
+                        "name": "George Deligiannidis"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "In light of IWAE, tensor Monte-Carlo ([6]; TMC) was recently proposed as an attempt to improve upon IWAE by sampling exponentially many importance samples.",
+                "The VAE is comprised of two parts, where the first part, q\u03c6(z|x), is often referred to as the representation (recognition or encoder) model ([1, 6, 2]), and it learns a mapping from the input space X to the parameter set \u03c6 = {\u03bc, \u03c3(2)}.",
+                "This is unsurprising as the TMC, for K = 20 and five layers, considers a factor millionmore importance samples ([6]).",
+                "We note in our work, that the intentions of [6] were not to achieve state-of-the-art performances, but to compare the proposed the model to the baseline used in the TMC paper.",
+                "Mathematically, as is shown in [6], the number of evaluated importance samples grows exponentially with the layers, so if we reduce the number of layers to one, we effectively evaluateK(1) = K samples in the TMC, the same as for the IWAE.",
+                "To compute the tensor inner-product in a numerically stable way, the author provides a method referred to as logmmexp ([6]; see Appendix A).",
+                "1, the TMC evaluates exponentially many importance samples as the IWAE ([6, 2]).",
+                "In order to average over all different combinations ofmarginal log-likelihoods, Aitchison ([6]), defines the new marginal likelihood estimator as",
+                "In this work, we reproduce what we believe are the most important results presented in the Tensor Monte Carlo paper ([6]), where we also provide our reimplementation code.",
+                "Since the effects of TMC becomes apparent only when we have intermediate layers ([6]), we expect the IWAE and TMC to produce approximately the same results."
+            ],
+            "citingPaper": {
+                "paperId": "a6113a99bf0e826764457c89cd10998f63788842",
+                "externalIds": {
+                    "MAG": "3087218445",
+                    "CorpusId": 226793915
+                },
+                "corpusId": 226793915,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a6113a99bf0e826764457c89cd10998f63788842",
+                "title": "[Re] Tensor Monte Carlo: Particle Methods for the GPU Era",
+                "abstract": "Variational autoencoders (VAE), first introduced in the works of [1], sparked a trend in designing generative models in order to approximate the intractable posterior distribution. Many recent papers have provided ingenious schemes for improving upon VAE, among some ([2, 3, 4, 5]), by achieving tighter log-likelihood bounds on the marginal likelihood (explained in greater detail below). The original bottom-up and top-down architecture has been experimented with ([4]), as well as employing chains of transformations on an, in VAE, assumed simplistic prior distribution ([3, 5]). The importance weighted variational autoencoder (IWAE; [2]) utilized averaging over multiple samples, as opposed to VAE s\u0313 single-sample objective, to tighten the mentioned bound while being able to model a richer latent space \u2013 in effect, this multi-sample scheme allows for a more complex approximate posterior. In light of IWAE, tensor Monte-Carlo ([6]; TMC) was recently proposed as an attempt to improve upon IWAE by sampling exponentially many importance samples. For each of the n latent variables in the TMC,K samples are drawn yieldingK marginal log-likelihood evaluations. Averaging over this large number of samplesmight appear computationally impossible, but via clever tensor products computed in parallel, the TMC is approximately as fast as the less importance sample exhausting IWAE. In this work, we reproduce what we believe are the most important results presented in the Tensor Monte Carlo paper ([6]), where we also provide our reimplementation code. The original results in the TMC paper were attained via a PyTorch ([7]) implementation.1 In an attempt to ease understanding for those unfamiliar with PyTorch, we contribute with a TensorFlow2 ([8]) implementation. Early on in our work, a connection was established with the author in order to bring our reproducibility work to their attention, as well as ensuring that we progress by clearing potential ambiguities. Due to resource and time constraints, we chose to reproduce those results that, in our meaning, appeared most informative and fundamental in the TMC paper. Additionally, as we found the TMC architecture non-trivial to understand, we aim to ease understanding for future users by complementing the textual description of the model with an algorithmic description in Alg. 1 and a depiction of the model in Fig. 4 (figure in Appendix B). Furthermore, we supplement the original paper by visualizing the TMC s\u0313 reconstruction and clustering capabilities (Appendix C and D, respectively), while contrasting them to the capabilities of the baseline, IWAE.",
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "1396578363",
+                        "name": "Oskar Kviman"
+                    },
+                    {
+                        "authorId": "40601552",
+                        "name": "L. Nilsson"
+                    },
+                    {
+                        "authorId": "47237672",
+                        "name": "Martin Larsson"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "(2018) and to the tensor Monte Carlo approach from Aitchison (2018)."
+            ],
+            "citingPaper": {
+                "paperId": "bb8c090ea616619a7e848ff6e6d6112bc538efd2",
+                "externalIds": {
+                    "MAG": "2973674981",
+                    "CorpusId": 202678274
+                },
+                "corpusId": 202678274,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/bb8c090ea616619a7e848ff6e6d6112bc538efd2",
+                "title": "On importance-weighted autoencoders",
+                "abstract": "The importance weighted autoencoder (IWAE) (Burda et al., 2016) is a popular variational-inference method which achieves a tighter evidence bound (and hence a lower bias) than standard variational autoencoders by optimising a multi-sample objective, i.e. an objective that is expressible as an integral over $K > 1$ Monte Carlo samples. Unfortunately, IWAE crucially relies on the availability of reparametrisations and even if these exist, the multi-sample objective leads to inference-network gradients which break down as $K$ is increased (Rainforth et al., 2018). This breakdown can only be circumvented by removing high-variance score-function terms, either by heuristically ignoring them (which yields the 'sticking-the-landing' IWAE (IWAE-STL) gradient from Roeder et al. (2017)) or through an identity from Tucker et al. (2019) (which yields the 'doubly-reparametrised' IWAE (IWAE-DREG) gradient). In this work, we argue that directly optimising the proposal distribution in importance sampling as in the reweighted wake-sleep (RWS) algorithm from Bornschein & Bengio (2015) is preferable to optimising IWAE-type multi-sample objectives. To formalise this argument, we introduce an adaptive-importance sampling framework termed adaptive importance sampling for learning (AISLE) which slightly generalises the RWS algorithm. We then show that AISLE admits IWAE-STL and IWAE-DREG (i.e. the IWAE-gradients which avoid breakdown) as special cases.",
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "26932342",
+                        "name": "Axel Finke"
+                    },
+                    {
+                        "authorId": "50755057",
+                        "name": "Alexandre Hoang Thiery"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "That said, high variance and hence biased estimators are a problem in VI for the same reason, which is commonly mitigated by using K > 1 (Burda et al., 2015; Aitchison, 2018)."
+            ],
+            "citingPaper": {
+                "paperId": "ba1bbd067a9fccd12c44f123fb3a591bcad05d67",
+                "externalIds": {
+                    "CorpusId": 260505827
+                },
+                "corpusId": 260505827,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ba1bbd067a9fccd12c44f123fb3a591bcad05d67",
+                "title": "Data augmentation in Bayesian neural networks and the cold posterior effect",
+                "abstract": "Data augmentation is a highly effective approach for improving performance in deep neural networks. The standard view is that it creates an enlarged dataset by adding synthetic data, which raises a problem when combining it with Bayesian inference: how much data are we really conditioning on? This question is particularly relevant to recent observations linking data augmentation to the cold posterior effect. We investigate various principled ways of finding a log-likelihood for augmented datasets. Our approach prescribes augmenting the same underlying image multiple times, both at test and train-time, and averaging either the logits or the predictive probabilities. Empirically, we observe the best performance with averaging probabilities. While there are interactions with the cold posterior effect, neither averaging logits or averaging probabilities eliminates it.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "51039944",
+                        "name": "Seth Nabarro"
+                    }
+                ]
+            }
+        }
+    ]
+}

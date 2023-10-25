@@ -1,0 +1,1552 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "Our solution involves a discrete indicator parameter that determines which ReLU operations should be replaced by polynomial functions to achieve minimal accuracy drop, which will be updated according to a hysteresis function [49]."
+            ],
+            "citingPaper": {
+                "paperId": "5122a9f5770a2f519a5636b62643e50d10fad645",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-10134",
+                    "ArXiv": "2308.10134",
+                    "DOI": "10.48550/arXiv.2308.10134",
+                    "CorpusId": 261049233
+                },
+                "corpusId": 261049233,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5122a9f5770a2f519a5636b62643e50d10fad645",
+                "title": "AutoReP: Automatic ReLU Replacement for Fast Private Network Inference",
+                "abstract": "The growth of the Machine-Learning-As-A-Service (MLaaS) market has highlighted clients' data privacy and security issues. Private inference (PI) techniques using cryptographic primitives offer a solution but often have high computation and communication costs, particularly with non-linear operators like ReLU. Many attempts to reduce ReLU operations exist, but they may need heuristic threshold selection or cause substantial accuracy loss. This work introduces AutoReP, a gradient-based approach to lessen non-linear operators and alleviate these issues. It automates the selection of ReLU and polynomial functions to speed up PI applications and introduces distribution-aware polynomial approximation (DaPa) to maintain model expressivity while accurately approximating ReLUs. Our experimental results demonstrate significant accuracy improvements of 6.12% (94.31%, 12.9K ReLU budget, CIFAR-10), 8.39% (74.92%, 12.9K ReLU budget, CIFAR-100), and 9.45% (63.69%, 55K ReLU budget, Tiny-ImageNet) over current state-of-the-art methods, e.g., SNL. Morever, AutoReP is applied to EfficientNet-B2 on ImageNet dataset, and achieved 75.55% accuracy with 176.1 times ReLU budget reduction.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "144490597",
+                        "name": "Hongwu Peng"
+                    },
+                    {
+                        "authorId": "2122804649",
+                        "name": "Shaoyi Huang"
+                    },
+                    {
+                        "authorId": "2114113693",
+                        "name": "Tong Zhou"
+                    },
+                    {
+                        "authorId": "1491625900",
+                        "name": "Yukui Luo"
+                    },
+                    {
+                        "authorId": "2144523645",
+                        "name": "Chenghong Wang"
+                    },
+                    {
+                        "authorId": "2117414364",
+                        "name": "Zigeng Wang"
+                    },
+                    {
+                        "authorId": "2204629618",
+                        "name": "Jiahui Zhao"
+                    },
+                    {
+                        "authorId": "2150661131",
+                        "name": "Xiaowei Xie"
+                    },
+                    {
+                        "authorId": "145476833",
+                        "name": "Ang Li"
+                    },
+                    {
+                        "authorId": "2222671400",
+                        "name": "Tony Geng"
+                    },
+                    {
+                        "authorId": "145460048",
+                        "name": "Kaleel Mahmood"
+                    },
+                    {
+                        "authorId": "35420329",
+                        "name": "Wujie Wen"
+                    },
+                    {
+                        "authorId": "2143359817",
+                        "name": "Xiaolin Xu"
+                    },
+                    {
+                        "authorId": "2881873",
+                        "name": "Caiwen Ding"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "justified the straight-through-estimator (STE) method used for training the BNNs through bayesian learning [22]."
+            ],
+            "citingPaper": {
+                "paperId": "a45b07918b247aa99576487c0b694bba2474d7c6",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/NareddyBPS23",
+                    "DOI": "10.1109/CVPRW59228.2023.00488",
+                    "CorpusId": 260745217
+                },
+                "corpusId": 260745217,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a45b07918b247aa99576487c0b694bba2474d7c6",
+                "title": "Quantized Proximal Averaging Networks for Compressed Image Recovery",
+                "abstract": "We solve the analysis sparse coding problem considering a combination of convex and non-convex sparsity promoting penalties. The multi-penalty formulation results in an iterative algorithm involving proximal-averaging. We then unfold the iterative algorithm into a trainable network that facilitates learning the sparsity prior. We also consider quantization of the network weights. Quantization makes neural networks efficient both in terms of memory and computation during inference, and also renders them compatible for low-precision hardware deployment. Our learning algorithm is based on a variant of the ADAM optimizer in which the quantizer is part of the forward pass and the gradients of the loss function are evaluated corresponding to the quantized weights while doing a book-keeping of the high-precision weights. We demonstrate applications to compressed image recovery and magnetic resonance image reconstruction. The proposed approach offers superior reconstruction accuracy and quality than state-of-the-art unfolding techniques and the performance degradation is minimal even when the weights are subjected to extreme quantization.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2091909896",
+                        "name": "Kartheek Kumar Reddy Nareddy"
+                    },
+                    {
+                        "authorId": "2091909842",
+                        "name": "Mani Madhoolika Bulusu"
+                    },
+                    {
+                        "authorId": "113463892",
+                        "name": "P. Pokala"
+                    },
+                    {
+                        "authorId": "1773340",
+                        "name": "C. Seelamantula"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "training binarized or quantized neural networks (Hubara et al., 2016; Krishnamoorthi, 2018; Bethge et al., 2019; Alizadeh et al., 2019; Meng et al., 2020).",
+                "\u2026the lack of rigorous theoretical foundations (Shekhovtsov & Yanush, 2022), STE-based methods have demonstrated good empirical performance in\ntraining binarized or quantized neural networks (Hubara et al., 2016; Krishnamoorthi, 2018; Bethge et al., 2019; Alizadeh et al., 2019; Meng et al., 2020)."
+            ],
+            "citingPaper": {
+                "paperId": "8c82901a48ce2e1a3ed39a2fad85fa98dd81ade2",
+                "externalIds": {
+                    "ArXiv": "2304.11237",
+                    "DBLP": "journals/corr/abs-2304-11237",
+                    "DOI": "10.48550/arXiv.2304.11237",
+                    "CorpusId": 258298360
+                },
+                "corpusId": 258298360,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8c82901a48ce2e1a3ed39a2fad85fa98dd81ade2",
+                "title": "Effective Neural Network L0 Regularization With BinMask",
+                "abstract": "$L_0$ regularization of neural networks is a fundamental problem. In addition to regularizing models for better generalizability, $L_0$ regularization also applies to selecting input features and training sparse neural networks. There is a large body of research on related topics, some with quite complicated methods. In this paper, we show that a straightforward formulation, BinMask, which multiplies weights with deterministic binary masks and uses the identity straight-through estimator for backpropagation, is an effective $L_0$ regularizer. We evaluate BinMask on three tasks: feature selection, network sparsification, and model regularization. Despite its simplicity, BinMask achieves competitive performance on all the benchmarks without task-specific tuning compared to methods designed for each task. Our results suggest that decoupling weights from mask optimization, which has been widely adopted by previous work, is a key component for effective $L_0$ regularization.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "49104216",
+                        "name": "Kai Jia"
+                    },
+                    {
+                        "authorId": "1720971",
+                        "name": "M. Rinard"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "It has been used to design new algorithms, for instance, for uncertainty estimation in deep learning (Khan et al., 2018; Osawa et al., 2019; Lin et al., 2019a; Meng et al., 2020; M\u00f6llenhoff and Khan, 2023).",
+                "It has been used to design new algorithms, for instance, for uncertainty estimation in deep learning (Khan et al., 2018; Osawa et al., 2019; Lin et al., 2019a; Meng et al., 2020; Mo\u0308llenhoff and Khan, 2023).",
+                "\u2026the BLR requires natural-gradients whose computation is not always straightforward and requires tricks that need to be invented for each specific case, for example, Lin et al. (2019b) use Stein\u2019s identity for Gaussians and Meng et al. (2020) use Gumbel-softmax trick for Bernoulli distributions.",
+                "Design of new algorithms is also possible, for example, for Bayesian deep learning Khan et al. (2018); Osawa et al. (2019); Lin et al. (2019a); Meng et al. (2020); Mo\u0308llenhoff and Khan (2023)."
+            ],
+            "citingPaper": {
+                "paperId": "55b44714dac0aef388dd0550f47b83f4bfcb92ec",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-04397",
+                    "ArXiv": "2303.04397",
+                    "DOI": "10.48550/arXiv.2303.04397",
+                    "CorpusId": 257404948
+                },
+                "corpusId": 257404948,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/55b44714dac0aef388dd0550f47b83f4bfcb92ec",
+                "title": "The Lie-Group Bayesian Learning Rule",
+                "abstract": "The Bayesian Learning Rule provides a framework for generic algorithm design but can be difficult to use for three reasons. First, it requires a specific parameterization of exponential family. Second, it uses gradients which can be difficult to compute. Third, its update may not always stay on the manifold. We address these difficulties by proposing an extension based on Lie-groups where posteriors are parametrized through transformations of an arbitrary base distribution and updated via the group's exponential map. This simplifies all three difficulties for many cases, providing flexible parametrizations through group's action, simple gradient computation through reparameterization, and updates that always stay on the manifold. We use the new learning rule to derive a new algorithm for deep learning with desirable biologically-plausible attributes to learn sparse features. Our work opens a new frontier for the design of new algorithms by exploiting Lie-group structures.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "102388186",
+                        "name": "E. M. K\u0131ral"
+                    },
+                    {
+                        "authorId": "2719812",
+                        "name": "T. M\u00f6llenhoff"
+                    },
+                    {
+                        "authorId": "145901278",
+                        "name": "M. E. Khan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Meng et al. (2020) propose a Bayesian perspective and Louizos et al. (2018) formulate a noisy quantizer."
+            ],
+            "citingPaper": {
+                "paperId": "6d0c8934f62d605d7345de39759cd2b1df393e4d",
+                "externalIds": {
+                    "DBLP": "conf/iclr/QuistLG23",
+                    "ArXiv": "2303.02452",
+                    "DOI": "10.48550/arXiv.2303.02452",
+                    "CorpusId": 257365819
+                },
+                "corpusId": 257365819,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/6d0c8934f62d605d7345de39759cd2b1df393e4d",
+                "title": "Understanding weight-magnitude hyperparameters in training binary networks",
+                "abstract": "Binary Neural Networks (BNNs) are compact and efficient by using binary weights instead of real-valued weights. Current BNNs use latent real-valued weights during training, where several training hyper-parameters are inherited from real-valued networks. The interpretation of several of these hyperparameters is based on the magnitude of the real-valued weights. For BNNs, however, the magnitude of binary weights is not meaningful, and thus it is unclear what these hyperparameters actually do. One example is weight-decay, which aims to keep the magnitude of real-valued weights small. Other examples are latent weight initialization, the learning rate, and learning rate decay, which influence the magnitude of the real-valued weights. The magnitude is interpretable for real-valued weights, but loses its meaning for binary weights. In this paper we offer a new interpretation of these magnitude-based hyperparameters based on higher-order gradient filtering during network optimization. Our analysis makes it possible to understand how magnitude-based hyperparameters influence the training of binary networks which allows for new optimization filters specifically designed for binary neural networks that are independent of their real-valued interpretation. Moreover, our improved understanding reduces the number of hyperparameters, which in turn eases the hyperparameter tuning effort which may lead to better hyperparameter values for improved accuracy. Code is available at https://github.com/jorisquist/Understanding-WM-HP-in-BNNs",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2210799035",
+                        "name": "Joris Quist"
+                    },
+                    {
+                        "authorId": "152998393",
+                        "name": "Yun-qiang Li"
+                    },
+                    {
+                        "authorId": "1738975",
+                        "name": "J. V. Gemert"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [
+                "[8] Xiangming Meng, Roman Bachmann, and Moham-"
+            ],
+            "citingPaper": {
+                "paperId": "526d8b7848362a09d2a9c9645ec992a01e92ddf2",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2301-08292",
+                    "ArXiv": "2301.08292",
+                    "DOI": "10.48550/arXiv.2301.08292",
+                    "CorpusId": 256080511
+                },
+                "corpusId": 256080511,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/526d8b7848362a09d2a9c9645ec992a01e92ddf2",
+                "title": "Quantum HyperNetworks: Training Binary Neural Networks in Quantum Superposition",
+                "abstract": "Binary neural networks, i.e., neural networks whose parameters and activations are constrained to only two possible values, offer a compelling avenue for the deployment of deep learning models on energy- and memory-limited devices. However, their training, architectural design, and hyperparameter tuning remain challenging as these involve multiple computationally expensive combinatorial optimization problems. Here we introduce quantum hypernetworks as a mechanism to train binary neural networks on quantum computers, which unify the search over parameters, hyperparameters, and architectures in a single optimization loop. Through classical simulations, we demonstrate that of our approach effectively finds optimal parameters, hyperparameters and architectural choices with high probability on classification problems including a two-dimensional Gaussian dataset and a scaled-down version of the MNIST handwritten digits. We represent our quantum hypernetworks as variational quantum circuits, and find that an optimal circuit depth maximizes the probability of finding performant binary neural networks. Our unified approach provides an immense scope for other applications in the field of machine learning.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2064780788",
+                        "name": "J. Carrasquilla"
+                    },
+                    {
+                        "authorId": "1491749662",
+                        "name": "Mohamed Hibat-Allah"
+                    },
+                    {
+                        "authorId": "3787168",
+                        "name": "E. Inack"
+                    },
+                    {
+                        "authorId": "2730435",
+                        "name": "Alireza Makhzani"
+                    },
+                    {
+                        "authorId": "9044665",
+                        "name": "Kirill Neklyudov"
+                    },
+                    {
+                        "authorId": "2116511145",
+                        "name": "Graham Taylor"
+                    },
+                    {
+                        "authorId": "3422999",
+                        "name": "G. Torlai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "2f2d8a9bf5a797208769cbd0664bcf4243fcbd4b",
+                "externalIds": {
+                    "ArXiv": "2211.03741",
+                    "DBLP": "conf/aistats/LeconteSM23",
+                    "DOI": "10.48550/arXiv.2211.03741",
+                    "CorpusId": 253384372
+                },
+                "corpusId": 253384372,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2f2d8a9bf5a797208769cbd0664bcf4243fcbd4b",
+                "title": "AskewSGD : An Annealed interval-constrained Optimisation method to train Quantized Neural Networks",
+                "abstract": "In this paper, we develop a new algorithm, Annealed Skewed SGD - AskewSGD - for training deep neural networks (DNNs) with quantized weights. First, we formulate the training of quantized neural networks (QNNs) as a smoothed sequence of interval-constrained optimization problems. Then, we propose a new first-order stochastic method, AskewSGD, to solve each constrained optimization subproblem. Unlike algorithms with active sets and feasible directions, AskewSGD avoids projections or optimization under the entire feasible set and allows iterates that are infeasible. The numerical complexity of AskewSGD is comparable to existing approaches for training QNNs, such as the straight-through gradient estimator used in BinaryConnect, or other state of the art methods (ProxQuant, LUQ). We establish convergence guarantees for AskewSGD (under general assumptions for the objective function). Experimental results show that the AskewSGD algorithm performs better than or on par with state of the art methods in classical benchmarks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "52575123",
+                        "name": "Louis Leconte"
+                    },
+                    {
+                        "authorId": "1703129714",
+                        "name": "S. Schechtman"
+                    },
+                    {
+                        "authorId": "2313661",
+                        "name": "\u00c9. Moulines"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The rest of the derivations is similar to previous applications of the BLR, see Khan et al. (2018); Osawa et al. (2019); Meng et al. (2020)."
+            ],
+            "citingPaper": {
+                "paperId": "a872902f3e216419fc16b3702d4669ee1c03c9a0",
+                "externalIds": {
+                    "DBLP": "conf/iclr/MollenhoffK23",
+                    "ArXiv": "2210.01620",
+                    "DOI": "10.48550/arXiv.2210.01620",
+                    "CorpusId": 252693360
+                },
+                "corpusId": 252693360,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a872902f3e216419fc16b3702d4669ee1c03c9a0",
+                "title": "SAM as an Optimal Relaxation of Bayes",
+                "abstract": "Sharpness-aware minimization (SAM) and related adversarial deep-learning methods can drastically improve generalization, but their underlying mechanisms are not yet fully understood. Here, we establish SAM as a relaxation of the Bayes objective where the expected negative-loss is replaced by the optimal convex lower bound, obtained by using the so-called Fenchel biconjugate. The connection enables a new Adam-like extension of SAM to automatically obtain reasonable uncertainty estimates, while sometimes also improving its accuracy. By connecting adversarial and Bayesian methods, our work opens a new path to robustness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2719812",
+                        "name": "T. M\u00f6llenhoff"
+                    },
+                    {
+                        "authorId": "145901278",
+                        "name": "M. E. Khan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2019), the use of weights encoded by a small number of bits (Qin et al., 2020; Courbariaux et al., 2015; Meng et al., 2020) and quantized activation functions, notably binary activation functions (Soudry et al.",
+                "However, this is not necessarily true if the weights or biases are constrained to specific values, such as binary values (Hubara et al., 2016; Meng et al., 2020), ternary values (Li & Liu, 2016; Zhu et al."
+            ],
+            "citingPaper": {
+                "paperId": "371cb6c2dca55d24ba6e2c44c8ec3b0bdb5b07c4",
+                "externalIds": {
+                    "ArXiv": "2209.03450",
+                    "CorpusId": 252118521
+                },
+                "corpusId": 252118521,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/371cb6c2dca55d24ba6e2c44c8ec3b0bdb5b07c4",
+                "title": "Seeking Interpretability and Explainability in Binary Activated Neural Networks",
+                "abstract": "We study the use of binary activated neural networks as interpretable and explainable predictors in the context of regression tasks on tabular data; more specifically, we provide guarantees on their expressiveness, present an approach based on the efficient computation of SHAP values for quantifying the relative importance of the features, hidden neurons and even weights. As the model's simplicity is instrumental in achieving interpretability, we propose a greedy algorithm for building compact binary activated networks. This approach doesn't need to fix an architecture for the network in advance: it is built one layer at a time, one neuron at a time, leading to predictors that aren't needlessly complex for a given task.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "50003031",
+                        "name": "Benjamin J. LeBlanc"
+                    },
+                    {
+                        "authorId": "31580144",
+                        "name": "Pascal Germain"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In order to estimate the gradient in Equation 19, we leverage the reparameterization trick via the Gumbel-Softmax (GS) distribution (Jang et al., 2016; Meng et al., 2020).",
+                "When \u03c4 in Equation (20) tends to zero, the tanh(\u00b7) function tends to the sign(\u00b7) function, and the vector w follows distribution qt(w) (Meng et al., 2020)."
+            ],
+            "citingPaper": {
+                "paperId": "290c366c8a2eae896b5f1f714486b9e46304003e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-13723",
+                    "PubMedCentral": "9708898",
+                    "ArXiv": "2208.13723",
+                    "DOI": "10.3389/fncom.2022.1037976",
+                    "CorpusId": 251903854,
+                    "PubMed": "36465962"
+                },
+                "corpusId": 251903854,
+                "publicationVenue": {
+                    "id": "8c456f98-9892-42ac-9b16-418755f01550",
+                    "name": "Frontiers in Computational Neuroscience",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Front Comput Neurosci"
+                    ],
+                    "issn": "1662-5188",
+                    "url": "http://www.frontiersin.org/computational_neuroscience",
+                    "alternate_urls": [
+                        "http://www.frontiersin.org/computationalneuroscience/",
+                        "https://www.frontiersin.org/journals/computational-neuroscience"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/290c366c8a2eae896b5f1f714486b9e46304003e",
+                "title": "Bayesian continual learning via spiking neural networks",
+                "abstract": "Among the main features of biological intelligence are energy efficiency, capacity for continual adaptation, and risk management via uncertainty quantification. Neuromorphic engineering has been thus far mostly driven by the goal of implementing energy-efficient machines that take inspiration from the time-based computing paradigm of biological brains. In this paper, we take steps toward the design of neuromorphic systems that are capable of adaptation to changing learning tasks, while producing well-calibrated uncertainty quantification estimates. To this end, we derive online learning rules for spiking neural networks (SNNs) within a Bayesian continual learning framework. In it, each synaptic weight is represented by parameters that quantify the current epistemic uncertainty resulting from prior knowledge and observed data. The proposed online rules update the distribution parameters in a streaming fashion as data are observed. We instantiate the proposed approach for both real-valued and binary synaptic weights. Experimental results using Intel's Lava platform show the merits of Bayesian over frequentist learning in terms of capacity for adaptation and uncertainty quantification.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "147710847",
+                        "name": "N. Skatchkovsky"
+                    },
+                    {
+                        "authorId": "2239503",
+                        "name": "Hyeryung Jang"
+                    },
+                    {
+                        "authorId": "1705869",
+                        "name": "O. Simeone"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Additionally, thermal fluctuations have been supplemented to the process of training binary neural networks within an approach known as the Bayesian learning rule [14]."
+            ],
+            "citingPaper": {
+                "paperId": "3d48e1c20e8b70a6a1c21c001d761cdd59c43c4d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-08189",
+                    "ArXiv": "2207.08189",
+                    "DOI": "10.1088/2632-2153/acb895",
+                    "CorpusId": 256566060
+                },
+                "corpusId": 256566060,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3d48e1c20e8b70a6a1c21c001d761cdd59c43c4d",
+                "title": "Supplementing recurrent neural networks with annealing to solve combinatorial optimization problems",
+                "abstract": "Combinatorial optimization problems can be solved by heuristic algorithms such as simulated annealing (SA) which aims to find the optimal solution within a large search space through thermal fluctuations. This algorithm generates new solutions through Markov-chain Monte Carlo techniques which can result in severe limitations, such as slow convergence and a tendency to stay within the same local search space at small temperatures. To overcome these shortcomings, we use the variational classical annealing (VCA) framework that combines autoregressive recurrent neural networks (RNNs) with traditional annealing to sample solutions that are uncorrelated. In this paper, we demonstrate the potential of using VCA as an approach to solving real-world optimization problems. We explore VCA\u2019s performance in comparison with SA at solving three popular optimization problems: the maximum cut problem (Max-Cut), the nurse scheduling problem (NSP), and the traveling salesman problem (TSP). For all three problems, we find that VCA outperforms SA on average in the asymptotic limit by one or more orders of magnitude in terms of relative error. Interestingly, we reach large system sizes of up to 256 cities for the TSP. We also conclude that in the best case scenario, VCA can serve as a great alternative when SA fails to find the optimal solution.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2217024305",
+                        "name": "Shoummo Ahsan Khandoker"
+                    },
+                    {
+                        "authorId": "2217024509",
+                        "name": "Jawaril Munshad Abedin"
+                    },
+                    {
+                        "authorId": "1491749662",
+                        "name": "Mohamed Hibat-Allah"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Recently, one line of work applies the Bayesian framework to learn a deterministic quantized neural network (Soudry et al., 2014; Cheng et al., 2015; Achterhold et al., 2018; van Baalen et al., 2020; Meng et al., 2020)."
+            ],
+            "citingPaper": {
+                "paperId": "a47326d7996def2cd015c4d2558b63073bb6846d",
+                "externalIds": {
+                    "ArXiv": "2206.09909",
+                    "DBLP": "conf/icml/ZhangWS22",
+                    "DOI": "10.48550/arXiv.2206.09909",
+                    "CorpusId": 249889240
+                },
+                "corpusId": 249889240,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a47326d7996def2cd015c4d2558b63073bb6846d",
+                "title": "Low-Precision Stochastic Gradient Langevin Dynamics",
+                "abstract": "While low-precision optimization has been widely used to accelerate deep learning, low-precision sampling remains largely unexplored. As a consequence, sampling is simply infeasible in many large-scale scenarios, despite providing remarkable benefits to generalization and uncertainty estimation for neural networks. In this paper, we provide the first study of low-precision Stochastic Gradient Langevin Dynamics (SGLD), showing that its costs can be significantly reduced without sacrificing performance, due to its intrinsic ability to handle system noise. We prove that the convergence of low-precision SGLD with full-precision gradient accumulators is less affected by the quantization error than its SGD counterpart in the strongly convex setting. To further enable low-precision gradient accumulators, we develop a new quantization function for SGLD that preserves the variance in each update step. We demonstrate that low-precision SGLD achieves comparable performance to full-precision SGLD with only 8 bits on a variety of deep learning tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1718601",
+                        "name": "Ruqi Zhang"
+                    },
+                    {
+                        "authorId": "145771261",
+                        "name": "A. Wilson"
+                    },
+                    {
+                        "authorId": "2081393182",
+                        "name": "Chris De Sa"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Following previous works [3,6,29], we use classification as the main task throughout our experiments.",
+                "Several authors have approached the training of quantized neural networks via a variational approach [1, 27, 29, 40].",
+                "We compare our algorithm against state-of-the-art approaches, including BinaryConnect (BC) [10], ProxQuant (PQ) [6], Proximal Mean-Field (PMF) [2], BayesBiNN [29], and several variants of Mirror Descent (MD) [3].",
+                "Among those, BayesBiNN [29] is particularly competitive: instead of optimizing over binary weights, the parameters of Bernoulli distributions are learned by employing both a Bayesian learning rule [24] and the Gumbel-softmax trick [23, 28] (therefore requiring an inverse temperature parameter to convert the concrete distribution to a Bernoulli one)."
+            ],
+            "citingPaper": {
+                "paperId": "ea79fa7e4fef32732ffee4d2994bd8a6fd6f423e",
+                "externalIds": {
+                    "ArXiv": "2112.02880",
+                    "DBLP": "journals/corr/abs-2112-02880",
+                    "DOI": "10.1109/CVPR52688.2022.00055",
+                    "CorpusId": 244908546
+                },
+                "corpusId": 244908546,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/ea79fa7e4fef32732ffee4d2994bd8a6fd6f423e",
+                "title": "AdaSTE: An Adaptive Straight-Through Estimator to Train Binary Neural Networks",
+                "abstract": "We propose a new algorithm for training deep neural networks (DNNs) with binary weights. In particular, we first cast the problem of training binary neural networks (BiNNs) as a bilevel optimization instance and subsequently construct flexible relaxations of this bilevel program. The resulting training method shares its algorithmic simplicity with several existing approaches to train BiNNs, in particular with the straight-through gradient estimator successfully employed in BinaryConnect and subsequent methods. Infact, our proposed method can be interpreted as an adaptive variant of the original straight-through estimator that conditionally (but not always) acts like a linear mapping in the backward pass of error propagation. Experimental results demonstrate that our new algorithm offers favorable performance compared to existing approaches.11This work was partially supported by theWallenberg AI, Autonomous Systems and Software Program (WASP) funded by the Knut and Alice Wallenberg Foundation.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145553617",
+                        "name": "Huu Le"
+                    },
+                    {
+                        "authorId": "1413268591",
+                        "name": "Rasmus H\u00f8ier"
+                    },
+                    {
+                        "authorId": "2159385",
+                        "name": "Che-Tsung Lin"
+                    },
+                    {
+                        "authorId": "1713941",
+                        "name": "C. Zach"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "9829da4e9c1085ffaa26dfa2b954c54b21f7e51c",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/ZhangPCSHH022",
+                    "ArXiv": "2111.13204",
+                    "DOI": "10.1109/CVPR52688.2022.01157",
+                    "CorpusId": 244709013
+                },
+                "corpusId": 244709013,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9829da4e9c1085ffaa26dfa2b954c54b21f7e51c",
+                "title": "BaLeNAS: Differentiable Architecture Search via the Bayesian Learning Rule",
+                "abstract": "Differentiable Architecture Search (DARTS) has received massive attention in recent years, mainly because it significantly reduces the computational cost through weight sharing and continuous relaxation. However, more recent works find that existing differentiable NAS techniques struggle to outperform naive baselines, yielding deteriorative architectures as the search proceeds. Rather than directly optimizing the architecture parameters, this paper formulates the neural architecture search as a distribution learning problem through relaxing the architecture weights into Gaussian distributions. By leveraging the natural-gradient variational inference (NGVI), the architecture distribution can be easily optimized based on existing codebases without incurring more memory and computational consumption. We demonstrate how the differentiable NAS benefits from Bayesian principles, enhancing exploration and improving stability. The experimental results on NAS benchmark datasets confirm the significant improvements the proposed framework can make. In addition, instead of simply applying the argmax on the learned parameters, we further leverage the recently-proposed training-free proxies in NAS to select the optimal architecture from a group architectures drawn from the optimized distribution, where we achieve state-of-the-art results on the NAS-Bench-201 and NAS-Bench-1shot1 benchmarks. Our best architecture in the DARTS search space also obtains competitive test errors with 2.37%, 15.72%, and 24.2% on CIFAR-10, CIFAR-100, and ImageNet, respectively.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2112175772",
+                        "name": "Miao Zhang"
+                    },
+                    {
+                        "authorId": "8520788",
+                        "name": "Jilin Hu"
+                    },
+                    {
+                        "authorId": "2113963754",
+                        "name": "Steven Su"
+                    },
+                    {
+                        "authorId": "2585415",
+                        "name": "Shirui Pan"
+                    },
+                    {
+                        "authorId": "144950946",
+                        "name": "Xiaojun Chang"
+                    },
+                    {
+                        "authorId": "37606919",
+                        "name": "B. Yang"
+                    },
+                    {
+                        "authorId": "2561045",
+                        "name": "Gholamreza Haffari"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "b1ffcc3fc04304e9d71643ffbcaead9ecb74bd4a",
+                "externalIds": {
+                    "ArXiv": "2110.08851",
+                    "DBLP": "conf/cvpr/KimC22",
+                    "DOI": "10.1109/CVPR52688.2022.00952",
+                    "CorpusId": 244773742
+                },
+                "corpusId": 244773742,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/b1ffcc3fc04304e9d71643ffbcaead9ecb74bd4a",
+                "title": "Unsupervised Representation Learning for Binary Networks by Joint Classifier Learning",
+                "abstract": "Self-supervised learning is a promising unsupervised learning framework that has achieved success with large floating point networks. But such networks are not readily deployable to edge devices. To accelerate deployment of models with the benefit of unsupervised representation learning to such resource limited devices for various downstream tasks, we propose a self-supervised learning method for binary networks that uses a moving target network. In particular, we propose to Jointly train a randomly initialized classifier, attached to a pretrained floating point feature extractor, with a binary network. Additionally, we propose a feature similarity loss, a dynamic loss balancing and modified multi-stage training to further improve the accuracy, and call our method BURN. Our empirical validations over five downstream tasks using seven datasets show that BURN outperforms self-supervised baselines for binary networks and sometimes outperforms supervised pretraining. Code is availabe at https://github.com/naver-ai/burn.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": null,
+                        "name": "Dahyun Kim"
+                    },
+                    {
+                        "authorId": "2112287145",
+                        "name": "Jonghyun Choi"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Since then, numerous approaches for binary networks (Lin et al., 2017; Liu et al., 2018; 2020; Martinez et al., 2020; Bulat et al., 2020; Kim et al., 2020a; Bulat et al., 2021; Lin et al., 2020; Qin et al., 2020; Han et al., 2020; Meng et al., 2020; Kim et al., 2020b) have been proposed."
+            ],
+            "citingPaper": {
+                "paperId": "ae045404941ed76257e759a7432888581a040292",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2110-08851",
+                    "CorpusId": 239016638
+                },
+                "corpusId": 239016638,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ae045404941ed76257e759a7432888581a040292",
+                "title": "Self-Supervised Learning for Binary Networks by Joint Classifier Training",
+                "abstract": "Despite the great success of self-supervised learning with large floating point networks, such networks are not readily deployable to edge devices. To accelerate deployment of models to edge devices for various downstream tasks by unsupervised representation learning, we propose a self-supervised learning method for binary networks. In particular, we propose to use a randomly initialized classifier attached to a pretrained floating point feature extractor as targets and jointly train it with a binary network. For better training of the binary network, we propose a feature similarity loss, a dynamic balancing scheme of loss terms, and modified multi-stage training. We call our method as BSSL. Our empirical validations show that BSSL outperforms self-supervised learning baselines for binary networks in various downstream tasks and outperforms supervised pretraining in certain tasks.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": null,
+                        "name": "Dahyun Kim"
+                    },
+                    {
+                        "authorId": "2112287145",
+                        "name": "Jonghyun Choi"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Yet, the decay term \u2212\u03b1\u03bb stays effective: if the data gradient becomes small, the decay term implements some small \u201cforgetting\u201d of the learned information and may be responsible for an improved generalization observed in the experiments [18].",
+                "For BayesBiNN we identified a hidden issue that completely changes the behavior of the method from the intended variational Bayesian learning with Gumbel-Softmax estimator, theoretically impossible due to the used temperature \u03c4 = 10\u221210, to non-Bayesian learning with deterministic ST estimator and latent weight decay.",
+                "[18] model stochastic binary weights as w \u223c Bin(\u03bc) and express GS estimator as follows.",
+                "In order to analyze BayesBiNN and FouST we will switch to the \u00b11 encoding.",
+                "[18], motivated by the need to reduce the variance of reinforce, apply GS estimator.",
+                "The second consequence is that the natural parameters \u03bb have huge magnitudes during the training, and we have that |\u03b4| |\u03bb| with high probability, therefore the noise plays practically no role even in the forward pass of BayesBiNN.",
+                "Contribution In this work we analyze theoretical properties of several recent single-sample gradient based methods: GS, ST-GS [13], BayesBiNN [18] and FouST [22].",
+                "The BayesBiNN algorithm [18, Table 1 middle] performs the update:\n\u03bb := (1\u2212 \u03b1)\u03bb\u2212 \u03b1sf \u2032(w\u0303), (16)\nwhere s = NJ , N is the number of training samples and \u03b1 is the learning rate.",
+                "In this mode the BayesBiNN algorithm becomes equivalent to\nw := sign(\u03bb); (55a)\n\u03bb := (1\u2212 \u03b1)\u03bb\u2212 \u03b1N\u03c4 f \u2032(w).",
+                "However, the actual implementation of the scaling factor J used in the experiments [18] according to the published code(2) introduces a technical = 10\u221210 as follows: J := 1\u2212w\u0303 (2)+ \u03c4(1\u2212\u03bc2+ ) .",
+                "The initial BayesBiNN algorithm of course depends on \u03c4 and N .",
+                "A longrange effect of this swap is that BayesBiNN fails to solve the variational Bayesian learning problem as claimed.",
+                "Next we analyze the application of GS in BayesBiNN.",
+                "Nevertheless, good experimental results are demonstrated [18].",
+                "In the subsequent sections we analyze Gumbel-Softmax estimator (Section 3), BayesBiNN (Section 4) and FouST estimator (Section 5)."
+            ],
+            "citingPaper": {
+                "paperId": "59106a13f5f9f2b510ffa902699edc0e914aabcd",
+                "externalIds": {
+                    "ArXiv": "2110.03549",
+                    "DBLP": "journals/corr/abs-2110-03549",
+                    "DOI": "10.1007/978-3-030-92659-5_8",
+                    "CorpusId": 238419313
+                },
+                "corpusId": 238419313,
+                "publicationVenue": {
+                    "id": "4bdc459e-68eb-4596-8e24-85dd8a047952",
+                    "name": "German Conference on Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Ger Conf Pattern Recognit",
+                        "GCPR"
+                    ],
+                    "url": "http://www.dagm.de/"
+                },
+                "url": "https://www.semanticscholar.org/paper/59106a13f5f9f2b510ffa902699edc0e914aabcd",
+                "title": "Bias-Variance Tradeoffs in Single-Sample Binary Gradient Estimators",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145965041",
+                        "name": "A. Shekhovtsov"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Meng et al. [2020] refer to this algorithm as BayesBiNN.",
+                "stochastic gradients, similar to those considered in Titterington [1984], Neal and Hinton [1998], Sato [1999], Capp\u00e9 and Moulines [2009], Delyon et al."
+            ],
+            "citingPaper": {
+                "paperId": "7f401bb88652c5880289c24f8de214374f5df9f8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2107-04562",
+                    "ArXiv": "2107.04562",
+                    "CorpusId": 235790670
+                },
+                "corpusId": 235790670,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7f401bb88652c5880289c24f8de214374f5df9f8",
+                "title": "The Bayesian Learning Rule",
+                "abstract": "We show that many machine-learning algorithms are specific instances of a single algorithm called the Bayesian learning rule. The rule, derived from Bayesian principles, yields a wide-range of algorithms from fields such as optimization, deep learning, and graphical models. This includes classical algorithms such as ridge regression, Newton's method, and Kalman filter, as well as modern deep-learning algorithms such as stochastic-gradient descent, RMSprop, and Dropout. The key idea in deriving such algorithms is to approximate the posterior using candidate distributions estimated by using natural gradients. Different candidate distributions result in different algorithms and further approximations to natural gradients give rise to variants of those algorithms. Our work not only unifies, generalizes, and improves existing algorithms, but also helps us design new ones.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145901278",
+                        "name": "M. E. Khan"
+                    },
+                    {
+                        "authorId": "72271894",
+                        "name": "H. Rue"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "256eb3752e7b670c7cf0819ee363bcecbad1a038",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2105-06211",
+                    "ArXiv": "2105.06211",
+                    "CorpusId": 234483021
+                },
+                "corpusId": 234483021,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/256eb3752e7b670c7cf0819ee363bcecbad1a038",
+                "title": "Quantized Proximal Averaging Network for Analysis Sparse Coding",
+                "abstract": "We solve the analysis sparse coding problem considering a combination of convex and non-convex sparsity promoting penalties. The multi-penalty formulation results in an iterative algorithm involving proximal-averaging. We then unfold the iterative algorithm into a trainable network that facilitates learning the sparsity prior. We also consider quantization of the network weights. Quantization makes neural networks efficient both in terms of memory and computation during inference, and also renders them compatible for low-precision hardware deployment. Our learning algorithm is based on a variant of the ADAM optimizer in which the quantizer is part of the forward pass and the gradients of the loss function are evaluated corresponding to the quantized weights while doing a book-keeping of the high-precision weights. We demonstrate applications to compressed image recovery and magnetic resonance image reconstruction. The proposed approach offers superior reconstruction accuracy and quality than state-of-the-art unfolding techniques and the performance degradation is minimal even when the weights are subjected to extreme quantization.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2091909896",
+                        "name": "Kartheek Kumar Reddy Nareddy"
+                    },
+                    {
+                        "authorId": "2091909842",
+                        "name": "Mani Madhoolika Bulusu"
+                    },
+                    {
+                        "authorId": "113463892",
+                        "name": "P. Pokala"
+                    },
+                    {
+                        "authorId": "1773340",
+                        "name": "C. Seelamantula"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Meng et al. (2020) used Bayesian learning for training neural networks with binary weights [26].",
+                "(2020) used Bayesian learning for training neural networks with binary weights [26]."
+            ],
+            "citingPaper": {
+                "paperId": "6af7e84404e3add7fc3ffcfa3c2270ee5ec543d9",
+                "externalIds": {
+                    "DBLP": "journals/symmetry/Jun21",
+                    "DOI": "10.3390/sym13030389",
+                    "CorpusId": 233246956
+                },
+                "corpusId": 233246956,
+                "publicationVenue": {
+                    "id": "1620da87-4387-4b9a-9bf4-22fdf74d4dc3",
+                    "name": "Symmetry",
+                    "type": "journal",
+                    "issn": "2073-8994",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-172134",
+                    "alternate_urls": [
+                        "https://www.mdpi.com/journal/symmetry",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-172134"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6af7e84404e3add7fc3ffcfa3c2270ee5ec543d9",
+                "title": "Machines Imitating Human Thinking Using Bayesian Learning and Bootstrap",
+                "abstract": "In the field of cognitive science, much research has been conducted on the diverse applications of artificial intelligence (AI). One important area of study is machines imitating human thinking. Although there are various approaches to development of thinking machines, we assume that human thinking is not always optimal in this paper. Sometimes, humans are driven by emotions to make decisions that are not optimal. Recently, deep learning has been dominating most machine learning tasks in AI. In the area of optimal decisions involving AI, many traditional machine learning methods are rapidly being replaced by deep learning. Therefore, because of deep learning, we can expect the faster growth of AI technology such as AlphaGo in optimal decision-making. However, humans sometimes think and act not optimally but emotionally. In this paper, we propose a method for building thinking machines imitating humans using Bayesian decision theory and learning. Bayesian statistics involves a learning process based on prior and posterior aspects. The prior represents an initial belief in a specific domain. This is updated to posterior through the likelihood of observed data. The posterior refers to the updated belief based on observations. When the observed data are newly added, the current posterior is used as a new prior for the updated posterior. Bayesian learning such as this also provides an optimal decision; thus, this is not well-suited to the modeling of thinking machines. Therefore, we study a new Bayesian approach to developing thinking machines using Bayesian decision theory. In our research, we do not use a single optimal value expected by the posterior; instead, we generate random values from the last updated posterior to be used for thinking machines that imitate human thinking.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2052577018",
+                        "name": "Sunghae Jun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "As in [10], we consider two predictors; the MAP predictor obtained for the fixed weight selectionw = sign(2\u03c3(2w)\u22121), which minimizes the variational posterior (12); and the ensemble predictor obtained by averaging predictions over 10 random realizations of the binary weights w \u223c qwr (w).",
+                "When \u03c4 in (15) tends to zero, the tanh(\u00b7) function tends to the sign(\u00b7) function, and the vector w follows distribution qwr (w) [10].",
+                "The recent work [10] presents an alternative, theoretically principled, Bayesian framework that optimizes directly over the (continuous) distribution of the binary weights.",
+                "In order to estimate the gradient in (14), Bayes-BiSNN leverages the reparameterization trick via the Gumbel-Softmax (GS) distribution [10, 26]."
+            ],
+            "citingPaper": {
+                "paperId": "1f1732f2cb7ba46e46217de512cee1c09c572ba5",
+                "externalIds": {
+                    "ArXiv": "2012.08300",
+                    "DBLP": "journals/corr/abs-2012-08300",
+                    "MAG": "3111159478",
+                    "DOI": "10.1109/DSLW51110.2021.9523415",
+                    "CorpusId": 229180913
+                },
+                "corpusId": 229180913,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1f1732f2cb7ba46e46217de512cee1c09c572ba5",
+                "title": "BiSNN: Training Spiking Neural Networks with Binary Weights via Bayesian Learning",
+                "abstract": "Artificial Neural Network (ANN)-based inference on battery-powered devices can be made more energy-efficient by restricting the synaptic weights to be binary, hence eliminating the need to perform multiplications. An alternative, emerging, approach relies on the use of Spiking Neural Networks (SNNs), biologically inspired, dynamic, event-driven models that enhance energy efficiency via the use of binary, sparse, activations. In this paper, an SNN model is introduced that combines the benefits of temporally sparse binary activations and of binary weights. Two learning rules are derived, the first based on the combination of straight-through and surrogate gradient techniques, and the second based on a Bayesian paradigm. Experiments validate the performance loss with respect to full-precision implementations, and demonstrate the advantage of the Bayesian paradigm in terms of accuracy and calibration.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2239503",
+                        "name": "Hyeryung Jang"
+                    },
+                    {
+                        "authorId": "147710847",
+                        "name": "N. Skatchkovsky"
+                    },
+                    {
+                        "authorId": "1705869",
+                        "name": "O. Simeone"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[380] presented a principled approach that justified such methods applying Bayesian learning rule."
+            ],
+            "citingPaper": {
+                "paperId": "172b266f190d89ec6e2164560eba3707e8936e6e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2011-06225",
+                    "ArXiv": "2011.06225",
+                    "MAG": "3102100346",
+                    "DOI": "10.1016/j.inffus.2021.05.008",
+                    "CorpusId": 226307260
+                },
+                "corpusId": 226307260,
+                "publicationVenue": {
+                    "id": "06afdd0b-0d85-413f-af8a-c3045c12c561",
+                    "name": "Information Fusion",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Inf Fusion"
+                    ],
+                    "issn": "1566-2535",
+                    "url": "https://www.journals.elsevier.com/information-fusion",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/15662535"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/172b266f190d89ec6e2164560eba3707e8936e6e",
+                "title": "A Review of Uncertainty Quantification in Deep Learning: Techniques, Applications and Challenges",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "7412048",
+                        "name": "Moloud Abdar"
+                    },
+                    {
+                        "authorId": "1866603",
+                        "name": "Farhad Pourpanah"
+                    },
+                    {
+                        "authorId": "1833049320",
+                        "name": "Sadiq Hussain"
+                    },
+                    {
+                        "authorId": "1404229235",
+                        "name": "Dana Rezazadegan"
+                    },
+                    {
+                        "authorId": "2150977916",
+                        "name": "Li Liu"
+                    },
+                    {
+                        "authorId": "1678622",
+                        "name": "M. Ghavamzadeh"
+                    },
+                    {
+                        "authorId": "1731709",
+                        "name": "P. Fieguth"
+                    },
+                    {
+                        "authorId": "1719250",
+                        "name": "Xiaochun Cao"
+                    },
+                    {
+                        "authorId": "145434108",
+                        "name": "A. Khosravi"
+                    },
+                    {
+                        "authorId": "2066217301",
+                        "name": "U. Acharya"
+                    },
+                    {
+                        "authorId": "144531494",
+                        "name": "V. Makarenkov"
+                    },
+                    {
+                        "authorId": "1743136",
+                        "name": "S. Nahavandi"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The competitors for training DNNs with binary weights include BinaryConnect [34], BWN [19], DoReFa [54], and BayesBiNN [28].",
+                "[28] propose to use the Bayesian rule to train binary weights for DNNs.",
+                "These approaches train discrete neural networks by approximating full-precision weights or activations in each layer with scaling factors and discrete values [19, 15, 20, 21, 22, 17, 23, 16, 24, 11, 25, 26], using stochastic weights [27, 18, 28, 29, 30], using a gradient estimator [31, 32, 33], using the straight-through estimator [34, 35], or using reinforcement learning [36]."
+            ],
+            "citingPaper": {
+                "paperId": "9e6428e9ddc3ed7b5b5d84ddcaa9a61c98500ed5",
+                "externalIds": {
+                    "DBLP": "journals/nn/DengZ22",
+                    "ArXiv": "2011.00580",
+                    "DOI": "10.1016/j.neunet.2021.10.018",
+                    "CorpusId": 239616550,
+                    "PubMed": "34773898"
+                },
+                "corpusId": 239616550,
+                "publicationVenue": {
+                    "id": "a13f3cb8-2492-4ccb-9329-73a5ddcaab9b",
+                    "name": "Neural Networks",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Neural Netw"
+                    ],
+                    "issn": "0893-6080",
+                    "url": "http://www.elsevier.com/locate/neunet",
+                    "alternate_urls": [
+                        "http://www.elsevier.com/wps/find/journaldescription.cws_home/841/description",
+                        "http://www.sciencedirect.com/science/journal/08936080"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9e6428e9ddc3ed7b5b5d84ddcaa9a61c98500ed5",
+                "title": "Sparsity-control ternary weight networks",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2150478789",
+                        "name": "Xiang Deng"
+                    },
+                    {
+                        "authorId": "2155968395",
+                        "name": "Zhongfei Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[29] propose to use the Bayesian rule to train binary weights for DNNs.",
+                "These approaches train discrete neural networks by approximating full precision weights or activations in each layer with scaling factors and discrete values [20], [16], [21], [22], [23], [18], [24], [17], [25], [12], [26], [27], [15], using stochastic weights [28], [19], [29], [30], using a gradient estimator [31], [32], using the straightthrough estimator [33], [34], or using reinforcement learning [35]."
+            ],
+            "citingPaper": {
+                "paperId": "e9445d96280a3560958ed43f956f63ab6e2bc85d",
+                "externalIds": {
+                    "MAG": "3094757741",
+                    "DBLP": "journals/corr/abs-2011-00580",
+                    "CorpusId": 226226472
+                },
+                "corpusId": 226226472,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e9445d96280a3560958ed43f956f63ab6e2bc85d",
+                "title": "An Embarrassingly Simple Approach to Training Ternary Weight Networks",
+                "abstract": "Deep neural networks (DNNs) have achieved great successes in various domains of artificial intelligence, but they require large amounts of memory and computational power. This severely restricts their implementation on resource-limited hardware. One approach to solving this problem is to train DNNs with ternary weights \\{-1, 0, +1\\}, thus avoiding multiplications and dramatically reducing the memory and computation requirements. However, the existing approaches to training ternary weight networks either have a large performance gap to the full precision counterparts or have a complex training process, which makes ternary weight networks not widely used. In this paper, we propose an embarrassingly simple approach (ESA) to training ternary weight networks. Specifically, ESA first parameterizes the weights $W$ in a DNN with $\\tanh(\\Theta)$ where $\\Theta$ are the parameters, so that the weight values are limited in the range between -1 and +1, and then a weight discretization regularization (WDR) is used to force the weights to be ternary. Consequently, ESA has an extremely high code reuse rate when converting a full precision weight DNN to the ternary version. More importantly, ESA is able to control the sparsity (i.e., the percentage of 0s) of the ternary weights through a controller $\\alpha$ in WDR. We theoretically and empirically show that the sparsity of the trained ternary weights is positively related to $\\alpha$. To the best of our knowledge, ESA is the first sparsity-controlling approach to training ternary weight networks. Extensive experiments on several benchmark datasets demonstrate that ESA beats the state-of-the-art approaches significantly and matches the performances of the full precision weight networks.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2150478789",
+                        "name": "Xiang Deng"
+                    },
+                    {
+                        "authorId": "2118748124",
+                        "name": "Zhongfei Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "BayesBiNN [59] uses a distribution over the binary variable, resulting in a principled approach for discrete optimization."
+            ],
+            "citingPaper": {
+                "paperId": "09ea3fbcc2d28b7dacffa86934307f0eeea525b2",
+                "externalIds": {
+                    "ArXiv": "2011.14824",
+                    "DBLP": "journals/corr/abs-2011-14824",
+                    "MAG": "3094844246",
+                    "DOI": "10.1109/JMASS.2020.3034205",
+                    "CorpusId": 227227911
+                },
+                "corpusId": 227227911,
+                "publicationVenue": {
+                    "id": "38faca20-d93d-4137-892a-332e3bede55a",
+                    "name": "IEEE Journal on Miniaturization for Air and Space Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE J Miniaturization Air Space Syst"
+                    ],
+                    "issn": "2576-3164",
+                    "url": "https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=8253411"
+                },
+                "url": "https://www.semanticscholar.org/paper/09ea3fbcc2d28b7dacffa86934307f0eeea525b2",
+                "title": "A Review of Recent Advances of Binary Neural Networks for Edge Computing",
+                "abstract": "Edge computing is promising to become one of the next hottest topics in artificial intelligence because it benefits various evolving domains, such as real-time unmanned aerial systems, industrial applications, and the demand for privacy protection. This article reviews the recent advances on binary neural network (BNN) and 1-bit convolutional neural network technologies that are well suitable for front-end, edge-based computing. We introduce and summarize existing work and classify them based on gradient approximation, quantization, architecture, loss functions, optimization method, and binary neural architecture search. We also introduce applications in the areas of computer vision and speech recognition and discuss future applications for edge computing.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2118227588",
+                        "name": "Wenyu Zhao"
+                    },
+                    {
+                        "authorId": "1390452961",
+                        "name": "Teli Ma"
+                    },
+                    {
+                        "authorId": "2075407256",
+                        "name": "Xuan Gong"
+                    },
+                    {
+                        "authorId": "1740430",
+                        "name": "Baochang Zhang"
+                    },
+                    {
+                        "authorId": "48471936",
+                        "name": "D. Doermann"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Other methods based on the surrogate gradients have been recently explored (Vlastelica et al., 2020; Meng et al., 2020)."
+            ],
+            "citingPaper": {
+                "paperId": "8a8e7c02ffbf54083692827b7d700e35f15f5f68",
+                "externalIds": {
+                    "ACL": "2020.emnlp-main.171",
+                    "DBLP": "conf/emnlp/MihaylovaNM20",
+                    "MAG": "3091822641",
+                    "ArXiv": "2010.02357",
+                    "DOI": "10.18653/v1/2020.emnlp-main.171",
+                    "CorpusId": 222140727
+                },
+                "corpusId": 222140727,
+                "publicationVenue": {
+                    "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+                    "name": "Conference on Empirical Methods in Natural Language Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Empir Method Nat Lang Process",
+                        "Empirical Methods in Natural Language Processing",
+                        "Conf Empir Method Nat Lang Process",
+                        "EMNLP"
+                    ],
+                    "url": "https://www.aclweb.org/portal/emnlp"
+                },
+                "url": "https://www.semanticscholar.org/paper/8a8e7c02ffbf54083692827b7d700e35f15f5f68",
+                "title": "Understanding the Mechanics of SPIGOT: Surrogate Gradients for Latent Structure Learning",
+                "abstract": "Latent structure models are a powerful tool for modeling language data: they can mitigate the error propagation and annotation bottleneck in pipeline systems, while simultaneously uncovering linguistic insights about the data. One challenge with end-to-end training of these models is the argmax operation, which has null gradient. In this paper, we focus on surrogate gradients, a popular strategy to deal with this problem. We explore latent structure learning through the angle of pulling back the downstream learning objective. In this paradigm, we discover a principled motivation for both the straight-through estimator (STE) as well as the recently-proposed SPIGOT - a variant of STE for structured models. Our perspective leads to new algorithms in the same family. We empirically compare the known and the novel pulled-back estimators against the popular alternatives, yielding new insight for practitioners and revealing intriguing failure cases.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "3442524",
+                        "name": "Tsvetomila Mihaylova"
+                    },
+                    {
+                        "authorId": "2114966",
+                        "name": "Vlad Niculae"
+                    },
+                    {
+                        "authorId": "2113367250",
+                        "name": "Andr\u00e9 F. T. Martins"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Note that recently the Bayesian learning rule has been applied in Meng et al. (2020) to train binary neural networks for supervised learning.",
+                "s \u03bb\u00b5i using the Bayesian learning rule in (29). 3However, despite using the same Bayesian learning rule, the resultant algorithm for unsupervised learning in this note is quite different from that in Meng et al. (2020) for supervised learning. 5 Interestingly, as shown in (29), although the natural parameters \u03bb\u00b5i are updated, the gradient is computed w.r.t. the expectation parameters \u03b7\u00b5i = tanh(\u03bb\u00b5i), which is alrea",
+                "3However, despite using the same Bayesian learning rule, the resultant algorithm for unsupervised learning in this note is quite different from that in Meng et al. (2020) for supervised learning.",
+                "rive andjustify manyexistinglearning-algorithmsin \ufb01elds such as optimization,Bayesian statistics, machine learning and deep learning. Note that recently the Bayesian learning rule has been applied in Meng et al. (2020) to train binary neural networks for supervised learning. Therefore, this note could be viewed as an extension of Meng et al. (2020) to the case of unsupervisedlearning 3. Speci\ufb01cally, to optimize the",
+                "Therefore, this note could be viewed as an extension of Meng et al. (2020) to the case of unsupervised learning 3."
+            ],
+            "citingPaper": {
+                "paperId": "23bbd50802618c1623c5fd92b8804529933be8f2",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2007-04676",
+                    "MAG": "3042006551",
+                    "ArXiv": "2007.04676",
+                    "CorpusId": 220424410
+                },
+                "corpusId": 220424410,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/23bbd50802618c1623c5fd92b8804529933be8f2",
+                "title": "Training Restricted Boltzmann Machines with Binary Synapses using the Bayesian Learning Rule",
+                "abstract": "Restricted Boltzmann machines (RBMs) with low-precision synapses are much appealing with high energy efficiency. However, training RBMs with binary synapses is challenging due to the discrete nature of synapses. Recently Huang proposed one efficient method to train RBMs with binary synapses by using a combination of gradient ascent and the message passing algorithm under the variational inference framework. However, additional heuristic clipping operation is needed. In this technical note, inspired from Huang's work , we propose one alternative optimization method using the Bayesian learning rule, which is one natural gradient variational inference method. As opposed to Huang's method, we update the natural parameters of the variational symmetric Bernoulli distribution rather than the expectation parameters. Since the natural parameters take values in the entire real domain, no additional clipping is needed. Interestingly, the algorithm in \\cite{huang2019data} could be viewed as one first-order approximation of the proposed algorithm, which justifies its efficacy with heuristic clipping.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "50123271",
+                        "name": "Xiangming Meng"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "1da436b5c3340d4a5710cbf3e8ee93ba8d2177c4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2006-06880",
+                    "ArXiv": "2006.06880",
+                    "MAG": "3034730115",
+                    "DOI": "10.1007/978-3-030-92659-5_7",
+                    "CorpusId": 219636350
+                },
+                "corpusId": 219636350,
+                "publicationVenue": {
+                    "id": "4bdc459e-68eb-4596-8e24-85dd8a047952",
+                    "name": "German Conference on Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Ger Conf Pattern Recognit",
+                        "GCPR"
+                    ],
+                    "url": "http://www.dagm.de/"
+                },
+                "url": "https://www.semanticscholar.org/paper/1da436b5c3340d4a5710cbf3e8ee93ba8d2177c4",
+                "title": "Reintroducing Straight-Through Estimators as Principled Methods for Stochastic Binary Networks",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "66784412",
+                        "name": "V. Yanush"
+                    },
+                    {
+                        "authorId": "145965041",
+                        "name": "A. Shekhovtsov"
+                    },
+                    {
+                        "authorId": "8796171",
+                        "name": "Dmitry Molchanov"
+                    },
+                    {
+                        "authorId": "2492721",
+                        "name": "D. Vetrov"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "368047516fb729653a1bfafaa042e54cf00f8834",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2101-07592",
+                    "ArXiv": "2003.03533",
+                    "MAG": "3009272685",
+                    "PubMedCentral": "8100137",
+                    "DOI": "10.1038/s41467-021-22768-y",
+                    "CorpusId": 212633550,
+                    "PubMed": "33953183"
+                },
+                "corpusId": 212633550,
+                "publicationVenue": {
+                    "id": "43b3f0f9-489a-4566-8164-02fafde3cd98",
+                    "name": "Nature Communications",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Nat Commun"
+                    ],
+                    "issn": "2041-1723",
+                    "url": "https://www.nature.com/ncomms/",
+                    "alternate_urls": [
+                        "http://www.nature.com/ncomms/about/index.html",
+                        "http://www.nature.com/ncomms/index.html"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/368047516fb729653a1bfafaa042e54cf00f8834",
+                "title": "Synaptic metaplasticity in binarized neural networks",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "1557381641",
+                        "name": "Axel Laborieux"
+                    },
+                    {
+                        "authorId": "5904564",
+                        "name": "M. Ernoult"
+                    },
+                    {
+                        "authorId": "22328712",
+                        "name": "T. Hirtzlin"
+                    },
+                    {
+                        "authorId": "1793153",
+                        "name": "D. Querlioz"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "11e48e789518b8c0bd26f1d363267f6c58c8b80a",
+                "externalIds": {
+                    "CorpusId": 259855703
+                },
+                "corpusId": 259855703,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/11e48e789518b8c0bd26f1d363267f6c58c8b80a",
+                "title": "Bayesian Learning for Binary Neural Networks",
+                "abstract": "The project is to study Bayesian learning methods for binary neural networks. Bayesian learning paradigm averages over all models that explain the data well. Binary neural networks are computationally efficient models that can be learned by optimizing their stochastic relaxation [1].The goal is to obtain binary neural networks with improved generalization capabilities and quantified uncertainty [2].There is a successful example of Bayesian binary networks [3]",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2223049102",
+                        "name": "V. Y. A. Shekhovtsov"
+                    },
+                    {
+                        "authorId": "1691955",
+                        "name": "E. H\u00fcllermeier"
+                    },
+                    {
+                        "authorId": "3249834",
+                        "name": "W. Waegeman"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "77ead0b88863b06e9aed35ef1b7ea9343850b820",
+                "externalIds": {
+                    "CorpusId": 249870128
+                },
+                "corpusId": 249870128,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/77ead0b88863b06e9aed35ef1b7ea9343850b820",
+                "title": "[Re] Training Binary Neural Networks using the Bayesian Learning Rule",
+                "abstract": "Meng, Bachmann, and Khan1 gives a mathematically principled approach to solve the discrete optimization problem that occurs in the case of BinaryNeuralNetworks and claims to give a similar performance on various classification benchmarks such as MNIST, CIFAR-10, and CIFAR100 as compared to their full-precision counterparts, as well as other recent algorithms to train BNNs like PMF and Bop. The paper also claims that the BayesBiNN method has an application in the continual learning domain as it helps in overcoming catastrophic forgetting of the past by using the posterior approximation of the previous task as a prior for the upcoming task. We try to reproduce all the results presented in the original paper by making a separate and independent codebase.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2054104301",
+                        "name": "Prateek Garg"
+                    },
+                    {
+                        "authorId": "2128038565",
+                        "name": "Lakshya Singhal"
+                    },
+                    {
+                        "authorId": "50847752",
+                        "name": "Ashish Sardana"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Neural networks with binary parameters and/or activations (BNNs) have been shown to be promising for solving classification problems [10, 11, 26, 35, 37], continual learning [21], language modeling [9, 24], semantic segmentation [32], video processing [23], compressed image recovery [27], etc."
+            ],
+            "citingPaper": {
+                "paperId": "7dce4d3e03f42fd975f27545aae1496d029c11a8",
+                "externalIds": {
+                    "CorpusId": 263744400
+                },
+                "corpusId": 263744400,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/7dce4d3e03f42fd975f27545aae1496d029c11a8",
+                "title": "Quantized Generative Models for Solving Inverse Problems",
+                "abstract": "Generative priors have been shown to be highly successful in solving inverse problems. In this paper, we consider quantized generative models i.e., the generator network weights come from a learnt \ufb01nite alphabet. Quantized neural networks are ef\ufb01cient in terms of memory and computation. They are ideally suited for deployment in a practical setting involving low-precision hardware. In this paper, we solve non-linear inverse problems using quantized generative models. We introduce a new meta-learning framework that makes use of proximal operators and jointly optimizes the quantized weights of the generative model, parameters of the sensing network, and the latent-space representation. Experimental validation is carried out using standard datasets \u2013 MNIST, CIFAR10, SVHN, and STL10. The results show that the performance of 32-bit networks can be achieved using 4-bit networks. The performance of 1-bit networks is about 0.7 to 2 dB inferior, while saving signi\ufb01cantly (32 \u00d7 ) on the model size.",
+                "year": null,
+                "authors": [
+                    {
+                        "authorId": "2256191880",
+                        "name": "Nareddy Kartheek"
+                    },
+                    {
+                        "authorId": "2256479479",
+                        "name": "Kumar Reddy"
+                    },
+                    {
+                        "authorId": "2105162849",
+                        "name": "Vinayak Killedar"
+                    },
+                    {
+                        "authorId": "1773340",
+                        "name": "C. Seelamantula"
+                    }
+                ]
+            }
+        }
+    ]
+}

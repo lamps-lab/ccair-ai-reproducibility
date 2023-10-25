@@ -1,0 +1,1622 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "According to stakeholders considered in the algorithm, there are user-side fairness [15], item-side fairness [14, 20], and two-sided fairness [35, 36].",
+                "Compared to some fairness-aware studies [19, 35, 36], although they can also achieve systemic group exposure regulation, they do not take userlevel calibration into consideration."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8036d304c49120397464eced1bdac308f3b80c05",
+                "externalIds": {
+                    "DBLP": "conf/recsys/0003LYMZ0ZFD23",
+                    "DOI": "10.1145/3604915.3608799",
+                    "CorpusId": 261823972
+                },
+                "corpusId": 261823972,
+                "publicationVenue": {
+                    "id": "61275a16-1e0d-479f-ac4e-f295310761f0",
+                    "name": "ACM Conference on Recommender Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conf Recomm Syst",
+                        "RecSys",
+                        "ACM Conf Recomm Syst",
+                        "Conference on Recommender Systems"
+                    ],
+                    "url": "http://recsys.acm.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8036d304c49120397464eced1bdac308f3b80c05",
+                "title": "Two-sided Calibration for Quality-aware Responsible Recommendation",
+                "abstract": "Calibration in recommender systems ensures that the user\u2019s interests distribution over groups of items is reflected with their corresponding proportions in the recommendation, which has gained increasing attention recently. For example, a user who watched 80 entertainment videos and 20 knowledge videos is expected to receive recommendations comprising about 80% entertainment and 20% knowledge videos as well. However, with the increasing calls for responsible recommendation, it has become inadequate to just match users\u2019 historical behaviors especially when items are grouped by their qualities, which could result in undesired effects at the system level (e.g., overwhelming clickbaits). In this paper, we envision the two-sided calibration task that not only matches the users\u2019 past interests distribution (user-level calibration) but also guarantees an overall target exposure distribution of different item groups (system-level calibration). The target group exposure distribution can be explicitly pursued by users, platform owners, and even the law (e.g., the platform owners expect about 50% knowledge video recommendation on the whole). To support this scenario, we propose a post-processing method named PCT. PCT first solves personalized calibration targets that minimize the changes in users\u2019 historical interest distributions while ensuring the overall target group exposure distribution. Then, PCT reranks the original recommendation lists according to personalized calibration targets to generate both relevant and two-sided calibrated recommendations. Extensive experiments demonstrate the superior performance of the proposed method compared to calibrated and fairness-aware recommendation approaches.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "47074678",
+                        "name": "Chenyang Wang"
+                    },
+                    {
+                        "authorId": "2240539069",
+                        "name": "Yankai Liu"
+                    },
+                    {
+                        "authorId": "2173741506",
+                        "name": "Yuanqing Yu"
+                    },
+                    {
+                        "authorId": "2903964",
+                        "name": "Weizhi Ma"
+                    },
+                    {
+                        "authorId": "2241109161",
+                        "name": "Min Zhang"
+                    },
+                    {
+                        "authorId": "1783406",
+                        "name": "Yiqun Liu"
+                    },
+                    {
+                        "authorId": "2240551905",
+                        "name": "Haitao Zeng"
+                    },
+                    {
+                        "authorId": "2144086553",
+                        "name": "Junlan Feng"
+                    },
+                    {
+                        "authorId": "2240541671",
+                        "name": "Chao Deng"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "572e03e9d1417b528a77761a7b73c90e2c2db530",
+                "externalIds": {
+                    "ArXiv": "2309.06375",
+                    "DBLP": "journals/corr/abs-2309-06375",
+                    "DOI": "10.48550/arXiv.2309.06375",
+                    "CorpusId": 261697266
+                },
+                "corpusId": 261697266,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/572e03e9d1417b528a77761a7b73c90e2c2db530",
+                "title": "Modeling Recommender Ecosystems: Research Challenges at the Intersection of Mechanism Design, Reinforcement Learning and Generative Models",
+                "abstract": "Modern recommender systems lie at the heart of complex ecosystems that couple the behavior of users, content providers, advertisers, and other actors. Despite this, the focus of the majority of recommender research -- and most practical recommenders of any import -- is on the local, myopic optimization of the recommendations made to individual users. This comes at a significant cost to the long-term utility that recommenders could generate for its users. We argue that explicitly modeling the incentives and behaviors of all actors in the system -- and the interactions among them induced by the recommender's policy -- is strictly necessary if one is to maximize the value the system brings to these actors and improve overall ecosystem\"health\". Doing so requires: optimization over long horizons using techniques such as reinforcement learning; making inevitable tradeoffs in the utility that can be generated for different actors using the methods of social choice; reducing information asymmetry, while accounting for incentives and strategic behavior, using the tools of mechanism design; better modeling of both user and item-provider behaviors by incorporating notions from behavioral economics and psychology; and exploiting recent advances in generative and foundation models to make these mechanisms interpretable and actionable. We propose a conceptual framework that encompasses these elements, and articulate a number of research challenges that emerge at the intersection of these different disciplines.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145646162",
+                        "name": "Craig Boutilier"
+                    },
+                    {
+                        "authorId": "2538104",
+                        "name": "Martin Mladenov"
+                    },
+                    {
+                        "authorId": "29978064",
+                        "name": "Guy Tennenholtz"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Recommender systems are known to suffer from exposure bias; few items are over-exposed in the recommendation lists, while the majority of other items are under-exposed [1, 7, 12, 23]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b0ee582c480c57237e27bfee50c20764a35fd87f",
+                "externalIds": {
+                    "ArXiv": "2309.02322",
+                    "DBLP": "journals/corr/abs-2309-02322",
+                    "DOI": "10.48550/arXiv.2309.02322",
+                    "CorpusId": 261556758
+                },
+                "corpusId": 261556758,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/b0ee582c480c57237e27bfee50c20764a35fd87f",
+                "title": "Fairness of Exposure in Dynamic Recommendation",
+                "abstract": "Exposure bias is a well-known issue in recommender systems where the exposure is not fairly distributed among items in the recommendation results. This is especially problematic when bias is amplified over time as a few items (e.g., popular ones) are repeatedly over-represented in recommendation lists and users' interactions with those items will amplify bias towards those items over time resulting in a feedback loop. This issue has been extensively studied in the literature in static recommendation environment where a single round of recommendation result is processed to improve the exposure fairness. However, less work has been done on addressing exposure bias in a dynamic recommendation setting where the system is operating over time, the recommendation model and the input data are dynamically updated with ongoing user feedback on recommended items at each round. In this paper, we study exposure bias in a dynamic recommendation setting. Our goal is to show that existing bias mitigation methods that are designed to operate in a static recommendation setting are unable to satisfy fairness of exposure for items in long run. In particular, we empirically study one of these methods and show that repeatedly applying this method fails to fairly distribute exposure among items in long run. To address this limitation, we show how this method can be adapted to effectively operate in a dynamic recommendation setting and achieve exposure fairness for items in long run. Experiments on a real-world dataset confirm that our solution is superior in achieving long-term exposure fairness for the items while maintaining the recommendation accuracy.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3437010",
+                        "name": "M. Mansoury"
+                    },
+                    {
+                        "authorId": "1684679",
+                        "name": "B. Mobasher"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "fe5070156c802dcb615decb3e72c48f123186082",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-00940",
+                    "ArXiv": "2309.00940",
+                    "DOI": "10.48550/arXiv.2309.00940",
+                    "CorpusId": 261530157
+                },
+                "corpusId": 261530157,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fe5070156c802dcb615decb3e72c48f123186082",
+                "title": "Content Prompting: Modeling Content Provider Dynamics to Improve User Welfare in Recommender Ecosystems",
+                "abstract": "Users derive value from a recommender system (RS) only to the extent that it is able to surface content (or items) that meet their needs/preferences. While RSs often have a comprehensive view of user preferences across the entire user base, content providers, by contrast, generally have only a local view of the preferences of users that have interacted with their content. This limits a provider's ability to offer new content to best serve the broader population. In this work, we tackle this information asymmetry with content prompting policies. A content prompt is a hint or suggestion to a provider to make available novel content for which the RS predicts unmet user demand. A prompting policy is a sequence of such prompts that is responsive to the dynamics of a provider's beliefs, skills and incentives. We aim to determine a joint prompting policy that induces a set of providers to make content available that optimizes user social welfare in equilibrium, while respecting the incentives of the providers themselves. Our contributions include: (i) an abstract model of the RS ecosystem, including content provider behaviors, that supports such prompting; (ii) the design and theoretical analysis of sequential prompting policies for individual providers; (iii) a mixed integer programming formulation for optimal joint prompting using path planning in content space; and (iv) simple, proof-of-concept experiments illustrating how such policies improve ecosystem health and user welfare.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2237807144",
+                        "name": "Siddharth Prasad"
+                    },
+                    {
+                        "authorId": "2538104",
+                        "name": "Martin Mladenov"
+                    },
+                    {
+                        "authorId": "145646162",
+                        "name": "Craig Boutilier"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8cdadf2c186a63528d2094de7d48e4635147a66c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-15651",
+                    "ArXiv": "2308.15651",
+                    "DOI": "10.48550/arXiv.2308.15651",
+                    "CorpusId": 261339659
+                },
+                "corpusId": 261339659,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8cdadf2c186a63528d2094de7d48e4635147a66c",
+                "title": "Ensuring User-side Fairness in Dynamic Recommender Systems",
+                "abstract": "User-side group fairness is crucial for modern recommender systems, as it aims to alleviate performance disparity between groups of users defined by sensitive attributes such as gender, race, or age. We find that the disparity tends to persist or even increase over time. This calls for effective ways to address user-side fairness in a dynamic environment, which has been infrequently explored in the literature. However, fairness-constrained re-ranking, a typical method to ensure user-side fairness (i.e., reducing performance disparity), faces two fundamental challenges in the dynamic setting: (1) non-differentiability of the ranking-based fairness constraint, which hinders the end-to-end training paradigm, and (2) time-inefficiency, which impedes quick adaptation to changes in user preferences. In this paper, we propose FAir Dynamic rEcommender (FADE), an end-to-end framework with fine-tuning strategy to dynamically alleviate performance disparity. To tackle the above challenges, FADE uses a novel fairness loss designed to be differentiable and lightweight to fine-tune model parameters to ensure both user-side fairness and high-quality recommendations. Via extensive experiments on the real-world dataset, we empirically demonstrate that FADE effectively and efficiently reduces performance disparity, and furthermore, FADE improves overall recommendation quality over time compared to not using any new data.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2154454915",
+                        "name": "Hyunsik Yoo"
+                    },
+                    {
+                        "authorId": "2215437587",
+                        "name": "Zhichen Zeng"
+                    },
+                    {
+                        "authorId": "2111625448",
+                        "name": "Jian Kang"
+                    },
+                    {
+                        "authorId": "4691481",
+                        "name": "Zhining Liu"
+                    },
+                    {
+                        "authorId": "2235338301",
+                        "name": "David Zhou"
+                    },
+                    {
+                        "authorId": "1682816",
+                        "name": "Fei Wang"
+                    },
+                    {
+                        "authorId": "2235777469",
+                        "name": "Eunice Chan"
+                    },
+                    {
+                        "authorId": "2058143613",
+                        "name": "H. Tong"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "\u2022 What metrics and summary statistics usefully capture the distributional efects of a system within a stakeholder class or across stakeholder classes? There are several promising directions here, including the Expected Exposure construct [28] and its multi-sided extension [81] along with positive-sum aggregation of utility across user subgroups [80]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "fad620bb0aa507f0a61bdf0e0496fe2e8a017aa4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-05892",
+                    "ArXiv": "2309.05892",
+                    "DOI": "10.1145/3613455",
+                    "CorpusId": 260499764
+                },
+                "corpusId": 260499764,
+                "publicationVenue": {
+                    "id": "c34aaa9c-865d-444d-96c0-7dc7dc341575",
+                    "name": "ACM Transactions on Recommender Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Trans Recomm Syst"
+                    ],
+                    "issn": "2770-6699"
+                },
+                "url": "https://www.semanticscholar.org/paper/fad620bb0aa507f0a61bdf0e0496fe2e8a017aa4",
+                "title": "Distributionally-Informed Recommender System Evaluation",
+                "abstract": "Current practice for evaluating recommender systems typically focuses on point estimates of user-oriented effectiveness metrics or business metrics, sometimes combined with additional metrics for considerations such as diversity and novelty. In this paper, we argue for the need for researchers and practitioners to attend more closely to various distributions that arise from a recommender system (or other information access system) and the sources of uncertainty that lead to these distributions. One immediate implication of our argument is that both researchers and practitioners must report and examine more thoroughly the distribution of utility between and within different stakeholder groups. However, distributions of various forms arise in many more aspects of the recommender systems experimental process, and distributional thinking has substantial ramifications for how we design, evaluate, and present recommender systems evaluation and research results. Leveraging and emphasizing distributions in the evaluation of recommender systems is a necessary step to ensure that the systems provide appropriate and equitably-distributed benefit to the people they affect.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2386667",
+                        "name": "Michael D. Ekstrand"
+                    },
+                    {
+                        "authorId": "1750995",
+                        "name": "Ben Carterette"
+                    },
+                    {
+                        "authorId": "2164035897",
+                        "name": "Fernando Diaz"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "207eef617effbe504912e5112088c61d025536b7",
+                "externalIds": {
+                    "ArXiv": "2308.02887",
+                    "DBLP": "journals/corr/abs-2308-02887",
+                    "DOI": "10.48550/arXiv.2308.02887",
+                    "CorpusId": 260680652
+                },
+                "corpusId": 260680652,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/207eef617effbe504912e5112088c61d025536b7",
+                "title": "Group Membership Bias",
+                "abstract": "When learning to rank from user interactions, search and recommendation systems must address biases in user behavior to provide a high-quality ranking. One type of bias that has recently been studied in the ranking literature is when sensitive attributes, such as gender, have an impact on a user's judgment about an item's utility. For example, in a search for an expertise area, some users may be biased towards clicking on male candidates over female candidates. We call this type of bias group membership bias or group bias for short. Increasingly, we seek rankings that not only have high utility but are also fair to individuals and sensitive groups. Merit-based fairness measures rely on the estimated merit or utility of the items. With group bias, the utility of the sensitive groups is under-estimated, hence, without correcting for this bias, a supposedly fair ranking is not truly fair. In this paper, first, we analyze the impact of group bias on ranking quality as well as two well-known merit-based fairness metrics and show that group bias can hurt both ranking and fairness. Then, we provide a correction method for group bias that is based on the assumption that the utility score of items in different groups comes from the same distribution. This assumption has two potential issues of sparsity and equality-instead-of-equity, which we use an amortized approach to solve. We show that our correction method can consistently compensate for the negative impact of group bias on ranking quality and fairness metrics.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3096714",
+                        "name": "Ali Vardasbi"
+                    },
+                    {
+                        "authorId": "1696030",
+                        "name": "M. de Rijke"
+                    },
+                    {
+                        "authorId": "2164035897",
+                        "name": "Fernando Diaz"
+                    },
+                    {
+                        "authorId": "3226635",
+                        "name": "Mostafa Dehghani"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e064d1bdf49d97c6cc1cdf5917300b849fdd2d89",
+                "externalIds": {
+                    "DOI": "10.1007/s11063-023-11376-0",
+                    "CorpusId": 260651604
+                },
+                "corpusId": 260651604,
+                "publicationVenue": {
+                    "id": "03101d6e-e317-48fe-ab55-f82ed4f0727f",
+                    "name": "Neural Processing Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Neural Process Lett"
+                    ],
+                    "issn": "1370-4621",
+                    "url": "https://link.springer.com/journal/11063"
+                },
+                "url": "https://www.semanticscholar.org/paper/e064d1bdf49d97c6cc1cdf5917300b849fdd2d89",
+                "title": "DFGR: Diversity and Fairness Awareness of Group Recommendation in an Event-based Social Network",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1390525037",
+                        "name": "Yuan Liang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c340d19bca9ae41c71b68ffcd38565f42e4647ce",
+                "externalIds": {
+                    "DBLP": "conf/sigir/LiVYR23",
+                    "DOI": "10.1145/3539618.3591914",
+                    "CorpusId": 259362832
+                },
+                "corpusId": 259362832,
+                "publicationVenue": {
+                    "id": "8dce23a9-44e0-4381-a39e-2acc1edff700",
+                    "name": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                        "Int ACM SIGIR Conf Res Dev Inf Retr",
+                        "SIGIR",
+                        "Annu Int ACM SIGIR Conf Res Dev Inf Retr"
+                    ],
+                    "url": "http://www.acm.org/sigir/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c340d19bca9ae41c71b68ffcd38565f42e4647ce",
+                "title": "Repetition and Exploration in Sequential Recommendation",
+                "abstract": "In several recommendation scenarios, including next basket recommendation, the importance of repetition and exploration has been discovered and studied. Sequential recommenders (SR) aim to infer a user's preferences and suggest the next item for them to interact with based on their historical interaction sequences. There has not been a systematic analysis of sequential recommenders from the perspective of repetition and exploration. As a result, it is unclear how these models, that are typically optimized for accuracy, perform in terms of repetition and exploration, as well as the potential drawbacks of deploying them in real applications. In this paper, we examine whether repetition and exploration are important dimensions in the sequential recommendation scenario. We consider this generalizability question both from a user-centered and an item-centered perspective. Towards the latter, we define item repeat exposure and item explore exposure and examine the recommendation performance of sequential recommendation models in terms of both accuracy and exposure from the perspective of repetition and exploration. We find that (i) there is an imbalance in accuracy and difficulty w.r.t. repetition and exploration in SR scenarios, (ii) using the conventional average overall accuracy with a significance test does not fully represent a model's recommendation accuracy, and (iii) accuracy-oriented sequential recommendation models may suffer from less/zero item explore exposure issue, where items are mostly (or even only) recommended to their repeat users and fail to reach their potential new users. To analyze our findings, we remove repeat samples from the dataset, that often act as easy shortcuts, and focus on a pure exploration SR scenario. We find that (i) removing the repetition shortcut increases the recommendation novelty and helps users who prefer to consume novel items next, (ii) neural-based models fail to learn the basic characteristics of this pure exploration scenario and suffer from an inherent repetitive bias issue, (iii) using shared item embeddings in the prediction layer may skew recommendations to repeat items, and (iv) removing all repeat items to post-processing recommendation results leads to a substantial improvement on top of several SR methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2150654536",
+                        "name": "Ming Li"
+                    },
+                    {
+                        "authorId": "3096714",
+                        "name": "Ali Vardasbi"
+                    },
+                    {
+                        "authorId": "2136074457",
+                        "name": "Andrew Yates"
+                    },
+                    {
+                        "authorId": "121213569",
+                        "name": "Maarten de Rijke"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "0K gender, age, occupation category timestamps \u2713 \u2713 \u2713 [39, 41, 63, 86, 122, 126, 149] MovieLens 10M[48] movie 69.",
+                "[40] 2022 Group Single Round Demographic Parity NDCG KL-divergence [94] 2022 Group Single Round Demographic Parity Recommended Times Ratio Diference [68] 2022 Individual Single Round Fairness through awareness Rank-Weighted Exposure Mean Absolute Diference [41] 2022 Group Single Round Demographic Parity Recommended Times KL-divergence [126] 2022 Individual and Group Single Round Demographic Parity NDCG (Customer), Outcome of item(Provider) Discrepancy between two Groups",
+                "0M gender, age, occupation category timestamps \u2713 \u2713 \u2713 [9, 16, 34, 98, 103, 138] [11, 32, 57, 70, 148, 150] [29, 39, 53, 71, 96, 127] [66, 106, 122, 126] MovieLens 20M[48] movie 138."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "bcd585563fed382a6832c7403ebdde143f6c1089",
+                "externalIds": {
+                    "DOI": "10.1145/3604558",
+                    "CorpusId": 259132412
+                },
+                "corpusId": 259132412,
+                "publicationVenue": {
+                    "id": "ca61b508-d706-40a4-8b54-d657dd6cd9d6",
+                    "name": "ACM Transactions on Knowledge Discovery from Data",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Trans Knowl Discov Data",
+                        "ACM Transactions on Knowledge Discovery From Data"
+                    ],
+                    "issn": "1556-4681",
+                    "url": "http://www.acm.org/pubs/tkdd/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/tkdd",
+                        "http://portal.acm.org/browse_dl.cfm?coll=portal&dl=ACM&idx=J1054&linked=1&part=transaction"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/bcd585563fed382a6832c7403ebdde143f6c1089",
+                "title": "Fairness in Recommender Systems: Evaluation Approaches and Assurance Strategies",
+                "abstract": "With the wide application of recommender systems, the potential impacts of recommender systems on customers, item providers and other parties have attracted increasing attention. Fairness, which is the quality of treating people equally, is also becoming important in recommender system evaluation and algorithm design. Therefore, in the past years, there has been a growing interest in fairness measurement and assurance in recommender systems. Although there are several reviews on related topics, such as fairness in machine learning and debias in recommender systems, they do not present a systematic view on fairness in recommender systems, which is context-aware and has a multi-sided meaning. Therefore, in this review, the concept of fairness is discussed in detail in the various contexts of recommender systems. Specifically, a comprehensive framework to classify fairness metrics is proposed from four dimensions, i.e., Fairness for Whom, Demographic Unit, Time Frame and Quantification Method. Then the strategies for eliminating unfairness in recommendations, fairness in different recommendation tasks and datasets are reviewed and summarized. Finally, the challenges and future work are discussed.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2108053674",
+                        "name": "Yao Wu"
+                    },
+                    {
+                        "authorId": "2125080511",
+                        "name": "Jiangxia Cao"
+                    },
+                    {
+                        "authorId": "1747560",
+                        "name": "Guandong Xu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Examples include fairness metrics [15, 39, 44], learning-to-rank applications [34, 40, 45, 46], outlier-aware fair ranking [23, 36], online fair ranking [22], and multi-stakeholder fair recommendation [42]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "33fd678246fed23746c50b1ad4b3c18363aa3331",
+                "externalIds": {
+                    "DBLP": "conf/fat/CachelR23",
+                    "DOI": "10.1145/3593013.3594085",
+                    "CorpusId": 259139776
+                },
+                "corpusId": 259139776,
+                "publicationVenue": {
+                    "id": "cdc83875-a82d-445c-b097-cbe91afe99a8",
+                    "name": "Conference on Fairness, Accountability and Transparency",
+                    "type": "conference",
+                    "alternate_names": [
+                        "FAccT",
+                        "Conf Fairness Account Transpar"
+                    ],
+                    "url": "https://facctconference.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/33fd678246fed23746c50b1ad4b3c18363aa3331",
+                "title": "Fairer Together: Mitigating Disparate Exposure in Kemeny Rank Aggregation",
+                "abstract": "In social choice, traditional Kemeny rank aggregation combines the preferences of voters, expressed as rankings, into a single consensus ranking without consideration for how this ranking may unfairly affect marginalized groups (i.e., racial or gender). Developing fair rank aggregation methods is critical due to their societal influence in applications prioritizing job applicants, funding proposals, and scheduling medical patients. In this work, we introduce the Fair Exposure Kemeny Aggregation Problem (FairExp-kap) for combining vast and diverse voter preferences into a single ranking that is not only a suitable consensus, but ensures opportunities are not withheld from marginalized groups. In formalizing FairExp-kap, we extend the fairness of exposure notion from information retrieval to the rank aggregation context and present a complimentary metric for voter preference representation. We design algorithms for solving FairExp-kap that explicitly account for position bias, a common ranking-based concern that end-users pay more attention to higher ranked candidates. epik solves FairExp-kap exactly by incorporating non-pairwise fairness of exposure into the pairwise Kemeny optimization; while the approximate epira is a candidate swapping algorithm, that guarantees ranked candidate fairness. Utilizing comprehensive synthetic simulations and six real-world datasets, we show the efficacy of our approach illustrating that we succeed in mitigating disparate group exposure unfairness in consensus rankings, while maximally representing voter preferences.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2176779395",
+                        "name": "Kathleen Cachel"
+                    },
+                    {
+                        "authorId": "66044002",
+                        "name": "E. Rundensteiner"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "47d819f79d44d9cb5145b92e438f7b2a773451e8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-00403",
+                    "ArXiv": "2306.00403",
+                    "DOI": "10.48550/arXiv.2306.00403",
+                    "CorpusId": 259000153
+                },
+                "corpusId": 259000153,
+                "publicationVenue": {
+                    "id": "06afdd0b-0d85-413f-af8a-c3045c12c561",
+                    "name": "Information Fusion",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Inf Fusion"
+                    ],
+                    "issn": "1566-2535",
+                    "url": "https://www.journals.elsevier.com/information-fusion",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/15662535"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/47d819f79d44d9cb5145b92e438f7b2a773451e8",
+                "title": "A Survey on Fairness-aware Recommender Systems",
+                "abstract": "As information filtering services, recommender systems have extremely enriched our daily life by providing personalized suggestions and facilitating people in decision-making, which makes them vital and indispensable to human society in the information era. However, as people become more dependent on them, recent studies show that recommender systems potentially own unintentional impacts on society and individuals because of their unfairness (e.g., gender discrimination in job recommendations). To develop trustworthy services, it is crucial to devise fairness-aware recommender systems that can mitigate these bias issues. In this survey, we summarise existing methodologies and practices of fairness in recommender systems. Firstly, we present concepts of fairness in different recommendation scenarios, comprehensively categorize current advances, and introduce typical methods to promote fairness in different stages of recommender systems. Next, after introducing datasets and evaluation metrics applied to assess the fairness of recommender systems, we will delve into the significant influence that fairness-aware recommender systems exert on real-world industrial applications. Subsequently, we highlight the connection between fairness and other principles of trustworthy recommender systems, aiming to consider trustworthiness principles holistically while advocating for fairness. Finally, we summarize this review, spotlighting promising opportunities in comprehending concepts, frameworks, the balance between accuracy and fairness, and the ties with trustworthiness, with the ultimate goal of fostering the development of fairness-aware recommender systems.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1860892",
+                        "name": "Di Jin"
+                    },
+                    {
+                        "authorId": "82527705",
+                        "name": "Luzhi Wang"
+                    },
+                    {
+                        "authorId": "2156713249",
+                        "name": "He Zhang"
+                    },
+                    {
+                        "authorId": "26956796",
+                        "name": "Yizhen Zheng"
+                    },
+                    {
+                        "authorId": "2218582225",
+                        "name": "Weiping Ding"
+                    },
+                    {
+                        "authorId": "2218637525",
+                        "name": "Feng Xia"
+                    },
+                    {
+                        "authorId": "2153326034",
+                        "name": "Shirui Pan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d9ab1dd43a285ebb6a444217e90fa4107b187a35",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-16637",
+                    "ArXiv": "2305.16637",
+                    "DOI": "10.1145/3583780.3614877",
+                    "CorpusId": 258947539
+                },
+                "corpusId": 258947539,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/d9ab1dd43a285ebb6a444217e90fa4107b187a35",
+                "title": "FARA: Future-aware Ranking Algorithm for Fairness Optimization",
+                "abstract": "Ranking systems are the key components of modern Information Retrieval (IR) applications, such as search engines and recommender systems. Besides the ranking relevance to users, the exposure fairness to item providers has also been considered an important factor in ranking optimization. Many fair ranking algorithms have been proposed to jointly optimize both ranking relevance and fairness. However, we find that most existing fair ranking methods adopt greedy algorithms that only optimize rankings for the next immediate session or request. As shown in this paper, such a myopic paradigm could limit the upper bound of ranking optimization and lead to suboptimal performance in the long term. To this end, we propose \\textbf{FARA}, a novel \\textbf{F}uture-\\textbf{A}ware \\textbf{R}anking \\textbf{A}lgorithm for ranking relevance and fairness optimization. Instead of greedily optimizing rankings for the next immediate session, FARA plans ahead by jointly optimizing multiple ranklists together and saving them for future sessions. Specifically, FARA first uses the Taylor expansion to investigate how future ranklists will influence the overall fairness of the system. Then, based on the analysis of the Taylor expansion, FARA adopts a two-phase optimization algorithm where we first solve an optimal future exposure planning problem and then construct the optimal ranklists according to the optimal future exposure planning. Theoretically, we show that FARA is optimal for ranking relevance and fairness joint optimization. Empirically, our extensive experiments on three semi-synthesized datasets show that FARA is efficient, effective, and can deliver significantly better ranking performance compared to state-of-the-art fair ranking methods. We make our implementation public at \\href{https://github.com/Taosheng-ty/QP_fairness/}{https://github.com/Taosheng-ty/QP\\_fairness/}.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1958895984",
+                        "name": "Tao Yang"
+                    },
+                    {
+                        "authorId": "2145161589",
+                        "name": "Zhichao Xu"
+                    },
+                    {
+                        "authorId": "2145027105",
+                        "name": "Zhenduo Wang"
+                    },
+                    {
+                        "authorId": "144922928",
+                        "name": "Qingyao Ai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Few recent works propose a framework to learn the relevance scores considering the joint multi-objective optimization [21, 51]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "571213ed4b7372d2b349e9853f4924dadd57c582",
+                "externalIds": {
+                    "DBLP": "conf/www/GuptaNCVRNDC23",
+                    "DOI": "10.1145/3543507.3583398",
+                    "CorpusId": 258333874
+                },
+                "corpusId": 258333874,
+                "publicationVenue": {
+                    "id": "e07422f9-c065-40c3-a37b-75e98dce79fe",
+                    "name": "The Web Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Web Conf",
+                        "WWW"
+                    ],
+                    "url": "http://www.iw3c2.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/571213ed4b7372d2b349e9853f4924dadd57c582",
+                "title": "Towards Fair Allocation in Social Commerce Platforms",
+                "abstract": "Social commerce platforms are emerging businesses where producers sell products through re-sellers who advertise the products to other customers in their social network. Due to the increasing popularity of this business model, thousands of small producers and re-sellers are starting to depend on these platforms for their livelihood; thus, it is important to provide fair earning opportunities to them. The enormous product space in such platforms prohibits manual search, and motivates the need for recommendation algorithms to effectively allocate product exposure and, consequently, earning opportunities. In this work, we focus on the fairness of such allocations in social commerce platforms and formulate the problem of assigning products to re-sellers as a fair division problem with indivisible items under two-sided cardinality constraints, wherein each product must be given to at least a certain number of re-sellers and each re-seller must get a certain number of products. Our work systematically explores various well-studied benchmarks of fairness\u2014including Nash social welfare, envy-freeness up to one item (EF1), and equitability up to one item (EQ1)\u2014from both theoretical and experimental perspectives. We find that the existential and computational guarantees of these concepts known from the unconstrained setting do not extend to our constrained model. To address this limitation, we develop a mixed-integer linear program and other scalable heuristics that provide near-optimal approximation of Nash social welfare in simulated and real social commerce datasets. Overall, our work takes the first step towards achieving provable fairness alongside reasonable revenue guarantees on social commerce platforms.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2164700146",
+                        "name": "Anjali Gupta"
+                    },
+                    {
+                        "authorId": "2215463427",
+                        "name": "Shreyans J. Nagori"
+                    },
+                    {
+                        "authorId": "2676839",
+                        "name": "Abhijnan Chakraborty"
+                    },
+                    {
+                        "authorId": "36539670",
+                        "name": "Rohit Vaish"
+                    },
+                    {
+                        "authorId": "1699732",
+                        "name": "Sayan Ranu"
+                    },
+                    {
+                        "authorId": "2097232019",
+                        "name": "P. Nadkarni"
+                    },
+                    {
+                        "authorId": "2187298630",
+                        "name": "Narendra Varma Dasararaju"
+                    },
+                    {
+                        "authorId": "3355375",
+                        "name": "M. Chelliah"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "[10, 38, 57] draw single permutations from a deterministic ranker by perturbing its scores using the Concrete distribution [36].",
+                "Other works handle multisided fairness criteria [52, 57] and learning fair stochastic policies via the policy-gradient approach [49, 59]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "9ec236a1b6564020437100ca33e655edd0fd8415",
+                "externalIds": {
+                    "ArXiv": "2305.00319",
+                    "DOI": "10.1145/3539618.3591714",
+                    "CorpusId": 258426968
+                },
+                "corpusId": 258426968,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/9ec236a1b6564020437100ca33e655edd0fd8415",
+                "title": "Learning to Re-rank with Constrained Meta-Optimal Transport",
+                "abstract": "Many re-ranking strategies in search systems rely on stochastic ranking policies, encoded as Doubly-Stochastic (DS) matrices, that satisfy desired ranking constraints in expectation, e.g., Fairness of Exposure (FOE). These strategies are generally two-stage pipelines: (i) an offline re-ranking policy construction step and (ii) an online sampling of rankings step. Building a re-ranking policy requires repeatedly solving a constrained optimization problem, one for each issued query. Thus, it is necessary to recompute the optimization procedure for any new/unseen query. Regarding sampling, the Birkhoff-von-Neumann decomposition (BvND) is the favored approach to draw rankings from any DS-based policy. Nonetheless, the BvND is too costly to compute online. Hence, the BvND as a sampling solution is memory-consuming as it can grow as O(N n2) for N queries and n documents. This paper proposes a novel, fast, lightweight way to predict fair stochastic re-ranking policies: Constrained Meta-Optimal Transport (CoMOT). This method fits a neural network shared across queries like a learning-to-rank system. We also introduce Gumbel-Matching Sampling (GumMS), an online sampling approach from DS-based policies. Our proposed pipeline, CoMOT + GumMS, only needs to store the parameters of a single model, and it can generalize to unseen queries. We empirically evaluated our pipeline on the TREC 2019 and 2020 datasets under FOE constraints. Our experiments show that CoMOT rapidly predicts fair re-ranking policies on held-out data, with a speed-up proportional to the average number of documents per query. It also displays fairness and ranking performance similar to the original optimization-based policy. Furthermore, we empirically validate the effectiveness of GumMS to approximate DS-based policies in expectation. Together, our methods are an important step in learning-to-predict solutions to optimization problems in information retrieval.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1403005581",
+                        "name": "Andr\u00e9s Hoyos-Idrobo"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Since fairness in recommender systems relates to the benefits from multiple stakeholders [144, 154, 155, 156, 157], the request of fairness may come from different sides."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "3e82d12dbce6becdcae94e3ebb01dd569bdb734f",
+                "externalIds": {
+                    "ArXiv": "2301.04016",
+                    "DBLP": "journals/corr/abs-2301-04016",
+                    "DOI": "10.48550/arXiv.2301.04016",
+                    "CorpusId": 255570025
+                },
+                "corpusId": 255570025,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/3e82d12dbce6becdcae94e3ebb01dd569bdb734f",
+                "title": "Causal Inference for Recommendation: Foundations, Methods and Applications",
+                "abstract": "Recommender systems are important and powerful tools for various personalized services. Traditionally, these systems use data mining and machine learning techniques to make recommendations based on correlations found in the data. However, relying solely on correlation without considering the underlying causal mechanism may lead to various practical issues such as fairness, explainability, robustness, bias, echo chamber and controllability problems. Therefore, researchers in related area have begun incorporating causality into recommendation systems to address these issues. In this survey, we review the existing literature on causal inference in recommender systems. We discuss the fundamental concepts of both recommender systems and causal inference as well as their relationship, and review the existing work on causal methods for different problems in recommender systems. Finally, we discuss open problems and future directions in the field of causal inference for recommendations.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2111044480",
+                        "name": "Shuyuan Xu"
+                    },
+                    {
+                        "authorId": "2111810606",
+                        "name": "Jianchao Ji"
+                    },
+                    {
+                        "authorId": "48515097",
+                        "name": "Yunqi Li"
+                    },
+                    {
+                        "authorId": "152988336",
+                        "name": "Yingqiang Ge"
+                    },
+                    {
+                        "authorId": "2110449137",
+                        "name": "Juntao Tan"
+                    },
+                    {
+                        "authorId": "2145038716",
+                        "name": "Yongfeng Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7a558482e817dde05dae98134243847241491cb9",
+                "externalIds": {
+                    "DBLP": "journals/ipm/AmigoDMB23",
+                    "DOI": "10.1016/j.ipm.2022.103115",
+                    "CorpusId": 253290843
+                },
+                "corpusId": 253290843,
+                "publicationVenue": {
+                    "id": "37f5b9b7-f828-4ae1-a174-45b538cbd4e4",
+                    "name": "Information Processing & Management",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Inf Process Manag",
+                        "Inf Process  Manag",
+                        "Information Processing and Management"
+                    ],
+                    "issn": "0306-4573",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/244/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/information-processing-and-management/",
+                        "http://www.sciencedirect.com/science/journal/03064573",
+                        "http://www.journals.elsevier.com/information-processing-and-management/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7a558482e817dde05dae98134243847241491cb9",
+                "title": "A unifying and general account of fairness measurement in recommender systems",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1688716",
+                        "name": "Enrique Amig\u00f3"
+                    },
+                    {
+                        "authorId": "2614755",
+                        "name": "Yashar Deldjoo"
+                    },
+                    {
+                        "authorId": "1726978",
+                        "name": "Stefano Mizzaro"
+                    },
+                    {
+                        "authorId": "1738219",
+                        "name": "Alejandro Bellog\u00edn"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "48f33efa2e3dae0e9780dbf99dac08c693943041",
+                "externalIds": {
+                    "DBLP": "conf/bigdataconf/Liang22",
+                    "DOI": "10.1109/BigData55660.2022.10020553",
+                    "CorpusId": 256321639
+                },
+                "corpusId": 256321639,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/48f33efa2e3dae0e9780dbf99dac08c693943041",
+                "title": "FAGR: Fairness-aware Group Recommendation in Event-based Social Networks",
+                "abstract": "An event-based social network (EBSN) is a new type of social network that combines online and offline n etworks. In recent years, an important task in EBSN recommendation systems has been to design better and more reasonable recommendation algorithms to improve the accuracy of recommendation and enhance user satisfaction. However, the current research seldom considers how to coordinate fairness among individual users and reduce the impact of individual unreasonable feedback in group event recommendation. In addition, while considering the fairness of individuals, the accuracy of recommendation is less improved by fully combining the context key information. To solve these problems, we propose a prefiltering algorithm to filter t he c andidate e vent s et, a m ultidimensional context recommendation to provide personalized event recommendations for each user in the group, and a group consensus function fusion strategy to fuse the recommendation results of members in the group. To improve overall satisfaction with the recommendations, we propose a ranking adjustment strategy of the key context. Finally, we verify the effectiveness of our proposed algorithm in real data sets and find t hat F AGR i s s uperior t o t he latest algorithms in terms of global satisfaction, distance satisfaction and user fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1390525037",
+                        "name": "Yuan Liang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "In recent years, fairness has been widely used in many aspects.[3, 8, 11] use different fairness measurement methods to solve the fairness problem of resource allocation in different fields, and have achieved certain results."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ac4108c1ef897b3f9e33f75cc2941f566d275c35",
+                "externalIds": {
+                    "DOI": "10.1145/3577530.3577555",
+                    "CorpusId": 257837274
+                },
+                "corpusId": 257837274,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ac4108c1ef897b3f9e33f75cc2941f566d275c35",
+                "title": "FAER: Fairness-aware Event-participant Recommendation in Event-based Social Networks",
+                "abstract": "An event-based social network (EBSN) is a new type of social network that combines online and offline networks. In recent years, an important task in EBSN recommendation systems has been to design better and more reasonable recommendation algorithms to improve the accuracy of recommendation and enhance user satisfaction. However, the current research seldom considers how to coordinate fairness among individual users and reduce the impact of individual unreasonable feedback in group event recommendation. In addition, while considering the fairness of individuals, the accuracy of recommendation is less improved by fully combining the context key information. To solve these problems, we propose a prefiltering algorithm to filter the candidate event set, a multidimensional context recommendation to provide personalized event recommendations for each user in the group. Finally, we verify the effectiveness of our proposed algorithm in real data sets and find that FAGR is superior to the latest algorithms in terms of global satisfaction, distance satisfaction and user fairness.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1390525037",
+                        "name": "Yuan Liang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "In recent years, the question of fairness of exposure attracted a lot of attention, and has been mostly studied in a static ranking setting (Geyik et al., 2019; Beutel et al., 2019; Yang & Stoyanovich, 2017; Singh & Joachims, 2018; Patro et al., 2022; Zehlike et al., 2021; Kletti et al., 2022; Diaz et al., 2020; Do & Usunier, 2022; Wu et al., 2022).",
+                "\u2026attracted a lot of attention, and has been mostly studied in a static ranking setting (Geyik et al., 2019; Beutel et al., 2019; Yang & Stoyanovich, 2017; Singh & Joachims, 2018; Patro et al., 2022; Zehlike et al., 2021; Kletti et al., 2022; Diaz et al., 2020; Do & Usunier, 2022; Wu et al., 2022)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "16f575964aa6b7dd6bdb07ef6510edff57a6b309",
+                "externalIds": {
+                    "ArXiv": "2210.09957",
+                    "DBLP": "journals/corr/abs-2210-09957",
+                    "DOI": "10.48550/arXiv.2210.09957",
+                    "CorpusId": 252968162
+                },
+                "corpusId": 252968162,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/16f575964aa6b7dd6bdb07ef6510edff57a6b309",
+                "title": "Contextual bandits with concave rewards, and an application to fair ranking",
+                "abstract": "We consider Contextual Bandits with Concave Rewards (CBCR), a multi-objective bandit problem where the desired trade-off between the rewards is defined by a known concave objective function, and the reward vector depends on an observed stochastic context. We present the first algorithm with provably vanishing regret for CBCR without restrictions on the policy space, whereas prior works were restricted to finite policy spaces or tabular representations. Our solution is based on a geometric interpretation of CBCR algorithms as optimization algorithms over the convex set of expected rewards spanned by all stochastic policies. Building on Frank-Wolfe analyses in constrained convex optimization, we derive a novel reduction from the CBCR regret to the regret of a scalar-reward bandit problem. We illustrate how to apply the reduction off-the-shelf to obtain algorithms for CBCR with both linear and general reward functions, in the case of non-combinatorial actions. Motivated by fairness in recommendation, we describe a special case of CBCR with rankings and fairness-aware objectives, leading to the first algorithm with regret guarantees for contextual combinatorial bandits with fairness of exposure.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2086828576",
+                        "name": "Virginie Do"
+                    },
+                    {
+                        "authorId": "2178640",
+                        "name": "Elvis Dohmatob"
+                    },
+                    {
+                        "authorId": "6234609",
+                        "name": "Matteo Pirotta"
+                    },
+                    {
+                        "authorId": "3254390",
+                        "name": "A. Lazaric"
+                    },
+                    {
+                        "authorId": "1746841",
+                        "name": "Nicolas Usunier"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "bd6c0af91401c208ef478376c493408b69f51b8d",
+                "externalIds": {
+                    "ArXiv": "2210.05791",
+                    "DBLP": "conf/aies/ShelbyRHMRNYGSG23",
+                    "DOI": "10.1145/3600211.3604673",
+                    "CorpusId": 256697294
+                },
+                "corpusId": 256697294,
+                "publicationVenue": {
+                    "id": "ace94611-0469-4818-ae70-43bdb8082d73",
+                    "name": "AAAI/ACM Conference on AI, Ethics, and Society",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AAAI/ACM conference Artificial Intelligence, Ethics, and Society",
+                        "AIES",
+                        "AAAI/ACM Conf AI Ethics Soc",
+                        "AAAI/ACM conf Artif Intell Ethics Soc",
+                        "AIES "
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/bd6c0af91401c208ef478376c493408b69f51b8d",
+                "title": "Sociotechnical Harms of Algorithmic Systems: Scoping a Taxonomy for Harm Reduction",
+                "abstract": "Understanding the landscape of potential harms from algorithmic systems enables practitioners to better anticipate consequences of the systems they build. It also supports the prospect of incorporating controls to help minimize harms that emerge from the interplay of technologies and social and cultural dynamics. A growing body of scholarship has identified a wide range of harms across different algorithmic technologies. However, computing research and practitioners lack a high level and synthesized overview of harms from algorithmic systems. Based on a scoping review of computing research (n=172), we present an applied taxonomy of sociotechnical harms to support a more systematic surfacing of potential harms in algorithmic systems. The final taxonomy builds on and refers to existing taxonomies, classifications, and terminologies. Five major themes related to sociotechnical harms \u2014 representational, allocative, quality-of-service, interpersonal harms, and social system/societal harms \u2014 and sub-themes are presented along with a description of these categories. We conclude with a discussion of challenges and opportunities for future research.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "65828391",
+                        "name": "R. Shelby"
+                    },
+                    {
+                        "authorId": "7389108",
+                        "name": "Shalaleh Rismani"
+                    },
+                    {
+                        "authorId": "14185441",
+                        "name": "Kathryn Henne"
+                    },
+                    {
+                        "authorId": "37074673",
+                        "name": "AJung Moon"
+                    },
+                    {
+                        "authorId": "2599281",
+                        "name": "Negar Rostamzadeh"
+                    },
+                    {
+                        "authorId": "2057626161",
+                        "name": "P. Nicholas"
+                    },
+                    {
+                        "authorId": "2235097784",
+                        "name": "N'Mah Yilla-Akbari"
+                    },
+                    {
+                        "authorId": "2187579632",
+                        "name": "Jess Gallegos"
+                    },
+                    {
+                        "authorId": "40800194",
+                        "name": "A. Smart"
+                    },
+                    {
+                        "authorId": "2187587076",
+                        "name": "Emilio Garcia"
+                    },
+                    {
+                        "authorId": "2187579249",
+                        "name": "Gurleen Virk"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "50a233487a9eb84af0cf099fc1cc9089cd287c86",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-05000",
+                    "ArXiv": "2209.05000",
+                    "DOI": "10.48550/arXiv.2209.05000",
+                    "CorpusId": 252199455
+                },
+                "corpusId": 252199455,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/50a233487a9eb84af0cf099fc1cc9089cd287c86",
+                "title": "Random Isn't Always Fair: Candidate Set Imbalance and Exposure Inequality in Recommender Systems",
+                "abstract": "Traditionally, recommender systems operate by returning a user a set of items, ranked in order of estimated relevance to that user. In recent years, methods relying on stochastic ordering have been developed to create \u201cfairer\" rankings that reduce inequality in who or what is shown to users. Complete randomization\u2013ordering candidate items randomly, independent of estimated relevance\u2013is largely considered a baseline procedure that results in the most equal distribution of exposure. In industry settings, recommender systems often operate via a two-step process in which candidate items are first produced using computationally inexpensive methods and then a full ranking model is applied only to those candidates. In this paper, we consider the effects of inequality at the first step and show that, paradoxically, complete randomization at the second step can result in a higher degree of inequality relative to deterministic ordering of items by estimated relevance scores. In light of this observation, we then propose a simple post-processing algorithm in pursuit of reducing exposure inequality that works both when candidate sets have a high level of imbalance and when they do not. The efficacy of our method is illustrated on both simulated data and a common benchmark data set used in studying fairness in recommender systems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145340365",
+                        "name": "Amanda Bower"
+                    },
+                    {
+                        "authorId": "3044551",
+                        "name": "K. Lum"
+                    },
+                    {
+                        "authorId": "40900798",
+                        "name": "T. Lazovich"
+                    },
+                    {
+                        "authorId": "32254917",
+                        "name": "Kyra Yee"
+                    },
+                    {
+                        "authorId": "49738225",
+                        "name": "Luca Belli"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "4 Fairness in Recommendation With the increasing attention on the fairness in recommendation [9, 16, 20, 22, 40], there have been numerous attempts to define notions of fairness [19, 30, 33, 35, 47]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2e6cd5400afca5413e033bb8c2e4d5c055ff7207",
+                "externalIds": {
+                    "ArXiv": "2209.04589",
+                    "DBLP": "journals/corr/abs-2209-04589",
+                    "DOI": "10.48550/arXiv.2209.04589",
+                    "CorpusId": 252199687
+                },
+                "corpusId": 252199687,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2e6cd5400afca5413e033bb8c2e4d5c055ff7207",
+                "title": "Causal Intervention for Fairness in Multi-behavior Recommendation",
+                "abstract": "Recommender systems usually learn user interests from various user behaviors, including clicks and post-click behaviors (e.g., like and favorite). However, these behaviors inevitably exhibit popularity bias, leading to some unfairness issues: 1) for items with similar quality, more popular ones get more exposure; and 2) even worse the popular items with lower popularity might receive more exposure. Existing work on mitigating popularity bias blindly eliminates the bias and usually ignores the effect of item quality. We argue that the relationships between different user behaviors (e.g., conversion rate) actually reflect the item quality. Therefore, to handle the unfairness issues, we propose to mitigate the popularity bias by considering multiple user behaviors. In this work, we examine causal relationships behind the interaction generation procedure in multi-behavior recommendation. Specifically, we find that: 1) item popularity is a confounder between the exposed items and users' post-click interactions, leading to the first unfairness; and 2) some hidden confounders (e.g., the reputation of item producers) affect both item popularity and quality, resulting in the second unfairness. To alleviate these confounding issues, we propose a causal framework to estimate the causal effect, which leverages backdoor adjustment to block the backdoor paths caused by the confounders. In the inference stage, we remove the negative effect of popularity and utilize the good effect of quality for recommendation. Experiments on two real-world datasets validate the effectiveness of our proposed framework, which enhances fairness without sacrificing recommendation accuracy.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108251827",
+                        "name": "Xi Wang"
+                    },
+                    {
+                        "authorId": "2117833732",
+                        "name": "Wenjie Wang"
+                    },
+                    {
+                        "authorId": "2163400298",
+                        "name": "Fuli Feng"
+                    },
+                    {
+                        "authorId": "21505283",
+                        "name": "Wenge Rong"
+                    },
+                    {
+                        "authorId": "40548403",
+                        "name": "Chuantao Yin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "For example, if the system presents its recommendation as a static list of people ranked by their expertise on a topic, small differences in estimated expertise may translate into disparately different levels of exposure, as presentation bias causes people to over-prioritize those at the top of the list [7, 30, 34]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "7ff04ceea27a576944bddd844651b1b701b81a73",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-03819",
+                    "ArXiv": "2209.03819",
+                    "DOI": "10.48550/arXiv.2209.03819",
+                    "CorpusId": 252118411
+                },
+                "corpusId": 252118411,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7ff04ceea27a576944bddd844651b1b701b81a73",
+                "title": "Ethical and Social Considerations in Automatic Expert Identification and People Recommendation in Organizational Knowledge Management Systems",
+                "abstract": "Organizational knowledge bases are moving from passive archives to active entities in the flow of people's work. We are seeing machine learning used to enable systems that both collect and surface information as people are working, making it possible to bring out connections between people and content that were previously much less visible in order to automatically identify and highlight experts on a given topic. When these knowledge bases begin to actively bring attention to people and the content they work on, especially as that work is still ongoing, we run into important challenges at the intersection of work and the social. While such systems have the potential to make certain parts of people's work more productive or enjoyable, they may also introduce new workloads, for instance by putting people in the role of experts for others to reach out to. And these knowledge bases can also have profound social consequences by changing what parts of work are visible and, therefore, acknowledged. We pose a number of open questions that warrant attention and engagement across industry and academia. Addressing these questions is an essential step in ensuring that the future of work becomes a good future for those doing the work. With this position paper, we wish to enter into the cross-disciplinary discussion we believe is required to tackle the challenge of developing recommender systems that respect social values.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1411112512",
+                        "name": "Ida Larsen-Ledet"
+                    },
+                    {
+                        "authorId": "116506812",
+                        "name": "Bhaskar Mitra"
+                    },
+                    {
+                        "authorId": "2020484",
+                        "name": "Si\u00e2n E. Lindley"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "This means, for instance, including the interuser equity objective into the loss function [26, 55, 56], sometimes through a regularization term [29, 58]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "506853223c282f3bf7507aa92f0e9404a8b503e6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-02662",
+                    "ArXiv": "2209.02662",
+                    "DOI": "10.48550/arXiv.2209.02662",
+                    "CorpusId": 252089040
+                },
+                "corpusId": 252089040,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/506853223c282f3bf7507aa92f0e9404a8b503e6",
+                "title": "Matching Consumer Fairness Objectives & Strategies for RecSys",
+                "abstract": "The last several years have brought a growing body of work on ensuring that recommender systems are in some sense consumer-fair -- that is, they provide comparable quality of service, accuracy of representation, and other effects to their users. However, there are many different strategies to make systems more fair and a range of intervention points. In this position paper, we build on ongoing work to highlight the need for researchers and practitioners to attend to the details of their application, users, and the fairness objective they aim to achieve, and adopt interventions that are appropriate to the situation. We argue that consumer fairness should be a creative endeavor flowing from the particularities of the specific problem to be solved.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2386667",
+                        "name": "Michael D. Ekstrand"
+                    },
+                    {
+                        "authorId": "1726495",
+                        "name": "M. S. Pera"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [
+                "Reinforcement learning has also been applied to multi-sided fairness, through contextual multi-armed bandits which simultaneously optimize stakeholder utility and fairness objectives (Mehrotra et al., 2020, 2018; Wu et al., 2022)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "88a4172a207beb4275914d35c6a19c9de46091de",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-10192",
+                    "ArXiv": "2207.10192",
+                    "DOI": "10.48550/arXiv.2207.10192",
+                    "CorpusId": 250920242
+                },
+                "corpusId": 250920242,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/88a4172a207beb4275914d35c6a19c9de46091de",
+                "title": "Building Human Values into Recommender Systems: An Interdisciplinary Synthesis",
+                "abstract": "Recommender systems are the algorithms which select, filter, and personalize content across many of the world\u2019s largest platforms and apps. As such, their positive and negative effects on individuals and on societies have been extensively theorized and studied. Our overarching question is how to ensure that recommender systems enact the values of the individuals and societies that they serve. Addressing this question in a principled fashion requires technical knowledge of recommender design and operation, and also critically depends on insights from diverse fields including social science, ethics, economics, psychology, policy and law. This paper is a multidisciplinary effort to synthesize theory and practice from different perspectives, with the goal of providing a shared language, articulating current design approaches, and identifying open problems. It is not a comprehensive survey of this large space, but a set of highlights identified by our diverse author cohort. We collect a set of values that seem most relevant to recommender systems operating across different domains, then examine them from the perspectives of current industry practice, measurement, product design, and policy approaches. Important open problems include multi-stakeholder processes for defining values and resolving trade-offs, better values-driven measurements, recommender controls that people use, non-behavioral algorithmic feedback, optimization for long-term outcomes, causal inference of recommender effects, academic-industry research collaborations, and interdisciplinary policy-making.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48756178",
+                        "name": "J. Stray"
+                    },
+                    {
+                        "authorId": "1770962",
+                        "name": "A. Halevy"
+                    },
+                    {
+                        "authorId": "97575997",
+                        "name": "Parisa Assar"
+                    },
+                    {
+                        "authorId": "1397904824",
+                        "name": "Dylan Hadfield-Menell"
+                    },
+                    {
+                        "authorId": "145646162",
+                        "name": "Craig Boutilier"
+                    },
+                    {
+                        "authorId": "122885006",
+                        "name": "Amar Ashar"
+                    },
+                    {
+                        "authorId": "2178708575",
+                        "name": "Lex Beattie"
+                    },
+                    {
+                        "authorId": "2386667",
+                        "name": "Michael D. Ekstrand"
+                    },
+                    {
+                        "authorId": "2028784654",
+                        "name": "Claire Leibowicz"
+                    },
+                    {
+                        "authorId": "40976107",
+                        "name": "Connie Moon Sehat"
+                    },
+                    {
+                        "authorId": "2178710418",
+                        "name": "Sara Johansen"
+                    },
+                    {
+                        "authorId": "2539353",
+                        "name": "L. Kerlin"
+                    },
+                    {
+                        "authorId": "2925442",
+                        "name": "David Vickrey"
+                    },
+                    {
+                        "authorId": "2178814744",
+                        "name": "Spandana Singh"
+                    },
+                    {
+                        "authorId": "3456298",
+                        "name": "Sanne Vrijenhoek"
+                    },
+                    {
+                        "authorId": "144518215",
+                        "name": "Amy X. Zhang"
+                    },
+                    {
+                        "authorId": "144916965",
+                        "name": "McKane Andrus"
+                    },
+                    {
+                        "authorId": "2464895",
+                        "name": "N. Helberger"
+                    },
+                    {
+                        "authorId": "1949650",
+                        "name": "Polina Proutskova"
+                    },
+                    {
+                        "authorId": "3019719",
+                        "name": "Tanushree Mitra"
+                    },
+                    {
+                        "authorId": "49986216",
+                        "name": "N. Vasan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [
+                "Granularity* Populational [30] [83] [129] [87] [261] [141] [96] [215] [177] [219] [162] [11] Personalized [131] [223]",
+                "Side* Single-side [124] [83] [258] [96] [129] [131] [125] [108] [220] [217] [215] [177] Multi-side [37] [2] [168] [169] [222] [218] [25] [159] [219] [162] [143] [197]"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "397542cddbac98639a8d9938ac63feff7a6eacd1",
+                "externalIds": {
+                    "ArXiv": "2205.13619",
+                    "DOI": "10.1145/3610302",
+                    "CorpusId": 260164816
+                },
+                "corpusId": 260164816,
+                "publicationVenue": {
+                    "id": "0d993d4a-09ba-4df8-90a4-7dfe25f0cb9e",
+                    "name": "ACM Transactions on Intelligent Systems and Technology",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Trans Intell Syst Technol"
+                    ],
+                    "issn": "2157-6904",
+                    "url": "http://portal.acm.org/tist",
+                    "alternate_urls": [
+                        "https://tist.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/397542cddbac98639a8d9938ac63feff7a6eacd1",
+                "title": "Fairness in Recommendation: Foundations, Methods and Applications",
+                "abstract": "As one of the most pervasive applications of machine learning, recommender systems are playing an important role on assisting human decision making. The satisfaction of users and the interests of platforms are closely related to the quality of the generated recommendation results. However, as a highly data-driven system, recommender system could be affected by data or algorithmic bias and thus generate unfair results, which could weaken the reliance of the systems. As a result, it is crucial to address the potential unfairness problems in recommendation settings. Recently, there has been growing attention on fairness considerations in recommender systems with more and more literature on approaches to promote fairness in recommendation. However, the studies are rather fragmented and lack a systematic organization, thus making it difficult to penetrate for new researchers to the domain. This motivates us to provide a systematic survey of existing works on fairness in recommendation. This survey focuses on the foundations for fairness in recommendation literature. It first presents a brief introduction about fairness in basic machine learning tasks such as classification and ranking in order to provide a general overview of fairness research, as well as introduce the more complex situations and challenges that need to be considered when studying fairness in recommender systems. After that, the survey will introduce fairness in recommendation with a focus on the taxonomies of current fairness definitions, the typical techniques for improving fairness, as well as the datasets for fairness studies in recommendation. The survey also talks about the challenges and opportunities in fairness research with the hope of promoting the fair recommendation research area and beyond.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48515097",
+                        "name": "Yunqi Li"
+                    },
+                    {
+                        "authorId": "67228325",
+                        "name": "H. Chen"
+                    },
+                    {
+                        "authorId": "2111044480",
+                        "name": "Shuyuan Xu"
+                    },
+                    {
+                        "authorId": "152988336",
+                        "name": "Yingqiang Ge"
+                    },
+                    {
+                        "authorId": "2110449137",
+                        "name": "Juntao Tan"
+                    },
+                    {
+                        "authorId": "50152132",
+                        "name": "Shuchang Liu"
+                    },
+                    {
+                        "authorId": "2145038716",
+                        "name": "Yongfeng Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "The issue of fairness in recommendation has received growing concerns as recommender systems touch and influence people\u2019s daily lives more deeply and profoundly [28, 41, 62]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8dd0727601d40d437a182f05548da563ac60d4b3",
+                "externalIds": {
+                    "ArXiv": "2204.11159",
+                    "DBLP": "journals/corr/abs-2204-11159",
+                    "DOI": "10.1145/3477495.3531973",
+                    "CorpusId": 248376909
+                },
+                "corpusId": 248376909,
+                "publicationVenue": {
+                    "id": "8dce23a9-44e0-4381-a39e-2acc1edff700",
+                    "name": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                        "Int ACM SIGIR Conf Res Dev Inf Retr",
+                        "SIGIR",
+                        "Annu Int ACM SIGIR Conf Res Dev Inf Retr"
+                    ],
+                    "url": "http://www.acm.org/sigir/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8dd0727601d40d437a182f05548da563ac60d4b3",
+                "title": "Explainable Fairness in Recommendation",
+                "abstract": "Existing research on fairness-aware recommendation has mainly focused on the quantification of fairness and the development of fair recommendation models, neither of which studies a more substantial problem--identifying the underlying reason of model disparity in recommendation. This information is critical for recommender system designers to understand the intrinsic recommendation mechanism and provides insights on how to improve model fairness to decision makers. Fortunately, with the rapid development of Explainable AI, we can use model explainability to gain insights into model (un)fairness. In this paper, we study the problem ofexplainable fairness, which helps to gain insights about why a system is fair or unfair, and guides the design of fair recommender systems with a more informed and unified methodology. Particularly, we focus on a common setting with feature-aware recommendation and exposure unfairness, but the proposed explainable fairness framework is general and can be applied to other recommendation settings and fairness definitions. We propose a Counterfactual Explainable Fairness framework, called CEF, which generates explanations about model fairness that can improve the fairness without significantly hurting the performance. The CEF framework formulates an optimization problem to learn the \"minimal'' change of the input features that changes the recommendation results to a certain level of fairness. Based on the counterfactual recommendation result of each feature, we calculate an explainability score in terms of the fairness-utility trade-off to rank all the feature-based explanations, and select the top ones as fairness explanations. Experimental results on several real-world datasets validate that our method is able to effectively provide explanations to the model disparities and these explanations can achieve better fairness-utility trade-off when using them for recommendation than all the baselines.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "152988336",
+                        "name": "Yingqiang Ge"
+                    },
+                    {
+                        "authorId": "2110449137",
+                        "name": "Juntao Tan"
+                    },
+                    {
+                        "authorId": "2153095583",
+                        "name": "Yangchun Zhu"
+                    },
+                    {
+                        "authorId": "35846319",
+                        "name": "Yinglong Xia"
+                    },
+                    {
+                        "authorId": "2116783457",
+                        "name": "Jiebo Luo"
+                    },
+                    {
+                        "authorId": "50152132",
+                        "name": "Shuchang Liu"
+                    },
+                    {
+                        "authorId": "2011378",
+                        "name": "Zuohui Fu"
+                    },
+                    {
+                        "authorId": "1947101",
+                        "name": "Shijie Geng"
+                    },
+                    {
+                        "authorId": "2109968285",
+                        "name": "Zelong Li"
+                    },
+                    {
+                        "authorId": "2145038716",
+                        "name": "Yongfeng Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [
+                "Granularity Populational [24] [68] [104] [71] [200] [111] [78] [172] [141] [176] [127] [9] Personalized [105] [179]",
+                "Side Single-side [102] [68] [200] [78] [104] [105] [103] [87] [177] [174] [172] [141] Multi-side [31] [1] [132] [133] [178] [175] [19] [124] [176] [127]"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "633b93ecfe1b4fa5a80b8d71d952b81c25e8898d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-13619",
+                    "DOI": "10.48550/arXiv.2205.13619",
+                    "CorpusId": 249151956
+                },
+                "corpusId": 249151956,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/633b93ecfe1b4fa5a80b8d71d952b81c25e8898d",
+                "title": "Fairness in Recommendation: A Survey",
+                "abstract": "Recently, there has been growing attention on fairness considerations in recommender systems with more and more literature on approaches to promote fairness in recommendation. However, the studies are rather fragmented and lack a systematic organization, thus making it difficult to penetrate for new researchers to the domain. This motivates us to provide a systematic survey of existing works on fairness in recommendation. This survey focuses on the foundations for fairness in recommendation literature. It first presents a brief introduction about fairness in basic machine learning tasks such as classification and ranking in order to provide a general overview of fairness research, as well as introduce the more complex situations and challenges that need to be considered when studying fairness in recommender systems. After that, the survey will introduce fairness in recommendation with a focus on the taxonomies of current fairness definitions, the typical techniques for improving fairness, as well as the datasets for fairness studies in recommendation. The survey also talks about the challenges and opportunities in fairness research with the hope of promoting the fair recommendation research area and beyond.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48515097",
+                        "name": "Yunqi Li"
+                    },
+                    {
+                        "authorId": "67228325",
+                        "name": "H. Chen"
+                    },
+                    {
+                        "authorId": "2111044480",
+                        "name": "Shuyuan Xu"
+                    },
+                    {
+                        "authorId": "152988336",
+                        "name": "Yingqiang Ge"
+                    },
+                    {
+                        "authorId": "2110449137",
+                        "name": "Juntao Tan"
+                    },
+                    {
+                        "authorId": "50152132",
+                        "name": "Shuchang Liu"
+                    },
+                    {
+                        "authorId": "1591136873",
+                        "name": "Yongfeng Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "704) whereby Black candidates are systematically matched to Black-owned businesses and white candidates are systematically matched to white-owned businesses [214].",
+                "In the government or social services domain, screening tools to identify children at-risk for maltreatment can amplify already-existing biases against poor parents [74, 214]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "230b8a580c453ddbb1e5c39e0a845bb4e9802b3e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-05791",
+                    "DOI": "10.48550/arXiv.2210.05791",
+                    "CorpusId": 252846397
+                },
+                "corpusId": 252846397,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/230b8a580c453ddbb1e5c39e0a845bb4e9802b3e",
+                "title": "Sociotechnical Harms: Scoping a Taxonomy for Harm Reduction",
+                "abstract": "Understanding the landscape of potential harms from algorithmic systems enables practitioners to better anticipate consequences of the systems they build. It also supports the prospectof incorporating controls to help minimize harms that emerge from the interplay of technologies and social and cultural dynamics. A growing body of scholarship has identi\ufb01ed a wide range of harms across di\ufb00erent algorithmic technologies. However, computing research and practitioners lack a high level and synthesized overview of harms from algorithmic systems arising at the micro-, meso-, and macro-levels of society. We present an applied taxonomy of sociotechnical harms to support more systematic surfacing of potential harms in algorithmic systems. Based on a scoping review of computing research ( n =172), we identi\ufb01ed \ufb01ve major themes related to sociotechnical harms \u2014 representational, allocative, quality-of-service, interpersonal harms, and social system/societal harms \u2014 and sub-themes. We describe these categories and conclude with a discussion of challenges and opportunities for future research.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "65828391",
+                        "name": "R. Shelby"
+                    },
+                    {
+                        "authorId": "7389108",
+                        "name": "Shalaleh Rismani"
+                    },
+                    {
+                        "authorId": "14185441",
+                        "name": "Kathryn Henne"
+                    },
+                    {
+                        "authorId": "37074673",
+                        "name": "AJung Moon"
+                    },
+                    {
+                        "authorId": "2599281",
+                        "name": "Negar Rostamzadeh"
+                    },
+                    {
+                        "authorId": "2057626161",
+                        "name": "P. Nicholas"
+                    },
+                    {
+                        "authorId": "2124017531",
+                        "name": "N. Yilla"
+                    },
+                    {
+                        "authorId": "2187579632",
+                        "name": "Jess Gallegos"
+                    },
+                    {
+                        "authorId": "40800194",
+                        "name": "A. Smart"
+                    },
+                    {
+                        "authorId": "2187587076",
+                        "name": "Emilio Garcia"
+                    },
+                    {
+                        "authorId": "2187579249",
+                        "name": "Gurleen Virk"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,537 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "\u2026and Grosse-Wentrup, 2020; Kivva et al., 2021; Hyvarinen and Morioka, 2016; Ha\u0308lva\u0308 et al., 2021; Khemakhem et al., 2020b; Lachapelle et al., 2021; Li et al., 2019; Mita et al., 2021; Roeder et al., 2021; Yang et al., 2021; Sorrenson et al., 2019; Zimmermann et al., 2021; Wang et al., 2021;\u2026",
+                "Given the proliferation of recent work of identifying latent representations in the observational setting (Anandkumar et al., 2013; Choi et al., 2011; Xie et al., 2020; Yang et al., 2020; Khemakhem et al., 2020a; Markham and Grosse-Wentrup, 2020; Kivva et al., 2021; Hyvarinen and Morioka, 2016; H\u00e4lv\u00e4 et al., 2021; Khemakhem et al., 2020b; Lachapelle et al., 2021; Li et al., 2019; Mita et al., 2021; Roeder et al., 2021; Yang et al., 2021; Sorrenson et al., 2019; Zimmermann et al., 2021; Wang et al., 2021; Moran et al., 2021), in this paper we consider the case of interventions."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "bf43b2167060739c7a0af93a631e79f1feed3e8d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-02899",
+                    "ArXiv": "2306.02899",
+                    "DOI": "10.48550/arXiv.2306.02899",
+                    "CorpusId": 259075973
+                },
+                "corpusId": 259075973,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/bf43b2167060739c7a0af93a631e79f1feed3e8d",
+                "title": "Learning nonparametric latent causal graphs with unknown interventions",
+                "abstract": "We establish conditions under which latent causal graphs are nonparametrically identifiable and can be reconstructed from unknown interventions in the latent space. Our primary focus is the identification of the latent structure in a measurement model, i.e. causal graphical models where dependence between observed variables is insignificant compared to dependence between latent representations, without making parametric assumptions such as linearity or Gaussianity. Moreover, we do not assume the number of hidden variables is known, and we show that at most one unknown intervention per hidden variable is needed. This extends a recent line of work on learning causal representations from observations and interventions. The proofs are constructive and introduce two new graphical concepts -- imaginary subsets and isolated edges -- that may be useful in their own right. As a matter of independent interest, the proofs also involve a novel characterization of the limits of edge orientations within the equivalence class of DAGs induced by unknown interventions. Experiments confirm that the latent graph can be recovered from data using our theoretical results. These are the first results to characterize the conditions under which causal representations are identifiable without making any parametric assumptions in a general setting with unknown interventions and without faithfulness.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "116503613",
+                        "name": "Yibo Jiang"
+                    },
+                    {
+                        "authorId": "2050920",
+                        "name": "Bryon Aragam"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Moreover, a long line of works have proposed practical methods for CRL (which includes causal disentanglement as a special case), [18, 89, 15, 91, 43, 13] to name a few."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5a7a0dd32646fe41db24d8e973adb920c911bd1b",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-02235",
+                    "ArXiv": "2306.02235",
+                    "DOI": "10.48550/arXiv.2306.02235",
+                    "CorpusId": 259076275
+                },
+                "corpusId": 259076275,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5a7a0dd32646fe41db24d8e973adb920c911bd1b",
+                "title": "Learning Linear Causal Representations from Interventions under General Nonlinear Mixing",
+                "abstract": "We study the problem of learning causal representations from unknown, latent interventions in a general setting, where the latent distribution is Gaussian but the mixing function is completely general. We prove strong identifiability results given unknown single-node interventions, i.e., without having access to the intervention targets. This generalizes prior works which have focused on weaker classes, such as linear maps or paired counterfactual data. This is also the first instance of causal identifiability from non-paired interventions for deep neural network embeddings. Our proof relies on carefully uncovering the high-dimensional geometric structure present in the data distribution after a non-linear density transformation, which we capture by analyzing quadratic forms of precision matrices of the latent distributions. Finally, we propose a contrastive algorithm to identify the latent variables in practice and evaluate its performance on various tasks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "28845390",
+                        "name": "Simon Buchholz"
+                    },
+                    {
+                        "authorId": "1929023139",
+                        "name": "Goutham Rajendran"
+                    },
+                    {
+                        "authorId": "49686853",
+                        "name": "Elan Rosenfeld"
+                    },
+                    {
+                        "authorId": "2050920",
+                        "name": "Bryon Aragam"
+                    },
+                    {
+                        "authorId": "1707625",
+                        "name": "B. Sch\u00f6lkopf"
+                    },
+                    {
+                        "authorId": "145969795",
+                        "name": "Pradeep Ravikumar"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "iFlow [53] Normalizing Flows Conditional Factorial Prior Distribution Explicit Likelihood Computation Segment Label",
+                "With deep learning\u2019s rise, non-linear ICA has been harnessed for disentangled representation learning, with some works highlighting identifiability guarantees [52, 53, 54, 55, 56].",
+                "iFlow [53], rather than optimizing a log-likelihood lower bound like iVAE, employs normalizing flow for direct loglikelihood maximization."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5f7ce7c66e0c8c60535798757a080bf402a26f18",
+                "externalIds": {
+                    "ArXiv": "2301.12351",
+                    "CorpusId": 256390218
+                },
+                "corpusId": 256390218,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/5f7ce7c66e0c8c60535798757a080bf402a26f18",
+                "title": "Emerging Synergies in Causality and Deep Generative Models: A Survey",
+                "abstract": "In the field of artificial intelligence (AI), the quest to understand and model data-generating processes (DGPs) is of paramount importance. Deep generative models (DGMs) have proven adept in capturing complex data distributions but often fall short in generalization and interpretability. On the other hand, causality offers a structured lens to comprehend the mechanisms driving data generation and highlights the causal-effect dynamics inherent in these processes. While causality excels in interpretability and the ability to extrapolate, it grapples with intricacies of high-dimensional spaces. Recognizing the synergistic potential, we delve into the confluence of causality and DGMs. We elucidate the integration of causal principles within DGMs, investigate causal identification using DGMs, and navigate an emerging research frontier of causality in large-scale generative models, particularly generative large language models (LLMs). We offer insights into methodologies, highlight open challenges, and suggest future directions, positioning our comprehensive review as an essential guide in this swiftly emerging and evolving area.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "93925973",
+                        "name": "Guanglin Zhou"
+                    },
+                    {
+                        "authorId": "25106675",
+                        "name": "Shaoan Xie"
+                    },
+                    {
+                        "authorId": "2241095115",
+                        "name": "Guangyuan Hao"
+                    },
+                    {
+                        "authorId": "2241215749",
+                        "name": "Shiming Chen"
+                    },
+                    {
+                        "authorId": "1938684",
+                        "name": "Biwei Huang"
+                    },
+                    {
+                        "authorId": "3087664",
+                        "name": "Xiwei Xu"
+                    },
+                    {
+                        "authorId": "2109117515",
+                        "name": "Chen Wang"
+                    },
+                    {
+                        "authorId": "2145199748",
+                        "name": "Liming Zhu"
+                    },
+                    {
+                        "authorId": "2106357243",
+                        "name": "Lina Yao"
+                    },
+                    {
+                        "authorId": "2119016656",
+                        "name": "Kun Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "While this result has been generalized and relaxed in several directions (Ha\u0308lva\u0308 and Hyvarinen, 2020; Ha\u0308lva\u0308 et al., 2021; Khemakhem et al., 2020b; Li et al., 2019; Mita et al., 2021; Sorrenson et al., 2019; Yang et al., 2021; Klindt et al., 2020; Brehmer et al., 2022), fundamentally these\u2026",
+                "Since this pathbreaking work, many generalizations have been proposed (Ha\u0308lva\u0308 and Hyvarinen, 2020; Ha\u0308lva\u0308 et al., 2021; Khemakhem et al., 2020b; Li et al., 2019; Mita et al., 2021; Sorrenson et al., 2019; Yang et al., 2021; Klindt et al., 2020; Brehmer et al., 2022), all of which require some\u2026",
+                "Since this pathbreaking work, many generalizations have been proposed (H\u00e4lv\u00e4 and Hyvarinen, 2020; H\u00e4lv\u00e4 et al., 2021; Khemakhem et al., 2020b; Li et al., 2019; Mita et al., 2021; Sorrenson et al., 2019; Yang et al., 2021; Klindt et al., 2020; Brehmer et al., 2022), all of which require some form of auxiliary information.",
+                "While this result has been generalized and relaxed in several directions (H\u00e4lv\u00e4 and Hyvarinen, 2020; H\u00e4lv\u00e4 et al., 2021; Khemakhem et al., 2020b; Li et al., 2019; Mita et al., 2021; Sorrenson et al., 2019; Yang et al., 2021; Klindt et al., 2020; Brehmer et al., 2022), fundamentally these results still crucially rely on the side information u."
+            ],
+            "intents": [
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "0b1cd40cd03699994fe7f96a9b36c52d26fad611",
+                "externalIds": {
+                    "DBLP": "conf/nips/KivvaRRA22",
+                    "ArXiv": "2206.10044",
+                    "CorpusId": 252992460
+                },
+                "corpusId": 252992460,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/0b1cd40cd03699994fe7f96a9b36c52d26fad611",
+                "title": "Identifiability of deep generative models without auxiliary information",
+                "abstract": "We prove identifiability of a broad class of deep latent variable models that (a) have universal approximation capabilities and (b) are the decoders of variational autoencoders that are commonly used in practice. Unlike existing work, our analysis does not require weak supervision, auxiliary information, or conditioning in the latent space. Specifically, we show that for a broad class of generative (i.e. unsupervised) models with universal approximation capabilities, the side information $u$ is not necessary: We prove identifiability of the entire generative model where we do not observe $u$ and only observe the data $x$. The models we consider match autoencoder architectures used in practice that leverage mixture priors in the latent space and ReLU/leaky-ReLU activations in the encoder, such as VaDE and MFC-VAE. Our main result is an identifiability hierarchy that significantly generalizes previous work and exposes how different assumptions lead to different\"strengths\"of identifiability, and includes certain\"vanilla\"VAEs with isotropic Gaussian priors as a special case. For example, our weakest result establishes (unsupervised) identifiability up to an affine transformation, and thus partially resolves an open problem regarding model identifiability raised in prior work. These theoretical results are augmented with experiments on both simulated and real data.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "103308672",
+                        "name": "Bohdan Kivva"
+                    },
+                    {
+                        "authorId": "1929023139",
+                        "name": "Goutham Rajendran"
+                    },
+                    {
+                        "authorId": "145969795",
+                        "name": "Pradeep Ravikumar"
+                    },
+                    {
+                        "authorId": "2050920",
+                        "name": "Bryon Aragam"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This work in no way questions the result that non-linear ICA is impossible to perform in general when using infinite-capacity models (Hyv\u00e4rinen & Pajunen, 1999).",
+                "(2)\nThus in this approach the theory of non-linear ICA is linked to the theory of deep generative models.",
+                "We create synthetic data to evaluate model performance using the same generating mechanism and mode of analysis as in previous in works on nonlinear ICA (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Sorrenson et al., 2020; Li et al., 2020; Khemakhem et al., 2020b).",
+                "Our discussion of the range of potential u-tasks in the context of non-linear ICA is mirrored in the deep clustering literature, that for a given dataset there are multiple ways that one could plausibly cluster the data (Li et al., 2019; Willetts et al., 2019; Falck et al., 2021).",
+                "4.1 Synthetic Data\nWe create synthetic data to evaluate model performance using the same generating mechanism and mode of analysis as in previous in works on nonlinear ICA (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Sorrenson et al., 2020; Li et al., 2020; Khemakhem et al., 2020b).",
+                "Further, the connection between contrastive learning and classifier-based methods to non-linear ICA has been formalised in the \u2018Incomplete Rosetta stone problem\u2019 (Gresele et al., 2020).",
+                "The u-tasks used in the context of non-linear ICA are exactly the tasks one can use in contrastive self-supervised learning, and vice versa.",
+                "Many of these recent results have been in the space of non-linear ICA, where data has been made by a non-linear mixing of statistically-independent latent sources.",
+                "In the last few years there has been a resurgence in identifiability results in machine learning models within certain problem-settings (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021).",
+                "\u2026the parameters are not identifiable), while still having a latent representation which is the same across these different parameters (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021).",
+                "Recently JL methods have been used in non-Linear ICA, but in a different context: acting on the output of a flow to provide the means of a variational posterior (Camuto et al., 2021).",
+                "As mentioned above, classifier-based approaches to non-linear ICA (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019) are the cousins of contrastive methods for self-supervised learning (Gutmann & Hyv\u00e4rinen, 2012; Oord et al., 2018; Henaff et al., 2020; He et al., 2020).",
+                "Here we bring together these ideas to demonstrate the empirical identifiability of latent representations in deep clustering models, which implicitly perform non-linear ICA.",
+                "We wish to underline that we in no way dispute previous results on the impossibility of generic, unique non-linear ICA.",
+                "We think that the two lenses we explore, clustering DGMs and non-linear ICA, might provide a way for the two self-supervised approaches of clustering and contrastive methods to be unified.",
+                ", the parameters are not identifiable), while still having a latent representation which is the same across these different parameters (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021).",
+                "\u2026create synthetic data to evaluate model performance using the same generating mechanism and mode of analysis as in previous in works on nonlinear ICA (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Sorrenson et al., 2020; Li et al., 2020; Khemakhem et al., 2020b).",
+                "In this paper we work within the strand of research into non-linear ICA that aims to learn an appropriate deep generative model for the data.",
+                "There have been two main paradigms in identifiability results in non-linear ICA."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "653447eea11420e00032f5752f63af736adcc19d",
+                "externalIds": {
+                    "ArXiv": "2106.05238",
+                    "DBLP": "journals/corr/abs-2106-05238",
+                    "CorpusId": 235376789
+                },
+                "corpusId": 235376789,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/653447eea11420e00032f5752f63af736adcc19d",
+                "title": "I Don't Need u: Identifiable Non-Linear ICA Without Side Information",
+                "abstract": "In this paper, we investigate the algorithmic stability of unsupervised representation learning with deep generative models, as a function of repeated re-training on the same input data. Algorithms for learning low dimensional linear representations\u2014for example principal components analysis (PCA), or linear independent components analysis (ICA)\u2014come with guarantees that they will always reveal the same latent representations (perhaps up to an arbitrary rotation or permutation). Unfortunately, for non-linear representation learning, such as in a variational auto-encoder (VAE) model trained by stochastic gradient descent, we have no such guarantees. Recent work on identi\ufb01ability in non-linear ICA have introduced a family of deep generative models that have identi\ufb01able latent representations, achieved by conditioning on side information (e.g. informative labels). We empirically evaluate the stability of these models under repeated re-estimation of parameters, and compare them to both standard VAEs and deep generative models which learn to cluster in their latent space. Surprisingly, we discover side information is not necessary for algorithmic stability: using standard quantitative measures of identi\ufb01ability, we \ufb01nd deep generative models with latent clusterings are empirically identi\ufb01able to the same degree as models which rely on auxiliary labels. We relate these results to the possibility of identi\ufb01able non-linear ICA.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "47975945",
+                        "name": "M. Willetts"
+                    },
+                    {
+                        "authorId": "2885717",
+                        "name": "Brooks Paige"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1d466db9df8637c34acb77256363f411cb6e6e9e",
+                "externalIds": {
+                    "DBLP": "journals/spl/NugrahaSFBY20",
+                    "MAG": "3106955634",
+                    "DOI": "10.1109/LSP.2020.3039944",
+                    "CorpusId": 229470856
+                },
+                "corpusId": 229470856,
+                "publicationVenue": {
+                    "id": "d5da7004-7b61-450a-9c7d-a39500de7acf",
+                    "name": "IEEE Signal Processing Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Signal Process Lett"
+                    ],
+                    "issn": "1070-9908",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=97"
+                },
+                "url": "https://www.semanticscholar.org/paper/1d466db9df8637c34acb77256363f411cb6e6e9e",
+                "title": "Flow-Based Independent Vector Analysis for Blind Source Separation",
+                "abstract": "This letter describes a time-varying extension of independent vector analysis (IVA) based on the normalizing flow (NF), called NF-IVA, for determined blind source separation of multichannel audio signals. As in IVA, NF-IVA estimates demixing matrices that transform mixture spectra to source spectra in the complex-valued spatial domain such that the likelihood of those matrices for the mixture spectra is maximized under some non-Gaussian source model. While IVA performs a time-invariant bijective linear transformation, NF-IVA performs a series of time-varying bijective linear transformations (flow blocks) adaptively predicted by neural networks. To regularize such transformations, we introduce a soft volume-preserving (VP) constraint. Given mixture spectra, the parameters of NF-IVA are optimized by gradient descent with backpropagation in an unsupervised manner. Experimental results show that NF-IVA successfully performs speech separation in reverberant environments with different numbers of speakers and microphones and that NF-IVA with the VP constraint outperforms NF-IVA without it, standard IVA with iterative projection, and improved IVA with gradient descent.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "143683670",
+                        "name": "Aditya Arie Nugraha"
+                    },
+                    {
+                        "authorId": "2247061",
+                        "name": "Kouhei Sekiguchi"
+                    },
+                    {
+                        "authorId": "2040701241",
+                        "name": "Mathieu Fontaine"
+                    },
+                    {
+                        "authorId": "2730311",
+                        "name": "Yoshiaki Bando"
+                    },
+                    {
+                        "authorId": "5999120",
+                        "name": "Kazuyoshi Yoshii"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In this paper, we will focus on a specific implementation that is directly inspired by the recent work on identifiable VAE [35, 41, 64].",
+                "pi-VAE generalizes recent work on identifiable VAE [35, 41, 64] to deal with spike train data."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "11a115fcb2d92c9ee486f6cef2d015dc8a235967",
+                "externalIds": {
+                    "MAG": "3098932858",
+                    "DBLP": "conf/nips/ZhouW20",
+                    "ArXiv": "2011.04798",
+                    "CorpusId": 226290106
+                },
+                "corpusId": 226290106,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/11a115fcb2d92c9ee486f6cef2d015dc8a235967",
+                "title": "Learning identifiable and interpretable latent models of high-dimensional neural activity using pi-VAE",
+                "abstract": "The ability to record activities from hundreds of neurons simultaneously in the brain has placed an increasing demand for developing appropriate statistical techniques to analyze such data. Recently, deep generative models have been proposed to fit neural population responses. While these methods are flexible and expressive, the downside is that they can be difficult to interpret and identify. To address this problem, we propose a method that integrates key ingredients from latent models and traditional neural encoding models. Our method, pi-VAE, is inspired by recent progress on identifiable variational auto-encoder, which we adapt to make appropriate for neuroscience applications. Specifically, we propose to construct latent variable models of neural activity while simultaneously modeling the relation between the latent and task variables (non-neural variables, e.g. sensory, motor, and other externally observable states). The incorporation of task variables results in models that are not only more constrained, but also show qualitative improvements in interpretability and identifiability. We validate pi-VAE using synthetic data, and apply it to analyze neurophysiological datasets from rat hippocampus and macaque motor cortex. We demonstrate that pi-VAE not only fits the data better, but also provides unexpected novel insights into the structure of the neural codes.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2108529390",
+                        "name": "Ding Zhou"
+                    },
+                    {
+                        "authorId": "7621394",
+                        "name": "Xue-Xin Wei"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We might expect that some subspace in Z could contain mere noise, as is observed in iFlows (Li et al., 2020) where dz = dx. Recall that in the case of weak identifiability one learns an affine transform using CCA to maximally-align two sets of learnt representations.",
+                "\u2026the same probability distribution (so the model\u2019s parameters are not identifiable) while having identifiable latent representations (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021).",
+                "We might expect that some subspace in Z could contain mere noise, as is observed in iFlows (Li et al., 2020) where dz = dx.",
+                "\u2026learning the same latent representations, when tested under the same conditions as in the literature on identifiable models (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021).",
+                "In the last few years there has been a resurgence in identifiability results in machine learning models within certain problem-settings (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021).",
+                "We create synthetic data to evaluate model performance using the same generating mechanism and mode of analysis as in previous in works on non-linear ICA (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Sorrenson et al., 2020; Li et al., 2020; Khemakhem et al., 2020b).",
+                "In this paper we investigate how various purely-unsupervised deep generative models compare to deep generative models with side information at consistently learning the same latent representations, when tested under the same conditions as in the literature on identifiable models (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021).",
+                "In highly flexible models, multiple settings of parameters could define the same probability distribution (so the model\u2019s parameters are not identifiable) while having identifiable latent representations (Hyv\u00e4rinen & Morioka, 2016; Hyvarinen et al., 2019; Khemakhem et al., 2020a; Li et al., 2020; Sorrenson et al., 2020; Khemakhem et al., 2020b; Roeder et al., 2021)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "6d13d4a2adba7326c1cf530c7a3d80ea4e9aac37",
+                "externalIds": {
+                    "CorpusId": 248964904
+                },
+                "corpusId": 248964904,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6d13d4a2adba7326c1cf530c7a3d80ea4e9aac37",
+                "title": "On Algorithmic Stability in Unsupervised Representation Learning",
+                "abstract": "In this paper, we investigate the algorithmic stability of unsupervised representation learning with deep generative models, as a function of repeated re-training on the same input data. Algorithms for learning low dimensional linear representations\u2014for example principal components analysis (PCA), or linear independent components analysis (ICA)\u2014come with guarantees that they will always reveal the same latent representations (perhaps up to an arbitrary rotation or permutation). Unfortunately, for non-linear representation learning, such as in a variational auto-encoder (VAE) model trained by stochastic gradient descent, we have no such guarantees. Recent work on identi\ufb01ability in non-linear ICA have introduced a family of deep generative models that have identi\ufb01able latent representations, achieved by conditioning on side information (e.g. informative labels). We empirically evaluate the stability of these models under repeated re-estimation of parameters, and compare them to both standard VAEs and deep generative models which learn to cluster in their latent space. Surprisingly, we discover side information is not necessary for algorithmic stability: using standard quantitative measures of identi\ufb01ability, we \ufb01nd deep generative models with latent clusterings are empirically identi\ufb01able to the same degree as models which rely on auxiliary labels. We relate these results to the possibility of identi\ufb01able non-linear ICA.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "47975945",
+                        "name": "M. Willetts"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Since this pathbreaking work, many generalizations have been proposed [H\u00e4lv\u00e4 and Hyvarinen, 2020, H\u00e4lv\u00e4 et al., 2021, Khemakhem et al., 2020b, Li et al., 2019, Mita et al., 2021, Sorrenson et al., 2019, Yang et al., 2021, Klindt et al., 2020, Brehmer et al., 2022], all of which require some form of\u2026",
+                "Since this pathbreaking work, many generalizations have been proposed (H\u00e4lv\u00e4 and Hyvarinen, 2020; H\u00e4lv\u00e4 et al., 2021; Khemakhem et al., 2020b; Li et al., 2019; Mita et al., 2021; Sorrenson et al., 2019; Yang et al., 2021; Klindt et al., 2020; Brehmer et al., 2022), all of which require some form of auxiliary information.",
+                "While this result has been generalized and relaxed in several directions [H\u00e4lv\u00e4 and Hyvarinen, 2020, H\u00e4lv\u00e4 et al., 2021, Khemakhem et al., 2020b, Li et al., 2019, Mita et al., 2021, Sorrenson et al., 2019, Yang et al., 2021, Klindt et al., 2020, Brehmer et al., 2022], fundamentally these results\u2026",
+                "While this result has been generalized and relaxed in several directions (H\u00e4lv\u00e4 and Hyvarinen, 2020; H\u00e4lv\u00e4 et al., 2021; Khemakhem et al., 2020b; Li et al., 2019; Mita et al., 2021; Sorrenson et al., 2019; Yang et al., 2021; Klindt et al., 2020; Brehmer et al., 2022), fundamentally these results still crucially rely on the side information u."
+            ],
+            "intents": [],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "216472d6d9c25ddd2bf58e04870f0ebbea2958ef",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2206-10044",
+                    "DOI": "10.48550/arXiv.2206.10044",
+                    "CorpusId": 249889838
+                },
+                "corpusId": 249889838,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/216472d6d9c25ddd2bf58e04870f0ebbea2958ef",
+                "title": "Identifiability of deep generative models under mixture priors without auxiliary information",
+                "abstract": "We prove identi\ufb01ability of a broad class of deep latent variable models that (a) have universal approximation capabilities and (b) are the decoders of variational autoencoders that are commonly used in practice. Unlike existing work, our analysis does not require weak supervision, auxiliary information, or conditioning in the latent space. The models we consider are tightly connected with autoencoder architectures used in practice that leverage mixture priors in the latent space and ReLU/leaky-ReLU activations in the encoder. Our main result is an identi\ufb01ability hierarchy that signi\ufb01cantly gen-eralizes previous work and exposes how different assumptions lead to different \u201cstrengths\u201d of identi\ufb01ability. For example, our weakest result estab-lishes (unsupervised) identi\ufb01ability up to an af\ufb01ne transformation, which already improves existing work. It\u2019s well known that these models have universal approximation capabilities and moreover, they have been extensively used in practice to learn representations of data.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "103308672",
+                        "name": "Bohdan Kivva"
+                    },
+                    {
+                        "authorId": "1929023139",
+                        "name": "Goutham Rajendran"
+                    },
+                    {
+                        "authorId": "145969795",
+                        "name": "Pradeep Ravikumar"
+                    },
+                    {
+                        "authorId": "2050920",
+                        "name": "Bryon Aragam"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "By aligning normalizing flows with this identifiability theory it is desirable to learn a latent-variable model with identifiability guarantees as done by Li, Hooi, and Lee, 2020.",
+                "The identifiability of the latent-variable family is then given by Theorem 4.1 in Li, Hooi, and Lee, 2020.",
+                "The challenge lies in designing a normalizing flow which has an inverse that is efficient to calculate without sacrificing its capabilities of mapping simple distributions to complex ones (Li, Hooi, and Lee, 2020).",
+                "The third component is derived from the change of volume of the normalizing flow, where h\u03c6 is a normalizing flow of any kind (Li, Hooi, and Lee, 2020).",
+                "We have create synthetic data using the same configurations as in the original paper (Li, Hooi, and Lee, 2020), following the provided code.",
+                "Following this theory, Li, Hooi, and Lee, 2020 presented a novel identifiable framework using a flow-based model for estimating latent representations, which is able to maximize the likelihood of the data directly, resulting in higher identifiability over iVAE.",
+                "This ensures enough flexibility and expressiveness (Li, Hooi, and Lee, 2020).",
+                "In this work, the main results from the \"Identifying Through Flows for Recovering Latent Representations\" paper are reproduced (Li, Hooi, and Lee, 2020)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "87c6f94dd03491ea6616580bdfe2861536d132f9",
+                "externalIds": {
+                    "CorpusId": 237265516
+                },
+                "corpusId": 237265516,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/87c6f94dd03491ea6616580bdfe2861536d132f9",
+                "title": "[Re] Identifying Through Flows for Recovering Latent Representations",
+                "abstract": "The reproduced MCC scores in 2D do not support the claim that iFlow yields identifiability improvements over iVAE due to iVAE scoring higher. iFlow might preserve the geometry of the latent space. In contradiction to the paper, there was no case where iVAE collapsed. The results of our iFlow performance study are almost identical to that of the original paper suggesting that iFlow indeed yields improved identifiability and modelling of data distributions. The results of the final reproduction suggests in favour of the improved identifiability across dimensions of latent space. Using the best performing seed, iFlow scored around 0.25 higher on the correlation coefficient. Our extended experiments show more stability of iFlow when increasing the data complexity.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "144811646",
+                        "name": "Milan van den Heuvel"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "30c1e28b388f9c715817700f751216550f9b5cef",
+                "externalIds": {
+                    "CorpusId": 237263148
+                },
+                "corpusId": 237263148,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/30c1e28b388f9c715817700f751216550f9b5cef",
+                "title": "[Re] Reproducing \u2019Identifying through flows for recovering latent representations\u2019",
+                "abstract": "To reproduce the results of the paper, the main experiments are reproduced and the figures are recreated. To do so, we largely worked with code from the repository belonging to the original paper. We added plotting functionality as well as various bug fixes and optimisations. Additionally, attempts weremade to improve the iVAE bymaking it more complex and fixing a mistake in its implementation.We also tried to investigate possible correlation between the structure of the dataset and the performance. All code used is publicly available at https://github.com/HiddeLekanne/Reproducibility-Challenge-iFlow.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2084968223",
+                        "name": "H. L. Deprez"
+                    },
+                    {
+                        "authorId": "2176102573",
+                        "name": "Geerten Rijsdijk"
+                    },
+                    {
+                        "authorId": "2176102524",
+                        "name": "Bart de Rooij"
+                    },
+                    {
+                        "authorId": "2066702729",
+                        "name": "W. Zwerink"
+                    }
+                ]
+            }
+        }
+    ]
+}

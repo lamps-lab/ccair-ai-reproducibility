@@ -1,0 +1,1561 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "10b722bc68c5078d43e9e6e62a507f4acd7db942",
+                "externalIds": {
+                    "DOI": "10.1016/j.patrec.2023.08.022",
+                    "CorpusId": 261552303
+                },
+                "corpusId": 261552303,
+                "publicationVenue": {
+                    "id": "f35e3e87-9df4-497b-aa0d-bb8584197290",
+                    "name": "Pattern Recognition Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit Lett"
+                    ],
+                    "issn": "0167-8655",
+                    "url": "https://www.journals.elsevier.com/pattern-recognition-letters/",
+                    "alternate_urls": [
+                        "http://www.journals.elsevier.com/pattern-recognition-letters/",
+                        "http://www.sciencedirect.com/science/journal/01678655"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/10b722bc68c5078d43e9e6e62a507f4acd7db942",
+                "title": "Information bottleneck disentanglement based sparse representation for fair classification",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "151480853",
+                        "name": "Xiongbo Lu"
+                    },
+                    {
+                        "authorId": "145872629",
+                        "name": "Yi Rong"
+                    },
+                    {
+                        "authorId": "9407523",
+                        "name": "Yaxiong Chen"
+                    },
+                    {
+                        "authorId": "2135639762",
+                        "name": "Shengwu Xiong"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "In [1], the latent distribution q\u03c6(z) is explicitly defined as a mixture of a binary and a continuous distribution (\u201cSpikeand-Slab\u201d).",
+                "2 depicts the 256 dictionary atoms learned by the VSC (non-convolutional) in [2].",
+                "Variational sparse coding (VSC) [1] uses the probabilistic autoencoder model in the context of sparse models (1), based on following equivalences:",
+                "In both VSC and VCSC posterior collapse can be avoided, though some parameter tuning was needed for VCSC.",
+                "D. Variational Sparse Coding\nVariational sparse coding (VSC) [1] uses the probabilistic autoencoder model in the context of sparse models (1), based on following equivalences:\n\u2022 the sparse vector z is the latent variable z in VAE; \u2022 the decoder \u03b8 is the dictionary D, which takes as input\nthe sparse code z and produces the estimate x\u0302 by multiplication.",
+                "Recently, there has been work on creating probabilistic, generative models for sparse coding based on variational autoencoders, known as Variational Sparse Coding [2] (VSC).",
+                "The fundamental issue in VSC is the reparameterization method of z, which must produce produce a random sparse vector, sampled from a distribution with learnable parameters.",
+                "In this paper, we propose to extend the VSC approach to consider convolutional sparse coding as well.",
+                "We adapt the framework of [2] for convolutional dictionaries and compare the results obtained against the reference VSC model.",
+                "VARIATIONAL CONVOLUTIONAL SPARSE CODING\nIn this paper, we extend the VSC framework introduced in [2] to consider the case of convolutional dictionaries."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "45c120178193a2364c8cadbe39af782344007d77",
+                "externalIds": {
+                    "DOI": "10.1109/ISSCS58449.2023.10190918",
+                    "CorpusId": 260254816
+                },
+                "corpusId": 260254816,
+                "publicationVenue": {
+                    "id": "1bce5af0-e96f-4d8c-a569-305b5d421b0d",
+                    "name": "International Symposium on Signals, Circuits and Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ISSCS",
+                        "Int Symp Signal Circuit Syst"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/45c120178193a2364c8cadbe39af782344007d77",
+                "title": "Variational Convolutional Sparse Coding with Learned Thresholding",
+                "abstract": "In this paper we extend the variational sparse coding framework to the case of convolutional sparse coding. This approach shares the same explainability advantage of sparse coding, but also benefits from shift-invariance of the atoms, since the placement of the features is now encoded in the sparse latent variable. The decoder is built using a depthwise convolution layer followed by a sum operation. Results show that the learned atoms are representative and they are indeed the location-free counterparts of the atoms learned in the non-convolutional setting.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3204938",
+                        "name": "Nicolae Cleju"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "advances in a variational sparse coding [2, 65, 32].",
+                "To address these requirements for quick inference and learned coefficient distributions from which one can sample, we build upon advances in variational sparse coding [32, 65, 2]."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "5861aeb9659b9449f7482e0d5543933216577727",
+                "externalIds": {
+                    "ArXiv": "2306.13544",
+                    "DBLP": "journals/corr/abs-2306-13544",
+                    "DOI": "10.48550/arXiv.2306.13544",
+                    "CorpusId": 259243851
+                },
+                "corpusId": 259243851,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5861aeb9659b9449f7482e0d5543933216577727",
+                "title": "Manifold Contrastive Learning with Variational Lie Group Operators",
+                "abstract": "Self-supervised learning of deep neural networks has become a prevalent paradigm for learning representations that transfer to a variety of downstream tasks. Similar to proposed models of the ventral stream of biological vision, it is observed that these networks lead to a separation of category manifolds in the representations of the penultimate layer. Although this observation matches the manifold hypothesis of representation learning, current self-supervised approaches are limited in their ability to explicitly model this manifold. Indeed, current approaches often only apply augmentations from a pre-specified set of\"positive pairs\"during learning. In this work, we propose a contrastive learning approach that directly models the latent manifold using Lie group operators parameterized by coefficients with a sparsity-promoting prior. A variational distribution over these coefficients provides a generative model of the manifold, with samples which provide feature augmentations applicable both during contrastive training and downstream tasks. Additionally, learned coefficient distributions provide a quantification of which transformations are most likely at each point on the manifold while preserving identity. We demonstrate benefits in self-supervised benchmarks for image datasets, as well as a downstream semi-supervised task. In the former case, we demonstrate that the proposed methods can effectively apply manifold feature augmentations and improve learning both with and without a projection head. In the latter case, we demonstrate that feature augmentations sampled from learned Lie group operators can improve classification performance when using few labels.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2007290564",
+                        "name": "Kion Fallah"
+                    },
+                    {
+                        "authorId": "153223021",
+                        "name": "Alec Helbling"
+                    },
+                    {
+                        "authorId": "2203400008",
+                        "name": "Kyle A. Johnsen"
+                    },
+                    {
+                        "authorId": "1690427",
+                        "name": "C. Rozell"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "We hypothesise that a DirVAE will allow a multimodal latent representation of CXRs to be learned through multi-peak sampling and will encourage latent disentanglement due to the sparse nature of the Dirichlet prior.(6) To evaluate the potential benefits of DirVAE over a conventional VAE with a Gaussian prior (GVAE), we use the CheXpert dataset to tackle a complex multi-label classification problem."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "735016aff00aee8ee2ea7e334455ceb0fcb188b8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-02979",
+                    "ArXiv": "2302.02979",
+                    "DOI": "10.1117/12.2654345",
+                    "CorpusId": 256616151
+                },
+                "corpusId": 256616151,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/735016aff00aee8ee2ea7e334455ceb0fcb188b8",
+                "title": "Learning disentangled representations for explainable chest x-ray classification using Dirichlet VAEs",
+                "abstract": "This study explores the use of the Dirichlet Variational Autoencoder (DirVAE) for learning disentangled latent representations of chest X-ray (CXR) images. Our working hypothesis is that distributional sparsity, as facilitated by the Dirichlet prior, will encourage disentangled feature learning for the complex task of multi-label classification of CXR images. The DirVAE is trained using CXR images from the CheXpert database, and the predictive capacity of multi-modal latent representations learned by DirVAE models is investigated through implementation of an auxiliary multi-label classification task, with a view to enforce separation of latent factors according to class-specific features. The predictive performance and explainability of the latent space learned using the DirVAE were quantitatively and qualitatively assessed, respectively, and compared with a standard Gaussian prior-VAE (GVAE). We introduce a new approach for explainable multi-label classification in which we conduct gradient-guided latent traversals for each class of interest. Study findings indicate that the DirVAE is able to disentangle latent factors into class-specific visual features, a property not afforded by the GVAE, and achieve a marginal increase in predictive performance relative to GVAE. We generate visual examples to show that our explainability method, when applied to the trained DirVAE, is able to highlight regions in CXR images that are clinically relevant to the class(es) of interest and additionally, can identify cases where classification relies on spurious feature correlations.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2204580726",
+                        "name": "Rachael Harkness"
+                    },
+                    {
+                        "authorId": "1681129",
+                        "name": "Alejandro F Frangi"
+                    },
+                    {
+                        "authorId": "153313217",
+                        "name": "K. Zucker"
+                    },
+                    {
+                        "authorId": "144407718",
+                        "name": "N. Ravikumar"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "Our model can outperforms both sparse VSC model and dense short-run model in Table 2.",
+                "01) [29], VAE [12], Beta-VAE (\u03b2 = 4) [9] and short-run inference model [22].",
+                "The modified KL divergence regularization in VSC also can only approximate the target distribution without learning much semantics.",
+                "However, due to the nature of variational models, VSC needs to do approximations for the true posterior of the latent variable instead of doing exact inference.",
+                "In Figure 8, we can observe that for short-run and VSC model, they will restore wrong digits when the noise variance is high.",
+                "For a fair comparison with the VSC model [29], we adopt their model structure which consists of 1 hidden layer with 400 hidden units followed by ReLU activation and sigmoid non-linearity as the output layer for MNIST and Fashion-MNIST, and we use 2 hidden layers with 2000 hidden units for CelebA and SVHN.",
+                "We compare our results with VSC using same value of \u03b1 (\u03b1 = 0.01) [29], VAE [12], Beta-VAE (\u03b2 = 4) [9] and short-run inference model [22].",
+                "VSC presents using the scaled sigmoid step function to approximate the behavior of Dirac Delta function.",
+                "One of the most notable and relevant example is Variational Sparse Coding (VSC) [29].",
+                "In Table 1, our model can outperform both VSC and \u03b2-VAE while being competitive to the dense VAE model."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a529fa7984218bdc5934dd1a7a3af39316cce74a",
+                "externalIds": {
+                    "ArXiv": "2209.09949",
+                    "DBLP": "journals/corr/abs-2209-09949",
+                    "DOI": "10.48550/arXiv.2209.09949",
+                    "CorpusId": 252407568
+                },
+                "corpusId": 252407568,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a529fa7984218bdc5934dd1a7a3af39316cce74a",
+                "title": "Learning Sparse Latent Representations for Generator Model",
+                "abstract": "Sparsity is a desirable attribute. It can lead to more ef\ufb01cient and more effective representations compared to the dense model. Meanwhile, learning sparse latent representations has been a challenging problem in the \ufb01eld of computer vision and machine learning due to its complexity. In this paper, we present a new unsupervised learning method to enforce sparsity on the latent space for the generator model with a gradually sparsi\ufb01ed spike and slab distribution as our prior. Our model consists of only one top-down generator network that maps the latent variable to the observed data. Latent variables can be inferred following generator posterior direction using non-persistent gradient based method. Spike and Slab regularization in the inference step can push non-informative latent dimensions towards zero to induce sparsity. Extensive experiments show the model can preserve majority of the information from original images with sparse representations while demon-strating improved results compared to other existing methods. We observe that our model can learn disentangled semantics and increase explainability of the latent codes while boosting the robustness in the task of classi\ufb01cation and denoising.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2046810348",
+                        "name": "Hanao Li"
+                    },
+                    {
+                        "authorId": "50495880",
+                        "name": "Tian Han"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "e59c82e7e0dd244c7abe7a4495bf4a0a78ea0991",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-08050",
+                    "ArXiv": "2207.08050",
+                    "DOI": "10.48550/arXiv.2207.08050",
+                    "CorpusId": 250626896
+                },
+                "corpusId": 250626896,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e59c82e7e0dd244c7abe7a4495bf4a0a78ea0991",
+                "title": "Repairing Systematic Outliers by Learning Clean Subspaces in VAEs",
+                "abstract": "Data cleaning often comprises outlier detection and data repair. Systematic errors result from nearly deterministic transformations that occur repeatedly in the data, e.g. specific image pixels being set to default values or watermarks. Consequently, models with enough capacity easily overfit to these errors, making detection and repair difficult. Seeing as a systematic outlier is a combination of patterns of a clean instance and systematic error patterns, our main insight is that inliers can be modelled by a smaller representation (subspace) in a model than outliers. By exploiting this, we propose Clean Subspace Variational Autoencoder (CLSVAE), a novel semi-supervised model for detection and automated repair of systematic errors. The main idea is to partition the latent space and model inlier and outlier patterns separately. CLSVAE is effective with much less labelled data compared to previous related models, often with less than 2% of the data. We provide experiments using three image datasets in scenarios with different levels of corruption and labelled set sizes, comparing to relevant baselines. CLSVAE provides superior repairs without human intervention, e.g. with just 0.25% of labelled data we see a relative error decrease of 58% compared to the closest baseline.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3455452",
+                        "name": "Simao Eduardo"
+                    },
+                    {
+                        "authorId": "2087261358",
+                        "name": "Kai Xu"
+                    },
+                    {
+                        "authorId": "32454628",
+                        "name": "A. Naz\u00e1bal"
+                    },
+                    {
+                        "authorId": "37210858",
+                        "name": "Charles Sutton"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "The KL divergence of the spike-and-slab distribution [30] can be calculated as KL [Q(\u03b8)\u2016P(\u03b8))]"
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "0e0c17997438ffa765838c5f3735fa644ffd245f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-07320",
+                    "ArXiv": "2205.07320",
+                    "DOI": "10.48550/arXiv.2205.07320",
+                    "CorpusId": 248811361
+                },
+                "corpusId": 248811361,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/0e0c17997438ffa765838c5f3735fa644ffd245f",
+                "title": "Analyzing Lottery Ticket Hypothesis from PAC-Bayesian Theory Perspective",
+                "abstract": "The lottery ticket hypothesis (LTH) has attracted attention because it can explain why over-parameterized models often show high generalization ability. It is known that when we use iterative magnitude pruning (IMP), which is an algorithm to find sparse networks with high generalization ability that can be trained from the initial weights independently, called winning tickets, the initial large learning rate does not work well in deep neural networks such as ResNet. However, since the initial large learning rate generally helps the optimizer to converge to flatter minima, we hypothesize that the winning tickets have relatively sharp minima, which is considered a disadvantage in terms of generalization ability. In this paper, we confirm this hypothesis and show that the PAC-Bayesian theory can provide an explicit understanding of the relationship between LTH and generalization behavior. On the basis of our experimental findings that flatness is useful for improving accuracy and robustness to label noise and that the distance from the initial weights is deeply involved in winning tickets, we offer the PAC-Bayes bound using a spike-and-slab distribution to analyze winning tickets. Finally, we revisit existing algorithms for finding winning tickets from a PAC-Bayesian perspective and provide new insights into these methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2165382853",
+                        "name": "Keitaro Sakamoto"
+                    },
+                    {
+                        "authorId": "73355331",
+                        "name": "Issei Sato"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                ", 2018) or rely on relaxations that can lead to poor gradient estimation during training (Tonolini et al., 2020).",
+                "\u2026interpretability\n3This visualization is from a training run where the sparsity prior is set to encourage 5% features non-zero.\nwhen sweeping each individual latent feature as in previous work that investigates Gaussian priors (Higgins et al., 2017) and sparse priors (Tonolini et al., 2020).",
+                ", 2018), Spike-andSlab (Tonolini et al., 2020), and Beta-Bernoulli (Singh et al.",
+                "\u2026+ \u03ba||A||2F (11)\nlog pA(x k|zk) = \u2212\u2016xk \u2212Azk\u201622, (12)\nwhere zk is either found via the inference procedure outlined in section 3.2 or by previous methods that used Gaussian (Kingma & Welling, 2014), Laplacian (Barello et al., 2018), or Spike-and-Slab (Tonolini et al., 2020) prior distributions.",
+                "Unfortunately, these approaches either do not explicitly learn sparse features (Barello et al., 2018) or rely on relaxations that can lead to poor gradient estimation during training (Tonolini et al., 2020).",
+                "These include Laplacian (Barello et al., 2018), Spike-andSlab (Tonolini et al., 2020), and Beta-Bernoulli (Singh et al., 2017) distributions.",
+                "Unfortunately, current BBVI approaches depend on continuous approximations (controlled by temperature parameter \u03c4 ) to each Bernoulli random variable \u03c4 (Tonolini et al., 2020; Jang et al., 2017; Maddison et al., 2017).",
+                "Alternatively, all the sparse priors show superior scaling with dimensionality, with the Thresholded Gaussian and Thresholded Gaussian+Gamma depicting superior performance to the Spike-and-Slab model from Tonolini et al. (2020).",
+                "Our reparameterization procedure differs from the Spikeand-Slab from (Tonolini et al., 2020) in a few ways.",
+                "Finally, rather than use the KL divergence for Spike-andSlabs derived in (Tonolini et al., 2020), we only penalize the base distribution with a KL divergence.",
+                "For the Spike-and-Slab, we use the same warmup strategy proposed in (Tonolini et al., 2020).",
+                ", 2018), or Spike-and-Slab (Tonolini et al., 2020) prior distributions."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7e41c7290c9b9800ea48fdcdd1a4b4746961a8f3",
+                "externalIds": {
+                    "DBLP": "conf/icml/FallahR22",
+                    "ArXiv": "2205.03665",
+                    "DOI": "10.48550/arXiv.2205.03665",
+                    "CorpusId": 248572394
+                },
+                "corpusId": 248572394,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7e41c7290c9b9800ea48fdcdd1a4b4746961a8f3",
+                "title": "Variational Sparse Coding with Learned Thresholding",
+                "abstract": "Sparse coding strategies have been lauded for their parsimonious representations of data that leverage low dimensional structure. However, inference of these codes typically relies on an optimization procedure with poor computational scaling in high-dimensional problems. For ex-ample, sparse inference in the representations learned in the high-dimensional intermediary lay-ers of deep neural networks (DNNs) requires an iterative minimization to be performed at each training step. As such, recent, quick methods in variational inference have been proposed to infer sparse codes by learning a distribution over the codes with a DNN. In this work, we propose a new approach to variational sparse coding that allows us to learn sparse distributions by thresholding samples, avoiding the use of problematic relaxations. We \ufb01rst evaluate and analyze our method by training a linear generator, showing that it has superior performance, statistical ef\ufb01ciency, and gradient estimation compared to other sparse distributions. We then compare to a standard variational autoencoder using a DNN generator on the Fashion MNIST and CelebA datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2007290564",
+                        "name": "Kion Fallah"
+                    },
+                    {
+                        "authorId": "1690427",
+                        "name": "C. Rozell"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "[11] proposed a variational sparse coding (VSC) framework, where they consider a Spike-and-Slab distribution [12] for the encoder, which is a mixture of a Gaussian distribution, as in a standard VAE, and a sparsity-promoting Delta function.",
+                "These parameters values are chosen according to prior studies [3, 11], where they have shown good performance.",
+                "As baseline methods, we compare the performance of a standard VAE(2) [3], the VSC model(3) [11], and the proposed SDMVAE model."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "6aed8f70d922527d172da51aa35c2ff6fd99cb9d",
+                "externalIds": {
+                    "ArXiv": "2203.15758",
+                    "DBLP": "journals/corr/abs-2203-15758",
+                    "DOI": "10.48550/arXiv.2203.15758",
+                    "CorpusId": 247779085
+                },
+                "corpusId": 247779085,
+                "publicationVenue": {
+                    "id": "af90489e-312f-4514-bea2-bcb399cb8ece",
+                    "name": "Interspeech",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conf Int Speech Commun Assoc",
+                        "INTERSPEECH",
+                        "Conference of the International Speech Communication Association"
+                    ],
+                    "issn": "2308-457X",
+                    "url": "https://www.isca-speech.org/iscaweb/index.php/conferences/interspeech",
+                    "alternate_urls": [
+                        "http://www.isca-speech.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6aed8f70d922527d172da51aa35c2ff6fd99cb9d",
+                "title": "A Sparsity-promoting Dictionary Model for Variational Autoencoders",
+                "abstract": "Structuring the latent space in probabilistic deep generative models, e.g., variational autoencoders (VAEs), is important to yield more expressive models and interpretable representations, and to avoid overfitting. One way to achieve this objective is to impose a sparsity constraint on the latent variables, e.g., via a Laplace prior. However, such approaches usually complicate the training phase, and they sacrifice the reconstruction quality to promote sparsity. In this paper, we propose a simple yet effective methodology to structure the latent space via a sparsity-promoting dictionary model, which assumes that each latent code can be written as a sparse linear combination of a dictionary's columns. In particular, we leverage a computationally efficient and tuning-free method, which relies on a zero-mean Gaussian latent prior with learnable variances. We derive a variational inference scheme to train the model. Experiments on speech generative modeling demonstrate the advantage of the proposed approach over competing techniques, since it promotes sparsity while not deteriorating the output speech quality.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1768323323",
+                        "name": "M. Sadeghi"
+                    },
+                    {
+                        "authorId": "1740909",
+                        "name": "P. Magron"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "Similar to eVAE, the variational sparse coding (VSC) proposed in [30] introduces sparsity through a deterministic classifier.",
+                "Notable works include sparse Dirichlet variational autoencoder (sDVAE) ([3]), epitome VAE (eVAE) ([33]), variational sparse coding (VSC) ([30]), and InteLVAE ([20]).",
+                "Approach Latent Sparsity Variable (global/local)\nsDVAE S D (L) eVAE S D (L) VSC S D (L) InteL-VAE S D (L) Drop-B D S (G)\nIBP S S (G) SparC-IB S S (L)\nTable 1: Latent-variable models with different sparsity induction strategies, where D=Deterministic and S=Stochastic.",
+                "InteL-VAE has empirically shown an improvement over VSC in unsupervised learning tasks, such as image generation."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3a47ee08b964fd3588cde6c3456491df1ce87110",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2203-02592",
+                    "ArXiv": "2203.02592",
+                    "DOI": "10.48550/arXiv.2203.02592",
+                    "CorpusId": 247292440
+                },
+                "corpusId": 247292440,
+                "publicationVenue": {
+                    "id": "2d136b11-c2b5-484b-b008-7f4a852fd61e",
+                    "name": "International Conference on Artificial Intelligence and Statistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AISTATS",
+                        "Int Conf Artif Intell Stat"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3a47ee08b964fd3588cde6c3456491df1ce87110",
+                "title": "Sparsity-Inducing Categorical Prior Improves Robustness of the Information Bottleneck",
+                "abstract": "The information bottleneck framework provides a systematic approach to learning representations that compress nuisance information in the input and extract semantically meaningful information about predictions. However, the choice of a prior distribution that fixes the dimensionality across all the data can restrict the flexibility of this approach for learning robust representations. We present a novel sparsity-inducing spike-slab categorical prior that uses sparsity as a mechanism to provide the flexibility that allows each data point to learn its own dimension distribution. In addition, it provides a mechanism for learning a joint distribution of the latent variable and the sparsity and hence can account for the complete uncertainty in the latent space. Through a series of experiments using in-distribution and out-of-distribution learning scenarios on the MNIST, CIFAR-10, and ImageNet data, we show that the proposed approach improves accuracy and robustness compared to traditional fixed-dimensional priors, as well as other sparsity induction mechanisms for latent variable models proposed in the literature.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2157861602",
+                        "name": "Anirban Samaddar"
+                    },
+                    {
+                        "authorId": "2144881368",
+                        "name": "S. Madireddy"
+                    },
+                    {
+                        "authorId": "2138151793",
+                        "name": "P. Balaprakash"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "In variational inference models such as VAE Kingma & Welling (2013) and its sparse coding extensions such as SVAE Barello et al. (2018) and Tonolini et al. (2020), the latent codes have a pre-set level of variance determined by the prior distribution."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "6e08acdb27e83a26ef7e67539a11e9cb3588e822",
+                "externalIds": {
+                    "DBLP": "journals/tmlr/EvtimovaL22",
+                    "ArXiv": "2112.09214",
+                    "CorpusId": 245329482
+                },
+                "corpusId": 245329482,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6e08acdb27e83a26ef7e67539a11e9cb3588e822",
+                "title": "Sparse Coding with Multi-Layer Decoders using Variance Regularization",
+                "abstract": "Sparse representations of images are useful in many computer vision applications. Sparse coding with an $l_1$ penalty and a learned linear dictionary requires regularization of the dictionary to prevent a collapse in the $l_1$ norms of the codes. Typically, this regularization entails bounding the Euclidean norms of the dictionary's elements. In this work, we propose a novel sparse coding protocol which prevents a collapse in the codes without the need to regularize the decoder. Our method regularizes the codes directly so that each latent code component has variance greater than a fixed threshold over a set of sparse representations for a given set of inputs. Furthermore, we explore ways to effectively train sparse coding systems with multi-layer decoders since they can model more complex relationships than linear dictionaries. In our experiments with MNIST and natural image patches, we show that decoders learned with our approach have interpretable features both in the linear and multi-layer case. Moreover, we show that sparse autoencoders with multi-layer decoders trained using our variance regularization method produce higher quality reconstructions with sparser representations when compared to autoencoders with linear dictionaries. Additionally, sparse representations obtained with our variance regularization approach are useful in the downstream tasks of denoising and classification in the low-data regime.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "13188440",
+                        "name": "Katrina Evtimova"
+                    },
+                    {
+                        "authorId": "1688882",
+                        "name": "Yann LeCun"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "Based on the recent research [20], we choose the Spike and Slab distribution which induces sparsity to latent space as prior.",
+                "consider adding the constraint of sparsity to the latent space [20].",
+                "Therefore, Research [20] introduces Spike and Slab distributions as prior [21] and proposes a new non-linear generative model.",
+                "Like research [20], the prior p(z) can be obtained as follow:",
+                "This study was funded in part by National Natural Science Foundation of China (61802313, U1811262), Key Research and Development Program of China (2020AAA0108500), Reformation Research on Education and Teaching at Northwestern Polytechnical University (2021JGY31)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "6ae30c4cf3ffdd80f0a2f348d3eabd5fdcb6b3d3",
+                "externalIds": {
+                    "DBLP": "conf/bigdataconf/DaiZYAS21",
+                    "DOI": "10.1109/BigData52589.2021.9671695",
+                    "CorpusId": 245945473
+                },
+                "corpusId": 245945473,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6ae30c4cf3ffdd80f0a2f348d3eabd5fdcb6b3d3",
+                "title": "VarSKD: A Variational Student Knowledge Diagnosis for Efficiently Representing Student Latent Knowledge Space",
+                "abstract": "Student knowledge diagnosis (SKD) is a fundamental and crucial task in educational data mining (EDM). SKD aims to diagnose student latent knowledge which is inferred from student\u2019s performance. The model used for SKD in EDM comes from two sources: variant classical psychometric approaches, and research on machine learning-based approaches. Tradition psychometric models and their variants diagnosis student knowledge state relying on the question-concept matrix (Q-matrix) empirically designed by experts. However, the expert concepts are expensive and inter-overlapping in their constructions, leading to ambiguous explanations. The recent model Meta-knowledge Dictionary Learning (MetaDL), a learning-based model, proposes a linear sparse dictionary method to mine Q-matrix without expert definition and student latent knowledge representation. MetaDL aims to learn a meta-knowledge dictionary from student responses, where any knowledge entity is a linear combination of a few atoms in the meta-knowledge dictionary. However, a linear model cannot capture complex features from the student learning process and MetaDL fails to solve the missing data. This paper proposes a novel Variational Student Knowledge Diagnosis (VarSKD) method that extends the linear sparse representation of student latent knowledge space into non-linear probabilistic sparse representation. This model based on variational sparse coding can obtain better student latent knowledge representation. Furthermore, extensive experimental results on real-world datasets demonstrate the prediction accuracy and effective power of VarSKD framework.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2065113233",
+                        "name": "Huan Dai"
+                    },
+                    {
+                        "authorId": "1860154",
+                        "name": "Yupei Zhang"
+                    },
+                    {
+                        "authorId": "91218454",
+                        "name": "Yue Yun"
+                    },
+                    {
+                        "authorId": "2065445861",
+                        "name": "Rui An"
+                    },
+                    {
+                        "authorId": "48803503",
+                        "name": "Xuequn Shang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "Empirically, we compare the sparse VAE to existing algorithms for fitting DGMs: the VAE (Kingma and Welling, 2014), \u03b2-VAE (Higgins et al., 2017), Variational Sparse Coding (VSC, Tonolini et al., 2020), and OI-VAE (Ainsworth et al., 2018).",
+                "Although the VAE is\ncompetitive in this setting, we see that the sparse VAE does better than methods such as OI-VAE and VSC that were designed to produce interpretable results.",
+                "Here, VSC performs worse than both the sparse VAE and VAE (the MSE scores for VSC in were too large for visualization in Figure 3a).",
+                "In nonlinear representation learning, Tonolini et al. (2020) imposes sparsity-inducing priors directly on the latent factors.",
+                "The poor performance of VSC is likely due to the true generative factors in Eq.",
+                ", 2017); VSC (Tonolini et al., 2020); and OI-VAE (Ainsworth et al.",
+                "We compare the sparse VAE to non-negative matrix factorization (NMF) and algorithms for DGMs: the VAE (Kingma and Welling, 2014); \u03b2-VAE (Higgins et al., 2017); VSC (Tonolini et al., 2020); and OI-VAE (Ainsworth et al., 2018)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "0bf88192d02c08661b9185b2b16399306694c4a4",
+                "externalIds": {
+                    "ArXiv": "2110.10804",
+                    "DBLP": "journals/tmlr/MoranSWB22",
+                    "CorpusId": 246904884
+                },
+                "corpusId": 246904884,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/0bf88192d02c08661b9185b2b16399306694c4a4",
+                "title": "Identifiable Deep Generative Models via Sparse Decoding",
+                "abstract": "We develop the sparse VAE for unsupervised representation learning on high-dimensional data. The sparse VAE learns a set of latent factors (representations) which summarize the associations in the observed data features. The underlying model is sparse in that each observed feature (i.e. each dimension of the data) depends on a small subset of the latent factors. As examples, in ratings data each movie is only described by a few genres; in text data each word is only applicable to a few topics; in genomics, each gene is active in only a few biological processes. We prove such sparse deep generative models are identifiable: with infinite data, the true model parameters can be learned. (In contrast, most deep generative models are not identifiable.) We empirically study the sparse VAE with both simulated and real data. We find that it recovers meaningful latent factors and has smaller heldout reconstruction error than related methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "3433248",
+                        "name": "Gemma E. Moran"
+                    },
+                    {
+                        "authorId": "153485411",
+                        "name": "Dhanya Sridhar"
+                    },
+                    {
+                        "authorId": "2108734693",
+                        "name": "Yixin Wang"
+                    },
+                    {
+                        "authorId": "1796335",
+                        "name": "D. Blei"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Some generative models which use binary-continuous mixed latents for sparse coding, such as VSC (Tonolini, Jensen, and Murray-Smith 2020), IBP-VAE (Gyawali et al. 2019), PatchVAE (Gupta, Singh, and Shrivastava 2020), can support binary concepts.",
+                "Another approach is to incorporate structure into the representation(Choi, Hwang, and Kang 2020; Ross and Doshi-Velez 2021; Tonolini, Jensen, and Murray-Smith 2020; Gupta, Singh, and Shrivastava 2020).",
+                "The way we represent binary concepts is closely related to the spike-and-slab distribution, which is used in Bayesian variable selection (George and McCulloch 1997) and sparse coding (Tonolini, Jensen, and Murray-Smith 2020)."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "5697da09cdfd3ce7768b126ced6b5a0b82e4e884",
+                "externalIds": {
+                    "ArXiv": "2109.04518",
+                    "DBLP": "conf/aaai/TranFAS22",
+                    "DOI": "10.1609/aaai.v36i9.21195",
+                    "CorpusId": 237485333
+                },
+                "corpusId": 237485333,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/5697da09cdfd3ce7768b126ced6b5a0b82e4e884",
+                "title": "Unsupervised Causal Binary Concepts Discovery with VAE for Black-box Model Explanation",
+                "abstract": "We aim to explain a black-box classifier with the form: \"data X is classified as class Y because X has A, B and does not have C\" in which A, B, and C are high-level concepts. The challenge is that we have to discover in an unsupervised manner a set of concepts, i.e., A, B and C, that is useful for explaining the classifier. We first introduce a structural generative model that is suitable to express and discover such concepts. We then propose a learning process that simultaneously learns the data distribution and encourages certain concepts to have a large causal influence on the classifier output. Our method also allows easy integration of user's prior knowledge to induce high interpretability of concepts. Finally, using multiple datasets, we demonstrate that the proposed method can discover useful concepts for explanation in this form.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2072581644",
+                        "name": "Thien Q. Tran"
+                    },
+                    {
+                        "authorId": "16348694",
+                        "name": "Kazuto Fukuchi"
+                    },
+                    {
+                        "authorId": "1721701",
+                        "name": "Youhei Akimoto"
+                    },
+                    {
+                        "authorId": "1733719",
+                        "name": "Jun Sakuma"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "However, this can cause issues, such as when one desires the learned representations to exhibit some properties of interest, for example sparsity (Tonolini et al., 2020) or clustering (Dilokthanakul et al.",
+                "While it is well documented that this standard VAE setup with a \u2018Gaussian\u2019 latent space can be suboptimal (Davidson et al., 2018a; Mathieu et al., 2019b; Tomczak & Welling, 2018; Bauer & Mnih, 2019; Tonolini et al., 2020), there is perhaps less of a unified high-level view on exactly when, why, and how one should change it to incorporate inductive biases.",
+                "However, this can cause issues, such as when one desires the learned representations to exhibit some properties of interest, for example sparsity (Tonolini et al., 2020) or clustering (Dilokthanakul et al., 2016), or when the data distribution has very different topological properties from a\u2026",
+                "\u2026assess the ability of our approach to yield sparse representations and good quality generations, we compare against vanilla VAEs, the specially customized sparse-VAE of Tonolini et al. (2020), and the sparse version of Mathieu et al. (2019b) (DD) on FashionMNIST (Xiao et al., 2017) and MNIST.",
+                "\u2026fit and generation capabilities of VAEs, including MoG priors (Dilokthanakul et al., 2016; Shi et al., 2020), sparse priors (Mathieu et al., 2019b; Tonolini et al., 2020; Barello et al., 2018), Gaussianprocess priors (Casale et al., 2018) and autoregressive priors (Razavi et al., 2019; van den\u2026",
+                "\u2026setup with a \u2018Gaussian\u2019 latent space can be suboptimal (Davidson et al., 2018a; Mathieu et al., 2019b; Tomczak & Welling, 2018; Bauer & Mnih, 2019; Tonolini et al., 2020), there is perhaps less of a unified high-level view on exactly when, why, and how one should change it to incorporate\u2026",
+                "Reproduction of Sparse-VAE We tried two different code bases for Sparse-VAE (Tonolini et al., 2020).",
+                ", 2020), sparse priors (Mathieu et al., 2019b; Tonolini et al., 2020; Barello et al., 2018), Gaussianprocess priors (Casale et al.",
+                "However, existing VAE models for sparse representations trade off generation quality to achieve this sparsity (Mathieu et al., 2019b; Tonolini et al., 2020; Barello et al., 2018)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fc26d1bff24719f82ca268b096760c4f05564b94",
+                "externalIds": {
+                    "ArXiv": "2106.13746",
+                    "DBLP": "conf/iclr/MiaoMNTR22",
+                    "CorpusId": 246864044
+                },
+                "corpusId": 246864044,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/fc26d1bff24719f82ca268b096760c4f05564b94",
+                "title": "On Incorporating Inductive Biases into VAEs",
+                "abstract": "We explain why directly changing the prior can be a surprisingly ineffective mechanism for incorporating inductive biases into VAEs, and introduce a simple and effective alternative approach: Intermediary Latent Space VAEs(InteL-VAEs). InteL-VAEs use an intermediary set of latent variables to control the stochasticity of the encoding process, before mapping these in turn to the latent representation using a parametric function that encapsulates our desired inductive bias(es). This allows us to impose properties like sparsity or clustering on learned representations, and incorporate human knowledge into the generative model. Whereas changing the prior only indirectly encourages behavior through regularizing the encoder, InteL-VAEs are able to directly enforce desired characteristics. Moreover, they bypass the computation and encoder design issues caused by non-Gaussian priors, while allowing for additional flexibility through training of the parametric mapping function. We show that these advantages, in turn, lead to both better generative models and better representations being learned.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1381583629",
+                        "name": "Ning Miao"
+                    },
+                    {
+                        "authorId": "51051483",
+                        "name": "Emile Mathieu"
+                    },
+                    {
+                        "authorId": "145809603",
+                        "name": "N. Siddharth"
+                    },
+                    {
+                        "authorId": "1725303",
+                        "name": "Y. Teh"
+                    },
+                    {
+                        "authorId": "2358794",
+                        "name": "Tom Rainforth"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Another topic for further research is to use sparse Variational Auto Encoders (Tonolini et al. [2020]) in BO to avoid the problem of having to decide the optimal latent space dimensionality (as demonstrated in Section 4."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "39129ac5c6ef13a4afe52728daa8089865c01942",
+                "externalIds": {
+                    "MAG": "3161459289",
+                    "DBLP": "journals/corr/abs-2012-15471",
+                    "ArXiv": "2012.15471",
+                    "DOI": "10.1002/AIL2.24",
+                    "CorpusId": 229924276
+                },
+                "corpusId": 229924276,
+                "publicationVenue": {
+                    "id": "21fafc4c-badc-49ce-90da-c621734623fe",
+                    "name": "Applied AI Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl AI Lett"
+                    ],
+                    "issn": "2689-5595",
+                    "url": "https://onlinelibrary.wiley.com/journal/26895595"
+                },
+                "url": "https://www.semanticscholar.org/paper/39129ac5c6ef13a4afe52728daa8089865c01942",
+                "title": "Good practices for Bayesian Optimization of high dimensional structured spaces",
+                "abstract": "The increasing availability of structured but high dimensional data has opened new opportunities for optimization. One emerging and promising avenue is the exploration of unsupervised methods for projecting structured high dimensional data into low dimensional continuous representations, simplifying the optimization problem and enabling the application of traditional optimization methods. However, this line of research has been purely methodological with little connection to the needs of practitioners so far. In this paper, we study the effect of different search space design choices for performing Bayesian Optimization in high dimensional structured datasets. In particular, we analyse the influence of the dimensionality of the latent space, the role of the acquisition function and evaluate new methods to automatically define the optimization bounds in the latent space. Finally, based on experimental results using synthetic and real datasets, we provide recommendations for the practitioners.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "47222057",
+                        "name": "E. Siivola"
+                    },
+                    {
+                        "authorId": "1390665327",
+                        "name": "Javier I. Gonz\u00e1lez"
+                    },
+                    {
+                        "authorId": "133643337",
+                        "name": "Andrei Paleyes"
+                    },
+                    {
+                        "authorId": "3104170",
+                        "name": "Aki Vehtari"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "We compared the performance of our SVAE model with the performance of VAE and VSC implemented in [10].",
+                "Despite its utility to improve the performance of VAE model, the implementation is not biologically realistic [10].",
+                "[10] as well as to evaluate the quality of the latent codes which affect the performance of auxiliary tasks like classification.",
+                "We illustrate that our model has a more robust architecture whereby performance on noisy inputs is higher compared to the standard VAE [1] and VSC [10].",
+                "Using Convolutional Neural Networks (CNN) improves the performance of VAE by capturing important perceptual features such as spatial correlation [14], but the fidelity and naturalness of reconstruction are still unsatisfactory [10].",
+                "We illustrate that our VAE-sleep algorithm creates latent codes which hold a high level of information about our input (image) compared to the standard VAE [1] and VSC [10].",
+                "Recently, mimicking biologically inspired learning in VAE has been demonstrated using the Variational Sparse Coding (VSC) model [10], which modeled sparsity in the latent space of VAE with a Spike and Slab prior distribution resulting in latent codes with improved sparsity and interpretability.",
+                "VSC approach comprises of increasing sparsity in the latent space of VAE, representing it as a binary spike and Slab probability density function (PDF) [10].",
+                "The key step in the derivation of VAE\u2019s loss function is the definition of a lower bound on the log-likelihood log p\u03b8(x), referred as the Evidence Lower BOund (ELBO) that depends on q\u03c6(z|x) [10]."
+            ],
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "e701626ad05a6200e02c3336029d18958582ed7c",
+                "externalIds": {
+                    "DBLP": "conf/isvc/TalafhaRME20",
+                    "MAG": "3089992244",
+                    "DOI": "10.1007/978-3-030-64556-4_5",
+                    "CorpusId": 224893626
+                },
+                "corpusId": 224893626,
+                "publicationVenue": {
+                    "id": "4cc90261-8707-4caa-9923-97881691dcb2",
+                    "name": "International Symposium on Visual Computing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Symp Vis Comput",
+                        "ISVC"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1764"
+                },
+                "url": "https://www.semanticscholar.org/paper/e701626ad05a6200e02c3336029d18958582ed7c",
+                "title": "Biologically Inspired Sleep Algorithm for Variational Auto-Encoders",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "82623793",
+                        "name": "Sameerah Talafha"
+                    },
+                    {
+                        "authorId": "1966492",
+                        "name": "Banafsheh Rekabdar"
+                    },
+                    {
+                        "authorId": "2278522",
+                        "name": "Christos Mousas"
+                    },
+                    {
+                        "authorId": "2698203",
+                        "name": "Chinwe Ekenna"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "\u2026point utilises a different sub-space of this high dimensional representation space (Coates and Ng, 2011; Bengio et al., 2013; Burgess et al., 2018; Tonolini et al., 2019), reminiscent of cognitive findings that humans use different subsets of cognitive features depending on concepts (Vinson and\u2026",
+                "On the one hand, it is well-documented that each data point utilises a different sub-space of this high dimensional representation space (Coates and Ng, 2011; Bengio et al., 2013; Burgess et al., 2018; Tonolini et al., 2019), reminiscent of cognitive findings that humans use different subsets of cognitive features depending on concepts (Vinson and Vigliocco, 2008) (and references therein).",
+                ", 2017) or through sparse priors (Barello et al., 2018; Mathieu et al., 2019; Tonolini et al., 2019).",
+                "\u2026function of Mathieu et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212 KL(q (z|x)||p (z))\u2212\n\u2212 D(q (z), p (z)),\nwhere and are the scalar weight on the terms and Tonolini et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212KL(q (z|x)||q (z|xu)\u2212\n\u2212J \u00d7 DKL ( \u0304u|| ) ) ,\nwhere J is the dimensionality of the latent\u2026",
+                "Of particular relevance to our model are the VAE-based frameworks of Mathieu et al. (2019) (MAT), and Tonolini et al. (2019) (TON).",
+                "(2019) and Tonolini et al. (2019) Models\nThe objective function of Mathieu et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212 KL(q (z|x)||p (z))\u2212\n\u2212 D(q (z), p (z)),\nwhere and are the scalar weight on the terms and Tonolini et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212KL(q (z|x)||q (z|xu)\u2212\n\u2212J \u00d7 DKL ( \u0304u|| )\u2026",
+                "Furthermore, methods have been developed for encouraging sparsity in VAEs via learning a deterministic selection variable (Yeung et al., 2017) or through sparse priors (Barello et al., 2018; Mathieu et al., 2019; Tonolini et al., 2019)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "13c91392c263c0078ec4e45648e819172f86520c",
+                "externalIds": {
+                    "ArXiv": "2009.12421",
+                    "DBLP": "journals/corr/abs-2009-12421",
+                    "MAG": "3089046173",
+                    "CorpusId": 221971356
+                },
+                "corpusId": 221971356,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/13c91392c263c0078ec4e45648e819172f86520c",
+                "title": "Hierarchical Sparse Variational Autoencoder for Text Encoding",
+                "abstract": "In this paper we focus on unsupervised representation learning and propose a novel framework, Hierarchical Sparse Variational Autoencoder (HSVAE), that imposes sparsity on sentence representations via direct optimisation of Evidence Lower Bound (ELBO). Our experimental results illustrate that HSVAE is flexible and adapts nicely to the underlying characteristics of the corpus which is reflected by the level of sparsity and its distributional patterns.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "47264336",
+                        "name": "Victor Prokhorov"
+                    },
+                    {
+                        "authorId": "2672661",
+                        "name": "Yingzhen Li"
+                    },
+                    {
+                        "authorId": "2888926",
+                        "name": "Ehsan Shareghi"
+                    },
+                    {
+                        "authorId": "50638196",
+                        "name": "Nigel Collier"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "\u2026could choose the dimensionality of the latent space more carefully (e.g by setting it to be the intrinsic dimensionality), or add some regularizations to the latent representation like disentanglement (Chen et al., 2016; Mathieu et al., 2019) or sparsity (Tonolini et al., 2019; Zhou et al., 2020).",
+                "We conclude that the holes are ubiquitous in the latent space of vanilla VAE; more advanced VAE with sparse (Tonolini et al., 2019) or disentangled (Mathieu et al."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a7d5aba1c3b032c8c83e6ed910182e6a73abdabc",
+                "externalIds": {
+                    "DBLP": "conf/icml/ChenXZ20",
+                    "MAG": "3035191811",
+                    "CorpusId": 221093716
+                },
+                "corpusId": 221093716,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a7d5aba1c3b032c8c83e6ed910182e6a73abdabc",
+                "title": "On Breaking Deep Generative Model-based Defenses and Beyond",
+                "abstract": "Deep neural networks have been proven to be vulnerable to the so-called adversarial attacks. Recently there have been efforts to defend such attacks with deep generative models. These defenses often predict by inverting the deep generative models rather than simple feedforward propagation. Such defenses are difficult to attack due to the obfuscated gradients caused by inversion. In this work, we propose a new white-box attack to break these defenses. The idea is to view the inversion phase as a dynamical system, through which we extract the gradient w.r.t the image by backtracking its trajectory. An amortized strategy is also developed to accelerate the attack. Experiments show that our attack better breaks stateof-the-art defenses (e.g DefenseGAN, ABS) than other attacks (e.g BPDA). Additionally, our empirical results provide insights for understanding the weaknesses of deep generative model defenses.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2109259317",
+                        "name": "Yanzhi Chen"
+                    },
+                    {
+                        "authorId": "8601526",
+                        "name": "Renjie Xie"
+                    },
+                    {
+                        "authorId": "1703952",
+                        "name": "Zhanxing Zhu"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "It also does not allow sparse representation obtained via relu activation [41]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3e719a7c232b270ac0b53d7fd1fcff71fa5a1e44",
+                "externalIds": {
+                    "MAG": "3035305327",
+                    "DBLP": "journals/corr/abs-2006-06704",
+                    "ArXiv": "2006.06704",
+                    "DOI": "10.1109/ACCESS.2020.3048622",
+                    "CorpusId": 219636052
+                },
+                "corpusId": 219636052,
+                "publicationVenue": {
+                    "id": "2633f5b2-c15c-49fe-80f5-07523e770c26",
+                    "name": "IEEE Access",
+                    "type": "journal",
+                    "issn": "2169-3536",
+                    "url": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=6287639"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3e719a7c232b270ac0b53d7fd1fcff71fa5a1e44",
+                "title": "End-to-End Sinkhorn Autoencoder With Noise Generator",
+                "abstract": "In this work, we propose a novel end-to-end Sinkhorn Autoencoder with a noise generator for efficient data collection simulation. Simulating processes that aim at collecting experimental data is crucial for multiple real-life applications, including nuclear medicine, astronomy, and high energy physics. Contemporary methods, such as Monte Carlo algorithms, provide high-fidelity results at a price of high computational cost. Multiple attempts are taken to reduce this burden, e.g. using generative approaches based on Generative Adversarial Networks or Variational Autoencoders. Although such methods are much faster, they are often unstable in training and do not allow sampling from an entire data distribution. To address these shortcomings, we introduce a novel method dubbed end-to-end Sinkhorn Autoencoder, that leverages the Sinkhorn algorithm to explicitly align distribution of encoded real data examples and generated noise. More precisely, we extend autoencoder architecture by adding a deterministic neural network trained to map noise from a known distribution onto autoencoder latent space representing data distribution. We optimise the entire model jointly. Our method outperforms co mpeting approaches on a challenging dataset of simulation data from Zero Degree Calorimeters of ALICE experiment in LHC. as well as standard benchmarks, such as MNIST and CelebA.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "103399783",
+                        "name": "K. Deja"
+                    },
+                    {
+                        "authorId": "2086273527",
+                        "name": "J. Dubi\u0144ski"
+                    },
+                    {
+                        "authorId": "2058701840",
+                        "name": "Piotr W. Nowak"
+                    },
+                    {
+                        "authorId": "48641906",
+                        "name": "S. Wenzel"
+                    },
+                    {
+                        "authorId": "1790922",
+                        "name": "P. Spurek"
+                    },
+                    {
+                        "authorId": "144432036",
+                        "name": "T. Trzci\u0144ski"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "these requirements. We are exploring mixture distributions, in particular spike and slab models [27] for Bayesian variable selection, and methods to combine them with variational inference, following [64, 65]. Second, other methods exist that accelerate classic Bayesian inference. Recent works in large-scale Bayesian inference proposed approximate MCMC methods that scale to large data sets [73, 38, 59]. S"
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "3b126cfc36323e733435c50dfcdd087d56b89ccb",
+                "externalIds": {
+                    "MAG": "3029177749",
+                    "ArXiv": "2005.13107",
+                    "DBLP": "journals/corr/abs-2005-13107",
+                    "CorpusId": 218900595
+                },
+                "corpusId": 218900595,
+                "publicationVenue": {
+                    "id": "9d0be2d5-c618-4179-bd3d-5f249e940584",
+                    "name": "Educational Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Young Sp\u00e9c Micro/nanotechnologies Electron Device",
+                        "International Conference of Young Specialists on Micro/Nanotechnologies and Electron Devices",
+                        "Educ Data Min",
+                        "EDM"
+                    ],
+                    "url": "http://www.educationaldatamining.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/3b126cfc36323e733435c50dfcdd087d56b89ccb",
+                "title": "VarFA: A Variational Factor Analysis Framework For Efficient Bayesian Learning Analytics",
+                "abstract": "We propose VarFA, a variational inference factor analysis framework that extends existing factor analysis models for educational data mining to efficiently output uncertainty estimation in the model's estimated factors. Such uncertainty information is useful, for example, for an adaptive testing scenario, where additional tests can be administered if the model is not quite certain about a students' skill level estimation. Traditional Bayesian inference methods that produce such uncertainty information are computationally expensive and do not scale to large data sets. VarFA utilizes variational inference which makes it possible to efficiently perform Bayesian inference even on very large data sets. We use the sparse factor analysis model as a case study and demonstrate the efficacy of VarFA on both synthetic and real data sets. VarFA is also very general and can be applied to a wide array of factor analysis models.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "47197350",
+                        "name": "Zichao Wang"
+                    },
+                    {
+                        "authorId": "2112578976",
+                        "name": "Yi Gu"
+                    },
+                    {
+                        "authorId": "1730535",
+                        "name": "Andrew S. Lan"
+                    },
+                    {
+                        "authorId": "144908066",
+                        "name": "Richard Baraniuk"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "f66c8bf351b2c860e313617317a8257957490991",
+                "externalIds": {
+                    "MAG": "3012396268",
+                    "DBLP": "journals/corr/abs-2003-08573",
+                    "ArXiv": "2003.08573",
+                    "CorpusId": 213006066
+                },
+                "corpusId": 213006066,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f66c8bf351b2c860e313617317a8257957490991",
+                "title": "Uncertainty Estimation in Cancer Survival Prediction",
+                "abstract": "Survival models are used in various fields, such as the development of cancer treatment protocols. Although many statistical and machine learning models have been proposed to achieve accurate survival predictions, little attention has been paid to obtain well-calibrated uncertainty estimates associated with each prediction. The currently popular models are opaque and untrustworthy in that they often express high confidence even on those test cases that are not similar to the training samples, and even when their predictions are wrong. We propose a Bayesian framework for survival models that not only gives more accurate survival predictions but also quantifies the survival uncertainty better. Our approach is a novel combination of variational inference for uncertainty estimation, neural multi-task logistic regression for estimating nonlinear and time-varying risk models, and an additional sparsity-inducing prior to work with high dimensional data.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "1397215038",
+                        "name": "H. Loya"
+                    },
+                    {
+                        "authorId": "1406355419",
+                        "name": "P. Poduval"
+                    },
+                    {
+                        "authorId": "47518971",
+                        "name": "Deepak Anand"
+                    },
+                    {
+                        "authorId": "2119734444",
+                        "name": "Neeraj Kumar"
+                    },
+                    {
+                        "authorId": "2049437",
+                        "name": "A. Sethi"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "here the function inside the argmin operator in (1) is the opposite of the evidence lower bound Ln(q). 7 Ch\u00e9rief-Abdellatif We choose a sparse spike-and-slab variational set FS,L,D - see for instance Tonolini et al. (2019) - which can be seen as an extension of the popular mean-\ufb01eld variational set with a dependence assumption specifying the number of active neurons. The mean-\ufb01eld approximation is based on a decomposit"
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "fabecc4081f6490e95ca74c17dc07b22718932c1",
+                "externalIds": {
+                    "MAG": "2971678291",
+                    "DBLP": "conf/icml/Cherief-Abdellatif20",
+                    "ArXiv": "1908.04847",
+                    "CorpusId": 202539828
+                },
+                "corpusId": 202539828,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/fabecc4081f6490e95ca74c17dc07b22718932c1",
+                "title": "Convergence Rates of Variational Inference in Sparse Deep Learning",
+                "abstract": "Variational inference is becoming more and more popular for approximating intractable posterior distributions in Bayesian statistics and machine learning. Meanwhile, a few recent works have provided theoretical justification and new insights on deep neural networks for estimating smooth functions in usual settings such as nonparametric regression. In this paper, we show that variational inference for sparse deep learning retains the same generalization properties than exact Bayesian inference. In particular, we highlight the connection between estimation and approximation theories via the classical bias-variance trade-off and show that it leads to near-minimax rates of convergence for Holder smooth functions. Additionally, we show that the model selection framework over the neural network architecture via ELBO maximization does not overfit and adaptively achieves the optimal rate of convergence.",
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "2079945011",
+                        "name": "Badr-Eddine Ch'erief-Abdellatif"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "d90c771bb565db9dc027970d50e1d47096174253",
+                "externalIds": {
+                    "MAG": "2949757122",
+                    "DBLP": "conf/icml/MathieuRST19",
+                    "CorpusId": 59316848
+                },
+                "corpusId": 59316848,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/d90c771bb565db9dc027970d50e1d47096174253",
+                "title": "Disentangling Disentanglement in Variational Autoencoders",
+                "abstract": "We develop a generalisation of disentanglement in VAEs---decomposition of the latent representation---characterising it as the fulfilment of two factors: a) the latent encodings of the data having an appropriate level of overlap, and b) the aggregate encoding of the data conforming to a desired structure, represented through the prior. Decomposition permits disentanglement, i.e. explicit independence between latents, as a special case, but also allows for a much richer class of properties to be imposed on the learnt representation, such as sparsity, clustering, independent subspaces, or even intricate hierarchical dependency relationships. We show that the $\\beta$-VAE varies from the standard VAE predominantly in its control of latent overlap and that for the standard choice of an isotropic Gaussian prior, its objective is invariant to rotations of the latent representation. Viewed from the decomposition perspective, breaking this invariance with simple manipulations of the prior can yield better disentanglement with little or no detriment to reconstructions. We further demonstrate how other choices of prior can assist in producing different decompositions and introduce an alternative training objective that allows the control of both decomposition factors in a principled manner.",
+                "year": 2018,
+                "authors": [
+                    {
+                        "authorId": "51051483",
+                        "name": "Emile Mathieu"
+                    },
+                    {
+                        "authorId": "2358794",
+                        "name": "Tom Rainforth"
+                    },
+                    {
+                        "authorId": "145809603",
+                        "name": "N. Siddharth"
+                    },
+                    {
+                        "authorId": "1725303",
+                        "name": "Y. Teh"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "(3) with respect to the VAE\u2019s parameters \u03b8 and \u03c6 by stochastic gradient descent with reparameterization trick (Kingma & Welling, 2014; Tonolini et al., 2020): at the first iteration, the SOM-mixture is initialized as a uniform mixture of \u03c8 = {0, I,0.",
+                "Sparse coding and discrete latent space have proved to be elegant solutions (Oord et al., 2017; Tonolini et al., 2020).",
+                "where p\u03c8(wk|z) can be computed in a batch during forward propagation, and DKL[q\u03c6(z|x)||p\u03c8(z|wk = 1)] can be derived following (Tonolini et al., 2020) as:",
+                "While doing so we encourage sparse coding to discover latent dimensions explaining active semantic factors in VAE (Tonolini et al., 2020), while learning the relational structure of data based on these semantic factors.",
+                "a spike-and-slab distribution that encourages sparsity in the latent dimensions (Tonolini et al., 2020).",
+                ", 2017), whereas sparsity was directly modeled in a continuous latent space using spike-and-slab priors (Tonolini et al., 2020).",
+                "To automatically discover active semantic factors underlying each data environment, we model each component of the SOM mixture with a spike-and-slab distribution (Titsias & Lazaro-Gredilla, 2011; Tonolini et al., 2020), such that the sparse spike variable identifies latent dimensions explaining active semantic factors.",
+                "b scales and sharpens the Sigmoid function towards a gated function (Tonolini et al., 2020)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "7dbbe26585fa0349b9afaa4659a6dd8dbc97d37b",
+                "externalIds": {
+                    "DBLP": "conf/iclr/LiJMGKW23",
+                    "CorpusId": 259298649
+                },
+                "corpusId": 259298649,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/7dbbe26585fa0349b9afaa4659a6dd8dbc97d37b",
+                "title": "Continual Unsupervised Disentangling of Self-Organizing Representations",
+                "abstract": "Limited progress has been made in continual unsupervised learning of representations, especially in reusing, expanding, and continually disentangling learned semantic factors across data environments. We argue that this is because existing approaches treat continually-arrived data independently, without considering how they are related based on their underlying semantic factors. We address this by a new generative model describing a topologically-connected mixture of spikeand-slab distributions in the latent space, learned end-to-end in a continual fashion via principled variational inference. The learned mixture automatically discovers the active semantic factors underlying each data environment, and to accordingly accumulate their relational structure. This distilled knowledge can further be used for generative replay and guiding continual disentangling of sequentially-arrived semantic factors. We tested the presented method on a split version of 3DShapes to provide the quantitative disentanglement evaluation of continually learned representations, and further demonstrated its ability to continually disentangle new representations and improve shared downstream tasks in benchmark datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2109822791",
+                        "name": "Zhiyuan Li"
+                    },
+                    {
+                        "authorId": "48324853",
+                        "name": "Xiajun Jiang"
+                    },
+                    {
+                        "authorId": "1990643179",
+                        "name": "R. Missel"
+                    },
+                    {
+                        "authorId": "50340328",
+                        "name": "P. Gyawali"
+                    },
+                    {
+                        "authorId": "2185457430",
+                        "name": "Nilesh Kumar"
+                    },
+                    {
+                        "authorId": "48170028",
+                        "name": "Linwei Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "2a3d90ab7b87f3c3c523bfdf44475d5a2d246982",
+                "externalIds": {
+                    "CorpusId": 259505923
+                },
+                "corpusId": 259505923,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2a3d90ab7b87f3c3c523bfdf44475d5a2d246982",
+                "title": "Unsupervised Progressive and Continual Learning of Disentangled Representations",
+                "abstract": "Unsupervised representation learning is an important task in machine learning that identifies and models underlying explanatory factors hidden in the observed data. In recent years, unsupervised representation learning has been attracting increasing attention for its abilities to improve interpretability, extract useful features without expert annotations, and enhance downstream tasks, which has been successful in many machine learning topics, such as Computer Vision, Natural Language Processing, and Anomaly Detection. Unsupervised representation learning has many desirable abilities, including disentangling generative factors, generalization between different domains, and incremental knowledge accumulation. However, existing works had faced two critical challenges. First, the unsupervised representation learning models were often designed to learn and disentangle all representations of data at the same time, which obstructed the models from learning representations in a more progressive and reasonable way (like from easy to hard), resulting in bad (often blurry) generation quality with the loss of detailed information. Second, when it comes to a more realistic problem setting, continual unsupervised representation learning, existing works tended to suffer from catastrophic forgetting, including forgetting learned representations and how to disentangle them. The",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "46947755",
+                        "name": "Zhiyuan Li"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "40443d526d9dacfe4e311022dfb53727644f6087",
+                "externalIds": {
+                    "DBLP": "conf/icml/TonoliniAJK23",
+                    "CorpusId": 260956915
+                },
+                "corpusId": 260956915,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/40443d526d9dacfe4e311022dfb53727644f6087",
+                "title": "Robust Weak Supervision with Variational Auto-Encoders",
+                "abstract": "Recent advances in programmatic weak supervision (WS) techniques allow to mitigate the enormous cost and effort of human data annotation for supervised machine learning by automating it using simple rule-based labelling functions (LFs). However, LFs need to be carefully designed, often requiring expert domain knowledge and extensive validation for existing WS methods to be effective. To tackle this, we propose the Weak Su-pervision Variational Auto-Encoder (WS-VAE), a novel framework that combines unsupervised representation learning and weak labelling to reduce the dependence of WS on expert and manual engineering of LFs. Our technique learns from inputs and weak labels jointly to capture the input signals distribution with a latent space. The unsupervised representation component of the WS-VAE regularises the inference of weak labels, while a specifically designed decoder allows the model to learn the relevance of LFs for each input. These unique features lead to considerably improved robustness to the quality of LFs, compared to existing methods. An extensive empirical evaluation on a standard WS benchmark shows that our WS-VAE is competitive to state-of-the-art methods and substantially more robust to LF engineering.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2218103116",
+                        "name": "Francesco Tonolini"
+                    },
+                    {
+                        "authorId": "3238627",
+                        "name": "Nikolaos Aletras"
+                    },
+                    {
+                        "authorId": "3358500",
+                        "name": "Yunlong Jiao"
+                    },
+                    {
+                        "authorId": "1688470",
+                        "name": "G. Kazai"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                ", in terms of disentanglement [63] or robustness [60,45].",
+                "[63] extend this work and introduce an additional DNN classifier which selects pseudo-inputs and whose weights are learned instead of the pseudo-inputs themselves."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "1caf41eabf9e63e218caf42e77e218d936759041",
+                "externalIds": {
+                    "CorpusId": 260440223
+                },
+                "corpusId": 260440223,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1caf41eabf9e63e218caf42e77e218d936759041",
+                "title": "Direct Evolutionary Optimization of Variational Autoencoders With Binary Latents",
+                "abstract": ". Many types of data are generated at least partly by discrete causes. Deep generative models such as variational autoencoders (VAEs) with binary latents consequently became of interest. Because of discrete latents, standard VAE training is not possible, and the goal of previous approaches has therefore been to amend (i.e, typically anneal) discrete priors to allow for a training analogously to conventional VAEs. Here, we divert more strongly from conventional VAE optimization: We ask if the discrete nature of the latents can be fully maintained by applying a direct, discrete optimization for the encoding model. In doing so, we sidestep standard VAE mechanisms such as sampling approxima-tion, reparameterization and amortization. Direct optimization of VAEs is enabled by a combination of evolutionary algorithms and truncated posteriors as variational distributions. Such a combination has recently been suggested, and we here for the \ufb01rst time investigate how it can be applied to a deep model. Concretely, we (A) tie the variational method into gradient ascent for network weights, and (B) show how the decoder is used for the optimization of variational parameters. Using image data, we observed the approach to result in much sparser codes compared to conventionally trained binary VAEs. Considering the for sparse codes prototypical application to image patches, we observed very competitive performance in tasks such as \u2018zero-shot\u2019 denoising and inpainting. The dense codes emerging from conventional VAE optimization, on the other hand, seem preferable on other data, e.g., collections of images of whole single objects (CIFAR etc), but less preferable for image patches. More generally, the realization of a very di\ufb00erent type of optimization for binary VAEs allows for investigating advantages and disadvantages of the training method itself. And we here observed a strong in\ufb02uence of the method on the learned encoding with signi\ufb01cant impact on VAE performance for di\ufb00erent tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "10801391",
+                        "name": "Jakob Drefs"
+                    },
+                    {
+                        "authorId": "51040037",
+                        "name": "E. Guiraud"
+                    },
+                    {
+                        "authorId": "150103346",
+                        "name": "Filippos Panagiotou"
+                    },
+                    {
+                        "authorId": "1790122",
+                        "name": "J\u00f6rg L\u00fccke"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "4As in (Mathieu et al., 2019), we induce sparse representations for each data point.\nto encourage sparsity in VAEs via learning a deterministic selection variable (Yeung et al., 2017) or sparse priors (Barello et al., 2018; Mathieu et al., 2019; Tonolini et al., 2019).",
+                "While a handful of VAE-based sparsification methods have been proposed recently Mathieu et al. (2019) (MAT), Tonolini et al. (2019) (TON), they have been only\nevaluated on image domain.",
+                "Therefore, the high-dimensional learned representations should ideally be sparse (Bengio et al., 2013; Burgess et al., 2018; Tonolini et al., 2019).",
+                "\u2026function of Mathieu et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212 KL(q (z|x)||p (z))\u2212\n\u2212 D(q (z), p (z)),\nwhere and are the scalar weight on the terms and Tonolini et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212KL(q (z|x)||q (z|xu)\u2212\n\u2212J \u00d7 DKL ( \u0304u|| ) ) ,\nwhere J is the dimensionality of the latent\u2026",
+                "(2019) and Tonolini et al. (2019) Models\nThe objective function of Mathieu et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212 KL(q (z|x)||p (z))\u2212\n\u2212 D(q (z), p (z)),\nwhere and are the scalar weight on the terms and Tonolini et al. (2019) is: \u27e8\nlog p (x|z) \u27e9\nq (z|x) \u2212KL(q (z|x)||q (z|xu)\u2212\n\u2212J \u00d7 DKL ( \u0304u|| )\u2026"
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "4b5a6edbd3142f924bae20062923ec8356cbaa94",
+                "externalIds": {
+                    "DBLP": "conf/rep4nlp/ProkhorovLSC21",
+                    "ACL": "2021.repl4nlp-1.5",
+                    "DOI": "10.18653/v1/2021.repl4nlp-1.5",
+                    "CorpusId": 236486146
+                },
+                "corpusId": 236486146,
+                "publicationVenue": {
+                    "id": "8b169440-4c13-4cf4-b3f9-1dc7c39dc888",
+                    "name": "Workshop on Representation Learning for NLP",
+                    "type": "conference",
+                    "alternate_names": [
+                        "RepL4NLP",
+                        "Workshop Represent Learn NLP"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4b5a6edbd3142f924bae20062923ec8356cbaa94",
+                "title": "Learning Sparse Sentence Encoding without Supervision: An Exploration of Sparsity in Variational Autoencoders",
+                "abstract": "It has been long known that sparsity is an effective inductive bias for learning efficient representation of data in vectors with fixed dimensionality, and it has been explored in many areas of representation learning. Of particular interest to this work is the investigation of the sparsity within the VAE framework which has been explored a lot in the image domain, but has been lacking even a basic level of exploration in NLP. Additionally, NLP is also lagging behind in terms of learning sparse representations of large units of text e.g., sentences. We use the VAEs that induce sparse latent representations of large units of text to address the aforementioned shortcomings. First, we move in this direction by measuring the success of unsupervised state-of-the-art (SOTA) and other strong VAE-based sparsification baselines for text and propose a hierarchical sparse VAE model to address the stability issue of SOTA. Then, we look at the implications of sparsity on text classification across 3 datasets, and highlight a link between performance of sparse latent representations on downstream tasks and its ability to encode task-related information.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "47264336",
+                        "name": "Victor Prokhorov"
+                    },
+                    {
+                        "authorId": "2672661",
+                        "name": "Yingzhen Li"
+                    },
+                    {
+                        "authorId": "2888926",
+                        "name": "Ehsan Shareghi"
+                    },
+                    {
+                        "authorId": "50638196",
+                        "name": "Nigel Collier"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "5 Related work Non-Gaussian priors There is an abundance of prior work utilizing non-Gaussian priors to improve the fit and generation capabilities of VAEs, including MoG priors [16, 61], sparse priors [5, 47, 68], Gaussian-process priors [10] and autoregressive priors [55, 70].",
+                "However, existing VAE models for sparse representations trade off generation quality to achieve this sparsity [5, 47, 68].",
+                "Firstly, one often desires the learned representations to exhibit some properties of interest, such as sparsity, clustering, or hierarchical structure, to facilitate interpretation and for downstream tasks [12, 39, 58, 68, 75, 76]."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "5586b3e86cd20f9735b8083685816a0bbf25e1b9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2106-13746",
+                    "CorpusId": 235652388
+                },
+                "corpusId": 235652388,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5586b3e86cd20f9735b8083685816a0bbf25e1b9",
+                "title": "InteL-VAEs: Adding Inductive Biases to Variational Auto-Encoders via Intermediary Latents",
+                "abstract": "We introduce a simple and effective method for learning variational auto-encoders (VAEs) with controllable inductive biases by using an intermediary set of latent variables. This allows us to overcome the limitations of the standard Gaussian prior assumption. In particular, it allows us to impose desired properties like sparsity or clustering on learned representations, and incorporate prior information into the learned model. Our approach, which we refer to as the Intermediary Latent Space VAE (InteL-VAE), is based around controlling the stochasticity of the encoding process with the intermediary latent variables, before deterministically mapping them forward to our target latent representation, from which reconstruction is performed. This allows us to maintain all the advantages of the traditional VAE framework, while incorporating desired prior information, inductive biases, and even topological information through the latent mapping. We show that this, in turn, allows InteL-VAEs to learn both better generative models and representations. Accompanying code is provided at https://github.com/NingMiao/InteL-VAEs.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1381583629",
+                        "name": "Ning Miao"
+                    },
+                    {
+                        "authorId": "51051483",
+                        "name": "Emile Mathieu"
+                    },
+                    {
+                        "authorId": "145809603",
+                        "name": "N. Siddharth"
+                    },
+                    {
+                        "authorId": "1725303",
+                        "name": "Y. Teh"
+                    },
+                    {
+                        "authorId": "2358794",
+                        "name": "Tom Rainforth"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "We compare the Sparse VAE to three other deep generative models: the VAE (Kingma and Welling, 2014), \ud835\udefd-VAE (Higgins et al., 2017), and Variational Sparse Coding (VSC, Tonolini et al., 2020).",
+                "In nonlinear representation learning, Tonolini et al. (2020) impose sparsity-inducing priors directly on the latent factors, instead of on the factorto-feature mapping as in the Sparse VAE."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "fdb74161249e7d787c9b641afcacd248af71c48d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2110-10804",
+                    "CorpusId": 239050066
+                },
+                "corpusId": 239050066,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fdb74161249e7d787c9b641afcacd248af71c48d",
+                "title": "Identifiable Variational Autoencoders via Sparse Decoding",
+                "abstract": "We develop the Sparse VAE, a deep generative model for unsupervised representation learning on high-dimensional data. Given a dataset of observations, the Sparse VAE learns a set of latent factors that captures its distribution. The model is sparse in the sense that each feature of the dataset (i.e., each dimension) depends on a small subset of the latent factors. As examples, in ratings data each movie is only described by a few genres; in text data each word is only applicable to a few topics; in genomics, each gene is active in only a few biological processes. We first show that the Sparse VAE is identifiable: given data drawn from the model, there exists a uniquely optimal set of factors. (In contrast, most VAE-based models are not identifiable.) The key assumption behind Sparse-VAE identifiability is the existence of \u201canchor features\u201d, where for each factor there exists a feature that depends only on that factor. Importantly, the anchor features do not need to be known in advance. We then show how to fit the Sparse VAE with variational EM. Finally, we empirically study the Sparse VAE with both simulated and real data. We find that it recovers meaningful latent factors and has smaller heldout reconstruction error than related methods.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "3433248",
+                        "name": "Gemma E. Moran"
+                    },
+                    {
+                        "authorId": "153485411",
+                        "name": "Dhanya Sridhar"
+                    },
+                    {
+                        "authorId": "2108734693",
+                        "name": "Yixin Wang"
+                    },
+                    {
+                        "authorId": "1796335",
+                        "name": "D. Blei"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [],
+            "intents": [],
+            "citingPaper": {
+                "paperId": "aec6abff330a338ac2978d04a39d96610dbf2c99",
+                "externalIds": {
+                    "CorpusId": 250458355
+                },
+                "corpusId": 250458355,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/aec6abff330a338ac2978d04a39d96610dbf2c99",
+                "title": "[Re] Variational Sparse Coding",
+                "abstract": "The paper1 proposes an improvement over the Variational Auto-Encoder (VAE) architecture2,3 by explicitly modelling sparsity in the latent space with a Spike and Slab prior distribution and drawing ideas from sparse coding theory. The main motivation behind their work lies in the ability to infer truly sparse representations from generally intractable non-linear probabilistic models, simultaneously addressing the problem of lack of interpretability of latent features. Moreover, the proposed model improves the classification accuracy using the low-dimensional representations obtained, and significantly adds robustness while varying the dimensionality of latent space.",
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "2057295293",
+                        "name": "Alfredo De la Fuente"
+                    },
+                    {
+                        "authorId": "66815409",
+                        "name": "Robert Aduviri"
+                    }
+                ]
+            }
+        }
+    ]
+}

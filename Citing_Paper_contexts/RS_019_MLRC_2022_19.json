@@ -1,0 +1,739 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Agarwal et al. [2022] introduced a hierarchical shrinkage procedure to regularize decision tree models. When viewing the tree model as a linear regression onto orthogonal basis elements \u03c8l indexed by the internal nodes of the tree, they showed that their procedure was equivalent to performing ridge regression instead of linear regression on this basis. Since the amount of shrinkage in ridge regression is controlled by a single parameter, theirs is therefore a more constrained form of shrinkage compared to what arises from stacking nested subtrees. The latter optimizes the amount of shrinkage over M different parameters, each controlling the amount of shrinkage over a separate block of the regression coefficients. On the other hand, hierarchical shrinkage allows the basis elements \u03c8l to be unnormalized, with \u2016\u03c8l\u2016(2) = Nl/n, where Nl is the number of samples contained in node l. The ridge regression shrinkage factor for the coefficient of \u03c8l is then Nl Nl+\u03bb , which means that splits on nodes with fewer samples are penalized more strongly. A theoretical or empirical performance comparison of the two forms of shrinkage is left for future work. Agarwal et al. [2022] also showed empirically that the best performing tree model after shrinkage is usually much deeper than the best performing tree model prior to shrinkage.",
+                "Agarwal et al. [2022] introduced a hierarchical shrinkage procedure to regularize decision tree models.",
+                "Agarwal et al. [2022] introduced a hierarchical shrinkage procedure to regularize decision tree models. When viewing the tree model as a linear regression onto orthogonal basis elements \u03c8l indexed by the internal nodes of the tree, they showed that their procedure was equivalent to performing ridge regression instead of linear regression on this basis. Since the amount of shrinkage in ridge regression is controlled by a single parameter, theirs is therefore a more constrained form of shrinkage compared to what arises from stacking nested subtrees. The latter optimizes the amount of shrinkage over M different parameters, each controlling the amount of shrinkage over a separate block of the regression coefficients. On the other hand, hierarchical shrinkage allows the basis elements \u03c8l to be unnormalized, with \u2016\u03c8l\u2016(2) = Nl/n, where Nl is the number of samples contained in node l. The ridge regression shrinkage factor for the coefficient of \u03c8l is then Nl Nl+\u03bb , which means that splits on nodes with fewer samples are penalized more strongly. A theoretical or empirical performance comparison of the two forms of shrinkage is left for future work. Agarwal et al. [2022] also showed empirically that the best performing tree model after shrinkage is usually much deeper than the best performing tree model prior to shrinkage. In other words, by allowing a more nuanced bias-variance tradeoff, shrinkage allows for a \u201clarger model\u201d and makes use of features whose inclusion would not be justified otherwise. Breiman [1996]\u2019s empirical findings for stacked subtrees present a similar story.",
+                ", M, the leaf of Tk containing x is an ancestor of that containing x in TM, this has the effect of shrinking the predictions over each leaf in TM to its ancestors\u2019 values, similar to the method of Agarwal et al. [2022]."
+            ],
+            "citingPaper": {
+                "paperId": "2f3101db9ab7ac73c3ead5f872d8159db30e42d0",
+                "externalIds": {
+                    "ArXiv": "2309.09880",
+                    "DBLP": "journals/corr/abs-2309-09880",
+                    "DOI": "10.48550/arXiv.2309.09880",
+                    "CorpusId": 262046240
+                },
+                "corpusId": 262046240,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2f3101db9ab7ac73c3ead5f872d8159db30e42d0",
+                "title": "Error Reduction from Stacked Regressions",
+                "abstract": "Stacking regressions is an ensemble technique that forms linear combinations of different regression estimators to enhance predictive accuracy. The conventional approach uses cross-validation data to generate predictions from the constituent estimators, and least-squares with nonnegativity constraints to learn the combination weights. In this paper, we learn these weights analogously by minimizing an estimate of the population risk subject to a nonnegativity constraint. When the constituent estimators are linear least-squares projections onto nested subspaces separated by at least three dimensions, we show that thanks to a shrinkage effect, the resulting stacked estimator has strictly smaller population risk than best single estimator among them. Here\"best\"refers to an estimator that minimizes a model selection criterion such as AIC or BIC. In other words, in this setting, the best single estimator is inadmissible. Because the optimization problem can be reformulated as isotonic regression, the stacked estimator requires the same order of computation as the best single estimator, making it an attractive alternative in terms of both performance and implementation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2243330532",
+                        "name": "Xin Chen"
+                    },
+                    {
+                        "authorId": "9051324",
+                        "name": "Jason M. Klusowski"
+                    },
+                    {
+                        "authorId": "2243153615",
+                        "name": "Yan Shuo Tan"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "By incorporating shrinkage using ridge regression [1] as opposed to OLS as the GLM within the MDI+ framework, we are able to mitigate this instability and regain the added benefits of including the raw feature and LOO evaluation, as illustrated by the strong performance of MDI+ (ridge+raw+loo).",
+                "The starting point of our framework is a recently discovered connection between decision trees and linear models [38, 1]."
+            ],
+            "citingPaper": {
+                "paperId": "e052b9eb595c0fe6bca6ab80db17473d2c683e44",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2307-01932",
+                    "ArXiv": "2307.01932",
+                    "DOI": "10.48550/arXiv.2307.01932",
+                    "CorpusId": 259342832
+                },
+                "corpusId": 259342832,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e052b9eb595c0fe6bca6ab80db17473d2c683e44",
+                "title": "MDI+: A Flexible Random Forest-Based Feature Importance Framework",
+                "abstract": "Mean decrease in impurity (MDI) is a popular feature importance measure for random forests (RFs). We show that the MDI for a feature $X_k$ in each tree in an RF is equivalent to the unnormalized $R^2$ value in a linear regression of the response on the collection of decision stumps that split on $X_k$. We use this interpretation to propose a flexible feature importance framework called MDI+. Specifically, MDI+ generalizes MDI by allowing the analyst to replace the linear regression model and $R^2$ metric with regularized generalized linear models (GLMs) and metrics better suited for the given data structure. Moreover, MDI+ incorporates additional features to mitigate known biases of decision trees against additive or smooth models. We further provide guidance on how practitioners can choose an appropriate GLM and metric based upon the Predictability, Computability, Stability framework for veridical data science. Extensive data-inspired simulations show that MDI+ significantly outperforms popular feature importance measures in identifying signal features. We also apply MDI+ to two real-world case studies on drug response prediction and breast cancer subtype classification. We show that MDI+ extracts well-established predictive genes with significantly greater stability compared to existing feature importance measures. All code and models are released in a full-fledged python package on Github.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "79162085",
+                        "name": "Abhineet Agarwal"
+                    },
+                    {
+                        "authorId": "66829513",
+                        "name": "Ana M. Kenney"
+                    },
+                    {
+                        "authorId": "18202935",
+                        "name": "Yan Shuo Tan"
+                    },
+                    {
+                        "authorId": "2069747026",
+                        "name": "Tiffany M. Tang"
+                    },
+                    {
+                        "authorId": "2116416822",
+                        "name": "Bin Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "29632b0f380d79f8c504fa0aa4a0d3fb3cc283db",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-03702",
+                    "ArXiv": "2306.03702",
+                    "DOI": "10.48550/arXiv.2306.03702",
+                    "CorpusId": 259088962
+                },
+                "corpusId": 259088962,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/29632b0f380d79f8c504fa0aa4a0d3fb3cc283db",
+                "title": "Bayesian post-hoc regularization of random forests",
+                "abstract": "Random Forests are powerful ensemble learning algorithms widely used in various machine learning tasks. However, they have a tendency to overfit noisy or irrelevant features, which can result in decreased generalization performance. Post-hoc regularization techniques aim to mitigate this issue by modifying the structure of the learned ensemble after its training. Here, we propose Bayesian post-hoc regularization to leverage the reliable patterns captured by leaf nodes closer to the root, while potentially reducing the impact of more specific and potentially noisy leaf nodes deeper in the tree. This approach allows for a form of pruning that does not alter the general structure of the trees but rather adjusts the influence of leaf nodes based on their proximity to the root node. We have evaluated the performance of our method on various machine learning data sets. Our approach demonstrates competitive performance with the state-of-the-art methods and, in certain cases, surpasses them in terms of predictive accuracy and generalization.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2152300",
+                        "name": "B. Pfeifer"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2018), and \u201chonest\u201d random forests (Agarwal et al., 2022).",
+                "\u2026as non-parametric models such as reproducing kernel Hilbert spaces (RKHSs; Gretton et al., 2012), the Highly-Adaptive Lasso (Benkeser and Van Der Laan, 2016), the neural tangent kernel space of infinite-width neural networks (Jacot et al., 2018), and \u201chonest\u201d random forests (Agarwal et al., 2022)."
+            ],
+            "citingPaper": {
+                "paperId": "7e28f4d6335e2fb27eff2f5cccdf2a2f3b4067ff",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-14545",
+                    "ArXiv": "2304.14545",
+                    "DOI": "10.48550/arXiv.2304.14545",
+                    "CorpusId": 258417889
+                },
+                "corpusId": 258417889,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7e28f4d6335e2fb27eff2f5cccdf2a2f3b4067ff",
+                "title": "Augmented balancing weights as linear regression",
+                "abstract": "We provide a novel characterization of augmented balancing weights, also known as automatic debiased machine learning (AutoDML). These popular doubly robust or double machine learning estimators combine outcome modeling with balancing weights -- weights that achieve covariate balance directly in lieu of estimating and inverting the propensity score. When the outcome and weighting models are both linear in some (possibly infinite) basis, we show that the augmented estimator is equivalent to a single linear model with coefficients that combine the coefficients from the original outcome model coefficients and coefficients from an unpenalized ordinary least squares (OLS) fit on the same data; in many real-world applications the augmented estimator collapses to the OLS estimate alone. We then extend these results to specific choices of outcome and weighting models. We first show that the augmented estimator that uses (kernel) ridge regression for both outcome and weighting models is equivalent to a single, undersmoothed (kernel) ridge regression. This holds numerically in finite samples and lays the groundwork for a novel analysis of undersmoothing and asymptotic rates of convergence. When the weighting model is instead lasso-penalized regression, we give closed-form expressions for special cases and demonstrate a ``double selection'' property. Our framework opens the black box on this increasingly popular class of estimators, bridges the gap between existing results on the semiparametric efficiency of undersmoothed and doubly robust estimators, and provides new insights into the performance of augmented balancing weights.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1413754093",
+                        "name": "David Bruns-Smith"
+                    },
+                    {
+                        "authorId": "49628227",
+                        "name": "O. Dukes"
+                    },
+                    {
+                        "authorId": "33576257",
+                        "name": "A. Feller"
+                    },
+                    {
+                        "authorId": "2564494",
+                        "name": "Elizabeth L. Ogburn"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "4a839391fd5022d6d9f4feff4e5715ccd37ddc3d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-01848",
+                    "ArXiv": "2210.01848",
+                    "DOI": "10.48550/arXiv.2210.01848",
+                    "CorpusId": 252715530
+                },
+                "corpusId": 252715530,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/4a839391fd5022d6d9f4feff4e5715ccd37ddc3d",
+                "title": "Explaining Patterns in Data with Language Models via Interpretable Autoprompting",
+                "abstract": "Large language models (LLMs) have displayed an impressive ability to harness natural language to perform complex tasks. In this work, we explore whether we can leverage this learned ability to find and explain patterns in data. Specifically, given a pre-trained LLM and data examples, we introduce interpretable autoprompting (iPrompt), an algorithm that generates a natural-language string explaining the data. iPrompt iteratively alternates between generating explanations with an LLM and reranking them based on their performance when used as a prompt. Experiments on a wide range of datasets, from synthetic mathematics to natural-language understanding, show that iPrompt can yield meaningful insights by accurately finding groundtruth dataset descriptions. Moreover, the prompts produced by iPrompt are simultaneously human-interpretable and highly effective for generalization: on real-world sentiment classification datasets, iPrompt produces prompts that match or even improve upon human-written prompts for GPT-3. Finally, experiments with an fMRI dataset show the potential for iPrompt to aid in scientific discovery. All code for using the methods and data here is made available on Github.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145229121",
+                        "name": "Chandan Singh"
+                    },
+                    {
+                        "authorId": "153769695",
+                        "name": "John X. Morris"
+                    },
+                    {
+                        "authorId": "29956361",
+                        "name": "J. Aneja"
+                    },
+                    {
+                        "authorId": "2531268",
+                        "name": "Alexander M. Rush"
+                    },
+                    {
+                        "authorId": "1800422",
+                        "name": "Jianfeng Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Other recent studies have improved trees after fitting through regularization [45] or iterative updates [46]."
+            ],
+            "citingPaper": {
+                "paperId": "d4de516ab5544ec78a4bc638a1d272e551b95bdf",
+                "externalIds": {
+                    "ArXiv": "2209.11799",
+                    "CorpusId": 258309382
+                },
+                "corpusId": 258309382,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/d4de516ab5544ec78a4bc638a1d272e551b95bdf",
+                "title": "Augmenting Interpretable Models with LLMs during Training",
+                "abstract": "Recent large language models (LLMs) have demonstrated remarkable prediction performance for a growing array of tasks. However, their proliferation into high-stakes domains (e.g. medicine) and compute-limited settings has created a burgeoning need for interpretability and efficiency. We address this need by proposing Augmented Interpretable Models (Aug-imodels), a framework for leveraging the knowledge learned by LLMs to build extremely efficient and interpretable models. Aug-imodels use LLMs during fitting but not during inference, allowing complete transparency and often a speed/memory improvement of greater than 1,000x for inference compared to LLMs. We explore two instantiations of Aug-imodels in natural-language processing: (i) Aug-GAM, which augments a generalized additive model with decoupled embeddings from an LLM and (ii) Aug-Tree, which augments a decision tree with LLM feature expansions. Across a variety of text-classification datasets, both outperform their non-augmented counterparts. Aug-GAM can even outperform much larger models (e.g. a 6-billion parameter GPT-J model), despite having 10,000x fewer parameters and being fully transparent. We further explore Aug-imodels in a natural-language fMRI study, where they generate interesting interpretations from scientific data. All code for using Aug-imodels and reproducing results is made available on Github.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145229121",
+                        "name": "Chandan Singh"
+                    },
+                    {
+                        "authorId": "26489390",
+                        "name": "Armin Askari"
+                    },
+                    {
+                        "authorId": "145727186",
+                        "name": "R. Caruana"
+                    },
+                    {
+                        "authorId": "48441311",
+                        "name": "Jianfeng Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "311a97f5bcc790d065361c0c907d9273e742b87b",
+                "externalIds": {
+                    "DOI": "10.3390/geomatics2030017",
+                    "CorpusId": 251753244
+                },
+                "corpusId": 251753244,
+                "publicationVenue": {
+                    "id": "142bf32e-1d3a-4f1d-87f4-9ec614f5d132",
+                    "name": "Geomatics",
+                    "issn": "2673-7418",
+                    "url": "https://www.mdpi.com/journal/geomatics"
+                },
+                "url": "https://www.semanticscholar.org/paper/311a97f5bcc790d065361c0c907d9273e742b87b",
+                "title": "Geospatial Intelligence and Machine Learning Technique for Urban Mapping in Coastal Regions of South Aegean Volcanic Arc Islands",
+                "abstract": "Coastal environments are globally recognized for their spectacular morphological characteristics as well as economic opportunities, such as fisheries and tourism industries. However, climate change, growth in tourism, and constant coastal urban sprawl in some places result in ever-increasing risk in the islands of the South Aegean Volcanic Arc (SAVA), necessitating thoughtful planning and decision making. GEOspatial INTelligence (GEOINT) can play a crucial role in the depiction and analysis of the natural and human surroundings, offering valuable information regarding the identification of vulnerable areas and the forecasting of urbanization rates. This work focuses on the delineation of the coastal zone boundaries, semi-automatization of Satellite-Derived Bathymetry (SDB), and urban mapping using a machine learning algorithm. The developed methodology has been implemented on the islands of Thira (Santorini island complex) and Milos. This study attempts to identify inaccuracies in existing open-source datasets, such as the European Settlement Map (ESM), as a result of the unique combination of the architectural style and bare-soil characteristics of the study areas. During the period 2016\u20132021, the average accuracy of the developed methodology for urban mapping in terms of the kappa index was 80.15% on Thira and 88.35% on Milos. The results showed that the average urbanization expansion on specified settlements was greater than 22% for both case studies. Ultimately, the findings of this study could contribute to the effective and holistic management of similar coastal regions in the context of climate change adaptation, mitigation strategies, and multi-hazard assessment.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "113053023",
+                        "name": "P. Krassakis"
+                    },
+                    {
+                        "authorId": "2005436231",
+                        "name": "A. Karavias"
+                    },
+                    {
+                        "authorId": "4889705",
+                        "name": "P. Nomikou"
+                    },
+                    {
+                        "authorId": "144542193",
+                        "name": "K. Karantzalos"
+                    },
+                    {
+                        "authorId": "103842312",
+                        "name": "N. Koukouzas"
+                    },
+                    {
+                        "authorId": "148072743",
+                        "name": "S. Kazana"
+                    },
+                    {
+                        "authorId": "50441911",
+                        "name": "I. Parcharidis"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2021), particularly for rule-based models (Friedman et al., 2008; Agarwal et al., 2022; Tan et al., 2022; Lin et al., 2020), without degrading interpretability.",
+                "Recent works have focused on improving the predictive performance of intrinsically interpretable methods (Ustun & Rudin, 2016; Ha et al., 2021), particularly for rule-based models (Friedman et al., 2008; Agarwal et al., 2022; Tan et al., 2022; Lin et al., 2020), without degrading interpretability."
+            ],
+            "citingPaper": {
+                "paperId": "791bcc790357645944e0a74c5349eb4f7a859457",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-15135",
+                    "ArXiv": "2205.15135",
+                    "DOI": "10.48550/arXiv.2205.15135",
+                    "CorpusId": 249191263
+                },
+                "corpusId": 249191263,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/791bcc790357645944e0a74c5349eb4f7a859457",
+                "title": "Group Probability-Weighted Tree Sums for Interpretable Modeling of Heterogeneous Data",
+                "abstract": "Machine learning in high-stakes domains, such as healthcare, faces two critical challenges: (1) generalizing to diverse data distributions given limited training data while (2) maintaining interpretability. To address these challenges, we propose an instance-weighted tree-sum method that effectively pools data across diverse groups to output a concise, rule-based model. Given distinct groups of instances in a dataset (e.g., medical patients grouped by age or treatment site), our method first estimates group membership probabilities for each instance. Then, it uses these estimates as instance weights in FIGS (Tan et al. 2022), to grow a set of decision trees whose values sum to the final prediction. We call this new method Group Probability-Weighted Tree Sums (G-FIGS). G-FIGS achieves state-of-the-art prediction performance on important clinical datasets; e.g., holding the level of sensitivity fixed at 92%, G-FIGS increases specificity for identifying cervical spine injury by up to 10% over CART and up to 3% over FIGS alone, with larger gains at higher sensitivity levels. By keeping the total number of rules below 16 in FIGS, the final models remain interpretable, and we find that their rules match medical domain expertise. All code, data, and models are released on Github.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2114436811",
+                        "name": "Keyan Nasseri"
+                    },
+                    {
+                        "authorId": "145229121",
+                        "name": "Chandan Singh"
+                    },
+                    {
+                        "authorId": "2150199935",
+                        "name": "James Duncan"
+                    },
+                    {
+                        "authorId": "14714858",
+                        "name": "Aaron E. Kornblith"
+                    },
+                    {
+                        "authorId": "2116416822",
+                        "name": "Bin Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "methods that extract rulesets from a trained RF, such as C443 [17], and SIRUS [23], or that manipulate tree learners such as HS [25].",
+                "Finally, a global approach is represented by \u2018\u2018Hierarchical Shrinkage\u2019\u2019 [25] (HS) algorithm.",
+                "Finally, we consider Hierarchical Shrinkage [25] (HS)method in its default configuration.",
+                "The selection narrows down to C443 [17], SIRUS [23], RuleCOSI+ [24] and HS [25]."
+            ],
+            "citingPaper": {
+                "paperId": "d522fed72094b7e5742ecf3460ba050a80ccb491",
+                "externalIds": {
+                    "DBLP": "journals/access/DedjaNPV23",
+                    "ArXiv": "2203.15511",
+                    "DOI": "10.1109/ACCESS.2023.3268866",
+                    "CorpusId": 255522688
+                },
+                "corpusId": 255522688,
+                "publicationVenue": {
+                    "id": "2633f5b2-c15c-49fe-80f5-07523e770c26",
+                    "name": "IEEE Access",
+                    "type": "journal",
+                    "issn": "2169-3536",
+                    "url": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=6287639"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d522fed72094b7e5742ecf3460ba050a80ccb491",
+                "title": "BELLATREX: Building Explanations Through a LocaLly AccuraTe Rule EXtractor",
+                "abstract": "Random forests are machine learning methods characterised by high performance and robustness to overfitting. However, since multiple learners are combined, they are not as interpretable as a single decision tree. In this work we propose a novel method that is Building Explanations through a LocalLy AccuraTe Rule EXtractor (Bellatrex), which is able to explain the forest prediction for a given test instance with only a few diverse rules. Starting from the decision trees generated by a random forest, our method: 1) pre-selects a subset of the rules used to make the prediction; 2) creates a vector representation of such rules; 3) projects them to a low-dimensional space; 4) clusters such representations to pick a rule from each cluster to explain the instance prediction. We test the effectiveness of Bellatrex on 89 real-world datasets and we demonstrate the validity of our method for binary classification, regression, multi-label classification and time-to-event tasks. To the best of our knowledge, it is the first time that an interpretability toolbox can handle all these tasks within the same framework. We also show that Bellatrex is able to approximate the performance of the corresponding ensemble model in all considered tasks, and it does so while selecting at most three rules from the whole forest. Finally, a comparison with similar methods in literature also shows that our proposed approach substantially outperforms other explainable toolboxes in terms of predictive performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1581383742",
+                        "name": "Klest Dedja"
+                    },
+                    {
+                        "authorId": "49028091",
+                        "name": "F. Nakano"
+                    },
+                    {
+                        "authorId": "1744769",
+                        "name": "Konstantinos Pliakos"
+                    },
+                    {
+                        "authorId": "2379840",
+                        "name": "C. Vens"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "cceffcc041eb044866d14919d72ef2aa39b1d373",
+                "externalIds": {
+                    "PubMedCentral": "9931266",
+                    "DOI": "10.1371/journal.pdig.0000076",
+                    "CorpusId": 247291442,
+                    "PubMed": "36812570"
+                },
+                "corpusId": 247291442,
+                "publicationVenue": {
+                    "id": "d5e5b5e7-54b1-4f53-82fc-4853f3e71c58",
+                    "name": "medRxiv",
+                    "type": "journal",
+                    "url": "https://www.medrxiv.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/cceffcc041eb044866d14919d72ef2aa39b1d373",
+                "title": "Predictability and stability testing to assess clinical decision instrument performance for children after blunt torso trauma",
+                "abstract": "Objective The Pediatric Emergency Care Applied Research Network (PECARN) has developed a clinical-decision instrument (CDI) to identify children at very low risk of intra-abdominal injury. However, the CDI has not been externally validated. We sought to vet the PECARN CDI with the Predictability Computability Stability (PCS) data science framework, potentially increasing its chance of a successful external validation. Materials & Methods We performed a secondary analysis of two prospectively collected datasets: PECARN (12,044 children from 20 emergency departments) and an independent external validation dataset from the Pediatric Surgical Research Collaborative (PedSRC; 2,188 children from 14 emergency departments). We used PCS to reanalyze the original PECARN CDI along with new interpretable PCS CDIs we developed using the PECARN dataset. External validation was then measured on the PedSRC dataset. Results Three predictor variables (abdominal wall trauma, Glasgow Coma Scale Score <14, and abdominal tenderness) were found to be stable. Using only these variables, we developed a PCS CDI which had a lower sensitivity than the original PECARN CDI on internal PECARN validation but performed the same on external PedSRC validation (sensitivity 96.8% and specificity 44%). Conclusion The PCS data science framework vetted the PECARN CDI and its constituent predictor variables prior to external validation. In this case, the PECARN CDI with 7 predictors, and our PCS-based CDI with 3 stable predictors, had identical performance on independent external validation. This suggests that both CDIs will generalize well to new populations, offering a potential strategy to increase the chance of a successful (costly) prospective validation.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "14714858",
+                        "name": "Aaron E. Kornblith"
+                    },
+                    {
+                        "authorId": "145229121",
+                        "name": "Chandan Singh"
+                    },
+                    {
+                        "authorId": "12898425",
+                        "name": "G. Devlin"
+                    },
+                    {
+                        "authorId": "39304674",
+                        "name": "N. Addo"
+                    },
+                    {
+                        "authorId": "7273022",
+                        "name": "C. Streck"
+                    },
+                    {
+                        "authorId": "19729696",
+                        "name": "J. Holmes"
+                    },
+                    {
+                        "authorId": "2538439",
+                        "name": "N. Kuppermann"
+                    },
+                    {
+                        "authorId": "1398054313",
+                        "name": "J. Grupp\u2010Phelan"
+                    },
+                    {
+                        "authorId": "144947379",
+                        "name": "J. Fineman"
+                    },
+                    {
+                        "authorId": "1716151",
+                        "name": "A. Butte"
+                    },
+                    {
+                        "authorId": "2116416822",
+                        "name": "Bin Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "2748e46e0fad19256f9c74952d04ed1ffc09ada0",
+                "externalIds": {
+                    "ArXiv": "2201.11931",
+                    "CorpusId": 259501536
+                },
+                "corpusId": 259501536,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2748e46e0fad19256f9c74952d04ed1ffc09ada0",
+                "title": "Fast Interpretable Greedy-Tree Sums",
+                "abstract": "Modern machine learning has achieved impressive prediction performance, but often sacrifices interpretability, a critical consideration in high-stakes domains such as medicine. In such settings, practitioners often use highly interpretable decision tree models, but these suffer from inductive bias against additive structure. To overcome this bias, we propose Fast Interpretable Greedy-Tree Sums (FIGS), which generalizes the CART algorithm to simultaneously grow a flexible number of trees in summation. By combining logical rules with addition, FIGS is able to adapt to additive structure while remaining highly interpretable. Extensive experiments on real-world datasets show that FIGS achieves state-of-the-art prediction performance. To demonstrate the usefulness of FIGS in high-stakes domains, we adapt FIGS to learn clinical decision instruments (CDIs), which are tools for guiding clinical decision-making. Specifically, we introduce a variant of FIGS known as G-FIGS that accounts for the heterogeneity in medical data. G-FIGS derives CDIs that reflect domain knowledge and enjoy improved specificity (by up to 20% over CART) without sacrificing sensitivity or interpretability. To provide further insight into FIGS, we prove that FIGS learns components of additive models, a property we refer to as disentanglement. Further, we show (under oracle conditions) that unconstrained tree-sum models leverage disentanglement to generalize more efficiently than single decision tree models when fitted to additive regression functions. Finally, to avoid overfitting with an unconstrained number of splits, we develop Bagging-FIGS, an ensemble version of FIGS that borrows the variance reduction techniques of random forests. Bagging-FIGS enjoys competitive performance with random forests and XGBoost on real-world datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "18202935",
+                        "name": "Yan Shuo Tan"
+                    },
+                    {
+                        "authorId": "145229121",
+                        "name": "Chandan Singh"
+                    },
+                    {
+                        "authorId": "2114436811",
+                        "name": "Keyan Nasseri"
+                    },
+                    {
+                        "authorId": "79162085",
+                        "name": "Abhineet Agarwal"
+                    },
+                    {
+                        "authorId": "2150199935",
+                        "name": "James Duncan"
+                    },
+                    {
+                        "authorId": "1992953410",
+                        "name": "O. Ronen"
+                    },
+                    {
+                        "authorId": "97308438",
+                        "name": "M. Epland"
+                    },
+                    {
+                        "authorId": "14714858",
+                        "name": "Aaron E. Kornblith"
+                    },
+                    {
+                        "authorId": "2116416822",
+                        "name": "Bin Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "877542eb6b3f0a759dd0ae9d7381227455a7cce8",
+                "externalIds": {
+                    "ArXiv": "2109.08010",
+                    "DBLP": "journals/corr/abs-2109-08010",
+                    "DOI": "10.1109/TIT.2023.3287432",
+                    "CorpusId": 237532766
+                },
+                "corpusId": 237532766,
+                "publicationVenue": {
+                    "id": "748e730b-add9-47ee-819d-8ae54e504ef9",
+                    "name": "IEEE Transactions on Information Theory",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Inf Theory"
+                    ],
+                    "issn": "0018-9448",
+                    "url": "http://www.comm.utoronto.ca/trans-it/",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?puNumber=18",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=18"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/877542eb6b3f0a759dd0ae9d7381227455a7cce8",
+                "title": "WildWood: A New Random Forest Algorithm",
+                "abstract": "We introduce WildWood (WW), a new ensemble algorithm for supervised learning of Random Forest (RF) type. While standard RF algorithms use bootstrap out-of-bag samples to compute out-of-bag scores, WW uses these samples to produce improved predictions given by an aggregation of the predictions of all possible subtrees of each fully grown tree in the forest. This is achieved by aggregation with exponential weights computed over out-of-bag samples, that are computed exactly and very efficiently thanks to an algorithm called context tree weighting. This improvement, combined with a histogram strategy to accelerate split finding, makes WW fast and competitive compared with other well-established ensemble methods, such as standard RF and extreme gradient boosting algorithms.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "3172127",
+                        "name": "St\u00e9phane Ga\u00efffas"
+                    },
+                    {
+                        "authorId": "1396994645",
+                        "name": "Ibrahim Merad"
+                    },
+                    {
+                        "authorId": "150353622",
+                        "name": "Yiyang Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2021; Singh & Gao, 2022) or simply using a transparent model in the first place (Breiman et al., 1984; Tan et al., 2022; Singh et al., 2021; Agarwal et al., 2022).",
+                "A different approach involves distilling information into a transparent model (Tan et al., 2018; Ha et al., 2021; Singh & Gao, 2022) or simply using a transparent model in the first place (Breiman et al., 1984; Tan et al., 2022; Singh et al., 2021; Agarwal et al., 2022)."
+            ],
+            "citingPaper": {
+                "paperId": "224b8cd8c31cfa86c2a84bec3a65d9ba44f38280",
+                "externalIds": {
+                    "CorpusId": 256359050
+                },
+                "corpusId": 256359050,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/224b8cd8c31cfa86c2a84bec3a65d9ba44f38280",
+                "title": "iPrompt: Explaining Data Patterns in Natural Language via Interpretable Autoprompting",
+                "abstract": "Large language models (LLMs) have displayed an impressive ability to harness natural language to perform complex tasks. We explore whether we can leverage this ability to \ufb01nd and explain patterns in data. Speci\ufb01cally, given a pre-trained LLM and data examples, we introduce inter-pretable autoprompting ( iPrompt ), an algorithm that generates a natural language string explaining the data. iPrompt iteratively generates explanations with an LLM and reranks them based on their performance when used as a prompt. Experiments on a wide range of datasets, from synthetic mathematics to natural language understanding, show that iPrompt can yield meaningful insights by accurately \ufb01nding dataset explanations that are human-interpretable. On two of four classi\ufb01cation datasets, iPrompt discovers a prompt that outperforms human-written prompts on GPT-3, despite only querying the relatively small GPT-J model. Finally, experiments with scienti\ufb01c datasets show the potential for iPrompt to aid in scienti\ufb01c discovery. 1",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145229121",
+                        "name": "Chandan Singh"
+                    },
+                    {
+                        "authorId": "153769695",
+                        "name": "John X. Morris"
+                    },
+                    {
+                        "authorId": "29956361",
+                        "name": "J. Aneja"
+                    },
+                    {
+                        "authorId": "2531268",
+                        "name": "Alexander M. Rush"
+                    },
+                    {
+                        "authorId": "48441311",
+                        "name": "Jianfeng Gao"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "We consider 4 impelementations of decision tree algorithms, namely XGBoost [9], scikit-learn [11], Generalized Optimized Sparse Decision Tree (GODST) [10], and Hierarchical Shrinkage [1]."
+            ],
+            "citingPaper": {
+                "paperId": "8da5a2366140a77d29c809cb8b2a4a8150f2b4f1",
+                "externalIds": {
+                    "CorpusId": 259902985
+                },
+                "corpusId": 259902985,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/8da5a2366140a77d29c809cb8b2a4a8150f2b4f1",
+                "title": "Learning to Explain Voting Rules Extended",
+                "abstract": "Abstract",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "119985101",
+                        "name": "I. Kang"
+                    },
+                    {
+                        "authorId": "2223206682",
+                        "name": "Lirong Xia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Other transparent models Rule-based methods, such as trees [7, 18], regularized trees [19], rule sets [20], lists [21, 22], and tree sums [11] perform well for a variety of tasks, but are often less effective in NLP tasks, where the number of required rules tends to grow with the size of the vocabulary."
+            ],
+            "citingPaper": {
+                "paperId": "45e820ebf6822cb8f6ff5ed3eaf8b7d417946891",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2209-11799",
+                    "DOI": "10.48550/arXiv.2209.11799",
+                    "CorpusId": 252532025
+                },
+                "corpusId": 252532025,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/45e820ebf6822cb8f6ff5ed3eaf8b7d417946891",
+                "title": "Emb-GAM: an Interpretable and Efficient Predictor using Pre-trained Language Models",
+                "abstract": "Deep learning models have achieved impressive prediction performance but often sacrifice interpretability and speed, critical considerations in high-stakes domains and compute-limited settings. In contrast, generalized additive models (GAMs) can maintain interpretability and speed but often suffer from poor prediction performance due to their inability to effectively capture feature interactions. This work aims to bridge this gap by using pre-trained neural language models to extract embeddings from each input before aggregating them and learning a linear model in the embedding space. The final model (which we call Emb-GAM) is a transparent, linear function of its input features and feature interactions. Leveraging the language model allows Emb-GAM to learn far fewer linear coefficients, model larger interactions, dramatically speed up inference, and generalize well to novel inputs (e.g. unseen ngrams in text). Across a variety of natural-languageprocessing datasets, Emb-GAM achieves strong prediction performance without sacrificing interpretability or speed. All code is made available on Github.1",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145229121",
+                        "name": "Chandan Singh"
+                    },
+                    {
+                        "authorId": "48441311",
+                        "name": "Jianfeng Gao"
+                    }
+                ]
+            }
+        }
+    ]
+}

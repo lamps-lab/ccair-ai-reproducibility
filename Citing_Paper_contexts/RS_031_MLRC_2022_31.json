@@ -1,0 +1,327 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "Due to these constraints, previous works on NCAs have focused on small-resolution computer vision benchmarks [2,9,13,14,15,17].",
+                "Despite their small size, NCAs have shown robustness in tasks such as image generation [13,15], where models display a high degree of resilience against perturbations."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "9d0a7578708faaeeccd803115c6b987618b590c3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-03473",
+                    "ArXiv": "2302.03473",
+                    "DOI": "10.48550/arXiv.2302.03473",
+                    "CorpusId": 256627801
+                },
+                "corpusId": 256627801,
+                "publicationVenue": {
+                    "id": "8c4f911f-84c7-4e8e-87ed-96b3d4c55774",
+                    "name": "Information Processing in Medical Imaging",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Inf Process Med Imaging",
+                        "IPMI"
+                    ],
+                    "url": "https://en.wikipedia.org/wiki/Information_Processing_in_Medical_Imaging"
+                },
+                "url": "https://www.semanticscholar.org/paper/9d0a7578708faaeeccd803115c6b987618b590c3",
+                "title": "Med-NCA: Robust and Lightweight Segmentation with Neural Cellular Automata",
+                "abstract": "Access to the proper infrastructure is critical when performing medical image segmentation with Deep Learning. This requirement makes it difficult to run state-of-the-art segmentation models in resource-constrained scenarios like primary care facilities in rural areas and during crises. The recently emerging field of Neural Cellular Automata (NCA) has shown that locally interacting one-cell models can achieve competitive results in tasks such as image generation or segmentations in low-resolution inputs. However, they are constrained by high VRAM requirements and the difficulty of reaching convergence for high-resolution images. To counteract these limitations we propose Med-NCA, an end-to-end NCA training pipeline for high-resolution image segmentation. Our method follows a two-step process. Global knowledge is first communicated between cells across the downscaled image. Following that, patch-based segmentation is performed. Our proposed Med-NCA outperforms the classic UNet by 2% and 3% Dice for hippocampus and prostate segmentation, respectively, while also being 500 times smaller. We also show that Med-NCA is by design invariant with respect to image scale, shape and translation, experiencing only slight performance degradation even with strong shifts; and is robust against MRI acquisition artefacts. Med-NCA enables high-resolution medical image segmentation even on a Raspberry Pi B+, arguably the smallest device able to run PyTorch and that can be powered by a standard power bank.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2150350004",
+                        "name": "John Kalkhof"
+                    },
+                    {
+                        "authorId": "2151491367",
+                        "name": "Camila Gonz'alez"
+                    },
+                    {
+                        "authorId": "144241818",
+                        "name": "A. Mukhopadhyay"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Recent work has shown the successful application of deep learning techniques for NCAs, showing that neural transition rules can be efficiently learned to exhibit complex desired behaviors (Mordvintsev et al., 2020; 2022; Tesfaldet et al., 2022; Grattarola et al., 2021; Palm et al., 2022).",
+                "Hidden States & Perception Similarly to Mordvintsev et al. (2020; 2022), Palm et al. (2022), and Chan (2019), but different from Grattarola et al. (2021), our model has the necessary inductive bias for modelling hidden states, as it offers location-independent node features H.",
+                ", 2021), image generation and classification (Palm et al., 2022; Randazzo et al., 2020), and reinforcement learning ar X iv :2 30 1.",
+                "They have been successfully applied for designing self-organizing systems for morphogenesis in 2D and 3D (Mordvintsev et al., 2020; Sudhakaran et al., 2021), image generation and classification (Palm et al., 2022; Randazzo et al., 2020), and reinforcement learning\nar X\niv :2\n30 1."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "a17a7abe9c4341748b4fb8da03e98370af184dd2",
+                "externalIds": {
+                    "ArXiv": "2301.10497",
+                    "DBLP": "journals/corr/abs-2301-10497",
+                    "DOI": "10.48550/arXiv.2301.10497",
+                    "CorpusId": 256231252
+                },
+                "corpusId": 256231252,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a17a7abe9c4341748b4fb8da03e98370af184dd2",
+                "title": "E(n)-equivariant Graph Neural Cellular Automata",
+                "abstract": "Cellular automata (CAs) are computational models exhibiting rich dynamics emerging from the local interaction of cells arranged in a regular lattice. Graph CAs (GCAs) generalise standard CAs by allowing for arbitrary graphs rather than regular lattices, similar to how Graph Neural Networks (GNNs) generalise Convolutional NNs. Recently, Graph Neural CAs (GNCAs) have been proposed as models built on top of standard GNNs that can be trained to approximate the transition rule of any arbitrary GCA. Existing GNCAs are anisotropic in the sense that their transition rules are not equivariant to translation, rotation, and reflection of the nodes' spatial locations. However, it is desirable for instances related by such transformations to be treated identically by the model. By replacing standard graph convolutions with E(n)-equivariant ones, we avoid anisotropy by design and propose a class of isotropic automata that we call E(n)-GNCAs. These models are lightweight, but can nevertheless handle large graphs, capture complex dynamics and exhibit emergent self-organising behaviours. We showcase the broad and successful applicability of E(n)-GNCAs on three different tasks: (i) pattern formation, (ii) graph auto-encoding, and (iii) simulation of E(n)-equivariant dynamical systems.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2008152720",
+                        "name": "G. Gala"
+                    },
+                    {
+                        "authorId": "2130025668",
+                        "name": "Daniele Grattarola"
+                    },
+                    {
+                        "authorId": "1808625",
+                        "name": "Erik Quaeghebeur"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We implement a U-Net-based CA (UNetCA) baseline consisting of a modified version of our U-Net with 48 initial output feature maps as opposed to 24 and with all convolutions except the first changed to 1\u21e51 to respect typical NCA restrictions [7, 30].",
+                "We also note that ViTCA\u2019s inherent damage resilience is in contrast to recent NCA formulations that required explicit training for it [7, 30].",
+                "These advances have integrated ideas such as variational inference [7], U-Nets [26], and Graph Neural Networks (GNNs) [15] with promising results on problems ranging from image synthesis [7, 20, 21] to Reinforcement Learning (RL) [6, 22].",
+                "To train the ViTCA update rule, we follow a \u201cpool sampling\u201d-based training process [7, 30] along with a curriculum-based masking/noise schedule when corrupting inputs.",
+                "Recent formulations of NCAs have shown that when leveraging the power of deep learning techniques enabled by advances in hardware capabilities\u2014namely highly-parallelizable differentiable operations implemented on GPUs\u2014NCAs can be tuned to learn surprisingly complex desired behaviour, such as semantic segmentation [31]; common RL tasks such as cart-pole balancing [22], 3D locomotion [6], and Atari game playing [6]; and image synthesis [7, 20, 21]."
+            ],
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "16e9f2663854e02d24cdc11c1aa0729e8180c33e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-01233",
+                    "ArXiv": "2211.01233",
+                    "DOI": "10.48550/arXiv.2211.01233",
+                    "CorpusId": 253254996
+                },
+                "corpusId": 253254996,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/16e9f2663854e02d24cdc11c1aa0729e8180c33e",
+                "title": "Attention-based Neural Cellular Automata",
+                "abstract": "Recent extensions of Cellular Automata (CA) have incorporated key ideas from modern deep learning, dramatically extending their capabilities and catalyzing a new family of Neural Cellular Automata (NCA) techniques. Inspired by Transformer-based architectures, our work presents a new class of $\\textit{attention-based}$ NCAs formed using a spatially localized$\\unicode{x2014}$yet globally organized$\\unicode{x2014}$self-attention scheme. We introduce an instance of this class named $\\textit{Vision Transformer Cellular Automata}$ (ViTCA). We present quantitative and qualitative results on denoising autoencoding across six benchmark datasets, comparing ViTCA to a U-Net, a U-Net-based CA baseline (UNetCA), and a Vision Transformer (ViT). When comparing across architectures configured to similar parameter complexity, ViTCA architectures yield superior performance across all benchmarks and for nearly every evaluation metric. We present an ablation study on various architectural configurations of ViTCA, an analysis of its effect on cell states, and an investigation on its inductive biases. Finally, we examine its learned representations via linear probes on its converged cell state hidden representations, yielding, on average, superior results when compared to our U-Net, ViT, and UNetCA baselines.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1388017601",
+                        "name": "Mattie Tesfaldet"
+                    },
+                    {
+                        "authorId": "1795014",
+                        "name": "D. Nowrouzezahrai"
+                    },
+                    {
+                        "authorId": "2061666830",
+                        "name": "C. Pal"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This would be similar to the Variational Neural Cellular Automata (VNCA) introduced in Palm et al. (2022), which samples seed states in order to grow diverse images.",
+                "This seed can be a static vector (with the hidden channels being set to 1), or they can be learned in order to grow a diverse set of objects from a single NCA network (Palm et al., 2022; Frans, 2021).",
+                "Self-organizing systems, leveraging local communication, are often inherently robust to adversarial modifications, such as observation dropout (Tang & Ha, 2021) and damage (Mordvintsev et al., 2020; Palm et al., 2022)."
+            ],
+            "intents": [
+                "result",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f939cfa31111f811a45fc1d26df985d0c8a182ed",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-06806",
+                    "ArXiv": "2205.06806",
+                    "DOI": "10.48550/arXiv.2205.06806",
+                    "CorpusId": 248798736
+                },
+                "corpusId": 248798736,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f939cfa31111f811a45fc1d26df985d0c8a182ed",
+                "title": "Goal-Guided Neural Cellular Automata: Learning to Control Self-Organising Systems",
+                "abstract": "Inspired by cellular growth and self-organization, Neural Cellular Automata (NCAs) have been capable of\"growing\"artificial cells into images, 3D structures, and even functional machines. NCAs are flexible and robust computational systems but -- similarly to many other self-organizing systems -- inherently uncontrollable during and after their growth process. We present an approach to control these type of systems called Goal-Guided Neural Cellular Automata (GoalNCA), which leverages goal encodings to control cell behavior dynamically at every step of cellular growth. This approach enables the NCA to continually change behavior, and in some cases, generalize its behavior to unseen scenarios. We also demonstrate the robustness of the NCA with its ability to preserve task performance, even when only a portion of cells receive goal information.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "52176695",
+                        "name": "Shyam Sudhakaran"
+                    },
+                    {
+                        "authorId": "1796268807",
+                        "name": "Elias Najarro"
+                    },
+                    {
+                        "authorId": "1745664",
+                        "name": "S. Risi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a702ceeabc4c2e959513747f7ed2f5c29f7dbfcd",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2111-14377",
+                    "ArXiv": "2111.14377",
+                    "DOI": "10.1177/26339137221114874",
+                    "CorpusId": 244715091
+                },
+                "corpusId": 244715091,
+                "publicationVenue": {
+                    "id": "d5ed89e9-e3b2-4ecd-8f8c-0db2459fcc70",
+                    "name": "Collective Intelligence",
+                    "alternate_names": [
+                        "Collect Intell"
+                    ],
+                    "issn": "2633-9137"
+                },
+                "url": "https://www.semanticscholar.org/paper/a702ceeabc4c2e959513747f7ed2f5c29f7dbfcd",
+                "title": "Collective intelligence for deep learning: A survey of recent developments",
+                "abstract": "In the past decade, we have witnessed the rise of deep learning to dominate the field of artificial intelligence. Advances in artificial neural networks alongside corresponding advances in hardware accelerators with large memory capacity, together with the availability of large datasets enabled practitioners to train and deploy sophisticated neural network models that achieve state-of-the-art performance on tasks across several fields spanning computer vision, natural language processing, and reinforcement learning. However, as these neural networks become bigger, more complex, and more widely used, fundamental problems with current deep learning models become more apparent. State-of-the-art deep learning models are known to suffer from issues that range from poor robustness, inability to adapt to novel task settings, to requiring rigid and inflexible configuration assumptions. Collective behavior, commonly observed in nature, tends to produce systems that are robust, adaptable, and have less rigid assumptions about the environment configuration. Collective intelligence, as a field, studies the group intelligence that emerges from the interactions of many individuals. Within this field, ideas such as self-organization, emergent behavior, swarm optimization, and cellular automata were developed to model and explain complex systems. It is therefore natural to see these ideas incorporated into newer deep learning methods. In this review, we will provide a historical context of neural network research\u2019s involvement with complex systems, and highlight several active areas in modern deep learning research that incorporate the principles of collective intelligence to advance its capabilities. We hope this review can serve as a bridge between the complex systems and deep learning communities.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "39810222",
+                        "name": "David R Ha"
+                    },
+                    {
+                        "authorId": "2119310756",
+                        "name": "Yu Tang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "They propose a novel generative model, a VAE whose decoder is implemented using a NCA, which they name Variational Neural Cellular Automata (VNCA).",
+                "\u2022 Non\u2010Doubling Variational Neural Cellular Automata with 5 , 042 , 432 parameters.",
+                "It was therefore unclear how to get the dataset labels for the t\u2010SNE latent space visualization in Figure 4 as it is not mentioned in the paper [1].",
+                "This report presents a reproduction of a part of the results from the paper \u201dVariational Neural Cellular Automata\u201d [1] published in ICLR 2022.",
+                "Presented in figure 1 is a corrected version of figure 2 from the original paper [1], that is slightly misleading as it appears as if the NCA decoder ends with a doubling operation, severely limiting the decoders expressive power.",
+                "2 Datasets The dataset used by the original authors [1] is the publicly available statically binarized version of theMNIST dataset [2], which contains binary images of size 28\u00d728.",
+                "5 Computational requirements The original paper\u2019s code implementation was run on some type of GPU, for which the exact specifications are not presented in [1].",
+                "\u2022 Doubling Variational Neural Cellular Automata with 6 , 585 , 088 parameters.",
+                "Overview of the doubling VNCAmodel, (inspired by figure 2 from [1]).",
+                "3 Hyperparameters The hyperparameters are described in section 3 of [1] where it was stated that unless oth\u2010 erwise specified, all models are trained using a batch size of 32, the Adam optimizer [7] was used, a learning rate of 10\u22124 was applied, gradient clipping was used with a norm of 10 [8], a latent vector of size |Z| = 256 was used and the models were trained for a total of 100, 000 gradient updates."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "f7c0edfc05a6589c9548f971250d43b66d686602",
+                "externalIds": {
+                    "CorpusId": 263766002
+                },
+                "corpusId": 263766002,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/f7c0edfc05a6589c9548f971250d43b66d686602",
+                "title": "[Re] Variational Neural Cellular Automata",
+                "abstract": "Scope of Reproducibility \u2014 The main claim of the paper being reproduced is that the pro\u2010 posed Variational Neural Cellular Automata (VNCA) architecture, composed of a convo\u2010 lutional encoder and a Neural Cellular Automata (NCA)\u2010based decoder, is able to gen\u2010 erate high\u2010quality samples. The paper presents two variants of this VNCA decoder: the doubling VNCA variant that is claimed to have a simple latent space, and the non\u2010 doubling VNCA variant that is claimed to be optimized for damage recovery and stability over many steps.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2256403406",
+                        "name": "Albert Aillet"
+                    },
+                    {
+                        "authorId": "2256403489",
+                        "name": "Simon Sond\u00e9n"
+                    },
+                    {
+                        "authorId": "2256275271",
+                        "name": "Koustuv Sinha"
+                    },
+                    {
+                        "authorId": "1452678770",
+                        "name": "Maurits J. R. Bleeker"
+                    },
+                    {
+                        "authorId": "81679142",
+                        "name": "Samarth Bhargav"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "95a1c34be867713fcaf8abf8cab2373350b62767",
+                "externalIds": {
+                    "CorpusId": 263305454
+                },
+                "corpusId": 263305454,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/95a1c34be867713fcaf8abf8cab2373350b62767",
+                "title": "IMPROVING NEURAL CELLULAR AUTOMATA BY INCORPORATING PHYSICAL DYNAMICS",
+                "abstract": "vi",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2249431709",
+                        "name": "Bc. Franti\u0161ek Koutensk\u00fd"
+                    },
+                    {
+                        "authorId": "2249473512",
+                        "name": "Mgr"
+                    },
+                    {
+                        "authorId": "2249490317",
+                        "name": "Petr \u0160im\u00e1nek"
+                    }
+                ]
+            }
+        }
+    ]
+}

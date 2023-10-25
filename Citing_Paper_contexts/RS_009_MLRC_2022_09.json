@@ -1,0 +1,743 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a6cb12eefca903fe935fcf104030d867b7f28663",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-01271",
+                    "ArXiv": "2308.01271",
+                    "DOI": "10.48550/arXiv.2308.01271",
+                    "CorpusId": 260379059
+                },
+                "corpusId": 260379059,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a6cb12eefca903fe935fcf104030d867b7f28663",
+                "title": "A Probabilistic Approach to Self-Supervised Learning using Cyclical Stochastic Gradient MCMC",
+                "abstract": "In this paper we present a practical Bayesian self-supervised learning method with Cyclical Stochastic Gradient Hamiltonian Monte Carlo (cSGHMC). Within this framework, we place a prior over the parameters of a self-supervised learning model and use cSGHMC to approximate the high dimensional and multimodal posterior distribution over the embeddings. By exploring an expressive posterior over the embeddings, Bayesian self-supervised learning produces interpretable and diverse representations. Marginalizing over these representations yields a significant gain in performance, calibration and out-of-distribution detection on a variety of downstream classification tasks. We provide experimental results on multiple classification tasks on four challenging datasets. Moreover, we demonstrate the effectiveness of the proposed method in out-of-distribution detection using the SVHN and CIFAR-10 datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2226456036",
+                        "name": "Masoumeh Javanbakhat"
+                    },
+                    {
+                        "authorId": "38206541",
+                        "name": "C. Lippert"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b0f48fa10884bbd955047232a0ecda196a002e22",
+                "externalIds": {
+                    "ArXiv": "2307.07753",
+                    "DBLP": "journals/corr/abs-2307-07753",
+                    "DOI": "10.48550/arXiv.2307.07753",
+                    "CorpusId": 259937484
+                },
+                "corpusId": 259937484,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b0f48fa10884bbd955047232a0ecda196a002e22",
+                "title": "Learning Expressive Priors for Generalization and Uncertainty Estimation in Neural Networks",
+                "abstract": "In this work, we propose a novel prior learning method for advancing generalization and uncertainty estimation in deep neural networks. The key idea is to exploit scalable and structured posteriors of neural networks as informative priors with generalization guarantees. Our learned priors provide expressive probabilistic representations at large scale, like Bayesian counterparts of pre-trained models on ImageNet, and further produce non-vacuous generalization bounds. We also extend this idea to a continual learning framework, where the favorable properties of our priors are desirable. Major enablers are our technical contributions: (1) the sums-of-Kronecker-product computations, and (2) the derivations and optimizations of tractable objectives that lead to improved generalization bounds. Empirically, we exhaustively show the effectiveness of this method for uncertainty estimation and generalization.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2149870620",
+                        "name": "Dominik Schnaus"
+                    },
+                    {
+                        "authorId": "2118335474",
+                        "name": "Jongseok Lee"
+                    },
+                    {
+                        "authorId": "1695302",
+                        "name": "D. Cremers"
+                    },
+                    {
+                        "authorId": "1453548521",
+                        "name": "Rudolph Triebel"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Transfer learning has emerged as a crucial paradigm within machine learning due to its ability to use knowledge extracted from one domain (source) to enhance learning in a different, typically related domain (target) [30, 43, 49, 38, 6]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c6990a1e568f5458240643688ee797b6450c9f1f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-13292",
+                    "ArXiv": "2306.13292",
+                    "DOI": "10.48550/arXiv.2306.13292",
+                    "CorpusId": 259243850
+                },
+                "corpusId": 259243850,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/c6990a1e568f5458240643688ee797b6450c9f1f",
+                "title": "Variance-Covariance Regularization Improves Representation Learning",
+                "abstract": "Transfer learning has emerged as a key approach in the machine learning domain, enabling the application of knowledge derived from one domain to improve performance on subsequent tasks. Given the often limited information about these subsequent tasks, a strong transfer learning approach calls for the model to capture a diverse range of features during the initial pretraining stage. However, recent research suggests that, without sufficient regularization, the network tends to concentrate on features that primarily reduce the pretraining loss function. This tendency can result in inadequate feature learning and impaired generalization capability for target tasks. To address this issue, we propose Variance-Covariance Regularization (VCR), a regularization technique aimed at fostering diversity in the learned network features. Drawing inspiration from recent advancements in the self-supervised learning approach, our approach promotes learned representations that exhibit high variance and minimal covariance, thus preventing the network from focusing solely on loss-reducing features. We empirically validate the efficacy of our method through comprehensive experiments coupled with in-depth analytical studies on the learned representations. In addition, we develop an efficient implementation strategy that assures minimal computational overhead associated with our method. Our results indicate that VCR is a powerful and efficient method for enhancing transfer learning performance for both supervised learning and self-supervised learning, opening new possibilities for future research in this domain.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2143405615",
+                        "name": "Jiachen Zhu"
+                    },
+                    {
+                        "authorId": "1411405900",
+                        "name": "Ravid Shwartz-Ziv"
+                    },
+                    {
+                        "authorId": "2109184424",
+                        "name": "Yubei Chen"
+                    },
+                    {
+                        "authorId": "1688882",
+                        "name": "Yann LeCun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "We leave it to future work to further study this behavior and the relationship between the FT loss surface and OOD generalization (Shwartz-Ziv et al., 2022; Juneja et al., 2023)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "46ae68f188e2ce1bad703878e8f14e710ecb6009",
+                "externalIds": {
+                    "ArXiv": "2305.16938",
+                    "DBLP": "conf/acl/MosbachPRKE23",
+                    "DOI": "10.48550/arXiv.2305.16938",
+                    "CorpusId": 258947047
+                },
+                "corpusId": 258947047,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/46ae68f188e2ce1bad703878e8f14e710ecb6009",
+                "title": "Few-shot Fine-tuning vs. In-context Learning: A Fair Comparison and Evaluation",
+                "abstract": "Few-shot fine-tuning and in-context learning are two alternative strategies for task adaptation of pre-trained language models. Recently, in-context learning has gained popularity over fine-tuning due to its simplicity and improved out-of-domain generalization, and because extensive evidence shows that fine-tuned models pick up on spurious correlations. Unfortunately, previous comparisons of the two approaches were done using models of different sizes. This raises the question of whether the observed weaker out-of-domain generalization of fine-tuned models is an inherent property of fine-tuning or a limitation of the experimental setup. In this paper, we compare the generalization of few-shot fine-tuning and in-context learning to challenge datasets, while controlling for the models used, the number of examples, and the number of parameters, ranging from 125M to 30B. Our results show that fine-tuned language models can in fact generalize well out-of-domain. We find that both approaches generalize similarly; they exhibit large variation and depend on properties such as model size and the number of examples, highlighting that robust task adaptation remains a challenge.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51510489",
+                        "name": "Marius Mosbach"
+                    },
+                    {
+                        "authorId": "1388571351",
+                        "name": "Tiago Pimentel"
+                    },
+                    {
+                        "authorId": "2143278592",
+                        "name": "Shauli Ravfogel"
+                    },
+                    {
+                        "authorId": "2561225",
+                        "name": "D. Klakow"
+                    },
+                    {
+                        "authorId": "51131518",
+                        "name": "Yanai Elazar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "\u2026the performance of supervised baselines on many downstream tasks [Larsson et al., 2016, Bachman et al., 2019, Gidaris et al., 2018, 2021, Misra and van der Maaten, 2019, Grill et al., 2020, Shwartz-Ziv et al., 2022b, Chen et al., 2020b, He et al., 2020, Zbontar et al., 2021, Chen and He, 2021].",
+                "However, understanding the learned representations and their underlying mechanisms remains a persistent challenge due to the complexity of the models and the lack of labeled training data [Shwartz-Ziv et al., 2022a]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a2b8ff257658b8291deb9e40ec1c164c8fefeb06",
+                "externalIds": {
+                    "ArXiv": "2305.15614",
+                    "DBLP": "journals/corr/abs-2305-15614",
+                    "DOI": "10.48550/arXiv.2305.15614",
+                    "CorpusId": 258887664
+                },
+                "corpusId": 258887664,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a2b8ff257658b8291deb9e40ec1c164c8fefeb06",
+                "title": "Reverse Engineering Self-Supervised Learning",
+                "abstract": "Self-supervised learning (SSL) is a powerful tool in machine learning, but understanding the learned representations and their underlying mechanisms remains a challenge. This paper presents an in-depth empirical analysis of SSL-trained representations, encompassing diverse models, architectures, and hyperparameters. Our study reveals an intriguing aspect of the SSL training process: it inherently facilitates the clustering of samples with respect to semantic labels, which is surprisingly driven by the SSL objective's regularization term. This clustering process not only enhances downstream classification but also compresses the data information. Furthermore, we establish that SSL-trained representations align more closely with semantic classes rather than random classes. Remarkably, we show that learned representations align with semantic classes across various hierarchical levels, and this alignment increases during training and when moving deeper into the network. Our findings provide valuable insights into SSL's representation learning mechanisms and their impact on performance across different sets of classes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1435545332",
+                        "name": "Ido Ben-Shaul"
+                    },
+                    {
+                        "authorId": "1411405900",
+                        "name": "Ravid Shwartz-Ziv"
+                    },
+                    {
+                        "authorId": "9923405",
+                        "name": "Tomer Galanti"
+                    },
+                    {
+                        "authorId": "35253326",
+                        "name": "S. Dekel"
+                    },
+                    {
+                        "authorId": "1688882",
+                        "name": "Yann LeCun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "More recently, Shwartz-Ziv et al. (2022) proposes to approximate the prior using SGD trajectory as in SWAG (Maddox et al., 2019) for transfer learning."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e7a1a7b37f7f8b6418e6599a3c14850e939a575d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-09652",
+                    "ArXiv": "2305.09652",
+                    "DOI": "10.48550/arXiv.2305.09652",
+                    "CorpusId": 258714813
+                },
+                "corpusId": 258714813,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e7a1a7b37f7f8b6418e6599a3c14850e939a575d",
+                "title": "The Interpreter Understands Your Meaning: End-to-end Spoken Language Understanding Aided by Speech Translation",
+                "abstract": "End-to-end spoken language understanding (SLU) remains elusive even with current large pretrained language models on text and speech, especially in multilingual cases. Machine translation has been established as a powerful pretraining objective on text as it enables the model to capture high-level semantics of the input utterance and associations between different languages, which is desired for speech models that work on lower-level acoustic frames. Motivated particularly by the task of cross-lingual SLU, we demonstrate that the task of speech translation (ST) is a good means of pretraining speech models for end-to-end SLU on both monolingual and cross-lingual scenarios. By introducing ST, our models give higher performance over current baselines on monolingual and multilingual intent classification as well as spoken question answering using SLURP, MINDS-14, and NMSQA benchmarks. To verify the effectiveness of our methods, we also release two new benchmark datasets from both synthetic and real sources, for the tasks of abstractive summarization from speech and low-resource or zero-shot transfer from English to French. We further show the value of preserving knowledge from the pretraining task, and explore Bayesian transfer learning on pretrained speech models based on continual learning regularizers for that.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51056597",
+                        "name": "Mutian He"
+                    },
+                    {
+                        "authorId": "144342894",
+                        "name": "Philip N. Garner"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6bfafb32b423c3f0456a10984814f89046def489",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-12210",
+                    "ArXiv": "2304.12210",
+                    "DOI": "10.48550/arXiv.2304.12210",
+                    "CorpusId": 258298825
+                },
+                "corpusId": 258298825,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6bfafb32b423c3f0456a10984814f89046def489",
+                "title": "A Cookbook of Self-Supervised Learning",
+                "abstract": "Self-supervised learning, dubbed the dark matter of intelligence, is a promising path to advance machine learning. Yet, much like cooking, training SSL methods is a delicate art with a high barrier to entry. While many components are familiar, successfully training a SSL method involves a dizzying set of choices from the pretext tasks to training hyper-parameters. Our goal is to lower the barrier to entry into SSL research by laying the foundations and latest SSL recipes in the style of a cookbook. We hope to empower the curious researcher to navigate the terrain of methods, understand the role of the various knobs, and gain the know-how required to explore how delicious SSL can be.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3201463",
+                        "name": "Randall Balestriero"
+                    },
+                    {
+                        "authorId": "3407874",
+                        "name": "Mark Ibrahim"
+                    },
+                    {
+                        "authorId": "2162736903",
+                        "name": "Vlad Sobal"
+                    },
+                    {
+                        "authorId": "4690624",
+                        "name": "Ari S. Morcos"
+                    },
+                    {
+                        "authorId": "144675956",
+                        "name": "Shashank Shekhar"
+                    },
+                    {
+                        "authorId": "1962083",
+                        "name": "T. Goldstein"
+                    },
+                    {
+                        "authorId": "34651419",
+                        "name": "Florian Bordes"
+                    },
+                    {
+                        "authorId": "1453740540",
+                        "name": "Adrien Bardes"
+                    },
+                    {
+                        "authorId": "51888120",
+                        "name": "Gr\u00e9goire Mialon"
+                    },
+                    {
+                        "authorId": "1932187449",
+                        "name": "Yuandong Tian"
+                    },
+                    {
+                        "authorId": "102604362",
+                        "name": "Avi Schwarzschild"
+                    },
+                    {
+                        "authorId": "145771261",
+                        "name": "A. Wilson"
+                    },
+                    {
+                        "authorId": "8284185",
+                        "name": "Jonas Geiping"
+                    },
+                    {
+                        "authorId": "2048163343",
+                        "name": "Q. Garrido"
+                    },
+                    {
+                        "authorId": "2147013351",
+                        "name": "Pierre Fernandez"
+                    },
+                    {
+                        "authorId": "2063958674",
+                        "name": "Amir Bar"
+                    },
+                    {
+                        "authorId": "2367683",
+                        "name": "H. Pirsiavash"
+                    },
+                    {
+                        "authorId": "1688882",
+                        "name": "Yann LeCun"
+                    },
+                    {
+                        "authorId": "121592562",
+                        "name": "Micah Goldblum"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "810e68f8510cbd8bdbb4d1c15912ffa869b3334e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-09355",
+                    "ArXiv": "2304.09355",
+                    "DOI": "10.48550/arXiv.2304.09355",
+                    "CorpusId": 258212721
+                },
+                "corpusId": 258212721,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/810e68f8510cbd8bdbb4d1c15912ffa869b3334e",
+                "title": "To Compress or Not to Compress - Self-Supervised Learning and Information Theory: A Review",
+                "abstract": "\\begin{abstract} Deep neural networks excel in supervised learning tasks but are constrained by the need for extensive labeled data. Self-supervised learning emerges as a promising alternative, allowing models to learn without explicit labels. Information theory, and notably the information bottleneck principle, has been pivotal in shaping deep neural networks. This principle focuses on optimizing the trade-off between compression and preserving relevant information, providing a foundation for efficient network design in supervised contexts. However, its precise role and adaptation in self-supervised learning remain unclear. In this work, we scrutinize various self-supervised learning approaches from an information-theoretic perspective, introducing a unified framework that encapsulates the self-supervised information-theoretic learning problem. We weave together existing research into a cohesive narrative, delve into contemporary self-supervised methodologies, and spotlight potential research avenues and inherent challenges. Additionally, we discuss the empirical evaluation of information-theoretic quantities and their estimation methods. Overall, this paper furnishes an exhaustive review of the intersection of information theory, self-supervised learning, and deep neural networks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1411405900",
+                        "name": "Ravid Shwartz-Ziv"
+                    },
+                    {
+                        "authorId": "1688882",
+                        "name": "Yann LeCun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Notably, Shwartz-Ziv et al. (2022) use transfer learning to specify informative BNN priors, considering SimCLR\npre-training as a special case.",
+                "For instance, employing SWAG inference to learn \u03b8s (Maddox et al., 2019) would an yield approach similar to Pre-train Your Loss (Shwartz-Ziv et al., 2022)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "958e9c67dbd4da171c334db14a325cdfcc4f9215",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-01762",
+                    "ArXiv": "2304.01762",
+                    "DOI": "10.48550/arXiv.2304.01762",
+                    "CorpusId": 257921239
+                },
+                "corpusId": 257921239,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/958e9c67dbd4da171c334db14a325cdfcc4f9215",
+                "title": "Incorporating Unlabelled Data into Bayesian Neural Networks",
+                "abstract": "Conventional Bayesian Neural Networks (BNNs) cannot leverage unlabelled data to improve their predictions. To overcome this limitation, we introduce Self-Supervised Bayesian Neural Networks, which use unlabelled data to learn improved prior predictive distributions by maximising an evidence lower bound during an unsupervised pre-training step. With a novel methodology developed to better understand prior predictive distributions, we then show that self-supervised prior predictives capture image semantics better than conventional BNN priors. In our empirical evaluations, we see that self-supervised BNNs offer the label efficiency of self-supervised methods and the uncertainty estimates of Bayesian methods, particularly outperforming conventional BNNs in low-to-medium data regimes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1429832706",
+                        "name": "Mrinank Sharma"
+                    },
+                    {
+                        "authorId": "2358794",
+                        "name": "Tom Rainforth"
+                    },
+                    {
+                        "authorId": "1725303",
+                        "name": "Y. Teh"
+                    },
+                    {
+                        "authorId": "41031794",
+                        "name": "Vincent Fortuin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "These pre-trained representations are then used as a feature extractor for downstream supervised tasks such as image classification, object detection, and transfer learning (Caron et al., 2021; Chen et al., 2020; Misra and Maaten, 2020; Shwartz-Ziv et al., 2022)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "1ea4f4dcedbbe6d10aad30c3cb02fe2b0572b090",
+                "externalIds": {
+                    "ArXiv": "2303.00633",
+                    "DBLP": "journals/corr/abs-2303-00633",
+                    "DOI": "10.48550/arXiv.2303.00633",
+                    "CorpusId": 257255111
+                },
+                "corpusId": 257255111,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/1ea4f4dcedbbe6d10aad30c3cb02fe2b0572b090",
+                "title": "An Information-Theoretic Perspective on Variance-Invariance-Covariance Regularization",
+                "abstract": "In this paper, we provide an information-theoretic perspective on Variance-Invariance-Covariance Regularization (VICReg) for self-supervised learning. To do so, we first demonstrate how information-theoretic quantities can be obtained for deterministic networks as an alternative to the commonly used unrealistic stochastic networks assumption. Next, we relate the VICReg objective to mutual information maximization and use it to highlight the underlying assumptions of the objective. Based on this relationship, we derive a generalization bound for VICReg, providing generalization guarantees for downstream supervised learning tasks and present new self-supervised learning methods, derived from a mutual information maximization objective, that outperform existing methods in terms of performance. This work provides a new information-theoretic perspective on self-supervised learning and Variance-Invariance-Covariance Regularization in particular and guides the way for improved transfer learning via information-theoretic self-supervised learning objectives.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1411405900",
+                        "name": "Ravid Shwartz-Ziv"
+                    },
+                    {
+                        "authorId": "3201463",
+                        "name": "Randall Balestriero"
+                    },
+                    {
+                        "authorId": "2324666",
+                        "name": "Kenji Kawaguchi"
+                    },
+                    {
+                        "authorId": "2107677984",
+                        "name": "Tim G. J. Rudner"
+                    },
+                    {
+                        "authorId": "1688882",
+                        "name": "Yann LeCun"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "[46] use a low-rank estimate of the curvature around an optimum of a pre-training task to regularise subsequent supervised learning."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "174910a4357196a37632efa3022afb5bd254e676",
+                "externalIds": {
+                    "ArXiv": "2302.10279",
+                    "CorpusId": 259076238
+                },
+                "corpusId": 259076238,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/174910a4357196a37632efa3022afb5bd254e676",
+                "title": "Image Reconstruction via Deep Image Prior Subspaces",
+                "abstract": "Deep learning has been widely used for solving image reconstruction tasks but its deployability has been held back due to the shortage of high-quality training data. Unsupervised learning methods, such as the deep image prior (DIP), naturally fill this gap, but bring a host of new issues: the susceptibility to overfitting due to a lack of robust early stopping strategies and unstable convergence. We present a novel approach to tackle these issues by restricting DIP optimisation to a sparse linear subspace of its parameters, employing a synergy of dimensionality reduction techniques and second order optimisation methods. The low-dimensionality of the subspace reduces DIP's tendency to fit noise and allows the use of stable second order optimisation methods, e.g., natural gradient descent or L-BFGS. Experiments across both image restoration and tomographic tasks of different geometry and ill-posedness show that second order optimisation within a low-dimensional subspace is favourable in terms of optimisation stability to reconstruction fidelity trade-off.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1823519091",
+                        "name": "Riccardo Barbano"
+                    },
+                    {
+                        "authorId": "2219555530",
+                        "name": "Javier Antor'an"
+                    },
+                    {
+                        "authorId": "113649682",
+                        "name": "Johannes Leuschner"
+                    },
+                    {
+                        "authorId": "1388574431",
+                        "name": "Jos\u00e9 Miguel Hern\u00e1ndez-Lobato"
+                    },
+                    {
+                        "authorId": "40071220",
+                        "name": "Bangti Jin"
+                    },
+                    {
+                        "authorId": "2219561641",
+                        "name": "vZeljko Kereta"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2e74ab56d6db10adac653bf5fa237517a676de98",
+                "externalIds": {
+                    "ArXiv": "2212.03916",
+                    "DOI": "10.1039/D2CP05793J",
+                    "CorpusId": 254408533,
+                    "PubMed": "36748821"
+                },
+                "corpusId": 254408533,
+                "publicationVenue": {
+                    "id": "63ed87ae-e104-4cfe-91c9-eb1f2f9ed5b0",
+                    "name": "Physical Chemistry, Chemical Physics - PCCP",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Phys Chem Chem Phys  PCCP",
+                        "Physical Chemistry Chemical Physics",
+                        "Phys Chem Chem Phys"
+                    ],
+                    "issn": "1463-9076",
+                    "url": "http://www.rsc.org/publishing/journals/CP/Index.asp",
+                    "alternate_urls": [
+                        "http://www.rsc.org/Publishing/Journals/CP/index.asp",
+                        "https://pubs.rsc.org/en/journals/journalissues/cp#!issueid=cp001001&type=current&issnonline=1463-9084",
+                        "http://xlink.rsc.org/?genre=journal&journal_code=CP"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2e74ab56d6db10adac653bf5fa237517a676de98",
+                "title": "Transfer learning for chemically accurate interatomic neural network potentials.",
+                "abstract": "Developing machine learning-based interatomic potentials from ab initio electronic structure methods remains a challenging task for computational chemistry and materials science. This work studies the capability of transfer learning, in particular discriminative fine-tuning, for efficiently generating chemically accurate interatomic neural network potentials on organic molecules from the MD17 and ANI data sets. We show that pre-training the network parameters on data obtained from density functional calculations considerably improves the sample efficiency of models trained on more accurate ab initio data. Additionally, we show that fine-tuning with energy labels alone can suffice to obtain accurate atomic forces and run large-scale atomistic simulations, provided a well-designed fine-tuning data set. We also investigate possible limitations of transfer learning, especially regarding the design and size of the pre-training and fine-tuning data sets. Finally, we provide GM-NN potentials pre-trained and fine-tuned on the ANI-1x and ANI-1ccx data sets, which can easily be fine-tuned on and applied to organic molecules.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "115919348",
+                        "name": "V. Zaverkin"
+                    },
+                    {
+                        "authorId": "27540652",
+                        "name": "David Holzm\u00fcller"
+                    },
+                    {
+                        "authorId": "2194630790",
+                        "name": "Luca Bonfirraro"
+                    },
+                    {
+                        "authorId": "2175381860",
+                        "name": "J. K\u00e4stner"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Shwartz-Ziv et al. (2022) use a low-rank estimate of the curvature around an optimum of a pre-training task to regularise subsequent supervised learning."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "24a9bf7e6fc3b25086efe021155f1f3fc088b99d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-10279",
+                    "DOI": "10.48550/arXiv.2302.10279",
+                    "CorpusId": 257050743
+                },
+                "corpusId": 257050743,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/24a9bf7e6fc3b25086efe021155f1f3fc088b99d",
+                "title": "Fast and Painless Image Reconstruction in Deep Image Prior Subspaces",
+                "abstract": "The deep image prior (DIP) is a state-of-the-art unsupervised approach for solving linear inverse problems in imaging. We address two key issues that have held back practical deployment of the DIP: the long computing time needed to train a separate deep network per reconstruction, and the susceptibility to over\ufb01tting due to a lack of robust early stopping strategies in the unsupervised setting. To this end, we restrict DIP optimisation to a sparse linear subspace of the full parameter space. We construct the subspace from the principal eigenspace of a set of parameter vectors sampled at equally spaced intervals during DIP pre-training on synthetic task-agnostic data. The low-dimensionality of the resulting subspace reduces DIP\u2019s capacity to \ufb01t noise and allows the use of fast second order optimisation methods, e.g., natural gradient descent or L-BFGS. Experiments across tomographic tasks of different geometry, ill-posedness and stopping criteria consistently show that second order optimisation in a subspace is Pareto-optimal in terms of optimisation time to reconstruction \ufb01delity trade-off.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1823519091",
+                        "name": "Riccardo Barbano"
+                    },
+                    {
+                        "authorId": "66128761",
+                        "name": "Javier Antor'an"
+                    },
+                    {
+                        "authorId": "113649682",
+                        "name": "Johannes Leuschner"
+                    },
+                    {
+                        "authorId": "2141629206",
+                        "name": "Jos'e Miguel Hern'andez-Lobato"
+                    },
+                    {
+                        "authorId": "3447951",
+                        "name": "\u017d. Kereta"
+                    },
+                    {
+                        "authorId": "40071220",
+                        "name": "Bangti Jin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "contexts": [
+                "in [40], that the model pre-trained with the high-resolution dataset can provide the desirable initialization of the network for a downstream task i."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b72fa5d992fb170595e63c72c3ef3b118dee0ea7",
+                "externalIds": {
+                    "DBLP": "journals/access/KimH23",
+                    "DOI": "10.1109/ACCESS.2023.3287401",
+                    "CorpusId": 259236066
+                },
+                "corpusId": 259236066,
+                "publicationVenue": {
+                    "id": "2633f5b2-c15c-49fe-80f5-07523e770c26",
+                    "name": "IEEE Access",
+                    "type": "journal",
+                    "issn": "2169-3536",
+                    "url": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=6287639"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/b72fa5d992fb170595e63c72c3ef3b118dee0ea7",
+                "title": "Cross-Domain Translation Learning Method Utilizing Autoencoder Pre-Training for Super-Resolution of Radar Sparse Sensor Arrays",
+                "abstract": "This study proposes a convolutional neural network based image translation framework to faithfully realize the super-resolution of radar sensor sparse measurement. We exploited the Autoencoder model able to learn a latent representation of input domain data via the iteration of encoding and decoding processes. Based on the belief that the low resolution data retains an essential measurement to fully represent the sparse information of the high resolution counterpart, we assumed that input (source domain of low-resolution denoted by <inline-formula> <tex-math notation=\"LaTeX\">$X$ </tex-math></inline-formula>) and output (target domain of high-resolution denoted by <inline-formula> <tex-math notation=\"LaTeX\">$Y$ </tex-math></inline-formula>) share a common latent code. On the other hand, from the observation that the recovery quality of <inline-formula> <tex-math notation=\"LaTeX\">$Y$ </tex-math></inline-formula>-to-<inline-formula> <tex-math notation=\"LaTeX\">$Y$ </tex-math></inline-formula> translation is far more favorable than the outcome from <inline-formula> <tex-math notation=\"LaTeX\">$X$ </tex-math></inline-formula>-to-<inline-formula> <tex-math notation=\"LaTeX\">$Y$ </tex-math></inline-formula> translation, we performed the pre-training for finding the latent code (<inline-formula> <tex-math notation=\"LaTeX\">$z_{y}$ </tex-math></inline-formula>) of the <inline-formula> <tex-math notation=\"LaTeX\">$Y$ </tex-math></inline-formula> domain data, and subsequently the acquired <inline-formula> <tex-math notation=\"LaTeX\">$z_{y}$ </tex-math></inline-formula> serving as a label for predicting the latent code (<inline-formula> <tex-math notation=\"LaTeX\">$z_{x}$ </tex-math></inline-formula>) of <inline-formula> <tex-math notation=\"LaTeX\">$X$ </tex-math></inline-formula> domain data. As a result, in our proposed network, encoder and decoder parts were trained with separate minimization strategies relative to respective loss functions. For the sake of verifying the effect of the pre-training scheme, we introduced hyper-parameters, <inline-formula> <tex-math notation=\"LaTeX\">$\\alpha $ </tex-math></inline-formula> and <inline-formula> <tex-math notation=\"LaTeX\">$\\beta $ </tex-math></inline-formula>, to regulate the training rate for the encoder and decoder parts respectively. As metrics for quantitative assessment, detection rate (DR), false alarm rate (FAR) and ROC curve were utilized. Our network set with 0.9 of <inline-formula> <tex-math notation=\"LaTeX\">$\\alpha $ </tex-math></inline-formula> and 0.1 of <inline-formula> <tex-math notation=\"LaTeX\">$\\beta $ </tex-math></inline-formula> showed a higher ROC curve plot across the whole range of DR and FAR than a basic Autoencoder. DRs of the proposed network and comparative model were respectively 92.23% and 91.00% at FAR of 2%.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2220479743",
+                        "name": "Jong-Hoon Kim"
+                    },
+                    {
+                        "authorId": "144522215",
+                        "name": "I. Hong"
+                    }
+                ]
+            }
+        }
+    ]
+}

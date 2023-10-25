@@ -1,0 +1,433 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                ", [7, 13, 17, 18, 21, 29, 37, 44, 55, 56]) utilize a deep learning (DL)-based approach, focusing on either one, two, or all three steps."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "43f671656d293964bb5d0c5bdcff7223876ca09f",
+                "externalIds": {
+                    "DBLP": "conf/doceng/DashCA23",
+                    "DOI": "10.1145/3573128.3604901",
+                    "CorpusId": 260441780
+                },
+                "corpusId": 260441780,
+                "publicationVenue": {
+                    "id": "32c90593-78aa-40de-8700-dd31a625b15a",
+                    "name": "ACM Symposium on Document Engineering",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Doc Eng",
+                        "Document Engineering",
+                        "DocEng",
+                        "ACM Symp Doc Eng"
+                    ],
+                    "url": "http://www.documentengineering.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/43f671656d293964bb5d0c5bdcff7223876ca09f",
+                "title": "WEATHERGOV+: A Table Recognition and Summarization Dataset to Bridge the Gap Between Document Image Analysis and Natural Language Generation",
+                "abstract": "Tables, ubiquitous in data-oriented documents like scientific papers and financial statements, organize and convey relational information. Automatic table recognition from document images, which involves detection within the page, structural segmentation into rows, columns, and cells, and information extraction from cells, has been a popular research topic in document image analysis (DIA). With recent advances in natural language generation (NLG) based on deep neural networks, data-to-text generation, in particular for table summarization, offers interesting solutions to time-intensive data analysis. In this paper, we aim to bridge the gap between efforts in DIA and NLG regarding tabular data: we propose WEATHERGOV+, a dataset building upon the WEATHERGOV dataset, the standard for tabular data summarization techniques, that allows for the training and testing of end-to-end methods working from input document images to generate text summaries as output. WEATHERGOV+ contains images of tables created from the tabular data of WEATHERGOV using visual variations that cover various levels of difficulty, along with the corresponding human-generated table summaries of WEATHERGOV. We also propose an end-to-end pipeline that compares state-of-the-art table recognition methods for summarization purposes. We analyse the results of the proposed pipeline by evaluating WEATHERGOV+ at each stage of the pipeline to identify the effects of error propagation and the weaknesses of the current methods, such as OCR errors. With this research (dataset and code available here1), we hope to encourage new research for the processing and management of inter- and intra-document collections.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2051833",
+                        "name": "Amanda Dash"
+                    },
+                    {
+                        "authorId": "2587465",
+                        "name": "Melissa Cote"
+                    },
+                    {
+                        "authorId": "2639980",
+                        "name": "A. Albu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In 2014, a multistage pipeline named Multi-TypeTD-TSR is proposed for table recognition [4].",
+                "\u2022 Multi-Type-TD-TSR [4]:- It is a multi-staged pipeline for Table Detection (TD) and Table Structure Recognition (TSR).",
+                "Different models have been proposed to date, which have been quite successful in localizing the tables between text and images like CDeC-Net (Composite Deformable Cascade Network) [3], Multi-TypeTD-TSR [4] and CascadeTabNet [5]."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "943a55e5a15b462837c9d317b0df9462982a00a0",
+                "externalIds": {
+                    "DBLP": "conf/ijcnn/DasGDSM23",
+                    "DOI": "10.1109/IJCNN54540.2023.10192028",
+                    "CorpusId": 260387207
+                },
+                "corpusId": 260387207,
+                "publicationVenue": {
+                    "id": "f80ba4a3-7aed-4021-b4d8-e4f50668847a",
+                    "name": "IEEE International Joint Conference on Neural Network",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IJCNN",
+                        "IEEE Int Jt Conf Neural Netw",
+                        "Int Jt Conf Neural Netw",
+                        "International Joint Conference on Neural Network"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1573"
+                },
+                "url": "https://www.semanticscholar.org/paper/943a55e5a15b462837c9d317b0df9462982a00a0",
+                "title": "\u201cFind the Table\u201d: A Contrastive Learning-based Approach with Faster RCNN for Establishing Tabular Entity Relationships",
+                "abstract": "Financial industries rely on a variety of data to understand an organization's financial health and performance, and analysis of financial statements is used for decision-making and understanding business activities. Financial statements often have complex, unstructured formats, making it difficult to extract useful information for decision-making. Organizing and refining these data is crucial for effective analysis. Previous research in the field of table detection has primarily centred around object detection methods, with limited exploration of methods for cell-wise information extraction by identifying row and column entities. In order to address this research gap, this paper proposes a novel dataset called TERED (Tabular Entity Relationship Establishment Dataset) to train a model to identify relationships among elements in large financial tables, such as statements and balance sheets, using computer vision techniques which have yet to be fully explored in financial analysis. The dataset contains more than 10,000 tabular data in scanned image and pdf formats and is divided into 12 classes. We trained CLF-RCNN, a Contrastive Learning based Faster RCNN model which in turn is a state-of-the-art object detection model on this dataset and achieved an F1 score of 93 % for table detection and 74% for identifying tabular entities and relationships. Additionally, we introduced a new loss term influenced by contrastive learning that improves prediction performances with our developed algorithm to return the sequential order of the unordered predictions.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2226438701",
+                        "name": "Sarmistha Das"
+                    },
+                    {
+                        "authorId": "2190514830",
+                        "name": "Tuhinangshu Gangopadhyay"
+                    },
+                    {
+                        "authorId": "2226486078",
+                        "name": "Atulya Deep"
+                    },
+                    {
+                        "authorId": "145470045",
+                        "name": "S. Saha"
+                    },
+                    {
+                        "authorId": "104838863",
+                        "name": "A. Maurya"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "CascadeTabNet [1], and Multi-Type-TD-TSR [2] are two table recognition CNN-based methods.",
+                "Other research studies use CNN-based methods [2],",
+                "In [2] and [1], the authors use erosion and dilation, an image morphology-based method, to create a mask of table borders.",
+                "Ref [2] uses erosion and dilation, a traditional image morphology method, to create a mask of table borders, thereby solving the reconstruction problem of bordered tables.",
+                "We compared with morphology-based methods using in [2]"
+            ],
+            "intents": [
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "fa96163c2be80d9f4163e78e2945be051092e0c1",
+                "externalIds": {
+                    "DBLP": "conf/cscwd/YanTZP023",
+                    "DOI": "10.1109/CSCWD57460.2023.10152650",
+                    "CorpusId": 259235595
+                },
+                "corpusId": 259235595,
+                "publicationVenue": {
+                    "id": "a966c5e8-76dc-45c0-942a-3c7e41ac9b1a",
+                    "name": "International Conference on Computer Supported Cooperative Work in Design",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Computer Supported Cooperative Work in Design",
+                        "Int Conf Comput Support Cooperative Work Des",
+                        "CSCWD",
+                        "Comput Support Cooperative Work Des"
+                    ],
+                    "url": "http://www.cscwd.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/fa96163c2be80d9f4163e78e2945be051092e0c1",
+                "title": "A Novel Encoder-Decoder Architecture for Table Border Segmentation of Scanned Documents",
+                "abstract": "Robotic Process Automation (RPA) has been widely used in business and enterprises to automate the processing of digital documents and collect information and acquire knowledge. Table structure reconstruction in scanned documents has been extensively studied as an essential application of RPA. However, the detection of table borders often ignores broken borders, which makes it unsuitable for natural scenes. To address this, our paper heavily employs a data augmentation approach to synthesize fake scanned documents to train our table-border semantic segmentation model. We propose a novel segmentation model for table borders based on semantic segmentation. We compare traditional morphology-based line detection algorithms with existing semantic segmentation-based approaches. The results indicate that our proposed algorithm can solve the frame line detection problem effectively, even for low-quality scanned images. Actual cases show that we can reconstruct the table\u2019s structure and obtain the knowledge in the table.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2047542417",
+                        "name": "Kaihong Yan"
+                    },
+                    {
+                        "authorId": "2153135475",
+                        "name": "Hao Tang"
+                    },
+                    {
+                        "authorId": "47539632",
+                        "name": "Jing Zhang"
+                    },
+                    {
+                        "authorId": "2072677041",
+                        "name": "Peng Peng"
+                    },
+                    {
+                        "authorId": "2154853698",
+                        "name": "Hongwei Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Only 2 papers [13, 16] were identified as conditionally replicable on a similar dataset, and none of the papers was identified as replicable with respect to the new dataset.",
+                "Fischer et al.[16]7 2021 Multi-Type -TD-TSR KI ICDAR 2019 ICDAR 2019 Track-B2 X X R Xue et al.",
+                "The results shown in Figure 3 and Figure 4 indicate that none of the 4 methods that allow inference on custom data [13, 17, 16, 31] was replicable with respect to the GenTSR dataset, under a threshold of 10% absolute F1-score.",
+                "Recently, several end-to-end solutions based on neural networks have been proposed [13, 16, 17]."
+            ],
+            "intents": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "50903f5f5e714e5746152b3e369c9329655e0018",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-10439",
+                    "ArXiv": "2304.10439",
+                    "DOI": "10.48550/arXiv.2304.10439",
+                    "CorpusId": 258236507
+                },
+                "corpusId": 258236507,
+                "publicationVenue": {
+                    "id": "991e8cbf-4a4a-4ac4-a273-63dd7a35c364",
+                    "name": "IEEE International Conference on Document Analysis and Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Doc Anal Recognit",
+                        "International Conference on Document Analysis and Recognition",
+                        "Int Conf Doc Anal Recognit",
+                        "ICDAR"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1327"
+                },
+                "url": "https://www.semanticscholar.org/paper/50903f5f5e714e5746152b3e369c9329655e0018",
+                "title": "A Study on Reproducibility and Replicability of Table Structure Recognition Methods",
+                "abstract": "Concerns about reproducibility in artificial intelligence (AI) have emerged, as researchers have reported unsuccessful attempts to directly reproduce published findings in the field. Replicability, the ability to affirm a finding using the same procedures on new data, has not been well studied. In this paper, we examine both reproducibility and replicability of a corpus of 16 papers on table structure recognition (TSR), an AI task aimed at identifying cell locations of tables in digital documents. We attempt to reproduce published results using codes and datasets provided by the original authors. We then examine replicability using a dataset similar to the original as well as a new dataset, GenTSR, consisting of 386 annotated tables extracted from scientific papers. Out of 16 papers studied, we reproduce results consistent with the original in only four. Two of the four papers are identified as replicable using the similar dataset under certain IoU values. No paper is identified as replicable using the new dataset. We offer observations on the causes of irreproducibility and irreplicability. All code and data are available on Codeocean at https://codeocean.com/capsule/6680116/tree.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "11359490",
+                        "name": "Kehinde E. Ajayi"
+                    },
+                    {
+                        "authorId": "2214808132",
+                        "name": "Muntabhir Hasan Choudhury"
+                    },
+                    {
+                        "authorId": "2528276",
+                        "name": "S. Rajtmajer"
+                    },
+                    {
+                        "authorId": "97569165",
+                        "name": "Jian Wu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5966cd3ac4460a97b27b4177a89c0d1041726881",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-06949",
+                    "ArXiv": "2303.06949",
+                    "DOI": "10.1109/CVPR52729.2023.01071",
+                    "CorpusId": 257495840
+                },
+                "corpusId": 257495840,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5966cd3ac4460a97b27b4177a89c0d1041726881",
+                "title": "Improving Table Structure Recognition with Visual-Alignment Sequential Coordinate Modeling",
+                "abstract": "Table structure recognition aims to extract the logical and physical structure of unstructured table images into a machine-readable format. The latest end-to-end image-to-text approaches simultaneously predict the two structures by two decoders, where the prediction of the physical structure (the bounding boxes of the cells) is based on the representation of the logical structure. However, the previous methods struggle with imprecise bounding boxes as the logical representation lacks local visual information. To address this issue, we propose an end-to-end sequential modeling framework for table structure recognition called VAST. It contains a novel coordinate sequence decoder triggered by the representation of the non-empty cell from the logical structure decoder. In the coordinate sequence decoder, we model the bounding box coordinates as a language sequence, where the left, top, right and bottom coordinates are decoded sequentially to leverage the inter-coordinate dependency. Furthermore, we propose an auxiliary visual-alignment loss to enforce the logical representation of the non-empty cells to contain more local visual details, which helps produce better cell bounding boxes. Extensive experiments demonstrate that our proposed method can achieve state-of-the-art results in both logical and physical structure recognition. The ablation study also validates that the proposed coordinate sequence decoder and the visual-alignment loss are the keys to the success of our method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145769099",
+                        "name": "Yongshuai Huang"
+                    },
+                    {
+                        "authorId": "2054645836",
+                        "name": "Ning Lu"
+                    },
+                    {
+                        "authorId": "1679279",
+                        "name": "Dapeng Chen"
+                    },
+                    {
+                        "authorId": "2110470261",
+                        "name": "Yibo Li"
+                    },
+                    {
+                        "authorId": "2002678",
+                        "name": "Zecheng Xie"
+                    },
+                    {
+                        "authorId": "2901597",
+                        "name": "Shenggao Zhu"
+                    },
+                    {
+                        "authorId": "1777642",
+                        "name": "Liangcai Gao"
+                    },
+                    {
+                        "authorId": "2187312795",
+                        "name": "Wei Peng"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2b61d74b30df4034f6b3f8a2e9b8455a05a983cb",
+                "externalIds": {
+                    "DBLP": "journals/sncs/NamyslEBK23",
+                    "DOI": "10.1007/s42979-022-01659-z",
+                    "CorpusId": 257335296
+                },
+                "corpusId": 257335296,
+                "publicationVenue": {
+                    "id": "7a7dc89b-e1a6-44df-a496-46c330a87840",
+                    "name": "SN Computer Science",
+                    "type": "journal",
+                    "alternate_names": [
+                        "SN Comput Sci"
+                    ],
+                    "issn": "2661-8907",
+                    "alternate_issns": [
+                        "2662-995X"
+                    ],
+                    "url": "https://link.springer.com/journal/42979"
+                },
+                "url": "https://www.semanticscholar.org/paper/2b61d74b30df4034f6b3f8a2e9b8455a05a983cb",
+                "title": "Flexible Hybrid Table Recognition and Semantic Interpretation System",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "134442417",
+                        "name": "Marcin Namysl"
+                    },
+                    {
+                        "authorId": "153486145",
+                        "name": "Alexander M. Esser"
+                    },
+                    {
+                        "authorId": "1699019",
+                        "name": "Sven Behnke"
+                    },
+                    {
+                        "authorId": "144306556",
+                        "name": "J. K\u00f6hler"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Reference [3] uses different conventional algorithms to solve multiple types of table structure recognition, but requires many preprocessing operations."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5c3c2ac444019a96edff6ac60329aea3ef43d359",
+                "externalIds": {
+                    "DOI": "10.3390/electronics12030673",
+                    "CorpusId": 256454161
+                },
+                "corpusId": 256454161,
+                "publicationVenue": {
+                    "id": "ccd8e532-73c6-414f-bc91-271bbb2933e2",
+                    "name": "Electronics",
+                    "type": "journal",
+                    "issn": "1450-5843",
+                    "alternate_issns": [
+                        "2079-9292",
+                        "0883-4989"
+                    ],
+                    "url": "http://www.electronics.etfbl.net/",
+                    "alternate_urls": [
+                        "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-247562",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-247562",
+                        "https://www.mdpi.com/journal/electronics"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5c3c2ac444019a96edff6ac60329aea3ef43d359",
+                "title": "Table Structure Recognition Method Based on Lightweight Network and Channel Attention",
+                "abstract": "The table recognition model rows and columns aggregated network (RCANet) uses a semantic segmentation approach to recognize table structure, and achieves better performance in table row and column segmentation. However, this model uses ResNet18 as the backbone network, and the model has 11.35 million parameters and a volume of 45.5 M, which is inconvenient to deploy to lightweight servers or mobile terminals. Therefore, from the perspective of model compression, this paper proposes the lightweight rows and columns attention aggregated network (LRCAANet), which uses the lightweight network ShuffleNetv2 to replace the original RCANet backbone network ResNet18 to simplify the model size. Considering that the lightweight network reduces the number of feature channels, it has a certain impact on the performance of the model. In order to strengthen the learning between feature channels, the rows attention aggregated (RAA) module and the columns attention aggregated (CAA) module are proposed. The RAA module and the CAA module add the squeeze and excitation (SE) module to the original row and column aggregated modules, respectively. Adding the SE module means the model can learn the correlation between channels and improve the prediction effect of the lightweight model. The experimental results show that our method greatly reduces the model parameters and model volume while ensuring low-performance loss. In the end, the average F1 score of our model is only 1.77% lower than the original model, the parameters are only 0.17 million, and the volume is only 0.8 M. Compared with the original model, the parameter amount and volume are reduced by more than 95%.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "103245682",
+                        "name": "T. Zhang"
+                    },
+                    {
+                        "authorId": "48184603",
+                        "name": "Yi Sui"
+                    },
+                    {
+                        "authorId": "1821383",
+                        "name": "Shunyao Wu"
+                    },
+                    {
+                        "authorId": "2096258",
+                        "name": "Fengjing Shao"
+                    },
+                    {
+                        "authorId": "39447552",
+                        "name": "Rencheng Sun"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Types of tables based on how they utilize borders: a) tables without borders, b) tables with partial borders, c) tables with borders [16]",
+                "Although the introduction of optical character recognition technologies mostly solved the task of converting human-readable characters from images into machine-readable characters, the task of extracting table semantics has been less focused on over the years [16]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2ce9974fe0fffffb6f852e56e23672cfb41b6567",
+                "externalIds": {
+                    "CorpusId": 255227048
+                },
+                "corpusId": 255227048,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2ce9974fe0fffffb6f852e56e23672cfb41b6567",
+                "title": "OVERVIEW OF OCR TOOLS FOR THE TASK OF RECOGNIZING TABLES AND GRAPHS IN DOCUMENTS",
+                "abstract": "This study describes OCR tools for recognizing tables and graphs. There is a great demand for solutions that can effectively automate the processing of an extensive array of documents. Existing OCR solutions can efficiently recognize text, but recognizing graphical elements, such as charts and tables, is still in the making. Solutions that can increase the accuracy of visual data recognition can be valuable for technical document processing, such as scientific, financial, and analytical documents.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "143737606",
+                        "name": "O. Yaroshenko"
+                    }
+                ]
+            }
+        }
+    ]
+}

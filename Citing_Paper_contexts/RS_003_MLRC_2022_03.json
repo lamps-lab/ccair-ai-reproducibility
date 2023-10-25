@@ -1,0 +1,949 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "isInfluential": false,
+            "contexts": [
+                "7 [5] Arpit Bansal, Avi Schwarzschild, Eitan Borgnia, Zeyad Emam, Furong Huang, Micah Goldblum, and Tom Goldstein."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "69d09faace0c2da9f23fc161d4e416e63316dfcb",
+                "externalIds": {
+                    "ArXiv": "2309.12253",
+                    "DBLP": "journals/corr/abs-2309-12253",
+                    "DOI": "10.48550/arXiv.2309.12253",
+                    "CorpusId": 262083987
+                },
+                "corpusId": 262083987,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/69d09faace0c2da9f23fc161d4e416e63316dfcb",
+                "title": "SALSA-CLRS: A Sparse and Scalable Benchmark for Algorithmic Reasoning",
+                "abstract": "We introduce an extension to the CLRS algorithmic learning benchmark, prioritizing scalability and the utilization of sparse representations. Many algorithms in CLRS require global memory or information exchange, mirrored in its execution model, which constructs fully connected (not sparse) graphs based on the underlying problem. Despite CLRS's aim of assessing how effectively learned algorithms can generalize to larger instances, the existing execution model becomes a significant constraint due to its demanding memory requirements and runtime (hard to scale). However, many important algorithms do not demand a fully connected graph; these algorithms, primarily distributed in nature, align closely with the message-passing paradigm employed by Graph Neural Networks. Hence, we propose SALSA-CLRS, an extension of the current CLRS benchmark specifically with scalability and sparseness in mind. Our approach includes adapted algorithms from the original CLRS benchmark and introduces new problems from distributed and randomized algorithms. Moreover, we perform a thorough empirical evaluation of our benchmark. Code is publicly available at https://github.com/jkminder/SALSA-CLRS.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2243333983",
+                        "name": "Julian Minder"
+                    },
+                    {
+                        "authorId": "2083572783",
+                        "name": "Florian Gr\u00f6tschla"
+                    },
+                    {
+                        "authorId": "2192056653",
+                        "name": "Jo\u00ebl Mathys"
+                    },
+                    {
+                        "authorId": "2075356250",
+                        "name": "Roger Wattenhofer"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "To address this issue, various solutions have been proposed, including modifications to attention mechanism [41, 11, 17] and the design of recurrent networks [46, 4], but their application in VL tasks is nontrivial."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "81a855af89a7f836f45d232a19408190e3a08d30",
+                "externalIds": {
+                    "ArXiv": "2308.01236",
+                    "DBLP": "journals/corr/abs-2308-01236",
+                    "DOI": "10.48550/arXiv.2308.01236",
+                    "CorpusId": 260379190
+                },
+                "corpusId": 260379190,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/81a855af89a7f836f45d232a19408190e3a08d30",
+                "title": "Grounded Image Text Matching with Mismatched Relation Reasoning",
+                "abstract": "This paper introduces Grounded Image Text Matching with Mismatched Relation (GITM-MR), a novel visual-linguistic joint task that evaluates the relation understanding capabilities of transformer-based pre-trained models. GITM-MR requires a model to first determine if an expression describes an image, then localize referred objects or ground the mismatched parts of the text. We provide a benchmark for evaluating pre-trained models on this task, with a focus on the challenging settings of limited data and out-of-distribution sentence lengths. Our evaluation demonstrates that pre-trained models lack data efficiency and length generalization ability. To address this, we propose the Relation-sensitive Correspondence Reasoning Network (RCRN), which incorporates relation-aware reasoning via bi-directional message propagation guided by language structure. RCRN can be interpreted as a modular program and delivers strong performance in both length generalization and data efficiency.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2128123478",
+                        "name": "Yu Wu"
+                    },
+                    {
+                        "authorId": "2199250934",
+                        "name": "Yan-Tao Wei"
+                    },
+                    {
+                        "authorId": "3705643",
+                        "name": "Haozhe Jasper Wang"
+                    },
+                    {
+                        "authorId": "2108078299",
+                        "name": "Yongfei Liu"
+                    },
+                    {
+                        "authorId": "3144952",
+                        "name": "Sibei Yang"
+                    },
+                    {
+                        "authorId": "33913193",
+                        "name": "Xuming He"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "\u2026i.e. transformers with shared layers (Dehghani et al., 2018), because recurrent models are used in prior work on length generalization (Bansal et al., 2022; Kaiser and Sutskever, 2015), and universal transformers proved essential on tasks involving modular arithmetic (Wenger et al.,\u2026",
+                ", 2018), because recurrent models are used in prior work on length generalization (Bansal et al., 2022; Kaiser and Sutskever, 2015), and universal transformers proved essential on tasks involving modular arithmetic (Wenger et al."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "fc1ffc7df07cc9b665deca4a94b871732e1f0b4d",
+                "externalIds": {
+                    "ArXiv": "2306.15400",
+                    "DBLP": "journals/corr/abs-2306-15400",
+                    "DOI": "10.48550/arXiv.2306.15400",
+                    "CorpusId": 259262196
+                },
+                "corpusId": 259262196,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/fc1ffc7df07cc9b665deca4a94b871732e1f0b4d",
+                "title": "Length Generalization in Arithmetic Transformers",
+                "abstract": "We examine how transformers cope with two challenges: learning basic integer arithmetic, and generalizing to longer sequences than seen during training. We find that relative position embeddings enable length generalization for simple tasks, such as addition: models trained on $5$-digit numbers can perform $15$-digit sums. However, this method fails for multiplication, and we propose train set priming: adding a few ($10$ to $50$) long sequences to the training set. We show that priming allows models trained on $5$-digit $\\times$ $3$-digit multiplications to generalize to $35\\times 3$ examples. We also show that models can be primed for different generalization lengths, and that the priming sample size scales as the logarithm of the training set size. Finally, we discuss potential applications of priming beyond arithmetic.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "47009988",
+                        "name": "Samy Jelassi"
+                    },
+                    {
+                        "authorId": "1400419176",
+                        "name": "St\u00e9phane d'Ascoli"
+                    },
+                    {
+                        "authorId": "1459933481",
+                        "name": "Carles Domingo-Enrich"
+                    },
+                    {
+                        "authorId": "3374063",
+                        "name": "Yuhuai Wu"
+                    },
+                    {
+                        "authorId": "152244300",
+                        "name": "Yuan-Fang Li"
+                    },
+                    {
+                        "authorId": "1441095666",
+                        "name": "Franccois Charton"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Recent studies also show that iterative inference presents stronger generalizability than one-step forward predictions [61, 6], with explanations of their relations to the \"working memory\" of human minds [4, 5] or human visual systems [44, 34]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "6c1064cbb45259732ef8032b105f5121a67d27ef",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-16314",
+                    "ArXiv": "2305.16314",
+                    "DOI": "10.48550/arXiv.2305.16314",
+                    "CorpusId": 258887967
+                },
+                "corpusId": 258887967,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6c1064cbb45259732ef8032b105f5121a67d27ef",
+                "title": "Banana: Banach Fixed-Point Network for Pointcloud Segmentation with Inter-Part Equivariance",
+                "abstract": "Equivariance has gained strong interest as a desirable network property that inherently ensures robust generalization. However, when dealing with complex systems such as articulated objects or multi-object scenes, effectively capturing inter-part transformations poses a challenge, as it becomes entangled with the overall structure and local transformations. The interdependence of part assignment and per-part group action necessitates a novel equivariance formulation that allows for their co-evolution. In this paper, we present Banana, a Banach fixed-point network for equivariant segmentation with inter-part equivariance by construction. Our key insight is to iteratively solve a fixed-point problem, where point-part assignment labels and per-part SE(3)-equivariance co-evolve simultaneously. We provide theoretical derivations of both per-step equivariance and global convergence, which induces an equivariant final convergent state. Our formulation naturally provides a strict definition of inter-part equivariance that generalizes to unseen inter-part configurations. Through experiments conducted on both articulated objects and multi-object scans, we demonstrate the efficacy of our approach in achieving strong generalization under inter-part transformations, even when confronted with substantial changes in pointcloud geometry and topology.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1445309116",
+                        "name": "Congyue Deng"
+                    },
+                    {
+                        "authorId": "2052835670",
+                        "name": "Jiahui Lei"
+                    },
+                    {
+                        "authorId": "152668089",
+                        "name": "Bokui Shen"
+                    },
+                    {
+                        "authorId": "2065557091",
+                        "name": "Kostas Daniilidis"
+                    },
+                    {
+                        "authorId": "51352814",
+                        "name": "L. Guibas"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                ", 2014; 2016); it could exploit spatial invariances in the algorithmic task through a convolutional architecture (Bansal et al., 2022); it could be based on the transformer self-attentional architecture, as in the Universal Transformer (Dehghani et al.",
+                "Copyright 2023 by the author(s).\net al., 2022b; Bansal et al., 2022; Beurer-Kellner et al., 2022).",
+                "\u2026Turing Machines (Graves et al., 2014; 2016); it could exploit spatial invariances in the algorithmic task through a convolutional architecture (Bansal et al., 2022); it could be based on the transformer self-attentional architecture, as in the Universal Transformer (Dehghani et al., 2019); or\u2026",
+                "This is likely due to the advent of powerful strategies such as recall (Bansal et al., 2022), wherein the input is fed back to the model at every intermediate step, constantly \u201creminding\u201d the model of the problem that needs to be solved."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "bc8fb1f72493ad39f2970b99863fe5fcac78c1fc",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2302-10258",
+                    "ArXiv": "2302.10258",
+                    "DOI": "10.48550/arXiv.2302.10258",
+                    "CorpusId": 257050506
+                },
+                "corpusId": 257050506,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/bc8fb1f72493ad39f2970b99863fe5fcac78c1fc",
+                "title": "Neural Algorithmic Reasoning with Causal Regularisation",
+                "abstract": "Recent work on neural algorithmic reasoning has investigated the reasoning capabilities of neural networks, effectively demonstrating they can learn to execute classical algorithms on unseen data coming from the train distribution. However, the performance of existing neural reasoners significantly degrades on out-of-distribution (OOD) test data, where inputs have larger sizes. In this work, we make an important observation: there are many different inputs for which an algorithm will perform certain intermediate computations identically. This insight allows us to develop data augmentation procedures that, given an algorithm's intermediate trajectory, produce inputs for which the target algorithm would have exactly the same next trajectory step. We ensure invariance in the next-step prediction across such inputs, by employing a self-supervised objective derived by our observation, formalised in a causal graph. We prove that the resulting method, which we call Hint-ReLIC, improves the OOD generalisation capabilities of the reasoner. We evaluate our method on the CLRS algorithmic reasoning benchmark, where we show up to 3$\\times$ improvements on the OOD test data.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2079900490",
+                        "name": "Beatrice Bevilacqua"
+                    },
+                    {
+                        "authorId": "8305722",
+                        "name": "Kyriacos Nikiforou"
+                    },
+                    {
+                        "authorId": "6675568",
+                        "name": "Borja Ibarz"
+                    },
+                    {
+                        "authorId": "39965049",
+                        "name": "Ioana Bica"
+                    },
+                    {
+                        "authorId": "35550664",
+                        "name": "Michela Paganini"
+                    },
+                    {
+                        "authorId": "1723876",
+                        "name": "C. Blundell"
+                    },
+                    {
+                        "authorId": "37955812",
+                        "name": "Jovana Mitrovic"
+                    },
+                    {
+                        "authorId": "1742197495",
+                        "name": "Petar Velivckovi'c"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Simple recurrent neural networks can solve this task well because the memory in the recurrent neural network can record the states for finite-state automation (Abnar et al., 2021; Schwarzschild et al., 2021; Velic\u030ckovic\u0301 et al., 2022; Ibarz et al., 2022; Bansal et al., 2022).",
+                "Simple recurrent neural networks can solve this task well because the memory in the recurrent neural network can record the states for finite-state automation (Abnar et al., 2021; Schwarzschild et al., 2021; Veli\u010dkovi\u0107 et al., 2022; Ibarz et al., 2022; Bansal et al., 2022)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "24576dcca716c82f66b8cc3c85ecfae18be41edd",
+                "externalIds": {
+                    "ArXiv": "2301.13195",
+                    "DBLP": "journals/corr/abs-2301-13195",
+                    "DOI": "10.48550/arXiv.2301.13195",
+                    "CorpusId": 256390532
+                },
+                "corpusId": 256390532,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/24576dcca716c82f66b8cc3c85ecfae18be41edd",
+                "title": "Adaptive Computation with Elastic Input Sequence",
+                "abstract": "Humans have the ability to adapt the type of information they use, the procedure they employ, and the amount of time they spend when solving problems. However, most standard neural networks have a fixed function type and computation budget regardless of the sample's nature or difficulty. Adaptivity is a powerful paradigm as it not only imbues practitioners with flexibility pertaining to the downstream usage of these models but can also serve as a powerful inductive bias for solving certain challenging classes of problems. In this work, we introduce a new approach called AdaTape, which allows for dynamic computation in neural networks through adaptive tape tokens. AdaTape utilizes an elastic input sequence by equipping an architecture with a dynamic read-and-write tape. Specifically, we adaptively generate input sequences using tape tokens obtained from a tape bank which can be either trainable or derived from input data. We examine the challenges and requirements to obtain dynamic sequence content and length, and propose the Adaptive Tape Reading (ATR) algorithm to achieve both goals. Through extensive experiments on image recognition tasks, we show that AdaTape can achieve better performance while maintaining the computational cost. To facilitate further research, we have released code at https://github.com/google-research/scenic.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2144332771",
+                        "name": "Fuzhao Xue"
+                    },
+                    {
+                        "authorId": "52314889",
+                        "name": "Valerii Likhosherstov"
+                    },
+                    {
+                        "authorId": "31638576",
+                        "name": "Anurag Arnab"
+                    },
+                    {
+                        "authorId": "2815290",
+                        "name": "N. Houlsby"
+                    },
+                    {
+                        "authorId": "3226635",
+                        "name": "Mostafa Dehghani"
+                    },
+                    {
+                        "authorId": "2054451943",
+                        "name": "Yang You"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": true,
+            "contexts": [
+                "Our current work is closely related to previous work by Schwarzschild et al. [2021b] and [Bansal et al., 2022] that propose architectural choices and training mechanisms that enable weight tied networks to generalize on harder problem instances.",
+                "We used the original code released by [Bansal et al., 2022] to replicate the results for weight-tied input-injected networks trained with progressive training.",
+                "Past work has observed that weight tying and input injection are both crucial for upwards generalization [Bansal et al., 2022].",
+                "One particularly important type of out-of-distribution (OOD) generalization is upwards generalization, or the ability to generalize to more difficult problem instances than those encountered at training time [Selsam et al., 2018, Bansal et al., 2022, Schwarzschild et al., 2021b, Nye et al., 2021].",
+                "For experiments with truncated backpropagation, we follow the exact setting as specified in [Bansal et al., 2022].",
+                "2a we show upward generalization performance using both equilibrium models and progressive nets [Bansal et al., 2022] \u2013 and the lack thereof using non-input-injected networks.",
+                "[2021b] and [Bansal et al., 2022] that propose architectural choices and training mechanisms that enable weight tied networks to generalize on harder problem instances."
+            ],
+            "intents": [
+                "methodology",
+                "result",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "0680db8a8440eca5b31370e55927b903da475c5f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-09961",
+                    "ArXiv": "2211.09961",
+                    "DOI": "10.48550/arXiv.2211.09961",
+                    "CorpusId": 253708080
+                },
+                "corpusId": 253708080,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/0680db8a8440eca5b31370e55927b903da475c5f",
+                "title": "Path Independent Equilibrium Models Can Better Exploit Test-Time Computation",
+                "abstract": "Designing networks capable of attaining better performance with an increased inference budget is important to facilitate generalization to harder problem instances. Recent efforts have shown promising results in this direction by making use of depth-wise recurrent networks. We show that a broad class of architectures named equilibrium models display strong upwards generalization, and find that stronger performance on harder examples (which require more iterations of inference to get correct) strongly correlates with the path independence of the system -- its tendency to converge to the same steady-state behaviour regardless of initialization, given enough computation. Experimental interventions made to promote path independence result in improved generalization on harder problem instances, while those that penalize it degrade this ability. Path independence analyses are also useful on a per-example basis: for equilibrium models that have good in-distribution performance, path independence on out-of-distribution samples strongly correlates with accuracy. Our results help explain why equilibrium models are capable of strong upwards generalization and motivates future work that harnesses path independence as a general modelling principle to facilitate scalable test-time usage.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48314480",
+                        "name": "Cem Anil"
+                    },
+                    {
+                        "authorId": "51346567",
+                        "name": "Ashwini Pokle"
+                    },
+                    {
+                        "authorId": "2087743517",
+                        "name": "Kaiqu Liang"
+                    },
+                    {
+                        "authorId": "1519584460",
+                        "name": "Johannes Treutlein"
+                    },
+                    {
+                        "authorId": "3374063",
+                        "name": "Yuhuai Wu"
+                    },
+                    {
+                        "authorId": "35836381",
+                        "name": "Shaojie Bai"
+                    },
+                    {
+                        "authorId": "117539586",
+                        "name": "Zico Kolter"
+                    },
+                    {
+                        "authorId": "1785346",
+                        "name": "R. Grosse"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Banino et al. (2021), Schwarzschild et al. (2021) and Bansal et al. (2022) propose recurrent neural networks that perform multiple recursive processes depending on the complexity of the task."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "965e409a3e7b5670d609837fac9823b160d6639c",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-07727",
+                    "ArXiv": "2211.07727",
+                    "DOI": "10.48550/arXiv.2211.07727",
+                    "CorpusId": 253523349
+                },
+                "corpusId": 253523349,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/965e409a3e7b5670d609837fac9823b160d6639c",
+                "title": "Logical Tasks for Measuring Extrapolation and Rule Comprehension",
+                "abstract": "Logical reasoning is essential in a variety of human activities. A representative example of a logical task is mathematics. Recent large-scale models trained on large datasets have been successful in various fields, but their reasoning ability in arithmetic tasks is limited, which we reproduce experimentally. Here, we recast this limitation as not unique to mathematics but common to tasks that require logical operations. We then propose a new set of tasks, termed logical tasks, which will be the next challenge to address. This higher point of view helps the development of inductive biases that have broad impact beyond the solution of individual tasks. We define and characterize logical tasks and discuss system requirements for their solution. Furthermore, we discuss the relevance of logical tasks to concepts such as extrapolation, explainability, and inductive bias. Finally, we provide directions for solving logical tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "102310610",
+                        "name": "Ippei Fujisawa"
+                    },
+                    {
+                        "authorId": "1800112",
+                        "name": "R. Kanai"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "Bansal et al. (2022), Schwarzschild et al. (2021) focus on length and algorithmic generalization for recurrent models where they train on simple/easy instances of the underlying problem and evaluate on harder/complex instances using the power of recurrence to simulate extra computational steps,\u2026",
+                "Barak et al. (2022), Edelman et al. (2022) perform a theoretical and empirical study of the ability of Transformers (and other architectures) to learn sparse parities where the support size k T .",
+                "Barak et al. (2022), Edelman et al. (2022) perform a theoretical and empirical study of the ability of Transformers (and other architectures) to learn sparse parities where the support size k T . Bhattamishra et al. (2020), Schwarzschild et al. (2021) study the task of computing prefix sum in the binary basis (which is essentially parity of the prefix sum) for Transformers and recurrent models, repsectively."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "e82e3f4347674b75c432cb80604d38ee630d4bf6",
+                "externalIds": {
+                    "ArXiv": "2210.10749",
+                    "DBLP": "conf/iclr/LiuAGKZ23",
+                    "DOI": "10.48550/arXiv.2210.10749",
+                    "CorpusId": 252992725
+                },
+                "corpusId": 252992725,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/e82e3f4347674b75c432cb80604d38ee630d4bf6",
+                "title": "Transformers Learn Shortcuts to Automata",
+                "abstract": "Algorithmic reasoning requires capabilities which are most naturally understood through recurrent models of computation, like the Turing machine. However, Transformer models, while lacking recurrence, are able to perform such reasoning using far fewer layers than the number of reasoning steps. This raises the question: what solutions are learned by these shallow and non-recurrent models? We find that a low-depth Transformer can represent the computations of any finite-state automaton (thus, any bounded-memory algorithm), by hierarchically reparameterizing its recurrent dynamics. Our theoretical results characterize shortcut solutions, whereby a Transformer with $o(T)$ layers can exactly replicate the computation of an automaton on an input sequence of length $T$. We find that polynomial-sized $O(\\log T)$-depth solutions always exist; furthermore, $O(1)$-depth simulators are surprisingly common, and can be understood using tools from Krohn-Rhodes theory and circuit complexity. Empirically, we perform synthetic experiments by training Transformers to simulate a wide variety of automata, and show that shortcut solutions can be learned via standard training. We further investigate the brittleness of these solutions and propose potential mitigations.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "51033208",
+                        "name": "Bingbin Liu"
+                    },
+                    {
+                        "authorId": "40401847",
+                        "name": "J. Ash"
+                    },
+                    {
+                        "authorId": "9935792",
+                        "name": "Surbhi Goel"
+                    },
+                    {
+                        "authorId": "37019006",
+                        "name": "A. Krishnamurthy"
+                    },
+                    {
+                        "authorId": "15943185",
+                        "name": "Cyril Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "3 454 [34] Arpit Bansal, Avi Schwarzschild, Eitan Borgnia, Zeyad Emam, Furong Huang, Micah Gold455 blum, and Tom Goldstein.",
+                "114 Further, note that at each step, the input encoding is fed directly to these embeddings\u2014this recall 115 mechanism significantly improves the model\u2019s robustness over long trajectories [34]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "29bc052f3c46bf1110cc02fd71d454ebe8b13b80",
+                "externalIds": {
+                    "ArXiv": "2209.11142",
+                    "DBLP": "conf/log/IbarzKPNBCDBVRD22",
+                    "DOI": "10.48550/arXiv.2209.11142",
+                    "CorpusId": 252438881
+                },
+                "corpusId": 252438881,
+                "publicationVenue": {
+                    "id": "50534c12-f4ba-4c64-806b-01647d1baacf",
+                    "name": "LOG IN",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Log in",
+                        "Log",
+                        "LOG"
+                    ],
+                    "issn": "0720-8642",
+                    "alternate_issns": [
+                        "1547-4690",
+                        "0024-5798"
+                    ],
+                    "url": "https://www.log-in-verlag.de/informatische_bildung/",
+                    "alternate_urls": [
+                        "https://www.anycorp.com/log/about",
+                        "https://www.jstor.org/journal/log",
+                        "https://www.anycorp.com/",
+                        "http://www.jstor.org/action/showPublication?journalCode=log",
+                        "http://www.anycorp.com/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/29bc052f3c46bf1110cc02fd71d454ebe8b13b80",
+                "title": "A Generalist Neural Algorithmic Learner",
+                "abstract": "The cornerstone of neural algorithmic reasoning is the ability to solve algorithmic tasks, especially in a way that generalises out of distribution. While recent years have seen a surge in methodological improvements in this area, they mostly focused on building specialist models. Specialist models are capable of learning to neurally execute either only one algorithm or a collection of algorithms with identical control-flow backbone. Here, instead, we focus on constructing a generalist neural algorithmic learner -- a single graph neural network processor capable of learning to execute a wide range of algorithms, such as sorting, searching, dynamic programming, path-finding and geometry. We leverage the CLRS benchmark to empirically show that, much like recent successes in the domain of perception, generalist algorithmic learners can be built by\"incorporating\"knowledge. That is, it is possible to effectively learn algorithms in a multi-task manner, so long as we can learn to execute them well in a single-task regime. Motivated by this, we present a series of improvements to the input representation, training regime and processor architecture over CLRS, improving average single-task performance by over 20% from prior art. We then conduct a thorough ablation of multi-task learners leveraging these improvements. Our results demonstrate a generalist learner that effectively incorporates knowledge captured by specialist models.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "6675568",
+                        "name": "Borja Ibarz"
+                    },
+                    {
+                        "authorId": "30525721",
+                        "name": "Vitaly Kurin"
+                    },
+                    {
+                        "authorId": "3065681",
+                        "name": "G. Papamakarios"
+                    },
+                    {
+                        "authorId": "8305722",
+                        "name": "Kyriacos Nikiforou"
+                    },
+                    {
+                        "authorId": "1753631148",
+                        "name": "Mehdi Abbana Bennani"
+                    },
+                    {
+                        "authorId": "3190548",
+                        "name": "R. Csord\u00e1s"
+                    },
+                    {
+                        "authorId": "145585375",
+                        "name": "Andrew Dudzik"
+                    },
+                    {
+                        "authorId": "1471340201",
+                        "name": "Matko Bovsnjak"
+                    },
+                    {
+                        "authorId": "1492155662",
+                        "name": "Alex Vitvitskyi"
+                    },
+                    {
+                        "authorId": "40959192",
+                        "name": "Yulia Rubanova"
+                    },
+                    {
+                        "authorId": "48860334",
+                        "name": "Andreea Deac"
+                    },
+                    {
+                        "authorId": "2079900490",
+                        "name": "Beatrice Bevilacqua"
+                    },
+                    {
+                        "authorId": "2825246",
+                        "name": "Yaroslav Ganin"
+                    },
+                    {
+                        "authorId": "1723876",
+                        "name": "C. Blundell"
+                    },
+                    {
+                        "authorId": "1742197495",
+                        "name": "Petar Velivckovi'c"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "[26] use weight-tied neural networks to generalize from easy to hard examples."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "f843233f76a5dff07bfa93a71a1cf13d8aa6a94a",
+                "externalIds": {
+                    "ArXiv": "2207.04901",
+                    "DBLP": "conf/nips/AnilWALMRSGDN22",
+                    "DOI": "10.48550/arXiv.2207.04901",
+                    "CorpusId": 250425737
+                },
+                "corpusId": 250425737,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/f843233f76a5dff07bfa93a71a1cf13d8aa6a94a",
+                "title": "Exploring Length Generalization in Large Language Models",
+                "abstract": "The ability to extrapolate from short problem instances to longer ones is an important form of out-of-distribution generalization in reasoning tasks, and is crucial when learning from datasets where longer problem instances are rare. These include theorem proving, solving quantitative mathematics problems, and reading/summarizing novels. In this paper, we run careful empirical studies exploring the length generalization capabilities of transformer-based language models. We first establish that naively finetuning transformers on length generalization tasks shows significant generalization deficiencies independent of model scale. We then show that combining pretrained large language models' in-context learning abilities with scratchpad prompting (asking the model to output solution steps before producing an answer) results in a dramatic improvement in length generalization. We run careful failure analyses on each of the learning modalities and identify common sources of mistakes that highlight opportunities in equipping language models with the ability to generalize to longer problems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "48314480",
+                        "name": "Cem Anil"
+                    },
+                    {
+                        "authorId": "3374063",
+                        "name": "Yuhuai Wu"
+                    },
+                    {
+                        "authorId": "39552848",
+                        "name": "Anders Andreassen"
+                    },
+                    {
+                        "authorId": "102549875",
+                        "name": "Aitor Lewkowycz"
+                    },
+                    {
+                        "authorId": "40055795",
+                        "name": "Vedant Misra"
+                    },
+                    {
+                        "authorId": "96641652",
+                        "name": "V. Ramasesh"
+                    },
+                    {
+                        "authorId": "133666998",
+                        "name": "Ambrose Slone"
+                    },
+                    {
+                        "authorId": "1403749855",
+                        "name": "Guy Gur-Ari"
+                    },
+                    {
+                        "authorId": "52136425",
+                        "name": "Ethan Dyer"
+                    },
+                    {
+                        "authorId": "3007442",
+                        "name": "Behnam Neyshabur"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "This confirms the theoretical derivations by Merrill (2019) but contrasts the results presented by Bansal et al. (2022).",
+                "Bansal et al. (2022) showed that fully convolutional networks achieve near-perfect length generalization on the prefix sum task in the length generalization setting.",
+                "However, the convolutional architecture that Bansal et al. (2022) consider relies on an adaptive number of layers depending on the sequence length (similar to adaptive computation time (Graves, 2016)) and thus crucially differs from a classical CNN (such as the one we study)."
+            ],
+            "intents": [
+                "result",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "c6d38add1b7bbc10f0da37a90e3f1b51ee5fb617",
+                "externalIds": {
+                    "ArXiv": "2207.02098",
+                    "DBLP": "journals/corr/abs-2207-02098",
+                    "DOI": "10.48550/arXiv.2207.02098",
+                    "CorpusId": 250280065
+                },
+                "corpusId": 250280065,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c6d38add1b7bbc10f0da37a90e3f1b51ee5fb617",
+                "title": "Neural Networks and the Chomsky Hierarchy",
+                "abstract": "Reliable generalization lies at the heart of safe ML and AI. However, understanding when and how neural networks generalize remains one of the most important unsolved problems in the field. In this work, we conduct an extensive empirical study (20'910 models, 15 tasks) to investigate whether insights from the theory of computation can predict the limits of neural network generalization in practice. We demonstrate that grouping tasks according to the Chomsky hierarchy allows us to forecast whether certain architectures will be able to generalize to out-of-distribution inputs. This includes negative results where even extensive amounts of data and training time never lead to any non-trivial generalization, despite models having sufficient capacity to fit the training data perfectly. Our results show that, for our subset of tasks, RNNs and Transformers fail to generalize on non-regular tasks, LSTMs can solve regular and counter-language tasks, and only networks augmented with structured memory (such as a stack or memory tape) can successfully generalize on context-free and context-sensitive tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2133452357",
+                        "name": "Gr'egoire Del'etang"
+                    },
+                    {
+                        "authorId": "150920166",
+                        "name": "Anian Ruoss"
+                    },
+                    {
+                        "authorId": "1399315491",
+                        "name": "Jordi Grau-Moya"
+                    },
+                    {
+                        "authorId": "3081854",
+                        "name": "Tim Genewein"
+                    },
+                    {
+                        "authorId": "49432923",
+                        "name": "L. Wenliang"
+                    },
+                    {
+                        "authorId": "22574075",
+                        "name": "Elliot Catt"
+                    },
+                    {
+                        "authorId": "144154444",
+                        "name": "Marcus Hutter"
+                    },
+                    {
+                        "authorId": "34313265",
+                        "name": "S. Legg"
+                    },
+                    {
+                        "authorId": "145981974",
+                        "name": "Pedro A. Ortega"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "While initially applied only to path-finding and spanning-tree algorithms, the prescriptions listed above have been applied for heuristically solving bipartite matching (Georgiev and Li\u00f3, 2020), mazes (Schwarzschild et al., 2021; Bansal et al., 2022), min-cut (Awasthi et al."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "c2929349db20144b2a0332477699e5a2f26dc91b",
+                "externalIds": {
+                    "ArXiv": "2102.09544",
+                    "DBLP": "journals/corr/abs-2102-09544",
+                    "DOI": "10.24963/ijcai.2021/595",
+                    "CorpusId": 231951618
+                },
+                "corpusId": 231951618,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c2929349db20144b2a0332477699e5a2f26dc91b",
+                "title": "Combinatorial optimization and reasoning with graph neural networks",
+                "abstract": "Combinatorial optimization is a well-established area in operations research and computer science. Until recently, its methods have mostly focused on solving problem instances in isolation, ignoring the fact that they often stem from related data distributions in practice. However, recent years have seen a surge of interest in using machine learning, especially graph neural networks, as a key building block for combinatorial tasks, either directly as solvers or by enhancing the former. This paper presents a conceptual review of recent key advancements in this emerging field, aiming at researchers in both optimization and machine learning.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1907863",
+                        "name": "Quentin Cappart"
+                    },
+                    {
+                        "authorId": "3394738",
+                        "name": "D. Ch\u00e9telat"
+                    },
+                    {
+                        "authorId": "35252180",
+                        "name": "Elias Boutros Khalil"
+                    },
+                    {
+                        "authorId": "144390922",
+                        "name": "Andrea Lodi"
+                    },
+                    {
+                        "authorId": "2064641533",
+                        "name": "Christopher Morris"
+                    },
+                    {
+                        "authorId": "3444569",
+                        "name": "Petar Velickovic"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "\u2026neural algorithmic reasoning and it has recently been explored with transformers (Nogueira et al., 2021; Kim et al., 2021; Anil et al., 2022; Zhou et al., 2022; Charton, 2021; Zhang et al., 2021) and recurrent neural networks Bansal et al. (2022); Linsley et al. (2018); Schwarzschild et al. (2021).",
+                "Integer calculus and floating-point arithmetic in binary (symbolic) representations have previously received more attention (Nogueira et al., 2021; Talmor et al., 2020; Jiang et al., 2019; Thawani et al., 2021; Zhou et al., 2022; Hendrycks et al., 2021; Bansal et al., 2022)."
+            ],
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "1d6ca8d8401e14bbb764d35ba13a9505af0dcc2f",
+                "externalIds": {
+                    "DBLP": "journals/tmlr/Klindt23",
+                    "CorpusId": 258765695
+                },
+                "corpusId": 258765695,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1d6ca8d8401e14bbb764d35ba13a9505af0dcc2f",
+                "title": "Controlling Neural Network Smoothness for Neural Algorithmic Reasoning",
+                "abstract": "The modelling framework of neural algorithmic reasoning (Veli\u010dkovi\u0107 & Blundell, 2021) pos-tulates that a continuous neural network may learn to emulate the discrete reasoning steps of a symbolic algorithm. We investigate the underlying hypothesis in the most simple conceivable scenario \u2013 the addition of real numbers. Our results show that two layer neural networks fail to learn the structure of the task, despite containing multiple solutions of the true function within their hypothesis class. Growing the network\u2019s width leads to highly complex error regions in the input space. Moreover, we find that the network fails to generalise with increasing severity i) in the training domain, ii) outside of the training domain but within its convex hull, and iii) outside the training domain\u2019s convex hull. This behaviour can be emulated with Gaussian process regressors that use radial basis function kernels of decreasing length scale. Classical results establish an equivalence between Gaussian processes and infinitely wide neural networks. We demonstrate a tight linkage between the scaling of a network weights\u2019 standard deviation and its effective length scale on a sinusoidal regression problem, suggesting simple modifications to control the length scale of the function learned by a neural network and, thus, its smoothness . This has important applications for the different generalisation scenarios suggested above, but it also suggests a partial remedy to the brittleness of neural network predictions as exposed by adversarial examples. We demonstrate the gains in adversarial robustness that our modification achieves on simple image classification problems. In conclusion, this work shows inherent problems of neural networks even for the simplest algorithmic tasks which, however, may be partially remedied through links to Gaussian processes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "8312769",
+                        "name": "David A. Klindt"
+                    }
+                ]
+            }
+        },
+        {
+            "isInfluential": false,
+            "contexts": [
+                "This confirms the theoretical derivations by Merrill (2019) but contrasts the results presented by Bansal et al. (2022).",
+                "Bansal et al. (2022) showed that fully convolutional networks achieve near-perfect length generalization on the prefix sum task in the length generalization setting.",
+                "However, the convolutional architecture that Bansal et al. (2022) consider relies on an adaptive number of layers depending on the sequence length (similar to adaptive computation time (Graves, 2016)) and thus crucially differs from a classical CNN (such as the one we study)."
+            ],
+            "intents": [
+                "result",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "1862ff140e0169c6b367dc3fd9e7c714dae38026",
+                "externalIds": {
+                    "CorpusId": 259839661
+                },
+                "corpusId": 259839661,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1862ff140e0169c6b367dc3fd9e7c714dae38026",
+                "title": "N EURAL N ETWORKS AND THE C HOMSKY H IERARCHY",
+                "abstract": "Reliable generalization lies at the heart of safe ML and AI. However, understanding when and how neural networks generalize remains one of the most important unsolved problems in the field. In this work",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2000572769",
+                        "name": "Gr\u00e9goire Del\u00e9tang"
+                    },
+                    {
+                        "authorId": "150920166",
+                        "name": "Anian Ruoss"
+                    },
+                    {
+                        "authorId": "1399315491",
+                        "name": "Jordi Grau-Moya"
+                    },
+                    {
+                        "authorId": "3081854",
+                        "name": "Tim Genewein"
+                    },
+                    {
+                        "authorId": "49432923",
+                        "name": "L. Wenliang"
+                    },
+                    {
+                        "authorId": "22574075",
+                        "name": "Elliot Catt"
+                    },
+                    {
+                        "authorId": "24769718",
+                        "name": "Chris Cundy"
+                    },
+                    {
+                        "authorId": "144154444",
+                        "name": "Marcus Hutter"
+                    },
+                    {
+                        "authorId": "34313265",
+                        "name": "S. Legg"
+                    },
+                    {
+                        "authorId": "144056327",
+                        "name": "J. Veness"
+                    },
+                    {
+                        "authorId": "2223140640",
+                        "name": "Pedro A. Ortega"
+                    }
+                ]
+            }
+        }
+    ]
+}

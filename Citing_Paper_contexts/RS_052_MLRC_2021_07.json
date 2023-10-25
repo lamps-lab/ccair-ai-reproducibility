@@ -1,0 +1,1063 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "1a1c7a540bd33f3519f52f4f8af39c7501b8bba9",
+                "externalIds": {
+                    "DOI": "10.1007/s11280-023-01191-x",
+                    "CorpusId": 260783858
+                },
+                "corpusId": 260783858,
+                "publicationVenue": {
+                    "id": "9cf86359-a093-42b4-8bc0-6fd56465c360",
+                    "name": "World wide web (Bussum)",
+                    "type": "journal",
+                    "alternate_names": [
+                        "World Wide Web",
+                        "World wide web (bussum"
+                    ],
+                    "issn": "1386-145X",
+                    "url": "https://link.springer.com/journal/11280"
+                },
+                "url": "https://www.semanticscholar.org/paper/1a1c7a540bd33f3519f52f4f8af39c7501b8bba9",
+                "title": "Quantifying controversy from stance, sentiment, offensiveness and sarcasm: a fine-grained controversy intensity measurement framework on a Chinese dataset",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1897728717",
+                        "name": "Haiyang Wang"
+                    },
+                    {
+                        "authorId": "2132893784",
+                        "name": "Ye Wang"
+                    },
+                    {
+                        "authorId": "2109332938",
+                        "name": "Xin Song"
+                    },
+                    {
+                        "authorId": "51483278",
+                        "name": "Bin Zhou"
+                    },
+                    {
+                        "authorId": "9272810",
+                        "name": "Xuechen Zhao"
+                    },
+                    {
+                        "authorId": "2182519169",
+                        "name": "Feng Xie"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Although DCL does not use any external data, DCL achieved higher accuracy than SKS. 5) We further analyze the impact of the sequence between the two stages.",
+                "Compared with the best-performed baseline model SKS, DCL is superior in terms of both metrics.",
+                "This is because SKS used an external sentiment dataset to enhance the performance.",
+                "[7] proposed the sentiment knowledge sharing (SKS) model integrated with an insulting word list and multi-task learning to detect hate speech.",
+                "Although achieving promising performance in this task, the SKS model holds a strong assumption that insulting and negative emotions can distinguish between hate speech and non-hate speech.",
+                "[7] proposed the sentiment knowledge sharing (SKS) model combined",
+                "Zhou et al. [7] proposed the sentiment knowledge sharing (SKS) model integrated with an insulting word list and multi-task learning to detect hate speech.",
+                "Therefore, the SKS model with an insulting word list of hate speech achieved limited performance by overly focusing on the token-level emotional semantics.",
+                "We used the different F1 score metrics on two datasets following existing studies, such as the SOTA baseline model SKS [7] for fair comparisons.",
+                "For the DV dataset, we adopt the mean accuracy and the weighted F1 after five-fold cross-validation, and save the parameters corresponding to the optimal model, which follows the settings in previous work [7].",
+                "SKS: It was proposed by Zhou et al. [7].",
+                "[7] proposed the sentiment knowledge sharing (SKS) model combined with a negative word list and multi-task learning for hate speech detection.",
+                "The increasing social issue caused by online hate speech has attracted considerable attention of researchers in the natural language processing (NLP) field, seeking efficient and appropriate solutions to detecting online hate speech [3], [4], [5], [6], [7].",
+                "Furthermore, SKS, benefiting from its sentiment knowledge-sharing mechanism and multi-task learning, achieved the best performance among all the baselines.",
+                "4) On the DV dataset, DCL achieved the best performance by accuracy, and better performance by weighted-F1 than all the baseline models except SKS."
+            ],
+            "citingPaper": {
+                "paperId": "1552eca31fdd2ceb14c6206b0c2f20f1f7a23214",
+                "externalIds": {
+                    "ArXiv": "2307.05578",
+                    "DBLP": "journals/taslp/LuLZLZZMX23",
+                    "DOI": "10.1109/TASLP.2023.3294715",
+                    "CorpusId": 259836824
+                },
+                "corpusId": 259836824,
+                "publicationVenue": {
+                    "id": "309e00f7-4bbd-461f-ab37-a90cd14ef21d",
+                    "name": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+                    "alternate_names": [
+                        "IEEE/ACM Trans Audio Speech Lang Process"
+                    ],
+                    "issn": "2329-9290",
+                    "url": "https://ieeexplore.ieee.org/servlet/opac?punumber=6570655",
+                    "alternate_urls": [
+                        "https://signalprocessingsociety.org/publications-resources/ieeeacm-transactions-audio-speech-and-language-processing/ieeeacm"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/1552eca31fdd2ceb14c6206b0c2f20f1f7a23214",
+                "title": "Hate Speech Detection via Dual Contrastive Learning",
+                "abstract": "The fast spread of hate speech on social media impacts the Internet environment and our society by increasing prejudice and hurting people. Detecting hate speech has aroused broad attention in the field of natural language processing. Although hate speech detection has been addressed in recent work, this task still faces two inherent unsolved challenges. The first challenge lies in the complex semantic information conveyed in hate speech, particularly the interference of insulting words in hate speech detection. The second challenge is the imbalanced distribution of hate speech and non-hate speech, which may significantly deteriorate the performance of models. To tackle these challenges, we propose a novel dual contrastive learning (DCL) framework for hate speech detection. Our framework jointly optimizes the self-supervised and the supervised contrastive learning loss for capturing span-level information beyond the token-level emotional semantics used in existing models, particularly detecting speech containing abusive and insulting words. Moreover, we integrate the focal loss into the dual contrastive learning framework to alleviate the problem of data imbalance. We conduct experiments on two publicly available English datasets, and experimental results show that the proposed model outperforms the state-of-the-art models and precisely detects hate speeches.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "152319891",
+                        "name": "Junyu Lu"
+                    },
+                    {
+                        "authorId": "2878677",
+                        "name": "Ho-Yi Lin"
+                    },
+                    {
+                        "authorId": "2118365880",
+                        "name": "Xiaokun Zhang"
+                    },
+                    {
+                        "authorId": "2145310197",
+                        "name": "Zhaoqing Li"
+                    },
+                    {
+                        "authorId": "1785364908",
+                        "name": "Tongyue Zhang"
+                    },
+                    {
+                        "authorId": "34082172",
+                        "name": "Linlin Zong"
+                    },
+                    {
+                        "authorId": "2068198532",
+                        "name": "Fenglong Ma"
+                    },
+                    {
+                        "authorId": "2149657765",
+                        "name": "Bo Xu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[25] work, authors developed a multitasking framework utilizing sentiment knowledge for hate speech detection based on multi-head attention and category information of hate words."
+            ],
+            "citingPaper": {
+                "paperId": "597ec7f0789ff61c0856ff9e1ff9a85de9654ce7",
+                "externalIds": {
+                    "DBLP": "conf/ijcnn/JainMJS23",
+                    "DOI": "10.1109/IJCNN54540.2023.10191363",
+                    "CorpusId": 260387825
+                },
+                "corpusId": 260387825,
+                "publicationVenue": {
+                    "id": "f80ba4a3-7aed-4021-b4d8-e4f50668847a",
+                    "name": "IEEE International Joint Conference on Neural Network",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IJCNN",
+                        "IEEE Int Jt Conf Neural Netw",
+                        "Int Jt Conf Neural Netw",
+                        "International Joint Conference on Neural Network"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1573"
+                },
+                "url": "https://www.semanticscholar.org/paper/597ec7f0789ff61c0856ff9e1ff9a85de9654ce7",
+                "title": "Generative Models vs Discriminative Models: Which Performs Better in Detecting Cyberbullying in Memes?",
+                "abstract": "Accessibility to the internet has led to a massive increase in the usage of social networking and online communication apps over the past decade. With so much content available online, these platforms suffer from governance and monitoring problems making the users susceptible to online cyberbullying and trolling. Recently, this trolling and hate comes majorly from memes that combine text and image modalities. Many studies show how cyberbullying can harm the mental well-being of the affected individuals. Previous studies also tried to study the role of sentiment, emotions, and sarcasm in identifying hateful memes setting up the meme detection task as a multi-modal, multitask problem. In the past, meme detection models were discriminative, but more recently generative models have been used to solve non-generation tasks such as aspect-based sentiment analysis and span detection. Motivated by this, in this work, we propose a unified Multimodal Generative framework, MGex by reframing the multitasking problem of detecting cyberbullying, sentiment, emotion, and sarcasm as a multimodal text-to-text generation problem. For this purpose, we use MultiBully dataset which provides annotation for all these labels. Here, we evaluate and contrast our proposed generative framework with several multitasking baselines and state-of-the-art models. Disclaimer: The article contains offensive text and profanity. This is owing to the nature of the work and does not reflect any opinion or stand of the authors.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2088137695",
+                        "name": "Raghav Jain"
+                    },
+                    {
+                        "authorId": "144960451",
+                        "name": "Krishanu Maity"
+                    },
+                    {
+                        "authorId": "2165947844",
+                        "name": "Prince Jha"
+                    },
+                    {
+                        "authorId": "145470045",
+                        "name": "S. Saha"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Various studies in social sciences and psychology verify the existence of several cues that can aid in detecting hate [35,10,19,5,45] such as the hater\u2019s prior history, the conversational thread, overall sentiment, and aggression in the text."
+            ],
+            "citingPaper": {
+                "paperId": "be6b7945346031de80385800fc5f7b4dd813b445",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-08804",
+                    "ArXiv": "2306.08804",
+                    "DOI": "10.48550/arXiv.2306.08804",
+                    "CorpusId": 259164669
+                },
+                "corpusId": 259164669,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/be6b7945346031de80385800fc5f7b4dd813b445",
+                "title": "PEACE: Cross-Platform Hate Speech Detection- A Causality-guided Framework",
+                "abstract": "Hate speech detection refers to the task of detecting hateful content that aims at denigrating an individual or a group based on their religion, gender, sexual orientation, or other characteristics. Due to the different policies of the platforms, different groups of people express hate in different ways. Furthermore, due to the lack of labeled data in some platforms it becomes challenging to build hate speech detection models. To this end, we revisit if we can learn a generalizable hate speech detection model for the cross platform setting, where we train the model on the data from one (source) platform and generalize the model across multiple (target) platforms. Existing generalization models rely on linguistic cues or auxiliary information, making them biased towards certain tags or certain kinds of words (e.g., abusive words) on the source platform and thus not applicable to the target platforms. Inspired by social and psychological theories, we endeavor to explore if there exist inherent causal cues that can be leveraged to learn generalizable representations for detecting hate speech across these distribution shifts. To this end, we propose a causality-guided framework, PEACE, that identifies and leverages two intrinsic causal cues omnipresent in hateful content: the overall sentiment and the aggression in the text. We conduct extensive experiments across multiple platforms (representing the distribution shift) showing if causal cues can help cross-platform generalization.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "73409823",
+                        "name": "Paras Sheth"
+                    },
+                    {
+                        "authorId": "40899329",
+                        "name": "Tharindu Kumarage"
+                    },
+                    {
+                        "authorId": "11064745",
+                        "name": "Raha Moraffah"
+                    },
+                    {
+                        "authorId": "118679299",
+                        "name": "Amanat Chadha"
+                    },
+                    {
+                        "authorId": "38746648",
+                        "name": "Huan Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[32] incorporated sentiment knowledge into a hate speech detection task by employing a multi-task learning framework."
+            ],
+            "citingPaper": {
+                "paperId": "3f5c69635c9c0f83031522b8149093b477f76119",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-14903",
+                    "ArXiv": "2306.14903",
+                    "DOI": "10.48550/arXiv.2306.14903",
+                    "CorpusId": 259262323
+                },
+                "corpusId": 259262323,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/3f5c69635c9c0f83031522b8149093b477f76119",
+                "title": "Detect Depression from Social Networks with Sentiment Knowledge Sharing",
+                "abstract": "Social network plays an important role in propagating people's viewpoints, emotions, thoughts, and fears. Notably, following lockdown periods during the COVID-19 pandemic, the issue of depression has garnered increasing attention, with a significant portion of individuals resorting to social networks as an outlet for expressing emotions. Using deep learning techniques to discern potential signs of depression from social network messages facilitates the early identification of mental health conditions. Current efforts in detecting depression through social networks typically rely solely on analyzing the textual content, overlooking other potential information. In this work, we conduct a thorough investigation that unveils a strong correlation between depression and negative emotional states. The integration of such associations as external knowledge can provide valuable insights for detecting depression. Accordingly, we propose a multi-task training framework, DeSK, which utilizes shared sentiment knowledge to enhance the efficacy of depression detection. Experiments conducted on both Chinese and English datasets demonstrate the cross-lingual effectiveness of DeSK.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2220704194",
+                        "name": "Yan Shi"
+                    },
+                    {
+                        "authorId": "2220702081",
+                        "name": "Yao Tian"
+                    },
+                    {
+                        "authorId": "2053436328",
+                        "name": "Chengwei Tong"
+                    },
+                    {
+                        "authorId": "119890835",
+                        "name": "Chunyan Zhu"
+                    },
+                    {
+                        "authorId": "2108274686",
+                        "name": "Qian-qian Li"
+                    },
+                    {
+                        "authorId": "2153209408",
+                        "name": "Mengzhu Zhang"
+                    },
+                    {
+                        "authorId": "2220020845",
+                        "name": "Wei Zhao"
+                    },
+                    {
+                        "authorId": "2220696660",
+                        "name": "Yong Liao"
+                    },
+                    {
+                        "authorId": "72050450",
+                        "name": "Pengyuan Zhou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "faf46bd0d88c582177d9bf9d0b3c3e30fd5a763e",
+                "externalIds": {
+                    "DBLP": "conf/kdd/KulkarniMG023",
+                    "ArXiv": "2306.01105",
+                    "DOI": "10.1145/3580305.3599896",
+                    "CorpusId": 259063942
+                },
+                "corpusId": 259063942,
+                "publicationVenue": {
+                    "id": "a0edb93b-1e95-4128-a295-6b1659149cef",
+                    "name": "Knowledge Discovery and Data Mining",
+                    "type": "conference",
+                    "alternate_names": [
+                        "KDD",
+                        "Knowl Discov Data Min"
+                    ],
+                    "url": "http://www.acm.org/sigkdd/"
+                },
+                "url": "https://www.semanticscholar.org/paper/faf46bd0d88c582177d9bf9d0b3c3e30fd5a763e",
+                "title": "Revisiting Hate Speech Benchmarks: From Data Curation to System Deployment",
+                "abstract": "Social media is awash with hateful content, much of which is often veiled with linguistic and topical diversity. The benchmark datasets used for hate speech detection do not account for such divagation as they are predominantly compiled using hate lexicons. However, capturing hate signals becomes challenging in neutrally-seeded malicious content. Thus, designing models and datasets that mimic the real-world variability of hate warrants further investigation. To this end, we present GOTHate, a large-scale code-mixed crowdsourced dataset of around 51k posts for hate speech detection from Twitter. GOTHate is neutrally seeded, encompassing different languages and topics. We conduct detailed comparisons of GOTHate with the existing hate speech datasets, highlighting its novelty. We benchmark it with 10 recent baselines. Our extensive empirical and benchmarking experiments suggest that GOTHate is hard to classify in a text-only setup. Thus, we investigate how adding endogenous signals enhances the hate speech detection task. We augment GOTHate with the user's timeline information and ego network, bringing the overall data source closer to the real-world setup for understanding hateful content. Our proposed solution HEN-mBERT is a modular, multilingual, mixture-of-experts model that enriches the linguistic subspace with latent endogenous signals from history, topology, and exemplars. HEN-mBERT transcends the best baseline by 2.5% and 5% in overall macro-F1 and hate class F1, respectively. Inspired by our experiments, in partnership with Wipro AI, we are developing a semi-automated pipeline to detect hateful content as a part of their mission to tackle online harm.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1992797499",
+                        "name": "Atharva Kulkarni"
+                    },
+                    {
+                        "authorId": "36715403",
+                        "name": "Sarah Masud"
+                    },
+                    {
+                        "authorId": "9313418",
+                        "name": "Vikram Goyal"
+                    },
+                    {
+                        "authorId": "144054829",
+                        "name": "Tanmoy Chakraborty"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Recently, most researchers have utilized methods of deep learning based on the pretrained language model to tackle this problem (Mou et al., 2020; Cao and Lee, 2020; Tekiroglu et al., 2020; Mathew et al., 2021; Zhou et al., 2021a).",
+                "Inspired by Zhou et al. (2021a), we design a toxic embedding to introduce lexical knowledge.",
+                "(Mou et al., 2020; Cao and Lee, 2020; Tekiroglu et al., 2020; Founta et al., 2018; Zhou et al., 2021a; Mathew et al., 2021; Caselli et al., 2020; Hanu and Unitary team, 2020).",
+                "The training data with these markers is often labeled as toxic language, leading to spurious associations in the models (Zhou et al., 2021b)."
+            ],
+            "citingPaper": {
+                "paperId": "f7f27f3248ffee493c7f62acf3b05a0ec6c55158",
+                "externalIds": {
+                    "DBLP": "conf/acl/LuXZMYL23",
+                    "ArXiv": "2305.04446",
+                    "ACL": "2023.acl-long.898",
+                    "DOI": "10.48550/arXiv.2305.04446",
+                    "CorpusId": 258557119
+                },
+                "corpusId": 258557119,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/f7f27f3248ffee493c7f62acf3b05a0ec6c55158",
+                "title": "Facilitating Fine-grained Detection of Chinese Toxic Language: Hierarchical Taxonomy, Resources, and Benchmarks",
+                "abstract": "The widespread dissemination of toxic online posts is increasingly damaging to society. However, research on detecting toxic language in Chinese has lagged significantly due to limited datasets. Existing datasets suffer from a lack of fine-grained annotations, such as the toxic type and expressions with indirect toxicity. These fine-grained annotations are crucial factors for accurately detecting the toxicity of posts involved with lexical knowledge, which has been a challenge for researchers. To tackle this problem, we facilitate the fine-grained detection of Chinese toxic language by building a new dataset with benchmark results. First, we devised Monitor Toxic Frame, a hierarchical taxonomy to analyze the toxic type and expressions. Then, we built a fine-grained dataset ToxiCN, including both direct and indirect toxic samples. ToxiCN is based on an insulting vocabulary containing implicit profanity. We further propose a benchmark model, Toxic Knowledge Enhancement (TKE), by incorporating lexical features to detect toxic language. We demonstrate the usability of ToxiCN and the effectiveness of TKE based on a systematic quantitative and qualitative analysis.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "152319891",
+                        "name": "Junyu Lu"
+                    },
+                    {
+                        "authorId": "143876188",
+                        "name": "Bo Xu"
+                    },
+                    {
+                        "authorId": "2118365880",
+                        "name": "Xiaokun Zhang"
+                    },
+                    {
+                        "authorId": "65724927",
+                        "name": "C. Min"
+                    },
+                    {
+                        "authorId": "2143920912",
+                        "name": "Liang Yang"
+                    },
+                    {
+                        "authorId": "2116456164",
+                        "name": "Hongfei Lin"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "52e723ec3c2200fa51004f585750e6a3f3841c79",
+                "externalIds": {
+                    "DBLP": "journals/entcom/ChinivarRAR23",
+                    "DOI": "10.1016/j.entcom.2022.100544",
+                    "CorpusId": 255117962
+                },
+                "corpusId": 255117962,
+                "publicationVenue": {
+                    "id": "ec253390-208b-4979-9d5f-c9f654ad6181",
+                    "name": "Entertainment Computing",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Entertain Comput"
+                    ],
+                    "issn": "1875-9521",
+                    "url": "https://www.journals.elsevier.com/entertainment-computing/",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/18759521"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/52e723ec3c2200fa51004f585750e6a3f3841c79",
+                "title": "Online offensive behaviour in socialmedia: Detection approaches, comprehensive review and future directions",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2198249048",
+                        "name": "Sneha Chinivar"
+                    },
+                    {
+                        "authorId": "145260246",
+                        "name": "M. Roopa"
+                    },
+                    {
+                        "authorId": "3132142",
+                        "name": "J. Arunalatha"
+                    },
+                    {
+                        "authorId": "66464870",
+                        "name": "R. VenugopalK."
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "fcaa9772ffff886f8c8018a7fca6259551a5adfa",
+                "externalIds": {
+                    "DBLP": "journals/inffus/MinLLZLYX23",
+                    "DOI": "10.1016/j.inffus.2023.03.015",
+                    "CorpusId": 257763030
+                },
+                "corpusId": 257763030,
+                "publicationVenue": {
+                    "id": "06afdd0b-0d85-413f-af8a-c3045c12c561",
+                    "name": "Information Fusion",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Inf Fusion"
+                    ],
+                    "issn": "1566-2535",
+                    "url": "https://www.journals.elsevier.com/information-fusion",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/15662535"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/fcaa9772ffff886f8c8018a7fca6259551a5adfa",
+                "title": "Finding hate speech with auxiliary emotion detection from self-training multi-label learning perspective",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "65724927",
+                        "name": "C. Min"
+                    },
+                    {
+                        "authorId": "2116456164",
+                        "name": "Hongfei Lin"
+                    },
+                    {
+                        "authorId": "2108691206",
+                        "name": "Ximing Li"
+                    },
+                    {
+                        "authorId": "2212227017",
+                        "name": "He Zhao"
+                    },
+                    {
+                        "authorId": "152319891",
+                        "name": "Junyu Lu"
+                    },
+                    {
+                        "authorId": "2143920912",
+                        "name": "Liang Yang"
+                    },
+                    {
+                        "authorId": "143876188",
+                        "name": "Bo Xu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[63] Applies attention based neural networks and word embedding feature extraction methods for classification."
+            ],
+            "citingPaper": {
+                "paperId": "040a478e0ecb7e2b00c365f1cfb67037905e77e5",
+                "externalIds": {
+                    "DBLP": "journals/mms/ChhabraV23",
+                    "DOI": "10.1007/s00530-023-01051-8",
+                    "CorpusId": 256182209
+                },
+                "corpusId": 256182209,
+                "publicationVenue": {
+                    "id": "d1997ea9-9d41-4458-9280-94feb013bd15",
+                    "name": "Multimedia Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Multimedia Syst"
+                    ],
+                    "issn": "0942-4962",
+                    "url": "http://www.springer.com/computer/information+systems+and+applications/journal/530?changeHeader",
+                    "alternate_urls": [
+                        "https://link.springer.com/journal/530",
+                        "http://www.springer.com/computer/information+systems+and+applications/journal/530?changeHeader="
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/040a478e0ecb7e2b00c365f1cfb67037905e77e5",
+                "title": "A literature survey on multimodal and multilingual automatic hate speech identification",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2202589584",
+                        "name": "Anusha Chhabra"
+                    },
+                    {
+                        "authorId": "47731526",
+                        "name": "D. Vishwakarma"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "(3) The multi-task learning framework SKS performs well on both datasets.",
+                "11https://github.com/dadangewp/HurtBERT 12https://github.com/1783696285/SKS",
+                "2) Baselines: We compare our framework with five categories of baselines: feature-based models (SVM), neural text classification models (LSTM+ATT, CNN+GRU, BiGRU+Capsule, Transformer), pre-trained language model (Bert, HurtBert), Graph Neural Network (DepGCN), and multi-task model (SKS) for abusive language detection.",
+                "[34] constructs a largescale abusive language dataset, on which [45] applies GPT-2 to detect abusive language.",
+                "Sentiment Knowledge Sharing (SKS) [45] is a multitask abusive language detection framework based on sentiment knowledge sharing.",
+                "(4) Our model achieves better performance than the stateof-the-art SKS. Specifically, the accuracy and F1-macro are increased by nearly 2% on SemEval, while the accuracy is improved by about 1% on OLID.",
+                "(5) Compared with other pre-trained language models (Bert, HurtBert) and multi-task learning model (SKS), we can also observe that our framework w/ BERT is significantly more robust as shown in Figure 3(a) and Figure 3(b).",
+                "Furthermore, our framework does not require any extra knowledge, while SKS requires human-annotated sentiment classification datasets 13.",
+                "[45] proposes an abusive language detection framework based on external emotional knowledge sharing and combines the characteristics of different feature extraction units to detect abusive language.",
+                "Multi-task learning (MTL) can simultaneously learn multiple related tasks and share knowledge in one framework [23], [45]."
+            ],
+            "citingPaper": {
+                "paperId": "1e1e944464421611279a4309d8dc117bde3fd439",
+                "externalIds": {
+                    "DBLP": "conf/bigdataconf/ZhangZWLZGZZ22",
+                    "DOI": "10.1109/BigData55660.2022.10020761",
+                    "CorpusId": 256320068
+                },
+                "corpusId": 256320068,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/1e1e944464421611279a4309d8dc117bde3fd439",
+                "title": "Abusive Language Detection with Graph based Multi-task Learning",
+                "abstract": "To counter the online abusive language in social media, it is desirable to develop automated detection methods. Previous research has primarily formulated this problem as a sentence-level classification task, ignoring the crucial role of abusive lexicons that can strengthen the model explainability and enable more faithful predictions. Although a few methods have introduced the abusive lexicons for detection, the lexicons they use are either externally provided or labeled by human annotators, suffering from two limitations: (1) lack adaptability to diverse and evolving offensive scenarios; (2) require large human efforts to annotate the words.This paper overcomes the limitations of prior work with a multi-task abusive language detection framework. It combines sentence-level and word-level classification tasks, based on dependency tree based graph attention networks (GAT). With the two tasks, it is encouraged to capture both global and local data properties to produce better sentence representations. It is also advantageous in automatic lexicon construction during the learning process, without human annotations. Extensive experiments on two public datasets exhibit that our proposal can outperform the state-of-the-art baselines. Case studies show that the model explainability can be strengthened with the abusive parts identified by our framework. Our code is released to public. 1",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2124626314",
+                        "name": "Chunyun Zhang"
+                    },
+                    {
+                        "authorId": "47957054",
+                        "name": "Xi Zhang"
+                    },
+                    {
+                        "authorId": "2145348814",
+                        "name": "Quang Wang"
+                    },
+                    {
+                        "authorId": "2118675123",
+                        "name": "Jiayi Liang"
+                    },
+                    {
+                        "authorId": "2143853895",
+                        "name": "Ge Zhang"
+                    },
+                    {
+                        "authorId": "2488590",
+                        "name": "Sanchuan Guo"
+                    },
+                    {
+                        "authorId": "3181822",
+                        "name": "W. Zang"
+                    },
+                    {
+                        "authorId": "2145050375",
+                        "name": "Yongdong Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "The hate speech detection framework proposed by [29] based on sentiment knowledge sharing (SKS), which includes multiple feature extraction units and a controlled attention mechanism for feature fusion."
+            ],
+            "citingPaper": {
+                "paperId": "1a84c6fdcf5b975da307d4aaf840c63feeae0de9",
+                "externalIds": {
+                    "DOI": "10.1109/ICRAIE56454.2022.10054339",
+                    "CorpusId": 257313228
+                },
+                "corpusId": 257313228,
+                "publicationVenue": {
+                    "id": "f63e4bb3-0e34-4ab9-8bf1-45fa94f94fe1",
+                    "name": "International Conference on Recent Advances and Innovations in Engineering",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICRAIE",
+                        "Int Conf Recent Adv Innov Eng"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/1a84c6fdcf5b975da307d4aaf840c63feeae0de9",
+                "title": "MalHate : Hate Speech Detection in Malayalam Regional Language",
+                "abstract": "Hate speech is a deceptive problem on social media and its impact on society is quite prominent and striking. As part of regulatory measures, analysis on them has been active research in the past recent years. Social media is a tool on the common man\u2019s hand hence the use of native language is quite often. Thus we find utmost importance to be given to regional language analysis as well. There are different approaches proposed by researchers from time to time for Hate Speech analysis. In this research, we are focusing on a particular regional language, Malayalam for Vernacular Hate Speech Detection. We have analysed using the deep learning techniques and achieved the best F1 score 0.85 for pure malayalam dataset.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2125286541",
+                        "name": "Athira Krishnan R"
+                    },
+                    {
+                        "authorId": "2916235",
+                        "name": "P. Poornachandran"
+                    },
+                    {
+                        "authorId": "2210514909",
+                        "name": "Sujadevi V G"
+                    },
+                    {
+                        "authorId": "2060010373",
+                        "name": "G. Rajendran"
+                    },
+                    {
+                        "authorId": "2189466222",
+                        "name": "Vinayak Ks"
+                    },
+                    {
+                        "authorId": "2066274037",
+                        "name": "Vishnu Vijayan"
+                    },
+                    {
+                        "authorId": "2064970006",
+                        "name": "Arjun Ram"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Negative sentiment is a salient toxicity feature, which has been used in designing feature-based and neural toxicity detection systems (Fortuna and Nunes, 2018; Zhou et al., 2021; Chiril et al., 2022), and highly",
+                "Negative sentiment is a salient toxicity feature, which has been used in designing feature-based and neural toxicity detection systems (Fortuna and Nunes, 2018; Zhou et al., 2021; Chiril et al., 2022), and highly correlates with toxic language when targeted at demographic groups."
+            ],
+            "citingPaper": {
+                "paperId": "041194726df0a18cc31df3aafe246d94709da2ea",
+                "externalIds": {
+                    "DBLP": "conf/blackboxnlp/NejadgholiBFK22",
+                    "ArXiv": "2210.10689",
+                    "ACL": "2022.blackboxnlp-1.18",
+                    "DOI": "10.48550/arXiv.2210.10689",
+                    "CorpusId": 252992919
+                },
+                "corpusId": 252992919,
+                "publicationVenue": {
+                    "id": "738626d7-5b8c-497d-9fd6-64bdb6dbf440",
+                    "name": "BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP",
+                    "type": "conference",
+                    "alternate_names": [
+                        "BlackboxNLP",
+                        "Blackboxnlp Workshop Anal Interpr\u00e8t Neural Netw NLP"
+                    ],
+                    "url": "https://aclanthology.org/venues/blackboxnlp/"
+                },
+                "url": "https://www.semanticscholar.org/paper/041194726df0a18cc31df3aafe246d94709da2ea",
+                "title": "Towards Procedural Fairness: Uncovering Biases in How a Toxic Language Classifier Uses Sentiment Information",
+                "abstract": "Previous works on the fairness of toxic language classifiers compare the output of models with different identity terms as input features but do not consider the impact of other important concepts present in the context. Here, besides identity terms, we take into account high-level latent features learned by the classifier and investigate the interaction between these features and identity terms. For a multi-class toxic language classifier, we leverage a concept-based explanation framework to calculate the sensitivity of the model to the concept of sentiment, which has been used before as a salient feature for toxic language detection. Our results show that although for some classes, the classifier has learned the sentiment information as expected, this information is outweighed by the influence of identity terms as input features. This work is a step towards evaluating procedural fairness, where unfair processes lead to unfair outcomes. The produced knowledge can guide debiasing techniques to ensure that important concepts besides identity terms are well-represented in training datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3163125",
+                        "name": "I. Nejadgholi"
+                    },
+                    {
+                        "authorId": "2132911",
+                        "name": "Esma Balkir"
+                    },
+                    {
+                        "authorId": "2022276",
+                        "name": "Kathleen C. Fraser"
+                    },
+                    {
+                        "authorId": "2886725",
+                        "name": "Svetlana Kiritchenko"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "[5] proposes Sentiment Knowledge Sharing that parallel trains Hate Speech Task and Sentiment Task to improve model generalization."
+            ],
+            "citingPaper": {
+                "paperId": "a002f7eb8b5d4f54ec42b207f959b1d1a4fa40b5",
+                "externalIds": {
+                    "DBLP": "conf/kse/HoangNNLPN22",
+                    "DOI": "10.1109/KSE56063.2022.9953615",
+                    "CorpusId": 253794225
+                },
+                "corpusId": 253794225,
+                "publicationVenue": {
+                    "id": "87ad3a52-6dd9-45bd-a0f2-f87453c491ed",
+                    "name": "International Conference on Knowledge and Systems Engineering",
+                    "type": "conference",
+                    "alternate_names": [
+                        "KSE",
+                        "Int Conf Knowl Syst Eng",
+                        "Knowledge and Systems Engineering",
+                        "Knowl Syst Eng"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1922"
+                },
+                "url": "https://www.semanticscholar.org/paper/a002f7eb8b5d4f54ec42b207f959b1d1a4fa40b5",
+                "title": "Enhanced Task-based Knowledge for Lexicon-based Approach in Vietnamese Hate Speech Detection",
+                "abstract": "The explosion of free-text content on social media has brought the exponential propagation of hate speech. The definition of hate speech is well-defined in the community guidelines of many popular platforms such as Facebook, Tiktok, and Twitter, where any communication judges towards the minor, protected groups are considered hateful content. This paper first points out the sophisticated word-play of malicious users in a Vietnamese Hate Speech (VHS) Dataset. The Center Loss in the training process to disambiguate the task-based sentence embedding is proposed for improving generalizations of the model. Moreover, a task-based lexical attention pooling is also proposed to highlight lexicon-level information and then combined into sentence embedding. The experimental results show that the proposed method improves the F1 score in the ViHSD dataset, while the training time and inference speed are insignificantly changed.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1390048534",
+                        "name": "Suong N. Hoang"
+                    },
+                    {
+                        "authorId": "49299248",
+                        "name": "Binh Duc Nguyen"
+                    },
+                    {
+                        "authorId": "2185834161",
+                        "name": "Nam-Phong Nguyen"
+                    },
+                    {
+                        "authorId": "31991334",
+                        "name": "Son T. Luu"
+                    },
+                    {
+                        "authorId": "2191815593",
+                        "name": "Hieu T. Phan"
+                    },
+                    {
+                        "authorId": "145881543",
+                        "name": "H. Nguyen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "4711896d3700e11520229e8831c292cf945e489d",
+                "externalIds": {
+                    "DBLP": "conf/sigir/XuLZNZL022",
+                    "DOI": "10.1145/3477495.3532019",
+                    "CorpusId": 250340260
+                },
+                "corpusId": 250340260,
+                "publicationVenue": {
+                    "id": "8dce23a9-44e0-4381-a39e-2acc1edff700",
+                    "name": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                        "Int ACM SIGIR Conf Res Dev Inf Retr",
+                        "SIGIR",
+                        "Annu Int ACM SIGIR Conf Res Dev Inf Retr"
+                    ],
+                    "url": "http://www.acm.org/sigir/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4711896d3700e11520229e8831c292cf945e489d",
+                "title": "MET-Meme: A Multimodal Meme Dataset Rich in Metaphors",
+                "abstract": "Memes have become the popular means of communication for Internet users worldwide. Understanding the Internet meme is one of the most tricky challenges in natural language processing (NLP) tasks due to its convenient non-standard writing and network vocabulary. Recently, many linguists suggested that memes contain rich metaphorical information. However, the existing researches ignore this key feature. Therefore, to incorporate informative metaphors into the meme analysis, we introduce a novel multimodal meme dataset called MET-Meme, which is rich in metaphorical features. It contains 10045 text-image pairs, with manual annotations of the metaphor occurrence, sentiment categories, intentions, and offensiveness degree. Moreover, we propose a range of strong baselines to demonstrate the importance of combining metaphorical features for meme sentiment analysis and semantic understanding tasks, respectively. MET-Meme, and its code are released publicly for research in \\urlhttps://github.com/liaolianfoka/MET-Meme-A-Multi-modal-Meme-Dataset-Rich-in-Metaphors.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "143876188",
+                        "name": "Bo Xu"
+                    },
+                    {
+                        "authorId": "2118549469",
+                        "name": "Ting Li"
+                    },
+                    {
+                        "authorId": "2175310160",
+                        "name": "Junzhe Zheng"
+                    },
+                    {
+                        "authorId": "2149932639",
+                        "name": "Mehdi Naseriparsa"
+                    },
+                    {
+                        "authorId": "3009486",
+                        "name": "Zhehuan Zhao"
+                    },
+                    {
+                        "authorId": "2116456164",
+                        "name": "Hongfei Lin"
+                    },
+                    {
+                        "authorId": "2143632907",
+                        "name": "Feng Xia"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "874fb655cb24bf9df6e15ff0d2e67f6eb0e6eea8",
+                "externalIds": {
+                    "DBLP": "journals/cogsr/AlatrashPEA22",
+                    "DOI": "10.1016/j.cogsys.2022.07.002",
+                    "CorpusId": 250343180
+                },
+                "corpusId": 250343180,
+                "publicationVenue": {
+                    "id": "6051439f-768c-4aae-a75c-3c82be5fa675",
+                    "name": "Cognitive Systems Research",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Cogn Syst Res"
+                    ],
+                    "issn": "1389-0417",
+                    "url": "http://www.elsevier.com/locate/cogsys",
+                    "alternate_urls": [
+                        "http://www.elsevier.com/wps/find/journaldescription.cws_home/620288/description#description",
+                        "http://www.sciencedirect.com/science/journal/13890417"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/874fb655cb24bf9df6e15ff0d2e67f6eb0e6eea8",
+                "title": "Augmented language model with deep learning adaptation on sentiment analysis for E-learning recommendation",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2023361368",
+                        "name": "R. Alatrash"
+                    },
+                    {
+                        "authorId": "31712192",
+                        "name": "R. Priyadarshini"
+                    },
+                    {
+                        "authorId": "72560794",
+                        "name": "H. Ezaldeen"
+                    },
+                    {
+                        "authorId": "2162807310",
+                        "name": "Akram Alhinnawi"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Zhou et al. (2021) integrate features from external resources to support the model performance."
+            ],
+            "citingPaper": {
+                "paperId": "6a1e4ac6bd38a628f42014ee1640e8c0cd71c958",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-11770",
+                    "ArXiv": "2201.11770",
+                    "CorpusId": 246411581
+                },
+                "corpusId": 246411581,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6a1e4ac6bd38a628f42014ee1640e8c0cd71c958",
+                "title": "Going Extreme: Comparative Analysis of Hate Speech in Parler and Gab",
+                "abstract": "Social platforms such as Gab and Parler, branded as `free-speech' networks, have seen a significant growth of their user base in recent years. This popularity is mainly attributed to the stricter moderation enforced by mainstream platforms such as Twitter, Facebook, and Reddit. In this work we provide the first large scale analysis of hate-speech on Parler. We experiment with an array of algorithms for hate-speech detection, demonstrating limitations of transfer learning in that domain, given the illusive and ever changing nature of the ways hate-speech is delivered. In order to improve classification accuracy we annotated 10K Parler posts, which we use to fine-tune a BERT classifier. Classification of individual posts is then leveraged for the classification of millions of users via label propagation over the social network. Classifying users by their propensity to disseminate hate, we find that hate mongers make 16.1\\% of Parler active users, and that they have distinct characteristics comparing to other user groups. We find that hate mongers are more active, more central and express distinct levels of sentiment and convey a distinct array of emotions like anger and sadness. We further complement our analysis by comparing the trends discovered in Parler and those found in Gab. To the best of our knowledge, this is among the first works to analyze hate speech in Parler in a quantitative manner and on the user level, and the first annotated dataset to be made available to the community.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2060832673",
+                        "name": "Abraham Israeli"
+                    },
+                    {
+                        "authorId": "1842598",
+                        "name": "Oren Tsur"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In [9], the authors designed a deep learning model fusing affective features with other features for hate speech detection."
+            ],
+            "citingPaper": {
+                "paperId": "0dd7f3a8c650fd90408b24af73886440ee6fdd75",
+                "externalIds": {
+                    "DBLP": "conf/bigdataconf/ShomeK21",
+                    "DOI": "10.1109/BigData52589.2021.9671427",
+                    "CorpusId": 245948841
+                },
+                "corpusId": 245948841,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/0dd7f3a8c650fd90408b24af73886440ee6fdd75",
+                "title": "ConOffense: Multi-modal multitask Contrastive learning for offensive content identification",
+                "abstract": "Hateful or offensive content has been increasingly common on social media platforms in recent years, and the problem is now widespread. There is a pressing need for effective automatic solutions for detecting such content, especially due to the gigantic size of social media data. Although significant progress has been made in the automated identification of offensive content, most of the focus has been on only using textual information. It can be easily noticed that with the rise in visual information shared on these platforms, it is quite common to have hateful content on images rather than in the associated text. Due to this, present day unimodal text-based methods won\u2019t be able to cope up with the multimodal hateful content. In this paper, we propose a novel multimodal neural network powered by contrastive learning for identifying offensive posts on social media utilizing both visual and textual information. We design the text and visual encoders with a lightweight architecture to make the solution efficient for real world use. Evaluation on the MMHS150K dataset shows state-of-the-art performance of 82.6 percent test accuracy, making an improvement of approximately +14.1 percent accuracy over the previous best performing benchmark model on the dataset.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2005862970",
+                        "name": "Debaditya Shome"
+                    },
+                    {
+                        "authorId": "2174911748",
+                        "name": "Tejaswini Kar"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "6489385d573e7a2fd549d21685b57d9348ec4aff",
+                "externalIds": {
+                    "CorpusId": 250254926
+                },
+                "corpusId": 250254926,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6489385d573e7a2fd549d21685b57d9348ec4aff",
+                "title": "EMOTION KNOWLEDGE SHARING",
+                "abstract": "In recent years, the increasing propagation of hate speech on social media has encouraged researchers to address the problem of hateful content identification. To build an efficient hate speech detection model, a large number of annotated data is needed to train the model. To solve this approach we utilized eleven datasets from the hate speech domain and compared different transformer encoder-based approaches such as BERT, and ALBERT in single-task learning and multi-task learning (MTL) framework. We also leveraged the eight sentiment and emotion analysis datasets in the training to enrich the features in the MTL setting. The stacking based ensemble of BERT-MTL and ALBERT-MTL is utilized to combine the features from best two models. The experiments demonstrate the efficacy of the approach by attaining state-of-the-art results in all the datasets. The qualitative and quantitative error analysis was done to figure out the misclassified tweets and the effect of models on the different data sets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "34777677",
+                        "name": "Prashant Kapil"
+                    },
+                    {
+                        "authorId": "1734904",
+                        "name": "Asif Ekbal"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Zhou et al. (2021) integrate features from external resources to support the model performance."
+            ],
+            "citingPaper": {
+                "paperId": "c403f7a178c1c5bde94134fd6fc1cba9ee185aaf",
+                "externalIds": {
+                    "ACL": "2022.woah-1.11",
+                    "DOI": "10.18653/v1/2022.woah-1.11",
+                    "CorpusId": 250390481
+                },
+                "corpusId": 250390481,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/c403f7a178c1c5bde94134fd6fc1cba9ee185aaf",
+                "title": "Free speech or Free Hate Speech? Analyzing the Proliferation of Hate Speech in Parler",
+                "abstract": "Social platforms such as Gab and Parler, branded as \u2018free-speech\u2019 networks, have seen a significant growth of their user base in recent years. This popularity is mainly attributed to the stricter moderation enforced by mainstream platforms such as Twitter, Facebook, and Reddit.In this work we provide the first large scale analysis of hate-speech on Parler. We experiment with an array of algorithms for hate-speech detection, demonstrating limitations of transfer learning in that domain, given the illusive and ever changing nature of the ways hate-speech is delivered. In order to improve classification accuracy we annotated 10K Parler posts, which we use to fine-tune a BERT classifier. Classification of individual posts is then leveraged for the classification of millions of users via label propagation over the social network. Classifying users by their propensity to disseminate hate, we find that hate mongers make 16.1% of Parler active users, and that they have distinct characteristics comparing to other user groups. We further complement our analysis by comparing the trends observed in Parler to those found in Gab. To the best of our knowledge, this is among the first works to analyze hate speech in Parler in a quantitative manner and on the user level.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2060832673",
+                        "name": "Abraham Israeli"
+                    },
+                    {
+                        "authorId": "1842598",
+                        "name": "Oren Tsur"
+                    }
+                ]
+            }
+        }
+    ]
+}

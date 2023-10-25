@@ -1,0 +1,987 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "3cb2efbfc976b1a7593d964aa7a84c91a69a2bf8",
+                "externalIds": {
+                    "ArXiv": "2310.03320",
+                    "CorpusId": 263671998
+                },
+                "corpusId": 263671998,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3cb2efbfc976b1a7593d964aa7a84c91a69a2bf8",
+                "title": "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graph",
+                "abstract": "Foundation models (FMs) are able to leverage large volumes of unlabeled data to demonstrate superior performance across a wide range of tasks. However, FMs developed for biomedical domains have largely remained unimodal, i.e., independently trained and used for tasks on protein sequences alone, small molecule structures alone, or clinical data alone. To overcome this limitation of biomedical FMs, we present BioBridge, a novel parameter-efficient learning framework, to bridge independently trained unimodal FMs to establish multimodal behavior. BioBridge achieves it by utilizing Knowledge Graphs (KG) to learn transformations between one unimodal FM and another without fine-tuning any underlying unimodal FMs. Our empirical results demonstrate that BioBridge can beat the best baseline KG embedding methods (on average by around 76.3%) in cross-modal retrieval tasks. We also identify BioBridge demonstrates out-of-domain generalization ability by extrapolating to unseen modalities or relations. Additionally, we also show that BioBridge presents itself as a general purpose retriever that can aid biomedical multimodal question answering as well as enhance the guided generation of novel drugs.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2255392612",
+                        "name": "Zifeng Wang"
+                    },
+                    {
+                        "authorId": "2255392614",
+                        "name": "Zichen Wang"
+                    },
+                    {
+                        "authorId": "2254272039",
+                        "name": "Balasubramaniam Srinivasan"
+                    },
+                    {
+                        "authorId": "40043851",
+                        "name": "V. N. Ioannidis"
+                    },
+                    {
+                        "authorId": "145344187",
+                        "name": "H. Rangwala"
+                    },
+                    {
+                        "authorId": "2432216",
+                        "name": "Rishita Anubhai"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "4f501abe6c06c2f12a7d278f035da43a7c9fe440",
+                "externalIds": {
+                    "DOI": "10.3390/app131910750",
+                    "CorpusId": 263251112
+                },
+                "corpusId": 263251112,
+                "publicationVenue": {
+                    "id": "136edf8d-0f88-4c2c-830f-461c6a9b842e",
+                    "name": "Applied Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl Sci"
+                    ],
+                    "issn": "2076-3417",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217814",
+                    "alternate_urls": [
+                        "http://www.mathem.pub.ro/apps/",
+                        "https://www.mdpi.com/journal/applsci",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217814"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4f501abe6c06c2f12a7d278f035da43a7c9fe440",
+                "title": "DDI-SSL: Drug\u2013Drug Interaction Prediction Based on Substructure Signature Learning",
+                "abstract": "Drug\u2013drug interactions (DDIs) are entities composed of different chemical substructures (functional groups). In existing methods that predict drug\u2013drug interactions based on the usage of substructures, each node is perceived as the epicenter of a sub-pattern, and adjacent nodes eventually become centers of similar substructures, resulting in redundancy. Furthermore, the significant differences in structure and properties among compounds can lead to unrelated pairings, making it difficult to integrate information. This heterogeneity negatively affects the prediction results. In response to these challenges, we propose a drug\u2013drug interaction prediction method based on substructure signature learning (DDI-SSL). This method extracts useful information from local subgraphs surrounding drugs and effectively utilizes substructures to assist in predicting drug side effects. Additionally, a deep clustering algorithm is used to aggregate similar substructures, allowing any individual subgraph to be reconstructed using this set of global signatures. Furthermore, we developed a layer-independent collaborative attention mechanism to model the mutual influence between drugs, generating signal strength scores for each class of drugs to mitigate noise caused by heterogeneity. Finally, we evaluated DDI-SSL on a comprehensive dataset and demonstrated improved performance in DDI prediction compared to state-of-the-art methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2249089138",
+                        "name": "Yuan Liang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In biological networks, link prediction aids in understanding protein-protein interactions [3] and gene regulatory networks [4]."
+            ],
+            "citingPaper": {
+                "paperId": "f63bdc3f05ad2c646babc2be2fffa01074e58e5f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-11315",
+                    "ArXiv": "2306.11315",
+                    "DOI": "10.48550/arXiv.2306.11315",
+                    "CorpusId": 259203309
+                },
+                "corpusId": 259203309,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f63bdc3f05ad2c646babc2be2fffa01074e58e5f",
+                "title": "Variational Disentangled Graph Auto-Encoders for Link Prediction",
+                "abstract": "With the explosion of graph-structured data, link prediction has emerged as an increasingly important task. Embedding methods for link prediction utilize neural networks to generate node embeddings, which are subsequently employed to predict links between nodes. However, the existing embedding methods typically take a holistic strategy to learn node embeddings and ignore the entanglement of latent factors. As a result, entangled embeddings fail to effectively capture the underlying information and are vulnerable to irrelevant information, leading to unconvincing and uninterpretable link prediction results. To address these challenges, this paper proposes a novel framework with two variants, the disentangled graph auto-encoder (DGAE) and the variational disentangled graph auto-encoder (VDGAE). Our work provides a pioneering effort to apply the disentanglement strategy to link prediction. The proposed framework infers the latent factors that cause edges in the graph and disentangles the representation into multiple channels corresponding to unique latent factors, which contributes to improving the performance of link prediction. To further encourage the embeddings to capture mutually exclusive latent factors, we introduce mutual information regularization to enhance the independence among different channels. Extensive experiments on various real-world benchmarks demonstrate that our proposed methods achieve state-of-the-art results compared to a variety of strong baselines on link prediction tasks. Qualitative analysis on the synthetic dataset also illustrates that the proposed methods can capture distinct latent factors that cause links, providing empirical evidence that our models are able to explain the results of link prediction to some extent. All code will be made publicly available upon publication of the paper.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2119276694",
+                        "name": "Jun Fu"
+                    },
+                    {
+                        "authorId": "2220326070",
+                        "name": "Xiaojuan Zhang"
+                    },
+                    {
+                        "authorId": "2133436155",
+                        "name": "Shuang Li"
+                    },
+                    {
+                        "authorId": "2113598851",
+                        "name": "Dali Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "In recent years, with the explosive growth of graph data in various fields such as social networks [1], recommendation systems [2], and bioinformatics [3], the need for effective graph representation learning has become more urgent."
+            ],
+            "citingPaper": {
+                "paperId": "098ad2290862cf7f0123c339a4a7f076f69cc417",
+                "externalIds": {
+                    "ArXiv": "2306.11344",
+                    "DBLP": "journals/corr/abs-2306-11344",
+                    "DOI": "10.1109/CYBER59472.2023.10256657",
+                    "CorpusId": 259203851
+                },
+                "corpusId": 259203851,
+                "publicationVenue": {
+                    "id": "05860b0f-ff70-48a0-a93a-71c4be979650",
+                    "name": "Cyber ..",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Cyber Technol Autom Control Intell Syst",
+                        "CYBER",
+                        "IEEE International Conference on Cyber Technology in Automation, Control, and Intelligent Systems",
+                        "Cyber "
+                    ],
+                    "issn": "2519-8599",
+                    "url": "http://www.thinkmind.org/index.php?event=CYBER&view=event"
+                },
+                "url": "https://www.semanticscholar.org/paper/098ad2290862cf7f0123c339a4a7f076f69cc417",
+                "title": "Contrastive Disentangled Learning on Graph for Node Classification",
+                "abstract": "Contrastive learning methods have attracted considerable attention due to their remarkable success in analyzing graph-structured data. Inspired by the success of contrastive learning, we propose a novel framework for contrastive disentangled learning on graphs, employing a disentangled graph encoder and two carefully crafted self-supervision signals. Specifically, we introduce a disentangled graph encoder to enforce the framework to distinguish various latent factors corresponding to underlying semantic information and learn the disentangled node embeddings. Moreover, to overcome the heavy reliance on labels, we design two self-supervision signals, namely node specificity and channel independence, which capture informative knowledge without the need for labeled data, thereby guiding the automatic disentanglement of nodes. Finally, we perform node classification tasks on three citation networks by using the disentangled node embeddings, and the relevant analysis is provided. Experimental results validate the effectiveness of the proposed framework compared with various baselines.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2220326070",
+                        "name": "Xiaojuan Zhang"
+                    },
+                    {
+                        "authorId": "2119276694",
+                        "name": "Jun Fu"
+                    },
+                    {
+                        "authorId": "2133436155",
+                        "name": "Shuang Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "c491388cdbe2989c07073c92ad427154828145d4",
+                "externalIds": {
+                    "PubMedCentral": "10295378",
+                    "DOI": "10.3390/bioengineering10060701",
+                    "CorpusId": 259270228,
+                    "PubMed": "37370632"
+                },
+                "corpusId": 259270228,
+                "publicationVenue": {
+                    "id": "103075b0-1b66-4b69-9c47-f54875634fba",
+                    "name": "Bioengineering",
+                    "type": "journal",
+                    "issn": "2306-5354",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-354376",
+                    "alternate_urls": [
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-354376",
+                        "https://www.mdpi.com/journal/bioengineering"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c491388cdbe2989c07073c92ad427154828145d4",
+                "title": "Personalized Explanations for Early Diagnosis of Alzheimer\u2019s Disease Using Explainable Graph Neural Networks with Population Graphs",
+                "abstract": "Leveraging recent advances in graph neural networks, our study introduces an application of graph convolutional networks (GCNs) within a correlation-based population graph, aiming to enhance Alzheimer\u2019s disease (AD) prognosis and illuminate the intricacies of AD progression. This methodological approach leverages the inherent structure and correlations in demographic and neuroimaging data to predict amyloid-beta (A\u03b2) positivity. To validate our approach, we conducted extensive performance comparisons with conventional machine learning models and a GCN model with randomly assigned edges. The results consistently highlighted the superior performance of the correlation-based GCN model across different sample groups in the Alzheimer\u2019s Disease Neuroimaging Initiative (ADNI) dataset, suggesting the importance of accurately reflecting the correlation structure in population graphs for effective pattern recognition and accurate prediction. Furthermore, our exploration of the model\u2019s decision-making process using GNNExplainer identified unique sets of biomarkers indicative of A\u03b2 positivity in different groups, shedding light on the heterogeneity of AD progression. This study underscores the potential of our proposed approach for more nuanced AD prognoses, potentially informing more personalized and precise therapeutic strategies. Future research can extend these findings by integrating diverse data sources, employing longitudinal data, and refining the interpretability of the model, which potentially has broad applicability to other complex diseases.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2110044122",
+                        "name": "S. Kim"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Deep Learning (DL) approaches include DNN-PPI [Li et al., 2018], PIPR [Chen et al., 2019a], and GNN-PPI [Lv et al., 2021], which take amino acid sequence-based features as inputs (More details are illustrated in Appendix).",
+                "Early works [Yang et al., 2020; Lv et al., 2021] have demonstrated the effectiveness of graph neural networks (GNNs) on PPI prediction.",
+                "To improve PPI prediction performance, recent works [Yang et al., 2020; Lv et al., 2021] have been proposed to investigate the correlations between PPIs using various graph neural network (GNN) architectures [Kipf and Welling, 2016; Xu et al.",
+                "The BFS and DFS partition schemes create more challenging paradigms than the random partitioning by including more ES and NS proteins in the testsets for the inter-novel protein interactions [Lv et al., 2021].",
+                "\u2026into two groups: classic machine learning (ML)-based methods [Browne et al., 2007; Lin and Chen, 2013; Guo et al., 2008; Wong et al., 2015; Chen and Liu, 2005] and deep learning (DL)-based methods [Sun et al., 2017; Du et al., 2017; Hashemifar et al., 2018; Chen et al., 2019a; Lv et al., 2021].",
+                "Although [Lv et al., 2021] design new evaluations to better reflect model generalization, giving instructive and consistent assessment across datasets, the domain shift issue still needs to be fully explored for PPI prediction.",
+                "Furthermore, the latest works consider protein correlations and utilize graph neural networks (GNN) to model graph-structured PPI data [Yang et al., 2020; Kipf and Welling, 2016; Lv et al., 2021].",
+                ", 2019a], and GNN-PPI [Lv et al., 2021], which take amino acid sequence-based features as inputs (More details are illustrated in Appendix).",
+                "With the advent of deep learning (DL), more recent works have utilized deep neural networks [Sun et al., 2017; Hashemifar et al., 2018; Du et al., 2017; Chen et al., 2019a; Lv et al., 2021] to automatically extract features from protein sequences for enhancing feature representation.",
+                ", 2015; Chen and Liu, 2005] and deep learning (DL)-based methods [Sun et al., 2017; Du et al., 2017; Hashemifar et al., 2018; Chen et al., 2019a; Lv et al., 2021].",
+                "1) Base train: We follow GNN-PPI [Lv et al., 2021] for protein-independent encoding to extract protein features from protein sequences as inputs to our framework.",
+                "We follow partition algorithms in GNN-PPI [Lv et al., 2021], including random, breath-first search (BFS), and depth-first search (DFS) to split the trainsets and testsets.",
+                "To improve PPI prediction performance, recent works [Yang et al., 2020; Lv et al., 2021] have been proposed to investigate the correlations between PPIs using various graph neural network (GNN) architectures [Kipf and Welling, 2016; Xu et al., 2019]."
+            ],
+            "citingPaper": {
+                "paperId": "bfbcddc5efa31d0522e0370f6980d029b54c9c18",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-08316",
+                    "ArXiv": "2305.08316",
+                    "DOI": "10.48550/arXiv.2305.08316",
+                    "CorpusId": 258686382
+                },
+                "corpusId": 258686382,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/bfbcddc5efa31d0522e0370f6980d029b54c9c18",
+                "title": "SemiGNN-PPI: Self-Ensembling Multi-Graph Neural Network for Efficient and Generalizable Protein-Protein Interaction Prediction",
+                "abstract": "Protein-protein interactions (PPIs) are crucial in various biological processes and their study has significant implications for drug development and disease diagnosis. Existing deep learning methods suffer from significant performance degradation under complex real-world scenarios due to various factors, e.g., label scarcity and domain shift. In this paper, we propose a self-ensembling multi-graph neural network (SemiGNN-PPI) that can effectively predict PPIs while being both efficient and generalizable. In SemiGNN-PPI, we not only model the protein correlations but explore the label dependencies by constructing and processing multiple graphs from the perspectives of both features and labels in the graph learning process. We further marry GNN with Mean Teacher to effectively leverage unlabeled graph-structured PPI data for self-ensemble graph learning. We also design multiple graph consistency constraints to align the student and teacher graphs in the feature embedding space, enabling the student model to better learn from the teacher model by incorporating more relationships. Extensive experiments on PPI datasets of different scales with different evaluation settings demonstrate that SemiGNN-PPI outperforms state-of-the-art PPI prediction methods, particularly in challenging scenarios such as training with limited annotations and testing on unseen data.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1720781764",
+                        "name": "Ziyuan Zhao"
+                    },
+                    {
+                        "authorId": "1680032035",
+                        "name": "Peisheng Qian"
+                    },
+                    {
+                        "authorId": "34337966",
+                        "name": "Xulei Yang"
+                    },
+                    {
+                        "authorId": "2161435821",
+                        "name": "Zeng Zeng"
+                    },
+                    {
+                        "authorId": "2081050342",
+                        "name": "Cuntai Guan"
+                    },
+                    {
+                        "authorId": "37774670",
+                        "name": "W. Tam"
+                    },
+                    {
+                        "authorId": "39952499",
+                        "name": "Xiaoli Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Such a setting makes GNN-PPI impractical to find true PPIs from not yet verified pairs.",
+                "GNN-PPI [34] integrates the sequence and partners into encoding for each protein to predict PPI of multiple types."
+            ],
+            "citingPaper": {
+                "paperId": "b5b4a2a4d94d4dbefe46ccbaf8c6ac8cc66cb043",
+                "externalIds": {
+                    "DOI": "10.1101/2023.02.09.527848",
+                    "CorpusId": 256829708
+                },
+                "corpusId": 256829708,
+                "publicationVenue": {
+                    "id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+                    "name": "bioRxiv",
+                    "type": "journal",
+                    "url": "http://biorxiv.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/b5b4a2a4d94d4dbefe46ccbaf8c6ac8cc66cb043",
+                "title": "Exploring the Knowledge of An Outstanding Protein to Protein Interaction Transformer",
+                "abstract": "Protein-to-protein interaction (PPI) prediction aims to predict whether two given proteins interact or not. Compared with traditional experimental methods of high cost and low efficiency, the current deep learning based approach makes it possible to discover massive potential PPIs from large-scale databases. However, deep PPI prediction models perform poorly on unseen species, as their proteins are not in the training set. Targetting on this issue, the paper first proposes PPITrans, a Transformer based PPI prediction model that exploits a language model pre-trained on proteins to conduct binary PPI prediction. To validate the effectiveness on unseen species, PPITrans is trained with Human PPIs and tested on PPIs of other species. Experimental results show that PPITrans significantly outperforms the previous state-of-the-art on various metrics, especially on PPIs of unseen species. For example, the AUPR improves 0.339 absolutely on Fly PPIs. Aiming to explore the knowledge learned by PPITrans from PPI data, this paper also designs a series of probes belonging to three categories. Their results reveal several interesting findings, like that although PPITrans cannot capture the spatial structure of proteins, it can obtain knowledge of PPI type and binding affinity, learning more than binary PPI.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2118272058",
+                        "name": "Sen Yang"
+                    },
+                    {
+                        "authorId": "2105584833",
+                        "name": "Dawei Feng"
+                    },
+                    {
+                        "authorId": "49471447",
+                        "name": "Peng Cheng"
+                    },
+                    {
+                        "authorId": "2152799665",
+                        "name": "Yang Liu"
+                    },
+                    {
+                        "authorId": "38258544",
+                        "name": "Sheng Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Baselines Following Zhang et al. (2022), we introduce DPPI (Hashemifar et al., 2018), DNN-PPI (Li et al., 2018), PIPR (Chen et al., 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",
+                "In the second setting, KeAP outperforms OntoProtein by about 4%, 3%, and 1% on SHS27K, SHS148K, and STRING, respectively.",
+                "We perform experiments on SHS27K (Chen et al., 2019), SHS148K (Chen et al., 2019), and STRING (Lv et al., 2021).",
+                ", 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",
+                "In contrast, our KeAP still performs competitively and surpasses GNN-PPI by an obvious margin on BFS. Table 3: Comparisons on PPI identification.",
+                "The trend of declining performance can be attributed to the increasing amount of fine-tuning data (from SHS27K to STRING) that reduces the impact of pre-training.",
+                "SHS27K and SHS148K can be regarded as two subsets of STRING, where protein with fewer than 50 amino acids or \u2265 40% sequence identity is excluded.",
+                "As the amount of training data increases (from SHS27K to STRING), ProtBert and OntoProtein gradually display inferior performance, compared to GNN-PPI."
+            ],
+            "citingPaper": {
+                "paperId": "76beae98abf567b31219d5fdf2ed4593189b98b0",
+                "externalIds": {
+                    "ArXiv": "2301.13154",
+                    "DBLP": "journals/corr/abs-2301-13154",
+                    "DOI": "10.1101/2023.01.26.525795",
+                    "CorpusId": 256389564
+                },
+                "corpusId": 256389564,
+                "publicationVenue": {
+                    "id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+                    "name": "bioRxiv",
+                    "type": "journal",
+                    "url": "http://biorxiv.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/76beae98abf567b31219d5fdf2ed4593189b98b0",
+                "title": "Protein Representation Learning via Knowledge Enhanced Primary Structure Modeling",
+                "abstract": "Protein representation learning has primarily benefited from the remarkable development of language models (LMs). Accordingly, pre-trained protein models also suffer from a problem in LMs: a lack of factual knowledge. The recent solution models the relationships between protein and associated knowledge terms as the knowledge encoding objective. However, it fails to explore the relationships at a more granular level, i.e., the token level. To mitigate this, we propose Knowledge-exploited Auto-encoder for Protein (KeAP), which performs tokenlevel knowledge graph exploration for protein representation learning. In practice, non-masked amino acids iteratively query the associated knowledge tokens to extract and integrate helpful information for restoring masked amino acids via attention. We show that KeAP can consistently outperform the previous counterpart on 9 representative downstream applications, sometimes surpassing it by large margins. These results suggest that KeAP provides an alternative yet effective way to perform knowledge enhanced protein representation learning. Code and models are available at https://github.com/RL4M/KeAP.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2157473801",
+                        "name": "Hong-Yu Zhou"
+                    },
+                    {
+                        "authorId": "2203425336",
+                        "name": "Yunxiang Fu"
+                    },
+                    {
+                        "authorId": "2175954059",
+                        "name": "Zhicheng Zhang"
+                    },
+                    {
+                        "authorId": "50009437",
+                        "name": "Cheng Bian"
+                    },
+                    {
+                        "authorId": "1841911",
+                        "name": "Yizhou Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "6fce466858006f2d9bc53803ac245b1bc35fbc32",
+                "externalIds": {
+                    "PubMedCentral": "9897180",
+                    "DOI": "10.1093/bioinformatics/btad052",
+                    "CorpusId": 256193356,
+                    "PubMed": "36692145"
+                },
+                "corpusId": 256193356,
+                "publicationVenue": {
+                    "id": "15d4205f-903b-403c-9a2e-906f02ce04d8",
+                    "name": "Bioinformatics",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Int Conf Bioinform",
+                        "International Conference on Bioinformatics",
+                        "BIOINFORMATICS"
+                    ],
+                    "issn": "1367-4803",
+                    "alternate_issns": [
+                        "1367-4811"
+                    ],
+                    "url": "http://bioinformatics.oxfordjournals.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/6fce466858006f2d9bc53803ac245b1bc35fbc32",
+                "title": "AFTGAN: prediction of multi-type PPI based on attention free transformer and graph attention network",
+                "abstract": "Abstract Motivation Protein\u2013protein interaction (PPI) networks and transcriptional regulatory networks are critical in regulating cells and their signaling. A thorough understanding of PPIs can provide more insights into cellular physiology at normal and disease states. Although numerous methods have been proposed to predict PPIs, it is still challenging for interaction prediction between unknown proteins. In this study, a novel neural network named AFTGAN was constructed to predict multi-type PPIs. Regarding feature input, ESM-1b embedding containing much biological information for proteins was added as a protein sequence feature besides amino acid co-occurrence similarity and one-hot coding. An ensemble network was also constructed based on a transformer encoder containing an AFT module (performing the weight operation on vital protein sequence feature information) and graph attention network (extracting the relational features of protein pairs) for the part of the network framework. Results The experimental results showed that the Micro-F1 of the AFTGAN based on three partitioning schemes (BFS, DFS and the random mode) on the SHS27K and SHS148K datasets was 0.685, 0.711 and 0.867, as well as 0.745, 0.819 and 0.920, respectively, all higher than that of other popular methods. In addition, the experimental comparisons confirmed the performance superiority of the proposed model for predicting PPIs of unknown proteins on the STRING dataset. Availability and implementation The source code is publicly available at https://github.com/1075793472/AFTGAN. Supplementary information Supplementary data are available at Bioinformatics online.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "12041417",
+                        "name": "Yanlei Kang"
+                    },
+                    {
+                        "authorId": "2471717",
+                        "name": "A. Elofsson"
+                    },
+                    {
+                        "authorId": "122376816",
+                        "name": "Yunliang Jiang"
+                    },
+                    {
+                        "authorId": "2190599205",
+                        "name": "Weihong Huang"
+                    },
+                    {
+                        "authorId": "2152599193",
+                        "name": "Minzhe Yu"
+                    },
+                    {
+                        "authorId": "2198928058",
+                        "name": "Zhong Li"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "2a1bc186562e67b842bf51942e34a1f3676f2adb",
+                "externalIds": {
+                    "DBLP": "journals/cbm/AlbuBC23",
+                    "DOI": "10.1016/j.compbiomed.2022.106526",
+                    "CorpusId": 255568274,
+                    "PubMed": "36623437"
+                },
+                "corpusId": 255568274,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/2a1bc186562e67b842bf51942e34a1f3676f2adb",
+                "title": "MM-StackEns: A new deep multimodal stacked generalization approach for protein-protein interaction prediction",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1573919215",
+                        "name": "Alexandra-Ioana Albu"
+                    },
+                    {
+                        "authorId": "1712637",
+                        "name": "Maria-Iuliana Bocicor"
+                    },
+                    {
+                        "authorId": "1695873",
+                        "name": "G. Czibula"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Under GNN-PPI evaluation framework, experiment results showe that our model outperforms several state-of-the-art methods, especially in the prediction of unknown protein interactions.",
+                "It should be noted that the proportion of BS also gradually increases as the number of data increases, and in String all-Random, it reaches a staggering 99.49%, which is consistent with the inference in GNN-PPI.",
+                "GNN-PPI [34] devised a new evaluation framework that fully respects the interactions between new proteins and provides a consistent assessment across different datasets.",
+                "Our model show a marked improvement compared to GNN-PPI under ES and NS, especially as data size increases (e.g. under NS in String all-BFS dataset, our model improves by nearly 10%).",
+                "For example, in the case of Sring all-BFS, the miroc-F1 value of our model reaches 80.28 \u00b1 0.43, compared to 75.87 \u00b1 0.37 for GNN-PPI and 62.30 \u00b1 0.41 for PIPR.",
+                "F. In-depth Analysis\nIn addition to the comparison with the baseline model, we go ahead with a more in-depth analysis of the performance between GNN-PPI and our model, as shown in Table II.",
+                "In this study, we use the GNN-PPI partitioning method to divide String 3000, String 9000 and String all into nine datasets according to BFS, DFS and Random for scientific evaluation, where each dataset is set aside 80% for training and the remaining 20% is used for testing.",
+                "Especially, under the BFS partitioning method for different datasets, the performance of our model, is nearly 2-3% higher compared to GNN-PPI, and is nearly 10-20% higher compared to PIPR, which means that our model can benefit from unknown protein features and thus achieves promising PPI prediction performance.",
+                "Two highly representative DL algorithms for PPI prediction are chose, PIPR [18] and GNN-PPI [34]."
+            ],
+            "citingPaper": {
+                "paperId": "b14c6ccd0dba324534a161a31ad95a64e657cefb",
+                "externalIds": {
+                    "DBLP": "conf/bibm/FangZFX22",
+                    "DOI": "10.1109/BIBM55620.2022.9994857",
+                    "CorpusId": 255417766
+                },
+                "corpusId": 255417766,
+                "publicationVenue": {
+                    "id": "6363ebc9-706a-4203-b804-148cbf8810ce",
+                    "name": "IEEE International Conference on Bioinformatics and Biomedicine",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Bioinform Biomed",
+                        "BIBM",
+                        "IEEE Int Conf Bioinform Biomed",
+                        "Bioinformatics and Biomedicine"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=283"
+                },
+                "url": "https://www.semanticscholar.org/paper/b14c6ccd0dba324534a161a31ad95a64e657cefb",
+                "title": "Learning spatial structures and network correlations improves unknown protein\u2013protein interaction prediction",
+                "abstract": "The mechanism of action of protein-protein interactions(PPIs) is complex, and prediction models have to learn multiple dimensions to achieve excellent generalization performance. Therefore, based on the concept that the spatial structure of proteins is closely related to protein functions and the topological information of PPI networks reflects the correlation between proteins, we combine the protein structure information and the topological information of PPI networks to enhance the prediction performance. We present a new approach, SE3NET-PPI, for multi-type PPI prediction, retrieves protein structure information from the SE (3)-invariant matrix map generated by Alphafold2 and extracts the topological information of the PPI network using a graph neural network in the Siamese architecture. Results showed that our model outperforms several state-of-the-art methods under various dataset partitioning methods, with significant improvement in predicting invisible datasets. For example, in the case of Sring_al1-BFS, the miroc-F1 value of our model reaches 80.28 \u00b1 0.43, compared to 75. 87\u00b1 0.37 for GNN-PPI and 62.30 \u00b1 0.41 for PIPR. The implementation and related datasets are available at https://github.coml YY99117/SE3NET-PPI.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2199306312",
+                        "name": "Yangyue Fang"
+                    },
+                    {
+                        "authorId": "2196214086",
+                        "name": "Chaojian Zhang"
+                    },
+                    {
+                        "authorId": "2199303161",
+                        "name": "Yu Fu"
+                    },
+                    {
+                        "authorId": "2199258183",
+                        "name": "Tao Xue"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Our experiment is inspired by GNN-PPI [26].",
+                "[26] studied the Homo sapiens subsets at two time points (2011 / 01 / 25 and 2021 / 01 / 25) in the BioGRID database.",
+                "When the model only increases the spatial receptive field of network, for the SHS27k dataset, the current model increases by 1.37% , 4.80% and 0.09% respectively compared with the GNN-PPI model under the random, BFS and DFS partitioning schemes.",
+                "SVM [33] 75.35\u00b1 1.05 42.98\u00b1 6.15 53.07\u00b1 5.16 80.55\u00b1 0.23 49.14\u00b1 5.30 58.59\u00b1 0.07 RF [34] 78.45\u00b1 0.08 37.67\u00b1 1.57 35.55\u00b1 2.22 82.10\u00b1 0.20 38.96\u00b1 1.94 43.26\u00b1 3.43 LR [35] 71.55\u00b1 0.93 43.06\u00b1 5.05 48.51\u00b1 1.87 67.00\u00b1 0.07 47.45\u00b1 1.42 51.09\u00b1 2.09 HIN2Vec [37] 74.22\u00b1 2.38 49.61\u00b1 4.88 53.78\u00b1 3.05 78.01\u00b1 0.62 56.94\u00b1 3.20 57.15\u00b1 2.49 SDNE [38] 84.04\u00b1 0.91 47.29\u00b1 4.32 53.42\u00b1 2.82 86.65\u00b1 2.73 58.43\u00b1 4.94 68.84\u00b1 1.52 LPI-DLDN [39] 77.36\u00b1 0.48 44.68\u00b1 2.31 54.98\u00b1 3.94 83.83\u00b1 0.52 56.41\u00b1 5.38 60.07\u00b1 2.71 LPI-deepGBDT [40] 72.70\u00b1 0.67 42.25\u00b1 3.81 50.48\u00b1 2.76 81.69\u00b1 0.39 55.51\u00b1 7.40 59.67\u00b1 3.29 DTI-CDF [41] 79.29\u00b1 0.89 49.60\u00b1 5.28 55.88\u00b1 4.19 83.12\u00b1 0.55 60.04\u00b1 8.27 65.42\u00b1 5.89 PIPR [7] 83.31\u00b1 0.75 44.48\u00b1 4.44 57.80\u00b1 3.24 90.05\u00b1 2.59 61.83\u00b1 10.23 63.98\u00b1 0.76 GAT [42] 86.35\u00b1 0.86 53.08\u00b1 5.24 60.09\u00b1 1.69 88.87\u00b1 0.31 62.10\u00b1 7.75 65.49\u00b1 0.50 GNN-PPI [26] 87.91\u00b1 0.39 63.81\u00b1 1.79 74.72\u00b1 5.26 92.26\u00b1 0.10 71.37\u00b1 5.33 82.67\u00b1 0.85 LDMGNN 89.34 \u00b1 0.44 74.56 \u00b1 3.03 78.20 \u00b1 2.69 92.38 \u00b1 0.08 73.98 \u00b1 5.51 83.79 \u00b1 0.95",
+                "Moreover, the types of PPIs in the SHS27k and SHS148k datasets are extremely unbalanced [26].",
+                "In these two partition schemes, our LDMGNN model has a large improvement in accuracy compared with the GNN-PPI model.",
+                "And for the SHS148k dataset, our method achieves an absolute improvement of 0.12% , 2.61% , 1.12% when compared with the GNN-PPI method in random, BFS, and DFS partitioning methods, respectively.",
+                "Unlike the baseline GNN-PPI, we construct a THPPI network and simultaneously aggregates first-order and second-order neighbor information, increasing the spatial receptive field in the model.",
+                "[26] constructed a GNN-PPI model based on graph isomorphism network (GIN) to predict the interactions between protein\u2013protein pairs.",
+                "\u2022 GNN-PPI [26]: A graph neural network model, given the information of protein amino acid sequence and PPI network, is used for the prediction of multi-label PPI.",
+                "This is not available in the GNN-PPI model.",
+                "At the same time, inspired by [26], in order to evaluate the generalization ability of the LDMGNN model more realistically, we choose three partition schemes to divide the test set, i.",
+                "(2)Recallm = TP1 + TP2 + \u00b7 \u00b7 \u00b7 + TPn\nTP1 + TP2 + \u00b7 \u00b7 \u00b7 + TPn + FN1 + FN2 + \u00b7 \u00b7 \u00b7 + FNn ,\n(3)Precisionm = TP1 + TP2 + \u00b7 \u00b7 \u00b7 + TPn\nTP1 + TP2 + \u00b7 \u00b7 \u00b7 + TPn + FP1 + FP2 + \u00b7 \u00b7 \u00b7 + FPn ,\nOur experiment is inspired by GNN-PPI [26].",
+                "As can be seen from Table\u00a04, when the model only uses the multi-head self-attention mechanism to capture the long-distance dependency information in the sequence, for\nthe SHS27k dataset, the current model increases by 0.81% , 5.03% and 2.20% respectively compared with the GNN-PPI model under the random, BFS and DFS partitioning schemes.",
+                "Compared with the baseline GNN-PPI, our LDMGNN not only captures the long-distance dependency information in the sequence but also increases the spatial receptive field in space.",
+                "However, compared with GNN-PPI model, our LDMGNN model mainly has the following two innovations.",
+                "For the SHS27k dataset, our method achieves an absolute improvement of 1.43% , 10.75% , 3.48% when compared with the GNN-PPI model in random, BFS, and DFS partitioning methods, respectively.",
+                "\u2212 PMHGE represents the removal of PMHGE from the LDMGNN model and, unlike baseline GNN-PPI, and uses the Transformer with a multi-head self-attention mechanism to learn the amino acid interdependency in the sequence.",
+                "We use GNN-PPI as the baseline for PPIs prediction, which processes amino acid sequences using RNN and aggregates only first-order neighbor information."
+            ],
+            "citingPaper": {
+                "paperId": "fb2965a3a023de1a55a17bb4121f620d07187ae7",
+                "externalIds": {
+                    "PubMedCentral": "9724439",
+                    "DBLP": "journals/bmcbi/ZhongHXLQY22",
+                    "DOI": "10.1186/s12859-022-05062-6",
+                    "CorpusId": 254222747,
+                    "PubMed": "36471248"
+                },
+                "corpusId": 254222747,
+                "publicationVenue": {
+                    "id": "be3f884c-b44a-496a-a593-1cad3f89d254",
+                    "name": "BMC Bioinformatics",
+                    "type": "journal",
+                    "alternate_names": [
+                        "BMC Bioinform"
+                    ],
+                    "issn": "1471-2105",
+                    "url": "http://www.biomedcentral.com/bmcbioinformatics",
+                    "alternate_urls": [
+                        "http://www.pubmedcentral.nih.gov/tocrender.fcgi?journal=13",
+                        "http://www.biomedcentral.com/bmcbioinformatics/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/fb2965a3a023de1a55a17bb4121f620d07187ae7",
+                "title": "Long-distance dependency combined multi-hop graph neural networks for protein\u2013protein interactions prediction",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2112647297",
+                        "name": "Wen Zhong"
+                    },
+                    {
+                        "authorId": "2140520706",
+                        "name": "Changxiang He"
+                    },
+                    {
+                        "authorId": "2075319050",
+                        "name": "Chen Xiao"
+                    },
+                    {
+                        "authorId": "2158598411",
+                        "name": "Yuru Liu"
+                    },
+                    {
+                        "authorId": "49231681",
+                        "name": "Xiaofei Qin"
+                    },
+                    {
+                        "authorId": "34233944",
+                        "name": "Zhensheng Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                "Inspired by [39,57], we use the SHS27k and SHS148k datasets in this study and follow the major seven protein\u2013protein interaction types, i."
+            ],
+            "citingPaper": {
+                "paperId": "d93d792680258c3796d727065c13f29d4a98bba1",
+                "externalIds": {
+                    "PubMedCentral": "9501426",
+                    "DOI": "10.3390/molecules27186135",
+                    "CorpusId": 252412753,
+                    "PubMed": "36144868"
+                },
+                "corpusId": 252412753,
+                "publicationVenue": {
+                    "id": "91b19bbf-b6f0-46c2-bbec-6bcfb5463d4d",
+                    "name": "Molecules",
+                    "type": "journal",
+                    "issn": "1420-3049",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-165877",
+                    "alternate_urls": [
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-165877",
+                        "https://www.mdpi.com/journal/molecules",
+                        "https://link.springer.com/journal/40895",
+                        "http://www.mdpi.com/journal/molecules/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d93d792680258c3796d727065c13f29d4a98bba1",
+                "title": "Graph Neural Network for Protein\u2013Protein Interaction Prediction: A Comparative Study",
+                "abstract": "Proteins are the fundamental biological macromolecules which underline practically all biological activities. Protein\u2013protein interactions (PPIs), as they are known, are how proteins interact with other proteins in their environment to perform biological functions. Understanding PPIs reveals how cells behave and operate, such as the antigen recognition and signal transduction in the immune system. In the past decades, many computational methods have been developed to predict PPIs automatically, requiring less time and resources than experimental techniques. In this paper, we present a comparative study of various graph neural networks for protein\u2013protein interaction prediction. Five network models are analyzed and compared, including neural networks (NN), graph convolutional neural networks (GCN), graph attention networks (GAT), hyperbolic neural networks (HNN), and hyperbolic graph convolutions (HGCN). By utilizing the protein sequence information, all of these models can predict the interaction between proteins. Fourteen PPI datasets are extracted and utilized to compare the prediction performance of all these methods. The experimental results show that hyperbolic graph neural networks tend to have a better performance than the other methods on the protein-related datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145798292",
+                        "name": "Hang Zhou"
+                    },
+                    {
+                        "authorId": "2116035306",
+                        "name": "Weikun Wang"
+                    },
+                    {
+                        "authorId": "147088470",
+                        "name": "Jiayun Jin"
+                    },
+                    {
+                        "authorId": "2185739066",
+                        "name": "Zengwei Zheng"
+                    },
+                    {
+                        "authorId": "2118870812",
+                        "name": "Binbin Zhou"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al.",
+                "\u2026applied to problems in different domains such as social networks, recommendation systems (Ying et al., 2018; Fan et al., 2019), chemistry (Gilmer et al., 2017; Sanchez-Lengeling et al., 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al., 2021)."
+            ],
+            "citingPaper": {
+                "paperId": "e631519bc2fa8b4d783bc881518cda11461f9049",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2205-00354",
+                    "ArXiv": "2205.00354",
+                    "DOI": "10.48550/arXiv.2205.00354",
+                    "CorpusId": 248496335
+                },
+                "corpusId": 248496335,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/e631519bc2fa8b4d783bc881518cda11461f9049",
+                "title": "Graph Anisotropic Diffusion",
+                "abstract": "Traditional Graph Neural Networks (GNNs) rely on message passing, which amounts to permutation-invariant local aggregation of neighbour features. Such a process is isotropic and there is no notion of `direction' on the graph. We present a new GNN architecture called Graph Anisotropic Diffusion. Our model alternates between linear diffusion, for which a closed-form solution is available, and local anisotropic filters to obtain efficient multi-hop anisotropic kernels. We test our model on two common molecular property prediction benchmarks (ZINC and QM9) and show its competitive performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2164036742",
+                        "name": "Ahmed A. A. Elhag"
+                    },
+                    {
+                        "authorId": "2164036816",
+                        "name": "Gabriele Corso"
+                    },
+                    {
+                        "authorId": "2164102905",
+                        "name": "Hannes St\u00e4rk"
+                    },
+                    {
+                        "authorId": "2060916506",
+                        "name": "Michael M. Bronstein"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "2d5a601a3778f3566a827c170244d8af3fc590d2",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2202-02944",
+                    "ArXiv": "2202.02944",
+                    "CorpusId": 246634312
+                },
+                "corpusId": 246634312,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2d5a601a3778f3566a827c170244d8af3fc590d2",
+                "title": "Prompt-Guided Injection of Conformation to Pre-trained Protein Model",
+                "abstract": "Pre-trained protein models (PTPMs) represent a protein with one fixed embedding and thus are not capable for diverse tasks. For example, protein structures can shift, namely protein folding, between several conformations in various biological processes. To enable PTPMs to produce task-aware representations, we propose to learn interpretable, pluggable and extensible protein prompts as a way of injecting task-related knowledge into PTPMs. In this regard, prior PTPM optimization with the masked language modeling task can be interpreted as learning a sequence prompt (Seq prompt) that enables PTPMs to capture the sequential dependency between amino acids. To incorporate conformational knowledge to PTPMs, we propose an interaction-conformation prompt (IC prompt) that is learned through back-propagation with the protein-protein interaction task. As an instantiation, we present a conformation-aware pre-trained protein model that learns both sequence and interaction-conformation prompts in a multi-task setting. We conduct comprehensive experiments on nine protein datasets. Results confirm our expectation that using the sequence prompt does not hurt PTPMs' performance on sequence-related tasks while incorporating the interaction-conformation prompt significantly improves PTPMs' performance on tasks where conformational knowledge counts. We also show the learned prompts can be combined and extended to deal with new complex tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2145895211",
+                        "name": "Qiang Zhang"
+                    },
+                    {
+                        "authorId": "2088511",
+                        "name": "Zeyuan Wang"
+                    },
+                    {
+                        "authorId": "2112896832",
+                        "name": "Yuqiang Han"
+                    },
+                    {
+                        "authorId": "2155596280",
+                        "name": "Haoran Yu"
+                    },
+                    {
+                        "authorId": "2153674069",
+                        "name": "Xurui Jin"
+                    },
+                    {
+                        "authorId": "49178307",
+                        "name": "Huajun Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [],
+            "isInfluential": false,
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "10be7d45b3736cb9eac13a0c07d00c7f8e4f84b4",
+                "externalIds": {
+                    "DBLP": "conf/iclr/ZhangBL0HDZLC22",
+                    "ArXiv": "2201.11147",
+                    "CorpusId": 246294898
+                },
+                "corpusId": 246294898,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/10be7d45b3736cb9eac13a0c07d00c7f8e4f84b4",
+                "title": "OntoProtein: Protein Pretraining With Gene Ontology Embedding",
+                "abstract": "Self-supervised protein language models have proved their effectiveness in learning the proteins representations. With the increasing computational power, current protein language models pre-trained with millions of diverse sequences can advance the parameter scale from million-level to billion-level and achieve remarkable improvement. However, those prevailing approaches rarely consider incorporating knowledge graphs (KGs), which can provide rich structured knowledge facts for better protein representations. We argue that informative biology knowledge in KGs can enhance protein representation with external knowledge. In this work, we propose OntoProtein, the first general framework that makes use of structure in GO (Gene Ontology) into protein pre-training models. We construct a novel large-scale knowledge graph that consists of GO and its related proteins, and gene annotation texts or protein sequences describe all nodes in the graph. We propose novel contrastive learning with knowledge-aware negative sampling to jointly optimize the knowledge graph and protein embedding during pre-training. Experimental results show that OntoProtein can surpass state-of-the-art methods with pre-trained protein language models in TAPE benchmark and yield better performance compared with baselines in protein-protein interaction and protein function prediction. Code and datasets are available in https://github.com/zjunlp/OntoProtein.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2608639",
+                        "name": "Ningyu Zhang"
+                    },
+                    {
+                        "authorId": "2059276046",
+                        "name": "Zhen Bi"
+                    },
+                    {
+                        "authorId": "2153398295",
+                        "name": "Xiaozhuan Liang"
+                    },
+                    {
+                        "authorId": "46378881",
+                        "name": "Siyuan Cheng"
+                    },
+                    {
+                        "authorId": "2152079836",
+                        "name": "Haosen Hong"
+                    },
+                    {
+                        "authorId": "152931849",
+                        "name": "Shumin Deng"
+                    },
+                    {
+                        "authorId": "29805345",
+                        "name": "J. Lian"
+                    },
+                    {
+                        "authorId": "2145895211",
+                        "name": "Qiang Zhang"
+                    },
+                    {
+                        "authorId": "49178307",
+                        "name": "Huajun Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", relation prediction in knowledge graphs [43], criminal intelligence analysis [3], protein\u2013protein interaction [39, 26]; 3."
+            ],
+            "citingPaper": {
+                "paperId": "5c3501abd72f2d0f98f4420c3e62847b7a5aaee1",
+                "externalIds": {
+                    "ArXiv": "2012.06660",
+                    "MAG": "3110699758",
+                    "DOI": "10.13140/RG.2.2.27579.03364/1",
+                    "CorpusId": 229156435
+                },
+                "corpusId": 229156435,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/5c3501abd72f2d0f98f4420c3e62847b7a5aaee1",
+                "title": "A Note on Spectral Graph Neural Network.",
+                "abstract": "The graph neural network has developed by leaps and bounds in recent years. This note summarizes the spectral graph neural network and related fundamentals of spectral graph theory and discusses the technical details of the main graph neural networks defined on the spectral domain.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "2109081002",
+                        "name": "Xinye Chen"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "contexts": [
+                "Following Zhang et al. (2022), we introduce DPPI (Hashemifar et al., 2018), DNNPPI (Li et al., 2018), PIPR (Chen et al., 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",
+                ", 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",
+                "Specifically, we follow the hyperparameter settings in GNN-PPI (Lv et al., 2021) for PPI prediction.",
+                "We perform experiments on SHS27K (Chen et al., 2019), SHS148K (Chen et al., 2019), and STRING (Lv et al., 2021)."
+            ],
+            "citingPaper": {
+                "paperId": "02cfe1bede09c846664db92862636af8b1696862",
+                "externalIds": {
+                    "CorpusId": 259855871
+                },
+                "corpusId": 259855871,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/02cfe1bede09c846664db92862636af8b1696862",
+                "title": "EDGE ENHANCED PRIMARY STRUCTURE MODELING",
+                "abstract": "Protein representation learning has primarily benefited from the remarkable development of language models (LMs). Accordingly, pre-trained protein models also suffer from a problem in LMs: a lack of factual knowledge. The recent solution models the relationships between protein and associated knowledge terms as the knowledge encoding objective. However, it fails to explore the relationships at a more granular level, i.e., the token level. To mitigate this, we propose Knowledge-exploited Auto-encoder for Protein (KeAP), which performs tokenlevel knowledge graph exploration for protein representation learning. In practice, non-masked amino acids iteratively query the associated knowledge tokens to extract and integrate helpful information for restoring masked amino acids via attention. We show that KeAP can consistently outperform the previous counterpart on 9 representative downstream applications, sometimes surpassing it by large margins. These results suggest that KeAP provides an alternative yet effective way to perform knowledge enhanced protein representation learning. Code and models are available at https://github.com/RL4M/KeAP.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2157473801",
+                        "name": "Hong-Yu Zhou"
+                    },
+                    {
+                        "authorId": "2203425336",
+                        "name": "Yunxiang Fu"
+                    },
+                    {
+                        "authorId": "2175954059",
+                        "name": "Zhicheng Zhang"
+                    },
+                    {
+                        "authorId": "35495669",
+                        "name": "Chengqi Bian"
+                    },
+                    {
+                        "authorId": "1841911",
+                        "name": "Yizhou Yu"
+                    }
+                ]
+            }
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "contexts": [
+                ", 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al.",
+                "\u2026applied to problems in different domains such as social networks, recommendation systems (Ying et al., 2018; Fan et al., 2019), chemistry (Gilmer et al., 2017; Sanchez-Lengeling et al., 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al., 2021)."
+            ],
+            "citingPaper": {
+                "paperId": "a8e8a53ab864a82313040e0e5c6721056fa51b32",
+                "externalIds": {
+                    "CorpusId": 249747490
+                },
+                "corpusId": 249747490,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/a8e8a53ab864a82313040e0e5c6721056fa51b32",
+                "title": "G RAPH A NISOTROPIC D IFFUSION FOR M OLECULES",
+                "abstract": "Traditional Graph Neural Networks (GNNs) rely on message passing, which amounts to permutation-invariant local aggregation of neighbour features. Such a process is isotropic and there is no notion of \u2018direction\u2019 on the graph. We present a new GNN architecture called Graph Anisotropic Diffusion. Our model alter-nates between linear diffusion, for which a closed-form solution is available, and local anisotropic filters to obtain efficient multi-hop anisotropic kernels. We test our model on two common molecular property prediction benchmarks (ZINC and QM9) and show its competitive performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "83724577",
+                        "name": "Ahmed A. A. Elhag"
+                    },
+                    {
+                        "authorId": "2164102905",
+                        "name": "Hannes St\u00e4rk"
+                    },
+                    {
+                        "authorId": "2060916506",
+                        "name": "Michael M. Bronstein"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,3029 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "These activation functions were proved to be able to learn and extrapolate periodic functions in [37].",
+                "The activation functions x+ 1 a sin (2)(ax) -called snake function with frequency a- and x+ sinx were proposed in [37] for periodic data and were proven to be particularly well suited to periodic data."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "887cdcb42f5ade7c68518cc0615a6f8743fc7c76",
+                "externalIds": {
+                    "ArXiv": "2309.14822",
+                    "CorpusId": 262824821
+                },
+                "corpusId": 262824821,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/887cdcb42f5ade7c68518cc0615a6f8743fc7c76",
+                "title": "OS-net: Orbitally Stable Neural Networks",
+                "abstract": "We introduce OS-net (Orbitally Stable neural NETworks), a new family of neural network architectures specifically designed for periodic dynamical data. OS-net is a special case of Neural Ordinary Differential Equations (NODEs) and takes full advantage of the adjoint method based backpropagation method. Utilizing ODE theory, we derive conditions on the network weights to ensure stability of the resulting dynamics. We demonstrate the efficacy of our approach by applying OS-net to discover the dynamics underlying the R\\\"{o}ssler and Sprott's systems, two dynamical systems known for their period doubling attractors and chaotic behavior.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "103457079",
+                        "name": "M. Ngom"
+                    },
+                    {
+                        "authorId": "2246931602",
+                        "name": "Carlo Graziani"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The first two layers are provided with the Snake and TSigmoid activation functions [17]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "599138450d18d51c890460bdd2e2c3207e55c65e",
+                "externalIds": {
+                    "ArXiv": "2309.10904",
+                    "CorpusId": 262064201
+                },
+                "corpusId": 262064201,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/599138450d18d51c890460bdd2e2c3207e55c65e",
+                "title": "Deep Learning based Fast and Accurate Beamforming for Millimeter-Wave Systems",
+                "abstract": "The widespread proliferation of mmW devices has led to a surge of interest in antenna arrays. This interest in arrays is due to their ability to steer beams in desired directions, for the purpose of increasing signal-power and/or decreasing interference levels. To enable beamforming, array coefficients are typically stored in look-up tables (LUTs) for subsequent referencing. While LUTs enable fast sweep times, their limited memory size restricts the number of beams the array can produce. Consequently, a receiver is likely to be offset from the main beam, thus decreasing received power, and resulting in sub-optimal performance. In this letter, we present BeamShaper, a deep neural network (DNN) framework, which enables fast and accurate beamsteering in any desirable 3-D direction. Unlike traditional finite-memory LUTs which support a fixed set of beams, BeamShaper utilizes a trained NN model to generate the array coefficients for arbitrary directions in \\textit{real-time}. Our simulations show that BeamShaper outperforms contemporary LUT based solutions in terms of cosine-similarity and central angle in time scales that are slightly higher than LUT based solutions. Additionally, we show that our DNN based approach has the added advantage of being more resilient to the effects of quantization noise generated while using digital phase-shifters.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1964826",
+                        "name": "Tarun S. Cousik"
+                    },
+                    {
+                        "authorId": "2242938094",
+                        "name": "Vijay K Shah"
+                    },
+                    {
+                        "authorId": "2243233381",
+                        "name": "Jeffrey H. Reed Harry X Tran"
+                    },
+                    {
+                        "authorId": "2241272752",
+                        "name": "Rittwik Jana"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Furthermore, we replace leaky ReLU activation functions across the generator with Snake functions [23], first proposed for speech synthesis in BigVGAN [16].",
+                "We also substitute the MSD discriminator [14] with the MRD discriminator [15] and replace the leaky ReLU activation function in the generator with the Snake activation function [23]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "5dd0c91bb96cbb70c8606b92df90863973541709",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-09493",
+                    "ArXiv": "2309.09493",
+                    "DOI": "10.48550/arXiv.2309.09493",
+                    "CorpusId": 262044183
+                },
+                "corpusId": 262044183,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5dd0c91bb96cbb70c8606b92df90863973541709",
+                "title": "HiFTNet: A Fast High-Quality Neural Vocoder with Harmonic-plus-Noise Filter and Inverse Short Time Fourier Transform",
+                "abstract": "Recent advancements in speech synthesis have leveraged GAN-based networks like HiFi-GAN and BigVGAN to produce high-fidelity waveforms from mel-spectrograms. However, these networks are computationally expensive and parameter-heavy. iSTFTNet addresses these limitations by integrating inverse short-time Fourier transform (iSTFT) into the network, achieving both speed and parameter efficiency. In this paper, we introduce an extension to iSTFTNet, termed HiFTNet, which incorporates a harmonic-plus-noise source filter in the time-frequency domain that uses a sinusoidal source from the fundamental frequency (F0) inferred via a pre-trained F0 estimation network for fast inference speed. Subjective evaluations on LJSpeech show that our model significantly outperforms both iSTFTNet and HiFi-GAN, achieving ground-truth-level performance. HiFTNet also outperforms BigVGAN-base on LibriTTS for unseen speakers and achieves comparable performance to BigVGAN while being four times faster with only $1/6$ of the parameters. Our work sets a new benchmark for efficient, high-quality neural vocoding, paving the way for real-time applications that demand high quality speech synthesis.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2201629278",
+                        "name": "Y. Li"
+                    },
+                    {
+                        "authorId": "46510656",
+                        "name": "Cong Han"
+                    },
+                    {
+                        "authorId": "2243118841",
+                        "name": "Xilin Jiang"
+                    },
+                    {
+                        "authorId": "1686269",
+                        "name": "N. Mesgarani"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "7f7f4d6c5ae4705a9edb25c311280248f9cd85f9",
+                "externalIds": {
+                    "DOI": "10.3390/en16186656",
+                    "CorpusId": 262161966
+                },
+                "corpusId": 262161966,
+                "publicationVenue": {
+                    "id": "1cd505d9-195d-4f99-b91c-169e872644d4",
+                    "name": "Energies",
+                    "type": "journal",
+                    "issn": "1996-1073",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-155563",
+                    "alternate_urls": [
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-155563",
+                        "https://www.mdpi.com/journal/energies",
+                        "http://www.mdpi.com/journal/energies"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7f7f4d6c5ae4705a9edb25c311280248f9cd85f9",
+                "title": "Charging Scheduling of Hybrid Energy Storage Systems for EV Charging Stations",
+                "abstract": "The growing demand for electric vehicles (EV) in the last decade and the most recent European Commission regulation to only allow EV on the road from 2035 involved the necessity to design a cost-effective and sustainable EV charging station (CS). A crucial challenge for charging stations arises from matching fluctuating power supplies and meeting peak load demand. The overall objective of this paper is to optimize the charging scheduling of a hybrid energy storage system (HESS) for EV charging stations while maximizing PV power usage and reducing grid energy costs. This goal is achieved by forecasting the PV power and the load demand using different deep learning (DL) algorithms such as the recurrent neural network (RNN) and long short-term memory (LSTM). Then, the predicted data are adopted to design a scheduling algorithm that determines the optimal charging time slots for the HESS. The findings demonstrate the efficiency of the proposed approach, showcasing a root-mean-square error (RMSE) of 5.78% for real-time PV power forecasting and 9.70% for real-time load demand forecasting. Moreover, the proposed scheduling algorithm reduces the total grid energy cost by 12.13%.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2244345748",
+                        "name": "G\u00fclsah Erdogan"
+                    },
+                    {
+                        "authorId": "2244345793",
+                        "name": "Wiem Fekih Hassen"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We compare snakebeta activation with snake activation [32] f\u03b1(x) = x + \u03b1 \u22121 sin(2)(\u03b1x), where \u03b1 is trainable, which the above BigVGAN and BigVSAN models utilize."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "6524940bfad3eca84c8289685720154376e65019",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-02836",
+                    "ArXiv": "2309.02836",
+                    "DOI": "10.48550/arXiv.2309.02836",
+                    "CorpusId": 261557637
+                },
+                "corpusId": 261557637,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6524940bfad3eca84c8289685720154376e65019",
+                "title": "BigVSAN: Enhancing GAN-based Neural Vocoders with Slicing Adversarial Network",
+                "abstract": "Generative adversarial network (GAN)-based vocoders have been intensively studied because they can synthesize high-fidelity audio waveforms faster than real-time. However, it has been reported that most GANs fail to obtain the optimal projection for discriminating between real and fake data in the feature space. In the literature, it has been demonstrated that slicing adversarial network (SAN), an improved GAN training framework that can find the optimal projection, is effective in the image generation task. In this paper, we investigate the effectiveness of SAN in the vocoding task. For this purpose, we propose a scheme to modify least-squares GAN, which most GAN-based vocoders adopt, so that their loss functions satisfy the requirements of SAN. Through our experiments, we demonstrate that SAN can improve the performance of GAN-based vocoders, including BigVGAN, with small modifications. Our code is available at https://github.com/sony/bigvsan.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "47720660",
+                        "name": "Takashi Shibuya"
+                    },
+                    {
+                        "authorId": "51245193",
+                        "name": "Yuhta Takida"
+                    },
+                    {
+                        "authorId": "2744777",
+                        "name": "Yuki Mitsufuji"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The NSF-HiFiGAN vocoder is optimized and integrated, leveraging a novel activation function called \u201dSnake.\u201d",
+                "F02: SO-VITS (NSF-HifiGAN with Snake [18])."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "6c59296e3986826d816a6860bc90b6b34ce43539",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2309-02232",
+                    "ArXiv": "2309.02232",
+                    "DOI": "10.48550/arXiv.2309.02232",
+                    "CorpusId": 261556677
+                },
+                "corpusId": 261556677,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/6c59296e3986826d816a6860bc90b6b34ce43539",
+                "title": "FSD: An Initial Chinese Dataset for Fake Song Detection",
+                "abstract": "Singing voice synthesis and singing voice conversion have significantly advanced, revolutionizing musical experiences. However, the rise of\"Deepfake Songs\"generated by these technologies raises concerns about authenticity. Unlike Audio DeepFake Detection (ADD), the field of song deepfake detection lacks specialized datasets or methods for song authenticity verification. In this paper, we initially construct a Chinese Fake Song Detection (FSD) dataset to investigate the field of song deepfake detection. The fake songs in the FSD dataset are generated by five state-of-the-art singing voice synthesis and singing voice conversion methods. Our initial experiments on FSD revealed the ineffectiveness of existing speech-trained ADD models for the task of song deepFake detection. Thus, we employ the FSD dataset for the training of ADD models. We subsequently evaluate these models under two scenarios: one with the original songs and another with separated vocal tracks. Experiment results show that song-trained ADD models exhibit a 38.58% reduction in average equal error rate compared to speech-trained ADD models on the FSD test set.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2038455251",
+                        "name": "Yuankun Xie"
+                    },
+                    {
+                        "authorId": "2238252248",
+                        "name": "Jingjing Zhou"
+                    },
+                    {
+                        "authorId": "2238197125",
+                        "name": "Xiaolin Lu"
+                    },
+                    {
+                        "authorId": "2238029562",
+                        "name": "Zhenghao Jiang"
+                    },
+                    {
+                        "authorId": "2238077421",
+                        "name": "Yuxin Yang"
+                    },
+                    {
+                        "authorId": "2182553767",
+                        "name": "Haonan Cheng"
+                    },
+                    {
+                        "authorId": "2237987658",
+                        "name": "Long Ye"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Multiplying both sides of (15) by xi(t) and integrating over the interval [0,\u03c9] , we get (13) dx dt \u2208 \u03c6(t, x),",
+                "(2) Each solution z \u2208 Rn of the inclusion 0 \u2208 1 \u03c9 \u222b \u03c9 0 \u03c6(t, z)dt = g0(z) satisfies z / \u2208 \u2202\ufffd \u2229 Rn; (3) deg(g0,\ufffd \u2229 Rn, 0) \ufffd= 0 , then differential inclusion (13) has at least one \u03c9-periodic solution x(t) with x \u2208 \u001f\u0304 .",
+                "Here we need to find an appropriate open, bounded subset , in order to apply MawhinLike Coincidence Theorem (Lemma 2), From the differential inclusion (13), we obtain Given x(t) = (x1(t), x2(t), ."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "2da07b6e820ea3d204feb6619ae24b46255cb753",
+                "externalIds": {
+                    "PubMedCentral": "10397264",
+                    "DOI": "10.1038/s41598-023-37737-2",
+                    "CorpusId": 260435055,
+                    "PubMed": "37532702"
+                },
+                "corpusId": 260435055,
+                "publicationVenue": {
+                    "id": "f99f77b7-b1b6-44d3-984a-f288e9884b9b",
+                    "name": "Scientific Reports",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Sci Rep"
+                    ],
+                    "issn": "2045-2322",
+                    "url": "http://www.nature.com/srep/",
+                    "alternate_urls": [
+                        "http://www.nature.com/srep/index.html"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/2da07b6e820ea3d204feb6619ae24b46255cb753",
+                "title": "Finite-time complete periodic synchronization of memristive neural networks with mixed delays",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "35638544",
+                        "name": "Hajer Brahmi"
+                    },
+                    {
+                        "authorId": "2086300",
+                        "name": "B. Ammar"
+                    },
+                    {
+                        "authorId": "2248805835",
+                        "name": "Amel Ksibi"
+                    },
+                    {
+                        "authorId": "32308393",
+                        "name": "F. Ch\u00e9rif"
+                    },
+                    {
+                        "authorId": "2576877",
+                        "name": "G. Aldehim"
+                    },
+                    {
+                        "authorId": "2226749500",
+                        "name": "Adel M Alimi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "21ba4d8c19c56e1d463484b8b629c71715c242bf",
+                "externalIds": {
+                    "PubMedCentral": "10345121",
+                    "DOI": "10.1038/s41746-023-00868-x",
+                    "CorpusId": 259857307,
+                    "PubMed": "37443276"
+                },
+                "corpusId": 259857307,
+                "publicationVenue": {
+                    "id": "ef485645-f75f-4344-8b9d-3c260e69503b",
+                    "name": "npj Digital Medicine",
+                    "alternate_names": [
+                        "npj Digit Med"
+                    ],
+                    "issn": "2398-6352",
+                    "url": "http://www.nature.com/npjdigitalmed/"
+                },
+                "url": "https://www.semanticscholar.org/paper/21ba4d8c19c56e1d463484b8b629c71715c242bf",
+                "title": "Challenges of implementing computer-aided diagnostic models for neuroimages in a clinical setting",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "47393521",
+                        "name": "M. Leming"
+                    },
+                    {
+                        "authorId": "2368612",
+                        "name": "E. Bron"
+                    },
+                    {
+                        "authorId": "3347021",
+                        "name": "R. Bruffaerts"
+                    },
+                    {
+                        "authorId": "2227890",
+                        "name": "Yangming Ou"
+                    },
+                    {
+                        "authorId": "1786793",
+                        "name": "J. E. Iglesias"
+                    },
+                    {
+                        "authorId": "1950749",
+                        "name": "R. Gollub"
+                    },
+                    {
+                        "authorId": "37183357",
+                        "name": "H. Im"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Meanwhile, the Snake activation function, defined as f(x) = x + sin(2)(x), is demonstrated in [27] that can bring periodic inductive bias and can perform well for temperature and financial data prediction.",
+                "SnakeGAN improves the waveform generator by introducing both the DDSP-based prior knowledge of waveform composition, and the periodic nonlinearities through incorporating the Snake activation function [27].",
+                "1) Generator: Specifically, to address the problem of generalization ability, BigVGAN [17] proposes the anti-aliased multi-periodicity composition (AMP) block with Snake activation function [27]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "0f043cd13e42a8bd6d6acf1005e87c4b84db6abb",
+                "externalIds": {
+                    "ArXiv": "2309.07803",
+                    "DBLP": "conf/icmcs/LiLZLBWWM23",
+                    "DOI": "10.1109/ICME55011.2023.00293",
+                    "CorpusId": 261126985
+                },
+                "corpusId": 261126985,
+                "publicationVenue": {
+                    "id": "975e1529-a14b-436f-ad7e-a09d8eabc50d",
+                    "name": "IEEE International Conference on Multimedia and Expo",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICME",
+                        "Int Conf Multimedia Expo",
+                        "IEEE Int Conf Multimedia Expo",
+                        "International Conference on Multimedia and Expo"
+                    ],
+                    "issn": "1945-7871",
+                    "alternate_issns": [
+                        "2330-7927"
+                    ],
+                    "url": "http://csdl2.computer.org/persagen/ProceedingByFilter.jsp?filter=I",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/conferences.jsp",
+                        "http://www.wikicfp.com/cfp/program?id=1418"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0f043cd13e42a8bd6d6acf1005e87c4b84db6abb",
+                "title": "SnakeGAN: A Universal Vocoder Leveraging DDSP Prior Knowledge and Periodic Inductive Bias",
+                "abstract": "Generative adversarial network (GAN)-based neural vocoders have been widely used in audio synthesis tasks due to their high generation quality, efficient inference, and small computation footprint. However, it is still challenging to train a universal vocoder which can generalize well to out-of-domain (OOD) scenarios, such as unseen speaking styles, non-speech vocalization, singing, and musical pieces. In this work, we propose SnakeGAN, a GAN-based universal vocoder, which can synthesize high-fidelity audio in various OOD scenarios. SnakeGAN takes a coarse-grained signal generated by a differentiable digital signal processing (DDSP) model as prior knowledge, aiming at recovering high-fidelity waveform from a Mel-spectrogram. We introduce periodic nonlinearities through the Snake activation function and anti-aliased representation into the generator, which further brings desired inductive bias for audio synthesis and significantly improves the extrapolation capacity for universal vocoding in unseen scenarios. To validate the effectiveness of our proposed method, we train SnakeGAN with only speech data and evaluate its performance for various OOD distributions with both subjective and objective metrics. Experimental results show that SnakeGAN significantly outperforms the compared approaches and can generate high-fidelity audio samples including unseen speakers with unseen styles, singing voices, instrumental pieces, and nonverbal vocalization.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2216501990",
+                        "name": "Sipan Li"
+                    },
+                    {
+                        "authorId": "51263928",
+                        "name": "Songxiang Liu"
+                    },
+                    {
+                        "authorId": "2156147043",
+                        "name": "Lu Zhang"
+                    },
+                    {
+                        "authorId": "2144440743",
+                        "name": "Xiang Li"
+                    },
+                    {
+                        "authorId": "51110739",
+                        "name": "Yanyao Bian"
+                    },
+                    {
+                        "authorId": "145350701",
+                        "name": "Chao Weng"
+                    },
+                    {
+                        "authorId": "50061551",
+                        "name": "Zhiyong Wu"
+                    },
+                    {
+                        "authorId": "145199941",
+                        "name": "H. Meng"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The PNPConv blocks analyze the input with a dual-path convolution layer using a snake function [22], which is sensitive to periodic representations.",
+                "Referring the findings in [22], the Snake function effectively processes periodic information with large a values (5-50), while small a (0.",
+                "In [22], the authors investigated the extrapolation properties of activation functions and proposed an effective activation function sensitive to periodicity, the Snake function."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "63760f42c52fd2d503a859a3b36049c3203fe4ab",
+                "externalIds": {
+                    "ArXiv": "2306.09640",
+                    "DOI": "10.21437/interspeech.2023-2487",
+                    "CorpusId": 259188083
+                },
+                "corpusId": 259188083,
+                "publicationVenue": {
+                    "id": "af90489e-312f-4514-bea2-bcb399cb8ece",
+                    "name": "Interspeech",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conf Int Speech Commun Assoc",
+                        "INTERSPEECH",
+                        "Conference of the International Speech Communication Association"
+                    ],
+                    "issn": "2308-457X",
+                    "url": "https://www.isca-speech.org/iscaweb/index.php/conferences/interspeech",
+                    "alternate_urls": [
+                        "http://www.isca-speech.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/63760f42c52fd2d503a859a3b36049c3203fe4ab",
+                "title": "MF-PAM: Accurate Pitch Estimation through Periodicity Analysis and Multi-level Feature Fusion",
+                "abstract": "We introduce Multi-level feature Fusion-based Periodicity Analysis Model (MF-PAM), a novel deep learning-based pitch estimation model that accurately estimates pitch trajectory in noisy and reverberant acoustic environments. Our model leverages the periodic characteristics of audio signals and involves two key steps: extracting pitch periodicity using periodic non-periodic convolution (PNP-Conv) blocks and estimating pitch by aggregating multi-level features using a modified bi-directional feature pyramid network (BiFPN). We evaluate our model on speech and music datasets and achieve superior pitch estimation performance compared to state-of-the-art baselines while using fewer model parameters. Our model achieves 99.20 % accuracy in pitch estimation on a clean musical dataset. Overall, our proposed model provides a promising solution for accurate pitch estimation in challenging acoustic environments and has potential applications in audio signal processing.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2068131255",
+                        "name": "W. Chung"
+                    },
+                    {
+                        "authorId": "2109237158",
+                        "name": "Doyeon Kim"
+                    },
+                    {
+                        "authorId": "10437962",
+                        "name": "Soo-Whan Chung"
+                    },
+                    {
+                        "authorId": "2158138440",
+                        "name": "Hong-Goo Kang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We employ the snake activation function [46], proven effective for waveform generation in [31]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "a5d26eb03dd52a3d588d5a8057091928b56538f9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-07691",
+                    "ArXiv": "2306.07691",
+                    "DOI": "10.48550/arXiv.2306.07691",
+                    "CorpusId": 259145293
+                },
+                "corpusId": 259145293,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a5d26eb03dd52a3d588d5a8057091928b56538f9",
+                "title": "StyleTTS 2: Towards Human-Level Text-to-Speech through Style Diffusion and Adversarial Training with Large Speech Language Models",
+                "abstract": "In this paper, we present StyleTTS 2, a text-to-speech (TTS) model that leverages style diffusion and adversarial training with large speech language models (SLMs) to achieve human-level TTS synthesis. StyleTTS 2 differs from its predecessor by modeling styles as a latent random variable through diffusion models to generate the most suitable style for the text without requiring reference speech, achieving efficient latent diffusion while benefiting from the diverse speech synthesis offered by diffusion models. Furthermore, we employ large pre-trained SLMs, such as WavLM, as discriminators with our novel differentiable duration modeling for end-to-end training, resulting in improved speech naturalness. StyleTTS 2 surpasses human recordings on the single-speaker LJSpeech dataset and matches it on the multispeaker VCTK dataset as judged by native English speakers. Moreover, when trained on the LibriTTS dataset, our model outperforms previous publicly available models for zero-shot speaker adaptation. This work achieves the first human-level TTS on both single and multispeaker datasets, showcasing the potential of style diffusion and adversarial training with large SLMs. The audio demos and source code are available at https://styletts2.github.io/.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2201629278",
+                        "name": "Y. Li"
+                    },
+                    {
+                        "authorId": "46510656",
+                        "name": "Cong Han"
+                    },
+                    {
+                        "authorId": "2007688666",
+                        "name": "Vinay S. Raghavan"
+                    },
+                    {
+                        "authorId": "1579594385",
+                        "name": "Gavin Mischler"
+                    },
+                    {
+                        "authorId": "1686269",
+                        "name": "N. Mesgarani"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "However, our recipe has the following key differences: 1) We introduce a periodic inductive bias using Snake activations [46, 21] 2) We improve codebook learning by projecting the encodings into a low-dimensional space [43] 3) We obtain a stable training recipe using best practices for adversarial and perceptual loss design, with fixed loss weights and without requiring a sophisticated loss balancer.",
+                "[46] and introduced to the audio domain in the BigVGAN neural vocoding model [21].",
+                "BigVGAN [21] extends the HifiGAN recipe by introducing a periodic inductive bias using the Snake activation function [46]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "7e7e91367532b54e12c4fc8c076f323275c85665",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2306-06546",
+                    "ArXiv": "2306.06546",
+                    "DOI": "10.48550/arXiv.2306.06546",
+                    "CorpusId": 259138883
+                },
+                "corpusId": 259138883,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/7e7e91367532b54e12c4fc8c076f323275c85665",
+                "title": "High-Fidelity Audio Compression with Improved RVQGAN",
+                "abstract": "Language models have been successfully used to model natural signals, such as images, speech, and music. A key component of these models is a high quality neural compression model that can compress high-dimensional natural signals into lower dimensional discrete tokens. To that end, we introduce a high-fidelity universal neural audio compression algorithm that achieves ~90x compression of 44.1 KHz audio into tokens at just 8kbps bandwidth. We achieve this by combining advances in high-fidelity audio generation with better vector quantization techniques from the image domain, along with improved adversarial and reconstruction losses. We compress all domains (speech, environment, music, etc.) with a single universal model, making it widely applicable to generative modeling of all audio. We compare with competing audio compression algorithms, and find our method outperforms them significantly. We provide thorough ablations for every design choice, as well as open-source code and trained model weights. We hope our work can lay the foundation for the next generation of high-fidelity audio modeling.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "39458024",
+                        "name": "Rithesh Kumar"
+                    },
+                    {
+                        "authorId": "2855322",
+                        "name": "Prem Seetharaman"
+                    },
+                    {
+                        "authorId": "3403673",
+                        "name": "Alejandro Luebs"
+                    },
+                    {
+                        "authorId": "2175277508",
+                        "name": "I. Kumar"
+                    },
+                    {
+                        "authorId": "2110802768",
+                        "name": "Kundan Kumar"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "33894a3e8001c56671ec3f497eb1dd17a3449b31",
+                "externalIds": {
+                    "DOI": "10.1109/icassp49357.2023.10095323",
+                    "CorpusId": 258532654
+                },
+                "corpusId": 258532654,
+                "publicationVenue": {
+                    "id": "0d6f7fba-7092-46b3-8039-93458dba736b",
+                    "name": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Acoust Speech Signal Process",
+                        "IEEE Int Conf Acoust Speech Signal Process",
+                        "ICASSP",
+                        "International Conference on Acoustics, Speech, and Signal Processing"
+                    ],
+                    "url": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000002"
+                },
+                "url": "https://www.semanticscholar.org/paper/33894a3e8001c56671ec3f497eb1dd17a3449b31",
+                "title": "CyFi-TTS: Cyclic Normalizing Flow with Fine-Grained Representation for End-to-End Text-to-Speech",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2216441486",
+                        "name": "In-Sun Hwang"
+                    },
+                    {
+                        "authorId": "2202318069",
+                        "name": "Young-Sub Han"
+                    },
+                    {
+                        "authorId": "2159674171",
+                        "name": "Byoung-Ki Jeon"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Since MLPs do not naturally exhibit oscillatory behavior [5], [31], we retained the internal Kuramoto oscillator model [17] of the original Tegotae control architecture without modification."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "16dfca702d4cd9ad84e701fe9c4a032e958912b6",
+                "externalIds": {
+                    "DBLP": "conf/icra/HernethHO23",
+                    "DOI": "10.1109/ICRA48891.2023.10160571",
+                    "CorpusId": 259338204
+                },
+                "corpusId": 259338204,
+                "publicationVenue": {
+                    "id": "3f2626a8-9d78-42ca-9e0d-4b853b59cdcc",
+                    "name": "IEEE International Conference on Robotics and Automation",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International Conference on Robotics and Automation",
+                        "Int Conf Robot Autom",
+                        "ICRA",
+                        "IEEE Int Conf Robot Autom"
+                    ],
+                    "issn": "2152-4092",
+                    "alternate_issns": [
+                        "2379-9544"
+                    ],
+                    "url": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+                    "alternate_urls": [
+                        "http://www.ncsu.edu/IEEE-RAS/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/16dfca702d4cd9ad84e701fe9c4a032e958912b6",
+                "title": "Learnable Tegotae-based Feedback in CPGs with Sparse Observation Produces Efficient and Adaptive Locomotion",
+                "abstract": "Central Pattern generators (CPG) are a biologically inspired, decentralized control architecture that enables model-free, but yet adaptively stable and computational lightweight locomotion capabilities on complex robots. Nevertheless, no unified design guidelines for closed-loop CPG controllers are available in the literature. Therefore, we propose a task-distributed, end-to-end trainable, closed-loop CPG control policy by generalizing and extending Tegotae control. The Tegotae approach modulates CPG activity by quantifying the discrepancy between internal belief states and environmental reactions. Spontaneous and adaptive gait formation towards situationally efficient locomotion patterns are intrinsic properties of Tegotae control. The Tegotae control policy is trained and benchmarked in simulation on a 1D hopping robot. We found that our approach can learn efficient and adaptive locomotion on minimal feedback information, while out-performing unstructured, classic reinforcement learning policies of equal complexity. To the best of our knowledge, this is the first study to fully generalize the Tegotae approach and construct unimpeded, end-to-end trainable Tegotae control policies.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2178436367",
+                        "name": "Christopher Herneth"
+                    },
+                    {
+                        "authorId": "3262458",
+                        "name": "M. Hayashibe"
+                    },
+                    {
+                        "authorId": "3180070",
+                        "name": "D. Owaki"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Inspired by [28, 29], we propose a new Fourier-based conditioning mechanism, which is formulated as follows:"
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "a57e8f7aef705a898c50cf80b66e67f4d45ef171",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-15873",
+                    "ArXiv": "2305.15873",
+                    "DOI": "10.48550/arXiv.2305.15873",
+                    "CorpusId": 258888086
+                },
+                "corpusId": 258888086,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a57e8f7aef705a898c50cf80b66e67f4d45ef171",
+                "title": "Confronting Ambiguity in 6D Object Pose Estimation via Score-Based Diffusion on SE(3)",
+                "abstract": "Addressing accuracy limitations and pose ambiguity in 6D object pose estimation from single RGB images presents a significant challenge, particularly due to object symmetries or occlusions. In response, we introduce a novel score-based diffusion method applied to the $SE(3)$ group, marking the first application of diffusion models to $SE(3)$ within the image domain, specifically tailored for pose estimation tasks. Extensive evaluations demonstrate the method's efficacy in handling pose ambiguity, mitigating perspective-induced ambiguity, and showcasing the robustness of our surrogate Stein score formulation on $SE(3)$. This formulation not only improves the convergence of Langevin dynamics but also enhances computational efficiency. Thus, we pioneer a promising strategy for 6D object pose estimation.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "1491008120",
+                        "name": "Tsu-Ching Hsiao"
+                    },
+                    {
+                        "authorId": "2149053540",
+                        "name": "Haoming Chen"
+                    },
+                    {
+                        "authorId": "35973593",
+                        "name": "Hsuan-Kung Yang"
+                    },
+                    {
+                        "authorId": "1492122970",
+                        "name": "Chun-Yi Lee"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "44a95cba570d4e791ab4b815a139c1e21e8a9f0d",
+                "externalIds": {
+                    "ArXiv": "2305.15511",
+                    "CorpusId": 258887417
+                },
+                "corpusId": 258887417,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/44a95cba570d4e791ab4b815a139c1e21e8a9f0d",
+                "title": "Hard-constrained neural networks for modelling nonlinear acoustics",
+                "abstract": "We model acoustic dynamics in space and time from synthetic sensor data. The tasks are (i) to predict and extrapolate the spatiotemporal dynamics, and (ii) reconstruct the acoustic state from partial observations. To achieve this, we develop acoustic neural networks that learn from sensor data, whilst being constrained by prior knowledge on acoustic and wave physics by both informing the training and constraining parts of the network's architecture as an inductive bias. First, we show that standard feedforward neural networks are unable to extrapolate in time, even in the simplest case of periodic oscillations. Second, we constrain the prior knowledge on acoustics in increasingly effective ways by (i) employing periodic activations (periodically activated neural networks); (ii) informing the training of the networks with a penalty term that favours solutions that fulfil the governing equations (soft-constrained); (iii) constraining the architecture in a physically-motivated solution space (hard-constrained); and (iv) combination of these. Third, we apply the networks on two testcases for two tasks in nonlinear regimes, from periodic to chaotic oscillations. The first testcase is a twin experiment, in which the data is produced by a prototypical time-delayed model. In the second testcase, the data is generated by a higher-fidelity model with mean-flow effects and a kinematic model for the flame source. We find that (i) constraining the physics in the architecture improves interpolation whilst requiring smaller network sizes, (ii) extrapolation in time is achieved by periodic activations, and (iii) velocity can be reconstructed accurately from only pressure measurements with a combination of physics-based hard and soft constraints. In and beyond acoustics, this work opens strategies for constraining the physics in the architecture, rather than the training.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2137319101",
+                        "name": "D. E. Ozan"
+                    },
+                    {
+                        "authorId": "2588185",
+                        "name": "L. Magri"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "76fd5dc66156b417a1157735a2b2f10be9554129",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-13552",
+                    "ArXiv": "2305.13552",
+                    "DOI": "10.48550/arXiv.2305.13552",
+                    "CorpusId": 258841154
+                },
+                "corpusId": 258841154,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/76fd5dc66156b417a1157735a2b2f10be9554129",
+                "title": "Squared Neural Families: A New Class of Tractable Density Models",
+                "abstract": "Flexible models for probability distributions are an essential ingredient in many machine learning tasks. We develop and investigate a new class of probability distributions, which we call a Squared Neural Family (SNEFY), formed by squaring the 2-norm of a neural network and normalising it with respect to a base measure. Following the reasoning similar to the well established connections between infinitely wide neural networks and Gaussian processes, we show that SNEFYs admit a closed form normalising constants in many cases of interest, thereby resulting in flexible yet fully tractable density models. SNEFYs strictly generalise classical exponential families, are closed under conditioning, and have tractable marginal distributions. Their utility is illustrated on a variety of density estimation and conditional density estimation tasks. Software available at https://github.com/RussellTsuchida/snefy.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "30118802",
+                        "name": "Russell Tsuchida"
+                    },
+                    {
+                        "authorId": "1706780",
+                        "name": "Cheng Soon Ong"
+                    },
+                    {
+                        "authorId": "1698032",
+                        "name": "D. Sejdinovic"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "924e2948419150f9873bae3f64b89dbc8af72b6d",
+                "externalIds": {
+                    "ArXiv": "2304.09837",
+                    "DBLP": "journals/corr/abs-2304-09837",
+                    "DOI": "10.48550/arXiv.2304.09837",
+                    "CorpusId": 258212936
+                },
+                "corpusId": 258212936,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/924e2948419150f9873bae3f64b89dbc8af72b6d",
+                "title": "Points of non-linearity of functions generated by random neural networks",
+                "abstract": "We consider functions from the real numbers to the real numbers, output by a neural network with 1 hidden activation layer, arbitrary width, and ReLU activation function. We assume that the parameters of the neural network are chosen uniformly at random with respect to various probability distributions, and compute the expected distribution of the points of non-linearity. We use these results to explain why the network may be biased towards outputting functions with simpler geometry, and why certain functions with low information-theoretic complexity are nonetheless hard for a neural network to approximate.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2214715890",
+                        "name": "David Holmes"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "One aspect of neural networks that is particularly relevant to the problem at hand, is that they struggle to represent periodic functions (Liu et al. 2020).",
+                "One aspect of neural networks that is particularly relevant to the problem at hand, is that they struggle to represent periodic functions (Liu et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3c87fb531f9982a2ab089b186dd1cbae388f5501",
+                "externalIds": {
+                    "ArXiv": "2303.11480",
+                    "DOI": "10.1029/2023MS003718",
+                    "CorpusId": 257636568
+                },
+                "corpusId": 257636568,
+                "publicationVenue": {
+                    "id": "282e39cf-e00b-43a3-937f-9287682e0eea",
+                    "name": "Journal of Advances in Modeling Earth Systems",
+                    "type": "journal",
+                    "alternate_names": [
+                        "J Adv Model Earth Syst"
+                    ],
+                    "issn": "1942-2466",
+                    "url": "http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1942-2466",
+                    "alternate_urls": [
+                        "http://adv-model-earth-syst.org/",
+                        "http://agupubs.onlinelibrary.wiley.com/agu/journal/10.1002/(ISSN)1942-2466/",
+                        "https://agupubs.onlinelibrary.wiley.com/journal/19422466",
+                        "http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1942-2466/issues",
+                        "http://www.agu.org/journals/ms/",
+                        "http://agupubs.onlinelibrary.wiley.com/hub/journal/10.1002/(ISSN)1942-2466/",
+                        "http://publications.agu.org/journals/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3c87fb531f9982a2ab089b186dd1cbae388f5501",
+                "title": "Inferring Ocean Transport Statistics With Probabilistic Neural Networks",
+                "abstract": "Using a probabilistic neural network and Lagrangian observations from the Global Drifter Program, we model the single particle transition probability density function (pdf) of ocean surface drifters. The transition pdf is represented by a Gaussian mixture whose parameters (weights, means, and covariances) are continuous functions of latitude and longitude determined to maximize the likelihood of observed drifter trajectories. This provides a comprehensive description of drifter dynamics allowing for the simulation of drifter trajectories and the estimation of a wealth of dynamical statistics without the need to revisit the raw data. As examples, we compute global estimates of mean displacements over 4 days and lateral diffusivity. We use a probabilistic scoring rule to compare our model to commonly used transition matrix models. Our model outperforms others globally and in three specific regions. A drifter release experiment simulated using our model shows the emergence of concentrated clusters in the subtropical gyres, in agreement with previous studies on the formation of garbage patches. An advantage of the neural network model is that it provides a continuous\u2010in\u2010space representation and avoids the need to discretize space, overcoming the challenges of dealing with nonuniform data. Our approach, which embraces data\u2010driven probabilistic modeling, is applicable to many other problems in fluid dynamics and oceanography.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "49075998",
+                        "name": "M. Brolly"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "aa593f68eac6171c16aa68a79d08c53ef332c23f",
+                "externalIds": {
+                    "DOI": "10.1016/j.biosx.2023.100333",
+                    "CorpusId": 257595291
+                },
+                "corpusId": 257595291,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/aa593f68eac6171c16aa68a79d08c53ef332c23f",
+                "title": "Dynamic dielectrophoretic cell manipulation is enabled by innovative electronics platform",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "7431093",
+                        "name": "Lourdes Albina Nirupa Julius"
+                    },
+                    {
+                        "authorId": "2212143927",
+                        "name": "Henrik Scheidt"
+                    },
+                    {
+                        "authorId": "24656575",
+                        "name": "G. Krishnan"
+                    },
+                    {
+                        "authorId": "2071188249",
+                        "name": "Moritz F. P. Becker"
+                    },
+                    {
+                        "authorId": "46606264",
+                        "name": "Omar Nassar"
+                    },
+                    {
+                        "authorId": "1411274992",
+                        "name": "Sara\u00ed M. Torres-Delgado"
+                    },
+                    {
+                        "authorId": "46638720",
+                        "name": "D. Mager"
+                    },
+                    {
+                        "authorId": "1914922",
+                        "name": "V. Badilita"
+                    },
+                    {
+                        "authorId": "93118902",
+                        "name": "J. Korvink"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Snake [104] x+ 1 a sin (2)(ax) or x\u2212 1 2a cos(2ax) + 1 2a 1 a cos (2)(ax) or 1 2a cos(2ax)\u2212 1 2a"
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "ec2c1b668c089e98d399f88258a995c1255bb5d8",
+                "externalIds": {
+                    "ArXiv": "2302.11089",
+                    "DBLP": "journals/corr/abs-2302-11089",
+                    "DOI": "10.48550/arXiv.2302.11089",
+                    "CorpusId": 257078628
+                },
+                "corpusId": 257078628,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/ec2c1b668c089e98d399f88258a995c1255bb5d8",
+                "title": "Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation - A Comprehensive Review",
+                "abstract": "This review article is an attempt to survey all recent AI based techniques used to deal with major functions in This review paper presents a comprehensive overview of end-to-end deep learning frameworks used in the context of autonomous navigation, including obstacle detection, scene perception, path planning, and control. The paper aims to bridge the gap between autonomous navigation and deep learning by analyzing recent research studies and evaluating the implementation and testing of deep learning methods. It emphasizes the importance of navigation for mobile robots, autonomous vehicles, and unmanned aerial vehicles, while also acknowledging the challenges due to environmental complexity, uncertainty, obstacles, dynamic environments, and the need to plan paths for multiple agents. The review highlights the rapid growth of deep learning in engineering data science and its development of innovative navigation methods. It discusses recent interdisciplinary work related to this field and provides a brief perspective on the limitations, challenges, and potential areas of growth for deep learning methods in autonomous navigation. Finally, the paper summarizes the findings and practices at different stages, correlating existing and future methods, their applicability, scalability, and limitations. The review provides a valuable resource for researchers and practitioners working in the field of autonomous navigation and deep learning.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2205550195",
+                        "name": "Arman Asgharpoor Golroudbari"
+                    },
+                    {
+                        "authorId": "37300818",
+                        "name": "M. Sabour"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This raises a question of their ability to forecast the future state given the limitation of neural networks on extrapolation (Ziyin et al., 2020; Xu et al., 2021).",
+                "This raises a question of their ability to forecast the unseen environment given the limitation of neural networks on extrapolation (Ziyin, Hartwig, and Ueda 2020; Xu et al. 2021)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "727df4c7c8f8602c016ce21f55f2fd188170fd28",
+                "externalIds": {
+                    "ArXiv": "2302.05942",
+                    "DBLP": "journals/corr/abs-2302-05942",
+                    "DOI": "10.48550/arXiv.2302.05942",
+                    "CorpusId": 256827411
+                },
+                "corpusId": 256827411,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/727df4c7c8f8602c016ce21f55f2fd188170fd28",
+                "title": "SpReME: Sparse Regression for Multi-Environment Dynamic Systems",
+                "abstract": "Learning dynamical systems is a promising avenue for scientific discoveries. However, capturing the governing dynamics in multiple environments still remains a challenge: model-based approaches rely on the fidelity of assumptions made for a single environment, whereas data-driven approaches based on neural networks are often fragile on extrapolating into the future. In this work, we develop a method of sparse regression dubbed SpReME to discover the major dynamics that underlie multiple environments. Specifically, SpReME shares a sparse structure of ordinary differential equation (ODE) across different environments in common while allowing each environment to keep the coefficients of ODE terms independently. We demonstrate that the proposed model captures the correct dynamics from multiple environments over four different dynamic systems with improved prediction performance.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2121664793",
+                        "name": "Moonjeong Park"
+                    },
+                    {
+                        "authorId": "2205568711",
+                        "name": "Youngbin Choi"
+                    },
+                    {
+                        "authorId": "2702448",
+                        "name": "Namhoon Lee"
+                    },
+                    {
+                        "authorId": "2145138727",
+                        "name": "Dongwoo Kim"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "DNNs have difficulty learning periodic functions [Ziyin et al., 2020]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a9aaf5b9ff5e4efdf3f9f906c4f21cdfee0f26ec",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2301-00008",
+                    "ArXiv": "2301.00008",
+                    "DOI": "10.48550/arXiv.2301.00008",
+                    "CorpusId": 253100572
+                },
+                "corpusId": 253100572,
+                "publicationVenue": {
+                    "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+                    "name": "Neural Information Processing Systems",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Neural Inf Process Syst",
+                        "NeurIPS",
+                        "NIPS"
+                    ],
+                    "url": "http://neurips.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a9aaf5b9ff5e4efdf3f9f906c4f21cdfee0f26ec",
+                "title": "Effects of Data Geometry in Early Deep Learning",
+                "abstract": "Deep neural networks can approximate functions on different types of data, from images to graphs, with varied underlying structure. This underlying structure can be viewed as the geometry of the data manifold. By extending recent advances in the theoretical understanding of neural networks, we study how a randomly initialized neural network with piece-wise linear activation splits the data manifold into regions where the neural network behaves as a linear function. We derive bounds on the density of boundary of linear regions and the distance to these boundaries on the data manifold. This leads to insights into the expressivity of randomly initialized deep neural networks on non-Euclidean data sets. We empirically corroborate our theoretical results using a toy supervised learning problem. Our experiments demonstrate that number of linear regions varies across manifolds and the results hold with changing neural network architectures. We further demonstrate how the complexity of linear regions is different on the low dimensional manifold of images as compared to the Euclidean space, using the MetFaces dataset.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "143946241",
+                        "name": "Saket Tiwari"
+                    },
+                    {
+                        "authorId": "1765407",
+                        "name": "G. Konidaris"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026two potential challenges for deep neural networks: a quick error accumulation in an autoregressive forecast task (see, e.g. Rasp et al., 2020; Scher and Messori, 2019) and the prediction of quasi-periodic processes for which deep neural networks are known to struggle with (Ziyin et al., 2020).",
+                "challenging for deep neural networks that are known to struggle with periodic processes (Ziyin et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "e3c0cf80f5c0cf19e3d34b3efd57df39aa588428",
+                "externalIds": {
+                    "DOI": "10.5194/gmd-15-8931-2022",
+                    "CorpusId": 247410648
+                },
+                "corpusId": 247410648,
+                "publicationVenue": {
+                    "id": "9333a27b-3e39-480d-80bd-e577d8e6f6dd",
+                    "name": "Geoscientific Model Development",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Geosci Model Dev"
+                    ],
+                    "issn": "1991-959X",
+                    "url": "https://www.geosci-model-dev.net/",
+                    "alternate_urls": [
+                        "http://geoscientific-model-development.net/",
+                        "https://www.geoscientific-model-development.net/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/e3c0cf80f5c0cf19e3d34b3efd57df39aa588428",
+                "title": "Temperature forecasting by deep learning methods",
+                "abstract": "Abstract. Numerical weather prediction (NWP) models solve a system of partial differential equations based on physical laws to forecast the future state of\nthe atmosphere. These models are deployed operationally, but they are computationally very expensive. Recently, the potential of deep neural\nnetworks to generate bespoke weather forecasts has been explored in a couple of scientific studies inspired by the success of video frame\nprediction models in computer vision. In this study, a simple recurrent neural network with convolutional filters, called ConvLSTM, and an advanced\ngenerative network, the Stochastic Adversarial Video Prediction (SAVP) model, are applied to create hourly forecasts of the 2\u2009m\u00a0temperature\nfor the next\u00a012\u2009h over Europe. We make use of 13\u00a0years of data from the ERA5 reanalysis, of which 11\u00a0years are utilized for training and\n1\u00a0year each is used for validating and testing. We choose the 2\u2009m\u00a0temperature, total cloud cover, and the 850\u2009hPa\u00a0temperature as\npredictors and show that both models attain predictive skill by outperforming persistence forecasts. SAVP is superior to ConvLSTM in terms of\nseveral evaluation metrics, confirming previous results from computer vision that larger, more complex networks are better suited to learn complex\nfeatures and to generate better predictions. The 12\u2009h forecasts of SAVP attain a mean squared error (MSE) of about 2.3\u2009K2, an\nanomaly correlation coefficient (ACC) larger than 0.85, a structural similarity index (SSIM) of around\u00a00.72, and a gradient ratio (rG) of\nabout\u00a00.82. The ConvLSTM yields a higher MSE (3.6\u2009K2), a smaller ACC (0.80) and SSIM (0.65), and a slightly larger rG\n(0.84). The superior performance of SAVP in terms of MSE, ACC, and SSIM can be largely attributed to the generator. A sensitivity study shows that a\nlarger weight of the generative adversarial network (GAN) component in the SAVP loss leads to even better preservation of spatial variability at the cost of a somewhat increased MSE\n(2.5\u2009K2). Including the 850\u2009hPa\u00a0temperature as an additional predictor enhances the forecast quality, and the model also benefits\nfrom a larger spatial domain. By contrast, adding the total cloud cover as predictor or reducing the amount of training data to 8\u00a0years has only\nsmall effects. Although the temperature forecasts obtained in this way are still less powerful than contemporary NWP models, this study demonstrates\nthat sophisticated deep neural networks may achieve considerable forecast quality beyond the nowcasting range in a purely data-driven way.\n",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2124880049",
+                        "name": "Bing Gong"
+                    },
+                    {
+                        "authorId": "2049498790",
+                        "name": "M. Langguth"
+                    },
+                    {
+                        "authorId": "2116214277",
+                        "name": "Yanqiu Ji"
+                    },
+                    {
+                        "authorId": "1753247015",
+                        "name": "A. Mozaffari"
+                    },
+                    {
+                        "authorId": "66130078",
+                        "name": "S. Stadtler"
+                    },
+                    {
+                        "authorId": "2158653461",
+                        "name": "Karim Mache"
+                    },
+                    {
+                        "authorId": "50077870",
+                        "name": "M. Schultz"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026and combinations of features during testing, which are not similar to any data used for training, and thus the DL network has to generate predictions outside of its \u201ccomfort zone\u201d (see, for example, Leonard et al., 1992, and Pastore and Carnini, 2021, or Ziyin et al., 2020, for periodic data)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "9554da45c1827c2a5d1ec2d2239ee8aca2f90fe3",
+                "externalIds": {
+                    "DOI": "10.5194/gmd-15-8913-2022",
+                    "CorpusId": 249118934
+                },
+                "corpusId": 249118934,
+                "publicationVenue": {
+                    "id": "9333a27b-3e39-480d-80bd-e577d8e6f6dd",
+                    "name": "Geoscientific Model Development",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Geosci Model Dev"
+                    ],
+                    "issn": "1991-959X",
+                    "url": "https://www.geosci-model-dev.net/",
+                    "alternate_urls": [
+                        "http://geoscientific-model-development.net/",
+                        "https://www.geoscientific-model-development.net/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9554da45c1827c2a5d1ec2d2239ee8aca2f90fe3",
+                "title": "Representing chemical history in ozone time-series predictions \u2013 a model experiment study building on the MLAir (v1.5) deep learning framework",
+                "abstract": "Abstract. Tropospheric ozone is a secondary air pollutant that is harmful to living beings and crops. Predicting ozone concentrations at specific locations is thus important to initiate protection measures, i.e. emission reductions or warnings to the population. Ozone levels at specific locations result from emission and sink processes, mixing and chemical transformation along an air parcel's trajectory. Current ozone forecasting systems generally rely on computationally expensive chemistry transport models (CTMs). However, recently several studies have demonstrated the potential of deep learning for this task. While a few of these studies were trained on gridded model data, most efforts focus on forecasting time series from individual measurement locations. In this study, we present a hybrid approach which is based on time-series forecasting (up to 4\u2009d) but uses spatially aggregated meteorological and chemical data from upstream wind sectors to represent some aspects of the chemical history of air parcels arriving at the measurement location. To demonstrate the value of this additional information, we extracted pseudo-observation data for Germany from a CTM to avoid extra complications with irregularly spaced and missing data. However, our method can be extended so that it can be applied to observational time series. Using one upstream sector alone improves the forecasts by 10\u2009% during all 4\u2009d, while the use of three sectors improves the mean squared error (MSE) skill score by 14\u2009% during the first 2\u2009d of the prediction but depends on the upstream wind direction. Our method shows its best performance in the northern half of Germany for the first 2 prediction days. Based on the data's seasonality and simulation period, we shed some light on our models' open challenges with (i)\u00a0spatial structures in terms of decreasing skill scores from the northern German plain to the mountainous south and (ii)\u00a0concept drifts related to an unusually cold winter season. Here we expect that the inclusion of explainable artificial intelligence methods could reveal additional insights in future versions of our model.\n",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "66412089",
+                        "name": "F. Kleinert"
+                    },
+                    {
+                        "authorId": "150189389",
+                        "name": "L. H. Leufen"
+                    },
+                    {
+                        "authorId": "153528422",
+                        "name": "A. Lupa\u015fcu"
+                    },
+                    {
+                        "authorId": "152367661",
+                        "name": "T. Butler"
+                    },
+                    {
+                        "authorId": "50077870",
+                        "name": "M. Schultz"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "to the original Demucs architecture, we use the Snake activation function [20]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "8fb0228353c8bbbe7e64640a39010fc04213d17a",
+                "externalIds": {
+                    "ArXiv": "2211.12232",
+                    "DBLP": "journals/corr/abs-2211-12232",
+                    "DOI": "10.48550/arXiv.2211.12232",
+                    "CorpusId": 253761046
+                },
+                "corpusId": 253761046,
+                "publicationVenue": {
+                    "id": "0d6f7fba-7092-46b3-8039-93458dba736b",
+                    "name": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Acoust Speech Signal Process",
+                        "IEEE Int Conf Acoust Speech Signal Process",
+                        "ICASSP",
+                        "International Conference on Acoustics, Speech, and Signal Processing"
+                    ],
+                    "url": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000002"
+                },
+                "url": "https://www.semanticscholar.org/paper/8fb0228353c8bbbe7e64640a39010fc04213d17a",
+                "title": "AERO: Audio Super Resolution in the Spectral Domain",
+                "abstract": "We present AERO, a audio super-resolution model that processes speech and music signals in the spectral domain. AERO is based on an encoder-decoder architecture with U-Net like skip connections. We optimize the model using both time and frequency domain loss functions. Specifically, we consider a set of reconstruction losses together with perceptual ones in the form of adversarial and feature discriminator loss functions. To better handle phase information the proposed method operates over the complex-valued spectrogram using two separate channels. Unlike prior work which mainly considers low and high frequency concatenation for audio super-resolution, the proposed method directly predicts the full frequency range. We demonstrate high performance across a wide range of sample rates considering both speech and music. AERO outperforms the evaluated baselines considering Log-Spectral Distance, ViSQOL, and the subjective MUSHRA test. Audio samples and code are available at https://pages.cs.huji.ac.il/adiyoss-lab/aero",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2172175235",
+                        "name": "Moshe Mandel"
+                    },
+                    {
+                        "authorId": "2070494536",
+                        "name": "Ori Tal"
+                    },
+                    {
+                        "authorId": "2727584",
+                        "name": "Yossi Adi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The Snake activation function proposed by [15] provides the periodic inductive bias useful to model periodic function and retaining the nature of ReLU activation function as well."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "7aff606e7798043eeaf8b38aea6de9f81e1bcbad",
+                "externalIds": {
+                    "DOI": "10.1109/ICCCIS56430.2022.10037742",
+                    "CorpusId": 256743391
+                },
+                "corpusId": 256743391,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/7aff606e7798043eeaf8b38aea6de9f81e1bcbad",
+                "title": "Building Extraction from High-Resolution Satellite Images using 2D-Attention Mechanism with Deep Learning",
+                "abstract": "Building extraction from remote sensing satellite images is very useful for the urban monitoring and its planning. Several methodologies based on CNN are proposed in past for building extraction. Many of them have also used the skip connections for better propagation of information between different layers. But the suppression of the irrelevant information from earlier layers helps to focus on relevant information and improve the building extraction performance. For this, our work applies the 2D-attention mechanism in one of the state-of-art model, i.e., Unet for extracting buildings from high-resolution satellite images. To further improve its results, the work investigates the optimal deep learning hyper-parameters through various experimentations with activation, loss function, ImageNet weights and various backbones, i.e., ResNet152_V2, VGG19. The work uses the Satellite dataset I (global cities) from WHU repository. The results show that our approach, i.e., 2D-Attention based Unet model along with ImageNet weights, ReLU activation and IoU loss function has better building extraction performance and can be utilized for societal perspective.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "150207342",
+                        "name": "M. Dixit"
+                    },
+                    {
+                        "authorId": "72164313",
+                        "name": "Kuldeep Chaurasia"
+                    },
+                    {
+                        "authorId": "1491653312",
+                        "name": "V. Mishra"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "4cade82a7a01f12f553494c592afeef5205aaafe",
+                "externalIds": {
+                    "DOI": "10.3390/math10213959",
+                    "CorpusId": 253169365
+                },
+                "corpusId": 253169365,
+                "publicationVenue": {
+                    "id": "6175efe8-6f8e-4cbe-8cee-d154f4e78627",
+                    "name": "Mathematics",
+                    "issn": "2227-7390",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-283014",
+                    "alternate_urls": [
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-283014",
+                        "https://www.mdpi.com/journal/mathematics"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4cade82a7a01f12f553494c592afeef5205aaafe",
+                "title": "Relaxation Subgradient Algorithms with Machine Learning Procedures",
+                "abstract": "In the modern digital economy, optimal decision support systems, as well as machine learning systems, are becoming an integral part of production processes. Artificial neural network training as well as other engineering problems generate such problems of high dimension that are difficult to solve with traditional gradient or conjugate gradient methods. Relaxation subgradient minimization methods (RSMMs) construct a descent direction that forms an obtuse angle with all subgradients of the current minimum neighborhood, which reduces to the problem of solving systems of inequalities. Having formalized the model and taking into account the specific features of subgradient sets, we reduced the problem of solving a system of inequalities to an approximation problem and obtained an efficient rapidly converging iterative learning algorithm for finding the direction of descent, conceptually similar to the iterative least squares method. The new algorithm is theoretically substantiated, and an estimate of its convergence rate is obtained depending on the parameters of the subgradient set. On this basis, we have developed and substantiated a new RSMM, which has the properties of the conjugate gradient method on quadratic functions. We have developed a practically realizable version of the minimization algorithm that uses a rough one-dimensional search. A computational experiment on complex functions in a space of high dimension confirms the effectiveness of the proposed algorithm. In the problems of training neural network models, where it is required to remove insignificant variables or neurons using methods such as the Tibshirani LASSO, our new algorithm outperforms known methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "14366728",
+                        "name": "V. Krutikov"
+                    },
+                    {
+                        "authorId": "51466057",
+                        "name": "S. Gutova"
+                    },
+                    {
+                        "authorId": "2243272247",
+                        "name": "Elena Tovbis"
+                    },
+                    {
+                        "authorId": "2001832",
+                        "name": "L. Kazakovtsev"
+                    },
+                    {
+                        "authorId": "3248705",
+                        "name": "E. Semenkin"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Furthermore, we modify the ConvLSTM architecture by employing a novel activation function [36] to improve the predictive capability of the present learning architecture for physics with periodic behavior.",
+                "[36] specified the value of parameter \uf061 as a fixed parameter.",
+                "To account for periodicity, we employ the periodic activation function ( ) ( ) 2 1 sin x x x \uf061 \uf061 \uf061 \uf058 = + [36] , instead of the commonly accepted hyperbolic-tangent function.",
+                "[36] proposed a new activation function for improving predictive capabilities of a",
+                "is worth noting that \uf061 is treated as a trainable parameter rather than with a fixed value as originally introduced [36] ."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "d2c811283ddff75f9a9cb0281b9cbf1eec194cc0",
+                "externalIds": {
+                    "ArXiv": "2210.12177",
+                    "DBLP": "journals/corr/abs-2210-12177",
+                    "DOI": "10.1016/j.cma.2023.115944",
+                    "CorpusId": 253098689
+                },
+                "corpusId": 253098689,
+                "publicationVenue": {
+                    "id": "3bfaa538-a67d-47d7-bfda-6f82748e9a29",
+                    "name": "Computer Methods in Applied Mechanics and Engineering",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Comput Method Appl Mech Eng"
+                    ],
+                    "issn": "0045-7825",
+                    "url": "https://www.journals.elsevier.com/computer-methods-in-applied-mechanics-and-engineering",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/00457825"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d2c811283ddff75f9a9cb0281b9cbf1eec194cc0",
+                "title": "An unsupervised latent/output physics-informed convolutional-LSTM network for solving partial differential equations using peridynamic differential operator",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2026381546",
+                        "name": "A. Mavi"
+                    },
+                    {
+                        "authorId": "1734764589",
+                        "name": "A. Bekar"
+                    },
+                    {
+                        "authorId": "115423949",
+                        "name": "E. Haghighat"
+                    },
+                    {
+                        "authorId": "115208222",
+                        "name": "E. Madenci"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Deep learning approaches have achieved significant progress in time series forecasting, but they have been proved to be unable to fully learn periodicity from time series [34].",
+                "Recent study [34] reveals that the reason is standard neural nets do not have any modules to capture the periodicity explicitly in their architectures.",
+                "the periodicity, aligned with the conclusion in [34].",
+                "This is because they do not contain any modules that can represent the periodic functions [34].",
+                "The results are aligned with the observations in [34] that standard neural networks can not fully learn periodicity."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "result"
+            ],
+            "citingPaper": {
+                "paperId": "266e1b8cbe21edb70e0a283dcb7505bf66f0cdd4",
+                "externalIds": {
+                    "DBLP": "conf/cikm/0002SZLAS22",
+                    "DOI": "10.1145/3511808.3557077",
+                    "CorpusId": 251745907
+                },
+                "corpusId": 251745907,
+                "publicationVenue": {
+                    "id": "7431ff67-91dc-41fa-b322-1b1ca657025f",
+                    "name": "International Conference on Information and Knowledge Management",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conference on Information and Knowledge Management",
+                        "Conf Inf Knowl Manag",
+                        "Int Conf Inf Knowl Manag",
+                        "CIKM"
+                    ],
+                    "url": "http://www.cikm.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/266e1b8cbe21edb70e0a283dcb7505bf66f0cdd4",
+                "title": "Bridging Self-Attention and Time Series Decomposition for Periodic Forecasting",
+                "abstract": "In this paper, we study how to capture explicit periodicity to boost the accuracy of deep models in univariate time series forecasting. Recent advanced deep learning models such as recurrent neural networks (RNNs) and transformers have reached new heights in terms of modeling sequential data, such as natural languages, due to their powerful expressiveness. However, real-world time series are often more periodic than general sequential data, while recent studies confirm that standard neural networks are not capable of capturing the periodicity sufficiently because they have no modules that can represent periodicity explicitly. In this paper, we alleviate this challenge by bridging the self-attention network with time series decomposition and propose a novel framework called DeepFS. DeepFS equips  Deep  models with  F  ourier  S eries to preserve the periodicity of time series. Specifically, our model first uses self-attention to encode temporal patterns, from which to predict the periodic and non-periodic components for reconstructing the forecast outputs. The Fourier series is injected as an inductive bias in the periodic component. Capturing periodicity not only boosts the forecasting accuracy but also offers interpretable insights for real-world time series. Extensive empirical analyses on both synthetic and real-world datasets demonstrate the effectiveness of DeepFS. Studies about why and when DeepFS works provide further understanding of our model.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108719385",
+                        "name": "Song Jiang"
+                    },
+                    {
+                        "authorId": "3750372",
+                        "name": "Tahin Syed"
+                    },
+                    {
+                        "authorId": "2181607743",
+                        "name": "Xuan Zhu"
+                    },
+                    {
+                        "authorId": "145789209",
+                        "name": "Joshua Levy"
+                    },
+                    {
+                        "authorId": "2182508416",
+                        "name": "Boris Aronchik"
+                    },
+                    {
+                        "authorId": "2109461904",
+                        "name": "Yizhou Sun"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Our numerical results in Tables 3\u20135 show that sin(2)(x) still outperforms the monotonic activation function sin(2)(x)+ x proposed in [66] when the function to learn is indeed periodic.",
+                "\u2022 We will extend the applicability of our approach by using systems of PINNs to solve differential problems where the solution is a non-periodic function.",
+                "PINN models are deep feedforward networks, also called feedforward NNs or multilayer perceptrons (MLPs) [59, 60] used to approximate the solution to differential problems [61].",
+                "(26)\nCumulative loss function for the system of PINNs over the entire metric graph\nLet us assume for simplicity that the PINN architecture is the same on each edge.",
+                "In this section we describe how we constructed the training loss function for the system of PINNs defined on edges of a metric graph.",
+                "Comparison of activation functions for PINNs on one edge The choice of the activation function can drastically affect the predictive performance of the NNs [56, 58, 57, 66].",
+                "NNs associated with edges that share a node in common coordinate with each other through a penalty term in the training loss function that imposes the Kirkhoff-Neumann (KN) conditions in a weak-sense.",
+                "Moreover, assignment of different edges to different NN models enables the algorithm to potentially leverage distributed high-performance computing (HPC) resources to concurrently train different NNs, thus allowing for the DL training to scale with the size of the graph.",
+                "The choice of the activation function can drastically affect the predictive performance of the NNs [56, 58, 57, 66]."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3fb5a2cca58f085ef84e0a08f0fa0e05243d440a",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-03746",
+                    "ArXiv": "2210.03746",
+                    "DOI": "10.48550/arXiv.2210.03746",
+                    "CorpusId": 252781122
+                },
+                "corpusId": 252781122,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/3fb5a2cca58f085ef84e0a08f0fa0e05243d440a",
+                "title": "A deep learning approach to solve forward differential problems on graphs",
+                "abstract": "We propose a novel deep learning (DL) approach to solve one-dimensional non-linear elliptic, parabolic, and hyperbolic problems on graphs. A system of physics-informed neural network (PINN) models is used to solve the differential equations, by assigning each PINN model to a specific edge of the graph. Kirkhoff-Neumann (KN) nodal conditions are imposed in a weak form by adding a penalization term to the training loss function. Through the penalization term that imposes the KN conditions, PINN models associated with edges that share a node coordinate with each other to ensure continuity of the solution and of its directional derivatives computed along the respective edges. Using individual PINN models for each edge of the graph allows our approach to fulfill necessary requirements for parallelization by enabling different PINN models to be trained on distributed compute resources. Numerical results show that the system of PINN models accurately approximate the solutions of the differential problems across the entire graph for a broad set of graph topologies.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2172745616",
+                        "name": "Yuanyuan Zhao"
+                    },
+                    {
+                        "authorId": "48460197",
+                        "name": "Massimiliano Lupo Pasini"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Our experiments following the setup and training from [19] show that regardless of the trainability of the",
+                "It was presented in [19] that a snake-activated feedforward neural network can learn to fit a periodic signal if the period is known beforehands.",
+                "To address what has been thought of as the main fault of the work on neural networks mimicking the behaviour of Fourier series, [19] proposed x+sin(x), x+cos(x), and x+sin(2)(ax) activations and demonstrated that they possess some potential for generalisation beyond the training domain while still performing well on standard tasks defined on real-world data such as classifying the MNIST dataset.",
+                "It was previously demonstrated that the extrapolation behaviour of feedforward neural networks with ReLU and tanh activation functions is dictated by the analytical form of the activation function (ReLU diverges to \u00b1\u221e, tanh tends towards a constant value), and that this result also holds for sigmoidal networks and the corresponding common variants [19].",
+                "In the case of snake activation functions and by the analysis of [19] this would correspond to a target of 32 (not necessarily consecutive) harmonics in the approximating Fourier series, while for sin+ cos [14] this corresponds to 64 harmonics.",
+                "To address the shortcomings of standard activation functions in extrapolation, [19] proposed the family of \u201csnake\u201d activation functions."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "8cf056f01efd92adc301d29e07ecd2a9a07f9b55",
+                "externalIds": {
+                    "DBLP": "conf/ssci/BelcakW22",
+                    "ArXiv": "2209.10280",
+                    "DOI": "10.1109/SSCI51031.2022.10022262",
+                    "CorpusId": 252407769
+                },
+                "corpusId": 252407769,
+                "publicationVenue": {
+                    "id": "8a9e9f3b-a025-473d-801e-72cdb0653d22",
+                    "name": "IEEE Symposium Series on Computational Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Symp Ser Comput Intell",
+                        "SSCI"
+                    ],
+                    "url": "http://www.ieee-ssci.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/8cf056f01efd92adc301d29e07ecd2a9a07f9b55",
+                "title": "Periodic Extrapolative Generalisation in Neural Networks",
+                "abstract": "The learning of the simplest possible computational pattern - periodicity - is an open problem in the research of strong generalisation in neural networks. We formalise the problem of extrapolative generalisation for periodic signals and systematically investigate the generalisation abilities of classical, population-based, and recently proposed periodic architectures on a set of benchmarking tasks. We find that periodic and \u201csnake\u201d activation functions consistently fail at periodic extrapolation, regardless of the trainability of their periodicity parameters. Further, our results show that traditional sequential models still outperform the novel architectures designed specifically for extrapolation, and that these are in turn trumped by population-based training. We make our benchmarking and evaluation toolkit, Perkit11PERKIT: A toolkit for the study of periodicity in neural networks. Available at hups://github.com/pbelcakiperkit., available and easily accessible to facilitate future work in the area.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2185580922",
+                        "name": "Peter Belc\u00e1k"
+                    },
+                    {
+                        "authorId": "2075356250",
+                        "name": "Roger Wattenhofer"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[30] proposed a new activation function x + sin(2) x (called \u201csnake\u201d), which was claimed to be better than ReLU for periodic data."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "1c6ff30f8d634675fee82e133269f25935e6f3b4",
+                "externalIds": {
+                    "DBLP": "conf/interspeech/BatraJR22",
+                    "DOI": "10.21437/interspeech.2022-10704",
+                    "CorpusId": 252337330
+                },
+                "corpusId": 252337330,
+                "publicationVenue": {
+                    "id": "af90489e-312f-4514-bea2-bcb399cb8ece",
+                    "name": "Interspeech",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Conf Int Speech Commun Assoc",
+                        "INTERSPEECH",
+                        "Conference of the International Speech Communication Association"
+                    ],
+                    "issn": "2308-457X",
+                    "url": "https://www.isca-speech.org/iscaweb/index.php/conferences/interspeech",
+                    "alternate_urls": [
+                        "http://www.isca-speech.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/1c6ff30f8d634675fee82e133269f25935e6f3b4",
+                "title": "Robust Pitch Estimation Using Multi-Branch CNN-LSTM and 1-Norm LP Residual",
+                "abstract": "Pitch and voicing determination are important in many speech and audio signal processing applications. Even in the clean signal case their estimation can pose problems, and more so when noise is present. In this paper we propose a Multi-Branch CNN-LSTM based Temporal Neural Network for pitch and voicing determination. In addition, rather than using the raw waveform, we use the \u2113 1 -norm based LP residual as the input signal. These changes have made the proposed method more robust to SNR degradation, i.e., even though there is a slight fall in accuracy in the clean signal case, there is a 2 . 9% absolute increase in RPA for the 0 dB case when compared with the CREPE algorithm. More importantly, when the RPA tolerance is tightened, the fall in accuracy is smaller. This robustness has been achieved with only 1.79M parameters, which is an order of magnitude less than what is used in CREPE.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2185278854",
+                        "name": "Mudit D. Batra"
+                    },
+                    {
+                        "authorId": "1855404",
+                        "name": "M. Jayesh"
+                    },
+                    {
+                        "authorId": "144658542",
+                        "name": "C. S. Ramalingam"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In fact, previous works [55,64] have shown that a traditional MLP is unable to extrapolate a 1D periodic signal even with many training samples.",
+                "This is an effective way to handle the MLP extrapolation problem, which cannot be solved by merely using input warping and SNAKE activation function [64].",
+                "Since ReLU activation function has been proven to be ineffective to extrapolate periodic signals [55], we use the more suitable SNAKE function [64]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "179a1b10dd202413c9c6d1e02c6bca43f6b96e62",
+                "externalIds": {
+                    "ArXiv": "2208.12278",
+                    "DBLP": "journals/corr/abs-2208-12278",
+                    "DOI": "10.48550/arXiv.2208.12278",
+                    "CorpusId": 251881387
+                },
+                "corpusId": 251881387,
+                "publicationVenue": {
+                    "id": "167fa0ca-e88a-4ef7-a16f-bc66c457c806",
+                    "name": "European Conference on Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ECCV",
+                        "Eur Conf Comput Vis"
+                    ],
+                    "url": "https://link.springer.com/conference/eccv"
+                },
+                "url": "https://www.semanticscholar.org/paper/179a1b10dd202413c9c6d1e02c6bca43f6b96e62",
+                "title": "Learning Continuous Implicit Representation for Near-Periodic Patterns",
+                "abstract": "Near-Periodic Patterns (NPP) are ubiquitous in man-made scenes and are composed of tiled motifs with appearance differences caused by lighting, defects, or design elements. A good NPP representation is useful for many applications including image completion, segmentation, and geometric remapping. But representing NPP is challenging because it needs to maintain global consistency (tiled motifs layout) while preserving local variations (appearance differences). Methods trained on general scenes using a large dataset or single-image optimization struggle to satisfy these constraints, while methods that explicitly model periodicity are not robust to periodicity detection errors. To address these challenges, we learn a neural implicit representation using a coordinate-based MLP with single image optimization. We design an input feature warping module and a periodicity-guided patch loss to handle both global consistency and local variations. To further improve the robustness, we introduce a periodicity proposal module to search and use multiple candidate periodicities in our pipeline. We demonstrate the effectiveness of our method on more than 500 images of building facades, friezes, wallpapers, ground, and Mondrian patterns on single and multi-planar scenes.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2152688877",
+                        "name": "B. Chen"
+                    },
+                    {
+                        "authorId": "7353963",
+                        "name": "Tiancheng Zhi"
+                    },
+                    {
+                        "authorId": "145670946",
+                        "name": "M. Hebert"
+                    },
+                    {
+                        "authorId": "1779052",
+                        "name": "S. Narasimhan"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "6c55ca31da97f31198042b1c56c9b4a2daadd263",
+                "externalIds": {
+                    "DOI": "10.1109/PESGM48719.2022.9916869",
+                    "CorpusId": 253185999
+                },
+                "corpusId": 253185999,
+                "publicationVenue": {
+                    "id": "b2cee8ae-3d79-4abb-bf4c-b31194b13960",
+                    "name": "IEEE Power & Energy Society General Meeting",
+                    "alternate_names": [
+                        "IEEE Power  Energy Soc Gen Meet"
+                    ],
+                    "issn": "1944-9925",
+                    "alternate_issns": [
+                        "1944-9933"
+                    ],
+                    "url": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000581",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=4584435"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/6c55ca31da97f31198042b1c56c9b4a2daadd263",
+                "title": "Neural Electromagnetic Transients Program",
+                "abstract": "This paper devises a neural electromagnetic transients program (NeuEMTP), an unsupervised, physics-informed learning approach to numerical-integration-free EMTP solutions. The main contributions lie in: (1) a learning-based NeuEMTP architecture to simultaneously generate the electromagnetic states at all desired time steps, making the step-by-step integration unnecessary; (2) an unsupervised, physics-informed training procedure to realize the NeuEMTP functionality without requiring any EMTP trajectories beforehand; (3) an EMTP-oriented-neural-network (EMTPNet) accompanied with a novel activation function Act_mix to enable efficient extrapolations of diverse oscillation modes under arbitrary frequencies. Case studies sys-tematically verify that NeuEMTP generates high-fidelity EMTP trajectories without involving any numerical integration before or during the training process, and is promising to achieve faster-than-real-time EMTP simulations on the off-the-shelf computers.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2007543290",
+                        "name": "Yifan Zhou"
+                    },
+                    {
+                        "authorId": "50264653",
+                        "name": "Peng Zhang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "common \u201cReLU\u201d activation function would be expected to extrapolate linearly, though not necessarily with the same gradient as a line of best fit through the training data points (Xu et al., 2020; Ziyin et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "30f18dfcffa6281ef9612846488a34db75542317",
+                "externalIds": {
+                    "ArXiv": "2207.07390",
+                    "DOI": "10.1088/1748-9326/ac9d4e",
+                    "CorpusId": 250607572
+                },
+                "corpusId": 250607572,
+                "publicationVenue": {
+                    "id": "373ee421-9890-40bc-87d7-59518033a715",
+                    "name": "Environmental Research Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Environ Res Lett"
+                    ],
+                    "issn": "1748-9326",
+                    "url": "http://www.iop.org/EJ/toc/1748-9326",
+                    "alternate_urls": [
+                        "http://iopscience.org/erl",
+                        "http://iopscience.iop.org/1748-9326/",
+                        "https://iopscience.iop.org/journal/1748-9326"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/30f18dfcffa6281ef9612846488a34db75542317",
+                "title": "Machine learning applications for weather and climate need greater focus on extremes",
+                "abstract": "\n               <jats:p />",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2136017909",
+                        "name": "Peter A. G. Watson"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[2] Liu Ziyin, Tilman Hartwig, and Masahito Ueda.",
+                "However in the absence of an explicit inductive bias, MLPs can struggle to learn even simple functions in a sample efficient manner [2, 3], Appendix 1."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "229b4c4ac5668bd3f8d661e22b095d2d705e311e",
+                "externalIds": {
+                    "ArXiv": "2207.06240",
+                    "CorpusId": 253083468
+                },
+                "corpusId": 253083468,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/229b4c4ac5668bd3f8d661e22b095d2d705e311e",
+                "title": "Physics Informed Symbolic Networks",
+                "abstract": "We introduce Physics Informed Symbolic Networks (PISN) which utilize physics-informed loss to obtain a symbolic solution for a system of Partial Differential Equations (PDE). Given a context-free grammar to describe the language of symbolic expressions, we propose to use weighted sum as continuous approximation for selection of a production rule. We use this approximation to de\ufb01ne multilayer symbolic networks. We consider Kovasznay \ufb02ow (Navier-Stokes) and two-dimensional viscous Burger\u2019s equations to illustrate that PISN are able to provide a performance comparable to PINNs across various start-of-the-art advances: multiple outputs and governing equations, domain-decomposition,hypernetworks. Furthermore, we propose Physics-informed Neurosymbolic Networks (PINSN) which employ a multilayer perceptron (MLP) operator to model the residue of symbolic networks. PINSNs are observed to give 2-3 orders of performance gain over standard PINN.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2175992980",
+                        "name": "Ritam Majumdar"
+                    },
+                    {
+                        "authorId": "144739363",
+                        "name": "Vishal Jadhav"
+                    },
+                    {
+                        "authorId": "98665407",
+                        "name": "A. Deodhar"
+                    },
+                    {
+                        "authorId": "2973267",
+                        "name": "Shirish S. Karande"
+                    },
+                    {
+                        "authorId": "3213990",
+                        "name": "L. Vig"
+                    },
+                    {
+                        "authorId": "2139833562",
+                        "name": "Venkataramana Runkana"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Activation Function Linear, ReLU, Tanh, Sigmoid, Snake [39] Hidden Layers [0,5] Nodes per Layer [2,128] Optimizer Adam [40], Adagrad [41], SGD, Yogi [42]"
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "05fc888e5b113cef82296a5f378158e81c31c62d",
+                "externalIds": {
+                    "DBLP": "conf/fusion/Haidar-AhmadKK22",
+                    "DOI": "10.23919/fusion49751.2022.9841298",
+                    "CorpusId": 251473415
+                },
+                "corpusId": 251473415,
+                "publicationVenue": {
+                    "id": "8ae277fb-3346-4eab-9e31-c719d1d8bb3f",
+                    "name": "Fusion",
+                    "type": "conference",
+                    "alternate_names": [
+                        "International Conference on Information Fusion",
+                        "FUSION",
+                        "Int Conf Inf Fusion"
+                    ],
+                    "issn": "0148-0537",
+                    "alternate_issns": [
+                        "0293-5880",
+                        "0016-3163"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/05fc888e5b113cef82296a5f378158e81c31c62d",
+                "title": "A Hybrid Analytical-Machine Learning Approach for LEO Satellite Orbit Prediction",
+                "abstract": "A hybrid analytical-machine learning (ML) framework for improved low Earth orbit (LEO) satellite orbit prediction is developed. The framework assumes the following three stages. (i) LEO satellite first pass: A terrestrial receiver with knowledge of its position produces carrier phase measurements from received LEO satellite signals, enabling it to estimate the time of arrival. The LEO satellite's states are initialized with simplified general perturbations 4 (SGP4)-propagated two-line element (TLE) data, and are subsequently estimated via an extended Kalman filter (EKF) during the period of satellite visibility. (ii) LEO satellite not in view: a nonlinear autoregressive with exogenous inputs (NARX) neural network is trained on the estimated ephemeris and is used to propagate the LEO satellite orbit for the period where the satellite is not in view. (iii) LEO satellite second pass: a terrestrial receiver with no knowledge of its position uses the ML-predicted LEO ephemeris along with its carrier phase measurements from received LEO signals to estimate its own position via an EKF. Experimental results with with signals from an Orbcomm satellite are presented to demonstrate the efficacy of the proposed framework. It is shown that during the satellite's second pass, the ML-predicted ephemeris error is reduced by nearly 90% from that of an SGP4 propagation. In addition, it is shown that if the receiver was to use the SGP4-predicted satellite ephemeris to localize itself, the EKF's initial position error of 2.2 km increases to 6.7 km, while the proposed framework reduces the position error to 448 m.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2135907696",
+                        "name": "Jamil A. Haidar-Ahmad"
+                    },
+                    {
+                        "authorId": "2087466153",
+                        "name": "Nadim Khairallah"
+                    },
+                    {
+                        "authorId": "2142137893",
+                        "name": "Zaher M. Kassas"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For example, the Snake function, defined as x+ 1 a sin (2)(ax) where a is a learnable parameter, could be used to learn periodic functions while maintaining monotonicity and thus improve convergence [42]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "9025d12ef12d248b529dcca2e5c8b63f89776821",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2207-00529",
+                    "ArXiv": "2207.00529",
+                    "DOI": "10.48550/arXiv.2207.00529",
+                    "CorpusId": 250244023,
+                    "PubMed": "37721885"
+                },
+                "corpusId": 250244023,
+                "publicationVenue": {
+                    "id": "79c5a18d-0295-432c-aaa5-961d73de6d88",
+                    "name": "IEEE Transactions on Neural Networks and Learning Systems",
+                    "alternate_names": [
+                        "IEEE Trans Neural Netw Learn Syst"
+                    ],
+                    "issn": "2162-237X",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=5962385",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9025d12ef12d248b529dcca2e5c8b63f89776821",
+                "title": "Deep Learning and Symbolic Regression for Discovering Parametric Equations",
+                "abstract": "Symbolic regression is a machine learning technique that can learn the equations governing data and thus has the potential to transform scientific discovery. However, symbolic regression is still limited in the complexity and dimensionality of the systems that it can analyze. Deep learning, on the other hand, has transformed machine learning in its ability to analyze extremely complex and high-dimensional datasets. We propose a neural network architecture to extend symbolic regression to parametric systems where some coefficient may vary, but the structure of the underlying governing equation remains constant. We demonstrate our method on various analytic expressions and partial differential equations (PDEs) with varying coefficients and show that it extrapolates well outside of the training domain. The proposed neural-network-based architecture can also be enhanced by integrating with other deep learning architectures such that it can analyze high-dimensional data while being trained end-to-end. To this end, we demonstrate the scalability of our architecture by incorporating a convolutional encoder to analyze 1-D images of varying spring systems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": null,
+                        "name": "Michael Zhang"
+                    },
+                    {
+                        "authorId": "2110027248",
+                        "name": "Samuel Kim"
+                    },
+                    {
+                        "authorId": "48985656",
+                        "name": "Peter Y. Lu"
+                    },
+                    {
+                        "authorId": "1398486683",
+                        "name": "M. Soljavci'c"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "93367db28ffd36c7e6f28d933ceeb0ad1fedb0f1",
+                "externalIds": {
+                    "DOI": "10.1017/eds.2022.9",
+                    "CorpusId": 250224387
+                },
+                "corpusId": 250224387,
+                "publicationVenue": {
+                    "id": "ffd5a741-3a14-454c-8e94-1d72758fcf1b",
+                    "name": "Environmental Data Science",
+                    "alternate_names": [
+                        "Environ Data Sci"
+                    ],
+                    "issn": "2634-4602"
+                },
+                "url": "https://www.semanticscholar.org/paper/93367db28ffd36c7e6f28d933ceeb0ad1fedb0f1",
+                "title": "Exploring decomposition of temporal patterns to facilitate learning of neural networks for ground-level daily maximum 8-hour average ozone prediction",
+                "abstract": "Abstract Exposure to ground-level ozone is a concern for both humans and vegetation, so accurate prediction of ozone time series is of great importance. However, conventional as well as emerging methods have deficiencies in predicting time series when a superposition of differently pronounced oscillations on various time scales is present. In this paper, we propose a meteorologically motivated filtering method of time series data, which can separate oscillation patterns, in combination with different multibranch neural networks. To avoid phase shifts introduced by using a causal filter, we combine past observation data with a climatological estimate about the future to be able to apply a noncausal filter in a forecast setting. In addition, the forecast in the form of the expected climatology provides some a priori information that can support the neural network to focus not merely on learning a climatological statistic. We apply this method to hourly data obtained from over 50 different monitoring stations in northern Germany situated in rural or suburban surroundings to generate a prediction for the daily maximum 8-hr average values of ground-level ozone 4 days into the future. The data preprocessing with time filters enables simpler neural networks such as fully connected networks as well as more sophisticated approaches such as convolutional and recurrent neural networks to better recognize long-term and short-term oscillation patterns like the seasonal cycle and thus leads to an improvement in the forecast skill, especially for a lead time of more than 48 hr, compared to persistence, climatological reference, and other reference models.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "150189389",
+                        "name": "L. H. Leufen"
+                    },
+                    {
+                        "authorId": "66412089",
+                        "name": "F. Kleinert"
+                    },
+                    {
+                        "authorId": "50077870",
+                        "name": "M. Schultz"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "a1884f128250fe3e80014f28741bd966ece90332",
+                "externalIds": {
+                    "DBLP": "conf/ivmsp/SambugaroMC22",
+                    "DOI": "10.1109/ivmsp54334.2022.9816357",
+                    "CorpusId": 250464805
+                },
+                "corpusId": 250464805,
+                "publicationVenue": {
+                    "id": "52f2bc5c-96ea-4148-bddc-dbb3a32e5287",
+                    "name": "Image, Video, and Multidimensional Signal Processing Workshop",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IVMSP",
+                        "Image Video Multidimens Signal Process Workshop"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a1884f128250fe3e80014f28741bd966ece90332",
+                "title": "SinGAN-3D: towards unconditioned 3D shapes generation",
+                "abstract": "We present SinGAN-3D, a variation of the deep neural network architecture presented originally by SinGAN, for the generation of 3D contents, starting from a single three-dimensional voxelized model. Our network uses a pyramid of 3D convolutional networks to model the third dimension and exploits periodic activation functions to capture the latent structure of the input model. The approach can synthesize contents at different resolutions and aspect ratios, and can be extended to implement super resolution. To evaluate the performances of the proposed model we use the Single Image Freche\u2019t distance, and the multiscale structural similarity index. The metrics highlight the similarities between the synthesised-three dimensional assets and their corresponding original template. An additional user study has also been conducted to assess the quality of the generated shapes. The code can be found at: https://github.com/zenos4mbu/SinGAN3D",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2125030557",
+                        "name": "Zeno Sambugaro"
+                    },
+                    {
+                        "authorId": "2094391041",
+                        "name": "M. Merlin"
+                    },
+                    {
+                        "authorId": "3058987",
+                        "name": "N. Conci"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We provide a proper inductive bias of periodicity to the generator by applying a recently proposed periodic activation called Snake function [27], defined as f\u03b1(x) = x + 1 \u03b1 sin (2)(\u03b1x), where \u03b1 is a trainable parameter that controls the frequency of the periodic part of the signal and larger \u03b1 gives higher frequency.",
+                "This periodic activation exhibits an improved extrapolation capability beyond a bounded region learned by the neural network for temperature and financial data prediction [27].",
+                "Our generator has a connection with the results in time-series prediction [27] and image synthesis [17]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "04f5553934c458305a501d63323f1b841fd5d102",
+                "externalIds": {
+                    "ArXiv": "2206.04658",
+                    "DBLP": "conf/iclr/LeePGCY23",
+                    "DOI": "10.48550/arXiv.2206.04658",
+                    "CorpusId": 249538510
+                },
+                "corpusId": 249538510,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/04f5553934c458305a501d63323f1b841fd5d102",
+                "title": "BigVGAN: A Universal Neural Vocoder with Large-Scale Training",
+                "abstract": "Despite recent progress in generative adversarial network (GAN)-based vocoders, where the model generates raw waveform conditioned on acoustic features, it is challenging to synthesize high-fidelity audio for numerous speakers across various recording environments. In this work, we present BigVGAN, a universal vocoder that generalizes well for various out-of-distribution scenarios without fine-tuning. We introduce periodic activation function and anti-aliased representation into the GAN generator, which brings the desired inductive bias for audio synthesis and significantly improves audio quality. In addition, we train our GAN vocoder at the largest scale up to 112M parameters, which is unprecedented in the literature. We identify and address the failure modes in large-scale GAN training for audio, while maintaining high-fidelity output without over-regularization. Our BigVGAN, trained only on clean speech (LibriTTS), achieves the state-of-the-art performance for various zero-shot (out-of-distribution) conditions, including unseen speakers, languages, recording environments, singing voices, music, and instrumental audio. We release our code and model at: https://github.com/NVIDIA/BigVGAN",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108229508",
+                        "name": "Sang-gil Lee"
+                    },
+                    {
+                        "authorId": "2056440915",
+                        "name": "Wei Ping"
+                    },
+                    {
+                        "authorId": "31963005",
+                        "name": "Boris Ginsburg"
+                    },
+                    {
+                        "authorId": "2301680",
+                        "name": "Bryan Catanzaro"
+                    },
+                    {
+                        "authorId": "2152497729",
+                        "name": "Sung-Hoon Yoon"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The extrapolation theory focused on the situation where the supports of training distribution and test distribution are different (Xu et al., 2020b; Ziyin et al., 2020; Ye et al., 2021), where the networks have very limited ability for nonlinear function approximation (Xu et al.",
+                "\u2026to IID settings and recently there have been a line of works to investigate the theory of OOD generalization, including structured causal models (SCM) (Arjovsky et al., 2019; Ahuja et al., 2021; Zhou et al., 2022) and extrapolation theory (Xu et al., 2020b; Ziyin et al., 2020; Ye et al., 2021).",
+                "The extrapolation theory focused on the situation where the supports of training distribution and test distribution are different (Xu et al., 2020b; Ziyin et al., 2020; Ye et al., 2021), where the networks have very limited ability for nonlinear function approximation (Xu et al., 2020b)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "53ae1072fd04080e4fc2c9205ebcbc2683d7264c",
+                "externalIds": {
+                    "DBLP": "conf/iclr/LiSYWRCZ023",
+                    "ArXiv": "2206.04046",
+                    "CorpusId": 252668882
+                },
+                "corpusId": 252668882,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/53ae1072fd04080e4fc2c9205ebcbc2683d7264c",
+                "title": "Sparse Mixture-of-Experts are Domain Generalizable Learners",
+                "abstract": "Human visual perception can easily generalize to out-of-distributed visual data, which is far beyond the capability of modern machine learning models. Domain generalization (DG) aims to close this gap, with existing DG methods mainly focusing on the loss function design. In this paper, we propose to explore an orthogonal direction, i.e., the design of the backbone architecture. It is motivated by an empirical finding that transformer-based models trained with empirical risk minimization (ERM) outperform CNN-based models employing state-of-the-art (SOTA) DG algorithms on multiple DG datasets. We develop a formal framework to characterize a network's robustness to distribution shifts by studying its architecture's alignment with the correlations in the dataset. This analysis guides us to propose a novel DG model built upon vision transformers, namely Generalizable Mixture-of-Experts (GMoE). Extensive experiments on DomainBed demonstrate that GMoE trained with ERM outperforms SOTA DG baselines by a large margin. Moreover, GMoE is complementary to existing DG methods and its performance is substantially improved when trained with DG algorithms.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2165243810",
+                        "name": "Bo Li"
+                    },
+                    {
+                        "authorId": "2115383310",
+                        "name": "Yifei Shen"
+                    },
+                    {
+                        "authorId": "2295601",
+                        "name": "Jingkang Yang"
+                    },
+                    {
+                        "authorId": "2115738764",
+                        "name": "Yezhen Wang"
+                    },
+                    {
+                        "authorId": "1820909323",
+                        "name": "Jiawei Ren"
+                    },
+                    {
+                        "authorId": "47828117",
+                        "name": "Tong Che"
+                    },
+                    {
+                        "authorId": "2155660340",
+                        "name": "Jun Zhang"
+                    },
+                    {
+                        "authorId": "2145254462",
+                        "name": "Ziwei Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026two commonly used activation functions, Tanh : x \u2192 ex\u2212e\u2212xex+e\u2212x and ReLU : x \u2192 max(0, x), along with network architectures which employ activation functions containing periodic components: SIREN : x \u2192 sin (Wx+ b) (Sitzmann et al., 2020) and Snake : x \u2192 x + 1a sin2(ax) (Ziyin et al., 2020).",
+                ", 2020) and Snake : x \u2192 x + 1 a sin(2)(ax) (Ziyin et al., 2020).",
+                "On the other one hand, SIREN and Snake manage to extrapolate the periodicity of the residual distribution even outside of the training region, thus providing further empirical evidence of the universal extrapolation theorem (Ziyin et al., 2020, Theorem 3).",
+                "Table 1 summarizes the parameters used for the considered controlled systems, where Activation denotes the activation functions, i.e. SoftPlus: x 7\u2192 log(1 + ex), Tanh: x 7\u2192 ex\u2212e\u2212xex+e\u2212x and Snake : x \u2192 x + 1a sin2(ax) (Ziyin et al., 2020)."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "4d70ac690fcde8a720d6df5b106260240b353fb4",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2203-08072",
+                    "ArXiv": "2203.08072",
+                    "DOI": "10.48550/arXiv.2203.08072",
+                    "CorpusId": 247451199
+                },
+                "corpusId": 247451199,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4d70ac690fcde8a720d6df5b106260240b353fb4",
+                "title": "Neural Solvers for Fast and Accurate Numerical Optimal Control",
+                "abstract": "Synthesizing optimal controllers for dynamical systems often involves solving optimization problems with hard real-time constraints. These constraints determine the class of numerical methods that can be applied: computationally expensive but accurate numerical routines are replaced by fast and inaccurate methods, trading inference time for solution accuracy. This paper provides techniques to improve the quality of optimized control policies given a fixed computational budget. We achieve the above via a hypersolvers approach, which hybridizes a differential equation solver and a neural network. The performance is evaluated in direct and receding-horizon optimal control tasks in both low and high dimensions, where the proposed approach shows consistent Pareto improvements in solution accuracy and control performance.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2133376851",
+                        "name": "Federico Berto"
+                    },
+                    {
+                        "authorId": "90467999",
+                        "name": "Stefano Massaroli"
+                    },
+                    {
+                        "authorId": "40585370",
+                        "name": "Michael Poli"
+                    },
+                    {
+                        "authorId": "2085587",
+                        "name": "Jinkyoo Park"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "3ee31e83c5a2bdb4bc5d862b5fc06170fe375e83",
+                "externalIds": {
+                    "ArXiv": "2203.05018",
+                    "DOI": "10.1142/s1793524523500560",
+                    "CorpusId": 247362816
+                },
+                "corpusId": 247362816,
+                "publicationVenue": {
+                    "id": "ff43255a-680d-45e2-a7d0-2f97846bdd85",
+                    "name": "International Journal of Biomathematics",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Int J Biomath"
+                    ],
+                    "issn": "1793-7159",
+                    "url": "http://www.worldscinet.com/ijb/ijb.shtml",
+                    "alternate_urls": [
+                        "http://www.worldscinet.com/ijb/mkt/archive.shtml"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3ee31e83c5a2bdb4bc5d862b5fc06170fe375e83",
+                "title": "Application of neural-network hybrid models in estimating the infection functions of nonlinear epidemic models",
+                "abstract": "Hybrid neural network models combine the advantages of a neural network's fitting functionality with differential equation models to reflect actual physical processes and are widely used in analyzing time-series data. Most related studies have focused on linear hybrid models, but only a few have examined nonlinear problems. In this work, we use a hybrid nonlinear epidemic neural network as the entry point to study its power in predicting the correct infection function of an epidemic model. To achieve this goal, we combine the bifurcation theory of the nonlinear differential model with the mean-squared error loss and design a novel loss function to ensure model trainability. Furthermore, we find the unique existence conditions supporting ordinary differential equations to estimate the correct infection function. Using the Runge Kutta method, we perform numerical experiments on our proposed model and verify its soundness. We also apply it to real COVID-19 data to accurately discover the change law of its infectivity.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "30130509",
+                        "name": "Chentong Li"
+                    },
+                    {
+                        "authorId": "2110840213",
+                        "name": "Changsheng Zhou"
+                    },
+                    {
+                        "authorId": "2108372195",
+                        "name": "Junmin Liu"
+                    },
+                    {
+                        "authorId": "2151367787",
+                        "name": "Yao Rong"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Finally, there is work on incorporating periodic functions to neural networks and/or applying these methods to periodic data/systems [38, 39] and equivariances to periodic data [40, 41]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "533ade92fa86578194f316fa722ad280f4cd7524",
+                "externalIds": {
+                    "ArXiv": "2202.04622",
+                    "DOI": "10.1103/PhysRevB.107.235139",
+                    "CorpusId": 246679984
+                },
+                "corpusId": 246679984,
+                "publicationVenue": {
+                    "id": "52113867-f77b-4f26-a1cf-8e577dd325ea",
+                    "name": "Physical review B",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Phys rev B",
+                        "Phys Rev B",
+                        "Physical Review B"
+                    ],
+                    "issn": "2469-9950",
+                    "alternate_issns": [
+                        "1098-0121",
+                        "0556-2805"
+                    ],
+                    "url": "https://journals.aps.org/prb",
+                    "alternate_urls": [
+                        "https://journals.aps.org/prb/",
+                        "http://journals.aps.org/prb/",
+                        "http://prola.aps.org/",
+                        "https://www.tib.eu/de/openurl/search?amp;DlicenseModel=nl&issn=1098-0121,0163-1829",
+                        "http://prb.aps.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/533ade92fa86578194f316fa722ad280f4cd7524",
+                "title": "Neural network ansatz for periodic wave functions and the homogeneous electron gas",
+                "abstract": "We design a neural network Ansatz for variationally finding the ground-state wave function of the Homogeneous Electron Gas, a fundamental model in the physics of extended systems of interacting fermions. We study the spin-polarised and paramagnetic phases with 7, 14 and 19 electrons over a broad range of densities from $r_s=1$ to $r_s=100$, obtaining similar or higher accuracy compared to a state-of-the-art iterative backflow baseline even in the challenging regime of very strong correlation. Our work extends previous applications of neural network Ans\\\"{a}tze to molecular systems with methods for handling periodic boundary conditions, and makes two notable changes to improve performance: splitting the pairwise streams by spin alignment and generating backflow coordinates for the orbitals from the network. We illustrate the advantage of our high quality wave functions in computing the reduced single particle density matrix. This contribution establishes neural network models as flexible and high precision Ans\\\"{a}tze for periodic electronic systems, an important step towards applications to crystalline solids.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2130836673",
+                        "name": "M. Wilson"
+                    },
+                    {
+                        "authorId": "1873530",
+                        "name": "S. Moroni"
+                    },
+                    {
+                        "authorId": "33253686",
+                        "name": "M. Holzmann"
+                    },
+                    {
+                        "authorId": "2068203542",
+                        "name": "Nicholas Gao"
+                    },
+                    {
+                        "authorId": "2487773",
+                        "name": "F. Wudarski"
+                    },
+                    {
+                        "authorId": "7304881",
+                        "name": "T. Vegge"
+                    },
+                    {
+                        "authorId": "36617197",
+                        "name": "A. Bhowmik"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026times the Lipshitz constant of the non-linearity, the assumption that every block is Lipshitz-continuous applies to all existing networks with fixed weights and with Lipshitz-continuous activation functions (such as ReLU, tanh, Swish (Ramachandran et al., 2017), Snake (Ziyin et al., 2020) etc.).",
+                "Because the Lipshitz constant of a neural network can be upper bounded by the product of the largest eigenvalue of each weight matrix times the Lipshitz constant of the non-linearity, the assumption that every block is Lipshitz-continuous applies to all existing networks with fixed weights and with Lipshitz-continuous activation functions (such as ReLU, tanh, Swish (Ramachandran et al., 2017), Snake (Ziyin et al., 2020) etc.)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "d5e544e16410d3a353c0d532c3f61bc103df0891",
+                "externalIds": {
+                    "ArXiv": "2201.12724",
+                    "DBLP": "journals/corr/abs-2201-12724",
+                    "CorpusId": 246430979
+                },
+                "corpusId": 246430979,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/d5e544e16410d3a353c0d532c3f61bc103df0891",
+                "title": "Stochastic Neural Networks with Infinite Width are Deterministic",
+                "abstract": "This work theoretically studies stochastic neural networks, a main type of neural network in use. We prove that as the width of an optimized stochastic neural network tends to infinity, its predictive variance on the training set decreases to zero. Our theory justifies the common intuition that adding stochasticity to the model can help regularize the model by introducing an averaging effect. Two common examples that our theory can be relevant to are neural networks with dropout and Bayesian latent variable models in a special limit. Our result thus helps better understand how stochasticity affects the learning of neural networks and potentially design better architectures for practical problems.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "12907562",
+                        "name": "Liu Ziyin"
+                    },
+                    {
+                        "authorId": "2119078297",
+                        "name": "Hanlin Zhang"
+                    },
+                    {
+                        "authorId": "50123271",
+                        "name": "Xiangming Meng"
+                    },
+                    {
+                        "authorId": "2047304572",
+                        "name": "Yuting Lu"
+                    },
+                    {
+                        "authorId": "2064963077",
+                        "name": "Eric P. Xing"
+                    },
+                    {
+                        "authorId": "144365686",
+                        "name": "Masakuni Ueda"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "b8e420f9cf5ac53e9d8e8bb86cfb898170ecc4dc",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2112-01579",
+                    "ArXiv": "2112.01579",
+                    "DOI": "10.1111/cgf.14578",
+                    "CorpusId": 244896210
+                },
+                "corpusId": 244896210,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/b8e420f9cf5ac53e9d8e8bb86cfb898170ecc4dc",
+                "title": "Fast Neural Representations for Direct Volume Rendering",
+                "abstract": "Despite the potential of neural scene representations to effectively compress 3D scalar fields at high reconstruction quality, the computational complexity of the training and data reconstruction step using scene representation networks limits their use in practical applications. In this paper, we analyse whether scene representation networks can be modified to reduce these limitations and whether such architectures can also be used for temporal reconstruction tasks. We propose a novel design of scene representation networks using GPU tensor cores to integrate the reconstruction seamlessly into on\u2010chip raytracing kernels, and compare the quality and performance of this network to alternative network\u2010 and non\u2010network\u2010based compression schemes. The results indicate competitive quality of our design at high compression rates, and significantly faster decoding times and lower memory consumption during data reconstruction. We investigate how density gradients can be computed using the network and show an extension where density, gradient and curvature are predicted jointly. As an alternative to spatial super\u2010resolution approaches for time\u2010varying fields, we propose a solution that builds upon latent\u2010space interpolation to enable random access reconstruction at arbitrary granularity. We summarize our findings in the form of an assessment of the strengths and limitations of scene representation networks for compression domain volume rendering, and outline future research directions. Source code: https://github.com/shamanDevel/fV\u2010SRN",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "33670277",
+                        "name": "S. Weiss"
+                    },
+                    {
+                        "authorId": "2143289987",
+                        "name": "Philipp Herm\u00fcller"
+                    },
+                    {
+                        "authorId": "145491004",
+                        "name": "R. Westermann"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "2 Related Work Modeling Periodic Signals Previous research that tried to model periodic signals replaces nonlinear activation functions by sinusoids such as sin(x), cos(x) or the linear combination of the two [28, 34, 21, 35]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "a002e11349bb50ea02a9d4a58af2727223af5a0e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2110-12365",
+                    "ArXiv": "2110.12365",
+                    "CorpusId": 239768430
+                },
+                "corpusId": 239768430,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a002e11349bb50ea02a9d4a58af2727223af5a0e",
+                "title": "Conditional Generation of Periodic Signals with Fourier-Based Decoder",
+                "abstract": "Periodic signals play an important role in daily lives. Although conventional sequential models have shown remarkable success in various fields, they still come short in modeling periodicity; they either collapse, diverge or ignore details. In this paper, we introduce a novel framework inspired by Fourier series to generate periodic signals. We first decompose the given signals into multiple sines and cosines and then conditionally generate periodic signals with the output components. We have shown our model efficacy on three tasks: reconstruction, imputation and conditional generation. Our model outperforms baselines in all tasks and shows more stable and refined results.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2141768156",
+                        "name": "Jiyoung Lee"
+                    },
+                    {
+                        "authorId": "2382193",
+                        "name": "Wonjae Kim"
+                    },
+                    {
+                        "authorId": "1998963567",
+                        "name": "Daehoon Gwak"
+                    },
+                    {
+                        "authorId": "3242613",
+                        "name": "E. Choi"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[36] shows that incorporating prior knowledge into architecture design is key to the success of neural networks and applied neural networks with periodic activation functions to the problem of financial index prediction."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "9f5ed757ba5f606ed1cd3a265597fcdd820d251f",
+                "externalIds": {
+                    "ArXiv": "2106.04114",
+                    "DBLP": "conf/icaif/LiuMI22",
+                    "DOI": "10.1145/3533271.3561720",
+                    "CorpusId": 246431060
+                },
+                "corpusId": 246431060,
+                "publicationVenue": {
+                    "id": "5276bfc2-b6f9-4564-83fa-df391a9ea260",
+                    "name": "International Conference on AI in Finance",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICAIF",
+                        "Int Conf AI Finance"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9f5ed757ba5f606ed1cd3a265597fcdd820d251f",
+                "title": "Theoretically Motivated Data Augmentation and Regularization for Portfolio Construction",
+                "abstract": "The task we consider is portfolio construction in a speculative market, a fundamental problem in modern finance. While various empirical works now exist to explore deep learning in finance, the theory side is almost non-existent. In this work, we focus on developing a theoretical framework for understanding the use of data augmentation for deep-learning-based approaches to quantitative finance. The proposed theory clarifies the role and necessity of data augmentation for finance; moreover, our theory implies that a simple algorithm of injecting a random noise of strength to the observed return rt is better than not injecting any noise and a few other financially irrelevant data augmentation techniques.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "12907562",
+                        "name": "Liu Ziyin"
+                    },
+                    {
+                        "authorId": "50400173",
+                        "name": "Kentaro Minami"
+                    },
+                    {
+                        "authorId": "34300210",
+                        "name": "Kentaro Imajo"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "86bb2fe3facc5de24f5bb367056e791332603c1d",
+                "externalIds": {
+                    "ArXiv": "2106.12891",
+                    "DBLP": "conf/ijcnn/BhattacharyaMP22",
+                    "DOI": "10.1109/IJCNN55064.2022.9892232",
+                    "CorpusId": 248405602
+                },
+                "corpusId": 248405602,
+                "publicationVenue": {
+                    "id": "f80ba4a3-7aed-4021-b4d8-e4f50668847a",
+                    "name": "IEEE International Joint Conference on Neural Network",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IJCNN",
+                        "IEEE Int Jt Conf Neural Netw",
+                        "Int Jt Conf Neural Netw",
+                        "International Joint Conference on Neural Network"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1573"
+                },
+                "url": "https://www.semanticscholar.org/paper/86bb2fe3facc5de24f5bb367056e791332603c1d",
+                "title": "Encoding Involutory Invariances in Neural Networks",
+                "abstract": "In certain situations, neural networks are trained upon data that obey underlying symmetries. However, the predictions do not respect the symmetries exactly unless embedded in the network structure. In this work, we introduce architectures that embed a special kind of symmetry namely, invariance with respect to involutory linear/affine transformations up to parity p = \u00b11. We provide rigorous theorems to show that the proposed network ensures such an invariance and present qualitative arguments for a special universal approximation theorem. An adaption of our techniques to CNN tasks for datasets with inherent horizontal/vertical reflection symmetry is demonstrated. Extensive experiments indicate that the proposed model outperforms baseline feed-forward and physics-informed neural networks while identically respecting the underlying symmetry.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2028910746",
+                        "name": "Anwesh Bhattacharya"
+                    },
+                    {
+                        "authorId": "145324933",
+                        "name": "M. Mattheakis"
+                    },
+                    {
+                        "authorId": "1735677",
+                        "name": "P. Protopapas"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "abae0f2ec4e3ff26696203d3966db50b7e7b97d8",
+                "externalIds": {
+                    "MAG": "3176227710",
+                    "DOI": "10.5281/ZENODO.4833388",
+                    "CorpusId": 237813270
+                },
+                "corpusId": 237813270,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/abae0f2ec4e3ff26696203d3966db50b7e7b97d8",
+                "title": "[Re] Neural Networks Fail to Learn Periodic Functions and How to Fix It",
+                "abstract": "The central claims of the paper are two-fold: (1) The properties of the activation functions are carried over to the neural networks. Atanhnetworkwill be smooth and extrapolates to a constant function, while ReLU extrapolates in a linear way. Standard neural networks with conventional activation functions are insufficient for extrapolating periodic functions. (2) The proposed activation function manages to learn periodic functions while being able to optimize as well as conventional activation functions. While both experimental proof and theoretical justifications are provided for the claims, we shall only be concerned with testing the claims via experimental means.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145003597",
+                        "name": "M. Arvind"
+                    },
+                    {
+                        "authorId": "2129113282",
+                        "name": "Mustansir Mama"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "b561ae9fa855f8941a3a3aa77fe331415ef3177f",
+                "externalIds": {
+                    "MAG": "3130451375",
+                    "DOI": "10.1007/978-3-030-69273-5_8",
+                    "CorpusId": 233942665
+                },
+                "corpusId": 233942665,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/b561ae9fa855f8941a3a3aa77fe331415ef3177f",
+                "title": "6G: The Intelligent Network",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "49456639",
+                        "name": "M. Bo\u017eani\u0107"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Saurabh Sinha"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "c8fc3da2d6a0a7f05e716fa3c06fc7c813c9c049",
+                "externalIds": {
+                    "PubMedCentral": "7898133",
+                    "DOI": "10.1098/rsta.2020.0097",
+                    "CorpusId": 231919857,
+                    "PubMed": "33583266"
+                },
+                "corpusId": 231919857,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/c8fc3da2d6a0a7f05e716fa3c06fc7c813c9c049",
+                "title": "Can deep learning beat numerical weather prediction?",
+                "abstract": "The recent hype about artificial intelligence has sparked renewed interest in applying the successful deep learning (DL) methods for image recognition, speech recognition, robotics, strategic games and other application areas to the field of meteorology. There is some evidence that better weather forecasts can be produced by introducing big data mining and neural networks into the weather prediction workflow. Here, we discuss the question of whether it is possible to completely replace the current numerical weather models and data assimilation systems with DL approaches. This discussion entails a review of state-of-the-art machine learning concepts and their applicability to weather data with its pertinent statistical properties. We think that it is not inconceivable that numerical weather models may one day become obsolete, but a number of fundamental breakthroughs are needed before this goal comes into reach. This article is part of the theme issue \u2018Machine learning for weather and climate modelling\u2019.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "50077870",
+                        "name": "M. Schultz"
+                    },
+                    {
+                        "authorId": "2088754326",
+                        "name": "C. Betancourt"
+                    },
+                    {
+                        "authorId": "2057814972",
+                        "name": "B. Gong"
+                    },
+                    {
+                        "authorId": "66412089",
+                        "name": "F. Kleinert"
+                    },
+                    {
+                        "authorId": "2049498790",
+                        "name": "M. Langguth"
+                    },
+                    {
+                        "authorId": "150189389",
+                        "name": "L. H. Leufen"
+                    },
+                    {
+                        "authorId": "1753247015",
+                        "name": "A. Mozaffari"
+                    },
+                    {
+                        "authorId": "66130078",
+                        "name": "S. Stadtler"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "\u2026definitely plays a role (Geiger et al., 2020); extrapolation properties of neural networks are also shown to be closely related to generalization (Ziyin et al., 2020); good test loss does not translate to good generalization accuracy (Chen et al., 2020); generalization may even be understood\u2026",
+                ", 2020); extrapolation properties of neural networks are also shown to be closely related to generalization (Ziyin et al., 2020); good test loss does not translate to good generalization accuracy (Chen et al."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "5db97973c1d3f0a8bd275d6640d7de927f37182a",
+                "externalIds": {
+                    "MAG": "3112337968",
+                    "DBLP": "journals/corr/abs-2012-03636",
+                    "CorpusId": 227335108
+                },
+                "corpusId": 227335108,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5db97973c1d3f0a8bd275d6640d7de927f37182a",
+                "title": "Stochastic Gradient Descent with Large Learning Rate",
+                "abstract": "As a simple and efficient optimization method in deep learning, stochastic gradient descent (SGD) has attracted tremendous attention. In the vanishing learning rate regime, SGD is now relatively well understood, and the majority of theoretical approaches to SGD set their assumptions in the continuous-time limit. However, the continuous-time predictions are unlikely to reflect the experimental observations well because the practice often runs in the large learning rate regime, where the training is faster and the generalization of models are often better. In this paper, we propose to study the basic properties of SGD and its variants in the non-vanishing learning rate regime. The focus is on deriving exactly solvable results and relating them to experimental observations. The main contributions of this work are to derive the stable distribution for discrete-time SGD in a quadratic loss function with and without momentum. Examples of applications of the proposed theory considered in this work include the approximation error of variants of SGD, the effect of mini-batch noise, the escape rate from a sharp minimum, and and the stationary distribution of a few second order methods.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "1471031355",
+                        "name": "Kangqiao Liu"
+                    },
+                    {
+                        "authorId": "12907562",
+                        "name": "Liu Ziyin"
+                    },
+                    {
+                        "authorId": "2815318",
+                        "name": "Masahito Ueda"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "5c8e124247df991bce0c192a506a18e37709c0c7",
+                "externalIds": {
+                    "ArXiv": "2001.11107",
+                    "DOI": "10.1103/PhysRevE.105.065305",
+                    "CorpusId": 237485607,
+                    "PubMed": "35854562"
+                },
+                "corpusId": 237485607,
+                "publicationVenue": {
+                    "id": "19842b7b-a4d1-4f9a-9714-87d878cf6e73",
+                    "name": "Physical Review E",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Phys rev E",
+                        "Physical review. E",
+                        "Phys Rev E"
+                    ],
+                    "issn": "1539-3755",
+                    "alternate_issns": [
+                        "1550-2376",
+                        "2470-0045"
+                    ],
+                    "url": "https://journals.aps.org/pre/",
+                    "alternate_urls": [
+                        "http://pre.aps.org/",
+                        "http://journals.aps.org/pre/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5c8e124247df991bce0c192a506a18e37709c0c7",
+                "title": "Hamiltonian neural networks for solving equations\u00a0of motion.",
+                "abstract": "There has been a wave of interest in applying machine learning to study dynamical systems. We present a Hamiltonian neural network that solves the differential equations\u00a0that govern dynamical systems. This is an equation-driven machine learning method where the optimization process of the network depends solely on the predicted functions without using any ground truth data. The model learns solutions that satisfy, up to an arbitrarily small error, Hamilton's equations\u00a0and, therefore, conserve the Hamiltonian invariants. The choice of an appropriate activation function drastically improves the predictability of the network. Moreover, an error analysis is derived and states that the numerical errors depend on the overall network performance. The Hamiltonian network is then employed to solve the equations\u00a0for the nonlinear oscillator and the chaotic H\u00e9non-Heiles dynamical system. In both systems, a symplectic Euler integrator requires two orders more evaluation points than the Hamiltonian network to achieve the same order of the numerical error in the predicted phase space trajectories.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "145324933",
+                        "name": "M. Mattheakis"
+                    },
+                    {
+                        "authorId": "144633639",
+                        "name": "David Sondak"
+                    },
+                    {
+                        "authorId": "1735677",
+                        "name": "P. Protopapas"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "While most of the literature focused on using activation functions that exhibit a periodic behavior (Parascandolo et al., 2017; Eger et al., 2019; Ziyin et al., 2020; Mehta et al., 2021), our analysis shows that this approach is, in essence, necessary yet insufficient for the purpose of distant extrapolation.",
+                "While most of the literature focused on using activation functions that exhibit a periodic behavior (Parascandolo et al., 2017; Eger et al., 2019; Ziyin et al., 2020; Mehta et al., 2021), our analysis shows that this approach is, in essence, necessary yet insufficient for the purpose of distant\u2026",
+                "We also perform experiments with other non-linearities such as tanh, and the snake x 7\u2192 x+ 1a sin\n2(ax) activation (Ziyin et al., 2020) with a = 27.5 (authors recommend a \u2208 [5, 50]).",
+                "We also perform experiments with other non-linearities such as tanh, and the snake x 7\u2192 x+ 1 a sin (2)(ax) activation (Ziyin et al., 2020) with a = 27."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "ded04074e9592105201e8c0498641985f5b8dbb8",
+                "externalIds": {
+                    "DBLP": "conf/neurreps/RobinSL22",
+                    "CorpusId": 253527985
+                },
+                "corpusId": 253527985,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ded04074e9592105201e8c0498641985f5b8dbb8",
+                "title": "Periodic signal recovery with regularized sine neural networks",
+                "abstract": "We consider the problem of learning a periodic one-dimensional signal with neural networks, and designing models that are able to extrapolate the signal well beyond the training window. First, we show that multi-layer perceptrons with ReLU activations are provably unable to perform this extrapolation task, and lead to poor performance in practice even close to the training window. Then, we propose a modified training procedure for two-layer architectures with sine activations with a more diverse feature initialization and well-chosen non-convex regularization, that is able to extrapolate the signal with low error well beyond the training window. This procedure yields results several orders of magnitude better than its competitors for distant extrapolation (beyond 100 periods of the signal), while being able to accurately recover the frequency spectrum of the signal in a multi-tone setting.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2190848461",
+                        "name": "David A. R. Robin"
+                    },
+                    {
+                        "authorId": "2237795084",
+                        "name": "Kevin Scaman"
+                    },
+                    {
+                        "authorId": "2237788642",
+                        "name": "Marc Lelarge"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "This is an effective way to handle the MLP extrapolation problem, which cannot be solved by merely using input warping and SNAKE activation function [161].",
+                "In fact, previous works [141, 161] have shown that a traditional MLP is unable to extrapolate a 1D periodic signal even with many training samples.",
+                "The first MLP contains 9 fully-connected Snake layers [161] with 512 channels.",
+                "Since ReLU activation function has been proven to be ineffective to extrapolate periodic signals [141], we use the more suitable SNAKE function [161]."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "81b22bd3e5fdb14845ce28622c31a7f94fec3ca6",
+                "externalIds": {
+                    "CorpusId": 252991397
+                },
+                "corpusId": 252991397,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/81b22bd3e5fdb14845ce28622c31a7f94fec3ca6",
+                "title": "Image Synthesis with Appearance Decomposition",
+                "abstract": "Our visual world is compositional and its appearance can be decomposed into various components. Leveraging these components can be beneficial for challenging image synthesis tasks. To this end, this thesis focuses on studying how appearance decomposition can improve image synthesis methods using two examples. (1) Structural decomposition: we introduce a periodicity-aware single image framework to synthesize a scene of near-periodic patterns (NPP). In particular, the appearance of an NPP scene is decomposed into motifs and their corresponding periodicities (i.e., arrangement), which are injected into the proposed framework as a prior to synthesize the NPP scene. The proposed method can interpolate and extrapolate NPP images, in-paint large and arbitrarily shaped regions, recover blurry regions when images are remapped, segment periodic and non-periodic regions, in planar and multi-planar scenes. (2) Intrinsic decomposition: we propose a novel approach to decompose a single panorama of an empty indoor environment into four appearance components: specular, direct sunlight, diffuse and diffuse ambient without direct sunlight. This appearance decomposition enables multiple image synthesis applications including sun direction estimation, virtual furniture insertion, floor material replacement, and sun direction change. We conduct extensive experiments to demonstrate the effectiveness of both methods.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2152688877",
+                        "name": "B. Chen"
+                    },
+                    {
+                        "authorId": "2146280506",
+                        "name": "Junchen Zhu"
+                    },
+                    {
+                        "authorId": "3439037",
+                        "name": "Mengtian Li"
+                    },
+                    {
+                        "authorId": "2162534",
+                        "name": "Ivaylo Boyadzhiev"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Unfortunately, this approach is not guaranteed to learn a periodic function out-of-the-box, especially when f(x, t) is approximated by a neural network (Ziyin et al., 2020)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "28c3ea11ca42a015a97307d067c36e28b4d8204b",
+                "externalIds": {
+                    "DBLP": "conf/icml/YangXLWW22",
+                    "CorpusId": 250360812
+                },
+                "corpusId": 250360812,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/28c3ea11ca42a015a97307d067c36e28b4d8204b",
+                "title": "Fourier Learning with Cyclical Data",
+                "abstract": "Many machine learning models for online applications, such as recommender systems, are often trained on data with cyclical properties. These data sequentially arrive from a time-varying distribution that is periodic in time. Existing algorithms either use streaming learning to track a time-varying set of optimal model parameters, yielding a dynamic regret that scales linearly in time; or partition the data of each cycle into multiple segments and train a separate model for each\u2014 a pluralistic approach that is computationally and storage-wise expensive. In this paper, we have designed a novel approach to overcome the aforementioned shortcomings. Our method, named \u201cFourier learning\u201d, encodes the periodicity into the model representation using a partial Fourier sequence, and trains the coefficient functions modeled by neural networks. Particularly, we design a Fourier multi-layer perceptron (F-MLP) that can be trained on streaming data with stochastic gradient descent (streaming-SGD), and we derive its convergence guarantees. We demonstrate Fourier learning\u2019s better performance with extensive experiments on synthetic and public datasets, as well as on a large-scale recommender system that is updated in real-time, and trained with tens of millions of samples per day.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2432528",
+                        "name": "Yingxiang Yang"
+                    },
+                    {
+                        "authorId": "71108546",
+                        "name": "Zhihan Xiong"
+                    },
+                    {
+                        "authorId": "2115347248",
+                        "name": "Tianyi Liu"
+                    },
+                    {
+                        "authorId": "3340042",
+                        "name": "Taiqing Wang"
+                    },
+                    {
+                        "authorId": "2146308653",
+                        "name": "Chong Wang"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "0b87f8afc3b8f317ac34abe9fb3cfba712a2a2e3",
+                "externalIds": {
+                    "CorpusId": 234100612
+                },
+                "corpusId": 234100612,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/0b87f8afc3b8f317ac34abe9fb3cfba712a2a2e3",
+                "title": "Reproducibility Report: Neural Networks Fail to Learn Periodic Functions and How to Fix It",
+                "abstract": "The central claims of the paper are two-fold. (1) The properties of the activation functions are carried over to the 6 neural networks. A tanh network will be smooth and extrapolates to a constant function, while ReLU extrapolates in a 7 linear way. Standard neural networks with conventional activation functions are insufficient for extrapolating periodic 8 functions. (2) The proposed activation function manages to learn periodic functions while being able to optimize as 9 well as conventional activation functions. While both experimental proof and theoretical justifications are provided for 10 the claims, we shall only be concerned with testing the claims via experimental means. 11",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145003597",
+                        "name": "M. Arvind"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "456426df963e9fad2c51b2ab3dff73613303b1f6",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2106-04114",
+                    "CorpusId": 235367789
+                },
+                "corpusId": 235367789,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/456426df963e9fad2c51b2ab3dff73613303b1f6",
+                "title": "What Data Augmentation Do We Need for Deep-Learning-Based Finance?",
+                "abstract": "The main task we consider is portfolio construction in a speculative market, a fundamental problem in modern finance. While various empirical works now exist to explore deep learning in finance, the theory side is almost non-existent. In this work, we focus on developing a theoretical framework for understanding the use of data augmentation for deep-learning-based approaches to quantitative finance. The proposed theory clarifies the role and necessity of data augmentation for finance; moreover, our theory motivates a simple algorithm of injecting a random noise of strength \u221a \u2223rt\u22121\u2223 to the observed return rt. This algorithm is shown to work well in practice.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "12907562",
+                        "name": "Liu Ziyin"
+                    },
+                    {
+                        "authorId": "50400173",
+                        "name": "Kentaro Minami"
+                    },
+                    {
+                        "authorId": "34300210",
+                        "name": "Kentaro Imajo"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "In [13], a variant of the snake activation function is used where \u03c3(z) = z + sin z and this contains infinitely many unsafe points, b\u2217 = \u00b1n\u03c0 for n \u2208W \u2014 \u03c3b\u2217(z) = \u03c3(\u00b1n\u03c0 + z)\u2212 \u03c3(\u00b1n\u03c0) = ( \u00b1n\u03c0 + z) + sin(\u00b1n\u03c0 + z) \u2213n\u03c0 \u2212 sin(\u00b1n\u03c0) = (\u22121) sin(z) which is clearly an odd function."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "679c746cb3233b2a62f9136093fa304fefe7f96e",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2106-12891",
+                    "CorpusId": 235623701
+                },
+                "corpusId": 235623701,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/679c746cb3233b2a62f9136093fa304fefe7f96e",
+                "title": "Encoding Involutory Invariance in Neural Networks",
+                "abstract": "In certain situations, Neural Networks (NN) are trained upon data that obey underlying physical symmetries. However, it is not guaranteed that NNs will obey the underlying symmetry unless embedded in the network structure. In this work, we explore a special kind of symmetry where functions are invariant with respect to involutory linear/affine transformations up to parity p = \u00b11. We develop mathematical theorems and propose NN architectures that ensure invariance and universal approximation properties. Numerical experiments indicate that the proposed models outperform baseline networks while respecting the imposed symmetry. An adaption of our technique to convolutional NN classification tasks for datasets with inherent horizontal/vertical reflection symmetry has also been proposed.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2028910746",
+                        "name": "Anwesh Bhattacharya"
+                    },
+                    {
+                        "authorId": "145324933",
+                        "name": "M. Mattheakis"
+                    },
+                    {
+                        "authorId": "1735677",
+                        "name": "P. Protopapas"
+                    }
+                ]
+            }
+        }
+    ]
+}

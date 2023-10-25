@@ -1,0 +1,915 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "contexts": [
+                "Finally, we retrain our model from scratch each round to prevent warm starting [4]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "35fecdd0d498b17b75fea839bdafc53ad225eefb",
+                "externalIds": {
+                    "ArXiv": "2302.12018",
+                    "DBLP": "journals/corr/abs-2302-12018",
+                    "DOI": "10.1109/tai.2023.3246959",
+                    "CorpusId": 257102441
+                },
+                "corpusId": 257102441,
+                "publicationVenue": {
+                    "id": "3c27e831-750f-45bc-9914-2148a5259eba",
+                    "name": "IEEE Transactions on Artificial Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Artif Intell"
+                    ],
+                    "issn": "2691-4581",
+                    "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9078688"
+                },
+                "url": "https://www.semanticscholar.org/paper/35fecdd0d498b17b75fea839bdafc53ad225eefb",
+                "title": "Gaussian Switch Sampling: A Second Order Approach to Active Learning",
+                "abstract": "In active learning, acquisition functions define informativeness directly on the representation position within the model manifold. However, for most machine learning models (in particular neural networks) this representation is not fixed due to the training pool fluctuations in between active learning rounds. Therefore, several popular strategies are sensitive to experiment parameters (e.g. architecture) and do not consider model robustness to out-of-distribution settings. To alleviate this issue, we propose a grounded second-order definition of information content and sample importance within the context of active learning. Specifically, we define importance by how often a neural network\"forgets\"a sample during training - artifacts of second order representation shifts. We show that our definition produces highly accurate importance scores even when the model representations are constrained by the lack of training data. Motivated by our analysis, we develop Gaussian Switch Sampling (GauSS). We show that GauSS is setup agnostic and robust to anomalous distributions with exhaustive experiments on three in-distribution benchmarks, three out-of-distribution benchmarks, and three different architectures. We report an improvement of up to 5% when compared against four popular query strategies.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2132334662",
+                        "name": "Ryan Benkert"
+                    },
+                    {
+                        "authorId": "3458098",
+                        "name": "M. Prabhushankar"
+                    },
+                    {
+                        "authorId": "2205583502",
+                        "name": "Ghassan Al-Regib"
+                    },
+                    {
+                        "authorId": "2209389754",
+                        "name": "Armin Pacharmi"
+                    },
+                    {
+                        "authorId": "143873381",
+                        "name": "E. Corona"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Finally, we retrain our model form scratch each round to prevent warm starting [22]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "aa031d74ed6c024fa3ec94b4df34a0a5aafb2a4e",
+                "externalIds": {
+                    "DBLP": "conf/icip/BenkertPA22",
+                    "ArXiv": "2301.05106",
+                    "DOI": "10.1109/ICIP46576.2022.9897514",
+                    "CorpusId": 253320274
+                },
+                "corpusId": 253320274,
+                "publicationVenue": {
+                    "id": "b6369c33-5d70-463c-8e82-95a54efa3cc8",
+                    "name": "International Conference on Information Photonics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Image Process",
+                        "ICIP",
+                        "Int Conf Inf Photonics",
+                        "International Conference on Image Processing"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/aa031d74ed6c024fa3ec94b4df34a0a5aafb2a4e",
+                "title": "Forgetful Active Learning with Switch Events: Efficient Sampling for Out-of-Distribution Data",
+                "abstract": "This paper considers deep out-of-distribution active learning. In practice, fully trained neural networks interact randomly with out-of-distribution (OOD) inputs and map aberrant samples randomly within the model representation space. Since data representations are direct manifestations of the training distribution, the data selection process plays a crucial role in outlier robustness. For paradigms such as active learning, this is especially challenging since protocols must not only improve performance on the training distribution most effectively but further render a robust representation space. However, existing strategies directly base the data selection on the data representation of the unlabeled data which is random for OOD samples by definition. For this purpose, we introduce forgetful active learning with switch events (FALSE) - a novel active learning protocol for out-of-distribution active learning. Instead of defining sample importance on the data representation directly, we formulate \"informativeness\" with learning difficulty during training. Specifically, we approximate how often the network \"forgets\" unlabeled samples and query the most \"forgotten\" samples for annotation. We report up to 4.5% accuracy improvements in over 270 experiments, including four commonly used protocols, two OOD benchmarks, one in-distribution benchmark, and three different architectures.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2132334662",
+                        "name": "Ryan Benkert"
+                    },
+                    {
+                        "authorId": "3458098",
+                        "name": "M. Prabhushankar"
+                    },
+                    {
+                        "authorId": "2176123290",
+                        "name": "Ghassan AlRegib"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "For example, if a pipeline will be executed on the interval [1, 11), all of the vertices in the interval DAG have the interval [1, 11).",
+                "Vertex for P1 only\nVertex for P2 only\nVertex for P1 and P2\nS3\nS2 S1\nS4\nFigure 5: The process of materialization DAG construction.\nalgorithm removes \ud835\udc5d2 from all of its ancestors, i.e., \u27e8Var-f, [0, 10)\u27e9, \u27e8Scale-t, [0, 10)\u27e9, \u27e8Scale-f, [0, 10)\u27e9, and \u27e8FG-t, [0, 10)\u27e9.",
+                "For example, the vertex \u27e8Var-f, [1, 11)\u27e9 of \ud835\udc3c\ud835\udc372 is split into \u27e8Var-f, [1, 10)\u27e9 and \u27e8Var-f, [10, 11)\u27e9 in Figure 6c. S2 There exists a matching vertex with full or partial interval overlap.",
+                "For example, the second execution of p1 can reuse the generated features in the interval [1, 30).",
+                "For example, for the second execution of p1 in interval [1, 31), we can reuse the statistics artifacts (i.",
+                ", mean and variance) and the feature artifacts of the interval [1, 30).",
+                "Therefore, for p2, the interval for training is [1, 11) (the last 10 days) and for p1, the interval is [0, 11), since the scheduled interval of p1 (30 days) is larger than the available data (Figure 6a).",
+                "For example, the vertex \u27e8Var-f, [1, 11)\u27e9 of ID2 is split into \u27e8Var-f, [1, 10)\u27e9 and \u27e8Var-f, [10, 11)\u27e9 in Figure 6c.",
+                "Therefore, reusing a model does not replace its computation, but reduces the training time [1, 52].",
+                "On the second execution (on the interval [1, 31)), since mean and variance can be computed incrementally, we reuse the mean and variance of the interval [1, 30) and only compute the mean and variance of [30, 31).",
+                "For example, if \u27e8Var-f, [0, 10)\u27e9 is materialized, we set its compute cost to zero before computing the cost of \u27e8Var-t, [0, 10)\u27e9 and \u27e8DNN, [0, 10)\u27e9.",
+                "Since \u27e8Var-f, [1, 10)\u27e9 and \u27e8Scale-t, [0, 10)\u27e9 are materialized, we prune their incoming edges.",
+                "Note that materializing a vertex such as \u27e8Var-f, [0, 10)\u27e9 does not break the dependency of its descendants (e.g., \u27e8Var-t, [0, 10)\u27e9) from its ancestors (e.g., \u27e8Scale-t, [0, 10)\u27e9), since there are more than one path connecting the ancestors to the descendants."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "297e2ed22af4b9de6264d08d060145881da83b4e",
+                "externalIds": {
+                    "DBLP": "conf/sigmod/DerakhshanMKRM22",
+                    "DOI": "10.1145/3514221.3526186",
+                    "CorpusId": 249579147
+                },
+                "corpusId": 249579147,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/297e2ed22af4b9de6264d08d060145881da83b4e",
+                "title": "Materialization and Reuse Optimizations for Production Data Science Pipelines",
+                "abstract": "Many companies and businesses train and deploy machine learning (ML) pipelines to answer prediction queries. In many applications, new training data continuously becomes available. A typical approach to ensure that ML models are up-to-date is to retrain the ML pipelines following a schedule, e.g., every day on the last seven days of data. Several use cases, such as A/B testing and ensemble learning, require many pipelines to be deployed in parallel. Existing solutions train each pipeline separately, which generates redundant data processing. Our goal is to eliminate redundant data processing in such scenarios using materialization and reuse optimizations. Our solution comprises of two main parts. First, we propose a materialization algorithm that given a storage budget, materializes the subset of the artifacts to minimize the run time of the subsequent executions. Second, we design a reuse algorithm to generate an execution plan by combining the pipelines into a directed acyclic graph (DAG) and reusing the materialized artifacts when appropriate. Our experiments show that our solution can reduce the training time by up to an order of magnitude for different deployment scenarios.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2013175",
+                        "name": "Behrouz Derakhshan"
+                    },
+                    {
+                        "authorId": "2113608196",
+                        "name": "Alireza Rezaei Mahdiraji"
+                    },
+                    {
+                        "authorId": "2827559",
+                        "name": "Zoi Kaoudi"
+                    },
+                    {
+                        "authorId": "1731210",
+                        "name": "T. Rabl"
+                    },
+                    {
+                        "authorId": "1733290",
+                        "name": "V. Markl"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "850159a10a6c59453ce0884e1a931027ad085210",
+                "externalIds": {
+                    "DOI": "10.3390/app112210860",
+                    "CorpusId": 244355230
+                },
+                "corpusId": 244355230,
+                "publicationVenue": {
+                    "id": "136edf8d-0f88-4c2c-830f-461c6a9b842e",
+                    "name": "Applied Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl Sci"
+                    ],
+                    "issn": "2076-3417",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217814",
+                    "alternate_urls": [
+                        "http://www.mathem.pub.ro/apps/",
+                        "https://www.mdpi.com/journal/applsci",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217814"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/850159a10a6c59453ce0884e1a931027ad085210",
+                "title": "Machine Translation in Low-Resource Languages by an Adversarial Neural Network",
+                "abstract": "Existing Sequence-to-Sequence (Seq2Seq) Neural Machine Translation (NMT) shows strong capability with High-Resource Languages (HRLs). However, this approach poses serious challenges when processing Low-Resource Languages (LRLs), because the model expression is limited by the training scale of parallel sentence pairs. This study utilizes adversary and transfer learning techniques to mitigate the lack of sentence pairs in LRL corpora. We propose a new Low resource, Adversarial, Cross-lingual (LAC) model for NMT. In terms of the adversary technique, LAC model consists of a generator and discriminator. The generator is a Seq2Seq model that produces the translations from source to target languages, while the discriminator measures the gap between machine and human translations. In addition, we introduce transfer learning on LAC model to help capture the features in rare resources because some languages share the same subject-verb-object grammatical structure. Rather than using the entire pretrained LAC model, we separately utilize the pretrained generator and discriminator. The pretrained discriminator exhibited better performance in all experiments. Experimental results demonstrate that the LAC model achieves higher Bilingual Evaluation Understudy (BLEU) scores and has good potential to augment LRL translations.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "49632995",
+                        "name": "Mengtao Sun"
+                    },
+                    {
+                        "authorId": "2146228180",
+                        "name": "Hao Wang"
+                    },
+                    {
+                        "authorId": "72705532",
+                        "name": "Mark Pasquine"
+                    },
+                    {
+                        "authorId": "1390151477",
+                        "name": "Ibrahim A. Hameed"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "(Ash & Adams, 2019) considered an extreme transfer scenario, where an agent is pretrained on data from the same distribution as the target task, and reported a negative generalisation gap.",
+                "We build on (Ash & Adams, 2019) and study the generalisation gap induced by pretraining the model on the same data distribution.",
+                "We start with the same setup as in (Ash & Adams, 2019) training deep residual networks (He et al., 2016) to classify the CIFAR 10 data set.",
+                "A similar experiment was reported in (Ash & Adams, 2019)."
+            ],
+            "isInfluential": true,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "30bf73f6dc3813fadfbd9275322962f6fbb6ec3b",
+                "externalIds": {
+                    "ArXiv": "2106.00042",
+                    "DBLP": "journals/corr/abs-2106-00042",
+                    "CorpusId": 235266002
+                },
+                "corpusId": 235266002,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/30bf73f6dc3813fadfbd9275322962f6fbb6ec3b",
+                "title": "A study on the plasticity of neural networks",
+                "abstract": "One aim shared by multiple settings, such as continual learning or transfer learning, is to leverage previously acquired knowledge to converge faster on the current task. Usually this is done through fine-tuning, where an implicit assumption is that the network maintains its plasticity, meaning that the performance it can reach on any given task is not affected negatively by previously seen tasks. It has been observed recently that a pretrained model on data from the same distribution as the one it is fine-tuned on might not reach the same generalisation as a freshly initialised one. We build and extend this observation, providing a hypothesis for the mechanics behind it. We discuss the implication of losing plasticity for continual learning which heavily relies on optimising pretrained models.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "49156061",
+                        "name": "Tudor Berariu"
+                    },
+                    {
+                        "authorId": "144792148",
+                        "name": "Wojciech M. Czarnecki"
+                    },
+                    {
+                        "authorId": "2061295549",
+                        "name": "Soham De"
+                    },
+                    {
+                        "authorId": "144908539",
+                        "name": "J. Bornschein"
+                    },
+                    {
+                        "authorId": "2157770601",
+                        "name": "Samuel L. Smith"
+                    },
+                    {
+                        "authorId": "1996134",
+                        "name": "Razvan Pascanu"
+                    },
+                    {
+                        "authorId": "2388737",
+                        "name": "C. Clopath"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The selection and initial setting of these hyperparameters critically impacts the performance of deep learning networks in terms of quality of solution and training time required [32]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "49e3d938214fdfec30478e1c0a92c0a53e642098",
+                "externalIds": {
+                    "DOI": "10.1109/AERO50100.2021.9438220",
+                    "CorpusId": 235384595
+                },
+                "corpusId": 235384595,
+                "publicationVenue": {
+                    "id": "5f087f3f-d96b-4da6-8049-604ac2349c44",
+                    "name": "IEEE Aerospace Conference",
+                    "type": "conference",
+                    "alternate_names": [
+                        "AeroConf",
+                        "IEEE Aerosp Conf"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/49e3d938214fdfec30478e1c0a92c0a53e642098",
+                "title": "Automated Data Accountability for Missions in Mars Rover Data",
+                "abstract": "This paper proposes an automated solution system to assist with Real-Time Operations and automatically identify and report on issues with data transfer, archive, and manipulation throughout the Ground Data System (GDS) process. As the Mars Curiosity Rover transmits data to the JPL Ground Data System (GDS), it frequently observes data loss and corruption, requiring re-transmits from the rover and Ground Data System Analysts (GDSA) to monitor the downlink process. As new missions are launched, the GDSA team redistributes analysts to these new missions, causing shortages in previous missions. The prior state of GDS issue detection and resolution was largely manual. GDSAs receive email alerts when something goes wrong, but it's not always clear what the exact problem is or how to fix it. This paper presents machine learning and deep learning based approaches to automate and optimize the detection of data loss. We first created a pipeline to automatically accumulate data from the telemetry databases (MAROS, Telemetry Data Storage, and GDS Elastic Search Database) in the downlink process. With our newly created datasets, we perform feature selection to supplement the GDSA understanding of the downlink process and provide supplemental analysis on the importance of different features. We implemented various supervised machine learning-based models and evaluate their accuracies to identify a downlink process is complete or incomplete. We utilize fast hyperparameter optimization methods that allow our models to quickly be re-trained, allowing them to quickly be tuned and optimized on daily incoming data in near real time.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "147868775",
+                        "name": "R. Alimo"
+                    },
+                    {
+                        "authorId": "2075479630",
+                        "name": "Dylan Sam"
+                    },
+                    {
+                        "authorId": "146510528",
+                        "name": "Dounia Lakhmiri"
+                    },
+                    {
+                        "authorId": "123191686",
+                        "name": "Brian J. Kahovec"
+                    },
+                    {
+                        "authorId": "3127159",
+                        "name": "D. Divsalar"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The idea of core-set can also be related to Warm-Starting Neural Network Training [16].",
+                "If the initial training sample set is selected by any measurement, then we also call it warm start or core set method [16]; otherwise, it is a good star method."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "0f721fbe40e90a0a4e5f7bb9c6841fb661b5acb9",
+                "externalIds": {
+                    "ArXiv": "2101.09933",
+                    "DBLP": "journals/csur/LiuWRHZ22",
+                    "DOI": "10.1145/3510414",
+                    "CorpusId": 235211781
+                },
+                "corpusId": 235211781,
+                "publicationVenue": {
+                    "id": "7b2adce0-d53f-49d6-8784-b0645604fe62",
+                    "name": "ACM Computing Surveys",
+                    "type": "journal",
+                    "alternate_names": [
+                        "ACM Comput Surv"
+                    ],
+                    "issn": "0360-0300",
+                    "url": "http://www.acm.org/pubs/surveys/",
+                    "alternate_urls": [
+                        "http://portal.acm.org/csur",
+                        "https://csur.acm.org/",
+                        "http://csur.acm.org/"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0f721fbe40e90a0a4e5f7bb9c6841fb661b5acb9",
+                "title": "A Survey on Active Deep Learning: From Model Driven to Data Driven",
+                "abstract": "Which samples should be labelled in a large dataset is one of the most important problems for the training of deep learning. So far, a variety of active sample selection strategies related to deep learning have been proposed in the literature. We defined them as Active Deep Learning (ADL) only if their predictor or selector is a deep model, where the basic learner is called the predictor and the labeling schemes are called the selector. In this survey, we categorize ADL into model-driven ADL and data-driven ADL by whether its selector is model driven or data driven. We also introduce the different characteristics of the two major types of ADL, respectively. We summarized three fundamental factors in the designation of a selector. We pointed out that, with the development of deep learning, the selector in ADL also is experiencing the stage from model driven to data driven. The advantages and disadvantages between data-driven ADL and model-driven ADL are thoroughly analyzed. Furthermore, different sub-classes of data-drive or model-driven ADL are also summarized and discussed emphatically. Finally, we survey the trend of ADL from model driven to data driven.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2108283837",
+                        "name": "Peng Liu"
+                    },
+                    {
+                        "authorId": "2108594617",
+                        "name": "Lizhe Wang"
+                    },
+                    {
+                        "authorId": "144928956",
+                        "name": "R. Ranjan"
+                    },
+                    {
+                        "authorId": "2067665295",
+                        "name": "Guojin He"
+                    },
+                    {
+                        "authorId": "2111487443",
+                        "name": "Lei Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[3] compares the performance between warmstarting and fresh random initialization."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "result"
+            ],
+            "citingPaper": {
+                "paperId": "41a7260b9bf335152bc2e5c0a82ab8e68dd5a52e",
+                "externalIds": {
+                    "DBLP": "conf/wacv/DingWG21",
+                    "DOI": "10.1109/WACV48630.2021.00398",
+                    "CorpusId": 230121788
+                },
+                "corpusId": 230121788,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/41a7260b9bf335152bc2e5c0a82ab8e68dd5a52e",
+                "title": "Analyzing Deep Neural Network\u2019s Transferability via Fr\u00e9chet Distance",
+                "abstract": "Transfer learning has become the de facto practice to reuse a deep neural network (DNN) that is pre-trained with abundant training data in a source task to improve the model training on target tasks with smaller-scale training data. In this paper, we first investigate the correlation between the DNN\u2019s pre-training performance in the source task and their transfer results in the downstream tasks. We find that high performance of a pre-trained model does not necessarily imply high transferability. We then propose a metric, named Fr\u00e9chet Pre-train Distance, to estimate the transferability of a deep neural network. By applying the proposed Fr\u00e9chet Pre-train Distance, we are able to identify the optimal pre-trained checkpoint, and then achieve high transferability on downstream tasks. Finally, we investigate several factors impacting DNN\u2019s transferability including normalization, different networks and learning rates. The results consistently support our conclusions.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "144506371",
+                        "name": "Yifan Ding"
+                    },
+                    {
+                        "authorId": "1390771606",
+                        "name": "Liqiang Wang"
+                    },
+                    {
+                        "authorId": "40206014",
+                        "name": "Boqing Gong"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "At the same time, there are also multiple works that have suggested that fine-tuning is not applicable in all scenarios [2] and re-training from scratch is more beneficial."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "0b5594bdedb33b4ace17c6f7047c4dde3ac3082c",
+                "externalIds": {
+                    "ArXiv": "2101.02323",
+                    "DBLP": "journals/tmi/NathYLXR21",
+                    "DOI": "10.1109/TMI.2020.3048055",
+                    "CorpusId": 229723376,
+                    "PubMed": "33373298"
+                },
+                "corpusId": 229723376,
+                "publicationVenue": {
+                    "id": "e0cda45d-3074-4ac0-80b8-e5250df00b89",
+                    "name": "IEEE Transactions on Medical Imaging",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Med Imaging"
+                    ],
+                    "issn": "0278-0062",
+                    "url": "http://ieeexplore.ieee.org/servlet/opac?punumber=42",
+                    "alternate_urls": [
+                        "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/0b5594bdedb33b4ace17c6f7047c4dde3ac3082c",
+                "title": "Diminishing Uncertainty Within the Training Pool: Active Learning for Medical Image Segmentation",
+                "abstract": "Active learning is a unique abstraction of machine learning techniques where the model/algorithm could guide users for annotation of a set of data points that would be beneficial to the model, unlike passive machine learning. The primary advantage being that active learning frameworks select data points that can accelerate the learning process of a model and can reduce the amount of data needed to achieve full accuracy as compared to a model trained on a randomly acquired data set. Multiple frameworks for active learning combined with deep learning have been proposed, and the majority of them are dedicated to classification tasks. Herein, we explore active learning for the task of segmentation of medical imaging data sets. We investigate our proposed framework using two datasets: 1.) MRI scans of the hippocampus, 2.) CT scans of pancreas and tumors. This work presents a query-by-committee approach for active learning where a joint optimizer is used for the committee. At the same time, we propose three new strategies for active learning: 1.) increasing frequency of uncertain data to bias the training data set; 2.) Using mutual information among the input images as a regularizer for acquisition to ensure diversity in the training dataset; 3.) adaptation of Dice log-likelihood for Stein variational gradient descent (SVGD). The results indicate an improvement in terms of data reduction by achieving full accuracy while only using 22.69% and 48.85% of the available data for each dataset, respectively.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "10751841",
+                        "name": "V. Nath"
+                    },
+                    {
+                        "authorId": "144041873",
+                        "name": "Dong Yang"
+                    },
+                    {
+                        "authorId": "1699344",
+                        "name": "B. Landman"
+                    },
+                    {
+                        "authorId": "3262394",
+                        "name": "Daguang Xu"
+                    },
+                    {
+                        "authorId": "144531567",
+                        "name": "H. Roth"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "ZORB could also provide a new direction for warm starting techniques [3]."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "52456607169bd4633a23a1f41b4c745544bd3bfe",
+                "externalIds": {
+                    "MAG": "3100889249",
+                    "DBLP": "journals/corr/abs-2011-08895",
+                    "ArXiv": "2011.08895",
+                    "CorpusId": 227015179
+                },
+                "corpusId": 227015179,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/52456607169bd4633a23a1f41b4c745544bd3bfe",
+                "title": "ZORB: A Derivative-Free Backpropagation Algorithm for Neural Networks",
+                "abstract": "Gradient descent and backpropagation have enabled neural networks to achieve remarkable results in many real-world applications. Despite ongoing success, training a neural network with gradient descent can be a slow and strenuous affair. We present a simple yet faster training algorithm called Zeroth-Order Relaxed Backpropagation (ZORB). Instead of calculating gradients, ZORB uses the pseudoinverse of targets to backpropagate information. ZORB is designed to reduce the time required to train deep neural networks without penalizing performance. To illustrate the speed up, we trained a feed-forward neural network with 11 layers on MNIST and observed that ZORB converged 300 times faster than Adam while achieving a comparable error rate, without any hyperparameter tuning. We also broaden the scope of ZORB to convolutional neural networks, and apply it to subsamples of the CIFAR-10 dataset. Experiments on standard classification and regression benchmarks demonstrate ZORB's advantage over traditional backpropagation with Gradient Descent.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "35857682",
+                        "name": "Varun Ranganathan"
+                    },
+                    {
+                        "authorId": "153925034",
+                        "name": "Alex Lewandowski"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "[Ash and Adams, 2019] takes this a step further and shows that warm starting a network might result to poorer generalization although the training losses converge to the same value."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "4dff7ec5e7a160af90a352886a91b7673e6bee6d",
+                "externalIds": {
+                    "ArXiv": "2001.07798",
+                    "DBLP": "journals/corr/abs-2001-07798",
+                    "MAG": "3001632204",
+                    "CorpusId": 210861201
+                },
+                "corpusId": 210861201,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/4dff7ec5e7a160af90a352886a91b7673e6bee6d",
+                "title": "Loss-annealed GAIL for sample efficient and stable Imitation Learning",
+                "abstract": "Imitation learning is the problem of learning a policy from an expert policy without access to a reward signal. Often, the expert policy is only available in the form of expert demonstrations. Behavior cloning and GAIL are two popularly used methods for performing imitation learning in this setting. Behavior cloning converges in a few training iterations, but doesn't reach peak performance and suffers from compounding errors due to its supervised training framework and iid assumption. GAIL attempts to tackle this problem by accounting for the temporal dependencies between states while matching occupancy measures of the expert and the policy. Although GAIL has shown successes in a number of environments, it takes a lot of environment interactions. Given their complementary benefits, existing methods have mentioned trying or tried to combine the two methods, without much success. We look at some of the limitations of existing ideas that try to combine BC and GAIL, and present an algorithm that combines the best of both worlds to enable faster and stable training while not compromising on performance. Our algorithm is embarrassingly simple to implement and seamlessly integrates with different policy gradient algorithms. We demonstrate the effectiveness of the algorithm both in low dimensional control tasks in a limited data setting, and in high dimensional grid world environments.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "108199753",
+                        "name": "Rohit Jena"
+                    },
+                    {
+                        "authorId": "9076478",
+                        "name": "K. Sycara"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Ash and Adams [10] takes this a step further and shows that warm starting a network might lead to poorer generalization although the training losses may be the same."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "52c77192011106c2f2e3911f0e8ed7bb9f5ac7a2",
+                "externalIds": {
+                    "MAG": "3017345227",
+                    "DBLP": "conf/corl/JenaLS20",
+                    "CorpusId": 215814135
+                },
+                "corpusId": 215814135,
+                "publicationVenue": {
+                    "id": "fbfbf10a-faa4-4d2a-85be-3ac660454ce3",
+                    "name": "Conference on Robot Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CoRL",
+                        "Conf Robot Learn"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/52c77192011106c2f2e3911f0e8ed7bb9f5ac7a2",
+                "title": "Augmenting GAIL with BC for sample efficient imitation learning",
+                "abstract": "Imitation learning is the problem of recovering an expert policy without access to a reward signal. Behavior cloning and GAIL are two widely used methods for performing imitation learning. Behavior cloning converges in a few iterations, but doesn't achieve peak performance due to its inherent iid assumption about the state-action distribution. GAIL addresses the issue by accounting for the temporal dependencies when performing a state distribution matching between the agent and the expert. Although GAIL is sample efficient in the number of expert trajectories required, it is still not very sample efficient in terms of the environment interactions needed to converge. Given the complementary benefits of both methods, we present a simple and elegant method to combine both methods to enable stable and sample efficient learning. Our algorithm is very simple to implement and integrates with different policy gradient algorithms. We demonstrate the effectiveness of the algorithm in low dimensional control tasks, gridworlds and in high dimensional image-based tasks.",
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "108199753",
+                        "name": "Rohit Jena"
+                    },
+                    {
+                        "authorId": "3164672",
+                        "name": "Changliu Liu"
+                    },
+                    {
+                        "authorId": "9076478",
+                        "name": "K. Sycara"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Being based on the Tustin and Euler discretization methods (A\u030astro\u0308m and Wittenmark (2013)), they will be named Tustin-Nets (TN)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "8edf854a46f3eef78030b9d9139fe7b9123c48e6",
+                "externalIds": {
+                    "MAG": "2988555627",
+                    "ArXiv": "1911.01310",
+                    "DBLP": "journals/corr/abs-1911-01310",
+                    "DOI": "10.1016/J.IFACOL.2020.12.1183",
+                    "CorpusId": 207780231
+                },
+                "corpusId": 207780231,
+                "publicationVenue": {
+                    "id": "af98f1eb-affb-4b55-b8ff-1964b29cf894",
+                    "name": "IFAC-PapersOnLine",
+                    "type": "journal",
+                    "issn": "2405-8963",
+                    "url": "https://www.journals.elsevier.com/ifac-papersonline/",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/24058963",
+                        "https://www.journals.elsevier.com/ifac-papersonline"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/8edf854a46f3eef78030b9d9139fe7b9123c48e6",
+                "title": "Tustin neural networks: a class of recurrent nets for adaptive MPC of mechanical systems",
+                "abstract": null,
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "2090387710",
+                        "name": "Simone Pozzoli"
+                    },
+                    {
+                        "authorId": "2066311",
+                        "name": "Marco Gallieri"
+                    },
+                    {
+                        "authorId": "1739166",
+                        "name": "R. Scattolini"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "We avoid warm-starting and retrain models from scratch every time new samples are queried (Ash and Adams, 2019)."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "citingPaper": {
+                "paperId": "cf5a21684aefb1b8db6e0490167636d245396095",
+                "externalIds": {
+                    "ArXiv": "1906.03671",
+                    "MAG": "2995188922",
+                    "DBLP": "journals/corr/abs-1906-03671",
+                    "CorpusId": 182953134
+                },
+                "corpusId": 182953134,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/cf5a21684aefb1b8db6e0490167636d245396095",
+                "title": "Deep Batch Active Learning by Diverse, Uncertain Gradient Lower Bounds",
+                "abstract": "We design a new algorithm for batch active learning with deep neural network models. Our algorithm, Batch Active learning by Diverse Gradient Embeddings (BADGE), samples groups of points that are disparate and high-magnitude when represented in a hallucinated gradient space, a strategy designed to incorporate both predictive uncertainty and sample diversity into every selected batch. Crucially, BADGE trades off between diversity and uncertainty without requiring any hand-tuned hyperparameters. We show that while other approaches sometimes succeed for particular batch sizes or architectures, BADGE consistently performs as well or better, making it a versatile option for practical active learning problems.",
+                "year": 2019,
+                "authors": [
+                    {
+                        "authorId": "40401847",
+                        "name": "J. Ash"
+                    },
+                    {
+                        "authorId": "40201729",
+                        "name": "Chicheng Zhang"
+                    },
+                    {
+                        "authorId": "37019006",
+                        "name": "A. Krishnamurthy"
+                    },
+                    {
+                        "authorId": "144162125",
+                        "name": "J. Langford"
+                    },
+                    {
+                        "authorId": "40333747",
+                        "name": "Alekh Agarwal"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Generalization impairment due to non-stationarity has already been well studied in both Supervised Learning (Ash and Adams, 2019) and Reinforcement Learning (Igl et al., 2021; Fedus et al., 2020; Lyle et al., 2022; Steinparz et al., 2022).",
+                "Generalization impairment due to non-stationarity has already been well studied in both Supervised Learning (Ash and Adams, 2019) and Reinforcement Learning (Igl et al."
+            ],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "452452f203866be2ede5416fb598618a6419d4b9",
+                "externalIds": {
+                    "CorpusId": 259300584
+                },
+                "corpusId": 259300584,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/452452f203866be2ede5416fb598618a6419d4b9",
+                "title": "InfODist: Online distillation with Informative rewards improves generalization in Curriculum Learning",
+                "abstract": "Curriculum learning (CL) is an essential part of human learning, just as reinforcement learning (RL) is. However, CL agents that are trained using RL with neural networks produce limited generalization to later tasks in the curriculum. We show that online distillation using learned informative rewards tackles this problem. Here, we consider a reward to be informative if it is positive when the agent makes progress towards the goal and negative otherwise. Thus, an informative reward allows an agent to learn immediately to avoid states which are irrelevant to the task. And, the value and policy networks do not utilize their limited capacity to fit targets for these irrelevant states. Consequently, this improves generalization to later tasks. Our contributions: First, we propose InfODist, an online distillation method that makes use of informative rewards to significantly improve generalization in CL. Second, we show that training with informative rewards ameliorates the capacity loss phenomenon that was previously attributed to non-stationarities during the training process. Third, we show that learning from task-irrelevant states explains the capacity loss and subsequent impaired generalization. In conclusion, our work is a crucial step toward scaling curriculum learning to complex real world tasks.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1411275196",
+                        "name": "Rahul Siripurapu"
+                    },
+                    {
+                        "authorId": "1973667445",
+                        "name": "Vihang Patil"
+                    },
+                    {
+                        "authorId": "2139329419",
+                        "name": "Kajetan Schweighofer"
+                    },
+                    {
+                        "authorId": "1974372841",
+                        "name": "Marius-Constantin Dinu"
+                    },
+                    {
+                        "authorId": "2093433306",
+                        "name": "Thomas Schmied"
+                    },
+                    {
+                        "authorId": "2220907463",
+                        "name": "Luis Ferro"
+                    },
+                    {
+                        "authorId": "103040573",
+                        "name": "Markus Holzleitner"
+                    },
+                    {
+                        "authorId": "1406798986",
+                        "name": "Hamid Eghbal-zadeh"
+                    },
+                    {
+                        "authorId": "2058236577",
+                        "name": "Michael Kopp"
+                    },
+                    {
+                        "authorId": "3308557",
+                        "name": "S. Hochreiter"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "The idea of core-set can also be related to Warm-Starting Neural Network Training [16].",
+                "If the initial training sample set is selected by any measurement, we also call it warm start or core set method [16], other wise it is a cool star method."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "f08e4ecf638485590b65e7446e6559c6dc326da9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2101-09933",
+                    "CorpusId": 231698769
+                },
+                "corpusId": 231698769,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/f08e4ecf638485590b65e7446e6559c6dc326da9",
+                "title": "From Model-driven to Data-driven: A Survey on Active Deep Learning",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2108283837",
+                        "name": "Peng Liu"
+                    },
+                    {
+                        "authorId": "3327178",
+                        "name": "G. He"
+                    },
+                    {
+                        "authorId": "2111487443",
+                        "name": "Lei Zhao"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [
+                "Warm starting Ash & Adams (2019) allows models that have been partially trained on a subset of a dataset (in an online setting, for example) to be efficiently updated without sacrificing generalization performance."
+            ],
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "citingPaper": {
+                "paperId": "3b1c9bb604aad274bc886b1f50588b985fce915e",
+                "externalIds": {
+                    "CorpusId": 249190386
+                },
+                "corpusId": 249190386,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3b1c9bb604aad274bc886b1f50588b985fce915e",
+                "title": "Masked Layer Distillation: Fast and Robust Training Through Knowledge Transfer Normalization",
+                "abstract": "Distillation is a common tool to compress models, accelerate training, and improve model performance. Often a model trained via distillation is able to achieve accuracy exceeding that of a model with the same architecture but trained from scratch. However, we surprisingly \ufb01nd that distillation incurs signi\ufb01cant accuracy penalties for Ef\ufb01cientNet and MobileNet. We offer a hypothesis as to why this happens as well as Masked Layer Distillation, a new training algorithm that recovers a signi\ufb01cant amount of this performance loss and also translates well to other models such as ResNets and VGGs. As an additional bene\ufb01t, we also \ufb01nd that our method accelerates training by 2x to 5x and is robust to adverse initialization schemes. versatility by distilling from to over from and",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2167014224",
+                        "name": "Derek Wan"
+                    },
+                    {
+                        "authorId": "2066974703",
+                        "name": "Paras Jain"
+                    },
+                    {
+                        "authorId": "1993655237",
+                        "name": "Tianjun Zhang"
+                    },
+                    {
+                        "authorId": "2119114885",
+                        "name": "Joseph Gonzalez"
+                    },
+                    {
+                        "authorId": "1732330",
+                        "name": "K. Keutzer"
+                    }
+                ]
+            }
+        },
+        {
+            "contexts": [],
+            "isInfluential": false,
+            "intents": [],
+            "citingPaper": {
+                "paperId": "39900ed5a31113c2297d0be1d4b4276caa03012b",
+                "externalIds": {
+                    "MAG": "3081945939",
+                    "DOI": "10.1007/978-3-030-58124-4_14",
+                    "CorpusId": 224997055
+                },
+                "corpusId": 224997055,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/39900ed5a31113c2297d0be1d4b4276caa03012b",
+                "title": "Hybrid Convolutional Neuro-Fuzzy Networks for Diagnostics of MRI-Images of Brain Tumors",
+                "abstract": null,
+                "year": 2020,
+                "authors": [
+                    {
+                        "authorId": "3423915",
+                        "name": "Y. Zaychenko"
+                    },
+                    {
+                        "authorId": "20577435",
+                        "name": "Galib Hamidov"
+                    }
+                ]
+            }
+        }
+    ]
+}
