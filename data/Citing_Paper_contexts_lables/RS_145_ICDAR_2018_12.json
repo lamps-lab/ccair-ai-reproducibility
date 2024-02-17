@@ -1,0 +1,2449 @@
+{
+    "data": [
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "While tables with simple structures and clean backgrounds can be recognized well [6, 12, 14, 15, 23, 24, 30, 35, 38, 41, 47], recognizing complicated table structures remains a challenging problem, which is primarily due to two main difficulties: 1) Firstly, tables in images vary widely in terms of structure and shape.",
+                "Due to the absence of released annotations for the test set, we follow previous approaches [20, 35, 46, 47] and evaluate our model on the validation set using TEDS and TEDS-Struct [48] metrics.",
+                "LGPMA [35] applies soft pyramid masks at the local and global levels, allowing the model to detect cell boundaries of wireless tables more accurately.",
+                "- 93.0 SEM [46] 93.7 - LGPMA [35] 94.6 96.7 FLAG-Net [22] 95.1 - NCGM [21] 95.4 - TableFormer [29] 93.60 96.75 TSRFormer [20] - 97.5 TRUST [8] 96.20 97.10 VAST [10] 96",
+                "[16, 25, 35, 36, 47] represent tables by a group of cells.",
+                "In works such as [16, 25, 32, 35, 47], a table is represented by a group of cells."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "3e797270bd42586b0e46ce597a5ef6d754465e43",
+                "externalIds": {
+                    "ArXiv": "2309.14962",
+                    "CorpusId": 262825477
+                },
+                "corpusId": 262825477,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3e797270bd42586b0e46ce597a5ef6d754465e43",
+                "title": "GridFormer: Towards Accurate Table Structure Recognition via Grid Prediction",
+                "abstract": "All tables can be represented as grids. Based on this observation, we propose GridFormer, a novel approach for interpreting unconstrained table structures by predicting the vertex and edge of a grid. First, we propose a flexible table representation in the form of an MXN grid. In this representation, the vertexes and edges of the grid store the localization and adjacency information of the table. Then, we introduce a DETR-style table structure recognizer to efficiently predict this multi-objective information of the grid in a single shot. Specifically, given a set of learned row and column queries, the recognizer directly outputs the vertexes and edges information of the corresponding rows and columns. Extensive experiments on five challenging benchmarks which include wired, wireless, multi-merge-cell, oriented, and distorted tables demonstrate the competitive performance of our model over other methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "10344582",
+                        "name": "Pengyuan Lyu"
+                    },
+                    {
+                        "authorId": "47121217",
+                        "name": "Weihong Ma"
+                    },
+                    {
+                        "authorId": "2109798334",
+                        "name": "Hongyi Wang"
+                    },
+                    {
+                        "authorId": "1631405123",
+                        "name": "Yu Yu"
+                    },
+                    {
+                        "authorId": "2248958848",
+                        "name": "Chengquan Zhang"
+                    },
+                    {
+                        "authorId": "2140371004",
+                        "name": "Kun Yao"
+                    },
+                    {
+                        "authorId": "2114922667",
+                        "name": "Yang Xue"
+                    },
+                    {
+                        "authorId": "1688516",
+                        "name": "Jingdong Wang"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "While tables with simple structures and clean backgrounds can be recognized well [6, 12, 14, 15, 23, 24, 30, 35, 38, 41, 47], recognizing complicated table structures remains a challenging problem, which is primarily due to two main difficulties: 1) Firstly, tables in images vary widely in terms of structure and shape.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Due to the absence of released annotations for the test set, we follow previous approaches [20, 35, 46, 47] and evaluate our model on the validation set using TEDS and TEDS-Struct [48] metrics.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "LGPMA [35] applies soft pyramid masks at the local and global levels, allowing the model to detect cell boundaries of wireless tables more accurately.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "- 93.0 SEM [46] 93.7 - LGPMA [35] 94.6 96.7 FLAG-Net [22] 95.1 - NCGM [21] 95.4 - TableFormer [29] 93.60 96.75 TSRFormer [20] - 97.5 TRUST [8] 96.20 97.10 VAST [10] 96",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "[16, 25, 35, 36, 47] represent tables by a group of cells.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "In works such as [16, 25, 32, 35, 47], a table is represented by a group of cells.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                ", [7, 13, 17, 18, 21, 29, 37, 44, 55, 56]) utilize a deep learning (DL)-based approach, focusing on either one, two, or all three steps.",
+                "Table 2 illustrates some of these limitations, comparing the MVP predictions obtained from the table recognition ground\ntruth (baseline) and from the results of LGPMA and VCGroup to the target.",
+                "LGPMA obtained a TEDS score (see Sec.",
+                "6, we can see that LGPMA generates many extraneous empty cells; these would have been removed during the HTML to Token conversion process, but would have misaligned the NAME/VALUE pairing when generating the NLP token string.",
+                "The goal of LGPMA [37] is to obtain better aligned cell regions and solve issues with empty cell generation and partition.",
+                "5.1.1) of 96.32 in the ICDAR 2021 competition, the second highest among the 30 submissions after LGPMA.",
+                "The paper also proposes a table recognition and summarization pipeline that links the two tasks and allows for comparing state-of-the-art table recognition methods (LGPMA and VCGroup) for the end goal of table summarization, utilizing MVP as the data-to-text summarization model.",
+                "We selected the Local and Global Pyramid Mask Alignment (LGPMA) method [37] and the VCGroup method [55],\nwhich came in first and second place respectively in the ICDAR 2021 Competition on Scientific Literature Parsing - Task B Table Recognition [15].",
+                "From Table 1, the performance at both stages matches the final standings of the Task B challenge, with LGPMA slightly outperforming VCGroup overall, although that changes from one visual variation to the next.",
+                "We selected the Local and Global Pyramid Mask Alignment (LGPMA) method [37] and the VCGroup method [55], which came in first and second place respectively in the ICDAR 2021 Competition on Scientific Literature Parsing - Task B Table",
+                "Interestingly, Variation 15, with a shear horizontal transformation, yields very different TEDS scores compared to the basic Variation 1: lower for LGPMA but higher for VCGroup."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "43f671656d293964bb5d0c5bdcff7223876ca09f",
+                "externalIds": {
+                    "DBLP": "conf/doceng/DashCA23",
+                    "DOI": "10.1145/3573128.3604901",
+                    "CorpusId": 260441780
+                },
+                "corpusId": 260441780,
+                "publicationVenue": {
+                    "id": "32c90593-78aa-40de-8700-dd31a625b15a",
+                    "name": "ACM Symposium on Document Engineering",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Doc Eng",
+                        "Document Engineering",
+                        "DocEng",
+                        "ACM Symp Doc Eng"
+                    ],
+                    "url": "http://www.documentengineering.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/43f671656d293964bb5d0c5bdcff7223876ca09f",
+                "title": "WEATHERGOV+: A Table Recognition and Summarization Dataset to Bridge the Gap Between Document Image Analysis and Natural Language Generation",
+                "abstract": "Tables, ubiquitous in data-oriented documents like scientific papers and financial statements, organize and convey relational information. Automatic table recognition from document images, which involves detection within the page, structural segmentation into rows, columns, and cells, and information extraction from cells, has been a popular research topic in document image analysis (DIA). With recent advances in natural language generation (NLG) based on deep neural networks, data-to-text generation, in particular for table summarization, offers interesting solutions to time-intensive data analysis. In this paper, we aim to bridge the gap between efforts in DIA and NLG regarding tabular data: we propose WEATHERGOV+, a dataset building upon the WEATHERGOV dataset, the standard for tabular data summarization techniques, that allows for the training and testing of end-to-end methods working from input document images to generate text summaries as output. WEATHERGOV+ contains images of tables created from the tabular data of WEATHERGOV using visual variations that cover various levels of difficulty, along with the corresponding human-generated table summaries of WEATHERGOV. We also propose an end-to-end pipeline that compares state-of-the-art table recognition methods for summarization purposes. We analyse the results of the proposed pipeline by evaluating WEATHERGOV+ at each stage of the pipeline to identify the effects of error propagation and the weaknesses of the current methods, such as OCR errors. With this research (dataset and code available here1), we hope to encourage new research for the processing and management of inter- and intra-document collections.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2051833",
+                        "name": "Amanda Dash"
+                    },
+                    {
+                        "authorId": "2587465",
+                        "name": "Melissa Cote"
+                    },
+                    {
+                        "authorId": "2639980",
+                        "name": "A. Albu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": ", [7, 13, 17, 18, 21, 29, 37, 44, 55, 56]) utilize a deep learning (DL)-based approach, focusing on either one, two, or all three steps.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Table 2 illustrates some of these limitations, comparing the MVP predictions obtained from the table recognition ground\ntruth (baseline) and from the results of LGPMA and VCGroup to the target.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "LGPMA obtained a TEDS score (see Sec.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "6, we can see that LGPMA generates many extraneous empty cells; these would have been removed during the HTML to Token conversion process, but would have misaligned the NAME/VALUE pairing when generating the NLP token string.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "The goal of LGPMA [37] is to obtain better aligned cell regions and solve issues with empty cell generation and partition.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "5.1.1) of 96.32 in the ICDAR 2021 competition, the second highest among the 30 submissions after LGPMA.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "The paper also proposes a table recognition and summarization pipeline that links the two tasks and allows for comparing state-of-the-art table recognition methods (LGPMA and VCGroup) for the end goal of table summarization, utilizing MVP as the data-to-text summarization model.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "We selected the Local and Global Pyramid Mask Alignment (LGPMA) method [37] and the VCGroup method [55],\nwhich came in first and second place respectively in the ICDAR 2021 Competition on Scientific Literature Parsing - Task B Table Recognition [15].",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "From Table 1, the performance at both stages matches the final standings of the Task B challenge, with LGPMA slightly outperforming VCGroup overall, although that changes from one visual variation to the next.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "We selected the Local and Global Pyramid Mask Alignment (LGPMA) method [37] and the VCGroup method [55], which came in first and second place respectively in the ICDAR 2021 Competition on Scientific Literature Parsing - Task B Table",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "Interestingly, Variation 15, with a shear horizontal transformation, yields very different TEDS scores compared to the basic Variation 1: lower for LGPMA but higher for VCGroup.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                }
+            ]
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "13de1c39dfe5733363ff1a8d4c6d577914f79618",
+                "externalIds": {
+                    "DBLP": "conf/ijcai/ShenGWQZLC23",
+                    "DOI": "10.24963/ijcai.2023/152",
+                    "CorpusId": 260853966
+                },
+                "corpusId": 260853966,
+                "publicationVenue": {
+                    "id": "67f7f831-711a-43c8-8785-1e09005359b5",
+                    "name": "International Joint Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Artif Intell",
+                        "IJCAI"
+                    ],
+                    "url": "http://www.ijcai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/13de1c39dfe5733363ff1a8d4c6d577914f79618",
+                "title": "Divide Rows and Conquer Cells: Towards Structure Recognition for Large Tables",
+                "abstract": "Recent advanced Table Structure Recognition (TSR) models adopt image-to-text solutions to parse table structure. These methods can be formulated as image caption problem, i.e., input a single-table image and output table structure description in a specific text format, e.g., HTML. With the impressive success of Transformer in text generation tasks, these methods use Transformer architecture to predict HTML table text in an autoregressive manner. However, tables always emerge with a large variety of shapes and sizes. Autoregressive models usually suffer from the error accumulation problem as the length of predicted text increases, which results in unsatisfactory performance for large tables. In this paper, we propose a novel image-to-text based TSR method that relieves error accumulation problems and improves performance noticeably. At the core of our method is a cascaded two-step decoder architecture with the former decoder predicting HTML table row tags non-autoregressively and the latter predicting HTML table cell tags of each row in a semi-autoregressive manner. Compared with existing methods that predict HTML text autoregressively, the superiority of our row-to-cell progressive table parsing is twofold: (1) it generates an HTML tag sequence with a vertical-and-horizontal two-step `scanning', which better fits the inherent 2D structure of image data, (2) it performs substantially better for large tables (long sequence prediction) since it alleviates error accumulation problem specific to autoregressive models. Extensive experiments demonstrate that our method achieves competitive performance on three public benchmarks.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2230137426",
+                        "name": "Huawen Shen"
+                    },
+                    {
+                        "authorId": "2149397987",
+                        "name": "Xiang Gao"
+                    },
+                    {
+                        "authorId": "2111524263",
+                        "name": "Jin Wei"
+                    },
+                    {
+                        "authorId": "2065512194",
+                        "name": "Liang Qiao"
+                    },
+                    {
+                        "authorId": "49454803",
+                        "name": "Yu Zhou"
+                    },
+                    {
+                        "authorId": "2229647956",
+                        "name": "Qiang Li"
+                    },
+                    {
+                        "authorId": "2398015",
+                        "name": "Zhanzhan Cheng"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Several studies have proposed detectors for detecting cells or their contents [28,31,30,49]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "eca4dfc1703529bd87e1b4fea1fad1baa06e0ac9",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-00630",
+                    "ArXiv": "2305.00630",
+                    "DOI": "10.48550/arXiv.2305.00630",
+                    "CorpusId": 258427145
+                },
+                "corpusId": 258427145,
+                "publicationVenue": {
+                    "id": "991e8cbf-4a4a-4ac4-a273-63dd7a35c364",
+                    "name": "IEEE International Conference on Document Analysis and Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Doc Anal Recognit",
+                        "International Conference on Document Analysis and Recognition",
+                        "Int Conf Doc Anal Recognit",
+                        "ICDAR"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1327"
+                },
+                "url": "https://www.semanticscholar.org/paper/eca4dfc1703529bd87e1b4fea1fad1baa06e0ac9",
+                "title": "TRACE: Table Reconstruction Aligned to Corner and Edges",
+                "abstract": "A table is an object that captures structured and informative content within a document, and recognizing a table in an image is challenging due to the complexity and variety of table layouts. Many previous works typically adopt a two-stage approach; (1) Table detection(TD) localizes the table region in an image and (2) Table Structure Recognition(TSR) identifies row- and column-wise adjacency relations between the cells. The use of a two-stage approach often entails the consequences of error propagation between the modules and raises training and inference inefficiency. In this work, we analyze the natural characteristics of a table, where a table is composed of cells and each cell is made up of borders consisting of edges. We propose a novel method to reconstruct the table in a bottom-up manner. Through a simple process, the proposed method separates cell boundaries from low-level features, such as corners and edges, and localizes table positions by combining the cells. A simple design makes the model easier to train and requires less computation than previous two-stage methods. We achieve state-of-the-art performance on the ICDAR2013 table competition benchmark and Wired Table in the Wild(WTW) dataset.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2057310228",
+                        "name": "Youngmin Baek"
+                    },
+                    {
+                        "authorId": "2064808754",
+                        "name": "Daehyun Nam"
+                    },
+                    {
+                        "authorId": "10787779",
+                        "name": "Jaeheung Surh"
+                    },
+                    {
+                        "authorId": "2111068603",
+                        "name": "Seung Shin"
+                    },
+                    {
+                        "authorId": "2109603647",
+                        "name": "Seonghyeon Kim"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Several studies have proposed detectors for detecting cells or their contents [28,31,30,49].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",
+                "Qiao et al.[36]10 2021 LGPMA ICDAR PubTabNet + SciTSR + ICDAR 2013 PubTabNet X X NR"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "50903f5f5e714e5746152b3e369c9329655e0018",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-10439",
+                    "ArXiv": "2304.10439",
+                    "DOI": "10.48550/arXiv.2304.10439",
+                    "CorpusId": 258236507
+                },
+                "corpusId": 258236507,
+                "publicationVenue": {
+                    "id": "991e8cbf-4a4a-4ac4-a273-63dd7a35c364",
+                    "name": "IEEE International Conference on Document Analysis and Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Doc Anal Recognit",
+                        "International Conference on Document Analysis and Recognition",
+                        "Int Conf Doc Anal Recognit",
+                        "ICDAR"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1327"
+                },
+                "url": "https://www.semanticscholar.org/paper/50903f5f5e714e5746152b3e369c9329655e0018",
+                "title": "A Study on Reproducibility and Replicability of Table Structure Recognition Methods",
+                "abstract": "Concerns about reproducibility in artificial intelligence (AI) have emerged, as researchers have reported unsuccessful attempts to directly reproduce published findings in the field. Replicability, the ability to affirm a finding using the same procedures on new data, has not been well studied. In this paper, we examine both reproducibility and replicability of a corpus of 16 papers on table structure recognition (TSR), an AI task aimed at identifying cell locations of tables in digital documents. We attempt to reproduce published results using codes and datasets provided by the original authors. We then examine replicability using a dataset similar to the original as well as a new dataset, GenTSR, consisting of 386 annotated tables extracted from scientific papers. Out of 16 papers studied, we reproduce results consistent with the original in only four. Two of the four papers are identified as replicable using the similar dataset under certain IoU values. No paper is identified as replicable using the new dataset. We offer observations on the causes of irreproducibility and irreplicability. All code and data are available on Codeocean at https://codeocean.com/capsule/6680116/tree.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "11359490",
+                        "name": "Kehinde E. Ajayi"
+                    },
+                    {
+                        "authorId": "2214808132",
+                        "name": "Muntabhir Hasan Choudhury"
+                    },
+                    {
+                        "authorId": "2528276",
+                        "name": "S. Rajtmajer"
+                    },
+                    {
+                        "authorId": "97569165",
+                        "name": "Jian Wu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",
+                    "label_score": -2.0,
+                    "label": "O-NR"
+                },
+                {
+                    "context": "Qiao et al.[36]10 2021 LGPMA ICDAR PubTabNet + SciTSR + ICDAR 2013 PubTabNet X X NR",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "hierarchical cell\u2190 null for r in R do if r[0] is a colspan cell OR r[1] is an empty cell then",
+                "Most of the previous works [1]\u2013[4] of table recognition focused on two-step approaches that divide the problem into two sub-problems: table structure recognition and table cell content recognition, and then attempt to solve each sub-problem independently by two separate systems.",
+                "Input: R (a list of rows of table cells with their bounding boxes) Output: R\u2019 (a list of rows of table cells with hierarchical information) hierarchical cell\u2190 null different bbox flag \u2190 False for r in R do if r[0] is a colspan cell OR r[1] is an empty cell then hierarchical cell\u2190 r[0] else if r[0] is a rowspan cell OR r[0] is an empty cell then hierarchical cell\u2190 null else if different bbox flag AND r[0]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8f3299a306011582e21b07918e5f21ea7199b981",
+                "externalIds": {
+                    "ArXiv": "2303.14935",
+                    "DBLP": "journals/corr/abs-2303-14935",
+                    "DOI": "10.48550/arXiv.2303.14935",
+                    "CorpusId": 257766584
+                },
+                "corpusId": 257766584,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/8f3299a306011582e21b07918e5f21ea7199b981",
+                "title": "TabIQA: Table Questions Answering on Business Document Images",
+                "abstract": "Table answering questions from business documents has many challenges that require understanding tabular structures, cross-document referencing, and additional numeric computations beyond simple search queries. This paper introduces a novel pipeline, named TabIQA, to answer questions about business document images. TabIQA combines state-of-the-art deep learning techniques 1) to extract table content and structural information from images and 2) to answer various questions related to numerical data, text-based information, and complex queries from structured tables. The evaluation results on VQAonBD 2023 dataset demonstrate the effectiveness of TabIQA in achieving promising performance in answering table-related questions. The TabIQA repository is available at https://github.com/phucty/itabqa.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2100790",
+                        "name": "Phuc Nguyen"
+                    },
+                    {
+                        "authorId": "40325274",
+                        "name": "N. Ly"
+                    },
+                    {
+                        "authorId": "46966356",
+                        "name": "Hideaki Takeda"
+                    },
+                    {
+                        "authorId": "144752372",
+                        "name": "A. Takasu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "hierarchical cell\u2190 null for r in R do if r[0] is a colspan cell OR r[1] is an empty cell then",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Most of the previous works [1]\u2013[4] of table recognition focused on two-step approaches that divide the problem into two sub-problems: table structure recognition and table cell content recognition, and then attempt to solve each sub-problem independently by two separate systems.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Input: R (a list of rows of table cells with their bounding boxes) Output: R\u2019 (a list of rows of table cells with hierarchical information) hierarchical cell\u2190 null different bbox flag \u2190 False for r in R do if r[0] is a colspan cell OR r[1] is an empty cell then hierarchical cell\u2190 r[0] else if r[0] is a rowspan cell OR r[0] is an empty cell then hierarchical cell\u2190 null else if different bbox flag AND r[0].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "After cell detection, methods like [8, 12, 46] used heuristic rules to cluster detected cells into rows and columns.",
+                "Some recent works [7, 8, 12] have proposed a modified TEDS metric named TEDS-Struct to evaluate table structure recognition accuracy only by ignoring OCR errors.",
+                "To bypass this problem, the second group of methods [7, 8, 12, 45, 46] detects the bounding boxes of table cells directly and uses different methods to group them into rows and columns."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "3e0c97baa8e7b629a3d689e00aa21b94e2193766",
+                "externalIds": {
+                    "ArXiv": "2303.11615",
+                    "DBLP": "journals/corr/abs-2303-11615",
+                    "DOI": "10.48550/arXiv.2303.11615",
+                    "CorpusId": 257636821
+                },
+                "corpusId": 257636821,
+                "publicationVenue": {
+                    "id": "266f640f-003e-453b-ab76-57e4053252f8",
+                    "name": "Pattern Recognition",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit"
+                    ],
+                    "issn": "0031-3203",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/pattern-recognition",
+                        "http://www.sciencedirect.com/science/journal/00313203"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3e0c97baa8e7b629a3d689e00aa21b94e2193766",
+                "title": "Robust Table Structure Recognition with Dynamic Queries Enhanced Detection Transformer",
+                "abstract": "We present a new table structure recognition (TSR) approach, called TSRFormer, to robustly recognizing the structures of complex tables with geometrical distortions from various table images. Unlike previous methods, we formulate table separation line prediction as a line regression problem instead of an image segmentation problem and propose a new two-stage dynamic queries enhanced DETR based separation line regression approach, named DQ-DETR, to predict separation lines from table images directly. Compared to Vallina DETR, we propose three improvements in DQ-DETR to make the two-stage DETR framework work efficiently and effectively for the separation line prediction task: 1) A new query design, named Dynamic Query, to decouple single line query into separable point queries which could intuitively improve the localization accuracy for regression tasks; 2) A dynamic queries based progressive line regression approach to progressively regressing points on the line which further enhances localization accuracy for distorted tables; 3) A prior-enhanced matching strategy to solve the slow convergence issue of DETR. After separation line prediction, a simple relation network based cell merging module is used to recover spanning cells. With these new techniques, our TSRFormer achieves state-of-the-art performance on several benchmark datasets, including SciTSR, PubTabNet, WTW and FinTabNet. Furthermore, we have validated the robustness and high localization accuracy of our approach to tables with complex structures, borderless cells, large blank spaces, empty or spanning cells as well as distorted or even curved shapes on a more challenging real-world in-house dataset.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2187553093",
+                        "name": "Jiawei Wang"
+                    },
+                    {
+                        "authorId": "2108811137",
+                        "name": "Weihong Lin"
+                    },
+                    {
+                        "authorId": "2894335",
+                        "name": "Chixiang Ma"
+                    },
+                    {
+                        "authorId": "2181111465",
+                        "name": "Mingze Li"
+                    },
+                    {
+                        "authorId": "2145130513",
+                        "name": "Zhengmao Sun"
+                    },
+                    {
+                        "authorId": "2110833051",
+                        "name": "Lei Sun"
+                    },
+                    {
+                        "authorId": "2316043",
+                        "name": "Qiang Huo"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "After cell detection, methods like [8, 12, 46] used heuristic rules to cluster detected cells into rows and columns.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Some recent works [7, 8, 12] have proposed a modified TEDS metric named TEDS-Struct to evaluate table structure recognition accuracy only by ignoring OCR errors.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "To bypass this problem, the second group of methods [7, 8, 12, 45, 46] detects the bounding boxes of table cells directly and uses different methods to group them into rows and columns.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Moreover, LGPMA [35] applies a soft pyramid mask when learning both global and local feature maps.",
+                "With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",
+                "To date, several pioneers works [18, 47, 38, 15, 41, 4, 34, 36, 45, 35, 23, 25] have achieved significant progress in"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "2c267f43aca9bfb2f01e5400fca14545c4aa14b3",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-09174",
+                    "ArXiv": "2303.09174",
+                    "DOI": "10.48550/arXiv.2303.09174",
+                    "CorpusId": 257557431
+                },
+                "corpusId": 257557431,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2c267f43aca9bfb2f01e5400fca14545c4aa14b3",
+                "title": "Grab What You Need: Rethinking Complex Table Structure Recognition with Flexible Components Deliberation",
+                "abstract": "Recently, Table Structure Recognition (TSR) task, aiming at identifying table structure into machine readable formats, has received increasing interest in the community. While impressive success, most single table component-based methods can not perform well on unregularized table cases distracted by not only complicated inner structure but also exterior capture distortion. In this paper, we raise it as Complex TSR problem, where the performance degeneration of existing methods is attributable to their inefficient component usage and redundant post-processing. To mitigate it, we shift our perspective from table component extraction towards the efficient multiple components leverage, which awaits further exploration in the field. Specifically, we propose a seminal method, termed GrabTab, equipped with newly proposed Component Deliberator. Thanks to its progressive deliberation mechanism, our GrabTab can flexibly accommodate to most complex tables with reasonable components selected but without complicated post-processing involved. Quantitative experimental results on public benchmarks demonstrate that our method significantly outperforms the state-of-the-arts, especially under more challenging scenes.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2216764712",
+                        "name": "Hao Liu"
+                    },
+                    {
+                        "authorId": "2153898418",
+                        "name": "Xin Li"
+                    },
+                    {
+                        "authorId": "2150155841",
+                        "name": "Ming Gong"
+                    },
+                    {
+                        "authorId": "47655556",
+                        "name": "Bin Liu"
+                    },
+                    {
+                        "authorId": "2164224877",
+                        "name": "Yunfei Wu"
+                    },
+                    {
+                        "authorId": "3336726",
+                        "name": "Deqiang Jiang"
+                    },
+                    {
+                        "authorId": "2136370566",
+                        "name": "Yinsong Liu"
+                    },
+                    {
+                        "authorId": "143900241",
+                        "name": "Xing Sun"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Moreover, LGPMA [35] applies a soft pyramid mask when learning both global and local feature maps.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "To date, several pioneers works [18, 47, 38, 15, 41, 4, 34, 36, 45, 35, 23, 25] have achieved significant progress in",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Note that LGPMA requires additional\nannotation information for training.",
+                "On the PubTabNet dataset, our model achieved TEDS-struc. of 97.88% which again improves TableFormer and LGPMA (Qiao et al., 2021) by about 1.1% and other methods by more than 4.87%.",
+                "All other methods except EDD (Zhong et al., 2020) are non-end-to-end\napproach and the methods in (Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) requires additional annotation information for training.",
+                "LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment.",
+                "Most of the previous works (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021) focus on non-end-to-end approaches which divide the problem into two separate sub-problems: table structure recognition; and cell-content recognition, and then attempt to solve each sub-problem independently using\u2026",
+                "Note that the 1st ranking solution is a non-end-to-end approach which employs LGPMA (Qiao et al., 2021) to recognize the structure of the table and then uses attention-based text recognizer to provide the OCR information of the table cells.",
+                "Table recognition: Most of the previous works of table recognition (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) focus on non-end-to-end approaches which divide the problem into two separate sub-problems: table structure recognition; and cell-content recognition, and\u2026",
+                "LGPMA (Qiao et al., 2021) is the table structure recognizer component in the 1st ranking solution in ICDAR2021 competition.",
+                "Specifically, our model achieved TEDS of 96.67% which improves VCGoup\u2019s solution (Ye et al., 2021) by 0.41%, LGPMA + OCR (Qiao et al., 2021) by 2%, and others by more than 3%."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "968b0d964e0639ae27a49b696cf11929313e9ff1",
+                "externalIds": {
+                    "ArXiv": "2303.08648",
+                    "DBLP": "conf/visapp/LyT23",
+                    "DOI": "10.5220/0011685000003417",
+                    "CorpusId": 257360026
+                },
+                "corpusId": 257360026,
+                "publicationVenue": {
+                    "id": "3e53351c-7355-4159-a3f2-f3b03a3aa989",
+                    "name": "VISIGRAPP",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Jt Conf Comput Vis Imaging Comput Graph Theory Appl",
+                        "International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications"
+                    ],
+                    "issn": "2184-4321",
+                    "alternate_issns": [
+                        "2184-5921"
+                    ],
+                    "url": "http://www.visigrapp.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/968b0d964e0639ae27a49b696cf11929313e9ff1",
+                "title": "An End-to-End Multi-Task Learning Model for Image-based Table Recognition",
+                "abstract": "Image-based table recognition is a challenging task due to the diversity of table styles and the complexity of table structures. Most of the previous methods focus on a non-end-to-end approach which divides the problem into two separate sub-problems: table structure recognition; and cell-content recognition and then attempts to solve each sub-problem independently using two separate systems. In this paper, we propose an end-to-end multi-task learning model for image-based table recognition. The proposed model consists of one shared encoder, one shared decoder, and three separate decoders which are used for learning three sub-tasks of table recognition: table structure recognition, cell detection, and cell-content recognition. The whole system can be easily trained and inferred in an end-to-end approach. In the experiments, we evaluate the performance of the proposed model on two large-scale datasets: FinTabNet and PubTabNet. The experiment results show that the proposed model outperforms the state-of-the-art methods in all benchmark datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "40325274",
+                        "name": "N. Ly"
+                    },
+                    {
+                        "authorId": "144752372",
+                        "name": "A. Takasu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Note that LGPMA requires additional\nannotation information for training.",
+                    "label_score": -1.0,
+                    "label": "P-NR"
+                },
+                {
+                    "context": "On the PubTabNet dataset, our model achieved TEDS-struc. of 97.88% which again improves TableFormer and LGPMA (Qiao et al., 2021) by about 1.1% and other methods by more than 4.87%.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "All other methods except EDD (Zhong et al., 2020) are non-end-to-end\napproach and the methods in (Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) requires additional annotation information for training.",
+                    "label_score": -1.0,
+                    "label": "P-NR"
+                },
+                {
+                    "context": "LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Most of the previous works (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021) focus on non-end-to-end approaches which divide the problem into two separate sub-problems: table structure recognition; and cell-content recognition, and then attempt to solve each sub-problem independently using\u2026",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Note that the 1st ranking solution is a non-end-to-end approach which employs LGPMA (Qiao et al., 2021) to recognize the structure of the table and then uses attention-based text recognizer to provide the OCR information of the table cells.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "Table recognition: Most of the previous works of table recognition (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) focus on non-end-to-end approaches which divide the problem into two separate sub-problems: table structure recognition; and cell-content recognition, and\u2026",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "LGPMA (Qiao et al., 2021) is the table structure recognizer component in the 1st ranking solution in ICDAR2021 competition.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Specifically, our model achieved TEDS of 96.67% which improves VCGoup\u2019s solution (Ye et al., 2021) by 0.41%, LGPMA + OCR (Qiao et al., 2021) by 2%, and others by more than 3%.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment.",
+                "All\nFTN\nEDD (Zhong et al., 2020) 88.40 92.08 90.60\nGTE (Zheng et al., 2021) - - 87.14\nGTE (FT) (Zheng et al., 2021) - - 91.02\nTableFormer (Nassar et al.,\n2022) 97.50 96.00 96.80\nWSTabNet 99.06 98.33 98.72\nPTN\nEDD (Zhong et al., 2020) 91.10 88.70 89.90\nGTE (Zheng et al., 2021) - - 93.01\nLGPMA (Qiao et al., 2021) - - 96.70\nTableFormer (Nassar et al.,\n2022) 98.50 95.00 96.75\nWSTabNet 99.06 96.37 97.74 (FT) Model was trained on PubTabNet and then finetuned.",
+                "All IM2TEX (Deng et al.,\n2019) 81.70 75.50 78.60\nEDD (Zhong et al., 2020) 91.20 85.40 88.30 TabStruct-Net (Raja et al.,\n2020) - - 90.10\nGTE (Zheng et al., 2021) - - 93.00 TableFormer (Nassar et al.,\n2022) 95.40 90.10 93.60\nSEM (3) (Zhang et al., 2022) 94.80 92.50 93.70 LGPMA (1) (Qiao et al.,\n2021) - - 94.60\nVCGoup (2) (Ye et al., 2021) - - 96.26 WSTabNet 97.89 95.02 96.48\n(1)(2)(3) are 1st, 2nd, and 3rd solutions in ICDAR2021 competition.",
+                "LGPMA (Qiao et al., 2021) is the table structure recognizer component in the 1st ranking solution in ICDAR2021 competition.",
+                "Although, the proposed model requires only table HTML annotations for the training step, it outperforms all the fully supervised methods (Nassar et al., 2022; Qiao et al., 2021; Raja et al., 2020; Ye et al., 2021; Zhang et al., 2022; Zheng et al., 2021) that require both table HTML and the cell bounding boxes annotations for training the models.",
+                "Recently, some researchers (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) worked on both table structure recognition and cell content recognition to build a complete table recognition system."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "bc8fc30c2546979cfd7e1658b868fdbb02f9a22a",
+                "externalIds": {
+                    "ArXiv": "2303.07641",
+                    "DBLP": "journals/corr/abs-2303-07641",
+                    "DOI": "10.5220/0011682600003411",
+                    "CorpusId": 257356700
+                },
+                "corpusId": 257356700,
+                "publicationVenue": {
+                    "id": "8ef5945c-5b25-4774-b55a-15cd5450f6e4",
+                    "name": "International Conference on Pattern Recognition Applications and Methods",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Pattern Recognit Appl Method",
+                        "ICPRAM"
+                    ],
+                    "url": "http://icpram.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/bc8fc30c2546979cfd7e1658b868fdbb02f9a22a",
+                "title": "Rethinking Image-based Table Recognition Using Weakly Supervised Methods",
+                "abstract": "Most of the previous methods for table recognition rely on training datasets containing many richly annotated table images. Detailed table image annotation, e.g., cell or text bounding box annotation, however, is costly and often subjective. In this paper, we propose a weakly supervised model named WSTabNet for table recognition that relies only on HTML (or LaTeX) code-level annotations of table images. The proposed model consists of three main parts: an encoder for feature extraction, a structure decoder for generating table structure, and a cell decoder for predicting the content of each cell in the table. Our system is trained end-to-end by stochastic gradient descent algorithms, requiring only table images and their ground-truth HTML (or LaTeX) representations. To facilitate table recognition with deep learning, we create and release WikiTableSet, the largest publicly available image-based table recognition dataset built from Wikipedia. WikiTableSet contains nearly 4 million English table images, 590K Japanese table images, and 640k French table images with corresponding HTML representation and cell bounding boxes. The extensive experiments on WikiTableSet and two large-scale datasets: FinTabNet and PubTabNet demonstrate that the proposed weakly supervised model achieves better, or similar accuracies compared to the state-of-the-art models on all benchmark datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "40325274",
+                        "name": "N. Ly"
+                    },
+                    {
+                        "authorId": "144752372",
+                        "name": "A. Takasu"
+                    },
+                    {
+                        "authorId": "2100790",
+                        "name": "Phuc Nguyen"
+                    },
+                    {
+                        "authorId": "2052440572",
+                        "name": "H. Takeda"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "All\nFTN\nEDD (Zhong et al., 2020) 88.40 92.08 90.60\nGTE (Zheng et al., 2021) - - 87.14\nGTE (FT) (Zheng et al., 2021) - - 91.02\nTableFormer (Nassar et al.,\n2022) 97.50 96.00 96.80\nWSTabNet 99.06 98.33 98.72\nPTN\nEDD (Zhong et al., 2020) 91.10 88.70 89.90\nGTE (Zheng et al., 2021) - - 93.01\nLGPMA (Qiao et al., 2021) - - 96.70\nTableFormer (Nassar et al.,\n2022) 98.50 95.00 96.75\nWSTabNet 99.06 96.37 97.74 (FT) Model was trained on PubTabNet and then finetuned.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "All IM2TEX (Deng et al.,\n2019) 81.70 75.50 78.60\nEDD (Zhong et al., 2020) 91.20 85.40 88.30 TabStruct-Net (Raja et al.,\n2020) - - 90.10\nGTE (Zheng et al., 2021) - - 93.00 TableFormer (Nassar et al.,\n2022) 95.40 90.10 93.60\nSEM (3) (Zhang et al., 2022) 94.80 92.50 93.70 LGPMA (1) (Qiao et al.,\n2021) - - 94.60\nVCGoup (2) (Ye et al., 2021) - - 96.26 WSTabNet 97.89 95.02 96.48\n(1)(2)(3) are 1st, 2nd, and 3rd solutions in ICDAR2021 competition.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "LGPMA (Qiao et al., 2021) is the table structure recognizer component in the 1st ranking solution in ICDAR2021 competition.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Although, the proposed model requires only table HTML annotations for the training step, it outperforms all the fully supervised methods (Nassar et al., 2022; Qiao et al., 2021; Raja et al., 2020; Ye et al., 2021; Zhang et al., 2022; Zheng et al., 2021) that require both table HTML and the cell bounding boxes annotations for training the models.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Recently, some researchers (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) worked on both table structure recognition and cell content recognition to build a complete table recognition system.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "For the irregular layout table, a good cell detection result could effectively improve the accuracy of table recognition, [26, 33, 36, 55] were committed to improving the accuracy of cell detection."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5966cd3ac4460a97b27b4177a89c0d1041726881",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-06949",
+                    "ArXiv": "2303.06949",
+                    "DOI": "10.1109/CVPR52729.2023.01071",
+                    "CorpusId": 257495840
+                },
+                "corpusId": 257495840,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5966cd3ac4460a97b27b4177a89c0d1041726881",
+                "title": "Improving Table Structure Recognition with Visual-Alignment Sequential Coordinate Modeling",
+                "abstract": "Table structure recognition aims to extract the logical and physical structure of unstructured table images into a machine-readable format. The latest end-to-end image-to-text approaches simultaneously predict the two structures by two decoders, where the prediction of the physical structure (the bounding boxes of the cells) is based on the representation of the logical structure. However, the previous methods struggle with imprecise bounding boxes as the logical representation lacks local visual information. To address this issue, we propose an end-to-end sequential modeling framework for table structure recognition called VAST. It contains a novel coordinate sequence decoder triggered by the representation of the non-empty cell from the logical structure decoder. In the coordinate sequence decoder, we model the bounding box coordinates as a language sequence, where the left, top, right and bottom coordinates are decoded sequentially to leverage the inter-coordinate dependency. Furthermore, we propose an auxiliary visual-alignment loss to enforce the logical representation of the non-empty cells to contain more local visual details, which helps produce better cell bounding boxes. Extensive experiments demonstrate that our proposed method can achieve state-of-the-art results in both logical and physical structure recognition. The ablation study also validates that the proposed coordinate sequence decoder and the visual-alignment loss are the keys to the success of our method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145769099",
+                        "name": "Yongshuai Huang"
+                    },
+                    {
+                        "authorId": "2054645836",
+                        "name": "Ning Lu"
+                    },
+                    {
+                        "authorId": "1679279",
+                        "name": "Dapeng Chen"
+                    },
+                    {
+                        "authorId": "2110470261",
+                        "name": "Yibo Li"
+                    },
+                    {
+                        "authorId": "2002678",
+                        "name": "Zecheng Xie"
+                    },
+                    {
+                        "authorId": "2901597",
+                        "name": "Shenggao Zhu"
+                    },
+                    {
+                        "authorId": "1777642",
+                        "name": "Liangcai Gao"
+                    },
+                    {
+                        "authorId": "2187312795",
+                        "name": "Wei Peng"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "For the irregular layout table, a good cell detection result could effectively improve the accuracy of table recognition, [26, 33, 36, 55] were committed to improving the accuracy of cell detection.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "To eliminate this assumption, another group of methods [25, 24] proposed to detect the bounding boxes of table cells directly.",
+                "Limited by the training datasets [7, 2, 37, 36] used for TSR, most previous works [28, 24, 35, 26] focus on document images that are obtained from digital documents (e."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c78daabab3666d08d945098bc462f882b78803fd",
+                "externalIds": {
+                    "ArXiv": "2303.04384",
+                    "DBLP": "journals/corr/abs-2303-04384",
+                    "DOI": "10.48550/arXiv.2303.04384",
+                    "CorpusId": 257405340
+                },
+                "corpusId": 257405340,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/c78daabab3666d08d945098bc462f882b78803fd",
+                "title": "SEMv2: Table Separation Line Detection Based on Conditional Convolution",
+                "abstract": "Table structure recognition is an indispensable element for enabling machines to comprehend tables. Its primary purpose is to identify the internal structure of a table. Nevertheless, due to the complexity and diversity of their structure and style, it is highly challenging to parse the tabular data into a structured format that machines can comprehend. In this work, we adhere to the principle of the split-and-merge based methods and propose an accurate table structure recognizer, termed SEMv2 (SEM: Split, Embed and Merge). Unlike the previous works in the ``split'' stage, we aim to address the table separation line instance-level discrimination problem and introduce a table separation line detection strategy based on conditional convolution. Specifically, we design the ``split'' in a top-down manner that detects the table separation line instance first and then dynamically predicts the table separation line mask for each instance. The final table separation line shape can be accurately obtained by processing the table separation line mask in a row-wise/column-wise manner. To comprehensively evaluate the SEMv2, we also present a more challenging dataset for table structure recognition, dubbed iFLYTAB, which encompasses multiple style tables in various scenarios such as photos, scanned documents, etc. Extensive experiments on publicly available datasets (e.g. SciTSR, PubTabNet and iFLYTAB) demonstrate the efficacy of our proposed approach. The code and iFLYTAB dataset will be made publicly available upon acceptance of this paper.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2128660562",
+                        "name": "Zhenrong Zhang"
+                    },
+                    {
+                        "authorId": "2067770685",
+                        "name": "Pengfei Hu"
+                    },
+                    {
+                        "authorId": "2143520841",
+                        "name": "Jie Ma"
+                    },
+                    {
+                        "authorId": "2149030934",
+                        "name": "Jun Du"
+                    },
+                    {
+                        "authorId": "39557762",
+                        "name": "Jianshu Zhang"
+                    },
+                    {
+                        "authorId": "2211065581",
+                        "name": "Huihui Zhu"
+                    },
+                    {
+                        "authorId": "2055464704",
+                        "name": "Baocai Yin"
+                    },
+                    {
+                        "authorId": "2185098372",
+                        "name": "Bing Yin"
+                    },
+                    {
+                        "authorId": "2108152462",
+                        "name": "Cong Liu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "To eliminate this assumption, another group of methods [25, 24] proposed to detect the bounding boxes of table cells directly.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Limited by the training datasets [7, 2, 37, 36] used for TSR, most previous works [28, 24, 35, 26] focus on document images that are obtained from digital documents (e.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Then we compare LORE with models mining the adjacency of cells by relation-based metrics: TabStrNet (Raja, Mondal, and Jawahar 2020), LGPMA (Qiao et al. 2021), TOD (Raja, Mondal, and Jawahar 2022), FLAGNet (Liu et al.",
+                "Then we compare LORE with models mining the adjacency of cells by relation-based metrics: TabStrNet (Raja, Mondal, and Jawahar 2020), LGPMA (Qiao et al. 2021), TOD (Raja, Mondal, and Jawahar 2022), FLAGNet (Liu et al. 2021) and NCGM (Liu et al. 2022)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a90a77893708ae5070e2ed4572ca9e20837e69c6",
+                "externalIds": {
+                    "DBLP": "conf/aaai/XingGLBZLYY23",
+                    "ArXiv": "2303.03730",
+                    "DOI": "10.48550/arXiv.2303.03730",
+                    "CorpusId": 257378294
+                },
+                "corpusId": 257378294,
+                "publicationVenue": {
+                    "id": "bdc2e585-4e48-4e36-8af1-6d859763d405",
+                    "name": "AAAI Conference on Artificial Intelligence",
+                    "type": "conference",
+                    "alternate_names": [
+                        "National Conference on Artificial Intelligence",
+                        "National Conf Artif Intell",
+                        "AAAI Conf Artif Intell",
+                        "AAAI"
+                    ],
+                    "url": "http://www.aaai.org/"
+                },
+                "url": "https://www.semanticscholar.org/paper/a90a77893708ae5070e2ed4572ca9e20837e69c6",
+                "title": "LORE: Logical Location Regression Network for Table Structure Recognition",
+                "abstract": "Table structure recognition (TSR) aims at extracting tables in images into machine-understandable formats. Recent methods solve this problem by predicting the adjacency relations of detected cell boxes, or learning to generate the corresponding markup sequences from the table images. However, they either count on additional heuristic rules to recover the table structures, or require a huge amount of training data and time-consuming sequential decoders. In this paper, we propose an alternative paradigm. We model TSR as a logical location regression problem and propose a new TSR framework called LORE, standing for LOgical location REgression network, which for the first time combines logical location regression together with spatial location regression of table cells. Our proposed LORE is conceptually simpler, easier to train and more accurate than previous TSR models of other paradigms. Experiments on standard benchmarks demonstrate that LORE consistently outperforms prior arts. Code is available at https:// github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/DocumentUnderstanding/LORE-TSR.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2176894025",
+                        "name": "Hangdi Xing"
+                    },
+                    {
+                        "authorId": "2112256",
+                        "name": "Feiyu Gao"
+                    },
+                    {
+                        "authorId": "143799988",
+                        "name": "Rujiao Long"
+                    },
+                    {
+                        "authorId": "2064698184",
+                        "name": "Jiajun Bu"
+                    },
+                    {
+                        "authorId": "2114172383",
+                        "name": "Qi Zheng"
+                    },
+                    {
+                        "authorId": "2145730944",
+                        "name": "Liangcheng Li"
+                    },
+                    {
+                        "authorId": "2173739231",
+                        "name": "Cong Yao"
+                    },
+                    {
+                        "authorId": "2139424603",
+                        "name": "Zhi Yu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Then we compare LORE with models mining the adjacency of cells by relation-based metrics: TabStrNet (Raja, Mondal, and Jawahar 2020), LGPMA (Qiao et al. 2021), TOD (Raja, Mondal, and Jawahar 2022), FLAGNet (Liu et al.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "Then we compare LORE with models mining the adjacency of cells by relation-based metrics: TabStrNet (Raja, Mondal, and Jawahar 2020), LGPMA (Qiao et al. 2021), TOD (Raja, Mondal, and Jawahar 2022), FLAGNet (Liu et al. 2021) and NCGM (Liu et al. 2022).",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Reference [4] uses the method of object detection to identify the table structure, and proposed complicated table structure recognition with local and global pyramid mask alignment (LGPMA) based on Mask R-CNN [5], which detects the local and global boundaries of the table, and aligns and fuses the results."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5c3c2ac444019a96edff6ac60329aea3ef43d359",
+                "externalIds": {
+                    "DOI": "10.3390/electronics12030673",
+                    "CorpusId": 256454161
+                },
+                "corpusId": 256454161,
+                "publicationVenue": {
+                    "id": "ccd8e532-73c6-414f-bc91-271bbb2933e2",
+                    "name": "Electronics",
+                    "type": "journal",
+                    "issn": "1450-5843",
+                    "alternate_issns": [
+                        "2079-9292",
+                        "0883-4989"
+                    ],
+                    "url": "http://www.electronics.etfbl.net/",
+                    "alternate_urls": [
+                        "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-247562",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-247562",
+                        "https://www.mdpi.com/journal/electronics"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5c3c2ac444019a96edff6ac60329aea3ef43d359",
+                "title": "Table Structure Recognition Method Based on Lightweight Network and Channel Attention",
+                "abstract": "The table recognition model rows and columns aggregated network (RCANet) uses a semantic segmentation approach to recognize table structure, and achieves better performance in table row and column segmentation. However, this model uses ResNet18 as the backbone network, and the model has 11.35 million parameters and a volume of 45.5 M, which is inconvenient to deploy to lightweight servers or mobile terminals. Therefore, from the perspective of model compression, this paper proposes the lightweight rows and columns attention aggregated network (LRCAANet), which uses the lightweight network ShuffleNetv2 to replace the original RCANet backbone network ResNet18 to simplify the model size. Considering that the lightweight network reduces the number of feature channels, it has a certain impact on the performance of the model. In order to strengthen the learning between feature channels, the rows attention aggregated (RAA) module and the columns attention aggregated (CAA) module are proposed. The RAA module and the CAA module add the squeeze and excitation (SE) module to the original row and column aggregated modules, respectively. Adding the SE module means the model can learn the correlation between channels and improve the prediction effect of the lightweight model. The experimental results show that our method greatly reduces the model parameters and model volume while ensuring low-performance loss. In the end, the average F1 score of our model is only 1.77% lower than the original model, the parameters are only 0.17 million, and the volume is only 0.8 M. Compared with the original model, the parameter amount and volume are reduced by more than 95%.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "103245682",
+                        "name": "T. Zhang"
+                    },
+                    {
+                        "authorId": "48184603",
+                        "name": "Yi Sui"
+                    },
+                    {
+                        "authorId": "1821383",
+                        "name": "Shunyao Wu"
+                    },
+                    {
+                        "authorId": "2096258",
+                        "name": "Fengjing Shao"
+                    },
+                    {
+                        "authorId": "39447552",
+                        "name": "Rencheng Sun"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Reference [4] uses the method of object detection to identify the table structure, and proposed complicated table structure recognition with local and global pyramid mask alignment (LGPMA) based on Mask R-CNN [5], which detects the local and global boundaries of the table, and aligns and fuses the results.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "LGPMA [12] PubTabNet-train PubTabNet-test 94.",
+                "Davar-Lab proposed the local and global pyramid mask alignment (LGPMA) [12] method, which learned the local pyramid mask alignment (LPMA) and the global pyramid mask alignment (GPMA) simultaneously."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ca2fabed8604b296d713262794a427e5c4b51ffa",
+                "externalIds": {
+                    "DBLP": "journals/apin/WanZLZS23",
+                    "DOI": "10.1007/s10489-022-04420-4",
+                    "CorpusId": 255362168
+                },
+                "corpusId": 255362168,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/ca2fabed8604b296d713262794a427e5c4b51ffa",
+                "title": "Contextual transformer sequence-based recognition network for medical examination reports",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "152912519",
+                        "name": "Honglin Wan"
+                    },
+                    {
+                        "authorId": "2199057485",
+                        "name": "Zongfeng Zhong"
+                    },
+                    {
+                        "authorId": "2263987",
+                        "name": "Tianping Li"
+                    },
+                    {
+                        "authorId": "2856513",
+                        "name": "Huaxiang Zhang"
+                    },
+                    {
+                        "authorId": "51299154",
+                        "name": "Jiande Sun"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "LGPMA [12] PubTabNet-train PubTabNet-test 94.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Davar-Lab proposed the local and global pyramid mask alignment (LGPMA) [12] method, which learned the local pyramid mask alignment (LPMA) and the global pyramid mask alignment (GPMA) simultaneously.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "ae6e34d182fbc42bc99ba609369a3b7645d205cb",
+                "externalIds": {
+                    "DBLP": "journals/prl/WangXZJ23",
+                    "DOI": "10.1016/j.patrec.2022.12.014",
+                    "CorpusId": 255089449
+                },
+                "corpusId": 255089449,
+                "publicationVenue": {
+                    "id": "f35e3e87-9df4-497b-aa0d-bb8584197290",
+                    "name": "Pattern Recognition Letters",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit Lett"
+                    ],
+                    "issn": "0167-8655",
+                    "url": "https://www.journals.elsevier.com/pattern-recognition-letters/",
+                    "alternate_urls": [
+                        "http://www.journals.elsevier.com/pattern-recognition-letters/",
+                        "http://www.sciencedirect.com/science/journal/01678655"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/ae6e34d182fbc42bc99ba609369a3b7645d205cb",
+                "title": "Scene table structure recognition with segmentation collaboration and alignment",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2109799388",
+                        "name": "Hongyi Wang"
+                    },
+                    {
+                        "authorId": "46364544",
+                        "name": "Yang Xue"
+                    },
+                    {
+                        "authorId": "2118131879",
+                        "name": "Jiaxin Zhang"
+                    },
+                    {
+                        "authorId": "144838978",
+                        "name": "Lianwen Jin"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "intents": [],
+            "contexts": [
+                "Some recent works [(Raja, Mondal, and Jawahar 2020), (Qiao et al. 2021), (Zheng et al. 2021)] have proposed a modified TEDS metric named TEDS-Struct to\nevaluate table structure recognition accuracy only by ignoring OCR errors.",
+                "Some recent works [(Raja, Mondal, and Jawahar 2020), (Qiao et al. 2021), (Zheng et al.",
+                "Table 5 shows the results of SLANet and some state-of-the-art methods on PubTabNet such as EDD(Zhong, ShafieiBavani, and Jimeno Yepes 2020b), TableMaster(Ye et al. 2021) and LGPMA(Qiao et al. 2021)."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "0841e71068af40b77892a69378b45e0e1adf6aee",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2210-05391",
+                    "ArXiv": "2210.05391",
+                    "DOI": "10.48550/arXiv.2210.05391",
+                    "CorpusId": 252816075
+                },
+                "corpusId": 252816075,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/0841e71068af40b77892a69378b45e0e1adf6aee",
+                "title": "PP-StructureV2: A Stronger Document Analysis System",
+                "abstract": "A large amount of document data exists in unstructured form such as raw images without any text information. Designing a practical document image analysis system is a meaningful but challenging task. In previous work, we proposed an intelligent document analysis system PP-Structure. In order to further upgrade the function and performance of PP-Structure, we propose PP-StructureV2 in this work, which contains two subsystems: Layout Information Extraction and Key Information Extraction. Firstly, we integrate Image Direction Correction module and Layout Restoration module to enhance the functionality of the system. Secondly, 8 practical strategies are utilized in PP-StructureV2 for better performance. For Layout Analysis model, we introduce ultra light-weight detector PP-PicoDet and knowledge distillation algorithm FGD for model lightweighting, which increased the inference speed by 11 times with comparable mAP. For Table Recognition model, we utilize PP-LCNet, CSP-PAN and SLAHead to optimize the backbone module, feature fusion module and decoding module, respectively, which improved the table structure accuracy by 6\\% with comparable inference speed. For Key Information Extraction model, we introduce VI-LayoutXLM which is a visual-feature independent LayoutXLM architecture, TB-YX sorting algorithm and U-DML knowledge distillation algorithm, which brought 2.8\\% and 9.1\\% improvement respectively on the Hmean of Semantic Entity Recognition and Relation Extraction tasks. All the above mentioned models and code are open-sourced in the GitHub repository PaddleOCR.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2109266729",
+                        "name": "Chenxia Li"
+                    },
+                    {
+                        "authorId": "108703727",
+                        "name": "Ruoyu Guo"
+                    },
+                    {
+                        "authorId": "2151548966",
+                        "name": "Jun Zhou"
+                    },
+                    {
+                        "authorId": "2187431479",
+                        "name": "Mengtao An"
+                    },
+                    {
+                        "authorId": "2867809",
+                        "name": "Yuning Du"
+                    },
+                    {
+                        "authorId": "2118940194",
+                        "name": "Lingfeng Zhu"
+                    },
+                    {
+                        "authorId": "2153629743",
+                        "name": "Yi Liu"
+                    },
+                    {
+                        "authorId": "2109752359",
+                        "name": "Xiaoguang Hu"
+                    },
+                    {
+                        "authorId": "3046102",
+                        "name": "Dianhai Yu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Some recent works [(Raja, Mondal, and Jawahar 2020), (Qiao et al. 2021), (Zheng et al. 2021)] have proposed a modified TEDS metric named TEDS-Struct to\nevaluate table structure recognition accuracy only by ignoring OCR errors.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Some recent works [(Raja, Mondal, and Jawahar 2020), (Qiao et al. 2021), (Zheng et al.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Table 5 shows the results of SLANet and some state-of-the-art methods on PubTabNet such as EDD(Zhong, ShafieiBavani, and Jimeno Yepes 2020b), TableMaster(Ye et al. 2021) and LGPMA(Qiao et al. 2021).",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "contexts": [
+                "Similar to previous works [8, 38, 46, 49, 51], the text content and structure information are obtained separately.",
+                "Since all the tables are extracted from PDF files and all horizontally aligned, we adopt the post-processing of cell matching in [46] to construct the cells relations.",
+                "2) Since all of the tables are horizontally displayed, we adopt the cell matching strategy in [46] to generate the column/row indexes.",
+                "According to the underlying alignment information in the table, [38, 46, 47] aim to obtain more accurate aligned cells which can be effectively used to infer the final structure."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "4ebf44ebb9634cb5c60f5dc7fab0c0f84aed0939",
+                "externalIds": {
+                    "DBLP": "conf/mm/LiL0LCNPL22",
+                    "DOI": "10.1145/3503161.3547885",
+                    "CorpusId": 252782335
+                },
+                "corpusId": 252782335,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4ebf44ebb9634cb5c60f5dc7fab0c0f84aed0939",
+                "title": "End-to-End Compound Table Understanding with Multi-Modal Modeling",
+                "abstract": "Table is a widely used data form in webpages, spreadsheets, or PDFs to organize and present structural data. Although studies on table structure recognition have been successfully used to convert image-based tables into digital structural formats, solving many real problems still relies on further understanding of the table, such as cell relationship extraction. The current datasets related to table understanding are all based on the digit format. To boost research development, we release a new benchmark named ComFinTab with rich annotations that support both table recognition and understanding tasks. Unlike previous datasets containing the basic tables, ComFinTab contains a large ratio of compound tables, which is much more challenging and requires methods using multiple information sources. Based on the dataset, we also propose a uniform, concise task form with the evaluation metric to better evaluate the model's performance on the table understanding task in compound tables. Finally, a framework named CTUNet is proposed to integrate the compromised visual, semantic, and position features with a graph attention network, which can solve the table recognition task and the challenging table understanding task as a whole. Experimental results compared with some previous advanced table understanding methods demonstrate the effectiveness of our proposed model. Code and dataset are available at \\urlhttps://github.com/hikopensource/DAVAR-Lab-OCR.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2109614687",
+                        "name": "Zaisheng Li"
+                    },
+                    {
+                        "authorId": "2187429408",
+                        "name": "Yi Li"
+                    },
+                    {
+                        "authorId": "2187308758",
+                        "name": "Qiao Liang"
+                    },
+                    {
+                        "authorId": "2144902872",
+                        "name": "Pengfei Li"
+                    },
+                    {
+                        "authorId": "2398015",
+                        "name": "Zhanzhan Cheng"
+                    },
+                    {
+                        "authorId": "1490934795",
+                        "name": "Yi Niu"
+                    },
+                    {
+                        "authorId": "3290437",
+                        "name": "Shiliang Pu"
+                    },
+                    {
+                        "authorId": "2116227961",
+                        "name": "Xi Li"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Similar to previous works [8, 38, 46, 49, 51], the text content and structure information are obtained separately.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Since all the tables are extracted from PDF files and all horizontally aligned, we adopt the post-processing of cell matching in [46] to construct the cells relations.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "2) Since all of the tables are horizontally displayed, we adopt the cell matching strategy in [46] to generate the column/row indexes.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "According to the underlying alignment information in the table, [38, 46, 47] aim to obtain more accurate aligned cells which can be effectively used to infer the final structure.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc. Unlike many state-of-the-art methods that perform evaluations only at TEDs, our method also test the Structure TEDs on PubTabNet.",
+                "Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc.",
+                "Unfortunately, the Component-based approaches such as DeepDeSRT [7], TableNet [8] and LGPMA [9] still suffer from boundary ambiguity problems in unlined tables and cannot achieve decent performance in complex scenarios such as tables with empty cells."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "92132fb36fb3e470464551210926f256a1f37280",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-14687",
+                    "ArXiv": "2208.14687",
+                    "DOI": "10.48550/arXiv.2208.14687",
+                    "CorpusId": 251953555
+                },
+                "corpusId": 251953555,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/92132fb36fb3e470464551210926f256a1f37280",
+                "title": "TRUST: An Accurate and End-to-End Table structure Recognizer Using Splitting-based Transformers",
+                "abstract": "Table structure recognition is a crucial part of document image analysis domain. Its difficulty lies in the need to parse the physical coordinates and logical indices of each cell at the same time. However, the existing methods are difficult to achieve both these goals, especially when the table splitting lines are blurred or tilted. In this paper, we propose an accurate and end-to-end transformer-based table structure recognition method, referred to as TRUST. Transformers are suitable for table structure recognition because of their global computations, perfect memory, and parallel computation. By introducing novel Transformer-based Query-based Splitting Module and Vertex-based Merging Module, the table structure recognition problem is decoupled into two joint optimization sub-tasks: multi-oriented table row/column splitting and table grid merging. The Query-based Splitting Module learns strong context information from long dependencies via Transformer networks, accurately predicts the multi-oriented table row/column separators, and obtains the basic grids of the table accordingly. The Vertex-based Merging Module is capable of aggregating local contextual information between adjacent basic grids, providing the ability to merge basic girds that belong to the same spanning cell accurately. We conduct experiments on several popular benchmarks including PubTabNet and SynthTable, our method achieves new state-of-the-art results. In particular, TRUST runs at 10 FPS on PubTabNet, surpassing the previous methods by a large margin.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2109309324",
+                        "name": "Zengyuan Guo"
+                    },
+                    {
+                        "authorId": "2117164666",
+                        "name": "Yuecheng Yu"
+                    },
+                    {
+                        "authorId": "25604699",
+                        "name": "Pengyuan Lv"
+                    },
+                    {
+                        "authorId": "1979323",
+                        "name": "Chengquan Zhang"
+                    },
+                    {
+                        "authorId": "2579920",
+                        "name": "Haojie Li"
+                    },
+                    {
+                        "authorId": "47196393",
+                        "name": "Zhihui Wang"
+                    },
+                    {
+                        "authorId": "2140371004",
+                        "name": "Kun Yao"
+                    },
+                    {
+                        "authorId": "2272123",
+                        "name": "Jingtuo Liu"
+                    },
+                    {
+                        "authorId": "2109534192",
+                        "name": "Jingdong Wang"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc. Unlike many state-of-the-art methods that perform evaluations only at TEDs, our method also test the Structure TEDs on PubTabNet.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Unfortunately, the Component-based approaches such as DeepDeSRT [7], TableNet [8] and LGPMA [9] still suffer from boundary ambiguity problems in unlined tables and cannot achieve decent performance in complex scenarios such as tables with empty cells.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Recently, two new approaches have beaten the state-of-the-art: combining vision, semantic and relations for layout analysis and table detection [15] and applying a soft pyramid mask learning mechanism in both the local and global feature maps for complicated table structure recognition [11]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "66191e12cdc814df496d2654b42227fc93a633f0",
+                "externalIds": {
+                    "ArXiv": "2208.11210",
+                    "DBLP": "journals/corr/abs-2208-11210",
+                    "DOI": "10.1007/978-3-031-23028-8_25",
+                    "CorpusId": 251765550
+                },
+                "corpusId": 251765550,
+                "publicationVenue": {
+                    "id": "1af76ce1-d89d-4026-8b81-9bc22d1fe31c",
+                    "name": "International Workshop on Structural and Syntactic Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "S+SSPR",
+                        "Int Workshop Struct Syntactic Pattern Recognit"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/66191e12cdc814df496d2654b42227fc93a633f0",
+                "title": "Data augmentation on graphs for table type classification",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2182519050",
+                        "name": "Davide del Bimbo"
+                    },
+                    {
+                        "authorId": "2182515911",
+                        "name": "Andrea Gemelli"
+                    },
+                    {
+                        "authorId": "3285734",
+                        "name": "S. Marinai"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Recently, two new approaches have beaten the state-of-the-art: combining vision, semantic and relations for layout analysis and table detection [15] and applying a soft pyramid mask learning mechanism in both the local and global feature maps for complicated table structure recognition [11].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "In VSR, visual, semantic, and structural features are combined to detect objects, exploiting a GNN for the final refinement; LGPMA uses a soft pyramid mask learning mechanism in both local and global feature maps to recover the table structure, also taking into account empty cells location.",
+                "In the ICDAR 2021 competition on DLA and TR [39], the DAVARLab-OCR obtained SOTA results on both tasks by using two different approaches: VSR [40] and LGPMA [41].",
+                "In the ICDAR 2021 competition on DLA and TR [38], the DAVARLab-OCR obtained SOTA results on both tasks by using two different approaches: VSR [39] and LGPMA [40]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "f3b6939ce0244e89656cf6ff93f6dff8b2bef547",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-11203",
+                    "ArXiv": "2208.11203",
+                    "DOI": "10.1109/ICPR56361.2022.9956590",
+                    "CorpusId": 251765514
+                },
+                "corpusId": 251765514,
+                "publicationVenue": {
+                    "id": "48782cc2-a3b4-44f3-95a4-2c4cb0f7245b",
+                    "name": "International Conference on Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Pattern Recognit (ICPR Proc Int Conf",
+                        "Int Conf Pattern Recognit",
+                        "ICPR",
+                        "International conference on pattern recognition",
+                        "Int conf pattern recognit",
+                        "Pattern Recognition (ICPR), Proceedings of the International Conference on"
+                    ],
+                    "issn": "1041-3278",
+                    "alternate_issns": [
+                        "1051-4651"
+                    ],
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome/1000545/all-proceedings",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=4740202"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/f3b6939ce0244e89656cf6ff93f6dff8b2bef547",
+                "title": "Graph Neural Networks and Representation Embedding for Table Extraction in PDF Documents",
+                "abstract": "Tables are widely used in several types of documents since they can bring important information in a structured way. In scientific papers, tables can sum up novel discoveries and summarize experimental results, making the research comparable and easily understandable by scholars. Several methods perform table analysis working on document images, losing useful information during the conversion from the PDF files since OCR tools can be prone to recognition errors, in particular for text inside tables. The main contribution of this work is to tackle the problem of table extraction, exploiting Graph Neural Networks. Node features are enriched with suitably designed representation embeddings. These representations help to better distinguish not only tables from the other parts of the paper, but also table cells from table headers. We experimentally evaluated the proposed approach on a new dataset obtained by merging the information provided in the PubLayNet and PubTables-1M datasets.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2182515911",
+                        "name": "Andrea Gemelli"
+                    },
+                    {
+                        "authorId": "2182519264",
+                        "name": "Emanuele Vivoli"
+                    },
+                    {
+                        "authorId": "3285734",
+                        "name": "S. Marinai"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "In VSR, visual, semantic, and structural features are combined to detect objects, exploiting a GNN for the final refinement; LGPMA uses a soft pyramid mask learning mechanism in both local and global feature maps to recover the table structure, also taking into account empty cells location.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "In the ICDAR 2021 competition on DLA and TR [39], the DAVARLab-OCR obtained SOTA results on both tasks by using two different approaches: VSR [40] and LGPMA [41].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "In the ICDAR 2021 competition on DLA and TR [38], the DAVARLab-OCR obtained SOTA results on both tasks by using two different approaches: VSR [39] and LGPMA [40].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "To bypass this problem, the second group of methods [19, 23, 33, 35, 36, 54] detects the bounding boxes of table cells or cell contents directly and uses different methods to group them into rows and columns.",
+                "After cell detection, methods like [19, 35, 54] used heuristic rules to cluster detected cells into rows and columns.",
+                "Some recent works [35, 36, 54] have proposed a modified TEDS metric named TEDS-Struct to evaluate table structure recognition accuracy only by ignoring OCR errors."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "fb6fcca5762b26f225313f86b1f33a1cf198bfd7",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-04921",
+                    "ArXiv": "2208.04921",
+                    "DOI": "10.1145/3503161.3548038",
+                    "CorpusId": 251442367
+                },
+                "corpusId": 251442367,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/fb6fcca5762b26f225313f86b1f33a1cf198bfd7",
+                "title": "TSRFormer: Table Structure Recognition with Transformers",
+                "abstract": "We present a new table structure recognition (TSR) approach, called TSRFormer, to robustly recognizing the structures of complex tables with geometrical distortions from various table images. Unlike previous methods, we formulate table separation line prediction as a line regression problem instead of an image segmentation problem and propose a new two-stage DETR based separator prediction approach, dubbed Sep arator RE gression TR ansformer (SepRETR), to predict separation lines from table images directly. To make the two-stage DETR framework work efficiently and effectively for the separation line prediction task, we propose two improvements: 1) A prior-enhanced matching strategy to solve the slow convergence issue of DETR; 2) A new cross attention module to sample features from a high-resolution convolutional feature map directly so that high localization accuracy is achieved with low computational cost. After separation line prediction, a simple relation network based cell merging module is used to recover spanning cells. With these new techniques, our TSRFormer achieves state-of-the-art performance on several benchmark datasets, including SciTSR, PubTabNet and WTW. Furthermore, we have validated the robustness of our approach to tables with complex structures, borderless cells, large blank spaces, empty or spanning cells as well as distorted or even curved shapes on a more challenging real-world in-house dataset.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108811137",
+                        "name": "Weihong Lin"
+                    },
+                    {
+                        "authorId": "2145130513",
+                        "name": "Zhengmao Sun"
+                    },
+                    {
+                        "authorId": "2894335",
+                        "name": "Chixiang Ma"
+                    },
+                    {
+                        "authorId": "2181111465",
+                        "name": "Mingze Li"
+                    },
+                    {
+                        "authorId": "2110132415",
+                        "name": "Jiawei Wang"
+                    },
+                    {
+                        "authorId": "2110833051",
+                        "name": "Lei Sun"
+                    },
+                    {
+                        "authorId": "2316043",
+                        "name": "Qiang Huo"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "To bypass this problem, the second group of methods [19, 23, 33, 35, 36, 54] detects the bounding boxes of table cells or cell contents directly and uses different methods to group them into rows and columns.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "After cell detection, methods like [19, 35, 54] used heuristic rules to cluster detected cells into rows and columns.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Some recent works [35, 36, 54] have proposed a modified TEDS metric named TEDS-Struct to evaluate table structure recognition accuracy only by ignoring OCR errors.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Other common forms of document understanding tasks include layout analysis [32, 34], Reading Order Detection (ROD) [16, 30], table recognition [14, 21] and understanding [12, 29], document Question-Answering (QA) [19], Named Entity Recognition (NER) [7, 10, 24, 31], etc.",
+                "(5) TP[22], MANGO[20], M-RCNN-e2e YORO [4] Chargrid[13]\u2665\u2663, TRIE[35]\u2665\u2663\u2666 BERT-Softmax /Span/CRF[5] \u2663 BiLSTM-CRF[10]\u2663 VSR[34]\u2665\u2663\u2666 GCN-PN[16]\u2665\u2666 LGPMA[21]\u2665"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "59b414e6f0eb2e1db326015a9e70d0666dbc7783",
+                "externalIds": {
+                    "ArXiv": "2207.06695",
+                    "DBLP": "conf/mm/QiaoJCLLLZGXXCN22",
+                    "DOI": "10.1145/3503161.3548547",
+                    "CorpusId": 250526105
+                },
+                "corpusId": 250526105,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/59b414e6f0eb2e1db326015a9e70d0666dbc7783",
+                "title": "DavarOCR: A Toolbox for OCR and Multi-Modal Document Understanding",
+                "abstract": "This paper presents DavarOCR, an open-source toolbox for OCR and document understanding tasks. DavarOCR currently implements 19 advanced algorithms, covering 9 different task forms. DavarOCR provides detailed usage instructions and the trained models for each algorithm. Compared with the previous open-source OCR toolbox, DavarOCR has relatively more complete support for the sub-tasks of the cutting-edge technology of document understanding. In order to promote the development and application of OCR technology in academia and industry, we pay more attention to the use of modules that different sub-domains of technology can share. DavarOCR is publicly released at https://github.com/hikopensource/Davar-Lab-OCR.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2065512194",
+                        "name": "Liang Qiao"
+                    },
+                    {
+                        "authorId": "2169216245",
+                        "name": "Hui Jiang"
+                    },
+                    {
+                        "authorId": "2144541900",
+                        "name": "Ying Chen"
+                    },
+                    {
+                        "authorId": "2118037394",
+                        "name": "Can Li"
+                    },
+                    {
+                        "authorId": "2144902872",
+                        "name": "Pengfei Li"
+                    },
+                    {
+                        "authorId": "2109614687",
+                        "name": "Zaisheng Li"
+                    },
+                    {
+                        "authorId": "1720803198",
+                        "name": "Baorui Zou"
+                    },
+                    {
+                        "authorId": "20412557",
+                        "name": "Dashan Guo"
+                    },
+                    {
+                        "authorId": "2110289747",
+                        "name": "Yi Xu"
+                    },
+                    {
+                        "authorId": "47103450",
+                        "name": "Yunlu Xu"
+                    },
+                    {
+                        "authorId": "2398015",
+                        "name": "Zhanzhan Cheng"
+                    },
+                    {
+                        "authorId": "1490934795",
+                        "name": "Yi Niu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Other common forms of document understanding tasks include layout analysis [32, 34], Reading Order Detection (ROD) [16, 30], table recognition [14, 21] and understanding [12, 29], document Question-Answering (QA) [19], Named Entity Recognition (NER) [7, 10, 24, 31], etc.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "(5) TP[22], MANGO[20], M-RCNN-e2e YORO [4] Chargrid[13]\u2665\u2663, TRIE[35]\u2665\u2663\u2666 BERT-Softmax /Span/CRF[5] \u2663 BiLSTM-CRF[10]\u2663 VSR[34]\u2665\u2663\u2666 GCN-PN[16]\u2665\u2666 LGPMA[21]\u2665",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "644b991959bf5fb036d28d67e9918d419b212e75",
+                "externalIds": {
+                    "DBLP": "journals/pr/LiYDL22",
+                    "DOI": "10.1016/j.patcog.2022.108946",
+                    "CorpusId": 251140530
+                },
+                "corpusId": 251140530,
+                "publicationVenue": {
+                    "id": "266f640f-003e-453b-ab76-57e4053252f8",
+                    "name": "Pattern Recognition",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit"
+                    ],
+                    "issn": "0031-3203",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/pattern-recognition",
+                        "http://www.sciencedirect.com/science/journal/00313203"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/644b991959bf5fb036d28d67e9918d419b212e75",
+                "title": "Table Structure Recognition and Form Parsing by End-to-End Object Detection and Relation Parsing",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2118890077",
+                        "name": "Xiaohui Li"
+                    },
+                    {
+                        "authorId": "145820427",
+                        "name": "Fei Yin"
+                    },
+                    {
+                        "authorId": "2179477671",
+                        "name": "He-Sen Dai"
+                    },
+                    {
+                        "authorId": "1689269",
+                        "name": "Cheng-Lin Liu"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "a968b9165a3b77bd746c00fb99031f378802900f",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2204-00052",
+                    "ArXiv": "2204.00052",
+                    "DOI": "10.48550/arXiv.2204.00052",
+                    "CorpusId": 247922289
+                },
+                "corpusId": 247922289,
+                "publicationVenue": {
+                    "id": "75d7a8c1-d871-42db-a8e4-7cf5146fdb62",
+                    "name": "Social Science Research Network",
+                    "type": "journal",
+                    "alternate_names": [
+                        "SSRN, Social Science Research Network (SSRN) home page",
+                        "SSRN Electronic Journal",
+                        "Soc Sci Res Netw",
+                        "SSRN",
+                        "SSRN Home Page",
+                        "SSRN Electron J",
+                        "Social Science Electronic Publishing presents Social Science Research Network"
+                    ],
+                    "issn": "1556-5068",
+                    "url": "http://www.ssrn.com/",
+                    "alternate_urls": [
+                        "www.ssrn.com/",
+                        "https://fatcat.wiki/container/tol7woxlqjeg5bmzadeg6qrg3e",
+                        "https://www.wikidata.org/wiki/Q53949192",
+                        "www.ssrn.com/en",
+                        "http://www.ssrn.com/en/",
+                        "http://umlib.nl/ssrn",
+                        "umlib.nl/ssrn"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/a968b9165a3b77bd746c00fb99031f378802900f",
+                "title": "Digitizing Historical Balance Sheet Data: A Practitioner's Guide",
+                "abstract": "This paper discusses how to successfully digitize large-scale historical micro-data by augmenting optical character recognition (OCR) engines with pre- and post-processing methods. Although OCR software has improved dramatically in recent years due to improvements in machine learning, off-the-shelf OCR applications still present high error rates which limit their applications for accurate extraction of structured information. Complementing OCR with additional methods can however dramatically increase its success rate, making it a powerful and cost-efficient tool for economic historians. This paper showcases these methods and explains why they are useful. We apply them against two large balance sheet datasets and introduce quipucamayoc, a Python package containing these methods in a unified framework.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "145932584",
+                        "name": "Sergio Correia"
+                    },
+                    {
+                        "authorId": "38861223",
+                        "name": "Stephan Luck"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Recent best performing table structure recognition approaches, like TabStructNet [22] and LGPMA [23], typically use CNNbased object detection or segmentation models like Mask R-CNN to detect table cells first, then adopt some cell grouping/clustering algorithms to predict row/column relationships between the detected cells.",
+                "Net [22] and LGPMA [23], typically use CNNbased object detection or segmentation models like Mask R-CNN to detect table cells first, then adopt some cell grouping/clustering algorithms to predict row/column relationships between the detected cells.",
+                "It is noted that, the recent best performing method LGPMA [23] (the winner",
+                "It is noted that, the recent best performing method LGPMA [23] (the winner of ICDAR 2021 Competition on Scientific Literature Parsing Task B [83]) has leveraged an important task constraint, namely tables are axis-aligned, to achieve higher accuracy.",
+                "[23] designed some rules to cluster cells into rows and columns.",
+                "Some recent works [8, 22, 23] have proposed a modified TEDS metric, denoted as TEDS-Struct, to evaluate table structure recognition accuracy only by ignoring OCR errors.",
+                "To eliminate this assumption, another group of methods [8, 22, 23] proposed to detect the bounding boxes of"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "29942b5588d9978af5da046ebfc642e4779b8597",
+                "externalIds": {
+                    "ArXiv": "2203.09056",
+                    "DBLP": "journals/pr/MaLSH23",
+                    "DOI": "10.1016/j.patcog.2022.109006",
+                    "CorpusId": 247518554
+                },
+                "corpusId": 247518554,
+                "publicationVenue": {
+                    "id": "266f640f-003e-453b-ab76-57e4053252f8",
+                    "name": "Pattern Recognition",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit"
+                    ],
+                    "issn": "0031-3203",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/pattern-recognition",
+                        "http://www.sciencedirect.com/science/journal/00313203"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/29942b5588d9978af5da046ebfc642e4779b8597",
+                "title": "Robust Table Detection and Structure Recognition from Heterogeneous Document Images",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2894335",
+                        "name": "Chixiang Ma"
+                    },
+                    {
+                        "authorId": "2108811137",
+                        "name": "Weihong Lin"
+                    },
+                    {
+                        "authorId": "2110833051",
+                        "name": "Lei Sun"
+                    },
+                    {
+                        "authorId": "2316043",
+                        "name": "Qiang Huo"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Recent best performing table structure recognition approaches, like TabStructNet [22] and LGPMA [23], typically use CNNbased object detection or segmentation models like Mask R-CNN to detect table cells first, then adopt some cell grouping/clustering algorithms to predict row/column relationships between the detected cells.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Net [22] and LGPMA [23], typically use CNNbased object detection or segmentation models like Mask R-CNN to detect table cells first, then adopt some cell grouping/clustering algorithms to predict row/column relationships between the detected cells.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "It is noted that, the recent best performing method LGPMA [23] (the winner",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "It is noted that, the recent best performing method LGPMA [23] (the winner of ICDAR 2021 Competition on Scientific Literature Parsing Task B [83]) has leveraged an important task constraint, namely tables are axis-aligned, to achieve higher accuracy.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "[23] designed some rules to cluster cells into rows and columns.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Some recent works [8, 22, 23] have proposed a modified TEDS metric, denoted as TEDS-Struct, to evaluate table structure recognition accuracy only by ignoring OCR errors.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "To eliminate this assumption, another group of methods [8, 22, 23] proposed to detect the bounding boxes of",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "[21] propose a Local and Global Pyramid Mask Alignment framework by applying the soft pyramid mask learning mechanism to local and global feature maps.",
+                "Tabular data is a popular format to express compact and important information for readers in different types of digital documents, including web pages, PDFs, Word processors, and document images [21]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "007f2dc393e363abcfd023c1a1b47f5b84d4b2ae",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2203-03819",
+                    "ArXiv": "2203.03819",
+                    "DOI": "10.48550/arXiv.2203.03819",
+                    "CorpusId": 247315039
+                },
+                "corpusId": 247315039,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/007f2dc393e363abcfd023c1a1b47f5b84d4b2ae",
+                "title": "Table Structure Recognition with Conditional Attention",
+                "abstract": "Tabular data in digital documents is widely used to express compact and important information for readers. However, it is challenging to parse tables from unstructured digital documents, such as PDFs and images, into machine-readable format because of the complexity of table structures and the missing of meta-information. Table Structure Recognition (TSR) problem aims to recognize the structure of a table and transform the unstructured tables into a structured and machine-readable format so that the tabular data can be further analysed by the down-stream tasks, such as semantic modeling and information retrieval. In this study, we hypothesize that a complicated table structure can be represented by a graph whose vertices and edges represent the cells and association between cells, respectively. Then we define the table structure recognition problem as a cell association classification problem and propose a conditional attention network (CATT-Net). The experimental results demonstrate the superiority of our proposed method over the state-of-the-art methods on various datasets. Besides, we investigate whether the alignment of a cell bounding box or a text-focused approach has more impact on the model performance. Due to the lack of public dataset annotations based on these two approaches, we further annotate the ICDAR2013 dataset providing both types of bounding boxes, which can be a new benchmark dataset for evaluating the methods in this field. Experimental results show that the alignment of a cell bounding box can help improve the Micro-averaged F1 score from 0.915 to 0.963, and the Macro-average F1 score from 0.787 to 0.923.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "144025674",
+                        "name": "Bin Xiao"
+                    },
+                    {
+                        "authorId": "48778270",
+                        "name": "Murat Simsek"
+                    },
+                    {
+                        "authorId": "2497479",
+                        "name": "B. Kantarci"
+                    },
+                    {
+                        "authorId": "3082067",
+                        "name": "A. A. Alkheir"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "[21] propose a Local and Global Pyramid Mask Alignment framework by applying the soft pyramid mask learning mechanism to local and global feature maps.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Tabular data is a popular format to express compact and important information for readers in different types of digital documents, including web pages, PDFs, Word processors, and document images [21].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Although many previous algorithms [2,13,18,20,22,30,31,34,35,40,45,46] have achieved impressive progress in the community, TSR is still a challenging task due to two factors of complicated tables.",
+                "In the similar spirit, LGPMA [31] applies soft pyramid mask learning mechanism on both the local and global feature maps.",
+                "Table structure recognition (TSR) aims to recognize the table internal structure to the machine readable data mainly presented in two formats: logical structure [18, 46] and physical structure [2, 13, 20, 22, 27, 30, 31, 34, 35, 40, 45]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "9fb2744ef2b91033de39c121be25d3f86f759458",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/0003LLJL022",
+                    "ArXiv": "2111.13359",
+                    "DOI": "10.1109/CVPR52688.2022.00449",
+                    "CorpusId": 244709555
+                },
+                "corpusId": 244709555,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/9fb2744ef2b91033de39c121be25d3f86f759458",
+                "title": "Neural Collaborative Graph Machines for Table Structure Recognition",
+                "abstract": "Recently, table structure recognition has achieved impressive progress with the help of deep graph models. Most of them exploit single visual cues of tabular elements or simply combine visual cues with other modalities via early fusion to reason their graph relationships. However, neither early fusion nor individually reasoning in terms of multiple modalities can be appropriate for all varieties of table structures with great diversity. Instead, different modalities are expected to collaborate with each other in different patterns for different table cases. In the community, the importance of intrainter modality interactions for table structure reasoning is still unexplored. In this paper, we define it as heterogeneous table structure recognition (HeteroTSR) problem. With the aim offilling this gap, we present a novel Neural Collaborative Graph Machines (NCGM) equipped with stacked collaborative blocks, which alternatively extracts intramodality context and models inter-modality interactions in a hierarchical way. It can represent the intrainter modality relationships of tabular elements more robustly, which significantly improves the recognition performance. We also show that the proposed NCGM can modulate collaborative pattern of different modalities conditioned on the context of intramodality cues, which is vital for diversified table cases. Experimental results on benchmarks demonstrate our proposed NCGM achieves state-of-the-art performance and beats other contemporary methods by a large margin especially under challenging scenarios.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "48446712",
+                        "name": "Hao Liu"
+                    },
+                    {
+                        "authorId": "2153898418",
+                        "name": "Xin Li"
+                    },
+                    {
+                        "authorId": "2149124539",
+                        "name": "Bing Liu"
+                    },
+                    {
+                        "authorId": "3336726",
+                        "name": "Deqiang Jiang"
+                    },
+                    {
+                        "authorId": "2136370566",
+                        "name": "Yinsong Liu"
+                    },
+                    {
+                        "authorId": "2064646914",
+                        "name": "Bo Ren"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Although many previous algorithms [2,13,18,20,22,30,31,34,35,40,45,46] have achieved impressive progress in the community, TSR is still a challenging task due to two factors of complicated tables.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "In the similar spirit, LGPMA [31] applies soft pyramid mask learning mechanism on both the local and global feature maps.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Table structure recognition (TSR) aims to recognize the table internal structure to the machine readable data mainly presented in two formats: logical structure [18, 46] and physical structure [2, 13, 20, 22, 27, 30, 31, 34, 35, 40, 45].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Cognitive methods in this space broadly classified into five categories \u2014 image-to-sequence models [17, 2, 14], segmentation networks [26, 18, 20, 23], graph formulations [22, 4, 24], conditional generative adversarial networks [16] and a recent multi-modal method by [40]."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d499cd8a77e7fc4e12d1f5bd7875ce2e3f5465a4",
+                "externalIds": {
+                    "DBLP": "conf/wacv/RajaMV22",
+                    "ArXiv": "2111.07129",
+                    "DOI": "10.1109/WACV51458.2022.00260",
+                    "CorpusId": 240285297
+                },
+                "corpusId": 240285297,
+                "publicationVenue": {
+                    "id": "acd15a6d-3248-41fb-8439-9a40aabe5608",
+                    "name": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Workshop on Applications of Computer Vision",
+                        "WACV",
+                        "IEEE Work Conf Appl Comput Vis",
+                        "Workshop Appl Comput Vis"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=2993"
+                },
+                "url": "https://www.semanticscholar.org/paper/d499cd8a77e7fc4e12d1f5bd7875ce2e3f5465a4",
+                "title": "Visual Understanding of Complex Table Structures from Document Images",
+                "abstract": "Table structure recognition is necessary for a comprehensive understanding of documents. Tables in unstructured business documents are tough to parse due to the high diversity of layouts, varying alignments of contents, and the presence of empty cells. The problem is particularly difficult because of challenges in identifying individual cells using visual or linguistic contexts or both. Accurate detection of table cells (including empty cells) simplifies structure extraction and hence, it becomes the prime focus of our work. We propose a novel object-detection-based deep model that captures the inherent alignments of cells within tables and is fine-tuned for fast optimization. Despite accurate detection of cells, recognizing structures for dense tables may still be challenging because of difficulties in capturing long-range row/column dependencies in presence of multi-row/column spanning cells. Therefore, we also aim to improve structure recognition by deducing a novel rectilinear graph-based formulation. From a semantics perspective, we highlight the significance of empty cells in a table. To take these cells into account, we suggest an enhancement to a popular evaluation criterion. Finally, we introduce a modestly sized evaluation dataset with an annotation style inspired by human cognition to encourage new approaches to the problem. Our framework improves the previous state-of-the-art performance by a 2.7% average F1-score on benchmark datasets.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2053910624",
+                        "name": "S. Raja"
+                    },
+                    {
+                        "authorId": "2896521",
+                        "name": "Ajoy Mondal"
+                    },
+                    {
+                        "authorId": "2226828175",
+                        "name": "Jawahar C V"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Cognitive methods in this space broadly classified into five categories \u2014 image-to-sequence models [17, 2, 14], segmentation networks [26, 18, 20, 23], graph formulations [22, 4, 24], conditional generative adversarial networks [16] and a recent multi-modal method by [40].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Although methods [29, 31, 43] achieve performance improvement by directly predicting cell boxes, they may suffer from \u201ccell boundary ambiguity\u201d problem, especially on those blank or non-gridded cell cases.",
+                "Different from previousworks [29, 31, 43], we adopt word bounding boxes rather than cells as table elements to avoid cell boundary ambiguity issue.",
+                "4(c) shows our method can well handle the table including non-gridded cells, which may cause the \u201ccell boundary ambiguity\u201d problem to the cell detection-based methods [29, 31, 43].",
+                "A group of methods [27, 29, 41, 43] try to recover the relations of elements based on heuristic algorithms."
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "7b99f9995a4b086c0e6913a8d2f109a5dbaa5014",
+                "externalIds": {
+                    "DBLP": "conf/mm/LiuLLJLRJ21",
+                    "DOI": "10.1145/3474085.3481534",
+                    "CorpusId": 239011898
+                },
+                "corpusId": 239011898,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/7b99f9995a4b086c0e6913a8d2f109a5dbaa5014",
+                "title": "Show, Read and Reason: Table Structure Recognition with Flexible Context Aggregator",
+                "abstract": "We investigate the challenging problem of table structure recognition in this work. Many recent methods adopt graph-based context aggregator with strong inductive bias to reason sparse contextual relationships of table elements. However, the strong constraints may be too restrictive to represent the complicated table relationships. In order to learn more appropriate inductive bias from data, we try to introduce Transformer as context aggregator in this work. Nevertheless, Transformer taking dense context as input requires larger scale data and may suffer from unstable training procedure due to the weakening of inductive bias. To overcome the above limitations, we in this paper design a FLAG (FLexible context AGgregator), which marries Transformer with graph-based context aggregator in an adaptive way. Based on FLAG, an end-to-end framework requiring no extra meta-data or OCR information, termed FLAG-Net, is proposed to flexibly modulate the aggregation of dense context and sparse one for the relational reasoning of table elements. We investigate the modulation pattern in FLAG and show what contextual information is focused, which is vital for recognizing table structure. Extensive experimental results on benchmarks demonstrate the performance of our proposed FLAG-Net surpasses other compared methods by a large margin.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "48446712",
+                        "name": "Hao Liu"
+                    },
+                    {
+                        "authorId": "2153898418",
+                        "name": "Xin Li"
+                    },
+                    {
+                        "authorId": "2149124539",
+                        "name": "Bing Liu"
+                    },
+                    {
+                        "authorId": "3336726",
+                        "name": "Deqiang Jiang"
+                    },
+                    {
+                        "authorId": "2136370566",
+                        "name": "Yinsong Liu"
+                    },
+                    {
+                        "authorId": "2064646914",
+                        "name": "Bo Ren"
+                    },
+                    {
+                        "authorId": "145592290",
+                        "name": "R. Ji"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Although methods [29, 31, 43] achieve performance improvement by directly predicting cell boxes, they may suffer from \u201ccell boundary ambiguity\u201d problem, especially on those blank or non-gridded cell cases.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Different from previousworks [29, 31, 43], we adopt word bounding boxes rather than cells as table elements to avoid cell boundary ambiguity issue.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "4(c) shows our method can well handle the table including non-gridded cells, which may cause the \u201ccell boundary ambiguity\u201d problem to the cell detection-based methods [29, 31, 43].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "A group of methods [27, 29, 41, 43] try to recover the relations of elements based on heuristic algorithms.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "LGPMA (Qiao et al., 2021) incorporates a soft pyramid mask learning mechanism in both local and global feature maps for table structure recognition."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c41fb12333871a6bc52083aae43fb823a75ab01b",
+                "externalIds": {
+                    "DBLP": "conf/acl/ChenHZL023",
+                    "ACL": "2023.acl-long.137",
+                    "DOI": "10.18653/v1/2023.acl-long.137",
+                    "CorpusId": 259370808
+                },
+                "corpusId": 259370808,
+                "publicationVenue": {
+                    "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+                    "name": "Annual Meeting of the Association for Computational Linguistics",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Annu Meet Assoc Comput Linguistics",
+                        "Meeting of the Association for Computational Linguistics",
+                        "ACL",
+                        "Meet Assoc Comput Linguistics"
+                    ],
+                    "url": "https://www.aclweb.org/anthology/venues/acl/"
+                },
+                "url": "https://www.semanticscholar.org/paper/c41fb12333871a6bc52083aae43fb823a75ab01b",
+                "title": "TableVLM: Multi-modal Pre-training for Table Structure Recognition",
+                "abstract": "Tables are widely used in research and business, which are suitable for human consumption, but not easily machine-processable, particularly when tables are present in images.One of the main challenges to extracting data from images of tables is accurately recognizing table structures, especially for complex tables with cross rows and columns.In this study, we propose a novel multi-modal pre-training model for table structure recognition, named TableVLM.With a two-stream multi-modal transformer-based encoder-decoder architecture, TableVLM learns to capture rich table structure-related features by multiple carefully-designed unsupervised objectives inspired by the notion of masked visual-language modeling.To pre-train this model, we also created a dataset, called ComplexTable, which consists of 1,000K samples to be released publicly. Experiment results show that the model built on pre-trained TableVLM can improve the performance up to 1.97% in tree-editing-distance-score on ComplexTable.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2146073369",
+                        "name": "Lei Chen"
+                    },
+                    {
+                        "authorId": "31937655",
+                        "name": "Chengsong Huang"
+                    },
+                    {
+                        "authorId": "2152196565",
+                        "name": "Xiaoqing Zheng"
+                    },
+                    {
+                        "authorId": "2118747855",
+                        "name": "Jinshu Lin"
+                    },
+                    {
+                        "authorId": "1790227",
+                        "name": "Xuanjing Huang"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "LGPMA (Qiao et al., 2021) incorporates a soft pyramid mask learning mechanism in both local and global feature maps for table structure recognition.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "intents": [],
+            "contexts": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6c411f52c151fe537ee76c310f45f0dd3da88e92",
+                "externalIds": {
+                    "DBLP": "series/sbcs/Bhowmik23",
+                    "DOI": "10.1007/978-981-99-4277-0",
+                    "CorpusId": 260337124
+                },
+                "corpusId": 260337124,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6c411f52c151fe537ee76c310f45f0dd3da88e92",
+                "title": "Document Layout Analysis",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3272848",
+                        "name": "Showmik Bhowmik"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "Since LGMPA [13] and CycleCenterNet [11] recover table structure based on heuristic rules after detecting cells, which is infeasible to perform the comparison between them and our method, we do not report them in Tab."
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "20156b441f90f8238181315b37dbccf5f5493882",
+                "externalIds": {
+                    "CorpusId": 250563732
+                },
+                "corpusId": 250563732,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/20156b441f90f8238181315b37dbccf5f5493882",
+                "title": "Neural Collaborative Graph Machines for Table Structure Recognition - Supplementary Materials",
+                "abstract": "Geometry embedding. We derive the geometry feature of each text segment bounding box as ( x W , y H , w W , h H )\u22a4 , where W and H are the width and height of the table image. (x, y) represents the center point of the box while height h and width w correspond to its short side and long side respectively. Then a d-dimension Fully-Connected (FC) layer is applied on the above vectors to obtain the geometry embeddings FG = {g1,g2, ...,gN} \u2208 RN\u00d7d.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2143856572",
+                        "name": "Hao Liu"
+                    },
+                    {
+                        "authorId": "2153898418",
+                        "name": "Xin Li"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Since LGMPA [13] and CycleCenterNet [11] recover table structure based on heuristic rules after detecting cells, which is infeasible to perform the comparison between them and our method, we do not report them in Tab.",
+                    "label_score": -1.0,
+                    "label": "P-NR"
+                }
+            ]
+        }
+    ]
+}

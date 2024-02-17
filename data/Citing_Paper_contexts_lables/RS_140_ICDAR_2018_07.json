@@ -1,0 +1,932 @@
+{
+    "data": [
+        {
+            "contexts": [
+                "Deep learning approaches [16,17,18] do not rely on rules and can accurately generalize the problem.",
+                "Later, more efficient single-stage object detectors like RetinaNet [58] and YOLO [59] and two-stage object detectors like Fast R-CNN [11], Faster R-CNN [12], Mask R-CNN [60], and Cascade Mask R-CNN [61] were applied for other document objects such as figures and formulas detection in document images [62,63,64,65,66,67,68,16,17,18]."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "8f87ad8807a4b149c69bac1f169d9f28d13f8928",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-02769",
+                    "ArXiv": "2305.02769",
+                    "DOI": "10.48550/arXiv.2305.02769",
+                    "CorpusId": 258480298
+                },
+                "corpusId": 258480298,
+                "publicationVenue": {
+                    "id": "991e8cbf-4a4a-4ac4-a273-63dd7a35c364",
+                    "name": "IEEE International Conference on Document Analysis and Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Doc Anal Recognit",
+                        "International Conference on Document Analysis and Recognition",
+                        "Int Conf Doc Anal Recognit",
+                        "ICDAR"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1327"
+                },
+                "url": "https://www.semanticscholar.org/paper/8f87ad8807a4b149c69bac1f169d9f28d13f8928",
+                "title": "Towards End-to-End Semi-Supervised Table Detection with Deformable Transformer",
+                "abstract": "Table detection is the task of classifying and localizing table objects within document images. With the recent development in deep learning methods, we observe remarkable success in table detection. However, a significant amount of labeled data is required to train these models effectively. Many semi-supervised approaches are introduced to mitigate the need for a substantial amount of label data. These approaches use CNN-based detectors that rely on anchor proposals and post-processing stages such as NMS. To tackle these limitations, this paper presents a novel end-to-end semi-supervised table detection method that employs the deformable transformer for detecting table objects. We evaluate our semi-supervised method on PubLayNet, DocBank, ICADR-19 and TableBank datasets, and it achieves superior performance compared to previous methods. It outperforms the fully supervised method (Deformable transformer) by +3.4 points on 10\\% labels of TableBank-both dataset and the previous CNN-based semi-supervised approach (Soft Teacher) by +1.8 points on 10\\% labels of PubLayNet dataset. We hope this work opens new possibilities towards semi-supervised and unsupervised table detection methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2029681143",
+                        "name": "Tahira Shehzadi"
+                    },
+                    {
+                        "authorId": "1403379889",
+                        "name": "K. Hashmi"
+                    },
+                    {
+                        "authorId": "143749919",
+                        "name": "D. Stricker"
+                    },
+                    {
+                        "authorId": "1743758",
+                        "name": "M. Liwicki"
+                    },
+                    {
+                        "authorId": "145181206",
+                        "name": "Muhammad Zeshan Afzal"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Deep learning approaches [16,17,18] do not rely on rules and can accurately generalize the problem.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Later, more efficient single-stage object detectors like RetinaNet [58] and YOLO [59] and two-stage object detectors like Fast R-CNN [11], Faster R-CNN [12], Mask R-CNN [60], and Cascade Mask R-CNN [61] were applied for other document objects such as figures and formulas detection in document images [62,63,64,65,66,67,68,16,17,18].",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                }
+            ]
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "50903f5f5e714e5746152b3e369c9329655e0018",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-10439",
+                    "ArXiv": "2304.10439",
+                    "DOI": "10.48550/arXiv.2304.10439",
+                    "CorpusId": 258236507
+                },
+                "corpusId": 258236507,
+                "publicationVenue": {
+                    "id": "991e8cbf-4a4a-4ac4-a273-63dd7a35c364",
+                    "name": "IEEE International Conference on Document Analysis and Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Doc Anal Recognit",
+                        "International Conference on Document Analysis and Recognition",
+                        "Int Conf Doc Anal Recognit",
+                        "ICDAR"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1327"
+                },
+                "url": "https://www.semanticscholar.org/paper/50903f5f5e714e5746152b3e369c9329655e0018",
+                "title": "A Study on Reproducibility and Replicability of Table Structure Recognition Methods",
+                "abstract": "Concerns about reproducibility in artificial intelligence (AI) have emerged, as researchers have reported unsuccessful attempts to directly reproduce published findings in the field. Replicability, the ability to affirm a finding using the same procedures on new data, has not been well studied. In this paper, we examine both reproducibility and replicability of a corpus of 16 papers on table structure recognition (TSR), an AI task aimed at identifying cell locations of tables in digital documents. We attempt to reproduce published results using codes and datasets provided by the original authors. We then examine replicability using a dataset similar to the original as well as a new dataset, GenTSR, consisting of 386 annotated tables extracted from scientific papers. Out of 16 papers studied, we reproduce results consistent with the original in only four. Two of the four papers are identified as replicable using the similar dataset under certain IoU values. No paper is identified as replicable using the new dataset. We offer observations on the causes of irreproducibility and irreplicability. All code and data are available on Codeocean at https://codeocean.com/capsule/6680116/tree.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "11359490",
+                        "name": "Kehinde E. Ajayi"
+                    },
+                    {
+                        "authorId": "2214808132",
+                        "name": "Muntabhir Hasan Choudhury"
+                    },
+                    {
+                        "authorId": "2528276",
+                        "name": "S. Rajtmajer"
+                    },
+                    {
+                        "authorId": "97569165",
+                        "name": "Jian Wu"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "contexts": [
+                "Another group of approaches [3, 30, 31] treated TSR as an object detection problem and used some object detection methods to directly detect the bounding boxes of rows and columns."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "3e0c97baa8e7b629a3d689e00aa21b94e2193766",
+                "externalIds": {
+                    "ArXiv": "2303.11615",
+                    "DBLP": "journals/corr/abs-2303-11615",
+                    "DOI": "10.48550/arXiv.2303.11615",
+                    "CorpusId": 257636821
+                },
+                "corpusId": 257636821,
+                "publicationVenue": {
+                    "id": "266f640f-003e-453b-ab76-57e4053252f8",
+                    "name": "Pattern Recognition",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit"
+                    ],
+                    "issn": "0031-3203",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/pattern-recognition",
+                        "http://www.sciencedirect.com/science/journal/00313203"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/3e0c97baa8e7b629a3d689e00aa21b94e2193766",
+                "title": "Robust Table Structure Recognition with Dynamic Queries Enhanced Detection Transformer",
+                "abstract": "We present a new table structure recognition (TSR) approach, called TSRFormer, to robustly recognizing the structures of complex tables with geometrical distortions from various table images. Unlike previous methods, we formulate table separation line prediction as a line regression problem instead of an image segmentation problem and propose a new two-stage dynamic queries enhanced DETR based separation line regression approach, named DQ-DETR, to predict separation lines from table images directly. Compared to Vallina DETR, we propose three improvements in DQ-DETR to make the two-stage DETR framework work efficiently and effectively for the separation line prediction task: 1) A new query design, named Dynamic Query, to decouple single line query into separable point queries which could intuitively improve the localization accuracy for regression tasks; 2) A dynamic queries based progressive line regression approach to progressively regressing points on the line which further enhances localization accuracy for distorted tables; 3) A prior-enhanced matching strategy to solve the slow convergence issue of DETR. After separation line prediction, a simple relation network based cell merging module is used to recover spanning cells. With these new techniques, our TSRFormer achieves state-of-the-art performance on several benchmark datasets, including SciTSR, PubTabNet, WTW and FinTabNet. Furthermore, we have validated the robustness and high localization accuracy of our approach to tables with complex structures, borderless cells, large blank spaces, empty or spanning cells as well as distorted or even curved shapes on a more challenging real-world in-house dataset.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2187553093",
+                        "name": "Jiawei Wang"
+                    },
+                    {
+                        "authorId": "2108811137",
+                        "name": "Weihong Lin"
+                    },
+                    {
+                        "authorId": "2894335",
+                        "name": "Chixiang Ma"
+                    },
+                    {
+                        "authorId": "2181111465",
+                        "name": "Mingze Li"
+                    },
+                    {
+                        "authorId": "2145130513",
+                        "name": "Zhengmao Sun"
+                    },
+                    {
+                        "authorId": "2110833051",
+                        "name": "Lei Sun"
+                    },
+                    {
+                        "authorId": "2316043",
+                        "name": "Qiang Huo"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Another group of approaches [3, 30, 31] treated TSR as an object detection problem and used some object detection methods to directly detect the bounding boxes of rows and columns.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [
+                "[8] recently reported an F-score of 0."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d943616a2b732c8b7cee18b44118db8d9a1af5e8",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-00716",
+                    "ArXiv": "2303.00716",
+                    "DOI": "10.48550/arXiv.2303.00716",
+                    "CorpusId": 257255197
+                },
+                "corpusId": 257255197,
+                "publicationVenue": {
+                    "id": "991e8cbf-4a4a-4ac4-a273-63dd7a35c364",
+                    "name": "IEEE International Conference on Document Analysis and Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Doc Anal Recognit",
+                        "International Conference on Document Analysis and Recognition",
+                        "Int Conf Doc Anal Recognit",
+                        "ICDAR"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1327"
+                },
+                "url": "https://www.semanticscholar.org/paper/d943616a2b732c8b7cee18b44118db8d9a1af5e8",
+                "title": "Aligning benchmark datasets for table structure recognition",
+                "abstract": "Benchmark datasets for table structure recognition (TSR) must be carefully processed to ensure they are annotated consistently. However, even if a dataset's annotations are self-consistent, there may be significant inconsistency across datasets, which can harm the performance of models trained and evaluated on them. In this work, we show that aligning these benchmarks$\\unicode{x2014}$removing both errors and inconsistency between them$\\unicode{x2014}$improves model performance significantly. We demonstrate this through a data-centric approach where we adopt one model architecture, the Table Transformer (TATR), that we hold fixed throughout. Baseline exact match accuracy for TATR evaluated on the ICDAR-2013 benchmark is 65% when trained on PubTables-1M, 42% when trained on FinTabNet, and 69% combined. After reducing annotation mistakes and inter-dataset inconsistency, performance of TATR evaluated on ICDAR-2013 increases substantially to 75% when trained on PubTables-1M, 65% when trained on FinTabNet, and 81% combined. We show through ablations over the modification steps that canonicalization of the table annotations has a significantly positive effect on performance, while other choices balance necessary trade-offs that arise when deciding a benchmark dataset's final composition. Overall we believe our work has significant implications for benchmark design for TSR and potentially other tasks as well. Dataset processing and training code will be released at https://github.com/microsoft/table-transformer.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2745998",
+                        "name": "B. Smock"
+                    },
+                    {
+                        "authorId": "2130464272",
+                        "name": "Rohith Pesala"
+                    },
+                    {
+                        "authorId": "2128094499",
+                        "name": "Robin Abraham"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "[8] recently reported an F-score of 0.",
+                    "label_score": -2.0,
+                    "label": "O-NR"
+                }
+            ]
+        },
+        {
+            "contexts": [
+                "\u2026candidates on document images (Shafait and Smith, 2010; Schreiber et al., 2017; Siddiqui et al., 2018; Paliwal et al., 2019; Prasad et al., 2020; Hashmi et al., 2021b; Zheng et al., 2021); TD searches for text lines signaling table candidates in plain-text (Hu et al., 1999; Ng et al., 1999;\u2026",
+                "According to Hashmi et al. (2021a), on \u201cICDAR2013 Table Competition\u201d dataset (G\u00f6bel et al., 2013), F1-score is close to 1.0 for TD when the threshold of\n\u201cIntersection Over Union\u201d (IOU) equals 0.5, and this score reaches 0.95 (IOU = 0.5) for TSR.",
+                "\u2026deals with tables which are subareas of document images (Zuyev, 1997; Schreiber et al., 2017; Siddiqui et al., 2019a, 2019b; Zheng et al., 2021; Hashmi et al., 2021c), lines of plain-text (Kieninger, 1998; Ng et al., 1999; Hu et al., 2000), or text chunks and rulings clipped from PDFs (Hassan\u2026",
+                "\u2026(e.g., Hu et al. (2002); Wang et al. (2004); Shahab et al. (2010); e Silva (2011); Fang et al. (2012b); G\u00f6bel et al. (2012)) and datasets (e.g., SciTSR12, TableBank13, PubTabNet14) for the assay and comparison of proposals for the TD/TSR steps; Hashmi et al. (2021a) summarize them comprehensively.",
+                "The recent surveys summarize and compare the existing solutions intended for table detection and recognition in document images (Hashmi et al., 2021a), web table extraction (Rold an et al., 2020), analysis of heterogenous tables (Bonfitto et al., 2021), spreadsheet data transformation (Bonfitto et\u2026",
+                "The task statements of TD/TSR are essentially different for DTE (Zanibbi et al., 2004; Hashmi et al., 2021a), WTE (Rold an et al., 2020; Zhang and Balog, 2020), and STE (Bonfitto et al., 2021).",
+                "Hashmi et al. (2021a) provide a systematic review of the deep learning-based methods for the tasks of table detection and recognition in document images.",
+                "In the past decades, considerable efforts were dedicated to developing methods and software for the individual steps of TU and some combinations of these steps (Rold an et al., 2020; Zhang and Balog, 2020; Bonfitto et al., 2021; Hashmi et al., 2021a)."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "cf5f42b60003f9fc11d14a6eb126130411f861a4",
+                "externalIds": {
+                    "DBLP": "journals/widm/Shigarov23",
+                    "DOI": "10.1002/widm.1482",
+                    "CorpusId": 253823145
+                },
+                "corpusId": 253823145,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/cf5f42b60003f9fc11d14a6eb126130411f861a4",
+                "title": "Table understanding: Problem overview",
+                "abstract": "Tables are probably the most natural way to represent relational data in various media and formats. They store a large number of valuable facts that could be utilized for question answering, knowledge base population, natural language generation, and other applications. However, many tables are not accompanied by semantics for the automatic interpretation of the information they present. Table Understanding (TU) aims at recovering the missing semantics that enables the extraction of facts from tables. This problem covers a range of issues from table detection in document images to semantic table interpretation with the help of external knowledge bases. To date, the TU research has been ongoing on for 30\u2009years. Nevertheless, there is no common point of view on the scope of TU; the terminology still needs agreement and unification. In recent years, science and technology have shown a rapidly increasing interest in TU. Nowadays, it is especially important to check the meaning of this research problem once again. This article gives a comprehensive characterization of the TU problem, including a description of its subproblems, tasks, subtasks, and applications. It also discusses the common limitations used in the existing problem statements and proposes some directions for further research that would help overcome the corresponding limitations.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "3355714",
+                        "name": "A. Shigarov"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "\u2026candidates on document images (Shafait and Smith, 2010; Schreiber et al., 2017; Siddiqui et al., 2018; Paliwal et al., 2019; Prasad et al., 2020; Hashmi et al., 2021b; Zheng et al., 2021); TD searches for text lines signaling table candidates in plain-text (Hu et al., 1999; Ng et al., 1999;\u2026",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "According to Hashmi et al. (2021a), on \u201cICDAR2013 Table Competition\u201d dataset (G\u00f6bel et al., 2013), F1-score is close to 1.0 for TD when the threshold of\n\u201cIntersection Over Union\u201d (IOU) equals 0.5, and this score reaches 0.95 (IOU = 0.5) for TSR.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "\u2026deals with tables which are subareas of document images (Zuyev, 1997; Schreiber et al., 2017; Siddiqui et al., 2019a, 2019b; Zheng et al., 2021; Hashmi et al., 2021c), lines of plain-text (Kieninger, 1998; Ng et al., 1999; Hu et al., 2000), or text chunks and rulings clipped from PDFs (Hassan\u2026",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "\u2026(e.g., Hu et al. (2002); Wang et al. (2004); Shahab et al. (2010); e Silva (2011); Fang et al. (2012b); G\u00f6bel et al. (2012)) and datasets (e.g., SciTSR12, TableBank13, PubTabNet14) for the assay and comparison of proposals for the TD/TSR steps; Hashmi et al. (2021a) summarize them comprehensively.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "The recent surveys summarize and compare the existing solutions intended for table detection and recognition in document images (Hashmi et al., 2021a), web table extraction (Rold an et al., 2020), analysis of heterogenous tables (Bonfitto et al., 2021), spreadsheet data transformation (Bonfitto et\u2026",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "The task statements of TD/TSR are essentially different for DTE (Zanibbi et al., 2004; Hashmi et al., 2021a), WTE (Rold an et al., 2020; Zhang and Balog, 2020), and STE (Bonfitto et al., 2021).",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Hashmi et al. (2021a) provide a systematic review of the deep learning-based methods for the tasks of table detection and recognition in document images.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "In the past decades, considerable efforts were dedicated to developing methods and software for the individual steps of TU and some combinations of these steps (Rold an et al., 2020; Zhang and Balog, 2020; Bonfitto et al., 2021; Hashmi et al., 2021a).",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [
+                "KA Hashmi[118] ICDAR2013 Object Detection Methods Precision 95.",
+                "To identify rows and columns in tables, KA Hashmi [118] suggested a",
+                "To identify rows and columns in tables, KA Hashmi [118] suggested a\nguided technique for table structure identification.",
+                "KA Hashmi [118] Utilizing an optimization technique for anchors+ Mask RCNN Networks of region proposals converge more quickly and effectively thanks to optimized anchoring."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "citingPaper": {
+                "paperId": "a81f504a1a101b9c6fe4a88957dd9ec450cf389d",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2211-08469",
+                    "ArXiv": "2211.08469",
+                    "DOI": "10.48550/arXiv.2211.08469",
+                    "CorpusId": 253553399
+                },
+                "corpusId": 253553399,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/a81f504a1a101b9c6fe4a88957dd9ec450cf389d",
+                "title": "Deep learning for table detection and structure recognition: A survey",
+                "abstract": "Tables are everywhere, from scientific journals, papers, websites, and newspapers all the way to items we buy at the supermarket. Detecting them is thus of utmost importance to automatically understanding the content of a document. The performance of table detection has substantially increased thanks to the rapid development of deep learning networks. The goals of this survey are to provide a profound comprehension of the major developments in the field of Table Detection, offer insight into the different methodologies, and provide a systematic taxonomy of the different approaches. Furthermore, we provide an analysis of both classic and new applications in the field. Lastly, the datasets and source code of the existing models are organized to provide the reader with a compass on this vast literature. Finally, we go over the architecture of utilizing various object detection and table structure recognition methods to create an effective and efficient system, as well as a set of development trends to keep up with state-of-the-art algorithms and future research. We have also set up a public GitHub repository where we will be updating the most recent publications, open data, and source code. The GitHub repository is available at https://github.com/abdoelsayed2016/ table-detection-structure-recognition. Preprint submitted to Elsevier November 17, 2022 ar X iv :2 21 1. 08 46 9v 1 [ cs .C V ] 1 5 N ov 2 02 2",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "87034581",
+                        "name": "M. Kasem"
+                    },
+                    {
+                        "authorId": "115665360",
+                        "name": "Abdelrahman Abdallah"
+                    },
+                    {
+                        "authorId": "2115948777",
+                        "name": "Alexander Berendeyev"
+                    },
+                    {
+                        "authorId": "2190955162",
+                        "name": "Ebrahem Elkady"
+                    },
+                    {
+                        "authorId": "2190955581",
+                        "name": "Mahmoud Abdalla"
+                    },
+                    {
+                        "authorId": "2163883464",
+                        "name": "Mohamed Mahmoud"
+                    },
+                    {
+                        "authorId": "2057870328",
+                        "name": "Mohamed Hamada"
+                    },
+                    {
+                        "authorId": "3253700",
+                        "name": "D. Nurseitov"
+                    },
+                    {
+                        "authorId": "1405340824",
+                        "name": "I. Taj-Eddin"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "KA Hashmi[118] ICDAR2013 Object Detection Methods Precision 95.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "To identify rows and columns in tables, KA Hashmi [118] suggested a",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "To identify rows and columns in tables, KA Hashmi [118] suggested a\nguided technique for table structure identification.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "KA Hashmi [118] Utilizing an optimization technique for anchors+ Mask RCNN Networks of region proposals converge more quickly and effectively thanks to optimized anchoring.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [
+                "This further urges the development of robust systems and techniques for information extraction from these raw document images [1].",
+                "[1] for retrieval of finer anchors and thus improve performance."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "e35ef6f4cfdc2319a641735608562d3886fa9fdd",
+                "externalIds": {
+                    "DOI": "10.1109/ICCCIS56430.2022.10037664",
+                    "CorpusId": 256743427
+                },
+                "corpusId": 256743427,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/e35ef6f4cfdc2319a641735608562d3886fa9fdd",
+                "title": "Using CoordConv for Tabular Data Detection and Structure Recognition",
+                "abstract": "This paper explores the usage of CoordConv, the novel upgrade to general convolutional layers in the problem of Tabular Data Detection and Cell-Based Structure Recognition. CoordConv has been shown to provide considerably better results in the domain of Object Detection than its counterpart. The authors integrate it within the established Anchor optimization approach which leverages guided anchors to accomplish the task of recognizing rows and columns present in tabular data. In contrast to the majority of techniques implemented for Table Structure Recognition, the authors attempt to recognize the cells present in the tabular images instead of the rows and columns. They evaluate this method on the coveted ICDAR-19 dataset (International Conference on Document Analysis and Recognition - 2019) which comprises of scanned document images containing tabular regions and achieve results surpassing those of many popular techniques. They also apply this approach for the task of Table Detection and achieve results comparable to other established techniques.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2205330992",
+                        "name": "Apoorva Ambulgekar"
+                    },
+                    {
+                        "authorId": "2205330976",
+                        "name": "Naman Lad"
+                    },
+                    {
+                        "authorId": "2183415732",
+                        "name": "Krunal Doshi"
+                    },
+                    {
+                        "authorId": "2128946657",
+                        "name": "Pranit Bari"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "This further urges the development of robust systems and techniques for information extraction from these raw document images [1].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "[1] for retrieval of finer anchors and thus improve performance.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "c18b3479a389ae4bc955338a862e6bc4f68d6ac1",
+                "externalIds": {
+                    "DOI": "10.3390/app12188969",
+                    "CorpusId": 252171274
+                },
+                "corpusId": 252171274,
+                "publicationVenue": {
+                    "id": "136edf8d-0f88-4c2c-830f-461c6a9b842e",
+                    "name": "Applied Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl Sci"
+                    ],
+                    "issn": "2076-3417",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217814",
+                    "alternate_urls": [
+                        "http://www.mathem.pub.ro/apps/",
+                        "https://www.mdpi.com/journal/applsci",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217814"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/c18b3479a389ae4bc955338a862e6bc4f68d6ac1",
+                "title": "Continual Learning for Table Detection in Document Images",
+                "abstract": "The growing amount of data demands methods that can gradually learn from new samples. However, it is not trivial to continually train a network. Retraining a network with new data usually results in a phenomenon called \u201ccatastrophic forgetting\u201d. In a nutshell, the performance of the model on the previous data drops by learning from the new instances. This paper explores this issue in the table detection problem. While there are multiple datasets and sophisticated methods for table detection, the utilization of continual learning techniques in this domain has not been studied. We employed an effective technique called experience replay and performed extensive experiments on several datasets to investigate the effects of catastrophic forgetting. The results show that our proposed approach mitigates the performance drop by 15 percent. To the best of our knowledge, this is the first time that continual learning techniques have been adopted for table detection, and we hope this stands as a baseline for future research.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1752929623",
+                        "name": "Mohammad Minouei"
+                    },
+                    {
+                        "authorId": "1403379889",
+                        "name": "K. Hashmi"
+                    },
+                    {
+                        "authorId": "2757942",
+                        "name": "M. Soheili"
+                    },
+                    {
+                        "authorId": "145181206",
+                        "name": "Muhammad Zeshan Afzal"
+                    },
+                    {
+                        "authorId": "143749919",
+                        "name": "D. Stricker"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "contexts": [
+                "Another group of approaches [8, 42] treated TSR as an object detection problem and used some object detection methods to directly detect the bounding boxes of rows and columns."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "fb6fcca5762b26f225313f86b1f33a1cf198bfd7",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2208-04921",
+                    "ArXiv": "2208.04921",
+                    "DOI": "10.1145/3503161.3548038",
+                    "CorpusId": 251442367
+                },
+                "corpusId": 251442367,
+                "publicationVenue": {
+                    "id": "f2c85de5-7cfa-4b92-8714-a0fbdcf0274e",
+                    "name": "ACM Multimedia",
+                    "type": "conference",
+                    "alternate_names": [
+                        "MM"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/fb6fcca5762b26f225313f86b1f33a1cf198bfd7",
+                "title": "TSRFormer: Table Structure Recognition with Transformers",
+                "abstract": "We present a new table structure recognition (TSR) approach, called TSRFormer, to robustly recognizing the structures of complex tables with geometrical distortions from various table images. Unlike previous methods, we formulate table separation line prediction as a line regression problem instead of an image segmentation problem and propose a new two-stage DETR based separator prediction approach, dubbed Sep arator RE gression TR ansformer (SepRETR), to predict separation lines from table images directly. To make the two-stage DETR framework work efficiently and effectively for the separation line prediction task, we propose two improvements: 1) A prior-enhanced matching strategy to solve the slow convergence issue of DETR; 2) A new cross attention module to sample features from a high-resolution convolutional feature map directly so that high localization accuracy is achieved with low computational cost. After separation line prediction, a simple relation network based cell merging module is used to recover spanning cells. With these new techniques, our TSRFormer achieves state-of-the-art performance on several benchmark datasets, including SciTSR, PubTabNet and WTW. Furthermore, we have validated the robustness of our approach to tables with complex structures, borderless cells, large blank spaces, empty or spanning cells as well as distorted or even curved shapes on a more challenging real-world in-house dataset.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2108811137",
+                        "name": "Weihong Lin"
+                    },
+                    {
+                        "authorId": "2145130513",
+                        "name": "Zhengmao Sun"
+                    },
+                    {
+                        "authorId": "2894335",
+                        "name": "Chixiang Ma"
+                    },
+                    {
+                        "authorId": "2181111465",
+                        "name": "Mingze Li"
+                    },
+                    {
+                        "authorId": "2110132415",
+                        "name": "Jiawei Wang"
+                    },
+                    {
+                        "authorId": "2110833051",
+                        "name": "Lei Sun"
+                    },
+                    {
+                        "authorId": "2316043",
+                        "name": "Qiang Huo"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Another group of approaches [8, 42] treated TSR as an object detection problem and used some object detection methods to directly detect the bounding boxes of rows and columns.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [
+                "[20] adopted another object detection model, i."
+            ],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "29942b5588d9978af5da046ebfc642e4779b8597",
+                "externalIds": {
+                    "ArXiv": "2203.09056",
+                    "DBLP": "journals/pr/MaLSH23",
+                    "DOI": "10.1016/j.patcog.2022.109006",
+                    "CorpusId": 247518554
+                },
+                "corpusId": 247518554,
+                "publicationVenue": {
+                    "id": "266f640f-003e-453b-ab76-57e4053252f8",
+                    "name": "Pattern Recognition",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit"
+                    ],
+                    "issn": "0031-3203",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/pattern-recognition",
+                        "http://www.sciencedirect.com/science/journal/00313203"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/29942b5588d9978af5da046ebfc642e4779b8597",
+                "title": "Robust Table Detection and Structure Recognition from Heterogeneous Document Images",
+                "abstract": null,
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2894335",
+                        "name": "Chixiang Ma"
+                    },
+                    {
+                        "authorId": "2108811137",
+                        "name": "Weihong Lin"
+                    },
+                    {
+                        "authorId": "2110833051",
+                        "name": "Lei Sun"
+                    },
+                    {
+                        "authorId": "2316043",
+                        "name": "Qiang Huo"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "[20] adopted another object detection model, i.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "b8bdf103e70e5bf962f85007462a4d14cfb22c78",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2110-02933",
+                    "ArXiv": "2110.02933",
+                    "DOI": "10.1016/j.neucom.2022.09.094",
+                    "CorpusId": 238407904
+                },
+                "corpusId": 238407904,
+                "publicationVenue": {
+                    "id": "df12d289-f447-47d3-8846-75e39de3ab57",
+                    "name": "Neurocomputing",
+                    "type": "journal",
+                    "issn": "0925-2312",
+                    "url": "http://www.elsevier.com/locate/neucom",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/09252312"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/b8bdf103e70e5bf962f85007462a4d14cfb22c78",
+                "title": "On Cropped versus Uncropped Training Sets in Tabular Structure Detection",
+                "abstract": null,
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "2130012695",
+                        "name": "Yakup Akkaya"
+                    },
+                    {
+                        "authorId": "48778270",
+                        "name": "Murat Simsek"
+                    },
+                    {
+                        "authorId": "2497479",
+                        "name": "B. Kantarci"
+                    },
+                    {
+                        "authorId": "152235107",
+                        "name": "Shahzad Khan"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "d10d8164e472864968725424d2195789fb5e67bb",
+                "externalIds": {
+                    "PubMedCentral": "8540682",
+                    "MAG": "3197383755",
+                    "DBLP": "journals/jimaging/HashmiPLSA21",
+                    "DOI": "10.3390/jimaging7100214",
+                    "CorpusId": 239202542,
+                    "PubMed": "34677300"
+                },
+                "corpusId": 239202542,
+                "publicationVenue": {
+                    "id": "c0fc53c7-b0ed-487d-9191-1262c8322621",
+                    "name": "Journal of Imaging",
+                    "type": "journal",
+                    "alternate_names": [
+                        "J Imaging"
+                    ],
+                    "issn": "2313-433X",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-556372",
+                    "alternate_urls": [
+                        "https://www.mdpi.com/journal/jimaging",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-556372"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d10d8164e472864968725424d2195789fb5e67bb",
+                "title": "CasTabDetectoRS: Cascade Network for Table Detection in Document Images with Recursive Feature Pyramid and Switchable Atrous Convolution",
+                "abstract": "Table detection is a preliminary step in extracting reliable information from tables in scanned document images. We present CasTabDetectoRS, a novel end-to-end trainable table detection framework that operates on Cascade Mask R-CNN, including Recursive Feature Pyramid network and Switchable Atrous Convolution in the existing backbone architecture. By utilizing a comparativelyightweight backbone of ResNet-50, this paper demonstrates that superior results are attainable without relying on pre- and post-processing methods, heavier backbone networks (ResNet-101, ResNeXt-152), and memory-intensive deformable convolutions. We evaluate the proposed approach on five different publicly available table detection datasets. Our CasTabDetectoRS outperforms the previous state-of-the-art results on four datasets (ICDAR-19, TableBank, UNLV, and Marmot) and accomplishes comparable results on ICDAR-17 POD. Upon comparing with previous state-of-the-art results, we obtain a significant relative error reduction of 56.36%, 20%, 4.5%, and 3.5% on the datasets of ICDAR-19, TableBank, UNLV, and Marmot, respectively. Furthermore, this paper sets a new benchmark by performing exhaustive cross-datasets evaluations to exhibit the generalization capabilities of the proposed method.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1403379889",
+                        "name": "K. Hashmi"
+                    },
+                    {
+                        "authorId": "1771057",
+                        "name": "A. Pagani"
+                    },
+                    {
+                        "authorId": "1743758",
+                        "name": "M. Liwicki"
+                    },
+                    {
+                        "authorId": "143749919",
+                        "name": "D. Stricker"
+                    },
+                    {
+                        "authorId": "145181206",
+                        "name": "Muhammad Zeshan Afzal"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "contexts": [
+                "These case of close false positives can be resolved by leveraging the instance segmentation networks where an additional segmentation loss is added along with the bounding box and classification loss [12,17,19]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "209ac7327a0153ed2c03c1b07d067a822c35c8ce",
+                "externalIds": {
+                    "MAG": "3196203992",
+                    "DOI": "10.20944/preprints202108.0360.v1",
+                    "CorpusId": 238713567
+                },
+                "corpusId": 238713567,
+                "publicationVenue": {
+                    "id": "136edf8d-0f88-4c2c-830f-461c6a9b842e",
+                    "name": "Applied Sciences",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Appl Sci"
+                    ],
+                    "issn": "2076-3417",
+                    "url": "http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217814",
+                    "alternate_urls": [
+                        "http://www.mathem.pub.ro/apps/",
+                        "https://www.mdpi.com/journal/applsci",
+                        "http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217814"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/209ac7327a0153ed2c03c1b07d067a822c35c8ce",
+                "title": "HybridTabNet: Towards Better Table Detection in Scanned Document Images",
+                "abstract": "Tables in the document image are one of the most important entities since they contain crucial information. Therefore, accurate table detection can significantly improve information extraction from tables. In this work, we present a novel end-to-end trainable pipeline, HybridTabNet, for table detection in scanned document images. Our two-stage table detector uses the ResNeXt-101 backbone for feature extraction and Hybrid Task Cascade (HTC) to localize the tables in scanned document images. Moreover, we replace conventional convolutions with deformable convolutions in the backbone network. This enables our network to detect tables of arbitrary layouts precisely. We evaluate our approach comprehensively on ICDAR-13, ICDAR-17 POD, ICDAR-19, TableBank, Marmot, and UNLV. Apart from the ICDAR-17 POD dataset, our proposed HybridTabNet outperforms earlier state-of-the-art results without depending on pre and post-processing steps. Furthermore, to investigate how the proposed method generalizes unseen data, we conduct an exhaustive leave-one-out-evaluation. In comparison to prior state-of-the-art results, our method reduces the relative error by 27.57% on ICDAR-2019-TrackA-Modern, 42.64% on TableBank (Latex), 41.33% on TableBank (Word), 55.73% on TableBank (Latex + Word), 10% on Marmot, and 9.67% on UNLV dataset. The achieved results reflect the superior performance of the proposed method.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "145181206",
+                        "name": "Muhammad Zeshan Afzal"
+                    },
+                    {
+                        "authorId": "1403379889",
+                        "name": "K. Hashmi"
+                    },
+                    {
+                        "authorId": "1743758",
+                        "name": "M. Liwicki"
+                    },
+                    {
+                        "authorId": "143749919",
+                        "name": "D. Stricker"
+                    },
+                    {
+                        "authorId": "52053159",
+                        "name": "Danish Nazir"
+                    },
+                    {
+                        "authorId": "1771057",
+                        "name": "A. Pagani"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "These case of close false positives can be resolved by leveraging the instance segmentation networks where an additional segmentation loss is added along with the bounding box and classification loss [12,17,19].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [
+                "[51] proposed a guided table structure recognition method to detect rows and columns in tables."
+            ],
+            "intents": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "bc8863440e26e48866a64f63438051d24880b793",
+                "externalIds": {
+                    "DBLP": "journals/access/HashmiLSAAA21",
+                    "ArXiv": "2104.14272",
+                    "DOI": "10.1109/ACCESS.2021.3087865",
+                    "CorpusId": 233444247
+                },
+                "corpusId": 233444247,
+                "publicationVenue": {
+                    "id": "2633f5b2-c15c-49fe-80f5-07523e770c26",
+                    "name": "IEEE Access",
+                    "type": "journal",
+                    "issn": "2169-3536",
+                    "url": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+                    "alternate_urls": [
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=6287639"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/bc8863440e26e48866a64f63438051d24880b793",
+                "title": "Current Status and Performance Analysis of Table Recognition in Document Images With Deep Neural Networks",
+                "abstract": "The first phase of table recognition is to detect the tabular area in a document. Subsequently, the tabular structures are recognized in the second phase in order to extract information from the respective cells. Table detection and structural recognition are pivotal problems in the domain of table understanding. However, table analysis is a perplexing task due to the colossal amount of diversity and asymmetry in tables. Therefore, it is an active area of research in document image analysis. Recent advances in the computing capabilities of graphical processing units have enabled the deep neural networks to outperform traditional state-of-the-art machine learning methods. Table understanding has substantially benefited from the recent breakthroughs in deep neural networks. However, there has not been a consolidated description of the deep learning methods for table detection and table structure recognition. This review paper provides a thorough analysis of the modern methodologies that utilize deep neural networks. Moreover, it presents a comprehensive understanding of the current state-of-the-art and related challenges of table understanding in document images. The leading datasets and their intricacies have been elaborated along with the quantitative results. Furthermore, a brief overview is given regarding the promising directions that can further improve table analysis in document images.",
+                "year": 2021,
+                "authors": [
+                    {
+                        "authorId": "1403379889",
+                        "name": "K. Hashmi"
+                    },
+                    {
+                        "authorId": "1743758",
+                        "name": "M. Liwicki"
+                    },
+                    {
+                        "authorId": "143749919",
+                        "name": "D. Stricker"
+                    },
+                    {
+                        "authorId": "2206035070",
+                        "name": "Muhammad Adnan Afzal"
+                    },
+                    {
+                        "authorId": "2206035072",
+                        "name": "Muhammad Ahtsham Afzal"
+                    },
+                    {
+                        "authorId": "145181206",
+                        "name": "Muhammad Zeshan Afzal"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "[51] proposed a guided table structure recognition method to detect rows and columns in tables.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "6c411f52c151fe537ee76c310f45f0dd3da88e92",
+                "externalIds": {
+                    "DBLP": "series/sbcs/Bhowmik23",
+                    "DOI": "10.1007/978-981-99-4277-0",
+                    "CorpusId": 260337124
+                },
+                "corpusId": 260337124,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/6c411f52c151fe537ee76c310f45f0dd3da88e92",
+                "title": "Document Layout Analysis",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "3272848",
+                        "name": "Showmik Bhowmik"
+                    }
+                ]
+            },
+            "context_scores": []
+        }
+    ]
+}

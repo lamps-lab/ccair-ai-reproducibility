@@ -1,0 +1,250 @@
+{
+    "data": [
+        {
+            "contexts": [
+                "[39]12 2021 No name ICDAR PubTabNet ICDAR 2019 + unlv - X NR",
+                "The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39]."
+            ],
+            "intents": [
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "50903f5f5e714e5746152b3e369c9329655e0018",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2304-10439",
+                    "ArXiv": "2304.10439",
+                    "DOI": "10.48550/arXiv.2304.10439",
+                    "CorpusId": 258236507
+                },
+                "corpusId": 258236507,
+                "publicationVenue": {
+                    "id": "991e8cbf-4a4a-4ac4-a273-63dd7a35c364",
+                    "name": "IEEE International Conference on Document Analysis and Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "IEEE Int Conf Doc Anal Recognit",
+                        "International Conference on Document Analysis and Recognition",
+                        "Int Conf Doc Anal Recognit",
+                        "ICDAR"
+                    ],
+                    "url": "http://www.wikicfp.com/cfp/program?id=1327"
+                },
+                "url": "https://www.semanticscholar.org/paper/50903f5f5e714e5746152b3e369c9329655e0018",
+                "title": "A Study on Reproducibility and Replicability of Table Structure Recognition Methods",
+                "abstract": "Concerns about reproducibility in artificial intelligence (AI) have emerged, as researchers have reported unsuccessful attempts to directly reproduce published findings in the field. Replicability, the ability to affirm a finding using the same procedures on new data, has not been well studied. In this paper, we examine both reproducibility and replicability of a corpus of 16 papers on table structure recognition (TSR), an AI task aimed at identifying cell locations of tables in digital documents. We attempt to reproduce published results using codes and datasets provided by the original authors. We then examine replicability using a dataset similar to the original as well as a new dataset, GenTSR, consisting of 386 annotated tables extracted from scientific papers. Out of 16 papers studied, we reproduce results consistent with the original in only four. Two of the four papers are identified as replicable using the similar dataset under certain IoU values. No paper is identified as replicable using the new dataset. We offer observations on the causes of irreproducibility and irreplicability. All code and data are available on Codeocean at https://codeocean.com/capsule/6680116/tree.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "11359490",
+                        "name": "Kehinde E. Ajayi"
+                    },
+                    {
+                        "authorId": "2214808132",
+                        "name": "Muntabhir Hasan Choudhury"
+                    },
+                    {
+                        "authorId": "2528276",
+                        "name": "S. Rajtmajer"
+                    },
+                    {
+                        "authorId": "97569165",
+                        "name": "Jian Wu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "[39]12 2021 No name ICDAR PubTabNet ICDAR 2019 + unlv - X NR",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",
+                    "label_score": -2.0,
+                    "label": "O-NR"
+                }
+            ]
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "5966cd3ac4460a97b27b4177a89c0d1041726881",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2303-06949",
+                    "ArXiv": "2303.06949",
+                    "DOI": "10.1109/CVPR52729.2023.01071",
+                    "CorpusId": 257495840
+                },
+                "corpusId": 257495840,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/5966cd3ac4460a97b27b4177a89c0d1041726881",
+                "title": "Improving Table Structure Recognition with Visual-Alignment Sequential Coordinate Modeling",
+                "abstract": "Table structure recognition aims to extract the logical and physical structure of unstructured table images into a machine-readable format. The latest end-to-end image-to-text approaches simultaneously predict the two structures by two decoders, where the prediction of the physical structure (the bounding boxes of the cells) is based on the representation of the logical structure. However, the previous methods struggle with imprecise bounding boxes as the logical representation lacks local visual information. To address this issue, we propose an end-to-end sequential modeling framework for table structure recognition called VAST. It contains a novel coordinate sequence decoder triggered by the representation of the non-empty cell from the logical structure decoder. In the coordinate sequence decoder, we model the bounding box coordinates as a language sequence, where the left, top, right and bottom coordinates are decoded sequentially to leverage the inter-coordinate dependency. Furthermore, we propose an auxiliary visual-alignment loss to enforce the logical representation of the non-empty cells to contain more local visual details, which helps produce better cell bounding boxes. Extensive experiments demonstrate that our proposed method can achieve state-of-the-art results in both logical and physical structure recognition. The ablation study also validates that the proposed coordinate sequence decoder and the visual-alignment loss are the keys to the success of our method.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "145769099",
+                        "name": "Yongshuai Huang"
+                    },
+                    {
+                        "authorId": "2054645836",
+                        "name": "Ning Lu"
+                    },
+                    {
+                        "authorId": "1679279",
+                        "name": "Dapeng Chen"
+                    },
+                    {
+                        "authorId": "2110470261",
+                        "name": "Yibo Li"
+                    },
+                    {
+                        "authorId": "2002678",
+                        "name": "Zecheng Xie"
+                    },
+                    {
+                        "authorId": "2901597",
+                        "name": "Shenggao Zhu"
+                    },
+                    {
+                        "authorId": "1777642",
+                        "name": "Liangcai Gao"
+                    },
+                    {
+                        "authorId": "2187312795",
+                        "name": "Wei Peng"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "contexts": [],
+            "intents": [],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "4f5414f9b2873d6e4de1158695d7b1c6fe9653cb",
+                "externalIds": {
+                    "DOI": "10.1016/j.oregeorev.2023.105383",
+                    "CorpusId": 257566076
+                },
+                "corpusId": 257566076,
+                "publicationVenue": {
+                    "id": "75e57f78-3c41-4803-8f91-bf6a220e9a66",
+                    "name": "Ore Geology Reviews",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Ore Geol Rev"
+                    ],
+                    "issn": "0169-1368",
+                    "url": "https://www.journals.elsevier.com/ore-geology-reviews",
+                    "alternate_urls": [
+                        "http://www.sciencedirect.com/science/journal/01691368"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/4f5414f9b2873d6e4de1158695d7b1c6fe9653cb",
+                "title": "Understanding table content for mineral exploration reports using deep learning and natural language processing",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2210960579",
+                        "name": "Jiahuizi Dong"
+                    },
+                    {
+                        "authorId": "29847942",
+                        "name": "Qinjun Qiu"
+                    },
+                    {
+                        "authorId": "2153722665",
+                        "name": "Zhong Xie"
+                    },
+                    {
+                        "authorId": "1490932925",
+                        "name": "K. Ma"
+                    },
+                    {
+                        "authorId": "2056384890",
+                        "name": "A. Hu"
+                    },
+                    {
+                        "authorId": "2191360357",
+                        "name": "Haitao Wang"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "contexts": [
+                "The success of DL has marked the revisiting of table structure parsing by [7], which inspired follow-up research [27, 1, 6, 2, 28, 29, 30, 19, 31, 18, 32, 17].",
+                "[28] used biLSTM on table cell detection by encoding rows/columns in neural networks before the softmax layer."
+            ],
+            "intents": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "citingPaper": {
+                "paperId": "10c3efc40e72674b615864c94a231e1f11913619",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2201-01654",
+                    "ArXiv": "2201.01654",
+                    "CorpusId": 245704311
+                },
+                "corpusId": 245704311,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/10c3efc40e72674b615864c94a231e1f11913619",
+                "title": "TableParser: Automatic Table Parsing with Weak Supervision from Spreadsheets",
+                "abstract": "Tables have been an ever-existing structure to store data. There exist now different approaches to store tabular data physically. PDFs, images, spreadsheets, and CSVs are leading examples. Being able to parse table structures and extract content bounded by these structures is of high importance in many applications. In this paper, we devise TableParser, a system capable of parsing tables in both native PDFs and scanned images with high precision. We have conducted extensive experiments to show the efficacy of domain adaptation in developing such a tool. Moreover, we create TableAnnotator and ExcelAnnotator, which constitute a spreadsheet-based weak supervision mechanism and a pipeline to enable table parsing. We share these resources with the research community to facilitate further research in this interesting direction.",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "1576005199",
+                        "name": "Susie Xi Rao"
+                    },
+                    {
+                        "authorId": "5185738",
+                        "name": "Johannes Rausch"
+                    },
+                    {
+                        "authorId": "2074406990",
+                        "name": "P. Egger"
+                    },
+                    {
+                        "authorId": "1776014",
+                        "name": "Ce Zhang"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "The success of DL has marked the revisiting of table structure parsing by [7], which inspired follow-up research [27, 1, 6, 2, 28, 29, 30, 19, 31, 18, 32, 17].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "[28] used biLSTM on table cell detection by encoding rows/columns in neural networks before the softmax layer.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        }
+    ]
+}

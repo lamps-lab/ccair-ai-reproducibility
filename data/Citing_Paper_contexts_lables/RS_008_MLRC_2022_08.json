@@ -1,0 +1,843 @@
+{
+    "data": [
+        {
+            "isInfluential": true,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "Recently, several losses [18], [24], [25] constructed different graph structures to formulate the",
+                "The subsequent designs consider multiple negatives including N-pair [9], Lifted Structure [37] and Multi-Similarity [36], but are slow convergence [18], [19].",
+                "the mainstream methods [1], [5], [6], [18], [68], we also adopt the conventional setting, where no intersection exists in train and test set split.",
+                "Accordingly, several works [24], [25] based on graph structure construct various losses to capture the relations in the pairs [18].",
+                "The proposed method can be seamlessly implanted into different kinds of deep metric learning models, which are represented here by three works including SCT [5], HDML [6], and HIST [18].",
+                "The drawbacks of these two types of loss functions were limited to the number of classes [2] and not good at leveraging relations among data points [18].",
+                "Please refer to [18] for detailed explanations.",
+                "As aforementioned, triplet loss is a seminar example and classical design in this field [18], which has spawned a lot of elegant works.",
+                "convergence of these loss functions is not good [18], [19].",
+                "3) Graph-Based Loss: Beyond graph modeling, HIST [18] employed hyper-graph to model the multilateral semantic relation between every instance and every class with a hyper-graph induced semantic tuplet loss, defined as:"
+            ],
+            "citingPaper": {
+                "paperId": "faba6124eb5f0fb72af40c0afec6d8889f7f9fca",
+                "externalIds": {
+                    "DBLP": "journals/tcsv/WangGWYS23",
+                    "DOI": "10.1109/TCSVT.2023.3260082",
+                    "CorpusId": 257685647
+                },
+                "corpusId": 257685647,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/faba6124eb5f0fb72af40c0afec6d8889f7f9fca",
+                "title": "Visual Embedding Augmentation in Fourier Domain for Deep Metric Learning",
+                "abstract": "Deep Metric Learning (DML) is very effective for many computer vision applications such as image retrieval or cross-modal matching. The common paradigm for DML is to seek metric spaces that can encode semantically similar objects close while locating the dissimilar ones far away from each other. To make features more discriminative, the mainstream methods usually design various specific loss functions to seek the help of hard negatives through complex hard mining strategies or hard synthesizing with additional networks. In spite of their fruitfulness, these approaches ignore the impact of low-level information in images on the performance, which may degrade the discerning ability of learned embedding. To alleviate these problems, we introduce a simple yet effective augmentation method to generate more hard negatives by swapping the low-frequency spectra of negative instances with anchors in the Fourier domain. Specifically, unlike previous methods, our proposed approach does not involve any complex design strategies but enriches hard negatives by manipulating the low-level variability of images only with simple Fourier transforms. In addition, our method is treated as a universal plug-in, which can be incorporated into different models for performance improvement. In the end, we conduct extensive experiments to evaluate our method on the widely-used datasets including CUB-200\u20132011, CARS-196, and Stanford Online Products. Our quantitative results demonstrate that the proposed plug-in outperforms previous approaches consistently and significantly across different datasets and evaluation metrics.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2972609",
+                        "name": "Zheng Wang"
+                    },
+                    {
+                        "authorId": "2116493803",
+                        "name": "Zhenwei Gao"
+                    },
+                    {
+                        "authorId": "50248868",
+                        "name": "Guoqing Wang"
+                    },
+                    {
+                        "authorId": "2152283122",
+                        "name": "Yang Yang"
+                    },
+                    {
+                        "authorId": "2110685575",
+                        "name": "H. Shen"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Recently, several losses [18], [24], [25] constructed different graph structures to formulate the",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "The subsequent designs consider multiple negatives including N-pair [9], Lifted Structure [37] and Multi-Similarity [36], but are slow convergence [18], [19].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "the mainstream methods [1], [5], [6], [18], [68], we also adopt the conventional setting, where no intersection exists in train and test set split.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Accordingly, several works [24], [25] based on graph structure construct various losses to capture the relations in the pairs [18].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "The proposed method can be seamlessly implanted into different kinds of deep metric learning models, which are represented here by three works including SCT [5], HDML [6], and HIST [18].",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": "The drawbacks of these two types of loss functions were limited to the number of classes [2] and not good at leveraging relations among data points [18].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Please refer to [18] for detailed explanations.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "As aforementioned, triplet loss is a seminar example and classical design in this field [18], which has spawned a lot of elegant works.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "convergence of these loss functions is not good [18], [19].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "3) Graph-Based Loss: Beyond graph modeling, HIST [18] employed hyper-graph to model the multilateral semantic relation between every instance and every class with a hyper-graph induced semantic tuplet loss, defined as:",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "For one thing, the pairbased methods [64], [65], [66], [67] can mine rich semantic information from anchor-to-sample relations, but converge slowly due to its high training complexity."
+            ],
+            "citingPaper": {
+                "paperId": "8b9c08a6a3b5dae6314b6ae717b78d8e1773d4dc",
+                "externalIds": {
+                    "ArXiv": "2309.15038",
+                    "CorpusId": 262823921
+                },
+                "corpusId": 262823921,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/8b9c08a6a3b5dae6314b6ae717b78d8e1773d4dc",
+                "title": "HPCR: Holistic Proxy-based Contrastive Replay for Online Continual Learning",
+                "abstract": "Online continual learning (OCL) aims to continuously learn new data from a single pass over the online data stream. It generally suffers from the catastrophic forgetting issue. Existing replay-based methods effectively alleviate this issue by replaying part of old data in a proxy-based or contrastive-based replay manner. In this paper, we conduct a comprehensive analysis of these two replay manners and find they can be complementary. Inspired by this finding, we propose a novel replay-based method called proxy-based contrastive replay (PCR), which replaces anchor-to-sample pairs with anchor-to-proxy pairs in the contrastive-based loss to alleviate the phenomenon of forgetting. Based on PCR, we further develop a more advanced method named holistic proxy-based contrastive replay (HPCR), which consists of three components. The contrastive component conditionally incorporates anchor-to-sample pairs to PCR, learning more fine-grained semantic information with a large training batch. The second is a temperature component that decouples the temperature coefficient into two parts based on their impacts on the gradient and sets different values for them to learn more novel knowledge. The third is a distillation component that constrains the learning process to keep more historical knowledge. Experiments on four datasets consistently demonstrate the superiority of HPCR over various state-of-the-art methods.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2117123646",
+                        "name": "Huiwei Lin"
+                    },
+                    {
+                        "authorId": "14912282",
+                        "name": "Shanshan Feng"
+                    },
+                    {
+                        "authorId": "121178411",
+                        "name": "Baoquan Zhang"
+                    },
+                    {
+                        "authorId": "48569885",
+                        "name": "Xutao Li"
+                    },
+                    {
+                        "authorId": "101252726",
+                        "name": "Y. Ong"
+                    },
+                    {
+                        "authorId": "2238923312",
+                        "name": "Yunming Ye"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "For one thing, the pairbased methods [64], [65], [66], [67] can mine rich semantic information from anchor-to-sample relations, but converge slowly due to its high training complexity.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [],
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "5cae3b36651b8f1be7a9f1961980b7f2dd2c9727",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2308-09228",
+                    "ArXiv": "2308.09228",
+                    "DOI": "10.48550/arXiv.2308.09228",
+                    "CorpusId": 261030945
+                },
+                "corpusId": 261030945,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/5cae3b36651b8f1be7a9f1961980b7f2dd2c9727",
+                "title": "Generalized Sum Pooling for Metric Learning",
+                "abstract": "A common architectural choice for deep metric learning is a convolutional neural network followed by global average pooling (GAP). Albeit simple, GAP is a highly effective way to aggregate information. One possible explanation for the effectiveness of GAP is considering each feature vector as representing a different semantic entity and GAP as a convex combination of them. Following this perspective, we generalize GAP and propose a learnable generalized sum pooling method (GSP). GSP improves GAP with two distinct abilities: i) the ability to choose a subset of semantic entities, effectively learning to ignore nuisance information, and ii) learning the weights corresponding to the importance of each entity. Formally, we propose an entropy-smoothed optimal transport problem and show that it is a strict generalization of GAP, i.e., a specific realization of the problem gives back GAP. We show that this optimization problem enjoys analytical gradients enabling us to use it as a direct learnable replacement for GAP. We further propose a zero-shot loss to ease the learning of GSP. We show the effectiveness of our method with extensive evaluations on 4 popular metric learning benchmarks. Code is available at: GSP-DML Framework",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2232607751",
+                        "name": "\u2020. YetiZ.G\u00fcrb\u00fcz"
+                    },
+                    {
+                        "authorId": "3114252",
+                        "name": "Ozan Sener"
+                    },
+                    {
+                        "authorId": "1612131339",
+                        "name": "A. Aydin"
+                    },
+                    {
+                        "authorId": "2232608267",
+                        "name": "Alatan RSiM"
+                    },
+                    {
+                        "authorId": "2101624135",
+                        "name": "Tu Berlin"
+                    },
+                    {
+                        "authorId": "112853320",
+                        "name": "Intel Labs"
+                    },
+                    {
+                        "authorId": "2232607579",
+                        "name": "Ogam Metu"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "isInfluential": false,
+            "intents": [],
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "45f92860e7ae54321d4cd125e3a389aa756529df",
+                "externalIds": {
+                    "DBLP": "journals/pr/UmirzakovaASSW23",
+                    "DOI": "10.1016/j.patcog.2023.109866",
+                    "CorpusId": 260417312
+                },
+                "corpusId": 260417312,
+                "publicationVenue": {
+                    "id": "266f640f-003e-453b-ab76-57e4053252f8",
+                    "name": "Pattern Recognition",
+                    "type": "journal",
+                    "alternate_names": [
+                        "Pattern Recognit"
+                    ],
+                    "issn": "0031-3203",
+                    "url": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+                    "alternate_urls": [
+                        "https://www.journals.elsevier.com/pattern-recognition",
+                        "http://www.sciencedirect.com/science/journal/00313203"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/45f92860e7ae54321d4cd125e3a389aa756529df",
+                "title": "Deep learning-driven diagnosis: A multi-task approach for segmenting stroke and Bell's palsy",
+                "abstract": null,
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "51980106",
+                        "name": "Sabina Umirzakova"
+                    },
+                    {
+                        "authorId": "152985106",
+                        "name": "Shabir Ahmad"
+                    },
+                    {
+                        "authorId": "2147444224",
+                        "name": "Mardieva Sevara"
+                    },
+                    {
+                        "authorId": "2091210516",
+                        "name": "Muksimova Shakhnoza"
+                    },
+                    {
+                        "authorId": "2143528003",
+                        "name": "T. Whangbo"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "isInfluential": true,
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "If two embedding nodes are close, their semantic information usually overlaps, they probably have a semantic connection [25].",
+                "HIST [25] constructs a hyper-graph to formulate higher-order relations between samples.",
+                "HIST [25] constructs a hypergraph to formulate higher-order relations between samples."
+            ],
+            "citingPaper": {
+                "paperId": "11335ae160553efa1b82cb33d032ec123fc9ffb4",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/FuMSZ23",
+                    "DOI": "10.1109/CVPR52729.2023.01455",
+                    "CorpusId": 261080908
+                },
+                "corpusId": 261080908,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/11335ae160553efa1b82cb33d032ec123fc9ffb4",
+                "title": "Learning Semantic Relationship among Instances for Image-Text Matching",
+                "abstract": "Image-text matching, a bridge connecting image and language, is an important task, which generally learns a holistic cross-modal embedding to achieve a high-quality semantic alignment between the two modalities. However, previous studies only focus on capturing fragment-level relation within a sample from a particular modality, e.g., salient regions in an image or text words in a sentence, where they usually pay less attention to capturing instance-level interactions among samples and modalities, e.g., multiple images and texts. In this paper, we argue that sample relations could help learn subtle differences for hard negative instances, and thus transfer shared knowledge for infrequent samples should be promising in obtaining better holistic embeddings. Therefore, we propose a novel hierarchical relation modeling framework (HREM), which explicitly capture both fragment-and instance-level relations to learn discriminative and robust cross-modal embeddings. Extensive experiments on Flickr30K and MS-COCO show our proposed method out-performs the state-of-the-art ones by 4%-10% in terms of rSum. Our code is available at https://github.com/CrossmodalGroup/HREM.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2106681735",
+                        "name": "Zheren Fu"
+                    },
+                    {
+                        "authorId": "1855978",
+                        "name": "Zhendong Mao"
+                    },
+                    {
+                        "authorId": "49992707",
+                        "name": "Yan Song"
+                    },
+                    {
+                        "authorId": "2145050375",
+                        "name": "Yongdong Zhang"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "If two embedding nodes are close, their semantic information usually overlaps, they probably have a semantic connection [25].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "HIST [25] constructs a hyper-graph to formulate higher-order relations between samples.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "HIST [25] constructs a hypergraph to formulate higher-order relations between samples.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "To further demonstrate the effectiveness of BiasAdv, we evaluated the model robustness to various input corruptions following the protocol [29]."
+            ],
+            "citingPaper": {
+                "paperId": "8c2aa125addf56ef839dbb0123a84da5a5ed1d3b",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/0002KKASYH23",
+                    "DOI": "10.1109/CVPR52729.2023.00373",
+                    "CorpusId": 261006747
+                },
+                "corpusId": 261006747,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/8c2aa125addf56ef839dbb0123a84da5a5ed1d3b",
+                "title": "BiasAdv: Bias-Adversarial Augmentation for Model Debiasing",
+                "abstract": "Neural networks are often prone to bias toward spurious correlations inherent in a dataset, thus failing to generalize unbiased test criteria. A key challenge to resolving the issue is the significant lack of bias-conflicting training data (i. e., samples without spurious correlations). In this paper, we propose a novel data augmentation approach termed Bias-Adversarial augmentation (BiasAdv) that supplements bias-conflicting samples with adversarial images. Our key idea is that an adversarial attack on a biased model that makes decisions based on spurious correlations may generate syn-thetic bias-conflicting samples, which can then be used as augmented training data for learning a debiased model. Specifically, we formulate an optimization problem for gen-erating adversarial images that attack the predictions of an auxiliary biased model without ruining the predictions of the desired debiased model. Despite its simplicity, we find that BiasAdv can generate surprisingly useful synthetic bias-conflicting samples, allowing the debiased model to learn generalizable representations. Furthermore, BiasAdv does not require any bias annotations or prior knowledge of the bias type, which enables its broad applicability to existing debiasing methods to improve their performances. Our extensive experimental results demonstrate the superiority of BiasAdv, achieving state-of-the-art performance on four popular benchmark datasets across various bias domains.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2109781521",
+                        "name": "Jongin Lim"
+                    },
+                    {
+                        "authorId": "2115991738",
+                        "name": "Youngdong Kim"
+                    },
+                    {
+                        "authorId": "32101916",
+                        "name": "Byungjai Kim"
+                    },
+                    {
+                        "authorId": "32674005",
+                        "name": "Chanho Ahn"
+                    },
+                    {
+                        "authorId": "143720148",
+                        "name": "Jinwoo Shin"
+                    },
+                    {
+                        "authorId": "1720494",
+                        "name": "Eunho Yang"
+                    },
+                    {
+                        "authorId": null,
+                        "name": "Seungju Han"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "To further demonstrate the effectiveness of BiasAdv, we evaluated the model robustness to various input corruptions following the protocol [29].",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [],
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "47dc9942a83fee414c3944a0ca69987edc44795a",
+                "externalIds": {
+                    "DBLP": "conf/cvpr/WangCLWO023",
+                    "DOI": "10.1109/CVPR52729.2023.01857",
+                    "CorpusId": 261080783
+                },
+                "corpusId": 261080783,
+                "publicationVenue": {
+                    "id": "768b87bb-8a18-4d9c-a161-4d483c776bcf",
+                    "name": "Computer Vision and Pattern Recognition",
+                    "type": "conference",
+                    "alternate_names": [
+                        "CVPR",
+                        "Comput Vis Pattern Recognit"
+                    ],
+                    "issn": "1063-6919",
+                    "url": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+                    "alternate_urls": [
+                        "https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/47dc9942a83fee414c3944a0ca69987edc44795a",
+                "title": "Open-Set Fine-Grained Retrieval via Prompting Vision-Language Evaluator",
+                "abstract": "Open-set fine-grained retrieval is an emerging challenge that requires an extra capability to retrieve unknown subcategories during evaluation. However, current works focus on close-set visual concepts, where all the subcategories are pre-defined, and make it hard to capture discriminative knowledge from unknown subcategories, consequently failing to handle unknown subcategories in open-world scenarios. In this work, we propose a novel Prompting vision-Language Evaluator (PLEor) framework based on the recently introduced contrastive language-image pretraining (CLIP) model, for open-set fine-grained retrieval. PLEor could leverage pre-trained CLIP model to infer the discrepancies encompassing both pre-defined and unknown subcategories, called category-specific discrepancies, and transfer them to the backbone network trained in the close-set scenarios. To make pre-trained CLIP model sensitive to category-specific discrepancies, we design a dual prompt scheme to learn a vision prompt specifying the categoryspecific discrepancies, and turn random vectors with category names in a text prompt into category-specific discrepancy descriptions. Moreover, a vision-language evaluator is proposed to semantically align the vision and text prompts based on CLIP model, and reinforce each other. In addition, we propose an open-set knowledge transfer to transfer the category-specific discrepancies into the backbone network using knowledge distillation mechanism. Quantitative and qualitative experiments show that our PLEor achieves promising performance on open-set fine-grained datasets.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2108620644",
+                        "name": "Shijie Wang"
+                    },
+                    {
+                        "authorId": "2364376",
+                        "name": "Jianlong Chang"
+                    },
+                    {
+                        "authorId": "2198533822",
+                        "name": "Haojie Li"
+                    },
+                    {
+                        "authorId": "47196393",
+                        "name": "Zhihui Wang"
+                    },
+                    {
+                        "authorId": "3001348",
+                        "name": "Wanli Ouyang"
+                    },
+                    {
+                        "authorId": "2149898830",
+                        "name": "Qi Tian"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "field [48]\u2013[50], a multiview-enhanced knowledge integration module based on HGCN is developed, as shown in Fig."
+            ],
+            "citingPaper": {
+                "paperId": "23a6d3d09e8a4ce88a25e0def06be3041405db26",
+                "externalIds": {
+                    "DBLP": "journals/corr/abs-2305-09893",
+                    "ArXiv": "2305.09893",
+                    "DOI": "10.48550/arXiv.2305.09893",
+                    "CorpusId": 258741168
+                },
+                "corpusId": 258741168,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/23a6d3d09e8a4ce88a25e0def06be3041405db26",
+                "title": "Integrating Multiple Sources Knowledge for Class Asymmetry Domain Adaptation Segmentation of Remote Sensing Images",
+                "abstract": "In the existing unsupervised domain adaptation (UDA) methods for remote sensing images (RSIs) semantic segmentation, class symmetry is an widely followed ideal assumption, where the source and target RSIs have exactly the same class space. In practice, however, it is often very difficult to find a source RSI with exactly the same classes as the target RSI. More commonly, there are multiple source RSIs available. To this end, a novel class asymmetry RSIs domain adaptation method with multiple sources is proposed in this paper, which consists of four key components. Firstly, a multi-branch segmentation network is built to learn an expert for each source RSI. Secondly, a novel collaborative learning method with the cross-domain mixing strategy is proposed, to supplement the class information for each source while achieving the domain adaptation of each source-target pair. Thirdly, a pseudo-label generation strategy is proposed to effectively combine strengths of different experts, which can be flexibly applied to two cases where the source class union is equal to or includes the target class set. Fourthly, a multiview-enhanced knowledge integration module is developed for the high-level knowledge routing and transfer from multiple domains to target predictions.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "121145046",
+                        "name": "Kuiliang Gao"
+                    },
+                    {
+                        "authorId": "9759716",
+                        "name": "Anzhu Yu"
+                    },
+                    {
+                        "authorId": "49713003",
+                        "name": "Xiong You"
+                    },
+                    {
+                        "authorId": "1780948108",
+                        "name": "Wenyue Guo"
+                    },
+                    {
+                        "authorId": "49243436",
+                        "name": "Ke Li"
+                    },
+                    {
+                        "authorId": "2067383591",
+                        "name": "Ningbo Huang"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "field [48]\u2013[50], a multiview-enhanced knowledge integration module based on HGCN is developed, as shown in Fig.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "background"
+            ],
+            "contexts": [
+                "Modern image retrieval methods (Lim et al., 2022; Roth et al., 2022; Kim et al., 2022; Ermolov et al., 2022; Patel et al., 2022) can be roughly decomposed into two major components: (1) the encoder (e.",
+                "Modern image retrieval methods (Lim et al., 2022; Roth et al., 2022; Kim et al., 2022; Ermolov et al., 2022; Patel et al., 2022) can be roughly decomposed into two major components: (1) the encoder (e.g., Convolutional Neural Networks (Szegedy et al., 2015; He et al., 2016) or Vision Transformer\u2026"
+            ],
+            "citingPaper": {
+                "paperId": "4274922ab64d4d994fe1ecc5d58e0b6c6c53d35b",
+                "externalIds": {
+                    "ArXiv": "2304.05884",
+                    "DBLP": "journals/corr/abs-2304-05884",
+                    "DOI": "10.48550/arXiv.2304.05884",
+                    "CorpusId": 258079386
+                },
+                "corpusId": 258079386,
+                "publicationVenue": {
+                    "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+                    "name": "International Conference on Learning Representations",
+                    "type": "conference",
+                    "alternate_names": [
+                        "Int Conf Learn Represent",
+                        "ICLR"
+                    ],
+                    "url": "https://iclr.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/4274922ab64d4d994fe1ecc5d58e0b6c6c53d35b",
+                "title": "Unicom: Universal and Compact Representation Learning for Image Retrieval",
+                "abstract": "Modern image retrieval methods typically rely on fine-tuning pre-trained encoders to extract image-level descriptors. However, the most widely used models are pre-trained on ImageNet-1K with limited classes. The pre-trained feature representation is therefore not universal enough to generalize well to the diverse open-world classes. In this paper, we first cluster the large-scale LAION400M into one million pseudo classes based on the joint textual and visual features extracted by the CLIP model. Due to the confusion of label granularity, the automatically clustered dataset inevitably contains heavy inter-class conflict. To alleviate such conflict, we randomly select partial inter-class prototypes to construct the margin-based softmax loss. To further enhance the low-dimensional feature representation, we randomly select partial feature dimensions when calculating the similarities between embeddings and class-wise prototypes. The dual random partial selections are with respect to the class dimension and the feature dimension of the prototype matrix, making the classification conflict-robust and the feature embedding compact. Our method significantly outperforms state-of-the-art unsupervised and supervised image retrieval approaches on multiple benchmarks. The code and pre-trained models are released to facilitate future research https://github.com/deepglint/unicom.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2054941340",
+                        "name": "Xiang An"
+                    },
+                    {
+                        "authorId": "3234063",
+                        "name": "Jiankang Deng"
+                    },
+                    {
+                        "authorId": "2118047966",
+                        "name": "Kaicheng Yang"
+                    },
+                    {
+                        "authorId": "2213988731",
+                        "name": "Jaiwei Li"
+                    },
+                    {
+                        "authorId": "2790939",
+                        "name": "Ziyong Feng"
+                    },
+                    {
+                        "authorId": "2148901721",
+                        "name": "Jia Guo"
+                    },
+                    {
+                        "authorId": "2143851554",
+                        "name": "Jing Yang"
+                    },
+                    {
+                        "authorId": "121698214",
+                        "name": "Tongliang Liu"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "Modern image retrieval methods (Lim et al., 2022; Roth et al., 2022; Kim et al., 2022; Ermolov et al., 2022; Patel et al., 2022) can be roughly decomposed into two major components: (1) the encoder (e.",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                },
+                {
+                    "context": "Modern image retrieval methods (Lim et al., 2022; Roth et al., 2022; Kim et al., 2022; Ermolov et al., 2022; Patel et al., 2022) can be roughly decomposed into two major components: (1) the encoder (e.g., Convolutional Neural Networks (Szegedy et al., 2015; He et al., 2016) or Vision Transformer\u2026",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "background",
+                "methodology"
+            ],
+            "contexts": [
+                "focusing on the feature fusion [39], [49] within a single domain, we leverage feature-point-based hypergraph to model",
+                ", multi-modal learning [24], [39], trajectory prediction [81], and deep metric learning [49]."
+            ],
+            "citingPaper": {
+                "paperId": "d9ecc8f2aea9485e325ab78b943ea4bde11461ff",
+                "externalIds": {
+                    "DBLP": "journals/pami/LiLY23",
+                    "DOI": "10.1109/TPAMI.2023.3235367",
+                    "CorpusId": 255741595,
+                    "PubMed": "37018585"
+                },
+                "corpusId": 255741595,
+                "publicationVenue": {
+                    "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+                    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+                    "type": "journal",
+                    "alternate_names": [
+                        "IEEE Trans Pattern Anal Mach Intell"
+                    ],
+                    "issn": "0162-8828",
+                    "url": "http://www.computer.org/tpami/",
+                    "alternate_urls": [
+                        "http://www.computer.org/portal/web/tpami",
+                        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+                    ]
+                },
+                "url": "https://www.semanticscholar.org/paper/d9ecc8f2aea9485e325ab78b943ea4bde11461ff",
+                "title": "SIGMA++: Improved Semantic-Complete Graph Matching for Domain Adaptive Object Detection",
+                "abstract": "Domain Adaptive Object Detection (DAOD) generalizes the object detector from an annotated domain to a label-free novel one. Recent works estimate prototypes (class centers) and minimize the corresponding distances to adapt the cross-domain class conditional distribution. However, this prototype-based paradigm 1) fails to capture the class variance with agnostic structural dependencies, and 2) ignores the domain-mismatched classes with a sub-optimal adaptation. To address these two challenges, we propose an improved SemantIc-complete Graph MAtching framework, dubbed SIGMA++, for DAOD, completing mismatched semantics and reformulating adaptation with hypergraph matching. Specifically, we propose a Hypergraphical Semantic Completion (HSC) module to generate hallucination graph nodes in mismatched classes. HSC builds a cross-image hypergraph to model class conditional distribution with high-order dependencies and learns a graph-guided memory bank to generate missing semantics. After representing the source and target batch with hypergraphs, we reformulate domain adaptation with a hypergraph matching problem, i.e., discovering well-matched nodes with homogeneous semantics to reduce the domain gap, which is solved with a Bipartite Hypergraph Matching (BHM) module. Graph nodes are used to estimate semantic-aware affinity, while edges serve as high-order structural constraints in a structure-aware matching loss, achieving fine-grained adaptation with hypergraph matching. The applicability of various object detectors verifies the generalization of SIGMA++, and extensive experiments on nine benchmarks show its state-of-the-art performance on both AP<inline-formula><tex-math notation=\"LaTeX\">$_{50}$</tex-math><alternatives><mml:math><mml:msub><mml:mrow/><mml:mn>50</mml:mn></mml:msub></mml:math><inline-graphic xlink:href=\"yuan-ieq1-3235367.gif\"/></alternatives></inline-formula> and adaptation gains.",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2116742748",
+                        "name": "Wuyang Li"
+                    },
+                    {
+                        "authorId": "2110789401",
+                        "name": "Xinyu Liu"
+                    },
+                    {
+                        "authorId": "3080513",
+                        "name": "Yixuan Yuan"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "focusing on the feature fusion [39], [49] within a single domain, we leverage feature-point-based hypergraph to model",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                },
+                {
+                    "context": ", multi-modal learning [24], [39], trajectory prediction [81], and deep metric learning [49].",
+                    "label_score": 0.0,
+                    "label": "Neutral"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [],
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "3493ec02f48ed1db8adb594f9825f1f514266c51",
+                "externalIds": {
+                    "ArXiv": "2210.01908",
+                    "DBLP": "conf/icml/LiaoTK23",
+                    "CorpusId": 256627805
+                },
+                "corpusId": 256627805,
+                "publicationVenue": {
+                    "id": "fc0a208c-acb7-47dc-a0d4-af8190e21d29",
+                    "name": "International Conference on Machine Learning",
+                    "type": "conference",
+                    "alternate_names": [
+                        "ICML",
+                        "Int Conf Mach Learn"
+                    ],
+                    "url": "https://icml.cc/"
+                },
+                "url": "https://www.semanticscholar.org/paper/3493ec02f48ed1db8adb594f9825f1f514266c51",
+                "title": "Supervised Metric Learning to Rank for Retrieval via Contextual Similarity Optimization",
+                "abstract": "There is extensive interest in metric learning methods for image retrieval. Many metric learning loss functions focus on learning a correct ranking of training samples, but strongly overfit semantically inconsistent labels and require a large amount of data. To address these shortcomings, we propose a new metric learning method, called contextual loss, which optimizes contextual similarity in addition to cosine similarity. Our contextual loss implicitly enforces semantic consistency among neighbors while converging to the correct ranking. We empirically show that the proposed loss is more robust to label noise, and is less prone to overfitting even when a large portion of train data is withheld. Extensive experiments demonstrate that our method achieves a new state-of-the-art across four image retrieval benchmarks and multiple different evaluation settings. Code is available at: https://github.com/Chris210634/metric-learning-using-contextual-similarity",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "2150047593",
+                        "name": "Christopher Liao"
+                    },
+                    {
+                        "authorId": "1902176",
+                        "name": "Theodoros Tsiligkaridis"
+                    },
+                    {
+                        "authorId": "1692670",
+                        "name": "B. Kulis"
+                    }
+                ]
+            },
+            "context_scores": []
+        },
+        {
+            "isInfluential": false,
+            "intents": [
+                "methodology"
+            ],
+            "contexts": [
+                "To improve embedding quality, detaching class-discriminative and classshared features [14, 31, 42], intra-batch feature aggregation [30, 49], ranking surrogates [39], and further regularization terms [19, 23, 45, 66] are utilized."
+            ],
+            "citingPaper": {
+                "paperId": "2258a78041e0eefd525765f94a93d4877cbf6ed9",
+                "externalIds": {
+                    "ArXiv": "2209.09060",
+                    "DBLP": "journals/corr/abs-2209-09060",
+                    "DOI": "10.48550/arXiv.2209.09060",
+                    "CorpusId": 252367779
+                },
+                "corpusId": 252367779,
+                "publicationVenue": {
+                    "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+                    "name": "arXiv.org",
+                    "alternate_names": [
+                        "ArXiv"
+                    ],
+                    "issn": "2331-8422",
+                    "url": "https://arxiv.org"
+                },
+                "url": "https://www.semanticscholar.org/paper/2258a78041e0eefd525765f94a93d4877cbf6ed9",
+                "title": "Deep Metric Learning with Chance Constraints",
+                "abstract": "Deep metric learning (DML) aims to minimize empirical expected loss of the pairwise intra-/inter- class proximity violations in the embedding space. We relate DML to feasibility problem of finite chance constraints. We show that minimizer of proxy-based DML satisfies certain chance constraints, and that the worst case generalization performance of the proxy-based methods can be characterized by the radius of the smallest ball around a class proxy to cover the entire domain of the corresponding class samples, suggesting multiple proxies per class helps performance. To provide a scalable algorithm as well as exploiting more proxies, we consider the chance constraints implied by the minimizers of proxy-based DML instances and reformulate DML as finding a feasible point in intersection of such constraints, resulting in a problem to be approximately solved by iterative projections. Simply put, we repeatedly train a regularized proxy-based loss and re-initialize the proxies with the embeddings of the deliberately selected new samples. We applied our method with 4 well-accepted DML losses and show the effectiveness with extensive evaluations on 4 popular DML benchmarks. Code is available at: https://github.com/yetigurbuz/ccp-dml",
+                "year": 2022,
+                "authors": [
+                    {
+                        "authorId": "151260920",
+                        "name": "Y. Z. G\u00fcrb\u00fcz"
+                    },
+                    {
+                        "authorId": "8357944",
+                        "name": "Ogul Can"
+                    },
+                    {
+                        "authorId": "143768962",
+                        "name": "A. Alatan"
+                    },
+                    {
+                        "authorId": "2237992007",
+                        "name": "AI Cerebrate"
+                    }
+                ]
+            },
+            "context_scores": [
+                {
+                    "context": "To improve embedding quality, detaching class-discriminative and classshared features [14, 31, 42], intra-batch feature aggregation [30, 49], ranking surrogates [39], and further regularization terms [19, 23, 45, 66] are utilized.",
+                    "label_score": 0.5,
+                    "label": "Weak"
+                }
+            ]
+        },
+        {
+            "isInfluential": false,
+            "intents": [],
+            "contexts": [],
+            "citingPaper": {
+                "paperId": "3dd4f6b6cfb9fd3075c0a5a2fa0e15f34073efb9",
+                "externalIds": {
+                    "CorpusId": 263271014
+                },
+                "corpusId": 263271014,
+                "publicationVenue": null,
+                "url": "https://www.semanticscholar.org/paper/3dd4f6b6cfb9fd3075c0a5a2fa0e15f34073efb9",
+                "title": "BiasAdv: Bias-Adversarial Augmentation for Model Debiasing - Supplementary Material -",
+                "abstract": "This document presents additional descriptions and results that are not included in the manuscript due to the page limit. In Section A, we present pseudo codes of the training procedures when the proposed BiasAdv is applied to ERM, JTT [9], and LfF [11], respectively. In Section B",
+                "year": 2023,
+                "authors": [
+                    {
+                        "authorId": "2249524194",
+                        "name": "Jongin Lim"
+                    },
+                    {
+                        "authorId": "2249526165",
+                        "name": "Youngdong Kim"
+                    },
+                    {
+                        "authorId": "2249319452",
+                        "name": "Byungjai Kim"
+                    },
+                    {
+                        "authorId": "2249274657",
+                        "name": "Chanho Ahn"
+                    },
+                    {
+                        "authorId": "2249417267",
+                        "name": "Jinwoo Shin"
+                    },
+                    {
+                        "authorId": "2249072865",
+                        "name": "Eunho Yang"
+                    },
+                    {
+                        "authorId": "2249183699",
+                        "name": "Seungju Han"
+                    }
+                ]
+            },
+            "context_scores": []
+        }
+    ]
+}
