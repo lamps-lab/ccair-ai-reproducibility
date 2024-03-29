@@ -1,0 +1,219 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Regarding VAD, we compare AnomalyCLIP against stateof-the-art methods with different supervision setups, including one-class (Park et al., 2020; Liu et al., 2021; Lv et al., 2021), unsupervised (Zaheer et al.",1,related,1,positive
+"It should be pointed out that the experimental results of [48], [52], [53], and [54] are the best results obtained on our equipment according to their experimental settings, because we unfortunately did not get their official results for this dataset, since we keep the experimental equipment used unchanged and follow the optimal settings of the method and believe that",1,related,0,negative
+"To this end, we can employ many methods to generate the reference features, such as sampling key features by coreset subsampling algorithm [35], generating prototype features by memory module [28], or learning codebook features through vector quantization [65] or sparse coding techniques [55].",1,related,1,positive
+"Finally, similar to the previous work [6], [29], [30], we measure the average area under the curve (AUC) by computing the area under the receiver operating characteristic",1,related,1,positive
+"Due to the lack of published results on human-related anomalies on the UCF-Crime dataset, we implement the code of literature [11, 35, 39], where [39] takes [35] as the backbone.",1,related,0,negative
+"Park et al. propose augmenting a U-net style encoderdecoder (i.e., a network model for future frame prediction and reconstruction) by using a Memory Module trained to store important features of the normal mode.",1,related,1,positive
+"We compare the proposed method with Conv-AE [11], ConvLSTM-AE [38], AE-Conv3D [15], Unmasking [39], Stacked RNN [21], Frame-Pred [16], MemAE [12], sRNNAE [22] and MNAD [5] on CUHK Avenue dataset in terms of",1,related,1,positive
+"The frame-level anomaly score scrFR(n + t) for the nth test is calculated by normalizing PSN R( În+t , In+t ) as follows [5], [16]:",1,related,1,positive
+"1) Frame-Level Anomaly Detection: We compare the framelevel AUCs of the proposed method with MPPCA [41], MPPC+SFA [35], MDT [35], Unmasking [39], Conv-AE [11], ConvLSTM-AE [38], Stacked RNN [21], Frame-Pred [16], MemAE [12], LatSp-AG [42], sRNN-AE [22], DeepOC [43], MNAD [5] and ROADMAP [17] on UCSD dataset as listed in Table III.",1,related,1,positive
+"In Table II, we compare AUCs of the proposed method with Conv-AE [11], TSC [21], Stacked RNN [21], MemAEnonSpar [12], Frame-Pred [16], MemAE [12], MNAD [5] and sRNN-AE [22] in the frame-level evaluation.",1,related,1,positive
+We select the memory-based MNAD [5] attaining the top AUC on UCSD Ped2 in the frame-level,1,related,1,positive
+The other hyper-parameters are set following [36]: λc=0.,1,related,1,positive
+"To prove the efficiency of the method proposed in this paper, we compare our model with the SOTA model, including reconstruction-based methods such as R-VAD [45], ConvVAD [39], MEM-VAD [62], LAD [10], GMFC-VAE [63], MemAE [64], and C-VAD [65]; future frame prediction-based methods such as VEC [66], FPVAD [26], CPNet [9], ConvVRNN [67], Attention-VAD [68], D-VAD [69], and S-VAD [70]; and methods based on multiple information sources such as ASSVAD [71], MPED-RNN [72], ST-CAE [73], AnoPCN [74], and PR-AD [75].",1,related,1,positive
+"Motivated by a line of research on memory-augmented anomaly detection [8, 24], we put constraints on the learnable parameters to contrast differency of memory items.",1,related,1,positive
+"It is worth differentiating the definition of unsupervised VAD [13] from one-class VAD since the latter is being referred to as unsupervised in some studies [14, 15, 10, 16, 17, 18].",1,related,1,positive
+4 shows the results of video frames restored by our method compared with the output of existing reconstruction-based [33] and prediction-based methods [19].,1,related,1,positive
+"We compared our method on itwith some existing methods, including baseline methods: f-AnoGAN [26], AE [18], VAE [27], and MNAD [28]; state-of-the-art methods: S-T [6], SPADE [15], DREAM [24], Pachcore [5], RD4AD [12], and GCAD [18].",1,related,1,positive
+"To prove the effectiveness of the proposed HN-MUM, we compare it with different methods, which can be specific divided into traditional methods [30, 32, 35, 38, 45], reconstruction based methods [1, 6, 10, 12, 29, 48], and prediction based methods [3, 8, 24, 31, 46], on the publicly available datasets.",1,related,1,positive
+"We compared with the recent anomaly detection methods on three datasets, including MPPCA [50], AMDN [51], AMC [54], MNAD [30], BiTraP [57], etc.",1,related,1,positive
+"We compared with the recent anomaly detection methods on three datasets, including MPPCA [50], AMDN [51], AMC [54], MNAD [30], BiTraP [57], etc., as shown in Table 1, and
+the performance of the other methods was all derived from the corresponding original papers.",1,related,1,positive
+"At test time, following the existing approaches for VAD [2, 6, 10], we predict framelevel anomaly scores and calculate these scores by using the Peak Signal to Noise Ratio (PSNR).",1,related,1,positive
+"The global anomaly branch adopts the method in [40], so the result is the same.",1,related,1,positive
+"This paper follows the experimental protocol in [12, 35, 40], and evaluates the performance of the model by comparing the area under the ROC curve, namely, the AUC (%) value.",1,related,1,positive
+"Namely, we compare to Variational Model (VM) Steger (2001) - a handcrafted similarity measure designed for robustness to different conditions, MNAD Park et al. (2020) - an autoencoder with a memory module, f-AnoGAN Schlegl et al. (2017) - a generative model trained for the reconstruction of anomaly free images, AE / VAE Sakurada & Yairi (2014) - an autoencoder / variational autoencoder, Student Teacher (ST) Bergmann et al. (2020) - a student network aimed to give better reconstruction for the normal data, SPADE Cohen & Hoshen (2020) - a density estimation method using a pyramid of deep ResNet features, PatchCore (PCore) Roth et al. (2022) - a state-of-the-art method for structural anomalies, improving SPADE scoring function, GCAD Bergmann et al. (2022) - a reconstruction based method, based on both local and global deep ResNet features.",1,related,1,positive
+"Namely, we compare to Variational Model (VM) Steger (2001) - a handcrafted similarity measure designed for robustness to different conditions, MNAD Park et al. (2020) - an autoencoder with a memory module, f-AnoGAN Schlegl et al. (2017) - a generative model trained for the reconstruction of anomaly…",1,related,1,positive
+"We have used ShanghaiTech dataset and compared the propsoed model performance with various methods such as predictions of normal frames based on anomaly detection techniques with unsupervised learning [9,17], feature patterns based on unsupervised learning [60,61], and skeleton patterns based on unsupervised learning [62,63].",1,related,1,positive
+"Inspired by normality representation [10, 26] in the OCC methods, we encode normal patterns across all normal video sets into compact prototypes which are the centroids of normal instances.",1,related,1,positive
+"Our method achieves AUC score of 97.43% with I3D RGB features and 96.02% with C3D RGB features, outperforming existing state-of-the-art one-class classification (OCC) [11, 24, 26, 3, 47] and weakly supervised methods [48, 51, 33, 40, 46, 9, 38, 17, 29].",1,related,1,positive
+"Consistent with the results on ShanghaiTech, our method outperforms all OCC [11, 34] and weakly supervised approaches [33, 48, 52, 51, 46, 9, 38, 17, 29] by large margins.",1,related,1,positive
+"Contrary to the aforementioned OCC methods, we leverage the prototypes to refine the initial noisy prediction of the MIL-based classifier.",1,related,1,positive
+"Our model exceeds OCC methods [31, 11] by a minimum of 47.74% in AP.",1,related,0,negative
+[32] and MPN [26] provide results for both.,1,related,0,negative
+"In order to evaluate the model performance, we visualize the refactoring error obtained by the prediction model of literature [13] and this paper.",1,related,1,positive
+"Terefore, this paper sets η around the value of literature [13] and then adjusts the value of the newly added weight φ.",1,related,1,positive
+"To further enhance its distinguishing power for diverse scenarios on different roads over time, we sparsify the attention-based query mechanism (defined in Equation (7)) with two constraints [53, 54], including a consistency loss L1 and a contrastive loss L2, denoted by:",1,related,1,positive
+"For example, when the memory module is omitted, the AUC score of PA-MAE on Ped2 is 97.66% while the value of MemAE and MNAD is only 91.70% and 94.30%, respectively.",1,related,0,negative
+The table shows that PA-MAE often outperforms MemAE and MNAD.,1,related,0,negative
+"After calculating the PSNR of each frame in the test video, this paper normalized the PSNR of all frames in the test video into [0,1] following previous work[3-7][9][13], and used the following formula to calculate the normal score of each frame: ˆ ( , ) min ( ) 1 max min PSNR t t PSNR S t PSNR PSNR     (12)",1,related,1,positive
+"The relationship between mf , motion
+decoder ( )mE  , and predicted increment diagram Î generated by the incremental fusion prediction module is as follows:
+ˆ ( )m mI E f  (4)
+The neural network structure of the motion decoder is as follows: In this paper, modifications are made to the decoder structure proposed by Park et al.[5], including deletion of skip-connection operation and cancellation of all operations that fuse the intermediate features of the encoder in the decoder.",1,related,1,positive
+"For continuous frame sequences 1I , 2I , 3I and 4I , the shared encoder is  sE  , and the following relation exists:
+Proc. of SPIE Vol. 12454 124540D-2
+( ) 1, 2,3,4i s if E I i  (2)
+The neural network structure of the shared encoder is as follows: In this paper, the encoder structure proposed by Park et al.[5] is modified as follows: (1) The number of input channels of the encoder is changed to 3, so that the encoder encodes a frame image with the number of channels 3 separately each time; (2) BatchNorm layer and ReLU layer are added to the last convolutional layer of the encoder, which can ensure that all feature representations finally obtained have similar distribution and ensure that subsequent incremental calculations are consistent; (3) The output of the intermediate process is retained, but only the output of the intermediate process of the fourth frame is retained, so as to help the appearance decoder rebuild the fourth frame by integrating the underlying features of the encoder with the structure of skip-connection.",1,related,1,positive
+"Unlike MemAE [19] and LMCNet [29], we utilize a memory module with new update and query schemes in prototype branch inspired by MNAD [15] to avoid excessive restrictions on representing normal patterns.",1,related,1,positive
+"signed based on autoencoder [15], [18], [19].",1,related,1,positive
+We design the prototype branch to memorize the prototype features with a memory module from whole training videos inspired by MNAD [15] and consider the prototypes as global normality.,1,related,0,negative
+"To mitigate the drawback of traditional AEs, we leverage a memory module to recognize the diversity of normal patterns and reduce the generalizability of AE to abnormal signals as inspired by the work from [46, 47].",1,related,1,positive
+"For comparison, we apply MNAD-P w/o Mem [30] as our baseline to learn the semantic pool for video anomaly prediction and obtain the results of 71.3% on UCSD Ped2 [18] and 67.5% on CUHK Avenue [24].",1,related,1,positive
+"For comparison, we apply MNAD-P w/o Mem [30] as our baseline to learn the semantic pool for video anomaly prediction and obtain the results of 71.",1,related,1,positive
+"Compared to theMNAD-P w/o Mem [30], our method achieves better performance by replacing the encoder with the proposed CSE.",1,related,0,negative
+"• We also combine the proposed CSE and a simple decoder as an AE, similar to MNAD-P w/o Mem [30], to detect anomalies, which exhibits strong competitiveness with low complexity and small computational cost.",1,related,1,positive
+"In addition, we also give the results of the video anomaly detection task through the channel-selected shift encoder (CSE) and decoder, similar toMNAD-Pw/oMem [30].",1,related,1,positive
+"Note that EPAP-Netv0 is our baseline, MNAD-P w/o Mem [30].",1,related,1,positive
+"Following the popular evaluation settings in the video anomaly detection community [8, 11, 17, 27, 32, 36], we report the area under the receiver operating characteristics curve (AUC) to evaluate the performance of the proposed framework.",1,related,0,negative
+"The backbone of our framework is a U-Net model [25], from which we remove the ReLU activation functions of the encoder and decoder since they restrict the partial feature representation [14].",1,related,1,positive
+"Inspired by the MNAD reconstruction method [14], Our approach adds an encoder II to the network structure, retaining skip connections and batch normalization of per-layer convolution, while employing a novel memory update policy.",1,related,1,positive
+"In this article, we equip it on the MNAD [74] model, which is still denoted SSPCAB.",1,related,1,positive
+"As we can see, ST-AE and MNAD score lower in AUC than the proposed method, although they achieve a high value on public datasets such as UCSD [40] and ShanghaiTech [41].",1,related,0,negative
+"⋯ ( ) M MCA = CA + CA + + CA / , i i i i 1 2 (12)",1,related,1,positive
+"In addition, in order to make prototypes have the characteristics of compactness and diversity, we follow the work [31] using feature compaction loss and feature separation loss to constrain prototypes.",1,related,1,positive
+"To detect whether a frame is anomalous or not, we use PSNR to calculate the abnormal score [2] [3] [5] [7] [13].",1,related,0,negative
+"According to the previous work [1] [5] [13], we calculate the Area Under Curve(AUC) of the Receiver Operation Characteristic(ROC), and compare it with hand-crafted based method [15] [20], prediction-based method [5], convolution LSTM based method [16] [17] [21], memory-based method [2] [13], and two-stream based method [1] [3] [4] [7].",1,related,1,positive
+"We compare our method with well-designed state-of-the-art methods including Stacked RNN [36], ConvAE [14], AE [37], MemAE [37], and MMNP [38].",1,related,1,positive
+"In addition, we note that our approach is different from the method proposed by Astrid et al. (2021a), since this related method aims to reconstruct unmodified frames from pseudo-abnormal frames without changing the learning procedure, i.e. without reversing the gradients, as we do.",1,related,1,positive
+"Dataset Future Frame Prediction [79] MLEP [78] MNAD [114]
+Street Scene [123] 3130 48000* 37 Subway Entrance [1] 1000 1000* 43 UCF-Crime [150] 2105 10000* 2
+*: In MLEP, the training process gets randomly video snippets as input, so we can only get the number of iterations needed to obtain the result.",1,related,1,positive
+"Street Scene [123] Subway Entrance [1] UCF-Crime [150] Method
+AUC EER AUC EER AUC EER
+Future Frame Prediction [79] 56.53 46.14 71.72 32.22 66.53 38.67 MLEP [78] 53.46 30.49 77.30 46.63 55.08 47.05 MNAD [114] 57.25 44.36 69.37 35.69 65.53 39.69
+number of epochs and iterations with the best result of each method showed in Table 12.",1,related,1,positive
+"We achieve 75 fps for anomaly detection with a GeForce GTX TITAN X, faster than other state of the art methods with the same setting [18].",1,related,0,negative
+"We also compare our method with the state-of-the-art video prediction methods, including FFP, latent space autoregression (LSA) [47], memory-guided normality method (MNN) [48], ADL [20], deep multi-branch mask network (DMMNet) [49], future frame prediction network (F2PN) [50] and non-local U-Net (NU-Net) [51].",1,related,1,positive
+"Within our best knowledge, we compare our AMSRC with stateof-the-art methods, including: (1) classic video anomaly detection methods: MPPCA [10], MPPC+SFA [19], and MDT [19]; (2) reconstruction-based methods: ConvAE [8], ConvLSTM-AE [17], MemAE [7], andMNAD-R [21]; (3) prediction-basedmethods: FramePred [13], MNAD-P [21], and VEC [31]; (4) hybrid and other methods: Stacked RNN [18], AMC [20], AnoPCN [29], AMMC-Net [3], and HF2-VAD [14].",1,related,1,positive
+"Performance drops of FFPN [18] with adversarial ShanghaiTech dataset (top), MNAD [23] with adversarial Avenue dataset (middle), MOVAD [7] with adversarial Avenue dataset (bottom).",1,related,1,positive
+"(iii) Finally, we used our new datasets simulating the Wi-Fi deauthentication attack to evaluate performance of several state-of-the-art DNNbased anomaly detection methods: Future Frame Prediction [18], Memory-guided Normality for Anomaly Detection (MNAD) [23], Modular Online Video Anomaly Detector (MOVAD) [7].",1,related,1,positive
+We notice that the AUC drops from 0.855 to 0.795 for the FFPN approach and from 0.885 to 0.819 for the MNAD model.,1,related,1,positive
+"In this section, we evaluate the performance of existing state-of-the-art approaches, namely the Future Frame Prediction (FFPN) [18], Memory-guided Normality for Anomaly Detection (MNAD) [23], and Modular Online Video Anomaly Detector (MOVAD) [7] on the generated adversarial datasets.",1,related,1,positive
+"More specifically, we neither use the normal class annotations as in one class classification (OCC) approaches [12, 37, 54], nor binary annotations used by the weakly supervised anomaly detection systems [50,67,69,74].",1,related,1,positive
+"Similarly to [11, 12], we incorporate a memory block in our framework in order to model diverse normality patterns.",1,related,1,positive
+"Contrarily to [12], we incorporate a third term LOLE that adds orthogonality constraints within the memory space.",1,related,1,positive
+We also use the same triplet loss Ltr introduced in [12].,1,related,1,positive
+"To ensure the comparability between different methods, we calculate AUC for the frame-level prediction [4,5,7].",1,related,1,positive
+"Following [2, 11, 4, 7, 5, 10, 9, 8], we normalize PSNR(Pt,Pt) of each video clip to the range [0, 1] to obtain the final normality score St.",1,related,1,positive
+"We use SGCN’s Shi et al. (2021a) TP model architecture, and follow the loss function and anomaly scoring function designed by 4 stat-of-the-arts AD methods: MNAD Park et al. (2020), P-NET Zhou et al. (2020), RSRAE Lai et al. (2020), and GEPC Markovitz et al. (2020), and thus construct some trajectory ADmodels.",1,related,1,positive
+"C. Wang, C. Liang, X. Chen, H. Wang: Preprint submitted to Elsevier Page 8 of 14
+In addition, we analyze 4 state-of-the-arts stochastic TP models, including Social-STGCNN Mohamed et al. (2020), STAR Yu et al. (2020), STGAT Huang et al. (2019) and SGCN Shi et al. (2021a).",1,related,1,positive
+"In order to evaluate the proposed method, we compare the AUC of the proposed method with Conv-AE [8], Stacked RNN [7], MemAE-nonSpar [2], Frame-Pred [5], MemAE [2] and MNAD [4] on the ShanghaiTech dataset.",1,related,1,positive
+"In order to evaluate the proposed method, we compare the AUC of the proposed method with MPPCA [14], MPPC+SFA [11], MDT [11], Unmasking [15], Conv-AE [8], ConvLSTMAE [17], Stacked RNN [7], Frame-Pred [5], MemAE [2] and MNAD [4] on the UCSD Ped1 dataset.",1,related,1,positive
+"Besides, we use a variable r as the initial weight of adaptive fusion network with FC(2R)
+4. https://pyod.readthedocs.io/en/stable/, https://github.com/ 7fantasysz/MSCRED,https://github.com/cvlab-yonsei/MNAD,https: //github.com/Vniex/BeatGAN, https://github.com/d-ailin/GDN
+→ BN → Sigmoid → Multiply.",1,related,1,positive
+"We present case studies of MNAD, UODA and our method AMSL as shown in Fig.",1,related,1,positive
+"0
+0.2
+0.4
+0.6
+0.8
+1
+F 1
+OCSVM ConvLSTM-COMP MNAD-R AMSL
+Fig.",1,related,1,positive
+"We compare the performance of four methods: OCSVM, ConvLSTM-COMPOSITE, MNAD-R and AMSL.",1,related,1,positive
+"Each column is the instance whether is correctly detected by our method AMSL, MNAD and UODA.",1,related,1,positive
+"In
+10
+Normal AbnormalNormal AbnormalNormal Abnormal
+UODA:
+Ours:
+MNAD:
+UODA:
+Ours:
+MNAD:
+UODA:
+Ours:
+MNAD:
+UODA:
+Ours:
+MNAD:
+UODA:
+Ours:
+MNAD:
+UODA:
+Ours:
+MNAD:
+Ac ce le ra tio
+n
+Time
+Ac ce le ra tio
+n
+Time
+Ac ce le ra tio
+n
+Time
+Ac ce le ra tio
+n
+Time
+Ac ce le ra tio
+n
+Time
+Ac ce le ra tio
+n
+Time
+Fig.",1,related,1,positive
+"We compare our methods with the existing state-of-the-art approaches: FFP-MC [11], DAML [9], MemAE [4], and MNAD [16].",1,related,1,positive
+", anatomical structures) across persons, we incorporate a memory bank [21] M ∈ R to store the common patterns.",1,related,1,positive
+"To compare our methods to the rapidly developing field of algorithms for AD in surveillance videos, we choose to run the Memoryguided Normality for Anomaly Detection (MNAD [7]) method on our dataset.",1,related,1,positive
+"For the anomaly detection task, we evaluate our methods on a memory-guided autoencoder network from [24].",1,related,1,positive
+"Since [24] deals with image and video data, we change the network structure for the network anomaly detection.",1,related,1,positive
+"The total loss function consists of the prediction loss Lpred, embedding loss Lembed, the so-called commitment loss [26] Lcommit and feature separatedness loss [18] Lsep.",1,related,1,positive
+"Our method is most similar to the memory-augmented autoencoder [18], where the features at the bottleneck are appended to the closest entries from a learnt codebook containing a small number of codes.",1,related,1,positive
+"Following [18] we remove the last batch normalization layer and the last ReLU activation layer, because ReLU cuts off negative values, possibly restricting the diverse feature representation.",1,related,1,positive
+"[18] that (1) the size of the bottleneck of the method is twice as big as the input, hence the model could potentially copy the input when reconstructing and (2) the codebook could simply be ignored by the decoder as it has access to raw bottleneck features.",1,related,1,positive
+"The ten methods are Frame-Pred [1], MPED-RNN [2], w/Mem [67], ST-GCAE [68], Multi-",1,related,1,positive
+"Qualitative results for future frame prediction of (top to bottom): w/ Mem [67] model, MPED-RNN [2] model and our HSTGCNN model.",1,related,1,positive
+"To comprehensively compare the state-of-the-art methods on the Corridor dataset, we re-implement two outstanding approaches MNAD [27] and MPN [29] (marked with †) on Corridor along with other datasets using their official codes and settings.",1,related,0,negative
+"Quantitatively, under the circumstance (c), the average AUC of LLSH is 87.5%, surpassing MNAD (82.3",1,related,0,negative
+From the results in (a) and (b) we can see that LLSH outperforms MNAD and MPN in 8 scenes consistently.,1,related,1,positive
+"We compare two frame-level competitive methods MNAD [27] and MPN [29] with our LLSH under three circumstances: (a) training and testing models in each single scene, (b) computing average result of the first N scenes obtained in (a), and (c) training and testing models in the first N scenes.",1,related,1,positive
+"To be specific, the average absolute AUC of LLSH is 86.1%, outperforming MNAD and MPN by 2.5% and 4.8%, respectively.",1,related,0,negative
+"Therefore, we compare the scalability of MNAD [27], MPN [29] and the proposed LLSH for newly added scenes.",1,related,1,positive
+Our approach is different as we do not utilize any additional component and solely rely on the reconstruction based AEs.,1,related,0,negative
+"Finally, following [5, 24, 35], the anomaly score St is obtained using min-max normalization of Pt as: St = 1− Pt −mint(Pt) maxt(Pt)−mint(Pt) , (10)",1,related,1,positive
+"One way to tackle the OCC problem is by using a deep autoencoder (AE) trained to reconstruct normal data [9, 10, 29, 30, 35, 58].",1,related,0,negative
+The contributions of this work are threefold: 1) We propose a pseudo anomaly based novel method of encouraging only normal data reconstructions to train AEs in the OCC setting.,1,related,1,positive
+"We performed micro-level evaluation, as done in [9, 30], where we concatenate all the sequence and learned the parameters for",1,related,1,positive
+"come this drawback, memory-augmented auto-encoders [30, 10] are proposed.",1,related,1,positive
+"One common way to tackle the OCC problem is by using a deep autoencoder (AE) [8, 45, 39, 4, 21, 29, 20, 35, 7].",1,related,1,positive
+"ey also se ee arc itect res to lear a co resse re rese tatio for t e trai i g ata, by re ci g t e ber of i e its [60].",1,related,1,positive
+"We adopt the same network architecture in [22, 37] as the backbone of AE to facilitate a fair comparison.",1,related,1,positive
+"From top to bottom, we show the sampled video frames, ground-truth abnormal sections (green regions are abnormal), result of MNAD-R [38], result of MNAD-P [38], result of VEC-VAD [47] and result of HF(2)-VAD.",1,related,1,positive
+"We compare our proposed HF2-VAD with state-of-the-art methods, including (1) reconstruction-based methods: Conv-AE [11], ConvLSTMAE [31], GMFC-VAE [7], MemAE [8] and MNADR [38]; (2) prediction-based methods: Frame-Pred.",1,related,1,positive
+"For saving space, we do not show predicted frames by VEC and MNAD-P, but instead show the difference maps
+between the ground-truth and the predicted frames by HF2VAD, VEC and MNAD-P in the last three columns respectively.",1,related,1,positive
+"We compare our proposed HF(2)-VAD with state-of-the-art methods, including (1) reconstruction-based methods: Conv-AE [11], ConvLSTMAE [31], GMFC-VAE [7], MemAE [8] and MNADR [38]; (2) prediction-based methods: Frame-Pred.",1,related,1,positive
+"Inspired by [8, 38], we design a Multi-Level Memoryaugmented Autoencoder with Skip Connections (MLMemAE-SC) for optical flow reconstruction.",1,related,1,positive
+"We evaluate our framework on threewidely used public video anomaly detection datasets, i.e., UCSD Ped2 dataset [13] 1, CUHK Avenue dataset [16] 2, and ShanghaiTech Campus (SH-Tech) dataset [18] 3.",1,related,1,positive
+"Finally, our
+proposed CT-D2GAN framework achieves the best performance on UCSD Ped2 and SH-Tech, and close to the best performance in CUHK [22].",1,related,0,negative
+"To test the effectiveness of our proposed cluster-based memory module, Table III lists the results of MemAE and AE+memory.",1,related,1,positive
+"Besides, we compare our methods with another memory augmented AE MemAE [19].",1,related,1,positive
+"We compare the frame-level AUC of our model with those of nonprediction-based methods [13, 28, 39, 42, 40, 33, 12, 15, 34, 49, 51, 10, 11] and prediction-based methods [22, 43, 32, 34].",1,related,1,positive
+"Following the method of many related studies [6, 12, 13, 21, 22, 28, 34, 40], we define the final normality score St by normalizing PSNR(Pt,Pt) of each video clip to the range [0, 1].",1,related,1,positive
+"(15) D̂(Qt,Mp) = D(Qt,Mp)−mint(D(Qt,Mp)) maxt(D(Qt,Mp))−mint(D(Qt,Mp)) (16) In the RGB color space, according to [11, 12], we calculate the peak signal-to-noise ratio (PSNR) between the predicted frame Ît and its ground truth It, and normalize PSNR:",1,related,1,positive
+"Following [11, 12], we input a video clip with consecutive t − 1 frames to the encoder, and the decoder can predict the t-th frame.",1,related,1,positive
+"Similar to [11, 12], we use 2 norm to calculate the mean square error between the predicted frame Ît and its ground truth It.",1,related,1,positive
+"To show the effectiveness of our AMMC-Net, we compare our method with different prediction-based method (Liu et al. 2018), memory-based method (Gong et al. 2019; Park, Noh, and Ham 2020) and two-stream-based method (Prawiro et al. 2020).",1,related,1,positive
+"After that, we send the converted 2D feature map to the Memory [10] Module.",1,related,1,positive
+"After completing the Memory [10] operation, we send the feature map to the 2D Decoder Module, The 2D decoder up-samples the obtained features, and combines the features directly output from the encoder through skip connections, and fmally generates the predicted value lt through three up­ sampling.",1,related,1,positive
+"On the other hand, inspired by [10], We build a 2D convolutional decoder to predict the image while achieving faster speed.",1,related,1,positive
+"Following the standard memory network [8], we use the compactness loss and separateness loss to conduct a sparse effect for both feature space as well.",1,related,1,positive
+(denoted by *) of Frame-Pred [6] and Mem-Guided [8] on new testing set.,1,related,1,positive
+"We adopt the same network architecture in [22, 37] as the backbone of AE to facilitate a fair comparison.",1,related,1,positive
+"Similar to previous methods [39, 64, 26, 25, 51, 19, 1] the frame-level area under the curve (AUC) is exploited for evaluation the performance of our method on Avenue, ShanghaiTech, UCSD-Ped2, ADOC, and Street Scene datasets.",1,related,1,positive
+"Our method RTFM achieves superior performance when compared with previous SOTA unsupervised learning methods [15, 27, 30, 41, 70] and weaklysupervised approaches [62, 74, 78].",1,related,1,positive
+"Therefore, we don’t compare our method with other anomaly detection algorithms which are based on original data of Shanghai Tech [30], such as [20], [21], [30], [31].",1,related,1,positive
+he image- and video-based AUC AE-Conv2D [6]y 0.609 TSC [64]y 0.679 Stack RNN [64]y 0.680 AE-Conv3D [65]y 0.697 MemAE [20]y 0.712 LSA [39] 0.725 ITAE [41] 0.725 FFP+MC [66] 0.728 Mem-Guided (w/o Mem.) [67] 0.668 Mem-Guided (w/ Mem.) [67] 0.705 MemAE-nonSpar [20] 0.688 MemAE [20] 0.712 Clustering-Driven [68] 0.733 MOCCA (s) 0.730 MOCCA (h) 0.725 yValues reported in [41] TABLE VI AUC VALUES FOR THE SHANG,1,related,1,positive
+"We further compare our method with the state-of-the art approaches [3], [4], [5], [8], [10], [12], [15], [21], [35], [37] on the ShanghaiTech data set, presenting the corresponding results in Table 2.",1,related,1,positive
+"Obviously, our method has achieved the best results on UCSD-ped2 dataset, compared with the same object detection algorithm FPN-AE-SVM [15], our results are improved by 1.5%, compared with the algorithms MemAE [14] and P w/ MemAE [20] using memory modules, our results are also greatly improved, because there are more targets per frame in this data set, and the abnormal events are a small number of bicycles and cars, skateboards, and the normal mode can be well learned through spatial context information fusion to check out the abnormal target.",1,related,0,negative
+"To evaluate the results of ABD, during inference, we use average area under curve (AUC) [10].",1,related,1,positive
+Detailed description can be found in [10].,1,related,0,negative
+"As a result, the AUC is boosted by 4.4%.",1,related,0,negative
+Experimental results show that our method achieves AUC=76.0% on Northking2022.,1,related,0,negative
+"Since our approach is derived from an memory-based autoencoder inspired by anomaly detection, we also investigate other unsupervised models for anomaly detection, such as an autoencoder(AE) [49], a variational autoencoder(VAE) [50], a memory-augmented autoencoder(MemAE) [18] and two memory-based models (MAEP [43] and LMN [14]).",1,related,1,positive
+"1) Read: Different from [5], [9], which use cosine similarity to retrieve the appropriate memory items, we distribute the input data to each memory item.",1,related,1,positive
+",n and use them as queries to read the scene features in M, as the reading operation [16].",1,related,1,positive
+"Inspired by [33, 35], we design the following composite operation (equation (11)).",1,related,1,positive
+"Inspired by the memory network [45, 41, 28, 35], we adopt a similar memory update strategy for prototypes.",1,related,1,positive
+"We look at the typical reconstruction based comparison (MNAD_recon), as well as the prediction approach (MNAD_pred), using the preceding four consecutive frames to predict the future frame.",1,related,1,positive
+"We can see that the MSE for the CAE, VQVAE2 and MNAD_recon increases the farther away the test data goes from the training data.",1,related,1,positive
+"Our method MTN-KMIL achieves superior performance when compared with previous SOTA unsupervised learning methods [14, 25, 27, 37, 65] and weaklysupervised approaches [54, 66, 70].",1,related,1,positive
+"…results to classic and state-of-the-art methods on both USCD datasets (Ped1 and Ped2) as in Table 7, we notice that both C3D and AE3D methods for learning representations achieved remarkable results on Ped2, specially regarding AUC comparisons even when compared to recent work (Park et al., 2020).",1,related,1,positive
+"When comparing C3D and AE3D results to classic and state-of-the-art methods on both USCD datasets (Ped1 and Ped2) as in Table 7, we notice that both C3D and AE3D methods for learning representations achieved remarkable results on Ped2, specially regarding AUC comparisons even when compared to recent work (Park et al., 2020).",1,related,1,positive
+"We compare our method with multiple existing methods [1], [18], [42], [43], [45]–[47], [49]–[55].",1,related,1,positive

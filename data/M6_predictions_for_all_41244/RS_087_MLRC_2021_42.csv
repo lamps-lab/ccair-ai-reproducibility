@@ -1,0 +1,126 @@
+text,target_M6_predict,target_predict_M6_label
+"To accurately measure the model’s dependence on shortcut features and guide its reliance on them, we borrow and revise the feature attribution strategy based on counterfactual analysis [18, 46], which measures the importance of shortcut features by counterfactually changing them:",2,positive
+"Second, most previous methods focus on images, where the resulting canonical inputs are individually interpretable and difficult to aggregate [29].",1,neutral
+"The work of (Lang et al. 2021) proposes a training procedure, which incorporates the classifier model for a StyleGAN to learn a classifier-specific StyleSpace to explain a classifier.",1,neutral
+[21] trained a GAN to explain attributes that underlie classifier decisions.,1,neutral
+"Moreover, as opposed to [21] and [31], our method does not require GAN training and can be applied to any off-the-shelf GAN and discriminative model.",2,positive
+"Domain Adaptation: Our approach builds on advances in domain-adaptation and style-transfer, developed to allow for the differential manipulating a style while preserving other content [4, 5, 18, 20].",2,positive
+"Interpretation and manipulation of the GANs input space, or the latent style space, has been a subject of extensive research [15, 49, 42, 45, 22].",1,neutral
+"Moreover, [22] uses style space to explaining and interpret the decisions made by attribute classifiers.",1,neutral
+"Example-based explanation techniques have recently become popular within visual decision-making for image classification [20, 35].",1,neutral
+"Recently, [13] used StyleGAN [12] to learn a target-model-dependent style/attribute space, which allows a human to interpret the target models’ behavior in terms of attributes.",1,neutral
+We also did not compare with [13] because their method requires training a separate model on StyleGAN’s original training data for each target model.,0,negative
+Counterfactual explanations may reveal the underlying factors of variation that a DL model considers for its decisions.(5) Although different generative DL models exist (see Bond-Tayler et al.,1,neutral
+"performed a user study using Amazon Mechanical Turk to evaluate the fidelity of semantics learned by their StylEx model.(5) However, an approach including human judgment is usually subjective, not reproducible, costly, and there are rarely enough participants for significant results.",1,neutral
+"However, an approach including human judgment is usually subjective, not reproducible, costly, and there are rarely enough participants for significant results.(5) For instance, Lang et al.",1,neutral
+"many practical applications such as Image Synthesis [39], Domain Adaptation [20], Style Transfer [21, 32] and Interpretability [31] to name a few.",1,neutral
+[25] train a transformation network to combine the latent code with the semantic attributes.,1,neutral
+"StylEx [59] and C3LT [66] are two recent methods, leveraging a GAN to produce the explanations.",1,neutral
+"Counterfactual visual explanations transform an image of class A so as to elicit its classification into the counter class B [38], [56], [57], [58], [59], [60].",1,neutral
+"Similarly, [Lang et al., 2021] trains an external StyleGAN as an explainer for a visual classifier.",1,neutral
+"Another limitation of our method is the fact that the level of detail, and thus, the level of realism, of the produced counterfactuals rely on the quality of the generative model of the VAE, which is known to be inferior to other types of generative models such as GANs.",1,neutral
+"The most widely used generative models are Generative Adversarial Networks
+(GANs) (Goodfellow et al., 2014) and Variational AutoEncoders (VAEs) (Kingma and Welling, 2014).",1,neutral
+"This last remark leads us to a perspective: all of the techniques presented on this paper could be adapted to any generative model, such as GANs or Normalizing Flows (Rezende and Blei, 2015) or more sophisticated VAE architectures (Dai and Wipf, 2019; Larsen et al., 2016).",2,positive
+"Several counterfactual explanation methods already use GANs (Lang et al., 2021; Liu et al., 2019) and even diffusion models (Sanchez and Tsaftaris, 2022).",1,neutral
+"Then, we borrow and revise the feature attribution strategy of counterfactual analysis (Lang et al. 2021; Zhang, Wang, and Sang 2022) to measure the importance of proxy features by counterfactually changing the proxy features:
+αc = Yc(x, pb)− Yc(x, anchor) (6) Where αc indicates the importance of…",2,positive
+"Then, we borrow and revise the feature attribution strategy of counterfactual analysis (Lang et al. 2021; Zhang, Wang, and Sang 2022) to measure the importance of proxy features by counterfactually changing the proxy features:",2,positive
+"In contrast, we train a GAN-based counterfactual explainer [58, 33] to derive CAD.",1,neutral
+"Following previous work [33, 57, 58], we design the PCE to satisfy the following three properties:",2,positive
+"We derived counterfactuals using a progressive counterfactual explainer (PCE) that create a series of perturbations of an input image, such that the classification decision is changed to a different class [57, 33].",1,neutral
+"Recently, [26] trained a StyleGAN2 [24] model to discover and manipulate class attributes.",2,positive
+"Consequently, a disentangled StyleSpace was proposed for finding the attributes that determine classification (Lang et al., 2021).",1,neutral
+"Following recent advancements in image synthesis quality [21–24], many works utilized the latent space of pretrained generative adversarial networks (GANs) to perform a variety of image manipulations [3, 15, 30, 36, 49, 50].",1,neutral
+"From figure 1, it is evident that GANs trained with the FFHQ dataset are biased towards generating more faces in the age group ”20-29” and mostly ”White” faces.",0,negative
+"Our observations from the analysis of the results are as follows : (Observation-1 is drawn from experiment-1 and observations-2,3,4 were drawn from experiment-2)
+• Observation-1: GANs are biased towards age group ”20-29” and ”White” faces.",0,negative
+"Our main contributions in this research are as follows :
+• Result-1: We observed that GANs trained on FFHQ dataset exhibit bias for the ”age” and ”race” protected attributes.",2,positive
+"However, existing models (GANs) trained with FFHQ dataset [17] are prone to bias and fairness issues.",1,neutral
+"Hence, it is important to debiase GANs before using them in any application.",1,neutral
+"Keywords: Bias, Fairness, GANs, Face Verification, Synthetic Data",1,neutral
+"In this work, we analyze bias and fairness of GANs [18] and their impact on face verification systems.",1,neutral
+"Generative Models such as Generative Adversarial Networks (GANs) [9,29,2] are basic building blocks in most of image recognition architectures.",1,neutral
+"In future, we aim to investigate methods and techniques for debiasing GANs with respect to different critical attributes.",2,positive
+GANs are popular networks that are very successful in generating faces of good perpetual quality.,1,neutral
+GANs can be used to obtain synthetic data where data is scarce and in scenarios where privacy is important.,1,neutral
+", StyleGAN2 [19] and StyleGAN3 [17], which is one of the most applied unconditional GANs in various downstream tasks [33,20,2].",1,neutral
+[17] talks about explainability on images using a classifier.,1,neutral
+"In the face image domain, a recent study [37] shows that gender classifier is biased by multiple attributes, such as Heavy Makeup and Wearing Lipstick.",1,neutral
+"[37] find that gender classifiers are biased with multiple independent bias attributes, including wearing lipsticks, eyebrow thickness, nose width, etc.",1,neutral
+"[37,42] discovers unknown biases without labels.",0,negative
+"• The ability to produce counterfactual images (e.g., Shetty et al., 2019; Singla et al., 2020; Xiao et al., 2021; Leclerc et al., 2021; Li & Xu, 2021; Lang et al., 2021; Plumb et al., 2022; Wiles et al., 2023).",2,positive
+"Also, VCEs have been generated using GANs [20] (no models/code is available) but the advantage of our VCE is that they depend only on the classifier and thus there is no danger that the prior of the GAN “hides” undesired behavior of the classifier.",2,positive
+"Counterfactual explanation methods [18, 19, 20, 21] help in analysing a classifier by creating several carefully constructed what-if scenarios by perturbing specific features, but are also example-based.",1,neutral
+"Among the different forms of explanations, counterfactual explanations are recently gaining attention [9, 10, 16, 17].",1,neutral
+"In case of generating counterfactual explanations for images, black-box models are usually explained via twin-surrogate models to provide visual explanations with desired latent properties [27, 26, 25, 28, 29, 17].",1,neutral
+"…models to explain what a classifier learnt still by pointing out already perceptible or known features (that were actually used to annotate the pictures), but, to our knowledge, never evaluated on invisible cell phenotypes in the context of various assays (Lang et al. 2021; Singla et al. 2021).",1,neutral
+"…in image generation and translation have been proposed, including recent work explaining black box classifiers, but, to our knowledge, never with the aim of explaining invisible changes between conditions (Choi et al. 2018; Baek et al. 2020; Zhu et al. 2017; Lang et al. 2021; Singla et al. 2021).",1,neutral
+"Some recent work has used generative models to explain what a classifier learnt still by pointing out already perceptible or known features (that were actually used to annotate the pictures), but, to our knowledge, never evaluated on invisible cell phenotypes in the context of various assays (Lang et al. 2021; Singla et al. 2021).",1,neutral
+aim of explaining invisible changes between conditions (Choi et al. 2018; Baek et al. 2020; Zhu et al. 2017; Lang et al. 2021; Singla et al. 2021).,2,positive
+"Moreover, some prior work experiment with incorporating the classifier [22] or contrastive language-image models [39] into GAN to accommodate attributes into the latent space.",1,neutral
+"Nevertheless, a few works [77, 81, 86, 89] undertake small user studies (9 ≤ N ≤ 60) on a relatively limited set of generated counterfactuals.",1,neutral
+[86] train a StyleGAN with a classifier specific style space.,1,neutral
+"These works mostly use a set of human-specified concepts to analyze model behavior, however, there is an increasing interest in automatically discovering the concepts that are used by a model (Yeh et al., 2020; Ghorbani et al., 2019; Lang et al., 2021).",1,neutral
+"There is further increasing interest in automatically discovering the concepts that are used by a model (Yeh et al., 2020; Ghorbani et al., 2019; Lang et al., 2021).",2,positive
+"[34] Oran Lang, Yossi Gandelsman, Michal Yarom, Yoav Wald, Gal Elidan, Avinatan Hassidim, 262 William T Freeman, Phillip Isola, Amir Globerson, Michal Irani, et al.",1,neutral
+"On the other hand, there have been studies (Li & Xu, 2021; Lang et al., 2021; Krishnakumar et al., 2021) that identify the bias attribute of the training dataset without human supervision.",1,neutral
+"On the other hand, there have been studies [42, 34, 32] that identify the bias attribute 402 of the training dataset without human supervision.",0,negative
+[43] to test what characteristics of an image directly influence hypodescent and valence bias.,1,neutral
+[43] train a GAN to explain the decisions of an image classifier by discovering the visual attributes,1,neutral
+"Very recently visual counterfactuals based on generative models have been proposed [36, 47, 60] but no code has been released so far.",1,neutral
+"Generative models can also be used for explaining the attributes that are highly correlated with the model’s decision; for example, [77]",1,neutral
+"As an example, [77] uses selfattention mechanisms of transformers which enables the models to selectively focus on certain parts of their input and thus reason more effectively.",1,neutral
+"Generative models have been proposed to visualize classifiers [26, 28, 32, 37, 44].",1,neutral
+"The methods in [26, 44] rely on StyleGAN [22] that generate high quality explanations, but lack substantial quantitative experiments on common baselines, and rely on search algorithms to find the relevant latent codes.",1,neutral
+"Having a single model that provides control over different object attributes has received substantial attention from the research community [7, 18, 20].",1,neutral
+"Disentangled Representation Unsupervised disentangled representation learning focuses on training generative models [11,24] with different latent dimensions interpreting independent factors of data variations, and most of such models are based on VAE [5,14,21,23,26] and GAN [43,63], enabling many downstream applications [27,31,55].",1,neutral
+StyleEx [30] uses the latent space of a StyleGAN [26] to identify the visual attributes that underlie the classifier’s decision.,1,neutral
+"In computer vision, several works [5,24,25,30,31,41,46,47] used a generative model to synthesize counterfactual examples.",1,neutral
+"Further research on this architecture can be found in [Karras et al., 2020] and [Lang et al., 2021].",1,neutral
+[29] present an attractive alternative that generates new realistic examples from a style space learned with a GAN-based approach.,1,neutral
+"It has recently been shown that some latent subspaces of GANs can be directly used for image local editing without operating the feature maps [27, 29, 42, 50].",1,neutral
+[17] proposes to use attribute-specific classifiers and train a generative model to specifically explain which style channels of StyleGAN2 contribute to the underlying classifier decisions.,1,neutral
+"To address this difficulty, some recent studies consider to exploit image generation techniques to produce counterfactuals [7, 19, 30].",1,neutral
+StylEx [19] proposes to incorporate the classifier into the training process of StyleGAN and learn a classifier-specific StyleSpace.,2,positive
+"Thus, prior work has often relied on generative models [2,12,13,33,39,40,47,48,67,70] or computer simulations [59] to manipulate these sensitive attributes and check whether the perturbed instances are classified the same.",1,neutral
+"As for PE and StylEx, they perform style-based manipulations that are not well-suited to deal with images that have multiple small independent objects of interest.",1,neutral
+"Very recently, StylEx [24] trains a variant of StyleGAN2 [22] to obtain a classifier-specific disentangled style space.",2,positive
+"Methods of this stream (Shen et al. 2020; Härkönen et al. 2020; Shen and Zhou 2020; Hou et al. 2020; Tewari et al. 2020; Abdal et al. 2020; Wang, Yu, and Fritz 2021; Xia et al. 2021; Roich et al. 2021; Alaluf, Patashnik, and CohenOr 2021b; Ren et al. 2021; Lang et al. 2021; Wu, Lischinski, and Shechtman 2021; Patashnik et al. 2021) attempt to achieve controlled image synthesis by exploring the semantics in the latent space of well-trained GANs.",2,positive
+"As inversion is significantly more difficult for multiclass GANs [5, 9, 32] such as BigGAN [6], we follow prior work [9,29,65] and focus our attention on the state-of-the-art single-object GAN - StyleGAN.",2,positive
+[29] used StyleGAN to visualize counterfactual examples for explaining a pretrained classifier’s predictions.,1,neutral
+"We note that relying on generative models has recently gained traction for interpretability and score attribution purposes [Lang et al., 2021].",2,positive
+"Generative adversarial networks have gained relevance as a means to facilitate interpretability in classification tasks [Lang et al., 2021], however, training can be unstable and identifying counterfactual references is infeasible.",1,neutral
+"Although some methods [31], [32], [33], [96] use additive",1,neutral
+"Some methods [31], [32], [33], [34] use additional encoder networks to learn the inverse mapping of GANs, but their goals are to jointly train Fig.",1,neutral
+"…the dimensions with small changes in e with respect to z are discarded through a feature selection process, maximizing the sparsity of e− z. StylEx (Lang et al., 2021)5: They find a latent perturbation in a direction that maximizes the difference in the output of the classifier for the original…",1,neutral
+"For a detailed description of the role of these hyper-parameters see (Lang et al., 2021).",1,neutral
+"This last parameter is not mentioned in the Stylex (Lang et al., 2021) paper, but it can found as a parameter under the name shift_size in the implementation they provide.",2,positive
+"StylEx (Lang et al., 2021)5: They find a latent perturbation in a direction that maximizes the difference in the output of the classifier for the original sample and its perturbed counterpart.",1,neutral
+"Table 3 shows that DiCE (Mothilal et al., 2020) and StylEx (Lang et al., 2021) produce a high amount of these counterfactuals, while GS (Laugel et al., 2017) and Latent-CF (Balasubramanian et al., 2020) always change the classifiers prediction and thus produce none.",1,neutral
+", 2017) ✗ ✗ ✓ StylEx (Lang et al., 2021) ✗ ✗ ✓ Latent-CF (Balasubramanian et al.",1,neutral
+", 2020) and StylEx (Lang et al., 2021) produce a high amount of these counterfactuals, while GS (Laugel et al.",1,neutral
+"StylEx (Lang et al., 2021) For this method we found the best configuration was setting threshold t to 0.3 using the “Independent” selection strategy and the amount of shift applied to each coordinate to 0.8.",2,positive
+"Many explainability methods in the literature are designed for the image domain (Rodríguez et al., 2021; Joshi et al., 2018; Lang et al., 2021; Singla et al., 2019; Chang et al., 2018).",1,neutral
+StyleEx [31] uses the latent space of a StyleGAN [27] to identify the visual attributes that underlie the classifier’s decision.,1,neutral
+"In computer vision, several works [5,25,26,31,32,43,48,49] used a generative model to synthesize counterfactual examples.",1,neutral
+"This is why, for both faces models, a ResNet classifier was used to perform the AttFind algorithm.96
+This expanded latent vector w, either obtained by the encoder or StyleVectorizer, is passed on to the StyleGAN2, where97 it is transformed into the StyleSpace by a set of concurrent affine transformations to style vectors s0, ..., sn.",1,neutral
+"40 In this work, we reproduce the paper ‘Explaining in Style: Explaining a GAN in StyleSpace’ [8].",2,positive
+"[Re] Explaining in Style: Training a GAN to explain a classifier in StyleSpace
+Anonymous Author(s) Affiliation Address email
+Reproducibility Summary1
+Scope of Reproducibility2
+StylEx is an approach for classifier-conditioned training of a StyleGAN2 [6], intending to capture classifier-specific3 attributes in its disentangled StyleSpace [15].",2,positive
+"Secondary objectives involve the39 visualization and control of the impact of these features on the classifier output.40
+In this work, we reproduce the paper ‘Explaining in Style: Explaining a GAN in StyleSpace’ [8].",2,positive
+"A recent observation by [14] highlighted the disentanglement of this space (appropriately called, the86 StyleSpace) that is used to extract classifier-specific attributes.",1,neutral
+"…seem to slightly outperform the results by Wu et al. (2021) on the perceived age classifier, it does180 not seem to outperform the method posed by Lang et al. (2021).181
+4.2 Results beyond original paper182
+To investigate the impact of attribute perturbation on the quality of the183 generated…",0,negative
+"Instead of using noise to augment an example, Lang et al. (2021) present an attractive alternative that generates new realistic examples from a style space learned with a GAN-based approach.",1,neutral
+"…2014, Bach et al., 2015, Selvaraju et al., 2017], counterfactual explanations [Chang et al., 2019, Antoran et al., 2021], explanations based on pre-defined concepts [Rezende et al., 2014, Kazhdan et al., 2020, Yeh et al., 2020], and recently developed StyleGANs [Wu et al., 2021, Lang et al., 2021].",2,positive
+"These works mostly use a set of human-specified concepts to analyze model behavior, however, there is an increasing interest in automatically discovering the concepts that are used by a model (Yeh et al., 2020; Ghorbani et al., 2019; Lang et al., 2021).",1,neutral
+[29] present an attractive alternative that generates new realistic examples from a style space learned with a GAN-based approach.,1,neutral
+"A recent and promising direction is to explain model predictions using counterfactuals learned by generative models [Wachter et al., 2017, Singla et al., 2019, 2021, Lang et al., 2021].",1,neutral

@@ -1,0 +1,130 @@
+text,target_M6_predict,target_predict_M6_label
+T-DEX [13] BC-BeT [62] Tactile Only Image + Tactile Reward AVI [14] TAVI Peg Insertion 2/10 0/10 6/10 6/10 6/10 8/10 Sponge Flipping 1/10 0/10 8/10 4/10 3/10 8/10 Eraser Turning 2/10 0/10 0/10 2/10 0/10 5/10 Bowl Unstacking 1/10 0/10 5/10 0/10 3/10 9/10 Plier Picking 0/10 0/10 4/10 4/10 6/10 7/10 Mint Opening 4/10 0/10 0/10 5/10 1/10 7/10 Avg.,0,negative
+2) BC-BeT [62]: We implement and run a state-of-theart behavior cloning method Behavior Transformers.,2,positive
+"We see that BC-BeT is unable to complete any of the tasks, quickly going out of distribution and failing to recover.",0,negative
+"Inspired by the recent cross-pollination of natural language processing (NLP) techniques in offline RL (Chen et al., 2021; Janner et al., 2021; Shafiullah et al., 2022), we take a different approach.",2,positive
+"Prior work has leveraged these ideas in similar contexts (Janner et al., 2021; Shafiullah et al., 2022; Jiang et al., 2022) and we follow suit.",2,positive
+", 2021), Behavior Transformer (Shafiullah et al., 2022), and TAP (Jiang et al.",1,neutral
+"Architectures from NLP have made their way into Offline RL (Chen et al., 2021; Janner et al., 2021; Shafiullah et al., 2022), but as we have demonstrated, there is a trove of further techniques to explore.",2,positive
+"Following prior work (Dadashi et al., 2021; Shafiullah et al., 2022), we discretize the action space and use a modified byte-pair encoding (BPE) scheme (Gage, 1994; Sennrich et al.",2,positive
+"Methods like Trajectory Transformer (Janner et al., 2021), Behavior Transformer (Shafiullah et al., 2022), and TAP (Jiang et al., 2022) perform supervised learning on top of trajectory data using a discrete action-space derived from the data.",1,neutral
+"Discretization removes resolution from the action space, which will be detrimental in settings like fast locomotion that require the full range, but this may potentially be fixed by a residual correction (Shafiullah et al., 2022).",1,neutral
+"Among these approaches, we find that action-clustering-based approaches (BeT [68]) for multi-task settings, perform significantly worse.",1,neutral
+BeT [68]: We modify the Behavior Transformer architecture with language conditioning and train it in a multi-task manner.,2,positive
+"[19] for multimodal behavior cloning: the set of all action vectors present in the training split is partitioned into K clusters using k-means, and each action a is then decomposed as the sum of a cluster center and an offset, i.",1,neutral
+"The first term in the expression above is the focal loss function [20, 19], where ptrue denotes the probability output by the softmax layer for the ground truth cluster at timestep i.",1,neutral
+"There has been success addressing multi-modality by performing classification over a discretized version of the search space [8, 42, 44, 46, 47, 49], but these methods are typically less precise.",1,neutral
+"Learning robot manipulation from demonstrations Many recent work train multi-task manipulation policies that leverage Transformer architectures [1, 2, 3, 5, 23, 24] to predict robot actions from video input and language instructions.",1,neutral
+"In future work, we will extend recently proposed alternative approaches for handling multimodality such as Behavior Transformers [30] and Diffusion Policies [34] to the IFL setting and compare them to IIFL.",2,positive
+"Shafiullah et al. [30] propose Behavior Transformers, a technique that applies the multi-token prediction of Transformer neural networks [31] to imitation learning.",1,neutral
+"[30] propose Behavior Transformers, a technique that applies the multi-token prediction of Transformer neural networks [31] to imitation learning.",1,neutral
+"[39] Nur Muhammad Shafiullah, Zichen Cui, Ariuntuya Arty Altanzaya, and Lerrel Pinto.",0,negative
+"This approach has been shown to scale favorably to large models and multi-task settings [36], at times exceeding the performance of large-scale multi-task imitation learning with transformers [37, 38, 39].",1,neutral
+"To address this limitation, future research could explore integrating SGR into methods that possess multi-modal modeling capabilities [83, 84].",2,positive
+from various sources and present strong multi-modalities [30].,1,neutral
+"GAIL [26], BeT [52]) might help alleviate this issue.",0,negative
+"Some forms of distributional BC (e.g. GAIL [26], BeT [52]) might help alleviate this issue.",1,neutral
+"More recent work have explored the use of multi-modal transformers [27] to fit large amounts of demonstration data [49, 52, 56].",1,neutral
+", 2022), robot learning and behavior cloning from noisy demonstrations (Shafiullah et al., 2022; Cui et al., 2022), learning from multiple cameras (Seo et al.",1,neutral
+"Transformer-based policy architectures such as Gato [12], PerAct [55], VIMA [56], RT-1 [10], Dasari and Gupta [57], and Behavior Transformer [58] have demonstrated impressive results across a range of robotic manipulation tasks, yet make use of discretization of the input",1,neutral
+"Transformer-based policy architectures such as Gato [12], PerAct [40], VIMA [41], RT-1 [10], Dasari and Gupta [42], and Behavior Transformer [43] have demonstrated impressive results across a range of robotic manipulation tasks, yet make use of discretization of the input observations and output actions, limiting their applicability to tasks requiring precise manipulation.",1,neutral
+"Additionally, we compare against Behavior Transformer (BeT) [43], which discretizes the dataset into clusters using K-Means and uses a Transformer model to predict a cluster center and an offset, in order to handle multi-modal data.",2,positive
+"Additionally, we compare against Behavior Transformer (BeT) [58], which discretizes the dataset into clusters using K-Means and uses a Transformer model to predict a cluster center and an offset, in order to handle multi-",2,positive
+"Autoregressive model [Vaswani et al., 2017, Brown et al., 2020] represents the policy as the distribution of action, where it considers the distribution of the whole trajectory [Reed et al., 2022, Shafiullah et al., 2022].",2,positive
+"In particular, behavioral cloning has made significant progress due to modeling advances (e.g. LSTM-GMM [4], Transformers [5], Diffusion [3]).",1,neutral
+"LSTM-GMM [4], Transformers [5], Diffusion [3]).",1,neutral
+"BeT [49] also leverages Transformers as the architecture, but with key differences: (1) no action chunking: the model predicts one action given the history of observations; and (2) the image observations are pre-processed by a separately trained frozen",2,positive
+"Many works have then sought to improve BC, for example by incorporating history with various architectures [39, 49, 26, 7], using a different training objective [17, 42], and including regularization [46].",1,neutral
+"Transformer-based architectures were also researched as a policy class for task-agnostic behavior learning [6, 35].",1,neutral
+"Most prior work tries to deal with this challenge, by combining generative models, such as Variational Autoencoders (VAEs) [12, 25, 32] and Generative Pretrained Transformer (GPTs) [6, 35], with additional models and networks to explicitly encode multimodality or hierarchy.",1,neutral
+"• Conditional-Behavior Transformer (C-BeT) is a GPTlike transformer-based policy, that predicts discrete action labels together with a continuous offset vector to learn multimodal behavior [35, 6].",1,neutral
+", 2021), Behavior Transformer (BeT) (Shafiullah et al., 2022), MaskDP (Liu et al.",2,positive
+"…one-shot imitation learning, (Lynch et al., 2020; Singh et al., 2020) explore behavior priors from demos, (Chen et al., 2021; Liu et al., 2022; Janner et al., 2021; Shafiullah et al., 2022; Ajay et al., 2022; Janner et al., 2022) examine different sequence modeling strategies for policy learning.",2,positive
+"Note that multimodality is a related but orthogonal issue (Shafiullah et al., 2022), i.",1,neutral
+"Despite the recent progress (Chen et al., 2021; Florence et al., 2022; Shafiullah et al., 2022; Liu et al., 2022; Ajay et al., 2022), it remains extremely challenging to solve lowlevel control tasks such as contact-rich object manipulations by IL in a scalable manner.",2,positive
+"While theoretically sound, it is shown (Shafiullah et al., 2022) to be less practical for non-Markovian implicit models, and later explicit models outperform it.",1,neutral
+"Note that multimodality is a related but orthogonal issue (Shafiullah et al., 2022), i.e., when a unimodal estimate of the (continuous) action distribution leads to a significantly worse return.",1,neutral
+", 2020) explore behavior priors from demos, (Chen et al., 2021; Liu et al., 2022; Janner et al., 2021; Shafiullah et al., 2022; Ajay et al., 2022; Janner et al., 2022) examine different sequence modeling strategies for policy learning.",2,positive
+"Namely, Decision Transformer (DT) (Chen et al., 2021), Behavior Transformer (BeT) (Shafiullah et al., 2022), MaskDP (Liu et al., 2022) and Decision Diffuser (DD) (Ajay et al., 2022).",2,positive
+"Indicatively, a recent paper on Behaviour Transformers [17] showcased the benefits of the method on a toy navigation task that only took a simple multi layer perceptron to solve.",1,neutral
+"Recently, Shafiullah et al. (2022) proposed the behavior transformer which employs a minGPT transformer (Brown et al., 2020) to predict targets by decomposing them into cluster centers and residual offsets.",2,positive
+"Moreover, we consider energy-based models for behavior learning (IBC) (Florence et al., 2022) and the recently proposed behavior transformer (BeT) (Shafiullah et al., 2022).",2,positive
+", 2022) and the recently proposed behavior transformer (BeT) (Shafiullah et al., 2022).",2,positive
+"Given a set of demonstrations, offline imitation methods such as Behavior Cloning (BC) use supervised learning to learn a policy that outputs actions similar to the expert data and have been used extensively in robotics [57, 21, 63, 80, 43].",1,neutral
+"Similarly, the autoregressive sequence modeling objective from Equation 11 can also be instantiated to model behavioral priors [Shafiullah et al. 2022], resulting in a policy that can depend on the history of interaction π (at |st , τ<t ).",1,neutral
+"Similarly, the autoregressive sequence modeling objective from Equation 11 can also be instantiated to model behavioral priors [Shafiullah et al. 2022], resulting in a policy that can depend on the history of interaction 𝜋 (𝑎𝑡 |𝑠𝑡 , 𝜏<𝑡 ).",1,neutral
+"Inspired by the scaling success of transformers, generalist agents modeling sequences of diverse behaviors have been developed for simulated tasks [Shafiullah et al. 2022], over 40 Atari games [Lee et al. 2022], over 700 real-world robot tasks [Brohan et al. 2022], and over 600 distinct tasks with…",1,neutral
+"Inspired by the scaling success of transformers, generalist agents modeling sequences of diverse behaviors have been developed for simulated tasks [Shafiullah et al. 2022], over 40 Atari games [Lee et al.",1,neutral
+"Time-series diffusion transformer To reduce the oversmoothing effect in CNN models [49], we introduce a novel transformer-based DDPM which adopts the transformer architecture from minGPT [42] for action prediction.",2,positive
+"We systematically evaluate Diffusion Policy on 12 tasks from 4 benchmarks [12, 15, 29, 42].",2,positive
+"Diffusion Policy learns to approach the contact point equally likely from left or right, while LSTM-GMM [29] and IBC [12] exhibit bias toward one side and BET [42] cannot commit to one mode.",1,neutral
+"The baseline methods we evaluate, however, work best with velocity control (and this is reflected in the literature where most existing work reports using velocitycontrol action spaces [29, 42, 60, 13, 28, 27]).",1,neutral
+"Prior work attempts to address this challenge by exploring different action representations (Fig 1 a) – using mixtures of Gaussians [29], categorical representations of quantized actions [42], or by switching the the policy representation (Fig 1 b) – from explicit to implicit to better capture multi-modal distributions [12, 56].",1,neutral
+"We systematically evaluate Diffusion Policy across 12 tasks from 4 different benchmarks [12, 15, 29, 42] under the behavior cloning formulation.",2,positive
+"3) Multimodal Block Pushing: adapted from BET [42], this task tests the policy’s ability to model multimodal action distributions by pushing two blocks into two squares in any order.",2,positive
+"Similarly, BC-RNN and BET would have difficulty specifying the number of modes that exist in the action distribution (needed for GMM or kmeans steps).",1,neutral
+"In contrast, both LSTM-GMM [29] and IBC [12] are biased toward one mode, while BET [42] fails to commit to a single mode due to its lack of temporal action consistency.",1,neutral
+"However, suppose each action in the sequence is predicted as independent multimodal distributions (as done in BCRNN and BET).",1,neutral
+"This surprising result stands in contrast to the majority of recent behavior cloning work that generally relies on velocity control [29, 42, 60, 13, 28, 27].",1,neutral
+"We present the best-performing for each baseline method on each benchmark from all possible sources – our reproduced result (LSTM-GMM) or original number reported in the paper (BET, IBC).",0,negative
+"The challenge of modeling multi-modal distribution in human demonstrations has been widely discussed in behavior cloning literature [12, 42, 29].",1,neutral
+"[58] Nur Muhammad Mahi Shafiullah, Zichen Jeff Cui, Ariuntuya Altanzaya, and Lerrel Pinto.",0,negative
+"BC has also been applied to tasks with a multimodal action distribution [21, 58, 13].",1,neutral
+"However, BC learns from decorrelated sampled state-action pairs, and often fails to capture the temporal structure of the task and the global information of expert demonstrations (Codevilla et al., 2019; Shafiullah et al., 2022).",1,neutral
+"Noticeably, there are other approaches used for improving sample efficiency for imitation learning, such as grounding action on discrete observation space [23, 44, 50, 51].",1,neutral
+"…able to: 1) more accurately model complex action distributions (as illustrated in Figure 1); 2) significantly outperform state-of-the-art methods (Shafiullah et al., 2022) on a simulated robotic benchmark; and 3) scale to modelling human gameplay in Counter-Strike: Global Offensive - a modern,…",2,positive
+"One of our experiments uses the set up from Shafiullah et al. (2022), allowing us to compare to their reported results, including Behaviour Transformers (BeT): the K-mean+residual combined with a large 6-layer transformer, and previous 10 observations as history; Implicit BC: the official…",2,positive
+"By using diffusion models for BC we are able to: 1) more accurately model complex action distributions (as illustrated in Figure 1); 2) significantly outperform state-of-the-art methods (Shafiullah et al., 2022) on a simulated robotic benchmark; and 3) scale to modelling human gameplay in Counter-Strike: Global Offensive - a modern, 3D gaming environment recently proposed as a platform for imitation learning research (Pearce and Zhu, 2022).",2,positive
+Shafiullah et al. (2022) extended K-Means by learning an observationdependent residual that is added to the bin’s center and optimised via MSE.,2,positive
+"A further two baselines can be considered strong, more complex methods, namely K-means+Residual: as with K-means, but additionally learns a continuous residual on top of each bin prediction, trained via MSE, which was the core innovation of Behaviour Transformers (BeT) (Shafiullah et al., 2022); and EBM: a generative energy-based model trained with a contrastive loss, proposed in (Florence et al.",2,positive
+"The difference might be explained by the larger network used by Shafiullah et al. (2022) – 6 layers, and an observation history of 10 steps.",2,positive
+"…learns a continuous residual on top of each bin prediction, trained via MSE, which was the core innovation of Behaviour Transformers (BeT) (Shafiullah et al., 2022); and EBM: a generative energy-based model trained with a contrastive loss, proposed in (Florence et al., 2022) – full…",2,positive
+"However, as our goal is to learn the full distribution of demonstrations, we instead follow the setup introduced by Shafiullah et al. (2022), which ignores any goal conditioning and aims to train an agent that can recover the full set of demonstrating policies.",2,positive
+We made extensive efforts to bring performance of K-means+residual inline with that reported in Shafiullah et al. (2022).,2,positive
+Shafiullah et al. (2022) proposed a transformer based BC method that implements the KMeans+Residual approach discussed in Sec.,2,positive
+Each episode lasted 280 timesteps as in Shafiullah et al. (2022) – 98% of humans completed their assigned four tasks within this time.,0,negative
+"[66] presented a behavior transformer (BeT), which is able to learn behaviors from distributionally multimodal data.",1,neutral
+"Autonomous Driving SPLT [65] Disentangling the policy and world models ICML 2022 BeT [66] Modeling unlabeled demonstration data with multiple modes NeurIPS 2022 TransFuser [67] Fusion of intermediate features of the front view and LiDAR CVPR 2021 InterFuse [68] Safety-enhanced framework with multi-modal, view sensors CoRL 2022",2,positive
+"In particular, the BeT divides a continuous actions into two parts: a categorical
+variable denoting an ""action center"" by k-means [240] and a corresponding ""residual action""; it then uses the transformer to map each observation to a categorical distribution over k discrete action bins with the focal loss [241]:
+Lfocal(pt) = −(1− pt)γ log(pt).",1,neutral
+"To train models that can naively learn multimodal policy behaviors, Shafiullah et al. [66] presented a behavior transformer (BeT), which is able to learn behaviors from distributionally multimodal data.",1,neutral
+"(32)
+An extra head is used to predict the offset with a loss akin to the masked multitask loss [242]:
+MT-Loss(a, (〈â(j)i 〉) k j=1) = k∑ j=1 I[bac = j] · ||〈a〉 − 〈â(j)〉||22,
+(33) where I[] denotes the Iverson bracket, ensuring that the loss is only incurred from the ground-truth class of action a. Experiments conducted on CARLA showed that the BeT is able to cover all the modes of demonstration data.",1,neutral
+"401 Other works have tackled policy learning in much more complex settings like a simulated realistic 402 looking kitchen with several objects, but assume ground-truth simulator state observations instead 403 of visual inputs [31, 32].",1,neutral
+"…Chen et al. (2021a) and Janner et al. (2021) consider offline RL as supervised sequential modeling problem and following works achieve impressive success (Reed et al., 2022; Lee et al., 2022; Furuta et al., 2022; Xu et al., 2022; Shafiullah et al., 2022; Zheng et al., 2022; Paster et al., 2022).",2,positive
+"(2021) consider offline RL as supervised sequential modeling problem and following works achieve impressive success (Reed et al., 2022; Lee et al., 2022; Furuta et al., 2022; Xu et al., 2022; Shafiullah et al., 2022; Zheng et al., 2022; Paster et al., 2022).",2,positive
+", 2022), robot learning and behavior cloning from noisy demonstrations (Shafiullah et al., 2022; Cui et al., 2022), and language-conditioned RL (Guhur et al.",1,neutral
+"…learning (Chen et al., 2021a; Reed et al., 2022), vision-language navigation (Chen et al., 2021b; Shah et al., 2022), robot learning and behavior cloning from noisy demonstrations (Shafiullah et al., 2022; Cui et al., 2022), and language-conditioned RL (Guhur et al., 2022; Shridhar et al., 2022a).",1,neutral
+"Our work is most closely related to Shafiullah et al. (2022) as we build on their transformer architecture, while our unimodal baseline is a variant of Chen et al. (2021) that learns outcome conditioned instead of reward conditioned policy.",2,positive
+"As a result, we choose Behavior Transformers (BeT) (Shafiullah et al., 2022) as our generative architecture base as it can learn action generation with multiple modes.",2,positive
+"B.2 HYPERPARAMETERS LIST:
+We present the C-BeT hyperparameters in Table 6 below, which were mostly using the default hyperparameters in the original Shafiullah et al. (2022) paper:
+The shared hyperparameters are in Table 7.",2,positive
+"We use Behavior Transformers from Shafiullah et al. (2022) as our backbone architecture, building our conditional algorithm on top of it.",2,positive
+"Behavior Transformers (BeT): BeT (Shafiullah et al., 2022) is a multi-modal behavior cloning model designed particularly for tackling play-like behavior datasets.",2,positive
+"To produce a distribution over continuous actions instead of discrete tokens, C-BeT augments standard text generation transformers with the action discretization introduced in Behavior Transformers (BeT) (Shafiullah et al., 2022).",2,positive
+"Transformers for behavior learning: Our work follows earlier notable works in using transformers to learn a behavior model from an offline dataset, such as Chen et al. (2021); Janner et al. (2021); Shafiullah et al. (2022).",2,positive
+"However, as offline datasets are often collected by a mixture of policies, the true behavior policy may exhibit strong multi-modalities, skewness, or dependencies between different action dimensions, which cannot be well modeled by diagonal Gaussian policies (Shafiullah et al., 2022).",1,neutral
+", 2022), robot learning and behavior cloning from noisy demonstrations (Shafiullah et al., 2022; Cui et al., 2022), and language-conditioned RL (Guhur et al.",1,neutral
+"…learning (Chen et al., 2021a; Reed et al., 2022), vision-language navigation (Chen et al., 2021b; Shah et al., 2022), robot learning and behavior cloning from noisy demonstrations (Shafiullah et al., 2022; Cui et al., 2022), and language-conditioned RL (Guhur et al., 2022; Shridhar et al., 2022a).",1,neutral
+"Prior approaches utilize such existing data by running imitation learning (IL) (Young et al., 2020; Ebert et al., 2021; Shafiullah et al., 2022) or by using representation learning (Nair et al.",1,neutral
+"…via representation learning (Mandlekar et al., 2020; Yang & Nachum, 2021; Yang et al., 2021; Nair et al., 2022; He et al., 2021), as well as other methods for learning from human demonstrations, such as behavioral cloning methods with expressive policy architectures (Shafiullah et al., 2022).",2,positive
+", 2021), as well as other methods for learning from human demonstrations, such as behavioral cloning methods with expressive policy architectures (Shafiullah et al., 2022).",1,neutral
+"Prior approaches utilize such existing data by running imitation learning (IL) (Young et al., 2020; Ebert et al., 2021; Shafiullah et al., 2022) or by using representation learning (Nair et al., 2022) methods for pre-training and then fine-tuning with imitation learning.",1,neutral
+The sencond approach was with the BeT Architecture from Shafiullah et al. (2022).,2,positive
+"Note that PTR outperforms all other baselines including BC (finetune), BC with more expressive policy classes (BeT (Shafiullah et al., 2022), Auto-regressive), representation learning methods (Nair et al.",2,positive
+"Autonomous Driving SPLT [65] Disentangling the policy and world models ICML 2022 BeT [66] Modeling unlabeled demonstration data with multiple modes NeurIPS 2022 TransFuser [67] Fusion of intermediate features of the front view and LiDAR CVPR 2021 InterFuse [68] Safety-enhanced framework with multi-modal, view sensors CoRL 2022",2,positive
+"[66] present Behavior Transformers (BeT), which is able to learn behaviors from distributionally multi-modal data.",1,neutral
+"In order to train models that can naively learn multimodal policy behavior, Shafiullah et al. [66] present Behavior Transformers (BeT), which is able to learn behaviors from distributionally multi-modal data.",1,neutral
+"In particular, BeT divides the continuous actions into two parts: a categorical variable denoting an ""action center"" by k-means [240] and a corresponding ""residual action"", then uses the transformer to map each observation to a categorical distribution over k discrete action bins with Focal loss [241]:
+Lfocal(pt) = −(1− pt)γ log(pt), (32)
+and an extra head to predict the offset with a loss akin to the masked multi-task loss [242]:
+MT-Loss(a, (〈â(j)i 〉) k j=1) = k∑ j=1 I[bac = j] · ||〈a〉 − 〈â(j)〉||22,
+(33) where the I[] denotes the Iverson bracket, ensuring the loss is only incurred from the ground truth class of action a. Experiments on CARLA show that BeT is able to cover all the modes of demonstration data.",1,neutral
+", 2022), robot learning and behavior cloning from noisy demonstrations (Shafiullah et al., 2022; Cui et al., 2022), and language-conditioned RL (Guhur et al.",1,neutral
+"Note that PTR outperforms all other baselines including BC (finetune), BC with more expressive policy classes (BeT (Shafiullah et al., 2022), Auto-regressive), representation learning methods (Nair et al.",2,positive
+", 2021), as well as other methods for learning from human demonstrations, such as behavioral cloning methods with expressive policy architectures (Shafiullah et al., 2022).",1,neutral
+"Prior approaches utilize such existing data by running imitation learning (IL) (Young et al., 2020; Ebert et al., 2021; Shafiullah et al., 2022) or by using representation learning (Nair et al.",1,neutral

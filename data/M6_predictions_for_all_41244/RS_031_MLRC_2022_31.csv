@@ -1,0 +1,28 @@
+text,target_M6_predict,target_predict_M6_label
+"Due to these constraints, previous works on NCAs have focused on small-resolution computer vision benchmarks [2,9,13,14,15,17].",1,neutral
+"Despite their small size, NCAs have shown robustness in tasks such as image generation [13,15], where models display a high degree of resilience against perturbations.",1,neutral
+"Recent work has shown the successful application of deep learning techniques for NCAs, showing that neural transition rules can be efficiently learned to exhibit complex desired behaviors (Mordvintsev et al., 2020; 2022; Tesfaldet et al., 2022; Grattarola et al., 2021; Palm et al., 2022).",1,neutral
+"Hidden States & Perception Similarly to Mordvintsev et al. (2020; 2022), Palm et al. (2022), and Chan (2019), but different from Grattarola et al. (2021), our model has the necessary inductive bias for modelling hidden states, as it offers location-independent node features H.",2,positive
+", 2021), image generation and classification (Palm et al., 2022; Randazzo et al., 2020), and reinforcement learning ar X iv :2 30 1.",2,positive
+"They have been successfully applied for designing self-organizing systems for morphogenesis in 2D and 3D (Mordvintsev et al., 2020; Sudhakaran et al., 2021), image generation and classification (Palm et al., 2022; Randazzo et al., 2020), and reinforcement learning
+ar X
+iv :2
+30 1.",2,positive
+"We implement a U-Net-based CA (UNetCA) baseline consisting of a modified version of our U-Net with 48 initial output feature maps as opposed to 24 and with all convolutions except the first changed to 1⇥1 to respect typical NCA restrictions [7, 30].",2,positive
+"We also note that ViTCA’s inherent damage resilience is in contrast to recent NCA formulations that required explicit training for it [7, 30].",0,negative
+"These advances have integrated ideas such as variational inference [7], U-Nets [26], and Graph Neural Networks (GNNs) [15] with promising results on problems ranging from image synthesis [7, 20, 21] to Reinforcement Learning (RL) [6, 22].",1,neutral
+"To train the ViTCA update rule, we follow a “pool sampling”-based training process [7, 30] along with a curriculum-based masking/noise schedule when corrupting inputs.",2,positive
+"Recent formulations of NCAs have shown that when leveraging the power of deep learning techniques enabled by advances in hardware capabilities—namely highly-parallelizable differentiable operations implemented on GPUs—NCAs can be tuned to learn surprisingly complex desired behaviour, such as semantic segmentation [31]; common RL tasks such as cart-pole balancing [22], 3D locomotion [6], and Atari game playing [6]; and image synthesis [7, 20, 21].",1,neutral
+"This would be similar to the Variational Neural Cellular Automata (VNCA) introduced in Palm et al. (2022), which samples seed states in order to grow diverse images.",2,positive
+"This seed can be a static vector (with the hidden channels being set to 1), or they can be learned in order to grow a diverse set of objects from a single NCA network (Palm et al., 2022; Frans, 2021).",2,positive
+"Self-organizing systems, leveraging local communication, are often inherently robust to adversarial modifications, such as observation dropout (Tang & Ha, 2021) and damage (Mordvintsev et al., 2020; Palm et al., 2022).",1,neutral
+"They propose a novel generative model, a VAE whose decoder is implemented using a NCA, which they name Variational Neural Cellular Automata (VNCA).",1,neutral
+"• Non‐Doubling Variational Neural Cellular Automata with 5 , 042 , 432 parameters.",1,neutral
+It was therefore unclear how to get the dataset labels for the t‐SNE latent space visualization in Figure 4 as it is not mentioned in the paper [1].,0,negative
+This report presents a reproduction of a part of the results from the paper ”Variational Neural Cellular Automata” [1] published in ICLR 2022.,2,positive
+"Presented in figure 1 is a corrected version of figure 2 from the original paper [1], that is slightly misleading as it appears as if the NCA decoder ends with a doubling operation, severely limiting the decoders expressive power.",0,negative
+"2 Datasets The dataset used by the original authors [1] is the publicly available statically binarized version of theMNIST dataset [2], which contains binary images of size 28×28.",2,positive
+"5 Computational requirements The original paper’s code implementation was run on some type of GPU, for which the exact specifications are not presented in [1].",0,negative
+"• Doubling Variational Neural Cellular Automata with 6 , 585 , 088 parameters.",1,neutral
+"Overview of the doubling VNCAmodel, (inspired by figure 2 from [1]).",1,neutral
+"3 Hyperparameters The hyperparameters are described in section 3 of [1] where it was stated that unless oth‐ erwise specified, all models are trained using a batch size of 32, the Adam optimizer [7] was used, a learning rate of 10−4 was applied, gradient clipping was used with a norm of 10 [8], a latent vector of size |Z| = 256 was used and the models were trained for a total of 100, 000 gradient updates.",0,negative

@@ -1,0 +1,57 @@
+text,target_M6_predict,target_predict_M6_label
+Authors of [16] have demonstrated how image captioning ampliies social prejudice.,1,neutral
+"Other studies, such as [18], [19], also highlight the issue of bias in caption generation.",1,neutral
+"Understanding the behavior of deep neural networks (DNNs) is a major challenge in the explainable AI (XAI) community, especially for medical applications [19,38], for identifying biases in DNNs [2, 18, 42], etc. Tremendous research efforts have been devoted to the post-hoc paradigm for a posteriori explanation [29, 33].",1,neutral
+"A large corpus of concepts [4, 39] is beneficial for delving into hidden semantics in DNNs [50].",1,neutral
+"Moreover, such handcrafted concepts may not always be useful for DNNs [47].",1,neutral
+"Understanding the behavior of deep neural networks (DNNs) is a major challenge in the explainable AI (XAI) community, especially for medical applications [19,38], for identifying biases in DNNs [2, 18, 42], etc.",1,neutral
+"Consequently, several learnable bias measurements have been proposed recently [52, 17, 45].",1,neutral
+"Instead of measuring the absolute bias, BA [53], DBA [43], and LIC [17] introduce bias amplification metrics, which measure the relative bias w.",1,neutral
+"In addition, LIC [17], and [45] train additional language classifiers to measure the bias in the data and the model.",1,neutral
+"Accordingly, BA [53], DBA [43], and LIC [17] measure the model bias w.",1,neutral
+"This type of metric can be interpreted as Bias-amplification metrics [53] [43] [17] [45], where it answers the following question: ""Does the model introduce extra bias than ground-truth dataset?"" To this end, these models ground the model bias score to the data bias score.",1,neutral
+"However, to the best of our knowledge, non-of the existing image captioning bias metrics [16] [38] [52] [53] [43] [17], as shown in Table 1, include the image while measuring the bias.",1,neutral
+"In contrast, methods that rely on a pre-trained language model to determine whether the model is biased or not, such as [52], LIC [17], and [45], or the methods that rely on calculating the co-occurrences, i.",1,neutral
+"LIC [17] borrows ideas from [45] and [52], where it relies on a text classifier to predict the protected attribute.",2,positive
+"For instance, the recent work, LIC [17], estimates the bias in image captioning models using trainable language classifiers, e.",1,neutral
+"We noticed an inconsistency in LIC [17], when varying the language encoders, where two language encoders are utilized as classifiers; BERT [11], and LSTM [18].",1,neutral
+"As for LIC, the results are not as consistent, but still DCG trained on all types of combinations decreases the score.",0,negative
+"Besides, in some cases where LIC is negative ( i.e ., NIC, SAT, FC, Att2in, and ClipCap), the gender → context bias in the generated cap-tions by LIBRA is less than those of human annotators.",1,neutral
+8 in LIC) while mitigating gender misclassification ( 14 .,0,negative
+LIC and BiasAmp are scaled by 100 .,1,neutral
+The results on LIC show that applying LIBRA consistently decreases gender → context bias in all the models.,1,neutral
+We chose T5-generation and Merged as it well balances LIC and Error.,2,positive
+"However, recent work [18, 51] showed that focusing on mitigating gender misclassification can lead to generating gender-stereotypical words and amplifying gender → context bias.",1,neutral
+"Given y ∈ Dg, FPG instantiated by first masking gender words and replacing corresponding tokens with the mask token to avoid revealing the gender, following [18].",1,neutral
+"First, based on the observations in previous work [5,8,18,44,51], we hypothesize that there exist two different types of biases affecting captioning models:",1,neutral
+4 in LIC and 14 .,0,negative
+"As reported in previous work [18,51], Gender equalizer amplifies gender → context bias (1.",1,neutral
+"As for LIC, while LIBRA consistently mitigates gender → context bias, ENT can amplify the bias in some baselines (SAT, Att2in, OSCAR, ClipCap, GRIT).",2,positive
+"However, focusing only on decreasing such bias can conversely amplify the other type of bias [18,51].",1,neutral
+"Models trained on such datasets not only reproduce societal bias but amplify it [8, 18, 51, 65].",1,neutral
+"Bias metrics We mainly rely on three metrics to evaluate our framework: 1) LIC [18], which compares two gender classifiers’ accuracies trained on either generated captions by a captioning model or human-written captions.",2,positive
+"Extensive experiments and analysis, including quantitative and qualitative results, show that LIBRA reduces both types of gender biases in most image captioning models on various metrics [8, 18, 44, 66].",1,neutral
+Using biased samples from BCS to train DCG consistently produces the best results in LIC and Error.,1,neutral
+"This is particularly concerning as one of the best established phenomena in the study of bias in deep learning models is bias amplification—the fact that social biases in deep learning models tend to be more extreme than those found in their training data (Zhao et al., 2017; Hirota et al., 2022; Hall et al., 2022).",1,neutral
+"…concerning as one of the best established phenomena in the study of bias in deep learning models is bias amplification—the fact that social biases in deep learning models tend to be more extreme than those found in their training data (Zhao et al., 2017; Hirota et al., 2022; Hall et al., 2022).",1,neutral
+"Figures [12, 13, 14, 15, 16, 17] show the intraclass (top row) and inter-class similarities (bottom row) before and after finetuning a model on Open Images.",0,negative
+"Data: Gender Analysis Sets We choose to analyze gender as our protected attribute since this is generally recognized as a universal attribute that can be applied to all humans and its biases have been studied and recognized as significant in the context of vision models [16, 17, 26, 31, 32, 36, 37, 41, 42].",1,neutral
+"1, 2, 4 [17] Yusuke Hirota, Yuta Nakashima, and Noa Garcia.",0,negative
+"[125] Yusuke Hirota, Yuta Nakashima, and Noa Garcia.",0,negative
+"In addition, prominent examples in HCCV research demonstrate disparate algorithmic performance based on race and skin color [106, 293, 125, 327, 217, 34, 33, 261, 236, 44, 122].",1,neutral
+"However, this method has a potential issue where the captioning model may exhibit bias [35] and fail to recognize keywords that frequently appear in both accurately and inaccurately classified images.",1,neutral
+"More recent efforts on image captioning are reflected from the perspective of novel model architecture design [13, 15, 47, 50] and the use of prior knowledge [24, 35, 42, 46, 72].",1,neutral
+We observed only one other work [83] that makes use of this metric outside the scope of the VQA(-CP) datasets.,2,positive
+"Gender bias amplification analysis Using our proposed metric, we compare the performance of multi-label classifiers trained on COCO and imSitu, two standard benchmarks for bias amplification metrics (Zhao et al. 2017; Wang et al. 2019; Wang and Russakovsky 2021; Hirota, Nakashima, and Garcia 2022).",2,positive
+"Bias amplification has been studied across many tasks (Zhao et al., 2017; Ramaswamy et al., 2021; Wang et al., 2020b; Choi et al., 2020; Jia et al., 2020; Leino et al., 2019; Wang & Russakovsky, 2021; Hirota et al., 2022; Wang et al., 2019; Renduchintala et al., 2021).",1,neutral
+"Bias amplification has been studied across many tasks (Zhao et al. 2017; Ramaswamy, Kim, and Russakovsky 2021; Wang et al. 2020; Choi et al.
+2020; Jia et al. 2020; Leino et al. 2019; Wang and Russakovsky 2021; Hirota, Nakashima, and Garcia 2022; Wang et al. 2019; Renduchintala et al. 2021).",2,positive
+", 2015), standard benchmarks for bias amplification metrics (Zhao et al., 2017; Wang et al., 2019; Wang & Russakovsky, 2021; Hirota et al., 2022; Ramaswamy et al., 2021).",2,positive
+"An alternative line of work (Wang et al. 2019; Hirota, Nakashima, and Garcia 2022) has focused on using leakage—the change in a classifier’s ability to predict group membership from the training data to predictions.",2,positive
+[23] proposed a metric to quantify gender and racial bias amplification of image captioning models.,1,neutral
+"In vision-and-language tasks, there has been some recent advancements, especially for image captioning [21, 23, 47, 59].",1,neutral
+"[9, 8, 76, 12, 92, 38, 80, 37] examine social biases in image-text datasets.",1,neutral
+"of disparate algorithmic performance [27, 90, 108, 184, 248, 283].",1,neutral
+[5] state that current bias evaluation metrics and methods have their shortcomings.,1,neutral
+[23] proposed a metric to quantify gender and racial bias amplification of image captioning models.,1,neutral
+"In vision-and-language tasks, there has been some recent advancements, especially for image captioning [9, 23, 47, 59].",1,neutral

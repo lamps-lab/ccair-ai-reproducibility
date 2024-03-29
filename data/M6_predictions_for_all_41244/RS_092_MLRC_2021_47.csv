@@ -1,0 +1,70 @@
+text,target_M6_predict,target_predict_M6_label
+"In biological networks, link prediction aids in understanding protein-protein interactions [3] and gene regulatory networks [4].",1,neutral
+"In recent years, with the explosive growth of graph data in various fields such as social networks [1], recommendation systems [2], and bioinformatics [3], the need for effective graph representation learning has become more urgent.",1,neutral
+"Deep Learning (DL) approaches include DNN-PPI [Li et al., 2018], PIPR [Chen et al., 2019a], and GNN-PPI [Lv et al., 2021], which take amino acid sequence-based features as inputs (More details are illustrated in Appendix).",1,neutral
+"Early works [Yang et al., 2020; Lv et al., 2021] have demonstrated the effectiveness of graph neural networks (GNNs) on PPI prediction.",1,neutral
+"To improve PPI prediction performance, recent works [Yang et al., 2020; Lv et al., 2021] have been proposed to investigate the correlations between PPIs using various graph neural network (GNN) architectures [Kipf and Welling, 2016; Xu et al.",2,positive
+"The BFS and DFS partition schemes create more challenging paradigms than the random partitioning by including more ES and NS proteins in the testsets for the inter-novel protein interactions [Lv et al., 2021].",2,positive
+"…into two groups: classic machine learning (ML)-based methods [Browne et al., 2007; Lin and Chen, 2013; Guo et al., 2008; Wong et al., 2015; Chen and Liu, 2005] and deep learning (DL)-based methods [Sun et al., 2017; Du et al., 2017; Hashemifar et al., 2018; Chen et al., 2019a; Lv et al., 2021].",1,neutral
+"Although [Lv et al., 2021] design new evaluations to better reflect model generalization, giving instructive and consistent assessment across datasets, the domain shift issue still needs to be fully explored for PPI prediction.",2,positive
+"Furthermore, the latest works consider protein correlations and utilize graph neural networks (GNN) to model graph-structured PPI data [Yang et al., 2020; Kipf and Welling, 2016; Lv et al., 2021].",2,positive
+", 2019a], and GNN-PPI [Lv et al., 2021], which take amino acid sequence-based features as inputs (More details are illustrated in Appendix).",2,positive
+"With the advent of deep learning (DL), more recent works have utilized deep neural networks [Sun et al., 2017; Hashemifar et al., 2018; Du et al., 2017; Chen et al., 2019a; Lv et al., 2021] to automatically extract features from protein sequences for enhancing feature representation.",1,neutral
+", 2015; Chen and Liu, 2005] and deep learning (DL)-based methods [Sun et al., 2017; Du et al., 2017; Hashemifar et al., 2018; Chen et al., 2019a; Lv et al., 2021].",1,neutral
+"1) Base train: We follow GNN-PPI [Lv et al., 2021] for protein-independent encoding to extract protein features from protein sequences as inputs to our framework.",2,positive
+"We follow partition algorithms in GNN-PPI [Lv et al., 2021], including random, breath-first search (BFS), and depth-first search (DFS) to split the trainsets and testsets.",2,positive
+"To improve PPI prediction performance, recent works [Yang et al., 2020; Lv et al., 2021] have been proposed to investigate the correlations between PPIs using various graph neural network (GNN) architectures [Kipf and Welling, 2016; Xu et al., 2019].",2,positive
+Such a setting makes GNN-PPI impractical to find true PPIs from not yet verified pairs.,1,neutral
+GNN-PPI [34] integrates the sequence and partners into encoding for each protein to predict PPI of multiple types.,2,positive
+"Baselines Following Zhang et al. (2022), we introduce DPPI (Hashemifar et al., 2018), DNN-PPI (Li et al., 2018), PIPR (Chen et al., 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",2,positive
+"In the second setting, KeAP outperforms OntoProtein by about 4%, 3%, and 1% on SHS27K, SHS148K, and STRING, respectively.",1,neutral
+"We perform experiments on SHS27K (Chen et al., 2019), SHS148K (Chen et al., 2019), and STRING (Lv et al., 2021).",2,positive
+", 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",2,positive
+"In contrast, our KeAP still performs competitively and surpasses GNN-PPI by an obvious margin on BFS. Table 3: Comparisons on PPI identification.",2,positive
+The trend of declining performance can be attributed to the increasing amount of fine-tuning data (from SHS27K to STRING) that reduces the impact of pre-training.,0,negative
+"SHS27K and SHS148K can be regarded as two subsets of STRING, where protein with fewer than 50 amino acids or ≥ 40% sequence identity is excluded.",1,neutral
+"As the amount of training data increases (from SHS27K to STRING), ProtBert and OntoProtein gradually display inferior performance, compared to GNN-PPI.",2,positive
+"Under GNN-PPI evaluation framework, experiment results showe that our model outperforms several state-of-the-art methods, especially in the prediction of unknown protein interactions.",2,positive
+"It should be noted that the proportion of BS also gradually increases as the number of data increases, and in String all-Random, it reaches a staggering 99.49%, which is consistent with the inference in GNN-PPI.",0,negative
+GNN-PPI [34] devised a new evaluation framework that fully respects the interactions between new proteins and provides a consistent assessment across different datasets.,2,positive
+"Our model show a marked improvement compared to GNN-PPI under ES and NS, especially as data size increases (e.g. under NS in String all-BFS dataset, our model improves by nearly 10%).",2,positive
+"For example, in the case of Sring all-BFS, the miroc-F1 value of our model reaches 80.28 ± 0.43, compared to 75.87 ± 0.37 for GNN-PPI and 62.30 ± 0.41 for PIPR.",2,positive
+"F. In-depth Analysis
+In addition to the comparison with the baseline model, we go ahead with a more in-depth analysis of the performance between GNN-PPI and our model, as shown in Table II.",2,positive
+"In this study, we use the GNN-PPI partitioning method to divide String 3000, String 9000 and String all into nine datasets according to BFS, DFS and Random for scientific evaluation, where each dataset is set aside 80% for training and the remaining 20% is used for testing.",2,positive
+"Especially, under the BFS partitioning method for different datasets, the performance of our model, is nearly 2-3% higher compared to GNN-PPI, and is nearly 10-20% higher compared to PIPR, which means that our model can benefit from unknown protein features and thus achieves promising PPI prediction performance.",2,positive
+"Two highly representative DL algorithms for PPI prediction are chose, PIPR [18] and GNN-PPI [34].",1,neutral
+Our experiment is inspired by GNN-PPI [26].,2,positive
+[26] studied the Homo sapiens subsets at two time points (2011 / 01 / 25 and 2021 / 01 / 25) in the BioGRID database.,2,positive
+"When the model only increases the spatial receptive field of network, for the SHS27k dataset, the current model increases by 1.37% , 4.80% and 0.09% respectively compared with the GNN-PPI model under the random, BFS and DFS partitioning schemes.",2,positive
+SVM [33] 75.35± 1.05 42.98± 6.15 53.07± 5.16 80.55± 0.23 49.14± 5.30 58.59± 0.07 RF [34] 78.45± 0.08 37.67± 1.57 35.55± 2.22 82.10± 0.20 38.96± 1.94 43.26± 3.43 LR [35] 71.55± 0.93 43.06± 5.05 48.51± 1.87 67.00± 0.07 47.45± 1.42 51.09± 2.09 HIN2Vec [37] 74.22± 2.38 49.61± 4.88 53.78± 3.05 78.01± 0.62 56.94± 3.20 57.15± 2.49 SDNE [38] 84.04± 0.91 47.29± 4.32 53.42± 2.82 86.65± 2.73 58.43± 4.94 68.84± 1.52 LPI-DLDN [39] 77.36± 0.48 44.68± 2.31 54.98± 3.94 83.83± 0.52 56.41± 5.38 60.07± 2.71 LPI-deepGBDT [40] 72.70± 0.67 42.25± 3.81 50.48± 2.76 81.69± 0.39 55.51± 7.40 59.67± 3.29 DTI-CDF [41] 79.29± 0.89 49.60± 5.28 55.88± 4.19 83.12± 0.55 60.04± 8.27 65.42± 5.89 PIPR [7] 83.31± 0.75 44.48± 4.44 57.80± 3.24 90.05± 2.59 61.83± 10.23 63.98± 0.76 GAT [42] 86.35± 0.86 53.08± 5.24 60.09± 1.69 88.87± 0.31 62.10± 7.75 65.49± 0.50 GNN-PPI [26] 87.91± 0.39 63.81± 1.79 74.72± 5.26 92.26± 0.10 71.37± 5.33 82.67± 0.85 LDMGNN 89.34 ± 0.44 74.56 ± 3.03 78.20 ± 2.69 92.38 ± 0.08 73.98 ± 5.51 83.79 ± 0.95,0,negative
+"Moreover, the types of PPIs in the SHS27k and SHS148k datasets are extremely unbalanced [26].",1,neutral
+"In these two partition schemes, our LDMGNN model has a large improvement in accuracy compared with the GNN-PPI model.",2,positive
+"And for the SHS148k dataset, our method achieves an absolute improvement of 0.12% , 2.61% , 1.12% when compared with the GNN-PPI method in random, BFS, and DFS partitioning methods, respectively.",2,positive
+"Unlike the baseline GNN-PPI, we construct a THPPI network and simultaneously aggregates first-order and second-order neighbor information, increasing the spatial receptive field in the model.",2,positive
+[26] constructed a GNN-PPI model based on graph isomorphism network (GIN) to predict the interactions between protein–protein pairs.,1,neutral
+"• GNN-PPI [26]: A graph neural network model, given the information of protein amino acid sequence and PPI network, is used for the prediction of multi-label PPI.",1,neutral
+This is not available in the GNN-PPI model.,0,negative
+"At the same time, inspired by [26], in order to evaluate the generalization ability of the LDMGNN model more realistically, we choose three partition schemes to divide the test set, i.",1,neutral
+"(2)Recallm = TP1 + TP2 + · · · + TPn
+TP1 + TP2 + · · · + TPn + FN1 + FN2 + · · · + FNn ,
+(3)Precisionm = TP1 + TP2 + · · · + TPn
+TP1 + TP2 + · · · + TPn + FP1 + FP2 + · · · + FPn ,
+Our experiment is inspired by GNN-PPI [26].",2,positive
+"As can be seen from Table 4, when the model only uses the multi-head self-attention mechanism to capture the long-distance dependency information in the sequence, for
+the SHS27k dataset, the current model increases by 0.81% , 5.03% and 2.20% respectively compared with the GNN-PPI model under the random, BFS and DFS partitioning schemes.",2,positive
+"Compared with the baseline GNN-PPI, our LDMGNN not only captures the long-distance dependency information in the sequence but also increases the spatial receptive field in space.",2,positive
+"However, compared with GNN-PPI model, our LDMGNN model mainly has the following two innovations.",2,positive
+"For the SHS27k dataset, our method achieves an absolute improvement of 1.43% , 10.75% , 3.48% when compared with the GNN-PPI model in random, BFS, and DFS partitioning methods, respectively.",2,positive
+"− PMHGE represents the removal of PMHGE from the LDMGNN model and, unlike baseline GNN-PPI, and uses the Transformer with a multi-head self-attention mechanism to learn the amino acid interdependency in the sequence.",2,positive
+"We use GNN-PPI as the baseline for PPIs prediction, which processes amino acid sequences using RNN and aggregates only first-order neighbor information.",2,positive
+"Inspired by [39,57], we use the SHS27k and SHS148k datasets in this study and follow the major seven protein–protein interaction types, i.",2,positive
+", 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al.",2,positive
+"…applied to problems in different domains such as social networks, recommendation systems (Ying et al., 2018; Fan et al., 2019), chemistry (Gilmer et al., 2017; Sanchez-Lengeling et al., 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al., 2021).",1,neutral
+", relation prediction in knowledge graphs [43], criminal intelligence analysis [3], protein–protein interaction [39, 26]; 3.",1,neutral
+"Following Zhang et al. (2022), we introduce DPPI (Hashemifar et al., 2018), DNNPPI (Li et al., 2018), PIPR (Chen et al., 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",2,positive
+", 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",2,positive
+"Specifically, we follow the hyperparameter settings in GNN-PPI (Lv et al., 2021) for PPI prediction.",1,neutral
+"We perform experiments on SHS27K (Chen et al., 2019), SHS148K (Chen et al., 2019), and STRING (Lv et al., 2021).",2,positive
+", 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al.",2,positive
+"…applied to problems in different domains such as social networks, recommendation systems (Ying et al., 2018; Fan et al., 2019), chemistry (Gilmer et al., 2017; Sanchez-Lengeling et al., 2019), bioinformatics (Lv et al., 2021; Gainza et al., 2020), and drug discovery (Gaudelet et al., 2021).",1,neutral

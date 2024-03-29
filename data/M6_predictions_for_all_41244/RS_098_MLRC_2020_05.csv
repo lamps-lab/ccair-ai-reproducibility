@@ -1,0 +1,65 @@
+text,target_M6_predict,target_predict_M6_label
+"Our solution involves a discrete indicator parameter that determines which ReLU operations should be replaced by polynomial functions to achieve minimal accuracy drop, which will be updated according to a hysteresis function [49].",2,positive
+justified the straight-through-estimator (STE) method used for training the BNNs through bayesian learning [22].,1,neutral
+"training binarized or quantized neural networks (Hubara et al., 2016; Krishnamoorthi, 2018; Bethge et al., 2019; Alizadeh et al., 2019; Meng et al., 2020).",1,neutral
+"…the lack of rigorous theoretical foundations (Shekhovtsov & Yanush, 2022), STE-based methods have demonstrated good empirical performance in
+training binarized or quantized neural networks (Hubara et al., 2016; Krishnamoorthi, 2018; Bethge et al., 2019; Alizadeh et al., 2019; Meng et al., 2020).",1,neutral
+"It has been used to design new algorithms, for instance, for uncertainty estimation in deep learning (Khan et al., 2018; Osawa et al., 2019; Lin et al., 2019a; Meng et al., 2020; Möllenhoff and Khan, 2023).",1,neutral
+"It has been used to design new algorithms, for instance, for uncertainty estimation in deep learning (Khan et al., 2018; Osawa et al., 2019; Lin et al., 2019a; Meng et al., 2020; Möllenhoff and Khan, 2023).",1,neutral
+"…the BLR requires natural-gradients whose computation is not always straightforward and requires tricks that need to be invented for each specific case, for example, Lin et al. (2019b) use Stein’s identity for Gaussians and Meng et al. (2020) use Gumbel-softmax trick for Bernoulli distributions.",1,neutral
+"Design of new algorithms is also possible, for example, for Bayesian deep learning Khan et al. (2018); Osawa et al. (2019); Lin et al. (2019a); Meng et al. (2020); Möllenhoff and Khan (2023).",1,neutral
+Meng et al. (2020) propose a Bayesian perspective and Louizos et al. (2018) formulate a noisy quantizer.,1,neutral
+"[8] Xiangming Meng, Roman Bachmann, and Moham-",1,neutral
+"The rest of the derivations is similar to previous applications of the BLR, see Khan et al. (2018); Osawa et al. (2019); Meng et al. (2020).",2,positive
+", 2019), the use of weights encoded by a small number of bits (Qin et al., 2020; Courbariaux et al., 2015; Meng et al., 2020) and quantized activation functions, notably binary activation functions (Soudry et al.",1,neutral
+"However, this is not necessarily true if the weights or biases are constrained to specific values, such as binary values (Hubara et al., 2016; Meng et al., 2020), ternary values (Li & Liu, 2016; Zhu et al.",1,neutral
+"In order to estimate the gradient in Equation 19, we leverage the reparameterization trick via the Gumbel-Softmax (GS) distribution (Jang et al., 2016; Meng et al., 2020).",2,positive
+"When τ in Equation (20) tends to zero, the tanh(·) function tends to the sign(·) function, and the vector w follows distribution qt(w) (Meng et al., 2020).",1,neutral
+"Additionally, thermal fluctuations have been supplemented to the process of training binary neural networks within an approach known as the Bayesian learning rule [14].",1,neutral
+"Recently, one line of work applies the Bayesian framework to learn a deterministic quantized neural network (Soudry et al., 2014; Cheng et al., 2015; Achterhold et al., 2018; van Baalen et al., 2020; Meng et al., 2020).",1,neutral
+"Following previous works [3,6,29], we use classification as the main task throughout our experiments.",2,positive
+"Several authors have approached the training of quantized neural networks via a variational approach [1, 27, 29, 40].",1,neutral
+"We compare our algorithm against state-of-the-art approaches, including BinaryConnect (BC) [10], ProxQuant (PQ) [6], Proximal Mean-Field (PMF) [2], BayesBiNN [29], and several variants of Mirror Descent (MD) [3].",2,positive
+"Among those, BayesBiNN [29] is particularly competitive: instead of optimizing over binary weights, the parameters of Bernoulli distributions are learned by employing both a Bayesian learning rule [24] and the Gumbel-softmax trick [23, 28] (therefore requiring an inverse temperature parameter to convert the concrete distribution to a Bernoulli one).",1,neutral
+"Since then, numerous approaches for binary networks (Lin et al., 2017; Liu et al., 2018; 2020; Martinez et al., 2020; Bulat et al., 2020; Kim et al., 2020a; Bulat et al., 2021; Lin et al., 2020; Qin et al., 2020; Han et al., 2020; Meng et al., 2020; Kim et al., 2020b) have been proposed.",2,positive
+"Yet, the decay term −αλ stays effective: if the data gradient becomes small, the decay term implements some small “forgetting” of the learned information and may be responsible for an improved generalization observed in the experiments [18].",1,neutral
+"For BayesBiNN we identified a hidden issue that completely changes the behavior of the method from the intended variational Bayesian learning with Gumbel-Softmax estimator, theoretically impossible due to the used temperature τ = 10−10, to non-Bayesian learning with deterministic ST estimator and latent weight decay.",2,positive
+[18] model stochastic binary weights as w ∼ Bin(μ) and express GS estimator as follows.,1,neutral
+In order to analyze BayesBiNN and FouST we will switch to the ±1 encoding.,2,positive
+"[18], motivated by the need to reduce the variance of reinforce, apply GS estimator.",1,neutral
+"The second consequence is that the natural parameters λ have huge magnitudes during the training, and we have that |δ| |λ| with high probability, therefore the noise plays practically no role even in the forward pass of BayesBiNN.",1,neutral
+"Contribution In this work we analyze theoretical properties of several recent single-sample gradient based methods: GS, ST-GS [13], BayesBiNN [18] and FouST [22].",1,neutral
+"The BayesBiNN algorithm [18, Table 1 middle] performs the update:
+λ := (1− α)λ− αsf ′(w̃), (16)
+where s = NJ , N is the number of training samples and α is the learning rate.",1,neutral
+"In this mode the BayesBiNN algorithm becomes equivalent to
+w := sign(λ); (55a)
+λ := (1− α)λ− αNτ f ′(w).",1,neutral
+"However, the actual implementation of the scaling factor J used in the experiments [18] according to the published code(2) introduces a technical = 10−10 as follows: J := 1−w̃ (2)+ τ(1−μ2+ ) .",2,positive
+The initial BayesBiNN algorithm of course depends on τ and N .,1,neutral
+A longrange effect of this swap is that BayesBiNN fails to solve the variational Bayesian learning problem as claimed.,1,neutral
+Next we analyze the application of GS in BayesBiNN.,2,positive
+"Nevertheless, good experimental results are demonstrated [18].",0,negative
+"In the subsequent sections we analyze Gumbel-Softmax estimator (Section 3), BayesBiNN (Section 4) and FouST estimator (Section 5).",2,positive
+Meng et al. [2020] refer to this algorithm as BayesBiNN.,1,neutral
+"stochastic gradients, similar to those considered in Titterington [1984], Neal and Hinton [1998], Sato [1999], Cappé and Moulines [2009], Delyon et al.",1,neutral
+Meng et al. (2020) used Bayesian learning for training neural networks with binary weights [26].,1,neutral
+(2020) used Bayesian learning for training neural networks with binary weights [26].,1,neutral
+"As in [10], we consider two predictors; the MAP predictor obtained for the fixed weight selectionw = sign(2σ(2w)−1), which minimizes the variational posterior (12); and the ensemble predictor obtained by averaging predictions over 10 random realizations of the binary weights w ∼ qwr (w).",1,neutral
+"When τ in (15) tends to zero, the tanh(·) function tends to the sign(·) function, and the vector w follows distribution qwr (w) [10].",1,neutral
+"The recent work [10] presents an alternative, theoretically principled, Bayesian framework that optimizes directly over the (continuous) distribution of the binary weights.",1,neutral
+"In order to estimate the gradient in (14), Bayes-BiSNN leverages the reparameterization trick via the Gumbel-Softmax (GS) distribution [10, 26].",1,neutral
+[380] presented a principled approach that justified such methods applying Bayesian learning rule.,1,neutral
+"The competitors for training DNNs with binary weights include BinaryConnect [34], BWN [19], DoReFa [54], and BayesBiNN [28].",2,positive
+[28] propose to use the Bayesian rule to train binary weights for DNNs.,1,neutral
+"These approaches train discrete neural networks by approximating full-precision weights or activations in each layer with scaling factors and discrete values [19, 15, 20, 21, 22, 17, 23, 16, 24, 11, 25, 26], using stochastic weights [27, 18, 28, 29, 30], using a gradient estimator [31, 32, 33], using the straight-through estimator [34, 35], or using reinforcement learning [36].",1,neutral
+[29] propose to use the Bayesian rule to train binary weights for DNNs.,1,neutral
+"These approaches train discrete neural networks by approximating full precision weights or activations in each layer with scaling factors and discrete values [20], [16], [21], [22], [23], [18], [24], [17], [25], [12], [26], [27], [15], using stochastic weights [28], [19], [29], [30], using a gradient estimator [31], [32], using the straightthrough estimator [33], [34], or using reinforcement learning [35].",1,neutral
+"BayesBiNN [59] uses a distribution over the binary variable, resulting in a principled approach for discrete optimization.",1,neutral
+"Other methods based on the surrogate gradients have been recently explored (Vlastelica et al., 2020; Meng et al., 2020).",1,neutral
+Note that recently the Bayesian learning rule has been applied in Meng et al. (2020) to train binary neural networks for supervised learning.,1,neutral
+"s λµi using the Bayesian learning rule in (29). 3However, despite using the same Bayesian learning rule, the resultant algorithm for unsupervised learning in this note is quite different from that in Meng et al. (2020) for supervised learning. 5 Interestingly, as shown in (29), although the natural parameters λµi are updated, the gradient is computed w.r.t. the expectation parameters ηµi = tanh(λµi), which is alrea",1,neutral
+"3However, despite using the same Bayesian learning rule, the resultant algorithm for unsupervised learning in this note is quite different from that in Meng et al. (2020) for supervised learning.",1,neutral
+"rive andjustify manyexistinglearning-algorithmsin ﬁelds such as optimization,Bayesian statistics, machine learning and deep learning. Note that recently the Bayesian learning rule has been applied in Meng et al. (2020) to train binary neural networks for supervised learning. Therefore, this note could be viewed as an extension of Meng et al. (2020) to the case of unsupervisedlearning 3. Speciﬁcally, to optimize the",2,positive
+"Therefore, this note could be viewed as an extension of Meng et al. (2020) to the case of unsupervised learning 3.",1,neutral
+"Neural networks with binary parameters and/or activations (BNNs) have been shown to be promising for solving classification problems [10, 11, 26, 35, 37], continual learning [21], language modeling [9, 24], semantic segmentation [32], video processing [23], compressed image recovery [27], etc.",1,neutral

@@ -1,0 +1,182 @@
+text,target_M6_predict,target_predict_M6_label
+"Overall, RCExplainer seems to be the model of choice when topological noise is introduced, and it is significantly faster than CF 2 because it is inductive.",1,neutral
+"The stability of RCEXPLAINER can be attributed to its strategy of selecting a subset of edges that is resistant to changes, such that the removal of these edges significantly impacts the prediction made by the remaining graph [6].",1,neutral
+com/chrisjtan/gnn_cff RCExplainer [6] https://developer.,2,positive
+"• Perturbation-based: These methods [59, 30, 62, 18, 29, 43, 27, 6, 31, 1, 50] utilize perturbations of the input to identify important subgraphs that serve as factual or counterfactual explanations.",1,neutral
+"Gradient: SA [7] , Guided-BP [7] , Grad-CAM [33]; Decomposition: Excitation-BP [33], GNN-LRP [38], CAM [33]; Perturbation: GNNExplainer [59], PGExplainer [30], SubgraphX [62], GEM [27], TAGExplainer [51], CF(2) [43], RCExplainer [6],CF-GNNexplainer [29], CLEAR [31]; Surrogate: GraphLime [18], Relex [64], PGM-Explainer [47]; Global: XGNN [60], GLG-Explainer [5], Xuanyuan et al.",1,neutral
+"Overall, RCExplainer performs best in terms of the Jaccard index.",2,positive
+"RCExplainer [6], being both factual and counterfactual method, aims to identify a resilient subset of edges to remove such that it alters the prediction of the remaining graph.",1,neutral
+"RCExplainer outperforms other baselines by a significant margin in terms of size and sufficiency across datasets, as shown in Fig.",2,positive
+"Explanations can be broadly classified into two categories: factual reasoning [59, 30, 40, 62, 18] and counterfactual reasoning [29, 43, 31, 6, 1, 50].",1,neutral
+"[6] Mohit Bajaj, Lingyang Chu, Zi Yu Xue, Jian Pei, Lanjun Wang, Peter Cho-Ho Lam, and Yong Zhang.",0,negative
+RCExplainer [6] Instance level GC+NC Neural Network Inductive CF(2) [43] Instance level GC+NC Original graph Transductive CF-GNNExplainer [29] Instance level NC Inference subgraph Transductive CLEAR [31] Instance level GC+NC Variational Autoencoder Inductive,1,neutral
+"Gradient: SA [7] , Guided-BP [7] , Grad-CAM [33]; Decomposition: Excitation-BP [33], GNN-LRP [38], CAM [33]; Perturbation: GNNExplainer [59], PGExplainer [30], SubgraphX [62], GEM [27], TAGExplainer [51], CF 2 [43], RCExplainer [6],CF-GNNexplainer [29], CLEAR [31]; Surro-gate: GraphLime [18], Relex [64], PGM-Explainer [47]; Global: XGNN [60], GLG-Explainer [5], Xuanyuan et al. [54], GCFExplainer [19].",1,neutral
+"However, the Jaccard similarity between RCExplainer and CF 2 for counterfactual graphs is nearly identical, as shown in Fig.",1,neutral
+"Similarly, Table T shows that RCExplainer continues to outperform in the case of graph classification (earlier results show a similar trend in Table 4).",1,neutral
+"• Instance-level: Instance-level or local explainers [59, 30, 40, 62, 18, 61, 29, 43, 27, 6, 1, 50] provide explanations for specific predictions made by a model.",1,neutral
+"We also consider generative methods: PGExplainer (Luo et al., 2020), GSAT (Miao et al., 2022), GraphCFE (CLEAR) (Ma et al., 2022), D4Explainer and RCExplainer (Bajaj et al., 2021).",2,positive
+"We observe that a random edge modification removes more informative edges than GradCAM, Integrated Gradient, Occlusion, RCExplainer, and PGExplainer.",2,positive
+", 2022), D4Explainer and RCExplainer (Bajaj et al., 2021).",2,positive
+"We also observe that RCExplainer and PGExplainer which perform well on the GInX score have a low edge ranking power, except for the BA-HouseGrid dataset.",2,positive
+"This is because the local interpretation approach optimizes the interpretation of each example independent of others, meaning that overfitting the noise associated with individual examples is very likely [23].",1,neutral
+RCExplainer in [1] models the decision logic of GNNs on similar input graphs but only flips edges to generate the counterfactual graphs.,1,neutral
+"So as to illustrate the effectiveness of our model, we compare our proposed method with interpretable graph learning methods including GRAD [51], ATT [40], GNNExplainer [51], PGExplainer [31], RCExplainer [1], and CF-GNNExplainer [30].",2,positive
+"However, these methods are not designed to handle graph data with interconnected nodes, except for two recent works in [1, 30].",1,neutral
+"• RCExplainer proposes to generate robust counterfactual explanations on GNNs by explicitly modeling the common decision logic of GNNs on similar input graphs [1], RCExp for short.",1,neutral
+"proposed generating robust counterfactual explanations on GNNs by explicitly modeling the common decision logic of GNNs on similar input graphs, which are robust to noises [1].",1,neutral
+RCExplainer [11] generates robust counterfactual explanations on GNNs by explicitly modeling the common decision logic of GNNs.,1,neutral
+"Rodriguez 2021), graph data (Bajaj et al. 2021) and so on.",2,positive
+"Existing Works: At a high level, GNN explainers can be classified into the two groups of instancelevel [32, 14, 18, 36, 7, 35, 13, 21, 12, 4, 1, 27] or model-level explanations [33].",1,neutral
+We do not consider [34] and [4] since they are limited to graph classification.,1,neutral
+"Instance-level methods can broadly be grouped into two categories: factual reasoning [32, 14, 18, 36, 7, 35] and counterfactual reasoning [13, 21, 4, 1, 27].",1,neutral
+"While RCExplainer [4] uses a neural network that takes pairwise node embeddings and predict the existence of an edge between them, CLEAR [57] uses a variational autoencoder to generate a complete graph.",1,neutral
+"Due to these challenges, explaining graph neural networks is non-trivial and a large variety of methods have been proposed in the literature to tackle it [115, 69, 107, 77, 5, 97, 56, 119, 93, 4, 73].",1,neutral
+"RCExplainer reduces this over-fitting by first clustering input graphs using polytopes, and finding good counterfactuals close to the cluster (polytope) instead of individual instances.",1,neutral
+"Search-based: MMACE [102] , MEG [73]; Neural Network-based: RCExplainer [4], CLEAR [57]; Perturbation-based: GREASE [9], CF2 [93], CF-GNNexplainer [55]",1,neutral
+"In terms of the objective, the primary focus in RCExplainer [4] is the robustness of the generated counterfactual, but CLEAR [57] aims to generate counterfactuals that explain the underlying causality.",2,positive
+"RCExplainer [4] Instance level Graph classification Node classification Edge prediction with Neural Network Mutag [14], BA-2motifs [56], NCI1 [99] Tree-Cycles [115], Tree-Grids [115] BA-Shapes [56], BA-Community [115]",1,neutral
+"The objective of RCExplainer [4] is to identify a resilient subset of edges that, when removed, alter the prediction of the remaining graph.",1,neutral
+RCExplainer addresses the issue of fragility where an interpretation is fragile (or non-robust) if systematic perturbations in the input graph can lead to dramatically different interpretations without changing the label.,2,positive
+"are mainly based on heuristic perturbation approaches as in [1], [4], [26]).",1,neutral
+RCExplainer [3] identifies decision regions based on graph embeddings that generate a subgraph explanation such that removing it changes the prediction of the remaining graph (i.,1,neutral
+"Unfortunately, we were unable to apply RCExplainer and ProtGNN to this dataset due to an out-of-memory error and scalability issues, respectively.",2,positive
+"RCExplainer [3] identifies decision regions based on graph embeddings that generate a subgraph explanation such that removing it changes the prediction of the remaining graph (i.e., counterfactual).",1,neutral
+"Furthermore, post-hoc explainers, PGExplainer and RCExplainer, are sentitive to noise, lacking stability.",1,neutral
+"Two other post-hoc explainers, PGExplainer and RCExplainer, perform poorly.",0,negative
+"Several post-hoc explainers have been proposed for explaining Graph Neural Networks’ predictions using subgraphs [1, 2, 30, 3, 31, 29].",1,neutral
+"Finally, we consider inductive GNN explainers: PGExplainer [2], RCExplainer [3], TAGE [29].",1,neutral
+"Recent papers [1, 2, 3] have proposed different alternative notions of explainability that do not take the user into consideration and instead are validated using examples.",1,neutral
+[11] also demonstrate the possibility to extend this work on node classification tasks.,1,neutral
+"Many graph counterfactual explanations methods have been proposed [2, 11, 113, 130, 164, 169].",1,neutral
+"To address these challenges, many graph counterfactual candidate representation approaches have been proposed [2, 11, 113, 130, 164, 169].",1,neutral
+"We can achieve this goal by considering the decision boundary [11], manipulating the input with masks [113] or any other manipulations [2].",1,neutral
+"Most of the graph counterfactual explanation methods incorporate counterfactual regularization, which requires changes in model predictions [2, 11, 24, 71, 107, 113, 115, 130, 131, 139, 164, 169].",1,neutral
+"RCExplainer [11] Targeting at instance-level post-hoc explanation for graph classification task, this work gives a detailed analysis of the decision region of GNNs.",1,neutral
+"To avoid the spurious explanation and find the causal explanation which contributes significantly to the prediction, researchers have built various models to get counterfactual explanations on graphs [2, 11, 113, 130, 164, 169].",1,neutral
+"Researchers have come up with a series of carefully-designed models to get counterfactual explanations on graphs [2, 11, 113, 130, 164, 169].",1,neutral
+"search-based methods [2], neural network-based methods [11, 115, 131], and other methods [24, 71].",1,neutral
+"Then we will summarize existing works into a general framework of graph counterfactual explanation followed by a detailed review of existing approaches [2, 11, 24, 71, 107, 113, 115, 130, 131, 139, 164, 169].",2,positive
+"Lucic et al. (2022); Bajaj et al. (2021) investigated counterfactual explanations for GNNs, aiming to find minimal perturbations to the input graph such that the prediction changes, e.g., using edge deletions.",1,neutral
+[1] proposed RCExplainer generating robust counterfactual explanations.,1,neutral
+"com/lyingdoog/PGExplainer [4, 69] ADHD [10] -omics https://github.",0,negative
+RCExplainer needs a collection of labelled instances to determine the decision regions governing each of the classes predicted by the oracle.,2,positive
+(see RCExplainer [4]) meaning that methods can merge two diferent strategies into a single one to produce counterfactuals.,1,neutral
+"com/RexYing/gnn-model-explainer [4, 12, 39] Tree-Ininity synthetic https://github.",2,positive
+RCExplainer [4] generates robust counterfactuals.,1,neutral
+Factual-based explanations and minimal CE: RCExplainer aims to find a subset of edges of the input graph such that the prediction on the subgraph induced by these edges remains the same as in the input graph (factual explanation).,1,neutral
+com/RexYing/gnn-model-explainer [4] BA-2motifs [40] synthetic https://github.,2,positive
+"com/RexYing/gnn-model-explainer [4, 12, 39, 69] Tree-Grid [86] synthetic https://github.",2,positive
+"- RCExplainer [11]: This explanation method is based on factual explanations, so the authors conducted series of experiments to compare their method with the state-of-the-art factual GNN explanation methods including GNNExplainer [150], PGExplainer [77], PGM-Explainer [136] and CF-GNNExplainer [75].",2,positive
+RCExplainer [11] is a method to generate robust GCE.,1,neutral
+"com/RexYing/gnn-model-explainer [4, 12, 39, 69] BA-Community [86] synthetic https://github.",2,positive
+[4] are the only ones that provide a formal deinition for GCE instead of optimising a loss function.,1,neutral
+"On a first step, the method models the decision logic of a GNN employing a set of decision regions, each induced by a set of linear decision boundaries of the GNN. RCExplainer uses an unsupervised method to find the decision regions for each class such that each decision region governs the decision on multiple graph samples predicted to belong to the same class.",1,neutral
+"Model Agnosticism and Model Access: Regarding model access, RCExplainer extracts the decision region of a GNN in the d-dimensional output space of the last convolution layer of the GNN.",1,neutral
+"Finally, we collected fourteen papers (ifteen methods) [1, 4, 12, 13, 28, 36, 39, 41, 50, 53, 68, 69, 79, 82] that are at the base of this survey.",0,negative
+"RCExplainer [4] ✓ ✓ ✓ · ✓ ✓ Instance � , � � (−) Heuristic & Learning GNN-MOExp [36] ✓ · ✓ · ✓ · Instance � sub-graph Search MEG [53] ✓ ✓ · ✓ · ∼ Instance � � (+,−), � (+,−) Learning GNNAdv [68] ✓ ✓ · ✓ ✓ · Instance � � (+,−) Learning CMGE [82] · ✓ ✓ · · ✓ Instance � � (+,−), � (−) Learning NSEG [12] ✓ ✓ ✓ · ✓ · Instance � , � � (−), � (∗) Learning CF-GNNExplainer [39] ✓ ✓ · ✓ ✓ · Instance � � (−) Learning CLEAR [41] ✓ · · ✓ ✓ ✓ Instance � � (+,−), � (∗) Learning MACDA [50] ✓ · · ✓ · ∼ Instance (�1,�2) � (+,−), � (+,−) Learning CF(2) [69] ✓ · ✓ · ✓ · Instance � , � � (−), � (−), � (−) Learning MACCS [79] ✓ · · ✓ · · Instance � � (+,−), � (+,−) Heuristic GREASE [13] ✓ · ✓ ✓ · · Instance � � (−) Learning GCFExplainer [28] ✓ · · · ✓ · Model � � (+,−), � (+,−) Heuristic",1,neutral
+The GCE generation method of RCExplainer is based on perturbation over the edges of the input graph.,1,neutral
+Few graph CFE methods which enable gradient-based optimization either rely on domain knowledge [6] or assumptions [10] about the prediction model to facilitate optimization.,1,neutral
+"Recently, a few studies [9, 6, 10, 11, 12, 13] explore to extend CFEs into graphs.",1,neutral
+"There have been a few studies related to CFEs on graphs [6, 9, 10, 11, 12, 13].",1,neutral
+"Similarly, RCExplainer [10] generates CFEs by removing important edges from the original graph, but it is based on an assumption that GNN prediction model is partially accessible.",1,neutral
+"Recently, a few studies [4, 10] develop generative CFE generators based on variational autoencoder.",1,neutral
+"[27] Mohit Bajaj, Lingyang Chu, Zi Yu Xue, Jian Pei, Lanjun Wang, Peter Cho-Ho Lam, and Yong Zhang.",0,negative
+"In the paper [5], authors evaluate efficiency by comparing the average computation time taken for inference on unseen graph samples.",1,neutral
+Authors [5] computer robustness by quantifying how much an explanation changes after adding noise to the input graph.,1,neutral
+"In terms of methodologies, several techniques based on input perturbations [11, 12, 13], input gradients[36, 37], causal techniques [34, 38, 33] as well as utilizing simpler surrogate models [14] have been explored.",1,neutral
+Method assessment on synthetic datasets eludes the power of gradient-based methods and their ability to extract decisive graph features when node dependency is not elementary and node features are meaningful.,1,neutral
+"To make them comparable, most papers propose to fix a sparsity level to apply to all explanations and compare the same-sized explanations [5, 25, 49].",1,neutral
+87 Method [5] 2021 RCExplainer 3 3 3 3 0.,0,negative
+"Unfortunately, some works do not try to find minimal counterfactual explanations [8,26,30,2].",1,neutral
+"Compared with other explanation methods, CF-GNNExplainer interprets the GNN models in terms of the prediction dynamics, leading to more robust explanation for the noisy input [6].",1,neutral
+RCExplainer [6] enhances the counterfactual explanation to be robust to the input noise.,1,neutral
+", 2018]; and perturbation-based methods generate small corrections to the input causing the output to change [Zhang et al., 2018; Goyal et al., 2019; Lucic et al., 2022; Bajaj et al., 2021].",1,neutral
+"The counterfactual explanation describes causality as “If X had not occurred, Y would not have occurred” [130], [136].",1,neutral
+", RCExplainer [136], CF(2) [164]) show superiority in terms of explanation robustness [136] and quality (e.",1,neutral
+"For post-hoc explainers of GNNs, the difference on target tasks means that some explainers (e.g., GraphLime [135]) can only provide explanations for GNNs in one specified task (e.g., node classification), while others (e.g., RCExplainer [136]) are available for multiple GNN tasks.",1,neutral
+"Existing approaches that consider both forms of reasoning (e.g., RCExplainer [136], CF2 [164]) show superiority in terms of explanation robustness [136] and quality (e.g., accuracy, precision) [164].",1,neutral
+"t the inputs is zero) and explanation misleading [166], [136].",1,neutral
+GNNExplainer [22] Explainability Perturbation-based Grey-box Instance/Group NC/GC Edge/Feature PGExplainer [56] Explainability Perturbation-based Grey-box Instance NC/GC Edge ZORRO [159] Explainability Perturbation-based Grey-box Instance NC Node/Feature Causal Screening [149] Explainability Perturbation-based Grey-box Instance GC Edge GraphMask [160] Explainability Perturbation-based White-box Instance SRL/MQA Edge SubgraphX [161] Explainability Perturbation-based Black-box Instance NC/GC Subgraph CF-GNNExplainer [162] Explainability Perturbation-based Grey-box Instance NC Edge RCExplainer [136] Explainability Perturbation-based Grey-box Instance NC/GC Edge ReFine [163] Explainability Perturbation-based Grey-box Instance GC Edge CF2 [164] Explainability Perturbation-based Grey-box Instance NC/GC Edge/Feature,0,negative
+"The evaluation of CQs has benefited many research fields and tasks, such as the determination of person liable [10], marketing and economics [11], personalized policies [12], medical imaging analysis [13, 14], Bayesian network [7], high dimensional data analysis [15], abduction reasoning [16], the intervention of tabular data [8], epidemiology [17], natural language processing (NLP) [18, 19] and graph neural networks (GNN) [20, 21].",1,neutral
+"Following previous works [7], [8], [9], [10], [12], we focus on instance-level methods with explanations using graph sub-structures.",1,neutral
+"While the graphpruning explainers explain the individual predictions, the counterfactual-based explainers [22, 6] recognize a minimal subgraph, if moved, can lead to the drastic change in GNN’s prediction.",1,neutral
+works focus on finding counterfactual explanations for the task of graph classification [2] and link prediction [16].,1,neutral
+"This family of algorithms can only be applied to certain types of models, e.g., convolutional neural networks (CNNs), generative adversarial networks (GANs), Graph Neural Networks (GNNs).",1,neutral
+"We hope the taxonomy can shed light on future improvements/extensions on explaining
+Table 2 List of interpretation algorithm publications
+Methods Publications (non-exhaustive)
+LIME and variants LIME [137], Anchors [138], SHAP [110], RISE [127], MAPLE [130]
+Global interpretation LIME-SP [137], NormLIME [6], GALE [166]
+Input-gradient based SmoothGrad [155], IG [160], DeepLIFT [150], VarGrad [3], GradSHAP [110], FullGrad [156]
+LRP and variants LRP [16, 27, 118], Contrastive LRP [67], Softmax-Gradient LRP [79], RAP [123], Chefer et al. [34]
+CAM and variants CAM [197], GradCAM [145], ScoreCAM [174], GradCAM++ [32], CBAM [178], Respond-CAM [196], Ablation-CAM [44]
+Perturbation-based Fong et al. [54, 55], Samek et al. [143], Vu et al. [172],
+Counterfactual examples FIDO [31], DiCE [121], Goyal et al. [64], Laugel et al. [97]
+Adversarial examples Geirhos et al. [58], Ilyas et al. [77]
+TACV TACV [87]
+Prototype-based ProtoPNet [35], ABELE [69]
+Proxy models for rationale process Zhang et al. [190, 192], BETA [96]
+Training dynamics based Forgetting Events [164], Datasets Cartography [161], AUM [128]
+Influence functions and variants Influence Functions [91], Group Influences [90], HYDRA [38]
+Contributions of training examples Carlini et al. [28], Feldman et al. [52, 53]
+Interpretations on GNNs GNN Explainer [184], GraphLIME [76], CoGE [51]
+Interpretations on GANs GAN Dissection [25], Voynov et al. [170, 171], Shen et al. [149]
+Information flow Rollout [2], Seq2Seq-Vis [157], Chefer et al. [33, 34], TAM [185]
+Self-generated explanations Atanasova et al. [14], Kumar et al. [93], Liu et al. [109]
+Self-interpretable models Capsule [73, 142], Neural additive models [5], CALM [88]
+Algorithms are listed following the order of presentation in Sect.",2,positive
+"Like other deep learning models, GNNs show the black-box fashion and are required to explain their prediction results and rationale processes.",1,neutral
+Interpretations on GNNsGraph Neural Networks (GNNs) are a powerful tool for learning tasks on structured graph data.,1,neutral
+"Recently, more researches focus on the interpretations of GNN models, such as GraphLIME [76], CoGE [51], Counterfactual explanations on GNNs [18] and others [20, 111, 132].",1,neutral
+"By simple abstraction, the objective function for this purpose can be written as
+Table 1 Categorization of interpretation algorithms with respect to the proposed taxonomy
+Algorithms Representation Model type Relation
+LIME and variants Feature Model-Agnostic Proxy
+Global interpretation Feature Model-Agnostic Proxy
+Input-gradient based Feature Differentiable Dependence
+LRP and variants Feature Differentiable Dependence
+CAM and variants Feature Specific (CNNs) or Differentiable
+Closed-form or dependence
+Perturbation-based Feature Model-Agnostic Dependence
+Counterfactual examples Response Model-Agnostic or Differentiable
+Dependence
+Adversarial examples Response Model-Agnostic or Differentiable
+Dependence
+TACV Feature Differentiable Proxy
+Prototype-based Response Model-Agnostic or Differentiable
+Proxy
+Proxy models for rationale process Rationale Specific (CNNs) Proxy
+Training dynamics based Dataset Model-Agnostic Dependence
+Influence functions and variants
+Dataset Differentiable Closed-Form or Dependence
+Contributions of training examples
+Dataset Differentiable Dependence
+Interpretations on GNNs Feature Specific (GNNs) Dependence
+Interpretations on GANs Feature Specific (GANs) Dependence
+Information flow Feature Specific (Transformers) Dependence
+Self-generated explanations Feature Specific (NLP) Composition
+Self-interpretable models Rationale Specific (Self-Interpretable) Composition
+Algorithms are listed following the order of presentation in Sect.",2,positive
+"Gem [60], CF-GNNExplainer [61], and RCExplainer [62] provide explanations through causal inference.",1,neutral
+"Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models. Faber et al. (2020) explain a node by giving examples of similar nodes with the same and different labels.",1,neutral
+"Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph.",1,neutral
+"Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models. Faber et al. (2020) explain a node by giving examples of similar nodes with the same and different labels. Dai & Wang (2021) create a k-nearest neighbor model and measure similarity with GNNs.",1,neutral
+"Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models. Faber et al. (2020) explain a node by giving examples of similar nodes with the same and different labels. Dai & Wang (2021) create a k-nearest neighbor model and measure similarity with GNNs. Yuan et al. (2020a) and Wang & Shen (2022) propose to generate a representative graph for each class in the dataset which maximize the models confidence in the class prediction.",2,positive
+Bajaj et al. (2021) propose a hybrid with an example-based explanation.,1,neutral
+"Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class.",1,neutral
+Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation.,1,neutral
+"Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al.",1,neutral
+"Bajaj et al. (2021) propose a hybrid with an example-based explanation. They compute decision boundaries over multiple instances to find optimized counterfactual explanations. Subgraph based. Yuan et al. (2021) consider each subgraph as possible explanation. To score a subgraph, they use Shapley values (Shapley, 1953) and Monte Carlo tree search for guiding the search. Duval & Malliaros (2021) build subgraphs by masking nodes and edges in the graph. They run their subgraph through the trained GNN and try to explain the differences to the entire graph with simple interpretable models and Shapley values. Zhang et al. (2021) infer subgraphs called prototypes that each represent one particular class. Graphs are classified and explained through their similarity to the prototypes. Example based. Huang et al. (2020) proposes a graph version of the LIME (Ribeiro et al., 2016) algorithm. A prediction is explained through a linear decision boundary built by close-by examples. Vu & Thai (2020) aim to capture the dependencies in node predictions and express them in probabilistic graphical models.",1,neutral
+"Several studies (Bajaj et al., 2021; Abrate & Bonchi, 2021) have attempted to predict counterfactual effects on graphs, but their methods are mainly designed for GNN interpretability.",1,neutral
+"Finally, perturbation-based methods generate corrections to an input causing the model to change its output [48, 22, 34, 8].",1,neutral
+"We then further generalise our results to more advanced neural architectures such as Convolutional Neural Networks (CNNs) [20, 30] and Graph Neural Networks (GNNs) [21, 26] and show that the problem remains tractable under suitable generalisations of our monotonicity requirements.",2,positive
+"In addition, as we will see, our approach applies to arbitrary neural architectures under very mild restrictions; this is in contrast to perturbation-based approaches restricted to fully-connected networks with ReLU activation [48], Graph Neural Networks [34, 8], or image analysis [15, 22].",1,neutral
+"Our notion of explanation is, however, rather different from related perturbation approaches [48, 34, 8, 15, 22] in that the aim is to identify the essence of the prediction by ‘toggling off’ irrelevant features using the baseline.",1,neutral
+"Similar to ours, RCExplainer [2] also seeks for more faithful explanations by examining inference process of the target GNN.",1,neutral
+"Our notion of feature removal is, however, rather different from related perturbation-based approaches [47, 35, 7, 16, 21] in that the aim is to ‘toggle off’ features using the baseline rather than identifying arbitrary value changes.",1,neutral
+"A wealth of different explanation approaches have been proposed in recent years: rule-based methods generate explanations in the form of logic rules, which are inherently interpretable [11, 13]; attribution-based methods assign a score to input features quantifying their contribution to the prediction relative to a baseline [44, 43, 4]; example-based methods explain predictions by retrieving training examples that are most similar to the given input [29, 34]; and perturbation-based methods generate corrections to an input causing the model to change its output [47, 21, 35, 7].",1,neutral
+[23] find decision regions for each class.,1,neutral
+"In terms of methodologies, several techniques based on input perturbations [11, 12, 13], input gradients[36, 37], causal techniques [34, 38, 33] as well as utilizing simpler surrogate models [14] have been explored.",1,neutral
+"We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF2 [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",2,positive
+"We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF(2) [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",2,positive
+"RCExplainer partitions the logic of a GNN into a set of decision regions, then by exploring a common decision logic for samples in the same class, it generates robust counterfactual explanations for them.",1,neutral

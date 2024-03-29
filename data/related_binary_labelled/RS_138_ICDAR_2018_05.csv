@@ -1,0 +1,128 @@
+text,label_score,label,target_predict,target_predict_label
+"Furthermore, to assess the effectiveness of our method in oriented and distorted scenarios, we compare it with two mainstream open-source methods, SPLERGE [39] and Table-Master [44], on the TAL, TAL_rotated, and TAL_curved datasets.",,,1,related
+"Furthermore, to assess the effectiveness of our method in oriented and distorted scenarios, we compare it with two mainstream open-source methods, SPLERGE [39] and TableMaster [44], on the TAL, TAL_rotated, and TAL_curved datasets.",,,1,related
+"In [8, 20, 27, 39, 46], a table is represented by a grid of regions.",,,0,not_related
+This system works well on both PDF and scanned document images [91].,,,0,not_related
+"TRACE employs a split-merge strategy, inspired by SPLERGE [45], to reconstruct tables.",,,0,not_related
+"In recent years, a split-merge approach has emerged as a popular technique for TSR, in which the separators between cells are initially detected and then subsequently merged [45,14,48,19,25].",,,0,not_related
+Tensmeyer et al.[31]4 2019 SPLERGE ICDAR Web-screaped PDFs + ICDAR 2013 ICDAR 2013 - X NR,,,0,not_related
+"The results shown in Figure 3 and Figure 4 indicate that none of the 4 methods that allow inference on custom data [13, 17, 16, 31] was replicable with respect to the GenTSR dataset, under a threshold of 10% absolute F1-score.",,,1,related
+"To alleviate this problem, methods like [4, 6, 29] tried different context enhancement techniques, e.",,,0,not_related
+"Under the new evaluation setting, the result of SPLERGE significantly drops by 10.2% absolutely in F1-score.",,,1,related
+"Among these methods, SPLERGE [6] was the first to deal with spanning cells, which proposed to add a simple cell merging module after a row/column extraction module to recover spanning cells by merging adjacent cells.",,,0,not_related
+"The SPLERGE [41] divides table into grid elements and merges adjacent ones to restore spanning cells, where the boundary ambiguity issue still remains unsolved.",,,0,not_related
+"With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",,,0,not_related
+"TRUST [9] has the similar spirit with SPLERGE [41], where the features of row/column separators are extracted for a further vertex-based merging module to predict the linking relations between adjacent cells, which thus still suffers from boundary ambiguity problem.",,,0,not_related
+"Method #Param FLOPs GPU CPU SPLERGE [41] 0.37 115.49 0.95 24.25 TabStruct-Net [36] 68.63 3719.06 22.63 76.52 FLAG-Net [23] 17.00 71.69 0.13 2.37 GrabTab 57.88 513.65 0.82 11.54
+Table H4.",,,1,related
+Method #Param FLOPs GPU CPU SPLERGE [41] 0.,,,1,related
+"the filed, which can be mainly categorized into boundary extraction-based methods [38, 31, 15, 41, 25] and element relationship-based methods [23, 4, 34, 36] according to the component type leveraged.",,,0,not_related
+"The first group are the single component-based methods, which rely on either boundary extraction [15, 25, 31, 38, 41] or element relationship [4, 23, 34, 36].",,,0,not_related
+"To date, several pioneers works [18, 47, 38, 15, 41, 4, 34, 36, 45, 35, 23, 25] have achieved significant progress in",,,0,not_related
+The SPLURGE method [47] proposed the idea of table splitting and merging.,,,0,not_related
+C Tensmeyer [120] Dilated Convolutions + Fully CNN The technique is effective with both scanned and PDF document images.,,,0,not_related
+"C Tensmeyer [120] has presented SPLERGE (Split and Merge), another method using dilated convolutions.",,,0,not_related
+C Tensmeyer[120] ICDAR2013 Dilated Convolutions + Fully CNN Precision 95.,,,0,not_related
+[31] used dilated convolutions but depend upon heuristics approaches during post-processing [12].,,,0,not_related
+"To handle the cells crossing multiple rows/columns, [59, 71] predicts another indicator to merge the separated cells.",,,0,not_related
+"For example, SPLERGE [10] first predicts the basic table grid pattern using Row Projection Networks and Column Projection Networks with novel projection pooling and then combines them to get table structure.",,,0,not_related
+"However, recent Splitting-based approaches such as SPLERGE [10] and SEM [11] may suffer from following disadvantages: (1) The pipeline of SEM is inefficient, which may involve time-consuming Region of Interest (RoI) [12] operations and context features extraction via BERT [13].",,,0,not_related
+"Split: split model proposed in SPLERGE [10], QBS: Query-Based Splitting Module, Heuristic: Heuristic Post-processing, Merge: merge model proposed in SPLERGE [10], VBM: Vertex-Based Merging Module",,,0,not_related
+We expanded the definition of splitter in SPLERGE [10] to support inclined separators.,,,1,related
+Splitting Model Merging Model Performance(Pubtabnet/SynthTable(C4)) # Split [10] QBS Heuristic [10] Merge [10] VBM Str-TEDs TEDs,,,1,related
+"Compared with the training of two independent modules in SPLERGE [10], the whole framework of TRUST can be trained in an end-to-end manner and achieve better performance.",,,0,not_related
+"To evaluate this module, we replace the Query-Based Splitting Module with the Split Model proposed in SPLERGE [10].",,,1,related
+"Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc.",,,0,not_related
+"In contrast, some work, such as DeepDeSRT [8], CascadeTabNet [9] and TableDet [10], using top-down approaches would define the structural recognition as object detection or segmentation problem, often together with table detection problem.",,,0,not_related
+"All six axes add up to the unique, complete generic identity for the examination, as per the LONIC nomenclature guideline (31).",,,1,related
+"Among these methods, only SPLERGE [45] can deal with spanning cells, which proposed to add a simple cell merging module after a row/column extraction module to recover spanning cells by merging adjacent cells.",,,0,not_related
+"To alleviate this problem, methods like [13, 43, 45] tried different context enhancement techniques, e.",,,0,not_related
+"In order to verify the effectiveness of TSRFormer for more challenging borderless tables, we re-implement another split-and-merge based method SPLERGE [45] and compare our approach with it on serveral datasets.",,,1,related
+", [45]), we formulate separation line prediction as a line regression problem instead of an image segmentation problem and propose a new separator prediction approach, dubbed Separator REgression TRansformer (SepRETR), to predict separation lines from table images directly.",,,1,related
+"As shown in Table 4, the re-implemented SPLERGE can achieve competitve results on SciTSR and PubTabNet datasets while it is still 11.4% worse than TSRFormer in F1-score on our challenging in-house dataset.",,,1,related
+"The table can therefore be represented as a grid [68,78].",,,0,not_related
+"[17], didn’t take spanning cells into consideration and can only recover the basic grid structures of tables.",,,0,not_related
+1st row: original images; 2nd row: results from SPLERGE [17]; 3rd row: results from our table structure recognizer.,,,1,related
+"Following SPLERGE [17], we calculate the GT separator masks by maximizing the size of the separation regions without intersecting any non-spanning cell contents, as shown in Fig.",,,1,related
+"As shown in Table 8, our approach outperforms SPLERGE significantly by improving the WAvg.",,,1,related
+"As shown in Table 7, our approach outperforms the closest method, SPLERGE [17], substantially by improving the WAvg.",,,1,related
+"[17] presented the SPLERGE method, which used a Split model to produce the grid structure of an input table first, and then used a Merge model",,,0,not_related
+"To further validate the robustness of our approach to distorted or even curved table images, we conducted
+experiments on the in-house dataset and compared our table structure recognizer with SPLERGE.",,,1,related
+"Following SPLERGE [17], we calculate the GT separator masks by maximizing the size of the separation regions",,,1,related
+"SPLERGE [17] 75.9 55.2 63.9 75.8 55.1 63.8 75.7 55.0 63.7 75.7 55.0 63.7 63.8 Ours 94.9 94.5 94.7 94.8 94.4 94.6 94.8 94.4 94.6 94.7 94.3 94.5 94.6
+CornerNet based table proposal generation algorithm for achieving higher localization accuracy and better end-to-end table detection results.",,,0,not_related
+"To deal with spanning cells, Tensmeyer et al. [17] presented the SPLERGE method, which used a Split model to produce the grid structure of an input table first, and then used a Merge model to predict which grid elements should be merged to recover spanning cells.",,,0,not_related
+"vanilla FCN based row/column segmentation method cannot robustly predict complete segmentation masks for rows and columns when tables contain large blank spaces [16, 17].",,,0,not_related
+"SPLERGE [17], substantially by improving the WAvg.",,,0,not_related
+"[32] proposed a method called SPLERGE, which first split tables into rows and columns (split module) and recovered the spanning cells using FCN (merge module).",,,0,not_related
+"Although we tried to train split network with the same training data we used, we failed to reproduce their results and used the model trained by the authors [32].",,,1,related
+SPLERGE [32] predicts cell-regions from table images using split and merge modules.,,,0,not_related
+"For example, the authors of [32] used their private collection of 93,000 tables.",,,0,not_related
+"For instance, in [26, 29, 30, 32], the authors considered columns and rows as object types and reconstructed table structures from the detected rows and columns.",,,0,not_related
+"of parameters CascadeTabNet [23] 82,852,033 TabStructNet [25] 68,636,098 SPLERGE [32] 255,862 Ours 1,120,692",,,1,related
+"8 Examples of qualitative results on complex tables, the colored regions are the recognized cell regions: Table structure recognition results of (a) CascadeTabNet  [23], (b) TabStructNet  [25], (c) SPLERGE [32], and (d) the proposed method",,,0,not_related
+"We compare the performance of our method with three coventional methods: CascadeTabNet [23], TabStructNet [25], and SPLERGE [32].",,,1,related
+"Results of CascadeTabNet [23], TabStructNet [25], SPLERGE [32], and the proposed method, from top to bottom 5844 Multimedia Tools and Applications (2022) 81:5827–5848",,,1,related
+"(a) Result from CascadeTabNet [23], (b) TabStructNet [25] with ground truth table locations, (c) SPLERGE [32] with ground truth table locations, and (d) result from the proposed method 5845 Multimedia Tools and Applications (2022) 81:5827–5848",,,1,related
+91 - - - - - - - - - - - SPLERGE(H) [30] Private 0.,,,0,not_related
+"While these methods contribute to significant progress, they make certain assumptions like the availability of accurate word bounding boxes, machine readable PDF documents, and others, as additional inputs [18, 22, 4, 30].",,,0,not_related
+95 - - - - - - - - - - - SPLIT [30] Private SEC 0.,,,0,not_related
+"Table structure recognition generates a machine-interpretable output for a given table image, which encodes its layout according to a pre-defined standard [30, 17, 20, 42, 4, 39, 24].",,,0,not_related
+"In order to compare our method against others on TUCD dataset, we develop our implementation of DeepDeSRT [26], and use open source implementations of DGCNN (TIES) [22], SPLERGE [30], and TabStruct-Net [24].",,,1,related
+"A combination of heuristics and deep learning methods was also proposed [30] based on splitting the table into sub-cells, and then merging semantically connected",,,0,not_related
+"[35] train the SPLERGE to split the grid structure of table and merge adjacent spanning cells, which is still unable to achieve decent results for the skew table images.",,,0,not_related
+DeepDeSRT [32] - - SPLERGE [35] SciTSR + ICDAR-2019 0.,,,0,not_related
+"They can be categorized into two groups: non-table-element-based approaches [13, 17, 25, 32, 35, 44] and tableelement-based approaches [2, 19, 27–29, 31, 41, 43].",,,0,not_related
+Method #Param FLOPs GPU CPU SPLERGE [35] 0.,,,1,related
+"To solve this problem, Tensmeyer et al. [35] train the SPLERGE to split the grid structure of table and merge adjacent spanning cells, which is still unable to achieve decent results for the skew table images.",,,0,not_related
+"Although the model size of SPLERGE [35] is the smallest among the compared methods, it spends round 7 times GPU time and 12 times CPU time than our Session 10: Industrial Track MM ’21, October 20–24, 2021, Virtual Event, China",,,0,not_related
+"Although the model size of SPLERGE [35] is the smallest among the compared methods, it spends round 7 times GPU time and 12 times CPU time than our",,,0,not_related
+"Different from the previous table structure recognition methods [6, 7, 8] which mostly recover the table structure based on the visual modality, we fuse the output features for each basic table grid from both vision and language modalities.",,,1,related
+"Analyzing tabular data in unstructured documents focuses mainly on three problems: i) table detection: localizing the bounding boxes of tables in documents [18, 19], ii) table structure recognition: parsing only the structural (row and column layout) information of tables [4, 7, 8], and iii) table recognition: parsing both the structural information and content of table cells [6].",,,0,not_related
+"Although significant efforts have been made in the past to recognize the internal structure of tables through an automated process [4, 6, 7, 8, 9, 10], most of these methods [4, 11] only focus on simple tables and are hard to accurately recognize the structure of complex tables.",,,0,not_related
+"For cell spatial location detection, we use the same evaluation metrics with recent methods [25, 27, 29, 28, 20].",,,0,not_related
+"In [8, 28, 29], they classify an entire row or column into the cell or non-cell categories instead of the pixel-wise classification.",,,0,not_related
+[29] trained the SPLERGE model on a private dataset and evaluated it on ICDAR13-Table by randomly choosing a subset as well.,,,0,not_related
+"2, with the success of deep learning, recent deep learning-based table structure recognition approaches can be divided into three categories: 1) identify cell bounding boxes through visual detection and segmentation methods [25, 27, 29, 28, 8]; 2) transform a table image into the markup sequence, such as LaTeX and HTML [10, 2]; and 3) explore the adjacency relation between different table cells [30, 22, 11].",,,0,not_related
+Table structure recognizer is our own implementation of the model proposed in [13].,,,1,related
+[33] detects the rows and columns by learning the interval areas’ segmentation between rows/columns and then predicting the indicator to merge the separated cells.,,,0,not_related
+"With the great success of deep neural network in computer vision field, works began to focus on the image-based table with more general structures [21,30,24,9,13,36,23,14,33].",,,0,not_related
+"Though recent works [30,22,32,31] attempt to predict row/column regions or even invisible grid lines [33], they are limited to handle tables that cross span multiple rows/columns.",,,0,not_related
+"…TABBIE’s pretraining task of corrupt cell detection, which again is practically useful as a postprocessing step after table structure decomposition (Tensmeyer et al., 2019; Raja et al., 2020) because mistakes in predicting row/column/cell boundaries (sometimes compounded by OCR errors) can lead…",,,0,not_related
+"…for tabular data, as corrupt cell detection is actually a fundamental task in table structure decomposition pipelines such as (Nishida et al., 2017; Tensmeyer et al., 2019; Raja et al., 2020), in which incorrectly predicted row/column separators or cell boundaries can lead to corrupted cell text.",,,0,not_related
+"While this objective was originally motivated as enabling more efficient training compared to BERT’s masked language modeling objective, it is especially suited for tabular data, as corrupt cell detection is actually a fundamental task in table structure decomposition pipelines such as (Nishida et al., 2017; Tensmeyer et al., 2019; Raja et al., 2020), in which incorrectly predicted row/column separators or cell boundaries can lead to corrupted cell text.",,,0,not_related
+"We emphasize that this pretraining objective is a fundamental task in table structure decomposition pipelines (Nishida et al., 2017; Tensmeyer et al., 2019; Raja et al., 2020), in which incorrectly predicting row/column separators or cell boundaries leads to corrupted cell text.",,,0,not_related
+"We first examine how TaBERT performs on TABBIE’s pretraining task of corrupt cell detection, which again is practically useful as a postprocessing step after table structure decomposition (Tensmeyer et al., 2019; Raja et al., 2020) because mistakes in predicting row/column/cell boundaries (sometimes compounded by OCR errors) can lead to inaccurate extraction.",,,1,related
+"We intentionally leave out the Partial Detections, Missed Segments, and False Positive Detections from our evaluation metrics, as due to the problem formulation of Split Model [23] they always evaluate to zero.",,,1,related
+"[23] on table structure recognition, we see a more stable and natural approach towards the formulation of problem.",,,0,not_related
+"Following the promising results of Split-model [23] trained on the publicly available ICDAR 2013 dataset using TabAug, we believe our work provides a strong foundation for numerous future extensions.",,,1,related
+"[23], even though more data-efficient than Qasim et al.",,,0,not_related
+"[23] formulating the problem of structure recognition as a combination of row, column splits and cell mergings for defining the structure of a table.",,,0,not_related
+"This ground-truth format is used for the augmentation process, however, Split model [23] requires pixel-wise annotations.",,,1,related
+"promising results of Split-model [23] trained on the publicly available ICDAR 2013 dataset using TabAug, we believe our work provides a strong foundation for numerous future extensions.",,,1,related
+[23] on ICDAR 2013 dataset reveals sub-optimal results than the network potential due to the lack of diverse and large training dataset.,,,0,not_related
+"To evaluate the efficacy of our proposed augmentation methodology, we train the Split model proposed by [23] on ICDAR 2013 dataset.",,,1,related
+[55] Dilated Convolutions in Fully Convolutional Networks (Section III-B4b).,,,0,not_related
+"[6] proposed a top-down and then bottomup two-stage table structure recognition method called SPLERGE, which is divided into two parts: Split and Merge.",,,0,not_related
+"To capture long-range column and row features globally, we add our proposed TPM at each downsampling shortcut of ResNet backbone inspired by [17], where they utilize the row projection and column projection with maximum pooling to downsample.",,,1,related
+In [17] an approach of capturing global information with row pooling and column pooling was used.,,,0,not_related
+"More recently, [17] extended the traditional approach of detecting table separation lines by predicting table grid with Split model and predicting the merge of grid elements with Merge model.",,,0,not_related
+SPLERGE [20] model is free from spanning cells.,,,0,not_related
+"Among these, the problem of table structure recognition has been of high interest in the community [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].",,,0,not_related
+"In the space of document images, researchers have been working on understanding equations [30,31], figures [32,33] and tables [6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+"[10] presented another interesting deep model, called splerge, which is based on the fundamental idea of first splitting the table into sub-cells, and then merging semantically connected sub-cells to preserve the complete table structure.",,,0,not_related
+"Table structure recognition is a challenging problem due to complex structures and high variability in table layouts [4,5,6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+"It can be represented in the form of either physical [10,12,14,17] ar X iv :2 01 0.",,,1,related
+"Many cognitive methods [6,7,8,9,10,11,12,14,15,16,37,38,39,40,41,42,43] have also been presented to understand table structures as they are robust to the input type (whether being scanned images or native digital).",,,0,not_related
+"split+heuristic [10] method outperforms tabstruct-net by a small margin, however, it requires icdar-2013 dataset-specific cell merging heuristics and is trained on a considerably larger set of images.",,,0,not_related
+", meta-features extracted from the pdfs [10], content-level bounding boxes from ground truths [12,14] and cell’s location features generated from synthetic dataset [9]).",,,0,not_related
+"Table structure recognition refers to representation of a table in a machinereadable format, where its layout is encoded according to a pre-defined standard [10,11,12,13,14,17].",,,0,not_related
+"We compare the performance of our tabstruct-net against seven benchmark methods — deepdesrt [7], tablenet [12], graphtsr [14], splerge [10], dgcnn [9], Bi-directional gru [15] and Image-to-Text [11].",,,1,related
+"Recently, a lot of works use deep learning method have been proposed [11], [12], [13], [14].",,,0,not_related
+In the last few years an important research topic in DIAR has been the analysis of tables in contemporary documents by using graph neural networks [49] or dealing directly with PDF documents [50].,,,0,not_related
+"Deep learning approaches include two categories: (a) End-to-end image-to-sequence models [18, 36]; (b) Object detection based methods [26, 33, 23].",,,0,not_related
+"Most existing work on object detection-based methods detect entire rows and column separately, and represents the intersection of detected rows and columns as cells [26, 33].",,,0,not_related
+"olutional neural network to determine whether the regions contain a table [22]. Fullyconvolutional neural networks, followed by a conditional random ﬁeld, have also been used for table detection [23]–[25]. In addition, deep neural networks for object detection, such as Faster-RCNN [26], Mask-RCNN [27], and YOLO [28] have been exploited for table detection and row/column segmentation [7], [29]–[31]. Fu",,,0,not_related
+Table structure recognizer is our own implementation of the model proposed in [13].,,,1,related
+"Top-down methods [19,33,34,37] try to split entire table images into rows and columns using detection or segmentation models, then cells can be obtained through row-column intersection.",,,0,not_related

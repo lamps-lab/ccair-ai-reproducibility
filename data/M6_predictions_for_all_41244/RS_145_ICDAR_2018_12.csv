@@ -1,0 +1,119 @@
+text,target_M6_predict,target_predict_M6_label
+"While tables with simple structures and clean backgrounds can be recognized well [6, 12, 14, 15, 23, 24, 30, 35, 38, 41, 47], recognizing complicated table structures remains a challenging problem, which is primarily due to two main difficulties: 1) Firstly, tables in images vary widely in terms of structure and shape.",1,neutral
+"Due to the absence of released annotations for the test set, we follow previous approaches [20, 35, 46, 47] and evaluate our model on the validation set using TEDS and TEDS-Struct [48] metrics.",2,positive
+"LGPMA [35] applies soft pyramid masks at the local and global levels, allowing the model to detect cell boundaries of wireless tables more accurately.",2,positive
+- 93.0 SEM [46] 93.7 - LGPMA [35] 94.6 96.7 FLAG-Net [22] 95.1 - NCGM [21] 95.4 - TableFormer [29] 93.60 96.75 TSRFormer [20] - 97.5 TRUST [8] 96.20 97.10 VAST [10] 96,0,negative
+"[16, 25, 35, 36, 47] represent tables by a group of cells.",1,neutral
+"In works such as [16, 25, 32, 35, 47], a table is represented by a group of cells.",1,neutral
+", [7, 13, 17, 18, 21, 29, 37, 44, 55, 56]) utilize a deep learning (DL)-based approach, focusing on either one, two, or all three steps.",1,neutral
+"Table 2 illustrates some of these limitations, comparing the MVP predictions obtained from the table recognition ground
+truth (baseline) and from the results of LGPMA and VCGroup to the target.",2,positive
+LGPMA obtained a TEDS score (see Sec.,0,negative
+"6, we can see that LGPMA generates many extraneous empty cells; these would have been removed during the HTML to Token conversion process, but would have misaligned the NAME/VALUE pairing when generating the NLP token string.",2,positive
+The goal of LGPMA [37] is to obtain better aligned cell regions and solve issues with empty cell generation and partition.,2,positive
+"5.1.1) of 96.32 in the ICDAR 2021 competition, the second highest among the 30 submissions after LGPMA.",0,negative
+"The paper also proposes a table recognition and summarization pipeline that links the two tasks and allows for comparing state-of-the-art table recognition methods (LGPMA and VCGroup) for the end goal of table summarization, utilizing MVP as the data-to-text summarization model.",2,positive
+"We selected the Local and Global Pyramid Mask Alignment (LGPMA) method [37] and the VCGroup method [55],
+which came in first and second place respectively in the ICDAR 2021 Competition on Scientific Literature Parsing - Task B Table Recognition [15].",2,positive
+"From Table 1, the performance at both stages matches the final standings of the Task B challenge, with LGPMA slightly outperforming VCGroup overall, although that changes from one visual variation to the next.",0,negative
+"We selected the Local and Global Pyramid Mask Alignment (LGPMA) method [37] and the VCGroup method [55], which came in first and second place respectively in the ICDAR 2021 Competition on Scientific Literature Parsing - Task B Table",2,positive
+"Interestingly, Variation 15, with a shear horizontal transformation, yields very different TEDS scores compared to the basic Variation 1: lower for LGPMA but higher for VCGroup.",2,positive
+"Several studies have proposed detectors for detecting cells or their contents [28,31,30,49].",1,neutral
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",0,negative
+Qiao et al.[36]10 2021 LGPMA ICDAR PubTabNet + SciTSR + ICDAR 2013 PubTabNet X X NR,2,positive
+hierarchical cell← null for r in R do if r[0] is a colspan cell OR r[1] is an empty cell then,1,neutral
+"Most of the previous works [1]–[4] of table recognition focused on two-step approaches that divide the problem into two sub-problems: table structure recognition and table cell content recognition, and then attempt to solve each sub-problem independently by two separate systems.",1,neutral
+Input: R (a list of rows of table cells with their bounding boxes) Output: R’ (a list of rows of table cells with hierarchical information) hierarchical cell← null different bbox flag ← False for r in R do if r[0] is a colspan cell OR r[1] is an empty cell then hierarchical cell← r[0] else if r[0] is a rowspan cell OR r[0] is an empty cell then hierarchical cell← null else if different bbox flag AND r[0].,1,neutral
+"After cell detection, methods like [8, 12, 46] used heuristic rules to cluster detected cells into rows and columns.",1,neutral
+"Some recent works [7, 8, 12] have proposed a modified TEDS metric named TEDS-Struct to evaluate table structure recognition accuracy only by ignoring OCR errors.",1,neutral
+"To bypass this problem, the second group of methods [7, 8, 12, 45, 46] detects the bounding boxes of table cells directly and uses different methods to group them into rows and columns.",1,neutral
+"Moreover, LGPMA [35] applies a soft pyramid mask when learning both global and local feature maps.",1,neutral
+"With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",1,neutral
+"To date, several pioneers works [18, 47, 38, 15, 41, 4, 34, 36, 45, 35, 23, 25] have achieved significant progress in",1,neutral
+"Note that LGPMA requires additional
+annotation information for training.",0,negative
+"On the PubTabNet dataset, our model achieved TEDS-struc. of 97.88% which again improves TableFormer and LGPMA (Qiao et al., 2021) by about 1.1% and other methods by more than 4.87%.",2,positive
+"All other methods except EDD (Zhong et al., 2020) are non-end-to-end
+approach and the methods in (Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) requires additional annotation information for training.",0,negative
+LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment.,1,neutral
+"Most of the previous works (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021) focus on non-end-to-end approaches which divide the problem into two separate sub-problems: table structure recognition; and cell-content recognition, and then attempt to solve each sub-problem independently using…",1,neutral
+"Note that the 1st ranking solution is a non-end-to-end approach which employs LGPMA (Qiao et al., 2021) to recognize the structure of the table and then uses attention-based text recognizer to provide the OCR information of the table cells.",2,positive
+"Table recognition: Most of the previous works of table recognition (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) focus on non-end-to-end approaches which divide the problem into two separate sub-problems: table structure recognition; and cell-content recognition, and…",1,neutral
+"LGPMA (Qiao et al., 2021) is the table structure recognizer component in the 1st ranking solution in ICDAR2021 competition.",2,positive
+"Specifically, our model achieved TEDS of 96.67% which improves VCGoup’s solution (Ye et al., 2021) by 0.41%, LGPMA + OCR (Qiao et al., 2021) by 2%, and others by more than 3%.",2,positive
+LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment.,1,neutral
+"All
+FTN
+EDD (Zhong et al., 2020) 88.40 92.08 90.60
+GTE (Zheng et al., 2021) - - 87.14
+GTE (FT) (Zheng et al., 2021) - - 91.02
+TableFormer (Nassar et al.,
+2022) 97.50 96.00 96.80
+WSTabNet 99.06 98.33 98.72
+PTN
+EDD (Zhong et al., 2020) 91.10 88.70 89.90
+GTE (Zheng et al., 2021) - - 93.01
+LGPMA (Qiao et al., 2021) - - 96.70
+TableFormer (Nassar et al.,
+2022) 98.50 95.00 96.75
+WSTabNet 99.06 96.37 97.74 (FT) Model was trained on PubTabNet and then finetuned.",0,negative
+"All IM2TEX (Deng et al.,
+2019) 81.70 75.50 78.60
+EDD (Zhong et al., 2020) 91.20 85.40 88.30 TabStruct-Net (Raja et al.,
+2020) - - 90.10
+GTE (Zheng et al., 2021) - - 93.00 TableFormer (Nassar et al.,
+2022) 95.40 90.10 93.60
+SEM (3) (Zhang et al., 2022) 94.80 92.50 93.70 LGPMA (1) (Qiao et al.,
+2021) - - 94.60
+VCGoup (2) (Ye et al., 2021) - - 96.26 WSTabNet 97.89 95.02 96.48
+(1)(2)(3) are 1st, 2nd, and 3rd solutions in ICDAR2021 competition.",0,negative
+"LGPMA (Qiao et al., 2021) is the table structure recognizer component in the 1st ranking solution in ICDAR2021 competition.",2,positive
+"Although, the proposed model requires only table HTML annotations for the training step, it outperforms all the fully supervised methods (Nassar et al., 2022; Qiao et al., 2021; Raja et al., 2020; Ye et al., 2021; Zhang et al., 2022; Zheng et al., 2021) that require both table HTML and the cell bounding boxes annotations for training the models.",0,negative
+"Recently, some researchers (Nassar et al., 2022; Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) worked on both table structure recognition and cell content recognition to build a complete table recognition system.",1,neutral
+"For the irregular layout table, a good cell detection result could effectively improve the accuracy of table recognition, [26, 33, 36, 55] were committed to improving the accuracy of cell detection.",1,neutral
+"To eliminate this assumption, another group of methods [25, 24] proposed to detect the bounding boxes of table cells directly.",1,neutral
+"Limited by the training datasets [7, 2, 37, 36] used for TSR, most previous works [28, 24, 35, 26] focus on document images that are obtained from digital documents (e.",0,negative
+"Then we compare LORE with models mining the adjacency of cells by relation-based metrics: TabStrNet (Raja, Mondal, and Jawahar 2020), LGPMA (Qiao et al. 2021), TOD (Raja, Mondal, and Jawahar 2022), FLAGNet (Liu et al.",2,positive
+"Then we compare LORE with models mining the adjacency of cells by relation-based metrics: TabStrNet (Raja, Mondal, and Jawahar 2020), LGPMA (Qiao et al. 2021), TOD (Raja, Mondal, and Jawahar 2022), FLAGNet (Liu et al. 2021) and NCGM (Liu et al. 2022).",2,positive
+"Reference [4] uses the method of object detection to identify the table structure, and proposed complicated table structure recognition with local and global pyramid mask alignment (LGPMA) based on Mask R-CNN [5], which detects the local and global boundaries of the table, and aligns and fuses the results.",1,neutral
+LGPMA [12] PubTabNet-train PubTabNet-test 94.,0,negative
+"Davar-Lab proposed the local and global pyramid mask alignment (LGPMA) [12] method, which learned the local pyramid mask alignment (LPMA) and the global pyramid mask alignment (GPMA) simultaneously.",2,positive
+"Some recent works [(Raja, Mondal, and Jawahar 2020), (Qiao et al. 2021), (Zheng et al. 2021)] have proposed a modified TEDS metric named TEDS-Struct to
+evaluate table structure recognition accuracy only by ignoring OCR errors.",2,positive
+"Some recent works [(Raja, Mondal, and Jawahar 2020), (Qiao et al. 2021), (Zheng et al.",2,positive
+"Table 5 shows the results of SLANet and some state-of-the-art methods on PubTabNet such as EDD(Zhong, ShafieiBavani, and Jimeno Yepes 2020b), TableMaster(Ye et al. 2021) and LGPMA(Qiao et al. 2021).",2,positive
+"Similar to previous works [8, 38, 46, 49, 51], the text content and structure information are obtained separately.",0,negative
+"Since all the tables are extracted from PDF files and all horizontally aligned, we adopt the post-processing of cell matching in [46] to construct the cells relations.",1,neutral
+"2) Since all of the tables are horizontally displayed, we adopt the cell matching strategy in [46] to generate the column/row indexes.",1,neutral
+"According to the underlying alignment information in the table, [38, 46, 47] aim to obtain more accurate aligned cells which can be effectively used to infer the final structure.",1,neutral
+"Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc. Unlike many state-of-the-art methods that perform evaluations only at TEDs, our method also test the Structure TEDs on PubTabNet.",2,positive
+"Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc.",2,positive
+"Unfortunately, the Component-based approaches such as DeepDeSRT [7], TableNet [8] and LGPMA [9] still suffer from boundary ambiguity problems in unlined tables and cannot achieve decent performance in complex scenarios such as tables with empty cells.",1,neutral
+"Recently, two new approaches have beaten the state-of-the-art: combining vision, semantic and relations for layout analysis and table detection [15] and applying a soft pyramid mask learning mechanism in both the local and global feature maps for complicated table structure recognition [11].",1,neutral
+"In VSR, visual, semantic, and structural features are combined to detect objects, exploiting a GNN for the final refinement; LGPMA uses a soft pyramid mask learning mechanism in both local and global feature maps to recover the table structure, also taking into account empty cells location.",1,neutral
+"In the ICDAR 2021 competition on DLA and TR [39], the DAVARLab-OCR obtained SOTA results on both tasks by using two different approaches: VSR [40] and LGPMA [41].",2,positive
+"In the ICDAR 2021 competition on DLA and TR [38], the DAVARLab-OCR obtained SOTA results on both tasks by using two different approaches: VSR [39] and LGPMA [40].",2,positive
+"To bypass this problem, the second group of methods [19, 23, 33, 35, 36, 54] detects the bounding boxes of table cells or cell contents directly and uses different methods to group them into rows and columns.",1,neutral
+"After cell detection, methods like [19, 35, 54] used heuristic rules to cluster detected cells into rows and columns.",1,neutral
+"Some recent works [35, 36, 54] have proposed a modified TEDS metric named TEDS-Struct to evaluate table structure recognition accuracy only by ignoring OCR errors.",1,neutral
+"Other common forms of document understanding tasks include layout analysis [32, 34], Reading Order Detection (ROD) [16, 30], table recognition [14, 21] and understanding [12, 29], document Question-Answering (QA) [19], Named Entity Recognition (NER) [7, 10, 24, 31], etc.",1,neutral
+"(5) TP[22], MANGO[20], M-RCNN-e2e YORO [4] Chargrid[13]♥♣, TRIE[35]♥♣♦ BERT-Softmax /Span/CRF[5] ♣ BiLSTM-CRF[10]♣ VSR[34]♥♣♦ GCN-PN[16]♥♦ LGPMA[21]♥",1,neutral
+"Recent best performing table structure recognition approaches, like TabStructNet [22] and LGPMA [23], typically use CNNbased object detection or segmentation models like Mask R-CNN to detect table cells first, then adopt some cell grouping/clustering algorithms to predict row/column relationships between the detected cells.",1,neutral
+"Net [22] and LGPMA [23], typically use CNNbased object detection or segmentation models like Mask R-CNN to detect table cells first, then adopt some cell grouping/clustering algorithms to predict row/column relationships between the detected cells.",1,neutral
+"It is noted that, the recent best performing method LGPMA [23] (the winner",0,negative
+"It is noted that, the recent best performing method LGPMA [23] (the winner of ICDAR 2021 Competition on Scientific Literature Parsing Task B [83]) has leveraged an important task constraint, namely tables are axis-aligned, to achieve higher accuracy.",2,positive
+[23] designed some rules to cluster cells into rows and columns.,1,neutral
+"Some recent works [8, 22, 23] have proposed a modified TEDS metric, denoted as TEDS-Struct, to evaluate table structure recognition accuracy only by ignoring OCR errors.",1,neutral
+"To eliminate this assumption, another group of methods [8, 22, 23] proposed to detect the bounding boxes of",1,neutral
+[21] propose a Local and Global Pyramid Mask Alignment framework by applying the soft pyramid mask learning mechanism to local and global feature maps.,1,neutral
+"Tabular data is a popular format to express compact and important information for readers in different types of digital documents, including web pages, PDFs, Word processors, and document images [21].",1,neutral
+"Although many previous algorithms [2,13,18,20,22,30,31,34,35,40,45,46] have achieved impressive progress in the community, TSR is still a challenging task due to two factors of complicated tables.",1,neutral
+"In the similar spirit, LGPMA [31] applies soft pyramid mask learning mechanism on both the local and global feature maps.",2,positive
+"Table structure recognition (TSR) aims to recognize the table internal structure to the machine readable data mainly presented in two formats: logical structure [18, 46] and physical structure [2, 13, 20, 22, 27, 30, 31, 34, 35, 40, 45].",1,neutral
+"Cognitive methods in this space broadly classified into five categories — image-to-sequence models [17, 2, 14], segmentation networks [26, 18, 20, 23], graph formulations [22, 4, 24], conditional generative adversarial networks [16] and a recent multi-modal method by [40].",1,neutral
+"Although methods [29, 31, 43] achieve performance improvement by directly predicting cell boxes, they may suffer from “cell boundary ambiguity” problem, especially on those blank or non-gridded cell cases.",1,neutral
+"Different from previousworks [29, 31, 43], we adopt word bounding boxes rather than cells as table elements to avoid cell boundary ambiguity issue.",1,neutral
+"4(c) shows our method can well handle the table including non-gridded cells, which may cause the “cell boundary ambiguity” problem to the cell detection-based methods [29, 31, 43].",2,positive
+"A group of methods [27, 29, 41, 43] try to recover the relations of elements based on heuristic algorithms.",1,neutral
+"LGPMA (Qiao et al., 2021) incorporates a soft pyramid mask learning mechanism in both local and global feature maps for table structure recognition.",1,neutral
+"Since LGMPA [13] and CycleCenterNet [11] recover table structure based on heuristic rules after detecting cells, which is infeasible to perform the comparison between them and our method, we do not report them in Tab.",0,negative

@@ -1,0 +1,157 @@
+text,target_M6_predict,target_predict_M6_label
+"Recently, methods based on more explicit 3D representations and differentiable rendering have become popular [5, 6, 9, 11, 19, 30, 37, 39, 44, 47, 49, 50, 53, 61, 66].",1,neutral
+"Prior approaches utilize GANs [19, 33, 55] to synthesize data for tasks including classification [2, 8, 43, 72, 75], 3D vision [21, 52, 64, 86], 2D segmentation [44, 74, 87], dense visual alignment [54]; or diffusion models [27, 59] for data augmentation [73] or as synthetic data for few-shot learning [25].",1,neutral
+σy∗ along with a pre-trained recognition network [35] that is responsible for facial identity regularization.,1,neutral
+"The pre-trained face embedding model [35], which uses ResNet18 [38] has been leveraged for lossid and lossseg.",2,positive
+"Other methods [7, 8, 40, 46] utilized direct 3D representations and generated images with representations of the neural radiance field.",1,neutral
+"For those methods (including ShadeGAN, LiftedStyleGAN, and Ours) that can generate albedo images, the reference images are replaced with albedo images.",1,neutral
+"2021], LiftedStyleGAN [Shi et al. 2021], EG3D+Deep Portrait Relighting [Zhou et al.",2,positive
+"However, the generated samples of ShadeGAN and LiftedStyleGAN are of lower quality compared to those by ours and 2D methods.",2,positive
+", [Pan et al. 2022, 2021; Shi et al. 2021]) which explicitly model the lighting efects through lighting models, our method can be categorized as the implicit representation learned from the dataset.",2,positive
+"We compare our method with ShadeGAN [Pan et al. 2021], LiftedStyleGAN [Shi et al. 2021], EG3D+Deep Portrait Relighting [Zhou et al. 2019], EG3D+StyleFlow [Abdal et al. 2021], and 3DFaceShop [Tang et al. 2022] as alternative 3D-aware methods.",2,positive
+"We also quantitatively compare texture and rendered faces by rendering it on a mesh with other methods, including LiftedGAN [49], DECA [15], and OSTeC [18].",2,positive
+"The corresponding 2D face images are used to perform 3D reconstruction using other methods[15, 18, 49].",1,neutral
+"Further, StyleGAN has been extended to get novel views from images [27, 28, 44], thus making it possible to get 3D information from it.",2,positive
+[33] disentangle and distill the 3D information from StyleGAN2 to 3D-aware face generation.,2,positive
+"This differs from baseline methods [6, 7, 31, 36] that use Deng et al.",1,neutral
+"• Identity consistency (ID): As in [6, 7, 31, 36], we compute ID with the mean Arcface [8] cosine similarity, after rendering a face with two random camera views.",1,neutral
+"For depth consistency, following previous work [6, 31, 36], we estimate pseudo ground truth depth from Deng et al.",1,neutral
+"Recently, a line of work has explored neural 3D representations by unsupervised training of 3D-aware GANs from in-the-wild unstructured images [7, 8, 11, 17, 37, 44, 45, 48, 61, 62, 67].",1,neutral
+"[39] proposed a self-supervised framework to convert 2D StyleGANs [21] into 3D generative models, although its generalizability is bounded by its base 2D StyleGAN.",1,neutral
+"To measure the geometry properties, we followed [5, 41], utilizing a pre-trained 3D face reconstruction model to extract a “pseudo” ground truth depth map from the source image.",2,positive
+"To this end, we use the pre-trained model of Unsup3D [45] since it has been widely applied in unsupervised face reconstruction [50, 30, 35, 49] in recent years.",2,positive
+"We address this concern by analyzing both the FID score and the depth accuracy metric used in [5, 32].",2,positive
+"Previously, some approaches attempt to extract 3D structure from pre-trained 2D-GANs [42, 52].",1,neutral
+"…implicit neural representations (Mildenhall et al., 2020; Sitzmann et al., 2020) or differentiable neural rendering (Kato et al., 2018) into GANs, recent works (Schwarz et al., 2020; Niemeyer & Geiger, 2021; Chan et al., 2021; Shi et al., 2021) can produce multi-view consistent images.",1,neutral
+", 2018), Multi-view Identity Consistency (ID) (Shi et al., 2021), Chamfer Distance (CD), and Multi-view Image Warping Errors (WE) (Zhang et al.",1,neutral
+", 2018) into GANs, recent works (Schwarz et al., 2020; Niemeyer & Geiger, 2021; Chan et al., 2021; Shi et al., 2021) can produce multi-view consistent images.",2,positive
+"We evaluate PV3D and baseline models by Frechet Video Distance (FVD) (Unterthiner et al., 2018), Multi-view Identity Consistency (ID) (Shi et al., 2021), Chamfer Distance (CD), and Multi-view Image Warping Errors (WE) (Zhang et al., 2022a;b).",2,positive
+"[69] Yichun Shi, Divyansh Aggarwal, and Anil K Jain.",0,negative
+"Earlier works [38, 52, 58] utilize voxel or mesh as the intermediate representation.",1,neutral
+"Compared to other methods, our approach is fast compared to existing frameworks for training explicitly 3D aware GANs [17, 31, 50] and compared to [44] our method is lightweight and able to perform rotations and edits to face shape without the need for a 3D morphable model.",2,positive
+"Several works have investigated incorporating explicit 3D understanding into GANs [17, 31, 50].",1,neutral
+"This category of studies facilitate the learning of 3D consistency by utilizing one or more kinds of 3D prior knowledge as constraints, such as shape [16, 130, 153], albedo [2, 99], normal [2], and depth [79, 99, 102].",1,neutral
+"NGP [16] CGF 2021 Chair, Car user controls ✓ ✓ 3D shape, relectance map LiftedGAN [99] CVPR 2021 Face Uncon.",0,negative
+"More recently, a few methods [99, 102] are build on top of StyleGAN architectures, either using a pretrained StyleGAN or adapting the vanilla design to their setting.",1,neutral
+"LiftedGAN [99] (Nov 2020) equips a pre-trained StyleGAN2 generator with ive additional 3D-aware networks, which disentangle the latent space of StyleGAN2 into texture, shape, viewpoint, and lighting.",2,positive
+"In order to generate high-quality multi-view consistent images, neural scene representation using differentiable rendering [61], [85], [86], [87], [88], [89], [90], [91] that can be optimized on a training set of only 2D multi-view images has gained popularity in the past few years.",1,neutral
+"Other more descriptive and flexible 3D representations include depth maps [40, 48, 41], regular meshes [43, 38], and volumetric grids [19], although many of these approaches still rely on 3DMM in their intermediate steps.",1,neutral
+"Two rare examples of completely modelfree methods that also reconstruct hair [41, 43] are selfsupervised GANs [21] that learn from unlabeled collections of images.",1,neutral
+"Besides, we provide the FID, aMP, and FRS scores of LiftedGAN by using their randomly generated samples instead of the attribute-edited samples.",2,positive
+"However, LiftedGAN cannot control individual attributes.",1,neutral
+"Finally, Shi et al. [Shi et al. 2021] presents a LiftedGAN model, which lifts the pretrained StyleGAN2 in 3D.",2,positive
+"They either directly base on an image-to-image translation models [Choi et al. 2018; Liu et al. 2019], or utilize the disentangling abilities [Abdal et al. 2021; Shi et al. 2021; Tewari et al. 2020] of StyleGAN [Karras et al. ar X
+iv :2
+20 8.",1,neutral
+"We notice that LiftedGAN and DiscoFaceGAN cannot directly perform editing tasks, such as “Gender” and “Age”.",2,positive
+"Finally, we also adopt a 3D-aware LiftedGAN [Shi et al. 2021] to compare multiple-view generation.",2,positive
+"[Shi et al. 2021] presents a LiftedGAN model, which lifts the pretrained StyleGAN2 in 3D.",2,positive
+"Specifically, for the “Smile” attribute, our TT-GNeRF (S) achieve 1899.6 aMP and 0.812 FRS scores, which are better than 1484.0 aMP and 0.464 FRS scores of LiftedGAN, 1347.4 aMP, and 0.587 FRS scores of DiscoFaceGAN.",2,positive
+Many prior works [Abdal et al. 2021; Choi et al. 2018; Shi et al. 2021; Tewari et al. 2020] focus on realistic face editing.,1,neutral
+"On the other hand, LiftedGAN has improved 3D consistency but has the limited quality and cannot perform facial attribute editing.",1,neutral
+"Recently, some works [Deng et al. 2020; Geng et al. 2019; Lin et al. 2022; Shi et al. 2021; Tewari et al. 2020] demonstrate high-quality control over GAN generation via a 3DMM [Paysan et al. 2009].",2,positive
+"2019], or utilize the disentangling abilities [Abdal et al. 2021; Shi et al. 2021; Tewari et al. 2020] of StyleGAN [Karras et al.",1,neutral
+"Recently, some works [Deng et al. 2020; Geng et al. 2019; Lin et al. 2022; Shi et al. 2021; Tewari et al. 2020] demonstrate high-quality control over GAN generation via a 3DMM [Paysan et al.",2,positive
+"Moreover, photo-realistic synthesis remains challenging [26, 42].",1,neutral
+"We also follow the similar strategy in [42] to measure identity preservation, where we use all frontal images from the held-out FFHQ set and perform pose editing at different angles to compute the identity cosine similarity between the edited faces and the original ones.",2,positive
+"We compare with prior 3D-controllable GANs [10, 45, 46, 42, 26, 28, 6], and show more results in Supplementary.",1,neutral
+"More recently, several works introduced 3D priors into GANs [46, 10, 14, 42] for controllable synthesis.",1,neutral
+"In line with our work, several prior methods [28, 10, 26, 46, 45, 14, 42, 6] introduce 3D priors into GANs to achieve 3D controllability over face attributes of expression, pose, and illumination.",1,neutral
+"[33] propose to train a 3D generator to disentangle the latent codes into 3D components, which are used as the input for the renderer.",1,neutral
+"results of Unsup3d [34], LiftedGAN [33] and our proposed method.",2,positive
+"We adopt the pretrained face embedding model used in [33] for Lid and Llow, which is an ResNet-18 [47].",2,positive
+We observe our method performs better than Unsup3d [34] and LiftedGAN [33].,2,positive
+"We then adopt a pre-trained face recognition network [33] f(·) to regularize the face identities, which can be denoted as",1,neutral
+"In Table I, we show the quantitative results of Unsup3d [34], LiftedGAN [33] and our proposed method.",2,positive
+Comparisons of qualitative results between ours and two related works: (a) Unsup3d [34] and (b) LiftedGAN [33].,2,positive
+"However, they [33] try to infer the depth information without",1,neutral
+"LiftedGAN [33] performs well at generating the front cartoon faces only, while at other viewpoints, it renders low-quality images with large distortions, since LiftedGAN simply infers the depth from latent codes and trains the model without any constraint on the depth.",2,positive
+"Since the 3D shape reconstruction requires images of consistent multiple views and lighting, recent works [6], [7], [20], [33], [34] attempt to uncover extra cues to guide the learning process.",1,neutral
+"[20], [33], [35] aim to manipulate the latent codes of StyleGAN [8], [9] to generate synthetic data for 3D shape learning.",1,neutral
+Both LiftedGAN [33] and our method set the resolution as 256.,1,neutral
+"In Figure 8, we show the rotated results of related works [33], [34] using the unsupervised method to reconstruct the 3D shapes.",1,neutral
+Unit GIRAFFE [54] pi-GAN [10] LiftedGAN [61] EG3D† [9] GRAM† [16] StyleNeRF† [23] GMPI Train - Time↓ – 56h – 8.,0,negative
+LiftedGAN [61] serves as this ablation.,1,neutral
+"Following [9, 61], we also study the 3D geometry’s pose accuracy.",1,neutral
+"Row FID↓ KID×100 ↓ ID↑ Depth↓ Pose↓
+2 5 6 2
+1 LiftedGAN [58] 29.8 – 0.58 0.40 0.023 2-1 D2A (ϵ = 1/64) 13.4 0.920 0.69 0.60 0.004 2-2 D2A (ϵ = 1/128) 13.5 0.867 0.70 0.60 0.004 2-3 D2A (ϵ = 1/256) 11.7 0.644 0.70 0.63 0.005 2-4 D2A (ϵ = 1/512) 12.6 0.684 0.69 0.62 0.005 3 GMPI 11.4 0.738 0.70 0.53 0.004
+Similarly, we approximate depth Dvtgt via
+Dvtgt = L∑ i=1 bi · α′i · i−1∏ j=1 (1− α′j)  , (S4) where bi is the distance mentioned in Eq.",0,negative
+"At a resolution of 2562, 1) GMPI outperforms GIRAFFE, pi-GAN, LiftedGAN, and GRAM on FID/KID while outperforming StyleSDF on FID; 2) GMPI demonstrates better identity similarity (ID) than GIRAFFE, pi-GAN, and LiftedGAN; 3) GMPI outperforms GIRAFFE regarding depth; 4) GMPI performs best among all baselines on pose accuracy.",2,positive
+"Similar to [9, 61], we also assess geometry and depth accuracy.",1,neutral
+"Different from our proposed approach, because of the transformation map, LiftedGAN is not strictly view-consistent.",2,positive
+LiftedGAN reconstructs the geometry of an image by distilling intermediate representations from a fixed StyleGANv2 to a separate 3D generator which produces a depth map and a transformation map in addition to an image.,1,neutral
+Most related to our work are GRAM [16] and LiftedGAN [61].,1,neutral
+"3 Portrait image generation with 3D control To evaluate the performance of the proposed 3D-controllable StyleGAN, we report the qualitative and quantitative comparison with state-of-the-art models [34,9,72,57] whose generator allows explicit control over pose.",2,positive
+"Recently, a few methods [57,47] have incorporated a pre-trained StyleGAN with a differentiable renderer, but they struggle with photorealism, high-resolution [47] and real image editing [57].",1,neutral
+"In addition, a few unsupervised approaches have been proposed by adopting implicit 3D feature [42,43] or differentiable renderer [57,47] in generation.",1,neutral
+"Recently, LiftedGAN [52] lifts a pre-trained StyleGAN and distill it into a 3D aware generator, producing depth maps as a by-product.",2,positive
+"Early attempts [44,52,63] are made to mine 3D geometric cues from the pretrained 2D GAN models in an unsupervised manner.",1,neutral
+GAN2Shape [3] and LiftedGAN [24] use neural networks and a differentiable renderer [25] for reasoning the mapping process by semantics-embedding-semantics selfmapping.,1,neutral
+"Differently, the semantics-embedding networks of GAN2Shape use the rendered images as a intermediary, while LiftedGAN does not and achieves high-fidelity rotation results in a large angle range.",2,positive
+"In contrast, our ASRMM focuses on a light way to improve the reconstruction accuracy, without relying on heavy prior models for view changing or relighting, but our ASRMM is also inspired by [3, 22, 24] that style-transferred images can improve the diversity of the input, and we transfer image style by making the material monotonous.",2,positive
+Modern GANs are a lot of engineering and it often takes a lot of futile experiments to get to a point where the obtained performance is acceptable.,1,neutral
+"We believe that the future of 3D GANs is a combination of efficient volumetric representations, regularized 2D upsamplers, and patch-wise training.",2,positive
+"In contrast to classical NeRF [38], we do not utilize view direction conditioning since it worsens multi-view consistency [7] in GANs which are trained on RGB datasets with a single view per instance.",1,neutral
+"Note that this high training efficiency is achieved without the use of an upsampler, which initially enabled high-resolution synthesis of 3D-aware GANs.",1,neutral
+"Also, in contrast to upsampler-based 3D GANs, our generator can naturally incorporate the techniques from the traditional NeRF literature.",2,positive
+NeRF-based GANs.,2,positive
+"Compared to upsampler-based 3D GANs [15, 43, 72, 79, 6, 78], we use a pure NeRF [38] as our generator G and utilize the tri-plane representation [6, 8] as the backbone.",2,positive
+"Recently, there appeared works which train from single-view RGB only, including mesh-generation methods [19, 73, 53] and methods that extract 3D structure from pretrained 2D GANs [58, 48].",1,neutral
+"Apart from that, we also compare to pi-GAN [7] and GRAM [12], which are non-upsampler-based GANs.",1,neutral
+"Finally, 3D GANs generating faces and humans may have negative societal impact as discussed in Appx G.",1,neutral
+Patch-wise training of NeRF-based GANs was originally proposed by GRAF [56] and got largely neglected by the community since then.,1,neutral
+"But for NeRF-based GANs, it becomes prohibitively expensive for high resolutions since convolutional discriminators operate on dense full-size images.",1,neutral
+"Training NeRF-based GANs is computationally expensive, because rendering each pixel via volumetric rendering requires many evaluations (e.g., in our case, 96) of the underlying MLP.",1,neutral
+"People address these scaling issues of NeRF-based GANs in different ways, but the dominating approach is to train a separate 2D decoder to produce a high-resolution image from a low-resolution image or feature grid rendered from a NeRF backbone [43].",1,neutral
+"With the advances in differentiable rendering and neural 3D representations, a recent line of work has explored photo-realistic 3D face generation using only 2D image collections as training data [1], [21], [22], [23], [24], [25], [26], [27], [28], where they generate not only 2D images, but the implicit 3D geometry as well.",1,neutral
+"Generative 3D-aware image synthesis 3D-aware generative models [42, 30, 53, 51, 8, 44] aim to learn multiview image synthesis of an object category given uncontrolled 2D images collections.",1,neutral
+"While the disentangled style-space of StyleGANs [20–22] allows for control over the viewpoint of the generated images to some extent [13, 26, 42, 51], gaining precise 3D-consistent control is still non-trivial due to its lack of physical interpretation and operation in 2D.",1,neutral
+LiftedGAN [51] transforms the framework to a generative model but also needs optimization to address real-world images.,1,neutral
+"Theoretically, larger modeling sizes are feasible, but we use a similar setting as [7, 51, 75] due to the time and memory cost.",1,neutral
+Gan2Shape [40] and LiftedGAN [51] try to distill knowledge from 2D GANs for 3D reconstruction.,2,positive
+"For example, mesh-based 3D GANs are limited in viewing angle and detail [Liao et al. 2020; Shi et al. 2021; Szabó et al. 2019]; voxel-based 3D GANs are limited in their resolution due to extensive memory requirements [Gadelha et al. 2017; Hao et al. 2021; Henzler et al. 2019; Nguyen-Phuoc et al.…",1,neutral
+"For example, mesh-based 3D GANs are limited in viewing angle and detail [Liao et al. 2020; Shi et al. 2021; Szabó et al. 2019]; voxel-based 3D GANs are limited in their resolution due to extensive memory requirements [Gadelha et al.",1,neutral
+"[8, 48] I, 3DMM MI, LI, 3DMM [10] SI 3DV (w/o T) [49] I, KP 3DM (w/o T) Ellipsoid [16] I, KP, BG, SI 3DM Ellipsoid [37] I, SI, KP 3DM Ellipsoid [44] I MI, LI, A, D, N Symmetry",1,neutral
+"In this paper, we adopt the state-of-the-art pre-trained 3D generator of G3D [27] for 3D face modeling, which can disentangle the generation process of a 2D generator G2D instantiated by StyleGAN [17] into different 3D modules for a 3D shape representation.",2,positive
+"(2)
+By optimizing the objective function (1), we can obtain the optimal w∗ and get the 3D face as {s, t} = G3D(w∗).",1,neutral
+"Given a face recognition model f(x) : X → Rd, we optimize the parameter of w for the generator by minimizing the distance between the original face image and the rendered image of x′ as
+min w
+Df (x′,x) + λ∥x′ − x∥1, (1)
+where x′ := R(G3D(w);V0, L0) with R being a differentiable renderer, and V0 and L0 are corresponding parameters of neutralized viewpoint and lighting; and λ is a balancing hyperparameter.",1,neutral
+"Specifically, we adopt a 3D generator [27] to synthesize 3D face information, including texture, shape, viewpoint, and lighting, using only a single-view face image.",2,positive
+"(1); 4: w ← w − η∇wJ ; 5: end for 6: Forward pass the optimal w∗ into G3D to the 3D face {sa, ta}; 7: Initializing t∗0 = x b; ▷ Stage II: Optimize t∗
+8: for k in MaxIterations N2 do 9: t∗k = t
+a ⊙ (1−M) + t∗k ⊙M; 10: Construct 3D adversarial face {sa, t∗k}; 11: Get importance probability P̂i,j from Eq.",1,neutral
+"(5) as
+Pi,j = 1
+Z eJf (R(s a,t∗;Vi,Lj),x b), (7)
+Algorithm 1 Face3DAdv
+Require: A pre-trained 3D generative model G3D, a FR model f , a real face image xa, a target face image xb, 2D transformation function T .",1,neutral
+"On the other hand, some face representation methods leverage 3D position maps [27,13] to represent and output the mesh of the target, and achieve the controllable parametric nature of existing face models.",1,neutral
+[61] and [56] adopt a meshbased representation and generate images via rasterization.,1,neutral
+"Another group of works [10, 12, 43, 55, 56, 61] seek to learn direct 3D representation of scenes and synthesize images under physical-based rendering process to achieve more strict 3D consistency.",1,neutral
+"Related work has been successful at being view consistent [4, 58, 59] or modeling pose-appearance correlations [47, 49], but cannot achieve both simultaneously.",1,neutral
+"Although it is not as fast as Lifting StyleGAN [59] and GIRAFFE [49], we believe major improvements in image quality, geometry quality, and viewconsistency outweigh the increased compute cost.",2,positive
+We evaluate shape quality by calculating MSE against pseudo-ground-truth depth-maps (Depth) and poses (Pose) estimated from synthesized images by [10]; a similar evaluation was introduced by [59].,2,positive
+"5D GANs, which generate images and depth maps [59], our method works naturally for steep camera angles and in 360◦ viewing conditions.",2,positive
+"We compare our methods against three stateof-the-art methods for 3D-aware image synthesis: πGAN [4], GIRAFFE [49], and Lifting StyleGAN [59].",2,positive
+"While GIRAFFE synthesizes high-quality images, reliance on view-inconsistent convolutions produces poor-quality shapes and identity shift—note the hairline inconsistency between rendered views. π-GAN and Lifting StyleGAN generate adequate shapes and images but both struggle with photorealism and in capturing detailed shapes.",1,neutral
+"[73] Yichun Shi, Divyansh Aggarwal, and Anil K Jain.",0,negative
+"Prior work has explored the use of GANs [27, 68] in vision tasks such as classification [10, 12, 55, 75, 85], segmentation [57, 80, 83, 91] and representation learning [7, 20, 21, 23, 36], as well as 3D vision and graphics tasks [28, 65, 73, 90].",1,neutral
+"We do not rely on hand-crafted pixel space augmentations [12, 36], human-labeled data [28, 73, 80, 90, 91] or post-processing of GAN-generated datasets using domain knowledge [10, 57, 83, 90].",2,positive
+"Recent advances in controllable face image synthesis have yielded many impressive applications [2, 4, 7, 10, 15, 23, 41, 43, 44, 48].",1,neutral
+"We do not rely on hand-crafted pixel space augmentations [144, 155], human-labeled data [151,152,158,160,161] or post-processing of GAN-generated datasets using domain knowledge [146,149,150,160].",2,positive
+"As a result, later methods moved away from fully convolutional GANs by incorporating 3D inductive biases in the architecture and training pipeline, such as 3D neural representations and differentiable rendering methods [34, 35, 47, 38].",1,neutral
+"LiftGAN [47]: a method predating EG3D and SURF baselines, based on differentiable rendering for distilling 2D GANs to train a 3D generator.",2,positive
+"As a result, later works aimed at unsupervised methods by introducing 3D inductive biases in GANs, including 3D neural representations and differentiable rendering [34, 38, 47, 35] These methods, although promising, lag far behind 2D GANs in terms of image quality or struggle with high-resolution generation due to the additional computational complexity compared to the convolutional generators.",1,neutral
+"[23] proposed LiftedGAN, a framework that maps a latent code of StyleGAN2 to various maps as representations of shape and appearance.",2,positive
+"2 Qualitative results Figure 4 compares our method with other controllable and 3D-aware face synthesis methods based on StyleGAN2, including LiftedGAN [23], InterfaceGAN [22], StyleFlow [1], and EG3D [4].",2,positive
+"The FID scores of our method, LiftedGAN [23], and StyleGAN2 [13] are 11.",2,positive
+LiftedGAN [23] utilizes the depth map as the shape representation and trains a couple of modules to render stably in various perspectives.,1,neutral
+"Figure 4: Visual comparison of our generated faces with InterfaceGAN [21, 22], LiftedGAN [23], StyleFlow [1], EG3D [4] in different yaw angles.",2,positive
+"In order to generate high-quality multi-view consistent images, neural scene representation using differentiable rendering [61], [85], [86], [87], [88], [89], [90], [91] that can be optimized on a training set of only 2D multi-view images has gained popularity in the past few years.",1,neutral
+"3 Transcoder It has been observed in prior works that altering viewpoint by directly manipulating the style code is possible [28, 33].",1,neutral
+"For instance, StyleGAN [13] representations have been shown to disentangle pose, shape and fine detail naturally, a property which has been used to help lift objects to 3D [12, 17, 28, 33, 39], these methods are 3D aware, but lack multi-view consistency.",1,neutral

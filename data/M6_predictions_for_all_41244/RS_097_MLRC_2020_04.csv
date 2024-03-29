@@ -1,0 +1,102 @@
+text,target_M6_predict,target_predict_M6_label
+"[18], [19], [20], [21], [22], [23], [24], [25], [26], [27], [28], [29] is a natural way to solve the data annotation problem so as to make better use of massive unlabeled data.",1,neutral
+"” The sources of unfairness are many, including data sampling bias or under-representation [16, 70, 15, 7], data labeling bias [60, 65, 26], model architecture (or feature representation) [2, 47, 68, 56, 66, 39, 55, 41], distribution shift [23, 17, 50, 27] etc.",1,neutral
+"Other works have also extended the learning paradigm beyond traditional clustering, such as deep clustering [36], spectral clustering [33], and hierarchical clustering [2].",1,neutral
+"In general, many existing methods achieve node fairness by pre-dividing, recombining [47], or adding constraints [33, 36] to the original clustering methods.",1,neutral
+"Fair clustering algorithms reduce bias in many applications, like computer vision [32].",1,neutral
+"Diferent fair clustering algorithms [6, 11, 14, 24, 26, 29, 32, 49] are designed for diferent fair objectives, like protecting minority groups or hiding sensitive attributes.",1,neutral
+"Nowadays, for the applications that require fair clustering, research interests are devoted to designing various fair objectives [6, 11, 24, 26, 27, 29, 32], to ensure the fairness for the social good.",1,neutral
+"2 Deep Graph Clustering Recently, due to the strong representation power of deep neural networks, many deep clustering methods have been proposed and achieved impressive performance [14, 15, 26, 34, 37, 55, 63].",1,neutral
+"Machine Learning Fairness AI Fairness proposes ethical regulations to rectify algorithms not discriminating against any party or individual (Li et al., 2021; Hardt et al., 2016; Li & Liu, 2022; Li et al., 2020; Song et al., 2021; Chhabra et al., 2022).",2,positive
+"INTRODUCTION Clustering is a typical yet challenging machine learning topic with a series of real-world applications, including object detection [1], [2], [3], social network analysis [4], [5], [6], [7], and face recognition [8], [9], [10], [11].",1,neutral
+5.2.1 Adversarial.,0,negative
+"Generative Adversarial Networks (GANs) can be an option when looking for ways to increase a dataset with synthetic data [62, 147, 165, 217], since they can create high-quality new images when properly trained, balancing the dataset with regard to its potential misrepresentation and allowing the training of a new model over both original and synthetic data.",1,neutral
+"Aside from proposing novel loss functions, it is possible to employ an algorithm to inject constraints during model training to ensure a fair distribution of predictions for the training data [115, 220].",1,neutral
+"The objective is to teach the main network not to use the protected attribute to do the task [60, 115, 150, 209, 212, 218].",2,positive
+"One-Step-Training Adversarial [55, 115, 205] [58, 60, 67, 129, 150, 167, 209] [14, 214] Causal Approaches [42, 93, 98] [76] [215] Disentanglement [41, 98, 153, 193, 213] [51] —",1,neutral
+"Optimization [4, 5, 73, 79, 130, 192, 204] [24, 31, 51, 67, 90, 118, 182, 207] [99, 203, 220] [96, 97, 115, 127, 133, 154, 161, 178]",1,neutral
+"These methods are further divided into four distinct groups according to the debiasing strategy that is used: (i) Adversarialmethods make use of the adversarial framework or of adversarial examples to teach the model
+not to resort to undesired biases; (ii) Causal methods use causal graphs and counterfactual examples to teach the model which relationships
+are relevant within the data; (iii) Disentanglement methods separate the features in the latent space to manipulate them independently; (iv) Optimization methods include loss function adaptions, addition of regularization terms, and other modifi-
+cations for improving weight optimization.",1,neutral
+"Category Sub-category Vision Language Multimodal
+Distributional Heuristic [45] [126, 186] — Generative [32, 62, 147, 165, 217] [160] — Resampling [28, 117, 192] — [214]
+One-Step-Training
+Adversarial [55, 115, 205] [58, 60, 67, 129, 150, 167, 209] [14, 214] Causal Approaches [42, 93, 98] [76] [215] Disentanglement [41, 98, 153, 193, 213] [51] —
+Optimization [4, 5, 73, 79, 130, 192, 204] [24, 31, 51, 67, 90, 118, 182, 207] [99, 203, 220][96, 97, 115, 127, 133, 154, 161, 178]
+Two-Step-Training Distillation [88, 116, 132] [76] — Fair-Modules [94, 116] [33, 57, 112, 163, 210] [152, 191, 214] Fine-Tuning — [56, 68, 122, 211] [14]
+Inferential Prompting — [66, 176, 181, 184, 202] [137]
+Vector-Space Manipulation [174] [3, 21, 22, 47, 52, 89, 119, 120, 197] [203][48, 77, 91, 106, 107, 111, 189, 216]
+ACM Comput.",1,neutral
+[31] make a step forward to explore fair clustering on visual data by achieving fairness through adversarial training.,2,positive
+"His recent work on fairness includes deep fair clustering [31], dyadic fairness on link prediction [30], fair outlier detection [46], fair feature selection [51] and studies on the trade-off between utility and fairness [29].",1,neutral
+"Entropy is a fairness metric proposed by [Li et al., 2020] and similar to Balance, higher values of Entropy, mean that clusters have more fairness.",1,neutral
+"For fairness utility we consider Balance [Chierichetti et al., 2017] and Entropy [Li et al., 2020].",1,neutral
+"Similar to other deep clustering approaches [Xie et al., 2016, Li et al., 2020], we employ a clustering assignment layer based on Student t-distribution and obtain soft cluster assignments P .",2,positive
+"There are also works that extend fair clustering into other clustering paradigms like spectral clustering [Kleindessner et al., 2019b] and deep
+clustering [Li et al., 2020, Wang and Davidson, 2019].",1,neutral
+"Since optimizing the fair clustering loss Lf can lead to a degenerate solution where the learned representation reduces to a constant function [Li et al., 2020], we employ a well-known structural preservation loss term for each protected group.",1,neutral
+"MNIST-USPS: Similar to previous work in deep fair clustering [Li et al., 2020], we construct MNIST-USPS dataset using all the training digital samples from MNIST [LeCun, 1998] and USPS dataset [LeCun, 1990], and set the sample source as the protected attribute (MNIST/USPS).",2,positive
+"In [17], they used a simple encoder-decoder network, [24,32] used adversarial learning of GAN, and [48] used a style transfer GAN to synthesize facial images independent of sensitive attributes such as gender and race.",1,neutral
+"In terms of algorithmic fairness, works such as [24,32,45] aim to learn the features in the data that are statistically independent of the sensitive attributes, while [18,2] focus on de-biasing the latent space of a generative model to achieve a fair outcome.",1,neutral
+"The latest research work has also been on fairness research in unsupervised directions, such as clustering algorithm [7] and recommendation systems [8].",1,neutral
+"Additional settings that are less common include fair federated learning (Li et al. 2020b), where algorithms are trained acrossmultiple decentralized devices, fair incremental learning (Zhao et al. 2020a), where novel classes may be added to the learning problem over time, fair active learning…",1,neutral
+"Fair task assignment and truthdiscovery (Goel andFaltings 2019; Li et al. 2020d) are different subproblems in the same area, focused on the subdivision of work and the aggregation of answers in crowdsourcing.",2,positive
+"In-processing approaches insert fair constraints or penalties into the training pipeline, so the fair performance can be generalized to inference as achieved during training [50, 1, 52, 48, 27, 30, 20, 35, 36, 44].",1,neutral
+A notable example is Deep Fair Clustering (DFC) [54].,1,neutral
+"Deep Clustering Several approaches perform clustering on top of feature extracted by deep neural network [11], [18]– [20].",1,neutral
+"Joint Representation Learning and Image Clustering Recent studies [18], [25], [30] have explored the combination of deep",1,neutral
+"Another recent study, similar to our work, is deep fair clustering [18], that aims to alleviate sensitive features during data partitioning by balancing the distribution of subgroups in each cluster.",2,positive
+"Due to the rising societal concerns, fairness in machine learning has received increasing attention in recent years [7, 16, 21, 32].",1,neutral
+"In particular, representation learning with adversary has become a widely-used method in recent years and has demonstrated effectiveness on multiple tasks, including anonymization [11], clustering [32], classification [39], transfer learning [39], and domain adaptation [30, 49].",1,neutral
+"Other related works focus on scalable fair clustering [Backurs et al., 2019], fair spectral clustering [Kleindessner et al., 2019], and deep fair clustering [Li et al., 2020].",1,neutral
+We compare FUFS with different baseline methods in terms of feature utility (ACC and NMI) and fairness metrics (Balance and Propotion).,2,positive
+"These four metrics are defined as follows:
+ACC =
+∑n i=1 δ (yi,map(ŷi))
+n , (8)
+NMI =
+∑ c∈C ∑ c′∈C′ p (c, c′) log (p (c, c′) /p (c) p (c′))
+mean (H(C), H(C′)) , (9)
+Balance = min i ming |Ci ∩Xg| |Ci| , (10)
+Proportion = ∑ i maxg |Ci ∩Xg| |Ci| , (11)
+where ŷi is the clustering result, yi is the true cluster label, map(·) is a permutation mapping function that maps yi to the equivalent label from the ground truth and δ is the indicator function such that δ(x, y) = 1 if x = y, and δ(x, y) = 0 otherwise.",1,neutral
+"Meanwhile, we use the widely used metrics Balance [Li et al., 2020] and define a new fairness metric Proportion as a compliment since Balance may be too restrict to reflect the distribution of the clustering.",2,positive
+"We make the following observations:
+• FUFS significantly outperforms the baseline methods in terms of Balance and Proportion with the best performance in almost all cases and the second best performance in terms of Balance on CRIME.",2,positive
+"These two metrics are used to quantify how well the selected features can eliminate discrimination—the selected features are considered fairer if
+2http://archive.ics.uci.edu/ml/datasets/Communities+and+ Crime+Unnormalized
+3https://www.thearda.com/ 4http://snap.stanford.edu/data/ego-Gplus.html 5https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-
+classification/
+they can lead to a more balanced cluster structure toward protected attributes (i.e., higher value of Balance and lower value of Proportion).",2,positive
+"Specifically, on ADOLESCENT and GOOGLE+, FUFS achieves the best results in terms of Balance and Proportion compared with the baseline methods with
+merely 10% of the total number of features.",2,positive
+"Due to space limit, we only show the parameter study results on GOOGLE+ in terms of ACC and Balance.",2,positive
+"Meanwhile, we use the widely adopted metrics Balance [18] and define a new fairness metric Proportion to quantify fairness—the selected features are considered fairer with higher value of Balance and lower value of Proportion.",2,positive
+"When the parameter α increases, the algorithm becomes more partial to the fairness consideration with decreasing ACC and increasing Balance.",1,neutral
+"Meanwhile, the fairness performance (w.r.t. Balance and Proportion) is the best when only 10% of features are selected (it should be noted that lower values of Proportion denotes fairer results).",0,negative
+"Other related works focus on scalable fair clustering [2], fair spectral clustering [14], and deep fair clustering [18, 26].",1,neutral
+We first evaluate our work on two visual data sets with binary PSV that has been used in recent work [18]: 1) MNIST-USPS consists of 67291 training images of hand-written digits.,2,positive
+"Comparing our results with the recent deep fair clustering works [29, 18] we can see that our approach consistently outperforms these two baselines in terms of both clustering performance and fairness.",2,positive
+"Recently, [18] encodes the fairness constraints as an adversarial loss and concatenates the fairness loss to a centroid-based deep clustering objective as a unified model.",1,neutral
+"For a fair comparison with non-deep clustering baselines, we use pre-trained auto-encoder’s features like [18].",2,positive
+"For deep fair clustering baselines, we compare our work with the latest work [18] and the geometric-based fair clustering [29].",2,positive
+The most recent work (and only other work) [18] proposes a deep fair visual clustering model with adversarial learning to encourage the clustering partition to be statistically independent of each sensitive attribute.,1,neutral
+"clustering [22, 30, 42, 48, 50, 51, 52] is a natural way to solve the data annotation problem so as to make better use of massive unlabeled data.",1,neutral
+", 2018), unsupervised learning (Chierichetti et al., 2017; Li et al., 2020; Backurs et al., 2019), ranking (Zehlike et al.",1,neutral
+"…paradigms of supervised learning (Hardt et al., 2016; Zhao et al., 2020; Madras et al., 2018), unsupervised learning (Chierichetti et al., 2017; Li et al., 2020; Backurs et al., 2019), ranking (Zehlike et al., 2017), and sequential decision making (Joseph et al., 2016; Gillen et al., 2018;…",1,neutral
+"Following otherwork indeep clustering, DFCemploys a clustering regularizer to strengthen prediction confidence and to prevent large cluster sizes [1].",2,positive
+"The preservation loss, which was proposed by the authors [1] is given as follows:",0,negative
+"Again following the literature, the authors have chosen to use the Student t-distribution for soft cluster assignment [1].",1,neutral
+"However, there exists a trade-off between the fairness and the performance of machine learning algorithms in a given task [1].",1,neutral
+"[111] developed a scalable, deep clustering model that used adversarial loss to constrain learning and ensure fairness while maintaining cluster quality.",1,neutral
+"In papers, [101], [102], [111] the authors constrained the deep clustering process itself, optimizing the trade-off between cluster quality and fairness through joint optimization, adversarial learning or other similar approaches.",1,neutral
+"To the best of our knowledge, there are only three research works covering deep fair clustering: [101], [102], [111].",2,positive
+"Entropy is a fairness metric that was defined in [111], and has only been exclusively used for fairness in the context of deep clustering models.",1,neutral
+"Techniques for bias assessment and debiasing should be employed whenever 196 possible to ensure this remains the case [32, 33, 34, 35].",0,negative
+"b) Deep Clustering: Several approaches perform clustering on top of feature extracted by deep neural network [12], [19]–[21].",1,neutral
+"Another recent study, similar to our work, is deep fair clustering [19], that aims to alleviate sensitive features during data partitioning by balancing the distribution of subgroups in each cluster.",2,positive
+"In recent years, several studies [19], [24], [29] have explored the combination of deep clustering with representation learning.",1,neutral
+"Debiasing algorithms: To mitigate biases of DL systems, many debiasing algorithms or bias resistant networks have been proposed and evaluated [10, 15, 16, 17, 45, 47, 54, 59, 66, 83, 98, 99, 106].",1,neutral
+"– Fair clustering for visual learning (Li et al., 2020).",2,positive
+"• Two-task classifications: the MultiMNIST data set and the MultiFashion data set [49], [53], [54]; • Four-task classifications: the MTFL data set [55]–[57].",1,neutral

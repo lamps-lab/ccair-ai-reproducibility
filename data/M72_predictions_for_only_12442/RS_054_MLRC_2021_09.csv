@@ -1,0 +1,556 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+The training was performed for 1M steps using AdaBelief optimizer [29] taking 2 weeks on two NVIDIA RTX A6000 GPUs.,1,related,0,negative
+"We compare AdaPlus with six state-of-the-art optimzers including SGDM [1], Adam [2], Nadam [5], RAdam [7], AdamW [3], and AdaBelief [6].",1,related,1,positive
+"1, we further integrate the stepsize adjusting mechanism proposed in [6] and finally propose a new optimizer named AdaPlus.",1,related,1,positive
+"As that reported in [6], using each optimizer, we train the model for 100 epochs, generating 64,000 fake images from noise.",1,related,1,positive
+"We mainly consider the “large gradient, small curvature” case in which AdaBelief [6], with precise stepsize adjustment, performs differently from other adaptive methods (e.",1,related,1,positive
+"We perform extensive comparisons with six state-of-the-art optimizers: SGDM [1], Adam [2], Nadam [5], AdamW [3], RAdam [7], and AdaBelief [6].",1,related,1,positive
+"We note that SGDM, Adam, RAdam, and AdaBelief use the same hyper-parameter tunning strategy as reported [6] which we do not report in detail due to space limit.",1,related,1,positive
+We train all our FFN and RNN networks with crossentropy loss and AdaBelief optimizer [43].,1,related,0,negative
+"Experimental set-up We pre-train on the train set, with the AdaBelief optimizer [43], with a learning rate of 3.",1,related,0,negative
+"AdaBelief [25]: at = τat−1 + (1− τ)(∇gf (ut, yt; ζt) · v′ t − vt)(2), At = diag ( √ at + ρ) ; bt = τbt−1 + (1− τ)(∇yf (ut, yt; ζt)− wt)(2), Bt = diag( √ bt + ρ).",1,related,1,positive
+"AdaBelief [25]:
+at = τat−1 + (1− τ)(∇gf (ut, yt; ζt) · v′t − vt)2, At = diag ( √ at + ρ) ; bt = τbt−1 + (1− τ)(∇yf (ut, yt; ζt)− wt)2, Bt = diag( √ bt + ρ).",1,related,1,positive
+"In case 2, we consider using AdaBelief.",1,related,1,positive
+"It is worth noting that we can generate the two matrices At and Bt by a class of adaptive learning rates generators such as Adam [24], AdaBelief, [25], AMSGrad [26], AdaBound [27].",1,related,1,positive
+AdaBelief incorporates both the noisy gradients and estimator values when updating x.,1,related,1,positive
+"Based on the losses calculated in each phase, the FLP model is updated with Adam [51], while AT model is updated with Adabelief [52].",1,related,0,negative
+The internal potential is optimize via the training loop below where the Adabelief optimizer is utilized for its combination of adaptive learning and performance [10]:,1,related,1,positive
+"During the VQE stage of the training, the adabelief optimizer [54] is used to update the quantum circuit parameters, while Nesterov’s accelerated gradient descent scheme [55] is performed for the Schmidts coefficient.",1,related,1,positive
+"Image Classification Consistent with general optimizer researches (Zhuang et al., 2020), we conduct experiments on two image classification tasks, CIFAR-10 and CIFAR-100 (Krizhevsky et al.",1,related,1,positive
+", 2018), given θi, E[δi|θi] = 0; On the other hand, suppose the optimizer runs for a long time, the bias of EMA is small (Zhuang et al., 2020), thus E(It) approaches E(gt) as step increases.",1,related,1,positive
+"Consistent with general optimizer researches (Zhuang et al., 2020), we conduct experiments on two image classification tasks, CIFAR-10 and CIFAR-100 (Krizhevsky et al., 2009) in CV field, and the results are presented in Table 1.",1,related,1,positive
+"Suppose the optimizer runs for a long time, the bias of EMA is small (Zhuang et al., 2020), thus E(It) approaches E(gt) as step increases.",1,related,1,positive
+"…for the follow reasons: on the one hand, gt = ∇f(θt) + δt in which E[δt] = 0, so according to (Chen et al., 2018), given θi, E[δi|θi] = 0; On the other hand, suppose the optimizer runs for a long time, the bias of EMA is small (Zhuang et al., 2020), thus E(It) approaches E(gt) as step increases.",1,related,1,positive
+"…we then get
+− E [ t∑ i=1 αi〈∇f(θi), gi/ √ v̂i〉 ]
+≤2H2E  t∑ i=2 d∑ j=1 ∣∣∣(αi/(√v̂i)j − αi−1/(√v̂i−1)j)∣∣∣ + 2H2E  d∑ j=1 (α1/ √ v̂1)j  − E
+[ t∑ i=1 αi〈∇f(θi),∇f(θi)/ √ v̂i〉 ] (32)
+Then, consider the term with µ. Suppose the optimizer runs for a long time, the bias of EMA is small (Zhuang et…",1,related,1,positive
+"We use the default training hyperparameters of SGD, Adam, and AdamW in these settings (He et al., 2016; Zhuang et al., 2020; Chen et al., 2021), and set MSBPG ’s learning rate (initial stepsize) as 0.",1,related,1,positive
+"Here we follow the commonly used experimental setting for training LSTMs (Zhuang et al., 2020; Chen et al., 2021), which reduces the stepsize to 0.",1,related,1,positive
+"Here we follow the commonly used experimental setting for training LSTMs (Zhuang et al., 2020; Chen et al., 2021), which reduces the stepsize to 0.1 times its original value two times (at 75th epoch and 150th epoch) during the training process.",1,related,0,negative
+"For training hyperparameters, we use the default settings for SGD, Adam, and AdamW in training 1-, 2-, 3-layer LSTMs (Zhuang et al., 2020; Chen et al., 2021).",1,related,1,positive
+"We use the default training hyperparameters of SGD, Adam, and AdamW in these settings (He et al., 2016; Zhuang et al., 2020; Chen et al., 2021), and set MSBPG ’s learning rate (initial stepsize) as 0.1, momentum coefficient β as 0.9, weight decay coefficient γ as 1× 10−3.",1,related,1,positive
+"For our optimizer we used AdaBelief (Zhuang et al., 2020), which is a version of Adam (Kingma and Ba, 2015) that instead of the accumulating squared gradients, accumulates the squared difference between the gradient and the momentum.",1,related,1,positive
+"In initial experiments, we found AdaBelief to increase stability.",1,related,1,positive
+"To optimize the parameters of the model, we use Adam [5] and AdaBelief [22] as optimizers for the Twitter and Weibo datasets.",1,related,1,positive
+"We experimented with SGD, Adam [68], AdaBelief [69], and AdamW [70] optimizers, and found the results of AdamW [70] better than others.",1,related,1,positive
+"We experimented with SGD, Adam [47], AdaBelief [48], and AdamW [49] optimizers, and found the results of AdamW [48] better than others.",1,related,1,positive
+"We can further apply AdaBelief method [24] to improve the transferability of protected samples by gradually reducing the learning rate, which we leave for future work.",1,related,0,negative
+"In this section, we establish the convergence properties of ADAM, AMSGrad, Yogi and AdaBelief for solving UNP based on our proposed framework when the objective function f takes the following finite-sum formulation,
+f (x) := 1 N
+N
+∑ i=1 fi(x).",1,related,1,positive
+"• AdaBelief-C: vk+1 = (1− τ2ηk)vk + τ2ηk|ĝk −mk+1|;
+• AMSGrad-C: vk+1 = max{vk, |ĝk|};
+• Yogi-C: vk+1 = vk − τ2ηksign(vk − |ĝk",1,related,1,positive
+"Moreover, we demonstrate that our proposed framework can be employed to analyze the convergence properties for a class of Adam-family methods with diminishing stepsize, including Adam, AdaBelief, AMSGrad, NAdam, and Yogi.",1,related,1,positive
+"Assumption 3.2(3) enforces regularity conditions on the set-valued mapping U , which are satisfied in a wide range of adaptive stochastic gradient methods such as Adam, AdaBelief, AMSGrad, NAdam, Yogi, as discussed later in Section 4.",1,related,1,positive
+"AdaBelief: For any k ≥ 0, it holds that
+‖vk+1‖ ≤ (1− τ2ηk) ‖vk‖+ τ2ηk ∥∥(gk −mk+1)2∥∥ ≤ max { ‖v0‖ , sup
+k≥0
+∥∥(gk −mk+1)2∥∥ } .",1,related,1,positive
+"Table 3 summarizes the updating rules for Adam, AdaBelief, AMSGrad, NAdam and Yogi, their corresponding set-valued mappings U in the framework (AFM), and the settings for the parameters α and κ.",1,related,1,positive
+"• Convergence properties for Adam-family methods We show that Adam, AdaBelief, AMSGrad, NAdam and Yogi, when equipped with diminishing stepsizes, follow our proposed framework (AFM).",1,related,1,positive
+"The CrossEntropyLoss function was adopted to obtain Lossnode and Lossedge herein, and the variables were optimized by Adabelief [27].",1,related,1,positive
+The variables were optimized by Adabelief.,1,related,0,negative
+"Optimizer: AdaBelief [43] with learning rate 5 · 10−4, betas (0.9, 0.999), eps 10−16, using weight decoupling without rectifying, to have both fast convergence and generalization.",1,related,1,positive
+"Optimizer: AdaBelief [43] with learning rate 5 · 10−4, betas (0.",1,related,1,positive
+"We use HN_Adam, AdaBelief [30], Adam [8], SGD [33], Yogi [38], RAdam [40] and MSVAG [39] as learning algorithms during the training process of the ResNet18 deep network model.",1,related,1,positive
+"%) all accuracy for 150 epochs
+AlexNet- ResNet20 (2020)
+[37]
+MNIST
+CIFAR-10
+EVGO For MNIST(Val = 98.06%- Test = 98.12",1,related,1,positive
+"ResNet18, PreActResNet18
+(2019) [35]
+CIFAR-10 AMSGrad and
+AdamX
+–
+–
+CNN1, CNN2 (2019) [61] MNIST HuperAdam Accuracy = 98.63%
+99.78% After 1000 steps
+(ResNet20, ResNet32)
+(2020) [62]
+CIFAR-10 SGD
+Adam
+AdamW
+AdaHessian
+Accuracy = (92.08–93.14",1,related,1,positive
+"VGG11, ResNet18,
+DenseNet121 (2020) [60]
+CIFAR-10
+CIFAR-100
+EAdam
+Adam
+RAdam
+Adabelief
+Accuracy = (91.45%–94.99%- 95.61",1,related,1,positive
+"The model is trained using the optimization algorithms HN_Adam, AdaBelief, Adam, AMSGrad, SGD, RMSProp, and AdaGrad individually.",1,related,1,positive
+"The results of our proposed HN_Adam algorithm are obtained considering the parameter settings for Mini-batch size, learning rate (g), b1, b2, and e to be the same as in [30].",1,related,1,positive
+The loss function is cross entropy and the AdaBelief [21] optimizer was used.,1,related,1,positive
+Reinforcement Learning: We use the Adabelief optimizer [77] with β=(0.,1,related,1,positive
+"999, = 1e− 14, and α = 1e− 3, following their original method AdaBelief [6].",1,related,1,positive
+"To ensure the optimizer make proper decision in all the three cases, [6] completely modified the second-order momentum to st = β2st−1 + (1− β2)(gt −mt)(2) and proposed a new algorithm called AdaBelief.",1,related,1,positive
+Proof: [6] proved that the regret of AdaBelief is with the following upper bound:,1,related,1,positive
+"Note that the regularization is ignored for brevity as in other articles, such as [4], [6], [11].",1,related,1,positive
+"(7)
+Meanwhile, we can also use many other forms of adaptive matrix At, e.g., we can also generate the adaptive matrix At, as AdaBelief algorithm [Zhuang et al., 2020], defined as
+at = τat−1 + (1− τ)(wt −∇xf(xt, yt; ξt))2, At = diag( √ at + ρ), (8)
+where τ ∈ (0, 1).",1,related,1,positive
+"(10)
+Meanwhile, we can also use many other forms of adaptive matrix Bt, e.g., we can also generate the adaptive matrix At, as AdaBelief algorithm [Zhuang et al., 2020], defined as
+bt = τbt−1 + (1− τ)(vt −∇yf(xt, yt; ξt))2, Bt = diag( √ bt + ρ).",1,related,1,positive
+", we can also generate the adaptive matrix At, as AdaBelief algorithm [Zhuang et al., 2020], defined as bt = τbt−1 + (1− τ)(vt −∇yf(xt, yt; ξt))(2), Bt = diag( √",1,related,1,positive
+", we can also generate the adaptive matrix At, as AdaBelief algorithm [Zhuang et al., 2020], defined as at = τat−1 + (1− τ)(wt −∇xf(xt, yt; ξt))(2), At = diag( √ at + ρ), (8) where τ ∈ (0, 1).",1,related,1,positive
+We used the same hyperparameter values for the AdaBelief optimizer depending on datasets as described in (Zhuang et al. 2020).,1,related,1,positive
+"We used the SGD optimizer for training the alternatives, and the AdaBelief optimizer (Zhuang et al. 2020) for fine-tuning the student model.",1,related,1,positive
+"Take a gradient step using the Adabeleif optimizer (Zhuang et al., 2020).",1,related,1,positive
+We utilize the AdaBelief optimizer since it performs preconditioning based on local curvature information.,1,related,1,positive
+"To minimize the training loss (7) with the scaling factor mt = 1d , the AdaBelief (Zhuang et al., 2020) optimizer is used for 100 000 iterations using a mini-batch size of 128 along with an initial learning rate of 10−3.",1,related,1,positive
+"We also employ four popular handcrafted optimizers: RAdam (Liu et al., 2020), NAdam (Dozat, 2016), AdaBelief (Zhuang et al., 2020), AMSGrad (Reddi et al., 2018) and two optimizers discovered by AutoML: PowerSign (Bello et al., 2017) and AddSign (Bello et al., 2017) to train ViT-S/16 and ViT-B/16 on…",1,related,1,positive
+"Note that the search also discovers other existing or novel algorithms shown in Appendix D, e.g., some with better regularization and some resembling AdaBelief (Zhuang et al., 2020) and AdaGrad (Duchi et al., 2011).",1,related,1,positive
+"It dynamically calculates the dot product between the weight and gradient, before computing the weight decay. def train(w, g, m, v, lr): m = interp(m, g, 0.16) g2 = square(g) v = interpolate(v, g2, 0.001) v753 = dot(g, w) sqrt_v = sqrt(v) update = m / sqrt_v wd = v753 * w update = sin(update) update = update + wd lr = lr * 0.0216 update = update * lr v = sin(v) return update, m, v
+Program 6: Algorithm that tracks the second moment without EMA decay, which is the same as AdaGrad. def train(w, g, m, v, lr): m = interp(m, g, 0.1) g2 = square(g) g2 = v + g2 v = interp(v, g2, 0.0015) sqrt_v = sqrt(v) update = m / sqrt_v v70 = get_pi() v = min(v, v70) update = sinh(update) lr = lr * 0.0606 update = update * lr return update, m, v
+Program 7: Algorithm uses the difference between gradient and momentum to track the second moment, resembling AdaBelief. def train(w, g, m, v, lr): m = interp(m, g, 0.1) g = g - m g2 = square(g) v = interp(v, g2, 0.001) sqrt_v = sqrt(v) update = m / sqrt_v wd = w * 0.0238 update = update + wd lr = lr * 0.03721 update = update * lr return update, m, v",1,related,1,positive
+"We also employ four popular handcrafted optimizers: RAdam (Liu et al., 2020), NAdam (Dozat, 2016), AdaBelief (Zhuang et al., 2020), AMSGrad (Reddi et al., 2018) and two optimizers discovered by AutoML: PowerSign (Bello et al., 2017) and AddSign (Bello et al., 2017) to train ViT-S/16 and ViT-B/16 on ImageNet (with RandAug and Mixup).",1,related,1,positive
+"Motivated by the existing work [20]–[22], we would like to reduce the range of the adaptive stepsizes of Adam to make the new optimizer get closer to SGD with momentum.",1,related,1,positive
+Our analysis follows a strategy similar to that used to analyse AdaBelief in [22].,1,related,1,positive
+The second open source is the original implementation of AdaBelief [22].,1,related,1,positive
+The AdaBelief method of [22] extends Adam by tracking the EMA of the squared prediction error (mt−gt)(2) instead of g(2)t when,1,related,1,positive
+"(2)W̄SN = W
+𝜎(W)
+1 3
+We use AdaBelief Optimizer [8] as the new optimizer for the whole network structure.",1,related,1,positive
+"And a new optimizer - AdaBelief Optimizer is adopted to optimize the whole network, in which BCEWithLogitsLoss is added in the loss function to enhance the generalization ability.",1,related,1,positive
+"Thirdly, we use AdaBelief Optimizer [8] on the whole network structure, in which BCEWithLogitsLoss is added to enhance generalization.",1,related,1,positive
+1 3 We use AdaBelief Optimizer [8] as the new optimizer for the whole network structure.,1,related,1,positive
+"Note that we could not replicate the mAP from (Zhuang et al., 2020); we suspect the reason is their use of the MMDetection (Chen et al., 2019) framework, which does various extra image augmentation transforms.",1,related,1,positive
+"PASCAL VOC on Faster-RCNN We train PASCAL VOC on Faster-RCNN (Ren et al., 2015) with pretrained ResNet-50 backbone, following (Zhuang et al., 2020).",1,related,1,positive
+"Instead of the default cumulative process of averaging the historical gradients in optimization algorithms, such as AdaBelief, AMSGrad, and AdamW, we try to sample an unbiased set of historical gradients about global data in each update round.",1,related,1,positive
+"We have also observed from the above studies that MBGDbased optimization of TSK fuzzy systems is very sensitive to the choice of optimizers, such as Adam [8], [20], AdaBound [9], [21], and AdaBelief [10], [22].",1,related,1,positive
+"Updates of parameters can be scaled individually by dividing by the exponential moving average of the variance of subsequent gradients, as it is done in the AdaBelief optimizer [20].",1,related,1,positive
+We combine backtracking Nesterov accelerated gradient descent (NAGD) with dynamic scaling of individual directions (preconditioning) known from AdaBelief [20] to obtain an optimization scheme that converges significantly faster and reaches orders of magnitude lower residues than the conventional stochastic reconfiguration approach.,1,related,1,positive
+We combine backtracking Nesterov accelerated gradient descent (NAGD) with dynamic scaling of individual directions (preconditioning) known from AdaBelief [19] to obtain an optimization scheme that converges significantly faster and reaches orders of magnitude lower residues than the conventional stochastic reconfiguration approach.,1,related,1,positive
+"Updates of parameters can be scaled individually by dividing by the exponential moving average of the variance of subsequent gradients, as it is done in the AdaBelief optimizer [19].",1,related,1,positive
+"We train the neural network source term by using the AdaBelief [36] optimizer with a learning rate of 10−3 and 3, 000 epochs.",1,related,1,positive
+"The discrete corrective forcing term is again trained by using the AdaBelief [36] optimizer with a learning rate of 10−3, 100 batches, and 3000 epochs.",1,related,1,positive
+"Finally, the parameters are updated using (13).
+ŝt = st 1 − φt1 and r̂t = rt 1 − φt2
+(12)
+χt+1 = χt − η√ r̂t + .ŝt (13)
+1 3
+A few optimization methods have been introduced recently, such as AdaBelief [26], MADGRAD [27], diffGrad [28], Gradient Centralization [29], and RADAM [30].",1,related,1,positive
+"From Table I, the proposed NadamSSM algorithm has the highest test set and training set accuracy on the VGG11 model, but AdaBelief and AdamSSM perform better on ResNet34.",1,related,1,positive
+"Specifically, all the parameter values of AdaBelief and AdamSSM are set as per the implementation in their papers [22], [28].",1,related,1,positive
+"We implement our NadamSSM algorithm in discretetime and compare its performance with AdaBelief [28], AdamSSM [22], and Nadam [5] algorithms for solving the following machine learning tasks: image classification on CIFAR-10 dataset [29], with ResNet34 [30] and VGG11 [31] models, and language modeling on Penn TreeBank (PTB) dataset [32], with 3-layer long short-term memory (LSTM) [33] model.",1,related,1,positive
+We use the experimental setup as in the recent AdaBelief paper [28].,1,related,1,positive
+"For Nadam and NadamSSM, λ1 = 0.67, λ2 = 0.0067 are such that β1 = (1 − δλ1) and β2 = (1 − δλ2) are same as AdaBelief. λ3 is chosen from {c × 10−3/δ : c = 1, 2, 3, 4, 5}.",1,related,1,positive
+"We note that when Nadam is better than AdaBelief/AdamSSM, NadamSSM significantly improves on Nadam.",1,related,1,positive
+The parameter ϵ and the learning rate η are same as AdaBelief and AdamSSM.,1,related,1,positive
+"We define a positive valued function h : [0,∞) → R>0, which signifies the initial bias correction term, as is used in the practice while implementing AdaBound or any other adaptive gradient algorithms [15], [21].",1,related,1,positive
+"We use the improved baseline and the SWIN-UNETR transformer versions with repeat_interleave and channel_conv, trained with AdamW and AdaBelief optimizers.",1,related,1,positive
+"Optimizer Following the previous winning solution [13], we conduct experiments with the AdaBelief [14] other than just the AdamW [15] optimizer.",1,related,1,positive
+"We selected a second optimizer: AdaBelief [18], a recent variant of Adam.",1,related,1,positive
+"Training is performed for 166K steps with AdaBelief optimizer [Zhuang et al., 2020] having learning rate 3e-3.",1,related,0,negative
+"To obtain the convergence rate as adam family methods and the generalization ability as SGD family methods, [10] presents the AdaBelief algorithmwhichmodified fromAdam.",1,related,1,positive
+"Model parameters were optimized using the NadaBelief optimizer (a combination of the Adabelief [87] and Nadam [17]), quantization-aware training was applied to improve the accuracy of the resulting INT8 model.",1,related,1,positive
+"For example, we can generate adaptive matrices as in AdaBelief [Zhuang et al., 2020] algorithm,
+defined as
+at = ̺tat−1 + (1 − ̺t) ( w̄t − w̄t0 )2 , At = diag( √ at + ρ), (8) bt = ̺tbt−1 + (1− ̺t)||v̄t − v̄t0 ||, Bt = (bt + ρ)Ip, (9)
+where t0 = t − q. Note that we can directly choose αt and βt…",1,related,1,positive
+"For example, we can generate adaptive matrices as in AdaBelief [Zhuang et al., 2020] algorithm,
+defined as
+at = ̺tat−1 + (1 − ̺t) ( w̄t − w̄t0 )2 , At = diag( √ at + ρ), (8) bt = ̺tbt−1 + (1− ̺t)||v̄t − v̄t0 ||, Bt = (bt + ρ)Ip, (9)
+where t0 = t − q. Note that we can directly choose αt and βt instead of ̺t to reduce the number of tuning parameters in our algorithm.",1,related,1,positive
+"For example, we can generate adaptive matrices as in AdaBelief [Zhuang et al., 2020] algorithm,",1,related,1,positive
+"The training is done using the Adabelief optimizer [43],",1,related,0,negative
+"We optimize (6) with AdaBelief [37] (β1 = 0.9, β2 = 0.999).",1,related,1,positive
+We optimize (6) with AdaBelief [37] (β1 = 0.,1,related,1,positive
+"Instead of using the Adam optimizer, we've gone with its AdaBelief alternative here [17].",1,related,1,positive
+"However, in order to show the generalization of the gradient norm correction approach, we also integrate it with the recent state-of-the-art optimizers, including diffGrad [5], Radam [20] and AdaBelief [32] optimizers and propose diffGradNorm, RadamNorm and AdaBeliefNorm optimizers, respectively.",1,related,1,positive
+"We use the proposed AdaNorm with Adam [16], diffGrad [5], Radam [20] and AdaBelief [32] optimizers and Algorithm 2: AdamNorm Optimizer",1,related,1,positive
+"The model is trained on a batch size of 128 and 100 epochs, and to optimize the parameters of the model, we use Adam [16] and AdaBelief [17] as optimizers for the Twitter and Weibo datasets.",1,related,1,positive
+ADABELIEF [20] replaces the secondorder estimate with their own defined “belief”.,1,related,1,positive
+"We find that PWPROP consistently outperforms existing SOTA solvers including ADAM, AMSGRAD, ADAMW, ADAMP, NOSADAM, RADAM and ADABELIEF on various perturbations, e.g., L2-norm perturbation level ξ = 0.0157.",1,related,1,positive
+We slightly tune the hyperparameters in PWPROP according to the suggestions in [20].,1,related,1,positive
+"We also compare our PWPROP algorithm with many state-ofthe-art solvers, such as SGDM, ADAM, AMSGRAD, ADAMP [21], NOSADAM, RADAM and ADABELIEF.",1,related,1,positive
+‚ We surveyed and analyzed the performance of several adaptive optimizers in the training of Deformable DETR [9] where AdaBelief was the optimal choice and achieved the highest results.,1,related,1,positive
+"Finally, we mention here Adabelief [18] as an alternative to Adam which is believed to be more stable to noisy gradients, and have better generalization properties than Adam.",1,related,1,positive
+"Optimizers used We chose to test SGD, Clipped SGD, Adam and Adabelief.",1,related,1,positive
+"Adabelief is obtained by replacing the second moment of Adam with the moving average of empirical variance, i. e.
+ṽt+1 = β2ṽt + (1 − β2)(g(θt) − mt)2
+The rational for this update is that mt can be interpreted as a prevision for the gradient, and vt as our confidence in the current gradient sample with respect to what the prevision was.",1,related,1,positive
+The AdaBelief optimizer was outperformed by the Adam optimizer for all the training scenarios.,1,related,0,negative
+"We compared the commonly used Adam optimizer [19], Stochastic Gradient Descent (SGD), and the recently proposed AdaBelief [20].",1,related,1,positive
+We select the AdaBelief Optimizer [60] for proposed framework.,1,related,1,positive
+"…maximum value was used as a parameter, in order to accelerate the learning, and the minimum value (in this case, the value suggested in the article [Zhuang et al., 2020], from the AdaBelief ) optimizer was added to the callback ReduceLROnPlateau training parameter, with the intention of varying…",1,related,1,positive
+"After finding the best learning rate range, the maximum value was used as a parameter, in order to accelerate the learning, and the minimum value (in this case, the value suggested in the article [Zhuang et al., 2020], from the AdaBelief ) optimizer was added to the callback ReduceLROnPlateau training parameter, with the intention of varying the learning rate throughout the training and overcoming the stagnation that could occur when using the same rate over many epochs.",1,related,1,positive
+"Indeed, all our implementations are also based on the code provided by Adablief [2]2.",1,related,1,positive
+All results except Adan and Padam in the table are reported by AdaBelief [2].,1,related,0,negative
+"Adam-type [35] % % `∞ ≤ c∞ O ( c(2)∞d −4) Ω( −4) RMSProp [23, 40] % % `∞ ≤ c∞ O (√ c∞d −4 ) Ω ( −4 ) Lipschitz AdamW [3] "" — — — — Adabelief [2] % % `2 ≤ c2 O ( c(6)2 −4) Ω( −4) Gradient Padam [41] % % `∞ ≤ c∞ O (√ c∞d −4 ) Ω ( −4 ) LAMB [4] % O ( −4 ) `2 ≤ c2 O ( c(2)2d −4) Ω( −4) Adan (ours) "" % `∞ ≤ c∞ O ( c2.",1,related,1,positive
+"Numerical experiments
+In this section, we compare the performance of the proposed SGEM and AEGD with several other methods, including SGDM, AdaBelief [38], AdaBound [21], RAdam [19], Yogi [36], and Adam [13], when applied to training deep neural networks.",1,related,1,positive
+"Numerical experiments In this section, we compare the performance of the proposed SGEM and AEGD with several other methods, including SGDM, AdaBelief [38], AdaBound [21], RAdam [19], Yogi [36], and Adam [13], when applied to training deep neural networks.",1,related,1,positive
+"Similarly, we also incorporate the moment centralization concept with Radam [18] and Adabelief [27] optimizers.",1,related,1,positive
+"In this paper, we use it with state-of-the-art optimizers, including Adam [13], Radam [18] and Adabelief [27].",1,related,1,positive
+"We used AdaBelief optimizer [28], said to be stable, be fast like Adam and generalize well like SGD.",1,related,1,positive
+"All rights reserved.
+gradients, updates, parameters, etc. (e.g. SGD with momentum, Adam, AdaBelief, Lookahead) (Qian 1999; Kingma and Ba 2017; Zhuang et al. 2020; Zhang et al. 2019).",1,related,1,positive
+"While we do not propose an alternative to AdaBelief, leaving that to future
+work, we attempt to move toward quantifying the behavior of optimizers at the gradient level in order empirically justify and explain novel methods like AdaBelief.",1,related,1,positive
+We used AdaBelief optimizer (Zhuang et al. 2020) with learning rate 0.001 and default smoothing parameter of β1 = 0.9 and β2 = 0.999.,1,related,1,positive
+We used AdaBelief optimizer (Zhuang et al. 2020) with learning rate 0.,1,related,1,positive
+"Motivated by the results in [21, 33], we will analyze Adam with (1.",1,related,1,positive
+"Motivated by the results in [21, 33], we decided to study Adam under Condition (1.",1,related,0,negative
+"For the DNN training, we leveraged a small hyperparameter search with two similar optimizer algorithms: AdamW [59] and AdaBelief [60].",1,related,1,positive
+Keywords: smart grid; short-term load forecasting; feature engineering; variational modal decomposition; deep learning; Informer; AdaBelief,1,related,1,positive
+"Algorithm 2 Adam 1:Intialize θ0, M0 ← 0, v0 ← 0, t← 0 2:While θ is not converged: t← t + 1, gt ← ∇θ ft(θt−1), Mt ← β1Mt−1 + (1− β1)gt, vt ← β2st−1 + (1− β2)gt2
+3:Update θt ← ∏ F ,√vt ( θt−1 − α Mt√vt+ε )
+Algorithm 3 AdaBelief 1:Intialize θ0, M0 ← 0, s0 ← 0, t← 0 2:While θ is not converged: t← t + 1, gt ← ∇θ ft(θt−1), Mt ← β1Mt−1 + (1− β1)gt, st ← β2st−1 + (1− β2)(gt −Mt)2
+3:Update θt ← ∏ F ,√st ( θt−1 − α Mt√st+ε )
+Where gt represents the t-th step, Mt represents the exponential moving average (EMA) of gt, and α is learning rate.",1,related,1,positive
+"In this section, we present experimental results on benchmark machine learning problems, comparing the convergence rate and test-set accuracy of the proposed AdamSSM algorithm with several other adaptive gradient methods: AdaBelief [9], AdaBound [10], Adam [8], AdamW [11], Fromage [12], MSVAG [13], RAdam [14], SGD [32], and Yogi [15].",1,related,1,positive
+"To conduct the experiments, we adapt the experimental setup used in the recent AdaBelief paper [9] and the AdaBound paper [10].",1,related,1,positive
+AdaBelief [47] in combination with the lookahead optimizer [48] is adopted.,1,related,1,positive
+"AdaBelief [22] is used as the optimizer and the max training epoch is set at 100, where an early stopping criterion is used if the model does not improve within 25 epochs.",1,related,1,positive
+AdaBelief optimizer [31] is adopted to train the 1D-DRSETL model in this paper.,1,related,1,positive
+AdaBelief Optimizer: Adapting Stepsizes by the Belief in Observed Gradients. arXiv doi:10.,1,related,1,positive
+"The chosen optimizer is AdaBelief [28] with a learning rate of 1e-3, and the loss function is Categorical Cross Entropy.",1,related,1,positive
+"this paper, we use an adaptive moment based method named AdaBelief [9] for a gradient based optimization as detailed in section III-C.",1,related,1,positive
+"In this work, we propose to use AdaBelief, a variant of Adam [9].",1,related,1,positive
+999 and ε = 10−81 which are the typical parameters used in [9] for AdaBelief and Adam based strategies in practice [15].,1,related,1,positive
+"Different U-Net architectures are investigated and we also assess the performance of a new adaptive optimizer, namely AdaBelief [17], versus other standard optimizers.",1,related,1,positive
+We assessed the performance of the new AdaBelief optimizer [17] versus Adam [18] and the Stochastic Descent Gradient (SGD) [19].,1,related,1,positive
+"In other words, we have improved the regret bound of [20].",1,related,1,positive
+Our analysis follows a strategy similar to that used to analyse AdaBelief in [20].,1,related,1,positive
+We have added the dimensionality d to the last quantity of (6) in the appendix of [20].,1,related,1,positive
+which are obtained from the appendices of [20].,1,related,0,negative
+"In [20], the authors motivate the EMA of (mt − gt)(2) without explaining the inclusion of ǫ.",1,related,1,positive
+"As will be shown later, we do not replace β1t by β1 when dealing with the quantity 1 2ηt(1−β1t) [‖v 1/4 t (θt−1 − θ )‖(2)2 − ‖v 1/4 t (θt − θ )‖(2)2] as is done in the derivation of (3) in the appendix of [20].",1,related,1,positive
+Note that the upper bound we obtain is essentially tighter than that in [20] due to two minor corrections.,1,related,1,positive
+Note that (16) corresponds to (2) in the appendix of [20] for AdaBelief.,1,related,1,positive
+"We also adopted the use of AdaBelief, a new optimizer which has shown to converge as quickly as adaptive optimizers (such as Adam [40]) and to generalize better than Stochastic Gradient Descent (SGD) [41] in complex architectures such as GANs [42]; see Figure 3.",1,related,1,positive
+Keywords: cycle GANs; semantic segmentation; patch extraction; saliency; classification; regression,1,related,1,positive
+We used the AdaBelief optimizer [33] with a learning rate of 10−4 to optimize the transformer’s weights.,1,related,1,positive
+"…Jki(g(x)) 2 ) + γ||f(g(x))− x||2, k ∼ Uniform(1, . . . , 10)
+(79)
+Objective1iNF = ∑ x∈D − log pz(g(x)) + 1 2 log |J(g(x))TJ(g(x))|+ γ||f(g(x))− x||2 (80)
+For both models we set γ = 10, used a batch size of 64, learning rate of 1× 10−4 and the AdaBelief [Zhuang et al., 2020] optimization algorithm.",1,related,1,positive
+"The objectives we optimized were: Objective1iPF = ∑ x∈D − log pz(g(x)) + dim(z) 2 log (∑ i Jki(g(x)) 2 ) + γ||f(g(x))− x||2, k ∼ Uniform(1, . . . , 10)
+(79)
+Objective1iNF = ∑ x∈D − log pz(g(x)) + 1 2 log |J(g(x))TJ(g(x))|+ γ||f(g(x))− x||2 (80)
+For both models we set γ = 10, used a batch size of 64, learning rate of 1× 10−4 and the AdaBelief [Zhuang et al., 2020] optimization algorithm.",1,related,1,positive
+"Thus, in future research, we would consider employing a large dataset and carryout more exhaustive tests to optimize the performance of the deep learning networks and test other algorithms such as AdaBelief [52] optimizer which converges fast and has high accuracy on image classification and language modeling.",1,related,1,positive
+"The proposed model was implemented in Pytorch, where we used the AdaBelief optimization algorithm to train the network [79].",1,related,1,positive
+"By referring to the results in (Chen et al., 2019; Iiduka, 2022a; Zhuang et al., 2020), we can check that Hn and H D n in Table 4 satisfy (A1) and (A2).",1,related,1,positive
+"We deﬁne the inner product of x , y ∈ R d by ⟨ x , y ⟩ := x ⊤ y and the norm of p which are equivalent to the following variational inequalities (see Appendix A.11): for all θ ∈ R Θ and all w ∈ R W , (1) Let us examine TTURs based on adaptive methods (see Algorithm 1 and Table 4 in Appendix A.1) such as Adam (Kingma & Ba, 2015), AdaBelief (Zhuang et al., 2020), and RMSProp (Tieleman & Hinton, 2012).",1,related,1,positive
+99 for AdaBelief (see Table 3).,1,related,0,negative
+"Hence, Problem 2 with X = Rd can be expressed as the problem [17], [18] of finding a local minimizer of f over Rd , that is,",1,related,1,positive
+"Table II lists examples of Hk and shows that Algorithm 1 with X = Rd includes the existing ALROAs, such as Nesterov momentum [23], [24], AMSGrad [16], [17], and AMSGWDC [19],(2) AdaBelief [18], and modified Adam (MAdam) [21], for unconstrained nonconvex finite-sum optimization [see also (7) and (9) for the definitions of AMSGrad and AdaBelief].",1,related,1,positive
+(7) and st = (gt − mt)(2) for AdaBelief [8]).,1,related,1,positive
+Note the similarity between this regret bound and the one derived by [21] and by [8] using AMSGrad.,1,related,1,positive
+"Once the architectures are fixed, we adjust the following hyperparameters: (i) Optimizer algorithm: Adam [40] or AdaBelief [83]; (ii) Skip-Connection: An additional connection in the Critic network inspired by ResNet [31] architectures; (iii) Activation function at the Generator output: Linear or tanh; (iv) TTUR [32]; (v) Dropout [67].",1,related,1,positive
+"Once the architectures are fixed, we adjust the following hyperparameters: (i) Optimizer algorithm: Adam [5] or AdaBelief [33]; (ii) Skip-Connection: An additional connection in the Critic network inspired by the ResNet architecture [40] architectures; (iii) Activation function at the Generator output: Linear or tanh; (iv) TTUR [41]; (v) Dropout [30].",1,related,1,positive
+"We consider the following algorithm (Algorithm 1), which is a unified algorithm for most deep learning optimizers,1 including Momentum [18], AMSGrad [19], AMSBound [13], Adam [11], and AdaBelief [30], which are listed in Table 1.",1,related,1,positive
+using αk = 1/ √ k has an O(logK/ √ K) convergence rate [30].,1,related,1,positive
+"Hk = diag(ṽk,i) Adam pk = ∇LBk(θk) ∇LBk(θk) [11] vk = ηvk−1 + (1− η)pk (vk,i ≤ vk+1,i) v̄k = vk 1−ζk Hk = diag( √ v̄k,i) AdaBelief p̃k = ∇LBk(θk)−mk [30] s̃k = p̃k p̃k (sk,i ≤ sk+1,i) sk = ηvk−1 + (1− η)s̃k ŝk = sk 1−ζk Hk = diag( √ ŝk,i)",1,related,1,positive
+"We consider the following algorithm (Algorithm 1), which is a unified algorithm for most deep learning optimizers,(1) including Momentum [18], AMSGrad [19], AMSBound [13], Adam [11], and AdaBelief [30], which are listed in Table 1.",1,related,1,positive
+The initialization of weights for each layer was done with HE normal initialization [27] and the training of the architecture was done with AdaBelief optimizer [28] with standard parameters.,1,related,1,positive
+"On the other hand, if importing the AdaBelief (Zhuang et al., 2020) code fails, the module will not be registered and therefore not be available in the graphical user interface.",1,related,0,negative
+We also experiment with using more recent optimizers [66] to construct the attacks (results are provided in the supplementals).,1,related,1,positive
+"Besides, Yang et al. [66] absorb the AdaBelief optimizer into the update of the gradient and propose ABI-FGM to further boost the success rates of adversarial examples for black-box attacks.",1,related,1,positive
+Each model is trained for 10 epochs using the AdaBelief optimizer (Zhuang et al. 2020).,1,related,0,negative
+In our baseline decoder comparison we compare Adam [16] and Adabelief [33].,1,related,1,positive
+"In our method, the loss function adopts that in WGAN, which is defined as follows:
+(5)Lcls = − n ∑
+k=1
+pk log p̂k ,
+(6)Ltotal = LS + 3Lcls = Lseg + 1Ladv + 2Lb + 3Lcls.
+(7)LD = −E[D(y)] + E[D(ŷ)],
+where D(y) means the output of the discriminator for input ground truth.",1,related,1,positive
+The results obtained in this study support the claim by the authors of AdaBelief that results obtained with it generalize better to datasets outside the training data.,1,related,0,negative
+"The runs with variables other than temperature were performed with AdaBelief using these hyperparameters, as the time remaining in the contest did not allow for parameter tuning for each variable separately.",1,related,0,negative
+"After some experimentation with the parameters, AdaBelief with the default hyperparameters was adopted, with the ϵ parameter set to 10−14 (the default of the TensorFlow implementation), as non-default parameters either degraded the results or failed to provide a significant benefit.",1,related,1,positive
+"3) The AdaBelief optimizer seems to somewhat outperform the popular Adam optimizer at this task, giving better results with the validation dataset.",1,related,0,negative
+"The different versions of the shallow model for temperature are as follows: S1 was trained from random initialization using the default settings of the AdaBelief optimizer, S2 was trained by initializing the weights with those of S1 and resetting the learning rate to 10−3 in the beginning of training, S3 was trained like S2 but setting the ϵ parameter to 10−7 (another value suggested by the authors), S4 was trained
+like S1 but enabling weight decay in AdaBelief, and S5 was trained like S1 but using the Adam optimizer instead.",1,related,1,positive
+"First, it can be seen that simply retraining the model with the new data and the AdaBelief optimizer improved the results considerably (up to 4.8% for cma) over the models that produces the best results in Stage 1, except for crr intensity where the improvement was more marginal (0.2%).",1,related,0,negative
+"We train our simulator using AdaBelief [53] optimizer for 200 epochs, using initial learning rate 4e-4 with warmup strategy at the beginning, gradually decayed to zero by cosine annealing [27].",1,related,1,positive
+"In this section, we summarize the AdaBelief [18] method in Algo.",1,related,1,positive
+AdaBelief (Sync-Center) AdaBelief optimizer [18] is summarized in Algo.,1,related,1,positive
+"is reported in PyTorch Documentation, † is reported in [30], ∗ is reported in [17], ‡ is reported in [18] SGD Adam AdamW RAdam AdaShift AdaBelief ACProp 69.",1,related,0,negative
+"In this section, we show that ACProp converges at a rate of O(1/ √ T ) in the stochastic nonconvex case, which matches the oracle [23] for first-order optimizers and outperforms the O(logT/ √ T ) rate for sync-optimizers (Adam, RMSProp and AdaBelief) [26, 25, 18].",1,related,1,positive
+"As shown in Figure 1, we can observe that Adam[4] and AdaBelief[1] optimizer begin to show the sign of overfitting at epoch 3, their train losses are flattened and test losses start to fluctuate.",1,related,0,negative
+"We trained MIDeepBR using the adabelief [Zhuang et al. 2020] optimizer, with learning rate of 0.",1,related,0,negative
+"We trained MIDeepBR using the adabelief [Zhuang et al. 2020] optimizer, with learning rate of 0.00001 for 100 epochs.",1,related,0,negative
+"· In our experiment, using the AdaBelief[15] optimiFrom VIS To OVIS: A Technical Report To Promote The Development Of The",1,related,0,negative
+"For optimizer, we did not use AdamW[14] or Adam[20] but chose AdaBelief[15], in which weight_decay is set to 1e-4, weight_decouple and rectify are both set to True.",1,related,1,positive
+"• We validate the superiority of the proposed injection concept with the recent state-of-the-art optimizers, including Adam [27], diffGrad [28], Radam [29] and AdaBelief [30] using a wide range of CNN models for image classification over four benchmark datasets.",1,related,1,positive
+"Basically, we use the proposed AdaInject concept with four existing state-of-the-art optimizers, including Adam [27], diffGrad [28], Radam [29] and AdaBelief [30], and propose the corresponding AdamInject (i.",1,related,1,positive
+"But, we show experimently that this problem can be reduced by considering AdaBelief concept [30] with the proposed injection idea (i.",1,related,1,positive
+(iv) Using the Adablief optimizer compared to the Adam optimizer improves the performance of the network.,1,related,1,positive
+"We also show the performance for networks with no dilated convolutions, Orthogonal weight initialization [42] instead of Glorot weight initialization, and Adam optimizer [43] instead of Adablief as well as a smaller network with 32 filters instead of 64.",1,related,1,positive
+"AdaBelief Optimizer (Zhuang et al., 2020) was adopted to train our models, the base learning rate was set to 1e-4, beta=(0.9, 0.999), epsilon=1e-8, weight_decouple=True, weight_decay=1e-2 for non-bias weights.",1,related,1,positive
+"AdaBelief Optimizer (Zhuang et al., 2020) was adopted to train our models, the base learning rate was set to 1e4, beta=(0.",1,related,1,positive
+"The useful optimizers, such as N-Momentum, AMSGrad, AMSBound, and AdaBelief (Table 3), all satisfy the following conditions:
+Assumption 2.2.",1,related,1,positive
+"In this paper, we consider the following algorithm (Algorithm 1), which is a unified algorithm for useful optimizers, for example, N-Momentum [19, 27], AMSGrad [21, 4], AMSBound [15], and AdaBelief [32], listed in Table 3 in Appendix.",1,related,1,positive
+"For the optimization, we used AdaBelief (Zhuang et al., 2020) with Adaptive Gradient Clipping (AGC) and a Cosine Annealing Schedule (Loshchilov and Hutter, 2017).",1,related,1,positive
+"Afterward, we use ‘Adam’ and ‘Adabelief’ adaptive gradient decent optimizers, which are originally used in fitting neural networks in data science, to find the minimum of loss function.",1,related,1,positive
+The ‘Adabelief’ [9] is another optimizer that we use to estimate σ.,1,related,1,positive
+"In this paper, we transform the approximation of implied volatility from finding the root of the B-S equation to an optimization model and use two adaptive gradient descent methods (‘Adam’ and ‘Adabelief’) to approximate the value of implied volatility.",1,related,1,positive
+"One is the ratio of not convergent samples, defined as
+NC = 1
+N N∑ j=1 l(cj) with l(cj) =
+{ 0, ∣∣ĉj,n − ĉj,n−1∣∣   10−4 1, otherwise
+The other is
+MAE = 1
+N̄ N∑ j=1 ∣∣ĉj − cj∣∣ (1− l(cj)) with N̄ = N(1−NC) We present the numerical results of Newton-Raphson iteration, Adam, Adabelief methods in Table 1 with different beginning points σ0 = 0.1, 0.25, 0.4, 0.55, 0.7, 0.85, 1.",1,related,1,positive
+"(5)
+These two formulas, similarly to AdaDelta and RMSprop, were used to compute changes in the parameters, thus obtaining the following formula of changes:
+θt+1 = θt − η√
+v̂t + e m̂t.",1,related,1,positive
+"Training is done in 100-epochs config-
+1https://github.com/jxbz/fromage#voulez-vous-du-fromage 2https://github.com/juntang-zhuang/Adabelief-Optimizer#
+hyper-parameters-in-pytorch
+uration.",1,related,1,positive
+For Adabelief (Zhuang et al. 2020) we follow the hyperparameters reported in the official implementation2 .,1,related,1,positive
+For Adabelief (Zhuang et al. 2020) we follow the hyperparameters reported in the official implementation(2) .,1,related,1,positive
+"Meanwhile, we also generate the matrix At as in the AdaBelief (Zhuang et al., 2020), defined as:
+ṽ0 = 0, ṽt = %ṽt−1 + (1−",1,related,1,positive
+"Meanwhile, we also generate the matrix At as in the AdaBelief (Zhuang et al., 2020), defined as:",1,related,1,positive
+"Supervised learning was earlystopped with 50-epoch patience using the AdaBelief optimizer [38] with the learning rate 1e-4, and 20 epochs for the warmup, and a batch size of 1024.",1,related,0,negative
+"For all the optimizers, we fix the weight decay parameter value as 1.2e−4 following Zhuang et al. (2020).",1,related,1,positive
+"This contradicts the result reported in Zhuang et al. (2020), where they claim AdaBelief can be better than SGDM.",1,related,1,positive
+"Training 200 epochs with ResNet-34 on CIFAR-10, our experiments show that AdaMomentum and SGDM can reach over 96% accuracy, while in Zhuang et al. (2020) the accuracy of SGDM is only around 94%.",1,related,0,negative
+"In fact, we can also defined some other adaptive matrices At and Bt, as Adabelief [25] :
+at = %at−1 + (1− %)(∇xf(xt, yt; ξt)− wt)2, a0 = 0, At = diag (√ at + ρ ) , t ≥ 1 (5) bt = %bt−1 + (1− %)‖∇yg(xt, yt; ζt)− vt‖, b0 > 0, Bt = (bt + ρ)Ip, t ≥ 1, (6)
+where % ∈ (0, 1) and ρ > 0.",1,related,1,positive
+"In fact, we can also defined some other adaptive matrices At and Bt, as Adabelief [25] : at = %at−1 + (1− %)(∇xf(xt, yt; ξt)− wt)(2), a0 = 0, At = diag (√ at + ρ ) , t ≥ 1 (5) bt = %bt−1 + (1− %)‖∇yg(xt, yt; ζt)− vt‖, b0 > 0, Bt = (bt + ρ)Ip, t ≥ 1, (6) where % ∈ (0, 1) and ρ > 0.",1,related,1,positive
+"For either problem, this network is trained for 200 epochs with the AdaBelief [61] optimizer with batch size 256; the learning rate is initially set to 10−3 and discounted at the 150th epoch by a factor of 10.",1,related,1,positive
+"For either problem,
+this network is trained for 200 epochs with the AdaBelief [61] optimizer with batch size 256; the learning rate is initially set to 10−3 and discounted at the 150th epoch by a factor of 10.",1,related,1,positive
+"For example, Zaheer et al.[26] and Zhuang et al.[29] used the following iteration form to update the variable x: xt+1 = xt − ηt mt√vt+ε for all t ≥ 0 and ε > 0, which is equivalent to xt+1 = xt − ηtH −1 t mt with Ht = diag( √ vt + ε).",1,related,1,positive
+"In Adam, Amsgrad and AdaBelief algorithms, we set the learning rate as 0.001.",1,related,1,positive
+"In the experiments, we compare our SUPER-ADAM algorithm against several state-of-the-art adaptive gradient algorithms, including: (1) Adam [14], (2) Amsgrad [19], (3) AdaGrad-Norm [15], (4) Adam [17], (5) STORM [7] and (6) AdaBelief [29].",1,related,1,positive
+"In AdaBelief algorithm, we set the learing rate 0.1.",1,related,1,positive
+"In the experiments, we compare our SUPER-ADAM algorithm against several state-of-the-art adaptive gradient algorithms, including: (1) Adam [14], (2) Amsgrad [19], (3) AdaGrad-Norm [15], (4) Adam+ [17], (5) STORM [7] and (6) AdaBelief [29].",1,related,1,positive
+"[26] and Zhuang et al.[29] used the following iteration form to update the variable x: xt+1 = xt − ηt mt vt+ε for all t ≥ 0 and ε > 0, which is equivalent to xt+1 = xt − ηtH −1 t mt with Ht = diag( √ vt + ε).",1,related,1,positive
+"AdaBelief [29] adopts stepsize according to the ‘belief’ in the current gradient direction, defined as
+mt = α1mt−1 + (1− α1)∇f(xt; ξt), vt = α2vt−1 + (1− α2)(∇f(xt; ξt)−mt)2 + ε
+m̂t = mt/(α1) t, v̂t = vt/(α2) t, xt+1 = xt − ηt m̂t√ v̂t + ε , ∀ t ≥ 1 (8)
+where α1 > 0, α2 > 0, and ηt = η√t with η > 0, and ε > 0.",1,related,1,positive
+"Our model is optimized with adaBelief (Zhuang et al., 2020) with a learning rate 1e − 5.",1,related,1,positive
+"The ranges for LR, EPS, and WD were selected based on recommendation from (Zhuang et al., 2020).",1,related,0,negative
+"We tried two optimizers: AdamW (Loshchilov and Hutter, 2017) and AdaBelief (Zhuang et al., 2020).",1,related,1,positive
+"On the other hand, instead of using the exponential moving average (EMA) of g(2) t , AdaBelief [47] uses the EMA of (gt−mt)(2) as st and the update direction for AdaBelief is mt/ √ st.",1,related,1,positive
+"• The fourth experiment extends the classification problem, testing the proposed optimizer over the popular classification benchmark of ImageNet [48], drawing a comparison between the proposed AngularGrad and the results obtained by others optimizers such as AdaBelief and MSV AG [47], SGDM, AdaBound, Yogi, Adam, and AdamW [51], and RAdam [46].",1,related,1,positive
+"These graphics have been obtained from https://github.com/ jettify/pytorch-optimizer with seed = 2
+• The fourth experiment extends the classification problem, testing the proposed optimizer over the popular classification benchmark of ImageNet [48], drawing a comparison between the proposed AngularGrad and the results obtained by others optimizers such as AdaBelief and MSV AG [47], SGDM, AdaBound, Yogi, Adam, and AdamW [51], and RAdam [46].",1,related,1,positive
+"%) and AdaBelief (which achieves the 70.08% exploiting curvature information) are able to surpass the 70% accuracy, where Adam and MSV AG optimizers provide the lowest accuracies (63.23%-66.54% and 65.99%, respectively).",1,related,0,negative
+"However, a large number of them (e.g. SGD, SGDW, AdaBelief, Lookahead, etc.) cannot reach the global optima in a stipulated number of iterations as per the multi-optima and single optimum benchmark functions, namely Rosenbrock and Rastrigin2.",1,related,1,positive
+"A similar situation is found in ResNeXt29 and DLA, where the proposed methods are pretty close to the best OA reached by AdaBelief and SGDM, respectively.",1,related,1,positive
+"† IS REPORTED IN [51], ‡ IS REPORTED IN [46], § IS REPORTED IN [47]",1,related,0,negative
+"To justify our theory, we model the optimization problem as a regression one over three one-dimensional non-convex functions, performing optimization over these functions using SGDM, Adam, diffGrad, AdaBelief, AngularGradcos and AngularGradtan.",1,related,1,positive
+"2(c) clearly shows that Adam and AdaBelief overshoots the global minimum at θ = −0.3 due to the high momentum gained, and finally converges at θ = 0.2.",1,related,1,positive
+"On the other hand, instead of using the exponential moving average (EMA) of g2t , AdaBelief [47] uses the EMA of (gt−mt)2 as st and the update direction for AdaBelief is mt/ √ st.",1,related,1,positive
+"For training all models in this section, an Adabelief optimizer has been used [45].",1,related,0,negative
+"L(u0; θ, φ) = 30∑ i=1 [ (µi − µ̂i)2 + (σ2i − σ̂2i )2 ] + λrRE
+(17)
+The models were trained using AdaBelief Optimizer (Zhuang et al., 2020) with a learning rate of 0.01 for 250 iterations.",1,related,1,positive
+We use AdaBelief (Zhuang et al. 2020) in combination with look-ahead optimizer (Zhang et al.,1,related,1,positive
+We use AdaBelief (Zhuang et al. 2020) in combination with look-ahead optimizer (Zhang et al. 2019).,1,related,1,positive
+The network is trained with the AdaBelief optimizer [39] for 750 epochs with a learning rate of 0.,1,related,0,negative
+"To train the network, we used AdaBelief [23] as optimizer.",1,related,0,negative
+"To train the network, we used AdaBelief [28] as optimizer.",1,related,0,negative
+"For MSA, we use the AdaBelief optimizer [25] to update parameters with the gradient; though other optimizers such as SGD can be used, we found AdaBelief converges faster in practice.",1,related,1,positive
+– We introduce AdaBelief optimizer [13] into iterative gradient attack to form AdaBelief Iterative Fast Gradient Method.,1,related,1,positive
+"For ABI-FGM, we follow the default settings in [13] with the stability coefficient δ = 10−14, the decay factors β1 = 0.",1,related,1,positive
+"For optimization on model parameters, we tried SGD [38], Adam [39] and Adabelief [40] as optimizers, and find that Adabelief gives the best optimized model with highest evaluation performance and most stable convergence during training and testing.",1,related,1,positive
+"For the hyperparameters configuration, we followed the default settings of HAG-Net and selected Adabelief optimizer with learning rate η = 0.001, ξ = 10−16 , (β0, β1) = (0.9, 0.999) and weight decay λ = 0.0001.",1,related,1,positive
+"Concretely, we propose an iterative method to improve the transferability of adversarial examples in the black-box setting and maintain the success rate in the white-box setting: AdaBelief iterative Fast Gradient Sign Method [12].",1,related,1,positive
+"In this section, we first describe how to combine AdaBelief optimizer with iterative Fast Gradient Sign Method.",1,related,1,positive
+"In this section, we give a detailed explanation of basic notations and Fast Gradient Sign Method (FGSM).",1,related,1,positive
+"In the foreseeable future, we plan to improve deep learning classifiers by stacking multiple layers, and further optimize the hyperparameters, and possibly extend the study to include the very recent adabelief optimizer [65].",1,related,1,positive
+"To overcome these limitations, our proposed FCMRDpA enhances MBGD-RDA by replacing AdaBound with Powerball AdaBelief, which combines Powerball gradients [20], [21] and AdaBelief [22] so that the gradients and the learning rates are simultaneously adaptively changed.",1,related,1,positive
+"Our model is implemented with PyTorch, and AdaBelief [53] is adapted as an optimizer.",1,related,1,positive
+"We train for 100 epochs with the AdaBeliefe (Zhuang et al., 2020) optimizer with a batch size of 128 using PyTorch (Paszke et al.",1,related,0,negative
+"We train for 100 epochs with the AdaBeliefe (Zhuang et al., 2020) optimizer with a batch size of 128 using PyTorch (Paszke et al., 2019).",1,related,0,negative
+"To make Apollo scale-invariant, we modify this rectification operation by incorporating a term similar to the gradient “belief” (Zhuang et al., 2020):",1,related,1,positive
+"5 Convergence Analysis Similar to previous work (Reddi et al., 2018; Chen et al., 2019; Zhuang et al., 2020), we omit the initialization bias correction step, i.",1,related,1,positive
+"In addition, following Zhuang et al. (2020), we also tuned for AdaBelief (for Adam and RAdam, we fixed = 1e−8).",1,related,1,positive
+"Similar to previous work (Reddi et al., 2018; Chen et al., 2019; Zhuang et al., 2020), we omit the initialization bias correction step, i.e. we use mt = βtmt−1 + (1− βt)gt, 0 < βt < 1, ∀t ∈ [T ].",1,related,1,positive
+"…σ) = max(|Bt|, σ)
+To make Apollo scale-invariant, we modify this rectification operation by incorporating a term similar to the gradient “belief” (Zhuang et al., 2020):
+Dt = rectify(Bt, σ) = max(|Bt|, σ‖gt+1 − gt‖∞) (31)
+It is not hard to prove that Apollo with the rectification in (31) is…",1,related,1,positive
+"The optimizer is the Adabelief-optimizer [41] with eps 1e − 16, betas (0.9, 0.999), weight decay 1e − 4 and learning rate 2e − 5.",1,related,1,positive
+"The optimizer is the Adabelief-optimizer [41] with eps 1e − 16, betas (0.",1,related,1,positive
+"We conclude this section with a few remarks: 1) In practice our algorithm can be implemented just as easily with ADAM instead of SGD, as in some of our experiments (alternately, one may also be able to substitute other optimization algorithms such as Momentum SGD (Polyak, 1964), ADAGrad (Duchi et al., 2011), or Adabelief (Zhuang et al., 2020) for gradient updates).",1,related,1,positive
+"To evaluate the e↵ectiveness of MaxVA for image classification, we compare with SGD, Adam, LaProp [53] and AdaBelief [52] in training ResNet18 [16] on CIFAR10, CIFAR100 and ImageNet.",1,related,1,positive
+Results of other meethods are from the AdaBelief paper [52].,1,related,0,negative
+"Same as other adaptive methods such as Adam and the recently proposed AdaBelief [52], we adopt this assumption throughout training.",1,related,1,positive
+"Note our results with ResNet18 is better than the recent AdaBelief’s results with ResNet34 on CIFAR10/CIFAR100 (95.51/79.32 vs. 95.30/77.30 approximately), as well as AdaBelief with ResNet18 on ImageNet (70.16 vs. 70.08) [52].",1,related,1,positive
+"⇤: The results of AdaBelief are from their paper [52] with a ResNet34, while our results are with ResNet18.",1,related,0,negative
+"Same as other adaptive methods such as ADAM and the recently proposed AdaBelief (Zhuang et al., 2020), we use this assumption throughout training.",1,related,1,positive
+"CIFAR-10
+Test Err%
+CIFAR-100
+Test Err %
+ImageNet
+Val Err %
+Penn Treebank
+Test BPC ↓
+Penn Treebank
+Test BPC ↓
+CIFAR-10
+FID ↓
+Model WRN 28-10 WRN 28-10 ResNet-50 3xLSTM(300) 3xLSTM(1000) GGAN
+SGD 3.86 (0.08) 19.05 (0.24) 24.01 1.404 1.237 (0.000) 133.0
+Adam 3.64 (0.06) 18.96 (0.21) 23.45 1.377 1.182 (0.000) 43.0
+AMSGrad 3.90 (0.17) 18.97 (0.09) 23.46 1.385 1.187 (0.001) 41.3
+AdaBound 5.40 (0.24) 22.76 (0.17) 27.99 — 2.891 (0.041) 247.3
+AdaShift 4.08 (0.11) 18.88 (0.06) OOM 1.395 1.199 (0.001) 43.7
+RAdam 3.89 (0.09) 19.15 (0.13) 23.60 — 1.349 (0.003) 42.5
+AdaBelief 3.98 (0.07) 19.08 (0.09) 24.11 1.377 1.198 (0.000) 44.8
+AdamW 4.11 (0.17) 20.13 (0.22) 26.70 1.401 1.227 (0.003) —
+AvaGrad 3.80 (0.02) 18.76 (0.20) 23.58 1.375 1.179 (0.000) 35.3
+AvaGradW 3.97 (0.02) 19.04 (0.37) 23.49 1.375 1.175 (0.000) —
+achieving an improvement of 7.7 FID over Adam (35.3 against 43.0).",1,related,1,positive
+"Since ǫ affects AdaBelief differently and its official codebase recommends values as low as 10−16 for some tasks 2, we adopt a search space where candidate values for ǫ are smaller by a factor of 10−8 i.e. starting from 10−16 instead of 10−8.",1,related,1,positive
+"We also observe that AdaBound, RAdam, and AdaBelief all visibly underperform Adam in this setting where adaptivity (small ǫ) is advantageous, even given extensive hyperparameter tuning.",1,related,1,positive
+"…Jki(g(x)) 2 ) + γ||f(g(x))− x||2, k ∼ Uniform(1, . . . , 10)
+(79)
+Objective1iNF = ∑ x∈D − log pz(g(x)) + 1 2 log |J(g(x))TJ(g(x))|+ γ||f(g(x))− x||2 (80)
+For both models we set γ = 10, used a batch size of 64, learning rate of 1× 10−4 and the AdaBelief [Zhuang et al., 2020] optimization algorithm.",1,related,1,positive
+"The objectives we optimized were: Objective1iPF = ∑ x∈D − log pz(g(x)) + dim(z) 2 log (∑ i Jki(g(x)) 2 ) + γ||f(g(x))− x||2, k ∼ Uniform(1, . . . , 10)
+(79)
+Objective1iNF = ∑ x∈D − log pz(g(x)) + 1 2 log |J(g(x))TJ(g(x))|+ γ||f(g(x))− x||2 (80)
+For both models we set γ = 10, used a batch size of 64, learning rate of 1× 10−4 and the AdaBelief [Zhuang et al., 2020] optimization algorithm.",1,related,1,positive
+"Specifically, as shown in Table 23, AdaBelief provides a significant improvement to PixelAT (0.71 to ImageNet, 1.72 in ImageNet-R) and a marginal improvement to PyramidAT (0.08 to ImageNet, 0.98 in ImageNet-R).",1,related,1,positive
+"However after testing multiple optimizers (Adam [26], AdaBelief [66]), we observe significantly different behavior from AdaBelief.",1,related,1,positive
+"As shown in Figure 16, we also observe significant visual difference in the pixel attacks on the pixel-trained model with AdaBelief.",1,related,1,positive
+"For both models we set γ = 10, used a batch size of 64, learning rate of 1× 10−4 and the AdaBelief (Zhuang et al., 2020) optimization algorithm.",1,related,1,positive
+"…Jki(g(x)) 2 ) + γ||f(g(x))− x||2, k ∼ Uniform(1, . . . , 10)
+(79)
+Objective1iNF = ∑ x∈D − log pz(g(x)) + 1 2 log |J(g(x))TJ(g(x))|+ γ||f(g(x))− x||2 (80)
+For both models we set γ = 10, used a batch size of 64, learning rate of 1× 10−4 and the AdaBelief (Zhuang et al., 2020) optimization algorithm.",1,related,1,positive
+"The objectives we optimized were:
+Objective1iPCF = ∑ x∈D − log pz(g(x)) + dim(z) 2 log (∑ i Jki(g(x)) 2 ) + γ||f(g(x))− x||2, k ∼ Uniform(1, . . . , 10)
+(79)
+Objective1iNF = ∑ x∈D − log pz(g(x)) + 1 2 log |J(g(x))TJ(g(x))|+ γ||f(g(x))− x||2 (80)
+For both models we set γ = 10, used a batch size of 64, learning rate of 1× 10−4 and the AdaBelief (Zhuang et al., 2020) optimization algorithm.",1,related,1,positive
+We refer to the strategies in [47] to set the learning rate and weight decay.,1,related,1,positive
+Only Adabelief outperforms SGDM but it is still much worse than W-SGDM and W-Adam.,1,related,1,positive
+"Model SGDM AdamW [21] RAdam [19] Ranger Adabelief [47] AdaHessian [38] Apollo [23] W-SGDM W-Adam
+R18 70.47 70.01 69.92 69.35 70.08 70.08 70.39 71.43 (↑0.96) 71.59(↑1.58) R50 76.31 76.02 76.12 75.95 76.22 - 76.32 77.48(↑1.17) 76.83 (↑0.81)
+0 20 40 60 80 100
+epoch
+0.4
+0.5
+0.6
+0.7
+0.8
+A cc
+u ra
+cy (%
+)
+Training
+SGDM & R18 W-SGDM & R18 SGDM & R50 W-SGDM & R50
+0 20 40 60 80 100
+epoch
+0.4
+0.5
+0.6
+0.7
+0.8
+A cc
+u ra
+cy (%
+)
+Validation
+SGDM & R18 W-SGDM & R18 SGDM & R50 W-SGDM & R50
+0 20 40 60 80 100
+epoch
+0.4
+0.5
+0.6
+0.7
+0.8
+A cc
+u ra
+cy (%
+)
+Training
+AdamW & R18 W-Adam & R18 AdamW & R50 W-Adam & R50
+0 20 40 60 80 100
+epoch
+0.4
+0.5
+0.6
+0.7
+0.8
+A cc
+u ra
+cy (%
+)
+Validation
+AdamW & R18 W-Adam & R18 AdamW & R50 W-Adam & R50
+Fig.",1,related,1,positive
+"We compare our algorithm DRAG with some popular deep learning optimizers, including SGD [13], Adam [6], AdamW [9], AdaBound [11], AdaBelief [24], RAdam [8], Yogi [21].",1,related,1,positive
+The experimental setting is borrowed from AdaBelief [24] and we also use their default setting for all the hyperparameters.,1,related,1,positive
+[24] and make the following necessary assumption.,1,related,1,positive
+All results except DRAG and SGD are reported by Adabelief [24].,1,related,0,negative
+We follow the exact experimental setting in Adabelief [24] and use their default hyperparameters except for SGD.,1,related,1,positive
+"E[(g −m)2], in the update based on the same logic outlined in ((Zhuang et al., 2020)).",1,related,1,positive
+"…√ T 4(1− β)α d∑ i=1 v 1/2 T,i + 1 2 T−1∑ t=1 D2 αt d∑ i=1 v 1/2 t,i
++ α
+√ T T−1∑ t=1 d∑ i=1 βT−kg2k,i
++ (1 + β)α
+√ 1 + log(T − 1)
+2(1− β) d∑ i=1 ∥∥g21:T−1,i∥∥2 (31)
+Note the similarity between this regret bound and the one derived by (Reddi et al., 2018) and by (Zhuang et al., 2020) using AMSGrad.",1,related,1,positive
+"Results of benchmark problems In all the experiments, we compare the following six optimizers: Adam ((Kingma and Ba, 2014)), AdaBelief ((Zhuang et al., 2020)), and RAdam ((Gulcehre et al.",1,related,1,positive
+"Unfortunately, the second-order momentum vt is still based on the regular EMA, i.e. vt = β2mt−1 + (1− β2)st where st is a function of the squared gradient, e.g. st = g2t for Adam ((Kingma and Ba, 2014)) and st = (gt −mt)2 for AdaBelief ((Zhuang et al., 2020)).",1,related,1,positive
+"Note that AdaBelief ((Zhuang et al., 2020)) could also remove it.",1,related,0,negative
+"st = g(2) t for Adam ((Kingma and Ba, 2014)) and st = (gt −mt)(2) for AdaBelief ((Zhuang et al., 2020)).",1,related,1,positive
+"As shown by the results in Table 8, AdaBelief does not perform well in the proposed framework, with an SDR of 5.96 dB, and the RMSProp underperforms as well, with SDR of 7.63 dB, thus we excluded them from the final implementation.",1,related,0,negative
+"In this section, we show the performance of SDRS with proposed efficient implementation on both classification and regression tasks, and compare it with some widely used alternatives such as SGD-momentum (Liu et al., 2020), Adam (Kingma & Ba, 2014), and AdaBelief (Zhuang et al., 2020).",1,related,1,positive
+"We tried SGD [32], Adam [33] and Adabelief [34] to optimize model parameters, and find that Adam provides the best optimal model with highest evaluation performance and most stable convergence during training and testing.",1,related,1,positive
+"Inspired by Zhuang et al. (2020), we compare the optimization trajectories for various loss functions.",1,related,1,positive
+439 We determine the perceptrons using the AdaBelief optimizer 440 [43].,1,related,1,positive
+"B. EXPERIMENT 1: THE INFLUENCE OF AdaBelief OPTIMIZER AND ATTENTION MECHANISM ON LOAD FORECASTING In this experiment, we use the same learning rate (lr = 1e-2) and the same training epoch (n = 60) to test the changes of loss function of TCN-GRU in the states of AdaBelief, Adam, and SGD.",1,related,1,positive
+"After determining AdaBelief as the optimizer of the proposed method, this article also sets up an experiment to judge whether the Attention mechanism can improve the performance of the model.",1,related,1,positive
+"We have added different optimizer comparison experiments, compared the performance of Adam, SGD (stochastic gradient descent) [52], and AdaBelief in terms of training loss and prediction accuracy.",1,related,1,positive
+"Finally, we use an improved optimizer AdaBelief and Attention mechanism to further improve the accuracy and efficiency of short-term load forecasting.",1,related,1,positive
+The state-of-the-art AdaBelief optimizer based on Adam is adopted to greatly improve the accuracy and efficiency of model operation.,1,related,0,negative
+"Traing by 200 epochs with ResNet-34 as backbone on CIFAR-10, our experiments show that AdaMomentum and SGDM can reach over 96% accuracy, while in Zhuang et al. (2020) the accuracy of SGDM is only around 94% .",1,related,0,negative
+"This contradicts the result reported in Zhuang et al. (2020), where they claim AdaBelief can achieve better accuray than SGDM.",1,related,0,negative
+4https://github.com/pytorch/fairseq 5https://github.com/juntang-zhuang/SNGAN-AdaBelief,1,related,1,positive
+"Considering the fact that the loss function f is convex in area C and we do not take stochastic noise into account in this
+illustrative example as in Zhuang et al. (2020), we have
+g2t+1,i ≤ g 2 t,i (4)
+Then we have at time t + 1,
+m2t+1,i = (β1mt,i + (1− β1)gt+1,i) 2
+(i) ≥(β1gt,i + (1− β1)gt+1,i)2…",1,related,1,positive
+"For hyperparameter tuning, we perform grid search to choose the best hyperparameters for all the baseline algorithms following Zhuang et al. (2020).",1,related,1,positive
+"We compare our proposed optimizer with seven state-of-the-art (SOTA) optimizers: SGDM (Sutskever et al., 2013), Adam (Kingma and Ba, 2014), AdamW (Loshchilov and Hutter, 2017), Yogi (Reddi et al., 2018), AdaBound (Luo et al., 2019), RAdam (Liu et al., 2019) and AdaBelief (Zhuang et al., 2020).",1,related,1,positive
+"Similar to Reddi et al. (2019); Luo et al. (2019); Zhuang et al. (2020), we omit the bias correction in the algorithm procedure for simplicity and the following analysis applies to the de-biased version as well.",1,related,1,positive
+We believe this stems from the fact that Zhuang et al. (2020) did not take an appropriate stepsize annealing strategy or tune the hyperparameters well.,1,related,0,negative
+"· In our experiment, using the AdaBelief[15] optimizer can speed up training, and the learning rate setting is not greater than 1e-4.",1,related,0,negative
+"· In our experiment, using the AdaBelief[15] optimizer can speed up training, and the learning
+rate setting is not greater than 1e-4.",1,related,0,negative
+"For the optimizer, we did not use AdamW[14] or Adam[20] but chose AdaBelief[15], in whichh weight_decay is set to 1e-4, weight_decouple and rectify are both set to True.",1,related,1,positive
+"On the other hand, instead of using the exponential moving average (EMA) of g2t , AdaBelief [47] uses the EMA of (gt −mt)2 as st and the update direction for AdaBelief is mt/ √ st.",1,related,1,positive
+"On the other hand, instead of using the exponential moving average (EMA) of g(2) t , AdaBelief [47] uses the EMA of (gt −mt)(2) as st and the update direction for AdaBelief is mt/ √ st.",1,related,1,positive
+"A similar situation is found in ResNeXt29 and DLA, where the proposed methods are pretty close to the best OA reached by AdaBelief and SGDM, respectively.",1,related,1,positive
+"To justify our theory, we model the optimization problem as a regression one over three one-dimensional non-convex functions, performing optimization over these functions using SGDM, Adam, diffGrad, AdaBelief, AngularGradcos and AngularGradtan.",1,related,1,positive
+We use AdaBelief [50] in combination with look-ahead optimizer [51].,1,related,1,positive
+"For training all models in this section, an Adabelief optimizer has been used [43].",1,related,0,negative
+"Following [100], we test our method with one of the most popular models, Wasserstein GAN [3] with gradient penalty (WGAN-GP) [24].",1,related,1,positive
+"We use Adam (Kingma and Ba, 2014) and AdaBelief (Zhuang et al., 2020) as optimizers on Twitter and Weibo datasets, respectively, to seek the optimal parameters of our model.",1,related,1,positive
+"We use a batch size of 12 and Adabelief [Zhuang et al., 2020] optimizer with a weight decay of 1e-4.",1,related,0,negative
+"In this implementation, the DAM is trained for 160 epochs using AdaBelief [11] optimizer.",1,related,0,negative

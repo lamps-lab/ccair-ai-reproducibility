@@ -1,0 +1,99 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Next, we improved the structure of the loss used in both the SADNet and Restormer structures.",1,related,1,positive
+"We selected SADNet [25], which represents a small network based on the UNet improvement, and Restormer, with a more complex network and better fitting abilities, as the night defogging network.",1,related,0,negative
+"We select eight image enhancement methods (SRN-Deblur (Tao et al. 2018), MIMOUNet (Cho et al. 2021), MPRNet (Zamir et al. 2021), HE (Gonzalez and Woods 2008), LDR (Lee, Lee, and Kim 2013), WAHE (Arici, Dikbas, and Altunbasak 2009), SADNet (Chang et al. 2020), DnCNN (Zhang et al. 2017)), two domain adaptation methods (ENT (Rusak et al. 2021), BNA (Schneider et al. 2020)) and one feature restoration method (FD-Module (Wang et al. 2020)) as comparison.",1,related,1,positive
+Models Parameters Gray Color TNRD [68] 27 DnCNN-B [5] 668 673 BUIFD [19] 1075 1085 IRCNN [26] 186 188 FFDNet [6] 485 852 ADNet [11] 519 521 DudeNet [10] 1077 1079 BRDNet [9] 1113 1117 RIDNet [12] 1497 1499 CBDNet [18] - 4365 VDN [20] 7810 7817 VDIR [32] - 2227 DeamNet [50] 1873 1876 AINDNet [22] - 13764 AirNet [27] - 8930 SADNet [28] 3450 3451 DANet+ [31] - 9154 CycleISP [51] - 2837 DRANet 1612 1617,1,related,1,positive
+"TABLE IV REAL IMAGE DENOISING COMPARISON WITH DNCNN [12], BM3D [40], CBDNET [46], RIDNET [47], AINDNET [48], VDN [49], SADNET [50], DANET+ [51], CYCLEISR [52], DEAMNET [53] ON SIDD [38] (? DENOTE THE MODEL USING ADDITIONAL TRAINING SETS TO TRAIN THE MODEL).",1,related,1,positive
+Method RIDNet AINDNet VDN SADNet DANet+ CycleISP MIRNet DeamNet MPRNet DAGL Uformer MAXIM Restormer CSformer CSformer∗ Dataset [5] [39] [90] [11] [91] [93] [94] [64] [95] [55] [83] [77] [92] (Ours) (Ours),1,related,1,positive
+"Qualitative enhancement comparisons of our model on synthetic compression blur samples with SADNet (Chang et al., 2020) and MPRNet (Zamir et al.",1,related,1,positive
+"A B C D E
+FIGURE 7 Qualitative enhancement comparisons of our model on synthetic compression blur samples with SADNet (Chang et al., 2020) and MPRNet (Zamir et al., 2021).",1,related,1,positive
+"In detail, we report the evaluation results from the classic denoising method BM3D [11], CNN-based methods DnCNN [59], CBDNet [15], RIDNet [3], AINDNet [19], VDN [52], SADNet [6], DANet [53], CycleISP [54], MIRNet [55], DeamNet [39], DAGL [32], MAXIM [45], and Transformerbased methods Uformer [49] and Restormer [57].",1,related,1,positive
+"Firstly, we set the layer numbers of both branches the same, which are [2, 4, 4, 6, 4, 4, 2].",1,related,1,positive
+BM3D DnCNN CBDNet RIDNet AINDNet VDN SADNet DANet CycleISP MIRNet DeamNet DAGL MAXIM Uformer Restormer Xformer Dataset Method [11] [59] [15] [3] [19] [52] [6] [53] [54] [55] [39] [32] [45] [49] [57] (ours),1,related,1,positive
+"Following RDN [63] and SADNet [9], we adopt 800 highresolution training images from the DIV2K dataset [3] to train our models for Gaussian denoising at four different noise levels (σ = 10, 30, 50, 70).",1,related,1,positive
+"To evaluate denoising performance on synthetic noisy images, we compared our proposed DUMRN with several state-of-the-art denoising methods including classical model-based methods (BM3D [13] and CBM3D [12]), deep unfolding methods (TNRD[11], CSCNet [50] and DeamNet [46]), and deep-learning based methods (DnCNN [61],
+FFDNet [62], NLRN[38], SADNet [9], DudeNet [53], COLANet [41], Neb2Neb [30], and RDN [63]).",1,related,1,positive
+"Benefiting from the incorporation of the physical model and deep CNNs, our model also outperforms state-of-the-art deep learning-based methods DnCNN, SADNet, COLANet, and RDN. Taking color image denoising with noise level σ = 50 as an example, our DUMRN obtains 0.65dB/0.0207, 0.45dB/0.0161,
+and 1.37dB/0.0320 improvements over DnCNN on Kodak24, CBSD68, and Urban100 respectively.",1,related,1,positive
+"Like other denoising methods [61, 62, 63, 9, 41, 53], we performed data augmentation on the training images, using random flipping and rotation.",1,related,1,positive
+"To assess the effectiveness of the proposed network, we adopt the same L2 loss function as previous works [61, 62, 9, 41].",1,related,0,negative
+"our method with CBM3D [53], DnCNN [2], FFDNet [54], IRCNN [10], DHDN [55], SADNet [56], RDN [57], and IPT [14].",1,related,1,positive
+"For the denoising, we compared our method with CBM3D [53], DnCNN [2], FFDNet [54], IRCNN [10], DHDN [55], SADNet [56], RDN [57], and IPT [14].",1,related,1,positive
+"Following (Chang et al. 2020), our ADFNet adopts an encoder-decoder framework to pursue an effective and efficient target.",1,related,0,negative
+"To verify the effectiveness of the proposed ADFNet for Gaussian noisy images, we compare it with the existing methods include DnCNN (Zhang et al. 2017), FFDNet (Zhang, Zuo, and Zhang 2018), RNAN (Zhang et al. 2019), RIDNet (Tian, Xu, and Zuo 2020), RDN (Zhang et al. 2020), SADNet (Chang et al. 2020), DeamNet (Ren et al. 2021), P3AN (Hu et al. 2021), and MSANet (Gou et al. 2022).",1,related,1,positive
+"We also compare our method with several state-of-the-art CNN-based filters, including DnCNN [65], TNRD [8], RDN [68], SADNet [6], KPN [40], ADNet [46], and DeamNet [42].",1,related,1,positive
+"In addition, our method also achieves better accuracy than the CNN-based methods, i.e. TNRD, DnCNN, SADNet, RDN, in all the four tasks.",1,related,1,positive
+"(a) Input (b) Bilateral (c) Guided (d) NLM
+(e) BM3D (f) TNRD (g) DnCNN (h) SADNet
+(i) RDN (j) Swin (k) IPT (l) KPN
+(m) ADNet (n) DeamNet (o) RNAN (p) SwinIR
+(q) Resformer (r) Ours (s) GT
+Fig.",1,related,1,positive
+"Base(�2=50) Large(�2=50)
+Method CBSD68 Urban100 CBSD68 Urban100
+TNRD 26.64/0.762 25.51/0.804 27.25/0.765 26.30/0.814 DnCNN 26.45/0.729 25.22/0.768 27.46/0.776 26.63/0.826 SADNet 27.50/0.785 26.53/0.829 27.96/0.801 27.57/0.861 RDN 27.53/0.778 26.85/0.834 27.78/0.789 27.38/0.850 Swin 25.99/0.738 24.26/0.765 27.66/0.790 26.71/0.840 IPT 27.10/0.765 26.17/0.817 27.83/0.806 27.55/0.860 KPN 27.17/0.762 26.42/0.828 27.69/0.797 27.32/0.848 ADNet 26.33/0.756 25.69/0.808 27.32/0.762 26.53/0.828 DeamNet 27.59/0.758 27.38/0.853 27.79/0.798 27.68/0.863 RNAN 27.82/0.793 27.30/0.850 28.01/0.801 27.95/0.872 SwinIR 27.73/0.789 27.05/0.843 27.90/0.794 27.71/0.868 Resformer 27.65/0.792 27.24/0.853 27.94/0.801 27.89/0.871 Ours 27.94/0.799 27.64/0.864 28.15/0.806 28.29/0.876
+Table 9.",1,related,1,positive
+"Method Flops/G params/M memory/MB time/s/img
+TNRD 2.832 0.056 2961 0.1816 DnCNN 28.02 0.558 2175 0.0223 SADNet 14.52 3.451 1363 0.0082 RDN 278.6 5.552 13761 0.0651 Swin 77.72 1.557 9435 0.1131 IPT 573.2 176.7 13346 0.2565 KPN 40.61 27.65 2399 0.0217 ADNet 26.16 0.521 2501 0.0270 DeamNet 111.9 1.876 6077 0.0707 SwinIR 43.99 0.866 14058 0.0935 Resformer 107.9 26.12 20381 0.3003 Ours 121.7 2.425 4105 0.0898
+Table 7.",1,related,1,positive
+"Method Gaussian Bilateral Guided NLM BM3D TNRD DnCNN SADNet RDN Swin PSNR 21.98 22.39 22.23 22.14 22.41 22.85 22.49 22.97 23.03 22.31 SSIM 0.796 0.812 0.808 0.768 0.829 0.820 0.684 0.830 0.837 0.765
+Method IPT KPN ADNet DeamNet RNAN SwinIR Resformer CRM LIME BIMEF PSNR 19.08 21.71 22.86 22.19 23.00 23.01 23.04 17.20 16.76 13.88 SSIM 0.719 0.727 0.750 0.818 0.831 0.832 0.829 0.622 0.444 0.595
+Method SRIE MF RRM Dong JED DeepUPE RetinexNet KinD GLAD Ours PSNR 13.03 16.97 15.36 16.72 13.69 13.36 16.77 19.66 19.72 23.11 SSIM 0.607 0.505 0.654 0.479 0.658 0.465 0.429 0.821 0.685 0.849
+We highlight the best-performing model in each metrics.",1,related,1,positive
+"We also compare our method with several state-of-the-art CNN-based ilters, including DnCNN [65], TNRD [8], RDN [68], SADNet [6], KPN [40], ADNet[46] and DeamNet[42].",1,related,1,positive
+"LIVE1 Classic5
+Method CQL=10 CQL=20 CQL=30 CQL=40 CQL=10 CQL=20 CQL=30 CQL=40
+Gaussian 25.24/0.735 26.44/0.785 26.84/0.803 27.05/0.812 27.69/0.757 28.63/0.796 28.95/0.811 29.09/0.818 Bilateral 26.07/0.766 28.52/0.842 29.83/0.872 30.73/0.889 28.48/0.785 30.60/0.843 31.75/0.868 32.45/0.881 Guided 25.96/0.742 27.67/0.790 28.45/0.809 28.95/0.820 28.08/0.762 29.41/0.801 30.06/0.818 30.42/0.827 NLM 25.69/0.749 28.06/0.830 29.37/0.865 30.29/0.886 27.82/0.767 30.14/0.841 31.51/0.872 32.46/0.889 BM3D 26.06/0.768 28.61/0.848 29.97/0.880 30.91/0.897 28.72/0.795 31.05/0.854 32.30/0.875 33.09/0.886 SA-DCT 26.63/0.778 28.83/0.848 30.03/0.879 30.88/0.897 28.88/0.795 30.91/0.853 32.13/0.879 32.99/0.894 ARCNN 26.50/0.774 28.75/0.846 30.01/0.877 30.83/0.894 28.59/0.784 30.75/0.848 32.00/0.877 32.87/0.894 TNRD 26.89/0.783 29.19/0.853 30.48/0.885 31.39/0.902 28.99/0.792 31.15/0.853 32.42/0.880 33.34/0.897 DnCNN 26.78/0.786 29.13/0.856 30.48/0.887 31.38/0.903 28.98/0.799 31.27/0.859 32.58/0.885 33.40/0.900 SADNet 27.12/0.792 29.29/0.859 30.67/0.890 31.44/0.905 29.12/0.802 31.32/0.861 32.62/0.885 33.37/0.898 RDN 27.13/0.793 29.48/0.861 30.80/0.891 31.70/0.908 29.28/0.804 31.42/0.861 32.71/0.887 33.60/0.901 Swin 26.37/0.768 28.58/0.840 29.79/0.873 30.64/0.891 28.39/0.777 30.52/0.842 31.82/0.873 32.71/0.891 IPT 22.04/0.721 19.64/0.751 17.18/0.735 16.69/0.738 20.87/0.675 19.07/0.691 16.76/0.663 15.13/0.669 KPN 27.14/0.794 29.55/0.871 30.82/0.895 31.73/0.915 29.26/0.806 31.47/0.865 32.73/0.882 33.62/0.899 ADNet 26.95/0.787 29.23/0.841 30.52/0.892 31.40/0.911 29.12/0.799 31.25/0.855 32.48/0.885 33.47/0.900 DeamNet 27.20/0.791 29.53/0.856 30.89/0.895 31.79/0.909 29.34/0.809 31.46/0.869 32.63/0.871 33.52/0.887 RNAN 27.23/0.796 29.64/0.864 30.88/0.894 31.78/0.910 29.27/0.807 31.50/0.864 32.78/0.889 33.66/0.903 SwinIR 27.22/0.794 29.60/0.862 30.90/0.892 31.81/0.908 29.26/0.803 31.48/0.861 32.79/0.887 33.68/0.902 Restormer 27.22/0.796 29.53/0.864 30.87/0.893 31.79/0.910 29.24/0.808 31.52/0.864 32.79/0.888 33.64/0.902 Ours 27.31/0.806 29.68/0.873 30.97/0.902 31.85/0.918 29.42/0.817 31.60/0.873 32.87/0.898 33.74/0.912
+We highlight the best-performing model in each column.",1,related,1,positive
+"We then modify the original loss function of CBDNet and SADNet, i.e., L2 + LAsymmetric + LTV and L2, by attaching our proposed objective.",1,related,1,positive
+"On image denoising task, our IDLIR is compared with DnCNN, MLP, BM3D, CBDNet, RIDNet, AINDNet, VDN, SADNet, DANet+ and CycleISP.",1,related,1,positive
+The encoder and decoder of Restoration Network is composed of HINBlocks and ResBlocks respectively adopted from HINet [65] which proposes half-instance normalization for image restoration.,1,related,1,positive
+"We choose MLP [2], CBDNet [3], RIDNet [4], DANet [7], SADNet [8] and DeamNet [10] as the comparison methods and use the commonly used PSNR and SSIM as the quantitative metrics to measure the denoising performance.",1,related,1,positive
+"We compare our DGUNet with several recent methods [10, 53, 76, 77, 79] and report the evaluation results (PSNR and SSIM) in Tab.",1,related,0,negative
+"Note that the FLOPs number of our method (14.1G) is much smaller than that of RDN (46.6G) or SADNet (45.8G), when the input is a 64 × 64 RGB image.",1,related,1,positive
+"A.2 Comparison with task-specific methods
+As shown in Table 7, we firstly compare our methods with state-of-the-art denoising methods (DnCNN [78], FFDNet [80], RDN [81], and SADNet [9]).",1,related,1,positive
+"In the supplementary material, we compare our TAPE-Net with 12
+state-of-the-art task-specific methods, including deraining methods (DDN [23], SPANet [67], RESCAN [43], PreNet [58], BRN [57],SPDNet [73] and PCNet [34]); demoireing methods ( DMCNN [63], MopNet [29], FHDe2Net [29], HRDN [71], WDNet [47] and MBCNN [84]); and denoising methods (DnCNN [78], FFDNet [80], RDN [81], and SADNet [9]) on PSNR. Qualitative results on deraining are shown in Figs.",1,related,1,positive
+"Specifically, MSANet outperforms RIDNet with 2.48dB (0.0049), SADNet with 0.6dB (0.0024), DeamNet with 1.49dB (0.0073) in PSNR (SSIM) values.",1,related,1,positive
+"In brief, MSANet achieves the highest PSNR and SSIM values compared to other methods, e.g., 0.85dB, 0.1dB, 0.09dB gains in PSNR, and 0.0066, 0.0015, 0.0013 gains in SSIM over the RIDNet, SADNet, and DeamNet, respectively.",1,related,1,positive
+"3, CBDNet and PD result in residual noises and pseudo artifacts, RIDNet, SADNet and DeamNet severely destroy the textures and obtain over-smoothed results.",1,related,1,positive
+"Taking the noise level of 70 as an example, our method can achieve PSNR gains about 0.03 ∼ 0.27dB, and SSIM gains about 0.0010 ∼ 0.0111 over the stateof-the-art methods, i.e., SADNet, RNAN, and DeamNet.",1,related,1,positive
+"For comparisons, we choose seven representative denoising methods, i.e., BM3D [10], DnCNN [50], FFDNet [51], CLEARER [12], RNAN [53], SADNet [6] and DeamNet [33].",1,related,1,positive
+"For comparisons, we compare MSANet with 10 denoising methods, i.e., CDnCNN-B, CBM3D [9], FFDNet+, CBDNet, N3Net [32], PD [54], PR [47], RIDNet [4], SADNet and DeamNet, and use the corresponding pretrained models provided by their authors and refer to their results reported in the online submission system and papers.",1,related,1,positive
+We iterately conduct the demosaic and denoising algorithm according to Equation (5).,1,related,1,positive
+"We also compare our DDS-Net with other state-of-theart static denoising methods: FFDNet [50], CBDNet [28], RIDNet [29], SADNet [51], MIRNet-v2 [52].",1,related,1,positive
+"In terms of the hyperparameter of training, our settings are basically the same as [Chang et al. 2020].",1,related,0,negative
+"Therefore, we introduce a context block [Chang et al. 2020] into the minimum scale between encoder and decoder, which increases the receptive field and reconstructs multiscale information without further downsampling.",1,related,1,positive
+"Therefore, we introduce a
+context block [Chang et al. 2020] into the minimum scale between encoder and decoder, which increases the receptive field and reconstructs multiscale information without further downsampling.",1,related,1,positive
+"While different from the method in [Chang et al. 2020], we directly concatenate the input and the upsampled offset.",1,related,1,positive
+Methods BM3D [52] DnCNN [67] FFDNet [60] CBDNet [61] RIDNet [68] IERD [57] GradNet [64] AINDNet [62] DANet [65] SADNet [66] SVLRM,1,related,1,positive
+"For the evaluation of the cascaded designs, we tested seven handcrafted or learning-based denoisers, namely BM3D [89], DnCNN [90], FFDNet [91], CBDNet [92], GRDN [78], SADNet [93], and CycleISP [74].",1,related,1,positive
+"[6], in order to better estimate the current offset values, we transfer the offset values obtained in the last offset block {Δplast,Δmlast} to the current offset block (the purple line in Figs.",1,related,1,positive
+"Our method obtains considerable gains over the state-of-the-art approaches, i.e., 0.19 dB over CycleISP [86] on SIDD and 0.21 dB over SADNet [11] on DND. Note that the DND dataset does not contain any training images, i.e., the complete publicly released dataset is just a test set.",1,related,1,positive
+Reference Noisy RIDNet [4] AINDNet [40] VDN [84] SADNet [11] CycleISP [86] DANet [85] MPRNet (Ours),1,related,1,positive
+"Methods SIDD DND Model ProfilePSNR SSIM PSNR SSIM # Param FLOPs Time CBM3D [4] 25.65 0.685 34.51 0.851 - - 21.49
+DnCNN [17] 23.66 0.583 32.43 0.790 0.67 175 0.22 CBDNet [22] 30.78 0.801 38.06 0.942 4.37 161 0.19 RIDNet [23] 38.71 0.951 39.26 0.953 1.5 393 0.68
+AINDNet [86] 38.95 0.952 39.37 0.951 13.76 1284 0.49 VDN [27] 39.23 0.955 39.38 0.952 7.81 168 0.20
+SADNet [87] 39.46 0.957 39.59 0.952 4.23 76 0.22 DANet [24] 39.47 0.957 39.58 0.955 9.15 59 0.12 CycleISP [88] 39.52 0.957 39.56 0.956 2.83 739 1.36 MPRNet [25] 39.62 0.958 39.80 0.954 15.74 2296 2.75
+VIRNet (Ours) 39.64 0.958 39.83 0.954 15.40 658 0.88 PNGAN [89] 40.06 0.960 40.25 0.962 15.74 2296 2.75
+Fig.",1,related,1,positive
+"We compared VIRNet with several typical real-world denoising methods, including MPRNet [25], CycleISP [88], DANet [24], SADNet [87], VDN [27] and so on (see Table 4).",1,related,1,positive
+"Combining the results in Table 1 and Table 2, it should be rational to say
+9 (a) Noisy (b) VDN (c) SADNet (d) DANet (e) CycleISP (g) VIRNet (f) MPRNet
+Fig.",1,related,1,positive
+"Specifically, we still use the VAE [23] for image quality estimation and develop a new restoration network based on deformable network architecture like [24].",1,related,1,positive
+"The context block comprises several dilated convolution blocks and a final fusion block, and we put it into the minimum scale between the encoder and the decoder, similar to a previous network [58].",1,related,1,positive
+"Note that the FLOPs number of our method (14.1G) is much smaller than that of RDN (46.6G) or SADNet (45.8G), when the input is a 64 × 64 RGB image.",1,related,1,positive
+"Method DnCNN [21] FFDNet [22] RDN [23] SADNet [1] TAPE-Net (Ours) TAPE-Net-swin-L (Ours)
+PSNR/SSIM 34.31/0.892 33.26/0.890 38.70/0.901 38.41/0.900 37.90/0.896 38.76/0.901 FLOPS (G) 14.4 0.87 46.6 45.8 14.1 5.3
+2 Table S3: Quantitative comparison with the state-of-the-art deraining methods on Rain200L and Rain200H.",1,related,1,positive
+"As shown in Table S2, we firstly compare our methods with state-of-the-art denoising methods (DnCNN [21], FFDNet [22], RDN [23], and SADNet [1]).",1,related,1,positive
+Method DnCNN [21] FFDNet [22] RDN [23] SADNet [1] TAPE-Net (Ours) TAPE-Net-swin-L (Ours) PSNR/SSIM 34.,1,related,1,positive
+CBM3D TNRD MLP DnCNN CBDNet SADNet RIDNet VDN AINDNet GNSCNet COLA-Net Dataset [69] [35] [70] [16] [71] [60] [25] [72] [61] [62] [31] Proposed 25.,1,related,1,positive
+BM3D DnCNN MWCNN NLRN SADNet RIDNet AINDNet GNSCNet DudeNet GCDN DAGL COLA-Net Dataset σ [12] [16] [22] [32] [60] [25] [61] [62] [63] [64] [65] [31] Proposed 32.,1,related,1,positive
+"The results on the first row are obtained from the paper [1], the second row represents our results on a similar patch.",1,related,1,positive
+"The results on the first two rows are obtained from the paper [1], the third row represents our results on the same image.",1,related,1,positive
+"For the denoising, we compared our method with CBM3D (Dabov et al., 2007), DnCNN (Zhang et al., 2017a), FFDNet (Zhang et al., 2018b), IRCNN (Zhang et al., 2017b), DHDN (Park et al., 2019), and SADNet (Chang et al., 2020).",1,related,1,positive

@@ -1,0 +1,19 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"(4) FSCS [41] adopted the conditional mutual information constraint I(A, Y |f(X)) to promote the sufficiency.",1,related,1,positive
+"…(a) the area under the majority MSE vs. coverage curve, i.e., AUC (D = 0), (b) the area under the minority MSE vs. coverage curve, i.e., AUC (D = 1), and (c) the area under the absolute difference of the subgroup MSE vs coverage curves (AUADC) (Franc & Prusa, 2019; Lee et al., 2021) respectively.",1,related,1,positive
+"…end for for each batch do
+# update feature extractor θΦ ← θΦ − 1nη∇θΦ(LG(Φ, θ) + λLR(Φ)) # update mean/variance predictor θ ← θ − 1nη∇θLG(Φ, θ)
+end for end for
+upper bound for I(Y ;D|Φ(X)) from (Lee et al., 2021):
+I(Y ;D|Φ(X)) ≤ EΦ(X),Y,D [logP(Y |Φ(X), D)] (3) − ED [ EΦ(X),Y [logP(Y |Φ(X), D)]…",1,related,1,positive
+"In Section 6, we compared the different algorithms in terms of how well they perform fair selective regression by looking at the subgroup MSE vs. coverage curves in addition to AUC, AUC (D = 0), AUC (D = 1), and AUADC.",1,related,1,positive
+"upper bound for I(Y ;D|Φ(X)) from (Lee et al., 2021):",1,related,1,positive
+"To compare different algorithms in terms of how well they perform selective regression (i.e., without fairness), we look at area under MSE vs. coverage curve (AUC), which encapsulates performance across different coverage (Franc & Prusa, 2019; Lee et al., 2021).",1,related,1,positive
+"Similar to (Lee et al., 2021), we do not assume access to the identity of sensitive groups at test time.",1,related,1,positive
+"These aspects could be quantitatively captured by looking at (a) the area under the majority MSE vs. coverage curve, i.e., AUC (D = 0), (b) the area under the minority MSE vs. coverage curve, i.e., AUC (D = 1), and (c) the area under the absolute difference of the subgroup MSE vs coverage curves (AUADC) (Franc & Prusa, 2019; Lee et al., 2021) respectively.",1,related,1,positive
+We provide these results in Table 2 and observe that our algorithms outperform the baselines across datasets in terms of AUC (D = 1) and AUADC while being comparable in terms of AUC (D = 0).,1,related,1,positive
+"Standard deviations
+In Table 3 below, we provide the standard deviations associated with AUC, AUC (D = 0), AUC (D = 1), and AUADC whose means where provided in Table 2 in Section 6.",1,related,1,positive
+Table 2 suggests that our algorithm outperforms the baseline in terms of AUC (D = 1) and AUADC while being comparable in AUC (D = 0).,1,related,1,positive
+"Table 2 shows that on the Alzheimer’s disease dataset, our method FACIMS outperforms EIIL, FSCS, FAMS, and ERM in terms of balanced accuracy, with improvements of 2.6%, 4.0%, 5.3%, and 2.1% respectively.",1,related,0,negative
+"As for balanced accuracy, our method FACIMS improves the performance by 4.4%, 8.2%, 2.6%, 7.0%, and 2.3% comapred to EIIL, FSCS, FAMS, ERM and BERM.",1,related,0,negative

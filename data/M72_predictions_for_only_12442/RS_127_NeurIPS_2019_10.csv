@@ -1,0 +1,71 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Given non-standardized adoption of CNN models for experimentations in post-training pruning works, we examined as most models as appeared in various literature and add those as baselines in our comparison, including Global [33], Uniform [45], Uniform+ [13], LAMP [25], ER ker.",1,related,1,positive
+"Inspired by [47], we conduct experiments to study the transferability of FSTs.",1,related,0,negative
+We take inspiration by the work of Morcos et al. (2019) and re-train sparse initializations generated for one task-ES configuration on a different setting with a shared network architecture.,1,related,1,positive
+"1) Experiment Setup: To answer the RQ3, we select 4 state-of-the-art model compression techniques proposed in the last two years (i.e., LAMP [30], Global [31], Uniform+ [32] and ERK [33]) to see whether our DeepArc framework can speed up the model compression efficiency.",1,related,1,positive
+"Finally, the resulting ⊙ is the winning ticket of the LTH by using the surrogate dataset.",1,related,1,positive
+The pre-training stage finds the winning ticket of the LTH through pruning the original model after training using the surrogate dataset.,1,related,0,negative
+The server has a surrogate dataset to pre-train a model for finding the winning ticket of the LTH.,1,related,0,negative
+"We propose an FL method that initializes a model at the server by using the winning ticket of the LTH found with a surrogate dataset, as shown in Fig.",1,related,1,positive
+We proposed and evaluated a communication-efficient FL method by imposing the LTH-based initialization with a surrogate dataset before the FL process.,1,related,1,positive
+"At the pre-training stage, a surrogate dataset is used to extract the sub-network of the original model, i.e., the winning ticket of the LTH, at the server.",1,related,0,negative
+"Pruning heuristics of our proposed method is motivated by previous work [21], [22].",1,related,1,positive
+"For LTH, our explanation is that S contains weights that are initialized luckily, i.e., close to useful local optima and converge to them during training.",1,related,1,positive
+"The independence of the functions is not required and could be replaced by dictionaries, but the independence aids the compression of the bottom layers and thus our objective to find sparse LTs.",1,related,1,positive
+"Before we can prove the existence of strong universal LTs, we have to formalize our notion of what makes a strong LT universal.",1,related,1,positive
+"To make meaningful progress in deriving a notion of universal LTs, we therefore need a stronger simplification.",1,related,1,positive
+"In the following, we discuss the existence of polynomial LTs in more detail.",1,related,1,positive
+"Next, we can utilize our improved LT pruning results to prove the existence of universal LTs.",1,related,1,positive
+"…2017) • A simple MLP model, created by removing layers from
+the TabTransformer model (see (Huang et al. 2020), §3.1, paragraph 1)
+• A sparse MLP, based on (Morcos et al. 2019) • TabTransformer (Huang et al. 2020) • TabNet (Arik and Pfister 2020) • Variational Information Bottleneck (VIB) (Alemi…",1,related,1,positive
+…the performance of TabTransformer against following four categories of methods: (a) Logistic regression and GBDT; (b) MLP and a sparse MLP following Morcos et al. (2019); (c) TabNet model of Arik & Pfister (2019); and (d) the Variational Information Bottleneck model (VIB) of Alemi et al. (2017).,1,related,1,positive
+"If the hypothesis holds for a given network, then we can reduce the computational cost by using the sparse subnetwork instead of the entire network while maintaining the accuracy [14, 19].",1,related,1,positive
+"This directly relates to the good transfer properties of the subnetworks corresponding to the winning tickets [16, 26].",1,related,1,positive
+"The inaccessibility of W∗ has also be noticed in [56]–[58], proving the importance of our NTAA in synchronously learning the network weights and the architecture in the same way as our NTAA.",1,related,1,positive
+"As baselines, we consider Global (Morcos et al., 2019), Uniform (Zhu and Gupta, 2017), and Adaptive (Gale et al., 2019) pruning techniques and LAMP (Lee et al., 2021).",1,related,1,positive
+"As baselines, we consider Global (Morcos et al., 2019), Uniform (Zhu and Gupta, 2017), and Adaptive (Gale et al.",1,related,1,positive
+"…the performance of TabTransformer against following four categories of methods: (a) Logistic
+regression and GBDT (b) MLP and a sparse MLP following (Morcos et al. 2019) (c) TabNet model of Arik and Pfister (2019) (d) and the Variational Information Bottleneck model (VIB) of Alemi et al. (2017).",1,related,1,positive
+regression and GBDT (b) MLP and a sparse MLP following (Morcos et al. 2019) (c) TabNet model of Arik and Pfister (2019) (d) and the Variational Information Bottleneck model (VIB) of Alemi et al.,1,related,1,positive
+"We also investigate the efficacy of methods introduced by [12, 38, 13, 42] such as iterative magnitude pruning, late resetting, early bird training, and layerwise pruning in the context of object recognition.",1,related,1,positive
+"As an additional experiment, we test whether LAMP can provide a general-purpose layerwise sparsity for pruning schemes other than MP.",1,related,1,positive
+"With the effectiveness of LAMP confirmed, we take a closer look at the layerwise sparsity discovered by LAMP.",1,related,1,positive
+"One common method is the global MP criteria (see, e.g., Morcos et al. (2019)), ∗Work done at KAIST 1i.e., simultaneously training and pruning
+ar X
+iv :2
+01 0.",1,related,1,positive
+"Lastly, we observe that the heuristic of Gale et al. (2019) seems to provide an improvement over the Uniform MP.",1,related,1,positive
+"5, we plot the layerwise survival rates and the number of nonzero weights discovered by iteratively pruning VGG-16 (trained on CIFAR-10), by Global MP, Erdős-Rényi kernel, and LAMP.",1,related,1,positive
+"In Section 4, we empirically validate the effectiveness and versatility of LAMP.",1,related,0,negative
+"We note that the gap between one-shot pruning and iterative pruning is quite small for LAMP; when 1.15% of all prunable weights survive, iterative LAMP brings only 1.09% accuracy gain over one-shot LAMP.",1,related,0,negative
+"In search of a “go-to” layerwise sparsity for MP, we take a model-level distortion minimization perspective towards MP.",1,related,1,positive
+"We then observe that the problem can be relaxed to the minimization of Frobenius distortion in the weight tensor, whose solution coincides with the layerwise MP. Formally, let ξ ∈ Rn be an input vector to a fully-connected layer with the weight tensor W ∈ Rm×n.",1,related,1,positive
+"We sort and prune as in global MP, taking O(n log n) steps.7
+We observe that step 4 is the dominant term, which is shared by the global MP.",1,related,1,positive
+"(9)In the paper [32]’s Appendix A2 part, the authors report applying layerwise rearrange can hurt the performance when the pruning ratio is high.",1,related,0,negative
+"[15] focused on the natural image domain, we investigate the possibility of transferring winning tickets obtained from the natural image domain to datasets in non natural image domains.",1,related,1,positive
+We follow an experimental set-up which is similar to the one that was introduced in [15] (and that has been validated by [5]).,1,related,1,positive
+"(14)We might consider finding a lottery ticket for BERT, which we would expect to fit the GLUE training data just as well as pre-trained BERT (Morcos et al., 2019; Yu et al., 2019).",1,related,0,negative
+"14We might consider finding a lottery ticket for BERT, which we would expect to fit the GLUE training data just as well as pre-trained BERT (Morcos et al., 2019; Yu et al., 2019).",1,related,0,negative
+"Mainly, we answer the question: As is recently discovered for generic lottery ticket mechanism [11], that a winning ticket can generalize across datasets, can we extend this notion to DPLTM? Where we can use a publicly available dataset to get a winning ticket in a non-private setting, and then use that winning ticket to train a differentially private model on our sensitive dataset.",1,related,1,positive
+"Similar to the experimental setup in [5], we divide the Cifar-10 dataset into two equal training splits namely Cifar-10a and Cifar-10b with 25k training samples in each,",1,related,1,positive
+"It was found in [5] that global pruning outperforms local pruning when the larger networks are considered, and hence we adopt global pruning for this case as well.",1,related,1,positive
+"To this end, we adopt a setup similar to [5]: we investigate the transferability of tickets to di erent datasets from the same distribution.",1,related,1,positive
+"For experiments with VGG-19 [33], we use its modi ed variant as in [5, 2], i.",1,related,1,positive
+"Note, this observation is consistent with results from earlier works on LTH such as [2, 5].",1,related,1,positive
+In our work we use global pruning as used in the paper we are reproducing [4].,1,related,1,positive
+The authors of the original paper [4] did not release their code.,1,related,0,negative
+We use hyperparameters provided by authors to maintain consistency with the paper we are reproducing [4].,1,related,1,positive
+We employ late resetting of 1 epoch in all the experiments as used by the authors [4].,1,related,1,positive
+"As a part of the NeurIPS Reproducibility Challenge’s Replication Track, we replicate the work done by [4] and investigate if the winning ticket initializations are generalizable across datasets and optimizers.",1,related,1,positive
+"The paper we reproduce, ""One ticket to win them all: generalizing lottery ticket initializations across datasets and optimizers"" [4] provides empirical evidence that these winning ticket initializations generalize across multiple datasets as well as optimizers1.",1,related,1,positive
+"For implementing the random ticket baseline, we generate random masks by globally permuting the winning masks as mentioned in [4].",1,related,1,positive
+1Authors used anywhere in this paper refers to the authors of the paper that we reproduce [4] 2The code base can be found at github.,1,related,1,positive
+The ability that we can find lottery tickets is useful when we need to retrain a pruned model on slightly different but similar datasets [14].,1,related,1,positive
+"To verify whether the final model from adaptive pruning is a lottery ticket [11], [14], we reinitialize this converged model using the original random seed, and compare its accuracy vs.",1,related,1,positive
+"For LTH, our explanation is that S contains weights that are initialized luckily, i.e., close to useful local optima and converge to them during training.",1,related,1,positive
+"We also noticed is that the winning tickets identified from a larger dataset usually have better transferability, which is in accordance with (Morcos et al., 2019).",1,related,0,negative
+"Inspired by the recent observation that training with more classes helps consolidate a more robust sparse model (Morcos et al., 2019), we propose a curriculum pruning schedule, in which IMP is conducted more aggressively for new tasks arriving later, with n(i) ≥ n(i−1), until reaching the desired…",1,related,1,positive
+"Inspired by the recent observation that training with more classes helps consolidate a more robust sparse model (Morcos et al., 2019), we propose a curriculum pruning schedule, in which IMP is conducted more aggressively for new tasks arriving later, with n ≥ n(i−1), until reaching the desired sparsity.",1,related,1,positive
+"We used global iterative magnitude pruning (IMP) for LTs because it has been shown to perform better than one shot pruning, where the pruning procedure is only done once rather than iteratively, and local (or uniform layerwise) pruning, where each layer has the same pruning ratio (Morcos et al., 2019; Frankle & Carbin, 2018).",1,related,1,positive

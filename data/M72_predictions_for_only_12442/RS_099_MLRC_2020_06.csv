@@ -1,0 +1,66 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"First, we extract tLS from ViT.",1,related,1,positive
+V iT (·) denotes the output vector of the ViT model.,1,related,1,positive
+"We firstly generate the patch tokens tLS by removing the last layer class token tLcls from the output of the last layer normalization
+4 ⋯ Transform er layers ⋯ ⋮
+ViT•
+⋯
+s
+⋯
+“zebra” “elephant”
+C classes
+M
+𝒕𝒕𝑺𝑺𝑳𝑳
+P
+G
+w
+ViT(X)
+ViT(P)
+X
+⋯
+Projection+ Position em
+bedding
+Reshape normalization
+Hadamard product
+Cosine similarity
+×
+Columnwise
+Generate graph
+Graph cut
+𝒕𝒕𝒄𝒄
+R-Out
+Cut
+ViT Share weights
+Upsampling
+Fig.",1,related,1,positive
+"To compute the weight scores w for each perturbation map Pi, we input both the perturbation map matrix P and the original image X into the pre-trained ViT model.",1,related,1,positive
+"2) Implementation Details: In our experiments, we used the same pre-trained ViT-base model as the backbone for our explainability maps tests to ensure fairness.",1,related,1,positive
+"In doing so, we avoid the non-identifiability problem of transformer models (Pruthi et al., 2019).",1,related,1,positive
+"Because we are factorizing h, we can generate explanations on embeddings without needing to deal with the complexities of attention layers (Pruthi et al., 2019); nor do we have to deal with the nonidentifiability of transformer models (Brunner et al.",1,related,1,positive
+"erefore, we set penalties to suppress the corresponding attention weight [29].",1,related,0,negative
+"Following Pruthi et al. (2020), we use the biographies (DeArteaga et al., 2019) to predict whether the occupation is a surgeon or physician (non-surgeon).",1,related,0,negative
+"And we follow the (Pruthi et al. 2020) to carve out a binary classification task of distinguishing between surgeons and (non-surgeon) physicians, where a majority of surgeons (> 80%) in the dataset are male.",1,related,0,negative
+"Model Architecture We train a simple embedding attention model (Pruthi et al. 2020), where the attention is directly over word embeddings (128 dimensions).",1,related,1,positive
+"And we follow the (Pruthi et al. 2020) to carve out a binary classification task of distinguishing between surgeons and (non-surgeon) physicians, where a majority of surgeons (> 80",1,related,1,positive
+"Pruthi et al. (2020) manipulate attention distributions in
+an end-to-end fashion; we focus on manipulating gradients.",1,related,1,positive
+"A.4 Biosbias Details
+We follow the setup of Pruthi et al. (2020) and only use examples with the labels of “physician” and “surgeon”.",1,related,0,negative
+"For example, without faithful explanations, we cannot know whether a model is exploiting sensitive features such as gender (Pruthi et al., 2020).",1,related,1,positive
+"…the following challenge to the community: We must develop formal definition and evaluation for faith-
+9Whether for attention (Baan et al., 2019; Pruthi et al., 2019; Jain and Wallace, 2019; Serrano and Smith, 2019; Wiegreffe and Pinter, 2019), saliency methods (Alvarez-Melis and Jaakkola,…",1,related,1,positive
+"As it is proven possible to incorporate constraints on attention while maintaining satisfactory performance [25,12,31], we propose three approaches for enforcing plausibility constraints on attention maps, namely, sparsity regularization, semi-supervised learning, and supervised learning.",1,related,1,positive
+"Again, is TracIn intrinsic or posthoc?",1,related,0,negative
+In: arXiv preprint232 arXiv:2004.14243 (2020).233 [8] Danish Pruthi et al. “Learning to Deceive with Attention-Based Explanations”.,1,related,1,positive
+"[8] add a penalty R to the loss function that is used for the specific task, resulting in a total cost of 58 L′ = L+R.",1,related,1,positive
+Our results reproduce Pruthi et al. (2020)’s finding that models can learn to deceive.,1,related,1,positive
+"Acknowledging the debate, Pruthi et al. (2020) whose work we seek to reproduce, examine whether models can learn to deceive, by adding a penalty to the loss function that punishes the model when attention is paid to impermissible tokens.",1,related,1,positive
+Table 3: Classification results from Table 3 in Pruthi et al. (2020) with cell scheme author | reproduced for all models except BERT(HgFc) which follows cell scheme author | replicated.,1,related,1,positive
+"Our results reproduce Pruthi et al. (2020)’s finding that models can learn to deceive. Jain and Wallace (2019) note that for attention to be an explanation, a different configuration of attention weights for the same piece of text should lead to different predictions.",1,related,1,positive
+"Pruthi et al. (2020) did not report accuracies for the translation task in their original paper, but they provided us with
+additional raw data which also contained the accuracy scores from their experiments.",1,related,0,negative
+Seq2seq Pruthi et al. (2020) provide a bidirectional and unidirectional Gated Recurrent Unit (GRU) with dot-product attention respectively for their encoder-decoder model tackling seq2seq tasks.,1,related,1,positive
+"In this reproducibility report we run four classification tasks and four sequence-to-sequence tasks to test the claims made by Pruthi et al.. For the classification experiments, three attention-based models are trained and evaluated on four classification tasks. The four classification experiments consist out of three binary classification task and one multiclass classification task. For the sequence-to-sequence experiments, an encoder-decoder model with varying attention mechanisms is trained and evaluated on four tasks. Three of these tasks are toy datasets created by Pruthi et al., the fourth task is an English to German machine translation task (More information in section 3). Further on in the report, we display the results obtained by conducting these experiments and compare them to the results reported by Pruthi et al. (Section 4 & 5). We cannot reproduce one of the binary classification tasks from the paper of Pruthi et al., because they do not have permission to share this private dataset. Therefore, we substitute this dataset for a multiclass classification dataset. As Wiegreffe and Pinter (2019) state, complex networks can produce outputs which can easily be aggregated to form the same binary prediction.",1,related,1,positive
+Sentiment Analysis + Wikipedia sentences Pruthi et al. used the binary version of the Stanford Sentiment Treebank Socher et al. (2013). Pruthi et al.,1,related,1,positive
+"We use unweighted average recall (UAR) as our evaluation metric for the emotion classification to account for class imbalance (Rosenberg, 2012).",1,related,1,positive
+"Thus to restrict the model to only consider some specific alignments, we intuitively mask co-attention matrices AP and AH following Serrano and Smith (2019); Pruthi et al. (2020).",1,related,1,positive

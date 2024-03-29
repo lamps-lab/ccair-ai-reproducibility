@@ -1,0 +1,9 @@
+text,label_score,label
+"However, we note that ignoring points where non-differentiability may occur in the domain could introduce errors in some iterations during training, as it may also happen with ReLU [1].",,
+"The impact of this choice has been shown to be neglectible in a simple setup with SGD presented in [31], especially if batch normalization is implemented as it is the case in Algorithm 3.",,
+"At zero error, these librairies fix arbitrarily the value of the function error gradient to zero [31].",,
+Connections to Bertoin et al. (2021).,,
+"Recently, Bertoin et al. (2021) empirically studied how the choice of DADReLU(0) changes the output of AD and the training of neural networks.",,
+"Abusing notation slightly, we write dPC2 dz ∣∣∣∣ z=z̄ = diag(c̃(z)) ∈ ∂PC2 (z̄) This aligns with the default rule for assigning a sub-gradient to ReLU used in the popular machine learning libraries TensorFlow[1], PyTorch [39] and JAX [16], and has been observed to yield networks which are more stable to train than other choices [11].",,
+"For instance, [8] empirically shows that gradient artifacts created by conservative calculus can impact the method.",,
+"They were further studied in [41, 24, 15] and empirically investigated in [11].",,

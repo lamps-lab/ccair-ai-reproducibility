@@ -1,0 +1,75 @@
+text,target_M6_predict,target_predict_M6_label
+"In another direction, some works generate CEs for specific model categories, such as tree-based (Lucic et al., 2022; Tolomei et al., 2017; Parmentier & Vidal, 2021) or differentiable (Dhurandhar et al., 2018) models.",1,neutral
+"Counterfactual: As a sub-class of contrastive, counterfactual explanations identify the required changes on the input side that would have significant impact on the output [14, 42, 44].",1,neutral
+"This issue may limit their deployment, especially in some critical domains, considering the increasing demand for explainable artificial intelligence (XAI) worldwide [4, 10, 12, 18, 19, 22, 24, 25].",1,neutral
+"…of the existing CE methods can be categorized depending on their optimization methods; gradient-based [Wachter et al., 2018, Mothilal et al., 2020, Lucic et al., 2022], integer optimization [Ustun et al., 2019, Kanamori et al., 2020, Parmentier and Vidal, 2021], autoencoders [Pawelczyk et al.,…",2,positive
+"Various techniques for generating counterfactual explanations have been developed, including modelagnostic [19], model-specific [20], and adversarial methods [21].",1,neutral
+Lucic et al.[10] proposed a differentiable tree ensemble model which approximates a non-differentiable tree ensemble model to which it is difficult to apply gradient-based method.,1,neutral
+"Finally, we also tried to compare with the code for FOCUS(7) [23].",1,neutral
+[23] use a gradient-based algorithm that approximates the splits of the decision trees with sigmoid functions.,1,neutral
+"…Pawelczyk, Broelemann, and Kasneci 2020) where explanations are model-agnostic explanations for structured datasets and (Van der Waa et al. 2018; Lucic et al. 2022) where the contrast of interest is designed to in policy-based reinforcement learning settings and nondifferentiable tree models…",1,neutral
+"2019; Pawelczyk, Broelemann, and Kasneci 2020) where explanations are model-agnostic explanations for structured datasets and (Van der Waa et al. 2018; Lucic et al. 2022) where the contrast of interest is designed to in policy-based reinforcement learning settings and nondifferentiable tree models respectively.",1,neutral
+"The most popular approaches can be categorized into model-specific [18], [20], [24], [25] and model-agnostic [7], [26]–[29].",1,neutral
+"Besides, it is also worth remarking that tree-based models are generally easier to interpret and explain than complex neural networks [18]–[20].",1,neutral
+"CA has been
+applied to random forests in Fernández et al. (2020) and tree ensembles in Lucic et al. (2019).",1,neutral
+"In the recent years, a large body of work on eXplainable Artificial Intelligence (XAI) have been proposed in the literature [45,44,28,18,20,25,38].",1,neutral
+"METHOD FT FOCUS FACE NN
+VALIDITY 72.9% 72.8% 84.4% 92.5%",0,negative
+"…after generating counterfactuals using any of the existing methods for tree-based ensembles (that we also refer to as the base method), e.g., Feature Tweaking (FT) (Tolomei et al., 2017), FOCUS (Lucic et al., 2022), Nearest Neighbor (NN) (Albini et al., 2022), FACE (Poyiadzi et al., 2020), etc.",1,neutral
+"For tree-based ensembles, some existing approaches to find the closest counterfactuals include (Tolomei et al., 2017; Lucic et al., 2022).",1,neutral
+"• FOCUS (Lucic et al., 2022) is another popular technique that approximates the tree-based models with sigmoid
+• FACE (Poyiadzi et al., 2020) attempts to find counterfactuals that are not only close (L1 or L2 cost), but also (i) lie on the data manifold; and (ii) are connected to the original data point via a path on a connectivity graph on the dataset S .",1,neutral
+"Observations: The average cost (L1 or L2 cost) between the original data point and the counterfactual increases only slightly for base methods such as FT, FOCUS, and NN (which find counterfactuals by explicitly minimizing this cost); however our counterfactuals are significantly more robust (in terms of validity) and realistic (in terms of LOF).",2,positive
+"METHOD L1 COST VALIDITY LOF
+CCF 3.05 99.9% 1.0
+FT 0.08 56.4% 0.65 FT +ROBX 2.70 99.9% 1.0
+FOCUS 0.12 53.7% 0.71 FOCUS +ROBX 2.71 99.7% 1.0
+FACE 2.62 88.8% 0.82 FACE +ROBX 2.72 99.7% 1.0
+NN 0.80 84.4% 0.94 NN +ROBX 2.71 99.7% 1.0
+METHOD L2 COST VALIDITY LOF
+CCF 1.36 97.4% 1.0
+FT 0.08 53.4 0.65 FT +ROBX 1.17 98.6 1.0
+FOCUS 0.11 53.2% 0.82 FOCUS +ROBX 1.2 100% 1.0
+FACE 1.25 88.7% 0.77 FACE +ROBX 1.18 98.4% 1.0
+NN 0.49 79.0% 0.88 NN +ROBX 1.18 99.0% 0.94
+C.3.",0,negative
+", 2017), FOCUS (Lucic et al., 2022), Nearest Neighbor (NN) (Albini et al.",1,neutral
+"Our proposed strategy is a post-processing one, i.e., it can be applied after generating counterfactuals using any of the existing methods for tree-based ensembles (that we also refer to as the base method), e.g., Feature Tweaking (FT) (Tolomei et al., 2017), FOCUS (Lucic et al., 2022), Nearest Neighbor (NN) (Albini et al., 2022), FACE (Poyiadzi et al., 2020), etc.",2,positive
+"…attention in recent years (see Verma et al. (2020);
+Karimi et al. (2020); Wachter et al. (2017); Dandl et al. (2020); König et al. (2021); Albini et al. (2022); Kanamori et al. (2020); Poyiadzi et al. (2020); Lucic et al. (2022); Pawelczyk et al. (2020) as well as the references therein).",2,positive
+"• FOCUS (Lucic et al., 2022) is another popular technique that approximates the tree-based models with sigmoid
+• FACE (Poyiadzi et al., 2020) attempts to find counterfactuals that are not only close (L1 or L2 cost), but also (i) lie on the data manifold; and (ii) are connected to the original data…",1,neutral
+"We believe our choice of these four base methods to be quite a diverse representation of the existing approaches, namely, search-based closest
+counterfactual (FT), optimization-based closest counterfactual (FOCUS), graph-based data-support counterfactual (FACE), and closest-data-support counterfactual (NN).",2,positive
+"• FOCUS (Lucic et al., 2022) is another popular technique that approximates the tree-based models with sigmoid",1,neutral
+"The majority of existing counterfactual methods modify the given sample until the target class is attained (see e.g., Tolomei et al., 2017; Lucic et al., 2022).",1,neutral
+"In another direction, some works focused on generating CEs for specific model categories, such as tree-based models (Lucic et al., 2022; Tolomei et al., 2017; Parmentier & Vidal, 2021), or differentiable models (Mothilal et al.",1,neutral
+"In another direction, some works focused on generating CEs for specific model categories, such as tree-based models (Lucic et al., 2022; Tolomei et al., 2017; Parmentier & Vidal, 2021), or differentiable models (Mothilal et al., 2020).",1,neutral
+"As a consequence, some recourse methods were developed to find recourses for tree ensembles (Tolomei et al., 2017; Lucic et al., 2022) where the non-differentiability prevents a direct application of the recourse objective in (1).",1,neutral
+The former include: FeatTweak and FOCUS (tree-specific); DeepFool and GRACE (NN-specific).,2,positive
+Another approach that is conceived for explaining tree ensembles is called FOCUS [22].,1,neutral
+"In particular, model-agnostic techniques (including both variants of our ReLAX) clearly apply to every setting, whereas model-specific approaches can be tested only when the target model matches (e.g., FOCUS can be used only in combination with tree-based models).",1,neutral
+"Then it uses differentiable approximations of tree ensembles to keep the convexity of the problem (Lucic et al, 2019).",1,neutral
+"The Mahalanobis Distance (MD) [76], commonly used to find multivariate outliers, can take the correlation between features into account [62,77].",1,neutral
+"Human interpretable CFEs should involve changes to only a few features, and is usually enforced by `1-regularisation [30, 19, 27, 38] or `0-regularisation [14].",1,neutral
+"On the other, methods exist that require full introspection into the model’s specification, notably for tree ensembles [50, 30, 19].",1,neutral
+", SHAP values [12], LIME feature importances [15], counterfactual examples [11, 17]).",1,neutral
+The resulting optimal CF explanation is ∆∗ x = x∗ − x [15].,1,neutral
+"[15], we generate CF examples by minimizing a loss function of the form:",1,neutral
+"Adversarial attacks [27] are also related to CF examples, but there is a distinction in the intent: adversarial examples are meant to fool the model, while CF examples are meant to explain the prediction [15].",1,neutral
+"[202, 203] Complete Tree ensemble No No L1 No No No -",1,neutral
+", 1999) or attempt to approximate such models as decision trees or random forests with a differentiable version (Yang et al., 2018; Lucic et al., 2022).",1,neutral
+"could use policy gradient (Sutton et al., 1999) or attempt to approximate such models as decision trees or random forests with a differentiable version (Yang et al., 2018; Lucic et al., 2022).",1,neutral
+"…(Verma et al., 2020), clamping each one-hot column to be a specific categorical value (Wachter et al., 2017; Downs et al., 2020), relying on genetic algorithms or SMT solvers for automatic treatment (Karimi et al., 2020a; Schleich et al., 2021), or simply filtering them out (Lucic et al., 2022).",1,neutral
+"As a consequence, some recourse methods were developed to find recourses for tree ensembles (Tolomei et al., 2017; Lucic et al., 2022) where the non-differentiability prevents a direct application of the recourse objective in (1).",1,neutral
+"In another direction, some works focused on generating CEs for specific model categories, such as tree-based models (Lucic et al., 2022; Tolomei et al., 2017; Parmentier & Vidal, 2021), or differentiable models (Mothilal et al.",1,neutral
+"In another direction, some works focused on generating CEs for specific model categories, such as tree-based models (Lucic et al., 2022; Tolomei et al., 2017; Parmentier & Vidal, 2021), or differentiable models (Mothilal et al., 2020).",1,neutral
+"As a consequence, some recourse methods were developed to find recourses for tree ensembles (Tolomei et al., 2017; Lucic et al., 2022) where the non-differentiability prevents a direct application of the recourse objective in (1).",1,neutral
+"To fit non-differentiable models in our framework, one could use policy gradient (Sutton et al., 1999) or attempt to approximate such models as decision trees or random forests with a differentiable version (Yang et al., 2018; Lucic et al., 2022).",2,positive
+", 1999) or attempt to approximate such models as decision trees or random forests with a differentiable version (Yang et al., 2018; Lucic et al., 2022).",1,neutral
+"…(Verma et al., 2020), clamping each one-hot column to be a specific categorical value (Wachter et al., 2017; Downs et al., 2020), relying on genetic algorithms or SMT solvers for automatic treatment (Karimi et al., 2020a; Schleich et al., 2021), or simply filtering them out (Lucic et al., 2022).",1,neutral
+"Model-specific methods are FEATTWEAK and FOCUS (tree-ensemble-specific), and DEEPFOOL and GRACE (NN-specific).",1,neutral
+"To accommodate for non-differentiable models, such as tree ensembles, FOCUS (Lucic et al. 2019) frames the problem of finding counterfactual explanations as an optimization task and uses probabilistic model approximations in the optimization framework.",1,neutral
+", SHAP values [12], LIME feature importances [15], counterfactual examples [11, 17]).",1,neutral
+", SHAP values [12], LIME feature importances [15], counterfactual examples [11, 17]).",1,neutral

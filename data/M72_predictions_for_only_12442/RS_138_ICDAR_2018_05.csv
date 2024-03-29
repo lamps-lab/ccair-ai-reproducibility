@@ -1,0 +1,41 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Furthermore, to assess the effectiveness of our method in oriented and distorted scenarios, we compare it with two mainstream open-source methods, SPLERGE [39] and Table-Master [44], on the TAL, TAL_rotated, and TAL_curved datasets.",1,related,1,positive
+"Furthermore, to assess the effectiveness of our method in oriented and distorted scenarios, we compare it with two mainstream open-source methods, SPLERGE [39] and TableMaster [44], on the TAL, TAL_rotated, and TAL_curved datasets.",1,related,1,positive
+"The results shown in Figure 3 and Figure 4 indicate that none of the 4 methods that allow inference on custom data [13, 17, 16, 31] was replicable with respect to the GenTSR dataset, under a threshold of 10% absolute F1-score.",1,related,0,negative
+"Under the new evaluation setting, the result of SPLERGE significantly drops by 10.2% absolutely in F1-score.",1,related,0,negative
+"Method #Param FLOPs GPU CPU SPLERGE [41] 0.37 115.49 0.95 24.25 TabStruct-Net [36] 68.63 3719.06 22.63 76.52 FLAG-Net [23] 17.00 71.69 0.13 2.37 GrabTab 57.88 513.65 0.82 11.54
+Table H4.",1,related,1,positive
+Method #Param FLOPs GPU CPU SPLERGE [41] 0.,1,related,1,positive
+We expanded the definition of splitter in SPLERGE [10] to support inclined separators.,1,related,1,positive
+Splitting Model Merging Model Performance(Pubtabnet/SynthTable(C4)) # Split [10] QBS Heuristic [10] Merge [10] VBM Str-TEDs TEDs,1,related,1,positive
+"To evaluate this module, we replace the Query-Based Splitting Module with the Split Model proposed in SPLERGE [10].",1,related,1,positive
+"All six axes add up to the unique, complete generic identity for the examination, as per the LONIC nomenclature guideline (31).",1,related,0,negative
+"In order to verify the effectiveness of TSRFormer for more challenging borderless tables, we re-implement another split-and-merge based method SPLERGE [45] and compare our approach with it on serveral datasets.",1,related,1,positive
+", [45]), we formulate separation line prediction as a line regression problem instead of an image segmentation problem and propose a new separator prediction approach, dubbed Separator REgression TRansformer (SepRETR), to predict separation lines from table images directly.",1,related,1,positive
+"As shown in Table 4, the re-implemented SPLERGE can achieve competitve results on SciTSR and PubTabNet datasets while it is still 11.4% worse than TSRFormer in F1-score on our challenging in-house dataset.",1,related,0,negative
+1st row: original images; 2nd row: results from SPLERGE [17]; 3rd row: results from our table structure recognizer.,1,related,1,positive
+"Following SPLERGE [17], we calculate the GT separator masks by maximizing the size of the separation regions without intersecting any non-spanning cell contents, as shown in Fig.",1,related,1,positive
+"As shown in Table 8, our approach outperforms SPLERGE significantly by improving the WAvg.",1,related,0,negative
+"As shown in Table 7, our approach outperforms the closest method, SPLERGE [17], substantially by improving the WAvg.",1,related,1,positive
+"To further validate the robustness of our approach to distorted or even curved table images, we conducted
+experiments on the in-house dataset and compared our table structure recognizer with SPLERGE.",1,related,1,positive
+"Following SPLERGE [17], we calculate the GT separator masks by maximizing the size of the separation regions",1,related,1,positive
+"Although we tried to train split network with the same training data we used, we failed to reproduce their results and used the model trained by the authors [32].",1,related,0,negative
+"of parameters CascadeTabNet [23] 82,852,033 TabStructNet [25] 68,636,098 SPLERGE [32] 255,862 Ours 1,120,692",1,related,1,positive
+"We compare the performance of our method with three coventional methods: CascadeTabNet [23], TabStructNet [25], and SPLERGE [32].",1,related,1,positive
+"Results of CascadeTabNet [23], TabStructNet [25], SPLERGE [32], and the proposed method, from top to bottom 5844 Multimedia Tools and Applications (2022) 81:5827–5848",1,related,1,positive
+"(a) Result from CascadeTabNet [23], (b) TabStructNet [25] with ground truth table locations, (c) SPLERGE [32] with ground truth table locations, and (d) result from the proposed method 5845 Multimedia Tools and Applications (2022) 81:5827–5848",1,related,1,positive
+"In order to compare our method against others on TUCD dataset, we develop our implementation of DeepDeSRT [26], and use open source implementations of DGCNN (TIES) [22], SPLERGE [30], and TabStruct-Net [24].",1,related,1,positive
+Method #Param FLOPs GPU CPU SPLERGE [35] 0.,1,related,1,positive
+"Different from the previous table structure recognition methods [6, 7, 8] which mostly recover the table structure based on the visual modality, we fuse the output features for each basic table grid from both vision and language modalities.",1,related,1,positive
+Table structure recognizer is our own implementation of the model proposed in [13].,1,related,1,positive
+"We first examine how TaBERT performs on TABBIE’s pretraining task of corrupt cell detection, which again is practically useful as a postprocessing step after table structure decomposition (Tensmeyer et al., 2019; Raja et al., 2020) because mistakes in predicting row/column/cell boundaries (sometimes compounded by OCR errors) can lead to inaccurate extraction.",1,related,1,positive
+"We intentionally leave out the Partial Detections, Missed Segments, and False Positive Detections from our evaluation metrics, as due to the problem formulation of Split Model [23] they always evaluate to zero.",1,related,1,positive
+"Following the promising results of Split-model [23] trained on the publicly available ICDAR 2013 dataset using TabAug, we believe our work provides a strong foundation for numerous future extensions.",1,related,0,negative
+"This ground-truth format is used for the augmentation process, however, Split model [23] requires pixel-wise annotations.",1,related,1,positive
+"promising results of Split-model [23] trained on the publicly available ICDAR 2013 dataset using TabAug, we believe our work provides a strong foundation for numerous future extensions.",1,related,0,negative
+"To evaluate the efficacy of our proposed augmentation methodology, we train the Split model proposed by [23] on ICDAR 2013 dataset.",1,related,0,negative
+"To capture long-range column and row features globally, we add our proposed TPM at each downsampling shortcut of ResNet backbone inspired by [17], where they utilize the row projection and column projection with maximum pooling to downsample.",1,related,1,positive
+"It can be represented in the form of either physical [10,12,14,17] ar X iv :2 01 0.",1,related,1,positive
+"We compare the performance of our tabstruct-net against seven benchmark methods — deepdesrt [7], tablenet [12], graphtsr [14], splerge [10], dgcnn [9], Bi-directional gru [15] and Image-to-Text [11].",1,related,1,positive
+Table structure recognizer is our own implementation of the model proposed in [13].,1,related,1,positive

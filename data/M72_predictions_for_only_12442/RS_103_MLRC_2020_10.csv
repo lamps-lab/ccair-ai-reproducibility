@@ -1,0 +1,79 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Therefore, Uep = H( 1 M ∑M i=1 p ) − 1 M ∑M i=1 H(p ) [13].",1,related,1,positive
+"For Type (b), the unification operators are applied to EnD and EnD2 to enhance their robustness against the certainty inconsistency issue.",1,related,1,positive
+"(1), while EnD2 is a variant of EnD elaborated in Section A1 of the appendix, available online.",1,related,0,negative
+"Detection of Unreliable Task under Various Sources We compare the predictions of CLUE with another sampling-free uncertainty estimator, EnD2 [15].",1,related,1,positive
+"single DNN to explicitly model a distribution over the outputs [31], [46].",1,related,1,positive
+"Finally, we perform downstream out-of-distribution detection using confidence, entropy, and MI scores from T5 Large ensemble, EDD (T5 Large), and Proxy Large.",1,related,1,positive
+"…(first-order) categorical distributions P1(Θ), where
+Θ = { θ = (θ1, . . . , θK) ∈ [0, 1]K | ∥θ∥1 = 1 } (see (Sensoy et al., 2018; Malinin & Gales, 2018; 2019; Malinin et al., 2020b; Charpentier et al., 2020; Huseljic et al., 2020; Kopetzki et al., 2021; Tsiligkaridis, 2021; Bao et al., 2021;…",1,related,1,positive
+"Here, the most commonly used
+parameterised class of second-order distributions P2(M) is the set of Dirichlet distributions with parameter space
+M = { m = (m1, . . . ,mK) |mi > 0, i = 1, . . . ,K } having support on the (first-order) categorical distributions P1(Θ), where
+Θ = { θ = (θ1, . . . , θK) ∈ [0, 1]K | ∥θ∥1 = 1 } (see (Sensoy et al., 2018; Malinin & Gales, 2018; 2019; Malinin et al., 2020b; Charpentier et al., 2020; Huseljic et al., 2020; Kopetzki et al., 2021; Tsiligkaridis, 2021; Bao et al., 2021; Hammam et al., 2022)).",1,related,1,positive
+"Another line of research modifies (8) to the regression setting (Malinin et al., 2020a; Charpentier et al., 2022).",1,related,1,positive
+From the literature on Bayesian networks we can borrow a more informative metric: the mutual information (MI) between the model distribution and the output distribution [44].,1,related,1,positive
+This is captured by the sign of PRR (reported in %).,1,related,0,negative
+"In this paper, we present ModelNet, a deterministic sampling-free DNN that distills the knowledge of a stochastic DNN and estimates model uncertainty of object detection, both spatial and semantic uncertainty, with small computational cost.",1,related,1,positive
+"This paper makes following key contributions:
+• We propose ModelNet, a deterministic sampling-free DNN that distills the predictive distribution of a stochastic DNN and allows to quantify spatial/semantic model uncertainty of an object detector.",1,related,1,positive
+"We are considering ModelNet in SSD Mobilenet-v1 which provides both detection and uncertainty predictions (IV-D1) in this section, but task DNN with ModelNet as uncertainty assistant (IV-D2) also can be employed.",1,related,1,positive
+"1, we first implement a stochastic DNN, MC dropout model specifically, from a target task model to quantify the model uncertainty of the task.",1,related,1,positive
+"Note that we will avoid the discussion of epistemic and aleatoric uncertainty [14,24,26,29] in this work and instead directly focus the discussion on the task of OOD detection.",1,related,0,negative
+"Table 1: Predictive performance, RMSE
+Dataset Single EnsembleSGB SGLB KGB SGB SGLB KGB Boston 3.06 3.12 2.81 3.04 3.10 2.82 Concrete 5.21 5.11 4.36 5.21 5.10 4.30 Energy 0.57 0.54 0.33 0.57 0.54 0.33 Kin8nm 0.14 0.14 0.11 0.14 0.14 0.10 Naval 0.00 0.00 0.00 0.00 0.00 0.00 Power 3.55 3.56 3.48 3.52 3.54 3.43 Protein 3.99 3.99 3.79 3.99 3.99 3.76 Wine 0.63 0.63 0.61 0.63 0.63 0.60 Yacht 0.82 0.84 0.52 0.83 0.84 0.50 Year 8.99 8.96 8.97 8.97 8.93 8.94
+Table 2: Error and OOD detection
+Dataset PRR AUCSGB SGLB KGB SGB SGLB KGB Boston 36 37 43 80 80 88 Concrete 29 29 37 92 92 93 Energy 36 31 60 100 100 99 Kin8nm 18 19 20 45 45 41 Naval 55 56 35 100 100 100 Power 8 9 31 72 73 76 Protein 30 29 35 99 99 100 Wine 25 19 37 74 72 87 Yacht 74 78 86 62 60 69 Year 30 30 32 67 57 71
+Experiment on real datasets Uncertainty estimates for GBDTs have been previously analyzed by Malinin et al. (2021).",1,related,1,positive
+"In [25] the authors address this by using an auxiliary unsupervised dataset, as we can get diverse ensemble predictions on this dataset and use it to train our distilled model.",1,related,1,positive
+"We compare our method against the following baselines: (1) EnDD [25], Ensemble Distribution Distillation framework, trained with the same train data used to capture the ensemble.",1,related,1,positive
+"We show that for our method the mixup adds a significant boost to performance, and also for EnDD on two out of three datasets.",1,related,1,positive
+"It is interesting to note that while EnDDAUX uses additional unlabeled examples from the training distribution (between 50k and 100k), FED is on par and often outperforms this baseline across all metrics.",1,related,1,positive
+EnDD builds on the method in [24] which tries to emulate the behaviour of an ensemble with a Dirichlet distribution parameterized by a NN.,1,related,1,positive
+"We propose an ensemble distillation [15, 25] method that mimics an ensemble of models using a lightweight model.",1,related,1,positive
+"We take a similar approach to [9, 25] where we treat the ensemble distillation as a conditional generative model.",1,related,1,positive
+"We also show results for out-of-distribution (OOD) detection in Figure 3 using ROC curves (EnDD was excluded due to poor performance), To score the examples we used the knowledge uncertainty which is obtained by subtracting the aleatoric uncertainty from the total uncertainty [10, 25].",1,related,1,positive
+"We also see that even when EnDD is trained with mixup, our approach returns better accuracy, ECE and also has greater diversity.",1,related,0,negative
+"Thus, we show results for both FED and EnDD trained on the training set and on the mixup dataset as the auxiliary dataset.",1,related,0,negative
+"To this end, we use the Area Under Receiving Operator Characteristics Curve (AUC-ROC) with aleatoric scores u alea (Alea) and epistemic scores u (v) epist (Epist) similarly to [14, 102, 60, 63, 61, 57].",1,related,1,positive
+"Following [9] and [26], we compute the two types of uncertainty as follows:",1,related,1,positive
+"For classification, we compare NatPN to Reverse KL divergence Prior Networks (R-PriorNet) (Malinin & Gales, 2019), Ensemble Distribution Distillation (EnD2) (Malinin et al., 2020b) and Posterior Networks (PostNet) (Charpentier et al., 2020).",1,related,1,positive
+"It is observed that the student models trained under our proposed framework with fChannel (i.e., ‘Ours (Channel)’) is able to outperform the previous ensemble-distillation baselines, i.e., EnD [43] and EnD2 [50], by a margin of 6.64% mIoU and 6.02% mIoU on GTA5→Cityscapes, and 6.41% mIoU and 4.57% mIoU on SYNTHIA→Cityscapes, respectively.",1,related,1,positive
+"The evaluation results of EnD [43] and EnD(2) [50] are obtained from our self-implemented models, while those of the remaining baselines are directly obtained from their original papers.",1,related,0,negative
+"Following EnD2 [41], we compare FFSD with EnD2 on VGG-16 [59].",1,related,1,positive
+"In a recent working paper (and concurrent to our work), Malinin et al. (2020a) report on progress extending their idea to regression.",1,related,1,positive
+"In this Section, we highlight several differences of NOMU compared to prior regression networks that were recently introduced in a working paper by Malinin et al. (2020a).",1,related,1,positive
+"By OOD they refer to input training points only far away from the training data, e.g., in (Malinin et al., 2020a, Section 3) µOOD only has support far away from the convex hull of the input training points.",1,related,1,positive
+"Let us consider from the posterior sampled ensemble of models {P (y|x, θ)}m=1 as follows [197]:",1,related,1,positive
+"…a loss that computes the sum of squares between the on-hot encoded true label y∗(i) and the predicted categorical p(i) under the Dirichlet distribution:
+LEvNet = 1
+N ∑ i Ep(i)∼Dir(α(i))||y ∗(i) −p(i)||2 (3)
+Ensemble Distribution Distillation (DDNet) (Malinin et al., 2019) is trained in two steps.",1,related,1,positive
+"In Table 2 we compare uncertainty measures derived from all models on the tasks of error detection and OOD detection, which are evaluated using Prediction Rejection Ratio (PRR) [21, 15] and AUCROC [28], respectively.",1,related,1,positive
+Similarly to [21] we propose a temperature-annealing trick to make the optimization process easier.,1,related,1,positive
+For PRR and AUC-ROC results (for classification and Years) we highlight the best value.,1,related,0,negative
+"We compare the GPED framework to the full Monte Carlo ensemble as well as to an adaptation of Ensemble Distribution Distillation (EnD2) (Malinin et al., 2020).",1,related,1,positive
+We further show that our direct generalized posterior distillation framework outperforms an adaptation of the approach of Malinin et al. (2020) both on terms of distillation performance and in terms of several downstream tasks that leverage uncertainty quantification.,1,related,1,positive
+"Our goal in this paper is broadly similar, although we focus specifically on distilling much larger Monte Carlo posterior ensembles and we avoid the parametric distribution assumptions of (Malinin et al., 2020) by directly distilling posterior expectations of interest.",1,related,1,positive
+We instead use Algorithm 1 with the Dirichlet log likelihood distillation loss used by Malinin et al. (2020) (see Appendix A.3 for EnD2 implementation details).,1,related,1,positive
+"We compare the GPED framework to the full Monte Carlo ensemble as well as to an adaptation of Ensemble Distribution Distillation (EnD2) (Malinin et al., 2020). In particular, Malinin et al. (2020) materialize a complete ensemble, which is not feasible in our case due to the large number of samples in the Bayesian ensemble (⇠ 105 samples).",1,related,1,positive
+"We compare the GPED framework to the full Monte Carlo ensemble as well as to an adaptation of Ensemble Distribution Distillation (EnD2) (Malinin et al., 2020). In particular, Malinin et al. (2020) materialize a complete ensemble, which is not feasible in our case due to the large number of samples in the Bayesian ensemble (⇠ 105 samples). We instead use Algorithm 1 with the Dirichlet log likelihood distillation loss used by Malinin et al. (2020) (see Appendix A.",1,related,1,positive
+We discuss the differences between our proposed framework and the method by Malinin et al. (2019) in more detail in section 3.2 and section 5.,1,related,0,negative
+"This yields the prediction rejection area ratio PRR:
+PRR = ARuns ARorc
+(24)
+A rejection area ratio of 1.0 indicates optimal rejection, a ratio of 0.0 indicates ‘random’ rejection.",1,related,1,positive
+"Here Prior Networks are not applicable because for the case of probabilistic regression we cannot take averages of distributions.3 For regression Hydra outperforms knowledge distillation in terms of predictive performance (NLL) because Hydra produces a more flexible output in the form of a Gaussian mixture model with one Gaussian component per head, whereas Knowledge Distillation can produce only a single Gaussian component.",1,related,1,positive
+"We compare our work with two core distillation approaches, Knowledge Distillation (Hinton et al., 2015) and Prior Networks (Malinin et al., 2019; Malinin & Gales, 2018).",1,related,1,positive
+"After having finished the experiment for this chapter, we found several similar published works on arXiv [60, 11], published at around the same time we were working on this project.",1,related,0,negative
+"We found several similar published works on arXiv [60, 11] at around the same time we were working on this idea.",1,related,0,negative
+"For uncertainty estimation, we refer to the well-stated definition of the uncertainty by Malinin et al. [Malinin et al., 2020], considering the entropy from
+softmax output could represent the data uncertainty (with a difference in that we only use a single network prediction to calculate the data…",1,related,1,positive
+"For classification, we compare NatPN to Reverse KL divergence Prior Networks (R-PriorNet) [45], Ensemble Distribution Distillation (EnD(2)) [46] and Posterior Networks (PostNet) [9].",1,related,1,positive
+"We refer to the well-stated definition of the uncertainty (Malinin et al., 2020), considering the entropy from softmax output could represent the data uncertainty with a difference in that we only use a single network to calculate the data uncertainty.",1,related,1,positive
+"The methods listed in Table 3 either choose the NormalInverse Gamma distribution (Amini et al., 2020; Charpentier et al., 2021), inducing a scaled inverseχ2 posterior (Gelman et al., 1995),9 as well as a Normal-Wishart prior (Malinin et al., 2020a).",1,related,1,positive
+"Following [8] and [25], we compute the two types of uncertainties as follows:",1,related,1,positive
+"The authors ofEnsembleDistributionDistillation (EnD(2)) [2] address this issue by using the output of an ensemble to train a so-called Prior Network (PN) [3], distilling the ensemble down to a single model while also preserving its uncertainty decomposition abilities.",1,related,1,positive
+"We compare our proposal, SMOTE-BFT, with popular oversampling techniques: the original SMOTE [1], Borderline-SMOTE [10] and ADASYN [12].",1,related,1,positive
+"We investigate the particular setting in which both teacher and student models are ensembles (Lan et al., 2018; Malinin et al., 2020; Tran et al., 2020); our hope is that the more precise modeling the teacher deep ensemble can be inherited by the student batch ensemble, despite the student’s…",1,related,1,positive
+"We investigate the particular setting in which both teacher and student models are ensembles (Lan et al., 2018; Malinin et al., 2020; Tran et al., 2020); our hope is that the more precise modeling the teacher deep ensemble can be inherited by the student batch ensemble, despite the student’s significantly reduced parameter space.",1,related,1,positive

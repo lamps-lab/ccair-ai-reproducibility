@@ -1,0 +1,50 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"As shown in Figure 8, we list the visualization results of our methods on tables scanned from documents, including PubTabNet dataset, SciTSR dataset and FinTabNet dataset.",1,related,1,positive
+"On FinTabNet, our method achieves a TEDS-Struct score of 98.6%, improving the score by 1.8% compared to the competitive method TableFormer.",1,related,0,negative
+"We conducted a comprehensive validation of our model’s performance on various datasets, including well-known regular table benchmarks such as SciTSR, PubTabNet, and FinTabNet, which are derived from PDF documents.",1,related,1,positive
+"Due to the absence of released annotations for the test set, we follow previous approaches [20, 35, 46, 47] and evaluate our model on the validation set using TEDS and TEDS-Struct [48] metrics.",1,related,1,positive
+"Following [29, 47], we use the split set of training for training and validating samples for testing.",1,related,0,negative
+"We evaluated our proposed method on regular tables that were scanned from PDF documents, and compared it with several state-of-the-art methods on PubTab-Net, FinTabNet, and SciTSR datasets, and the results are reported in 3.",1,related,1,positive
+"With a simple pipeline, our method has achieved comparable or state-of-the-art performance on the public benchmarks, including PubTabNet [48], FinTabNet [47], SciTSR [2], WTW [25], and TAL [3].",1,related,1,positive
+"The study also considers the use of TABBIE for data discovery and clustering, with table embeddings derived from the CLS token in the (0,0) position of the table being used to cluster the FinTabNet dataset which is composed of tables from S&P’s corporate filings [41].",1,related,1,positive
+In section 3 we review the current HTML table encoding (popularised by PubTabNet and FinTabNet) and discuss its flaws.,1,related,0,negative
+"Secondly we pick the best hyper-parameters found in the first step and evaluate how OTSL impacts the performance of TableFormer after training on other publicly available data sets (FinTabNet, PubTables-1M [14]).",1,related,1,positive
+"We picked the model parameter configuration that produced the best prediction quality (enc=6, dec=6, heads=8) with PubTabNet alone, then independently trained and evaluated it on three publicly available data sets: PubTabNet (395k samples), FinTabNet (113k samples) and PubTables-1M (about 1M samples).",1,related,1,positive
+"When evaluating on TEDS, we use the non-styling text extracted from PDF files following Zheng et al. (2021).",1,related,1,positive
+As our baseline training datasets we adopt PubTables-1M [21] and FinTabNet [25].,1,related,0,negative
+The most common words from PubTabNet and FinTabNet as well as randomly produced text make up the corpora used to create the table content.,1,related,1,positive
+• FinTabNet [67] We employ FinTabNet to increase samples’ diversity.,1,related,0,negative
+"We unfortunately could not directly evaluate the approaches presented in [5, 25, 30, 41, 47, 89] using our cybersecurity corpus documents because their respective implementations were not available online.",1,related,0,negative
+"Data in MULTIHIERTT is collected from the FinQA dataset (Chen et al., 2021) and FinTabNet dataset (Zheng et al., 2021).",1,related,1,positive
+"MULTIHIERTT are deployed based on the FinTabNet dataset (Zheng et al., 2021), which contains 89,646 pages with table annotations extracted from the annual reports of S&P 500 companies.",1,related,0,negative
+[8] Figure 1: An outline of our table extraction approach.,1,related,1,positive
+"937, GTE [35] reporting an F1 score of 96.",1,related,0,negative
+"We rely on large-scale datasets such as PubTabNet [37], FinTabNet [36], and TableBank [17] datasets to train and evaluate our models.",1,related,1,positive
+"• An augmented dataset based on PubTabNet [37], FinTabNet [36], and TableBank [17] with generated ground-truth for reproducibility.",1,related,1,positive
+"We see from the previous works, the most effective methods [17, 18, 19] always jointly optimize the cell locations and cell relationships.",1,related,1,positive
+"Since FinTabNet has bounding boxes wrapped around the cell’s content, we pre-process the ground truth to obtain cell level coordinates (refer supplementary paper)2.",1,related,1,positive
+We use FinTabNet [41] dataset for training.,1,related,0,negative
+We use FinTabNet [41] dataset for training and evaluation.,1,related,0,negative
+"For evaluation also, we pre-process ICDAR-2013 [8], cTDaR [7], SciTSR [4], PubTabNet [42] and FinTabNet [41] datasets before computing IoU with the corresponding predictions.",1,related,1,positive
+"We use FinTabNet [41] dataset to train TOD-Net for cell, row, and column detection.",1,related,1,positive
+"An intrinsic evaluation of HTML quality revealed that around 86% of papers in our sample had reasonable extractions (good or okay readability per criteria described in Wang et al. [17]), and a preliminary user study with 6 BLV researchers was also positive, with all users stating they would be likely to use the system in the future were it to have high coverage of papers.",1,related,0,negative
+A set of 1.5 million open access papers are available to read in HTML format at our demo site: https://scia11y.org/.,1,related,0,negative
+SciA11y: Converting Scientific Papers to Accessible HTML.,1,related,0,negative
+We propose and demonstrate a pipeline for extracting the semantic content of paper PDFs and rendering this content as an accessible HTML document.,1,related,1,positive
+"In summary, we introduce the SciA11y system for rendering scientific PDFs as HTML, which can increase the accessibility of these documents for screen readers.",1,related,0,negative
+We combine textual elements from S2ORC and figure/table elements from DeepFigures to create the HTML representation.,1,related,1,positive
+"We develop FINQA based on the publicly available earnings reports of S&P 500 companies from 1999 to 2019, collected in the FinTabNet dataset (Zheng et al., 2021).",1,related,0,negative
+"For table extraction, we use our Global Table Extractor (GTE) (Zheng et al. 2020), which leverages specialized object detection models and clustering techniques to extract, for each table, both its bounding box and cell structure.",1,related,1,positive
+"To find out, we perform clustering experiments on the FinTabNet dataset from Zheng et al. (2021).",1,related,1,positive
+"To begin, we apply our table extraction module (based on the GTE framework [8]) to the user’s document collection.",1,related,1,positive
+"Paper metadata from these sources are harmonized, PDFs are converted into machinereadable JSON using the S2ORC pipeline described in [54] and HTML representations of tables in papers are added using IBM Watson Discovery’s Global Table Extractor [115].",1,related,1,positive
+"This tool is available online.12 For table extraction, Zheng et al (2021) proposed Global Table Extractor (GTE) to detect tables and recognize cell structure jointly based on visual context.",1,related,1,positive
+"TableBank[4] Image 145k X SciTSR[16] Image 15k X X PubTabNet[3, 11] Image 568k X X X† FinTabNet[11] Image, PDF 113k X X X†",1,related,1,positive
+"PubTabNet, for example, is created using an automated alignment procedure [18] to match the same table in unaligned pairs of PDF and XML versions of the same scientific articles from the PMCOA database.",1,related,1,positive
+"We hope to apply canonicalization to data from additional domains, such as the financial documents in FinTabNet.",1,related,0,negative
+"TableBank[4] Image 145k X SciTSR[16] Image 15k X X PubTabNet[3, 11] Image 568k X X X† FinTabNet[11] Image, PDF 113k X X X†",1,related,1,positive
+"PubTabNet, for example, is created using an automated alignment procedure [18] to match the same table in unaligned pairs of PDF and XML versions of the same scientific articles from the PMCOA database.",1,related,1,positive
+"We hope to apply canonicalization to data from additional domains, such as the financial documents in FinTabNet.",1,related,0,negative
+"• Auto-generated annotations: These statements are auto-generated using a random paraphraser and table understanding service (Zheng et al., 2020).",1,related,1,positive
+"…papers Author-written and expertderived TLDRs FacetSum (Meng et al, 2021) 60k articles from Emerald journals Paper and structured abstract
+For table extraction, Zheng et al (2021) proposed Global Table Extractor (GTE) to detect tables and recognize cell structure jointly based on visual context.",1,related,1,positive

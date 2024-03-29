@@ -1,0 +1,271 @@
+text,label_score,label,target_predict,target_predict_label
+"Ranjan et al. have proposed RepRPN [8], which achieves exemplar-free counting by identifying exemplars from the most frequent objects via a Region Proposal Network (RPN)-based [40] model.",,,0,not_related
+We use the FSC-147 dataset [5] to train the base counting model and the error predictor.,,,1,related
+"Similar to previous works [5], [6], the base counting model uses the input image and the exemplars to obtain a density map for object counting.",,,0,not_related
+"To verify that, we use our selected patches as the exemplars for four other different exemplar-based methods: FamNet+ [5], BMNet [6], BMNet+ [6] and SAFECount [38].",,,1,related
+"By using our patch selection method with the SD-generated class prototype, the error rates are further reduced for most cases, e.g., we observe for FamNet+ [5], there is an error reduction of 12 .",,,1,related
+", we observe for FamNet+ [5], there is an error reduction of 12.",,,1,related
+Xian et al. [54] use a conditional Wasserstein Generative Adversarial Network (GAN) [56] to generate unseen features which can then be used to train a discriminative classifier for ZSL.,,,1,related
+"Recently, class-agnostic counting [5], [6], [7] has been proposed to count objects of arbitrary categories.",,,0,not_related
+"Class-agnostic object counting aims to count arbitrary categories given only a few exemplars [5], [6], [7], [34], [35], [36], [37], [38], [39].",,,0,not_related
+"To select the class-relevant patches, we use the Region Proposal Network of Faster RCNN pre-trained on MS-COCO dataset to generate 100 object proposals per image.",,,1,related
+FamNet [5] adopts a similar way to do correlation matching and further applies test-time adaptation.,,,0,not_related
+"Exemplar-based methods include FamNet (Few-shot adaptation and matching Network [5]), BMNet (Bilinear Matching Network [6]), CounTR (Counting TRansformer [37]) and SAFECount (Similarity-Aware Feature Enhancement block for object Counting [38]).",,,0,not_related
+Network Architecture.,,,0,not_related
+"Motivated by the previous crowd counting methods [Liu et al. 2019; Ranjan et al. 2021], we generate the groundtruth density map, P∗ ∈ RH×W , from the 2D root coordinates by using a Gaussian kernel with adaptive window size.",,,1,related
+"To evaluate the counting ability, we use the standard FSC-147 dataset [46], which contains 6135 images covering 147 object categories, with counts ranging from 7 to 3731 and an average count of 56 objects per image.",,,1,related
+"Next, we compare with previous methods on two standard counting datasets: FSC-147 [46] and MSO [61].",,,1,related
+We first train a base counting model using images from the single-class counting dataset [30].,,,1,related
+"Similar to previous works [30, 32], the base counting model uses the input image and the exemplars to obtain a density map for object counting.",,,0,not_related
+"Specifically, we use our synthetic multi-class images to fine-tune three pre-trained single-class counting models: BMNet+ [32], FamNet+ [30] and SAFECount [41].",,,1,related
+"Most of the current CAC methods focus on capturing the intra-class similarity between image features [23, 32, 30, 14].",,,0,not_related
+"We compare our method with recent class-agnostic counting methods, including CounTR (Counting TRansformer [23]), FamNet (Few-shot adaptation and matching Network [30]), SAFECount (Similarity-Aware Feature Enhancement block for object Counting [41]) and BMNet (Bilinear Matching Network [32]).",,,1,related
+"Network architecture For the base counting model, we use ResNet-50 as the backbone of the feature extractor, initialized with weights of a pre-trained ImageNet model.",,,1,related
+"However, this is not the case for the current counting datasets [30, 17], and collecting such annotations is time-consuming and laborintensive.",,,0,not_related
+"Class-agnostic object counting aims to count arbitrary categories given only a few exemplars [26, 30, 40, 32, 14, 28, 23, 42, 2].",,,0,not_related
+"Evaluation experiments have been done on FSC147 datasets, and the results demonstrate the superiority of our methods over existing ones.",,,0,not_related
+"We use the FSC147 data with the “car” category excluded to train our model, and test on CARPK without fine-tuning and fine-tuning respectively.",,,1,related
+"Following the previous work [7, 9, 10], we also test the generalization performance of our model on the CARPK dataset.",,,1,related
+"In the FSC147 dataset, there are only three box labels in each image.",,,0,not_related
+The quantitative results regarding the counting metrics of FSC147 are shown in Table II and localization metrics are shown in Table III.,,,0,not_related
+Few Shot Adaptation and Matching Network (FamNet) [9] proposes a matching network with a multi-scale strategy and designs an adaptive loss function for fast adaptation to new categories.,,,0,not_related
+"These previous networks are all based on density map, although GMN [7] uses a fixed threshold to obtain point coordinates when applying the trained model to a specific category of data sets, which is not applicable to class-agnostic datasets such as FSC147 [10], due to the large difference in the maxima of density maps for different class.",,,0,not_related
+"Our method was compared with GMN [7], MAML [25], FamNet [9], CFOCNet [8] and BMNet+ [10].",,,1,related
+"The FSC147 Dataset [9] is the first large-scale, multi-category counting dataset for class-agnostic counting.",,,0,not_related
+"We trained the model on the training set of FSC147 and
+2925
+Authorized licensed use limited to the terms of the applicable license agreement with IEEE.",,,1,related
+"CAC belongs to the few-shot problem, also known as few-shot counting (FSC) [8, 9].",,,0,not_related
+"In Table I, we compare the counting results obtained with our post-processing method to the density map integration results on FamNet and BMNet+.",,,1,related
+"For the FSC147 dataset, we define σ as follows:
+σs = min(wi, hi)/2, i ∈ {1, 2, 3} (11)
+σl = mean( √ w2i + h 2 i /2), i ∈ {1, 2, 3} (12)
+σs is a more stringent standard than σl.",,,1,related
+"Note that GMN and FamNet use 5 and 12
+2924
+Authorized licensed use limited to the terms of the applicable license agreement with IEEE.",,,1,related
+The FSC147 dataset comprises 6135 images from 147 distinct object categories.,,,0,not_related
+"The compared approaches include GMN [9], FamNet+ [15], CFOCNet+ [24], and BMNet+ [17].",,,0,not_related
+"Research focuses on improving similarity map quality [9, 15,17,24,26] and addressing issues like test-time adaptation [14] and the need for human-annotated exemplars [14, 22].",,,0,not_related
+"works [9, 14, 15, 17, 22, 24, 26], offer a more flexible solution by enabling the counting of objects from arbitrary categories with the aid of a few support exemplars.",,,0,not_related
+"We evaluate our approaches on two commonly used counting datasets, namely, FSC147 [15] and CARPK [4].",,,1,related
+"Research efforts have focused on improving the quality of similarity maps to enhance counting accuracy [2,9,15,17,24,26,28,29].",,,0,not_related
+"FSC147[44] is a dataset of 1190 images containing various objects, including animals, vehicles, and household items.",,,0,not_related
+"The Binary Locating Metric covers the data from VOC2012, FSC147, and LSP.",,,1,related
+"In the FSC147 dataset, there are data samples with dozens or even hundreds of objects, and these MLLM models would reply with “I cannot accurately count the number” for such data samples.",,,0,not_related
+"Therefore, we conducted tests on the subset of the FSC147 dataset with less than 10 objects to evaluate the performance of the models on simple data, as shown in Figure 5 (b).",,,1,related
+"[44] Viresh Ranjan, Udbhav Sharma, Thu Nguyen, and Minh Hoai.",,,0,not_related
+"CounTX is evaluated on FSC-147 [29], a class-agnostic object counting dataset containing 6135 images.",,,1,related
+"Instead, it proposes optimal visual exemplars for use by existing class-agnostic object counting networks such as FamNet [29], BMNet [32], BMNet+ [32], and Xu et al.",,,0,not_related
+"The goal of class-agnostic object counting is to count the instances of an arbitrary class in an image given a number of visual exemplars at the time of inference [1, 7, 8, 18, 19, 20, 24, 29, 32, 35, 36].",,,0,not_related
+"In addition to this model, we make the following contributions: (i) we compare the performance of CounTX to prior work on open-world object counting, and show that our approach exceeds the state of the art on all measures on the FSC-147 [29] benchmark for methods that use text to specify the task; (ii) we present and release FSC-147-D, an enhanced version of FSC-147 with text descriptions, so that object classes can be described with more detailed language than their simple class names.",,,1,related
+"We are the first to tackle this open-world counting problem using a single-stage approach, without relying on an exemplar-based counting model; Second, we augment the FSC-147 [29] dataset with class descriptions and release the modified dataset, FSC-147-D, for future research; Third, we verify the effectiveness of our model and training procedure on the FSC-147 dataset through both quantitative and qualitative results.",,,1,related
+"A recent approach [18] proposed a few-shot learning strategy using exemplar and density map pairs, which could be extended to novel object classes.",,,0,not_related
+Methods Counting Detection MAE (↓) RMSE(↓) mAP (↑) AP50 (↑) FAMNet[13] 22.,,,0,not_related
+"Recently, a new task called Few-Shot Object Counting (FSC) [13] has been introduced to expand the traditional object counting task, which aimed at counting objects of any unseen classes.",,,0,not_related
+FamNet [13] correlates features from a few exemplars with the feature map to generate a density map for object counting.,,,0,not_related
+"To solve the generalization problem of visual counting, the task of Few-shot Counting is introduced [10, 13, 20].",,,0,not_related
+"We conducts our experiments on the FSCD147 dataset, which is recently introduced in [13] for the exemplar-based class-agnostic counting task and extended to FSCD task by [12].",,,1,related
+"FSC [13] only provides point-wise annotations and a few box-wise annotations, which makes most of the existing advance detectors invalid.",,,1,related
+FAMNet andCFOCNet are density-map-based approaches that cannot detect objects.,,,0,not_related
+"We compare our model against previous methods on the FSCD147 benchmark, which included FAMNet [13], CFOCNet [19], and CountingDETR [12].",,,1,related
+"The paper compares the proposed SAMbased method with other few-shot counting methods on two datasets, FSC-147 [111] and MS-COCO [112], and finds that",,,1,related
+"The paper compares the proposed SAMbased method with other few-shot counting methods on two datasets, FSC-147 [111] and MS-COCO [112], and finds that it falls behind the SOTA baselines, especially for small and congested objects.",,,0,not_related
+"We compare our CACViT with CNN-based method FamNet+ [24], RCAC [5], BMNet+ [25], SAFECount [31], SPDCN [15], and the most recent state-of-the-art ViT-based method CounTR [16].",,,1,related
+"given only few exemplars, has recently received much attention due to its potential to generalize to unseen scenes and reduced reliance on class-specific training data [16, 19, 24, 25].",,,0,not_related
+"In the early attempt, naive inner product [24, 30] is used for matching, which is not robust to the appearance variance of objects to be counted.",,,0,not_related
+"Experiments on the public benchmark FSC147 [24] show that CACVit outperforms the previous best approaches by large margins, with relative error reductions of 19.",,,1,related
+"As the first large-scale dataset for classagnostic counting, FSC147 [24] includes 6, 135 images from 147 categories varying from animals to vehicles.",,,0,not_related
+"Typical CAC approaches generally follow this paradigm [16, 24, 25].",,,0,not_related
+"To obtain a unified matching space, most previous work [24, 25, 31] uses the shared CNN-based feature extractors for query images and exemplars.",,,0,not_related
+Table 2 presents the performance of SAM on the FSC-147 datasets.,,,1,related
+"FSC-147 [6] comprises a total of 6,135 images that have been collected for the purpose of few-shot counting.",,,0,not_related
+We consider two incremental learning sequences based on the FSC147 dataset.,,,1,related
+"There are 2468 images for buildings, 280 images for small vehicles, 172 images for large vehicles and 137 images for ships
+The FSC147 [25] dataset is a counting dataset for fewshot learning, containing 147 categories.",,,0,not_related
+"There are 2468 images for buildings, 280 images for small vehicles, 172 images for large vehicles and 137 images for ships The FSC147 [25] dataset is a counting dataset for fewshot learning, containing 147 categories.",,,0,not_related
+"In [19, 25, 29], they consider the problem of class-agnostic counting.",,,0,not_related
+Sample images from FSC147 dataset [25].,,,0,not_related
+Figure 3 shows the qualitative results on the FSC-147 dataset.,,,1,related
+"According to the division method of the original dataset (Ranjan et al., 2021), we divide the dataset into training set, validation set, and test set.",,,1,related
+"Results: Experiment results on FSC-147 show that our network performs best compared to the existing methods, and the mean absolute counting error on the test set improves from 14.32 to 12.74.",,,1,related
+"The FSC-147 (Ranjan et al., 2021) dataset is the first and only large-scale dataset for few-shot counting.",,,0,not_related
+Our model is first pre-trained on FSC-147 and then finetuned on the CARPK dataset.,,,1,related
+"In Table 2, we have observed that our method sets a new state-of-art on the standard dataset FSC-147.",,,1,related
+"The ablation studies show our modules are useful, and the results get improved on the FSC-147 dataset.",,,1,related
+Experiment results demonstrate that our HMFENet reaches a new sate-of-art on the standard dataset FSC-147 and performs best on the class-specific dataset CAPRK.,,,1,related
+"FamNet (Ranjan et al., 2021) maps the exemplars and query images to the similarity space, and generate a density map from it.",,,0,not_related
+"To verify that, we use our selected patches as the exemplars for three other different exemplar-based methods: FamNet [34], BMNet and BMNet+ [38].",,,1,related
+"Recently, class-agnostic counting [34,38] has been proposed to count objects of arbitrary categories.",,,0,not_related
+"Recently, Ranjan et al. have proposed RepRPN [33], which achieves exemplar-free counting by identifying exemplars from the most frequent objects via a Region Proposal Network (RPN)-based model.",,,0,not_related
+"Class-agnostic object counting aims to count arbitrary categories given only a few exemplars [3, 13, 25, 28, 31, 34, 38, 50, 51].",,,0,not_related
+Dataset We use FSC-147 dataset [34] to train the base counting model and the error predictor.,,,1,related
+"Network architecture For the base counting model, we use ResNet-50 as the backbone of the feature extractor, initialized with the weights of a pre-trained ImageNet model.",,,1,related
+Xian et al. [44] use a conditional Wasserstein Generative Adversarial Network (GAN) [2] to generate unseen features which can then be used to train a discriminative classifier for ZSL.,,,1,related
+"By using the generated class prototype to select class-relevant patches, the error rate is reduced by 5.18, 8.59 and 5.60 on FamNet, BMNet and BMNet+, respectively.",,,1,related
+FamNet [34] adopts a similar way to do correlation matching and further applies testtime adaptation.,,,0,not_related
+FamNet [34] adopts a similar way to do correlation matching and further applies test-time adaptation.,,,0,not_related
+"Similar to previous works [34, 38], the base counting model uses the input image and the exemplars to obtain a density map for object counting.",,,0,not_related
+"To verify that, we use our selected patches as the exemplars for three
+other different exemplar-based methods: FamNet [34], BMNet and BMNet+ [38].",,,1,related
+"In order to make other exemplar based class-agnostic methods including GMN (General Matching Network [28]), FamNet (Fewshot adaptation and matching Network [34]) and BMNet
+(Bilinear Matching Network [38]) work in the exemplarfree setup, we replace the human-provided exemplars with the exemplars generated by a pre-trained object detector.",,,1,related
+"In order to make other exemplar based class-agnostic methods including GMN (General Matching Network [28]), FamNet (Fewshot adaptation and matching Network [34]) and BMNet (Bilinear Matching Network [38]) work in the exemplarfree setup, we replace the human-provided exemplars with the exemplars generated by a pre-trained object detector.",,,1,related
+"In addition, as the error predictor is additionally adopted, the error rate is further reduced by 1.76, 1.00 and 1.08 on FamNet, BMNet and BMNet+, respectively.",,,1,related
+• Performance: The state-of-the-art accuracy is achieved on the prevailing benchmark FSC147 [6] compared to the exemplar-free RepRPN-Counter and the BMNet-based baseline.,,,1,related
+"They achieve this by recognizing inherent visual repetition patterns without acquiring priors on object categories [6], [7].",,,0,not_related
+"4 as follows:
+Le = 0.5 1
+B i∑ B ||N̂e(i)−N(i)||22 + 0.5L. (5)
+c) CAC-oriented FSC147.",,,1,related
+"The evolution of counting frameworks: (a) Class-specific methods [1], [2] count objects from fixed categories; (b) Inchoate exemplar-dependent class-agnostic counters learn to match user-provided exemplars with query scenes [3], [4], [5], [6], [7]; (c) Our GCNet removes the requirement of exemplar annotations and learns self-similarity from repetitive object patterns.",,,1,related
+"For example, contemporary BMNet [7] and FamNet [6] both demand three manually-labelled exemplars (rectangular image patches), and fail in their absence.",,,0,not_related
+"It is worth noting that, to fill the void of zero-shot counting datasets, Ranjan et al. [6] propose the first dataset, namely FSC147, for training or evaluating specialized CAC models instead of using the limited COCO.",,,0,not_related
+"To mimic humans’ natural counting ability, a cohort of CAC frameworks [3], [4], [5], [6], [7] have been recently",,,0,not_related
+: We perform ablation studies on the validation and test sets of FSC147 to assess the impacts of individual components.,,,1,related
+"Even though the training set of FSC147 includes crowd scenes, they are extremely scarce (19 images) and with low crowd densities.",,,0,not_related
+"Despite the persevering efforts [4], [5], [6], [7] to enhance",,,0,not_related
+Impressive results on FSC147 also demonstrate the superiority of our GCNet compared to traditional CAC approaches using both exemplars and location annotations.,,,1,related
+• Performance: The state-of-the-art accuracy is achieved on the prevailing benchmark FSC147 [6] compared to the exemplar-free RepRPN-Counter and the BMNet-based,,,1,related
+": Following the state-of-the-art CAC approaches [6], [7], FSC147 [6] is adopted in our experiments since it is a unique large-scale dataset specifically designed for evaluating CAC.",,,0,not_related
+"Specifically, both CFOCNet [5] and FAMNet [6] leverage the spirit of Siamese to extract features for further similarity modelling.",,,0,not_related
+"CFOCNet [5] treats the feature maps of the input exemplar as a kernel to convolve the feature maps from an input query image, whereas FAMNet [6] requires explicit testtime adaptation to perform well on novel classes.",,,1,related
+"Motivated by the success of few-shot image classification [10], [11], [12], [13] and object detection [44], [45], several related works [5], [6], [7] aim to mimic generalizability of humans by exploiting the few-shot counting problems.",,,0,not_related
+"Class-Agnostic Counting (CAC) [3], [4], [5], [6], [7] has caught increasing attention from the research community.",,,0,not_related
+"Without adaptation, GMN cannot generalize very well to novel classes [6].",,,0,not_related
+Note that even the baseline obtains lower MAE values (23.14 and 21.88) on Val and Test compared to the conventional FamNet (24.32 and 22.56) & FamNet+ (23.75 and 22.08) that require laborious annotations of both exemplar and density map.,,,1,related
+": For fair comparisons, we use the same strategy to resize the original image as in FAMNet [6] and BMNet [7].",,,1,related
+"Density-based estimation methods utilize the spatial distribution information and semantic information of density maps, but most of the current density counting models can only deal with a single category, and cannot handle multiple categories and novel categories [18].",,,0,not_related
+"In the field of computer vision, designing a system that can classify a large number of visual categories faces two main challenges [18], the first problem is datasets, most modern model counting methods map raw images to density maps and then do the final counting, But such datasets are difficult to obtain off-the-shelf.",,,0,not_related
+"Ranjan [18] directly selects an exemplar to be counted from the current image, without additional reference images.",,,0,not_related
+"For instance, FamNet [34]
+was the first work to achieve this task which extracts visual features from a few exemplars and matches them with those of the query image.",,,0,not_related
+"The performance of FamNet [34] is subpar, possibly due to the significant influence of noise on the obtained correlation maps, making it challenging to detect all the targets of each input.",,,0,not_related
+"Therefore, the previous works [22] adhere to the paradigm, which extracts invariant knowledge according to boxes and utilizes knowledge to compare similarity.",,,0,not_related
+"superiority of our framework on actively learning the similar and repeated matters, we deploy our work on FSC-147 [22] which is a multi-class objects counting benchmark.",,,1,related
+"To be specific, the main benchmark to multi-class object counting is FSC-147, in which the 147 classes are included in the dataset, and some typical images have been depicted as Fig.",,,0,not_related
+"The compared methods are FR [34], FSOD [35], GMN [36], MAML [37], FameNet [22].",,,0,not_related
+"The released benchmark FSC-147 [22] is for such task, in which a few boxes are annotated and other objects belonging to the same category are annotated via dots, as Fig.",,,0,not_related
+"To further show the
+superiority of our framework on actively learning the similar and repeated matters, we deploy our work on FSC-147 [22] which is a multi-class objects counting benchmark.",,,1,related
+"The methods primarily differ in the intermediate image representation construction method, which is based either on Siamese similarity [18, 24], crossattention [13, 16] or feature and similarity fusion [26, 31].",,,0,not_related
+"Note that in contrast to most works [24, 26, 30, 31], LOCA does not attempt to transfer exemplar appearance onto image features, but rather constructs strong prototypes that generalize across the imagelevel intra-class appearance.",,,0,not_related
+"In that protocol, a method is trained on the FSC147 dataset [24] and evaluated on the CARPK dataset [12], which is a car-counting dataset containing aerial images of parking lots, which are considerably different from the FSC147 images.",,,0,not_related
+The experiments are performed on the FSC147 dataset in the few-shot setting.,,,0,not_related
+The FSC147 dataset [24] in fact provides image subsets Val-COCO and Test-COCO containing only categories for which abundant annotated training images are available in COCO [15].,,,0,not_related
+"On the COCO subsets of FSC147, LOCA out-performs recent state-of-the-art counting methods, as well as object detection methods, achieving a 36% RMSE improvement.",,,0,not_related
+"In the few-shot counting scenario, we compare LOCA with GMN [18], MAML [8], FamNet [24] and the most recent state-of-the-art methods CFOCNet [30], BMNet+ [26], SAFECount [31] and CounTR [16].",,,1,related
+LOCA outperforms all state-of-the-art (in many cases more complicated methods) on the recent FSC147 benchmark [24].,,,0,not_related
+"Few-shot counters have recently gained momentum with the emergence of a challenging dataset [24] and follow a common pipeline [13, 18, 24, 26, 31].",,,0,not_related
+LOCA is evaluated on the recent few-shot counting dataset FSC147 [24].,,,1,related
+"We follow the standard evaluation protocol [24, 26, 31] and compute Mean Absolute Error (MAE) and Root of Mean Squared Error (RMSE) given the predicted and ground truth object counts.",,,1,related
+"Experiments show that LOCA outperforms state-of-the-art on the FSC147 public benchmark in few-shot, one-shot and zero-shot settings.",,,1,related
+[24] proposed a further improvement of correlation robustness by test-time Siamese backbone adaptation.,,,0,not_related
+Proposals with the highest repetition scores are used as exemplars and sent through FamNet [24] to predict multiple density maps.,,,1,related
+"Class-agnostic and few-shot methods [62, 63, 64, 36, 65] often rely on references as input or are limited to single-class counting.",,,0,not_related
+"As shown in Table 3, it can be easily found that our model still has a huge improvement even compared to the best-performing Mask-RCNN [10], halving its error on both Val-COCO and Test-COCO.",,,1,related
+Val-COCO and Test-COCO.,,,0,not_related
+90 FamNet [24] CVPR2021 Regression Generic 18.,,,1,related
+"Net [24], and our model outperforms it with a large advance (15.",,,1,related
+"We experiment on FSC-147 [24], which is a multi-class few-shot object counting dataset containing 6135 images.",,,1,related
+"Val-COCO and Test-COCO [24] are FSC-147 subsets collected from COCO, and they are often used as evaluation benchmarks for detection-based object counting models.",,,0,not_related
+"Recently, class-agnostic few-shot counting [19, 24, 30] has witnessed a rise in research interest in the community.",,,0,not_related
+"In [19], the authors propose a generic matching network (GMN), which regresses the density map by computing the similarity between the CNN features from image and exemplar shots; FamNet [24] utilizes feature correlation for prediction and uses adaptation loss to update the model’s parameters at test time; SAFECount [30] uses the support feature to enhance the query feature, making the extracted features more refined and then regresses to obtain density maps; In a very recent work [12], the authors exploit a pre-trained DINO [21] model and a lightweight regression head to count without exemplars.",,,0,not_related
+"FSC-147 [24], and demonstrate state-of-the-art performance on both zero-shot and few-shot settings, improving the previous best approach by over 18.",,,0,not_related
+"7 shows the qualitative comparison between our approach and the other methods, including FSDetView [45], Attention-RPN [6], and FamNet [32]+RR.",,,1,related
+"ICFR [48] proposes an iterative framework to progressively refine the exemplar-related features, thus producing a better density map than a single correlation in [32].",,,0,not_related
+"A naive approach for FSCD is to extend FamNet [32], a density-map-based approach for FSC, whose counting number is obtained by summing over the predicted density map.",,,0,not_related
+Limitations of a naive approach for FSCD by extending FamNet [32] with a regression function for object detection.,,,0,not_related
+"Also, the number of exemplar boxes is set to K = 3, as in FamNet [32] for a fair comparison.",,,1,related
+FamNet [32] correlates the features extracted from a few exemplars with the feature map to obtain the density map for object counting.,,,1,related
+VCN [30] improves upon [32] by augmenting the input image with different styles to make the counting more robust.,,,0,not_related
+"Since there is no existing method for the new FSCD task, we compare CountingDETR with several strong baselines adapted from few-shot object counting and few-shot object detection: FamNet [32]+RR, FamNet [32]+MLP, Attention-RPN [6]+RR, and FSDetView [45]+RR.",,,1,related
+The FSC-147 dataset [32] was recently introduced for the few-shot object counting task with 6135 images across a diverse set of 147 object categories.,,,0,not_related
+"Recently, methods were developed for few-shot counting [22, 23] and also one-shot counting [24] for a variety of object categories, so-called generic or class-agnostic detectors/counters.",,,0,not_related
+We compare VCN with several state-of-the-art few-shot detection and counting approaches on the Val and Test splits of FSC147.,,,1,related
+"We compare VCN with several object detectors on FSC147-Val-COCO and FSC147-Test-COCO sets, which are subsets of images from FSC147 Val and Test set which share categories with MSCOCO dataset [21].",,,1,related
+Note that using the correlation maps as the input makes the density prediction module agnostic to the visual category and helps in generalizing to novel categories [29].,,,0,not_related
+"We show the effectiveness of the proposed VCNs for few-shot counting task by conducting extensive experiments on the FSC147 dataset, and improve on the previous state-of-the-art results by a significant margin.",,,1,related
+"We compare VCN with object detectors [11, 20, 32] trained on MSCOCO dataset and also the state-of-the-art fewshot counting network FamNet [29].",,,1,related
+"independent few-shot approach like MAML [9] can be applied for few-shot counting task [29], most of the fewshot image classification approaches are not suitable for our pixel level prediction task of few-shot counting.",,,0,not_related
+"Currently, the largest dataset for this task is FSC147 [29] with only 3,659 training images.",,,0,not_related
+"Density estimation based approaches [29, 47] are better suited for such scenarios.",,,0,not_related
+"We perform experiments on the FSC147 dataset, which is the only dataset suitable for the few-shot counting task.",,,1,related
+"However, the largest existing fewshot counting dataset [29] on which few-shot visual counters like FamNet can be trained consists of only a few thousand training images which limits the performance of the existing few-shot counters.",,,0,not_related
+"However, GMN still requires a few dozens to hundreds of examples to generalize to novel categories, and does not perform well if only a few examples are provided [29].",,,0,not_related
+"More related to ours is FamNet [29], which is a few-shot visual counter that can generalize to novel categories given only a few examples.",,,0,not_related
+The regressor network is similar to the FamNet architecture [29] with a few necessary changes in the density prediction module to facilitate the training of the generator.,,,0,not_related
+Our work is inspired by the recent work of [29] that builds a few-shot visual counter which can generalize to novel classes using only a few examples.,,,0,not_related
+"Since the size of the objects can vary a lot across the images of a few-shot counting dataset, we follow [29] and use an adaptive window size for the Gaussian kernel across different images.",,,1,related
+Note that FamNet also follows the same test time adaptation strategy.,,,1,related
+"VCN and VCN∗ outperform FamNet [29] by a large margin, even though the architecture of FamNet is same as that of our few-shot regressor.",,,1,related
+"A more scalable approach for counting objects from many categories is to use class-agnostic visual counters [24, 30], which can count objects from many categories.",,,0,not_related
+"The only dataset suitable for training class-agnostic visual counters is FSC-147 [30], which contains annotation for a single object category in each image, and may contain unannotated objects from other categories.",,,0,not_related
+"One of the meta learning based few-shot approaches, Model Agnostic Meta Learning (MAML) [8], has been adapted for class-agnostic counting [30].",,,0,not_related
+The only existing dataset consisting of images of densely populated objects from many visual categories that can be used for training class agnostic visual counters is FSC-147 [30].,,,0,not_related
+"Furthermore, these visual counters need to be adapted to each new visual category [24] or each test image [30], leading to slower inference.",,,0,not_related
+"Unlike existing class-agnostic counters [24, 30], our approach does not use any test time adaptation or finetuning.",,,0,not_related
+Fewshot Adaptation and Matching Network (FamNet) [30] is a recently proposed class agnostic few-shot visual counter which generalizes to a novel category at test time given only a few exemplars from the category.,,,0,not_related
+"Most related to ours is the previous works on class agnostic counting [24, 30], which build counters that can be trained to count novel classes using relatively small number of examples from the novel classes.",,,0,not_related
+"To obtain annotation for unannotated objects in the FSC147 dataset, we propose a novel knowledge transfer strategy where we use a RepRPN trained on a large scale object detection dataset [19] and a density prediction network [30] trained on FSC-147 as teacher networks.",,,1,related
+"Similar to the previous works on class-agnostic counting [24, 30], DPN combines the convolutional features of an exemplar, with the convolutional features of the entire image to predict the density map for the exemplar.",,,0,not_related
+"More recently, in [26], a few box annotations of a target class are forwarded as user inputs to the counting model.",,,0,not_related
+"Previous Interactive Detection [36] 1 1-to-1 many many-to-many bboxes Interactive Counting [4, 26] 1 1-to-1 many many-to-many positions Interactive Segmentation [23, 35] 1 1-to-1 1 many-to-1 contour Ours many many-to-many many many-to-many bboxes",,,0,not_related
+"Also, our method estimates accurate bounding boxes of all objects, while [26] outputs so-called density maps.",,,0,not_related
+"Recently, in [26], a correlation operation between FI and user input related features was used to improve object counting performance, using a few exemplars to count as many similar objects as possible in a given image.",,,0,not_related
+"Object counting methods [4, 26] count multiple instances from a few user clicks and do follow a “many interactions to many instances” approach.",,,0,not_related
+"Recently, CAC (Class Agnostic Counting) [21,29,40], which counts objects of arbitrary categories given only few exemplars, is proposed to reduce the reliance on training data.",,,0,not_related
+"Compared with the state-of-the-art FamNet [29], our model (BMNet+) generates high-fidelity results.",,,1,related
+"From Fig 1, by examining a recent model FamNet [29], we observe obvious noise on background and weak responses on target positions.",,,1,related
+[29] propose the first and only CAC dataset FSC147 that covers challenges like occlusion and scale variation.,,,0,not_related
+"Generally, existing CAC methods [21,29,40] work in an extract-and-match pipeline.",,,0,not_related
+"Experiments on the public benchmark FSC147 [29] show that our method outperforms the previous best approaches by large margins, with a relative improvement of +33.",,,1,related
+"For a fair comparison, we apply the same pre-processing to query images and the feature extractor as in FamNet [29].",,,1,related
+FamNet [29] also adopts siamese way to model similarity and further proposes test-time adaptation given test exemplars.,,,0,not_related
+FSC147 [29] is the first large-scale dataset for class-agnostic counting.,,,0,not_related
+"Existing methods either use a learnable [21, 40] or a fixed feature extractor [29], but apply a similarity metric with some pre-defined rules, e.",,,0,not_related
+"(b) Similarity-based approach [26, 46], where a similarity map is developed from raw features for regression.",,,0,not_related
+"To help the model dynamically get adapted to an arbitrary class, a great choice is to compare the object and the query image in feature space [23, 26,46].",,,0,not_related
+"Experimental results on a range of benchmarks, including FSC-147 [26], CARPK [12], PUCPR+ [12], UCSD [3], Mall [4], and ShanghaiTech [51], demonstrate our sufficient superiority over state-of-the-art methods.",,,0,not_related
+"The other is similarity-based [26, 46], as shown in Fig.",,,0,not_related
+"the support image) and the query image with expressive features, and then pinpoint the candidates via analyzing the feature correlation [23,26,46].",,,0,not_related
+", using the vanilla dot production) used in prior arts [26, 46] is not adapted to fit the FSC task.",,,1,related
+"To alleviate the generalization problem, few-shot object counting (FSC) is recently introduced [26].",,,0,not_related
+FamNet [26] further improves the reliability of the similarity map through multi-scale augmentation and test-time adaptation.,,,0,not_related
+Few-shot object counting (FSC) [26] aims to count the number of exemplar objects occurring in a query image with only a few support images describing the exemplar object.,,,0,not_related
+"Few-shot object counting (FSC) has recently been proposed [23, 26, 46] and presents a much stronger generalization ability.",,,0,not_related
+"methods specifically designed for one-shot counting, for comprehensive evaluation, we modify FamNet [4] and CFOCNet [5] for this setting and also compare with other few-shot counting approaches [25, 26, 16, 27, 17].",,,1,related
+"Compared to the fewshot setting which usually uses at least three instances for each object [4], the one-shot setting, where only one instance is available, is clearly more challenging.",,,0,not_related
+We follow the few-shot setting in [4] and modify it to one-shot object counting.,,,1,related
+FamNet [4] uses the adaptation strategy during testing.,,,0,not_related
+"Previous few-shot counting methods [4, 5] usually leverage on a convolution operation to match the similarities between image features and supporting features.",,,0,not_related
+FSC-147 [4] contains a total of 6135 images collected for few-shot counting problem.,,,0,not_related
+"Previous few-shot counting methods [4, 5] usually adopt a convolution operation where the supporting features act as kernels to match the similarities for target category.",,,0,not_related
+• The experimental results show that our model achieves state-of-the-art results with significant improvements on FSC-147 [4] and COCO [6] datasets under the oneshot setting without fine-tuning.,,,1,related
+The work [4] presents a Few Shot Adaptation and Matching Network (FamNet) to learn feature correlations and few-shot adaptation and also introduces a few-shot counting dataset named FSC-147.,,,0,not_related
+The result of FamNet [4] uses the adaptation strategy during testing.,,,0,not_related
+"We choose Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to measure the performance of object counting approaches following [9, 24, 28]:",,,1,related
+"In FSC [28], object classes are divided into base classes Cb and novel classes Cn, where Cb and Cn have no intersection.",,,0,not_related
+(a) Few-shot counting results on FSC-147 [28].,,,0,not_related
+"Following [28], we utilize the Gaussian smoothing with adaptive window size to generate the GT density maps.",,,1,related
+"FSC methods [25, 28] utilize the intuition that the regions more similar to exemplars are more likely to be target objects.",,,0,not_related
+GMN [25] and FamNet [28] both utilize the correlation to regress the density map for FSC.,,,0,not_related
+"In [28], the correlation A is obtained by directly convoluting the image feature map fI with the exemplar feature map fe as the convolution kernel.",,,0,not_related
+FSC-147 [28] is a multi-class FSC dataset with 147 classes and 6135 images.,,,0,not_related
+"• Extensive experiments conducted on FSC benchmark FSC-147 [28], car counting benchmarks CARPK [12] and PUCPR+ [5, 12], and crowd counting benchmarks UCSD [3], Mall [4], and ShanghaiTech [53] demonstrate that our approach achieves state-of-the-art counting performance.",,,0,not_related
+"In FSC [28], there are base classes in which both a few labeled exemplars and the locations of all objects are available and novel classes in which only a few labeled exemplars are available.",,,0,not_related
+FamNet [23] defines class-agnostic counting as predicting the number of given objects represented by only a few exemplars in the same image and constructs the first dataset called FSC-147 [23].,,,0,not_related
+"To solve the problem of class-agnostic counting, we design architecture different from previous works [16, 23], which is illustrated in Figure 1.",,,1,related
+"In FamNet [23], exemplars are directly used as convolution kernels so that the scale information is reflected by the kernel size.",,,0,not_related
+"Besides FSC-147, a car counting dataset CARPK [11] is also used to explore whether a model counting general objects can be applied to counting objects in a specific category.",,,0,not_related
+Figure 2 presents several examples from the FSC-147 validation set.,,,1,related
+"Following FamNet [23], we next present experimental results on CARPK [11].",,,1,related
+We first compare our method with state-of-the-art class-agnostic models on the FSC-147 dataset.,,,1,related
+Self-similarity-based methods like GMN [16] and FamNet [23] perform better and obtain MAEs of 26.,,,0,not_related
+"As shown in Table 4, SPDCN is compared with FamNet [23] and BMNet [26] (the results of BMNet are reproduced with our code).",,,1,related
+"During training, both images and exemplars are input to the counting model, and then the loss is calculated between the predicted density maps and human-annotated dot maps [23].",,,0,not_related
+"The dataset for class-agnostic counting FSC-147 is introduced by FamNet [23], in which it is proposed for a few-shot counting task.",,,1,related
+[31] proposed a general object counting dataset and a model that predicts counting maps from the similarity of the reference patches and the testing image.,,,0,not_related
+", people), general object counting has also been proposed recently [24,48,31].",,,0,not_related
+", 2015), or heuristics such as counting-specific model components and processes (Zhang et al., 2018; Trott et al., 2018; Ranjan et al., 2021).",,,0,not_related
+"Helpful approaches improving performance on such tasks include using curated synthetic data (Geva et al., 2020; Zhang et al., 2015), or heuristics such as counting-specific model components and processes (Zhang et al., 2018; Trott et al., 2018; Ranjan et al., 2021).",,,0,not_related

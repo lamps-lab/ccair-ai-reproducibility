@@ -1,0 +1,73 @@
+text,target_M6_predict,target_predict_M6_label
+h-detach is a stochastic algorithm specified to optimize LSTM to improve on long-term memory tasks [32].,1,neutral
+"The CLstm and CGru based models have limitations in generating rich representation for longterm time sequence, due to the vanishing gradient problem [20].",1,neutral
+"The problem motivated many modifications of the RNN structure, including the use of gating mechanisms (to be discussed next), gradient clipping [239], non-saturating activation functions [68], the manipulation of the propagation path of gradients [159] and the use of orthogonal RNNs where the eigenvalues of the hiddento-hidden weight matrix are fixed to one using manifold optimization techiniques [137,181,182,211,336].",1,neutral
+", LSTMs [54], along with a possible modification of the gradient propagation [64], encoder-decoder approaches [28], gradient clipping [100], non-saturating functions [22], and various recurrent-weight initialization techniques via identity or orthogonal matrix initialization [71], [51].",1,neutral
+"Even though there are many techniques to achieve such functionality, LSTM has been shown to achieve exceptional success due to its capability of learning both short and long term dependencies of the problem and also designed to deal with vanishing gradient problem which most of the RNN architectures suffer from [28].",1,neutral
+"Future works could explore other methods for parameter regularization [11, 14, 7].",1,neutral
+Arpit et al. (2019) propose to modify the path of the gradients in order to stabilize training with a stochastic algorithm specific to LSTM optimization.,1,neutral
+"Always in Table 1, we compare with two state-of-the-art RNNs (Le et al., 2015; Arjovsky et al., 2016), and with a training algorithm for LSTM (Arpit et al., 2019).",2,positive
+"Following the setup proposed in (Arpit et al., 2019), we use 50k images for training, 10k for validation, and 10k to test our models.",2,positive
+", 2016), and with a training algorithm for LSTM (Arpit et al., 2019).",2,positive
+In general LSTM model may not be properly trained by certain optimizers due to gradient vanishing problems and gradient exploding problem [11].,1,neutral
+"To apply the stochastic gradient truncation [Arpit et al., 2018] we select the probability of truncation p ∈ {0, 0.1, 0.25, 0.5, 1}, which includes the full backpropagation(p = 0) and the exact truncation (p = 1).",1,neutral
+"For the orthogonal LMN, we plot the gradient for different values of the probability used to truncate the gradient p [Arpit et al., 2018].",1,neutral
+"In the case of an LSTM, Kanuparthi et al. (2018) expressed the backpropagated gradient as an iterated addition of the error from each timestep, leading to a similar effect.",1,neutral
+"Table 1 shows results for the models listed above, in addition to h-detach [3], an LSTM-based model with improved gradient propagation.",1,neutral
+"…many techniques, including the use of gating mechanisms (Hochreiter and Schmidhuber, 1997; Cho et al., 2014a), gradient clipping (Pascanu et al., 2013), non-saturating activation functions (Chandar et al., 2019) and the manipulation of the propagation path of gradients (Kanuparthi et al., 2019).",1,neutral
+", 2019) and the manipulation of the propagation path of gradients (Kanuparthi et al., 2019).",1,neutral
+"Although the detach-based method has been adopted in a few work [1] for better optimization on sequential tasks, our design and motivation are quite different from it.",2,positive
+"[15, 13]), purposely using non-saturating activation functions [5], and manipulating the propagation path of gradients [3].",1,neutral
+"Besides, to verify compatibility with other models, we re-implemented hdetach (Kanuparthi et al. 2019) and incorporate our models, bBeta-LSTM(5G+p).",2,positive
+"We compare our models and baselines, LSTM, CIFGLSTM, G2-LSTM, simple recurrent unit (SRU) (Lei et al. 2018), R-transformer (Wang et al. 2019), Batch normalized
+LSTM (BN-LSTM) (Cooijmans et al. 2017), and h-detach (Kanuparthi et al. 2019).",2,positive
+"The inclusion of the forget gate in Longshort Term Memory (LSTM) (Hochreiter & Schmidhuber, 1997), for instance, reduces vanishing/exploding gradient issues by introducing linear temporal paths which facilitate gradient flow (Kanuparthi et al., 2019).",1,neutral
+"Challenges still persist even with modern architectures which stabilise gradient flow – such as Long-short Term Memory (LSTM) (Hochreiter & Schmidhuber, 1997) – with multiple lines of active research looking at both memory enhancements and training improvements to help RNNs learn longterm dependencies (Neil et al., 2016; Zhang et al., 2018; Trinh et al., 2018; Kanuparthi et al., 2019).",1,neutral
+"…as Long-short Term Memory (LSTM) (Hochreiter & Schmidhuber, 1997) – with multiple lines of active research looking at both memory enhancements and training improvements to help RNNs learn longterm dependencies (Neil et al., 2016; Zhang et al., 2018; Trinh et al., 2018; Kanuparthi et al., 2019).",1,neutral
+"Modifications to Standard RNN Training An alternative class of methods investigates the enhancement of standard training methods (Goodfellow et al., 2016), namely the augmentation of loss functions or gradient flows during training (Trinh et al., 2018; Kanuparthi et al., 2019).",1,neutral
+", 2016), namely the augmentation of loss functions or gradient flows during training (Trinh et al., 2018; Kanuparthi et al., 2019).",1,neutral
+"Alternatively, Kanuparthi et al. (2019) explicitly decompose the LSTM recursion equations into a bounded linear and an unbounded polynomial gradient component, with the former being responsible for long-term dependency learn-
+ing.",1,neutral
+"The cal-
+5reproduced from (Arpit et al., 2018) 6reproduced from (Trinh et al., 2018)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+A cc
+u ra
+cy
+1 digit
+Critical initialization Standard initialization
+4 digits 8 digits
+102 103 104
+Iteration
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+A cc
+u ra
+cy
+1 repetition
+Critical initialization…",0,negative
+"reproduced from (Arpit et al., 2018) (6)reproduced from (Trinh et al.",0,negative
+"…matrices to be exactly or approximately orthogonal (Pascanu et al., 2013; Wisdom et al., 2016; Vorontsov et al., 2017; Jose et al., 2017), or more recently by modifying some terms in the gradient (Arpit et al., 2018), while exploding gradients can be handled by clipping (Pascanu et al., 2013).",1,neutral
+", 2017), or more recently by modifying some terms in the gradient (Arpit et al., 2018), while exploding gradients can be handled by clipping (Pascanu et al.",1,neutral
+"As a consequence, a welldocumented challenge arises in the form of exploding and vanishing gradients, which has been observed
+in recursive models such as RNNs (Hochreiter and Schmidhuber, 1997), GRUs (Wolter and Yao, 2018), and even LSTMs (Kanuparthi et al., 2019).",1,neutral
+"As a consequence, a welldocumented challenge arises in the form of exploding and vanishing gradients, which has been observed in recursive models such as RNNs (Hochreiter and Schmidhuber, 1997), GRUs (Wolter and Yao, 2018), and even LSTMs (Kanuparthi et al., 2019).",1,neutral
+"(10) evolves through a linear recursive equation, while all other states are bounded by sigmoid and tanh activations, causing an imbalance in gradient magnitudes leading to vanishing and exploding gradients over long-term dependencies (Kanuparthi et al., 2019).",1,neutral
+"They are-Data Preparation [46], Vanilla LSTM [47], Stacked LSTM [48], Bidirectional LSTM [49], CNN LSTM [50], and ConvLSTM [51].",2,positive
+We first published to ICLR 2019 an empirical exploration of variants of backpropagation with better performance on LSTM models [6].,2,positive
+"Table 1 shows results for the models listed above, in addition to h-detach (Arpit et al., 2018), an LSTM-based model with improved gradient propagation.",2,positive
+"There is a series of further developments following this strategy [17, 5, 26].",1,neutral
+"This idea is similar to [5] that implements skip operation on conventional RNN, which can be viewed as a Bernoulli distribution sampler on UPDATE or COPY operations at each timestamp t (an analogous idea appeared in h-detach [26] which is applied on LSTM).",1,neutral
+H-detach [26] detaches the gradient flow at an arbitrary time step under a Bernoulli distribution.,1,neutral
+"To conform with Murdoch et al. (2018), our English language experiments use a one layer (400-dim) LSTM, with inputs taken from an embedding layer and outputs processed by a softmax layer.",2,positive
+"In the case of an LSTM, Kanuparthi et al. (2018) expressed the backpropagated gradient as an iterated addition of the error from each timestep, leading to a similar effect.",1,neutral
+"Although the detach-based method has been adopted in a few work (Arpit et al., 2019) for better optimization on sequential tasks, our design and motivation are quite different from it.",2,positive

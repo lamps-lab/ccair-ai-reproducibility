@@ -1,0 +1,73 @@
+text,target_M6_predict,target_predict_M6_label
+"LIME [19], Vanilla Gradients [20]), while others produce global explanations of a models activity [23, 17].",1,neutral
+"Both Plumb et al. (2020) and Ley et al. (2022) have sought global translations which transform inputs within one group to another desired target group, though neither accommodate categorical features.",1,neutral
+"Further possible candidates are the GCE translations proposed in (Plumb et al., 2020; Ley et al., 2022), and a non-interpretable accumulation of the costs of local CEs, used solely to assess minimum costs per input, and not naively averaged over to produce GCEs.",2,positive
+"Other translation works (Plumb et al., 2020; Ley et al., 2022) do not utilise any form of scaling, and can be prone to failure since they target training data and not the model’s decision boundary.",2,positive
+"…explanations (Pedreschi et al., 2019; Lundberg et al., 2020; Gao et al., 2021) and approaches suggesting to learn global summaries directly (Rawal & Lakkaraju, 2020; Kanamori et al., 2022; Plumb et al., 2020; Ley et al., 2022) tend to perceive global explanations as distinctly different challenges.",1,neutral
+"The algorithms in (Plumb et al., 2020; Ley et al., 2022) minimise distance between initial inputs (post-translation) and target inputs, resulting in a heavy reliance on the distribution of training data.",2,positive
+"…the GLOBE-CE framework recovers minimum cost recourses very close to the theoretical global optima of the SVM.
+Model Agnostic Other black box GCE methods that adopt translation based approaches, such as those in Plumb et al. (2020) and Ley et al. (2022), are easily integrated into our framework.",2,positive
+[51] propose another counterfactual-summarymethod for a different use case with the same stakeholders (i.,1,neutral
+Notice that GCE has the highest Silhouette Score meaning that it has the best structures for clusters.,1,neutral
+"Specifically, ACE and GCE [27], another related work that focuses on the model explanation step, both use the latent space embedding to reduce dimensions.",1,neutral
+"To generate the simulated sc-RNA-seq dataset, we use the SymSim (Synthetic model of multiple variability factors for Simulation) simulator that explicitly models the data generating processes observed in sc-RNA-seq experiments [43], also used by [19, 27] for their evaluation.",2,positive
+"In Table 2, the ARI & AMI of Kratos can be observed to be larger than those of ACE & GCE, indicating that clusters are best separated in Kratos’s embedding.",1,neutral
+62% superior to Global Counterfactual Explanation (GCE) [27] and 3.,0,negative
+"Also, we compare GCE to Kratos, combined with the different explanation methods, and the Figure 5d indicates that Kratos outperforms, 5.62% on average, relative to GCE within top-1% marker genes.",2,positive
+"(1) Based on the current SOTA sc-RNA-seq explanation workflows, our system combines the first two steps, and reaches a superior performance, which is 5.62% superior to Global Counterfactual Explanation (GCE) [27] and 3.31% superior to ACE [19], measured by the AUROC of the SVM classifier used to compare the target cluster with the rest of the clusters.",2,positive
+"We see that when the selected number of genes is small, ACE has a lower redundancy than our work, while GCE has a higher redundancy.",2,positive
+"Although ACE’s workflow is more compact and improved the performance, in terms of the AUROC of the SVM classifier, of selected markers genes by ∼ 2.8% over its baseline, GCE, the problem of independent optimization (which would be served well by a single optimization function) is not fully realized.",2,positive
+"To wrap up, these results indicate that Kratos outshines ACE and GCE in creating a good low-dimension embedding and best cluster assignment.",2,positive
+We next applied the differentiation analysis part in ACE toward identifying top-ranked genes for different cell types based on the results of Kratos and of the ACE and GCE pipeline.,2,positive
+Figure 4d shows that GCE has higher redundancy among the top-𝑘 genes than Kratos.,2,positive
+"Plumb et al. (2020) and Ley et al. (2022) have sought global translations which transform each input point within a group to another desired target group, in the context of low-dimensional spaces.",1,neutral
+"Although drawing inspiration from Transitive Global Translations (TGTs), as proposed by Plumb et al. (2020), our method performs a different operation; instead of learning translations in input space that result in high quality mappings in a lower dimensional latent space, we find that results are…",2,positive
+Plumb et al. (2020) introduce coverage as a measure of the quality of global CEs.,2,positive
+"Most counterfactual explanation techniques center around determining ways to change the class label of a prediction; for example, Transitive Global Translations (TGTs) consider each possible combination of classes and the mappings between them (Plumb et al. 2020).",1,neutral
+Plumb et al. (2020) define a mapper that transforms points from one lowdimensional group to another.,1,neutral
+"We note that our proposed explanations fall into the broad definition of a global counterfactual explanation described in [27], though our technical approach is distinct from that of [27].",2,positive
+"More recent methods improve on this, such as global counterfactual explanation (GCE) [30] and gene relevance score (GRS) [1].",1,neutral
+"However, GCE requires a linear embedding, and the embedding of GRS is constrained to ensure the gradients are easy to calculate.",1,neutral
+"Global counterfactual explanation (GCE) (Plumb et al., 2020) is a compressed sensing method that aims to identify consistent differences among all pairs of groups.",1,neutral
+"identifying groups of cells in terms of their inherent latent semantics and thereafter reasoning about the differences between these groups is an important area of research (Plumb et al., 2020).",1,neutral
+"Accordingly, identifying groups of cells in terms of their inherent latent semantics and thereafter reasoning about the differences between these groups is an important area of research (Plumb et al., 2020).",1,neutral
+"To our knowledge, the only exception is the global counterfactual explanation (GCE) algorithm (Plumb et al., 2020) which is motivated by compressed sensing (Candès, 2006).",2,positive
+"Unlike ACE, GCE is mainly designed for the one-vs-one setting because it relies on an objective function that characterizes each group via the cluster centroid.",1,neutral
+The simulation of the clean dataset uses a protocol similar to that of Plumb et al. (2020).,2,positive
+"To our knowledge, the only exception is the global counterfactual explanation (GCE) algorithm (Plumb et al., 2020), but that algorithm is limited to using a linear transformation.",1,neutral
+Counterfactual explanations have also been leveraged to help in unsupervised exploratory data analysis of datasets in low dimensional latent spaces [26].,1,neutral
+"Plumb et al. (2020) and Ley et al. (2022) have sought global translations which transform each input point within a group to another desired target group, in the context of low-dimensional spaces.",1,neutral
+"et al, which is the implementation of technique presented in (4).",1,neutral
+"Note that the shown clusters (1-4) are determined in latent space, and back-engineered to original space.",1,neutral
+"For the purpose of reproducing (4), several steps were taken in order to best cover the scope of the original paper with limited resources.",0,negative
+"The proposed explanatory technique by Plumb et al. (2020) does exactly this: it reverse-engineers the obtained cluster labels in latent space to label the corresponding data in original space; then ‘tweaks’ an initial cluster by translating the initial cluster in original space, so that it is…",1,neutral
+"1 Dimensionality reduction algorithms Throughout (6), DR algorithms are only mentioned in the general sense.",1,neutral
+"For the sake of ensuring future reproducibility of the experiments originally presented in (6), as an addition, we have also provided an upgraded version of the original code, without further modifications, which is now compatible with more recent versions of TensorFlow.",2,positive
+"As a result of this separation, given a working environment, one could easily reproduce the experiments performed in (6).",1,neutral
+"Results The results presented in (6) were reproducible, both by using the provided code and our own implementation.",0,negative
+"The proposed explanatory technique in (6) does exactly this: it reverse-engineers the obtained cluster labels in latent space to label the corresponding data in original space; then ‘tweaks’ an initial cluster by translating the initial cluster in original space, so that it is mapped to (approximately) the same point in latent space.",1,neutral
+"2 Scope of reproducibility As follows from the introduction, the authors of (6) opted for a counterfactual, sparse explanation for key differences between (naturally arising) groups.",1,neutral
+"Throughout (6), DR algorithms are only mentioned in the general sense.",1,neutral
+r(Xi) is also referred to in (6) asRi.,1,neutral
+"3 Methodology In accordance with section 2, for the purpose of reproducing (6), several steps were taken in order to best cover the scope of the original paper with limited resources.",0,negative
+"All relevant code complementing (6)—the chunks which we have chosen to rewrite—are explicitly stated in the paper, making the method by Plumb et al.",2,positive
+"Reproducibility Summary Scope of Reproducibility In this paper we present an analysis and elaboration of (6), in which an algorithm is posed by Plumb et al.",1,neutral
+"Scope of Reproducibility The main claims of the paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) include introduction of a new type of explanation - Global Counterfactual Explanation (GCE) which is relatively sparse and is consistent i.",1,neutral
+"…Summary
+Scope of Reproducibility
+The main claims of the paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) include introduction of a new type of explanation - Global Counterfactual Explanation (GCE) which is relatively sparse and is…",1,neutral
+"Reproducibility of Explaining Groups of Points in Low-Dimensional Representations
+Ruud van Bakel Master Artificial Intelligence
+University of Amsterdam ruud.van.bakel@student.uva.nl
+Abhijith Chintam Master Artificial Intelligence
+University of Amsterdam abhijith.chintam@student.uva.nl
+Andreas Hadjipieris Master Artificial Intelligence
+University of Amsterdam andreas.hadjipieris@student.uva.nl
+Roel Kuiper Master Artificial Intelligence
+University of Amsterdam roel.kuiper@student.uva.nl
+Reproducibility Summary
+Scope of Reproducibility
+The main claims of the paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) include introduction of a new type of explanation - Global Counterfactual Explanation (GCE) which is relatively sparse and is consistent i.e., symmetrical and transitive among all the groups.",2,positive
+"The central focus of the original paper Explaining Groups of Points in Low-Dimensional Representations (Plumb et al., 2020) is to introduce a novel way to explain groups of points in low-dimensional representations by leveraging the model that produced them in the first place.",1,neutral
+"For example, ELDR [45] identifies which features (genes in its original medical use case) differentiate different clusters of data (cell types), and AReS [47] aims to do this to detect model bias.",1,neutral
+"One important proxy metric to consider for global methods is coverage [45], which measures the degree to which the explanations capture all of the differences between different cluster of points.",1,neutral

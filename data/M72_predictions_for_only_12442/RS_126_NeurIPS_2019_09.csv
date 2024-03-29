@@ -1,0 +1,148 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"In particular, we follow the linear probing protocol introduced in [22] and run simple linear regression on game-state variables following the protocol of [21].",1,related,1,positive
+"We conduct linear probing tasks [22] on the derived content and style embeddings (using the 3D-SSL and Gen11 datasets, respectively) to recover relevant game state information (i.",1,related,1,positive
+"In case when K > 1, because if E[Zt+K , [Zt, Ut, ..., Ut+K−1]] = E[St+K , [St, At, ..., At+K−1]], then for any 1 ≤ k ≤ K, E[Zt+k, [Zt, Ut, ..., Ut+k−1]] = E[St+k, [St, At, ..., At+k−1]], including K = 1, by Data processing Inequality.",1,related,1,positive
+"Then, our method aims to maximize the mutual information between representations of current states paired with action sequences and representations of the corresponding future states: JTACO = I(Zt+K ; [Zt, Ut, ..., Ut+K−1]) (2) Here, K ≥ 1 is a fixed hyperparameter for the prediction horizon.",1,related,1,positive
+", Ut+K−1]) (2) Here, K ≥ 1 is a fixed hyperparameter for the prediction horizon.",1,related,1,positive
+"Let K ∈ N+, and JTACO = I(Zt+K ; [Zt, Ut, ..., Ut+K−1]).",1,related,1,positive
+"This theorem guarantees that if our mutual information objective Equation (2) is maximized, then for any two state-action pairs (s1, a1) and (s2, a2) with equivalent state and action representations, their optimal action-value functions,Q∗(s1, a1) andQ∗(s2, a2), will be equal.",1,related,1,positive
+"This is because p(Rt|St = s1, At = a1) = p(Rt|St = s2, At = a2) by Equation (18) as p(zt|St = s1) = p(zt|St = s2), p(ut|At = a1) = p(ut|At = a2).",1,related,1,positive
+"This theorem guarantees that if our mutual information objective Equation (2) is maximized, then for any two state-action pairs (s1, a1) and (s2, a2) with equivalent state and action representations, their optimal action-value functions,Q(s1, a1) andQ(s2, a2), will be equal.",1,related,1,positive
+"= x)dz
+Proof of Theorem 3.1: Based on the graphical model, it is clear that
+max φ,ψ I(Zt+K , [Zt, Ut, ..., Ut+K−1]) = I(St+K ; [St, At, ..., At+K−1]) (16)
+Now define the random variable of return-to-go Rt such that
+Rt = H−t∑ k=0 γkRt+k (17)
+Based on Proposition E.1, because
+I(Zt+K ;Zt, Ut:t+K−1) = I(St+K ;St, At:t+K−1)
+we could conclude that
+I(Rt+K ;Zt, Ut:t+K−1) = I(Rt+K ;St, At:t+K−1) (18)
+Now applying Proposition E.2, we get
+Ep(zt,ut:t+K−1|St=s,At:t+K−1=at:t+K−1)[p(Rt|Zt, Ut:t+K−1)] = p(Rt|St = s,At:t+K−1) (19)
+As a result, when K = 1, for any reward function r, given a state-action pair (s1, a1), (s2, a2) such that φ(s1) = φ(s2), ψ(a1) = ψ(a2), we have Qr(s1, a1) = Ep(Rt|St=s1,At=a1)[Rt] = Ep(Rt|St=s2,At=a2)[Rt].",1,related,1,positive
+"game that is considered, according to the annotations provided in (Anand et al., 2019).",1,related,0,negative
+"Moreover, we postprocess this additional information by only selecting the subset of variables that are relevant to the
+game that is considered, according to the annotations provided in (Anand et al., 2019).",1,related,1,positive
+"The distance reward 𝑅dist requires the agent location at each step, we propose to either use a specifically trained object detector, which was tested with a pre-trained FasterRCNN model [25] fine-tuned on 100 manually labelled training examples, or to use the RAM state labels provided via the AtariARI Wrapper [1].",1,related,1,positive
+"The distance reward Rdist requires the agent location at each step, we propose to either use a specifically trained object detector, which was tested with a pre-trained FasterRCNN model [25] fine-tuned on 100 manually labelled training examples, or to use the RAM state labels provided via the AtariARI Wrapper [1].",1,related,1,positive
+The required state information can be extracted directly from the ALE via an environment wrapper called Atari Annotated RAM Interface (AtariARI) [1].,1,related,1,positive
+"Contrary to Anand et al. (2019), which consulted commented disassemblies or source code of different Atari games for their AtariARI framework, we used other analytical techniques to understand and find where the information is stored in the RAM.",1,related,0,negative
+"While the existing methods [1, 10, 38, 40, 43, 44, 46] feeds the stacked frames to the encoder at once, which can be viewed as an early fusion [32], our method generates the set of the latent representations individually with the encoder.",1,related,1,positive
+The data for pretraining and probing are collected by an RL agent running a certain number of steps using a random policy since it was found that the samples collected by a random policy could be more favorable than those collected by policy gradient policies for the SSL methods [2].,1,related,1,positive
+"We experiment with our UA paradigm using the SRL algorithm ST-DIM [2], and propose DIM-UA.",1,related,1,positive
+(2) We compare DIM-UA with other SRL algorithms using samples collected from 19 Atari games of the AtariARI benchmark and illustrate that our algorithm achieves the best performance in terms of F1 scores and accuracy.,1,related,1,positive
+Our contribution is summarized as follows: (1) We modify the state-of-the-art SRL algorithm ST-DIM [2] with our UA paradigm and introduce a new algorithm called DIM-UA.,1,related,1,positive
+We present our UA paradigm for representation learning using an unbalanced atlas and design a new SRL method based on the UA paradigm.,1,related,1,positive
+We demonstrate that our paradigm improves the state-of-the-art SRL methods significantly by following the SSL experimental pipeline and comparing the probe F1 scores and accuracy.,1,related,0,negative
+"To further improve sample efficiency, we use contrastive representation learning by maximizing the temporal mutual information between embeddings of consecutive time steps [16], [17], [18].",1,related,1,positive
+"We experimented with different self-supervised losses (MSE, ST-DIM [1] and VICReg [8]), covering both contrastive and non-contrastive approaches.",1,related,1,positive
+The details of this algorithm are provided in [1].,1,related,1,positive
+"Our experiments revealed that if the ST-DIM algorithm works on an
+incomplete dataset that takes on new samples (the authors probably did not test it in such conditions), there is an instability and an exponential increase of activity in the feature space at certain moments.",1,related,1,positive
+"SND-STD method uses the Spatio-Temporal DeepInfoMax (ST-DIM) algorithm [1] (the simple diagram can be found in Figure 4) leveraging multiclass N -pair losses [46]:
+LGL = − I∑ i=1 J∑ j=1 log exp(gi,j)∑ s∗t∈Snext exp(gi,j)
+(5)
+LLL = − I∑ i=1 J∑ j=1 log exp(fi,j)∑ s∗t∈Snext exp(fi,j)
+(6)
+where f(.)",1,related,1,positive
+"Our version uses the state st and its successor st+1 (the same as ST-DIM, the simple diagram can be found in Figure 4) instead of two augmentations of the same state.",1,related,1,positive
+"Feature Embedding (Unsupervised) φR(oR) = ~ φR(oR) ∈ Rd May learn wrong disentangled information d, Low by design If disentangled information complete, easy If disentangled information incomplete, hard May be interpretable to designer [97, 154, 145, 173, 76, 67, 94, 8, 70]",1,related,1,positive
+"+20 ] (8) To train the critic, we symlog transform the targets R t and then twohot encode them into a soft label for the softmax distribution produced by the critic.",1,related,1,positive
+"In ST-DIM, τ = 1 while in ATC they used τ = 3.",1,related,1,positive
+"There in no modification of equation 5 since it is adjusted with p = 2 ∗ (0.5− r) when we have r   0.5
+xbmn(i, j) :=
+{ x∗1(i, j) if Ci,j = true
+xmin(i, j) otherwise (8)
+xbmx(i, j) :=
+{ x∗2(i, j) if Ci,j = true
+xmax(i, j) otherwise (9)
+In ST-DIM and ATC the temporally close frames are taken as the view of one another.",1,related,1,positive
+"This protocol is related to the one used in [1], but we probe not only the encoder output, but also the predictor output.",1,related,1,positive
+"We mostly used the default parameters from the Atari agent in (Hafner et al., 2020) but increased the RSSM recurrent state size and tuned the KL and entropy scales to the new environment.",1,related,1,positive
+The differences from the parameters of the original DreamerV2 Atari model (Table D.1 in Hafner et al. (2020)) are shown in bold face.,1,related,0,negative
+"Instead of maximizing the MI between the current state and the future state using the InfoNCE loss [73, 30, 38], SPR [23] produces state representations by minimizing the prediction error between the true future states and the predicted future states using an explicit multi-step DM.",1,related,1,positive
+"Our work is also related to unsupervised representation learning methods based on mutual information estimation [33], [34].",1,related,1,positive
+"We compare our representational objective against CURL and SPR in Section 6, and demonstrate that under linear evaluation protocol, ours outperform both CURL and SPR. Note, we refer the readers to Schwarzer et al. (2021) for comparisons between SPR and CPC, ST-DIM, and DRIML.",1,related,1,positive
+"In this paper, we use a Contrastive Predictive Coding (CPC) algorithm (Oord et al., 2018) which was shown useful for finding predictive latent variables (Anand et al., 2019; Henaff, 2020; Yan et al., 2020).",1,related,1,positive
+"This information is exposed in the RAM state of the Atari emulator, as shown in Anand et al. (2019).",1,related,0,negative
+"[50]—however, as we require slot-level rather than flat embeddings, the final layers of our encoder are different.",1,related,1,positive
+"To do so, we propose Cross Trajectory Representation Learning (CTRL), which applies a novel self-supervised learning (SSL) objective to pairs of trajectories drawn from the agent’s policies.",1,related,1,positive
+"The end result is an agent whose encoder maps behaviorally similar trajectories to similar representations without directly referencing reward, which we show improves ZSG performance over using pure RL or RL in conjunction with other unsupervised or SSL methods.",1,related,1,positive
+"Our main contributions are as follows:
+• We introduce Cross Trajectory Representation Learning (CTRL), a novel SSL algorithm for RL that defines an auxiliary objective across trajectories, drawing samples for a SSL predictive task by leveraging assignments from an online clustering algorithm.",1,related,1,positive
+"We also compare with two SSL-based auxiliary objectives: CURL [38], a common SSL baseline which contrasts augmented instances of the same state; and Proto-RL [47], which we adapt for this generalization setting and denote PPO+Sinkhorn.",1,related,1,positive
+We then compare to several unsupervised and SSL auxiliary objectives used in conjunction with PPO.,1,related,1,positive
+"Therefore, CTRL has a second step: drawing inspiration from Mine Your Own View [MYOW, 5], it selects (mines) representational nearest neighbors from different, nearby clusters and applies a predictive SSL objective to them.",1,related,1,positive
+"In these experiments, we employ a probing technique similar to the one described in Anand et al. (2019).",1,related,1,positive
+"We find that the objects extracted from the self-supervised attention masks are reasonably focused on salient objects, as compared to both the ground truth objects extracted from (Anand et al. 2019) and the Transporter (Kulkarni et al.",1,related,1,positive
+We compute these metrics using the predicted object locations and the ground truth locations from Anand et al. (2019).,1,related,1,positive
+"We find that the objects extracted from the self-supervised attention masks are reasonably focused on salient objects, as compared to both the ground truth objects extracted from (Anand et al. 2019) and the Transporter (Kulkarni et al. 2019) method.",1,related,1,positive
+"In contrast with [RUMS18], who use a heuristic to find the agent’s position from the screen’s pixels, we use the Atari annotated RAM interface wrapper [ARO19].",1,related,1,positive
+"However, we diverge from standard CSS formulations [8], [10], [11], [12] in the two following aspects: 1) Instead of applying the con-",1,related,1,positive
+"Given a reference input I, a positive sample Iþ, and n 1 negative samples I k for 1 k < n, standard CSS approaches [8], [10], [11] minimize the loss",1,related,1,positive
+"For our investigations, we assess the quality of the encoding of important state variables for each game by employing a novel evaluation method that probes the contents of the learnt state representations using ground truth state information provided by the Atari Annotated RAM Interface [5].",1,related,1,positive
+To evaluate the quality of the learned representations we proposed and utilised novel extensions to an evaluation method that probes the representations using the AtariARI [5].,1,related,1,positive
+Section III describes our extensions to the approach for evaluating state representation learning methods proposed in [5].,1,related,1,positive
+"In future work, we want to incorporate methods for unsupervised state representation learning (Burgess et al., 2019; Anand et al., 2019).",1,related,1,positive
+"We also compare against Spatio-Temporal Deep InfoMax (ST-DIM), which uses temporal contrastive losses with “local” features from an intermediate convolution layer to ensure attention to the whole screen; it was shown to produce detailed game-state knowledge when applied to individual frames (Anand et al., 2019).",1,related,1,positive
+"Due to the similarity between RL and dialogue, we draw inspirations from Anand et al. (2019)’s probing tasks on game playing agent.",1,related,0,negative
+"In fact, we include in our study a recent contrastive method, ST-DIM, designed in the context of playing Atari games [16], adapted
+to actions required for driving.",1,related,1,positive
+"For better analysis, we divide the relative heading angle into three cases, left turn, straight and right turn,
+Binary Affordances Relative Angle (ψt) Pre-training Pedestrian (hp) Vehicle (hv) Red T.L. (hr) Left Turn Straight Right Turn
+No pre-training 26± 0 50± 1 42± 0 11.38± 0.18 1.85± 0.03 24.68± 0.03 Contrastive (ST-DIM) 41± 0 62± 1 63± 1 9.01± 0.46 2.77± 0.18 18.37± 0.45 Contrastive Random (ST-DIM) 39± 1 73± 1 47± 0 9.70± 0.41 2.98± 0.11 15.89± 0.41 Forward 50± 0 51± 0 58± 0 4.87± 0.00 0.52± 0.00 6.07± 0.06 Forward Random 20± 1 38± 0 16± 0 11.54± 0.03 1.20± 0.00 19.14± 0.00 Inverse 45± 0 66± 0 73± 0 3.02± 0.03 0.42± 0.03 5.06± 0.17 Inverse Random 26± 0 49± 0 59± 0 8.50± 0.53 1.45± 0.03 13.14± 0.34
+Table 2: Linear probing results comparing encoders trained with random policy training data versus expert demonstration data.",1,related,0,negative
+"Moreover, for the Inverse, Forward, and ST-DIM strategies, we have included seldom variants which require to collect additional ∼ 20 hours of image sequences in T1.",1,related,1,positive
+"In fact, we include in our study a recent contrastive method, ST-DIM, designed in the context of playing Atari games [16], adapted",1,related,1,positive
+We will see how action-based representation learning outperforms ST-DIM as a self-supervised representation learning strategy to infer affordances.,1,related,1,positive
+"In addition, we have incorporated ST-DIM [16], a contrastive representation learning baseline used by agents playing Atari games.",1,related,1,positive
+"We see, the pre-trained MILC models outperform NPT and also ST-DIM based pre-trained models.",1,related,1,positive
+"Note, with very few samples, models based on the pre-trained MILC (FPT and UFPT) outperform the un-pre-trained models (NPT), ST-DIM models, autoencoder based models.",1,related,1,positive
+We compare MILC with ST-DIM based pre-training shown in [24].,1,related,0,negative
+"Following (Anand et al., 2019), we train our
+model with 100,000 frames acquired with a random agent on the Atari games; an additional 50,000 frames are used for training and testing the evaluation probes.",1,related,0,negative
+"As a result, we aim to learn structured, object-centric slot representations harnessing time and using a self-supervised time-contrastive signal similar to (Anand et al., 2019; Hyvarinen & Morioka, 2017) to learn each object’s representation, but also a “slot contrastive” signal as an attempt to force each slot to capture a unique object compared to the other slots.",1,related,1,positive
+"…we aim to learn structured, object-centric slot representations harnessing time and using a self-supervised time-contrastive signal similar to (Anand et al., 2019; Hyvarinen & Morioka, 2017) to learn each object’s representation, but also a “slot contrastive” signal as an attempt to force…",1,related,1,positive
+"For evaluation, we use labels from the AtariARI dataset (Anand et al., 2019), restricting ourselves to labels that correspond to the x or y coordinates of objects.",1,related,1,positive
+"To assess this, we use NEAT to evolve policies for playing Atari 2600 games from the recently released Atari Annotated RAM Interface (Atari ARI) [2].",1,related,1,positive
+"Such approaches may be viewed as postulating concrete latent relations: g(st, st+1) = c , where g is the squared distance between st and st+1 for Lcont, and a more complicated relation for [2].",1,related,1,positive
+"For the auxiliary objective, we follow a variant of Deep InfoMax [DIM, Hjelm et al., 2018, Anand et al., 2019, Bachman et al., 2019], and train the encoder to maximize the mutual information (MI) between local and global “views” of tuples (st, at, st+k).",1,related,1,positive
+"Our work, DRIML, predicts future states conditioned on the current state-action pair at multiple scales, drawing upon ideas encapsulated in Augmented Multiscale Deep InfoMax [AMDIM, Bachman et al., 2019] and Spatio-Temporal DIM [ST-DIM, Anand et al., 2019].",1,related,1,positive
+"L G
+] 1
+6 N
+ov 2
+with model-like properties, we consider a self-supervised objective derived from variants of Deep InfoMax [DIM, Hjelm et al., 2018, Bachman et al., 2019, Anand et al., 2019].",1,related,1,positive
+"The learned weights of the encoder of the VAE are frozen, and the latent input is used to train the policy for reset-free RL.",1,related,1,positive
+"Lastly, we compare algorithm performance with two ablations: running R3L without the perturbation controller (“VICE + VAE”) and without the unsupervised learning (“R3L w/o VAE”).",1,related,1,positive
+"We then compare with prior reset-free RL algorithms (Eysenbach et al., 2018) that explicitly learn a reset controller to alternate goals in the state space (“Reset Controller + VAE”).",1,related,1,positive
+"Fig 8 compares the performance of our method without supervised learning (“R3L w/o VAE”) in the real world against a baseline that uses SAC for vision-based RL from raw pixels, VICE for providing rewards, and running reset-free (denoted as “VICE”).",1,related,1,positive
+"Note that we use a VAE as an instantiation of representation learning techniques that works well in the domains we considered, but other more sophisticated density models proposed in prior work may also be substituted in place of the VAE (Lee et al., 2019; Hjelm et al., 2019; Anand et al., 2019).",1,related,1,positive
+"B.0.4 VAE
+We train a standard beta-VAE to maximize the evidence lower bound, given by:
+Ez∼qφ(z|x)[pθ(x|z)]− βDKL(qφ(z|x) || pθ(z))
+To collect training data, we sampled random states in the observation space.",1,related,1,positive
+"Note that we use a VAE as an instantiation of representation learning techniques that works well in the domains we considered, but other more sophisticated density models proposed in prior work may also be substituted in place of the VAE Lee et al. (2019); Hjelm et al. (2019); Anand et al. (2019).",1,related,1,positive
+"We therefore aim to convert the vision-based learning problem into one that more closely resembles state-based learning, by training a variational autoencoder (VAE, Kingma & Welling (2013)) and sharing the latent-variable representation across the actor and critic networks (refer to Appendix B for more details).",1,related,1,positive
+"The fact that we can treat a cell as an object allows us to evaluate our error-correcting strategy as proof of concept, since unsupervised object detection for control tasks is still an nascent area of research [23]–[25].",1,related,1,positive
+"For self-supervised pre-training we use Spatio-Temporal DeepInfoMax [23] to maximize predictability between current latent state and future spatial state and between consecutive spatial states (for example, on encoded time points of the resting-state fMRI (rsfMRI)).",1,related,1,positive
+"For this task, and to our knowledge, the Spatio-Temporal Deep InfoMax (ST-DIM) (Anand et al., 2019) is the state-of-the-art baseline.",1,related,1,positive
+"In ST-DIM, the ground truth state information (a state label for every example frame generated from the game) has been annotated for each frame of 22 Atari games to make evaluation of the goodness of the representation (See (Anand et al., 2019)).",1,related,1,positive
+"However, we diverge from standard CSS formulations [6], [8], [9], [10] in the two following aspects: 1) Instead of applying the contrastive loss to the entire latent space, we enforce it only on the time-variant features, as only part of the latent features should evolve over time.",1,related,1,positive
+"In future work, we want to incorporate methods for unsupervised state representation learning (Burgess et al., 2019; Anand et al., 2019) so CEHRL can learn from observations.",1,related,1,positive
+"Using the information given in [4], we only count the RAM states corresponding to the controllable avatar.",1,related,1,positive
+"At each state visited by the agent evaluator during training, the agent’s state (consisting of the avatar’s x and y coordinates within the frame, and potentially also the room number in games with more than one frame in which the agent can move, such as the different rooms in Montezuma’s Revenge) is extracted from the environment’s RAM state using the RAM annotations provided by [1].",1,related,1,positive
+The InfoNCE objective is to learn a score function f which maximizes the following estimate which acts as a lower bound of the mutual information between X and Y .,1,related,1,positive
+"al which contrasts the global output of the encoder at both time steps, hence creating a new global-global objective based on InfoNCE [2].",1,related,1,positive
+"Following the work of van den Oord [5] on InfoNCE, STDIM uses a bilinear score function for both of these objectives:
+gm,n(xt, xt′) = φ(xt) T ·Wg · φm,n(xt′) and fm,n(xt, xt′) = φm,n(xt)T ·Wl · φm,n(xt′) (3)
+where φ is the output of the encoder, φm,n is the local feature vector produced by an intermediate convolution layer of the encoder at the (m,n) spatial location, and Wg,Wl are learned weights.",1,related,1,positive
+Doing this would require extending the definition of the InfoNCE objective to three variables.,1,related,1,positive
+The methods introduced by Anand et. al [2] rely on the InfoNCE mutual information bound [5].,1,related,1,positive
+"Abstract In this study, we performed some ablations on the main model developed in the paper ""Unsupervised Representation Learning in Atari"" [2] as part of the 2019 NeurIPS Reproducibility Challenge.",1,related,1,positive
+al consider is using a pretrained agent with -greedy exploration added in [2].,1,related,1,positive
+"This ablation is similar to an ablation by Anand et. al which contrasts the global output of the encoder at both time steps, hence creating a new global-global objective based on InfoNCE [2].",1,related,1,positive
+"The InfoNCE objective is derived from mini-batches of consecutive observations {(xt, xt+1)i}Bi=1 given by the agent’s interactions with the environment.",1,related,1,positive
+"When training an encoder using these objectives, Wg and Wl are learned to find the maximum for each InfoNCE bound.",1,related,1,positive
+al [2] rely on the InfoNCE mutual information bound [5].,1,related,1,positive
+We also discuss whether their proposed benchmark is more effective at (1) transferring knowledge between tasks (in the same environment) and (2) learning with fewer interactions.,1,related,1,positive

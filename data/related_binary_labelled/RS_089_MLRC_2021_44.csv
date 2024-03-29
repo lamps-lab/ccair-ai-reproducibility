@@ -1,0 +1,74 @@
+text,label_score,label,target_predict,target_predict_label
+"For example, when using CelebA as a test set, the tested target models are ResNet50 and DesNet etc , while target models in training are Resnet20, 8-layer CoveNet and ResNet152 etc .",,,0,not_related
+"Pixel-level metrics, such as PSNR [13, 28] and MSE [33], evaluate differences between pixel values of the original and reconstructed images [6, 35, 31], to reflect the degree of privacy leakage.",,,0,not_related
+"We use the following backbones: ResNet20, ResNet50, ResNet152 [8], DenseNet [11] and 8-layer CoveNet [6].",,,1,related
+"Image quality and similarity metrics are usually used to indicate the performance of reconstruction attack approaches [40, 41, 39] and also in privacy assessment [6, 35, 31] of methods against reconstruction attacks.",,,0,not_related
+"For each original test image, the attack algorithm intercepts gradients of the target model to obtain a reconstructed image [6, 38].",,,0,not_related
+"In (A), according to PSNR, MSE, SSIM and LPIPS, the first reconstructed image is evaluated to have more privacy leakage [7, 6] than the second one (i.",,,1,related
+"They were trained using different strategies, such as data augmentation [6], gradients with Gaussian/Laplacian noise [41], and layer-wise pruning techniques [3].",,,0,not_related
+"The astonishing success of the DGL started an intensive race between privacy defenders (Sun et al., 2020; Wei et al., 2021; Gao et al., 2021; Scheliga et al., 2022) and attackers (Geiping et al.",,,0,not_related
+[25] leverages image augmentation as a defense against optimization-based reconstruction attacks.,,,0,not_related
+"For each dataset and architecture, we consider the model training with standard transformations, randomly selected policies, hybrid policies chosen by our earlier work [15], the top-2 of our searched policies and their hybrid version.",,,1,related
+TABLE VI COMPARISONS BETWEEN POLICIES CHOSEN FROM [15] AND THE VARIANCE INTEGRATED ALGORITHM ON CIFAR100 AND F-MNIST WITH RESNET20,,,1,related
+This paper extends our earlier work [15] and introduces a systematic approach to overcoming these challenges.,,,0,not_related
+"In [18], automatic transformation search (ATS) is introduced to generate heavily augmented images for training to hide information of the sensitive data, while the authors in [19] distorted the input",,,0,not_related
+"Besides, we can also follow the works [48] to further mitigate the indirect leakage from the gradients.",,,1,related
+"Other emerging defense methods targets to specific attacks or scenarios, such as data augmentation [12] or disguising labels [19, 46] to defend against gradient inversion attacks, MARVELL [21] to defend against label inference in binary classification tasks, RVFR [23] to defend against backdoor attacks.",,,0,not_related
+"However, transformed images in [10], [11] still contain sensitive information which leaves traces for reconstruction attacks.",,,0,not_related
+"• ATS [11]: To achieve privacy-preserving deep learning, this scheme applies automatic transformation search (ATS) to find optimal image transformation (e.g., horizontal/vertical shifting, brightness adjustment, and contrast enhancement) strategies.",,,0,not_related
+"• ATS [11]: To achieve privacy-preserving deep learning, this scheme applies automatic transformation search (ATS) to find optimal image transformation (e.",,,0,not_related
+Perceptual image encryption [10] and transformation policy selection [11] are considered respectively.,,,0,not_related
+"There are several image transformation approaches, such as pixel-level transformation [9], GAN-based transformation [16], and policy-based transformation [15].",,,0,not_related
+"Inspired by the technique proposed in [15] that can evaluate the correlations between the local linear map and the neural network performance without training, we adopt this technique to calculate the accuracy score of the transformation policy.",,,0,not_related
+"In this paper, we propose to leverage image transformation technologies [15] to preprocess the video frames in the edge, prior to the edge-cloud video analytics process.",,,1,related
+", 2022) and ATS (Automatic Transformation Search) (Gao et al., 2021).",,,0,not_related
+"A.1 Compared with PRECODE and ATS
+A.2 Examples of different start point
+A.3 Examples of reconstructions
+Figure 3 and Figure 4 show the examples of reconstructions.",,,0,not_related
+"However, the study (Zhu et al., 2019; Gao et al., 2021; Sun et al., 2021) show that DP-based defences require a large number of participants in the training process to converge and achieve a desirable privacy-performance tradeoff.",,,0,not_related
+"As such, our proposed approach improves the privacy of sensitive data in FL. 2) Maintaining the FL performance.",,,1,related
+"Latest techniques such as Automatic Transformation Search (ATS) (Gao et al., 2021) (augmenting data to hide sensitive information), PRivacy EnhanCing mODulE (PRECODE) (Scheliga et al., 2022) (use of bottleneck to hide the sensitive data), and Soteria (Sun et al., 2021) (pruning gradients in a single layer) are shown to maintain the FL performance while simultaneously preserving the privacy.",,,0,not_related
+"In this work, we proposed a practical and effective defence against model inversion attacks in FL.",,,1,related
+"Our algorithm ensures that the gradient after introducing the concealing samples is still aligned with that of training samples (including sensitive data), and thus maintains the learning capabilities of the FL.",,,1,related
+"…categories: gradient compression (Lin et al., 2017; Sun et al., 2021) and perturbation (Geyer et al., 2017; McMahan et al., 2017b), data encryption (Gao et al., 2021; Huang et al., 2020), architectural modifications (Scheliga et al., 2022), and secure aggregation via changing the communication and…",,,0,not_related
+"Latest techniques such as Automatic Transformation Search (ATS) (Gao et al., 2021) (augmenting data to hide sensitive information), PRivacy EnhanCing mODulE (PRECODE) (Scheliga et al., 2022) (use of bottleneck to hide the sensitive data), and Soteria (Sun et al., 2021) (pruning gradients in a…",,,0,not_related
+"Balunović et al. (2021) also show it is easy to reconstruct the data using the GS attack in the initial communication rounds against the defence ATS, while Carlini et al. (2020) show that they can recover private data when they know the encodings of InstaHide.",,,0,not_related
+"Differential Privacy (DP) (Geyer et al., 2017; McMahan et al., 2017b) adds Gaussian or Laplacian noise into the gradients, and has been shown as an effective privacy-preserving strategy in FL. Gao et al. (2021) introduce Automatic Transformation Search (ATS) to generate heavily augmented images for training to hide information of the sensitive data, while Huang et al. (2020, 2021) propose InstaHide to encrypt the private data with data from public datasets.",,,0,not_related
+", 2017b), data encryption (Gao et al., 2021; Huang et al., 2020), architectural modifications (Scheliga et al.",,,0,not_related
+"Latest techniques such as Automatic Transformation Search (ATS) (Gao et al., 2021) (augmenting data to hide sensitive information), PRivacy EnhanCing mODulE (PRECODE) (Scheliga et al.",,,0,not_related
+We hope our defence could provide a new perspective for defending against model inversion attacks in FL.,,,1,related
+"We can conclude that our defence method also provide an effective protection for the sensitive data on the ImageNet dataset against the model inversion attacks in FL.
+A.4 Model Architectures
+Details of the models used in this study are shown in Table 6.",,,1,related
+"But in the appendix, we show the comparison with such defences like PRECODE (PRivacy EnhanCing mODulE) (Scheliga et al., 2022) and ATS (Automatic Transformation Search) (Gao et al., 2021).",,,1,related
+We can conclude that the current defence mechanisms are not quite effective against model inversion attacks in FL.,,,0,not_related
+"Jin et al. (2021) introduce catastrophic data leakage (CAFE) in vertical federated learning (VFL) and they can improve the data recovery quality over a large batch in VFL. Balunović et al. (2021) firstly formalize the gradient leakage problem within the Bayesian framework, and then demonstrate existing optimization-based attacks could be approximated as the optimal adversary with different assumptions on the input and gradients.",,,0,not_related
+"…McMahan et al., 2017b) adds Gaussian or Laplacian noise into the gradients, and has been shown as an effective privacy-preserving strategy in FL. Gao et al. (2021) introduce Automatic Transformation Search (ATS) to generate heavily augmented images for training to hide information of the…",,,0,not_related
+"Fortunately, recent research has found that DLG attacks can be well protected by novel data augmentation-based approaches as proposed in [36] and [37] to guarantee data privacy in distributed learning.",,,0,not_related
+Automatic transformation search against deep leakage from gradients [67].,,,0,not_related
+"Samples inference defenses [67], [178] can protect training samples from being inferred by existing attacks.",,,0,not_related
+[67] proposed to search privacy-preserving transformation functions and pre-process the training samples with such functions to defend reconstruction attacks as well as preserving,,,0,not_related
+Figure 4 illustrates a privacy-preserving collaborative learning method [67] using automatic transformation search against deep leakage from gradients.,,,0,not_related
+"Despite such advantages, existing FL approaches still suffer from privacy inference [52] [21] [20] and byzantine attacks [4] [8] [5].",,,0,not_related
+"For ATS, we built upon the repository released alongside (Gao et al., 2021).",,,1,related
+"We then turn to practical evaluation and experiment with several recently proposed defenses (Sun et al., 2021; Gao et al., 2021; Scheliga et al., 2021) based on different heuristics and demonstrate that they do not protect from gradient leakage against stronger attacks that we design specifically…",,,1,related
+"Defenses In response to the rise of privacy-violating attacks on federated learning, many defenses have been proposed (Abadi et al., 2016; Sun et al., 2021; Gao et al., 2021).",,,0,not_related
+", 2021) prunes the gradient for a single layer, ATS (Gao et al., 2021) generates highly augmented input images that train the network to produce non-invertible gradients, and PRECODE (Scheliga et al.",,,0,not_related
+"This also leads to a wide variety of proposed defenses: Soteria (Sun et al., 2021) prunes the gradient for a single layer, ATS (Gao et al., 2021) generates highly augmented input images that train the network to produce non-invertible gradients, and PRECODE (Scheliga et al., 2021) uses a VAE to…",,,0,not_related
+"We use the ConvNet architecture with a width of 64 also proposed in (Gao et al., 2021) and train with the augmentations ”7-4-15”, ”21-13-3”, ”21-13-3+7-4-15” which perform the best on ConvNet with CIFAR100.",,,1,related
+Our experiments in Section 6 on the network architecture and augmentations introduced in Gao et al. (2021) indicate that an attacker can successfully extract large parts of the input despite heavy image augmentation.,,,1,related
+"Automated Transformation Search The Automatic Transformation Search (ATS) (Gao et al., 2021) attempts to hide sensitive information from input images by augmenting the images during training.",,,0,not_related
+"Similarly to Soteria, Gao et al. (2021) also demonstrate that ATS is safe against attacks proposed by Zhu et al. (2019) and Geiping et al. (2020).",,,0,not_related
+"We then turn to practical evaluation and experiment with several recently proposed defenses (Sun et al., 2021; Gao et al., 2021; Scheliga et al., 2021) based on different heuristics and demonstrate that they do not protect from gradient leakage against stronger attacks that we design specifically for each defense.",,,1,related
+"To verify the claims made by the authors of [5], we reproduce their experiments.",,,1,related
+"44 In this reproducibility report, we evaluate the main claims made by the authors of [5] by reproducing their experiments.",,,1,related
+"Overall the results in [5] are reproducible, except Figure 4, with a large discrepancy between our result and the original 213 one - we are still in contact with the authors on this issue.",,,1,related
+"In [5], 86 k = 3 is chosen and the policies are denoted by the indices of the transformations within the AutoAugment library.",,,1,related
+"The experiments in [5] are performed on two datasets, CIFAR-1004 [11], and Fashion-MNIST5 [17].",,,0,not_related
+"40 The paper subject to this reproducibility study proposes a novel approach to mitigate the threat from reconstruction 41 attacks by augmenting the local training data of the user, before calculating the gradients [5].",,,0,not_related
+"Therefore, the authors propose the 88 hybrid strategy, where a policy is randomly selected from the candidate policies - this way, good privacy and accuracy 89 are guaranteed [5].",,,0,not_related
+"697 64 Each of these claims is supported by the results of one or more experiments in [5], represented in the tables and figures.",,,0,not_related
+"83 In [5], transformations from AutoAugment1 [3] are repurposed to protect sensitive training data from reconstruction 84 attacks.",,,1,related
+"In the meantime, [23] introduces a novel defense scheme that searches for optimal image transformation combination such as image rotation and shift to preserve privacy.",,,0,not_related
+A data augmentation approach (Gao et al. 2020) is also recently proposed to defend the gradientbased information reconstruction attacks.,,,0,not_related

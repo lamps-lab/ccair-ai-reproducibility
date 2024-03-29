@@ -1,0 +1,158 @@
+text,target_M6_predict,target_predict_M6_label
+"Some methods utilize the SSL loss as supplemental losses during the supervised training process [18, 41].",1,neutral
+"This, along with other previous work in few-shot learning[11], [15], inspire us to make use of unlabeled data for few-shot class-incremental learning.",2,positive
+"A model is first pretrained based on the base set using either self-supervised learning [33, 26, 42, 22, 27], meta-learning [25, 32, 14, 34, 38], or traditional supervised approaches [28, 12, 9].",1,neutral
+"Recently, many research works have demonstrated the effectiveness of SSL on both detection and classification tasks [8, 13, 4, 14, 9], and also proven that SSL benefits the deep neural network by learning robust features representations for typical fewshot tasks [12, 24, 6, 10].",1,neutral
+al [24] augmented the unlabelled images by rotation and jigsaw puzzle.,1,neutral
+"Metriclearning based methods [3], [4], [6], [24], [25], [26], [27], [28], [29], [30], [31], [32], [33], [34], [35], [36], [37] learn a good embedding and an appropriate comparison metric.",1,neutral
+"The principle behind this approach is using limited supervision and fine-tuning in assessment [13, 51, 71].",1,neutral
+"The effectiveness of self-supervised learning for FSL has been demonstrated, such as contrastive learning in either unsupervised pre-training [30] or episodic training [6,25], and auxiliary rotation prediction task [13,47,41].",1,neutral
+"We split the dataset into 100 classes for training, 50 for validation, and 50 for testing following the prior standard works [19, 2].",0,negative
+"However, some recent works adopted standard supervision setting [20] along with various self-supervised approaches [15, 10, 19] to enhance the quality of the results.",1,neutral
+"Other works [10, 18, 20, 29] have shown that addition of self supervision losses in the pretraining stage provides more robust features, resulting in improved few shot performance.",1,neutral
+"Gidaris et al. (2019) and Su et al. (2020) study the use of self-supervised tasks including rotation(Gidaris et al., 2018) and jigsaw(Noroozi & Favaro, 2016) to improve few-shot learning.",1,neutral
+"Self-supervision has been proven to improve few-shot learning in various recent works [20, 8] as it helps to overcome supervision-collapse [20], a phenomenon where training on the base classes force the network to discard information irrelevant for the discrimination of base classes, but crucial for the",1,neutral
+S2M2 [8] extends their work with self-supervision techniques [20].,1,neutral
+22 WACV20 Proto+Jig [20] ResNet18 - 89.,1,neutral
+"In this work, we opt rotation prediction [20] mainly because of its simplicity and effectiveness [20, 8].",1,neutral
+"For other four datasets, we follow the split of [20].",1,neutral
+† denotes the values are reported from the implementation in [20].,0,negative
+We employ the setting in ProtoNet [5] and conduct a cross-domain experiment where our model is trained on miniImagenet and evaluated on the CUB dataset.,2,positive
+"Specifically, we use the ResNet-18 as the backbone, then the episodic training mechanism is used to classify each query sample into one of the N support classes, called N-way K-shot task as the ProtoNet [5] shows.",2,positive
+ProtoNet [5] regards the mean value of each class’s embedding as prototype and calculates Euclidean distance between support and query samples for classification.,2,positive
+"Method Stanford Cars Stanford Dogs
+5-way 1-shot 5-way 5-shot 5-way1-shot 5-way 5-shot
+MatchNet [4, 68] GNN [69, 68] DN4 [13] ProtoNet [5, 68] MAML [3, 70] RelationNet [12, 70] MML [71] ATL-Net [16] CovaMNet [68] PABN+cpt [69] LRPABN+cpt [69] MATANets [71]
+34.80 55.85 61.51 40.90 47.22 47.67 72.43 67.95 56.65 54.44 60.28 73.15
+44.70 71.25 89.60 52.93 61.21 60.59 91.05 89.16 71.33 67.36 73.29 91.89
+35.80 46.98 55.85 40.90 44.81 43.33 59.05 54.49 49.10 45.65 45.72 55.63
+47.50 62.27 63.51 48.19 58.68 55.23 75.59 73.20 63.04 61.24 60.94 70.29
+PMRN (ours) 87.91 94.38 80.11 89.18",0,negative
+"MatchNet [41, 4] MatchNet [49, 4, 15] RelationNet [41, 12] RelationNet [12, 41] ProtoNet [41, 5] MAML [3, 51] SCA+MAML++ [63] Baseline [41] Baseline++ [41] S2M2 [64] DeepEMD [15] DEML [65] ATL-Net [16] Cosine classifier [41] DSN [67] FRN [58] CPDE [24] CFA [66] MCL [17] ResNet-18 ResNet-12 ResNet-18 ResNet-34 ResNet-18 ResNet-18 DenseNet ResNet-18 ResNet-18 ResNet-18 ResNet-12 ResNet-50 ConvNet ResNet-18 ResNet-12 ResNet-12 ResNet-18 ResNet-18 ResNet-12 73.",2,positive
+"Recently, some work [41, 23, 42] introduce SSL methods such as predicting the rotation and the relative position to FSL.",1,neutral
+"In addition, we follow the same setting as Su [41] to train some baselines from scratch on Oxford Flowers and FGVC Aircraft.",2,positive
+Our model is implemented with the Pytorch [53] based on the codebase for few-shot learning denoted in [41].,2,positive
+"The choice for the auxiliary self-supervised objective was motivated by a series of works that successfully applied it to improve few-shot classification [8, 16, 46], robustness [23], pre-training for novel class discovery [19], image generation [10, 32], semi-supervised learning [54].",2,positive
+"self-supervised task may interfere with the main task if both tasks are not properly aligned [41,53,67].",1,neutral
+"Most works [25, 49, 67] leverage the pretext task of SSL as an auxiliary loss to enhance the representation learning of supervised pre-training.",1,neutral
+"Subsequently, many studies [13, 47, 49, 55, 67] focus on how to learn a good embedding instead of designing complex meta-learning strategies.",1,neutral
+", data augmentation (DA) and self-supervised learning (SSL), following existing works [11,37,28,26,40].",1,neutral
+"(Zhang et al., 2020; Caccia et al., 2021; Mazumder et al., 2021; Su et al., 2020), relinquished pre-training altogether and employed auxiliary pretext task to boost task-agnostic learning.",0,negative
+"…than supervised pre-training in CL. Owing to additional computational effort, some of the approaches, e.g. (Zhang et al., 2020; Caccia et al., 2021; Mazumder et al., 2021; Su et al., 2020), relinquished pre-training altogether and employed auxiliary pretext task to boost task-agnostic learning.",2,positive
+(Chen et al. 2019b) that current FSL methods degraded significantly when encountering domain shifts.,1,neutral
+"Taking gender classification (2-way) as an example, most FSL methods can only reach 55%@accuracy, seeming that there is no improvement to random guessing.",1,neutral
+"Recently, these methods have been proposed for solving FSL (Chen et al. 2019a; Gidaris et al. 2019; Su et al. 2019) and cross-domain (Xu et al.",1,neutral
+"Second, we design a generalized taskagnostic test, where we re-think the generalization ability of existing FSL methods.",2,positive
+"We can draw following conclusion from this figure: 1) Under traditional FSL scope, models enjoy the benefit of pre-training process.",2,positive
+"Furthermore, we follow the general FSL setting that ignores X t in the training phase and does not require any fine-tuning processes, enabling fast model deployment to the unseen task.",2,positive
+"Recently, these methods have been proposed for solving FSL (Chen et al. 2019a; Gidaris et al. 2019; Su et al. 2019) and cross-domain (Xu et al. 2019; Carlucci et al. 2019) tasks.",1,neutral
+"However, as indicated by (Su et al. 2019), episode technique might discard semantic information that is irrelevant for base classes but critical for novel classes.",1,neutral
+"As a significant advance, few-shot learning (FSL), which generalizes the metaknowledge in base classes (sufficient samples) to novel classes (few labeled data), has attracted considerable attention.",1,neutral
+"Few-shot Learning (FSL): C(Ds)∩C(Dt) = ∅, P (Ds) ≈ P (Dt), and the support data is few.",1,neutral
+"Homogeneous task (Motiian et al. 2017; Teshima et al. 2020) which weakens the FSL requirements is not within the scope of this work.
+expected that these task consistency can largely stabilize the meta-learning process and hence improve the generalization ability of the trained model.",2,positive
+"Furthermore, SSL has been shown to be a key component for few-shot applications [14, 20, 52], zero-shot generalization [62], and semi-supervised learning [68] among others.",1,neutral
+"Although self-supervised learning is underrepresented in the context of few-shot learning, some recent works [16, 34, 45] have shown that self-supervision via pretext tasks can be beneficial when integrated as auxiliary loss.",1,neutral
+"We also seek to strengthen the baseline with orthogonal techniques such as self-supervised learning (SSL) [18, 50] and knowledge distillation (KD) [52].",2,positive
+"A popular group of methods in FSL focus on strengthening the backbone network by various techniques, from increasing model capacity [6, 11], self-supervised learning (SSL) [18, 50, 64], to knowledge distillation (KD) [52].",1,neutral
+"For SSL, we implement the ""rotation baseline” (Rot baseline).",2,positive
+"With SSL, we employ the “rot baseline”, which is trained with the standard cross-entropy loss and an auxiliary loss to predict the rotation angles of the perturbed images.",2,positive
+"Moreover, our method is agnostic to the backbone network; thus, it does not have the need of a training phase to adopt as in SSL and KD, while incurring just a little overhead at inference (for fine-tuning prototypes with approximately 200 gradient updating steps).",2,positive
+We also conduct experiments with additional loss functions including self-supervised loss (SSL) and knowledge distillation (KD) in Figure 2a.,2,positive
+It can be observed that combining POODLE with other techniques such as SSL and KD achieves comparable or outperform state-of-the-art techniques for both inductive/transductive inference on two datasets.,1,neutral
+"Accordingly, the SSL loss function Lssl is given by:
+Lssl(θ, φ;Db,R) = 1
+Nb|R| Nb∑ i=0 ∑ j∈R |R|∑ k=0 I(k = j) log pφ(k|fθ(xji )) (7)
+Here, I(·) is the indicator function and pφ(·|fθ) denotes the (predicted) probability of rotation angle.",1,neutral
+"[15,16] propose to integrate SSL into few-shot learning by adding an auxiliary SSL pretext task in a few-shot model.",1,neutral
+"Similarly, The pre-tasks were also used to color the image [128] and predict the relative position of each patch [129, 130], local Fisher discriminant [131].",1,neutral
+"The augmented data can be in the form of hallucination with a data generator function [25, 60], using unlabelled data under semi-supervised [44, 70] or selfsupervised [21,50] frameworks, or aligning the novel classes to the base data [1].",1,neutral
+"Among them, the meta-learning [3, 4, 5, 6, 7, 8] and fine-tuning methods [9] achieve excellent performance.",1,neutral
+"A work (Su, Maji, and Hariharan 2020) show that attaching self-supervised tasks using data across domains can boost the performance for conventional few-shot learning.",1,neutral
+"Self-training has shown empirical success in diversified applications such as few-shot image classification (Su et al., 2020; Xie et al., 2020; Chen et al., 2020a; Yalniz et al., 2019; Zoph et al., 2020), objective detection (Rosenberg et al.",1,neutral
+"Self-training has shown empirical success in diversified applications such as few-shot image classification (Su et al., 2020; Xie et al., 2020; Chen et al., 2020a; Yalniz et al., 2019; Zoph et al., 2020), objective detection (Rosenberg et al., 2005), robustness-aware model training against…",1,neutral
+"Self-supervision has also been studied in few-shot learning [14], [76], [94], [98] where transformation-based auxiliary self-supervised classifiers are employed to improve the robustness of few-shot learning models.",1,neutral
+"Distribution shifts can be generalized better (Sun et al., 2020), and few-shot learning is enhanced as long as the distribution of images used for meta-learning and self-supervised learning are not too different (Su et al., 2020).",1,neutral
+The increasing advantage self-supervision has when the amount of data available is reduced is in accordance with Su et al. (2020).,2,positive
+"This makes annotation a laborious, biased, and ambiguous task, motivating the need for newer paradigms such as few-shot learning [54, 48, 35, 43] and self-supervised",1,neutral
+", colorization [78, 79], rotations of inputs [22], modeling image similarity and dissimilarity among multiple views [4, 5, 8–10, 31, 76], to name a few), and transfer them to target domains, such as object detection [23, 24, 32, 55], action recognition [6, 56], or various fine-grained recognition tasks [11, 18, 58, 64].",1,neutral
+"This is perhaps not as surprising as previous works have noted that the self-supervised losses improve few-shot learning [14, 39, 50].",1,neutral
+"Other methods use a combination of self-supervised and semi-supervised learning techniques [14, 39, 50], which is sometimes followed by an additional step where the model’s predictions are used to train a “student model” using distillation [8, 47, 48, 53].",1,neutral
+", [39]) is less effective, but using the hierarchy to exclude the novel categories leads to a small improvement in some cases.",1,neutral
+"develop fine-grained few-shot learning (FGFS) methods [148], [198], [199], [200].",1,neutral
+"Still others improve performance by incorporating more general machine learning techniques, like self-supervised learning [8, 33] or knowledge distillation [36].",1,neutral
+"For example, recent work [26, 9, 35] uses unlabeled data from the novel classes: it is, after all, the labels that are expensive; data is often cheap.",1,neutral
+"Prior works that use additional unlabelled data for few-shot classification include [4,14,35,51,61,72].",0,negative
+"Complementary to [4,14,61] that exploit unlabelled data via self-supervised objectives in the prior learning phase, we use unlabelled data specifically for task-specific finetuning.",1,neutral
+Recent work [32] shows that self-supervised learning can also improve the few-shot learning performance in image classification.,1,neutral
+"For example, some recent FSL works have introduced such “tricks”, such as knowledge distillation [30], [32], selfsupervision [58], [59] and Mixup [33], into the FSL problem.",1,neutral
+"The majority of existing FSL works adopt the meta-learning paradigm [24] and are mostly focused on image classification [33, 11, 27, 2, 29, 12, 19, 28, 13].",1,neutral
+"Following Su et al. (2019), we use a ResNet-18 (He et al., 2016) backbone network to facilitate training with bigger batch sizes as it was reported to improve performance (Chen et al., 2020a,b).",2,positive
+"However, with the continuous increase of K, the lack of supervision information is no longer its biggest limitation [41].",0,negative
+"In fewshot classifcation, several works (Gidaris et al., 2019; Su et al., 2020) use additional self-supervision loss during the training of base datasets to learn more general features.",1,neutral
+"FSL approaches use different methods such as metalearners [9, 40, 42, 46], distance-based classifiers [45, 49], and embedding learning [2, 47].",1,neutral
+"To be in consistent with the previous works [3, 31], We sample 600 few-shot tasks from the set of novel classes.",2,positive
+"Following [31], we split the dataset into 51 for training, 26 for validation and 25 for test classes.",0,negative
+"To draw fair comparisons with the existing methods, we deploy the following CNN architectures as visual backbones: 4-layer convolutional architecture proposed in [30] for CUB, ResNet-12 for miniImageNet [33, 4, 18], and ResNet-18 [31] for VGG-Flowers.",2,positive
+"Following [31], we split the available classes in the dataset into 100 for training, 50 for validation and 50 for testing.",0,negative
+"This is how this task is utilized for the classification problem [49, 28, 52, 48].",1,neutral
+"In previous works [16, 39], these tradeoffs are usually set by experience in practical situations.",1,neutral
+"Showing that the auxiliary loss without labels can extract discriminative features for few-shot learning, [16] considers rotation prediction and relative patch location as self-supervised tasks, and [39] uses image jigsaw puzzle.",1,neutral
+"43 + jig + rot, (SSFSL [39]) ResNet-18 58.",1,neutral
+"Moreover, these works [16, 39] attempt to find one single solution for all objectives, which is likely to sacrifice the performance of the main task and be inconsistent with the goal of few-shot auxiliary learning.",1,neutral
+"As self-supervised learning can improve the generalization of the network under the limitation of labeled data, some recent few-shot auxiliary learning (FSAL) works [16, 39] take few-shot learning as learning main task with self-supervised auxiliary tasks.",1,neutral
+"Recently, contrastive learning methods have become popular self-supervised representation learning tools and gained big progress in few-shot learning due to its better discriminative ability [3, 4].",1,neutral
+"These results are in a similar vein to prior work on the evaluation of SSL approaches that have analyzed the robustness of SSL techniques to the choice of hyper-parameters [30], network architectures [9, 51], and domain shifts [30,42,49], etc.",1,neutral
+"These include incorporating pre-text tasks such as predicting image rotations [14], the order of patches (jigsaw puzzle task) [29] during semi-supervised learning [35, 42, 54].",1,neutral
+", 2020) or minimizing the sum of loss functions by meta-learning (Su et al., 2020), we propose to train the model such that it directly learns to adapt at test-time without supervision.",2,positive
+[56] studied the effectiveness of utilizing self-supervised learning (SSL) techniques in few-shot setting.,1,neutral
+[53] combined self-supervised and meta learning and showed improved few-shot classification accuracy for finegrained categories.,0,negative
+"Inspired by the similarity of few-shot and self-supervised learning, some works [6, 7] have weaved self-supervision into the training process of few-shot learning.",1,neutral
+[67] also used rotation and permutation of patches as auxiliary tasks and concluded that SSL is more effective in low-shot regimes and under significant domain shifts.,1,neutral
+"Recently, the potential of SSL for FSL was explored in [23, 67].",1,neutral
+"Self-Supervised Network Most of the prior works [61,62] in computer vision weave self-supervision into fewshot learning by adding pretext tasks loss.",1,neutral
+"Another line of research relevant to ours is efficient MAML, e.g., (Raghu et al., 2019; Song et al., 2019; Su et al., 2019), where the goal is to improve the computation efficiency and/or the generalization of MAML.",2,positive
+"In (Su et al., 2019), a self-supervised representation learning task was augmented to the meta-updating objective and resulted in a meta-model with improved generalization.",2,positive
+", (Raghu et al., 2019; Song et al., 2019; Su et al., 2019), where the goal is to improve the computation efficiency and/or the generalization of MAML.",2,positive
+"Some methods [15, 43] use self-supervised losses (e.",1,neutral
+"Several recent works [14, 15, 3, 37, 8, 49, 28] have utilized data augmentation for metalearning based FSL.",1,neutral
+"It has also been considered for FSL [8, 49, 28].",0,negative
+"For supervised FSL, [8, 49, 28] take a multi-task learning framework where augmented data are used for auxiliary self-supervised pretext tasks (e.",1,neutral
+"Our CPLAE is also a supervised FSL model, but the way data augmentation is used is very different from that in [8, 49, 28].",2,positive
+"Additionally, we compare the performances of our approach with other self-supervised auxiliary losses, i.e., rotation prediction (Gidaris et al., 2018) and jigsaw puzzle (Noroozi & Favaro, 2016), for which (Su et al., 2020) provided their integration into the ProtoNet framework.",2,positive
+"Such methods [11,38,6,9,23] integrates various types of self-supervised training objective into different few-shot learning frameworks in order to learn transferable features and improve the few-shot classification performance.",1,neutral
+", rotation prediction [12] and jigsaw puzzle [26], for which [38] provided their integration into the ProtoNet framework.",1,neutral
+"Such methods (Gidaris et al., 2019; Medina et al., 2020; Su et al., 2020; Doersch et al., 2020; Gao et al., 2021) integrate various types of self-supervised training objectives into different few-shot learning frameworks in order to learn more transferable features and improve the few-shot…",2,positive
+"In [39, 29, 24, 11, 31] additional unlabeled data is used, [60, 47] leverage additional semantic information available for the classes, and [11, 21, 1, 50] examine the usage of unsupervised or self-supervised training in the context of a standard few-shot learning.",1,neutral
+"Inspired by the similarity between the embedding-based meta-learning and the contrastive self-supervised learning methods [15, 4], several recent approaches apply self-supervised learning in both supervised [50] and unsupervised meta-learning [19, 33, 37].",1,neutral
+"Meta learning In meta learning [12, 18, 55, 59, 63, 64, 65, 72, 79, 83], approaches imitate the few-shot scenario by repeatedly sampling similar scenarios (episodes) from the base classes during the pre-training phase.",1,neutral
+"While self supervision has been shown to boost few-shot learning (Gidaris et al., 2019; Su et al., 2020), its utility in cases of large domain gaps between base and novel datasets have not been evaluated.",1,neutral
+"Varying the amount of data samples has led to interesting observations as well [42, 59].",1,neutral
+"Studies have shown that self supervised learning can be used along with few-shot learning to boost the performance of the model towards novel categories [100], [101].",1,neutral
+"rch, which inherently deals with transfer from pretext tasks to semantic ones and must therefore represent more than their training data [2, 11, 13, 18, 21, 27, 33, 44, 56, 92, 93]. Some recent works [26, 73] demonstrate that this can improve few-shot learning, although these use self-supervised auxiliary losses rather than integrating self-supervision into episodic training. Also particularly relevant ar",1,neutral
+"…aided by self-supervision: Several works have proposed to use a selfsupervised loss either alongside supervised meta-learning episodes (Gidaris et al., 2019; Liu et al., 2019) or to initialize a model prior to supervised meta-learning on the source domain (Chen et al., 2019; Su et al., 2019).",2,positive
+", 2019) or to initialize a model prior to supervised meta-learning on the source domain (Chen et al., 2019; Su et al., 2019).",2,positive
+"The pretext tasks shall be carefully designed in order to facilitate the network to learn downstream-related semantics features (Su et al., 2019).",2,positive
+"These approaches are most beneficial in data regimes where labeled data is sparse [26, 30], which is often the case for medical datasets.",1,neutral
+"We opt for this more challenging task based on previous work that has shown that more difficult auxiliary tasks produce more useful feature representations [19, 26].",1,neutral
+"classification problem, such as works based on graph theories [66], [67], [68], [69], reinforcement learning [70], differentiable SVM [71], generative models [72], [73], [74], [75], [76], [77], [78], [79], [80], transductive learning [81], [82], [83], [84], [85], recurrent models [86], [87], self-supervised learning [88], [89], the recent capsule network [90], and temporal convolutions [91].",1,neutral
+"Moreover, recent work has shown that self-supervision can be beneficial to many other learning problems [10, 18, 28, 29, 58, 71], such as few-shot [18, 58] and semi-supervised [28, 71] learning, or training generative adversarial networks [10].",1,neutral
+"Moreover, unlabeled examples [55], [56] or regularization techniques [57], [58] have also been utilized to improve the few-shot classification performance.",1,neutral
+(ref.(146)) presented a systematic study by varying the degree of domain shift and analysing the performance of multiple metalearners on a variety of domains.,1,neutral
+"unexplored, we have come across some works on similar topics (Cao and Wu, 2021; Su et al., 2020).",2,positive
+"Recent works (Gidaris et al., 2019; Su et al., 2020; Chen et al., 2021) show that adding self-supervised loss functions for representation learning improves fewshot recognition performance.",1,neutral
+"Recent works [12, 34] point out that contrastive learning helps to avoid few-shot learning from limitations like over-fitting [6, 21] or supervision collapse [8], which serves as auxiliary losses to learn the representation alignment.",1,neutral
+"[51] Jong-Chyi Su, Subhransu Maji, and Bharath Hariharan.",0,negative
+"The principle behind this approach is using limited supervision and fine-tuning in assessment [13, 51, 71].",1,neutral
+"(Zhang et al., 2020; Caccia et al., 2021; Mazumder et al., 2021; Su et al., 2020), relinquished pre-training altogether and employed auxiliary pretext task to boost task-agnostic learning.",0,negative
+"…than supervised pre-training in CL. Owing to additional computational effort, some of the approaches, e.g. (Zhang et al., 2020; Caccia et al., 2021; Mazumder et al., 2021; Su et al., 2020), relinquished pre-training altogether and employed auxiliary pretext task to boost task-agnostic learning.",2,positive
+"Some recent work has showed that self-supervised learning could contribute to few-shot learning, and the loss of self-supervised learning was introduced in [46,47].",1,neutral
+"Self-supervised learning has been used for few-shot classification but primarily as an auxiliary loss [14, 47] along with the standard cross-entropy loss.",1,neutral
+"DNNs only produce meaningful outputs for indistribution (ID) data (Su et al., 2020).",2,positive
+"We expect dataset shift to manifest in an unusually large self-supervision loss (Su et al., 2020) that compensates for the decreased ability to detect uncertain cases of uncertainty estimation methods.",2,positive
+"Finally, (Su et al., 2020) has shown that selfsupervision is very beneficial to few-shot learning, especially when the pretext task is very complex, and that using more unlabelled data for pretraining is useful only if they come from the same domain as the ones used for the few-shot task.",1,neutral
+"Finally, (Su et al., 2020) has shown that selfsupervision is very beneficial to few-shot learning, es-",1,neutral
+"For jigsaw tasks, we use 35-permutations from Su et al. (2020).",1,neutral
+An additional module is inserted between the embedding network and classifier and we use hidden dimensions from Su et al. (2020).,2,positive
+"However, such unlabelled images may have a negative impact if the domain shift between the unlabelled and labelled dataset is too big [27].",1,neutral
+"[27] Jong-Chyi Su, Subhransu Maji, and Bharath Hariharan.",0,negative

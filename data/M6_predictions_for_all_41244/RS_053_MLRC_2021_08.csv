@@ -1,0 +1,58 @@
+text,target_M6_predict,target_predict_M6_label
+"On the other hand, intrinsic XAImethods such as [56] uses additional loss and attention modules during training and utilize this module to compute saliency maps.",1,neutral
+"According to [12], we update the slot T = 3 times, D is the dimension after the normalization operation, calculate the similarity of each vector by dot product, and then normalize it with sigmoid.",1,neutral
+"Some other scholars have proposed to use additional modules to explain the working mechanisms inside the model [12], [13], such as the attention mechanism, but the explanatory results obtained in this way are one-sided and it is difficult to explain specifically the area of attention of the network for a specific target.",1,neutral
+"[49] Liangzhi Li, Bowen Wang, Manisha Verma, Yuta Nakashima, Ryo Kawasaki, and Hajime Nagahara.",0,negative
+"There are several existing examples on leveraging slotbased methods in explainable models to extract semantic concepts [49, 84].",1,neutral
+"They can be used to explain predictions in diverse tasks, like image recognition (Li et al., 2021), authorship verification (Boenninghoff et al.",1,neutral
+"Concept extractor uses slot attention [26, 27]-based mechanism to discover visual concepts in D.",1,neutral
+"We adopt a slot attention-based mechanism [26, 27] to spot the region in which each concept is found.",1,neutral
+"In this study, we use a slot attention-based classifier SCOUTER (Li et al., 2021) to classify natural earthquakes and blasts.",2,positive
+"In this study, we combine an advanced classifier SCOUTER to achieve an automatic and effective discrimination between natural earthquakes and blasts.",2,positive
+"We adopt SCOUTER (Li et al., 2021), a classifier based
+on slot attention, which involves the explanation to each category in the final confidence.",2,positive
+The SCOUTER based the pre-trained model is trained on the training set for 50 epochs and the performance results are computed on the testing set with the trained model after the last epoch.,0,negative
+Discrimination of seismic and non-seismic signal using SCOUTER.,1,neutral
+"KEYWORDS quarry blasts, natural earthquakes, SCOUTER, seismology ACM Reference Format: Kang Wang, Ji Zhang, and Jie Zhang.",0,negative
+"[11] propose a slot attentionbased classifier for transparent and accurate classification, offering intuitive interpretation and positive or negative explanations for each category controlled by a tailored loss.",1,neutral
+"The proposed guided slot attention is conceptually similar to previous methods as it is inspired by previous methods [11, 14, 38].",1,neutral
+"The resulting 192 object-centric inductive bias and the relative simplicity have allowed for wider adoption and success 193 of slot attention over iDSPN [13, 11, 14, 18], which makes our improvements to SA meaningful.",2,positive
+"Different from the post-hoc method that provides explanations after the model training, the intrinsic paradigm [35,36]",1,neutral
+"In addition, it is possible to generate adversarial masks [1,11] which solely rely on breaking the input features in order to reduce output confidence – which are easier to locate but do not necessarily explain the decisionmaking of visual recognition models.",1,neutral
+"Later on, sanity check procedures have shown that most of the gradient-based explanation methods are independent of the model predictions and mainly work as edge detectors which greatly undermined their credibility [1,17].",1,neutral
+"Next, we turn our attention to attribution maps (saliency maps), which is a very popular line of research in explanation but also controversial in that many of the algorithms have shown to be unreliable [1].",2,positive
+"In addition, we adopt the method proposed in the literature [9] to visualize the results of all models.",2,positive
+"For the feature vectors Fc and Fr from Branch C and Branch R, they not only need to be sent to the classifier [9] to obtain the classification probability pc and pr, but also need to be fed into the auxiliary attention guidance module that guides the model’s attention tendency (See Section III-D) to get Segmentation map p c and p seg r .",1,neutral
+"Attentive models include attention modules into their structure, making the elements on which the model is focusing more evident [43, 89].",1,neutral
+"The authors in [69] also employ an iterative attention mechanism to update the slots, where the number of iterations T=3 just like in capsule routing and vanilla slot attention.",1,neutral
+"Indeed, the evidence for a certain category in SCOUTER can be thought of as its support in capsule networks, i.e. using an attention mechanism to find support in the image that directly correlates to a certain output category.",1,neutral
+The main difference between SCOUTER and vanilla slot attention is that the slots are now associated to single categories like in capsule networks.,1,neutral
+"Figure from [70].
+the explainability insights from SCOUTER are applicable to capsule networks.",1,neutral
+"We can think of SCOUTER as a capsule network with restricted inductive biases and fewer parameters, thus
+Fig.",1,neutral
+"More recently, the authors in [69] proposed SCOUTER, a slot-attention based classifier for transparent, explainable and accurate classification (see Figure 26).",1,neutral
+26: Positive and negative explanations given by SCOUTER [69]: a variant of slot-attention with specialised slots that bind to class categories like in capsule networks.,1,neutral
+developed an explainable classifier based on slot attentions [90].,1,neutral
+"[90] proposed slot attention, an attention mechanism that learns the objects’ representations in a scene.",1,neutral
+"[26] presents SCOUTER loss, defining how large the attention area should be through the formula:",1,neutral
+"The slot attention, however, will have a low resolution due to the poor resolution of the DNN’s latent features [26].",0,negative
+"The negative explanation is especially informative in classification problems with high similarities between classes, such as in agricultural datasets [26].",1,neutral
+"Moreover, the negative explanation maps support the model’s classification, particularly during the mature growth stages, where the dissimilarities between species are substantial [26].",1,neutral
+A comprehensive description of the negative explanation and Equation (2) is provided in the study of [26].,1,neutral
+Existing researches mainly focus on answering the following three questions: [15]–[17].,1,neutral
+"[17] propose a slot attention-based classifier for transparent yet accurate classification, which provide positive or negative explanation for a certain category.",1,neutral
+"We adopt a recently-emerged explainable classifier, called SCOUTER [11], and propose a new FSL method, named match-them-up network (MTUNet).",2,positive
+"SCOUTER normalizes the attention map only over the flattened spatial dimensions, i.e.,
+A(t) = σ(Ā(t)).",1,neutral
+"(5)
+PE adopts a different normalization strategy from SCOUTER.",1,neutral
+"For pre-training of PE module, we used the same parameter setting as [11].",1,neutral
+"To maintain the spatial information, position embedding P [25, 13, 11] is added to the features, i.",1,neutral
+Work by Zunino et al. (2021) and Li et al. (2021) are very recently published.,2,positive
+"have been recently gaining impetus (Zunino et al., 2021; Li et al., 2021; Petsiuk et al., 2021).",2,positive
+"Another stream of literature that deals with the task of improving the visual explanations from CNN for various tasks such as domain generalization, robustness to image
+perturbations, etc. have been recently gaining impetus (Zunino et al., 2021; Li et al., 2021; Petsiuk et al., 2021).",2,positive
+The method presented by Li et al. (2021) is attention based explainable AI (XAI) method while the one presented by Zunino et al. (2021) proposes to utilize the saliency maps generated using Grad-CAM to directly influence the intermediate activation maps during model training and make them end to…,2,positive
+Similar explanations that are learnt via optimising a loss function are SCOUTER [15] and the work by Schulz et al.,1,neutral
+Similar explanations that are learnt via optimising a loss function are SCOUTER [15] and the work by Schulz et al. [22].,1,neutral

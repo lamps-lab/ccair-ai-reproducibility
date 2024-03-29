@@ -1,0 +1,208 @@
+text,label_score,label,target_predict,target_predict_label
+"5M tokens arranged into chunks of shape [time,channel] ≡ [12,19].",,,0,not_related
+"Besides, self-attention can also be employed to extract temporal features within one time series [91], where it can usually outperform RNNs on a variety of tasks.",,,0,not_related
+"We retain the computational simplifications of [2] and use a channel grouping, where the G attention heads process mutually exclusive subsets of D/G channels of the embedding.",,,1,related
+"This strategy has proved beneficial for learned time series processing [2], [75], since it preserves information about seasonal patterns (e.",,,0,not_related
+"Unlike [2], we employ data-driven queries to preserve the temporal dimension of the input.",,,1,related
+"In a nutshell, U-TAE combines convolutions for multi-scale spatio-spectral encoding with a lightweight non-local temporal attention mechanism [2].",,,0,not_related
+"The temporal encoder is based on the Lightweight Temporal Attention Encoder (L-TAE) of [2], which, in turn, is a simplified version of the multi-head self-attention mechanism of the transformer architecture [72].",,,0,not_related
+"…of RS data and integrating its representation into a neural network, similar to architectures such as CNN-RNN (Pelletier et al., 2019; Sainte Fare Garnot et al., 2019) or more advanced structures like PSE-LTAE (Sainte Fare Garnot et al., 2020; Quinton & Landrieu, 2021; Weilandt et al., 2023).",,,0,not_related
+"Quinton & Landrieu (2021) propose to use a Pixel-Set Encoder with a Lightweight Temporal Attention Encoder (PSE-LTAE) (Sainte Fare Garnot et al., 2020) combined with a multi-year classification method.",,,0,not_related
+"Studies proved that other methods were more efficient in terms of performances (Sainte Fare Garnot et al., 2020).",,,0,not_related
+"In the end, Sainte Fare Garnot et al. (2020) proposed a smart method to tackle parcel-level crop classification, by randomly sampling pixels of the parcels to learn expressive descriptors that are processed by a transformer.",,,0,not_related
+"In addition to the spatiotemporal format T ×C×H×W with high-quality semantic and panoptic annotations, over 120,000 bounding boxes and pixel-precise masks, it is accompanied with a pixel-set format T × C × N dataset [9] for parcel-based crop type classification.",,,0,not_related
+"Meanwhile, as pointed out by previous work [7, 9], another great challenge for effectively learning representations for SITS is to capture the complex temporal dynamics in crop phenology, i.",,,0,not_related
+"The pioneering work PSE+TAE [9] has proposed to use MLPs to summarize spatial statistics given the lack of rich spatial semantics in medium-resolution Sentinel-2 images and self-attention to encode temporal patterns, followed by PSE+L-TAE [7] where a light-weight transformer decoder has been used to extract temporal features.",,,0,not_related
+"Pixel-Set Encoder (PSE) is particularly effective for dealing with the irregularity in parcel geometry by simplifying parcel representation from T ×C×H×W to T ×C×N , where T is the length of temporal sequence, C is the number channels, H/W denotes the height/width, and N denotes the number of pixels, and consequently requires significantly less storage memory [9] compared to the patch format.",,,0,not_related
+"The pioneering work PSE+TAE [9]/PSE+L-TAE [7] has introduced a promising learning paradigm for SITS, where statistics of spectral values are first summarized across the spatial extent of crop parcels by Multi-Layer Perceptrons (MLPs) that operate independently on unordered sets of pixels.",,,0,not_related
+"However, the lack of flexibility to operate on different input formats, i.e., the pixel-set or image sequence format, imposes restrictions on PSE+TAE or TSViT.",,,0,not_related
+"Thus the computational performance of models is a critical consideration, especially for under-resourced institutions and research [20, 30, 31, 32, 33].",,,0,not_related
+"This allows for much smaller models to be trained (Presto has ∼ 1000× fewer trainable parameters than ScaleMAE and SatMAE), which is important for their practical deployment [20, 30, 31, 32, 33].",,,0,not_related
+"A common approach by remote sensing practitioners is to train single pixel-timeseries models [18, 19, 17, 20, 21, 22, 23, 24].",,,0,not_related
+"From a remote sensing perspective, there are several advantages to processing pixel-timeseries instead of entire images: • Many remote sensing applications are specifically designed for pixel-timeseries, particularly when change over time is critical [18, 19, 17, 20, 21, 22, 23, 24].",,,0,not_related
+"The L-TAE’s parameters are kept to their default values nhead = 16, and key dimension dk = 4.",,,1,related
+"Next, as in [22], the low-resolution features ft are processed pixel-wise with an L-TAE [21, 23]: we obtain attention masks over the T observations for each pixel position of the low resolution feature maps.",,,0,not_related
+"We use a dropout rate of 0.1 on the attention masks after upsampling, and the temporal aggregation is done with L-TAE’s channel grouping strategy [21].",,,1,related
+"Contrary to previous work, we only use the L-TAE’s attention masks, and omit attentionweighting of the sequence of low resolution feature maps.",,,1,related
+"For mono-temporal considera-
+tions, we use the same architecture and simply discard the unnecessary L-TAE-based aggregation.",,,1,related
+"Model Year Embedding Other features Crop type classification TAN [200] 2019 2D-CNN & GRU Attention — temporal TGA [201] 2020 2D-CNN Attention — squeeze and excitation 3D-CNN [202] 2018 3D-CNN DCM [203] 2020 LSTM Self-attention HierbiLSTM [204] 2022 LSTM Self-attention L-TAE [205] 2020 MLP Attention — temporal PSE-TAE [186, 206] 2020 MLP Attention — temporal optionally Multi-modal SITS-BERT [207] 2021 Pre-trained transformer Land Cover classification 1D-CNN [208] 2017 1D-CNN & MLP Hybrid model 1D & 2D-CNNs [209] 2017 1D-CNN; 2D-CNN Ensemble model TempCNN [210] 2019 1D-CNN TASSEL [185] 2020 1D-CNN Self-attention TSI [211] 2021 1D-CNN; LSTM Ensemble model TWINNS [212] 2019 2D-CNN & GRU Attention — temporal; Multi-modal DuPLO [213] 2019 2D-CNN & GRU Attention — temporal Sequential RNN [214] 2018 2D-FCN & LSTM Hybrid model FG-UNET [215] 2019 UNet & 2D-CNN Hybrid model LSTM [216] 2017 LSTM HOb2sRNN [217] 2020 GRU Attention — temporal OD2RNN [218] 2019 GRU Attention — temporal; Multi-modal SITS-Former [219] 2022 3D-CNN Pre-trained transformer Other classification tasks Deforestation [191] 2022 U-Net & LSTM Hybrid model Flood detection [189] 2020 Resnet & GRU Hybrid model Forest understory [193] 2022 2D-CNN & LSTM Ensemble model Road detection [190] 2020 U-Net & convLSTM Hybrid model Vegetation quality [192] 2017 LSTM; GRU Extrinsic regression tasks TempCNN-LFMC [195] 2021 1D-CNN Multi-tempCNN [196] 2022 1D-CNN Multi-modal, ensemble model LFMC estimation [194] 2020 LSTM Multi-modal LFMC estimation [197] 2022 1D-CNN & LSTM Multi-modal, hybrid, ensemble MLDL-net [199] 2020 2D-CNN & LSTM Hybrid model SSTNN [220] 2021 3D-CNN & LSTM Hybrid model MMFVE [198] 2022 2D-CNN Hybrid model",,,0,not_related
+PSE-TAE [186] used a modified transformer called a temporal attention encoder (TAE) for crop mapping and found the TAE performed better than either a CNN or an RNN. L-TAE [205] replaced the TAE with a light-weight transformer which is both computationally efficient and more accurate than the full TAE.,,,0,not_related
+"However, both clustering (TASSEL, [185]), and neural-network based methods, such as the Pixel-Set Encoder [186] have been used for more complex feature extraction.",,,0,not_related
+PSE-TAE [186] used a modified transformer called a temporal attention encoder (TAE) for crop mapping and found the TAE performed better than either a CNN or an RNN.,,,0,not_related
+"Finally, [16] view satellite images as un-ordered sets of pixels and calculate feature statistics at the parcel level, but, in contrast to previously mentioned approaches, their implementation requires knowledge of the object geometry.",,,0,not_related
+"[69] and Garnot and Landrieu [70]), panoptic",,,0,not_related
+[276] shows that standard transformers are not as efficient as RNN-based models for reinforcement learning tasks.,,,0,not_related
+"On the other hand, [276] shows that their attentionbased model can outperform the state-of-the-art in terms of precision, time, and memory requirements for satellite image time series.",,,0,not_related
+[6] illustrates that the different attention heads focus on different portions of the time series.,,,0,not_related
+"Similarly, state-of-the-art approaches for crop-type classification using satellite image sequences were proposed using transformer encoder models [5], [6], [7].",,,0,not_related
+"In the Attn column: T = Transformer, P = PSE-TAE (Garnot et al., 2020) and a tick indicates any other transformer-like attention.",,,1,related
+"The main other attention method used is a model called Pixel-Set Encoder and Temporal Attention Encoder (PSE-TAE) (Garnot et al., 2020).",,,0,not_related
+"We propose that unlike the previous works that build methods on arbitrary sequence lengths [3,8,14,15,19,23] we need some ‘standards’ for driving a solution to become more robust, trustworthy and logically correct instead of being data hungry.",,,1,related
+"[15] Vivien Sainte Fare Garnot, Loic Landrieu, Sebastien Giordano, and Nesrine Chehata.",,,0,not_related
+Tasks [23] [8] [3] [15] [14] [19] SICKLE,,,0,not_related
+"In this work, we decided to follow (PSE + TAE) (Sainte-Fare Garnot et al., 2020) and (PSE+LTAE) (Sainte-Fare Garnot et Landrieu, 2020) approaches since they are well suited to classify satellite image time series and map land cover in agricultural environments while using far fewer parameters and…",,,1,related
+"In 2020, (Sainte-Fare Garnot et al., 2020) presented a new lightweight network for embedding sequences of observations such as satellite time-series.",,,0,not_related
+"The motivation behind this design is that, instead of textural information (that is not relevant on S-2 imagery), the network computes learned statistical descriptors of the spectral distribution of the parcel’s observations (Sainte-Fare Garnot et al., 2020).",,,0,not_related
+"However, the scientific publications suggest that convolutions may not be as suitable for analysing high-resolution satellite images of agricultural plots such as Sentinel images (Sainte-Fare Garnot et al., 2020).",,,0,not_related
+"We adopted the PSE-TAE architecture [Sainte Fare Garnot et al., 2020] to utilize the spatio-temporal resolution of the satellites.",,,1,related
+"In light of this limitation, a series of alternative methodologies have been proposed, including ensemble methods [51], methods derived from statistical analysis [1], pixel-set encoders with temporal attention encoders [37, 5], self-attention with positional encoding [20], and most notably for this paper, CNNs that incorporate the temporal channel [3, 39].",,,0,not_related
+"Two recent papers that introduced Transformer models for SITS classification [5, 37] were shown to outperform the Temporal CNN model of Pelletier et al.",,,0,not_related
+"Transformers PSAE+TAE [5], PSE + LTAE [37], Transformer [20], Informer [48], GL-TAE [49] • Utilise mechanisms such as self-attention combined with positional encoding [20] or pixel set-encoders to encode the spatial context of the data in collaboration with a temporal attention encoder to encode the temporal relations between observations [5, 37].",,,0,not_related
+"RNNs, even with contemporary components such as GRUs still have much longer processing times than Temporal CNNs, in general, [5].",,,0,not_related
+"Whilst additional features are valuable for land-cover classification tasks, it consequently reduces the interpretability of the data and typically enlarges their volume [5].",,,0,not_related
+"Recurrent Neural Networks are regularly used as a comparative baseline within deep learning research for time series classification [5, 57].",,,0,not_related
+"Transformers have previously been cited as being faster than convolutional and recurrent-based models [33, 5], but in the case of this dataset, the Transformer was the second slowest model.",,,0,not_related
+The Transformer was also explored by [29] in a pipeline which includes three Multilayer Perceptrons (MLPs) for feature extraction and final classification.,,,0,not_related
+A method published recently in [54] additionally accounts for the phenology shift observed for a single crop between different geographical regions and with a time shift estimation procedure and a semi-supervised learning scheme it manages to boost the performance of the model proposed in [29].,,,0,not_related
+", the Pixel-Set spatial and the self-attention temporal encoders [11,12].",,,0,not_related
+"Consequently, the researchers have proposed to use Pixel-Set Encoder [12] to obtain learnable statistical descriptors, which is inspired by advances in 3D point cloud processing [33].",,,0,not_related
+"Along this line of research, recent work [12] has pointed out that convolutions are not well-suited for extracting spatial features from satellite data for crop classification due to the highly irregular boundaries of parcel fields and limited texture patterns available.",,,0,not_related
+"Notably, state-of-theart methods based on self-attention input calendar time via positional encoding [6, 42].",,,0,not_related
+"In particular, for each time step t, we concatenate GDD(t) to the intermediate PSE embedding ê(t) before the final PSE output layer MLP2:
+e(t) = MLP2([ê (t) || GDD(t)]), (3)
+where [· || ·] indicates concatenation.",,,1,related
+"Recently, self-attention [52] has led to significant improvements in pixel [40] and parcel classification [41, 42], as well as semantic and panoptic segmentation [6].",,,0,not_related
+"The PSE output layer MLP2 [42] is a multi-layer perceptron (MLP) consisting of a linear layer, batch normalization [14], and ReLU [30] activation function.",,,0,not_related
+The work in [54] combines pixel-set encoder,,,0,not_related
+"…Encoder (PSE) and Lightweight Temporal Attention Encoder (L-TAE), whose accuracy and computational efficiency have been solidified in recent studies (Schneider and Körner, 2020; Kondmann et al., 2021; Garnot and Landrieu, 2020; Garnot et al., 2020), and whose implementations are available.",,,0,not_related
+"As in [43], the number of randomly sampled pixels per parcel in the PSE module is set to 64, and the dropout rate (used in TAE) is set to 0.",,,0,not_related
+"In [43], a modified self-attention-based mechanism architecture, namely pixel-set encoder–temporal-attention encoder (PSE-TAE), extracts more expressive features than CNNs and GRUs.",,,0,not_related
+"To explore different fusion strategies, we adopted pixel set encoder–temporal attention encoder (PSE–TAE) [43] as the deep learning architecture over existing supervised learning algorithms dedicated to SITS classification.",,,1,related
+"Recently, attention-based architectures have been proposed for the SITS classification in the context of crop type mapping [22,43].",,,0,not_related
+We adapt and extend the original GitHub implementation of the PSE-TAE [43] to (i) accommodate multi-sensor inputs and (ii) design the different fusion strategies.,,,1,related
+"It improves the accuracy and computational efficiency compared to the original TAE (Sainte Fare Garnot et al., 2020) by a channel grouping strategy and a learnable master query.",,,0,not_related
+"For domain-invariant methods, we align the LTAE feature vector input to the final classifier ( i.e. , o i in Fig.",,,1,related
+The network consists of two modules: the pixel-set encoder (PSE) and the lightweight temporal attention encoder (LTAE).,,,0,not_related
+We reproduce these methods for SITS by replacing the original feature extractor with PSE + LTAE.,,,1,related
+"Overview of the PSE + LTAE model (Sainte Fare Garnot et al., 2020; Sainte Fare Garnot and Landrieu, 2020).",,,1,related
+"Our implementation is based on the source code of PSE + LTAE (Sainte Fare Garnot and Land-rieu, 2020).",,,1,related
+It improves the accuracy and computational efficiency compared to the original TAE [12] by a channel grouping strategy and a learnable master query.,,,0,not_related
+"If this is not available, TimeMatch may instead be applied for pixel-based classification by inputting single pixels ( S = 1) to PSE + LTAE.",,,0,not_related
+We consider the following baseline methods: • Source-Trained is PSE + LTAE trained on the source domain and applied to the target domain without domain adaptation.,,,1,related
+"To initialize models on the labeled source domain, we follow the original training approach of PSE+LTAE [12].",,,1,related
+"To initialize models on the labeled source domain, we follow the original training approach of PSE + LTAE (Sainte Fare Garnot et al., 2020).",,,1,related
+"As model, we use the existing object-based crop classifier PSE + LTAE introduced by Sainte Fare Garnot et al. (2020), Sainte Fare Garnot and Landrieu (2020).",,,1,related
+"As an alternative, we include the MMD comparison, which is similar to PAN, except the crop classifier is changed to PSE + LTAE.",,,1,related
+The result is temporally processed by LTAE to a single embedding o i which is then passed to the classifier.,,,1,related
+"Recently, the increasing availability of SITS along with advances in deep learning has led to crop classifiers with temporal neural architectures using convolutions [5, 6], recurrent units [7–10], self-attention [11, 12], or combinations thereof [13, 14].",,,0,not_related
+"Thus, the only difference between VRADA, CoDATS, and the DANN approach mentioned here is the backbone architecture, which in our case is the temporal model PSE + LTAE.",,,0,not_related
+• Target-Trained is PSE + LTAE trained with labeled target data using the same classes as the source-trained.,,,1,related
+"The additional input τ i is input to LTAE by encoding the days with sinusoidal positional encoding (Vaswani et al., 2017) and adding the result to the output of PSE.",,,1,related
+"Figure 3: Overview of the PSE+LTAE model [12, 53].",,,1,related
+"In practice, τ (j) i is typically represented by the day-of-year [8, 12], and makes it possible to account for the irregular temporal sampling of most satellites.",,,0,not_related
+"The LTAE module (Sainte Fare Garnot and Landrieu, 2020) handles the temporal context by applying self-attention (Vaswani et al., 2017) with modifications to output a single embedding.",,,0,not_related
+"Given the sequence of PSE-embeddings and the encoded τ i , LTAE outputs a single embedding o i , which is then classified by a multi-layer perceptron to produce class probabilities p ( y",,,1,related
+"Attention layers within deep learning models applied to remote sensing data are proving to be highly effective at classifying time series and more robustly handling noisy data [55,56].",,,0,not_related
+The Temporal Attention Encoder (TAE) [13] and its parsimonious version Lightweight-TAE (LTAE) [11] are temporal sequence encoders based on the language processing literature [35] and adapted for processing SITS.,,,0,not_related
+"The temporal dynamics are modeled with temporal convolutions [25], recurrent neural networks [10], hybrid convolutional-recurrent networks [28], and temporal attention [29, 13, 39].",,,0,not_related
+"The Sentinel2Agri dataset [13], composed of parcels from the same area, is composed of 191 703 parcels.",,,0,not_related
+"Multiple recent studies [19, 11, 13, 30, 12] have solidified the PSE+LTAE (Pixel Set Encoder + Lightweight Temporal Attention) as the state-of-the-art of crop type classification.",,,0,not_related
+The Pixel Set Encoder (PSE) [13] is an efficient spatio-spectral encoder which learns expressive descriptors of the spectral distribution of the observations by randomly sampling pixels within a parcel.,,,0,not_related
+"The state-of-the-art of parcel-based crop type classification from Satellite Image Time Series (SITS) is particularly dynamic, especially since the adoption of deep learning methods [13, 25, 29].",,,0,not_related
+"© 2021 Informa UK Limited, trading as Taylor & Francis Group
+2018; Sitokonstantinou et al. 2018), especially with the joint exploitation of Synthetic Aperture Radar (SAR) and optical images (Veloso et al. 2017; Neetu and Ray 2020).",,,0,not_related
+"which achieved higher classification performance [12], [13].",,,0,not_related
+"attention encoder (PSE-TAE) [12], which has achieved the best performance in a spatial–temporal crop dataset.",,,0,not_related
+"2) Temporal Attention Encoder: The temporal attention encoder (TAE) is a part of the pixel-set encoder and temporal attention encoder (PSE-TAE) [12], which has achieved the best performance in a spatial–temporal crop dataset.",,,0,not_related
+"For TAE, the hyperparameters have been adopted the same as [12].",,,0,not_related
+"As [12] finds, in crop mapping tasks, the hybrid model always acquires the best performance.",,,0,not_related
+"Recently, attention-based approaches have been adapted to encode sequences of remote sensing images and have led to significant progress for pixel-wise and parcel-wise classification [38, 35, 53].",,,0,not_related
+"Therefore, apart from agriculture, this work has presented potentially useful instruments for other application domains including the environment [20], medicine [21], econometrics [22], stock-market data [23], and other.",,,0,not_related
+"Time series classification models for satellite data include 1D convolution neural networks (1D-CNN) [8,18], recurrent neural networks (RNN) [45], and attention-based deep learning [46,47].",,,0,not_related
+For crop classification at the parcel level [2] argue that S2 pixel size is coarser than the typical agricultural textural information and show that using spatial modelling,,,0,not_related
+"This is the same AOI as [2], however, we extend the time period of interest to three years and provide dense annotations for crop types and parcel identities.",,,1,related
+"Some works involve temporal modelling of single pixel or parcel level aggregated features [12], [20], [2] while others jointly capture temporal and spatial patterns [13], [21], [18], [1].",,,0,not_related
+As a sanity check we run further tests with the label groupings from [2] who reported overall accuracy 0.,,,1,related
+"…deep learning (Rußwurm and Körner, 2017, 2018b; Rustowicz et al., 2019; Zhong et al., 2019; Pelletier et al., 2019; Rußwurm et al., 2019; Sainte Fare Garnot et al., 2019, 2020) has shown good performance as a tool for multi-temporal vegetation mapping, on different datasets (Rußwurm and…",,,0,not_related
+"Supervised machine learning – recently in particular deep learning (Rußwurm and Körner, 2017, 2018b; Rustowicz et al., 2019; Zhong et al., 2019; Pelletier et al., 2019; Rußwurm et al., 2019; Sainte Fare Garnot et al., 2019, 2020) has shown good performance as a tool for multi-temporal vegetation mapping, on different datasets (Rußwurm and Körner, 2017, 2018b; Rustowicz et al., 2019; Zhong et al., 2019; Pelletier et al., 2019; Rußwurm et al., 2019; Sainte Fare Garnot et al., 2020).",,,0,not_related
+"In (Rustowicz et al., 2019; Sainte Fare Garnot et al., 2019), satellite images are first processed individually with a CNN to obtain per-image features; then temporal dependencies between these features are modeled with a separate Recurrent Neural Networks (RNNs).",,,0,not_related
+"…Sainte Fare Garnot et al., 2019, 2020) has shown good performance as a tool for multi-temporal vegetation mapping, on different datasets (Rußwurm and Körner, 2017, 2018b; Rustowicz et al., 2019; Zhong et al., 2019; Pelletier et al., 2019; Rußwurm et al., 2019; Sainte Fare Garnot et al., 2020).",,,0,not_related
+"Sainte Fare Garnot et al. (2020) combine pixel-set encoder and transformer (Vaswani et al., 2017) and show improved performance over RNN-based approaches.",,,0,not_related
+"Apart from change detection purposes, sequential satellite images have also been exploited for land-cover classification as in [53], where multitemporal Sentinel-2 agricultural parcels are transformed to unordered sets of pixels.",,,0,not_related
+Authors of [21] propose an hybrid architecture applied at region level.,,,0,not_related
+We run Sainte Fare Garnot and Landrieu’s [27] model since they achieve state-of-the-art performance for an object-based crop mapping task on the Sentinel2-Agri dataset [26].,,,1,related
+"[26], and Sainte Fare Garnot and Landrieu [27] propose a transformer-based approach.",,,0,not_related
+They employed a Transformer encoder to learn temporal correlations from a sequence of pixel-set embeddings [26].,,,0,not_related
+"Transformer was first introduced in NLP as an efficient alternative to RNNs [25], which has been introduced to some remote sensing tasks, such as hyperspectral image classification [51], image captioning [52], and SITS classification [26].",,,0,not_related
+"A transformer architecture for embedding time-sequences is adapted in [14, 15], in order to exploit the temporal dimension of time series data.",,,0,not_related
+"The use of more dedicated networks, such as a Transformer (Vaswani et al., 2017, Sainte Fare Garnot et al., 2020), could improve the results.",,,0,not_related
+[43].,,,0,not_related
+"Meanwhile, spatio-temporal satellite images, bolstered by their increasing attainability, are at the forefront of a comprehensive effort towards automatic Earth monitoring by international agencies [43].",,,0,not_related
+"Compared to our method, the earth mover distance regularizer XE-EMD performs worse on CIFAR100 and NYUDv2, but better on S2-Agri.",,,1,related
+"Note that for S2-Agri, following [29] we have removed all classes that had less than 100 samples among the almost 200 000 parcels to limit the imbalance of the dataset.
+things
+living things
+non-living things
+(a) First level.
+living things
+animals
+mammals
+large carnivores bear, leopard, lion, tiger, wolf
+large omnivores and herbivores
+camel, cattle, chimpanzee, elephant, kangaroo
+medium-sized mammals
+fox, porcupine, possum, raccoon, skunk
+small mammals hamster, mouse, rabbit, shrew, squirrel
+people baby, boy, girl, man, woman
+sea-creatures
+aquatic mammals beaver, dolphin, otter, seal, whale
+fish aquarium fish, flatfish, ray, shark, trout
+non-insect invertebrates
+crab, lobster, snail, spider, worm
+reptiles crocodile, dinosaur, lizard, snake, turtle
+insects bee, beetle, butterfly, caterpillar, cockroach
+plants plants
+fruit and vegetables
+apples, mushrooms, oranges, pears, sweet peppers
+flowers orchids, poppies, roses, sunflowers, tulips
+trees maple, oak, palm, pine, willow
+(b) Living things branch.
+non-living things
+Agricultural Parcel",,,0,not_related
+"1 Datasets and Backbones We evaluate our approach on different public datasets and classification tasks: image classification on CIFAR100 [21], RGB-D image segmentation on NYUDv2 [25], and image sequence classification on S2-Agri [29].",,,1,related
+Image sequence classification on S2-Agri: S2-Agri is a satellite time series dataset of 189 971 sequences of superspectral images of agricultural parcels.,,,0,not_related
+"Our models also improve the ER compared to XE by 4%, 4%, and 15% for CIFAR100, NYUDv2, and S2-Agri respectively.",,,1,related
+"For S2-Agri, we built the hierarchy by combining the two levels available in the dataset S2 of Garnot et al. with the fine-grained description of the agricutltural parcel classes on the French Payment Agency’s website (in French):
+https://www1.telepac.agriculture.gouv.fr/telepac/pdf/tas/2017/ Dossier-PAC-2017_notice_cultures-precisions.pdf.",,,1,related
+"We use the PSE+TAE architecture [29] as the backbone, and follow their 5-fold cross-validation scheme for training.",,,1,related
+"To address the high class imbalance of S2-Agri, we weight each terms in Ldata by the inverse of the square root of the classes’ frequency.",,,1,related
+"Metric-guided prototype models bring improvements compared to XE of up to 9%, 7%, and 11% in AC for CIFAR100, NYUDv2, and S2-Agri respectively.",,,0,not_related
+"We show on three public datasets (CIFAR100 [21], NYUDv2 [25], Sentinel2-Agri [29]) that our method can easily be combined with state-of-the-art backbone networks to decrease the cost of their predictions.",,,1,related
+"The hierarchy of CIFAR100 is presented in Figure 4, NYUDv2 in Figure 5, and S2-Agri in Figure 6.",,,0,not_related
+"We evaluate our approach on different public datasets and classification tasks: image classification on CIFAR100 [21], RGB-D image segmentation on NYUDv2 [25], and image sequence classification on S2-Agri [29].",,,1,related
+We evaluate the performance of our approach on the openaccess dataset Sentinel2-Agri [5].,,,1,related
+"In Table 1, we report the performances of competing methods (taken from [5]) and the L-TAE architecture, all obtained with a 5-fold cross-validation scheme.",,,1,related
+"In order to remove the effects of the different spatial encoders, we use the same spatial encoder (a pixel set encoder [5]) in all experiments.",,,1,related
+[5].,,,0,not_related
+This work has been adapted to process parcels instead of pixels [5].,,,0,not_related
+"[13], initially developed for Natural Language Processing (NLP), has been successfully used and adapted to remote sensing tasks [11,5].",,,0,not_related
+18 PSE+TAE [5] 94.,,,0,not_related
+"We evaluate our proposed method with the public dataset Sentinel2-Agri [5], comprised of 191 703 sequences of 24 superspectral images of agricultural parcels",,,1,related
+"ELECTS augments and is compatible with recent advances in end-to-end trainable deep time series classification models [13, 14, 15].",,,0,not_related
+"Meanwhile, end-to-end deep learning architectures based on recurrence [13], self-attention [14], or convolution [15] can map a variable length series into a fixed-length representation natively.",,,0,not_related
+"We argue [43] shows similarity to our work in the methodology part, because both proposed methods are applied to time-series Earth observation images.",,,1,related
+[43] took randomly sampled pixels to classify the whole image.,,,0,not_related
+[43] proposed a transformer network to encode a set of pixels to classify,,,0,not_related
+"But the two models serve two different purposes, the method proposed in this manuscript is intended to segment the image, while the network of [43] is trained for image classification.",,,0,not_related
+"[26] propose the pixel-set encoder temporal attention encoder, a transformer-based strategy equipped with a pixel-set encoder and a self-attention module for agricultural parcels",,,0,not_related
+"RNNs, even with contemporary components such as GRUs still have much longer processing times than Temporal CNNs in general [5].",,,0,not_related
+More novel approaches utilise mechanisms such as self-attention [5] or modify coarsely detailed input images using approaches such as pixel set-encoders [28].,,,0,not_related
+"Whilst additional features are valuable for land-cover classification tasks, it consequently reduces the interpretability of the data and typically enlarges their volume [5].",,,0,not_related
+"Recurrent Neural Networks are regularly used as a comparative baseline within deep learning research for time series classification [5, 40].",,,0,not_related
+"sensors acquiring images with different spatial, spectral, and temporal resolution [1], [2].",,,0,not_related
+"The Sentinel-2 mission, which collects multispectral data at up to 10 m resolution at least every 5 days, has become particularly popular for crop type classification since its launch in 2015 [27, 33, 34, 38].",,,0,not_related
+A temporal attention encoder with pixel-set encoders (PSE) is successfully applied to randomly sampled pixels of crop parcels in [38].,,,0,not_related
+"Third, we follow [38] by randomly sampling pixels from a parcel as input to a temporal self-attention model.",,,1,related
+PselTae/PseTae with Planet Fusion data are the best performing models but only reach an accuracy of about two-thirds.,,,0,not_related
+"A third variant of spatial and temporal encoding has been proposed by [12, 38] where fspat is implemented as a Pixel Set Encoder (Pse).",,,0,not_related
+This combination yields the PseTae [38] and a light-weight variant PseLTae [12].,,,0,not_related
+"One of the only approaches which manage this is based on pixel-set encoding and temporal self-attention [12, 38] with a high score of about 2/3 in accuracy.",,,0,not_related
+"S1 and S2 with hand-crafted features on their own reach accuracies of 58% and 59% respectively and 62% combined which surpasses all deep-learning models but PseLTae, PseTae and TempCNN with pixel average.",,,0,not_related
+"In [18], the authors presented an architecture including pixelset and temporal attention encoders in order to improve classification precision for satellite image time series.",,,0,not_related
+"There were also several attempts to jointly exploit the spatial and temporal dimensions of SITS data by the means of deep learning [5, 6, 7].",,,0,not_related
+"Very recently, inspired by the Transformer scaling successes in NLP [10], researches have also successfully developed their Transformerbased or attention-based models for time series analysis task, such as video understanding [11], forecasting of multivariate time series data [14, 15], satellite image time series classification [12], and hyperspectral image (HSI) classification [16].",,,0,not_related
+"[12] proposed a spatio-temporal classifier for automatic classification of satellite image time series, in which a Pixel-Set Encoder is used to extract spatial features, and a self-attention-based temporal encoder is used to extract temporal features.",,,0,not_related
+"…datasets with fine-grained class hierarchies: image classification on CIFAR100 (Krizhevsky et al., 2009) and iNaturalist-19 (Van Horn et al., 2018), RGB-D image segmentation on NYUDv2 (Nathan Silberman & Fergus, 2012), and image sequence classification on S2-Agri (Sainte Fare Garnot et al., 2020).",,,0,not_related
+"We evaluate our approach with different tasks on public datasets with fine-grained class hierarchies: image classification on CIFAR100 (Krizhevsky et al., 2009) and iNaturalist-19 (Van Horn et al., 2018), RGB-D image segmentation on NYUDv2 (Nathan Silberman & Fergus, 2012), and image sequence classification on S2-Agri (Sainte Fare Garnot et al., 2020).",,,1,related
+"We use the PSE+TAE architecture (Sainte Fare Garnot et al., 2020) as the backbone, and follow their 5-fold cross-validation scheme for training.",,,1,related

@@ -1,0 +1,133 @@
+text,label_score,label,target_predict,target_predict_label
+"When the context classes are known, another approach is to make sure that the learned attention maps for each class do not overlap [27].",,,0,not_related
+"With the emergence of deep learning approaches, which are capable of automatically extracting features without leveraging user knowledge, the extraction of spurious correlations induced by contextual bias has started to be perceived as a potential issue [13, 27, 29].",,,0,not_related
+"In another line of research [10, 32, 4, 9, 26, 29, 23, 33], the authors assume knowledge of the underlying data collection algorithm and provide asymptotically valid confidence intervals.",,,0,not_related
+"As such, this phenomenon of “contextual bias” refers to the case where a model’s attention is shifting to contextual objects which are not directly relevant to the model’s goal [83].",,,0,not_related
+"Using a biased dataset can induce a model to reference contextual objects in prediction, which is defined to be unfair [83].",,,0,not_related
+"Consequently, using this potential vulnerability, an attacker may be able to drastically decrease model accuracy by showing the ball images without dogs [83].",,,0,not_related
+"When CNNs are not trained properly with generalized and representative datasets, there can be various kinds of bias that can introduce several weaknesses in the model performance [29, 83].",,,0,not_related
+used Class Activation Maps as a “weak” automatic attention annotation [83].,,,0,not_related
+"While contextual bias has become a highly crucial issue in ML and beyond [29, 40, 56, 75, 83, 104], spotting the vulnerability and steering the model is highly challenging or not even feasible [39] even for experienced ML engineers [43].",,,0,not_related
+"In handling contextual bias, several studies outside of HCI commonly apply mathematical approaches rather than incorporating human input [75, 83].",,,0,not_related
+"In such a case, the model’s attention visualized through local explanation is on the ball rather than a dog [83].",,,0,not_related
+Singh et al.15 devised a unique approach to address the contextual bias that exists in image classifiers.,,,0,not_related
+Singh et al.(15) devised a unique approach to address the contextual bias that exists in image classifiers.,,,0,not_related
+"Contextual bias occurs when such patterns are falsely associated with certain characteristics of the image, such as geography, race, and gender.(15)",,,0,not_related
+"Strongly relying on context can hurt the accuracy and generalizability of the model when the co-occurrence patterns are absent.(15) Although it enables the algorithm to predict objects more accurately, it introduces false positives and false negatives in the prediction in the absence of a related object.",,,0,not_related
+"tigating what is depicted in the most salient region of an image) (Hendricks et al. 2018; Jia, Lansdall-Welfare, and Cristianini 2018; Muthukumar et al. 2018; Singh et al. 2020).",,,0,not_related
+"Deep learning models are generally sensitive to object contexts and backgrounds, and learn spurious correlations that impede their ability to recognize objects and scenes in novel contexts [19, 20, 62, 75].",,,0,not_related
+"These include enforcing consistency against augmentations [38, 37, 20], smoothness [11, 31, 26], separation of classes [64, 37, 54, 32, 52], or constraining the model’s attention [17, 3].",,,0,not_related
+"2 [52] Krishna Kumar Singh, Dhruv Mahajan, Kristen Grauman, Yong Jae Lee, Matt Feiszli, and Deepti Ghadiyaram.",,,0,not_related
+"Prior work has shown that models exploit co-occurrences between an object and its context which helps overall recognition accuracy, but can hurt performance when that context is absent (Singh et al. 2020).",,,0,not_related
+"2 [29] Krishna Kumar Singh, Dhruv Mahajan, Kristen Grauman, Yong Jae Lee, Matt Feiszli, and Deepti Ghadiyaram.",,,0,not_related
+"Related Work Our work is related to a growing body of work studying biases in visual recognition [7, 16, 26, 29, 32, 37, 38].",,,0,not_related
+"Visual recognition models are known to encode societal biases [5, 16, 29, 39, 42].",,,0,not_related
+"Such unintended correlations can cause the model to act in a biased way, such as having lower accuracy on certain sub-populations of the data [4, 7, 12, 20, 27].",,,0,not_related
+"These spurious correlations occur when a feature is statistically informative for a majority of training examples but does not actually capture the underlying relationship between the input features and the target labels [61, 54].",,,0,not_related
+"…Neural network representations have been shown to not generalize well to various domain shifts (e.g. pose (Alcorn et al. 2019), corruptions (Hendrycks and Dietterich 2019)) and to suffer from biases (e.g. texture (Geirhos et al. 2019), context (Singh et al. 2020), background (Xiao et al. 2021)).",,,0,not_related
+"2019), context (Singh et al. 2020), background (Xiao et al.",,,0,not_related
+"In the field of EGL, we have started to see several works that apply the contrastive objective to the model explanation between similar/dissimilar samples to build up the explanation objective [38, 110, 135, 163].",,,1,related
+[135] proposed to align the target model’s Class Activation Maps (CAM) [173] explanation with a pre-trained model’s explanation by minimizing the overlap between each classes explanation.,,,0,not_related
+[27] devised a method to detach the object from the context to improve classification.,,,0,not_related
+"6 [27] Krishna Kumar Singh, Dhruv Mahajan, Kristen Grauman, Yong Jae Lee, Matt Feiszli, and Deepti Ghadiyaram.",,,0,not_related
+"(Alvi, Zisserman, and Nellåker 2018; Kim et al. 2019; McDuff et al. 2019; Singh et al. 2020; Li, Li, and Vasconcelos 2018; Li and Vasconcelos 2019) use bias labels to mit-
+igate the impact of bias labels when classifying target labels.",,,0,not_related
+"(Singh et al. 2020) proposes overlap loss, which is measured based on the class activation map.",,,0,not_related
+"(Alvi, Zisserman, and Nellåker 2018; Kim et al. 2019; McDuff et al. 2019; Singh et al. 2020; Li, Li, and Vasconcelos 2018; Li and Vasconcelos 2019) use bias labels to mitigate the impact of bias labels when classifying target labels.",,,0,not_related
+"However, numerous works [46, 47, 40] found that models suffer from contextual biases caused by co-occurrences and try to improve the object-centric generalization ability by removing such biases.",,,0,not_related
+"Recent works [47, 40] find out that mitigating contextual biases, caused by co-occurrences of objects and context in a complex scene, would improve the generalization ability of SSL to these downstream tasks.",,,0,not_related
+Crowd-collection of VG images creates selection bias and crowd-annotation of these images create label-bias [29] and co-occurring-bias [25].,,,0,not_related
+"Therefore, work was already done to decorrelate objects and their visual features to improve model generalization [41].",,,0,not_related
+", 2018; Edwards and Storkey, 2015; Elazar and Goldberg, 2018), causal inference (Singh et al., 2020; Kim et al., 2019) and invariant risk minimization (Adragna et al.",,,0,not_related
+"…encoder level by taking the advantage of the adversarial learning (Wang et al., 2019; Wadsworth et al., 2018; Edwards and Storkey, 2015; Elazar and Goldberg, 2018), causal inference (Singh et al., 2020; Kim et al., 2019) and invariant risk minimization (Adragna et al., 2020; Arjovsky et al., 2019).",,,0,not_related
+"…reduce the model discrimination (Wang et al., 2019; Wadsworth et al., 2018; Edwards and Storkey, 2015; Kim et al., 2019; Elazar and Goldberg, 2018; Singh et al., 2020; Zunino et al., 2021; Rieger et al., 2020; Liu and Avci, 2019; Kusner et al., 2017; Kilbertus et al., 2017; Cheng et al., 2021;…",,,0,not_related
+"Rieger et al. (2020); Zunino et al. (2021) made use of the model explainability to remove subset features that incurs bias, while Singh et al. (2020); Kim et al. (2019) concentrated on the causal fairness features to get rid of undesirable bias correlation in the training.",,,0,not_related
+", 2020; Buolamwini and Gebru, 2018), many efficient methods have been proposed to reduce the model discrimination (Wang et al., 2019; Wadsworth et al., 2018; Edwards and Storkey, 2015; Kim et al., 2019; Elazar and Goldberg, 2018; Singh et al., 2020; Zunino et al., 2021; Rieger et al., 2020; Liu and Avci, 2019; Kusner et al., 2017; Kilbertus et al., 2017; Cheng et al., 2021; Kang et al., 2019).",,,0,not_related
+[51] propose a feature splitting approach to mitigate contextual bias.,,,0,not_related
+"What blindspots do we study? We consider blindspots discovered by prior works (Hohman et al., 2019; Sohoni et al., 2020; Singh et al., 2020; Plumb et al., 2022; Singla et al., 2021) as well as novel blindspots (Adebayo et al.",,,1,related
+"More broadly, finding systemic errors can help us detect algorithmic bias (Buolamwini & Gebru, 2018) or sensitivity to distribution shifts (Sagawa et al., 2020; Singh et al., 2020).",,,0,not_related
+"We consider blindspots discovered by prior works (Hohman et al., 2019; Sohoni et al., 2020; Singh et al., 2020; Plumb et al., 2022; Singla et al., 2021) as well as novel blindspots (Adebayo et al., 2022).",,,1,related
+"Some common assumptions are: • Access to metadata help define coherent subsets of the data (e.g., Kim et al., 2018; Buolamwini & Gebru, 2018; Singh et al., 2020).",,,0,not_related
+"In Table 6 of their paper, Singh et al. (2020) organize the spurious patterns that they identify by their own measure of bias.",,,0,not_related
+"Some common assumptions are:
+• Access to metadata help define coherent subsets of the data (e.g., Kim et al., 2018; Buolamwini & Gebru, 2018; Singh et al., 2020).",,,0,not_related
+[37] focus on addressing context biases for visual classifier by explicitly learning a robust feature subspace of a category.,,,0,not_related
+"Some of these studies (Alvi et al., 2018; Kim et al., 2019; McDuff et al., 2019; Singh et al., 2020; Li et al., 2018; Li & Vasconcelos, 2019), used bias labels for each sample to reduce the influence of the bias labels when classifying target labels.",,,0,not_related
+"Furthermore, Singh
+et al. (2020) proposed a new overlap loss defined by a class activation map (CAM).",,,0,not_related
+"To reduce the dataset bias, initial studies (Kim et al., 2019; McDuff et al., 2019; Singh et al., 2020; Li & Vasconcelos, 2019) have frequently assumed a case where labels with bias attributes are provided, but these additional labels provided through human effort are expensive.",,,0,not_related
+"” To reduce the dataset bias, initial studies (Kim et al., 2019; McDuff et al., 2019; Singh et al., 2020; Li & Vasconcelos, 2019) have frequently assumed a case where labels with bias attributes are provided, but these additional labels provided through human effort are expensive.",,,0,not_related
+"Various studies (Alvi et al., 2018; Kim et al., 2019; McDuff et al., 2019; Singh et al., 2020; Teney et al., 2021) have attempted to reduce dataset bias using explicit bias labels.",,,0,not_related
+"Besides, to have a robust decision, [9] uses mixup augmentation and [10] investigates how to disentangle object from its co-occurring context.",,,0,not_related
+[15] study the problem of contextual biases learned by deep models based on frequently co-occuring categories.,,,0,not_related
+[47] investigated the co-occurence between objects and their contexts for each category and attempted to decorrelate them to reduce classifiers’ dependency on the contexts.,,,0,not_related
+"We hypothesize this would be especially useful for combating background and contextual biases [3, 63].",,,1,related
+"Fairness through explanation is another bias mitigation technique [17,9,18], this technique requires fine-grained feature-level annotation as the domain knowledge to train the model to only focus on bias-unrelated features in the original input.",,,0,not_related
+"Others use slightly less expensive image-level annotations of the biased feature [1, 14, 38, 40, 43].",,,0,not_related
+"On the contrary, the latter benefits from different augmentations and another pretext task and thereby avoid a potential pitfall of DINO: encouraging contextual bias [17], which occurs when the similarity between the representations of views depicting distinct tissue types is enforced.",,,0,not_related
+"To ensure that the pretext task does not encourage contextual biases [17], we only employ augmentations that change the image pixels’ values, but not their locations, such that the semantic content of the two augmented views is identical.",,,1,related
+"These methods have also been used for regularizing CNNs to focus on task-relevant features and to be robust against spurious features [18, 3, 8].",,,0,not_related
+"This problem frequently occurs in image recognition because the context may change after the models are deployed [3, 5], as illustrated in Fig.",,,0,not_related
+"However, in the real world, this assumption may not be valid and the distributions easily shift because of changing contexts in images such as in the co-occurrences between backgrounds and objects [3, 4, 5].",,,0,not_related
+"Thus, to train robust and reliable CNNs, it is important to focus on taskrelevant features that are originally related to the task and are invariant to the training and test distributions [3, 8].",,,0,not_related
+"hoc explanation modules for generating attention maps [3, 8].",,,0,not_related
+"As a result, the training is prone to inherit bias through classimbalance [19, 20] or co-occurrence statistics [21] from the training data, and neglects synergies in the real world, where there exist semantic similarities between classes.",,,0,not_related
+"…types of biases due to factors such as background, color, racial (Gwilliam et al. (2021)), gender (Tang et al. (2021); Zhao et al. (2017)), contextual (Singh et al. (2020)), co-occurrence (Petsiuk et al. (2021)), spatial noise, dataset (Tommasi et al. (2017)) and object-size (Nguyen et al. (2020)).",,,0,not_related
+[40] proposed the use of statistical information to identify biased categories.,,,0,not_related
+"In a supervised setting, we show that our fair selection algorithm achieves cv value of almost 0, thus reducing the representational bias and improving model performance over the baselines techniques [46, 23, 25, 10, 36].",,,1,related
+Dataset repair approaches are often criticized for possible data reduction due to re-sampling [36].,,,0,not_related
+"Recent works [36] have also identified co-occurring bias between a pair of classes, and using class activation",,,0,not_related
+"In [36] authors identified 20 most biased pair of categories in COCO such as (Skateboard, Person) where Skateboard mostly co-occurs with Person than exclusively.",,,0,not_related
+"80K COCO images such that the number of images of minority class, with and without biased co-occurring class, becomes balanced for all pairs given by [36].",,,0,not_related
+"Recent works [36] have proposed algorithmic changes to handle co-occurring bias in the dataset, which restricts its scope to be re-integrated in every application.",,,0,not_related
+that the network may have inadvertently learned to use to make its decision [33].,,,0,not_related
+[31] used CAM [41] and feature-slitting methods to decorrelate category and its co-occurring context but only applicable to fixed category pairs.,,,0,not_related
+"Other works use expensive sampling or refinement steps to increase the spatial extent of CAMs [34, 41, 42].",,,0,not_related
+"However, there are challenging scenarios for which DNNs have difficulty regardless of pre-training or architectural changes, such as highly occluded scenes, or objects appearing out of their normal context (Singh et al., 2020).",,,0,not_related
+"However, there are challenging scenarios for which DNNs have difficulty regardless of pre-training or architectural changes, such as highly occluded scenes, or objects appearing out of their normal context [20].",,,0,not_related
+", contextual bias [22], or adjacent object and background, i.",,,0,not_related
+"Specifically, the co-occurrence of different objects is called contextual bias [22], and that of object and background is called background bias [23].",,,0,not_related
+"Models taking shortcuts were widely observed from various tasks, such as object detection (Singh et al., 2020), NLI (Tu et al.",,,0,not_related
+"Models taking shortcuts were widely observed from various tasks, such as object detection (Singh et al., 2020), NLI (Tu et al., 2020), and also for our target task of multihop QA (Min et al., 2019; Chen and Durrett, 2019; Trivedi et al., 2020), where models learn simple heuristic rules, answering…",,,0,not_related
+"In a similar spirit to our work, (Singh et al., 2020) aim to identify and mitigate contextual bias, however, they assume access to the whole training setup and data; which is a limiting factor in practical scenarios.",,,1,related
+"Another family of methods [13, 14, 15] implicitly learn debiased representations by incorporating explanation during model training to suppress it from paying high attention to biased features in the original input.",,,0,not_related
+"The second representative family of mitigation methods is based on explainability [13, 14, 15, 24].",,,0,not_related
+"Object hallucination by deep detectors can be causes by sensitivity to the absolute position in the image [14, 15] while also affected by scene context [16, 17, 18, 19, 20].",,,0,not_related
+[6] follow a similar principle and look for object pairs such that the presence of one object increases the prediction probability of the other object.,,,0,not_related
+", tie-cat) while prior work [3, 5, 6] has only found positive SPs (e.",,,0,not_related
+"These data augmentation or regularization based approaches represent SPIRE’s most direct competition and, as a result, we compare against “Right for the Right Reasons” (RRR) [1], “Quantifying and Controlling the Effects of Context” (QCEC) [3], “Contextual Decomposition Explanation Penalization” (CDEP) [4], “Gradient Supervision” (GS) [5], and the “Feature Splitting” (FS) method from [6] because they all directly apply to image classification.",,,1,related
+"We compare SPIRE to RRR [1], QCEC [3], CDEP [4], GS [5], and FS [6] (Section 2).",,,1,related
+"These methods have been found to be less effective than methods that use data augmentation or regularization [4, 6, 13, 15].",,,0,not_related
+"However, it is unwanted since we know that such biases may not exist in some final test images (Singh et al. 2020).",,,1,related
+[9] point out the dangers of contextual bias in visual recognition datasets.,,,0,not_related
+[9] proposes two methods for mitigating such contextual biases and improving the robustness of the learnt feature representations.,,,0,not_related
+This is because the top-down approaches are strongly biased toward contextual cues from seen classes [35].,,,0,not_related
+"ImageNet [21] rely implicitly but strongly on context [15, 4, 31].",,,0,not_related
+"Further mitigation techniques are outside of our scope, but we look to works like Singh et al. (2020); Wang et al. (2019); Agarwal et al. (2020).
+very few situations in which predicting sensitive attributes makes sense (Scheuerman et al., 2020; Larson, 2017), so we should carefully consider if this…",,,1,related
+Note that our approach is similar to previous work that addresses contextual bias [39].,,,0,not_related
+"Additional work has used multi-label annotations (Singh et al., 2020), pixel-level annotations (Hendricks et al.",,,1,related
+"Additional work has used multi-label annotations (Singh et al., 2020), pixel-level annotations (Hendricks et al., 2018), or other annotated features (Kim et al., 2019) to help train debiased models, although these kinds of annotations will not always be available.",,,1,related
+[12] also proposed a disentangling method to split the representation in half and selectively learns the feature to mitigate contextual bias issue in the object recognition task.,,,0,not_related
+"On the other hand, disentangling methods [2], [12] are introduced to split the representation into sub-representations as target and protected attribute information.",,,0,not_related
+"However, there are challenging scenarios for which DNNs have difficulty on regardless of pre-training or architectural changes, such as highly occluded scenes, or objects appearing out of their normal context [35].",,,0,not_related
+"Previous studies define an attribute, which people should not be discriminated against by, as the protected attribute and propose various fairness methods [4, 5, 25, 34, 22, 10].",,,0,not_related
+"protected attribute information since the protected attribute is correlated with other attributes in the real world dataset [26, 11, 25].",,,0,not_related
+"Similarly, this need may be found in analyzing scene graphs, object co-currency, and contextual information [20, 26, 35].",,,0,not_related
+"• Image classifiers have been shown to be fragile when objects from one image are transplanted in another image [12], and can be biased by object context [13, 14].",,,0,not_related
+"[14] Krishna Kumar Singh, Dhruv Mahajan, Kristen Grauman, Yong Jae Lee, Matt Feiszli, and Deepti Ghadiyaram.",,,0,not_related
+"What blindspots do we study? We consider blindspots discovered by prior works (Hohman et al., 2019; Sohoni et al., 2020; Singh et al., 2020; Plumb et al., 2022; Singla et al., 2021) as well as novel blindspots (Adebayo et al.",,,1,related
+"• Access to metadata help define coherent subsets of the data (e.g., Kim et al., 2018; Buolamwini & Gebru, 2018; Singh et al., 2020).",,,0,not_related
+"More broadly, finding systemic errors can help us detect algorithmic bias (Buolamwini & Gebru, 2018) or sensitivity to distribution shifts (Sagawa et al., 2020; Singh et al., 2020).",,,0,not_related
+"We consider blindspots discovered by prior works (Hohman et al., 2019; Sohoni et al., 2020; Singh et al., 2020; Plumb et al., 2022; Singla et al., 2021) as well as novel blindspots (Adebayo et al., 2022).",,,1,related
+"In Table 6 of their paper, Singh et al. (2020) organize the spurious patterns that they identify by their own measure of bias.",,,0,not_related
+"Some common assumptions are:
+• Access to metadata help define coherent subsets of the data (e.g., Kim et al., 2018; Buolamwini & Gebru, 2018; Singh et al., 2020).",,,0,not_related
+[58] regarded co-occurring objects in the image as context bias in the multilabel classification tasks.,,,0,not_related
+"While much prior work in vision has investigated bias in image classification systems [24, 32, 48], object detection models differ in model architecture and performance metrics, necessitating their own study.",,,0,not_related
+contextual [32] and co-occurrence biases [49] across visually diverse driving scenarios.,,,0,not_related
+"Deep networks trained on natural image datasets like ImageNet (Krizhevsky et al., 2012) have been demonstrated to rely strongly on context (Geirhos et al., 2018), (Brendel and Bethge, 2019), (Singh et al., 2020).",,,0,not_related
+"Multiple studies have shown that context can be both beneficial and detrimental to the performance of neural networks (Rosenfeld et al., 2018) (Singh et al., 2020) (Zhang et al., 2020).",,,0,not_related
+"4), and often results in poor generalization due to scene biases [14, 83].",,,0,not_related
+"Because of high frequency of label co-occurrence with multilabel data set, deep neural networks learn biased feature representation of particular multi-label instances [5]–[7] that may not be explicitly related to represent an individual class.",,,0,not_related
+[5] present a method of using class activation map (CAM) to reduce the CAM similarity of different objects for co-occurring samples.,,,0,not_related

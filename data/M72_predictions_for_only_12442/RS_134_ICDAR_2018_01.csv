@@ -1,0 +1,105 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Distinct from previous segmentationbased methods [35, 26, 28, 20] in the “split” stage, we aim to distinguish each table separation line and formulate table separation line detection as an instance segmentation task.",1,related,1,positive
+"The original dataset suffered from incorrect ground truth annotations, hence we list the corrected version of the dataset from [24], which has 1967 images, in Table 2.",1,related,0,negative
+"Methods span
+5 makesense.ai 6 http://www.astroexplorer.org/
+the range of object detection using models like YOLO [32, 38, 47] to, more recently, Faster R-CNN [16, 34, 37, 43, 49] and Mask-CNN [2, 18, 26].",1,related,1,positive
+"ICDAR2013 UNLV Method Prec Recall F1 Prec Recall F1
+TabbyPDF 78.90 84.50 81.60 − − − GraphTSR 81.90 85.50 83.70 − − − DeepDeSRT 57.30 56.40 56.80 − − − CATT-Net 94.10 90.70 92.30 86.28 88.31 87.24 Ours 92.85 93.29 93.04 92.66 86.78 89.52",1,related,1,positive
+"For the TSR task, we list TabbyPDF [19], GraphTSR [7], DeepDeSRT [8] and CATT-Net [17] as benchmark models.",1,related,1,positive
+"The performance scores of TabbyPDF, GraphTSR, and DeepDeSRT on the ICDAR2013 dataset come from the study [7].",1,related,0,negative
+"We approach table detection as a general object detection problem, as was done by Schreiber et al. ((Schreiber et al. 2017)), and use a Faster-RCNN model to detect and localize tables in page images (Ren et al. 2015).",1,related,1,positive
+Table 1: Performance Comparison of TSR-DSAW against TableNet [1] and DeepDeSRT [2].,1,related,1,positive
+"Experimental Results: Now, we present comparison results of TSR-DSAW against two previous methods of TSR - TableNet [1] and DeepDeSRT [2].",1,related,1,positive
+"We also compare performance of several best methods on this dataset in Table 5, including rule-based method using text extracted from PDF files [43] and page images [2], deep CNN-basedmethods likeDeepDeSRT [16], TableNet [23], CascadeTableNet [18], and the result of two commercial systems ABBYY FineReader 11.0 and OmniPage 18 Professional.",1,related,1,positive
+"We also compare performance of several best methods on this dataset in Table 5, including rule-based method using text extracted from PDF files [43] and page images [2], deep CNN-basedmethods likeDeepDeSRT [16], TableNet [23], CascadeTableNet [18], and the result of two commercial systems ABBYY FineReader 11.",1,related,1,positive
+"In Section 2.1, we introduced the application of the Convolutional Neural Network (CNN) in document layout analysis (He et al., 2015; Ren et al., 2016; He et al., 2018; Liu et al., 2016; Redmon & Farhadi, 2018; Yang et al., 2017a; Schreiber et al., 2017).",1,related,1,positive
+"For DeepDeSRT [26], we use our implementation.",1,related,1,positive
+"In order to compare our method against others on TUCD dataset, we develop our implementation of DeepDeSRT [26], and use open source implementations of DGCNN (TIES) [22], SPLERGE [30], and TabStruct-Net [24].",1,related,1,positive
+Method Train Dataset P R F1 DeepDeSRT [32] ICDAR-2013 0.,1,related,1,positive
+"For direct comparison with previous work [20], we used the cleaned version of the dataset by Reference [7] and did not incorporate any sample of the dataset in the training set.",1,related,0,negative
+"For a comprehensive explanation of the RFP module, please refer to Reference [24].",1,related,0,negative
+"(4)
+In case of SAC explained in Reference [24], the above convolutionalayer converts into:
+Con(i, w, 1) SAC−−→ S(i) .",1,related,1,positive
+"We direct our readers to References [15,16,38–40] for a thorough understanding of these rule-based methods.",1,related,1,positive
+We refer readers to Reference [24] for a detailed explanation on SAC.,1,related,0,negative
+"If we include feature transformations Tj before joining
+the feedback connections from FPN to the bottom-up backbone, then, the output feature f j of RFP is explained in Reference [24] as:
+f j = Fj( f j+1, ij), ij = Nj(ij−1, Tj( f j)), (2)
+where j enumerates over S, and the transformation of FPN to RFP makes it a recursive function.",1,related,1,positive
+"Different from Census; CDC; BLS; IMF that only provide PDF reports where table hierarchies are hard to extract precisely (Schreiber et al., 2017), StaCan and NSF also provide reports in HTML, from which cell information such as text and formats can be extracted precisely using HTML tags.",1,related,1,positive
+"Altogether, our weak supervision outperforms the state-of-theart (Schreiber et al. 2018) by a considerable margin.",1,related,0,negative
+"We also compared the performance of CluSTi to DeepDeSRT [34], which is known as the best",1,related,1,positive
+"We also compared the performance of CluSTi to DeepDeSRT [34], which is known as the best
+recent method for table structure recognition on the ICDAR 2013 and ICDAR 2019 competition’s datasets.",1,related,1,positive
+"This result also outperformed DeepDeSRT, which is known as the best recent method applied on document images.",1,related,1,positive
+CluSTi outperforms DeepDeSRT with an overall F1-score of 98.48% on 193 document images compared to 91.44% on 34 images (Table 2).,1,related,0,negative
+"This method outperformed DeepDeSRT and TableNet with a significant higher F1-score on the 34 test images of ICDAR 2013 competition dataset, that demonstrated for the efficiency of our method.",1,related,0,negative
+The authors have reported the F1-score of 93.42% with an IOU of 0.5 on the ICDAR 2013 dataset [66].,1,related,0,negative
+"In order to compare our approach with state-of-the-art methods [27], [32], [33], we have used the identical evaluation metrics which are explained below:",1,related,1,positive
+"We explore three neural models used in previous works on abusive language classi-
+cation: Convolutional Neural Network (CNN)
+GRU
+fasttext .887 .661 .312 .284
+word2vec .887 .633 .301 .254
+-GRU random .868 .586 .236 .219 fasttext .891 .639 .324 .365 word2vec .890 .631 .315 .306
+Table 4: Results on st. False negative/positive equality differences are larger when pre-trained embedding is used and CNN or -RNN is trained
+(Park and Fung, 2017), Gated Recurrent Unit (GRU) (Cho et al., 2014), and Bidirectional GRU with self-attention ( -GRU) (Pavlopoulos et al.,
+2017), but with a simpler mechanism used in
+Felbo et al. (2017).",1,related,1,positive
+"CNN: Convolution layers with 3 lters with the size of [3,4,5], feature map size=100, Embedding Size=300, Maxpooling, Dropout=0.5
+2.",1,related,1,positive
+In: IJCNN. pp. 1–8 (2019) 38.,1,related,0,negative
+deepdesrt [7] scitsr 12K S-A 0.,1,related,1,positive
+"In S-A, we observe that our model outperforms deepdesrt [7] method by a 27.",1,related,1,positive
+"We compare the performance of our tabstruct-net against seven benchmark methods — deepdesrt [7], tablenet [12], graphtsr [14], splerge [10], dgcnn [9], Bi-directional gru [15] and Image-to-Text [11].",1,related,1,positive
+"We refer the readers to [25, 26] for table detection and [27, 28] for figure detection algorithms.",1,related,1,positive
+"The comparison of performance between open source F. Shafait et al.5 technique (Tesseract),Schreiber et al. Hao et al.10 , Gilani et al.12 and our method is shown in Table 2.",1,related,1,positive
+"We only use 40 images from the dataset for fine-tuning the general model and 198 images for testing, while [18] and [21] used only 34 images for testing and rest of the dataset for training.",1,related,0,negative
+"As done by DeepDeSRT [21], to achieve the best possible results, we removed the errors in the ground-truth annotations of the dataset.",1,related,1,positive
+The results of the method presented in [2] are validated on publicly available UNLV data set [23] and [1] on ICDAR 2013 data.,1,related,0,negative
+[12] as the baseline for our experiment as their approach provides the unprocessed image as an input to the Faster R-CNN for table detection.,1,related,1,positive
+"Altogether, our weak supervision outperforms the state-of-the-art with image-based input (Schreiber et al., 2018) by a considerable margin.",1,related,1,positive
+"The ICDAR labels now serve as the target dataset, while we continue to use arXivdocs-weak for weak supervision.7 Following (Schreiber et al., 2018), we use a random subset of 50 % of the ICDAR 2013 competition dataset for testing.",1,related,0,negative
+"(Schreiber et al., 2018) uses a different, non-public 50 % random subset.",1,related,0,negative
+"7 Following (Schreiber et al., 2018), we use a random subset of 50 % of the ICDAR 2013 competition dataset for testing.",1,related,0,negative
+"The dataset comes without predefined train/test split; hence, we follow Schreiber et al. (2018) and split the so-called “competition” part of the dataset with a 50%/50%-ratio.",1,related,0,negative
+"We can enhance the novel deep learning-based approach for table structure detection, DeepDeSRT [14], as proposed by Sebastian Schreiber et al. The PDF documents can be converted to image format.",1,related,1,positive
+"We can enhance the novel deep learning-based approach for table structure detection, DeepDeSRT [14], as proposed by Sebastian Schreiber et al.",1,related,1,positive
+"While the results are not conclusively better than DeepDSert, they are certainly comparable and the fact that our model is end-to-end means further improvements can be made with richer semantic knowledge, and additional branches for learning row based segmentation.",1,related,1,positive
+"Average time taken for our system for each document image is 0.3765 seconds, however this could not be compared with DeepDSert as their model was not publicly available.",1,related,0,negative
+"As done in DeepDSert, we also randomly chose 34 images for testing and used the rest of the data images for fine-tuning our model.",1,related,0,negative
+We reimplemented the DeepDeSRT table structure model [6] and trained it on the same private data as our proposed model.,1,related,1,positive
+We did so by reimplementing the DeepDeSRT model [6] and training on the same data as our proposed model.,1,related,1,positive
+"However, we were unable to obtain reasonable performance, even after exploring a variety of values for post processing thresholds and training hyperparameters (values not specified in [6]).",1,related,0,negative
+"We were unable to find any official implementations of prior works, so for comparison, we use the commercial software system Acrobat Pro DC and our reimplementation of the DeepDeSRT model [6].",1,related,1,positive
+"Category Method F-measure Recall Precision PDF Input Image Input
+Proposed Models
+Split 86.79 86.64 86.93 Split-PDF 91.63 91.26 92.00 SPLERGE-PDF 90.89 90.44 91.36 SPLERGE-PDF + Heuristics 91.95 91.46 92.45
+Split + Heuristics 93.00 92.24 93.78 Split-PDF + Heuristics 95.26 94.64 95.89
+Previously Reported Results
+Nurminen [3] 94.60 94.09 95.12 TEXUS [4] 82.59 84.23 81.02 Shigarov [5] C1 91.50 91.21 91.80 Shigarov [5] C2 93.64 92.33 94.99 DeepDeSRT [6] 91.44† 87.36† 95.93†
+† result not directly comparable due to evaluation on a random subset of 34 tables.",1,related,1,positive
+"For that purpose, we used the publicly available ICDAR 2013 table competition dataset containing 67 documents with 238 pages, since this dataset was used in [2].",1,related,0,negative
+"Following the work of Schreiber et al. (2017) [2], we converted the cell-based annotations to the corresponding annotations for rows and columns.",1,related,1,positive
+"In contrast to the annotations generated by Schreiber et al. (2017) [2], we label the complete row regardless of the textual region for consistency.",1,related,1,positive
+[2] and our custom ICDAR-17) neglect row/column span (hierarchical labels).,1,related,1,positive
+We used the same train and test split as used by Schreiber et al. (2017) [2] in order to enable a direct comparison against their approach.,1,related,0,negative
+"In contrast to the Fully-Convolutional Network (FCN) based formulation presented by Schreiber et al. (2017) [2], we treat the problem of row/column identification in a tabular structure as that of object detection where the document can be considered analogous to scene and row/column can be…",1,related,1,positive
+"Similarly, we follow an identical data split (with the same files segregated into train and test sets) as the one defined by Schreiber et al. (2017) [1] comprising of 125 training and 31 test table images.",1,related,0,negative
+We compare our method using these image-based row and column-level statistics [1].,1,related,1,positive
+Our post-processing is similar to the one used by Schreiber et al. (2017) [1].,1,related,0,negative
+We use Marmot data set for training our model similar to DeepDeSRT [6].,1,related,1,positive
+"I R
+] 2
+8 A
+ug 2
+01 9
+DeSRT (Schreiber et al., 2017) and Tabby (Shigarov et al., 2016).",1,related,1,positive
+"Table II provides A comparison of the proposed system with the approaches presented in [15] and [14], trained on our proposed dataset.",1,related,0,negative
+"5 for IoU to compute the F1-measure [5], we also evaluated our model based on this threshold.",1,related,1,positive
+"we compared the performance of the four different configurations of our method to those achieved by DeepDeSRT [59], Tran [34] and Hao [27] in detecting only tables on the ICDAR 2013 dataset.",1,related,1,positive
+"To ground our work with state of the art in table detection, we compared the performance of the four different configurations of our method to those achieved by DeepDeSRT [59], Tran [34] and Hao [27] in detecting only tables on the ICDAR
+2013 dataset.",1,related,1,positive
+"And we can see these problems in the multitude of methods currently available to detect tables in PDF documents [26, 27, 28, 29], where there is no author who proposes a general deterministic solution to identify tables in PDF documents[25].",1,related,1,positive

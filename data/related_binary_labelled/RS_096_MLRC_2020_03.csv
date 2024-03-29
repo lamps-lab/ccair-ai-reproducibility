@@ -1,0 +1,99 @@
+text,label_score,label,target_predict,target_predict_label
+These activation functions were proved to be able to learn and extrapolate periodic functions in [37].,,,0,not_related
+The activation functions x+ 1 a sin (2)(ax) -called snake function with frequency a- and x+ sinx were proposed in [37] for periodic data and were proven to be particularly well suited to periodic data.,,,0,not_related
+The first two layers are provided with the Snake and TSigmoid activation functions [17].,,,0,not_related
+"Furthermore, we replace leaky ReLU activation functions across the generator with Snake functions [23], first proposed for speech synthesis in BigVGAN [16].",,,1,related
+We also substitute the MSD discriminator [14] with the MRD discriminator [15] and replace the leaky ReLU activation function in the generator with the Snake activation function [23].,,,1,related
+"We compare snakebeta activation with snake activation [32] fα(x) = x + α −1 sin(2)(αx), where α is trainable, which the above BigVGAN and BigVSAN models utilize.",,,1,related
+"The NSF-HiFiGAN vocoder is optimized and integrated, leveraging a novel activation function called ”Snake.”",,,1,related
+F02: SO-VITS (NSF-HifiGAN with Snake [18]).,,,1,related
+"Multiplying both sides of (15) by xi(t) and integrating over the interval [0,ω] , we get (13) dx dt ∈ φ(t, x),",,,1,related
+"(2) Each solution z ∈ Rn of the inclusion 0 ∈ 1 ω ∫ ω 0 φ(t, z)dt = g0(z) satisfies z / ∈ ∂� ∩ Rn; (3) deg(g0,� ∩ Rn, 0) �= 0 , then differential inclusion (13) has at least one ω-periodic solution x(t) with x ∈ ̄ .",,,1,related
+"Here we need to find an appropriate open, bounded subset , in order to apply MawhinLike Coincidence Theorem (Lemma 2), From the differential inclusion (13), we obtain Given x(t) = (x1(t), x2(t), .",,,1,related
+"Meanwhile, the Snake activation function, defined as f(x) = x + sin(2)(x), is demonstrated in [27] that can bring periodic inductive bias and can perform well for temperature and financial data prediction.",,,0,not_related
+"SnakeGAN improves the waveform generator by introducing both the DDSP-based prior knowledge of waveform composition, and the periodic nonlinearities through incorporating the Snake activation function [27].",,,0,not_related
+"1) Generator: Specifically, to address the problem of generalization ability, BigVGAN [17] proposes the anti-aliased multi-periodicity composition (AMP) block with Snake activation function [27].",,,0,not_related
+"The PNPConv blocks analyze the input with a dual-path convolution layer using a snake function [22], which is sensitive to periodic representations.",,,0,not_related
+"Referring the findings in [22], the Snake function effectively processes periodic information with large a values (5-50), while small a (0.",,,0,not_related
+"In [22], the authors investigated the extrapolation properties of activation functions and proposed an effective activation function sensitive to periodicity, the Snake function.",,,0,not_related
+"We employ the snake activation function [46], proven effective for waveform generation in [31].",,,1,related
+"However, our recipe has the following key differences: 1) We introduce a periodic inductive bias using Snake activations [46, 21] 2) We improve codebook learning by projecting the encodings into a low-dimensional space [43] 3) We obtain a stable training recipe using best practices for adversarial and perceptual loss design, with fixed loss weights and without requiring a sophisticated loss balancer.",,,1,related
+[46] and introduced to the audio domain in the BigVGAN neural vocoding model [21].,,,0,not_related
+BigVGAN [21] extends the HifiGAN recipe by introducing a periodic inductive bias using the Snake activation function [46].,,,0,not_related
+"Since MLPs do not naturally exhibit oscillatory behavior [5], [31], we retained the internal Kuramoto oscillator model [17] of the original Tegotae control architecture without modification.",,,1,related
+"Inspired by [28, 29], we propose a new Fourier-based conditioning mechanism, which is formulated as follows:",,,1,related
+"One aspect of neural networks that is particularly relevant to the problem at hand, is that they struggle to represent periodic functions (Liu et al. 2020).",,,0,not_related
+"One aspect of neural networks that is particularly relevant to the problem at hand, is that they struggle to represent periodic functions (Liu et al., 2020).",,,0,not_related
+Snake [104] x+ 1 a sin (2)(ax) or x− 1 2a cos(2ax) + 1 2a 1 a cos (2)(ax) or 1 2a cos(2ax)− 1 2a,,,0,not_related
+"This raises a question of their ability to forecast the future state given the limitation of neural networks on extrapolation (Ziyin et al., 2020; Xu et al., 2021).",,,0,not_related
+"This raises a question of their ability to forecast the unseen environment given the limitation of neural networks on extrapolation (Ziyin, Hartwig, and Ueda 2020; Xu et al. 2021).",,,0,not_related
+"DNNs have difficulty learning periodic functions [Ziyin et al., 2020].",,,0,not_related
+"…two potential challenges for deep neural networks: a quick error accumulation in an autoregressive forecast task (see, e.g. Rasp et al., 2020; Scher and Messori, 2019) and the prediction of quasi-periodic processes for which deep neural networks are known to struggle with (Ziyin et al., 2020).",,,0,not_related
+"challenging for deep neural networks that are known to struggle with periodic processes (Ziyin et al., 2020).",,,0,not_related
+"…and combinations of features during testing, which are not similar to any data used for training, and thus the DL network has to generate predictions outside of its “comfort zone” (see, for example, Leonard et al., 1992, and Pastore and Carnini, 2021, or Ziyin et al., 2020, for periodic data).",,,0,not_related
+"to the original Demucs architecture, we use the Snake activation function [20].",,,1,related
+The Snake activation function proposed by [15] provides the periodic inductive bias useful to model periodic function and retaining the nature of ReLU activation function as well.,,,0,not_related
+"Furthermore, we modify the ConvLSTM architecture by employing a novel activation function [36] to improve the predictive capability of the present learning architecture for physics with periodic behavior.",,,1,related
+[36] specified the value of parameter  as a fixed parameter.,,,1,related
+"To account for periodicity, we employ the periodic activation function ( ) ( ) 2 1 sin x x x     = + [36] , instead of the commonly accepted hyperbolic-tangent function.",,,1,related
+[36] proposed a new activation function for improving predictive capabilities of a,,,0,not_related
+is worth noting that  is treated as a trainable parameter rather than with a fixed value as originally introduced [36] .,,,0,not_related
+"Deep learning approaches have achieved significant progress in time series forecasting, but they have been proved to be unable to fully learn periodicity from time series [34].",,,0,not_related
+Recent study [34] reveals that the reason is standard neural nets do not have any modules to capture the periodicity explicitly in their architectures.,,,0,not_related
+"the periodicity, aligned with the conclusion in [34].",,,0,not_related
+This is because they do not contain any modules that can represent the periodic functions [34].,,,0,not_related
+The results are aligned with the observations in [34] that standard neural networks can not fully learn periodicity.,,,0,not_related
+Our numerical results in Tables 3–5 show that sin(2)(x) still outperforms the monotonic activation function sin(2)(x)+ x proposed in [66] when the function to learn is indeed periodic.,,,1,related
+• We will extend the applicability of our approach by using systems of PINNs to solve differential problems where the solution is a non-periodic function.,,,1,related
+"PINN models are deep feedforward networks, also called feedforward NNs or multilayer perceptrons (MLPs) [59, 60] used to approximate the solution to differential problems [61].",,,0,not_related
+"(26)
+Cumulative loss function for the system of PINNs over the entire metric graph
+Let us assume for simplicity that the PINN architecture is the same on each edge.",,,1,related
+In this section we describe how we constructed the training loss function for the system of PINNs defined on edges of a metric graph.,,,1,related
+"Comparison of activation functions for PINNs on one edge The choice of the activation function can drastically affect the predictive performance of the NNs [56, 58, 57, 66].",,,0,not_related
+NNs associated with edges that share a node in common coordinate with each other through a penalty term in the training loss function that imposes the Kirkhoff-Neumann (KN) conditions in a weak-sense.,,,0,not_related
+"Moreover, assignment of different edges to different NN models enables the algorithm to potentially leverage distributed high-performance computing (HPC) resources to concurrently train different NNs, thus allowing for the DL training to scale with the size of the graph.",,,0,not_related
+"The choice of the activation function can drastically affect the predictive performance of the NNs [56, 58, 57, 66].",,,0,not_related
+Our experiments following the setup and training from [19] show that regardless of the trainability of the,,,1,related
+It was presented in [19] that a snake-activated feedforward neural network can learn to fit a periodic signal if the period is known beforehands.,,,0,not_related
+"To address what has been thought of as the main fault of the work on neural networks mimicking the behaviour of Fourier series, [19] proposed x+sin(x), x+cos(x), and x+sin(2)(ax) activations and demonstrated that they possess some potential for generalisation beyond the training domain while still performing well on standard tasks defined on real-world data such as classifying the MNIST dataset.",,,0,not_related
+"It was previously demonstrated that the extrapolation behaviour of feedforward neural networks with ReLU and tanh activation functions is dictated by the analytical form of the activation function (ReLU diverges to ±∞, tanh tends towards a constant value), and that this result also holds for sigmoidal networks and the corresponding common variants [19].",,,0,not_related
+"In the case of snake activation functions and by the analysis of [19] this would correspond to a target of 32 (not necessarily consecutive) harmonics in the approximating Fourier series, while for sin+ cos [14] this corresponds to 64 harmonics.",,,0,not_related
+"To address the shortcomings of standard activation functions in extrapolation, [19] proposed the family of “snake” activation functions.",,,0,not_related
+"[30] proposed a new activation function x + sin(2) x (called “snake”), which was claimed to be better than ReLU for periodic data.",,,0,not_related
+"In fact, previous works [55,64] have shown that a traditional MLP is unable to extrapolate a 1D periodic signal even with many training samples.",,,0,not_related
+"This is an effective way to handle the MLP extrapolation problem, which cannot be solved by merely using input warping and SNAKE activation function [64].",,,0,not_related
+"Since ReLU activation function has been proven to be ineffective to extrapolate periodic signals [55], we use the more suitable SNAKE function [64].",,,0,not_related
+"common “ReLU” activation function would be expected to extrapolate linearly, though not necessarily with the same gradient as a line of best fit through the training data points (Xu et al., 2020; Ziyin et al., 2020).",,,0,not_related
+"[2] Liu Ziyin, Tilman Hartwig, and Masahito Ueda.",,,0,not_related
+"However in the absence of an explicit inductive bias, MLPs can struggle to learn even simple functions in a sample efficient manner [2, 3], Appendix 1.",,,0,not_related
+"Activation Function Linear, ReLU, Tanh, Sigmoid, Snake [39] Hidden Layers [0,5] Nodes per Layer [2,128] Optimizer Adam [40], Adagrad [41], SGD, Yogi [42]",,,0,not_related
+"For example, the Snake function, defined as x+ 1 a sin (2)(ax) where a is a learnable parameter, could be used to learn periodic functions while maintaining monotonicity and thus improve convergence [42].",,,0,not_related
+"We provide a proper inductive bias of periodicity to the generator by applying a recently proposed periodic activation called Snake function [27], defined as fα(x) = x + 1 α sin (2)(αx), where α is a trainable parameter that controls the frequency of the periodic part of the signal and larger α gives higher frequency.",,,1,related
+This periodic activation exhibits an improved extrapolation capability beyond a bounded region learned by the neural network for temperature and financial data prediction [27].,,,0,not_related
+Our generator has a connection with the results in time-series prediction [27] and image synthesis [17].,,,1,related
+"The extrapolation theory focused on the situation where the supports of training distribution and test distribution are different (Xu et al., 2020b; Ziyin et al., 2020; Ye et al., 2021), where the networks have very limited ability for nonlinear function approximation (Xu et al.",,,0,not_related
+"…to IID settings and recently there have been a line of works to investigate the theory of OOD generalization, including structured causal models (SCM) (Arjovsky et al., 2019; Ahuja et al., 2021; Zhou et al., 2022) and extrapolation theory (Xu et al., 2020b; Ziyin et al., 2020; Ye et al., 2021).",,,0,not_related
+"The extrapolation theory focused on the situation where the supports of training distribution and test distribution are different (Xu et al., 2020b; Ziyin et al., 2020; Ye et al., 2021), where the networks have very limited ability for nonlinear function approximation (Xu et al., 2020b).",,,0,not_related
+"…two commonly used activation functions, Tanh : x → ex−e−xex+e−x and ReLU : x → max(0, x), along with network architectures which employ activation functions containing periodic components: SIREN : x → sin (Wx+ b) (Sitzmann et al., 2020) and Snake : x → x + 1a sin2(ax) (Ziyin et al., 2020).",,,1,related
+", 2020) and Snake : x → x + 1 a sin(2)(ax) (Ziyin et al., 2020).",,,1,related
+"On the other one hand, SIREN and Snake manage to extrapolate the periodicity of the residual distribution even outside of the training region, thus providing further empirical evidence of the universal extrapolation theorem (Ziyin et al., 2020, Theorem 3).",,,0,not_related
+"Table 1 summarizes the parameters used for the considered controlled systems, where Activation denotes the activation functions, i.e. SoftPlus: x 7→ log(1 + ex), Tanh: x 7→ ex−e−xex+e−x and Snake : x → x + 1a sin2(ax) (Ziyin et al., 2020).",,,1,related
+"Finally, there is work on incorporating periodic functions to neural networks and/or applying these methods to periodic data/systems [38, 39] and equivariances to periodic data [40, 41].",,,0,not_related
+"…times the Lipshitz constant of the non-linearity, the assumption that every block is Lipshitz-continuous applies to all existing networks with fixed weights and with Lipshitz-continuous activation functions (such as ReLU, tanh, Swish (Ramachandran et al., 2017), Snake (Ziyin et al., 2020) etc.).",,,0,not_related
+"Because the Lipshitz constant of a neural network can be upper bounded by the product of the largest eigenvalue of each weight matrix times the Lipshitz constant of the non-linearity, the assumption that every block is Lipshitz-continuous applies to all existing networks with fixed weights and with Lipshitz-continuous activation functions (such as ReLU, tanh, Swish (Ramachandran et al., 2017), Snake (Ziyin et al., 2020) etc.).",,,0,not_related
+"2 Related Work Modeling Periodic Signals Previous research that tried to model periodic signals replaces nonlinear activation functions by sinusoids such as sin(x), cos(x) or the linear combination of the two [28, 34, 21, 35].",,,0,not_related
+[36] shows that incorporating prior knowledge into architecture design is key to the success of neural networks and applied neural networks with periodic activation functions to the problem of financial index prediction.,,,0,not_related
+"…definitely plays a role (Geiger et al., 2020); extrapolation properties of neural networks are also shown to be closely related to generalization (Ziyin et al., 2020); good test loss does not translate to good generalization accuracy (Chen et al., 2020); generalization may even be understood…",,,0,not_related
+", 2020); extrapolation properties of neural networks are also shown to be closely related to generalization (Ziyin et al., 2020); good test loss does not translate to good generalization accuracy (Chen et al.",,,0,not_related
+"While most of the literature focused on using activation functions that exhibit a periodic behavior (Parascandolo et al., 2017; Eger et al., 2019; Ziyin et al., 2020; Mehta et al., 2021), our analysis shows that this approach is, in essence, necessary yet insufficient for the purpose of distant extrapolation.",,,0,not_related
+"While most of the literature focused on using activation functions that exhibit a periodic behavior (Parascandolo et al., 2017; Eger et al., 2019; Ziyin et al., 2020; Mehta et al., 2021), our analysis shows that this approach is, in essence, necessary yet insufficient for the purpose of distant…",,,0,not_related
+"We also perform experiments with other non-linearities such as tanh, and the snake x 7→ x+ 1a sin
+2(ax) activation (Ziyin et al., 2020) with a = 27.5 (authors recommend a ∈ [5, 50]).",,,1,related
+"We also perform experiments with other non-linearities such as tanh, and the snake x 7→ x+ 1 a sin (2)(ax) activation (Ziyin et al., 2020) with a = 27.",,,1,related
+"This is an effective way to handle the MLP extrapolation problem, which cannot be solved by merely using input warping and SNAKE activation function [161].",,,0,not_related
+"In fact, previous works [141, 161] have shown that a traditional MLP is unable to extrapolate a 1D periodic signal even with many training samples.",,,0,not_related
+The first MLP contains 9 fully-connected Snake layers [161] with 512 channels.,,,0,not_related
+"Since ReLU activation function has been proven to be ineffective to extrapolate periodic signals [141], we use the more suitable SNAKE function [161].",,,0,not_related
+"Unfortunately, this approach is not guaranteed to learn a periodic function out-of-the-box, especially when f(x, t) is approximated by a neural network (Ziyin et al., 2020).",,,0,not_related
+"In [13], a variant of the snake activation function is used where σ(z) = z + sin z and this contains infinitely many unsafe points, b∗ = ±nπ for n ∈W — σb∗(z) = σ(±nπ + z)− σ(±nπ) = ( ±nπ + z) + sin(±nπ + z) ∓nπ − sin(±nπ) = (−1) sin(z) which is clearly an odd function.",,,0,not_related

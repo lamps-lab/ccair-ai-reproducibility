@@ -1,0 +1,45 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"…we show that LogitClip can boost the performance of a wide range of popular robust loss functions, including MAE (Ghosh et al., 2017), PHuber-CE (Menon et al., 2020), SCE (Wang et al., 2019), GCE (Zhang & Sabuncu, 2018), Taylor-CE (Feng et al., 2020), NCE (Ma et al., 2020), AEL, AUL (Zhou et…",1,related,1,positive
+"Domain adaptation (DA) [15, 18, 22, 31] relieves the burden of manual annotation by leveraging the knowledge from related source domains with rich labeling.",1,related,0,negative
+"We also compare with Co-teaching[9], which is the representative work of sample selection, and PHuber-CE [23], which is a simple variant of gradient clip-
+ping.",1,related,1,positive
+"We also compare with Co-teaching[9], which is the representative work of sample selection, and PHuber-CE [23], which is a simple variant of gradient clip-",1,related,1,positive
+"As shown in Table 4, our method works better than Co-teaching and PHuber-CE.",1,related,0,negative
+"As the setting in F-correction, we first train a standard network to estimate the transition matrix Q. 3) PHuber-CE [41], which uses a composite loss-based gradient clipping, a variation of standard gradient clipping for label noise robustness.",1,related,1,positive
+"the APL losses is approximated to that of the Bayes classifier (learned using supervised data) [43, 44, 45, 46].",1,related,1,positive
+"To achieve this we focus on gradient clipping methods (Pascanu et al., 2013; Gehring et al., 2017; Menon et al., 2020; Mai and Johansson, 2021; Zhang et al., 2020a,b).",1,related,1,positive
+"To achieve this we focus on gradient clipping methods [31, 11, 24, 23, 41, 42].",1,related,1,positive
+"We experiment with the partially Huberized cross-entropy loss [21], a more robust loss function, and the mixup regularization [35].",1,related,1,positive
+"In our work, we experiment with the partially Huberized cross-entropy loss [21] and the mixup regularization [35] to deal with the inherent noise of pseudo-labels.",1,related,1,positive
+(§ II IB ) Explicit Regularization Bilevel Learning [87] © © © 5 4 4 Official (TensorFlow)9 Annotator Confusion [86] © 5 © © 4 4 Official (TensorFlow)10 Pre-training [88] © 5 © © 4 4 Official (PyTorch)11 PHuber [89] © © © © 4 4 Unofficial (PyTorch)12 Robust Early-learning [90] © © © © 4 4 Official (PyTorch)13 ODLN [91] © © © © 4 4 Official (PyTorch)14,1,related,1,positive
+"Besides, we ex-
+ternally conduct experiments on Co-teaching (Han et al., 2018b), which is a representative algorithm of selecting reliable samples for training; JoCoR (Wei et al., 2020), which employs a joint loss function to select small-loss samples; PHuber-CE (Menon et al., 2020), which introduces gra-
+Table 2.",1,related,1,positive
+"6
+Co-teaching 55.32±0.28 51.09±1.06 47.07±0.83 55.29±0.41 53.08±0.26 45.63±0.75 JoCor 52.21±0.70 49.84±0.92 48.83±0.43 55.58±0.27 49.35±0.62 46.21±0.73
+PHuber-CE 55.73±0.38 54.33±0.92 45.05±0.49 56.76±0.26 51.15±0.65 41.59±1.05 APL 56.91±0.21 53.12±1.21 43.60±1.28 56.11±0.23 50.93±1.05 43.60±1.28 S2E 57.93±0.37 47.16±1.32 28.53±5.04 54.89±1.92 50.42±1.71 30.67±3.12
+Revision 58.06±0.19 52.30±1.73 46.84±1.09 56.41±0.77 53.44±0.83 43.77±1.08
+Reweight 53.34±1.08 50.15±1.33 44.73±0.79 53.37±0.66 49.82±0.44 39.46±1.27 Forward 57.30±0.32 53.94±0.42 46.91±1.48 53.58±0.54 49.90±1.44 42.55±3.81
+R-Class2Simi 58.67±0.38 56.59±0.74 50.48±0.97 58.44±0.66 55.03±1.55 47.75±2.17 F-Class2Simi 58.27±0.47 56.70±1.13 50.18±0.89 58.46±0.68 54.92±1.66 46.07±3.54
+dient clipping to mitigate the effects of noise; APL (Ma et al., 2020), which applies simple normalization on loss functions and makes them robust to noisy labels; S2E (Yao et al., 2020a), which properly controls the sample selection process so that deep networks can benefit from the memorization effect.",1,related,0,negative
+"The obtained method is known in literature as clipped-SGD (see [17, 21, 43, 44, 57, 70, 71] and references therein).",1,related,1,positive
+"For PHuber-CE,
+we set τ = 10 for CIFAR-10 and τ = 30 for CIFAR-100 and WebVision.",1,related,1,positive
+"(7)
+Hence,
+E [ e2i ] = (σtf ) 2
+12 ∥∥∥∥ ∇θif S ∥∥∥∥ 2
+2
+,E [eiej ]= (σtf ) 2
+12 (∇θif S )T ∇θjf S (8)
+Perspective 1: Menon et al. (2019) propose not overly trusting any single sample to help mitigate the label noise effect.",1,related,1,positive
+"On CIFAR-10 and CIFAR-100, we compare with the following baselines: 1) standard crossentropy (CE) loss, 2) Generalized Cross-Entropy (GCE) (Zhang & Sabuncu, 2018) loss, 3) CoTeaching (Han et al., 2018b) that uses co-training and sample selection, 4) PHuber-CE (Menon et al., 2020) that uses gradient clipping and 5) label-smoothing (LS) Lukasik et al. (2020) that clips the label to be less confident before training.",1,related,1,positive
+"The original paper (Menon et al., 2020) uses τ = 2 on CIFAR-10 and τ = 10 on CIFAR-100, but the default setting does not work well in our experiments.",1,related,0,negative
+"As an optimization method, we used Adam [49] with an initial learning rate of 0.001, linearly decreasing to zero from 80 epochs to 200 epochs, a momentum of 0.9, and a batch size of 128.",1,related,1,positive
+"As an optimization method, we used Adam [49] with an initial learning rate of 0.",1,related,1,positive
+"For more information on Huberised losses, we kindly refer to the original paper (Menon et al., 2020).",1,related,0,negative
+"• Partially Huberised Cross Entropy (PHuber-CE) (Menon et al., 2020):
+LPHuber-CEpfpxq, yq “ "" ´ log pθpy|xq, if pθpy|xq ě 1τ , ´τpθpy|xq ` log τ ` 1, else,
+where τ ą 0 is a user-defined hyper-parameter.",1,related,1,positive
+"We set τ “ 10, because it works well in Menon et al. (2020).",1,related,1,positive
+"We also use an unbounded loss CCE and four bounded losses MAE, MSE, GCE (Zhang & Sabuncu, 2018), and PHuberCE (Menon et al., 2020) in our empirical estimator Eq.",1,related,1,positive

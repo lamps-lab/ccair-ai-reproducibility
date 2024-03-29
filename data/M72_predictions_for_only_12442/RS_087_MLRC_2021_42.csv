@@ -1,0 +1,42 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"To accurately measure the model’s dependence on shortcut features and guide its reliance on them, we borrow and revise the feature attribution strategy based on counterfactual analysis [18, 46], which measures the importance of shortcut features by counterfactually changing them:",1,related,1,positive
+"The work of (Lang et al. 2021) proposes a training procedure, which incorporates the classifier model for a StyleGAN to learn a classifier-specific StyleSpace to explain a classifier.",1,related,1,positive
+"Domain Adaptation: Our approach builds on advances in domain-adaptation and style-transfer, developed to allow for the differential manipulating a style while preserving other content [4, 5, 18, 20].",1,related,1,positive
+We also did not compare with [13] because their method requires training a separate model on StyleGAN’s original training data for each target model.,1,related,0,negative
+"Then, we borrow and revise the feature attribution strategy of counterfactual analysis (Lang et al. 2021; Zhang, Wang, and Sang 2022) to measure the importance of proxy features by counterfactually changing the proxy features:
+αc = Yc(x, pb)− Yc(x, anchor) (6) Where αc indicates the importance of…",1,related,1,positive
+"Then, we borrow and revise the feature attribution strategy of counterfactual analysis (Lang et al. 2021; Zhang, Wang, and Sang 2022) to measure the importance of proxy features by counterfactually changing the proxy features:",1,related,1,positive
+"In contrast, we train a GAN-based counterfactual explainer [58, 33] to derive CAD.",1,related,1,positive
+"Following previous work [33, 57, 58], we design the PCE to satisfy the following three properties:",1,related,1,positive
+"We derived counterfactuals using a progressive counterfactual explainer (PCE) that create a series of perturbations of an input image, such that the classification decision is changed to a different class [57, 33].",1,related,1,positive
+"Our main contributions in this research are as follows :
+• Result-1: We observed that GANs trained on FFHQ dataset exhibit bias for the ”age” and ”race” protected attributes.",1,related,0,negative
+"In this work, we analyze bias and fairness of GANs [18] and their impact on face verification systems.",1,related,1,positive
+"In future, we aim to investigate methods and techniques for debiasing GANs with respect to different critical attributes.",1,related,0,negative
+"Also, VCEs have been generated using GANs [20] (no models/code is available) but the advantage of our VCE is that they depend only on the classifier and thus there is no danger that the prior of the GAN “hides” undesired behavior of the classifier.",1,related,1,positive
+"…models to explain what a classifier learnt still by pointing out already perceptible or known features (that were actually used to annotate the pictures), but, to our knowledge, never evaluated on invisible cell phenotypes in the context of various assays (Lang et al. 2021; Singla et al. 2021).",1,related,0,negative
+"Some recent work has used generative models to explain what a classifier learnt still by pointing out already perceptible or known features (that were actually used to annotate the pictures), but, to our knowledge, never evaluated on invisible cell phenotypes in the context of various assays (Lang et al. 2021; Singla et al. 2021).",1,related,1,positive
+StyleEx [30] uses the latent space of a StyleGAN [26] to identify the visual attributes that underlie the classifier’s decision.,1,related,1,positive
+StylEx [19] proposes to incorporate the classifier into the training process of StyleGAN and learn a classifier-specific StyleSpace.,1,related,1,positive
+"As inversion is significantly more difficult for multiclass GANs [5, 9, 32] such as BigGAN [6], we follow prior work [9,29,65] and focus our attention on the state-of-the-art single-object GAN - StyleGAN.",1,related,1,positive
+"We note that relying on generative models has recently gained traction for interpretability and score attribution purposes [Lang et al., 2021].",1,related,0,negative
+"…the dimensions with small changes in e with respect to z are discarded through a feature selection process, maximizing the sparsity of e− z. StylEx (Lang et al., 2021)5: They find a latent perturbation in a direction that maximizes the difference in the output of the classifier for the original…",1,related,1,positive
+"For a detailed description of the role of these hyper-parameters see (Lang et al., 2021).",1,related,1,positive
+"This last parameter is not mentioned in the Stylex (Lang et al., 2021) paper, but it can found as a parameter under the name shift_size in the implementation they provide.",1,related,1,positive
+"StylEx (Lang et al., 2021)5: They find a latent perturbation in a direction that maximizes the difference in the output of the classifier for the original sample and its perturbed counterpart.",1,related,1,positive
+"StylEx (Lang et al., 2021) For this method we found the best configuration was setting threshold t to 0.3 using the “Independent” selection strategy and the amount of shift applied to each coordinate to 0.8.",1,related,1,positive
+StyleEx [31] uses the latent space of a StyleGAN [27] to identify the visual attributes that underlie the classifier’s decision.,1,related,1,positive
+"This is why, for both faces models, a ResNet classifier was used to perform the AttFind algorithm.96
+This expanded latent vector w, either obtained by the encoder or StyleVectorizer, is passed on to the StyleGAN2, where97 it is transformed into the StyleSpace by a set of concurrent affine transformations to style vectors s0, ..., sn.",1,related,1,positive
+"40 In this work, we reproduce the paper ‘Explaining in Style: Explaining a GAN in StyleSpace’ [8].",1,related,1,positive
+"[Re] Explaining in Style: Training a GAN to explain a classifier in StyleSpace
+Anonymous Author(s) Affiliation Address email
+Reproducibility Summary1
+Scope of Reproducibility2
+StylEx is an approach for classifier-conditioned training of a StyleGAN2 [6], intending to capture classifier-specific3 attributes in its disentangled StyleSpace [15].",1,related,1,positive
+"Secondary objectives involve the39 visualization and control of the impact of these features on the classifier output.40
+In this work, we reproduce the paper ‘Explaining in Style: Explaining a GAN in StyleSpace’ [8].",1,related,1,positive
+"A recent observation by [14] highlighted the disentanglement of this space (appropriately called, the86 StyleSpace) that is used to extract classifier-specific attributes.",1,related,1,positive
+"…seem to slightly outperform the results by Wu et al. (2021) on the perceived age classifier, it does180 not seem to outperform the method posed by Lang et al. (2021).181
+4.2 Results beyond original paper182
+To investigate the impact of attribute perturbation on the quality of the183 generated…",1,related,1,positive

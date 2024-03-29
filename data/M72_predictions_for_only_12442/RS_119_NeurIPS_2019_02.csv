@@ -1,0 +1,62 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+Continuous weights in our framework are updated with Adam optimisation while the binary weights in R are updated using the Bop algorithm proposed by [14].,1,related,1,positive
+"This is achieved by first learning the edges or equivalently the relations/partOf predicate with a binary layer [14] between symbols in consecutive codebooks with weights: wl ∈ RMi×Mi+1 ∈ {0, 1}.",1,related,1,positive
+This is achieved in our works using a binary neural network [14].,1,related,1,positive
+We then convert to the latent-weight free setting of Helwegen et al. (2019) where latent weights are interpreted as accumulating negative gradients.,1,related,1,positive
+"We draw inspiration from the seminal work of Helwegen et al. (2019), who reinterpret latent weights from an inertia perspective and state that latent weights do not exist.",1,related,1,positive
+"We start with a latent weights BNN and convert it to an equivalent latent-weight free setting, as in Helwegen et al. (2019).",1,related,1,positive
+"We compare our method with several relevant state-ofthe-art methods, including Real-to-Binary Net [17], ReActNet [19], IR-Net [22], Bop [35], CI-Net [51], BONN [39], Bi-Real Net [13], and XNOR-Net [12] in Table VI.",1,related,1,positive
+"To encode the momentum values in Bop for BNN training, a standard FP format [2] and the brain FP format [10] have been used.",1,related,1,positive
+"For the batch normalization parameters, we use Adam optimization as proposed by [2], with an initial learning rate of 10−2 for FC and VGG3, and 10−3 for VGG7.",1,related,1,positive
+The algorithm for training BNNs with Bop [2] is recapped in Alg.,1,related,1,positive
+"In our case, we map our weights to {0, 1} rather than {-1, 1}, by initializing weights randomly ∈ {0, 1} and modify the update rule proposed in [49].",1,related,1,positive
+All continuous weights in our model framework are updated with Adam optimisation while the binary weights inR are updated using the Bop algorithm proposed by [49].,1,related,1,positive
+The quantization noise hinders the training step to find its optimized weights (Helwegen et al. (2019); Xu et al. (2021a)).,1,related,1,positive
+We use the Larq [11] framework for implementation of BNNs and utilize Binary Optimizer (Bop) [22] and Adam [23] for training models with a learning rate of 0.,1,related,1,positive
+"Therefore, in the future, we will explore the efficacy brought by employing a binary optimizer [Helwegen et al., 2019] that only modifies signs of weights without the need for latent parameters like the sign supermasks.",1,related,1,positive
+"Here, we also use filterweight statistics to update the binary weights, however similar to (Helwegen et al. 2019) Table 1(d)) we do not rely on the sign function for binarization, but instead use binary weight flips.",1,related,1,positive
+"proposed a new binary optimizer design based on Adam (Helwegen et al., 2019).",1,related,1,positive
+"We relied on recommendations from [6] to define our custom BNN architectures, and took notions from [4] and used the Bop optimizer[23] to speed up training.",1,related,0,negative
+"In this section, we first discuss the difference of SA-BNN with related methods in (Helwegen et al. 2019; Bai, Wang, and Liberty 2018), and then further analyze the effectiveness of the proposed SA-BNN.",1,related,1,positive
+"To solve this problem, Helwegen et al. (Helwegen et al. 2019) introduce an optimizer specifically designed for BNNs by directly updating the state of binarized weights.",1,related,1,positive
+"To better understand our SA-BNNs, we follow (Helwegen et al. 2019; Bai, Wang, and Liberty 2018) to calculate the flipping state at each epoch and set the ratio of sequential weight flip as
+πt =
+∑ w At ∧ · · · ∧ At+m−1
+||sign(W )||1 , (12)
+where At represents sign(wt) 6= sign(wt+1) and m is the examined epoch interval.",1,related,1,positive
+"To better understand our SA-BNNs, we follow (Helwegen et al. 2019; Bai, Wang, and Liberty 2018) to calculate the flipping state at each epoch and set the ratio of sequential weight flip as
+πt =
+∑ w At ∧ · · · ∧ At+m−1
+||sign(W )||1 , (12)
+where At represents sign(wt) 6= sign(wt+1) and m is the…",1,related,1,positive
+"We carry out a comparative study with six methods: IR-Net (Qin et al. 2019), Bop (Helwegen et al. 2019), CI-Net (Wang et al. 2019), BONN (Gu et al. 2019b), Bi-Real Net (Liu et al. 2018), and XNOR-Net (Rastegari et al. 2016) on ResNet18, ResNet-34 and ResNet-50 in Table 3.",1,related,1,positive
+"To better understand our SA-BNNs, we follow (Helwegen et al. 2019; Bai, Wang, and Liberty 2018) to calculate the flipping state at each epoch and set the ratio of sequential weight flip as",1,related,1,positive
+(Helwegen et al. 2019) introduce an optimizer specifically designed for BNNs by directly updating the state of binarized weights.,1,related,1,positive
+"From this perspective, threshold β in (Helwegen et al. 2019) is consistent with the coefficients τ in our method.",1,related,1,positive
+"Similarly to [13], we monitor the number of weight flips per epoch and layer-wise in order to tune the hyperparameters of BOP, using the metric:",1,related,1,positive
+"We first leverage the recent progress made in Binary Neural Networks (BNNs) optimization [13], to binarize the synapses in energy-based models trained by EP.",1,related,1,positive
+"1In this paper, we follow the existing works [18] that focus on the most extreme case of defining the deep quantized model as the BNNs.",1,related,1,positive
+"Next, we generate the empirical results through comparing our algorithm with existing optimization methods including SGD(M) [40], Adam [10], AMSGrad [42], AdaBound [36], and specific binary optimization method [18], and it mainly evaluates these optimization methods in the setting with different datasets and network architectures.",1,related,1,positive
+"For the generalization ability shown in the test accuracy, we find that our method always obtains the best accuracy by comparing to the traditional adaptive methods [42, 36] and specific binary optimizer [18].",1,related,1,positive
+Our proposed method using evolutionary search based on recent ideas of one-shot neural architecture search aims at exploring the group architecture design for BNNs improvement.,1,related,1,positive
+"In this section, to evaluate the proposed method we compare our BNNs with several recent works: Binary Connect [8], BNNs [19], ABC-Net [26], DoReFa-Net [53], XNORNet [39], etc.",1,related,1,positive
+"First, we describe experi-
+Algorithm 2 Overall Training BNNs
+Input: Full binary neural model and inputs for evolutionary search Output: New optimal binary neural model with new group structure.",1,related,1,positive
+"Then we compare with the state-of-the-arts to see improvement impacts of our proposed BNNs. Finally, the computation analysis are presented.",1,related,1,positive
+The main objective in our work is to explore efficient designs of BNNs with the hope that techniques in neural architecture search (NAS) can leverage the exploration for compact structures.,1,related,1,positive
+"Our work sheds the light on a new direction for enhancing the capability of BNNs.
+• We propose an adaptive weight-sharing training mechanism that automatically searches in the group space
+to build efficient BNNs.",1,related,0,negative
+] 66.3 86.6 (1/1)×4 CBCN [26] 61.4 82.8 (1/1)×4 Ensamble [50] 61.0 - (1/1)×6 BNN [10] 42.2 69.2 1/1 XNOR-Net [33] 51.2 73.2 1/1 CCNN [43] 54.2 77.9 1/1 Bi-Real Net** [28] 56.4 79.5 1/1 Rethink. BNN** [17] 56.6 79.4 1/1 XNOR-Net++ [5] 57.1 79.9 1/1 CI-Net** [40] 59.9 84.2 1/1 BATS(Ours) 60.4 83.0 1/1 BATS[2x-wider] (Ours) 66.1 87.0 1/1 7 Conclusion In this work we introduce a novel Binary Architecture ,1,related,1,positive
+"In this report, we present a detailed study on the paper titled ""Latent Weights Do Not Exist: Rethinking Binarized Neural Network Optimization"" by Helwegen et al. [2019] which proposes a new optimization method for training BNN called BOP.",1,related,1,positive
+"To use the dataset for training a binary network, in our work similar modifications are done to the dataset as Helwegen et al. [2019]. We use batch normalization to normalize the activations with a minibatch size of 64.",1,related,1,positive
+"In the future, we will employ the latent-free optimizer Helwegen et al. (2019) for BNNs that directly update the binary weights, to reduce the memory consumption during training.",1,related,1,positive
+"Moreover, for its second stage of unmasking, we optimize weight signs without extra latent weights or scores (Helwegen et al., 2019).",1,related,0,negative
+"To approximately solve (4) with sign flipping transformation Us, we leverage a prior art called Bop from BNN optimization (Helwegen et al., 2019).",1,related,1,positive
+"…weights using the flipping with latent weights method in (Ivan & Florian, 2020) 1; (2) PaB-Latent-PSG, the variant of PaB-Latent combined with PSG; (3) PaB-Bop, which trains the unpruned weights using Bop (Helwegen et al., 2019); and (4) PaB-BopPSG, the variant of PaB-Bop combined with PSG.",1,related,1,positive
+"For the proposed PaB methods, we compare: (1) PaB-Latent, which first prunes the network and trains the unpruned weights using the flipping with latent weights method in (Ivan & Florian, 2020) 1; (2) PaB-Latent-PSG, the variant of PaB-Latent combined with PSG; (3) PaB-Bop, which trains the unpruned weights using Bop (Helwegen et al., 2019); and (4) PaB-BopPSG, the variant of PaB-Bop combined with PSG.",1,related,1,positive
+"In this report, we present a detailed study on the paper titled ""Latent Weights Do Not Exist: Rethinking Binarized Neural Network Optimization"" by [1] which proposes a new optimization method for training BNN called BOP.",1,related,1,positive
+"To use the dataset for training a binary network, in our work similar modifications are done to the dataset as [1].",1,related,1,positive
+The paper [1] considers a binary convolutional architecture called BVGG net as given in [8] inspired from the architecture of ConvNet in [3] we discussed before.,1,related,1,positive
+"1): we use standard continuous-parameter optimizer Adam (Kingma and Ba, 2014) to optimize the first-stage neural network φ and modify a binary-parameter optimizer from Helwegen et al. (2019) to optimize the parameters of the second-stage rule-based g.",1,related,1,positive

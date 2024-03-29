@@ -1,0 +1,33 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",1,related,0,negative
+Raja et al.[34]6 2020 TabStruct Net ECCV SciTSR UNLV X X NR,1,related,1,positive
+"Similar to [36], we randomly extract 80% of the data for training and others for testing.",1,related,0,negative
+21 PubTabNet TabStructNet [37] SciTSR 90.,1,related,1,positive
+"It should be noted that ICDAR-2013 provides no training data, so we extend it to the partial version for cross validation following previous works (Raja, Mondal, and Jawahar 2020; Liu et al. 2022, 2021).",1,related,0,negative
+"We also report the performance of cell spatial location prediction, using the F-1 score under the IoU threshold of 0.5, following recent works (Raja, Mondal, and Jawahar 2020; Xue et al. 2021).",1,related,0,negative
+"56 million, while the method in reference [22] uses the Resnet101 [10] network, and the parameter amount reaches 44.",1,related,1,positive
+com/doc-analysis/TableBank S Raja S Raja [116] TabStructNet 2020 tensorflow https://github.,1,related,1,positive
+"As the table shows, the TRUST achieves the best Structure TEDs 97.1% and TEDs 96.2% among all published methods for this widely studied dataset, TabStruct-Net [18] has low TEDs because it cannot handle the problem of unlined tables.",1,related,1,positive
+"We use four existing recognizers —ocr [26], equation descriptor [19], table recognizer [23], and figure classifier [12] to recognize content from the segmented regions.",1,related,1,positive
+We use TabStruct-Net [23] to recognize the physical structure of the table and then Tesseract [26] to recognize content.,1,related,1,positive
+"We see from the previous works, the most effective methods [17, 18, 19] always jointly optimize the cell locations and cell relationships.",1,related,1,positive
+"of parameters CascadeTabNet [23] 82,852,033 TabStructNet [25] 68,636,098 SPLERGE [32] 255,862 Ours 1,120,692",1,related,1,positive
+"We compare the performance of our method with three coventional methods: CascadeTabNet [23], TabStructNet [25], and SPLERGE [32].",1,related,1,positive
+"Results of CascadeTabNet [23], TabStructNet [25], SPLERGE [32], and the proposed method, from top to bottom 5844 Multimedia Tools and Applications (2022) 81:5827–5848",1,related,1,positive
+"(a) Result from CascadeTabNet [23], (b) TabStructNet [25] with ground truth table locations, (c) SPLERGE [32] with ground truth table locations, and (d) result from the proposed method 5845 Multimedia Tools and Applications (2022) 81:5827–5848",1,related,1,positive
+"For comparison, we also visualize
+the multi-head self-attention maps from the last blocks of “Transformer-Mixed” [42] and KNN (K = 5) selection heatmaps of all layers in DGCNN [30], where a lighter color indicates a closer relationship.",1,related,1,positive
+"To compare in a unified protocol, we follow two different experimental setups in [34]: (a) SetupA where only table image is taken as input without additional information and (b) Setup-B where table image along with additional features such as cell/text segment bounding boxes and text contents.",1,related,1,positive
+"It should be noted that there is no training set in ICDAR-2013 and UNLV datasets, so we extend the two datasets to the partial versions, which is similar to TabStruct-Net [34].",1,related,1,positive
+"In the similar spirit with works [30, 34], we adopt the following asymmetric edge function hΘ(xi,xj) = xi∥(xi − xj) to combine graph edge features to each node, which can be denoted as HΘ ∈ R ·(N−1)/2)×d .",1,related,1,positive
+"3 compares the effectiveness of various extractors, including DGCNN [30] and Transformer [42], with ECE in our method.",1,related,1,positive
+"Contrarily, the TabStruct-Net [24] does not make any such assumptions and produces adjacency relations and cell locality information as the output.",1,related,1,positive
+"We further observe that empty cells account for an average of 12.3% across UNLV and ICDAR-2013 datasets, where our method outperforms TabStruct-Net by 4.2% F1 score.",1,related,0,negative
+"In order to compare our method against others on TUCD dataset, we develop our implementation of DeepDeSRT [26], and use open source implementations of DGCNN (TIES) [22], SPLERGE [30], and TabStruct-Net [24].",1,related,1,positive
+"To detect table cells, we propose TOD-Net, where we augment the cell detection network of TabStruct-Net [24] with additional loss components to further improve the table object performance (rows/columns/cells) detection.",1,related,1,positive
+"To solve this problem, we randomly extract 80% of the data for training and others for testing, which is similar to [31].",1,related,0,negative
+"In addition, our model is only trained on the training set of SciTSR for a fair comparison with TabStruct-Net [31].",1,related,1,positive
+"Compared with the strong baseline TabStruct-Net [31] greedily exploiting large numbers of proposals (round 2,000), our proposed FLAG-Net can achieve marginally better performance with less parameters and computational consumption, which thanks to the proposal filtering mechanism in our method.",1,related,1,positive
+"We first examine how TaBERT performs on TABBIE’s pretraining task of corrupt cell detection, which again is practically useful as a postprocessing step after table structure decomposition (Tensmeyer et al., 2019; Raja et al., 2020) because mistakes in predicting row/column/cell boundaries (sometimes compounded by OCR errors) can lead to inaccurate extraction.",1,related,1,positive
+"Compared with TabStructNet [14], NCGM can achieve better performance with less parameters and similar computational budgets.",1,related,1,positive
+"In particular, note that TabStruct-Net [14] and FLAG-Net [10] are only tested for structure recognition, so we do not count the parameters and operations of cell detection for a fair comparison.",1,related,1,positive

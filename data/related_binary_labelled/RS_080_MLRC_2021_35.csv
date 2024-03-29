@@ -1,0 +1,22 @@
+text,label_score,label,target_predict,target_predict_label
+"Notice that in [30], it uses the deep neural network to learn a data-adaptive reference so that algorithm proposed can perform better.",,,0,not_related
+"[18] uses supervised learning with pairs of data {bi,xi} to train an end-to-end neural network (NN) that represents an implicit prior.",,,0,not_related
+"The supervised methods (Rivenson et al. 2018; Işıl, Oktem, and Koç 2019; Naimipour, Khobahi, and Soltanalian 2020; Hyder, Cai, and Asif 2020; Zhang et al. 2021a; Shi and Lian 2022) train an end-to-end NN over a paired dataset.",,,0,not_related
+"This limitation gives rise to inverse problems such as phaseretrieval [22, 51, 53, 15, 50] ptychography [37, 8], Fourier ptychography [41, 47, 40, 56, 16], coded diffraction imaging [2] and holography.",,,0,not_related
+"On the other hand, there is active research on replacing optimization steps and further enhancing optimization routines with learned-references [14].",,,0,not_related
+"Affine phase retrieval arises in holography [2, 17]/phase retrieval with reference signal [1,12,13], phase retrieval with background information [8,23].",,,0,not_related
+[5] showed that such a reference can be learned from a rather small dataset using an unrolled gradient descent algorithm.,,,0,not_related
+[5] is a gradient descent method that requires extensive parameter tuning of its step size.,,,0,not_related
+"In our recent work [21], we used the idea of unrolled network to solve phase retrieval problem from the holographic measurements.",,,1,related
+"Examples of unrolling algorithms into feedforward networks include image deblurring [16], phase retrieval [17], channel estimation [18], and clutter suppression in ultrasound [19].",,,0,not_related
+"In [27], an unrolled network is introduced for a Fourier phase retrieval problem with a reference signal.",,,0,not_related
+"3) Current deep learning based approaches for PR rely on supervised learning with a large amount of training examples [21, 14, 9, 13].",,,0,not_related
+"To achieve this goal, three major problems should be carefully considered: 1) Existing DNNbased methods solve the PR problems by directly mapping observed amplitude to desirable phase [21, 14, 9, 13], in which the physics characterizing the imaging processes is ignored.",,,0,not_related
+"[9] propose to learn a reference signal by using a small number of training images, which is further used to assist solving the Fourier phase retrieval problem by an unrolled network from gradient descent.",,,0,not_related
+"The above affine phase retrieval problem arises in holography [41], data separation [24, 43], phaseless sampling [20], phase retrieval with background information [25, 56], and phase retrieval with reference signal [3, 5, 6, 36, 37].",,,0,not_related
+"Recently, various forms of deep learning approaches have been investigated as a fast and effective approach for phase retrieval [25], [26], [27], [28], [29], [30], [31], [32], [33].",,,0,not_related
+"In the first category, a pretrained network is employed as a regularization or prior for the reconstruction [25], [26], [30].",,,0,not_related
+"In [30], the reference provided by the trained network was exploited as a prior during the reconstruction process.",,,0,not_related
+[8] assumed that a known reference is added to the signal before capturing the measurements.,,,0,not_related
+"Also, the inherent ambiguities about shift and flip in the Fourier measurements make PR very difficult [8].",,,0,not_related
+"This leads to inverse problems such as phase-retrieval [13,45,47], ptychography [31], Fourier ptychography [33, 41], and quantitative phase microscopy.",,,0,not_related

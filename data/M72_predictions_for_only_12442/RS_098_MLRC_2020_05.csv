@@ -1,0 +1,25 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"The rest of the derivations is similar to previous applications of the BLR, see Khan et al. (2018); Osawa et al. (2019); Meng et al. (2020).",1,related,1,positive
+"In order to estimate the gradient in Equation 19, we leverage the reparameterization trick via the Gumbel-Softmax (GS) distribution (Jang et al., 2016; Meng et al., 2020).",1,related,1,positive
+"When τ in Equation (20) tends to zero, the tanh(·) function tends to the sign(·) function, and the vector w follows distribution qt(w) (Meng et al., 2020).",1,related,1,positive
+"Following previous works [3,6,29], we use classification as the main task throughout our experiments.",1,related,0,negative
+"We compare our algorithm against state-of-the-art approaches, including BinaryConnect (BC) [10], ProxQuant (PQ) [6], Proximal Mean-Field (PMF) [2], BayesBiNN [29], and several variants of Mirror Descent (MD) [3].",1,related,1,positive
+"For BayesBiNN we identified a hidden issue that completely changes the behavior of the method from the intended variational Bayesian learning with Gumbel-Softmax estimator, theoretically impossible due to the used temperature τ = 10−10, to non-Bayesian learning with deterministic ST estimator and latent weight decay.",1,related,1,positive
+In order to analyze BayesBiNN and FouST we will switch to the ±1 encoding.,1,related,1,positive
+"The second consequence is that the natural parameters λ have huge magnitudes during the training, and we have that |δ| |λ| with high probability, therefore the noise plays practically no role even in the forward pass of BayesBiNN.",1,related,1,positive
+"The BayesBiNN algorithm [18, Table 1 middle] performs the update:
+λ := (1− α)λ− αsf ′(w̃), (16)
+where s = NJ , N is the number of training samples and α is the learning rate.",1,related,1,positive
+"In this mode the BayesBiNN algorithm becomes equivalent to
+w := sign(λ); (55a)
+λ := (1− α)λ− αNτ f ′(w).",1,related,1,positive
+"However, the actual implementation of the scaling factor J used in the experiments [18] according to the published code(2) introduces a technical = 10−10 as follows: J := 1−w̃ (2)+ τ(1−μ2+ ) .",1,related,1,positive
+The initial BayesBiNN algorithm of course depends on τ and N .,1,related,1,positive
+Next we analyze the application of GS in BayesBiNN.,1,related,1,positive
+"In the subsequent sections we analyze Gumbel-Softmax estimator (Section 3), BayesBiNN (Section 4) and FouST estimator (Section 5).",1,related,1,positive
+"As in [10], we consider two predictors; the MAP predictor obtained for the fixed weight selectionw = sign(2σ(2w)−1), which minimizes the variational posterior (12); and the ensemble predictor obtained by averaging predictions over 10 random realizations of the binary weights w ∼ qwr (w).",1,related,1,positive
+"When τ in (15) tends to zero, the tanh(·) function tends to the sign(·) function, and the vector w follows distribution qwr (w) [10].",1,related,1,positive
+"The competitors for training DNNs with binary weights include BinaryConnect [34], BWN [19], DoReFa [54], and BayesBiNN [28].",1,related,1,positive
+"s λµi using the Bayesian learning rule in (29). 3However, despite using the same Bayesian learning rule, the resultant algorithm for unsupervised learning in this note is quite different from that in Meng et al. (2020) for supervised learning. 5 Interestingly, as shown in (29), although the natural parameters λµi are updated, the gradient is computed w.r.t. the expectation parameters ηµi = tanh(λµi), which is alrea",1,related,1,positive
+"3However, despite using the same Bayesian learning rule, the resultant algorithm for unsupervised learning in this note is quite different from that in Meng et al. (2020) for supervised learning.",1,related,1,positive
+"Therefore, this note could be viewed as an extension of Meng et al. (2020) to the case of unsupervised learning 3.",1,related,1,positive

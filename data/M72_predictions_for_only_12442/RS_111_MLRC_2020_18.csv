@@ -1,0 +1,65 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"We evaluate our model and compare to three baseline models: (1) recurrent model (LSTM [26]), (2) NeuralODE ([12]), (3) HGN ([47]).",1,related,1,positive
+"[47], we use a latent Hamiltonian neural network to learn dynamics.",1,related,1,positive
+"Note that we do not compare against HGN since it is designed to model a single system, and color is considered a system parameter.",1,related,1,positive
+"As evidenced by Figure 6, our model produces qualitatively better videos than HGN.",1,related,0,negative
+"We compare the performance of our model against the HGN, and MoCoGAN baseline models on the CCC dataset.",1,related,1,positive
+"There is a significant difference in the FVD score of the leading model (HGN), and our model on the Three-body case.",1,related,1,positive
+"We empirically evaluate our model on two versions of the Toy Physics dataset (Toth et al. 2019), one with constant physical parameters and colors and another where the physical parameters and colors vary.",1,related,1,positive
+We attribute the discrepancy in FVD score to the difference in the background color of videos generated with our model and HGN.,1,related,1,positive
+"Following HGN we evaluate all models on the version of this dataset generated without friction, with constant physical quantities across trajectories, and with constant color.",1,related,1,positive
+"We use the pytorch implementation of HGN introduced in (Rodas, Canal, and Taschin 2021).",1,related,1,positive
+"In order to improve the stabilty of the HNNs, Chen et al. (2020), and Toth et al. (2020) introduced an other physical constraint to the HNNs by applying symplectic integrator for deriving states from HNNs.",1,related,1,positive
+"…`(d|qT ) + log g(p)] dqT dpT + cst
+= ∫ Π0(q0,p0) [log π0(q0) + log f(p0|q0)− log π0(Tq(q0,p0))− log `(d|Tq(q0,p0))− log g(Tp(q0,p0)] dq0dp0 + cst.
+(7)
+We can also adapt the ELBO from (Toth et al., 2020) to our inference framework:
+lnπ0(q0) = ln ∫ Π0(q0,p0)dp0
+= ln
+∫ Π0(q0,p0)
+f(p0|q0)…",1,related,1,positive
+"By adding artificial momenta pT (Toth et al., 2020), the distribution modeled by our NHF is m(qT ) = ∫ M(qT ,pT )dpT = ∫ Π0(T (qT ,pT ))dpT .",1,related,1,positive
+"By adding artificial momenta pT (Toth et al., 2020), the distribution modeled by our NHF is m(qT ) = ∫ M(qT ,pT )dpT = ∫ Π0(T −1(qT ,pT ))dpT .",1,related,1,positive
+"Here, ODESolve(PΘ(·,u),x, t, T ) is a numerical solution to the ordinary differential equation specified by PΘ(x,u) over the window of time [t, T ].",1,related,1,positive
+"In this work, we use fixed-timestep RK4 to evaluate ODESolve(·) in all experiments.",1,related,1,positive
+"(3)
+Finally, we search for local minima of L(Θ,D) using gradient-based techniques, where ∇ΘL(Θ,D) may be computed using either direct automatic differentiation through ODESolve(·), or using the adjoint sensitivity method (Pontryagin, 1987; Chen et al., 2018).",1,related,1,positive
+"The output x̂T := PHNNΘ(x,u, t, T ) of the PHNN parametrized by Θ is then given by ODESolve(PΘ(·,u),x, t, T ) ≈ x + ∫ T t PΘ(xs,u)ds, where we use the subscript notation xt to denote x(t).",1,related,1,positive
+"We note that the particular algorithm used to evaluate ODESolve(·) influences the model’s accuracy and the computational cost of forward evaluations of the model (Djeumou et al., 2022b).",1,related,1,positive
+"For PDEs with Dirichlet conditions, they sample a dataset of collocation points from Ω and ∂Ω, i.e.{xi} ⊂ Ω
+7 Neural Solver Method Description Representatives Loss Reweighting Grad Norm GradientPathologiesPINNs [43] NTK Reweighting PINNsNTK [44] Variance Reweighting Inverse-Dirichlet PINNs [45] Novel Optimization Targets Numerical Differentiation DGM [46], CAN-PINN [47], cvPINNs [48] Variantional Formulation vPINN [49], hp-PINN [50], VarNet [51], WAN [52] Regularization gPINNs [53], Sobolev Training [54]
+Novel Architectures
+Adaptive Activation LAAF-PINNs [55], [56], SReLU [57] Feature Preprocessing Fourier Embedding [58], Prior Dictionary Embedding [59] Boundary Encoding TFC-based [60], CENN [61], PFNN [62], HCNet [63]
+Sequential Architecture PhyCRNet [64], PhyLSTM [65] AR-DenseED [66], HNN [67], HGN [68] Convolutional Architecture PhyGeoNet [69], PhyCRNet [64], PPNN [70]
+Domain Decomposition XPINNs [71], cPINNs [72], FBPINNs [73], Shukla et al. [74]
+Other Learning Paradigms Transfer Learning Desai et al. [75], MF-PIDNN [76]Meta-Learning Psaros et al. [77], NRPINNs [78]
+TABLE 2: An overview of variants of PINNs.",1,related,1,positive
+"The Hamiltonian expresses the total energy of the system H(q,p) = T (q,p) + V (q) [1, 8].",1,related,1,positive
+"We use these measures to identify a set of hyperparameters and architectural modifications that significantly improves the performance of Hamiltonian Generative Networks (HGN) [49], an existing state of the art model for recovering Hamiltonian dynamics from pixel observations, both in terms of long time-scale predictions, and interpretability of the learnt latent space.",1,related,1,positive
+For the HGN model we use the leap-frog integrator.,1,related,1,positive
+We implement the dynamics module with Hamiltonian (HGN) and Lagrangian (LGN) priors by using two neural networks to parameterise the kinetic energy T and the potential energy V .,1,related,1,positive
+"We use a Variational Autoencoder (VAE) [38, 39] as the basis for our models, inspired by the Hamiltonian Generative Network (HGN) [11].",1,related,1,positive
+"To reduce the plethora of architectural choices we restrict our investigation to models which are Markovian and which treat the latent representation as a single vector without making any further assumptions or introducing further inductive biases (for example some previous works treat the latent representation as a spatial image or a graph [11, 36, 37, 4]).",1,related,1,positive
+"For instance, we relate energy-conserving numerical solvers to Hamiltonian NNs, whose goal is to encode energy conservation, and we discuss concepts such as numerical stability and solver convergence, which are crucial in long-term prediction using NNs.",1,related,1,positive
+"We start with the Hamiltonian defined as
+H (x ) = T (x ) −V (x ), (14)
+where x = [q,p] represents the concatenated state vector of generalized coordinates q and generalized momentap.",1,related,1,positive
+"Therefore, our future work may focus on building a stable version of ODE2VAE and increasing the interpretability of the latent representations through using arbitarary Lagrangians or Hamiltonians [10, 11], and learning disentangled latent representations with weak supervision [12].",1,related,1,positive
+"We did not choose a specific model but let fP be a trainable Hamilton’s equation as in [39, 11].",1,related,1,positive
+"We did not choose a specific model but let fP be a trainable Hamilton’s equation as in Toth et al. (2020); Greydanus et al. (2019):
+fP
+([ pT qT ]T) = [ −∂H∂q T ∂H ∂p T ]T , (24)
+where p ∈ Rdy is a generalized position, q ∈ Rdy is a generalized momentum, andH : Rdy ×Rdy → R is a Hamiltonian.",1,related,1,positive
+"While direct comparison is impossible due to the differences of the problem settings, the baseline methods we examined (listed below) are similar to some existing methods [4, 46, 39, 20, 47].",1,related,0,negative
+"Experiments on Human Locomotion
+Physics model We modeled fP with a trainable Hamilton’s equation as in Toth et al. (2020); Greydanus et al. (2019):
+fP
+([ pT qT ]T , zP ) = [ −∂H∂q T ∂H ∂p T ]T , (26)
+where p ∈ Rdy is a generalized position, q ∈ Rdy is a generalized momentum, andH : Rdy ×Rdy → R is…",1,related,1,positive
+[71] 2020 DD NN  × Cranmer et al.,1,related,0,negative
+"Additional details on ARMs with linear transformed NNs is found in [22, 68, 23, 72, 67, 71] (cf.",1,related,1,positive
+Baselines We set up two baseline models: HGN [6] and PixelHNN [3].,1,related,1,positive
+"The molecule has 66 dimensions in x, and we augment it with 66 auxiliary dimensions in a second channel v, similar to “velocities” in a Hamiltonian flow framework (Toth et al., 2019), resulting in 132 dimensions total.",1,related,1,positive
+"We can easily extend our proposed approach to learn Hamiltonians from high-dimensional data (such as images) by combining an autoencoder with an SSGP, as in [14, 42].",1,related,1,positive
+"We will also investigate the integration of a physical model that uses physics as a model prior as in [26, 22, 27].",1,related,1,positive
+"Here this would add an additional network before our input with the target output (q,p) as was explicitly demonstrated to work in (Toth et al., 2019).",1,related,1,positive

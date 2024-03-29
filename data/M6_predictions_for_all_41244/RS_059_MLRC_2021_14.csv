@@ -1,0 +1,40 @@
+text,target_M6_predict,target_predict_M6_label
+"methods have been modified or extended with pairwise constraints, such as semi-supervised mean-shift clustering [38], weighted consensus semi-supervised clustering [39], constrained spectral clustering [40], [41], semi-supervised DenPeak clustering [42], [43], and fairness-constrained clustering [13], [44], [45], and other approaches [46], [47].",1,neutral
+"Then, several studies [20, 23, 65] explored how to achieve better trade-offs between the fairness and clustering objectives.",1,neutral
+"[72] proposed a general framework of fair clustering, which integrates a Kullback-Leibler fairness term with clustering objectives.",1,neutral
+• Variational Fair Clustering (VFC) [72].,1,neutral
+We utilize min balance(Cl ) as the overall balance fairness (BalF) [72] of clustering results according to Equation (2).,2,positive
+"Currently, most studies [2, 3, 7, 8, 19, 24, 38, 72] follow the Fairlets in [20] to deal with the fair clustering problem of sensitive attributes in Euclidean space.",1,neutral
+"On the one hand, most studies [2, 3, 7, 8, 19, 24, 38, 72] integrate the Fairlets of [20] into their clustering objectives (e.",1,neutral
+"…et al., 2017; Chzhen et al., 2020), multi-class classification (Putzel and Lee, 2022; Alghamdi et al., 2022), clustering (Chierichetti et al., 2017; Ziko et al., 2021; Abbasi et al., 2021; Backurs et al., 2019; Rösner and Schmidt, 2018; Bera et al., 2019), outlier detection (P and Abraham, 2020),…",1,neutral
+", 2022), clustering (Chierichetti et al., 2017; Ziko et al., 2021; Abbasi et al., 2021; Backurs et al., 2019; Rösner and Schmidt, 2018; Bera et al., 2019), outlier detection (P and Abraham, 2020), clustering from demonstrations (Galhotra et al.",1,neutral
+"Subsequently, many other researchers have studied fairby-design clustering algorithms for different types of clustering and fairness criteria (e.g., Abbasi et al. 2021; Ziko et al. 2021; Flores 2019; Chhabra et al. 2021).",1,neutral
+"To achieve fair clustering, many studies have been conducted to explore how to incorporate fairness into lustering [3,4,8,22,23,38,44,46].",1,neutral
+"For the shallow fair clustering methods, ScFC [3], SpFC [22], VFC [46], FAlg [4] are used for comparisons.",1,neutral
+[46] propose a variational framework by integrating fairness as a Kullback-Leibler (KL) term into the classic clustering methods.,1,neutral
+"[22,46] are in-processing methods that formulate fairness as a constraint for clustering.",1,neutral
+"An example of stochastic alternating algorithms for bi-objective optimization arises in fair clustering, where one tries to capture a trade-off between clustering cost and balance among different demographic groups defined by sensitive attributes (see [7, 12, 36, 40]).",1,neutral
+"…(2019), Grari et al. (2019), L. Cardoso et al. (2019), Agarwal et al. (2018), Backurs et al. (2019), Hu et al. (2020), Chierichetti et al. (2017), Ziko et al. (2021), Haeri and Zweig (2020), Berk et al. (2017), Esmaeili et al. (2020), Deepak and Abraham (2020), Mahabadi and Vakilian (2020),…",2,positive
+"Protected attributes In the literature, marital-status can be considered as the protected attribute (Backurs et al., 2019; Bera et al., 2019; Chierichetti et al., 2017; Hu et al., 2020; Ziko et al., 2021).",0,negative
+"…al. (2018), Zafar, Valera, Rogriguez, and Gummadi (2017), Fish et al. (2016), Backurs et al. (2019), Hu et al. (2020), Chierichetti et al. (2017), Ziko et al. (2021), Haeri and Zweig (2020), Bera et al. (2019), Mahabadi and Vakilian (2020), Huang et al. (2019), Galhotra et al. (2021), Abbasi et…",2,positive
+"For Ziko et al. (2021), even in untuned version (using same hyper-parameter as reported in Ziko et al.",1,neutral
+"Accordingly [48] and very recently [37] explored the cost/fairness tradeoff, but using a multi-objective approach.",1,neutral
+in [48] the fairness objective is penalized for proportions that are not precisely equal to the population level while in [37] it is penalized for color ratios that are not equal to 1.,0,negative
+"Moreover, in [48] the cost/fairness tradeoff is a non-monotone function of a parameter which the user must adjust, while [37] only focuses on the k-means objective and provides convergence guarantees only for a smoothed version of the original problem.",1,neutral
+"[32], where the clustering balance is approximately measured by the KL-divergence and imposed as a penalty term in the fair clustering objective function.",1,neutral
+"Lastly, in-processing methods incorporate the fairness constraints into the clustering process [2, 24, 32].",1,neutral
+"To solve problem (6) for a fixed μ ≥ 0, the authors in [32] have developed an optimization scheme based on a concave-convex decomposition of the fairness term.",1,neutral
+A numerical comparison with the fair k-means algorithm proposed in [32] further confirms the robustness and efficiency of the proposed algorithm in constructing informative and high-quality trade-offs.,2,positive
+"The authors in [32] considered the fairness error computed by the KullbackLeibler (KL)-divergence, and added it as a penalized term to the classical clustering objective.",1,neutral
+"To the best of our knowledge, the only approach in the literature providing a mechanism of controlling trade-offs between the two conflicting objectives was suggested by [32] and briefly described in Appendix A.",2,positive
+"Consider the immensely popular K-Means formulation for clustering [MacQueen, 1967], which some fair clustering formulations build upon (e.g., [Abraham et al., 2020; Ziko et al., 2019]).",1,neutral
+"For large datasets, graph-based clustering algorithms pose additional difficulties since they43 are not computationally scalable.44
+In the paper Variational Fair Clustering (VFC), (Ziko et al., 2021) address these problems.",1,neutral
+"Variational Fair Clustering (VFC) is a general variational fair clustering framework that is compatible with a large class 3 of clustering algorithms, both prototype-based and graph-based (Ziko et al., 2021).",1,neutral
+"…Author(s) Affiliation Address email
+Reproducibility Summary1
+Scope of Reproducibility2
+Variational Fair Clustering (VFC) is a general variational fair clustering framework that is compatible with a large class3 of clustering algorithms, both prototype-based and graph-based (Ziko et al., 2021).",2,positive
+"44 In the paper Variational Fair Clustering (VFC), (Ziko et al., 2021) address these problems.",1,neutral
+[115] developed a general variational boundoptimization framework for fair clustering.,1,neutral
+"Papers such as [114], [127], and [115] augmented the original algorithms with functions that measured and controlled the trade-off between fairness and clustering performance.",1,neutral

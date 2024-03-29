@@ -1,0 +1,40 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+Our experimental results show comparable performances to GAN2Shape [12] in terms of 2D level.,1,related,0,negative
+"Method 3DMMCNN [5]
+3DMM GCN [18] Nonlinear 3DMM [7]
+Unsup3D [8] GAN2Shape [12]
+Ours 3DMM+CNN [5]
+3DMM+GCN [18] Nonlinear 3DMM [7]
+Unsup3D [8] GAN2Shape [12]
+Ours
+Dataset Ce1ebA Ce1ebA CelebA Ce1ebA Ce1ebA Ce1ebA
+Bosphorus Bosphorus Bosphorus Bosphorus Bosphorus Bosphorus PSNR(dB)t 26.58 29.69 27.36 29.51 29.92 29.87 26.37 29.24 26.91 29.06 29.58 29.54 SSIMt 0.826 0.894 0.857 0.883 0.898 0.903 0.778 0.861 0.813 0.876 0.867 0.872 N-CD+ 0.0260 0.0145 0.0203 0.0194 0.0139 0.0136",1,related,1,positive
+"We compare our method with five state-of-the-art methods (3DMM CNN [5], 3DMM GCN [18], Nonlinear 3DMM [7], Unsup3d [8], GAN2Shape [12]) on datasets(CelebA, Bosphorus) in Table I.",1,related,1,positive
+"To this end, we use the pre-trained model of Unsup3D [45] since it has been widely applied in unsupervised face reconstruction [50, 30, 35, 49] in recent years.",1,related,1,positive
+"Using the knowledge that 2D GANs can learn 3D geometrical information [28], we train a StyleGAN2 [17] network to generate rendered feet from StyleGAN2 latent codes.",1,related,1,positive
+"Note that here we have the latent codes w for the original input images as discussed in Section III-C, hence we predict the offset ∆w with an encoder E(·) to ease the training difficulty [20], whose optimization process can be denoted as",1,related,1,positive
+"We take the iterative learning scheme of [20], and initialize the shape prior with an ellipsoid shape.",1,related,1,positive
+"To reconstruct the 3D avatar shape from a single image, we follow the method proposed by [20], [34], where we use the manipulated images through StyleGAN to give the various viewpoint and lighting information.",1,related,1,positive
+Hence we follow [20] to reconstruct the 3D cartoon shapes.,1,related,1,positive
+"Additionally, we add a depth smoothness loss Lds used in [3, 27] to reduce inference error of surface normals.",1,related,1,positive
+7 Limitations of our proposed model comparing to GAN2Shape [3].,1,related,1,positive
+"In Table 4, we also compare ASRMM with Unsup3d and GAN2Shape in terms of model complexity and time consuming.",1,related,1,positive
+"Unsupervised Shape Reconstruction We quantitatively compare our ASRMM with a fully-supervised baseline and two unsupervised methods [3, 8] in Table 4.",1,related,1,positive
+"In contrast to classical NeRF [38], we do not utilize view direction conditioning since it worsens multi-view consistency [7] in GANs which are trained on RGB datasets with a single view per instance.",1,related,1,positive
+"Compared to upsampler-based 3D GANs [15, 43, 72, 79, 6, 78], we use a pure NeRF [38] as our generator G and utilize the tri-plane representation [6, 8] as the backbone.",1,related,1,positive
+"Apart from that, we also compare to pi-GAN [7] and GRAM [12], which are non-upsampler-based GANs.",1,related,1,positive
+"Our method partially uses [32] as a tool, but we go beyond it to further explore if GANs can also be used to disentangle material properties.",1,related,1,positive
+We first initialize Fs to produce an ellipsoid as a convex shape prior following [32].,1,related,1,positive
+4 shows the qualitative comparison between our approach and two unsupervised inverse rendering baselines Unsup3d [52] and GAN2Shape [32] on the CelebA dataset.,1,related,1,positive
+"Apart from Unsup3d and GAN2Shape, we also compare with pi-GAN [9] and ShadeGAN [33] that can perform unsupervised 3D reconstruction via GAN inversion.",1,related,1,positive
+"Inspired by [32], we adopt an exploration-and-exploitation algorithm to generate pseudo multi-view and multi-lighting images from a pretrained GAN.",1,related,1,positive
+"Having this dependence allows us to further extend our method for joint training on multiple instances as done in [32], which improves generalization.",1,related,1,positive
+"In order to generate a number of approximated paired images of various viewpoint and lighting conditions using the GAN, we adopt an exploration and exploitation algorithm following [32].",1,related,1,positive
+"In experiments, we demonstrate superior performance over recent state-of-the-art approaches Unsup3d [39] and GAN2Shape [41].",1,related,1,positive
+"Semantic Field for Facial Editing Given an input image I ∈ R3×H×W and a pretrained GAN generator G, similar to previous latent space based manipulation methods [40, 41, 59, 35], we need to firstly inverse the corresponding latent code z ∈ R such that I = G(z), and then find the certain vector fz ∈ R which can change the attribute degree.",1,related,1,positive
+"Reconstruction on BFM: In this experiment, we combine our proposed IC and LC with the unsupervised reconstruction methods [41, 30] on the BFM Face reconstruction dataset.",1,related,1,positive
+The main difference between [30] and our IC is that the former randomly augments attributes.,1,related,1,positive
+"To generate 3D shapes directly from text or sound, we can easily integrate our method with a concurrent shape reconstruction method [74] for the reason that we share the same latent space of a pretrained GAN model.",1,related,1,positive
+"[18], we implement Equation (3) as two parts.",1,related,1,positive
+"However, different from them, we do not need any manual annotation [31] nor iterative training [18].",1,related,0,negative
+"We recompose the photo-geometric autoencoding model in [20] by combining GANs and renderer, and adjust the output of the GANs to view, light, albedo, and normal (as shown in Fig.",1,related,1,positive
