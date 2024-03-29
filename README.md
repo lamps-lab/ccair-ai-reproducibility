@@ -32,17 +32,7 @@ case study of machine learning papers</b>"
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;pip install torch==1.13.0<br>
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;transformers<br>
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;pip install -q transformers<br>
-<b>4. conda installations:</b><br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;pandas==2.0.3<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Beatifulsoup4==4.11.1<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Selenium==4.11.2<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;conda install -c conda-forge selenium<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;webdriver-manager=4.0.0<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;conda install -c conda-forge webdriver-manager<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;bibtexparser-1.4.0<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;conda install -c conda-forge bibtexparser!<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;pdfminer.six-20221105<br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;conda install -c conda-forge pdfminer.six<br>
+
 
 </font>
 
