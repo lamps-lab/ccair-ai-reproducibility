@@ -1,0 +1,38 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"We split the dataset into 100 classes for training, 50 for validation, and 50 for testing following the prior standard works [19, 2].",1,related,0,negative
+22 WACV20 Proto+Jig [20] ResNet18 - 89.,1,related,0,negative
+"In this work, we opt rotation prediction [20] mainly because of its simplicity and effectiveness [20, 8].",1,related,1,positive
+"For other four datasets, we follow the split of [20].",1,related,1,positive
+† denotes the values are reported from the implementation in [20].,1,related,0,negative
+We employ the setting in ProtoNet [5] and conduct a cross-domain experiment where our model is trained on miniImagenet and evaluated on the CUB dataset.,1,related,1,positive
+"Specifically, we use the ResNet-18 as the backbone, then the episodic training mechanism is used to classify each query sample into one of the N support classes, called N-way K-shot task as the ProtoNet [5] shows.",1,related,1,positive
+"In addition, we follow the same setting as Su [41] to train some baselines from scratch on Oxford Flowers and FGVC Aircraft.",1,related,0,negative
+Our model is implemented with the Pytorch [53] based on the codebase for few-shot learning denoted in [41].,1,related,1,positive
+"Second, we design a generalized taskagnostic test, where we re-think the generalization ability of existing FSL methods.",1,related,1,positive
+"We can draw following conclusion from this figure: 1) Under traditional FSL scope, models enjoy the benefit of pre-training process.",1,related,0,negative
+"Furthermore, we follow the general FSL setting that ignores X t in the training phase and does not require any fine-tuning processes, enabling fast model deployment to the unseen task.",1,related,1,positive
+"Few-shot Learning (FSL): C(Ds)∩C(Dt) = ∅, P (Ds) ≈ P (Dt), and the support data is few.",1,related,1,positive
+"For SSL, we implement the ""rotation baseline” (Rot baseline).",1,related,1,positive
+"With SSL, we employ the “rot baseline”, which is trained with the standard cross-entropy loss and an auxiliary loss to predict the rotation angles of the perturbed images.",1,related,1,positive
+"Moreover, our method is agnostic to the backbone network; thus, it does not have the need of a training phase to adopt as in SSL and KD, while incurring just a little overhead at inference (for fine-tuning prototypes with approximately 200 gradient updating steps).",1,related,1,positive
+We also conduct experiments with additional loss functions including self-supervised loss (SSL) and knowledge distillation (KD) in Figure 2a.,1,related,1,positive
+"Accordingly, the SSL loss function Lssl is given by:
+Lssl(θ, φ;Db,R) = 1
+Nb|R| Nb∑ i=0 ∑ j∈R |R|∑ k=0 I(k = j) log pφ(k|fθ(xji )) (7)
+Here, I(·) is the indicator function and pφ(·|fθ) denotes the (predicted) probability of rotation angle.",1,related,1,positive
+"Complementary to [4,14,61] that exploit unlabelled data via self-supervised objectives in the prior learning phase, we use unlabelled data specifically for task-specific finetuning.",1,related,1,positive
+"Following Su et al. (2019), we use a ResNet-18 (He et al., 2016) backbone network to facilitate training with bigger batch sizes as it was reported to improve performance (Chen et al., 2020a,b).",1,related,0,negative
+"To be in consistent with the previous works [3, 31], We sample 600 few-shot tasks from the set of novel classes.",1,related,0,negative
+"Following [31], we split the dataset into 51 for training, 26 for validation and 25 for test classes.",1,related,0,negative
+"To draw fair comparisons with the existing methods, we deploy the following CNN architectures as visual backbones: 4-layer convolutional architecture proposed in [30] for CUB, ResNet-12 for miniImageNet [33, 4, 18], and ResNet-18 [31] for VGG-Flowers.",1,related,1,positive
+"Following [31], we split the available classes in the dataset into 100 for training, 50 for validation and 50 for testing.",1,related,0,negative
+"43 + jig + rot, (SSFSL [39]) ResNet-18 58.",1,related,1,positive
+", 2020) or minimizing the sum of loss functions by meta-learning (Su et al., 2020), we propose to train the model such that it directly learns to adapt at test-time without supervision.",1,related,1,positive
+"Our CPLAE is also a supervised FSL model, but the way data augmentation is used is very different from that in [8, 49, 28].",1,related,1,positive
+"Additionally, we compare the performances of our approach with other self-supervised auxiliary losses, i.e., rotation prediction (Gidaris et al., 2018) and jigsaw puzzle (Noroozi & Favaro, 2016), for which (Su et al., 2020) provided their integration into the ProtoNet framework.",1,related,1,positive
+"We opt for this more challenging task based on previous work that has shown that more difficult auxiliary tasks produce more useful feature representations [19, 26].",1,related,1,positive
+"unexplored, we have come across some works on similar topics (Cao and Wu, 2021; Su et al., 2020).",1,related,0,negative
+"DNNs only produce meaningful outputs for indistribution (ID) data (Su et al., 2020).",1,related,0,negative
+"We expect dataset shift to manifest in an unusually large self-supervision loss (Su et al., 2020) that compensates for the decreased ability to detect uncertain cases of uncertainty estimation methods.",1,related,1,positive
+"For jigsaw tasks, we use 35-permutations from Su et al. (2020).",1,related,1,positive
+An additional module is inserted between the embedding network and classifier and we use hidden dimensions from Su et al. (2020).,1,related,1,positive

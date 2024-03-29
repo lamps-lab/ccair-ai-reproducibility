@@ -1,0 +1,23 @@
+text,target_M6_predict,target_predict_M6_label
+Recently (Salvador et al. 2021) followed a similar approach of slicing datasets and identified sensitive subgroups through clustering of image features and calibrated a face verification model on the FPR incurred on these subgroups.,1,neutral
+"While more and more face recognition algorithms are used in everyday life, many of them have much higher false positive rates for non-white faces than white faces, which would affect judicial fairness (Salvador et al. 2021).",1,neutral
+[156] introduced a conditional calibration method for fair face veriication.,1,neutral
+"Salvador, [166] proposes a Fairness Calibration (FairCal) method that applies the K-means algorithm to the image feature representation vectors Z and makes partitions of the embedding space",1,neutral
+Another line of approaches (Dhar et al. 2021; Salvador et al. 2022) attempts to remove bias from a pre-trained face recognition model by building a fairer decision system: PASS (Dhar et al.,1,neutral
+FairCal (Salvador et al. 2022) proposed to post-calibrate the verification score between each pair of images in the testing dataset.,0,negative
+"There are two possible alternatives to this approach:
+(i) Prompting prepends or alters the model input with specific triggers that stimulate a bias-free result; (ii) Vector-Space Manipulation manipulates the embedding space to remove undesired biases.",1,neutral
+"Vector-Space Manipulation [174] [3, 21, 22, 47, 52, 89, 119, 120, 197] [203] [48, 77, 91, 106, 107, 111, 189, 216]",1,neutral
+5.4.2 Vector-Space Manipulation.,1,neutral
+"Category Sub-category Vision Language Multimodal
+Distributional Heuristic [45] [126, 186] — Generative [32, 62, 147, 165, 217] [160] — Resampling [28, 117, 192] — [214]
+One-Step-Training
+Adversarial [55, 115, 205] [58, 60, 67, 129, 150, 167, 209] [14, 214] Causal Approaches [42, 93, 98] [76] [215] Disentanglement [41, 98, 153, 193, 213] [51] —
+Optimization [4, 5, 73, 79, 130, 192, 204] [24, 31, 51, 67, 90, 118, 182, 207] [99, 203, 220][96, 97, 115, 127, 133, 154, 161, 178]
+Two-Step-Training Distillation [88, 116, 132] [76] — Fair-Modules [94, 116] [33, 57, 112, 163, 210] [152, 191, 214] Fine-Tuning — [56, 68, 122, 211] [14]
+Inferential Prompting — [66, 176, 181, 184, 202] [137]
+Vector-Space Manipulation [174] [3, 21, 22, 47, 52, 89, 119, 120, 197] [203][48, 77, 91, 106, 107, 111, 189, 216]
+ACM Comput.",1,neutral
+[174] rely on clustering and embeddings to fix unfairness issues in the visual domain.,1,neutral
+"Other approaches accomplish that by training a post-hoc classifier in an adversarial manner [14], clustering the embedding space [47] or employing conditional calibration [44].",1,neutral
+"Treatments against bias were applied in pre-processing, by modifying input data, in-processing, by constraining model training, and post-processing, by calibrating thresholds [23].",1,neutral

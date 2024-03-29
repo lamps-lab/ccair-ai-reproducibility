@@ -1,0 +1,189 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+Method Drop (↓) Inc (↑) Coher (↑) Compl (↓) ADCC (↑) Drop (↓) Inc (↑) Coher (↑) Compl (↓) ADCC (↑) Relevance[Chefer et al. [2021]] 55.,1,related,1,positive
+"Chefer et al. [2021] improved the visualization quality of attention-rollout and enabled generating class specific activation map with relevance information but it requires gradient information so it cannot be used for supporting explainability in inference time. And, all the existing techniques require the accessibility to the all attention layer’s activation in a model and it requires deeper model dependency. To overcome the limitations of existing XAI techniques for ViT, we propose an accurate and efficient reciprocal information-based approach. Our method utilizes reciprocal relationship between new spatially masked feature inputs (positional token masking) and network’s prediction results. By identifying these relations, we can generate visual explanations that provide insights into the model’s decision-making process without using attention layers’ information and assuming their internal relationship as previous researches. Our approach not only improves the interpretability of ViT models but also enables users to use XAI result in their inference system without trainable model. We evaluate our method on a range of ViT classification models and demonstrate its effectiveness in generating high-quality visual explanations that aid in understanding the models’ behavior and its accuracy in measuring Average Drop-Coherence-Complexity (ADCC) score suggested by Poppi et al. [2021]. The main contributions of this paper include:",1,related,1,positive
+"The relevancy map loss, uses a CLIP-based relevancy [11] to provide rough estimation for the localization map",1,related,1,positive
+"For the intepretation of the attention in ShE, SE, DE, BERT, and its variants we used the tool developed by (Chefer et al., 2021).",1,related,1,positive
+"The current effective methods are Rollout [1], TransAtt [7], GradCAM [30], PRLP [38] and GenAtt [6].",1,related,1,positive
+• Exploiting the intepretability capabilites of the transformer model to provide explanations of its results [9].,1,related,1,positive
+"For the text modality, we employ the interpretability of transformers approach [15].",1,related,1,positive
+"In order to verify the effectiveness of our proposed DynaSlim, we leverage a local relevancebased calculating method [26] to visualize the significant parts of the image that lead to a certain classification.",1,related,1,positive
+"We report the additional visual explanations and evaluations on various methods and models, including GradCAM, FullGrad, GradCAM++, WGradCAM, RAP, RSP, AGF, SGLRP, and transformer interpretability (Chefer, Gur, and Wolf 2021).",1,related,1,positive
+We adopt a recent Transformer visualization method [4] to visualize the Transformer-based video encoder of our CMMT model.,1,related,1,positive
+"For instance, we could pick a particular neuron in the embedding and trace back what parts of a particular input sequence excite that neuron using methods such as layer-wise relevance propagation [Bach et al., 2015, Chefer et al., 2021].",1,related,1,positive
+"Inspired by recent work on Transformer-based image classification [29, 30], we propose a framework for regression tasks operating on molecular strings, and develop an explainable AI technique for chemical language models, using solely the model without external tools or information.",1,related,1,positive
+"For explaining BERT, we employ the transformer visualization method proposed in Chefer et al. (2021) to map back from the [CLS] activation concepts to input tokens.",1,related,1,positive
+"Similarly, the codebase used for replicating the visualization method (Chefer et al., 2021) and the baseline method (Chen et al., 2018) are licensed under the MIT license, which allows for redistribution of the code.",1,related,1,positive
+"We use the transformer visualization approach (Chefer et al., 2021) and Grad-CAM (Selvaraju et al., 2017), which rely on the gradients generated from the red path.",1,related,1,positive
+"With the trained BrainNPT model, for any given brain network, we can obtain the relevance scores of corresponding ROI with LRP methods.",1,related,1,positive
+"The BrainNPT contains <cls> classification embedding vector, the Transformer block, and fully connected layers, and it is able to use LRP to calculate the relevance scores of each ROI for the classification results.",1,related,1,positive
+"Based on LRP for interpretation of BrainNPT, we could obtain the local relevance for an input sample using deep Taylor decomposition method [42].",1,related,1,positive
+"Considering the similarity between BrainNPT with BERT [7] and ViT [21], we adapted an LRP based interpretation method for the BrainNPT model to explore which ROIs in the brain networks have the key impact on classification.",1,related,1,positive
+"Therefore, we employ an improved Layer-wise Relevance Propagation (LRP) method [16] which integrates the weighted attention relevance for each MSA block.",1,related,1,positive
+"In addition, we employ an improved Layer-wise Relevance Propagation (LRP) method [16] for the interpretation of the spectral transformer.",1,related,1,positive
+"We aim to perform a quantitative evaluation of the interpretation method adapted specifically to ViTs [6], in comparison to model-agnostic [25] and attention-based interpretation methods [4], on the example of medical imaging.",1,related,1,positive
+For TransLRP we utilize the implementation from the original work [6].,1,related,1,positive
+"As a current state-of-the-art approach to explaining ViTs, we rely on the TransLRP algorithm proposed in [6].",1,related,1,positive
+CLIP; see results of Bi-Modal [8] built upon explainability of ViT [9] and gScoreCAM [10] for CLIP-based localization in Fig.,1,related,1,positive
+We show the attention distribution of ViT and SViT on images in Fig.6 with the Transformer model’s attention visualization tool provided by Chefer [30].,1,related,1,positive
+"Specifically, we compare the results using raw attention, CAM (Zhou et al., 2016), and Transformer-LRP (Chefer et al., 2021) in Table 4.",1,related,1,positive
+"To figure out how interpretability contributes to the model prediction, we adopt the positive and negative perturbation tests presented in (Chefer et al., 2021) to give both quantitative and qualitative evaluations on the interpretability.",1,related,1,positive
+"3 EVALUATION OF THE INTERPRETABILITY To figure out how interpretability contributes to the model prediction, we adopt the positive and negative perturbation tests presented in (Chefer et al., 2021) to give both quantitative and qualitative evaluations on the interpretability.",1,related,1,positive
+"In Figure 8, we further conduct visualization experiments(Chefer, Gur, and Wolf 2021) to show the effectiveness of X-ReID.",1,related,1,positive
+"Specifically, we use IntGrad (Sundararajan et al., 2017) with n=32 steps, ‘Input×Gradient’ (IxG), cf. Adebayo et al. (2018), as well as an adapted GradCAM (Selvaraju et al., 2017) as in Chefer et al. (2021).",1,related,1,positive
+"Second, we evaluate two pixel perturbation metrics, cf. Chefer et al. (2021).",1,related,1,positive
+"Further, we evaluate architecture-agnostic methods such as Integrated Gradients (IntGrad) (Sundararajan et al., 2017), adapted GradCAM (Selvaraju et al., 2017) as in Chefer et al. (2021), and ‘Input×Gradient’ (IxG), cf. Adebayo et al. (2018).",1,related,1,positive
+"In contrast to attention explanations, which are not class-specific (Chefer et al., 2021), we find the model-inherent explanations of B-cos ViTs to be highly detailed and class-specific.",1,related,1,positive
+"For the last, we rely on the implementation provided by Chefer et al. (2021).",1,related,1,positive
+"For all these transformer-specific explanations, we rely on the implementation provided by Chefer et al. (2021).",1,related,1,positive
+"First, we follow Chefer et al. (2021) and evaluate common transformerspecific explanations such as the attention in the final layer (FinAtt), attention rollout (Rollout) (Abnar & Zuidema, 2020), a transformer-specific LRP implementation (CheferLRP) proposed by Chefer et al. (2021), ‘partial…",1,related,1,positive
+"The configurations of the ViTs follow the conventional specifications for ViTs of size Ti, S, and B, cf. Chefer et al. (2021).",1,related,0,negative
+"On the conventional ViTs, we further evaluate LRP-based explanations: partial LRP (pLRP) Voita et al. (2019) and the transformer-specific LRP adaptation by Chefer et al. (2021) (CheferLRP).",1,related,1,positive
+"For all models, we rely on the implementation by Chefer et al. (2021), which we use unchanged for the conventional ViTs and modify as we describe below for the B-cos ViTs (C.1.1).",1,related,1,positive
+"However, instead of deriving an explanation ‘post-hoc’ as in Chefer et al. (2021), we explicitly design our models to be holistically explainable.",1,related,1,positive
+"…explanations such as the attention in the final layer (FinAtt), attention rollout (Rollout) (Abnar & Zuidema, 2020), a transformer-specific LRP implementation (CheferLRP) proposed by Chefer et al. (2021), ‘partial LRP’(pLRP) (Voita et al., 2019), and ‘GradSAM’ (Barkan et al., 2021).",1,related,1,positive
+"METHOD DEIT-B VIT-B
+I↑ D↓ I↑ D↓
+Fake-CAM [39] 57.5 34.2 57.4 33.3
+Grad-CAM [46] 61.8 17.5 62.9 19.8 Grad-CAM++ [11] 60.5 21.9 56.7 29.3 Score-CAM [56] 60.6 24.4 66.5 15.1 XGrad-CAM [20] 55.2 31.1 55.6 26.5 Layer-CAM [26] 61.6 21.2 62.9 14.6 ExPerturbation [18] 62.1 27.0 64.4 18.4 RawAtt [16] 56.3 29.3 62.2 17.9 Rollout [1] 56.7 32.8 64.8 15.2 TIBAV [12] 63.7 16.3 66.1 14.1 Opti-CAM (ours) 59.2 22.8 60.5 22.0
+Table A6: I/D: insertion/deletion [36] scores on ImageNet validation set; ↓ / ↑: lower / higher is better.
+observation holds for deletion.",1,related,1,positive
+"For transformer models, we also compare against raw attention [16], rollout [1] and TIBAV [12]7.",1,related,1,positive
+The comparison of attention maps in FBKD and FBKD-ProC-KD (ours) by using the Transformer Interpretability method [43].,1,related,1,positive
+"We provide the attention relevance maps [9] for the same image as shown in Figure 13 in the main paper, but for all three classes present in the image, in Figure 28.",1,related,1,positive
+"In Figures 10 and 11, we have visualised CLIPs attention-based relevancy for the image-caption and foil examples shown in Figures 2 to 7 using the method of Chefer et al. (2021a).",1,related,0,negative
+"When performing activation maximizing visualizations, we notice that ViTs consistently generate higher quality image backgrounds than CNNs.",1,related,1,positive
+"We visualize the saliency maps [12] of DeiT-S and OAMixer on top of it, trained on ImageNet9.",1,related,1,positive
+"C V
+] 2
+7 N
+ov 2
+terpretability methods, like CAM [46] and Transformerinterpretability [5], can support such an argument, such as in the work of [61].",1,related,1,positive
+"Finally, we perform visualization experiments using the (Chefer, Gur, and Wolf 2021) method to show the focused areas of the model.",1,related,1,positive
+We applied the method described in [6] to interpret the learned representations from three selfsupervised learning approaches.,1,related,1,positive
+"Furthermore, we visualize the attention from the pre-trained weights using the method described in [6].",1,related,1,positive
+"In the future, other than class activation maps, we will seek to explore the explainability for Vision Transformers in multi-label classification tasks, with the help of self-attention derived from the Transformer architectures [12, 79, 1, 13].",1,related,1,positive
+Our method is compared with the state-of-the-art explainers with a recently adapted version of Relevance Propagation for the transformers [7] being amongst them.,1,related,1,positive
+"Specifically, given a vision transformer model F and a sampled pair (x,y), we first acquire the class activated matrix C of the b−th block of F following [6], which can be formulated as:",1,related,1,positive
+"In this experiment, we verify the improvement of AdsCVLR compared with single modal models on these “hard” samples through a visualization method [1].",1,related,1,positive
+"We make a visualization on each level in Figure 6, we use the method proposed in [40,41] to generate the visualization maps.",1,related,1,positive
+"Besides, Zabari & Hoshen (2021) obtains segments via interpretability Chefer et al. (2021b) based on gradient, but owing to the limited localization quality, additional unsupervised segmentation algorithm is required.",1,related,1,positive
+"To get rid of costly pixel-level annotations, some works generate the segments by retrieval Shin et al. (2022), grouping Xu et al. (2022) or unsupervised segmentation Zabari & Hoshen (2021) with gradient-based interpretability method Chefer et al. (2021b).",1,related,1,positive
+"We firstly compare our dense ITSM with smoothed min pooling with gradient based visualization method Bi-Module Chefer et al. (2021a), and our method performs much better than it.",1,related,1,positive
+"Note, Bi-Model [9] is based on the latest explainability method [10] for ViT.",1,related,1,positive
+"Here the method described in [3] is used, the corresponding values per token are referred to as “attention weights” here.",1,related,1,positive
+"For each layer, we present the patch-to-patch attention matrix (size: 180×180) calculated by the rollout method in [32].",1,related,1,positive
+"To investigate the performance of our model, we used the class activation map (CAM) [55] to visualize the attention maps generated by our ACSI-Net.",1,related,1,positive
+"We present visualizations of target class activation maps using the recent Transformer Explainability [2]
+for several images in Figure 5 to showcase the behavior of SPViT.",1,related,1,positive
+We present visualizations of target class activation maps using the recent Transformer Explainability [2] for several images in Figure 5 to showcase the behavior of SPViT.,1,related,1,positive
+"For attention-based methods, we use attention rollout [1] and the last layer’s attention directed to the class token [1, 10].",1,related,1,positive
+"We show results for attention last, attention rollout, Vanilla Gradients, Integrated Gradients, SmoothGrad, LRP, leave-one-out, and ViT Shapley only; we excluded VarGrad, GradCAM and RISE because their results were less visually appealing.",1,related,1,positive
+We used an implementation provided by prior work [10].,1,related,1,positive
+"Our evaluation was conducted on a GeForce RTX 2080 Ti GPU, with minibatches of 16 samples for attention last, attention rollout and ViT Shapley; batch size of 1 for Vanilla Gradients, GradCAM, LRP, leave-one-out and RISE; and internal minibatching for SmoothGrad, IntGrad and VarGrad (implemented via Captum [35]).",1,related,1,positive
+"Similar to prior work [10], we did not use attention flow [1] due to the computational cost.",1,related,0,negative
+"(↑)
+Attention last - - - Attention rollout - - -
+GradCAM 0.021 (0.002) 0.005 (0.000) -0.672 (0.015) IntGrad 0.008 (0.001) 0.004 (0.000) 0.294 (0.022) Vanilla 0.006 (0.001) 0.020 (0.001) -0.682 (0.015) SmoothGrad 0.006 (0.001) 0.006 (0.001) -0.683 (0.015) VarGrad 0.006 (0.001) 0.006 (0.001) -0.680 (0.015) LRP 0.004 (0.001) 0.022 (0.001) -0.680 (0.015)
+Leave-one-out 0.013 (0.002) 0.003 (0.000) -0.017 (0.028) RISE 0.023 (0.003) 0.002 (0.000) -0.681 (0.015) ViT Shapley 0.093 (0.004) 0.001 (0.000) 0.672 (0.014)
+Random 0.005 (0.001) 0.005 (0.001) -",1,related,1,positive
+"Next, for gradient-based methods, we use Vanilla Gradients [54], Integrated Gradients [57], SmoothGrad [55], VarGrad [25], LRP [10] and GradCAM [50].",1,related,1,positive
+"We used existing LRP and GradCAM implementations for ViTs [10, 23], and the remaining gradient-based methods were run using the Captum package [35].",1,related,1,positive
+"Following the evaluation scheme in (Samek et al., 2016; Feng et al., 2018; Chefer et al., 2020), given an input x and an attribution map, we rank the map elements by ascending importance.",1,related,1,positive
+"Second, we conduct segmentation tests following [9] to assess the effect of our method on the level of agreement between the relevancy maps and the foreground segmentation maps.",1,related,1,positive
+"Segmentation tests Since our motivation is to encourage the relevance to focus less on the background and more on as much of the foreground as possible, we test the resemblance of the resulting relevance maps to the segmentation maps following [9].",1,related,1,positive
+We visualize the activated area of our M3T network based on transformer interpretability technique [7].,1,related,1,positive
+"Third, we visualize the activated area in 3D MRI images the transformer interpretability methods [7].",1,related,1,positive
+"Note that our shared attention differs from the coattention introduced in prior works [7], where the value and key are passed via a skip connection from the encoder layers.",1,related,1,positive
+"Regarding the DeiT, we refer the reader to [216], 1335 which proposed a framework to generate LRP attributions for 1336 Transformer-based architectures.",1,related,1,positive
+"In the second row we observe that the negative contributions from the noisy background observed in the attention maps of DeiT-B + pADL + AR are alleviated in ViTOL-GAR/LRP.
+Visualization on CUB: In Figure 5, first row, we showcase five random example images from the CUB dataset.",1,related,1,positive
+"For each of the example images, we visualize the baseline DeiT-B with AR, GAR and LRP in the second, third and fourth columns, and, DeiT-B + p-ADL with AR, ViTOL with LRP and ViTOL with GAR attention maps in the final three columns.",1,related,1,positive
+"In Section 4, we also showcase results for an alternative post-hoc approach called Layer Relevance Propagation [7].",1,related,1,positive
+We observe that our approaches with a DeiT-B backbone with p-ADL + (a) GAR and (b) LRP significantly outperform the other WSOL approaches.,1,related,1,positive
+"In the second row, we overlay the attention maps obtained from ViTOL-LRP for these images.",1,related,1,positive
+We compare this against attention rollout (AR) mechanism [1] and layer relevance propogation (LRP) [7] for generating class dependent attention maps.,1,related,1,positive
+"Training and Testing details: On ImageNet-1K, for baseline models, we use the DeiT-B and DeiT-S ImageNet pre-trained weights and evaluate on all the methods, namely, AR, GAR and LRP as stated in Table 1, 2 and 3.",1,related,1,positive
+"We observe that attention maps generated for ViTOL with GAR/LRP show dependency with the class, are noisefree and cover the complete object of interest.",1,related,1,positive
+For more details we refer the reader to [7].,1,related,0,negative
+"Attention Visualization: In order to visualize the parts of the facial image that contributes to the category clarification, we apply the visualization method of [6] to visualize the attention maps in the transformer.",1,related,1,positive
+We visualize the attention maps of transformers using Transformer Explainability [6].,1,related,1,positive
+"12, we visualize the attention maps of different transformer models on spoof images using Transformer Explainability [6].",1,related,1,positive
+"7, we visualize the attention maps of different transformers on spoof images using Transformer Explainability [6].",1,related,1,positive
+Figure 5 is generated by an advanced ViT interpretable approach [6].,1,related,1,positive
+"Considering the powerful function of the skip-connection [27], we concatenate the two outputs together and utilize the convolution with 1 kernel size to align the scale of the feature map.",1,related,1,positive
+"Unlike original LRP and [7], where the decomposition starts from the classifier output corresponding to the target class, we have a similarity model that rather measures how similar graph embeddings of the time-snapshot graphs Gt andGt+1 are.",1,related,1,positive
+"In order to explain the output and pave the way for a better explanation of our model, we utilize the idea from [7].",1,related,1,positive
+"Correspondence to: Haoliang Li <haoliang.li1991@gmail.com>.
+dararajan et al., 2017; Smilkov et al., 2017; Shrikumar et al., 2017; Chefer et al., 2021a; Hao et al., 2021; Kobayashi et al., 2020).",1,related,1,positive
+"…we particularly adopt four explanation methods: Partial Layer-wise Relevance Propagation (PLRP) (Voita et al., 2019), Attention Rollout (Abnar & Zuidema, 2020), Transformer Attention Attribution (TransAtt) (Chefer et al., 2021b), and Generic Attention Attribution (GenAtt) (Chefer et al., 2021a).",1,related,1,positive
+We adopt the method presented in [4] which employs Deep Taylor Decomposition to calculate local relevance and then propagates these relevancy scores through the layers to generate a final relevancy map.,1,related,1,positive
+We contribute to the field by building on the method in [3] to associate consolidated attention weights to words containing the tokens and extending this analysis to the whole test set so that one can leverage this knowledge to assess the behavior of a stance classifier in terms of domain characteristics.,1,related,1,positive
+"To get the attention weights for each token, we use the modified LRP technique proposed in [3].",1,related,1,positive
+The attention weights are obtained using the adapted LRP technique proposed in [3] from the results obtained by the classifier.,1,related,1,positive
+"Averaging over the models, we’d achieve 59.74% accuracy with the BM-GAE model and 58.33% using the TRF method compared with 51.04% average accuracy amongst all E-BERT injection models as seen in Table 3.",1,related,0,negative
+"We see that for 7 of the 9 models, questions which include E-BERT entities amongst their top 5 using BM-GAE provide better accuracy than those using the TRF method.",1,related,1,positive
+Over all models E-BERT entities appear in the top 5 most important tokens using TRF more than BM-GAE (10.35 vs 8.59,1,related,1,positive
+We extract visual and text explanations using BM-GAE and TRF on our KVQA models.,1,related,1,positive
+"FOR METHODS THAT PURSUE OPTIMAL CLASSIFICATION PERFORMANCE WITHOUT A SPECIFIED ATTENTION VISUALISATION MECHANISM, WE RESORT TO GRADCAM [68] AND TRANSRELEVANCE [10] AS TWO GENERIC WAYS FOR CNN AND TRANSFORMER TYPE OF MODELS, WHICH COVERED MOST NETWORK BACKBONE CHOICES ACROSS DISCIPLINES IN COMPUTER VISION WORLD NOWADAYS.",1,related,1,positive
+"For works that do not specify a concrete model visualisation approach, we adopt GradCAM [68] and TransRelevance [10] as two generic ways for CNN and Transformer type of models respectively.",1,related,1,positive
+"The trends are similar to those of PASCAL VOC, our method improves over TIBS.",1,related,1,positive
+"To be more specific, inspired by [5], we first obtain the class token xcls i and patch token x patch i of the whole image Ii by ViT encoder:",1,related,1,positive
+"Then we follow [1, 5] to compute the attention rollout, which aggregate the attention matrices from all blocks by matrix multiplications.",1,related,1,positive
+"The transformer encoders are arranged after a convolution feature
+https://github.com/hila-chefer/Transformer-Explainability
+extractor.",1,related,1,positive
+We contribute to the field by building on the solution proposed in [Chefer et al. 2021] to associate consolidated attention weights to words containing the tokens so that one can leverage this knowledge to assess the behavior of a stance classifier in terms of the domain characteristics and the contribution of this words to the correct classification of the stances.,1,related,1,positive
+"To get the attention weights for each token, we use the modified LRP technique proposed in [Chefer et al. 2021].",1,related,1,positive
+The attention weights are obtained using the adapted LRP technique proposed in [Chefer et al. 2021] from the results obtained by the classifier.,1,related,1,positive
+We contribute to the field by building on the solution proposed in [Chefer et al. 2021] to associate consolidated attention weights to words containing the tokens so that one can leverage this knowledge to assess the behavior of a stance classifier in terms of the domain characteristics and the…,1,related,1,positive
+"To further investigate the effectiveness of our approach, we employ the method [5] to visualize the attention maps generated by our TransFER.",1,related,1,positive
+"For overall comparisons with the state-of-the-art methods (Rao et al. 2021; Tang et al. 2021; Chen et al. 2021; Pan et al. 2021), we conduct the token selection and slow-fast token updating from the fifth layer of DeiT and the third layer (excluding the convolution layers) of LeViT, respectively.",1,related,1,positive
+"In Table 1, we compare our method with existing token pruning methods (Rao et al. 2021; Pan et al. 2021; Tang et al. 2021; Chen et al. 2021).",1,related,1,positive
+"In order to analyse the explainability properties of our proposed method, we use the Gradient Attention Rollout algorithm as outlined in [87].",1,related,1,positive
+Visualization using Transformer Attribution [6].,1,related,1,positive
+"We use the attention as the explanation [29, 3].",1,related,1,positive
+"For the interpretability of the classification model, we adopted a visualization method of saliency map tailored for ViT suggested by (Chefer et al., 2020), which computes relevancy for Transformer network.",1,related,1,positive
+"Since each such map is comprised of h heads, we follow [5] and use gradients to average across heads.",1,related,1,positive
+"Our explainability prescription is easier to implement than existing methods, such as [5], and can be readily applied to any attention-based architecture.",1,related,1,positive
+Following [5] we remove the negative contributions before averaging.,1,related,1,positive
+"We present baselines of three classes, following [5]: attention map baselines, gradient baselines, and relevancy map baselines.",1,related,1,positive
+"For our gradient baselines, we use the Grad-CAM [32] adaptation described in [5], i.",1,related,1,positive
+Fong & Vedaldi (2017) introduce a method for explaining classifiers based on meaningful perturbation and Chefer et al. (2021) introduce a method for improving interpretation for transformer-based classifiers.,1,related,1,positive
+We also notice a recent paper [10] that develops LRPbased [2] method to compute relevance to explain the predictions of Transformer.,1,related,1,positive
+"Specifically, we compare the results using raw attention, CAM (Zhou et al., 2016), and Transformer-LRP (Chefer et al., 2021) in Table 4.",1,related,1,positive
+"To figure out how interpretability contributes to the model prediction, we adopt the positive and negative perturbation tests presented in (Chefer et al., 2021) to give both quantitative and qualitative evaluations on the interpretability.",1,related,1,positive
+"3 EVALUATION OF THE INTERPRETABILITY To figure out how interpretability contributes to the model prediction, we adopt the positive and negative perturbation tests presented in (Chefer et al., 2021) to give both quantitative and qualitative evaluations on the interpretability.",1,related,1,positive
+"The following six explanation methods are used as the baselines for a comparison in our experiments: Raw Attention Map (RAM), Attention Rollout (Abnar & Zuidema, 2020) (Rollout), Generic Attribution (Chefer et al., 2021b) (GA), GradCAM (Selvaraju et al., 2017) (CAM), Partial LRP (Voita et al., 2019) (PLRP) and Transformer Attribution (Chefer et al., 2021a) (TA).",1,related,1,positive
+"Transformer attribution (Chefer et al., 2021a) (TA) Transformer attribution method is a state-of-the-art class-specific explanation method for Transformer.",1,related,1,positive
+"Generic Attribution (Chefer et al., 2021b) generalizes the idea of Rollout and adds the gradient information to each attention map, while Transformer Attribution (Chefer et al., 2021a) exploits LRP (Binder et al., 2016) and gradients together for getting the explanations.",1,related,1,positive
+"Generic attribution (Chefer et al., 2021b) (GA) Generic attribution extends the usage of Transformer attribution to co-attention and self-attention based models, such as VisualBERT, LXMERT etc. and propose a more generic relevancy update rule.",1,related,1,positive
+"…a comparison in our experiments: Raw Attention Map (RAM), Attention Rollout (Abnar & Zuidema, 2020) (Rollout), Generic Attribution (Chefer et al., 2021b) (GA), GradCAM (Selvaraju et al., 2017) (CAM), Partial LRP (Voita et al., 2019) (PLRP) and Transformer Attribution (Chefer et al., 2021a) (TA).",1,related,1,positive
+"We show in Figure 1 some visualizations with Generic Attribution to different types of Vision Transformers (Dosovitskiy et al., 2021; He et al., 2022).",1,related,1,positive
+"Following previous works (Abnar & Zuidema, 2020; Chefer et al., 2021a;b; Samek et al., 2017; Vu et al., 2019; DeYoung et al., 2020), we prepare three types of tests for the trustworthiness evaluation:
+Perturbation Tests gradually mask out the tokens of input according to the explanation results and…",1,related,1,positive
+"…baselines for a comparison in our experiments: Raw Attention Map (RAM), Attention Rollout (Abnar & Zuidema, 2020) (Rollout), Generic Attribution (Chefer et al., 2021b) (GA), GradCAM (Selvaraju et al., 2017) (CAM), Partial LRP (Voita et al., 2019) (PLRP) and Transformer Attribution (Chefer et…",1,related,1,positive
+"Transformer
+Attribution (Chefer et al., 2021a) and Generic Attribution (Chefer et al., 2021b) combine the gradients with layer-wise relevance propagation (Binder et al., 2016) (LRP) or attention maps along a rolling out path, and eliminate the negative components in each attention block.",1,related,1,positive
+"Our approach outperforms other strong baselines (e.g., (Abnar & Zuidema, 2020; Chefer et al., 2021a;b)) through quantitative metrics and qualitative visualizations, and shows better applicability to various settings.",1,related,1,positive
+"Following the work of Chefer et al. (2021a), we use a weighted gradient map of the last attention block, which corresponds to the [CLS] token .",1,related,1,positive
+Further mentions of LRP in this paper follow the implementation of Chefer et al. (2021).,1,related,0,negative
+"This implementation (Chefer et al., 2021)
+2https://github.com/INK-USC/DIG 3https://github.com/cdpierse/transformers-interpret 4https://github.com/hila-chefer/Transformer-
+Explainability 5For each text, we use the explanation for unseen data, meaning that the attributions were generated with the…",1,related,1,positive
+"Results of Rollout [1], raw attention, GradCAM [34], LRP [5], partial LRP [41] and the Improved LRP [6] are reproduced from [6], which all use the pretained ViT-B model [12].",1,related,1,positive
+"6, to further understand the proposed method, we visualize the feature maps of our HFI-Net by using Attention Map [82] on various manipulation faces.",1,related,1,positive
+"6, to further understand the proposed method, we visualize the feature maps of our HFI-Net by using Attention Map [82] on various
+manipulation faces.",1,related,1,positive
+The visualization experiments of our method via Attention Map [82].,1,related,1,positive
+• Our AttCAT exploits both the self-attention mechanism and skip connection to explain the inner working mechanism of Transformers via disentangling information flows between intermediate layers.,1,related,1,positive
+"LRP-implementations follow [34] for ResNet and [35], [36] for transformers.",1,related,1,positive
+Fong & Vedaldi (2017) introduce a method for explaining classifiers based on meaningful perturbation and Chefer et al. (2021) introduce a method for improving interpretation for transformer-based classifiers.,1,related,1,positive
+"Using the same method with the main material [3], we also visualize the activated area of our M3T network.",1,related,1,positive
+We propose to leverage the idea of relevancy scores [4] as the importance map for optimal transport distributions.,1,related,1,positive
+Methods raw attention rollout[11] attribution[12] Ours Ours(lend=4) Pixel accuracy 67.,1,related,0,negative
+Methods raw attention rollout[11] attribution[12] Ours Ours(lend=4) Deletion 21.,1,related,0,negative
+"Note that (i) and (ii) are obtained after binarizing each visualization, which depends on the pre-set threshold (30% of the max value is used in practice [12]), while (iii) is threshold-free.",1,related,1,positive
+The Transformer attribution method [12] assigns local relevance scores based on LRP and propagates the relevance scores mixed with gradients through layers.,1,related,1,positive
+"Without early stopping using lend, our proposed approach produces better explanations than the rollout [11] and attribution [12] methods.",1,related,0,negative
+Methods raw attention rollout[11] attribution[12] Ours Ours(lend=4) Positive 28.,1,related,0,negative
+The attribution method [12] can extract category-related features and part of the target region but is not comprehensive and complete.,1,related,0,negative

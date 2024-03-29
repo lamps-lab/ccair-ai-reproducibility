@@ -1,0 +1,31 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+2) BC-BeT [62]: We implement and run a state-of-theart behavior cloning method Behavior Transformers.,1,related,1,positive
+"We see that BC-BeT is unable to complete any of the tasks, quickly going out of distribution and failing to recover.",1,related,0,negative
+"Inspired by the recent cross-pollination of natural language processing (NLP) techniques in offline RL (Chen et al., 2021; Janner et al., 2021; Shafiullah et al., 2022), we take a different approach.",1,related,1,positive
+"Prior work has leveraged these ideas in similar contexts (Janner et al., 2021; Shafiullah et al., 2022; Jiang et al., 2022) and we follow suit.",1,related,1,positive
+"Following prior work (Dadashi et al., 2021; Shafiullah et al., 2022), we discretize the action space and use a modified byte-pair encoding (BPE) scheme (Gage, 1994; Sennrich et al.",1,related,1,positive
+BeT [68]: We modify the Behavior Transformer architecture with language conditioning and train it in a multi-task manner.,1,related,1,positive
+"In future work, we will extend recently proposed alternative approaches for handling multimodality such as Behavior Transformers [30] and Diffusion Policies [34] to the IFL setting and compare them to IIFL.",1,related,1,positive
+"Additionally, we compare against Behavior Transformer (BeT) [43], which discretizes the dataset into clusters using K-Means and uses a Transformer model to predict a cluster center and an offset, in order to handle multi-modal data.",1,related,1,positive
+"Additionally, we compare against Behavior Transformer (BeT) [58], which discretizes the dataset into clusters using K-Means and uses a Transformer model to predict a cluster center and an offset, in order to handle multi-",1,related,1,positive
+"Moreover, we consider energy-based models for behavior learning (IBC) (Florence et al., 2022) and the recently proposed behavior transformer (BeT) (Shafiullah et al., 2022).",1,related,1,positive
+"Time-series diffusion transformer To reduce the oversmoothing effect in CNN models [49], we introduce a novel transformer-based DDPM which adopts the transformer architecture from minGPT [42] for action prediction.",1,related,1,positive
+"We systematically evaluate Diffusion Policy on 12 tasks from 4 benchmarks [12, 15, 29, 42].",1,related,0,negative
+"The baseline methods we evaluate, however, work best with velocity control (and this is reflected in the literature where most existing work reports using velocitycontrol action spaces [29, 42, 60, 13, 28, 27]).",1,related,1,positive
+"We systematically evaluate Diffusion Policy across 12 tasks from 4 different benchmarks [12, 15, 29, 42] under the behavior cloning formulation.",1,related,1,positive
+"We present the best-performing for each baseline method on each benchmark from all possible sources – our reproduced result (LSTM-GMM) or original number reported in the paper (BET, IBC).",1,related,0,negative
+"One of our experiments uses the set up from Shafiullah et al. (2022), allowing us to compare to their reported results, including Behaviour Transformers (BeT): the K-mean+residual combined with a large 6-layer transformer, and previous 10 observations as history; Implicit BC: the official…",1,related,1,positive
+"By using diffusion models for BC we are able to: 1) more accurately model complex action distributions (as illustrated in Figure 1); 2) significantly outperform state-of-the-art methods (Shafiullah et al., 2022) on a simulated robotic benchmark; and 3) scale to modelling human gameplay in Counter-Strike: Global Offensive - a modern, 3D gaming environment recently proposed as a platform for imitation learning research (Pearce and Zhu, 2022).",1,related,1,positive
+"However, as our goal is to learn the full distribution of demonstrations, we instead follow the setup introduced by Shafiullah et al. (2022), which ignores any goal conditioning and aims to train an agent that can recover the full set of demonstrating policies.",1,related,0,negative
+We made extensive efforts to bring performance of K-means+residual inline with that reported in Shafiullah et al. (2022).,1,related,0,negative
+"(32)
+An extra head is used to predict the offset with a loss akin to the masked multitask loss [242]:
+MT-Loss(a, (〈â(j)i 〉) k j=1) = k∑ j=1 I[bac = j] · ||〈a〉 − 〈â(j)〉||22,
+(33) where I[] denotes the Iverson bracket, ensuring that the loss is only incurred from the ground-truth class of action a. Experiments conducted on CARLA showed that the BeT is able to cover all the modes of demonstration data.",1,related,1,positive
+"Our work is most closely related to Shafiullah et al. (2022) as we build on their transformer architecture, while our unimodal baseline is a variant of Chen et al. (2021) that learns outcome conditioned instead of reward conditioned policy.",1,related,1,positive
+"As a result, we choose Behavior Transformers (BeT) (Shafiullah et al., 2022) as our generative architecture base as it can learn action generation with multiple modes.",1,related,1,positive
+"B.2 HYPERPARAMETERS LIST:
+We present the C-BeT hyperparameters in Table 6 below, which were mostly using the default hyperparameters in the original Shafiullah et al. (2022) paper:
+The shared hyperparameters are in Table 7.",1,related,1,positive
+"We use Behavior Transformers from Shafiullah et al. (2022) as our backbone architecture, building our conditional algorithm on top of it.",1,related,1,positive
+"Transformers for behavior learning: Our work follows earlier notable works in using transformers to learn a behavior model from an offline dataset, such as Chen et al. (2021); Janner et al. (2021); Shafiullah et al. (2022).",1,related,1,positive

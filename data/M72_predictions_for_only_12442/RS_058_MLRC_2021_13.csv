@@ -1,0 +1,103 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"In this way, the training corpus is directly re-balanced by swapping or removing bias-related words and counterfactual data augmentation (CDA) (Zmigrod et al., 2019; Dinan et al., 2020; Webster et al., 2020; Dev et al., 2020; Barikeri et al., 2021).",1,related,0,negative
+", 2022b), including work from our group (Xu et al., 2020; Dinan et al., 2022, 2021; Smith et al., 2022a; Dinan et al., 2020a; Smith and Williams, 2021).",1,related,0,negative
+"Results reflect more robust pronoun consistency for binary pronouns (§4.2), the usage of generic masculine language during OLG (§4.3), less toxic language when disclosing binary gender (§5.2, §5.3), and examples of invasive TGNB commentary (§5.2).",1,related,0,negative
+"Motivation To assess LLMs for misgendering behavior in OLG, we create an automatic misgendering evaluation tool.",1,related,0,negative
+6https://github.com/anaeliaovalle/TANGO-Centering-Transgender-NonbinaryVoices-for-OLG-BiasEval 7Addressing someone using a pronoun that does match their gender identity.,1,related,0,negative
+We leverage these findings to drive our OLG harm assessment framework by asking two questions: (1) To what extent is gender non-affirmation in the form of misgendering present in models used for OLG? and (2) To what extent is gender non-affirmation in the form of negative responses to gender identity disclosure present in models used for OLG?,1,related,0,negative
+"C L
+] 1
+J un
+we illuminate ways in which harms may manifest in OLG for members of the queer2 community, specifically those who identify as transgender and nonbinary (TGNB).",1,related,0,negative
+"(3) With these findings, we provide constructive suggestions for creating more gender-inclusive LLMs in each OLG experiment.",1,related,0,negative
+"In this section, we conduct OLG experiments that explore if and howmodels misgender individuals in text.",1,related,1,positive
+"To address this gap, we center the experiences of the TGNB community to help inform the design of new harm evaluation techniques in OLG.",1,related,0,negative
+"We translate this to our work, asking if this behavior is reflected in OLG.",1,related,0,negative
+"To determine if this behavior persists in LLMs, we create a dataset to evaluate misgendering in OLG.",1,related,1,positive
+"Here, Webster et al. (2020) and Lauscher et al. (2021) rely on CDA (Zhao et al., 2018) and Dinan et al. (2020a) use control codes to guide the biases.",1,related,1,positive
+"In our baseline approach, and all other subsequent approaches, we employ a 128M parameter transformer model as a classifier, using the pre-trained model from Dinan et al. (2019b).",1,related,1,positive
+We perform these experiments “zero-shot” by taking an off-the-shelf safety classifier of dialogue utterances from the existing work of Dinan et al. (2019b)4.,1,related,0,negative
+"We use the conversational safety data collected in Dinan et al. (2019b), which is a pool of 30,000 utterances, half of which is collected as standard inputs, and half where crowdworkers were asked to give difficult adversarial inputs.",1,related,0,negative
+"Finally, we add the Funpedia task (Dinan et al., 2020b) – which involves learning to produce an engaging dialogue utterance given a wikipedia sentence –
+and the LIGHT (Urbanek et al., 2019) and LIGHT WILD (Shuster et al., 2021b) tasks – which are open-domain dialogue tasks grounded in a medieval…",1,related,1,positive
+"…generated via our LLM-D-based approaches could used both to test for undesired behaviour in classifiers and potentially to mitigate that behaviour via methods such as dataset augmentation, as has been found useful in various settings, e.g. Dinan et al. (2020), Hall Maudslay et al. (2019).",1,related,1,positive
+"DialoGPT We specifically use a DialoGPT model tuned further on the ConvAI2 dataset (Dinan et al. 2020c, model from Smith and Williams 2021) to acclimate the model to BlenderBot-style prompts containing two sentences of persona information (Roller et al., 2021).",1,related,1,positive
+"We collected these from existing bibliographies of surveyed papers provided in [2, 18].",1,related,0,negative
+"We additionally evaluated OPT-175B on the ConvAI2 hidden test set, which has never been publicly released, and achieved 10.7 ppl and .185 UF1, matching the performance of the validation set.",1,related,0,negative
+"In particular, we follow Roller et al. (2021), and evaluate on ConvAI2 (Dinan et al., 2020b), Wizard of Wikipedia (Dinan et al., 2019b), Empathetic Dialogues (Rashkin et al., 2019), and Blended Skill Talk (Smith et al., 2020).",1,related,1,positive
+"To address concerns of leakage, we searched our pre-training corpus for the first conversation in the ConvAI2 dataset, but we did not find any overlap.",1,related,0,negative
+"We see that OPT-175B significantly outperforms the alsounsupervised Reddit 2.7B model on all tasks, and
+performs competitively with the fully supervised BlenderBot 1 model, especially in the ConvAI2 dataset.",1,related,1,positive
+We were somewhat surprised that the evaluations of the unsupervised OPT-175B model were as competitive as BlenderBot 1 on the ConvAI2 dataset.,1,related,0,negative
+"We report Perplexity and Unigram F1 (UF1) overlap, following the metrics of the ConvAI2 competition (Dinan et al., 2020b).",1,related,1,positive
+"Furthermore, we evaluated OPT-175B on a subset of the ConvAI2like MultiSessionChat (MSC) dataset (Xu et al., 2021b) and obtained a perplexity of 9.7 and UF1 of .177, indicating the model is generalizing well across multiple PersonaChat-like datasets.",1,related,1,positive
+This may indicate leakage of the ConvAI2 dataset into the general pre-training corpus or even into the validation data as evaluated in Table 2.,1,related,0,negative
+"As noted in Dinan et al. (2020), toxicity 149 in generated dialogue may begin with biases and 150
+3www.hatebase.org
+offensive content in the training data, and debias-151 ing techniques focused on gender can reduce the152 amount of sexist comments generated by the re-153 sulting system.",1,related,0,negative
+"Approaches to mitigate bias in LMs can be broadly summarized as: (a) training or finetuning on a balanced dataset (Solaiman and Dennison, 2021; Dinan et al., 2020)), (b) attaching prefix at inference or training time (Sheng et al., 2020), and (c) using a bias or attribute classifier (e.g., toxicity…",1,related,1,positive
+"We believe both these behaviors could be dramatically reduced with adversarial data collection (Dinan et al., 2019).",1,related,0,negative
+"We use Reddit data through Pushshift (Baumgartner et al., 2020), an archive that has been widely used in NLP and related fields since its first release in 2015 (Hessel and Lee, 2019; Kennedy et al., 2020; Sap et al., 2020; Dinan et al., 2020, among many others).",1,related,1,positive
+"Another way of mitigation is data augmentation (Zhao et al., 2018; Park et al., 2018; Dinan et al., 2020), for example by using gender swapping on the coreference resolution task Zhao et al. (2018).",1,related,0,negative
+"Another way of mitigation is data augmentation (Zhao et al., 2018; Park et al., 2018; Dinan et al., 2020), for example by using gender swapping on the coreference resolution task Zhao et al.",1,related,0,negative
+"As in §4, we use the multi-dimensional gender bias classifier from Dinan et al. (2020b) to measure the amount of gender bias in conversation turns from Speaker A and B for 920,000 self-chats generated by each of our de-biased models.",1,related,1,positive
+"Second, we measure the amount of gender bias in BlenderBot3B self-chats using the multidimensional gender bias classifier from Dinan et al. (2020b), which predicts the genderedness of an utterance based on its context (SPEAKING-AS dimension for Speaker A lines and SPEAKING-TO dimension for Speaker…",1,related,1,positive
+", 2019) or methods for mitigating the bias of the dialogue model (Liu et al., 2020; Dinan et al., 2020) are recommended to be jointly used with our method when deploying our model in production.",1,related,0,negative
+"Previous
+1Our code and corpus are available at https:// github.com/abaheti95/ToxiChat
+research has shown that dialogue models can produce utterances that are gender and racially biased (Wolf et al., 2017; Sheng et al., 2020; Dinan et al., 2020a).",1,related,0,negative
+"In the future, we head to apply and develop corresponding mitigation techniques (following works such as Dinan et al. (2020) and Liu et al. (2020)).",1,related,0,negative
+"…language model objective on pushshift.io Reddit data (Baumgartner et al., 2020) and fine-tuned on several dialog safety classification tasks, including Wikipedia Toxic Comments (Wulczyn et al., 2017) as well as the standard and adversarial Build-it Break-it Fix-it tasks from Dinan et al. (2019b).",1,related,1,positive
+"This might be because the safety classifier was trained to identify dialog utterances that are “not OK to send in a friendly conversation with someone you just met online”, which may encapsulate more than just toxic responses (Dinan et al., 2019b).",1,related,0,negative
+"For the dialog domain, Xu et al. (2020) extend the strategy of Dinan et al. (2019b) for collecting and training on adversarial examples to the human-bot conversational setting, with crowdworkers attempting to elicit unsafe outputs from the system.",1,related,0,negative
+"To test how the model responds to toxic input, we select 180 examples from the Build-it Break-it Fix-it “Standard” dataset (Dinan et al., 2019b) which are labeled as unsafe.",1,related,0,negative
+"• Dialog safety classifier: We use a dialog safety classifier from Dinan et al. (2019b), and report the percentage of model responses that are flagged as unsafe by this classifier.",1,related,0,negative
+"We call conversational models trained in this paradigm end-to-end
+1We follow European Commission (2021)’s definition of AI, which includes Machine Learning, statistical, as well as logic- and knowledge-based approaches.
+ar X
+iv :2
+10 7.",1,related,1,positive
+"Evolving benchmarks, such as Dynabench (Kiela et al., 2021), or other adversarial iterative procedures (Dinan et al., 2019b; Nie et al., 2019; Xu et al., 2020) can provide the required adaptability: our societal standards and expectations change, and we would not tolerate models that do not reflect…",1,related,0,negative
+"There are also works that induce control by incorporating a bias control code through conditional training (Dinan et al., 2020a), by appending a target value to inputs during training (Ma et al., 2020), by using a normative classifier to produce reward values for backpropagation (Peng et al.,…",1,related,1,positive
+"Standard Data We consider the Wikipedia Toxic Comments dataset (WTC) (Wulczyn et al., 2017) designed to identify personal attacks online, consisting of ∼150k examples; we use the version that treats the data as a two-class problem (Khatri et al., 2018a; Dinan et al., 2019c).",1,related,0,negative
+"Firstly, we find our newly trained models superior to existing models from Dinan et al. (2019b) when using the same training sets, likely due to improved pushshift.io Reddit pre-training of our transformers compared to their BERT models.",1,related,0,negative
+"We consider Transformer-based classifiers, following the same structure as in Dinan et al. (2019b), with two sizes: 256M and 622M parameter models.",1,related,1,positive
+"In addition, we consider a dataset more specifically collected for safety in open-domain dialogue of (Dinan et al., 2019b), which consists of a further 8,000 offensive examples.",1,related,0,negative
+The classifiers we propose in this work can be seen as improvements over the variants introduced in Dinan et al. (2019b).,1,related,1,positive
+"We detailed previously how safety classifiers can be trained to be adversarially robust to human utterances, see Section 3.1.1 or Dinan et al. (2019b).",1,related,0,negative
+"We select a topic at random from 1087 topics judged as safe from the Wizard of Wikipedia conversational topic list (Dinan et al., 2019c).",1,related,0,negative
+"For example, the baseline BST 2.7B only provides OK responses 55% of the time on the adversarial test set, whereas our Safety classifier improves that to 87.5%, superior to the existing work of Dinan et al. (2019b) which yields 77.7%.",1,related,0,negative
+"…collection setup are given in Appendix A.
+Figure 1 demonstrates how this adversarial setup differs from the “Build-it, Break-it, Fix-it” setup from Dinan et al. (2019b): namely, in the former, the “breaker” (or adversarial user) tries to break a classifier by submitting human-authored…",1,related,1,positive
+"(Some) (Most)
+Two-stage models with classifiers
+BST 2.7B + Multi-Turn Safety Classifier (Dinan et al., 2019b) 78.2 6.7 6.7 8.4 BST 2.7B + Safety Classifier 87.2 5.6 3.9 3.3 BST 2.7B + Safety Classifier (Semi-Sup.",1,related,0,negative
+"…et al. (2020): ConvAI2 (Dinan et al., 2020b), EmpatheticDialogues (ED) (Rashkin et al., 2019), Wiz-
+1Unlike in those works, the output of the encoder is then passed to a decoder, as in the late fusion case.
+ard of Wikipedia (WoW) (Dinan et al., 2019c), and BlendedSkillTalk (Smith et al., 2020).",1,related,1,positive
+"Wizard of Wikipedia (WoW) The Wizard of Wikipedia dataset (Dinan et al., 2019c) involves
+4https://pytorch.org/hub/ facebookresearch_WSL-Images_resnext/
+5https://github.com/facebookresearch/ vilbert-multi-task
+two speakers discussing a given topic in depth, comprising 194k utterances.",1,related,1,positive
+"To mitigate this problem, we first measure our models’ toxicity using an openly available blocklist3 and an offensive language classifier presented in Dinan et al. (2019b).",1,related,0,negative
+"…this, we train a version of the MMB Style model in which we examine the label of each training example to determine whether it contains female or male words, and then a string representing that classification is appended to the example’s context string (Dinan et al., 2019a), for input to the model.",1,related,1,positive
+" to an unsafe response given a multi-modal context. To mitigate this problem, we ﬁrst measure our models’ toxicity using an openly available blocklist7 and an offensive language classiﬁer presented inDinan et al. (2019b). We deﬁne the term “toxicity” to mean the ratio between the number of offensive utterances and the total number of utterances generated by the model. We evaluate our model on the Image-Chat validat",1,related,1,positive
+"815 tem, enabling us to filter the possible outputs of the agent; and (2) dataset bias via curation through controlled crowdsourcing in the case of LIGHTQuests—the methods to debias the original LIGHT dataset can be found in Dinan et al. (2020) and crowdsourcing methods for the original ATOMIC work can be found in Sap et al.",1,related,1,positive
+…possible outputs of the agent; and (2) dataset bias via curation through controlled crowdsourcing in the case of LIGHTQuests—the methods to debias the original LIGHT dataset can be found in Dinan et al. (2020) and crowdsourcing methods for the original ATOMIC work can be found in Sap et al. (2019).,1,related,1,positive
+"There are debiasing methods in NLP such as data augmentation (Dinan et al., 2019) and word embeddings regularization (Liu et al., 2019a).",1,related,1,positive
+"There are debiasing methods in NLP such as data augmentation (Dinan et al., 2019) and word embeddings regularization (Liu et al.",1,related,1,positive
+"ing set (Dinan et al., 2019a), and we make use of that publicly available data here as well.",1,related,1,positive
+"Additionally, gender bias concerns have been previously studied within the available LIGHT MTurk training set (Dinan et al., 2019a), and we make use of that publicly available data here as well.",1,related,0,negative
+"Game Safety We employ a safety classifier (Dinan et al., 2019b) on both human and model turns.",1,related,0,negative
+"Retriever We fine-tune the retrieval models on ConvAI2, Wizard of Wikipedia, Empathetic Dialogues, and Blended Skill Talk datasets (BST variants of each7) and automatically evaluate them by measuring hits@1/K on the validation sets of each of these datasets.",1,related,1,positive
+"We then assessed whether those generations were safe or not using two different methods: using an unsafe word list, or the safety classifier of Dinan et al. (2019b), both methods being available in ParlAI (Miller et al., 2017).",1,related,0,negative
+"We use the same retrieval system as in that cited work, which uses a TF-IDF-based inverted index lookup over a Wikipedia dump2 to produce an initial set of knowledge candidates.",1,related,1,positive
+"We have previously investigated building better classifiers of toxic language by collecting adversarial toxic data that fools existing classifiers and is then used as additional data to make them more robust, in a series of rounds (Dinan et al., 2019b).",1,related,0,negative
+"We hence refer to this as a Wizard Generative model, as the supervised training signal of how to use knowledge in dialogue comes from the Wizard of Wikipedia task, even though we multi-task on other tasks as well.",1,related,1,positive
+"7https://parl.ai/projects/bst
+We also report perplexity both before and after fine-tuning each of these models on the ConvAI2, Wizard of Wikipedia, Empathetic Dialogues, and Blended Skill Talk datasets.",1,related,1,positive
+"We can then condition the generation on the retrieved knowledge, as done in models proposed for the Wizard of Wikipedia task (Dinan et al., 2019c).",1,related,1,positive
+"In this measurement, we apply an offensive language detection model (Dinan et al., 2019b) to predict whether a response is offensive or not.",1,related,0,negative
+"…text systems, we propose re-purposing methods for con-
+trolling text generation (Ghazvininejad et al., 2017; Holtzman et al., 2018; Tambwekar et al., 2018; Keskar et al., 2019; Sahar et al., 2020) which are being used to control ‘bias’ in text generation (Sheng et al., 2020; Dinan et al., 2020).",1,related,1,positive
+"Additionally, gender bias concerns have been previously studied within the available LIGHT MTurk training set (Dinan et al., 2020), and we make use of that publicly available data here as well.",1,related,0,negative

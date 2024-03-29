@@ -1,0 +1,295 @@
+text,target_M6_predict,target_predict_M6_label
+"Several existing methods try to generalize vehicle trajectory prediction ideas to human trajectory prediction by representing humans as 2D bounding boxes [5], [6], [7], [8], [9].",1,neutral
+We also chose models that largely leverage pedestrian positional data and can work independently without image patch inputs [39] or semantic segmentation [26].,1,neutral
+"Currently, most existing trajectory prediction methods[37, 22, 4, 23, 30] train models on one specific dataset to predict agent trajectory.",1,neutral
+Y-net[22] structures trajectory predictions across long prediction horizons by modeling the epistemic and aleatoric uncertainty.,1,neutral
+"We chose representative trajectory prediction methods with different base network architectures (LSTM, CNN, GCN), including Social-LSTM[2], STGAT[13], Y-net[22], and Social-STGCNN[23].",2,positive
+"information [12], [24], [26], [32], [41].",1,neutral
+"For SDD dataset with different scenarios in university campus, the comparable methods are categorized as trajectoryimage (SimAug [28], EvolveGraph [26], Y-net [32], and Trajectorn++ [46]) and trajectory-only (PECnet [33], LB-",2,positive
+"In addition, comparing with Y-net [32] with the lowest error in trajectory-image methods, the performance of our method is still increased by 3.83% on ADE, and which obtains the second-lowest error on FDE.",2,positive
+"In addition, comparing with Y-net [32] with the lowest error in trajectory-image methods, the performance of our method is still increased by 3.",2,positive
+"For SDD dataset with different scenarios in university campus, the comparable methods are categorized as trajectoryimage (SimAug [28], EvolveGraph [26], Y-net [32], and Trajectorn++ [46]) and trajectory-only (PECnet [33], LBEBM [39], and DESIRE [24]) as shown in Table II.",2,positive
+"There are increasing studies that use deep learning to make these motion predictions [18], [19], [20].",1,neutral
+Y-Net [22] proposes a scene-compliant trajectory forecasting network by factorizing,1,neutral
+Other methods use variational autoencoders [Mangalam et al. 2021; Salzmann et al. 2020].,1,neutral
+The output settings are in line with the data format of YNet [2].,2,positive
+"We have made some improvements on the basis of Y-Net, adding FairMOT [3] for pedestrian tracking, which combines object detection, tracking, and trajectory prediction.",2,positive
+"The data alignment results are processed by YNet, which are shown as video in Fig.",0,negative
+"To prevent YNet from processing too much data and slowing down the prediction process, we introduce a frame rule, which limit the distance between the frames and the tracked objects.",2,positive
+"However, SGNet [1] and Y-Net [2] achieved good results in pedestrian trajectory prediction.",2,positive
+"Later in [16], scene segmentation maps along with past trajectory heatmaps were used as inputs to an encoder-decoder Convolutional Neural Network (CNN), to predict trajectory endpoint heatmaps, followed by complete trajectories.",1,neutral
+"Therefore, we convert the world coordinates into pixel coordinates using
+the homography matrices from Y-net (Mangalam et al., 2021).",1,neutral
+"On average, Y-net, S-CSR, and NSP-SFM are 1400%, 300%, and 66.67% worse than BNSP-SFM.",0,negative
+"When people are indeed close to each other, NSP-SFM and BNSP-SFM outperform Y-net and S-CSR.",1,neutral
+The performance of Y-net drops severely from 7.85/11.85 (when it’s trained also on SDD) to 30.59/51.43.,0,negative
+"NSPSFM and BNSP-SFM perform slightly worse than when they are also trained on SDD, but considerably better than Y-net.",2,positive
+"…Niebles, Hauptmann, & Fei-Fei, 2019), P2TIRL (Deo & Trivedi, 2020), SimAug (Liang, Jiang, & Hauptmann, 2020), PECNet (Mangalam et al., 2020), Y-Net (Mangalam et al., 2021), S-CSR (Zhou, Ren, Yang, Fan, & Huang, 2021), SocialVAE (Xu et al., 2022), V2Net (Wong et al., 2022), and NSP-SFM (Yue et al.,…",2,positive
+Y-net performs poorly in all three time intervals.,1,neutral
+"For comparison, we choose Y-net and NSP-SFM as baselines and show the results in Tab.",2,positive
+"We use NSP-SFM, Y-net, and S-CSR as baselines.",2,positive
+"Following (Mangalam et al., 2021), we extract trajectories with a time step 0.4 seconds and obtain 20-frame samples for an 8/12 setting, i.e., given the first 8 frames (3.2 seconds, th = 7), we aim to predict the future 12 frame trajectories (4.8 seconds, tf = 12).",2,positive
+"Following the standard leave-one-out evaluation protocol (Gupta et al., 2018; Mangalam et al., 2021, 2020), we train our model on four subdatasets and test it on the remaining one in turn.",2,positive
+"We compare our BNSP-SFM in both standard-sampling and ultra-sampling with a wide range of baselines: Social GAN (S-GAN) (Gupta
+et al., 2018), Sophie (Sadeghian et al., 2019), NEXT (Liang, Jiang, Niebles, Hauptmann, & Fei-Fei, 2019), P2TIRL (Deo & Trivedi, 2020), SimAug (Liang, Jiang, & Hauptmann, 2020), PECNet (Mangalam et al., 2020), Y-Net (Mangalam et al., 2021), S-CSR (Zhou, Ren, Yang, Fan, & Huang, 2021), SocialVAE (Xu et al., 2022), V2Net (Wong et al., 2022), and NSP-SFM (Yue et al., 2022).",2,positive
+"Ynet (a scene compliant trajectory forecasting network) [36] uses multimodal input to input a semantic map, RGB map and other information into the model.",2,positive
+"Autonomous agent planning critically depends on anticipating the future of the scene in various forms such as trajectory prediction [22, 23, 57, 58], action forecasting [19, 25, 80] or future scene This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.",2,positive
+The global pedestrian motion is simulated using Y-net and executed in parallel to future state simulation.,2,positive
+"al [25] have proposed Y-net, which predicts and generates pedestrian trajectories considering the map information.",1,neutral
+"Mangalam et. al [25] have proposed Y-net, which predicts and generates pedestrian trajectories considering the map information.",1,neutral
+pedestrians follow the path prediction result obtained through Y-net [25] running in parallel to MCTS.,1,neutral
+"In this paper, Y-net is used for modeling global motion, while the social force model and Boids are used for modeling local motion to synthesize realistic pedestrian motions.",1,neutral
+The pedestrians follow the path prediction result obtained through Y-net [25] running in parallel to MCTS.,1,neutral
+"In SCAN, we only use a neural network, namely Y-net [25], for global pedestrian trajectory prediction.",1,neutral
+"We have implemented a crowd navigation environment as shown in Figure 2, where each pedestrian tries to follow its global trajectory generated by Y-Net [25].",2,positive
+"Whereas, in the long-term prediction setting [16], a 10 times longer prediction horizon, up to a minute, is considered.",1,neutral
+"There are very few approaches, made by the researchers to tackle this, such as estimating multi-modal long-term goals of the agents first, and then randomness is further reduced by sampling intermediate waypoints, conditioned on the final goal [16].",1,neutral
+"4, we studied the prediction capability of the Di-Long model on longer time horizons than t f = 30 sec, and compared to Goal-SAR and Y-Net.",2,positive
+"We sample only a single waypoint, conditioned on the final predicted goal, in the same manner as proposed in Y-Net [16].",2,positive
+"As shown in the figure, our Di-Long model consistently outperforms Y-Net and Goal-SAR, and interestingly, at shorter time horizons, the performances of the models are comparable, Optimal Teacher Observation Length.",2,positive
+"of-the-art Y-Net [16] model, despite having a much simpler architecture.",2,positive
+"However, long-term human trajectory forecasting [16], which involves predicting human motion over a much longer period, remains a challenging task due to the complexity of human behavior and the uncertainty of future events.",1,neutral
+"Many methods have been proposed for this task, including recurrent neural networks (RNNs) [1, 27], convolutional neural networks (CNNs) [16], and graph neural networks (GNNs) [23].",1,neutral
+"In this scenario, our Di-Long model outperforms Goal-SAR and Y-Net by a considerable margin in terms of ADE ( − 0 .",2,positive
+We compare our increasingly improving Di-Long model with Goal-SAR and Y-Net.,2,positive
+32 w.r.t. Y-Net) and KDE-NLL ( − 0 .,1,neutral
+"3 w.r.t. Y-Net), FDE ( − 3 .",1,neutral
+"In recent years, deep learning models such as recurrent neural networks (RNNs) [1, 27], convolutional neural networks (CNNs) [16], and graph neural networks (GNNs) [23] have been widely used for human trajectory forecasting.",1,neutral
+"Multi-agent trajectory prediction has various applications, such as automated driving [Zhao et al., 2021, Salzmann et al., 2020, Mangalam et al., 2020, Leon and Gavrilescu, 2021], robot planning [Kretzschmar et al., 2014, Schmerling et al., 2018], sports analysis [Felsen et al., 2017], and is being…",2,positive
+"Following [1, 16, 60, 34, 35, 45], we use the leave-one-out training and evaluation setup, where we train on all but one of the 5 environment scenes, and evaluate on the left-out scene.",0,negative
+"Net [34], and AgentFormer [60]; and other standard baselines from recent years: Trajectron++ [45], PECNet [35], and S-GAN [16].",2,positive
+"SOTA methods have employed a variety of techniques for better modeling, such as using waypoints and goals to break the forecasting problem into a series of hierarchical steps [11, 34, 63, 7, 8, 61, 64, 54, 52], mathematical and physical modeling techniques such as social forces [17] alongside deep architectures [61, 52, 31], and other paradigms and techniques such as memory retrieval [53], contrastive learning [33], and causal disentanglement [32].",1,neutral
+"View Vertically used a different sample rate on the eth scene and a slightly different split of the hotel scene in the ETH dataset; thus, we retrain and reevaluate it on the standard split used by most other methods ([45, 35, 34, 53, 16, 60]).",2,positive
+"Most of them only focus on multi-future path prediction [43, 63, 70, 73] (k=5, 8, 15, 20, .",1,neutral
+"Most works in this context predict multiple future trajectories and choose the best to assess their accuracy and performance [43, 63, 70].",1,neutral
+"Interaction between agents is represented using social pooling [1], global scene information [2], and spatio-temporal features of all agents [3], [4], [5].",1,neutral
+", where pedestrians often change direction) [48].",1,neutral
+"More recently, a method named Y-Net is presented in [8] by Mangalam et al.",1,neutral
+"In order to make such predictions, multiple solutions have been studied in the state-of-the-art for pedestrians that can be classified into solutions relying on Gaussian Processes [2], on Long Short Term Memory (LSTM) neural networks [3][4], on encoders and decoders [5][6], on Convolutional Neural Network (CNN) [7][8] and on Generative Adversarial Network [9].",1,neutral
+"In addition, several works [30], [31], [32], [33], [34] leverage the visual features of the scene to improve the spatio-temporal features.",1,neutral
+"Recently, a series of end-points-based methods [52], [53], [54] have been proposed that first predict agents’ destinations and then interpolate the complete trajectories under the chosen destinations.",1,neutral
+Others like [53] also introduce several “waypoints” to help better predict agents’ potential future intentions rather than the only destination points.,1,neutral
+"Unlike the split of the SDD in TrajNet [88] (which includes only pedestrians), the SDD we use includes all categories of annotations.
+lines, including Linear Least Square4, SoPhie [20], S-BiGAT [19], E-SR-LSTM [85], Multiverse [87], MANTRA [89], TF [28], PECNet [52], STAR [29], Trajectron++ [67], SimAug [86], TPNMS [90], Introvert [91], LB-EBM [92], Agentformer [44], Y-net [53], STC-Net [93], SpecTGNN [77], CSCNet [83], MSN [33], MID [94], SHENet [95], SEEM [96], Social-SSL [66], P-LSTM [40], Zero-Vel [97] , and PV-LSTM [40].",2,positive
+"Compared with the current state-ofthe-art method Y-net, E-V2-Net-DFT achieves about 16.3% and 11.5% improvement in ADE and FDE, respectively.",2,positive
+"As shown in TABLE 2, E-V2-Nets, including E-V2-Net-DFT and E-V2-Net-Haar, perform at the same level as the state-of-theart works like Agentformer and Y-net, especially on the univ sub-dataset with a maximum improvement of 23.1% and 26.1% for ADE and FDE, demonstrating their unique advantages for handling different prediction scenes.",2,positive
+"It means that the proposed methods, which firstly forecast “keypoint spectrums”, could cover more information than the previous “waypoints”-based methods like Y-net [53].",2,positive
+"lines, including Linear Least Square4, SoPhie [20], S-BiGAT [19], E-SR-LSTM [85], Multiverse [87], MANTRA [89], TF [28], PECNet [52], STAR [29], Trajectron++ [67], SimAug [86], TPNMS [90], Introvert [91], LB-EBM [92], Agentformer [44], Y-net [53], STC-Net [93], SpecTGNN [77], CSCNet [83], MSN [33], MID [94], SHENet [95], SEEM [96], Social-SSL [66], P-LSTM [40], Zero-Vel [97] , and PV-LSTM [40].",2,positive
+"It requires human trajectory forecasting systems to formulate humans’ multimodality nature and infer not a single future state but the full range of plausible ones [16, 32].",1,neutral
+"Besides, some methods explicitly use the endpoint [14, 15, 32, 33, 64, 65] to model the possible destinations or learn the grid-based location encoder [11, 17, 29] generate acceptable paths.",1,neutral
+"However, the ability to control these models is limited to sampling from an output trajectory distribution [37, 66] or using an expensive latent space traversal [49].",1,neutral
+"Some works decompose forecasting into goal prediction followed by trajectory prediction based on goals [7, 37].",1,neutral
+"[37] Karttikeya Mangalam, Yang An, Harshayu Girase, and Jiten-",1,neutral
+* means the results are reproduced using the official released code of [30].,0,negative
+"To train Y-Net, we follow [22] to make the encoded feature with shape (C,H,W ) average pooled in the spatial dimension to get a C dimensional vector, and perform PCL on it.",1,neutral
+"We reproduced the results of Y-Net using the official released code of [30] with 42 as the random seed, since the original method does not have a fix seed.",0,negative
+"Strong baselines [30, 38, 40, 47] have been brought up.",0,negative
+We use ETH-UCY and Nuscenes in the way same as our backbone Traj++ EWTA [28] and SDD in the way same as our backbone Y-Net [30].,2,positive
+"Another strong baseline we experiment on is Y-Net [30], which uses a U-Net backbone and achieves state-of-the-art results on SDD.",2,positive
+"We also plug our module into Y-Net, the results are shown in Table 3.",2,positive
+Quantitative comparisons on Y-Net on SDD.,2,positive
+", goal-driven idea [13, 40, 60,81], long-tail situation [39], interpretability [32], robustness [9, 66, 70, 80], counterfactual analysis [11], planningdriven [12], generalization ability to new environment [6, 27, 72], and knowledge distillation [44].",2,positive
+"Heatmap [12,13,27] is used for modeling future trajectories’ distribution on rasterized images.",1,neutral
+"many aspects, including temporal encoding [7, 14, 47, 54], interaction modeling [1, 16, 19, 44, 50], and rasterized prediction [12, 13, 27, 49, 55].",1,neutral
+"Recent works have used a variety of architectures including recurrent [1, 8, 45, 46] and convolutional [27] neural networks, spatiotemporal graphs [21, 31, 34], state-refinement modules [35], explicit probability maps [23], normalizing flows [2], and Gaussian processes [37, 38].",1,neutral
+"Inducing structure through interaction representations [23, 31, 37] might improve transfer across a wider range of behavior.",1,neutral
+"Other approaches use pedestrian datasets to train and validate models for crowd motion prediction [23, 37].",1,neutral
+"Moreover, some trajectory prediction models such as YNet [Mangalam et al., 2021] use convolutional decoders to generate heatmaps and encourage scenecompliant predictions.",1,neutral
+"For example, TNT [Zhao et al., 2021] and DenseTNT [Gu et al., 2021] predict vehicles’ endpoints by sampling positions on center lanes while YNet [Mangalam et al., 2021] and Goal-GAN [Dendorfer et al., 2020] directly predict an endpoint heatmap by integrating the observed trajectory and the scene…",2,positive
+"…social and physical features [Xue et al., 2018; Sadeghian et al., 2019; Dendorfer et al., 2021]; (2) a CNN-based encoding module on raster HD maps [Wang et al., 2020] or heatmaps [Mangalam et al., 2021]; or (3) a
+graph neural network-based encoding module on vectorised HD maps [Gao et al., 2020].",2,positive
+", 2021] predict vehicles’ endpoints by sampling positions on center lanes while YNet [Mangalam et al., 2021] and Goal-GAN [Dendorfer et al.",2,positive
+", 2020] or heatmaps [Mangalam et al., 2021]; or (3) a graph neural network-based encoding module on vectorised HD maps [Gao et al.",2,positive
+"…2019] firstly introduces KDE-NLL as one of the evaluation metrics in MTP, which computes the mean log-likelihood of the ground truth trajectory for each future timestep:
+KDE-NLL = −Ei,t∈τ logP(Y ti |KDE(Ŷ ti,K)), (5) and is further used in subsequent studies such as [Mangalam et al., 2020, 2021].",2,positive
+"For example, TNT [Zhao et al., 2021] and DenseTNT [Gu et al., 2021] predict vehicles’ endpoints by sampling positions on center lanes while YNet [Mangalam et al., 2021] and Goal-GAN [Dendorfer et al., 2020] directly predict an endpoint heatmap by integrating the observed trajectory and the scene segmentation image.",2,positive
+"Advanced Sampling Tricks TTST [Mangalam et al., 2021]; LDS [Ma et al.",1,neutral
+"Moreover, the PEC framework can help the long-term prediction by conditioning on the endpoint and middle waypoints [Mangalam et al., 2021; Wang et al., 2022].",2,positive
+high uncertainty behavior can be limited through the goal information [14].,1,neutral
+"To circumvent this issue, we utilize a goal-estimation [14] module for estimating the goals in the inference time.",2,positive
+"is extracted from bird’s-eye view RGB images to consider scene context, such as obstacles, pavement and terrain, using an off-the-shelf pre-trained semantic segmentation network [14].",1,neutral
+"a goal-estimation module [14], [13] is applied.",1,neutral
+Y-net [14] combines scene information with goals and waypoints for,2,positive
+"Following the previous goal-conditioned trajectory prediction models [39], [11], [14], we evaluate all potential K goals against the ground truth and choose the one with the smallest L2 error as the estimated goal position in the test phase.",2,positive
+"Because multiple samples are required, the Test-Time-Sampling-Trick (TTST) proposed in [14] is used.",1,neutral
+"We adopt the goal module proposed in [14], [13] for this purpose.",2,positive
+Y-net [35] models the uncertainty of trajectories through,1,neutral
+"• Y-Net [29]: Takes into account a semantic map (UNet), trajectory heat maps and additional information of pedestrian’s destinations and way points to predict future motion • P2T-IRL [31]:Utilized a reinforcement learning approach to learn a reward function from trajectories and output predicted trajectories conditioned on end goals.",2,positive
+"The current state-of-the-art methods—Y-Net [29], PECNet [30], P2TI RL [31]—use a two-stage modeling approach where first goals (destinations) are estimated and then trajectories are predicted conditioned on these final positions.",2,positive
+"Recent online goal inference approaches generally fall into two categories – (1) feedforward prediction that directly maps observed past trajectories to possible goals, typically enabled by goal prediction networks [27, 5, 20, 23, 8, 39, 38, 34, 22], or (2) generative approaches such as inverse planning [6, 28, 32, 3, 35, 40, 24, 33] and inverse reinforcement learning [1, 12, 15, 37]",1,neutral
+"In addition, an improved a trajectory prediction model named Y-Net was proposed in [18], this model can exploit the pro-posed epistemic & aleatoric structure for diverse trajectory predictions across long prediction horizons.",2,positive
+We empirically demonstrate the efficiency of MoSA on the state-of-the-art model Y-Net [2] on the heterogenous SDD [14] and inD [15] datasets in various style transfer setups.,2,positive
+"Owing to the success of deep neural networks on large-scale datasets, learning prediction models in a data-driven manner has become a de-facto approach for motion forecasting and has shown impressive results [1, 2, 3, 4].",1,neutral
+"]
+Decision Trajectory Prediction NSP-SFM[101], Y-Net[102],Trajectron++[103],Social
+GAN[104],SoPhie[105] Motion Forecasting VI LaneIter[106], Wayformer[107]
+Deep Reinforcement Learning Deep Q-Learning[108]),Deep recurrent q-learning[49],Deep attention recurrent
+Q-network[50],Double Q-learning[109],A3C/A2C[51] Imitation Learning Generative adversarial imitation learning[110],
+Conditional Imitation Learning[46, 111], Self-Imitation Learning[112], Chauffeurnet[47]
+V2X Federated Learning FedAvg[113]
+to be misled.",1,neutral
+"Decision Trajectory Prediction NSP-SFM[101], Y-Net[102],Trajectron++[103],Social",1,neutral
+"Following [19], we use past 8 frames to predict future 12 frames.",2,positive
+"Most attempts [16, 19, 27, 35] explore only individual-surroundings interaction, where tremendous efforts are spent on modeling the individual trajectory, the semantic information of environment information, and the relationship between them.",1,neutral
+"On ETH/UCY datasets, we compare our model with the state-of-the-art methods: SS-LSTM [35], Social-STGCN [22], MANTRA [20], AgentFormer [37], YNet [19].",2,positive
+"Following the existing works [1, 19, 20, 35], we calculate the mean squared error (MSE) between the predicted trajectory and the ground-truth trajectory on ETH/UCY datasets: Ltra = 1 Tfut ∑Tfut t=1 ‖y p − ŷ p‖(2)2.",2,positive
+"performance compared with previous HTP methods: SS-LSTM [35], Social-STGCN [22], Next [16], MANTRA [20], YNet [19].",2,positive
+"Human trajectory prediction (HTP) aims to predict a target person’s future path from a video clip [5, 9, 19, 20].",1,neutral
+"[27,26] use goal-based methods that propose possible endpoints for each pedestrians and then generate multiple trajectories based on these endpoints.",1,neutral
+"the effectiveness of different interaction modeling, goal-based methods [27,26] are not included in this comparison.",1,neutral
+"Most of them only focus on multi-future path prediction [43, 63, 70, 73] (k=5, 8, 15, 20, .",1,neutral
+"Most works in this context predict multiple future trajectories and choose the best to assess their accuracy and performance [43, 63, 70].",1,neutral
+"Recent efforts have been explicitly focusing on conditioning forecasting on estimated pedestrian goal/intent [14, 43, 42] and estimating multimodal posterior distributions [38, 13] that yield diverse trajectories that cover different plausible directions.",1,neutral
+"There has also been recent interest in human motion forecasting [26, 34], which focuses on predicting human movement trajectories from a distant, top-down perspective.",1,neutral
+"In [13], the map information is used to generate diverse goals and middle waypoints through Unet architecture.",2,positive
+"Large improvements in trajectory forecasting came with endpoint-conditioned models, which try to estimate the final goal of the moving agent and then its trajectory [37,36].",1,neutral
+"Several works also leverage top-down images explicitly, whether in an RGB form or with added semantic segmentation [5], [28], [29].",1,neutral
+"For pose sequence generation, previous methods either condition on the beginning of a sequence of pose [46], [47], [48], [49] or on some predefined labels like human actions [50], [51], [52].",1,neutral
+"In [16], a multimodal trajectory forecasting approach based on semantic segmentation networks is introduced, where two semantic segmentation networks are used to predict the waypoints first and the trajectory accordingly.",1,neutral
+"Since our goal sampling network and Fenv need to work in the pixel space, we project the world coordinates in ETH/UCY into the pixel space using the homography matrices provided in Y-net [37].",2,positive
+"We compare our NSP-SFM with an extensive list of baselines, including published papers and unpublished technical reports: Social GAN (S-GAN) [18], Sophie [49], Conditional Flow VAE (CF-VAE) [9], Conditional Generative Neural System (CGNS) [29], NEXT [33], P2TIRL [14], SimAug [31], PECNet [38], Traj++ [50], Multiverse [32], Y-Net [37], SIT [56], S-CSR [77], Social-DualCVAE [16] and CSCNet [71].",2,positive
+"Finally, for SDD and ETH/UCY, we follow previous work [37,48] to segment trajectories into 20-frame samples and split the dataset for training/testing.",2,positive
+"We demonstrate that our NSP model outperforms the state-of-the-art methods [18,49,9,29,33,14,31,38,50,32,37,56,77,16,71] in standard trajectory prediction tasks across various benchmark datasets [46,43,28] and metrics.",2,positive
+"More recently, model-free methods based on deep learning have also been explored, and these demonstrate surprising trajectory prediction capability [1,18,49,9,29,33,14,31,38,50,32,37,56,77,16,71].",1,neutral
+"The GSN is similar to a part of Y-net [37] and pre-trained, and detailed in the supplementary materials.",0,negative
+"Following previous research [37,38], we adopt the standard leave-one-out evaluation protocol, where the model is trained on four sub-datasets and evaluated one.",2,positive
+"Average Displacement Error (ADE) and Final Displacement Error (FDE) are employed as previous research [1,18,38,37].",1,neutral
+"The first is termed epistemic, and seeks the goals of each agent or answers the question ‘where are the agents going?’ The second is called aleatoric and solves for the trajectory that will carry the agent to the calculated goal, answering the question ‘how is this agent going to reach its goal?’ Methods may do that explicitly [Girase et al., 2021; Mangalam et al., 2021; Pang et al., 2021] or implicitly [Gilles et al.",1,neutral
+"Studies in neuroscience [Valentin et al., 2007] and computer vision [Gilles et al., 2021; Mangalam et al., 2021] suggest that humans are goal-directed agents.",1,neutral
+"[Rasouli et al., 2021; Mangalam et al., 2021] use semantic segmentation to extract the visual features of different classes, then find the relationship between them using attention.",1,neutral
+", 2007] and computer vision [Gilles et al., 2021; Mangalam et al., 2021] suggest that humans are goal-directed agents.",1,neutral
+"Methods may do that explicitly [Girase et al., 2021; Mangalam et al., 2021; Pang et al., 2021] or implicitly [Gilles et al., 2021], often conditioning the generated trajectories on the calculated goals.",1,neutral
+"In the future, we intend to examine the integration of environmental features [21] into our Multiclass-SGCN model to further improve prediction accuracy.",2,positive
+"For example, [4, 23] are raised for long term trajectory prediction and achieve great performance.",1,neutral
+"Furthermore, for the goal module we use L = 5 down- and up-sampling blocks with number of channels (32, 32, 64, 64, 64) and (64, 64, 64, 32, 32) for the encoder and decoder, respectively, as in the standard implementation [25].",2,positive
+[25] propose a convolutionalbased approach where positions are treated as heat-maps and final positions are sampled from 2D probability distribution maps.,1,neutral
+"[25], slightly modifying its pre-processing steps and output format.",1,neutral
+"[25], where 10, 000 goals are initially sampled and then clustered with K-means to obtain the 20 output modalities.",1,neutral
+"Recent methods explicitly model this aspect in terms of goal prediction [9, 10, 25, 26, 46].",1,neutral
+"In addition, P2T [6], PGP [7] and Y-net [27] use K-means to cluster samples while CoverNet [36] employs a greedy approximation algorithm to create a diverse set.",1,neutral
+Y-Net [27] models the future position’s multimodality with heatmaps and samples a trajectory from the heatmap conditioned on sampled goal and waypoints.,2,positive
+"To evaluate our method’s longterm forecasting performance, we use data in [27], including 1222 training and 174 test trajectories with 5-second history and 30-second future with the 1Hz sampling rate.",2,positive
+Y-net [27] samples intermediate positions conditioned on the sampled goal and waypoints.,1,neutral
+Y-net [27] yields the OGM at each future step directly from different channels of the feature map output by a CNN.,2,positive
+"Y-net [27] yields the OGM at each future step directly from different channels of the feature map output by a CNN. Similarly, in MP3 [4], the feature map at each channel is embedded into the temporal motion fields at each future step, which obtains the probability transition flow between consecutive OGMs by bilinear interpolation of motion vectors on the field.",1,neutral
+Our results are again achieved without the manually annotated semantic maps in Y-net [27].,2,positive
+"Notably, our results are achieved without manually labeled semantic maps in YNet [27] or simulation data in SimAug [22].",2,positive
+Note that our method did not use the image data and apply any post-processing such as the TestTime Sampling Trick (TTST) [28].,0,negative
+"Although significant progresses have been achieved over past few years [6,28,29,32,38,45,49,53], predicting the future trajectories of pedestrians remains challenging due to the multi-modality of human motion.",1,neutral
+"Input Sampling ETH HOTEL UNIV ZARA1 ZARA2 AVG ADE FDE ADE FDE ADE FDE ADE FDE ADE FDE ADE FDE
+SoPhie [37] T + I 20 0.70 1.43 0.76 1.67 0.54 1.24 0.30 0.63 0.38 0.78 0.54 1.15 CGNS [22] T + I 20 0.62 1.40 0.70 0.93 0.48 1.22 0.32 0.59 0.35 0.71 0.49 0.97 Social-BiGAT [19] T + I 20 0.69 1.29 0.49 1.01 0.55 1.32 0.30 0.62 0.36 0.75 0.48 1.00 MG-GAN [6] T + I 20 0.47 0.91 0.14 0.24 0.54 1.07 0.36 0.73 0.29 0.60 0.36 0.71 Y-Net [28] + TTST T + I 10000 0.28 0.33 0.10 0.14 0.24 0.41 0.17 0.27 0.13 0.22 0.18 0.27 Social-GAN [12] T 20 0.81 1.52 0.72 1.61 0.60 1.26 0.34 0.69 0.42 0.84 0.58 1.18 Causal-STGCNN [2] T 20 0.64 1.00 0.38 0.45 0.49 0.81 0.34 0.53 0.32 0.49 0.43 0.66 PECNet [29] T 20 0.54 0.87 0.18 0.24 0.35 0.60 0.22 0.39 0.17 0.30 0.29 0.48 STAR [49] T 20 0.36 0.65 0.17 0.36 0.31 0.62 0.26 0.55 0.22 0.46 0.26 0.53 Trajectron++ [38] T 20 0.39 0.83 0.12 0.21 0.20 0.44 0.15 0.33 0.11 0.25 0.19 0.41 LB-EBM [32] T 20 0.30 0.52 0.13 0.20 0.27 0.52 0.20 0.37 0.15 0.29 0.21 0.38 PCCSNET [45] T 20 0.28 0.54 0.11 0.19 0.29 0.60 0.21 0.44 0.15 0.34 0.21 0.42 †Expert [53] T 20 0.37 0.65 0.11 0.15 0.20 0.44 0.15 0.31 0.12 0.26 0.19 0.36 †Expert [53]+GMM T 20×20 0.29 0.65 0.08 0.15 0.15 0.44 0.11 0.31 0.09 0.26 0.14 0.36 MID T 20 0.39 0.66 0.13 0.22 0.22 0.45 0.17 0.30 0.13 0.27 0.21 0.38
+the comparison between our method and existing methods on the Stanford Drone dataset.",0,negative
+"Specifically, our MID outperforms the current state-of-the-art T+I method Y-Net+TTST on the ADE metric.",2,positive
+"Beyond social interactions, many methods incorporate the physical environment interactions by introducing the map images [6, 19, 20, 28, 37].",1,neutral
+"Recently, the goals of pedestrians [28,29,52,53] are introduced in the trajectory prediction system as condition to analyze the probability of multiple plausible endpoints.",1,neutral
+FPC is similar to the test-time sampling trick proposed in YNet [26].,2,positive
+"For the past two years, some works [48, 67, 85] have been proposed to explore the goal-driven trajectory prediction.",1,neutral
+"Another issue we noticed that the recent models [36,43,26,23] which are state-of-the-art based on the ADE/FDE metric only differ by 1cm ADE and few centimeters FDE on the ETH [29] and UCY [16] datasets, one of the most commonly used datasets in this area.",2,positive
+"In the context of trajectory prediction, scene information can be represented in various formats, such as rasterized maps [10, 25, 36], vectorized maps [14, 26], instance-level representations [19], 2D scene images [11,28,45] and drivable areas [34].",1,neutral
+"There is a large body of works on this topic designed to predict behavior of pedestrians [21, 28, 37, 45, 50] and vehicles [1, 10, 11, 13, 19, 36].",1,neutral
+"Scene-based methods mainly rely on the semantic map of the environment alongside the agents’ positional information represented as a point-cloud map [6, 10, 36, 53], or 2D representations of trajectories [13, 28, 29].",1,neutral
+Appendix F shows the limitation of the SDD segmentation provided by Y-net [29] to explain the low ECFL discussed in Sec.,0,negative
+"The Stanford Drone Dataset (SDD) [34] is used in the TrajNet challenge [36] and prior works [29, 37].",2,positive
+"Moreover, the models frequently struggle to account for the diversity of the forecast goals and trajectories [29], which are driven by the uncertain, multi-modal nature of the problem.",1,neutral
+Ynet [29] addresses this issue by aligning the semantic map with the trajectory heatmap spatially and processing them as a whole.,2,positive
+"1 and compare the performance of MUSE-VAE with Trajectron++ (T++) [38], Y-net [29], and AgentFormer (AF) [50] baselines, using their public code.",2,positive
+"State-of-the-Art (SOTA) methods [29, 48, 51] leverage this intuition to propose goal-conditioned prediction model.",1,neutral
+"Some prior works [29, 33, 48, 51] encourage the multimodality by proposing a goal-conditioned forecasting model under the assumption that one’s movement depends primarily on the final goal position.",1,neutral
+"Y-net [29] utilizes K-means clustering of predictive discrete density maps at test time to achieve diverse prediction; however, the model does not explicitly learn the resolution-free multimodal trajectory density.",1,neutral
+Ynet [29] solves the sequential trajectory learning problem with only convolution layers.,1,neutral
+"For alignment between trajectories and the semantic map, trajectories x are also represented in the pixel space as suggested in Y-net [29], using a Gaussian heatmap, denoted by Ix.",1,neutral
+Other work has used VAEs to model the distribution of predicted future goals and then predict the many paths taken to solve them in a two-phase approach [57].,1,neutral
+"We apply our method on top of the Y-Net [50], and compare our modular adaptation strategy against the standard fine-tuning of the entire model for lowshot transfer.",2,positive
+"Recent state-of-the-art works [8-10, 48] use goalconditioned approaches which are regarded as inverse planning or prediction by planning.",1,neutral
+"A large body of works, including the state-of-the-art methods [4, 8-11], build on Seq2Seq [12] (the encoderdecoder framework).",2,positive
+"In particular, we have selected (1) Social GAN (SGAN) [Gupta et al. 2018], one of the earliest models; (2) Trajectron++ (T++) [Salzmann et al. 2020], a SOTA model for short-term trajectory prediction; and (3) PECNet (PECN) [Mangalam et al. 2020b], a SOTA model for long-term trajectory prediction.",2,positive
+"PECNet [Mangalam et al. 2020b] solves the trajectory prediction problem by first modeling the future goal position distribution using a Variational Autoencoder (VAE) [Kingma and Welling 2014], and then predict the future positions by interpolating the observed positions and the estimated goal…",2,positive
+"…discriminative models [Alahi et al. 2016] that predict a single future trajectory to using multimodal, generative models [Gupta et al. 2018; Mangalam et al. 2020b; Salzmann et al. 2020] that predict a distribution of future trajectories, which captures the inherent uncertainty in human…",1,neutral
+"Recent studies [Gupta et al. 2018; Ivanovic and Pavone 2019; Mangalam et al. 2020a,b; Salzmann et al. 2020; Zhao et al.
+2019] assume the multi-modalities in the future human behavior and predict its distribution to embody the uncertainty.",2,positive
+"In this paper, we focus on three SOTAmethodologies to showcase our benchmark dataset: SocialGAN [Gupta et al. 2018], PECNet [Mangalam et al. 2020b], and Trajectron++ [Salzmann et al. 2020].",2,positive
+We choose them because PECNet [Mangalam et al. 2020b] shows an outstanding performance on the long-term trajectory while the short-term trajectory is most well predicted in Trajectron++ [Salzmann et al. 2020].,2,positive
+"Recent 59 studies [7, 18, 24, 36, 12, 17] assume the multi-modalities in the future human behavior and predict 60 its distribution to embody the uncertainty.",1,neutral
+"To cope with the uncertainty problem, numerous methods [7]–[9] have been proposed in recent years.",1,neutral
+Y-net [9] further improves PECNet by iteratively predicting intermediate waypoints and trajectories.,2,positive
+"The first approach is to model the distribution explicitly with conditional variational autoencoders [5, 7] .",1,neutral
+Others like [28] also introduce several “waypoints” to help better predict agents’ potential future intentions rather than the only destination points.,1,neutral
+"We choose several methods as our baselines, including S-GAN [14], SoPhie [42], Social-BiGAT [21], E-SR-LSTM [60], MANTRA [33], Multiverse [26], SimAug [25], PECNet [29], STAR [57], TPNMS [27], TF [13], Trajectron++ [44], Introvert [45], LB-EBM [37], Agentformer [58], Y-net [28], and SpecTGNN [3].",2,positive
+[28] introduces several “waypoints” to help predict agents’ potential intentions rather than the only destination point.,1,neutral
+"including driving maneuvers [4], [22], [23], goal locations or waypoints [6], [8], [24], [25], [26], [27], and target lanes [7], [28], [29], [30], etc.",1,neutral
+"Motion forecasting can also be tackled through the use of a heatmap output representing the final trajectory point location distribution [10], [11].",1,neutral
+"[11] models both long-term goals and intermediary waypoints in the two-dimensional space as an image for pedestrian trajectory forecasting, combined with random sampling and Kmeans clustering.",1,neutral
+"We propose an architecture that considers long-term goals similar to [9, 5, 3, 4] but adds a key component of frame-wise intention estimation which is used to condition the trajectory prediction module.",2,positive
+"There have been numerous subtopics of interest within the trajectory prediction community including compliant trajectory prediction, multi-modal trajectory prediction, and goal-oriented prediction [21, 22, 23, 24, 25, 3, 9, 26, 4, 27, 28, 29, 30, 7, 31, 5].",1,neutral
+"The study of human behavior as goal-directed entities has a long and rich interdisciplinary history across the subfields of psychology [1], neuroscience [2] and computer vision [3].",1,neutral
+"Second, we see a similar trend in multi-shot prediction setting as well with our model outperforming PECNet by 33% in ADE and 9% in FDE for pedestrians and a delta of 26% in ADE and 13% in FDE for moving vehicles.",2,positive
+"We benchmark against PECNet [3], a strong scene agnostic trajectory prediction method with state-of-the-art performance on standard intention agnostic prediction datasets.",2,positive
+"Because humans are not completely stochastic agents and have a predilection towards certain actions, very recent trajectory forecasting studies have shown the effectiveness of goalconditioned predictions [38, 28, 9, 3, 39, 7, 40, 4, 5, 41].",1,neutral
+"Many recent goal-directed works have focused on modeling this through estimating final ”endpoint” or ”goal state” distributions as done in [9, 3, 5, 28, 4].",1,neutral
+"Recent works have showed that explicitly reasoning about long-term goals [3, 4, 5] and short-term intents [6, 7, 8] can assist with tra-",1,neutral
+"For the models targeting multi-class trajectory prediction either discard the other class data as in [10], [16] or treats all trajectories as a single class as in [10], [17].",1,neutral
+"[19] propose the endpoint conditioned trajectory prediction method, and they try to address agents’ random endpoint choices by gathering scene segmentation maps and agents’ historical trajectories in [39].",1,neutral
+"Although some models have tried to improve and use specific sampling methods, like the Truncation Trick [19] and the Test-Time Sampling Trick [39], using a “single”",1,neutral
+"Although some models have tried to improve and use specific sampling methods, like the Truncation Trick [19] and the Test-Time Sampling Trick [39], using a “single”
+distribution to describe the diverse and differentiated behavioral characteristics of agents may compress their personalized styles.",1,neutral
+"Several researchers [19], [39]–[43] have started to bring them to the trajectory prediction task to explore agents’ multiple future choices.",1,neutral
+"Grid-based outputs have already been used in pedestrian behavior prediction such as [13, 7, 18, 10, 26].",1,neutral
+"[24, 25] propose an endpoint conditioned prediction scheme which conditions pedestrian predictions on goal destinations.",1,neutral
+"Subsequent work [18], [19] has reported results on a subset of trajectories primarily consisting of pedestrians.",1,neutral
+"However, the recently proposed Y-Net [19] achieves lower MinADEK and MinFDEK values.",1,neutral
+"Several recent works thus incorporate inductive bias into the predicted modes by conditioning on agent goals [17]–[19], lane center-lines [20]–[22] or anchor trajectories [23], [24].",1,neutral
+"Y-Net [107] 2020 Stanford Drone, ETH, UCY Yes U-Net, k-means",2,positive
+The Y-net model [107] uses the U-Net architecture [108] for the semantic segmentation of the input image.,1,neutral
+"Second, we see a similar trend in multi-shot prediction setting as well with our model outperforming PECNet by 33% in ADE and 9% in FDE for pedestrians and a delta of 26% in ADE and 13% in FDE for moving vehicles.",2,positive
+"Autonomous agent planning critically depends on anticipating the future of the scene in various forms such as trajectory prediction [30, 77, 78, 31], action forecasting [32, 28, 112] or future scene segmentation [14] and anticipating the future is a activity humans subconsciously do for day-to-day tasks [80].",1,neutral
+"The study of human behavior as goal-directed entities has a long and rich interdisciplinary history across the subfields of psychology [10], neuroscience [106] and computer vision [77].",1,neutral
+"There have been numerous subtopics of interest within the trajectory prediction community including compliant trajectory prediction, multi-modal trajectory prediction, and goal-oriented prediction [98, 36, 70, 77, 78, 60, 15, 3, 19, 55, 90, 120].",1,neutral
+"Recent works have shown that explicitly reasoning about long-term goals [77, 15, 120] and short-term intents [71, 90, 11] can assist with trajectory prediction.",1,neutral
+"We propose an architecture that considers long-term goals similar to [78, 120, 77, 15] but adds a key component of frame-wise intention estimation which is used to condition the trajectory prediction module.",2,positive
+"We benchmark against PECNet [77], a strong scene agnostic trajectory prediction method with state-of-the-art performance on standard intention agnostic prediction datasets.",2,positive
+"Because humans are not completely stochastic agents and have a predilection towards certain actions, very recent trajectory forecasting studies have shown the effectiveness of goal-conditioned predictions [92, 19, 78, 77, 116, 90, 119, 15, 120, 18].",1,neutral
+"Many recent goal-directed works have focused on modeling this through estimating final “endpoint” or “goal state” distributions as done in [78, 77, 120, 19, 15].",1,neutral
+"A large number of pedestrian trajectory prediction algorithms are based on the top-down view [22], [23], [24], [25], [26], [27], [28], [29], [30].",1,neutral
+"adversarial networks (GANs) [15], [16], [17], [18] and the Variational AutoEncoder (VAE) [19], [20], [21], [22], which could generate diversity trajectories that are conformed to social rules.",1,neutral
+The segmantation maps are byproducts of the GSN from [1].,1,neutral
+"During testing, instead of picking the position with highest probability, we adopt the test-time sampling trick (TTST) introduced by [1] to sample goals for better performance.",2,positive
+"8 seconds which is widely used to evaluate trajectory predictions [2,1,4].",1,neutral
+Details of these two U-nets can be found in [1].,1,neutral
+Y-net is worse than S-CSR and NSP.,1,neutral
+"5 to get 20 frames, where the first 8 frames are used as input for Y-net [1] and S-CSR [4].",1,neutral
+The remaining 12 frames and the predictions (12 frames) of Y-net and S-CSR are used to calculate the collision rate.,2,positive
+"For each interval (8 seconds long), we subsample at FPS = 2.5 to get 20 frames, where the first 8 frames are used as input for Y-net [1] and S-CSR [4].",1,neutral
+Figure 2 demonstrates that our method (NSP) has better performance in avoiding collisions than Y-net and S-CSR.,2,positive
+"The detailed network architecture of two U-nets, Useg and Ugoal, can be found in [1].",2,positive
+"When comparing the median ADE from PTPC to the second-best median ADE from Y-net (CWS), we observe ≈ 5% improvement.",2,positive
+"Y-net [57] takes the approach of modeling the distribution of specific key points in the path, denoted as waypoints, in the form of spatial probability maps and subsequently using the heatmap representations of the waypoint samples to interpolate the full trajectory.",1,neutral
+"During inference, [57] propose the use of the Test-Time Sampling Trick (TTST) and ConditionedWaypoint sampling (CWS).",1,neutral
+"We adapt GoalGAN, PECNet, andY-net to our task setting, which we then use as baselines for benchmarking performance on the task of trajectory prediction on the Talk2CarTrajectory.",2,positive
+"Following the U-Net style decoder approach used in Y-net [57], the concatenated features and waypoint heatmaps",2,positive
+"Additionally, when we compare with the second-best median FDE from Y-net (TTST + CWS), we observe an improvement of ≈ 14%.",2,positive
+"In addition to our own model, we adapt the following baselines for our task setting: A, CNN, LSTM, GoalGAN [53], PECNet [55], Y-net [57], and evaluate their performance on the metrics defined in V-B.",2,positive
+"We thus used the
+123820 VOLUME 10, 2022
+Text2Conv method in the base version of the PTPC and the Y-net model featured in Table 1.",2,positive
+"the command representation into the path prediction pipeline and interpolating the full trajectory from the samples of key locations along the path, inspired by [57], resulting in amodel that achieves state-of-the-art performance on our task setting.",2,positive
+Figure 13 showcases an example where PTPC more readily captures the distributions of waypoints during a U-turn than Y-net.,1,neutral
+Y-net [57] features a U-Net style encoder-decoder architecture with skip connections and two decoder subnetworks.,2,positive
+"Following the U-Net style decoder approach used in Y-net [57], the concatenated features and waypoint heatmaps
+VOLUME 10, 2022 123815
+from the lowest resolution scale are upsampled to the size of the subsequent, higher resolution scale using bilinear interpolation followed by a convolutional layer.",2,positive
+"D. TRAJECTORY PREDICTION BASELINES In addition to our own model, we adapt the following baselines for our task setting: A∗, CNN, LSTM, GoalGAN [53], PECNet [55], Y-net [57], and evaluate their performance on the metrics defined in V-B.",2,positive
+"Unlike in the works of [55] and [57], we do not take the minimum distance among all pairs of predicted and ground truth paths when evaluating the model’s performance on a particular sample.",1,neutral
+"In the case of PTPC and Y-net, we predict three goals per command and three trajectories per goal, resulting in nine trajectories.",2,positive
+"In the case of Y-net, we also evaluate the use of TTST, CWS, and the combination of the two during inference.",1,neutral
+"It first predicts the waypoints that indicate key locations along the trajectory, as per [57].",1,neutral
+This section has been referenced from the original paper [9] (Section 3).,0,negative
+"The following paper is a reproducibility report for From Goals, Waypoints & Paths To Long Term Human Trajectory 2 Forecasting [9].",2,positive
+"Reproducibility report of From goals, waypoints & paths to longterm human trajectory forecasting for ML Reproducibility
+Challenge 2021
+Anonymous Author(s) Affiliation Address email
+Scope of Reproducibility1
+The following paper is a reproducibility report for From Goals, Waypoints & Paths To Long Term Human Trajectory2 Forecasting [9].",2,positive
+"Several works also leverage top-down images explicitly, whether in an RGB form or with added semantic segmentation [6], [21], [22].",1,neutral
+"Most of them only focus on multi-future path prediction [42, 44, 26, 36], and evaluate the model by picking the best out of several predicted paths.",1,neutral
+"Most works in this context predict multiple future trajectories and choose the best to assess their accuracy and performance [42, 26, 36].",1,neutral
+"The intent is defined by a variety of 53 choices, including driving maneuvers [4, 21, 22], goal locations or waypoints [6, 8, 23, 24, 25, 26], 54 and target lanes [7, 27, 28, 29], etc.",0,negative

@@ -1,0 +1,190 @@
+text,target_M6_predict,target_predict_M6_label
+"A growing number of works have pointed to degradations of fairness behavior in robust models [191, 273, 308] and differentially private models [13, 280].",1,neutral
+"These efforts can be divided into two main categories: Adversarial training [19, 20] and Non-adversarial training [21, 22] approach.",1,neutral
+"This notion of disparity has also been used in adjacent areas such as robustness [11, 116].",1,neutral
+"[116] Han Xu, Xiaorui Liu, Yaxin Li, Anil K.",0,negative
+"…on the CIFAR-10 dataset classifies “cat” and “ship” at approximately 89% and 96% accuracy, respectively, while the robust accuracy of “cat” and “ship” produced by an adversarially trained PreactResNet-18 on PGD-attacked CIFAR-10 dataset are approximately 17% and 59% respectively (Xu et al., 2021).",2,positive
+"We consider a binary classification task of natural examples sampled from a Gaussian mixture distribution, following the settings described in (Carmon et al., 2019; Schmidt et al., 2018; Xu et al., 2021; Ma et al., 2022).",1,neutral
+"Based on the findings in (Xu et al., 2021; Ma et al., 2022), supported by the confusion matrices in Figure 1, it is clear that adversarial training hurts adversarial examples of certain classes more than others, especially adversarial examples crafted from natural examples which are harder to…",1,neutral
+"Theorem 1 ((Xu et al., 2021)) Given a Gaussian distribution D∗, a naturally trained classifier fnat which minimizes the expected natural risk: fnat(x) = arg minf E(x,y)∼D∗(1(f(x) 6= y).",1,neutral
+"For example, a naturally trained PreactResNet-18 on the CIFAR-10 dataset classifies “cat” and “ship” at approximately 89% and 96% accuracy, respectively, while the robust accuracy of “cat” and “ship” produced by an adversarially trained PreactResNet-18 on PGD-attacked CIFAR-10 dataset are approximately 17% and 59% respectively (Xu et al., 2021).",2,positive
+"07 16
+7v 1
+[ cs
+Despite the generally impressive performance of AT against adversarial attacks, Xu et al. (2021) raised concerns about fairness in AT.",0,negative
+"These natural examples are characterized by their closeness to the class decision boundaries (Xu et al.,
+2021; Zhang et al., 2020).",1,neutral
+"Given that adversarial training involves training on adversarial examples, and it unfairly hurts adversarial examples crafted from vulnerable examples, it is intuitive that adversarial training sets up its decision boundary to favor adversarial examples of invulnerable classes, as observed in (Xu et al., 2021).",1,neutral
+"Based on the findings in (Xu et al., 2021; Ma et al., 2022), supported by the confusion matrices in Figure 1, it is clear that adversarial training hurts adversarial examples of certain classes more than others, especially adversarial examples crafted from natural examples which are harder to classify under natural training.",1,neutral
+"…training involves training on adversarial examples, and it unfairly hurts adversarial examples crafted from vulnerable examples, it is intuitive that adversarial training sets up its decision boundary to favor adversarial examples of invulnerable classes, as observed in (Xu et al., 2021).",1,neutral
+"Researchers have noticed a similar problem with accuracy and untargeted robustness: the performance of models varies with different class distribution [99], [100].",1,neutral
+"The intersection between strategic classification and fairness is particularly salient to our work, and has featured studies that highlight the inequity that results from strategic behavior by individuals [21], as well as social cost disparities resulting from making classifiers robust to strategic behavior [32, 43].",1,neutral
+"Specifically, adversarial training involves training a separate (adversarial) classifier network by adding an adversarial loss so that the adversarial network cannot distinguish gender given the encoded image features (Edwards and Storkey, 2015; Berg et al., 2022; Xu et al., 2021).",1,neutral
+"This is achieved by mainly two types of approaches, namely adversarial training (Edwards and Storkey, 2015; Berg et al., 2022; Xu et al., 2021) and mutual information (MI) minimization (Wang et al., 2021a, 2023).",2,positive
+"In-processing methods focus on altering the training objective by incorporating fairness constraints, regularization terms or leveraging adversarial learning to obtain representations invariant to gender/race (Berg et al., 2022; Wang et al., 2023; Xu et al., 2021; Cotter et al., 2019).",1,neutral
+"This is achieved by mainly two types of approaches, namely adversarial training (Edwards and Storkey, 2015; Berg et al., 2022; Xu et al., 2021) and mutual information (MI) minimization (Wang et al.",2,positive
+"And based on the effective robustness improvement and scalability, PGD-based adversarial training has been widely considered as the most effective and practical method for improving the robustness of ML models [41].",1,neutral
+"And during various robustness enhancement technologies, adversarial training that trains ML models through a min–max manner is thought as the most effective mechanism [41].",1,neutral
+First results have shown that this becomes more complicated if the fairness of the decision-making systems is a concern [71].,1,neutral
+", 2019) , class-wise fairness (Xu et al., 2021; Wei et al., 2023a) and the absence of formal guarantees (Wang et al.",1,neutral
+"…several defects remaining in adversarial training, such as decrease in natural accuracy (Tsipras et al., 2018), computational overhead (Shafahi et al., 2019) , class-wise fairness (Xu et al., 2021; Wei et al., 2023a) and the absence of formal guarantees (Wang et al., 2021; Zhang et al., 2023).",0,negative
+"…robustness effectively, adversarial training has exposed several defects such as computational overhead (Shafahi et al., 2019), class-wise fairness (Xu et al., 2021; Wei et al., 2023a), among which the decreased natural accuracy (Tsipras et al., 2018; Wang & Wang, 2023) has become the major…",2,positive
+", 2019), class-wise fairness (Xu et al., 2021; Wei et al., 2023a), among which the decreased natural accuracy (Tsipras et al.",1,neutral
+linear classifier which minimizes the following classification error [28]2 f∗ = arg min f Pr(f(x) 6= y).,1,neutral
+"[28], it is easy to obtain that fopt(x) = x + b (that is, w = 1).",1,neutral
+"2It should be pointed out that although this theorem is presented in [28], the paper does not mention or discuss any concerns related to variance imbalances.",2,positive
+"[30] revealed that classes with lower compactness, indicated by large variances, are more challenging and exhibit poorer performance.",1,neutral
+"[23] Han Xu, Xiaorui Liu, Yaxin Li, Anil Jain, and Jiliang Tang.",0,negative
+We also compare our approach with FRL [29].,2,positive
+"To address this issue, Fair Robust Learning (FRL) [29] has been proposed, which adjusts the margin and weight among classes when fairness constraints are violated.",1,neutral
+"This can explain why Fair Robust Learning (FRL) [29] can improve robust fairness by enlarging the margin for the hard classes, since the model reduces the over-fitting problem on these classes.",1,neutral
+Comparison with Fair Robust Learning (FRL) [29].,1,neutral
+"Finally, we compare our approach with FRL [29], the only existing adversarial training algorithm that focuses on improving the fairness of classwise robustness.",2,positive
+", the model may exhibit strong robustness on some classes while it can be highly vulnerable on others, as firstly revealed in [4, 21, 29].",1,neutral
+"…which ensures that the standard error (which dictates the classification accuracy of the networks) and boundary error (since the inputs from class(es) closer to the decision boundary are expected to be more vulnerable under noise) (H. Xu et al., 2021) are minimal, thereby minimizing the bias.",1,neutral
+"Prior works have examined adversarial hardening and fairness, defined as the vulnerability of each class within a classification task [40] in completely classbalanced datasets.",1,neutral
+Class-wise variance is a common measure used in (Xu et al. 2021) and (Tian et al.,1,neutral
+"For example, (Xu et al. 2021) propose the re-weight and re-margin strategies on TRADES.",1,neutral
+Xu et al. (2021) propose employing re-weight and re-margin strategies to solve this problem.,1,neutral
+"Although AT obtains great average adversarial robustness performance over classes, (Benz et al. 2020; Xu et al. 2021; Tian et al. 2021) find that a robust model well-trained by AT exhibits a large robustness disparity in different classes on various balanced datasets, like the left classifier in…",1,neutral
+"To solve this problem, Benz et al. (2020) use a cost-sensitive learning fashion which is widely used in natural learning with imbalanced datasets; Xu et al. (2021) propose a new method to reduce the class-wise variance of robust accuracy over classes.",1,neutral
+"To solve this problem, recently, various strategies (Benz et al. 2020; Xu et al. 2021) aimed at making the robust performance of the model consistent over all classes have been proposed.",2,positive
+"Following (Xu et al. 2021), we use average natural accuracy, average robust accuracy, worst-class natural accuracy and worst-class robust accuracy to evaluate the performance of all methods.",2,positive
+"Zhang et al. (2019), Xu et al. (2021) and Benz et al. (2020) are used as our baselines.",2,positive
+"Although AT obtains great average adversarial robustness performance over classes, (Benz et al. 2020; Xu et al. 2021; Tian et al. 2021) find that a robust model well-trained by AT exhibits a large robustness disparity in different classes on various balanced datasets, like the left classifier in Figure 1.",1,neutral
+"To overcome the limitations of Benz et al. (2020); Xu et al. (2021), this paper proposes a novel min-max learning paradigm to optimize worst-class robust risk and leverages noregret dynamics to solve the proposed min-max problem, our goal is to achieve a classifier with great performance on…",2,positive
+"Recently, some works (Benz et al. 2020; Xu et al. 2021) have attempted to solve this problem.",1,neutral
+"Following (Xu et al. 2021), we set τ1 = τ2 = 0.05, α1 = α2 = 0.05 for FRL on CIFAR-10.",1,neutral
+FRL is presented in Xu et al. (2021).,2,positive
+"Recent works (Benz et al. 2020; Xu et al. 2021; Tian et al. 2021) have shown that a robust model well-trained by AT exhibits a remarkable robustness disparity among classes, and propose various methods to obtain consistent robust accuracy across classes.",1,neutral
+Class-wise variance is a common measure used in (Xu et al. 2021) and (Tian et al. 2021).,1,neutral
+"Notably, our approach for the fair ViTs is a novel addition to the growing body of work on “adversarial examples for fairness” [66, 62].",2,positive
+[182] found that safety-awareness learning poses a disparate impact on the fairness risk of subgroups.,1,neutral
+"Xu et al. (2021) focus on a balanced class setting but with varying “difficulty levels” as measured by the magnitude of variance, whereas we address class imbalance.",2,positive
+"The notion of accuracy disparity in our context focuses on the performance gap of a model on different sub-groups of the overall population, where each group is indexed by the corresponding class label (Santurkar et al., 2021; Xu et al., 2021).",1,neutral
+Xu et al. (2021); Ma et al. (2022) identify and analyze the significant disparity of standard accuracy and robust accuracy among different classes or subgroups of data for adversarially trained models.,2,positive
+"If it is, then what are the fundamental factors that contribute to this potential drop of accuracy and the increase of accuracy disparity? To the best of our knowledge, there are only a few works (Tsipras et al., 2019; Xu et al., 2021; Ma et al., 2022) that partially attempt to approach these problems.",1,neutral
+"While it has been shown in a previous work (Xu et al., 2021) that adversarial robustness does introduce severe accuracy disparity when different classes exhibit different “difficulty levels” of learning (i.e., different magnitude of variance) in a toy example (as indicated by specific choices of…",1,neutral
+"While it has been shown in a previous work (Xu et al., 2021) that adversarial robustness does introduce severe accuracy disparity when different classes exhibit different “difficulty levels” of learning (i.",1,neutral
+"To the best of our knowledge, there are only a few works (Tsipras et al., 2019; Xu et al., 2021; Ma et al., 2022) that partially attempt to approach these problems.",2,positive
+"Following prior works (Tsipras et al., 2019; Xu et al., 2021), for the model, we consider a linear classifier and couple it with a sign function sgn to obtain the output f(x;w, b) := sgn(w⊤x+ b).",2,positive
+"Within this context, recently Xu et al [44] has shown that adversarially robust models exhibit remarkable disparity of natural accuracy and robust accuracy metrics among different classes, compared to those exhibited by their standard counterpart.",1,neutral
+"6, 15 [44] Han Xu, Xiaorui Liu, Yaxin Li, Anil Jain, and Jiliang Tang.",0,negative
+"For FMNIST and CIFAR, the experiments use their standard labels and assume that labels are also protected groups, mirroring the setting of previous work [23, 39, 44].",1,neutral
+"Those trained on FMNIST and CIFAR, use a learning rate of 1e−1 and 200 epochs, as suggested in previous work [44].",1,neutral
+"It has also been shown that constraining the model’s hypothesis space to satisfy privacy [2], sparsity [14, 15], or robustness [26, 44] can result in disparate outcomes.",1,neutral
+"[Extended from Xu et al. (2021)] By Xu et al. (2021, Lemma 2), according to the data symmetry in (5), the optimal linear classifier has the form
+1, · · · , 1, bγ = arg min w,b Rγ(f(·; w, b)).",1,neutral
+"3This setting is also studied in Xu et al. (2021), which focuses on the robustness-fairness tradeoff, and thus is different
+to our interest.",2,positive
+Theorem 1 (Extended from Theorem 2 in Xu et al. (2021)).,1,neutral
+"Proof 5 in Xu et al. (2021) shows that dbγ dγ ≤ −K−1K+1d < 0, thus bγ is strictly decreasing in γ.",1,neutral
+"Lastly, there start to be some research on the intersection of different trustworthy properties in machine learning [39, 114, 124, 227], it is worth studying on building health misinformation detectors that satisfy multiple trustworthy properties simultaneously.",1,neutral
+"Although promising to improve the model’s robustness, those adversarial training algorithms have been observed to result in a large disparity of accuracy and robustness among different classes while natural training does not present a similar issue [34].",1,neutral
+"Using adversarial training algorithms, bias that come with demographic attributes of the authors can be effectively mitigated and utilized for improved classification accuracy and robust feature prediction in the context of fairness [8], [9].",1,neutral
+"Xu et al. (Xu et al. 2021) empirically showed that even in balanced datasets, AT still suffers from fairness problem, where some classes have much higher performance than others.",1,neutral
+"(Xu et al. 2021) empirically showed that even in balanced datasets, AT still suffers from fairness problem, where some classes have much higher performance than others.",1,neutral
+"[252] hypothesized that adversarial training algorithms tend to introduce severe disparity in accuracy and robustness between different groups of data, and showed this phenomenon can happen under adversarial training algorithms minimizing",1,neutral
+Some discussed the bias between classes in adversarial training and proposed a training framework to mitigate this issue [44]; Others analyzed differences in robustness to adversarial samples between sensitive groups and developed a simple regularization method to address the problem [25].,1,neutral
+"As background, using a validation set is commonly accepted in mainstream fairness studies [1, 34, 44], and identifying the least favorable group is possible in safety-critical applications such as facial recognition systems [6].",1,neutral
+"First, because performance disparities between classes are amplified under adversarial training [43, 44], existing methods [1, 34] may perform poorly on low-frequency classes of disadvantaged groups, resulting in poor fair-performance and fair-robustness.",0,negative
+"Our empirical studies on three tasks show that the group with the least standard performance is of the worst adversarial robustness, consistent with prior studies on other datasets [25,44].",2,positive
+"Moreover, under adversarial training, robust models generally exhibit larger performance disparities between classes given adversarial inputs than benign inputs [43, 44].",1,neutral
+"Specifically, on benign data, disparities between classes and predicted errors increase from standard to robust models [37, 43, 44].",1,neutral
+"of ML models would sacrifice performance on benign data, and [43, 44] observe that the issue of class-imbalanced performance on benign data becomes more severe under adversarial training.",1,neutral
+"Similarly, for the robust model, incorrect outputs and class imbalance performance grow from benign to adversarial inputs [9, 43, 44, 46].",1,neutral
+"Previous research on trustworthy AI [236] shows that the robustness of such systems is positively correlated to their explainability [96, 270], while partly conflicts with their privacy [325] and fairness dimensions [399].",1,neutral
+"Despite that a number of studies have investigated the interactions between dimensions of trustworthy AI [101, 236, 399], research on trustworthy recommender systems is still limited.",1,neutral
+"This includes, Generative Adversarial Networks (or GANS) [5, 10], to robust machine learning of different kinds [8, 12, 27, 31].",1,neutral
+"We use the published codes for TRADES (Zhang et al. 2019)3, FRL (Xu et al. 2021)4.",2,positive
+"For fair comparisons, we follow (Xu et al. 2021) and use the average and worst-class error rate of
+2We use the official data https://github.com/fastai/imagenette 3https://github.com/yaodongyu/TRADES 4https://github.com/hannxu123/fair robust
+standard (Avg.",2,positive
+"However, adversarial training suffers from the robust fairness problem, where the adversarially trained models make a severe disparity in accuracy and robustness among different classes (Xu et al. 2021).",1,neutral
+"In this paper, we follow (Xu et al. 2021) and use PGD attacks regarding cross entropy loss with 20 steps and step size of 2/255 to evaluate the robust fairness in our main experiment.",2,positive
+"For fair comparisons, we follow (Xu et al. 2021) and use the average and worst-class error rate of",2,positive
+This phenomenon is firstly defined by (Xu et al. 2021) and further theoretically justified by studying a binary classification task under a Gaussian mixture distribution.,1,neutral
+We compare the previously proposed method FRL (Xu et al. 2021) which is the only method that address robust fairness problem to the best of our knowledge.,2,positive
+The class “+1” is harder because an optimal linear classifier will give a larger error for the class “+1” than that for the class “1” when σ(2) + > σ 2 − [31].,1,neutral
+"It’s found in [24] that adversarial training algorithms often derive serious unbalance in accuracy and robustness between different categories, and they propose Fair-Robust-Learning (FRL) framework to mitigate this unfairness problem.",1,neutral
+[52] identify inherent bias amplification as a result of adversarial training and propose a framework to mitigate these biases.,1,neutral
+"Thirdly, robust optimization, this type of defensive techniques aims to eliminate the existence of adversarial examples in the first place by training a robust DL model [8] [9] [18] [22] [25].",1,neutral
+"PGD/IFGSM/BIM [13,17,28–31,33,39–70] Multi-step gradient-based white-box attack High precision attack; provides more generalization than the FGSM; uses random initialization to avoid local minima Higher computational complexity; may also have an overfitting problem to some extent CNN: [13,33,41,47,49,56,64] AllCNN: [59] LeNet: [31,43,48,50,51,59,67] VGG: [44,65] ResNet: [29,30,39,42,46,48,49,51,57,60,63,66,67,70] WideResNet: [13,28,30,42–47,49,50,52–55,58,63,64,66,68,70] PreActResNet: [28,56,68] RevNet: [48] Inception: [17,48,69] Inception ResNet: [17] DenseNet: [39] IPMI2019-AttnMel: [69] CheXNet: [69] Transferred VGGFace: [61] LISA-CNN: [61] GANs: [62]",2,positive
+"We see developing robust mechanisms for fairness-aware algorithms as a crucial step towards fighting bias (Xu et al, 2021).",1,neutral
+The authors in [46] showed that adversarial learning might worsen classification accuracy and fairness performance.,0,negative
+uk examples learn fundamentally different representations compared to standard classifiers reducing accuracy [16]; they also can cause disparity on accuracy between classes for both clean and adversarial samples [18].,1,neutral
+"In turn, Xu et al. (2021) proposes the Fair-Robust-Learning (FRL) algorithm to alleviate this problem.",1,neutral
+"Xu et al. (2021) reports that TRADES (Zhang et al., 2019) increases the variation of the per-class accuracies (accuracy in each class) which is not desirable in view of fairness.",0,negative
+"At present, considerable efforts had been developed to improve the robustness of the DNN-implemented classifier against adversarial examples, which can be categorized as adversarial training (AT) [41, 46, 64, 73, 74, 70, 66, 72], randomization [19, 65, 12, 17, 68, 38, 58, 7] and input purification [53, 51].",2,positive
+", Fast Adversarial Training (Fast-AT) [64], You Only Propagate Once (YOPO) [70], Adversarial Training with Hypersphere Embedding (ATHE) [46], Fair Robust Learning (FRL) [66], Friendly Adversarial Training (FAT) [73], TRADES [72] and Adversarial Training with Transferable Adversarial examples (ATTA) [74].",1,neutral
+The Fair-Robust-Learning (FRL) [66] mitigated the unfairness problem that the accuracy of some categories is much lower than the average accuracy of the DNN model.,1,neutral
+"Seven adversarial training methods are evaluated, i.e., Fast Adversarial Training (Fast-AT) [64], You Only Propagate Once (YOPO) [70], Adversarial Training with Hypersphere Embedding (ATHE) [46], Fair Robust Learning (FRL) [66], Friendly Adversarial Training (FAT) [73], TRADES [72] and Adversarial Training with Transferable Adversarial examples (ATTA) [74].",1,neutral
+"Several methods have been further developed to accelerate adversarial training [64, 70] and mitigate low efficiency [46, 73, 74], low generalization [72] and unfairness [66].",1,neutral
+"Furthermore, both [10], [11] aim to realize robust fairness (i.",1,neutral
+[11] observe that robustness can impact fairness - the adversarial training algorithms tend to introduce disparity of accuracy and robustness between different groups of data.,1,neutral
+"However, due to the tension between fairness and robustness [10], [11], the sequential methods (either robustness-then-fairness or fairness-thenrobustness) fail, as the fair model will become unfair after adversarial training.",1,neutral
+"For example, recent works [10], [11] have observed that equipping the ML models with fairness can make these models to be more susceptible",1,neutral
+"Specifically (Xu et al., 2021; Nanda et al., 2021; Yurochkin & Sun, 2020) propose adversarial training-based algorithms for fairness.",1,neutral
+", [34] have showed that adversarially trained models introduce severe performance disparity across different classes.",1,neutral
+[39] studies the setting of adversarial robustness and show that adversarial training introduces unfair outcomes in term of accuracy parity [42].,1,neutral
+"Moreover, robustness bias is present (and sometimes even amplified) [2, 34] after supposedly making the model ‘robust’ using state-of-the-art adversarial defense methods like adversarial training.",1,neutral
+[34] demonstrated that the vulnerability of certain classes (that are inherently more-vulnerable/less-robust to adversarial perturbations) is amplified after adversarial training.,1,neutral
+"Furthermore, robustness bias persists [2, 34] even after making the model robust using adversarial defenses like adversarial training.",1,neutral
+"Problem settings introduced by deep models Fair for different deep models [29, 69, 74, 75, 75, 76]; Utility studies for fair enforced models [71, 77–79] Neural Computing and Applications (2022) 34:12875–12893 12881",1,neutral
+"[66] and continuous [72] sensitive features; and (2) examining some newly emerging deep learning applications, such as deep clustering [74], adversarial training [75], and attacks [77].",1,neutral
+"[75] observe unfair results in adversarial training, while Chen et al.",1,neutral
+"We follow a common approach in bias mitigation [18, 19, 65, 57] and employ an adversarial classifier, θadv, whose aim is to predict the attribute label A of image I given only its similarity logits from the set of sensitive text queries T",2,positive
+"Therefore, privacy-preservation as a process of protecting sensitive information against being revealed or misused by unauthorized users has been studied extensively [Xu et al., 2021c].",1,neutral
+"For example, [Bagdasaryan and Shmatikov, 2019] shows that differential privacy can lead to disparate impact against minority groups and [Xu et al., 2021a] studies how to mitigate the disparate impact.",1,neutral
+"[Xu et al., 2021b] shows adversarial learning based defense techniques do not provide sufficient protection to minority groups, which incurs unfairness.",1,neutral
+"A Kernel Extreme Learning Machine (KELM) is used as a regressor; two KELM models were trained, for both the face and scene modalities.",1,neutral
+"Adversarial Learning (Xu et al., 2021) works by training two models; the first is a predictor model P which predicts the desired label, and the second is a discriminator model D which predicts the protected variable.",2,positive
+"Feature bias has been encountered by using adversarial learning (Xu et al., 2021), where an adversarial model is trained to re-represent the input feature in a manner agnostic w.",1,neutral
+"Algorithm 1 Adversarial Learning Input: Ground truth labels y, protected variable c, input features X Models: Filter E, Predictor P , Discriminator D for e epochs do
+Train the models P,E one step by minimising: MSE(y, P (E(X)))− λ1CE(c, D(E(X))) Train the model D one step by minimising: αλ2CE(c, D(E(X)))
+end for
+This mechanism ensures that the embedding is representative enough for the predictor model to perform well, while not being representative enough for the discriminator to identify the protected variable.",1,neutral
+"KELM (Huang et al., 2011) is a method which improves over Extreme Learning Machine (ELM) (Huang et al., 2004).",1,neutral
+"The impact of Algorithms, Artificial Intelligence (AI), and Machine Learning (ML) on our daily lives is increasing day
+1Chair of Embedded Intelligence for Health Care and Wellbeing, University of Augsburg, Augsburg, Germany 2SYNCPILOT GmbH, Augsburg, Germany 3Imperial College London, UK.",2,positive
+"Feature bias has been encountered by using adversarial learning (Xu et al., 2021), where an adversarial model is trained to re-represent the input feature in a manner agnostic w. r. t. to the protected variable, hence acquiring features that do not leak information about the protected variable,…",1,neutral
+"[83] Han Xu, Xiaorui Liu, Yaxin Li, Anil Jain, and Jiliang Tang.",0,negative
+"Robustness mitigation: Relations between robustness guarantees and individual and group fairness have been studied in [85, 46, 83, 84] and [75] respectively.",1,neutral
+"…is particularly salient to our work, and has featured studies that highlight the inequity that results from strategic behavior by individuals [Hu et al., 2019], as well as inequity (social cost) resulting from making classifiers robust to strategic behavior [Milli et al., 2019, Xu et al., 2021].",2,positive
+"…approaches have been introduced, particularly in machine learning, that investigate how to balance fairness and task-related efficacy, such as accurate [Agarwal et al., 2018, Feldman et al., 2015, Kearns et al., 2018, Xu et al., 2021, Zafar et al., 2019, Zemel et al., 2013, Hardt et al., 2016b].",1,neutral
+"Recent studies [361, 380] provide a good reference to start with.",1,neutral
+"For instance, the need for data privacy might interfere with the desire to explain the system output in detail, and the pursuit of algorithmic fairness may be detrimental to the accuracy and robustness experienced by some groups [284, 361].",1,neutral
+"Instead, elaborated joint optimization and tradeoffs between multiple aspects of trustworthiness are necessary [47, 158, 331, 361, 380].",1,neutral
+"For example, adversarial robustness and fairness can negatively affect each other during training [284, 361].",1,neutral
+"Furthermore, we will also discuss several other intriguing properties of robust DNNs [6], from the perspectives such as interpretability, fairness and so on.",1,neutral
+"It is also essential to understand the reasons for the existence of adversarial examples, and the intrinsic natures of robust DNNs.",1,neutral
+"By comparing these properties with traditional DNNs, the audience can grip a deep insight into the working mechanism of both robust DNNs and traditional DNNs.",2,positive
+"In this section, we draw some theoretical understandings, mainly from the optimization and generalization properties of robust DNNs.",1,neutral
+"We first give our audience a brief introduction about what is the phenomenon of adversarial examples [3, 7], and why it can be a huge concern for the applications of DNNs.",2,positive
+"Accordingly, the work [363] proposes a framework called Fair-Robust-Learning (FRL) to ensure fairness while improving a model’s robustness.",2,positive
+"First, a direct problem to be solved is how to alleviate the conlict so as to meet both sides to the greatest extent [363].",1,neutral
+"Recent research [363] indicates that adversarial training can introduce a signiicant disparity of performance and robustness among diferent groups, even if the datasets are balanced.",1,neutral
+", 2021), interpretability (Ross & Doshi-Velez, 2018), fairness (Xu et al., 2021) and so on.",2,positive
+"Besides, recent studies showed AT could benefit other domains such as pre-training(Chen et al., 2020; Jiang et al., 2020), out-of-distribution generalization (Yi et al., 2021), inpainting (Khachaturov et al., 2021), interpretability (Ross & Doshi-Velez, 2018), fairness (Xu et al., 2021) and so on.",2,positive
+Classifiers trainedwith adversarial examples learn fundamentally different representations compared to standard classifiers reducing accuracy [25] or they can cause disparity on accuracy for both clean and adversarial samples between different classes [26].,1,neutral
+"Moreover, some recent studies also explore the relationship between the fairness of an ML model and its other properties, such as robustness (Xu et al., 2020; Nanda et al., 2021) and privacy (Cummings et al.",1,neutral
+"This type of unfairness happens in balanced datasets and does not exist in clean data trained models [1, 14, 19].",1,neutral
+"This unfairness can occur even in balanced datasets but is absent in models trained on clean data [1, 19].",1,neutral
+"Though improving adversarial robustness effectively, adversarial training has exposed several defects such as computational overhead [25], class-wise fairness [33, 30], among which the decreased clean accuracy [27, 28] have become the major concern.",1,neutral
+"robust accuracy trade-off [27, 28], computational overhead [25], class-wise fairness [33, 30] and the absence of formal guarantees [29, 35].",1,neutral
+"adversarial robustness enhancement [19], [20], we propose a method to represent the decision boundary in the sample space using adversarial attacks.",1,neutral
+"In addition, they demonstrate that adversarial training tends to introduce severe disparity of accuracy and robustness between different sub-partitions of data [40].",1,neutral
+"Recently, the concept of fairness has been integrated with robustness by using robust accuracy measurement [2,40,36].",1,neutral
+Authors in [40] have shown that adversarial training can cause a serious disparity in both standard accuracy and adversarial robustness between different classes of data.,1,neutral
+"Fairness and robustness: Nevertheless, relations between robustness guarantees and individual and group fairness have been studied in [44, 81, 83, 84] and in [72] respectively.",1,neutral
+"As baselines, 7 adversarial training methods are chosen, i.e., Fast Adversarial Training (Fast-AT) [5], You Only Propagate Once (YOPO) [8], Adversarial Training with Hypersphere Embedding (ATHE) [4], Fair Robust Learning (FRL) [9], Friendly Adversarial Training (FAT) [6], TRADES [10] and Adversarial Training with Transferable Adversarial examples (ATTA) [7], and 2 channel-wise activation suppressing methods, i.e., Channelwise Activation Suppressing (CAS) [11] and Channel-wise Importance-based Feature Selection (CIFS) [12].",2,positive
+", Fast Adversarial Training (Fast-AT) [5], You Only Propagate Once (YOPO) [8], Adversarial Training with Hypersphere Embedding (ATHE) [4], Fair Robust Learning (FRL) [9], Friendly Adversarial Training (FAT) [6], TRADES [10] and Adversarial Training with Transferable Adversarial examples (ATTA) [7], and 2 channel-wise activation suppressing methods, i.",1,neutral
+"For example, Adversarial Training with Hypersphere Embedding (ATHE) [4], Fast Adversarial Training (Fast-AT) [5], Friendly Adversarial Training (FAT) [6], Adversarial Training with Transferable Adversarial examples (ATTA) [7], You Only Propagate Once (YOPO) [8], FairRobust-Learning (FRL) [9], TRadeoff-inspired Adversarial DEfense via Surrogate-loss minimization (TRADES) [10] were proposed to enhance the robustness of DNN.",1,neutral
+[34] proposes the Fair-Robust-Learning (FRL) algorithm to alleviate this problem.,1,neutral
+[34] reports that TRADES [36] increases the variation of the per-class accuracies (accuracy in each class) which is not desirable in view of fairness.,0,negative
+[33] and [34] confirmed this finding and introduced algorithms that decrease the robustness bias by introducing class-weighted losses in the popular PGD-AT [35] and TRADES [36] algorithms for adversarial robust machine learning.,1,neutral
+[41] that adversarial defences may induce a large discrepancy of robustness among different classes.,1,neutral
+"The phenomenon of class-wise accuracy has also been discovered by other works concurrently to ours [43, 36, 3].",1,neutral
+Similar to our approach the fair robust learning framework [43] also attempts to train robust models with a balanced accuracy and robustness performance.,2,positive
+"For instance, parallels can be shown between individual fairness and local robustness guarantees (Yurochkin et al., 2019; Nanda et al., 2021; Xu et al., 2021; Yeom and Fredrikson, 2020) or between group fairness metrics and robustness to distribution shift (Veitch et al.",1,neutral
+"For instance, parallels can be shown between individual fairness and local robustness guarantees (Yurochkin et al., 2019; Nanda et al., 2021; Xu et al., 2021; Yeom and Fredrikson, 2020) or between group fairness metrics and robustness to distribution shift (Veitch et al., 2021).",1,neutral

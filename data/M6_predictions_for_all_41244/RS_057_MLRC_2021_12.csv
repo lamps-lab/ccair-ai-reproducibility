@@ -1,0 +1,36 @@
+text,target_M6_predict,target_predict_M6_label
+"Several slight variations have occurred on the All-But-The-Top algorithm where the top principal components of the last hidden state of LLMs are masked or removed [18, 3, 14, 15, 23].",1,neutral
+"Second, previous work has demonstrated that the word-level similarity estimates obtained from the vector space of contextualized LMs might be distorted due to the anisotropy of the space (Ethayarajh, 2019; Rajaee and Pilehvar, 2021).",1,neutral
+"Anisotropic word representations occupy a narrow cone instead of being uniformly distributed in the vector space, resulting in highly positive correlations even for unrelated words, thus negatively impacting the quality of the similarity estimates that can be drawn from the space (Ethayarajh, 2019; Gao et al., 2019; Cai et al., 2021; Rajaee and Pilehvar, 2021).",1,neutral
+"Some work suggest that the high anisotropy is inherent to, or least a by-product of contextualization [73, 79], Gao et al.",1,neutral
+"Because of the re-training cost, other light approaches have been presented as a post-processing step (Li et al., 2020; Rajaee and Pilehvar, 2021).",0,negative
+"To investigate the effect of isotropy enhancement for the multilingual embedding space, we opted for our cluster-based approach (Rajaee and Pilehvar, 2021), which is a recent example from the latter category.",2,positive
+"By applying a cluster-based isotropy enhancement method (Rajaee and Pilehvar, 2021), we demonstrate that increasing isotropy of multilingual embedding space can result in significant performance improvements on semantic textual similarity tasks.",2,positive
+"A similar pattern can be observed for the English BERT CWRs (Rajaee and Pilehvar, 2021), with the only",1,neutral
+"A similar pattern can be observed for the English BERT CWRs (Rajaee and Pilehvar, 2021), with the only difference that in mBERT, low-frequency words are distributed near the origin and frequent words are far from it.",1,neutral
+", 2019), this method can significantly improve the performance of contextual embedding spaces as well as their isotropy (Rajaee and Pilehvar, 2021).",1,neutral
+"embedding space performs well in downstream tasks(Biś et al., 2021; Rajaee and Pilehvar, 2021).",1,neutral
+"Secondly, Rajaee & Pilehvar (2021a) increased the isotropy by clustering the embeddings and nulling the principal components of each cluster.",1,neutral
+"Furthermore, Rajaee & Pilehvar (2021b) showed that improving the isotropy, in general, does not immediately result in a better performance for the model.",1,neutral
+"As mentioned previously, improving the isotropy by itself is not sufficient (Rajaee & Pilehvar, 2021b).",1,neutral
+"As shown by Rajaee & Pilehvar (2021b), it is not sufficient to only improve the isotropy of the embeddings, as the embeddings need to maintain the semantics required for the downstream task.",1,neutral
+"More specifically, Rajaee & Pilehvar (2021b) highlighted that the Classification ([CLS]) token representations are much more anisotropic than all representations in the fine-tuned space.",1,neutral
+"The (Rajaee and Pilehvar, 2021) work demonstrates that isotropic embeddings have a significant improvement in downstream task performance, as they capture more semantic information and reduce noise.",1,neutral
+"Multiple research efforts have shown that architectures that utilise contextual and non-contextual word representations lack isotropy (i.e anisotropic) (Devlin et al., 2018) (Rajaee and Pilehvar, 2021b)(Rajaee and Pilehvar, 2021a).",1,neutral
+", 2018) (Rajaee and Pilehvar, 2021b)(Rajaee and Pilehvar, 2021a).",2,positive
+"We follow (Mu et al., 2017) (Rajaee and Pilehvar, 2021a) in quantifying isotropy using the metric in 1, and the partition function 2 by (Arora et al., 2016):
+I(W ) = minu∈UF (u)
+maxu∈UF (u) (1)
+F (u) = N∑ i=1 eu Twi (2)
+where:
+• U : is the set of eigenvectors of the embedding matrix W
+• u: is the…",1,neutral
+", 2017) (Rajaee and Pilehvar, 2021a) in quantifying isotropy using the metric in 1, and the partition function 2 by (Arora et al.",1,neutral
+"Experiments in (Rajaee and Pilehvar, 2021a) illustrated the use of such method which improved classification performance and surpassed baseline values in pretrained language models, particularly, BERT(Devlin et al., 2018).",1,neutral
+"(Ioffe and Szegedy, 2015)(Wang et al., 2019) (Rajaee and Pilehvar, 2021a).",1,neutral
+"…word representation of the ith word in embedding matrix W where W ∈ RN×D with N being the size of the vocabulary and D the size of the embedding
+As cited by (Rajaee and Pilehvar, 2021a), (Arora et al., 2016) proved that using a constant for isotropic embedding spaces, F (u) can be…",1,neutral
+"We use (Rajaee and Pilehvar, 2021a)’s cluster-based approach in our work to achieve an embedding space with representations homogeneously dispersed.",2,positive
+"To refine MARBERT’s isotropy, we use a clusterbased approach (Rajaee and Pilehvar, 2021a) which builds on top of (Mu et al., 2017) technique to improve isotropy in non-contextual word embeddings.",2,positive
+"To refine MARBERT’s isotropy, we use a clusterbased approach (Rajaee and Pilehvar, 2021a) which builds on top of (Mu et al.",2,positive
+"Experiments in (Rajaee and Pilehvar, 2021a) illustrated the use of such method which improved classification performance and surpassed baseline values in pretrained language models, particularly, BERT(Devlin et al.",1,neutral

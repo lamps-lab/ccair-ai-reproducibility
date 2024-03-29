@@ -1,0 +1,56 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"We will use BYOL (Grill et al. (2020), Definition 2.3)6 for our investigation into scaling as it is wellstudied (Tian et al., 2021; Richemond et al., 2023), relatively simple to implement due to minimal hyper-parameters, and obtains competitive results (Grill et al., 2020; Koppula et al., 2022).",1,related,1,positive
+"3)6 for our investigation into scaling as it is wellstudied (Tian et al., 2021; Richemond et al., 2023), relatively simple to implement due to minimal hyper-parameters, and obtains competitive results (Grill et al.",1,related,1,positive
+"Kontrastif öğrenme, aynı nesnenin artırılmış görüntülerine ait temsil vektörlerini bir araya getirirken negatif örnekleri uzaklaştırmayı teşvik etmek olarak tanımlanabilir [3].",1,related,0,negative
+"Specifically, inspired by (Chen & He, 2021; Grill et al., 2020; Tian et al., 2021), we question the proposed usage of negative pairs for time series forecasting and the idea of augmenting the data to generate positive pairs, which is empirically investigated in several experiments with different…",1,related,1,positive
+"Specifically, inspired by (Chen & He, 2021; Grill et al., 2020; Tian et al., 2021), we question the proposed usage of negative pairs for time series forecasting and the idea of augmenting the data to generate positive pairs, which is empirically investigated in several experiments with different contrastive methods.",1,related,1,positive
+", 2022), partly explained by the fact that SSL composes the DN of interest fθ with a projector DN gγ appended to it during training and thrown away afterward, (ii) too many per-loss and per-projector hyper-parameters whose impact on the DN’s performances are hard to control or predict (Grill et al., 2020; Tian et al., 2021; He & Ozay, 2022), and which are even widely inconsistent across datasets and architectures Zhai et al.",1,related,1,positive
+", 2020) ( Z> θ Zθ )−1 Z> θ Z ′ ξ DirectPred (Tian et al., 2021) (Z> θ Zθ) 1/2 (eigendecomp.",1,related,1,positive
+"This fact can be leveraged thanks to the balancing relationship (Tian et al., 2021), valid in the presence of a small weight decay parameter λ:
+Aθ,tA > θ,t = P > θ,tPθ,t +M0e −2λt (7)
+where Aθ,t and Pθ,t are now indexed by time t, and M0 is a constant matrix determined at initialization.",1,related,1,positive
+"This fact can be leveraged thanks to the balancing relationship (Tian et al., 2021), valid in the presence of a small weight decay parameter λ: Aθ,tA > θ,t = P > θ,tPθ,t +M0e −2λt (7)",1,related,1,positive
+"Building on DirectPred [1], we presented a simple analysis formulated in the eigenspace of representations that illustrates how BYOL/SimSiam’s asymmetric similarity loss avoids representational collapse.",1,related,1,positive
+"Here, by building on DirectPred [1], we lay out a theoretical framework that reconciles these two views.",1,related,1,positive
+"Finally, instead of gradient-based optimization, we directly set the predictor network as a simple function of this correlation matrix as suggested in DirectPred [1].",1,related,1,positive
+"In this work, we consider the linear network setting used previously for studying non-contrastive SSL in [1, 8], and provide a straightforward analysis of how the learning dynamics in DirectPred and DirectCopy prevent representational collapse.",1,related,1,positive
+"As such, we refer to these two methods as BGRL.",1,related,1,positive
+"We can see that T-BGRL pushes apart unseen negative and positive pairs much better than BGRL.
+Table 3: Transductive performance of T-BGRL compared to ML-GCN and BGRL (same numbers as Table 1 above; full figure in Table 5).",1,related,1,positive
+We also evaluate the performance of T-BGRL in the transductive setting to ensure that it does not significantly reduce performance when compared to BGRL.,1,related,1,positive
+"We experiment with several different corruptions methods, but limit ourselves to linear-time corruptions in order to maintain the efficiency of BGRL.",1,related,1,positive
+"8, we find that: 1) BW-based whitening loss ensures a whitened target Ẑ2, while SimSiam does not put constraint on the target Z2; 2) SimSiam uses a learnable predictor Pθp(·), which is shown to empirically avoid collapse by matching the rank of the covariance matrix by back-propagation [40], while BW-based whitening loss has an implicit predictor φ(Z1) depending on the input itself, which is a full-rank matrix by design.",1,related,1,positive
+"This can be indicated using the stop-gradient operation stopgrad(·) as follows [58,59]: z′t S = stopgrad(E(ŝ ′t S )) (6)",1,related,1,positive
+"Second, we construct a framework to abstract and maximize similarity object-level agreement (foreground and background) across different views beyond augmentations of the same image [13,18,23].",1,related,1,positive
+"To measure subspaces dimensionality, we compute the singular value decomposition on the covariance matrix Covx = UΣV T ,Σ = diag(σ), following general practice in SSL theory [39, 73].",1,related,1,positive
+"For an input x, the augmented views a1,a2 ∈ Rp×1 are generated as ∗:
+a1 := D1x; a2 := D2x (3)
+Network architecture We use a dual network architecture inline with prior work Arora et al. (2015); Tian et al. (2021); Wen & Li (2021).",1,related,1,positive
+Our model architecture gets inspirations from Tian et al. (2021) and Wen & Li (2021).,1,related,1,positive
+"For this proof, we borrow theoretical findings from the DirectPred literature [47].",1,related,1,positive
+", the extra learnable predictor and a stop-gradient operation.(51) ll OPEN ACCESS Review",1,related,0,negative
+"MSI dataset is binned between the (m/z) range of [50, 1000] to 1024 bins.",1,related,1,positive
+"We vary k in the interval of [50, 1000] with a sensible step.",1,related,1,positive
+"A.3 DISCUSSION ON COMPARISON TO SUPERVISED PRETRAINING
+Following the previous literature (Zbontar et al., 2021; Goyal et al., 2021; Tian et al., 2021a; Grill et al., 2020; Caron et al., 2020; He et al., 2020), we used the same amount of labeled and unlabeled data for supervised pretraining or BSSL.",1,related,1,positive
+"In this paper, we make a first attempt towards the second question, by studying a family of algorithms named DirectSet(α), in which the DirectPred algorithm proposed by Tian et al. (2021) is a special case with α = 1/2.",1,related,1,positive
+"The numbers for DirectPred, DirectPred (freq=5) and SGD baseline on STL-10/CIFAR-10 are obtained from Tian et al. (2021).",1,related,1,positive
+"Our code is adapted from (Tian et al., 2021) 5, and we follow the same data augmentation process.",1,related,0,negative
+"Note in the previous work (Tian et al., 2021), they assumed the covariance of the augmentation distribution to be σ2I and did not study what representation is learned.",1,related,1,positive
+"Dynamics for λB: We can write down the dynamics for λB as follows:
+λ̇B = λB [ −(1 + σ2) |λB |4α + |λB |2α − η ] Similar as the analysis in (Tian et al., 2021), when η > 14(1+σ2) , we know λ̇B < 0 for any λB > 0 and λB = 0 is a critical point.",1,related,1,positive
+"Motivated by the analysis, we also design a simpler and more efficient algorithm (DirectCopy), which achieves comparable or even better performances than the original DirectPred proposed by Tian et al. (2021).",1,related,1,positive
+"Note in the previous work (Tian et al., 2021), they assumed the covariance of the augmentation distribution to be σ(2)I and did not study what representation is learned.",1,related,1,positive
+"Inspired by the analysis, we designed a simpler and more efficient algorithm DirectCopy, which achieved comparable or even better performance than the original DirectPred (Tian et al., 2021) on various datasets.",1,related,1,positive
+"Similar as the analysis in Tian et al. (2021), when η > 1 4(1+σ2) , we know λ̇B < 0 for any λB > 0 and λB = 0 is a stable stationary point, as illustrated in Figure 4 (Left).",1,related,1,positive
+"We next provide a variance-covariance perspective to the new objective, following similar lines of reasoning in [41, 42].",1,related,1,positive
+"In contrast, our method avoids trivial solutions by construction, making our method conceptually simpler and more principled than these alternatives (until their principle is discovered, see (Tian et al., 2021) for an early attempt).",1,related,1,positive
+"We note some dimensional collapse is still observed for Barlow Twins projectors, as found for BYOL (Grill et al., 2020; Tian et al., 2021) & SimCLR (Chen et al.",1,related,1,positive
+"The proof of Proposition 3.3 can be found in Appendix A, & is largely inspired from previous work (Saxe et al., 2013; Ji & Telgarsky, 2018; Tian et al., 2021; Jing et al., 2021).",1,related,1,positive
+"We note some dimensional collapse is still observed for Barlow Twins projectors, as found for BYOL (Grill et al., 2020; Tian et al., 2021) & SimCLR (Chen et al., 2020a; Jing et al., 2021), as the encoder dimension is 512 with projector width of 1024.",1,related,1,positive
+"We point out that although we provide empirical evidence from practical settings to corroborate our theoretical results, our theory has some non-standard assumptions to ease analytical exposition, such as linear projector MLPs, much like related theoretical work in SSL (Tian et al., 2021; Wang et al., 2021; Jing et al., 2021).",1,related,1,positive
+"3 can be found in Appendix A, & is largely inspired from previous work (Saxe et al., 2013; Ji & Telgarsky, 2018; Tian et al., 2021; Jing et al., 2021).",1,related,0,negative
+"…provide empirical evidence from practical settings to corroborate our theoretical results, our theory has some non-standard assumptions to ease analytical exposition, such as linear projector MLPs, much like related theoretical work in SSL (Tian et al., 2021; Wang et al., 2021; Jing et al., 2021).",1,related,1,positive
+"Following [44], we assume that ∂qMi ∂z is positive definite.",1,related,1,positive
+"In contrast, we interpret the information loss in the context of identifiability for CL [22], learning dynamics [1, 17, 11, 18], and the content-style partitioning of latent factors [19].",1,related,1,positive
+"Note that optimizingLview(Θ) alone without stopping gradient results in a degenerated solution (Chen & He, 2021; Tian et al., 2021).",1,related,1,positive

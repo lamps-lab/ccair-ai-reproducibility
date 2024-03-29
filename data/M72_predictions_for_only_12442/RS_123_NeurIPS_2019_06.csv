@@ -1,0 +1,214 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Given the positions and velocities as a function of time of a two-body system interacting with gravitational force, we trained Hamiltonian Neural Networks (HNN) (Greydanus et al., 2019) to match the data.",1,related,1,positive
+"Note that this set up is different from the original HNN paper where they train the network to match the velocity + acceleration, given position + velocity at every point in time.",1,related,1,positive
+"For the model, we are using Hamiltonian neural network (Greydanus et al., 2019) that consists of 6 linear layers with softplus activation except on the last linear layer.",1,related,1,positive
+"We adapt Hamiltonian neural networks (HNNs) [2], [3] (leftmost, Figure 2) for the task of regressing the Hamiltonian and vector field of a Hamiltonian system from random samples of the vector field.",1,related,1,positive
+"Our work emulates theirs, by embedding Hamilton’s equations within the loss function of a neural network to regress the Hamiltonian [3] and using automatic differentiation of the regressed Hamiltonian to yield the regressed vector field [3].",1,related,1,positive
+"To that end, we begin by highlighting the Hamiltonian neural network (HNN) framework [13], in which the central idea is energy-based modeling.",1,related,1,positive
+We observe that HGNN outperforms both HNN and HGN on both spring and pendulum systems.,1,related,1,positive
+Note that the decoupling of kinetic and potential energies is implemented in HNN.,1,related,1,positive
+"Note that HNN is trained and evaluated on each of these systems separately, while HGN and HGNN are trained in only one system and inferred for all other systems by performing the forward simulation.",1,related,0,negative
+We observe that HGNN significantly outperforms HGN and HNN in terms of rollout and energy error (see Supplementary Materials).,1,related,1,positive
+"As baselines for comparison, we train a neural ODE (which has the same architecture as the SDE model but excludes the diffusion term), and an ensemble of 5 probabilistic (Gaussian) models [54].",1,related,1,positive
+"We evaluate our approach by comparing its performance for modeling and model-based control tasks against state-of-the-art techniques such as probabilistic ensembles [45, 3, 54], system identificationbased algorithms [55, 56, 57], and neural ODEs [6, 1].",1,related,1,positive
+"To the best of our knowledge, this is the first demonstration of the remarkable capacity of numerical integrators of order p > 4 to facilitate the training of Hamiltonian neural networks [9] from sparse datasets, to do accurate interpolation and extrapolation in time.",1,related,1,positive
+"We follow the idea of Hamiltonian neural networks [9] aiming at approximating the Hamiltonian, H : R → R, such that Hθ is a neural network and f is approximated by fθ(y) := J∇Hθ(y).",1,related,1,positive
+"Table 6 and Table 7 show the result comparison between our proposed method and another DNN-based method HNN (Greydanus et al., 2019) on the two examples.",1,related,1,positive
+"Simulation error comparison with DNN-based prior work (HNN (Greydanus et al., 2019)) Task Mean square error Violation of conservation laws Baseline NN ConCerNet HNN Baseline NN ConCerNet HNN Ideal spring mass 0.",1,related,1,positive
+", 2016)) and a DNN-based prior work (HNN, (Greydanus et al., 2019)) and delay the results to Appendix B.",1,related,0,negative
+"We also compare ConCerNet with one classical modeling method (SINDy, (Brunton et al., 2016)) and a DNN-based prior work (HNN, (Greydanus et al., 2019)) and delay the results to Appendix B.2, where ConCerNet shows similar performance but ConCerNet is more generally applicable.",1,related,1,positive
+"N-Body Trajectory We test our model as well as the baselines, Augerino and SymmetryGAN, on the simulated n-body trajectory dataset from Hamiltonian NN (Greydanus et al., 2019).",1,related,1,positive
+"The main assumption that we make is that the energy of the system is conserved for short periods of time thanks to the energy injected by the motor, which allows us to use the HNN [Greydanus et al., 2019].",1,related,1,positive
+"They usually use a higher-order numerical integration scheme to update the latent state:
+û(t)← Encode(u(t)) û(t+ ∆t)← û(t) + ∫ t+∆t t F(û(s))ds u(t+ ∆t)← Decode(û(t+ ∆t))
+Hamiltonian Neural Network: Hamiltonian Neural Networks (HNNs) [Greydanus et al., 2019] models the Hamiltonian in a latent space explicitly and updates the latent coordinates via Hamilton’s equations.
+q̂(t), p̂(t)← Encode(u(t)) q̂(t+ ∆t)← q̂(t) + ∫ t+∆t t ∂ ∂p̂ H(q̂(s), p̂(s))ds
+p̂(t+ ∆t)← p̂(t)− ∫ t+∆t t ∂ ∂q̂ H(q̂(s), p̂(s))ds u(t+ ∆t)← Decode(q̂(t+ ∆t), p̂(t+ ∆t))
+Wherever applicable, we used the Dormand-Prince 5(4) solver, a 5th order Runge-Kutta method for numerical integration.",1,related,1,positive
+"…state:
+û(t)← Encode(u(t)) û(t+ ∆t)← û(t) + ∫ t+∆t t F(û(s))ds u(t+ ∆t)← Decode(û(t+ ∆t))
+Hamiltonian Neural Network: Hamiltonian Neural Networks (HNNs) [Greydanus et al., 2019] models the Hamiltonian in a latent space explicitly and updates the latent coordinates via Hamilton’s…",1,related,1,positive
+"For PDEs with Dirichlet conditions, they sample a dataset of collocation points from Ω and ∂Ω, i.e.{xi} ⊂ Ω
+7 Neural Solver Method Description Representatives Loss Reweighting Grad Norm GradientPathologiesPINNs [43] NTK Reweighting PINNsNTK [44] Variance Reweighting Inverse-Dirichlet PINNs [45] Novel Optimization Targets Numerical Differentiation DGM [46], CAN-PINN [47], cvPINNs [48] Variantional Formulation vPINN [49], hp-PINN [50], VarNet [51], WAN [52] Regularization gPINNs [53], Sobolev Training [54]
+Novel Architectures
+Adaptive Activation LAAF-PINNs [55], [56], SReLU [57] Feature Preprocessing Fourier Embedding [58], Prior Dictionary Embedding [59] Boundary Encoding TFC-based [60], CENN [61], PFNN [62], HCNet [63]
+Sequential Architecture PhyCRNet [64], PhyLSTM [65] AR-DenseED [66], HNN [67], HGN [68] Convolutional Architecture PhyGeoNet [69], PhyCRNet [64], PPNN [70]
+Domain Decomposition XPINNs [71], cPINNs [72], FBPINNs [73], Shukla et al. [74]
+Other Learning Paradigms Transfer Learning Desai et al. [75], MF-PIDNN [76]Meta-Learning Psaros et al. [77], NRPINNs [78]
+TABLE 2: An overview of variants of PINNs.",1,related,1,positive
+"Tasks For physical simulation tasks, we use the setting of pixel pendulum and real pendulum in the paper of HNN (Greydanus et al., 2019).",1,related,1,positive
+"In the experimental part, we verify that NODA provides a more efficient modeling than HNN, and we can use prior knowledge or transfer learning to further boost its training.",1,related,0,negative
+"For physical simulation tasks, we choose AE and Hamiltonian neural network (HNN) (Greydanus et al., 2019) as baseline methods.",1,related,1,positive
+"We implemented all codes by modifying the officially released codes of HNN (Greydanus et al., 2019) 1 and DGNet (Matsubara et al., 2020)2.",1,related,0,negative
+"We implemented all codes by modifying the officially released codes of HNN (Greydanus et al., 2019) 1 and DGNet (Matsubara et al.",1,related,0,negative
+"2-pend 2-body
+Model 1-step↓ VPT↑ 1-step↓ VPT↑
+NODE 0.82 ±0.020 0.110 ±0.035 144.21 ±12.65 0.134 ±0.014 HNN (Greydanus et al., 2019) 6220.26 ±91.57 0.002 ±0.000 5.17 ±0.570 0.362 ±0.026 CHNN (Finzi et al., 2020b) 0.07 ±0.000 0.928 ±0.036 (not working)
+NODE+cFINDE 0.71 ±0.040 0.461 ±0.071 163.64…",1,related,1,positive
+"Following HNN (Greydanus et al., 2019) and DGNet (Matsubara et al., 2020), we used fullyconnected neural networks with two hidden layers.",1,related,1,positive
+"Note that we do not assume access to the true derivatives q̇k,j and ṗk,j used in the loss function of some works [1, 37, 38].",1,related,1,positive
+"In contrast to our work, they use the Hamiltonian formulation in [13].",1,related,1,positive
+"To achieve this, we use the Lagrangian formalism and represent the Lagrangian LNN by a neural network as in [13].",1,related,1,positive
+Table 1 shows the differences between the conventional method (HNN [2] and SymODEN [3]) and the proposed method.,1,related,1,positive
+"Note that, HNN is not included in the comparison because it cannot handle inputs.",1,related,1,positive
+"LGNN for n-pendulum and n-spring systems In order to evaluate the performance of LGNN, we first consider two standard systems, that have been widely studied in the literature, namely, n-pendulum and n-spring systems [4, 6, 8, 9], with n= (3,4,5).",1,related,1,positive
+"For each case, we compared the performance of COMET with other methods: (1) simple neural ODE (NODE) [10], (2) Hamiltonian neural network (HNN) [6] with the coordinates given in each case below, (3) neural symplectic form (NSF) [7], and (4) Lagrangian neural network (LNN) [8].",1,related,1,positive
+"Similar to [2] and [13], we tested our model with pixel data.",1,related,1,positive
+"We can see from Figure 50 that Adam and the BrAVO algorithms can achieve good training and test losses on this system identification problem using the Hamiltonian-based neural ODE network from [27] (with 231,310 parameters), inspired by [40; 91].",1,related,1,positive
+"To enforce invertibility, we express the flow fθ as a conservative operator using Hamiltonian neural networks inspired from Greydanus et al. (2019).",1,related,1,positive
+"We test the performance on the two classical systems, undamped spring-mass and pendulum (Greydanus, Dzamba, and Yosinski 2019).",1,related,1,positive
+"We include the two most representative methods for comparison, HNN and LNN (Greydanus et al., 2019; Cranmer et al., 2020).",1,related,1,positive
+"The Hamiltonian expresses the total energy of the system H(q,p) = T (q,p) + V (q) [1, 8].",1,related,1,positive
+"In order to substantiate this claim, we use Neural ODE to learn several benchmark problems that are widely investigated for the discovery of hidden dynamics (Du et al., 2021; Greydanus et al., 2019; Keller & Du, 2021; Yu et al., 2021).",1,related,1,positive
+"Since both true f and the IMDE fh are inaccessible in practice, we consider several benchmark problems that are widely investigated for the discovery of hidden dynamics (Du et al., 2021; Greydanus et al., 2019; Keller & Du, 2021; Yu et al., 2021).",1,related,1,positive
+"Experimental Details Since both true f and the IMDE fh are inaccessible in practice, we consider several benchmark problems that are widely investigated for the discovery of hidden dynamics (Du et al., 2021; Greydanus et al., 2019; Keller & Du, 2021; Yu et al., 2021).",1,related,1,positive
+"We generated the non-chaotic two-body systems and chaotic three-body systems in a relatively stable near-circular way [52], where the trajectories are obtained with the Explicit Runge-Kutta method [53].",1,related,1,positive
+"Furthermore, we use the hyperbolic tangent (tanh) and Rectified Linear Unit (ReLU) as activation functions for the first and second hidden layer, respectively, while [19, 8, 27] use tanh for both.",1,related,1,positive
+"2 Choice of discretization method in training Instead of training on the integration scheme as we do, works like [19, 8, 14] either assume that derivatives of the state variables are known or perform one or more integration steps at each training step.",1,related,1,positive
+"Moreover, we attain additional novelty as these results are obtained without needing to impose a specific structure on the state-space (such as in Greydanus et al. (2019); Cranmer et al. (2020)) obtaining a practically widely applicable method.",1,related,1,positive
+"1, we compare the trajectories for the mass-spring system estimated with the proposed DHH approach and with the HNN from [11] in which the derivatives are estimated using finite differences.",1,related,1,positive
+"Next, we quantatively compare the proposed approach against the following baselines: 1) HNN [11] with derivatives calculated as finite differences, 2) HNN [11] with derivatives provided by the simulator, 3) NSSNN [28], 4) Neural ODE [3] and 5) DHPMs [23].",1,related,1,positive
+We test our method on the following four physical systems from [11]:,1,related,1,positive
+We implement Hamiltonian neural networks (HNNs; Greydanus et al. 2019; SanchezGonzalez et al. 2019) with scalar-based MLPs for this learning task.,1,related,1,positive
+"We can make further progress if we take advantage of the knowledge about the underlying data generation process and encode such information in the neural network architectures and the loss functions [49, 88, 40, 70].",1,related,1,positive
+"Given the parameters in [22] the energy is H = 3(1 − cos q) + p(2), with p(2) − 3 · cos q being a simpler equivalent.",1,related,1,positive
+"To compare with existing works, we use the same initial condition as Greydanus et al. [2019]. We carry out the simulation for 1,000 time steps, and WH-NIH yields a relative energy error of dE/E0 ∼ 10−9 by the end of the simulation. This result is about 7 orders of magnitude more accurate comparing to Greydanus et al. [2019].",1,related,1,positive
+"Following Greydanus et al. [2019], we use a simple multi-layer perceptron (MLP) backbone network Hinter,θ to serve as a function approximator of Hinter.",1,related,1,positive
+"To compare with existing works, we use the same initial condition as Greydanus et al. [2019]. We carry out the simulation for 1,000 time steps, and WH-NIH yields a relative energy error of dE/E0 ∼ 10−9 by the end of the simulation.",1,related,1,positive
+"For instance, we relate energy-conserving numerical solvers to Hamiltonian NNs, whose goal is to encode energy conservation, and we discuss concepts such as numerical stability and solver convergence, which are crucial in long-term prediction using NNs.",1,related,1,positive
+"We start with the Hamiltonian defined as
+H (x ) = T (x ) −V (x ), (14)
+where x = [q,p] represents the concatenated state vector of generalized coordinates q and generalized momentap.",1,related,1,positive
+"Finally, we implemented and compared with the equivariant version of Hamiltonian neural network of Greydanus et al. (2019) (see EqHNN in table.",1,related,1,positive
+"We can for example restrict the policy to obey stable system dynamics derived from first principles (Greydanus et al., 2019; Lutter et al., 2019).",1,related,1,positive
+"For the HNN case, we parameterize the Hamiltonian function of the dynamical system with a neural network, and we use a Hamiltonian integrator to predict the dynamics [10].",1,related,1,positive
+"For generating data, we base our implementation on the code from Greydanus et al. (2019). We generate 800 training trajectories, 160 validation trajectories, and 160 test trajectories for varying initial conditions.",1,related,1,positive
+"For generating data, we base our implementation on the code from (Greydanus, Dzamba, and Yosinski 2019).",1,related,1,positive
+"In the following, we consider the Hamiltonian structurepreserving parameterization technique proposed in Hamiltonian neural networks (HNNs) (Greydanus, Dzamba, and Yosinski 2019): parameterizing the Hamiltonian function H(q, p) asHΘ(q, p) such that
+HΘ = (φ(q, p)TΞ)T. (5)
+With the above…",1,related,1,positive
+"However, in contrast we do not propagate the system by Hamiltonian dynamics, but learn a (deterministic) flow, as in Hamiltonian flows [23, 24].",1,related,1,positive
+"For this pendulum system, we have dp dt = −2mglsin(q), wherem = 1 (mass), g = 3 (gravity constant), l = 1 (length of the pendulum) (as in [Greydanus et al., 2019]).",1,related,1,positive
+"Robust Mimicking from Domain Knowledge Model We investigate a pendulum system [Greydanus et al., 2019] with mass m and length l, and collect the data and model
+fitting results during the training process.",1,related,1,positive
+"4 RQ2: How the Domain Knowledge Helps Robust Mimicking from Domain Knowledge Model We investigate a pendulum system [Greydanus et al., 2019] with mass m and length l, and collect the data and model fitting results during the training process.",1,related,1,positive
+"1(c) [6] take q and p as inputs and are trained to yield the time derivatives of the input, with the HNN learning an intermediate Hamiltonian and employing backpropagation to compute the final output.",1,related,1,positive
+"[13], its loss function1 for one data point (y0, y1) is LHNN = ∥∥∥y1 − y0 h − J∇Ĥ(y0) ∥∥∥2 L2 (5) (1)Note that Greydanus et al.",1,related,1,positive
+The forward Euler scheme s = y0 replicates HNNs [13] trained with discretized data and represents our baseline.,1,related,1,positive
+"For the rule encoder (φr), data encoder (φd), and decision block (φ), we use MLPs with ReLU activation at intermediate layers, similarly to [5, 16].",1,related,1,positive
+"We build upon the Hamiltonian Neural Network (HNN) model by [18] and run experiments on a physics-inspired setting, the ideal spring, which is represented by the Hamiltonian",1,related,1,positive
+"Here we will focus our discussion around the classic HNN architecture from [11] illustrated in Figure 4(b), that receives only a system’s canonical coordinates as input.",1,related,1,positive
+As in [11] we implemented two networks in PyTorch [22] a Baseline MLP Figure 4(a) and a HNN Figure 4(b).,1,related,1,positive
+As a motivating example in embedding conservation of energy constraint through a HNN we will replicate the results [11] for a noisy ideal mass-spring system and discuss architectural choices.,1,related,1,positive
+We replicated the results of [11] for a noisy ideal mass-spring system.,1,related,1,positive
+"As datasets we use the nearly circular orbits constructed by Greydanus et al. (2019), but give the whole system a boost in a random direction sampled from N (0, 0.1)2.",1,related,1,positive
+For integrating the solutions in time from our respective symmetry control network we use a fourth order Runge-Kutta integrator as in Greydanus et al. (2019) which unlike symplectic integrators allows for a comparison with neural network approaches directly predicting the dynamics of a…,1,related,1,positive
+"We used hidden layer sizes [16,16] for ICNN, [8,8] for each of the FCNN damping modules and [16,16] for ANN-PPO.",1,related,1,positive
+"We used hidden layer sizes [16,16] for ICNN, [8,8] for each of the FCNN damping modules and [16,16] for ANN-PPO.",1,related,1,positive
+Here we will focus our discussion around [8]’s Hamiltonian Neural Network architecture for learning exactly conserved quantities from data in an unsupervised manner.,1,related,1,positive
+The individual results here for each value of l∗ are similar to [8]’s results for a system with fixed parameters suggesting the ConSciNet approach successfully generalizes an HNN with regards to a system’s parameters.,1,related,1,positive
+"HNN, SRNN, SympNets are trained by their provided codes.",1,related,0,negative
+"VFNN, HNN, SRNN (seq len=2), and GFNN are trained with the same data set D2, while SRNN (seq len=5) is trained with D5.",1,related,1,positive
+"HNN, SRNN are trained by their provided codes under default training setups.",1,related,0,negative
+"Finally, we would like to point out that discrete Hamiltonian systems have already been used to design RNNs, for instance in (Greydanus et al., 2019) and also in (Chen et al.",1,related,1,positive
+"Finally, we would like to point out that discrete Hamiltonian systems have already been used to design RNNs, for instance in (Greydanus et al., 2019) and also in (Chen et al.)",1,related,1,positive
+"Experiments on Human Locomotion
+Physics model We modeled fP with a trainable Hamilton’s equation as in Toth et al. (2020); Greydanus et al. (2019):
+fP
+([ pT qT ]T , zP ) = [ −∂H∂q T ∂H ∂p T ]T , (26)
+where p ∈ Rdy is a generalized position, q ∈ Rdy is a generalized momentum, andH : Rdy ×Rdy → R is…",1,related,1,positive
+"We did not choose a specific model but let fP be a trainable Hamilton’s equation as in [39, 11].",1,related,1,positive
+"We did not choose a specific model but let fP be a trainable Hamilton’s equation as in Toth et al. (2020); Greydanus et al. (2019):
+fP
+([ pT qT ]T) = [ −∂H∂q T ∂H ∂p T ]T , (24)
+where p ∈ Rdy is a generalized position, q ∈ Rdy is a generalized momentum, andH : Rdy ×Rdy → R is a Hamiltonian.",1,related,1,positive
+"Following (Greydanus et al., 2019), we evaluate the MSEs of the predicted trajectories and energies from their corresponding ground truth at each time step.",1,related,1,positive
+"Experimental Settings: We evaluated the proposed symplectic adjoint method on learning continuous-time dynamical systems [12, 26, 33].",1,related,1,positive
+"In contrast to our method the HNN requires additional derivative information, either analytical or as finite differences.",1,related,1,positive
+We compare with the following methods: Hamiltonian neural network (HNN) [11]: Deep learning approach that is tailored to respect Hamiltonian structure.,1,related,1,positive
+"Inspired by [11], we average the approximated energy along 5 independent trajectories Hn = ∑5 i=1 H n 5 and compute the average total energy Ĥ = 1 n ∑ nHn.",1,related,1,positive
+This was addressed by applying a NN [11].,1,related,0,negative
+"Table 1: Shown are the total L2-errors in 1a and an analysis of the total energy for the non-separable system 1b.
+(a) total L2-errors (mean (std) over 5 indep. runs)
+task SGPD Euler HNN (i) 0.421 (0.1) 0.459 (0.12) 4.69 (0.02) (ii) 0.056 (0.01) 0.057 (0.009) 0.12 (0.009) (iii) 0.033 (0.01) 0.034 (0.021) 0.035 (0.007) (iv) 0.046 (0.014) 0.073 (0.02) -
+(b) Energy for non-separable Hamiltonian
+method energy err. std. dev.",1,related,1,positive
+"We compare to the following state-of-theart approaches:
+Hamiltonian neural network (HNN) [14]: Deep learning approach that is tailored to respect Hamiltonian structure.",1,related,1,positive
+"To this end, we use the data generation process by (Greydanus et al., 2019).",1,related,1,positive
+"Additional details on ARMs with linear transformed NNs is found in [22, 68, 23, 72, 67, 71] (cf.",1,related,1,positive
+(2) We show how to learn Hamiltonians and Lagrangians in Cartesian coordinates via explicit constraints using networks that we term Constrained Hamiltonian Neural Networks (CHNNs) and Constrained Lagrangian Neural Networks (CLNNs).,1,related,1,positive
+We show a motivational example in Figure 1 by comparing our approach with a traditional HNN method [14] regarding their structural designs and predicting abilities.,1,related,1,positive
+"Our physical models are: • Hamiltonian (Greydanus et al., 2019), a conservative approximation, with Fp = {FH p : (u, v) 7→ (∂yH(u, v),−∂xH(u, v)) | H ∈ H(1)(R(2))}, H(1)(R(2)) is the first order Sobolev space.",1,related,1,positive
+"We also mention hybrid methods, which use a discretization of an ODE (in particular a Hamiltonian system) in order to learn the continuous representation of the data, see for instance [15, 9].",1,related,1,positive
+We showcase this in the real pendulum experiment used by Hamiltonian Neural Networks (HNNs) [23].,1,related,1,positive
+"In this paper, we will investigate Hamiltonian neural networks (HNN) [6], [22], in which the unknown Hamiltonian function H instead of the total vector field f is parameterized.",1,related,1,positive
+Before we develop the foundations for continuous-in-depth NNs (in Sec.,1,related,1,positive
+Baselines We set up two baseline models: HGN [6] and PixelHNN [3].,1,related,1,positive
+We implemented HGN based on the architecture described in the paper and used the official code for PixelHNN.,1,related,1,positive
+"The control input to the simulator is u(q, q̇) = β(q) + v(q̇) which is designed as in Section 2.2 with the learned potential energy, input matrix, coordinates encoded from the output images, and q?.
+Baselines We set up two baseline models: HGN [6] and PixelHNN [3].",1,related,1,positive
+"To build the noisy data, we follow the approach of [6] and [11] by sampling from a Gaussian N (0, 0.",1,related,1,positive
+"dq dt = ∂H ∂p , dp dt = −∂H ∂q (1) As a consequence, it is noted in [6] that by accurately learning a Hamiltonian, the system’s dynamics can be naturally extracted through backpropagation.",1,related,1,positive
+"In this paper, we follow the same approach as Greydanus et al. (2019), but with the objective of learning a Lagrangian rather than a Hamiltonian so not to restrict the learned kinetic energy.",1,related,1,positive
+"In the same manner as Greydanus et al. (2019), we can also write a loss function in terms of the discrepancy between ẍLt and ẍtruet .",1,related,1,positive
+"In the same manner as Greydanus et al. (2019), we can also write a loss function in terms of the discrepancy between ẍt and ẍtrue t .",1,related,1,positive
+"We also outperform the Hamiltonian NN (Greydanus et al., 2019) in all settings.",1,related,1,positive
+"In this section we analyze how GOKU-net can be used for observed signal extrapolation and ODE parameter identification in three domains: the classic Lotka-Volterra system (Lotka, 1910) with added non-linear emission function; an OpenAI Gym video simulator of a pendulum (Brockman et al., 2016; Greydanus et al., 2019); and a model of the cardiovascular system based on Zenker et al.",1,related,1,positive
+"We generated the data as in Greydanus et al. (2019), with one important change: the ODE parameter l was uniformly sampled, l ∼ U [1, 2] instead of being constant, making the task much harder.",1,related,1,positive
+"As in Greydanus et al. (2019), we pre-processed the observed data such that each frame is of size 28 × 28.",1,related,1,positive
+", 2018) not required learned 7 3 HNN (Greydanus et al., 2019) can be used learned 7 3 DSSM (Miladinović et al.",1,related,0,negative
+"We followed Greydanus et al. (2019) and used the Pendulum-v0 environment from OpenAI Gym (Brockman et al., 2016).",1,related,1,positive
+We followed Greydanus et al. (2019) and used the Pendulum-v0 environment from OpenAI Gym (Brockman et al.,1,related,1,positive
+", 2016; Greydanus et al., 2019); and a model of the cardiovascular system based on Zenker et al. (2007). In each case we train the model on a set of sequences with varying ODE parameters (θf ) and initial conditions (z0), and test on unseen sequences with parameters and initial conditions sampled from the same distribution as the train.",1,related,1,positive
+"We show how this can be achieved without introducing additional inductive biases such as (Greydanus et al., 2019) through a synergistic combination of a two–layer Galërkin Neural ODEs and the generalized adjoint with integral loss l(s) := ‖β(s)− z(s)‖2.",1,related,1,positive
+We consider a simple environment similar to that studied in Higgins et al. (2018) and Caselles-Dupré et al.,1,related,1,positive
+"Another requirement we wish to make concerning the representation to be learned is that it is disentangled in the sense of Higgins et al. (2018). Formally, if there exists a subgroup decomposition of G such that G = G1 × G2.",1,related,1,positive
+"We replicate the setup from Greydanus et al. (2019) with one key difference: we introduce noise in all observations, rather than only introducing it in (qt,pt) and observing (q̇t, ṗt) noise free.",1,related,1,positive
+"For predictions with the baseline NN and HNN, we use the procedure of Greydanus et al. (2019), which uses fourth order Runga-Kutta with an error tolerance of 10−9, implemented in scipy.integrate.solve ivp.",1,related,1,positive
+"We compare our proposed VINs with Hamiltonian neural networks (HNNs) (Greydanus et al., 2019) and standard feed-forward neural networks (NNs) without additional structure that would explicitly incorporate physical or mechanical constraints.",1,related,1,positive
+"For the mass-spring system, we set the spring constant and mass to k = m = 1, as was done by Greydanus et al. (2019).",1,related,1,positive
+"We replicate the setup from Greydanus et al. (2019) with one key difference: we introduce noise in all observations, rather than only introducing it in (qt,pt) and observing (q̇t, ṗt) noise free.",1,related,1,positive
+"Following Greydanus et al. (2019), we examine two scenarios: (a) a moderate-data regime, where models are trained using 25 training trajectories with a total of 750 data points, (b) a low-data regime using 5 training trajectories with a total of 150 data points.",1,related,1,positive
+"We represent an embedding in the network by qt = qθ(q1, q2, h, t), (10) which denotes layer t in the VIN, see Figure 1 for an illustration of a VIN.",1,related,1,positive
+"For predictions with the baseline NN and HNN, we use the procedure of Greydanus et al. (2019), which uses fourth order Runga-Kutta with an error tolerance of 10−9, implemented in scipy.integrate.solve ivp.",1,related,1,positive
+"We
+compare our proposed VINs with Hamiltonian neural networks (HNNs) (Greydanus et al. 2019) and standard feed-forward neural networks (NNs) without additional structure that would explicitly incorporate physical or mechanical constraints.",1,related,1,positive
+"For the mass-spring system, we set the spring constant and mass to k = m = 1, as was done by Greydanus et al. (2019).",1,related,1,positive
+" 3:55 9:8 3:72 Table1: AveragepixelMSEovera30stepunrollonthetrainandtestdataonfourphysicalsystems. All values are multiplied by 1e+4. We evaluate two versions of the Hamiltonian Neural Network (HNN) (Greydanus et al., 2019): the original architecture and a convolutional version closely matched to the architecture of HGN. We also compare four versions of our proposed Hamiltonian Generative Network (HGN): the full version",1,related,1,positive
+"In the experiments presented here, we reimplemented the PixelHNN architecture as described in Greydanus et al. (2019) and trained it using the full loss (15).",1,related,1,positive
+"To ensure that our re-implementation of HNN was correct, we replicated all the results presented in the original paper (Greydanus et al., 2019) by verifying that it could learn the dynamics of the mass-spring, pendulum and two-body systems well from the ground truth state, and the dynamics of a…",1,related,1,positive
+"…phase space, before sampling the initial state (q,p) uniformly on the circle of radius r. Note that our pendulum dataset is more challenging than the one described in Greydanus et al. (2019), where the pendulum had a fixed radius and was initialized at a maximum angle of 30◦ from the central axis.",1,related,1,positive
+"In order to directly compare the performance of HGN to that of its closest baseline, HNN, we generated four datasets analogous to the data used in Greydanus et al. (2019).",1,related,1,positive
+"For instance, with our terminology, the HNN model of Greydanus et al. (2019) is a “single-step E-E H-NET” with the additional subtlety that they supervise the training with actual derivatives instead of relying on finite differences between successive steps of the observed trajectories.",1,related,1,positive
+"Here, we test our SRNN together with other baselines on the noiseless three-body system with the same configurations as Greydanus et al. (2019).",1,related,1,positive
+"In the HNN paper Greydanus et al. (2019), the initial conditions of the trajectories are generated randomly in an annulus, whereas in this paper, we generate the initial state conditions uniformly in a reasonable range in each state dimension.",1,related,1,positive
+"Note added: Following submission of this work, the closely related preprint (Greydanus et al., 2019) appeared.",1,related,0,negative
+"HNN SymODEN Dissipative SRNN/VIN DGNet [19] [45] [44] [8, 38, 41] (this paper) Hamiltonian system yes yes yes yes yes Dissipative ODE yes yes Hamiltonian PDE yes Dissipative PDE yes Learning from finite difference approx.",1,related,1,positive
+"We consider parametrizing event functions with neural networks in the context of solving ODEs, extending Neural ODEs to implicitly defined termination times.",1,related,1,positive
+"By introducing differentiable termination criteria in Neural ODEs, our approach allows the model to efficiently and automatically handle state discontinuities.",1,related,1,positive
+"To further expand the applications of Neural ODEs, we investigate the parameterization and learning of a termination criteria, such that the termination time is only implicitly defined and will depend on changes in the continuous-time state.",1,related,1,positive
+We also show that the final model with the appropriate inductive biases significantly outperforms the simple version of GNODE with no additional inductive biases and even the graph versions of LNN and HNN.,1,related,1,positive
+"Furthermore, we use hyperbolic tangent (tanh) and Rectified Linear Unit (ReLU) as activation function for the first and second hidden layer, respectively, while [16, 7, 24] use tanh for both.",1,related,1,positive
+"For HNN, we use 4 × 100 × 100 × 1 FNN with Tanh activation and without the last layer bias as proposed by [7].",1,related,1,positive
+"We compare our HNKO with the currently mainstream methods, the HNN [7] and the EDMD [19], in terms of the trajectory prediction and the energy conservation.",1,related,1,positive
+"We can easily extend our proposed approach to learn Hamiltonians from high-dimensional data (such as images) by combining an autoencoder with an SSGP, as in [14, 42].",1,related,1,positive
+"We compared the SSGP with the existing models (see Table 1): Hamiltonian neural network (HNN) [14], dissipative HNN (D-HNN) [39], neural ordinary differential equation (NODE) [4], symplectic ODE-Net (SymODEN) [48], dissipative SymODEN (D-SymODEN) [47] and symplectic Gaussian process regression (SympGPR) [35].",1,related,1,positive
+We took two examples that were also considered in Greydanus et al. (2019).,1,related,0,negative
+"…model from a continuous pointof-view, treating the vector field f—and not the discretization φ—as the sole object of interest (Heinonen and d’Alché Buc, 2014; Greydanus et al., 2019), it remains an open question how to automatically choose
+the most appropriate discretization for the learned model.",1,related,1,positive
+"In each task, we jointly learn system and contact properties from trajectory data by extending CLNN/CHNN with the proposed contact model.",1,related,1,positive
+Our contact model extends CHNN/CLNN to enable learning of hybrid dynamics in rigid body systems and offer interpretability about system and contact properties.,1,related,1,positive
+"To this end, we use the data generation process by (Greydanus et al., 2019).",1,related,1,positive
+One way to achieve this is to extract features from the images by using an autoencoder and to learn the equation of motion that the features satisfy [11].,1,related,1,positive
+We consider a simple environment similar to that studied in Higgins et al. (2018) and Caselles-Dupré et al.,1,related,1,positive
+"Another requirement we wish to make concerning the representation to be learned is that it is disentangled in the sense of Higgins et al. (2018). Formally, if there exists a subgroup decomposition of G such that G = G1 × G2.",1,related,1,positive
+"Another requirement we wish to make concerning the representation to be learned is that it is disentangled in the sense of Higgins et al. (2018). Formally, if there exists a subgroup decomposition of G such that G = G1 × G2... × Gn, we would like to decompose the representation (ρ, V ) in subrepresentations V = V1 ⊕ V2... ⊕ Vn such that the restricted subrepresentations (ρ|Gi , Vi)i are non-trivial and the restricted subrepresentations (ρ|Gi , Vj)j 6=i are trivial (we recall that a trivial representation of G is equal to the identity for every element of the group G). This definition of disentangled representations has several advantages. First, it maps onto an intuitive notion of disentangled representation as one that separates the data generative factors into different subspaces. It also provides a principled resolution to several points of contention concerning what should be considered a data generative factor, which ones can be disentangled and which ones cannot, and what dimensionality the representation of each factor should have. However, despite theoretical analysis by Higgins et al. (2018) and Caselles-Dupré et al.",1,related,1,positive
+"In the rest of the sections, we will talk a little about the theory of Hamiltonian Neural Networks and then we will move on to our implementations and results.",1,related,1,positive
+"In this work, we reproduce the paper1 Hamiltonian Neural Network [1].",1,related,1,positive
+"After training, we use these models to predict (∂q/∂t, ∂p/∂t) given (q, p), and use this to approximate the trajectory of the system using our differential equation given by equation [1].",1,related,1,positive
+"We consider parametrizing event functions with neural networks in the context of solving ODEs, extending Neural ODEs to implicitly defined termination times.",1,related,1,positive
+"By introducing differentiable termination criteria in Neural ODEs, our approach allows the model to efficiently and automatically handle state discontinuities.",1,related,1,positive
+"To further expand the applications of Neural ODEs, we investigate the parameterization and learning of a termination criteria, such that the termination time is only implicitly defined and will depend on changes in the continuous-time state.",1,related,1,positive
+"For instance, with our terminology, the HNN model of Greydanus et al. (2019) is a “single-step E-E H-NET” with the additional subtlety that they supervise the training with actual derivatives instead of relying on finite differences between successive steps of the observed trajectories.",1,related,1,positive
+"Here, we test our SRNN together with other baselines on the noiseless three-body system with the same configurations as (Greydanus et al., 2019).",1,related,1,positive

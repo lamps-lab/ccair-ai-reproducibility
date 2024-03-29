@@ -1,0 +1,43 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Always in Table 1, we compare with two state-of-the-art RNNs (Le et al., 2015; Arjovsky et al., 2016), and with a training algorithm for LSTM (Arpit et al., 2019).",1,related,1,positive
+"Following the setup proposed in (Arpit et al., 2019), we use 50k images for training, 10k for validation, and 10k to test our models.",1,related,0,negative
+"To apply the stochastic gradient truncation [Arpit et al., 2018] we select the probability of truncation p ∈ {0, 0.1, 0.25, 0.5, 1}, which includes the full backpropagation(p = 0) and the exact truncation (p = 1).",1,related,1,positive
+"For the orthogonal LMN, we plot the gradient for different values of the probability used to truncate the gradient p [Arpit et al., 2018].",1,related,1,positive
+"In the case of an LSTM, Kanuparthi et al. (2018) expressed the backpropagated gradient as an iterated addition of the error from each timestep, leading to a similar effect.",1,related,1,positive
+"Table 1 shows results for the models listed above, in addition to h-detach [3], an LSTM-based model with improved gradient propagation.",1,related,1,positive
+"Besides, to verify compatibility with other models, we re-implemented hdetach (Kanuparthi et al. 2019) and incorporate our models, bBeta-LSTM(5G+p).",1,related,1,positive
+"We compare our models and baselines, LSTM, CIFGLSTM, G2-LSTM, simple recurrent unit (SRU) (Lei et al. 2018), R-transformer (Wang et al. 2019), Batch normalized
+LSTM (BN-LSTM) (Cooijmans et al. 2017), and h-detach (Kanuparthi et al. 2019).",1,related,1,positive
+"The cal-
+5reproduced from (Arpit et al., 2018) 6reproduced from (Trinh et al., 2018)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+A cc
+u ra
+cy
+1 digit
+Critical initialization Standard initialization
+4 digits 8 digits
+102 103 104
+Iteration
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+A cc
+u ra
+cy
+1 repetition
+Critical initialization…",1,related,1,positive
+"reproduced from (Arpit et al., 2018) (6)reproduced from (Trinh et al.",1,related,0,negative
+We first published to ICLR 2019 an empirical exploration of variants of backpropagation with better performance on LSTM models [6].,1,related,0,negative
+"Table 1 shows results for the models listed above, in addition to h-detach (Arpit et al., 2018), an LSTM-based model with improved gradient propagation.",1,related,1,positive
+"This idea is similar to [5] that implements skip operation on conventional RNN, which can be viewed as a Bernoulli distribution sampler on UPDATE or COPY operations at each timestamp t (an analogous idea appeared in h-detach [26] which is applied on LSTM).",1,related,1,positive
+"To conform with Murdoch et al. (2018), our English language experiments use a one layer (400-dim) LSTM, with inputs taken from an embedding layer and outputs processed by a softmax layer.",1,related,1,positive
+"In the case of an LSTM, Kanuparthi et al. (2018) expressed the backpropagated gradient as an iterated addition of the error from each timestep, leading to a similar effect.",1,related,1,positive

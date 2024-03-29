@@ -1,0 +1,25 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Finally, we also tried to compare with the code for FOCUS(7) [23].",1,related,1,positive
+"METHOD FT FOCUS FACE NN
+VALIDITY 72.9% 72.8% 84.4% 92.5%",1,related,0,negative
+"…after generating counterfactuals using any of the existing methods for tree-based ensembles (that we also refer to as the base method), e.g., Feature Tweaking (FT) (Tolomei et al., 2017), FOCUS (Lucic et al., 2022), Nearest Neighbor (NN) (Albini et al., 2022), FACE (Poyiadzi et al., 2020), etc.",1,related,1,positive
+"METHOD L1 COST VALIDITY LOF
+CCF 3.05 99.9% 1.0
+FT 0.08 56.4% 0.65 FT +ROBX 2.70 99.9% 1.0
+FOCUS 0.12 53.7% 0.71 FOCUS +ROBX 2.71 99.7% 1.0
+FACE 2.62 88.8% 0.82 FACE +ROBX 2.72 99.7% 1.0
+NN 0.80 84.4% 0.94 NN +ROBX 2.71 99.7% 1.0
+METHOD L2 COST VALIDITY LOF
+CCF 1.36 97.4% 1.0
+FT 0.08 53.4 0.65 FT +ROBX 1.17 98.6 1.0
+FOCUS 0.11 53.2% 0.82 FOCUS +ROBX 1.2 100% 1.0
+FACE 1.25 88.7% 0.77 FACE +ROBX 1.18 98.4% 1.0
+NN 0.49 79.0% 0.88 NN +ROBX 1.18 99.0% 0.94
+C.3.",1,related,1,positive
+"Our proposed strategy is a post-processing one, i.e., it can be applied after generating counterfactuals using any of the existing methods for tree-based ensembles (that we also refer to as the base method), e.g., Feature Tweaking (FT) (Tolomei et al., 2017), FOCUS (Lucic et al., 2022), Nearest Neighbor (NN) (Albini et al., 2022), FACE (Poyiadzi et al., 2020), etc.",1,related,1,positive
+"We believe our choice of these four base methods to be quite a diverse representation of the existing approaches, namely, search-based closest
+counterfactual (FT), optimization-based closest counterfactual (FOCUS), graph-based data-support counterfactual (FACE), and closest-data-support counterfactual (NN).",1,related,1,positive
+"The majority of existing counterfactual methods modify the given sample until the target class is attained (see e.g., Tolomei et al., 2017; Lucic et al., 2022).",1,related,1,positive
+The resulting optimal CF explanation is ∆∗ x = x∗ − x [15].,1,related,1,positive
+"[15], we generate CF examples by minimizing a loss function of the form:",1,related,1,positive
+"To fit non-differentiable models in our framework, one could use policy gradient (Sutton et al., 1999) or attempt to approximate such models as decision trees or random forests with a differentiable version (Yang et al., 2018; Lucic et al., 2022).",1,related,1,positive

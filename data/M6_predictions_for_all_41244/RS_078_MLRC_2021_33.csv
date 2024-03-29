@@ -1,0 +1,50 @@
+text,target_M6_predict,target_predict_M6_label
+"based representation learning leads to fairness [34, 61].",1,neutral
+"2021) point out that selective classification may amplify unfair decisions, for which fairselective algorithms are required (Lee et al. 2021).",1,neutral
+"In our review of algorithms and recent surveys [28], methods for achieving PP does not appear to receive as much focus as other group fairness definitions such as demographic parity and equalized odds [26] as also observed in [38], [63].",1,neutral
+"Existing works for obtaining PP include [54] which attempts to maintain calibration of a model alongside equalized odds, [27] which presents a individual-fairness notion of calibration called multicalibration, [29] which uses group membership in post-processing for PP but does not calibrate, [38] which regularizes for PP using an information-theoretic approach, and [63] which applies to binary 0/1 classifiers.",1,neutral
+"[41] Joshua K Lee, Yuheng Bu, Deepta Rajan, Prasanna Sattigeri, Rameswar Panda, Subhro Das, and Gregory W Wornell.",0,negative
+[41] recently studied the fair selective classification w.,0,negative
+"(4) FSCS [41] adopted the conditional mutual information constraint I(A, Y |f(X)) to promote the sufficiency.",1,neutral
+"dence (this is known as uncertainty quantification [7]) and that second, the confidence is well-calibrated so that it is not over-confident or under-confident [9].",1,neutral
+"Discussions around AI equity have focused on the issues arising from uncertainty [9], such as: how AI systems arrive at determi-",1,neutral
+[326] 2021 ICML Hort and Sarro [327] 2021 ASE Perrone et al.,2,positive
+", the classification model abstains from making some of the predictions), selective classification approaches can be used [326].",1,neutral
+"In terms of the societal impact, fairness in selection remains a concern as lowering the coverage can magnify the difference in recall between groups and increase unfairness (Jones et al., 2021; Lee et al., 2021).",1,neutral
+"The first one is ADULT [24], which is a widely used public dataset for fair ML [20, 25, 33, 51].",1,neutral
+"[29] Joshua K Lee, Yuheng Bu, Deepta Rajan, Prasanna Sattigeri, Rameswar Panda, Subhro Das, and Gregory W Wornell.",0,negative
+"Since predictive parity is commonly considered in scenarios where false positives are particularly harmful [29], we study cost-sensitive classification.",1,neutral
+"For selective classification, [29] finds that sufficiency-based representation learning leads to fairness.",1,neutral
+", AUC (D = 1), and (c) the area under the absolute difference of the subgroup MSE vs coverage curves (AUADC) (Franc & Prusa, 2019; Lee et al., 2021) respectively.",1,neutral
+"coverage curve (AUC), which encapsulates performance across different coverage (Franc & Prusa, 2019; Lee et al., 2021).",2,positive
+"…(a) the area under the majority MSE vs. coverage curve, i.e., AUC (D = 0), (b) the area under the minority MSE vs. coverage curve, i.e., AUC (D = 1), and (c) the area under the absolute difference of the subgroup MSE vs coverage curves (AUADC) (Franc & Prusa, 2019; Lee et al., 2021) respectively.",1,neutral
+"…end for for each batch do
+# update feature extractor θΦ ← θΦ − 1nη∇θΦ(LG(Φ, θ) + λLR(Φ)) # update mean/variance predictor θ ← θ − 1nη∇θLG(Φ, θ)
+end for end for
+upper bound for I(Y ;D|Φ(X)) from (Lee et al., 2021):
+I(Y ;D|Φ(X)) ≤ EΦ(X),Y,D [logP(Y |Φ(X), D)] (3) − ED [ EΦ(X),Y [logP(Y |Φ(X), D)]…",1,neutral
+", 2021) and has been used in fair selective classification (Lee et al., 2021).",1,neutral
+"In Section 6, we compared the different algorithms in terms of how well they perform fair selective regression by looking at the subgroup MSE vs. coverage curves in addition to AUC, AUC (D = 0), AUC (D = 1), and AUADC.",2,positive
+"upper bound for I(Y ;D|Φ(X)) from (Lee et al., 2021):",1,neutral
+"As discussed in (Lee et al., 2021), existing methods using mutual information for fairness are ill-equipped to handle conditioning on the feature representation Φ(·).",1,neutral
+"To compare different algorithms in terms of how well they perform selective regression (i.e., without fairness), we look at area under MSE vs. coverage curve (AUC), which encapsulates performance across different coverage (Franc & Prusa, 2019; Lee et al., 2021).",2,positive
+"Similar to (Lee et al., 2021), we do not assume access to the identity of sensitive groups at test time.",1,neutral
+"These aspects could be quantitatively captured by looking at (a) the area under the majority MSE vs. coverage curve, i.e., AUC (D = 0), (b) the area under the minority MSE vs. coverage curve, i.e., AUC (D = 1), and (c) the area under the absolute difference of the subgroup MSE vs coverage curves (AUADC) (Franc & Prusa, 2019; Lee et al., 2021) respectively.",1,neutral
+"However, for a particular coverage, Algorithm 2 achieves a better MSE for the minority subgroup, a comparable MSE for the majority subgroup, and reduces the gap between the subgroup curves than Baseline 2 (see the values of AUC (D = 0), AUC (D = 1), and AUADC in Table 2/3).",1,neutral
+"Additionally, Algorithm 1 achieves a comparable MSE for the majority subgroup, and reduces the gap between the subgroup curves than Baseline 1 (see the values of AUC (D = 0), AUC (D = 1), and AUADC in Table 2/3).",1,neutral
+"Further, for a particular coverage, Algorithm 1 achieves a better MSE for the minority subgroup, a comparable MSE for the majority subgroup, and reduces the gap between the subgroup curves than Baseline 1 (see the values of AUC (D = 0), AUC (D = 1), and AUADC in Table 2/3).",1,neutral
+We provide these results in Table 2 and observe that our algorithms outperform the baselines across datasets in terms of AUC (D = 1) and AUADC while being comparable in terms of AUC (D = 0).,2,positive
+"Sufficiency is closely tied with learning domain-invariant feature representation (Arjovsky et al., 2019; Creager et al., 2021) and has been used in fair selective classification (Lee et al., 2021).",2,positive
+"Standard deviations
+In Table 3 below, we provide the standard deviations associated with AUC, AUC (D = 0), AUC (D = 1), and AUADC whose means where provided in Table 2 in Section 6.",0,negative
+Table 2 suggests that our algorithm outperforms the baseline in terms of AUC (D = 1) and AUADC while being comparable in AUC (D = 0).,2,positive
+"To mitigate such disparities, (Lee et al., 2021; Schreuder & Chzhen, 2021) proposed methods for performing fair selective classification.",1,neutral
+"While fairness in supervised learning is studied (Correa et al., 2021; Chikahara et al., 2021; Lee et al., 2021; Mehrabi et al., 2021; Le Quy et al., 2022; Dwork et al., 2012), the fairness in unsupervised learning is still in its formative stages (Deepak et al.",1,neutral
+"Fourth, avoiding strongly biased predictions helps build a more fair model (Lee et al. 2021; Ruggieri et al. 2023).",1,neutral
+"Table 2 shows that on the Alzheimer’s disease dataset, our method FACIMS outperforms EIIL, FSCS, FAMS, and ERM in terms of balanced accuracy, with improvements of 2.6%, 4.0%, 5.3%, and 2.1% respectively.",2,positive
+"• FSCS (Lee et al., 2021): An approach that adopts the conditional mutual information constraint to improve group sufficiency.",1,neutral
+Lee et al. (2021) proposed a bilevel objective approach to achieve fairness in predictive models across all groups.,1,neutral
+"Although EIIL, FSCS, and FAMS specifically target the group sufficiency problem and achieve lower sufficiency gaps than ERM and BERM, our method still outperforms these three baseline methods by improving the sufficiency gap by 1.4%, 2.0%, and 2.8% respectively.",2,positive
+"As for balanced accuracy, our method FACIMS improves the performance by 4.4%, 8.2%, 2.6%, 7.0%, and 2.3% comapred to EIIL, FSCS, FAMS, ERM and BERM.",2,positive
+"…(e.g., individual fairness (Dwork et al., 2012) and causal fairness (Kusner et al., 2017)), 2) handling noisy or missing group labels (Hashimoto et al., 2018; Celis et al., 2021), and 3) improving fairness in special classification scenarios (e.g., selective classification (Lee et al., 2021)).",1,neutral
+"In terms of the societal impact, fairness in selection remains a concern as lowering the coverage can magnify the difference in recall between groups and increase unfairness [14, 19].",1,neutral

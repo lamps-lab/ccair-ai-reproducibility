@@ -1,0 +1,89 @@
+context,label_score,label,3_label,target
+"With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",0.0,Neutral,neutral,1
+"Although we tried to train split network with the same training data we used, we failed to reproduce their results and used the model trained by the authors [32].",-2.0,O-NR,negative,0
+"Note that LGPMA requires additional
+annotation information for training.",-1.0,P-NR,negative,0
+"For example, Schreiber et al. (2017) [4]) proposed a method based on Faster-RCNN network; Li et al. (2019) [5]) presented a method combined with GAN and so on.",0.0,Neutral,neutral,1
+"Additionally, it is benchmarked with a number of state-of-the-art techniques such as SPLERGE [10], TabStruct-Net [18], EDD [3], GTE [28], LGPMA [9], FLAG-Net [29], etc. Unlike many state-of-the-art methods that perform evaluations only at TEDs, our method also test the Structure TEDs on PubTabNet.",0.5,Weak,positive,2
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",-2.0,O-NR,negative,0
+"(Schreiber et al., 2017) proposed a two-fold system named DeepDeSRT that applies Faster RCNN (Ren et al.",0.0,Neutral,neutral,1
+Our second contribution is an augmentation of the seed dataset provided by Antoniak and Mimno [1].,0.5,Weak,positive,2
+"The outputs of each system on the SAMSum test set are obtained from DialSummEval (Gao and Wan, 2022).",0.5,Weak,positive,2
+"The dataset comes without predefined train/test split; hence, we follow Schreiber et al. (2018) and split the so-called “competition” part of the dataset with a 50%/50%-ratio.",0.5,Weak,positive,2
+"We quantitatively compare these various feature importance scores by computing their Pearson correlation r as in [64, 65].",0.5,Weak,positive,2
+This paper extends the idea of treating the problem of table structure recognition as an object detection problem [33].,0.0,Neutral,neutral,1
+"Recently, several self-supervised learning methods have achieved the state-of-the-art performance on the large-scale natural image dataset ImageNet [37] without negative sample pairs [38].",0.0,Neutral,neutral,1
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",-2.0,O-NR,negative,0
+"Considering the diversity in the structures of rows and columns, it has been settled that the separate model performs better [33].",0.0,Neutral,neutral,1
+"On FinTabNet, our method achieves a TEDS-Struct score of 98.6%, improving the score by 1.8% compared to the competitive method TableFormer.",0.0,Neutral,neutral,1
+These three metrics are calculated on a specific IOU threshold established by the authors.,0.0,Neutral,neutral,1
+"Category Method F-measure Recall Precision PDF Input Image Input
+Proposed Models
+Split 86.79 86.64 86.93 Split-PDF 91.63 91.26 92.00 SPLERGE-PDF 90.89 90.44 91.36 SPLERGE-PDF + Heuristics 91.95 91.46 92.45
+Split + Heuristics 93.00 92.24 93.78 Split-PDF + Heuristics 95.26 94.64 95.89
+Previously Reported Results
+Nurminen [3] 94.60 94.09 95.12 TEXUS [4] 82.59 84.23 81.02 Shigarov [5] C1 91.50 91.21 91.80 Shigarov [5] C2 93.64 92.33 94.99 DeepDeSRT [6] 91.44† 87.36† 95.93†
+† result not directly comparable due to evaluation on a random subset of 34 tables.",-1.0,P-NR,negative,0
+"Also, [23, 26] used different train/test split from the original competition without publishing their split and so cannot be compared directly.",-1.0,P-NR,negative,0
+"focusing on the feature fusion [39], [49] within a single domain, we leverage feature-point-based hypergraph to model",0.5,Weak,positive,2
+Please refer to [18] for detailed explanations.,0.0,Neutral,neutral,1
+"Popular table structure recognition methods include DeepDeSRT [7], ReS2Tim [15], DeepTabStR [16], etc.",0.0,Neutral,neutral,1
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",-2.0,O-NR,negative,0
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",-2.0,O-NR,negative,0
+"[3] proposed DeepDeSRT, an end-to-end system for table understanding in document images and detecting PDF documents.",0.0,Neutral,neutral,1
+"We unfortunately could not directly evaluate the approaches presented in References [5, 25, 30, 41, 47, 89] using our cybersecurity corpus documents, because their respective implementations were not available online.",-1.0,P-NR,negative,0
+[48] Jonathan Crabbé and Mihaela van der Schaar.,0.0,Neutral,neutral,1
+"(Schreiber et al., 2018) uses a different, non-public 50 % random subset.",-1.0,P-NR,negative,0
+"As we pointed in Section VI, we cannot be sure that we reproduce results from [17] because the paper contains omissions.",-1.0,P-NR,negative,0
+"The results shown in Figure 3 and Figure 4 indicate that none of the 4 methods that allow inference on custom data [13, 17, 16, 31] was replicable with respect to the GenTSR dataset, under a threshold of 10% absolute F1-score.",-2.0,O-NR,negative,0
+"We unfortunately could not directly evaluate the approaches presented in [5, 25, 30, 41, 47, 89] using our cybersecurity corpus documents because their respective implementations were not available online.",-1.0,P-NR,negative,0
+"[43] investigated the elements of these negative-free approaches relying on architectural update (adding a predictor block) as well as new training protocol (stop-gradient policy), which enables them to substantially outperform contrastive approaches while avoiding the trivial representation.",0.0,Neutral,neutral,1
+"The proposed framework can address also TSR, but implementation details are still under investigation.",-1.0,P-NR,negative,0
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",-2.0,O-NR,negative,0
+"3 compares the effectiveness of various extractors, including DGCNN [30] and Transformer [42], with ECE in our method.",0.5,Weak,positive,2
+"Then we compare LORE with models mining the adjacency of cells by relation-based metrics: TabStrNet (Raja, Mondal, and Jawahar 2020), LGPMA (Qiao et al. 2021), TOD (Raja, Mondal, and Jawahar 2022), FLAGNet (Liu et al.",0.5,Weak,positive,2
+"This result also outperformed DeepDeSRT, which is known as the best recent method applied on document images.",0.5,Weak,positive,2
+We expanded the definition of splitter in SPLERGE [10] to support inclined separators.,0.5,Weak,positive,2
+[32] incorporated sentiment knowledge into a hate speech detection task by employing a multi-task learning framework.,0.0,Neutral,neutral,1
+Our post-processing is similar to the one used by Schreiber et al. (2017) [1].,0.5,Weak,positive,2
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",-2.0,O-NR,negative,0
+[12] as the baseline for our experiment as their approach provides the unprocessed image as an input to the Faster R-CNN for table detection.,0.5,Weak,positive,2
+"Motivated by the analysis, we also design a simpler and more efficient algorithm (DirectCopy), which achieves comparable or even better performances than the original DirectPred proposed by Tian et al. (2021).",1.0,Strong,positive,2
+"…papers Author-written and expertderived TLDRs FacetSum (Meng et al, 2021) 60k articles from Emerald journals Paper and structured abstract
+For table extraction, Zheng et al (2021) proposed Global Table Extractor (GTE) to detect tables and recognize cell structure jointly based on visual context.",0.0,Neutral,neutral,1
+C Tensmeyer[120] ICDAR2013 Dilated Convolutions + Fully CNN Precision 95.,0.0,Neutral,neutral,1
+"To alleviate this problem, methods like [13, 43, 45] tried different context enhancement techniques, e.",0.0,Neutral,neutral,1
+"Targeted at preventing pure noise images from distorting the estimation of the feature distribution, DAR-BN [42] splits the mean and variance variables for normal images and pure noise images.",0.0,Neutral,neutral,1
+"Most existing work on object detection-based methods detect entire rows and column separately, and represents the intersection of detected rows and columns as cells [26, 33].",0.0,Neutral,neutral,1
+"In S-A, we observe that our model outperforms deepdesrt [7] method by a 27.",0.5,Weak,positive,2
+"To improve embedding quality, detaching class-discriminative and classshared features [14, 31, 42], intra-batch feature aggregation [30, 49], ranking surrogates [39], and further regularization terms [19, 23, 45, 66] are utilized.",0.5,Weak,positive,2
+"All IM2TEX (Deng et al.,
+2019) 81.70 75.50 78.60
+EDD (Zhong et al., 2020) 91.20 85.40 88.30 TabStruct-Net (Raja et al.,
+2020) - - 90.10
+GTE (Zheng et al., 2021) - - 93.00 TableFormer (Nassar et al.,
+2022) 95.40 90.10 93.60
+SEM (3) (Zhang et al., 2022) 94.80 92.50 93.70 LGPMA (1) (Qiao et al.,
+2021) - - 94.60
+VCGoup (2) (Ye et al., 2021) - - 96.26 WSTabNet 97.89 95.02 96.48
+(1)(2)(3) are 1st, 2nd, and 3rd solutions in ICDAR2021 competition.",0.0,Neutral,neutral,1
+"Since LGMPA [13] and CycleCenterNet [11] recover table structure based on heuristic rules after detecting cells, which is infeasible to perform the comparison between them and our method, we do not report them in Tab.",-1.0,P-NR,negative,0
+"In this paper, we make a first attempt towards the second question, by studying a family of algorithms named DirectSet(α), in which the DirectPred algorithm proposed by Tian et al. (2021) is a special case with α = 1/2.",1.0,Strong,positive,2
+"As shown in Table 4, the re-implemented SPLERGE can achieve competitve results on SciTSR and PubTabNet datasets while it is still 11.4% worse than TSRFormer in F1-score on our challenging in-house dataset.",-2.0,O-NR,negative,0
+"*e highest average accuracy is achieved for the GloVe-WCFBi-GRU model for which the optimized approach is presented
+in Figure 7.",0.5,Weak,positive,2
+"Altogether, our weak supervision outperforms the state-of-the-art with image-based input (Schreiber et al., 2018) by a considerable margin.",0.5,Weak,positive,2
+"One approach is using graph neural networks to encode structural information, capturing dependencies and relationships between elements (Qasim et al., 2019).",0.0,Neutral,neutral,1
+[8] recently reported an F-score of 0.,-2.0,O-NR,negative,0
+[18] mentions the unnatural approach of detecting rows and columns through Faster R-CNN [17] and instead proposes fine-grained image segmentation through FCN-X’s architecture by Shelhamer et al.,0.0,Neutral,neutral,1
+"Average time taken for our system for each document image is 0.3765 seconds, however this could not be compared with DeepDSert as their model was not publicly available.",-1.0,P-NR,negative,0
+"Under the new evaluation setting, the result of SPLERGE significantly drops by 10.2% absolutely in F1-score.",-2.0,O-NR,negative,0
+[8] proposed a deep learning-based approach for table detection and table structure recognition in documents or images.,0.0,Neutral,neutral,1
+"This reproducibility study focuses on Antoniak and Mimno [1]’s main claim that the rationale for the construction of these lexicons needs thorough checking before usage, as the seeds used for bias measurement can themselves exhibit biases.",1.0,Strong,positive,2
+"All other methods except EDD (Zhong et al., 2020) are non-end-to-end
+approach and the methods in (Qiao et al., 2021; Ye et al., 2021; Zhang et al., 2022) requires additional annotation information for training.",-1.0,P-NR,negative,0
+"The proposed method can be seamlessly implanted into different kinds of deep metric learning models, which are represented here by three works including SCT [5], HDML [6], and HIST [18].",0.5,Weak,positive,2
+"For comparison, we also visualize the multi-head self-attention maps from the last blocks of “Transformer-Mixed” [42] and KNN (K = 5) selection heatmaps of all layers in DGCNN [30], where a lighter color indicates a closer relationship.",0.5,Weak,positive,2
+"However, we were unable to obtain reasonable performance, even after exploring a variety of values for post processing thresholds and training hyperparameters (values not specified in [6]).",-2.0,O-NR,negative,0
+"We build the TFE as an attention bi-directional GRU network [38], [39] to recurrently process word embeddings in",0.5,Weak,positive,2
+"Inspired by [24], we adopt the algorithm of Maximum Clique Search [1] to find all maximum cliques in the graph.",0.5,Weak,positive,2

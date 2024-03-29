@@ -1,0 +1,78 @@
+text,label_score,label,target_predict,target_predict_label
+"Similarly, the SOS bias scores measured using the NCSP metric in the inspected static word embeddings, are limited to the used word lists, and even if I use two different swear word lists and identity terms that are coherent according to (Antoniak and Mimno, 2021), using other word lists may give different results.",,,0,not_related
+"This lack of positive correlation could be due to limitations in the used metrics to measure social bias in static word embeddings (Antoniak and Mimno, 2021).",,,0,not_related
+"of target sets and attribute words are modified (Du et al., 2021; Antoniak and Mimno, 2021).",,,0,not_related
+"Additionally, it has been shown that distance-based metrics can change considerably with different initialization (Antoniak and Mimno, 2021).",,,0,not_related
+"This is prone to instability and data quality issues (Antoniak and Mimno, 2021; Blodgett et al., 2021) and difficult to adapt across languages.",,,0,not_related
+"In this work, we define social bias as the unbalanced disposition (or prejudice) in favor of or against a thing, person or group, relative to another, in a way that is deemed as unfair (Adewumi et al., 2019; Antoniak and Mimno, 2021; Maddox, 2004).",,,1,related
+"The lexica are adapted from public sources(4) and may be expanded as the need arises, given that bias terms and attitudes are ever evolving (Antoniak and Mimno, 2021; Haemmerlie and Montgomery, 1991).",,,1,related
+"specific choices of templates, prompts, lexicon seeds, metrics, sampling strategies is also a concern (Akyürek et al., 2022; Antoniak and Mimno, 2021; Delobelle et al., 2021).",,,0,not_related
+"The lack of robustness of the proposed metrics w.r.t. specific choices of templates, prompts, lexicon seeds, metrics, sampling strategies is also a concern (Akyürek et al., 2022; Antoniak and Mimno, 2021; Delobelle et al., 2021).",,,0,not_related
+"Biased opinions arise from differing attitudes toward different groups, and in the biased expression, dominant and marginalized groups are usually assigned different attribute tags [5, 11, 18].",,,0,not_related
+"Aside from exploring at the linguistic level [5, 18, 93, 94], some works investigate stereotypes and biases against different groups based on supervised datasets related to gender, race, religion, and immigrants [11, 120], aiming to develop more robust detectors and fairer generation models.",,,0,not_related
+"to scrutiny: measures have been shown to be brittle (Ethayarajh et al., 2019; Nissim et al., 2020; Antoniak and Mimno, 2021; Delobelle et al., 2022), contradictory (Bommasani et al.",,,0,not_related
+"In particular, several works (Ethayarajh et al., 2019; Nissim et al., 2020; Antoniak and Mimno, 2021) shows prior bias measures are highly sensitive to word list perturbations.",,,0,not_related
+"Last, the majority of debiasing methods ground the bias by word list; different lists can lead to different debias performance (Antoniak and Mimno, 2021).",,,0,not_related
+", 2020a), as well as assessing the reliability of the tests (Gonen and Goldberg, 2019; Ethayarajh et al., 2019; Antoniak and Mimno, 2021; Delobelle et al., 2021; Blodgett et al., 2021).",,,0,not_related
+This directly addresses concerns related to using predetermined keywords without ensuring their concurrent relevance to each other within a localized data set [5].,,,0,not_related
+"Relying on single-word poles for axes can be unstable to the choice of each word (An et al., 2018; Antoniak and Mimno, 2021).",,,0,not_related
+"Antoniak and Mimno [2021] compile a comprehensive set of seed lexicons used to measure bias from prior work, and demonstrate that bias measurements tend to be unstable and highly dependent on the seed set in use.",,,0,not_related
+"Antoniak and Mimno [2021] compile a comprehensive set of seed lexicons used to measure bias from prior work, and demonstrate that bias measurements tend to be unstable and highly dependent on the seed set in use. Orgad and Belinkov [2022] highlight that the degree of balancing in test data and choice of metric to measure bias can also lead to different bias conclusions.",,,0,not_related
+"These words have a crucial impact on how and which biases
+are detected and mitigated, but they are not central in the efforts devoted to this task, as argued in Antoniak and Mimno (2021).",,,0,not_related
+"We give concrete examples in Appendix A.
+Antoniak and Mimno (2021) argues that the most important variable when exploring biases in word embeddings are not the automatizable parts of the problem but the manual part, that is the word lists used for modelling the type of bias to be explored and the…",,,1,related
+"They can also
+help to understand the implications of using historical datasets to train models that will be used to predict data that is markedly different from the training data (Antoniak and Mimno, 2021).",,,0,not_related
+"Also aligned with the rest of the NLP area, work has been focused on the technical nuances instead of the more impacting qualitative aspects, like who develops the word list used for bias measurement and evaluation techniques (Antoniak and Mimno, 2021).",,,0,not_related
+"with the rest of the NLP area, work has been focused on the technical nuances instead of the more impacting qualitative aspects, like who develops the word list used for bias measurement and evaluation techniques (Antoniak and Mimno, 2021).",,,0,not_related
+"…aforementioned gap information and convinced that the origins and rationale underlying the lists’ selection must be explicit, tested, and documented, Antoniak and Mimno (2021) proposed a systematic framework that enables the analysis of the sources of information and the characteristics of the…",,,0,not_related
+"We develop on the insights of Antoniak and Mimno (2021) by facilitating access to these technologies to domain experts with no technical expertise, so that they can provide well-founded word lists, by pouring their knowledge into those lists.",,,1,related
+"They can also help to understand the implications of using historical datasets to train models that will be used to predict data that is markedly different from the training data (Antoniak and Mimno, 2021).",,,0,not_related
+"For this, we reproduced an experiment by Antoniak and Mimno [1] ranking the cosine similarity between the first Principal Component (PC) of the bias subspace and all words in the corpus.",,,1,related
+Our second contribution is an augmentation of the seed dataset provided by Antoniak and Mimno [1].,,,1,related
+"In addition to the original paper, Antoniak and Mimno [1] published a Github repository that contained a JSON with the metadata on seed sets gathered from prior works4.",,,1,related
+"The selection of seed terms varies considerably across the literature, and seed sets themselves may exhibit social and cognitive biases [1].",,,0,not_related
+"We seek to replicate the Antoniak and Mimno [1] paper, hereafter referred to as ”the original paper/work”.",,,1,related
+Another source of instability claimed by Antoniak and Mimno [1] is the ordering and pairing of seed sets.,,,0,not_related
+"Furthermore, looking at the official dataset statistics, for example for WikiText [7], it is clear that our reproduced vocabulary size is a lot closer to the ground truth than the one by Antoniak and Mimno [1].",,,1,related
+"This reproducibility study focuses on Antoniak and Mimno [1]’s main claim that the rationale for the construction of these lexicons needs thorough checking before usage, as the seeds used for bias measurement can themselves exhibit biases.",,,1,related
+"Finally, the process of assembling word lists itself can be tricky, as seed lexica often have several practical (Antoniak and Mimno, 2021) and conceptual (Dinan et al.",,,0,not_related
+"Along099 this line, focus has been given to bias analysis in100 models’ innards and ouputs (Vig et al., 2020; Costa-101 jussà et al., 2020b), and to ascertain the validity of102 bias measurament practices (Blodgett et al., 2021;103 Antoniak and Mimno, 2021; Goldfarb-Tarrant et al.,104 2021).",,,0,not_related
+", 2022), and to ascertain the validity of bias measurement practices (Blodgett et al., 2021; Antoniak and Mimno, 2021; Goldfarb-Tarrant et al., 2021).",,,0,not_related
+"Recent works investigating bias in language models have found issues with inconsistencies between seed words (Antoniak and Mimno, 2021),",,,0,not_related
+"Furthermore, we acknowledge that our analysis of gender associated biases is limited to binary gender and our intrinsic evaluations require discrete categorizations (Dev et al., 2021b; Antoniak and Mimno, 2021).",,,1,related
+"Keyword-based approaches are appropriate in some cases — for example, when counterfactuals can be obtained by making local substitutions of closed-class words like pronouns — but they cannot guarantee fluency or coverage of all labels and covariates of interest (Antoniak and Mimno, 2021), and are difficult to generalize across languages.",,,0,not_related
+"However, our tool can assist in selecting the most relevant group words by facilitating comparison against a set of alternatives (as recommended in [2]).",,,1,related
+The user is advised to examine the default set of group words and update them via the visual interface as required [2].,,,0,not_related
+"Test (WEAT) [13], would require more heuristic choices, as they have been found to be highly dependent on the initial selection of seed words [2].",,,0,not_related
+", 2020; Bird, 2020), rigorous and meaningful evaluation (Caglayan et al., 2020; Ethayarajh and Jurafsky, 2020; Antoniak and Mimno, 2021; Tan et al., 2021), environmental impact (Strubell et al.",,,0,not_related
+"Norms around different intersectional identities guide how algorithms on these systems perceive individuals’ digital identities and influence the creation of datasets that are often used to make decisions (CheneyLippold, 2017; Das et al., 2022; Antoniak and Mimno, 2021).",,,0,not_related
+"Prior research has highlighted that selecting these lexical seeds or keywords can implicitly introduce researchers’ biases in an artifact (Das et al., 2022; Antoniak and Mimno, 2021).",,,0,not_related
+"These resources have a crucial impact on how and which biases are detected and mitigated (Antoniak and Mimno, 2021), but they are not central in the efforts devoted to this task.",,,0,not_related
+"Instead, we believe what can most contribute to an effective assessment of bias in NLP is precisely the linguistic characterization of the discrimination phenomena (Antoniak and Mimno, 2021).",,,0,not_related
+"Proper validation is not consistent even in NLP research using lexicon-based methods (Antoniak and Mimno, 2021).",,,0,not_related
+"These studies have used seed words from the literature for their tests without mitigating for their limitations as specified by (Antoniak and Mimno, 2021).",,,0,not_related
+"The motivation behind using NOI words is clearer than using seed words used in the literature (Antoniak and Mimno, 2021).",,,0,not_related
+"These metrics also use lists of seed words that are unreliable as explained by (Antoniak and Mimno, 2021).",,,0,not_related
+"Moreover, According to the reported coherence scores in (Antoniak and Mimno, 2021), The used NOI words for women, men, white and non-white ethnicity groups, score the highest coherence which are 0.",,,0,not_related
+"In addition to 74 the original paper, Antoniak and Mimno [1] published a Github repository that contained a JSON with the metadata on 75 seed sets gathered from prior works 2.",,,1,related
+"Furthermore, 98 looking at the official dataset statistics, for example for WikiText [7], it is clear that our reproduced vocabulary size is a 99 lot closer to the ground truth than the one by Antoniak and Mimno [1].",,,1,related
+"The selection of seed terms varies considerably across the literature, 38 and seed sets themselves may exhibit social and cognitive biases [1].",,,0,not_related
+Our second contribution is an augmentation of 232 the seed dataset provided by Antoniak and Mimno [1].,,,1,related
+"For this, we reproduced an experiment by Antoniak and Mimno [1] ranking the cosine similarity between 155",,,1,related
+"We seek to replicate the Antoniak and Mimno [1] paper, hereafter referred to as ”the original paper/work”.",,,1,related
+Another source of instability claimed by Antoniak and Mimno [1] is the ordering and pairing of seed sets.,,,0,not_related
+"This reproducibility study focuses on 4 Antoniak and Mimno [1]’s main claim that the rationale for the construction of these lexicons needs thorough checking 5 before usage, as the seeds used for bias measurement can themselves exhibit biases.",,,1,related
+"Antoniak and Mimno (2021) argues that the most important variable when exploring biases in word embeddings are not the automatizable parts of the problem but the manual part, that is the word lists used for modelling the type of bias to be explored and the list of words that should be neutral.",,,0,not_related
+"These words have a crucial impact on how and which biases are detected and mitigated, but they are not central in the efforts devoted to this task, as argued in (Antoniak and Mimno, 2021).",,,0,not_related
+"We develop on the insights of Antoniak and Mimno (2021) by facilitating access to these technologies to domain experts with no technical expertise, so that they can provide well-founded word lists, by pouring their knowledge into those lists.",,,1,related
+"Also aligned with the rest of the NLP area, work has been focused on the technical nuances instead of the more impacting qualitative aspects, like who develops the word list used for bias measurement and evaluation techniques (Antoniak and Mimno, 2021).",,,0,not_related
+"These can be general decisions involving prompting or decoding hyperparameters, or they can be bias-specific considerations such as the choice of words used to identify groups [2] or the specific mathematical form of the metrics you compute [16].",,,0,not_related
+"Recent works investigating bias in language models have found issues with inconsistencies between seed words (Antoniak and Mimno, 2021), unvoiced assumptions and data quality issues in StereoSet and CrowS-Pairs templates (Blodgett et al.",,,0,not_related
+"Although paired seed words like “man-woman” and “he-she” are suitable to capture a male-female component [AM21], they might transport unwanted correlations (e.",,,0,not_related
+"These metrics also use lists of seed words that have been shown to be unreliable (Antoniak and Mimno, 2021).",,,0,not_related
+"Similarly, our SOS bias scores are limited to the used word lists and even if we used two different swear word lists and identity terms that are coherent according to (Antoniak and Mimno, 2021), using different word lists may give different results.",,,0,not_related
+"by word list; different lists can lead to different debias performance (Antoniak and Mimno, 2021).",,,0,not_related
+(2019) and Antoniak and Mimno (2021). We focused on these seed words as they were successfully used in prior work on extracting associations from word embedding models; we plan to create our own seed words in future work.,,,1,related
+", 2020; Bird, 2020), rigorous and meaningful evaluation (Caglayan et al., 2020; Ethayarajh and Jurafsky, 2020; Antoniak and Mimno, 2021; Tan et al., 2021), environmental impact (Strubell et al.",,,0,not_related

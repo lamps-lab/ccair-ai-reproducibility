@@ -1,0 +1,142 @@
+text,target_M6_predict,target_predict_M6_label
+"2) The majority of them are not all-rounders, making them less effective in handling complicated scenarios such as wireless tables [25], oriented or distorted tables [31, 34–36, 47], tables with blank cells [44, 48], or tables without additional text annotations [21, 22, 33].",1,neutral
+"Graph-based research [21, 22, 33] treat detected text bounding boxes as table elements, construct graphs based on them, and use graph neural networks (GNNs) to predict whether two elements share a row or column, or cell.",1,neutral
+"Category 3, according to [36], is the hardest difficulty level, including tables with cell and column merging.",0,negative
+"Researchers have also used graph neural networks for table recognition from images [24, 26, 33, 43].",1,neutral
+[26] uses a computer-vision feature augmented graph and a GNN for segmentation in order to perform table structure recognition.,1,neutral
+"One approach is using graph neural networks to encode structural information, capturing dependencies and relationships between elements (Qasim et al., 2019).",1,neutral
+Graph neural networks utilize both spatial and textual features [92].,1,neutral
+"They analyze the connection between cell relationships using a graph neural network [29,2,34,18].",1,neutral
+[27] [28] [29] [30] share the identical GNN structure.,1,neutral
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",0,negative
+"With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",1,neutral
+The method [34] employs DGCNN [44] to model interactions between visual and geometric feature vertices for their cell/row/column relations prediction.,1,neutral
+"the filed, which can be mainly categorized into boundary extraction-based methods [38, 31, 15, 41, 25] and element relationship-based methods [23, 4, 34, 36] according to the component type leveraged.",2,positive
+"The first group are the single component-based methods, which rely on either boundary extraction [15, 25, 31, 38, 41] or element relationship [4, 23, 34, 36].",1,neutral
+"To date, several pioneers works [18, 47, 38, 15, 41, 4, 34, 36, 45, 35, 23, 25] have achieved significant progress in",1,neutral
+"Recently, graph neural networks are also used for table structure recognition by encoding document images as graphs (Qasim et al., 2019).",1,neutral
+"Some other researchers aimed to classify the cell relationship to construct table structure [3], [35], [20], [52].",1,neutral
+"One group of bottom-up methods [3, 23, 32] treat words or cell contents as nodes in a graph and use graph neural networks to predict whether each sampled node pair is in the same cell, row, or column.",1,neutral
+"…mechanism (Vaswani et al. 2017) in LORE to avoid making additional assumptions about the distribution of table structure, rather than graph neural networks employed by previous methods (Qasim, Mahmood, and Shafait 2019; Xue et al. 2021), which will be further discussed in experiments.",2,positive
+"Previous methods employ heuristic rules based on spatial locations (Liu et al. 2022) or graph optimizations (Qasim, Mahmood, and Shafait 2019) to reconstruct the tables.",1,neutral
+"Following this work, there are models devoted to improving the relationship classification by using elaborated neural networks and adding multi-modal features (Qasim, Mahmood, and Shafait 2019; Raja, Mondal, and Jawahar 2020, 2022; Liu et al. 2021, 2022).",2,positive
+"In experiment 2a, we replace the self-attention encoder with a graph-attention encoder similar to graph-based TSR models (Qasim, Mahmood, and Shafait 2019; Xue et al. 2021) with an equal amount of parameters with LORE.",2,positive
+"[6] used a convolutional neural network [7] and graph neural network (GNN) [8] to identify table structures, the former for extracting image features and the latter for improving the correlation between vertices.",1,neutral
+"Recently, many studies have explored table extraction by solely leveraging neural networks (NNs) [14]–[16].",1,neutral
+"SR Qasim [115] Graph NN + CNN 1) This paper also presents a unique, memoryefficient training strategy based on Monte Carlo.",1,neutral
+SR Qasim [115] presents a graph network-based architecture for table recognition as a superior alternative to typical neural networks.,1,neutral
+They confirm their approach to the artificial table pictures [25] [26].,1,neutral
+"[34, 37, 45, 66] treat these cells as nodes in a graph and train another Graph Neural Network (GNN) to predict the relations.",1,neutral
+"For line detection, we take advantage of recent GNN proposals such as (Qasim et al., 2019) or (Carbonell et al.",2,positive
+"To do this, a GNN based on (Qasim et al., 2019) is implemented with the aim of connecting the different words previously extracted as entity tags of interest in a same line.",2,positive
+"For line detection, we take advantage of recent GNN proposals such as (Qasim et al., 2019) or (Carbonell et al., 2021).",2,positive
+"In addition to object-detection-based methods, earlier methods leveraged the concepts of Fully Convolutional Networks (FCN) [43,44] and Graph Neural Networks (GNN) [37,45] to resolve table detection in document images.",1,neutral
+also use SynthTable proposed in TIES [4].,1,neutral
+"We conduct experiments on several popular benchmarks including PubTabNet [3] and SynthTable [4], our method achieves new state-of-the-art results.",2,positive
+We also evaluate the SynthTable dataset proposed in TIES [4] that mainly consists of tables in diverse categories.,2,positive
+"For example, TIES [4] combines CNN [17] and GNN [14] to construct a bottom-up model to recognize the table structure.",1,neutral
+"Therefore, we
+6
+also use SynthTable proposed in TIES [4].",1,neutral
+GNN for document understanding was first introduced for mainly key DLA sub-tasks that include table detection [25] and table structure recognition [23].,1,neutral
+Following ideas presented in Section II-C that have been proven successful for TD [36] and TSR [37] we enrich our graph nodes with positional and textual features.,2,positive
+"A more recent work [10] proposes another meaning for TE, providing TD, TSR, and
+TFA annotations.",2,positive
+"TSR in segmented tables is addressed in [37] by classifying edges for cells, rows, and columns.",1,neutral
+"More recently, [38] reformulate the problem of TSR as an end-to-end table reconstruction through node classification.",1,neutral
+TSS is referred to as Table Structure Recognition (TSR) in [10] where the recognition of column and projected row headers is defined as Table Functional Analysis (TFA).,1,neutral
+"The proposed framework can address also TSR, but implementation details are still under investigation.",0,negative
+"TSR in segmented tables is addressed in [36] by classifying edges for cells, rows, and columns.",1,neutral
+In this way it will be possible to compare this approach with both TD and TSR methods.,2,positive
+Following ideas presented in Section II-C that have been proven successful for TD [35] and TSR [36] we enrich our graph nodes with positional and textual features.,2,positive
+"[37], [38], [14] employ graph neural networks to integrate multi-modal information and reconstruct tables by node correlations.",1,neutral
+"XXXXXXX thus facilitatingmany graph-related tasks from various fields including recommendations [7, 48], natural language processing [50, 54], drug discovery [27, 34], and computer vision [9, 32].",1,neutral
+"The first group [2, 20, 34, 49] treats words or cell contents as nodes in a graph and uses graph neural networks to predict whether each sampled node pair is in a same cell, row or column.",1,neutral
+"While there are many datasets for Table Detection and LIR [15,18,22,24,26, 57,63,70,71,87,90,98,99,100], some of them are not accessible anymore [18,24, 26,70].",1,neutral
+"We argue that the problems of KILE and LIR, as defined in Sec.",1,neutral
+"We define Line Item (LI) and the task of Line Item Recognition (LIR) as follows:
+Definition 2 (LI).",1,neutral
+"Note that this definition of LIR allows: (i) detection of several tables with different item types, as well as different item types within a single table; (ii) a single field (e.g., a date) to belong to several line items.",1,neutral
+Definition 3 (LIR).,1,neutral
+"Certain relational understanding tasks already play the important role in building electronic archives and developing office automation, which include table structure recognition [24,25,27,31,33],",1,neutral
+"Now mainstream relational understanding tasks like table structure recognition [24, 25, 27, 31, 33], key information extraction [16, 17, 46] and reading order detection [37] are born with entitylevel.",1,neutral
+"One group of bottom-up methods [21, 25, 75, 76] treat words or cell contents as nodes in a graph and use graph neural networks to predict whether each sampled node pair is in a same cell, row, or column.",1,neutral
+"In the case of IETD, this OCR engine is implicit in the decoder similar to [24].",1,neutral
+"[10], a graph model is used for the structural analysis problem of documents.",1,neutral
+"The DL-based methods in [7, 11] are among the first to apply neural networks designed for object detection to table parsing.",1,neutral
+[24] regarded a table as a graph of text contents.,1,neutral
+"Some authors attempted to replace the heuristics with machinelearning methods [24, 25].",1,neutral
+"Therefore, recent methods [2, 30, 34] attempt to attack the problem via constructing visual cues of table elements as graphs and applying the deep graph model, such as Graph Convolutional Networks (GCN) [15] to reason their relationships.",1,neutral
+"With the development of deep learning, table structure recognition methods have recently advanced substantially on performance, which can be classified into three categories: boundary extractionbased [13, 22, 27, 35, 40], generative model-based [18, 46], and graph-based [2, 20, 30, 34] methods.",1,neutral
+The method [30] introduces DGCNN to predict the relationship between words represented by the appearance and geometry features.,1,neutral
+"Although many previous algorithms [2,13,18,20,22,30,31,34,35,40,45,46] have achieved impressive progress in the community, TSR is still a challenging task due to two factors of complicated tables.",1,neutral
+"Table structure recognition (TSR) aims to recognize the table internal structure to the machine readable data mainly presented in two formats: logical structure [18, 46] and physical structure [2, 13, 20, 22, 27, 30, 31, 34, 35, 40, 45].",1,neutral
+"In the similar spirit with works [30, 34], we adopt the following asymmetric edge function hΘ(xi,xj) = xi∥(xi − xj) to combine graph edge features to each node, which can be denoted as HΘ ∈ R ·(N−1)/2)×d .",1,neutral
+"For comparison, we also visualize the multi-head self-attention maps from the last blocks of “Transformer-Mixed” [42] and KNN (K = 5) selection heatmaps of all layers in DGCNN [30], where a lighter color indicates a closer relationship.",1,neutral
+"To introduce richer table information, several methods [20, 30, 34] con-",1,neutral
+"In previous works using DGCNN [30, 34], only local context of each node is selected by k-Nearest Neighbors algorithm (KNN) to be aggregated into node feature.",1,neutral
+"3 compares the effectiveness of various extractors, including DGCNN [30] and Transformer [42], with ECE in our method.",2,positive
+"Similar to previous works [28, 31] using DGCNN, only 𝑘 nearest neighbours of each node are selected by k-Nearest Neighbors algorithm (KNN) to construct the local context which is applied by the CNN to aggregate the edge information into node feature D𝑖 ∈ R𝑁× 𝑑 ℎ for 𝑖-th head.",1,neutral
+"Furthermore, some methods [2, 19, 28, 31] attempt to construct the graphs of elements to reason the relationships.",1,neutral
+Qasim et al. [28] introduce DGCNN to build the relationships of the fused image and position features between text blocks to predict the relations between nodes.,1,neutral
+"Similar to previous works [28, 31] using DGCNN, only k nearest neighbours of each node are selected by k-Nearest Neighbors algorithm (KNN) to construct the local context which is applied by the CNN to aggregate the edge information into node feature Di ∈ RN× d h for i-th head.",1,neutral
+"As for the sparse context, we build SCA upon DGCNN [28] to softly introduce the relational inductive bias to our model and enable it to learn sparse contextual information in local pattern.",2,positive
+[28] introduce DGCNN to build the relationships of the fused image and position features between text blocks to predict the relations between nodes.,1,neutral
+"For the relational reasoning aspect, recent mainstream algorithms [2, 19, 28, 31] construct table elements as contextual graphs and apply the graph-based aggregator, such as Graph Convolutional Networks (GCN) [14], to reason their relationships.",1,neutral
+"In addition, considering memory complexity of the classification between each proposal pair, we also introduce Monte Carlo sampling [28] to generate a fixed number of samples.",1,neutral
+"Among existing methods, many of them [2, 19, 28] regard off-line extracted meta-data or OCR results as table elements for the subsequent reconstruction of table structure.",1,neutral
+"For example, literature [28] simply exploits k-Nearest Neighbors algorithm (KNN) to build local context in a hard-coded way.",1,neutral
+"To achieve this purpose, existing computer vision methods either predict cell bounding boxes [6, 13], explore the adjacency relation between different cells [11, 15], or transform a table image into the markup sequence (e.",1,neutral
+"Other approaches include those based on image-to-text [8] and graph-based approaches [2,14].",1,neutral
+"As this assumption does not hold on to more challenging tables, some researches tried to get rid of the wellaligned assumption and modeled the table structure parsing problem with graph convolution networks [2, 13, 24].",1,neutral
+"For a more practical requirement of parsing table structures from images taken by hand-held cameras in the wild, the existing state-of-the-art approaches [13, 14, 11, 16, 9, 23] are prone to fail as the commonly-used assumption of tabular images no longer holds.",1,neutral
+"Although researchers have employed Fully Convolutional Network (FCN) [47,48] and Graph Neural Network (GNN) [34,49] to perform table detection in document images, object detection-based approaches [7,8,11,12,19,20,30–34] have delivered state-of-the-art results.",1,neutral
+The graph neural network is also used in [27].,1,neutral
+"A recent application example was the detection of tables in case of administrative document images [21,20].",1,neutral
+"Generally, these methods can be divided into the edge classification [1, 22, 11, 30] and the node classification [15].",1,neutral
+"2, with the success of deep learning, recent deep learning-based table structure recognition approaches can be divided into three categories: 1) identify cell bounding boxes through visual detection and segmentation methods [25, 27, 29, 28, 8]; 2) transform a table image into the markup sequence, such as LaTeX and HTML [10, 2]; and 3) explore the adjacency relation between different table cells [30, 22, 11].",1,neutral
+"The techniques employed in extracting tabular data from images usually involves advanced machine techniques such as Deep learning [3], Graph Neural networks [4] etc.",1,neutral
+"The works by Schreiber et al. (2018); Qasim, Mahmood, and Shafait (2019) draw upon deep neural networks to identify table structures for rendered inputs.",1,neutral
+"GCNs have been applied to other structured document tasks, such as table extraction [13,15].",1,neutral
+"Inspired by [24], we adopt the algorithm of Maximum Clique Search [1] to find all maximum cliques in the graph.",1,neutral
+"With the great success of deep neural network in computer vision field, works began to focus on the image-based table with more general structures [21,30,24,9,13,36,23,14,33].",1,neutral
+[24] alleviates the problem of large graph nodes numbers by the pair sampling strategy.,1,neutral
+"The above three works [14,2,24] also published new table datasets for this research area.",1,neutral
+"Another type of methods [11,2,14,24,26] treat the detected boxes as nodes in a graph and attempt to predict the relations based on techniques of Graph Neural Networks [29].",1,neutral
+"That is why many segmentation-based methods [24,23,22] struggle with complicated post-processing, such as fracture completion and threshold setting.",1,neutral
+"Following the same naming convention with [14,2,24], the connecting relations can be divided into horizontal and vertical types.",1,neutral
+"Another group of methods solves the above problems in a bottom-up way to firstly detect the text blocks’ positions and then recover the bounding-boxes’ relations by heuristic rules [38] or GNN(Graph Neural Networks) [29,14,2,24,26].",1,neutral
+"(2019) argued that graph networks are a more natural choice for table recognition problem, and they further explored two gradient-based graph neural networks for this issue [24].",1,neutral
+"Furthermore, Qasim et al. (2019) argued that graph networks are a more natural choice for table recognition problem, and they further explored two gradient-based graph neural networks for this issue [24].",1,neutral
+[28] published a method to synthetically create camera captured images from the UNLV dataset.,2,positive
+"It is important to mention that apart from these two approaches, other methods [28], [30], [100] have extracted the contents of cells in order to recognize either the tabular boundaries or tabular structures.",1,neutral
+[28] Graph Neural Networks with Convolutional Neural Networks (Section III-B2).,1,neutral
+FIGURE 11: Example of a synthetically created camera captured image by linear perspective transform method [28].,1,neutral
+[28] exploited the graph neural networks to perform table recognition for the first time.,1,neutral
+[28] which is explained in Section III-A3 did not use any well known dataset to evaluate their approach.,0,negative
+[17] made use of Graph Neural Networks for generating cell adjacency matrix for all existing OCR detected words and Tensmeyer et al.,1,neutral
+"[17] GNN model, makes use of large proprietary dataset to train the network for an effective model to be tested on ICDAR 2013.",2,positive
+[17] mentions that lack of large datasets has been a major hindrance for Deep Learning methods in table structure recognition and makes use of synthetic data to show the effectiveness of their network.,1,neutral
+[25] use a graph neural network to identify cell locations within tables.,1,neutral
+"Many previous works [22, 26, 23] and tools 16 have been developed to identify and parse table structures.",1,neutral
+"Most recently, Graph Neural Networks [25] have also been used in table detection [23].",1,neutral
+"[12] applied Graph Neural Network (GNN) to the table structure recognition task, effectively",1,neutral
+"Convolutional neural networks [150, 151], fully-convolutional neural networks [152, 153], region-based convolutional neural networks [154, 155, 156, 157], and graph neural networks [158, 159] have all been exploited to parse the physical layout of documents or to detect elements of interest (e.",1,neutral
+Some other works use applied graph convolutional neural network technique [15] and segmentation-based method for table structure decomposition [2].,1,neutral
+"(2019 [9]) presented a method that combined the advantages of convolutional neural network and graph neural network, so that the effect is better than the traditional neural network.",1,neutral
+(2019 [9]) presented a method that com-,2,positive
+"Therefore, we firstly generate a synthetic dataset with the aid of the open code [10].",2,positive
+"When compared with the method in [10], our proposed method can still get considerable results on tables in Category 3 and Category 4.",2,positive
+"Some recent approaches [10], [11] utilize Graph Convolutional Network to predict the relationship between word (or cell).",1,neutral
+Table images in different categories [10].,1,neutral
+[10] divide the relationships between words into three types: belonging to the,1,neutral
+"search for structure analyses (Li et al., 2020; Qasim et al., 2019; Zhong et al., 2019).",1,neutral
+"The lack of large-scale labeled document datasets has been recognized as a major hindrance in deep-learning research for structure analyses (Li et al., 2020; Qasim et al., 2019; Zhong et al., 2019).",1,neutral
+"Different statistical models have been used, for example, probabilistic modelling [30], the Naive Bayes classifier [31], [32], decision trees [33], [34], Support Vector Machine [33], [35], Conditional Random Fields [35]–[37], graph neural network [14], [38], [39], attention module [40], etc.",1,neutral
+and table recognition [39].,1,neutral
+"Considering memory efficiency, we also introduce Monte Carlo sampling for constructing collaborative graph embedding pairs in the training phase, which is similar to [12].",1,neutral
+They presented a new large-scale synthetic dataset for the problem of table recognition [17].,1,neutral
+B Categories of table styles in the synthetic dataset The synthetic dataset introduced in [4] contains four categories of table styles.,1,neutral
+S3: Sample table image of the four categories of table styles defined in [4].,1,neutral
+"Bottom-up methods [5,26,27,40] first detect cells or text segments using detection models or OCR engines, then analyze the relations between neighbouring cells using GNN or LSTM.",1,neutral
+"Experimental results indicate that our model achieves robustness across different transformations (all transformations, including scaling, rotation, adding noise, blurring, random cropping, and more) [46].",2,positive

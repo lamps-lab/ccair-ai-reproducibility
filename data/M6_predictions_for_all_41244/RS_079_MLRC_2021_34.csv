@@ -1,0 +1,65 @@
+text,target_M6_predict,target_predict_M6_label
+"of robotics, Transformers have found practical applications in diverse areas such as path planning [15], [16], object recognition [17], and grasping [18].",1,neutral
+"CNN [25], PointNet [26, 27], and Transformer [28, 29, 30] are also employed to construct end-to-end models.",1,neutral
+"The success of transformers in vision and NLP has led its way into robot learning [42, 43, 44, 17].",1,neutral
+"Other works [15], [24] only solve for planar manipulators and 2D mobile robots because, inherently, their network models follow those used in image understanding in 2D discrete spaces.",1,neutral
+"Planners (NMPs) [26, 28, 10, 25, 17, 3] surfaced that find a path extremely fast at test time than traditional approaches and scale to high-dimensional problems with multi-DOF robot",1,neutral
+"Various approaches exist, from classical methods [12, 18, 6, 11] to learning-based neural motion planners (NMPs) [26, 28, 10, 25, 17, 3], that solve motion planning problems.",1,neutral
+Differentiable planning has shown promise in general planning task [18]–[21] as well as vision-based planning tasks and planning under uncertainty [22]–[24].,1,neutral
+", value iteration [19], LSTM [20], [21], and Transformer [22], to plan paths in a discrete grid space.",1,neutral
+"1) Learning-based path planning: Learning-based methods apply deep learning techniques, e.g., value iteration [19], LSTM [20], [21], and Transformer [22], to plan paths in a discrete grid space.",1,neutral
+", 2016) is a representative work that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021).",1,neutral
+"Spatial Planning Transformers (SPT) (Chaplot et al., 2021) also fits into the pipeline, but it performs less well, as discussed in Section C.",2,positive
+"These tasks require planning on either given (2D navigation and 2-DOF configuration-space manipulation) or learned maps (visual navigation and 2-DOF workspace manipulation), where the maps are 2D regular grid as in prior work (Tamar et al., 2016; Lee et al., 2018; Chaplot et al., 2021).",2,positive
+"C IMPLEMENTATION DETAILS
+C.1 IMPLEMENTATION OF ID-SPT
+Beyond VIN, SymVIN and ConvGPPN, we also tried implementing an implicit differentiation version of Spatial Planning Transformers (SPT) (Chaplot et al., 2021).",2,positive
+"We follow the setup in (Lee et al., 2018; Chaplot et al., 2021) and further discuss in Section D.",2,positive
+"Value iteration network (VIN) (Tamar et al., 2016) is a representative work that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021).",1,neutral
+"We also run on other tasks including visual navigation, 2-DOF configuration space manipulation, and 2-DOF workspace manipulation, where all these tasks can be represented as taking a form of map “signal” over grid Z(2), as previously been done (Zhao et al., 2022; Chaplot et al., 2021).",2,positive
+"We also run on other tasks including visual navigation, 2-DOF configuration space manipulation, and 2-DOF workspace manipulation, where all these tasks can be represented as taking a form of map “signal” over grid Z2, as previously been done (Zhao et al., 2022; Chaplot et al., 2021).",2,positive
+"We can handle tasks with more challenging input, such as visual navigation and workspace manipulation (Lee et al., 2018; Chaplot et al., 2021; Zhao et al., 2022), by learning an additional mapping network (mapper) to first map the input to a 2D map.",2,positive
+"Spatial Planning Transformers (SPT) (Chaplot et al., 2021) also fits into the pipeline, but it performs less well, as discussed in Section C.
+Figure 3 shows the general pipeline, where the network layer fθ can be replaced by any single layer that is capable of iterating values.",2,positive
+"During testing, we follow the pipeline in Chaplot et al. (2021) that the mapper-planner only have access to the manipulator workspace.",2,positive
+[35] and goal-conditioned RL policies [36].,1,neutral
+"Classical approaches [28, 67, 34, 63, 45] solve the navigation problem via path planning [11, 34] on a constructed map, which usually requires handcraft design.",1,neutral
+"Within robotics we see the first transformers architectures being used for trajectory forecasting [30], motion planning [31, 32], and reinforcement learning [33, 34].",1,neutral
+"We us a lightweight 3layer MLP hloc ([64, 32, 3]) as the localization task decoder (Fig.",2,positive
+"Furthermore, a differentiable approach can be combined with other differentiable methods to enable efficient with end-to-end learning from data [2].",1,neutral
+"In robotics, Transformers have been applied to assistive teleop [41], legged locomotion [42], pathplanning [43, 44], imitation learning [45, 46], and grasping [47].",1,neutral
+"In the original paper [1], the problem of spatial path planning in a differentiable way is considered.",1,neutral
+"Transformers are well-suited to this problem, as they have been shown to learn long-range relationships [2], although not in temporal robotic tasks.",1,neutral
+"matmul(A, X_hw) y_sim = process_height(xyz_hw[1]) X_sim = [X_sim_homo[0]/X_sim_homo[2], y_sim, X_sim_homo[1]/X_sim_homo[2]] return X_sim",1,neutral
+"array) -> List: xz_hw = [xyz_hw[0], xyz_hw[2]] X_hw = get_homogenous_coordinates(xz_hw) X_sim_homo = np.",1,neutral
+"Once we compute the transformation A, we store it for later to process arbitrary coordinates from real to sim, as shown below.
+def get_simulation_coordinates(xyz_hw: List[float], A: np.array) -> List:
+xz_hw = [xyz_hw[0], xyz_hw[2]]
+X_hw = get_homogenous_coordinates(xz_hw)
+X_sim_homo = np.matmul(A, X_hw)
+y_sim = process_height(xyz_hw[1])
+X_sim = [X_sim_homo[0]/X_sim_homo[2], y_sim, X_sim_homo[1]/X_sim_homo[2]]
+return X_sim
+The objects used in simulation training are different from hardware objects, even though they belong to the same categories.",1,neutral
+"In the latter case, the planner needs to jointly learn a mapper that converts egocentric panoramic images (visual navigation) or workspace states (workspace manipulation) into a map that the planners can operate on, as in (Lee et al., 2018; Chaplot et al., 2021).",2,positive
+"Our choice of small and toyish maps (100× 100 or smaller) is in line with prior work, such as VIN, GPPN, and SPT, which mainly experimented on 15 × 15 and 28 × 28 maps.",2,positive
+"For all environments, the planning domain is the 2D regular grid as in VIN, GPPN and SPT S = Ω = Z2, and the action space is to move in 4 directions1: A = (north, west, south, east).",1,neutral
+"This is used as input to the Configuration-space (C-space) Manipulation task and as target in the auxiliary loss for the Workspace Manipulation task (as done in SPT (Chaplot et al., 2021)).",1,neutral
+"In 2-DOF manipulation in configuration space, we adopt the setting in (Chaplot et al., 2021) and train networks to take as input of configuration space, represented by two joints.",1,neutral
+"…package (Weiler and Cesa, 2021) uses counterclockwise rotations as generators for rotation groups Cn, the action space needs to be counterclockwise .
+in Chaplot et al. (2021) and train networks to take as input “maps” in configuration space, represented by the state of the two manipulator joints.",1,neutral
+"Value iteration networks (VIN) (Tamar et al., 2016b) is a representative approach that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021; Zhao et al., 2023).",1,neutral
+"…ability of handling symmetry in differentiable planning, we consider more complicated state space input: visual navigation and workspace manipulation, and discuss how to use mapper networks to convert the state input and use end-to-end learned maps, as in (Lee et al., 2018; Chaplot et al., 2021).",1,neutral
+"To demonstrate the ability of handling symmetry in differentiable planning, we consider more complicated state space input: visual navigation and workspace manipulation, and discuss how to use mapper networks to convert the state input and use end-to-end learned maps, as in (Lee et al., 2018; Chaplot et al., 2021).",2,positive
+", 2016b) is a representative approach that performs value iteration using convolution on lattice grids, and has been further extended (Niu et al., 2017; Lee et al., 2018; Chaplot et al., 2021; Deac et al., 2021; Zhao et al., 2023).",1,neutral
+"One potential method is to use Transformers that learn attention weights to all states in S, which has been partially explored in SPT (Chaplot et al., 2021).",1,neutral
+"During testing, we follow the pipeline in Chaplot et al. (2021) that the mapper-planner only have access to the manipulator workspace.",2,positive
+"Lastly, other related directions tackle learning cost fields for motion planning [6, 9, 33] from SDFs [11, 16], navigating in a neural radiance fields [1] and learning neural fields for articulated [18] or deformable objects [35] for manipulation.",1,neutral
+"The proposed environment field can also be considered as a value function used in learning-based path planning methods (Tamar et al., 2016; Campero et al., 2020; Al-Shedivat et al., 2018; Chaplot et al., 2021).",1,neutral
+Transformers have been used to learn and predict optimal value functions given a static map with obstacles and a goal point [3].,1,neutral
+[11] use transformers to predict distances by exploiting their property of learning long-distance relationships instead of local convolutional features.,1,neutral
+"images (visual navigation) or workspace states (workspace manipulation) into plannable loss, as in [18, 19].",1,neutral
+"We focus on the 2D regular grid setting for path planning, as adopted in prior work [17, 18, 19].",2,positive
+"In 2-DOF manipulation in configuration space, we adopt the setting in [19] and train networks to take as input of configuration space, represented by two joints.",1,neutral
+"[19] propose SPT based on Transformers, while integrating symmetry to Transformers is beyond steerable convolutions, thus we do not consider it but still adopt some useful setup.",2,positive
+"In the original paper [1], the problem of spatial path planning in a differentiable way is considered.",1,neutral

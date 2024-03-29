@@ -1,0 +1,1087 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"We investigate the effect of label noise on two representative datasets, CifarFS [2] and Omniglot [10], in a (5, 5)-FSL setting with a query set of 15 samples per class.",1,related,1,positive
+"It should be noted that on the miniImageNet database, the best performance is achieved with L ¼ 2 , while on CIFAR-FS, it is better when L is 4.",1,related,0,negative
+"We adhere to the widely used splitting protocol proposed in (Bertinetto et al. 2019; Oreshkin, López, and Lacoste 2018; Ravi and Larochelle 2017) to ensure fair comparisons with baselines.",1,related,1,positive
+"Few-shot Learning Setting: We employ four prominent few-shot image classification benchmarks for our evaluations: CIFAR-FS (Bertinetto et al. 2019), FC100 (Oreshkin, López, and Lacoste 2018), miniImageNet (Vinyals et al.",1,related,1,positive
+"Few-shot Learning Setting: We employ four prominent few-shot image classification benchmarks for our evaluations: CIFAR-FS (Bertinetto et al. 2019), FC100 (Oreshkin, López, and Lacoste 2018), miniImageNet (Vinyals et al. 2016), and tieredImageNet (Ren et al. 2018).",1,related,1,positive
+We utilized the BEiT-3 backbone in all experiments and reported our findings on the CIFAR-FS dataset.,1,related,0,negative
+"Specifically, we observe a boost of up to 3.32% in Top-1 accuracy on the CIFAR-FS (Bertinetto et al. 2019) dataset compared to the BEiT-3 baseline.",1,related,0,negative
+"We evaluate BMSSL on three standard few-shot benchmarks of unsupervised meta-learning: Omniglot [30], miniImageNet [52], and CIFAR-FS [6].",1,related,1,positive
+"Nevertheless, having a closed-form expression for Ab enables us to exploit a meta-learning scheme like [57] to formulate a zero-shot prediction loss to learn them jointly with the rest of the parameters.",1,related,1,positive
+"Next, we evaluate these two selection methods along with random selection by ap-
+plying them using the three representative networks in implementation settings, namely, P > M > F (Mini-I), RFS (S.S.), and R2-D2 (S.S.).",1,related,1,positive
+"To begin with, as indicated by the bold numbers, six out of the nine networks (RFS, Baseline, Baseline++, R2-D2, e3bm, SSL) performed better when trained with Snapshot Serengeti than when trained with mini-ImageNet.",1,related,0,negative
+"(a) Baseline (b) Baseline++ (c) e3bm
+(d) P > M > F (e) ProtoNet (f) R2-D2
+(g) RFS (h) RENet (i) SSL
+Figure A1.",1,related,1,positive
+"We have selected nine FSL networks: ProtoNet [13], RFS [14], Baseline and Baseline++ [15], R2-D2 [34], e3bm [17], RENet [35], SSL-FEW-SHOT [36], and P > M > F [37].",1,related,1,positive
+"We conduct the same implementation test for the three representative networks (P > M > F (Mini-I), RFS (S.S.), R2-D2 (S.S.)), and the resulting comparisons are shown in Figure 7.",1,related,1,positive
+"(a) Baseline (b) Baseline++ (c) e3bm
+(d) P > M > F (e) ProtoNet (f) R2-D2
+(g) RFS (h) RENet (i) SSL Figure A2.",1,related,1,positive
+"We report the evaluation results on the MiniImageNet and Cifar-FS workloads; the results on other workloads are similar, thus omitted here.",1,related,0,negative
+The evaluation results on MiniImagenet and Cifar-FS have been presented in Table 4.,1,related,0,negative
+"Following the recent work of [46], we use the same training/validation/testing splits consisting of 64/16/20 classes respectively.",1,related,0,negative
+"Implementation Details We study the classic FSL methods ProtoNet (Snell et al., 2017), MAML (Finn et al., 2017), R2D2 (Bertinetto et al., 2019), and Baseline(++) (Chen et al., 2019), using the implementations provided by the LibFewShot1.",1,related,1,positive
+"We evaluate our proposed method on three standard within-
+domain benchmarks: MiniImagenet [11], CIFAR-FS [1], and
+FC100 [8].",1,related,1,positive
+"We evaluate our proposed method on three standard withindomain benchmarks: MiniImagenet [11], CIFAR-FS [1], and FC100 [8].",1,related,1,positive
+"NAO consistently outperforms all few-shot methods on CUB [63] and miniImageNet [62], and reaches comparable results to SeedSelect [49] on CIFARFS [8].",1,related,1,positive
+"1) More meta-learning instances: We first supplement the results of FoMAML and ProtoNet with a Conv-4 backbone on the mini-ImageNet dataset in Table VI, and then integrate MGAug into more meta-baselines, including Reptile [58], CAVIA [59], MAML [35], R2-D2 [38], and MetaOptNet [39].",1,related,1,positive
+"In the main text, we show examples where the estimand is a given coefficient of a linear regression model (implemented by differentiating through a least-squares solution), and in the Appendix we show results for bounding the coefficient of a logistic regression (implemented via differentiating through an iteratively reweighted least squares solver [31]).",1,related,1,positive
+"10 Effective for Other FSL Classifiers?: In Table V, we additional select three FSL classifiers, including logistic regression [9], ridge regression [57], and SVM [67], to analyze the effectiveness of the proposed fusion strategy.",1,related,1,positive
+"Following [57], we split it into 64 classes for training, 16 classes for validation, and 20 classes for test, respectively.",1,related,0,negative
+"We use miniImageNet [4], tiered-ImageNet [45] and CIFAR-FS [40] as the datasets in our experiments.",1,related,1,positive
+"We evaluate our BiDfMKD framework on the meta-testing subsets of CIFARFS (Bertinetto et al., 2018), MiniImageNet (Vinyals et al.",1,related,1,positive
+"We evaluate our BiDfMKD framework on the meta-testing subsets of CIFARFS (Bertinetto et al., 2018), MiniImageNet (Vinyals et al., 2016), and CUB-200-2011 (CUB) (Wah et al., 2011).",1,related,1,positive
+"For benchmarks of three scenarios on CIFARFS, MiniImageNet and CUB, our framework achieves significant performance gains in the range of 8.09% to 21.46%.",1,related,0,negative
+"Datasets: We validate our framework on the following datasets, i.e., miniImageNet[13], CUB-200-2001[14], and CIFAR-FS[15].",1,related,1,positive
+"Restrictions apply.
+we also used the CIFAR-FS datasets, a variant of the CIFAR100 datasets.",1,related,1,positive
+We formulate outcome model μa and pseudo outcome model τ using task-shared encoders with the task-specific last linear layer [5]:,1,related,1,positive
+"In addition to comparing with ProtoNet [18] and R2D2 [109] on their original small backbones, we also compare with
+both methods with larger convolutional backbones, i.e., ResNet-12.",1,related,1,positive
+"We consider four typical meta-learning methods: MAML [17], ProtoNet [18], R2D2 [109], and MetaOptNet [119] with SOTA performance.",1,related,1,positive
+"Further, we calibrate the prediction for binary cross entropy loss with a learnable scale and bias following [6].",1,related,1,positive
+"when encountering adversarial samples, AQ focuses only on the case when the query sample is attacked, this paper aims to improve R2D2’s performance under adversarial attacks [9].",1,related,1,positive
+"In this section, we verify the performance of DeR2D2 on two benchmark datasets: MiniImageNet [10] and CIFAR-FS [9].",1,related,1,positive
+"First, for semantic data augmentation, where we reach SoTA for both few-shot classification and long-tail learning on miniImageNet [63], CUB [64], CIFAR-FS [4], ImageNet-LT [39] and iNaturalist [62].",1,related,1,positive
+2016) with the same architecture as previous works (Bertinetto et al. 2019; Ye et al. 2020) is used as the feature extractor fθ of our model.,1,related,1,positive
+We use the source code of FEAT and SnaTCHer-F from github to do the experiment on the CIFAR-FS.,1,related,1,positive
+"We use miniImageNet [37], tieredImageNet [24] and CIFAR-FS [4] to evaluate the performance of the model.",1,related,1,positive
+"We use five frequently-used datasets to evaluate our pipeline: miniImageNet[9], CUB[25], CIFAR-FS[23], clipart[24] and sketch[24].",1,related,1,positive
+2 has 0.3M parameters updated that is 78 times as that of VPT-SHALLOW with 10 tokens but the latter gets obviously better performance except on 1 shot tasks of CIFAR-FS.,1,related,1,positive
+"We use five frequently-used datasets to evaluate our pipeline: miniImageNet[9], CUB[25], CIFAR-FS[23], clipart[24] and sketch[24]. miniImageNet is from ImageNet-1K[19] and is the most common benchmark of few-shot learning.",1,related,1,positive
+"…baselines
+In Table 14, we further compare our method on meta learning benchmarks, namely Mini Imagenet (Vinyals et al., 2016) and CIFAR-FS (Bertinetto et al., 2019) with different approaches in the literature based on meta learning (Snell et al., 2017; Oreshkin et al., 2018; Dhillon et…",1,related,1,positive
+"Comparison with metalearning baselines
+In Table 14, we further compare our method on meta learning benchmarks, namely Mini Imagenet (Vinyals et al., 2016) and CIFAR-FS (Bertinetto et al., 2019) with different approaches in the literature based on meta learning (Snell et al., 2017; Oreshkin et al., 2018; Dhillon et al., 2020; Lachapelle et al., 2022a).",1,related,1,positive
+"We report results on the following FSL benchmark datasets: miniImageNet [54], tieredImageNet [39], CIFARFS [8], and FC100 [33].",1,related,1,positive
+"We report results on the following FSL benchmark datasets: miniImageNet [54], tieredImageNet [39], CIFARFS [8], and FC100 [33].
+miniImageNet incorporates 100 randomly sampled categories from ImageNet and 600 images per category.",1,related,1,positive
+"We analyze the computational complexity and conduct the ﬁve-way ﬁve-shot streaming tasks on miniImageNet, tieredImageNet, and CIFAR-FS.",1,related,1,positive
+"For task-homogeneous setting, we conduct experiments on 3 popular few-shot benchmarks: miniImageNet [7], tieredImageNet [53] and CIFAR-FS [54], where for each experiment, tasks are drawn from only one underlying distribution.",1,related,1,positive
+"The number of metaupdate iterations is set to be 60,000 for Mixture-of-Datasets and miniImageNet, 80,000 for tieredImageNet and Meta-Dataset, and 40,000 for CIFAR-FS.",1,related,1,positive
+"5) Results on Public Benchmarks: Task-Homogeneous Benchmarks We further conduct experiments to compare the MAML-based methods on miniImageNet [7], tieredImageNet [53] and CIFAR-FS [54], which are public benchmarks following task-homogeneous setting.",1,related,1,positive
+"Meta-Album allows us to choose N ∈ [2, 20] and k ∈ [1, 20].",1,related,1,positive
+"The last column denotes the OOD noise from CIFAR-FS dataset.
+is from miniImageNet.",1,related,1,positive
+"In experiments, we adopt four standard few-shot classification datasets, including CIFAR-FS [64], FC-100 [65], miniImagenet [19] and tieredImagenet [63].",1,related,1,positive
+"Here we consider the sequential version of 5-way one-shot image classification on MiniImageNet (Vinyals et al., 2016) and CIFAR-FS (Bertinetto et al., 2019).",1,related,1,positive
+"In the experiment, we compare our algorithm with the optimization in MetaOptNet on datasets CIFAR-FS (Bertinetto et al. 2018) and FC100 (Oreshkin, Rodríguez López, and Lacoste 2018), which are widely used for few-shot learning.",1,related,1,positive
+"However, its optimization does not explicitly consider the
+0 500 1000 1500 2000 2500 3000 3500 Running time /s
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+Tr ai
+ni ng
+lo ss
+Dataset: CIFAR-FS (5-way 5-shot) GAM MetaOptNet
+500 1000 1500 2000 2500 3000 3500 Running time /s
+0.76
+0.78
+0.80
+0.82
+0.84
+Te st
+a cc
+ur ac
+y
+Dataset: CIFAR-FS (5-way 5-shot) GAM MetaOptNet
+0 200 400 600 800 1000 Running time /s
+0.6
+0.8
+1.0
+1.2
+1.4
+Tr ai
+ni ng
+lo ss
+Dataset: FC100 (5-way 5-shot) GAM MetaOptNet
+0 200 400 600 800 1000 Running time /s
+0.49
+0.50
+0.51
+0.52
+0.53
+0.54
+0.55
+0.56
+Te st
+a cc
+ur ac
+y
+Dataset: FC100 (5-way 5-shot) GAM MetaOptNet
+Figure 7: Comparison of MetaOptNet and gradient approximation method (GAM).",1,related,1,positive
+"For both CIFAR-FS and FC100 datasets, our method converges faster than the optimization in MetaOptNet in terms of the training loss and test accuracy, and achieves a higher final test accuracy.",1,related,1,positive
+We used two popular few-shot benchmark CIFAR-FS [4] and MiniImageNet [24] for comparison with other few-shot methods.,1,related,1,positive
+"To validate this, we computed the average CoS between GT anchors and the output visual features of the two models trained on CIFAR-FS in Tab.",1,related,1,positive
+"In addition, DSMNet outperforms or matches the previous state-ofthe-art models on miniImagenet, CUB-200, Stanford-Dogs, and CIFAR-FS datasets.",1,related,1,positive
+"To evaluate the performance of DSMNet on fine-grained datasets, we conducted experiments on CUB-200, StanfordDogs, and CIFAR-FS datasets.",1,related,1,positive
+"Under the 5-way 1-shot setting, our DSMNet achieves competitive results on CIFAR-FS dataset, whereas the results on the Stanford Dogs dataset are somewhat less satisfactory, which can be attributed to two possible reasons.",1,related,0,negative
+"As shown in Tables 4 and 5, under the 5-way 5-shot setting, our DSMNet achieves the highest results on both Stanford Dogs
+and CIFAR-FS datasets.",1,related,0,negative
+"In this experiment, we select four benchmark datasets including miniImagenet [18], and three fine-grained datasets that are Caltech-UCSD Birds-200-2011 (CUB200) [51], Stanford-Dogs [52], and CIFAR100 few-shots (CIFAR-FS) [53].",1,related,1,positive
+"To investigate the effects of different backbones on DSMNet, we used ResNet10 [65], ResNet12 [47], ResNet18 [65], ResNet34 [65], and WRN-28-10 [66] as embedding module respectively, and conducted experiments on miniImagenet, CUB-200, Stanford-Dogs, and CIFAR-FS datasets.",1,related,1,positive
+"To verify the effectiveness of the adaptation strategy, we conducted two sets of experiments on miniImagenet, CUB200, Stanford-Dogs, and CIFAR-FS datasets.",1,related,1,positive
+"We show some of the representative images from miniImagenet, CUB-200, Stanford-Dogs, and CIFAR-FS in Fig.",1,related,1,positive
+"We conduct our experiments on 4 widely used FSL benchmarks, i.e., miniImageNet [44], tieredImageNet [34], CIFAR-FS [4], and CUB [45].",1,related,1,positive
+"In addition, as shown in Tab.6, our method also gets competitive results on CIFAR-FS.",1,related,0,negative
+"As for benchmarks without semantic knowledge annotations (e.g., class-aware attributes annotations) such as miniImageNet, tieredImageNet, and CIFAR-FS, previous works always leverage pretrained Word2Vec models such as GloVe [29] as the semantic source.",1,related,1,positive
+Table 3 displays the results on CIFAR-FS.,1,related,0,negative
+"All tables show that our framework achieves the best performance for 1-shot and 5-shot compared with the other state-of-the-art on miniImageNet, CUB-200-2011, and CIFAR-FS.",1,related,0,negative
+"Method CIFAR-FS
+5-way-1-shot 5-way-5-shot
+Optimization-based ICML17’ MAML [4] 58.9± 1.9 71.5± 1.0 ICLR19’ R2D2 [32] 65.4± 0.2 79.4± 0.2 CVPR19’ MetaOptNet [46] 72.8± 0.7 85.0± 0.5
+Metric-based
+NIPS17’ ProtoNet [14] 55.5± 0.7 72.0± 0.6 CVPR18’ RelationNet [40] 55.0± 1.0 69.3± 0.8 AAAI22’ AAP2S [42] 73.12± 0.22 85.69± 0.16 CVPR19’ Shot-Free [47] 69.15 84.70
+Fine-tuning-based ICLR19’ Baseline++ [15] 67.50± 0.64 80.08± 0.32
+Ours PSDC 74.66 ± 0.21 86.37 ± 0.15",1,related,1,positive
+"We evaluate our approach using four datasets: (i) Mini-ImageNet (Vinyals et al., 2016), (ii) CIFAR-FS (Bertinetto et al., 2019), (iii) FC-100 (Oreshkin et al., 2018), (iv) and EMNIST (balanced) (Cohen et al., 2017).",1,related,1,positive
+"To demonstrate this, we compared the 1- and 5-shot performance of our approach to several other few-shot learning algorithms on the Mini-ImageNet, CIFAR-FS, and FC-100 datasets, as summarized in Table 1.",1,related,1,positive
+"Therefore, we empirically investigated the dynamics of mini 6=j∈[l] ‖µf (S̃i)−µf (S̃j)‖ during training in our standard setting (WRN-28-4 with the default hyperparameters, see Section 2) on CIFAR-FS, considering a varying number source classes (l ∈ {5, 10, 20, 30, 40, 50, 60}) and learning rates (η ∈ {2−2i−2}4i=1).",1,related,1,positive
+"Our proposed method is most closely related to meta-representation learning [4, 15, 32, 48], which parametrizes the base learner as A(θ,D) = w(gθ(D))gθ(·), separating it into parts of a global feature extractor gθ : X → Rm and a task-adaptive classifier w : D → {f : Rm → Y} resulting in the optimization problem",1,related,1,positive
+"The task-adaptive classifier w(·) may take various forms, including nearest neighbor [59], ridge regression classifier [4], embedding adaptation with transformer models [73], and Wasserstein distance metric [74].",1,related,1,positive
+"R2D2 [4], ProtoNet [42]) learn classifiers by minimizing some loss over support sets, losing out on the access to the contextual information provided by global labels.",1,related,1,positive
+"1-shot 5-shot
+ProtoNet 47.8± 0.5 66.8± 0.5 MatchNet 65.6± 0.2 78.7± 0.2 R2D2 75.1± 0.3 86.4± 0.2 DeepEMD 51.3± 0.5 65.6± 0.8 FEAT 77.6± 0.6 87.3± 0.4 FRN 81.9± 0.4 91.0± 0.2 MeLa 84.8± 0.3 92.9± 0.2
+Oracle 84.4± 0.3 93.1± 0.2
+further improved, since the pre-trained representation is not explicitly optimized for handling novel classes.",1,related,0,negative
+"In contrast, unconditional approaches (e.g. R2D2 [4], ProtoNet [42]) learn classifiers by minimizing some loss over support sets, losing out on the access to the contextual information provided by global labels.",1,related,1,positive
+"And we compare the proposed CPBO with baseline algorithms MAML [64], iMAML [63], and ANIL [65] on Omniglot [66] and CIFAR-FS [67] datasets.",1,related,1,positive
+"Ablation on losses
+Losses FC-100 CIFAR-FS miniImageNet
+5w1s 5w5s 5w1s 5w5s 5w1s 5w5s Lnovel 48.1 ± 0.8 65.0 ± 0.7 77.6 ± 1.0 89.71 ± 0.6 66.85 ± 0.76 84.50 ± 0.53 Lnovel + Lsyn 67.33 ± 0.7 73.11 ± 0.7 86.33 ± 0.8 90.87 ± 0.5 80.92 ± 0.7 85.05 ± 0.48 Lnovel + Lsyn + Lbase 69.18 ± 0.7 75.99 ± 0.7 88.9 ± 0.8 91.83 ± 0.5 82.16 ± 0.7 87.88 ± 0.5 Lnovel + Lsyn + Lbase + LMMD 69.37 ± 0.7 76.12 ± 0.7 88.99 ± 0.8 91.96 ± 0.5 82.81 ± 0.8 88.63 ± 0.3
+Figure 3.",1,related,0,negative
+"We experiment on the four common few-shot benchmarks : FC-100 [33], CIFAR-FS [5], miniImageNet [51] and tieredImageNet [39].",1,related,1,positive
+"• We validate our approach on standard few-shot benchmarks: CIFAR-FS, FC-100, miniImageNet, and tieredImageNet and achieve state-of-the-art performance in both 5-shot and 1-shot setups.",1,related,1,positive
+"IV, we show the classification accuracies on popular datasets including miniImageNet, tieredImageNet, CIFAR-FS and CUB-2002011 datasets.",1,related,1,positive
+"In this section, we show the results on four standard few-shot learning benchmarks: miniImageNet [13], tieredImageNet [18], CUB-200-2011 [21] and CIFAR-FS [22].",1,related,1,positive
+"In our paper, we propose to employ meta-learning [4, 9, 26] to learn a parameter initialization.",1,related,1,positive
+"For the experiment, we simulated federated meta-learning using data from three popular datasets, including Omniglot [13], CIFARFS [4], and Mini-ImageNet [25].",1,related,1,positive
+"For fair comparison, we follow previous works (Vinyals et al. 2016; Ren et al. 2018; Bertinetto et al. 2018) to split these datasets into training, validation and testing subsets, respectively.",1,related,0,negative
+"We use four popular benchmark datasets in our experiments: miniImageNet(Vinyals et al. 2016), tieredImageNet (Ren et al. 2018), Caltech-UCSD Birds-200-2011 (CUB)(Chen et al. 2019b), and CIFAR-FS(Bertinetto et al. 2018).",1,related,1,positive
+"We build on the ProtoNet [26] and the R2D2 [96] methods, and evaluate on FC100 [58] and CIFAR-
+FS [96] datasets.",1,related,1,positive
+", miniImageNet [23], CIFAR-FS [24], and Omniglot [25], demonstrate that our method performs favourably against previous robust MAML methods",1,related,1,positive
+"We first implement the proposed IMC hybrid model on mini-ImageNet to compare with the state-of-the-art works including MatchingNet [39], ProtoNet [32], LSTM [28], MAML [7],
+RelationNet [33], R2-D2 [2] and LMPNet [9] etc.",1,related,1,positive
+"Besides, we implement the proposed method in other common FSL datasets including CIFAR-FS, FC100 and tiered-ImageNet.",1,related,1,positive
+"We report the experiments on CIFAR-FS, FC100, mini-ImageNet and tiered-ImageNet datasets in 5-way 5-shot and 5-way 1-shot settings respectively.",1,related,1,positive
+"For example, L2 normalization brings +6.76% improvements in 1-shot setting and + 1.75% in 5-shot setting on CIFAR-FS dataset.",1,related,1,positive
+"From the results, we can find that, compared with the reproduced ProtoNet, our proposed method has better performance on CIFAR-FS with +14.08% and + 6.97% performance improvements on 1-
+ProtoNet* 46.32 ± 0.82 70.43 ± 0.73 36.83 ± 0.74 50.92 ± 0.71 43.13 ± 0.83 65.88 ± 0.76 OM 52.97 ± 0.86 74.44 ± 0.70 38.33 ± 0.71 52.43 ± 0.72 46.24 ± 0.89 67.13 ± 0.74 OC 59.68 ± 0.85 75.65 ± 0.68 38.78 ± 0.70 50.16 ± 0.70 53.79 ± 0.91 70.05 ± 0.75 IMC (Ours) 60.40 ± 0.86 77.40 ± 0.68 39.41 ± 0.74 53.50 ± 0.72 51.55 ± 0.90 69.96 ± 0.74
+The best performances are highlighted
+shot and 5-shot settings respectively.",1,related,0,negative
+"In order to validate the efficacy of our method, we conduct experiments on single-domain, cross-domain and unsupervised FSL with a wide range of benchmark datasets including miniImageNet, tieredImageNet, CIFAR-FS and CUB.",1,related,1,positive
+"The utility of our method is demonstrated on the state-of-the-art results consistently achieved on several benchmarks includingminiImageNet, tieredImageNet, CIFAR-FS, CUB, Cars, Places and Plantae, in all settings of single-domain, cross-domain and unsupervised FSL.",1,related,1,positive
+"For miniImageNet and CIFAR-FS, the initial learning rate is set as 0.15 and 0.05 for
+tieredImageNet.",1,related,1,positive
+"TABLE 6 Ablation Study of CGR and Hardness-Aware PatchMix on tieredImageNet and CIFAR-FS
+Model tieredImageNet CIFAR-FS
+1-shot 5-shot 1-shot 5-shot
+w/o 72.28 86.24 76.57 88.15 vanilla 72.13 86.71 76.42 88.21 Softmax 72.54 86.78 77.06 87.27 CGR 73.48 87.35 77.87 88.94 vanilla 72.56 86.39 76.97 87.83 w/o H 72.78 86.67 77.02 88.10 local 72.81 86.81 77.30 88.52 global 73.48 87.35 77.87 88.94
+Authorized licensed use limited to the terms of the applicable license agreement with IEEE.",1,related,1,positive
+"(3) Our final choice of gumbel-softmax benefits the model with 0.53% and 0.52% higher accuracies on 1-shot and 5-shot tasks onminiImageNet, and consistent improvement on CIFAR-FS and tieredImageNet.",1,related,0,negative
+"We adopt three datasets including miniImageNet, tieredImageNet and CIFAR-FS in the single domain setting, where the model is trained on the metatrain set of each dataset and tested on the corresponding meta-test set.",1,related,1,positive
+"On tieredImageNet and CIFAR-FS the results are nearly consistent with those on miniImageNet (e.g., our model leads by 2.47% and 1.69% in 1-shot and 5-shot on CIFARFS).",1,related,1,positive
+"Apart from [n/2,2], we took [n-1, 2] as rrange, and performed experiments on the CIFAR-FS dataset with rrange equals to [31,2].",1,related,1,positive
+We perform experiments on CIFAR-FS dataset and fix the number of classes i.e. k as 5 and query set size as 75 (15 query samples per class).,1,related,1,positive
+"Specifically, we repeat our experiments using WRN-28-10 (Wide Resnet with width 28 and depth 10) [34] and conv (64)×4 (CNN with 4 layers and 64k channels in the kth layer) [14] on CIFAR-FS [27] for both 1-shot and 5-shot settings and report their results in Table II.",1,related,1,positive
+"We demonstrate the effectiveness of our technique by performing experiments on two benchmarks datasets in few-shot-learning, specifically, CIFAR-FS [27] and MiniImageNet [14].",1,related,1,positive
+"On CIFAR-FS dataset, our method yields significant improvement of ≈ 11 − 29% on clean data and ≈ 28−35% on adversarial data for 1-shot while ≈ 8−32% on clean data and ≈ 31− 40% on adversarial data for 5-shot settings), over existing state-of-the-art methods.",1,related,0,negative
+In Table VII we vary the quantity of the query set from 5 samples per class (i.e. query set size = 25) to 25 samples per class (i.e. query set size = 125) on CIFAR-FS for 5- way 1-shot setting.,1,related,1,positive
+EQ-TARGET;temp:intralink-;e003;116;169 rgminθ;φLbþrðDbaseÞ þ RðθÞ þ RðφÞ; (3),1,related,1,positive
+"We validate our model on 6 benchmark few-shot datasets: CIFAR-FS (Bertinetto et al., 2019), Mini-ImageNet (Russakovsky et al., 2015), Tiered-ImageNet (Russakovsky et al., 2015), Cars, CUB and VGG-Flower, for few-shot classification and 3 additional benchmark standard image classification datasets:…",1,related,1,positive
+"For meta-training, we use CIFAR-FS (Bertinetto et al., 2019) and Mini-ImageNet (Russakovsky et al., 2015).",1,related,1,positive
+"ANIL [32], R2D2 [31] and MTL [17] are obtained from the work [27] which implemented open-sourced codes using the original paper settings.",1,related,1,positive
+"From Table VI, we can observe that FSL methods, including ProtoNet, R2D2, MTL, and Ours, acquire significant performance promotion with larger image size.",1,related,1,positive
+"In addition, the evaluation results of Versa [30], ANIL [32], R2D2 [31] and MTL [17] are obtained from the work [27] which implemented open-sourced codes using the original paper settings.",1,related,1,positive
+"In line with recent meta-learning strategies (e.g. Bertinetto et al., 2019; Raghu et al., 2020), we keep ψ fixed during our method’s first stage while only adapting the classifier φ to learn from data streams.",1,related,1,positive
+We sample B base classes from CIFAR-FS to build the base dataset.,1,related,1,positive
+"Free-lunch did not share the features on tieredImageNet and CIFAR-FS, thus we have taken the pre-trained WRN28+RTloss backbone of Mangla et al. [39] to extract the features, where we use this same backbone to implement Free-lunch with its official code and we have explored and selected an appropriate w for Free-lunch.",1,related,0,negative
+"Here, the number B of base classes of miniImageNet, CIFAR-FS, CUB, and tieredImageNet is 64, 64, 100, and 351, respectively.",1,related,1,positive
+"We design two cross-domain scenarios: miniImageNet → CUB, CIFAR-FS → CUB, where CUB is the target domain while both miniImageNet and CIFAR-FS are the source domains.",1,related,1,positive
+"10, we consider in-domain setting (CUB, top) and cross-domain setting (CIFAR-FS → CUB, bottom), both of which adopt same 5way1shot novel task from CUB.",1,related,1,positive
+"B.6 Learned transport plan based on low-level OT
+Taking the 5way1shot task on CIFAR-FS as an example, we further explore the per-example weights learned by our low-level OT.",1,related,0,negative
+"Datasets We evaluate our proposed method on several standard few-shot classification datasets with different levels of granularity, including miniImageNet [33], tieredImageNet [34], CUB [35], and CIFAR-FS [36].",1,related,1,positive
+"Moreover, H-OT under the CIFAR-FS→ CUB (blue bar in the 3rd column) scenario still outperforms Free-Lunch under CUB (orange bar in the 1st column).",1,related,1,positive
+"B.1 Summary of the test results
+To explore how our proposed model improves its baseline (Free-Lunch), we perform the experiments on 10,000 tasks from CIFAR-FS dataset using these two distribution calibration models, where the statistics about the classification results are shown in Fig.",1,related,0,negative
+"We now conduct experiments on the most common setting in few-shot classification, 1-shot and 5-shot classification, where the results of different models on miniImageNet, tieredImagenet, CUB and CIFAR-FS are shown in Tables 1 and 2.",1,related,1,positive
+"We use the same hyperparameter value for all datasets except for λ. Specifically, the number of generated features is 750, the in Sinkhorn algorithm is 0.01, the α in (10) is 0.21; and λ is 0.5, 1, 1 and 0.8 for miniImageNet, tieredImageNet, CUB, and CIFAR-FS, respectively, selected by a grid search using the validation set.",1,related,1,positive
+"8, we visualize the adaptive cost learned from low-level OT and the transport plan learned from the high-level OT given the adaptive cost on CIFAR-FS for 5way1shot task.",1,related,1,positive
+"2, we now compare the performance of the hybrid fine-tuning strategy (HFT-Last1/HFT-All) with that of the traditional finetuning strategy (FT-Last1/FT-All) under different pretraining methods including RFS-simple [29], SKD-GEN0 [41], and R2D2 [42].",1,related,1,positive
+"Based on the hands-on hybrid fine-tuning strategy obtained in Section 4.2, we now compare the performance of the hybrid fine-tuning strategy (HFT-Last1/HFT-All) with that of the traditional finetuning strategy (FT-Last1/FT-All) under different pretraining methods including RFS-simple [29], SKD-GEN0 [41], and R2D2 [42].",1,related,1,positive
+"We conduct experiments on four widely-used few-shot learning benchmark datasets for general object recognition and fine-grained classification, including miniImageNet [25], tieredImageNet [26], CIFAR-FS [2] and CUB [34].",1,related,1,positive
+"• We conduct comprehensive experiments on four few-shot benchmark datasets, i.e., miniImageNet, tieredImageNet, CIFAR-FS and CUB, for demonstrating our superiority over state-of-the-art FSL and SSFSL methods.",1,related,1,positive
+"To avoid expensive training from scratch or fine-tuning over the support set per task, we employ ridge regression that admits a closed form solution [6] that can be computed directly in the inner loop of meta-learning.",1,related,1,positive
+"In Table 6 below we report the accuracy of our proposed method on all benchmarks, note that for FC100 and CIFAR-FS we believe to be among the first to conduct experiments in the unbalanced setting.",1,related,0,negative
+"In Appendix we also show the performance of our proposed method on other benchmarks such as FC100 (Oreshkin et al., 2018) and CIFAR-FS (Bertinetto et al., 2019).",1,related,1,positive
+"In this section we further conduct experiments on two other well-known Few-Shot datasets: 1) FC100 (https://github.com/ElementAI/TADAM) is a recent split dataset based on CIFAR-100 (Krizhevsky et al., 2009) that contains 60 base classes for training, 20 classes for validation and 20 novel classes for evaluation, each class is composed of 600 images of size 32x32 pixels; 2) CIFAR-FS (https://github.com/bertinetto/r2d2) is also sampled from CIFAR-100 and shares the same quantity of classes in the base-validation-novel splits as for mini-Imagenet.",1,related,1,positive
+"For tiered-Imagenet we set Tkm, Tvb and smax to be 10, 100, 2 in the balanced setting, 100, 100, 1 in the unbalanced setting; for CUB we set them to be 10, 5, 5 in both balanced and unbalanced settings; and for FC100 and CIFAR-FS we set the hyperparameters to be the same as mini-Imagenet.",1,related,1,positive
+In Appendix we also show the performance of our proposed method on other well-known Few-Shot benchmarks such as FC100 [30] and CIFAR-FS [4].,1,related,1,positive
+"Thus, ""DS+R2D2"" performs better on Huffpost than ""BERT+R2D2"", but worse on Banking77 and Clinc150.",1,related,0,negative
+"For the sake of fairness, the classifiers of these two algorithms use R2D2, so we constructed a comparison item with BERT as encoder.",1,related,1,positive
+"For the CIFAR-FS dataset, our method outperforms the sub-optimal method by 0.4% on 1-shot and 0.5% on 5- shot.",1,related,1,positive
+Our method also consistently outperforms the other state-of-the-arts methods under both 1-shot and 5-shot settings on the CIFAR-FS and FC100 datasets.,1,related,0,negative
+"To evaluate the effectiveness of the ICRL-Net, we conducted extensive experiments on four publicly available and widely used few-shot visual recognition benchmarks, i.e., miniImageNet, tieredImageNet, CIFAR-FS, and FC100 datasets.",1,related,1,positive
+"We conducted extensive experiments on four popular fewshot benchmarks: miniImageNet [21], tieredImageNet [31], CIFAR-FS [32], and FC100 [33] datasets.",1,related,1,positive
+"We conduct extensive experiments on four commonly adopted few-shot benchmarks: miniImageNet, tieredImageNet, CIFAR-FS, and FC100 datasets.",1,related,1,positive
+"Notes: This table shows the performance of three state-of-the-art few-shot classifiers applied to the CIFAR-FS (Bertinetto et al., 2019) and Mini-ImageNet (Vinyals et al.",1,related,0,negative
+"To simulate realistic evolving semi-supervised task distributions, we construct a new large-scale dataset and collect 6 datasets, including CIFARFS [12], AIRCRAFT [38], CUB [67], Miniimagenet [56], Butterfly [16] and Plantae [28].",1,related,1,positive
+"To simulate the task distribution shift in SETS, we construct a dataset by composing 6 datasets, including CIFARFS [12], AIRCRAFT [38], CUB [67], Miniimagenet [56], Butterfly [16] and Plantae [28].",1,related,1,positive
+"To investigate the sensitivity of baselines and our method to dataset order, we also performed comparisons on two other dataset sequences, including (i) Butterfly, CUB, CIFARFS, Plantae, MiniImagenet, Aircraft and (ii) CUB, CIFARFS, Plantae, MiniImagenet, Butterfly, Aircraft.",1,related,1,positive
+"We evaluate our proposed method on four standard benchmarks: miniImagenet (Vinyals et al. 2016), Tiered-ImageNet (Ren et al. 2018), CIFAR-FS (Bertinetto et al. 2018), and CUB-200-2011 (Wah et al. 2011). miniImagenet contains 100 randomly chosen classes from
+Algorithm 2: Evaluate the CSCA module…",1,related,1,positive
+"B.2 Details of Datasets
+We evaluated our method on five benchmark datasets to demonstrate its robustness: miniImagenet[35], tieredImagenet[26], CIFAR-FS[2], FC100[22], and CUB[36].",1,related,1,positive
+"For DeepEMD, we do more experiments on CIFAR-FS[2], FC100[22] and CUB[36].",1,related,1,positive
+"We evaluated our method on five benchmark datasets to demonstrate its robustness: miniImagenet[35], tieredImagenet[26], CIFAR-FS[2], FC100[22], and CUB[36].",1,related,1,positive
+"We report the accuracy and ECE on CIFAR-FS, FC100 and CUB-200-2011.",1,related,0,negative
+Dataset derived from CIFAR100[15]: CIFAR-FS[2] contains 100 classes.,1,related,1,positive
+"Algorithm Backbone CIFAR-FS,5-way FC100,5-way CUB-200-2011,5-way1-shot 5-shot 1-shot 5-shot 1-shot 5-shot Rethink-Distill[34] ResNet-12 73.90±0.80 86.90±0.50 44.6±0.7 60.9±0.6 – –
+BML[44] ResNet-12 73.04±0.47 88.04±0.33 45.00±0.41 63.03±0.41 76.21±0.63 90.45±0.36 DeepEMD[42] ResNet-12 73.80±0.29 86.76±0.62 45.17±0.26 60.91±0.75 75.81±0.29 88.35±0.55 DeepEMD+BEL(ours) ResNet-12 73.96±0.29 86.92±0.62 45.10±0.26 61.07±0.74 75.75±0.29 88.56±0.54
+Table 6: Few-shot classification expected calibration error(ECE)%↓ on CIFAR-FS, FC100 and CUB-200-2011 datasets.",1,related,1,positive
+"We incorporate them into the RRML (Bertinetto et al., 2018) to build a more effective metalearning system.",1,related,0,negative
+The train/val/test classes are same to miniImageNet [3].,1,related,0,negative
+"As mentioned in (Bertinetto et al., 2019), the Woodbury formulation,
+W ∗ = ZT (ZZT + λI)−1Y
+is used to alleviate the problem, leading to an O(d3) complexity, where d is the hidden size hyperparameter, fixed to some value (see Appendix H).",1,related,1,positive
+"As mentioned in (Bertinetto et al., 2019), the Woodbury formulation, W ∗ = Z (ZZ + λI)−1Y is used to alleviate the problem, leading to an O(d(3)) complexity, where d is the hidden size hyperparameter, fixed to some value (see Appendix H).",1,related,1,positive
+"We also specify an efficient instantiation of the meta-optimization procedure via a closed-form ridge regressor (Bertinetto et al., 2019).",1,related,1,positive
+"a few labeled samples [2, 3, 12, 13], we employ episodic training to",1,related,0,negative
+"For our proposed CAMtrast, we train 30 epochs (t = 30) for warmup on miniImageNet and CIFAR-FS, and 50 epochs (t = 50) on tieredImageNet.",1,related,1,positive
+"Cross-domain few-shot recognition: To further evaluate the transfer performance in a more realistic scenario, we also conduct few-shot experiments with domain shifts between tieredImageNet and CIFAR-FS.",1,related,1,positive
+"We exploit CaSE as building block of a hybrid training protocol called UpperCaSE which is based on the idea of adjusting the body of the network in a single forward pass over the context, and reserving the use of expensive fine-tuning routines for the linear head, similarly to methods like MetaOptNet (Lee et al., 2019), R2D2 (Bertinetto et al., 2018), and ANIL (Raghu et al., 2019).",1,related,1,positive
+"MetaOptNet [14] and [28,3] reset the inner optimization by dividing the model into feature extractor and head classifier and apply on complex base learner like ResNet-12 without overfitting.",1,related,1,positive
+"Conventional benchmarks of FSL only consider category shift, i.e. the categories are disjoint for training and testing, such as miniImageNet (Vinyals et al., 2016) and CIFAR-FS (Bertinetto et al., 2019).",1,related,1,positive
+"We evaluate our method FewTURE using two different Transformer backbones and compare our results against the current state of the art in Table 1 for the miniImageNet and tieredImageNet, and in Table 2 for the CIFAR-FS and FC100 datasets.",1,related,1,positive
+"We train and evaluate our methods using four popular few-shot classification benchmarks, namely miniImageNet [48], tieredImageNet [37], CIFAR-FS [4] and FC-100 [34].",1,related,1,positive
+"We train and evaluate our methods using four popular few-shot classification benchmarks, namely miniImageNet [48], tieredImageNet [36], CIFAR-FS [4] and FC-100 [33].",1,related,1,positive
+"This case study demonstrates the capability of our tool in boosting performance on a natural image dataset, CIFAR-FS [53].",1,related,0,negative
+"We evaluated the learner and shot selection algorithms with four widely used datasets: mini-ImageNet [50], tieredImageNet [51], MNIST [52], and CIFAR-FS [53].",1,related,1,positive
+"To demonstrate the generalization of our approach to new tasks, we used the MNIST and CIFAR-FS datasets because there are no base learners pre-trained on them.",1,related,1,positive
+"For MNIST and CIFAR-FS, we used all the unseen classes (10 and 20, respectively) in the tasks.",1,related,1,positive
+"Regarding baselines, we use the MAML (Finn et al., 2017), Matching Nets (Vinyals et al., 2016), Meta-SGD (Li et al., 2017), MAML++ (Antoniou et al., 2019), Meta-Curvature (MC) (Park & Oliva, 2019), Meta Networks (Munkhdalai & Yu, 2017), Neural Statistician (Edwards & Storkey, 2017), and Memory Mod (Kaiser et al., 2017), Relation Network (Sung et al., 2018), GNN (Garcia & Bruna, 2017), R2-D2 (Bertinetto et al., 2018), CC+rot (Gidaris et al., 2019).",1,related,1,positive
+"We verify the effectiveness of Eigen-Reptile alleviate overfitting sampling noise on two clean few-shot classification datasets Mini-Imagenet (Vinyals et al., 2016) and CIFAR-FS (Bertinetto et al., 2018).",1,related,1,positive
+"The efficacy of our method is validated on CIFAR-fs [1] and mini-ImageNet [28] datasets, and we have observed that our approach can provide improvements in model accuracy of up to 2% on standard meta-learning benchmark, while reducing the model size by more than 75%.",1,related,1,positive
+"Learning task-specific compressed metamodels
+We discuss here the results of task-specific pruning obtained using METADOCK on standard 4-Conv models with 64 and 128 channels for CIFAR-fs 5-way 1-shot and 5-way 5-shot settings.",1,related,1,positive
+"The former attains an average meta-test accuracy score of 70.15% on CIFARfs 5-way 1-shot (Table 3), while the latter scores 67.25%, thus increasing the performance by an absolute margin of 2.9%.",1,related,0,negative
+We study the performance of METADOCK on standard 4-conv models trained on mini-ImageNet [28] and CIFARfs [1] datasets for several different choices of pruning budget.,1,related,1,positive
+"The results for continuous scheme as well as our approach on CIFAR-fs, 5-way, 5-shot are shown in Table 1.",1,related,1,positive
+"Furthermore, our method also outperforms all previous works by at least 8.6% on PGD adversarial examples for 1-shot classification on CIFAR-FS with ResNet12.",1,related,0,negative
+We present our experimental results on two standard benchmarks: miniImageNet [30] in Table 1 and CIFARFS [1] in Table 2.,1,related,1,positive
+"To fully evaluate the effectiveness of our methods, we conduct extensive experiments on two standard few-shot classification benchmarks: miniImageNet [30] and CIFARFS [1].",1,related,0,negative
+"To comprehensively evaluate our methods, we adopt the widely-used few-shot benchmark datasets miniImageNet [30] and CIFAR-FS [1].",1,related,1,positive
+"We construct a large-scale benchmark and collect 10 datasets with varying degree of similarity and difficulty, with default domain arrival order of Quickdraw [31], AIRCRAFT [45], CUB [77], Miniimagenet [70], Omniglot [35], Plantae [28], Electronic from Logo-2K+ [73], CIFARFS [10], Fungi [62], Necessities from Logo-2K+ [73].",1,related,1,positive
+"We use the following small-scale datasets for meta-learning with MLPs: Omniglot [26, 52], CIFARFS [7], VGG-Flower [37, 27] and Aircraft [33, 27].",1,related,1,positive
+"All the above discussed few-shot methods focused on the standard setting where the base classes and novel classes are from the same domain, and are evaluated on natural images using the current standard benchmarks for few-shot classification: Omniglot [40], CUB [79], miniImageNet [78], tieredImageNet [59] and CIFAR-FS [5].",1,related,1,positive
+"…can be the weights of a neural network that acts as a feature extractor that will help a task-specific classifier or regressor parameterized by the base parameters to solve the task at hand (Raghu, Raghu, Bengio, & Vinyals, 2020; Lee, Maji, Ravichandran, & Soatto, 2019; Bertinetto et al., 2019).",1,related,1,positive
+"We examined the 5-way (5 classes) 1-shot task of CIFAR-FS, which is a kind of standard task in one-shot classification.",1,related,0,negative
+"Also, for transfer learning, we used CIFAR-FS (Bertinetto et al. 2018) with Torchmeta (Deleu et al.",1,related,1,positive
+"Also, for transfer learning, we used CIFAR-FS (Bertinetto et al. 2018) with Torchmeta (Deleu et al. 2019).",1,related,1,positive
+"We conduct few-shot classification experiments on four widely used few-shot image recognition benchmarks: miniImageNet [53], tieredImageNet [54], CIFAR-FS [37], and FC100 [24].",1,related,1,positive
+Note that the proposed method is fundamentally different from R2-D2 and MetaOptNet because our method requires neither episodic meta-learning nor bi-level optimization.,1,related,1,positive
+"We first evaluate the impact of pre-training regime (including algorithm and dataset), as well as neural architecture on FSL benchmarks Meta-Dataset [61] (train on 8 datasets), miniImageNet [62], and CIFAR-FS [8].",1,related,1,positive
+"For miniImageNet and CIFAR-FS, the convention is to evaluate 5-way-1-shot (5w1s) and 5-way-5-shot episodes, and the size of the query set for each episode is fixed to 15× 5.",1,related,1,positive
+"7.3.2 Meta-Ridge Regression (MRR) Our next baseline comes from the meta-learning work reviewed in Section 2.3 by Harrison et al. (2018b,a), Bertinetto et al. (2019), Lee et al. (2019), and O’Connell et al. (2021), wherein ridge regression is used as a base-learner to meta-learn parametric features…",1,related,1,positive
+Boffi et al. (2020) discuss the case where V̄ is a Lyapunov function in the sense of Lyapunov’s direct method (Lyapunov 1892) with x∗(t) ≡ 0.,1,related,1,positive
+"…of IBP with other few-shot learners: As contending meta-learning algorithms, we choose the vanilla MAML along with notable meta-learners such as Meta-SGD (Li et al., 2017), Reptile (Nichol et al., 2018), LLAMA (Grant et al., 2018), R2-D2 (Bertinetto et al., 2019), and BOIL (Oh et al., 2021).",1,related,1,positive
+"Comparison of IBP with other few-shot learners: As contending meta-learning algorithms, we choose the vanilla MAML along with notable meta-learners such as Meta-SGD (Li et al., 2017), Reptile (Nichol et al., 2018), LLAMA (Grant et al., 2018), R2-D2 (Bertinetto et al., 2019), and BOIL (Oh et al., 2021).",1,related,1,positive
+For the experiments we have used the novel CIFARFS [8] dataset.,1,related,0,negative
+Accuracies and timings for our MAML implementation on CIFAR-FS are presented in Table 1.,1,related,0,negative
+The testing results will be shown on a publicly available few-shot learning dataset CIFAR-FS [8].,1,related,0,negative
+The exact classes that go into each split are important and are defined in [8].,1,related,1,positive
+"Instead, we consistently use meta-batch size of 4 as it leads to slightly better performance on CIFAR-FS [8] dataset during our experiments.",1,related,0,negative
+We have taken the CIFAR-FS dataset for our experiments as it hasn’t been analyzed by the MAML authors and is also faster to compute than miniImageNet.,1,related,1,positive
+"For MiniImagenet (Table 1) we report on both versions “SOTp” and “SOTt” over a range of backbone architectures, while for the smaller datasets CIFAR-FS and CUB (Table 2) we focus on the ‘drop-in’ version “SOTp” and only the strongest wrn-28-10 architecture.",1,related,1,positive
+"Our main experiment is a comprehensive evaluation on the standard few-shot classification benchmarks MiniImagenet [39], CIFAR-FS [1], and CUB [40], with detailed results in Tables 1 and 2.",1,related,0,negative
+"Similarly, experimental results on the tiered-ImageNet (in Table 2), CUB (in Table 3), and CIFAR-FS (in Table 4) datasets further suggest our superiority.",1,related,1,positive
+"On the CIFAR-FS dataset, our method outperforms compared methods by more than 8% and 5% in the 1-shot and 5-shot tasks.",1,related,0,negative
+"We used the mini-ImageNet [59], tiered-ImageNet [64], CUB [65], and CIFAR-FS [66] datasets for few-shot classification.",1,related,1,positive
+"Thus, we choose m ¼ 16 in the classification tasks for the miniImageNet, tiered-ImageNet, CUB, and CIFAR-FS dataset.",1,related,1,positive
+"Comparisons With the State-of-the-Art Few-Shot Classification Methods on the CIFAR-FS Dataset
+Backbone Method Category 1-shot 5-way 5-shot 5-way
+ConvNet
+METAVRF [33] Model 63:10 0:70 76:50 0:90 MAML [1] Optim 56:50 1:90 70:50 0:90
+FOMAML [1] Optim 55:60 1:88 69:52 0:91 Reptile [71] Optim 57:50 0:45 71:88 0:42 Lazy-Reptile [35] Optim 59:36 1:44 74:90 1:28 Ours Optim 65:43 0:90 81:50 1:08
+ResNet12
+Shot-Free [68] Metric 69.20 84.70 TEWAM [29] Metric 70.40 81.30 ProtoNet [23] Metric 72:20 0:70 83:50 0:50 MetaOptNet [75] Metric 72:60 0:70 84:30 0:50 RENet [26] Metric 74:51 0:46 86:60 0:32 DSN [30] Metric 75:60 0:90 86:20 0:60
+MCGN [85] Metric 76:45 0:99 88:42 0:23 RFS [86] Metric 73:90 0:80 86:90 0:50 Rizve et al. [87] Metric 77:87 0:85 89:74 0:57 MABAS [88] Aug 73:51 0:92 85:49 0:68
+Ours Optim 86:40 0:80 94:87 0:50
+‘Aug’ means the data augmentation technique for few-shot learning.
+while our method uses a product manifold neural network, and learns a curvature generation scheme and a curvature updating scheme.",1,related,1,positive
+CIFAR-FS is a dataset derived from CIFAR-100 [67].,1,related,1,positive
+"Our proposed method could likely be extended to Relation Networks [22], MetaOptNet [15], or R2D2 [3], with a decoder network to visualize embeddings.",1,related,1,positive
+"From Figure 9, we can see that on the MiniImagenet dataset and the CIFAR-FS dataset, the classification accuracy of the WPGN is higher than that of the DPGN on the three tasks.",1,related,1,positive
+"This data can be found here: CUB-200-2011: https://resolver.caltech.edu/CaltechAUTHORS:20111026-120541847, MiniImagenet: https://www.image-net.org/, CIFAR-FS: DOI: 10.1109/IROS45743.",1,related,0,negative
+"We selected three types of standard datasets in FSL: MiniImageNet [9], CUB-2002011 [32] and CIFAR-FS [4].",1,related,1,positive
+"Note that it is difficult to present a fair and direct comparison between the conventional FS-C and our few-shot classification task since FS-C is always evaluated on single-label classification benchmarks [2,32,57,74,76], whereas our task is evaluated on multi-label benchmarks [13,36], which are irreducible to a single-label one in general.",1,related,1,positive
+"Following the split in [2], we used 64 classes to construct the base set, 16 and 20 for validation and novel set.",1,related,1,positive
+"For this purpose, we employ the miniImageNet [8, 36], tieredImageNet [38], CIFAR-FS [5], and CUB-2002011 [49] datasets.",1,related,1,positive
+"On the other hand, while our approach does not report the best result on CUB-200, we are on par with the best method FRN and produce the best performance on CIFAR-FS (≈ 5%).",1,related,0,negative
+"For this purpose, we employ the miniImageNet [8, 36], tieredImageNet [38], CIFAR-FS [5], and CUB-2002011 [49] datasets.
+miniImageNet consists of a subset of 100 object classes from ImageNet [8] with 600 images per class.",1,related,1,positive
+"In this work, we leverage the tools of NTK from [26, 37] to analyze MAML in the few-shot learning setting, and our analysis can be easily generalized to other variants of MAML such as [9, 50, 51].",1,related,1,positive
+"Here we compare SUN with state-of-the-arts (SoTAs), including CNN based methods and ViT based one, on miniImageNet [50], tieredImageNet [39] and CIFAR-FS [3].",1,related,1,positive
+"We evaluate the proposed method on three benchmark datasets, which are mini -ImageNet [33], CUB-200-2011 (CUB) [34] and CIFAR-FS [4].",1,related,1,positive
+"We evaluate the proposed method on three benchmark datasets, which are mini -ImageNet [33], CUB-200-2011 (CUB) [34] and CIFAR-FS [4]. mini -ImageNet consists of 100 categories randomly selected from the ImageNet dataset [27] with each category containing 600 images sized 84×84.",1,related,1,positive
+"Following [5], we split the data set into 64 classes for training, 16 classes for validation, and 20 classes for test, respectively.",1,related,0,negative
+"We train MetaOptNet-SVM (Lee et al., 2019) for benchmark datasets CIFAR-FS (Bertinetto et al., 2018) and FC100 (Oreshkin et al., 2018) in 1-, 5-, and 10-shot settings.",1,related,1,positive
+"3) We conduct extensive experiments on miniImageNet (Vinyals et al., 2016), tieredImageNet (Ren et al., 2018), and CIFAR-FS (Bertinetto et al., 2018) datasets where the unlabeled set has in-distribution and out-of-distribution (OOD) classes.",1,related,1,positive
+"We conduct experiments on three datasets: miniImageNet (Vinyals et al., 2016), tieredImageNet (Ren et al., 2018), and CIFAR-FS (Bertinetto et al., 2018).",1,related,1,positive
+3 Relation network[33] CVPR 18 InceptionV2 No / 50.,1,related,0,negative
+11 Relation net (T)[33] CVPR18 Conv4 No 15 50.,1,related,1,positive
+"We have many choices, such as logistic regression (Kleinbaum et al. 2002), kernel-based nonlinear model (Liu 2003) and differentiable closed-form solvers (Bertinetto et al. 2018).",1,related,1,positive
+"We evaluate the performance of the proposed method using standardized few-shot classification datasets: miniImageNet [1], CUB [19] and CIFAR-FS [20].",1,related,1,positive
+"We consider four different datasets: (i) Mini-ImageNet (Vinyals et al., 2016); (ii) CIFAR-FS (Bertinetto et al., 2019); (iii) FC-100 (Oreshkin et al., 2018); and (iv) EMNIST (balanced) (Cohen et al., 2017).",1,related,1,positive
+"Throughout the experiments, we consider four different datasets: (i) MiniImageNet (Vinyals et al., 2016) and (ii) CIFAR-FS (Bertinetto et al., 2019), (iii) FC-100 (Oreshkin et al., 2018) and EMNIST (balanced) (Cohen et al., 2017).",1,related,1,positive
+"We report few-shot classification within domain by using Conv-4, WRN-28-10, ResNet-12 and ResNet-18 in Table 16.",1,related,1,positive
+"For the within-domain experiments, we use two backbones: Conv-4 and ResNet-12.",1,related,1,positive
+"The results using ResNet-12 are reported in Table 5, the results using Conv-4 are reported in the appendix B.5.",1,related,0,negative
+"We also provide results for few-shot within domain using a ResNet-12 backbone under data augmentation in the meta-training stage following (Zhang et al., 2021).",1,related,0,negative
+"Following the prior works, we configure the ResNet-12 backbone as 4 residual blocks.",1,related,1,positive
+"We evaluate our method on four widely used few-shot recognition benchmarks: miniImageNet (Vinyals et al. 2016), tieredImageNet (Ren et al. 2018), CIFAR-FS (Bertinetto et al. 2019), and FC100 (Oreshkin, López, and Lacoste 2018).",1,related,1,positive
+"On CIFAR-FS, the improvements over SKD-GEN1 (our implementation) for 1-shot and 5-shot are 0.7% and 0.9%, respectively.",1,related,0,negative
+"With the combination of distillation loss on the soft-labeled base dataset, our method (Soft LabelHalluc + finetuning) eliminates the overfitting problem yielding 5-shot gains of 5.57%, 3.8% and 5.3% on miniImageNet, CIFAR-FS, and FC100, respec-
+tively, over finetuning with the episode examples only.",1,related,1,positive
+"The use of soft labels over hard labels contributes 5-shot classification gains of 4.92% in miniImageNet, 4.2% in CIFAR-FS, and 4.8% in FC100.",1,related,0,negative
+"Though using the arcMax alone yieds an improvement of 1.18% over finetune in miniImageNet, we find that combining arcMax with centroid alignment leads to inferior results in our experimental setup based on ResNet-12 and SGD. AssoAlign with softMax and centroid alignment outperforms finetune by 3.44%, 1.9% and 2.7%, whereas our method outperforms AssoAlign by 2.13%, 1.9% and 3.6% in miniImageNet, CIFAR-FS and FC100 respectively.",1,related,1,positive
+"…evaluate our approach across five standard benchmarks, i.e., mini-ImageNet (Ravi and Larochelle 2016), tiered-ImageNet (Ren et al. 2018), Caltech-UCSD Birds-200-2011 (CUB) (Wah et al. 2011), CIFAR-FS (Bertinetto et al. 2018) and Fewshot-CIFAR100 (FC100) (Oreshkin, López, and Lacoste 2018).",1,related,1,positive
+"We carry out experiments on five benchmark datasets, including mini-ImageNet [56], tiered-ImageNet [54], CIFARFS [57], FC100 [25], and CUB [58].",1,related,1,positive
+"We carry out experiments on five benchmark datasets, including mini-ImageNet [56], tiered-ImageNet [54], CIFAR-
+FS [57], FC100 [25], and CUB [58].",1,related,1,positive
+"We follow the split introduced in [57] to divide CIFAR-FS into 64 classes as base set, 16 classes as validation set, 20 classes as novel set, and divide FC100 into 60 classes as base set, 20 classes as validation set, 20 classes as novel set.",1,related,1,positive
+"Results on CIFAR-FS are shown in Table 4, where our method also gets competitive results.",1,related,0,negative
+"We perform experiments on four widely used FSL benchmarks to verify the effectiveness of the proposed method, i.e., miniImageNet [54], tieredImageNet [40], CIFAR-FS [3], and CUB [55]. miniImageNet and tieredImageNet are both derivatives of ImageNet dataset [41], CIFAR-FS is derived from CIFAR-100 dataset [19,52].",1,related,1,positive
+"By comparing the performance of with semantic (the first row) and without semantic (the second row which is our baseline [11] under our framework), we can infer that the semantic knowledge can significantly improve performance (i.e., the performance improvement is 6%, 4% and 8% on miniImageNet, tieredImageNet, and CIFAR-FS respectively).",1,related,1,positive
+"In this section, we compare our proposed SDNN approach against contemporary methods on miniImageNet, CIFAR-FS and tieredImageNet.",1,related,1,positive
+"We perform all our main experiments on three standard datasets used for few shot learning: miniImageNet [40], tieredImageNet [27], and CIFAR-FS [2]. miniImageNet consists of 100 classes randomly picked from the ImageNet dataset [28] with 600 images of size 84×84 pixels per class.",1,related,1,positive
+"• We demonstrate the effectiveness of SDNNs on the miniImageNet, tiered-ImageNet, CIFAR-FS, and ActEV Surprise Activities datasets.",1,related,1,positive
+"For two of the experiments in the original paper (the “Gaussian SDNN + BF3S” experiment performed on the CIFAR-FS and tieredImageNet dataset in Table 1 of the original paper) our SDNN implementation only applied noise and auxiliary losses to the last two blocks of the network, as opposed to the three used in every other experiment.",1,related,1,positive
+"An unmodified version of our method also perform favorably against many prior methods, even achieving state-of-the-art performance on the “CIFAR-FS” dataset without modification.",1,related,0,negative
+"We perform all our main experiments on three standard datasets used for few shot learning: miniImageNet [40], tieredImageNet [27], and CIFAR-FS [2].",1,related,1,positive
+"We execute algorithm 1 to find the worst-case 5-way 10-shot support examples on CIFAR-FS and FC100 datasets for R2D2, ResNet-Ridge, and the ResNet-SVM algorithms.",1,related,1,positive
+"D Improving support data robustness with adversarial training
+In Table 6, we show the projected embeddings for the R2D2, MetaOptNet-Ridge, and the MetaOptNetSVM algorithms on the training and the test dataset, when trained in a standard manner vs when trained adversarially.",1,related,1,positive
+"We also see no differences between meta-learners adapting end-to-end, i.e. MAML and MC, and those adapting only the last linear classification layer, i.e. R2D2 and MetaOptNet.",1,related,1,positive
+"For ProtoNet and R2D2 experiments, we use the same architectures as are used in the original papers.",1,related,1,positive
+"The corresponding run times for a single iteration for R2D2 method on FC100 are approximately 1 minute for 1-shot setting, approximately 6 minutes for 5-shot setting, and approximately 20 minutes for 10-shot setting.",1,related,0,negative
+"We conducted experiments on four datasets – CIFAR-FS [8], FC100 [13], miniImageNet [6] and tieredImageNet [32].",1,related,1,positive
+"On CIFAR-FS, we have improved on original methods up to 2.0%, with the largest improvement by 2-way MAML MTM SPSA-Track.",1,related,0,negative
+"In addition, we use MetaOptNet (Lee et al., 2019) and R2D2 (Bertinetto et al., 2018) as representative algorithms from the optimization based meta-learning methods.",1,related,1,positive
+"In this paper, we study this issue and investigate how existing state-of-the-art meta-learners (Snell et al., 2017; Bertinetto et al., 2018; Lee et al., 2019) perform on episodes of varying hardness.",1,related,1,positive
+"We use three standard few-shot classification datasets for our experiments : (i) CIFARFS (Bertinetto et al., 2018); (ii) mini-ImageNet (Vinyals et al.",1,related,1,positive
+"We use three standard few-shot classification datasets for our experiments : (i) CIFARFS (Bertinetto et al., 2018); (ii) mini-ImageNet (Vinyals et al., 2016) and (iii) tieredImageNet (Ren et al., 2018).",1,related,1,positive
+"To start with, we used the R2-D2 base learner [8] and the CIFAR-FS database to evaluate the augmentation performance on support, query and task augmentations as shown in Table 1.",1,related,1,positive
+"We used the R2-D2 base leaner [8], the ”ResNet12” and ”64-64-64-64” backbone for different few-shot learning modes used in our work.",1,related,1,positive
+"We divide the 100 category into meta-training set, metavalidation set, and meta-test set according to [12], with categories of 64, 16, and 20, respectively.",1,related,1,positive
+"We divide the 200 category into base set, validation set, and novel set according to [12], with categories of 100, 50, and 50, respectively.",1,related,1,positive
+"We comprehensively evaluate our proposed method on three challenging benchmark datasets, including miniImageNet, CIFAR-FS and FC100.",1,related,1,positive
+"To further illustrate the effectiveness of our method, we also conducted extensive experiments on CIFAR derivatives (CIFAR-FS and FC100).",1,related,0,negative
+"On CIFAR-FS dataset, our method achieves accuracy of 76.68% and 87.49% in 1-shot and 5-shot scenarios, respectively.",1,related,0,negative
+"In this section, we conduct experiments on three widely used few-shot learning benchmarks: miniImageNet [42], CIFAR-FS [2], FC100 [32].",1,related,1,positive
+"…the model parameters given the hyperparameters (in each task) and the outer level is to optimize the hyperparameters via a meta-loss (Finn et al., 2017; Finn, 2018; Bertinetto et al., 2018; Zintgraf et al., 2019; Li et al., 2017;
+Finn et al., 2018; Zhou et al., 2018; Harrison et al., 2018).",1,related,1,positive
+"For the cosine classifier experiments, we trained over 1.92, 1.92, and 3.36 million classifiers for mini-ImageNet, CIFAR-FS, and tiered-ImageNet datasets, respectively.",1,related,1,positive
+"E.1 ADDITIONAL LOGISTIC CLASSIFIER EXPERIMENTS
+The experiments of Figure 2 were repeated to perform 16-way classification using a logistic classifier on tiered-ImageNet and CIFAR-FS in Figure A13.",1,related,1,positive
+"Datasets: We perform experiments on four widely-used and publicly available benchmarks: miniImageNet (Vinyals et al., 2016), CIFAR-FS (Bertinetto et al., 2019), tiered-ImageNet (Ren et al., 2018), and CUB (Wah et al., 2011).",1,related,1,positive
+"Before After Improvement Before After Improvement
+5-way 10-way
+1-shot 74.96 75.03 ± 0.19 0.07 ± 0.01 61.46 61.49 ± 0.13 0.03 ± 0.00 5-shot 87.43 87.48 ± 0.13 0.06 ± 0.00 77.73 77.83 ± 0.10 0.10 ± 0.00
+10-shot 89.83 89.88 ± 0.11 0.05 ± 0.00 81.52 81.64 ± 0.09 0.11 ± 0.00 15-way 20-way
+1-shot 53.45 53.47 ± 0.10 0.02 ± 0.00 47.78 47.79 ± 0.07 0.01 ± 0.00 5-shot 70.70 70.99 ± 0.07 0.28 ± 0.00 65.26 65.60 ± 0.03 0.34 ± 0.00
+10-shot 75.37 75.71 ± 0.06 0.34 ± 0.00 70.57 70.99 ± 0.02 0.42 ± 0.00
+Table A6: The Firth bias reduction improvements on the CIFAR-FS dataset shown in Figure 4 in the main paper.",1,related,0,negative
+"We trained Firth penalized and non-penalized cosine classifiers on the mini-ImageNet, tiered-ImageNet, and CIFAR-FS datasets.",1,related,1,positive
+"Next, we compare our proposed few-shot approach with other state-of-the-art methods on CIFAR-FS and FC-100 datasets.",1,related,1,positive
+"(13)
+A.2 EXPERIMENTS ON CIFAR-FS AND FC-100
+Here, we conduct the experiments on the CIFAR-FS and the FC-100 datasets.",1,related,1,positive
+"In this section, we present our experimental results in various few-shot learning benchmarks, including miniImageNet (Vinyals et al., 2016), tieredImageNet (Ren et al., 2018), CIFAR-FS (Bertinetto et al., 2018), and FC-100 (Oreshkin et al., 2018) 3.",1,related,1,positive
+"3Due to page limits, we discuss the experiments on CIFAR-FS and FC-100 in the appendix.
+encoder fθ of the Whole-Classification network, and use it to compute the TAS in the task affinity phase.",1,related,1,positive
+"Here, we fist present the proof of the Theorem 1, and then we provide more experimental results on CIFAR-FS and FC-100 datasets.",1,related,1,positive
+"We compare our method with state-of-the-art FSL methods in the inductive and transductive settings on the miniImageNet, tiered-ImageNet, CUB, and CIFAR-FS datasets, where 1-shot/5-shot 5-way classification were implemented
+and query sets had 15 samples per class.",1,related,1,positive
+"We conducted experiments on four popular datasets: mini-ImageNet [50], tiered-ImageNet [40], CUB [51], and CIFAR-FS [4].",1,related,1,positive
+"We used BigResNet12 on tiered-ImageNet and CIFAR-FS, and ConvNet on the CUB dataset.",1,related,1,positive
+The results on Omniglot and CIFAR-FS are reported in Table 3.,1,related,0,negative
+"We experiment with four datasets for few-shot learning: Omniglot [24], MiniImageNet [50], TieredImageNet [37], and CIFAR-FS [6].",1,related,1,positive
+"(3)Weevaluate the proposedmethod on four benchmark datasets (mini-ImageNet, tiered-ImageNet, CIFAR-FS, FC100) and achieve significant improvements of 2.1%-7.8% compared with other stateof-the-art methods.",1,related,1,positive
+",M θ , where h = [1, 2] denotes the hth head.",1,related,1,positive
+"We follow the split introduced in [2] to divide CIFAR-FS into 64 classes as base set, 16 classes as validation set, 20 classes as novel set, and divide FC100 into 60 classes as base set, 20 classes as validation set, 20 classes as novel set.",1,related,1,positive
+"We carry out experiments on five benchmark datasets, including mini-ImageNet [43], tiered-ImageNet [28], CIFAR-FS [2], FC100 [25], and CUB [44].",1,related,1,positive
+"We validate our BML on four commonly used benchmarks, including miniImageNet [39], tieredImageNet [31], CIFAR-FS [3] and CUB-200-2011 (CUB) [40].",1,related,1,positive
+"As for CIFAR-FS, we surpass all competitors and reach a new SoTA, including LR+ICI [41] which is based on the transductive strategy.",1,related,1,positive
+"(5)
+Then, the gradients of θ include a second-order gradient of θ, because ∇θφTi = I − ∇2θ (∑ (xj ,yj)∈DtrTi l ( fθ(xj), yj )) .",1,related,1,positive
+"Next, meta-update is performed by aggregating the predictions of all the predictors on the query set to obtain final predictions and then using the final predictions to update the shared meta-parameters θ. Formally, the meta-training procedure of A2M is formulated as follows,
+Inner-task adaptation: Fix θ, for e ∈ {1, 2, . . . , E}, φeTi = arg minxφe Ti L(DtrTi ; θ, xφeTi ), Meta-update: Fix {φeTi} E e=1, θ = θ − lθ∇θL(DtsTi ; θ, {φ e Ti} E e=1).",1,related,1,positive
+"2, during inner-task adaptation, we train a bag of diverse algorithms {Ae}Ee=1 separately with the embedded support set and obtain E predictors, i.e., {Ae(DtrTi ; θ)} E e=1.",1,related,1,positive
+"The iteration scheme is formulated as follows:
+Inner-task adaptation: Fix θ, φTi = arg minxφTi L(DtrTi ; θ, xφTi ), (9) Meta-update: Fix φTi , θ = θ − lθ∇θL(DtsTi ; θ, φTi), (10)
+where θ refers to the meta-parameters, i.e., the global parameters shared by all the tasks, and φTi refers to the task-specific parameters, i.e., the local parameters which are different among the tasks.",1,related,1,positive
+"(8)
+For brevity, Xθ = {fθ(xj)}mj=1 and Y = {yj}mj=1, where (xj , yj) ∈ DtrTi (Bertinetto et al., 2019).",1,related,1,positive
+"For example, the taskspecific parameters of a typical gradient-based meta-algotithm, MAML (Finn et al., 2017) φTi is
+φTi = θ − lφTi∇θL(D tr Ti ; θ) = θ −∇θ ( ∑ (xj ,yj)∈DtrTi l ( fθ(xj), yj )) .",1,related,1,positive
+"2, the three algorithms are trained over the embedded support set independently, i.e,:
+A1: φ1Ti ={ck} K k=1 = {
+1
+N ∑ zj∈DtrTi ,yj=k fθ′(xj)}Kk=1,
+A2:φ2Ti =φ− lφ∇φ[ 1
+m ∑ zj∈DtrTi − log ( egφ(fθ′ (xj))[yj ]∑ k′ e gφ(fθ′ (xj))[k ′] ) ],
+A3: φ3Ti =φ 3 Ti − lφ3Ti ∇φ3Ti [
+1
+m ∑ zj∈DtrTi − log  egφ3Ti (fθ′ (xj))[yj ]∑ k′ e g φ3 Ti (fθ′ (xj))[k ′] ], (13) where A1, A2 and A3 denote the mean-centroid classification algorithm, the initializationbased algorithm and the two-layer MLP, respectively.",1,related,1,positive
+"During meta-training, given a set of training tasks {Ti ∼ p(τ)}ni=1, the meta-algorithm observes the meta-samples D = {DTi = (DtrTi ,D ts Ti )}ni=1, where DtrTi is the training (support) set of task Ti and D ts Ti
+is the test (query) set of Ti.",1,related,1,positive
+"For brevity, Xθ = {fθ(xj)}j=1 and Y = {yj}j=1, where (xj , yj) ∈ Dtr Ti (Bertinetto et al., 2019).",1,related,1,positive
+"We randomly construct a training batch of size 128 for the ImageNet family [57, 75] and 64 for CUB [76] & CIFAR-FS [3] to compute Lanchor.",1,related,1,positive
+"For evaluation, we use four standard benchmarks for few-shot classification: miniImageNet, tieredImageNet, CUB-200-2011, and CIFAR-FS. miniImageNet [75] is a subset of ImageNet [60] consisting of 60,000 images uniformly distributed over 100 object classes.",1,related,1,positive
+"Our model uses a smaller backbone than that of several methods [17, 41, 53, 61] yet sets a new state of the art in both 5-way 1- shot and 5-shot settings on miniImageNet, CUB-200-2011, and CIFAR-FS datasets while being comparable to DeepEMD [87] on tieredImageNet.",1,related,1,positive
+"Following the recent work of [3], we use the same train/validation/test splits consisting of 64/16/20 object classes, respectively.",1,related,1,positive
+"We focus on a broad class of methods that we call meta-representation learning [1, 6, 10, 15], which is remarkably effective in practice and closely related to feature pre-training.",1,related,1,positive
+"In [1], the ridge regression estimator is chosen as the base learner Alg(θ,D) = w(ψθ(D))",1,related,1,positive
+"We further assess our method on two relatively less acknowledged datasets that are derived from CIFAR [42], namely, FC100 (Fewshot-CIFAR100) [18] and CIFAR-FS (CIFAR100 few-shots) [43].",1,related,1,positive
+"Because our method uses multi-task training, the batchsize is set to 2 for training ProNet, RelationNet, ANIL, R2D2, and MetaOpt.",1,related,1,positive
+"As shown in Table 3, pre-training the feature encoder substantially improves the performance of ProNet and R2D2 on four unseen benchmarks.",1,related,0,negative
+"As for gradient-based method, ANIL, R2D2 [4], and MetaOptNet [18] are chosen.",1,related,1,positive
+", miniImagenet [43] and CIFAR-FS [2], which firmly validates the effectiveness of our method.",1,related,1,positive
+"Following [2, 39, 46], we respectively use ConvNet4 [43] and ResNet-12 [14] to implement the meta-learner.",1,related,1,positive
+"For CIFAR-FS and FC-100, we enlarge the images to 50 by 50.",1,related,1,positive
+"We validate LASTSHOT in combination with representative FSL methods [13], [23], [24], [25] on multiple benchmarks, including miniImageNet [10], tieredImageNet [26], CIFARFS [27], FC-100 [28], and CUB [29].",1,related,1,positive
+"We evaluate our approach LASTSHOT using multiple benchmark datasets, including miniImageNet [10], tieredImageNet [26], CUB [29], CIFAR-FS [27], and FC100 [28].",1,related,1,positive
+"DATASET METHODS PROTONET R2D2 METAOPTNETAccnat Accadv TIME Accnat Accadv TIME Accnat Accadv TIME
+CIFAR-FS
+AT (5WAY-1SHOT) 42.67 % (0.65",1,related,1,positive
+"DATASET METHODS PROTONET R2D2 METAOPTNETAccnat Accadv TIME Accnat Accadv TIME Accnat Accadv TIME
+CIFAR-FS
+AT (5WAY-1SHOT) 38.11 % (0.62",1,related,1,positive
+"10.3H
+We follow the experimental setting of AQ in (Goldblum et al., 2020), training the state-of-the-art metalearning models including PROTONET (Snell et al., 2017a), R2D2 (Bertinetto et al., 2018a) , and MetaOptNet ( ResNet12 as backbone (He et al., 2016)).",1,related,1,positive
+"We adopt models including PROTONET (Snell et al., 2017b), R2D2 (Bertinetto et al., 2018b), and MetaOptNet (Lee et al., 2019) and dataset including MiniImageNet (Vinyals et al., 2016), TieredImageNet (Ren et al., 2018), CIFARFS (Bertinetto et al., 2018b), and FC100 (Oreshkin et al., 2018).",1,related,1,positive
+3 (See Appendix A.4 for R2D2 and MetaOptNet ).,1,related,1,positive
+"DATASET METHODS PROTONET R2D2 METAOPTNET
+Accnat Accadv TIME Accnat Accadv TIME Accnat Accadv TIME
+TIEREDIMAGENET
+AT (5WAY-1SHOT) 30.88 % (0.52",1,related,1,positive
+"As CIFAR-FS is a small dataset, we follow [3,23] to consider 5way 1-shot and 5-way 5-shot.",1,related,1,positive
+"We conduct experiments on a set of widely used benchmarks for few-shot image classification: mini-ImageNet, tieredImageNet, CIFAR-FS and FC100.",1,related,1,positive
+"As a comparison, another line of GBML algorithms uses the explicit `2 regularization in the inner loop instead (Rajeswaran et al., 2019; Lee et al., 2019b; Bertinetto et al., 2019; Zhou et al., 2019b; Goldblum et al., 2020).",1,related,1,positive
+MetaOptNet and R2D2: MetaOptNet [30] and R2D2 [29] use support vector machine [39] and ridge regression as the,1,related,1,positive
+Each combination was evaluated in a 5-shot 5-way few-shot setting on the CIFAR-FS dataset [51].,1,related,0,negative
+"We train our model on miniImageNet, tieredImageNet, CIFAR-FS and CUB-200-2011 for 200K, 200K, 100K and 100K iterations respectively.",1,related,1,positive
+"• We conduct extensive experiments on four benchmarks
+(i.e., miniImageNet, tieredImageNet, CIFAR-FS and CUB-200-2011) for the transductive few-shot classification task, and the results show that the proposed method achieves the state-of-the-art performances.",1,related,0,negative
+"We follow the popularly used train/val/test setting proposed in [35, 36, 1, 47, 29].",1,related,0,negative
+"The minimax bound applies regardless of the target fine-tuning procedure in use, including those used in practice, e.g. iMAML, MetaOptNet (Lee et al., 2019), and R2D2 (Bertinetto et al., 2019).",1,related,1,positive
+"This dataset [36] is obtained by randomly splitting 100 classes in CIFAR-100 [37] into 64 training classes, 16 validation",1,related,1,positive
+"* means results for miniImageNet and CUB-200-2011 datasets are from [39], and results for CIFAR-FS are from [36].",1,related,1,positive
+"We denote by CNN4 the 4-layer CNN with 64 hidden described in [63], which we use for few-shot learning experiments on FC100, CIFAR-FS, EMNIST, and LFW10.",1,related,1,positive
+"To overcome this issue, in this work, we follow the recent literature on heterogeneous meta-learning Bertinetto et al. (2018); Cai et al.",1,related,1,positive
+"To overcome this issue, in this work, we follow the recent literature on heterogeneous meta-learning Bertinetto et al. (2018); Cai et al. (2020); Denevi et al.",1,related,1,positive
+"To overcome this issue, in this work, we follow the recent literature on heterogeneous meta-learning Bertinetto et al. (2018); Cai et al. (2020); Denevi et al. (2020); Jerfel et al.",1,related,1,positive
+"Table 4 evaluates our method on two CIFAR derivatives, i.e., CIFAR-FS and FC100.",1,related,1,positive
+"For CIFAR-FS, FC100, miniImageNet, tieredImageNet datasets we set the initial learning rate to 0.05 and use a weight decay of 5e − 4.",1,related,1,positive
+"Implementation Details: Following [72, 46, 50, 40], we use a ResNet-12 network as our base learner to conduct experiments on CIFAR-FS, FC100, miniImageNet, tieredImageNet datasets.",1,related,1,positive
+"Effect of the number of Transformations: To investigate the effect of the total number of applied transformations, we perform an ablation study on the CIFAR-FS validation set by varying the number of transformations, M .",1,related,1,positive
+"To be more specific, our method outperforms the current best results on CIFAR-FS dataset (Table 1) by 1.3% in the 1-
+shot task whereas for the 5-shot task it improves the score by 2.8%.",1,related,0,negative
+"To study the contribution of different components of our method we do a thorough ablation study on three bench-
+mark FSL datasets: miniImageNet, CIFAR-FS, and FC100 (Table 6).",1,related,1,positive
+"Here the original 600 examples of each base class are still only used for meta-training. ii) CIFAR-FS-Mod (cifar-M) [30], FC-100-Mod (FC-M) [4], and tieredImageNet-Mod (tiered-M) [33]: As we don’t have additional samples for base classes, we randomly partition each base class’s current examples into an approximate 80/20 split where the training tasks are constructed using the former and the latter is reserved for ID evaluation.",1,related,1,positive
+"ii) CIFAR-FS-Mod (cifar-M) [30], FC-100-Mod (FC-M) [4], and tieredImageNet-Mod (tiered-M) [33]: As we don’t have additional samples for base classes, we randomly partition each base class’s current examples into an approximate 80/20 split where the training tasks are constructed using the former and the latter is reserved for ID evaluation.",1,related,1,positive
+"We evaluate the ID performance of four popular meta-learning methods: Prototypical Networks (PN) [39], MetaOptNet-SVM (SVM) [25], MetaOptNet-Ridge Regression (RR) [25, 4] and FOMAML [15] on our identified ID FSL benchmarks (Table 1).",1,related,1,positive
+"Based on these two trends, for more reliable comparisons of meta-learning methods’ OOD performance we suggest using datasets like tieredImageNet and MetaDataset (both with much larger set of base and novel classes) in addition to the smaller benchmarks like miniImageNet, CIFAR-FS, and FC-100, which some recent works [e.g., 30, 4] still solely rely upon.",1,related,1,positive
+"In practice, because 1) we never specify exactly what and how big the underlying set of classes that we care about is, and 2) some of the recent meta-learning methods (SVM vs PN on cifar in Table 2 of [25], R2-D2 vs GNN on mini in Table 1 of [4], FIX-ML [38]) sometimes only improve over the prior works by < 1%, we believe researchers should be aware of the possibility of getting a performance conclusion that is inconsistent over a single randomly chosen and fixed set of 20 novel classes used by some of these benchmarks.",1,related,1,positive
+"We also test our proposed methods on CIFAR-FS (Bertinetto et al., 2018), which is an image classification dataset containing 64 classes of training data and 20 classes of evaluation data.",1,related,0,negative
+"We also test our methods on CIFAR-FS (Bertinetto et al., 2018) and Omniglot (Lake et al., 2015), and provide the results in Table 5 and Figure S3, respectively (more details can be viewed in Appendix 6 and Appendix 7).",1,related,1,positive
+"Table S2: SA/RA performance of our proposed methods on CIFAR-FS (Bertinetto et al., 2018) (1-Shot 5-",1,related,1,positive
+"There are 1028 classes of training data and 423 classes of evaluation
+Table S3: SA/RA performance of our proposed methods on CIFAR-FS (Bertinetto et al., 2018) (5-Shot 5-",1,related,0,negative
+"We also test our methods on CIFAR-FS (Bertinetto et al., 2018) and Omniglot (Lake et al.",1,related,1,positive
+"Table 5: SA/RA performance of our proposed methods on CIFAR-FS (Bertinetto et al., 2018).",1,related,1,positive
+"(15) as the nonconformity measure for label y = j.
+Differentiable ridge regression (Bertinetto et al., 2019).",1,related,1,positive
+"Our meta nonconformity measure consists of a few-shot, closed-form ridge regressor (Bertinetto et al., 2019) on top of a directed Message Passing Network molecular encoder (Yang et al., 2019).5",1,related,1,positive
+", via featurizations or statistics (Edwards & Storkey, 2017)— to a target task that is otherwise resource-limited (Vinyals et al., 2016; Finn et al., 2017; Snell et al., 2017; Bertinetto et al., 2019; Bao et al., 2020).",1,related,1,positive
+"Our meta nonconformity measure consists of a few-shot, closed-form ridge regressor (Bertinetto et al., 2019) on top of a directed Message Passing Network molecular encoder (Yang et al.",1,related,1,positive
+"The former learns a generative metric to compare andmatch few-examples [2, 25, 28].",1,related,1,positive
+"…y) ≡ H, ∇x∇yg(x, y) ≡ J, ∀x ∈ X , y ∈ Rd. (4)
+The condition of g(x, y) in Assumption 2 covers a large collection of applications such as few-shot metalearning (Bertinetto et al., 2018) and biased regularization in hyperparameter optimization (Grazzi et al., 2020), where the inner-level problem…",1,related,1,positive
+"We also evaluate the effectiveness of illumination feature augmentation on standardized one/few-shot image classification datasets: miniImageNet [18], CUB [19] and CIFAR-FS [20].
+miniImageNet [18] is introduced by Vinyals et al. in [18] for small sample learning research for the first time.",1,related,1,positive
+"We also evaluate the effectiveness of illumination feature augmentation on standardized one/few-shot image classification datasets: miniImageNet [18], CUB [19] and CIFAR-FS [20].",1,related,1,positive
+"To stress the genericity of the illumination repository, we perform experiments on standardized few-shot classification datasets: miniImageNet [18], CUB [19] and CIFAR-FS [20].",1,related,1,positive
+"3) We evaluate Sill-Net on several object classification benchmarks, i.e., two traffic datasets (GTSRB and TT100K), three logo datasets (Belgalogos, FlickrLogos32, and TopLogo-10) and three generalized one/few-shot benchmarks (miniImageNet, CUB, CIFAR-FS).",1,related,1,positive
+"Then we evaluate our model and make comparisons to related work on four few-shot classification benchmark datasets: miniImageNet [36], tieredImageNet [29], CIFAR-FS [1], Fewshot-CIFAR100 (FC100) [25].",1,related,1,positive
+"We observe that the relative improvement rate on the CIFAR-FS dataset is larger compared to the FC100 dataset which is similar to generalization pattern on the Im-
+ageNet derivatives.",1,related,1,positive
+Our model achieves comparable performance on all tasks in both CIFAR-FS and FC100 benchmark.,1,related,0,negative
+"In addition, we also analyze the result of the number of items in the component dictionary D, map dictionary S.
+Table 3 shows the result of our ablation studies on miniImageNet, tieredImageNet, CIFAR-FS and FC100.",1,related,1,positive
+Table 2 summarizes the performance on the 5- way CIFAR-FS and FC100.,1,related,0,negative
+"To evaluate our module, we select two GNN-based few-shot models: EGNN and DPGN, and four standard few-shot learning benchmarks: mini-ImageNet [28], tiered-ImageNet [30], CUB-200-2011 [31] and CIFAR-FS [32].",1,related,1,positive
+"We conducted extensive experiments on four benchmark datasets: mini-ImageNet, tiered-ImageNet, CUB-200-2011, and CIFAR-FS.",1,related,1,positive
+"Our results on CIFAR-FS (Table 1) and miniImageNet (Table 2) show that, on its own, the rotation prediction pretext task limits the generality of the learned representations, significantly lagging behind in few-shot accuracy.",1,related,1,positive
+"On both CIFAR-FS (Table 1) and miniImageNet (Table 2), we find that stronger data augmentation improves the supervised baseline.",1,related,1,positive
+"As noted in §4.1, we changed the learning schedule for CIFAR-FS but did not do so for miniImageNet.",1,related,0,negative
+"In this section, we evaluate our proposed multi-task framework on two widely used few-shot image recognition benchmarks: miniImageNet (Vinyals et al., 2016) and CIFAR-FS (Bertinetto et al., 2018).",1,related,1,positive
+"On CIFAR-FS, we report an accuracy of 82.19± 0.83% for this run, compared to 82.51± 0.82% when using τ = 0.99 on the same seed.",1,related,0,negative
+"On CIFAR-FS, our multi-task framework outperforms previous works by at least 1.5%.",1,related,0,negative
+"On CIFAR-FS, we explore different combinations of tasks for our multi-task framework of Figure 1.",1,related,1,positive
+"Based on our detailed experiments on CIFAR-FS and miniImageNet, we show that leveraging self-supervision improves transfer learning performance on novel classes.",1,related,1,positive
+"In order to further evaluate the effectiveness of our method, we apply Grad-CAM [27] to visualize the images of the CUB200-2011 dataset.",1,related,1,positive
+"In order to further evaluate the effectiveness of our method, we apply Grad-CAM [33] to visualize the images of the CUB-200-2011 dataset.",1,related,1,positive
+"We perform our experiments on four benchmark datasets: MiniImageNet [10] denoted MINet, CUB [11], CIFAR-FS [12] and TieredImageNet [13] denoted TINet.",1,related,1,positive
+"We perform our experiments on 3 standardized few-shot classification datasets: miniImageNet [11], CUB [32] and CIFAR-FS [16].",1,related,1,positive
+"In [15] and [16], the authors create a classweight generator by training the model with a linear classifier (e.",1,related,1,positive
+"Results Table 1-3 summarize the results onminiImageNet, tieredImageNet and CIFAR-FS.",1,related,1,positive
+Table I shows the results of 5-way classifcation tasks at CIFAR-FS [1] and FC100 [8].,1,related,1,positive
+† denotes CIFAR-FS results taken from [1] and FC100 results taken from [8].,1,related,0,negative
+"…base our implementation on the publicly available code of (Tian et al., 2020b) and conduct experiments on four popular few-shot classification benchmarks: mini-ImageNet (Vinyals et al., 2016), tieredImageNet (Ren et al., 2018), CIFAR-CS (Bertinetto et al., 2019) and FC100 (Oreshkin et al., 2018).",1,related,1,positive
+"For the experimental section, we base our implementation on the publicly available code of [43] and conduct experiments on ImageNet derivatives: mini -ImageNet [47] and tiered -ImageNet [33], and CIFAR-100 derivatives: CIFAR-CS [2] and FC100 [28].",1,related,1,positive
+"For the experimental section, we base our implementation on the publicly available code of (Tian et al., 2020b) and conduct experiments on four popular few-shot classification benchmarks: mini-ImageNet (Vinyals et al., 2016), tieredImageNet (Ren et al., 2018), CIFAR-CS (Bertinetto et al., 2019) and FC100 (Oreshkin et al., 2018).",1,related,1,positive
+"We further conduct FSOR experiments on two fewshot benchmark datasets: CIFAR-FS [2], FC100 [29].",1,related,1,positive
+"We benchmark our models on miniImageNet, CIFAR-FS, and tieredImageNet, and show that NCA fairs surprisingly well against methods that use meta-learning and also against recent highperforming baselines which pre-train with the cross-entropy loss.",1,related,1,positive
+"Without bells and whistles, our implementation of the NCA loss achieves an accuracy that is competitive with the state-of-the-art on multiple FSL benchmarks: miniImageNet, CIFAR-FS and tieredImageNet.",1,related,0,negative
+"We conduct our experiments on miniImageNet (Vinyals et al., 2016), CIFAR-FS (Bertinetto et al., 2019) and tieredImageNet (Ren et al., 2018), using the ResNet12 variant first adopted by Lee et al. (2019) as embedding function fθ.",1,related,1,positive
+"Meta-learning methods: We focus our initial experiments on protoypical-networks (PN) [25] which uses a non-parametric last layer solver, as Protonets is a highly competitive ML approach, and also has the benefit of training faster and with less memory than competitors such as SVM [17], Ridge Regression (RR) [3].",1,related,1,positive
+"In the experiment, we build our method on the top of several state-of-the-art meta-learning methods, including Prototypical Network, Matching Network, Prototypical Matching Network and Ridge Regression Differentiable Discriminator [4,2,13,14].",1,related,1,positive
+"We evaluate the models using query sets and support sets constructed in the same way as their authors originally did [4,2,13,14].",1,related,1,positive
+", [37, 5]) is that we only have a single source task and a single target task.",1,related,1,positive
+"[5] speeds up the implementation of MAML [10] with closed-form solution of the inner loop, which is a technique that we also use.",1,related,1,positive
+46% MAML + L2F [3] 4-CONV 52.,1,related,1,positive
+"We specifically run each experiment setting with the three popular representation learning protocols - ProtoNet [21], Ridge [24] and MetaOptNet (SVM) [23].",1,related,1,positive
+"Generally, max-margin classifiers such as SVM tend to outperform nearest neighbor distance based approaches, we find
+(a) Fluent Speech Commands (b) Google Commands
+Figure 3: The confusion matrix is mean computed for 5-shot classification task over 1000 test episodes.
+that the performance of ProtoNet is often superior to SVM. Similarly, a closed-form solution of Ridge may be more sensitive to noise than ProtoNet leading to lower performance.",1,related,1,positive
+"Google Commands Fluent Speech Commands 5-Shot 1-Shot 5-Shot 1-ShotModel
+SPO No-SPO SPO No-SPO SPO No-SPO SPO No-SPO Val 85.45 ± 0.32 83.48 ± 0.35 71.07 ± 0.52 70.61 ± 0.53 83.55 ± 0.38 68.57 ± 0.45 70.42 ± 0.55 56.14 ± 0.56ProtoNet [21] Test 89.63 ± 0.27 78.86 ± 0.40 74.35 ± 0.50 69.30 ± 0.54 78.86 ± 0.40 78.00 ± 0.39 65.61 ± 0.52 64.24 ± 0.52 Val 82.38 ± 0.34 81.33 ± 0.35 68.49 ± 0.51 68.03 ± 0.51 81.47 ± 0.39 67.75 ± 0.42 70.56 ± 0.51 56.69 ± 0.55Ridge [24] Test 89.11 ± 0.29 86.17 ± 0.31 75.05 ± 0.48 76.34 ± 0.49 75.75 ± 0.40 78.51 ± 0.39 61.64 ± 0.53 60.84 ± 0.51 Val 76.31 ± 0.39 83.48 ± 0.35 62.90 ± 0.51 60.50 ± 0.51 78.52 ± 0.43 65.90 ± 0.46 67.68 ± 0.53 52.77 ± 0.53MetaOptNet [23] Test 84.37 ± 0.32 88.64 ± 0.29 66.61 ± 0.53 70.82 ± 0.50 70.16 ± 0.43 69.84 ± 0.44 58.71 ± 0.50 59.44 ± 0.51
+is trained with all the available training data in an end-to-end fashion.",1,related,1,positive
+"Datasets and settings We evaluate our model on four standard few-shot classification tasks: miniImageNet [71], tieredImageNet [53], CIFAR-FS [4] and Omniglot [33].",1,related,1,positive
+"On CIFAR-FS, our model delivers 63.42% on the 5-way 1-shot setting, surpassing the second best R2D2 [4] by 1.12%.",1,related,0,negative
+"Similarly, on the CIFAR-FS dataset, our method achieves state-of-the-art performance compared to the family of MAML algorithms.",1,related,1,positive
+"Methods miniImageNet, 5-way CIFAR-FS, 5-way tieredImageNet, 5-way1-shot 5-shot 1-shot 5-shot 1-shot 5-shot
+MAML [5] 48.70 ± 1.84 63.11 ± 0.92 58.9 ± 1.9 71.5 ± 1.9 51.67 ± 1.87 70.30 ± 1.75 MAML++ [2] 52.15 ± 0.26 68.32 ± 0.44 - - FOMAML [5] 48.07 ± 1.75 63.15 ± 0.91 55.6 ± 0.9 70.2 ± 0.7 47.37 ± 0.80 66.12 ± 0.79 Reptile [14] 49.97 ± 0.32 65.99 ± 0.58 - - Meta-LSTM [17] 43.44 ± 0.77 60.60 ± 0.71 43.4 ± 0.8 60.6 ± 0.7 - - Meta-SGD [13] 50.47 ± 1.87 64.03 ± 0.94 56.9 ± 0.9 70.1 ± 0.7 50.92 ± 0.93 69.28 ± 0.80 iMAML-HF [16] 49.30 ± 1.88 - - - MT-Net [12] 51.70 ± 1.84 - - - R2D2 [3] 49.50 ± 0.20 65.40 ± 0.20 62.3 ± 0.2 77.4 ± 0.2 - - L-MAML [4] 49.40 ± 1.83 - - - HSML [22] 50.38 ± 1.85 - - -
+PAMELA 53.50 ± 0.89 70.51 ± 0.67 63.5 ± 0.9 79.1 ± 0.7 54.81 ± 0.88 74.39 ± 0.71
+Figure 3: Few-shot learning results on miniImageNet [17], CIFAR-FS [3] and tieredImageNet [18] datasets.",1,related,1,positive
+"For experiments on miniImageNet, CIFAR-FS and tieredImageNet, we use a four-layer convolutional neural network, each with 64 filters.",1,related,1,positive
+"We combined training data generating networks with two meta learning approaches (R2D2 (Bertinetto et al., 2019) and MetaOptNet (Lee et al.",1,related,1,positive
+"However, as we discussed above, differentiable optimization methods (Bertinetto et al., 2019; Lee et al., 2019) are generally better than hypernetworks.",1,related,1,positive
+"The formulation of few-shot learning we use here is similar to Lee et al. (2019); Bertinetto et al. (2019), but also other formulations of few shot learning exist, e.g., MAML (Finn et al., 2017).",1,related,1,positive
+"Different than the learner in R2D2 and MetaOptNet, we use kernelized algorithms.",1,related,1,positive
+"We combined training data generating networks with two meta learning approaches (R2D2 (Bertinetto et al., 2019) and MetaOptNet (Lee et al., 2019)) in our framework.",1,related,1,positive
+"We perform our experiments on the mini-ImageNet and CIFAR-FS datasets [2, 22].",1,related,1,positive
+"As we increase m and include a large number of augmentations in the pool, we observe performance boosts as high as 4% over the baseline, which uses horizontal flip, random crop, and color jitter data augmentations from the original work corresponding to the R2-D2 meta-learner used [2].",1,related,1,positive
+We empirically evaluate the performance of all four different augmentation modes identified in Section 3.1 on the CIFAR-FS dataset using an R2-D2 base-learner paired with both a 4-layer CNN backbone (as used in the original work) and a ResNet-12 backbone.,1,related,1,positive
+"To this end, we plot the training and validation accuracy over time for R2-D2 metalearners with ResNet-12 backbones using baseline augmentations, query Self-Mix, and Meta-MaxUp with a medium sized pool and m = 4.",1,related,1,positive
+"We conduct experiments on four meta-learning algorithms: ProtoNet [21], R2-D2 [2], MetaOptNet [14], and MCT [13].",1,related,1,positive
+"In this section, we improve the performance of four different popular meta-learning methods including ProtoNet [21], R2-D2 [2], MetaOptNet [14], and MCT [13].",1,related,1,positive
+"Moreover we report the results of ADKL (Tossou et al., 2019), R2-D2 (Bertinetto et al., 2019), and ALPaCA (Harrison et al., 2018) obtained on a similar task (as defined in Yoon et al., 2018).",1,related,1,positive
+"Method in-range out-of-range Periodic functions ADKL (Tossou et al., 2019)∗ 0.14 – R2-D2 (Bertinetto et al., 2019)∗ 0.46 – ALPaCA (Harrison et al., 2018) 0.14 ± 0.09 5.92 ± 0.11 Feature Transfer/1 2.94 ± 0.16 6.13 ± 0.76 Feature Transfer/100 2.67 ± 0.15 6.94 ± 0.97 MAML (1 step) 2.76 ± 0.06 8.45 ± 0.25 DKBaseline + RBF 2.85 ± 1.14 3.65 ± 1.63 DKBaseline + Spectral 2.08 ± 2.31 4.11 ± 1.92 DKT + RBF (ours) 1.38 ± 0.03 2.61 ± 0.16 DKT + Spectral (ours) 0.08 ± 0.06 0.10 ± 0.06 Head pose trajectory Feature Transfer/1 0.25 ± 0.04 0.20 ± 0.01 Feature Transfer/100 0.22 ± 0.03 0.18 ± 0.01 MAML (1 step) 0.21 ± 0.01 0.18 ± 0.02 DKT + RBF (ours) 0.12 ± 0.04 0.14 ± 0.03 DKT + Spectral (ours) 0.10 ± 0.01 0.11 ± 0.02
+We consider two tasks: amplitude prediction for unknown periodic functions, and head pose trajectory estimation from images.",1,related,1,positive
+"Method in-range out-of-range Periodic functions ADKL (Tossou et al., 2019)∗ 0.14 – R2-D2 (Bertinetto et al., 2019)∗ 0.46 – ALPaCA (Harrison et al., 2018) 0.14 ± 0.09 5.92 ± 0.11 Feature Transfer/1 2.94 ± 0.16 6.13 ± 0.76 Feature Transfer/100 2.67 ± 0.15 6.94 ± 0.97 MAML (1 step) 2.76 ± 0.06 8.45 ±…",1,related,1,positive
+"For few-shot image classification, we conduct experiments on four public benchmark datasets: miniImageNet [Vinyals et al., 2016], tiered-ImageNet [Ren et al., 2018], CIFAR-FS [Bertinetto et al., 2018], and FC100 [Oreshkin et al., 2018].",1,related,1,positive
+"Compared to Meta-Base [Chen et al., 2020], our Meta-UAFS achieves significant improvement of 1.12%, 1.41%, 1.72%, and 1.76% in 1-shot accuracy on mini-ImageNet, tiered-ImageNet, CIFAR-FS, and FC00, respectively for 1-shot classification.",1,related,1,positive
+"Moreover, compared to MetaOptNetSVM [15] and R2D2 [1], our framework can utilize a wider class of objective functions, allowing us to integrate the nonconvex transductive objective (14) and also to meta-learn important parameters of the objective and the base learner itself.",1,related,1,positive
+"Moreover, compared to MetaOptNetSVM [9] and R2D2 [10], our framework can utilize a wider class of objective functions, allowing us to integrate the non-convex transductive objective (5) and also to meta-learn important parameters of the objective and the base learner itself.",1,related,1,positive
+"We use the increased number of episodes to compute 95% confidence intervals like previous work for few-shot multiclass classification [3, 20].",1,related,0,negative
+"CIFAR-FS (Bertinetto et al. 2019) is randomly sampled from CIFAR-100 (Krizhevsky, Hinton, and others 2009) by applying the same criteria in (Bertinetto et al. 2019) as same as MiniImageNet, which means we split the 100 classes to 64 classes for meta-training, 16 for meta-validation and 20 for…",1,related,1,positive
+"2019) is randomly sampled from CIFAR-100 (Krizhevsky, Hinton, and others 2009) by applying the same criteria in (Bertinetto et al. 2019) as same as MiniImageNet, which means we split the 100 classes to 64 classes for meta-training, 16 for meta-validation and 20 for meta-testing.",1,related,1,positive
+We will show the results of ablation experiments of other two datasets(CIFAR-FS and Stanford Dogs) in the supplementary materials.,1,related,0,negative
+"2016) datasets with new results on CIFAR-FS (Bertinetto et al. 2018) and FC100 (Oreshkin, Rodríguez López, and Lacoste 2018).",1,related,1,positive
+"For example, we could easily complement ANIL’s (Raghu et al. 2019) original results on the Omniglot (Lake, Salakhutdinov, and Tenenbaum 2015) and mini-Imagenet (Vinyals et al. 2016) datasets with new results on CIFAR-FS (Bertinetto et al. 2018) and FC100 (Oreshkin, Rodríguez López, and Lacoste 2018).",1,related,1,positive
+"…example, we could easily complement ANIL’s (Raghu et al. 2019) original results on the Omniglot (Lake, Salakhutdinov, and Tenenbaum 2015) and mini-Imagenet (Vinyals et al. 2016) datasets with new results on CIFAR-FS (Bertinetto et al. 2018) and FC100 (Oreshkin, Rodríguez López, and Lacoste 2018).",1,related,1,positive
+"We observe that ARCADe-H outperforms ARCADe-M on Omniglot, while ARCADe-M achieves higher retained accuracy on MiniImageNet and CIFAR-FS.",1,related,1,positive
+"CIFAR-FS was derived from CIFAR-100 by dividing its classes into 64
+1Our code is made public under: https://github.com/AhmedFrikha/ ARCADe-A-Rapid-Continual-Anomaly-Detector
+classes for meta-training, 16 for meta-validation and 20 for meta-testing to make it suitable for meta-learning problems.",1,related,0,negative
+"We evaluate ARCADe on three meta-learning benchmark datasets: Omniglot [48], MiniImageNet [49] and CIFAR-FS [50].",1,related,1,positive
+"Our explanation for this is that since MiniImageNet and CIFAR-FS have a higher variance in the input space, adapting the parameters of the feature extractor to the normal classes of the test tasks is beneficial.",1,related,1,positive
+We use task-sequences composed of 10 tasks for meta-training on Omniglot and 5 tasks for meta-training on MiniImageNet and CIFAR-FS.,1,related,1,positive
+"The meta-learner either learns to produce new parameters directly from the new data [9, 33, 56, 62, 64, 72, 73], or learns to produce an update rule to iteratively optimize the base learner to fit the new data [2, 6, 8, 38, 63, 97].",1,related,1,positive
+"Intuitively, it outperforms those with ResNet-12, especially on CIFAR-FS and miniImageNet.",1,related,0,negative
+"As detailed in TABLE I, in 1-shot and 5-shot test, our method achieves 10.04% and 4.67% improvement over Finetuning [32] on CIFAR-FS dataset.",1,related,0,negative
+"We adopt PN on the CIFAR-FS dataset and report the average training time for each epoch, which includes task sampling, forward and backward propagation phases.",1,related,1,positive
+"We show 16 classes of CIFAR-FS, where the green and red colors denote the classes sampled by random sampling and gcp-sampling, respectively.",1,related,1,positive
+"For example, PN with gcp-sampling outperforms the PN with ResNet-12 by around 1.84 and 1.2 percentage points in miniImageNet and 1.89 and 1.0 percentage points in CIFAR-FS.",1,related,1,positive
+"(3) We study the impact of the adaptive task sampling method by integrating it with various meta-learning approaches and performing comprehensive experiments on the miniImageNet and CIFAR-FS few-shot datasets, which quantitatively demonstrates the superior performance of our method.",1,related,1,positive
+We demonstrate the evolution of class-pair potentials about 16 classes of CIFAR-FS dataset.,1,related,1,positive
+"We also use the 64 / 16 / 20 divisions for consistency with previous studies [6,28].",1,related,0,negative
+"In this section, we evaluate the proposed adaptive task sampling method on two fewshot classification benchmarks: miniImageNet [55] and CIFAR-FS [6].",1,related,1,positive
+"5), the norm of somewrongly-predicted instances (see the lowest
+TABLE 2 The Averaged Accuracies With 95 percent Confidence Intervals Over 2000 Episodes on Several Datasets
+Setting Model miniImageNet tieredImageNet CIFAR-FS CUB
+1shot 5shot 1shot 5shot 1shot 5shot 1shot 5shot
+In. Baseline [20] 51.75 0:80 74.27 0:63 - - - - 65.51 0:87 82.85 0:55 Baseline++ [20] 51.87 0:77 75.68 0:63 - - - - 67.02 0:90 83.58 0:54 MatchingNet [10] 52:911 0:88 68:881 0:69 - - - - 72:361 0:90 83:641 0:60 ProtoNet [8] 54:161 0:82 73:681 0:65 - - 72:203 83:503 71:881 0:91 87:421 0:48 MAML [7] 49:611 0:92 65:721 0:77 - - - - 69:961 1:01 82:701 0:65 RelationNet [9] 52:481 0:86 69:831 0:68 - - - - 67:591 1:02 82:751 0:58 adaResNet [86] 56.88 71.94 - - - - - -
+TapNet [87] 61.65 76.36 63.08 80.26 - - - - CTMy [88] 64.12 80.51 68.41 84.28 - - - - MetaOptNet [82] 64.09 80.00 65.81 81.75 72.60 84.30 - -
+Tran.",1,related,1,positive
+"We follow the common split given by [74], using 64 classes to construct the base set, 16 for validation, and 20 as the novel set.",1,related,1,positive
+"Different from existing methods [11], [40], where feature embedding is reshaped into one dimensional vector as the input of classifiers, we keep the spatial information in the feature map by leveraging the 3D feature map.",1,related,1,positive
+"We perform few-shot classification experiments on 4 benchmark datasets: mini-ImageNet [42], tiered-ImageNet [31], CIFAR-FS [1] and FC-100 [27].
+mini-ImageNet [42] consists of 100 classes, each of which has around 600 images of size 84 × 84 pixels.",1,related,1,positive
+"We perform few-shot classification experiments on 4 benchmark datasets: mini-ImageNet [42], tiered-ImageNet [31], CIFAR-FS [1] and FC-100 [27].",1,related,1,positive
+We perform ablations to validate our transformation choices by using various combinations of transformations as the auxiliary task used along with RFS on the CIFAR-FS dataset with ResNet12 architecture.,1,related,1,positive
+"Then, the circular correlation X ?WCF is equal to AWCF, and the filter WCF has the following closed-form solution [34], [56], [57]:",1,related,1,positive
+"We use a simple logistic regression classifier [2, 39] to map the labels from support set to query set.",1,related,1,positive
+Our results shown in Table 1 (miniImageNet [41] & tieredImageNet [34] datasets ) and Table 2 (CIFAR-FS [2] & FC100 [28] datasets) suggest that the proposed SKD consistently outperforms the existing methods across all datasets.,1,related,1,positive
+"We comprehensively compare our method on five benchmark few-shot learning datasets that include miniImageNet [41], tieredImageNet [34], CIFAR-FS [2], FC100 [28] and Metadataset [40].",1,related,1,positive
+"We are inspired by recent approaches in few-shot learning [5, 18] that avoid this issue through use of convex optimisation layers.",1,related,1,positive
+"For fair comparison, we also cite the original results of R2-D2 (Bertinetto et al., 2019) using 64 channels.",1,related,1,positive
+"We cite the original results of R2-D2 (Bertinetto et al., 2019) using 64 channels for fair comparison.",1,related,1,positive
+"± ± (Snell et al., 2017) 47.4 ± 0.6 65.4 0.5 55.5 0.7 72.0 0.6 R ELATION NET (Sung et al., 2018) 50.4 0.8 ± ± ± 65.3 0.7 55.0 1.0 69.3 0.8 ± ± ± ± SNAIL (32C) by (Bertinetto et al., 2019) 45.1 55.2 — — GNN (Garcia & Bruna, 2018) 50.3 66.4 61.9 75.3 PLATIPUS (Finn et al., 2018) 50.1 1.9 — — — ± VERSA (Gordon et al., 2019) 53.3 1.8 67.3 0.9 62.5 1.7 75.1 0.9 ± R2-D2 ( 64 C) (Bertinetto et al., 2019) 49.5 0.2 ± 65.4 0.2 ± ± 62.3 0.2 77.4 0.2 ± ± ± R2-D2 (Devos et al., 2019) 51.7 1.8 63.3 0.9 60.2 1.8 ± 70.9 0.9 CAVIA (Zintgraf et al., 2019) 51 The key hyperparameter for the number of bases D in (7) is set to D = 780 for MetaVRF in all experiments, while we use RFFs with D = 2048 as this produces the best performance.",1,related,1,positive
+"For tieredImageNet and CIFAR-FS, the best accuracy are obtained on validation classes when β = 0.5, λ = 10, α = 0.3 for s = 1; β = 0.5, λ = 10, α = 0.2 for s = 5.",1,related,1,positive
+"We evaluate the performance of the proposed method using standardized few-shot classification datasets: miniImageNet [32], tieredImageNet [20], CUB [33] and CIFAR-FS [1].",1,related,1,positive
+Comparisons: We present the results of different methods on the MiniImageNet and CIFAR-FS datasets in Tables 1 and 2).,1,related,1,positive
+"However, although our method performs much better than GNN [17] on MiniImageNet, their results on CIFAR-FS are just comparable, possibly due to the dataset difference.",1,related,0,negative
+"64 49.4 0.8% 68.2 0.7% 55.5 0.7% 72.0 0.6% Relation Net (Sung et al., 2018) Conv-4-64 50.4 0.8% 65.3 0.7% 55.0 1.0% 69.3 0.8% GNN (Satorras &amp; Bruna, 2017) Conv-4-64 50.3% 66.4% 61.9% 75.3% R2-D2 (Bertinetto et al., 2018) Conv-4-64 49.5 0.2% 65.4 0.2% 62.3 0.2% 77.4 0.2% TPN (Liu et al., 2018) Conv-4-64 55.5% 69.9% – – Gidaris et al. (2019) Conv-4-64 54.8 0.4% 71.9 0.3% 63.5 0.3% 79.8 0.2% SIB K=0 (Pre-trained feature",1,related,1,positive
+"MetaOptNet [73] is developed under base learner and meta-learner double-layer framework [77], where base learner is formulated as a regularized linear classifier.",1,related,1,positive
+MetaOptNet is an extension of [77] in the sense that it explores more options of base learner specification under similar framework as in [77].,1,related,1,positive
+"Different from the existing base learner used in [Lee et al., 2019] [Bertinetto et al., 2018], our proposed base learner is generated under the supervision of the presented masks of input support images.",1,related,1,positive
+"Evaluation Protocols We evaluate DPGN in 5way1shot/5shot settings on standard few-shot learning datasets,
+miniImageNet, tieredImageNet, CUB-200-2011 and CIFAR-FS.",1,related,1,positive
+"As shown in Table 1, we list details for images number, classes number, images resolution and train/val/test splits following the criteria of previous works [41, 31, 4, 3].",1,related,0,negative
+"The total number of generations is an important ingredient for DPGN, so we perform experiments to obtain the trend of test accuracy with different generation numbers in DPGN on miniImageNet, tieredImageNet, CUB-200-2011, and CIFAR-FS.",1,related,1,positive
+"Additionally, to visualize the procedure of cyclic update, we choose a test scenario where the ground truth classes of five query images are [1, 2, 3, 4, 5] and visualize instance-level similarities which is used for predictions of five query samples as shown in Figure 8.",1,related,1,positive
+"For fair comparisons, we employ DPGN on miniImageNet, tieredImageNet, CIFAR-FS and CUB-200-2011 datasets, which is compared with other methods in the same backbones.",1,related,1,positive
+"We evaluate DPGN on four standard few-shot learning benchmarks: miniImageNet [41], tieredImageNet [31], CUB-200-2011 [42] and CIFAR-FS [3].",1,related,1,positive
+52 R2D2 [1] 51.,1,related,1,positive
+"We follow the split given by [5], using 64 classes to construct the base set, 16 for validation and 20 as the novel set.",1,related,1,positive
+"We train 100 epochs for miniImageNet, 60 epochs for tieredImageNet, and 90
+epochs for both CIFAR-FS and FC100.",1,related,1,positive
+"Table 2 summarizes the results, which shows that our simple baseline is comparable to Prototypical Networks [46] and MetaOptNet [26] on CIFAR-FS dataset, and outperforms both of them on FC100 dataset.",1,related,1,positive
+"Table 4 shows the results of our ablation studies on miniImageNet, tieredImageNet, CIFAR-FS, and FC100.",1,related,0,negative
+"For 4-layer convnet, we also the same training setup as ResNet-12 on tieredImageNet, CIFAR-FS, and FC100, For miniImageNet, we train for 240 epochs with learning rate decayed at epochs 150, 180, and 210 with a factor of 0.1.",1,related,1,positive
+"In Table 1, Table 2, and Table 4, we evalute the model of the second generation on miniImageNet, CIFAR-FS and
+FC100 datasets; we use the first generation on tieredImageNet.",1,related,1,positive
+"We conduct experiments on four widely used few-shot image recognition benchmarks: miniImageNet [54], tieredImageNet [42], CIFAR-FS [3], and FC100 [34].",1,related,1,positive
+"We conduct few-shot classification experiments on five popular benchmark datasets, namely, miniImageNet [1], tieredImageNet [61], Fewshot-CIFAR100 (FC100) [4], Caltech-UCSD Birds-200-2011 (CUB) [110], and CIFAR-FewShot (CIFAR-FS) [111].
+miniImageNet. miniImageNetwas first proposed in [1] and becomes the most popular benchmark in the few-shot classification literature.",1,related,1,positive
+"We observe that on the FC100 and CIFAR-FS datasets, DeepEMD-FCN outperforms DeepEMD-Grid and DeepEMD-Sampling, which is different from the observations on other datasets.",1,related,1,positive
+"We conduct few-shot classification experiments on five popular benchmark datasets, namely, miniImageNet [1], tieredImageNet [61], Fewshot-CIFAR100 (FC100) [4], Caltech-UCSD Birds-200-2011 (CUB) [110], and CIFAR-FewShot (CIFAR-FS) [111].",1,related,1,positive
+"We report 1-shot 5-way and 5-shot 5-way performance on 5 popular benchmarks:miniImageNet, tieredImageNet, FC100, CUB and CIFAR-FS.",1,related,1,positive
+"Our extensive experiments validate the effectiveness of our algorithm which outperforms state-of-the-art methods by a significant margin on five widely used few-shot classification benchmarks, namely, miniImageNet, tieredImageNet, Fewshot-CIFAR100 (FC100), Caltech-UCSD Birds-200-2011 (CUB), and CIFAR-FewShot (CIFAR-FS).",1,related,1,positive
+"In addition, we show that StarNet few-shot learner is effective at few-shot classification, significantly improving the state-of-the-art (SOTA) baselines on the CUB [50] and ImageNetLOC-FS [15] few-shot benchmarks, and comparing favorably to the SOTA methods on: miniImageNet [49], CIFAR-FS [2] and FC100 [30].",1,related,1,positive
+"Thus, for benchmarks with 84 × 84 input image resolution, the block strides were [2, 2, 2, 1] resulting in 10×10 feature grids, and for 32× 32 input resolution, we used [2, 2, 1, 1] strides resulting in 8× 8 feature grids.",1,related,1,positive
+"76% improvement over R2D2 [Bertinetto et al., 2019], CovaMNet, and DN4.",1,related,0,negative
+"We also obtain very competitive accuracy on 5-way 1-shot task with Conv embedding module, gaining 3.8%, 2.11%, 1.76% improvement over R2D2 [Bertinetto et al., 2019], CovaMNet, and DN4.",1,related,1,positive
+"The following FSL baselines are selected: (1) State-of-theart GCN-based FSL methods [33, 12, 8]; (2) Representative/latest FSL methods (w/o GCN) [39, 6, 40, 30, 2, 1, 3, 16].",1,related,1,positive
+"(2) The improvements achieved by our method over the stateof-the-art FSL baselines [30, 2, 1, 3, 16] range from 1% to 6%, showing that AdarGCN has a great potential for FSL even with sufficient and clean training samples, due to its Branch d",1,related,0,negative
+"In fact, the scheme we analyze in this paper is closely related to Lee et al. (2019), Bertinetto et al. (2018).",1,related,1,positive
+"Similar to Bertinetto et al. (2019), we chose the least-squares empirical risk minimizer as our inner algorithm.",1,related,1,positive
+"We introduce a practical and efficient algorithm for TASML, along with several algorithmic modifications aimed at improving model efficiency and performance, including: representation pre-training, optimization as a layer Amos & Kolter (2017); Bertinetto et al. (2019), and least-squares relaxation of classification loss.",1,related,1,positive
+We note that TASML is at least twice as fast as LEO since the model is both simpler and admits efficient meta-gradient computation with 2We tested our method with a cross entropy meta loss and achieved results similar to Bertinetto et al. (2019).,1,related,1,positive
+"Similar to Bertinetto et al. (2019), we chose the least-squares empirical risk minimizer as our inner algorithm. However, we note that Bertinetto et al. (2019) uses the cross-entropy ` to induce L.",1,related,1,positive
+", 2019) and R2-D2 (Bertinetto et al., 2018), we find that meta-learning tends to cluster object classes more tightly in feature space.",1,related,1,positive
+"…strategies that fix the feature extractor and only update the last (classification) layer of a network during the inner-loop, such as MetaOptNet (Lee et al., 2019) and R2-D2 (Bertinetto et al., 2018), we find that meta-learning tends to cluster object classes more tightly in feature space.",1,related,1,positive
+"We train the R2-D2 and MetaOptNet backbones in this fashion on the mini-ImageNet and CIFAR-FS datasets, and we test these networks on both 1-shot and 5-shot tasks.",1,related,1,positive
+"For R2-D2, we set the same training shot as for M-SVM, and used a learnable scale and bias following [3].",1,related,1,positive
+"In the evaluation of Task Aug for ProtoNets and M-SVM, we set pmax to the value getting the best results for R2-D2.",1,related,1,positive
+"We proved that Task Aug was valid for CIFAR-FS, FC100, and miniImageNet,
+and exceeded the result of the previous works.",1,related,0,negative
+It was different from [3] we used a fixed regularization parameter of ridge regression which was set to 50 because [3] has confirmed that making it learnable might not be helpful.,1,related,1,positive
+"For M-SVM, we set training shot to 5 for CIFAR-FS; 15 for FC100; and 15 for miniImageNet; regularization parameter of SVM was set to 0.1; and a learnable scale was used following [15].",1,related,1,positive
+"In the experiments of comparing Task Aug and Image Aug by rotating, R2-D2 was applied, and we set T to 80000.",1,related,1,positive
+"We used ProtoNets [27], MetaOptNet-SVM [15] (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) [3] as basic methods to verify the effective of Task Aug.",1,related,1,positive
+"We perform our experiments on 3 standardized few-shot classification datasets: miniImageNet [34], CUB [35] and CIFAR-FS [1].",1,related,1,positive
+"The common benchmarks for eval-
+uation are miniImageNet [33], CUB [34], Omniglot [18], CIFAR-FS [3] and tieredImageNet [27].",1,related,1,positive
+The paper [17] shows that on top of the common feature extractor one may simply use a classifier with a closed-form solution for each few-shot task.,1,related,1,positive
+-shot 5-shot 1-shot 5-shot MAML [6] ConvNet-32 58.9±1.9 71.5±1.0 - - Prototypical Networks [31] ConvNet-64 55.5±0.7 72.0±0.6 35.3±0.6 48.6±0.6 Relation Net [32] ConvNet-256 55.0±1.0 69.3±0.8 - - R2D2 [3] ConvNet-512 65.3±0.2 79.4±0.1 - - TADAM [23] ResNet-12 - - 40.1±0.4 56.1±0.4 MetaOptNet-SVM [14] ResNet-12 72.0±0.7 84.2±0.5 41.1±0.6 55.5±0.6 CSPN (ours) WRN-28-10 63.68±0.85 80.00±0.68 37.67±0.67 5,1,related,1,positive
+"In fact, the ridge regression was originally designed for the regression task, we also adjust the prediction of base linear Λ by Equation (5), as in (Bertinetto et al. 2019).",1,related,1,positive
+"In fact, the ridge regression was originally designed for the regression task, we also adjust the prediction of base linear Λ by Equation (5), as in (Bertinetto et al. 2019).
+ŷ = αX′w + β, (5)
+where X′ ∈ Rn×c is the feature matrix of the test image.",1,related,1,positive
+"Datasets and settings In the following study, we use the standard 5-ways and 5-shots setting on the Omniglot (Lake et al., 2015), CIFAR-FS (Bertinetto et al., 2019), and mini-ImageNet (Vinyals et al., 2016) datasets.",1,related,1,positive
+All methods improve the original MAML while meta-kfo improves the most on Omniglot and CIFAR-FS.,1,related,0,negative
+"We evaluate our method on various classification datasets: CIFAR10/100 (Krizhevsky et al., 2009), Caltech-UCSD Birds or CUB200 (Wah et al.,
+2011), Indoor Scene Recognition or MIT67 (Quattoni & Torralba, 2009), Stanford Dogs (Khosla et al., 2011), and tiny-ImageNet3 for standard or imbalanced image classification; mini-ImageNet (Vinyals et al., 2016), CIFAR-FS (Bertinetto et al., 2019), and FC100 (Oreshkin et al., 2018) for few-shot classification.",1,related,1,positive
+"The best accuracy is indicated as bold.
+mini-ImageNet CIFAR-FS FC100
+Method 1-shot 5-shot 1-shot 5-shot 1-shot 5-shot
+MAML† (Finn et al., 2017) 48.70±1.84 63.11±0.92 58.9±1.9 71.5±1.0 - - R2D2† (Bertinetto et al., 2019) - - 65.3±0.2 79.4±0.1 - -
+RelationNet† (Sung et al., 2018) 50.44±0.82 65.32±0.70 55.0±1.0 69.3±0.8 - - SNAIL (Mishra et al., 2018) 55.71±0.99 68.88±0.92 - - - - TADAM (Oreshkin et al., 2018) 58.50±0.30 76.70±0.30 - - 40.1±0.4 56.1±0.4 LEO‡ (Rusu et al., 2019) 61.76±0.08 77.59±0.12 - - - - MetaOptNet-SVM (Lee et al., 2019) 62.64±0.61 78.63±0.46 72.0±0.7 84.2±0.5 41.1±0.6 55.5±0.6
+ProtoNet (Snell et al., 2017) 59.25±0.64 75.60±0.48 72.2±0.7 83.5±0.5 37.5±0.6 52.5±0.6 ProtoNet + SLA+AG (ours) 62.22±0.69 77.78±0.51 74.6±0.7 86.8±0.5 40.0±0.6 55.7±0.6
+MetaOptNet-RR (Lee et al., 2019) 61.41±0.61 77.88±0.46 72.6±0.7 84.3±0.5 40.5±0.6 55.3±0.6 MetaOptNet-RR + SLA+AG (ours) 62.93±0.63 79.63±0.47 73.5±0.7 86.7±0.5 42.2±0.6 59.2±0.5
+(DeVries & Taylor, 2017), CutMix (Yun et al., 2019), AutoAugment (Cubuk et al., 2019), and FastAutoAugment (Lim et al., 2019) into recent architectures (Zagoruyko & Komodakis, 2016b; Han et al., 2017).",1,related,1,positive
+"…CIFAR-FS FC100
+Method 1-shot 5-shot 1-shot 5-shot 1-shot 5-shot
+MAML† (Finn et al., 2017) 48.70±1.84 63.11±0.92 58.9±1.9 71.5±1.0 - - R2D2† (Bertinetto et al., 2019) - - 65.3±0.2 79.4±0.1 - -
+RelationNet† (Sung et al., 2018) 50.44±0.82 65.32±0.70 55.0±1.0 69.3±0.8 - - SNAIL (Mishra…",1,related,1,positive
+"We focus on four meta-learning algorithms: MAML, R2-D2, MetaOptNet, and ProtoNet [8, 3, 18, 29].",1,related,1,positive
+"In this work, we report performance on Omniglot, Mini-ImageNet, and CIFAR-FS [16, 31, 3].",1,related,1,positive
+"Table 1: R2-D2 [3], adversarially trained transfer learning, ADML [33], and our adversarially queried (AQ) R2-D2 model on 5-shot Mini-ImageNet.",1,related,1,positive
+"From the image domain we use 4 few-shot learning benchmarks, namely MiniImageNet [37], Omniglot [25], CIFAR-FS [5] and FC100 [33] and 1 OCC benchmark dataset, the Multi-Task MNIST (MT-MNIST) dataset.",1,related,1,positive
+"To this end, we apply the proposed approach of learning meta-optimizers to the example synthetic dataset, as well as popular benchmark datasets: Omniglot (Lake et al., 2015), mini-ImageNet (Ravi & Larochelle, 2017), and CIFAR-FS (Bertinetto et al., 2019).",1,related,1,positive
+"To examine this claim, we meta-train a model consisting of four convolutional layers (C1 - C4) and a final fully-connected layer (FC) on Omniglot (Lake et al., 2015) and CIFAR-FS (Bertinetto et al., 2019).",1,related,1,positive
+"…datasets: the Omniglot where the setting is 10-way classification with 5-shots and 4 adaptation steps, using the original 4-layer convolutional network (CNN) of Finn et al. (2017), and the CIFAR-FS dataset (Bertinetto et al., 2019), doing 10- way classification with 3-shots and 2 adaptation steps.",1,related,1,positive
+"We focus on two datasets: the Omniglot where the setting is 10-way classification with 5-shots and 4 adaptation steps, using the original 4-layer convolutional network (CNN) of Finn et al. (2017), and the CIFAR-FS dataset (Bertinetto et al., 2019), doing 10- way classification with 3-shots and 2 adaptation steps.",1,related,1,positive
+"As opposed to Bertinetto et al. (2019), our model closely resembles the one of our Omniglot experiments.",1,related,1,positive
+"The KFC architecture consists of 4 layers, such that the meta-optimizers contains a total of 134,171 parameters for the 2-layer CNN model and 267,451 parameters for the 4-layer CNN.
+CIFAR-FS We obtained the splits created by Bertinetto et al. (2019) and exactly reproduced their preprocessing setting for our experiments on CIFAR-FS.",1,related,1,positive
+"…layers, such that the meta-optimizers contains a total of 134,171 parameters for the 2-layer CNN model and 267,451 parameters for the 4-layer CNN.
+CIFAR-FS We obtained the splits created by Bertinetto et al. (2019) and exactly reproduced their preprocessing setting for our experiments on CIFAR-FS.",1,related,1,positive
+"We found the expressiveness of the generator architecture used in the original DefenseGAN setup to be insufficient for even CIFAR-FS, so we substitute a stronger ProGAN generator to model the CIFAR-100 classes (Karras et al., 2017).",1,related,1,positive
+"We test this method on the MAML, ProtoNet, R2-D2, and MetaOptNet algorithms on the Mini-ImageNet and CIFAR-FS datasets (see Table 4).",1,related,1,positive
+"In this work, we report performance on OmniGlot, Mini-ImageNet, and CIFAR-FS (Lake et al., 2015; Vinyals et al., 2016; Bertinetto et al., 2018).",1,related,1,positive
+"All R2-D2 models are fine-tuned with a ridge regression head as in (Bertinetto et al., 2018), and we re-implement ADML from (Yin et al.",1,related,1,positive
+"We evaluate our method on various classification datasets: CIFAR10/100 (Krizhevsky et al., 2009), Caltech-UCSD Birds or CUB200 (Wah et al., 2011), Indoor Scene Recognition or MIT67 (Quattoni & Torralba, 2009), Stanford Dogs (Khosla et al., 2011), and tinyImageNet2 for standard or imbalanced image classification; mini-ImageNet (Vinyals et al., 2016), CIFAR-FS (Bertinetto et al., 2019), and FC100 (Oreshkin et al., 2018) for few-shot classification.",1,related,1,positive
+"Our base28 line outperforms the state-of-the-art on a variety of benchmark datasets such as Mini-ImageNet [1], 29 Tiered-ImageNet [4], CIFAR-FS [5] and FC-100 [3], all with the same hyper-parameters.",1,related,1,positive
+"Our baseline outperforms the state-of-the-art on a variety of benchmark datasets such as Mini-ImageNet [1], Tiered-ImageNet [9], CIFAR-FS [10] and FC-100 [5], all with the same hyper-parameters.",1,related,1,positive
+"Learning algorithms In addition to the ridge regressor (RR) (Bertinetto et al., 2019), we evaluate two standard supervised learning algorithms and two meta-learning algorithms.",1,related,1,positive
+"We adopt ridge regression (Bertinetto et al., 2019) to fit the labeled support set for the following reasons: 1) ridge regression admits a closed-form solution that enables end-to-end differentiation through the model, and 2) with proper regularization, ridge regression reduces over-fitting on the small support set.",1,related,1,positive
+"Although we optimized for a regression objective in Eq equation 5, the learned transformation has been shown to work well in few-shot classification after a calibration step (Bertinetto et al., 2019), as ŶQ = aΦQW + b (7) where a ∈ R and b ∈ R are meta-parameters learned through meta-training.",1,related,1,positive
+"The proposed methodology
+(S2M2) outperforms the state-of-the-art methods by 3-8% over the CIFAR-FS, CUB, mini-ImageNet and tiered-ImageNet datasets.",1,related,1,positive
+"We show that our proposed method S2M2 beats the current state-of-the-art accuracy on standard fewshot learning datasets like CIFAR-FS, CUB, mini-ImageNet and tiered-ImageNet by 3 − 8%.",1,related,1,positive
+"Datasets: We perform experiments on four standard datasets for few-shot image classification benchmark, miniImageNet [63], tiered-ImageNet [52], CUB [64] and CIFAR-FS [4]. mini-ImageNet consists of 100 classes from the ImageNet [53] which are split randomly into 64 base, 16 validation and 20 novel classes.",1,related,1,positive
+"For training ResNet-18 and ResNet-34 architectures, we use Adam [33] optimizer for mini-ImageNet and CUB whereas SGD optimizer for CIFAR-FS.",1,related,1,positive
+We find that using only rotation prediction as an auxiliary task during backbone training also outperforms the existing state-of-the-art methods on all datasets except CIFAR-FS.,1,related,1,positive
+"Datasets: We perform experiments on four standard datasets for few-shot image classification benchmark, miniImageNet [63], tiered-ImageNet [52], CUB [64] and CIFAR-FS [4].",1,related,1,positive
+We perform this study using the MiniImageNet and CIFAR-FS datasets and report results in Tables 1 and 2 respectively.,1,related,1,positive
+"In Tables 5, 6, and 7, we compare our approach with prior few-shot methods on the MiniImageNet, CIFAR-FS, and tiered-MiniImageNet datasets respectively.",1,related,1,positive
+"Our detailed experiments on MiniImagenet, CIFAR-FS, tiered-MiniImagenet, and ImageNet-FS few-shot datasets reveal that indeed adding self-supervision leads to significant improvements on the few-shot classification performance, which makes the employed few-shot models achieve stateof-the-art results.",1,related,1,positive
+"Also, we consider only the MiniImageNet dataset and not CIFAR-FS since the latter contains thumbnail images of size 32 × 32 from which it does not make sense to extract patches: their size would have to be less than 8× 8 pixels, which is too small for the evaluated architectures.",1,related,1,positive
+"(2) We study the impact of the added self-supervised loss by performing exhaustive quantitative experiments on MiniImagenet, CIFAR-FS, tiered-MiniImagenet, and ImageNetFS few-shot datasets.",1,related,1,positive
+"We perform experiments on four few-shot datasets, MiniImageNet [55], tiered-MiniImageNet [46], CIFAR-FS [2], and ImageNet-FS [20].",1,related,1,positive
+"Following the setting of most recent methods [45, 52, 70], we use ResNet variants [5, 22] to implement the embedding backbone φ.",1,related,1,positive
+"To ensure a fair comparison with other methods, we perform experiments under the same conditions using the verified re-implementation (Chen et al., 2019) of MatchingNet, ProtoNet, RelationNet, MAML and extend it with R2D2 (Bertinetto et al., 2019).",1,related,1,positive
+"In general, we observe that the real-world datasets are challenging for all methods but ADKL methods consistently outperform R2-D2 and CNP.",1,related,1,positive
+"2 Benchmarking analysis We evaluate model performance against R2-D2 [12], CNP[31], and MAML[14].",1,related,1,positive
+"It is worth mentioning that using the linear kernel and the KRR algorithm, we recover the few-shot classification algorithm R2-D2 proposed by Bertinetto et al. [12].",1,related,1,positive
+"We evaluate model performance against R2-D2 [12], CNP[31], and MAML[14].",1,related,1,positive
+"We test our algorithm on three datasets: miniImagenet [21], tieredImagenet [12] and CIFAR Few-Shot [1].",1,related,1,positive
+"We test our algorithm on three datasets: miniImagenet [20], tieredImagenet [12] and CIFAR Few-Shot [1].",1,related,1,positive
+"The class identities are then either obtained through a function defined a-priori such as the sample mean in [16], an attention kernel [21], or ridge regression [1].",1,related,1,positive
+"Also shown in Table 4 is the perfor-
+mance of our method on the CIFAR Few-Shot dataset.",1,related,0,negative
+"Finally, we use CIFAR Few-Shot, (CIFAR-FS) [1] containing images of size 32× 32, a reorganized version of the CIFAR-100 [8] dataset.",1,related,1,positive
+"We use the same data split as in [1], dividing the 100 classes into 64 for training, 16 for validation, and 20 for testing.",1,related,0,negative
+From this table we see that our method performs the best for CIFAR Few-Shot.,1,related,0,negative
+"(2018), ridge regression Bertinetto et al. (2019), and graph neural network Garcia & Bruna (2018). In this paper, we compare the performance of three distance metric learning methods. Our results show that a simple baseline method with a distancebased classifier (without training over a collection of tasks/episodes as in meta-learning) achieves competitive performance with respect to other sophisticated algorithms. Besides meta-learning methods, both Gidaris & Komodakis (2018) and Qi et al. (2018) develop a similar method to our Baseline++ (described later in Section 3.",1,related,1,positive
+"(2018), ridge regression Bertinetto et al. (2019), and graph neural network Garcia & Bruna (2018). In this paper, we compare the performance of three distance metric learning methods. Our results show that a simple baseline method with a distancebased classifier (without training over a collection of tasks/episodes as in meta-learning) achieves competitive performance with respect to other sophisticated algorithms. Besides meta-learning methods, both Gidaris & Komodakis (2018) and Qi et al. (2018) develop a similar method to our Baseline++ (described later in Section 3.2). The method in Gidaris & Komodakis (2018) learns a weight generator to predict the novel class classifier using an attentionbased mechanism (cosine similarity), and the Qi et al. (2018) directly use novel class features as their weights.",1,related,1,positive
+"(2018), ridge regression Bertinetto et al. (2019), and graph neural network Garcia & Bruna (2018). In this paper, we compare the performance of three distance metric learning methods. Our results show that a simple baseline method with a distancebased classifier (without training over a collection of tasks/episodes as in meta-learning) achieves competitive performance with respect to other sophisticated algorithms. Besides meta-learning methods, both Gidaris & Komodakis (2018) and Qi et al. (2018) develop a similar method to our Baseline++ (described later in Section 3.2). The method in Gidaris & Komodakis (2018) learns a weight generator to predict the novel class classifier using an attentionbased mechanism (cosine similarity), and the Qi et al.",1,related,1,positive
+"Compared to [4], our proposed method using recurrent back-propagation [18, 1, 25] is more general as it does not require a closed-form update, and the inner loop solver can employ any existing continuous optimizers.",1,related,1,positive
+"Unlike [4], we do not rely on an analytic form of the gradients of the optimization process.",1,related,1,positive
+"[48], Delta-encoder [57] and R2-D2[43].",1,related,1,positive
+"CUB-200(%)1-shot 5-shot 1-shot 5-shot META-LEARN LSTM [41] 43.44±0.77 60.60±0.71 40.43 49.65
+MAML [38] 48.70±1.84 63.11±0.92 38.43 59.15 Meta-Net [42] 49.21±0.96 - - -
+Reptile[44] 49.97 65.99 - - MAML* [38] 52.23±1.24 61.24±0.77 - - Meta-SGD* [39] 52.31±1.14 64.66±0.89 - - DEML+Meta-SGD [40] 58.49±0.91 71.28±0.69 - -
+MACO [47] 41.09±0.32 58.32±0.21 60.76 74.96 Matching Nets* [36] 47.89±0.86 60.12±0.68 - -
+PROTO-NET [37] 49.42±0.78 68.20±0.66 45.27 56.35 GNN [52] 50.33±0.36 66.41±0.63 - -
+R2-D2 [43] 51.5±0.2 68.8±0.1 - - MM-Net [50] 53.37±0.48 66.97±0.35 - - Cos & Att.",1,related,1,positive
+"As shown in Table II, in 1- and 5-shot test, our method attains 10.04% and 4.67% improvement over Fine-tuning [45] on CIFAR-FS dataset.",1,related,0,negative
+"We evaluate our approach on the miniImageNet, CIFAR-FS and FC100 datasets, and present results demonstrating its advantages over previous work.",1,related,1,positive
+"For the fully connected layer in the auxiliary task the weight decay is 0.00001 on miniImageNet, and 0.0005 on FC100 and CIFAR-FS.",1,related,1,positive
+"Experiments on few-shot image classification using the miniImageNet, CIFAR-FS and FC100 datasets confirm these findings, and we observe improved accuracy using the variational approach to train the VERSA model (Gordon et al., 2019).",1,related,1,positive
+"We integrate SAMOVAR with the deterministic TADAM architecture (Oreshkin et al., 2018), and find that our stochastic formulation leads to significantly improved performance, competitive with the state of the art on the miniImageNet, CIFAR-FS and FC100 datasets.",1,related,1,positive
+"In Table 3.5, we compare our model to the state of the art on CIFAR-FS.",1,related,1,positive
+"Our stochastic formulation significantly improves performance over the
+3.2 Related work 40
+base architecture, and yields results competitive with the state of the art on the miniImageNet, CIFAR-FS and FC100 datasets.",1,related,1,positive
+"We consider three main benchmarks for few-shot learning: MiniIamgeNet, FC100 and CIFAR-FS.",1,related,1,positive
+"On FC100 and CIFAR-FS, we use 30k SGD updates with the same momentum and initial learning rate, and the latter is decreased after 15k, 20k and 25k updates.",1,related,0,negative
+"CIFAR-FS: CIFAR-FS(Bertinetto et al., 2018) dataset used in our experiment is adapted from the CIFAR-100 dataset (Krizhevsky et al.",1,related,1,positive
+", 2021), we conduct the experiments on four datasets: VGGFlowers(Nilsback & Zisserman, 2008), miniImagenet(Ravi & Larochelle, 2017), CIFAR-FS(Bertinetto et al., 2018), and Omniglot(Lake et al.",1,related,1,positive
+"Following exiting works (Yap et al., 2021; Zhang et al., 2021), we conduct the experiments on four datasets: VGGFlowers(Nilsback & Zisserman, 2008), miniImagenet(Ravi & Larochelle, 2017), CIFAR-FS(Bertinetto et al., 2018), and Omniglot(Lake et al., 2011).",1,related,1,positive
+"CIFAR-FS: CIFAR-FS(Bertinetto et al., 2018) dataset used in our experiment is adapted from the CIFAR-100 dataset (Krizhevsky et al., 2009) for few-shot learning, which consists of 100 classes.",1,related,1,positive
+"Unless otherwise specified, the ablations are performed on CIFAR-FS with the ResNet12, in the 5-way zero-shot setting.",1,related,0,negative
+"Due to the lack of reliable and scalable baselines of adversarially robust methods in ZSL setting, we first applied LAAT to two popular few-shot benchmark datasets CIFAR-FS [4] and miniImageNet [47] and compared our method with several adversarially robust few-shot methods [14, 42, 50] directly.",1,related,1,positive
+"You can check the paper “ANIL” (Raghu et al., 2019) and “R2-D2” (Bertinetto et al., 2018) for more details.",1,related,0,negative
+"Therefore, the temperature scaling factor can be applied to a
+0 100 200 300 400 500 600 Singular value index i
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+No rm
+al ize
+d sin
+gu la
+r v al
+ue
+i/ m
+ax miniImageNet
+w.o. SWA: ilog i = 68.49 SWA: ilog i = 58.49
+0 100 200 300 400 500 600 Singular value index i
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+No rm
+al ize
+d sin
+gu la
+r v al
+ue
+i/ m
+ax
+tieredImageNet w.o. SWA: ilog i = 83.98 SWA: ilog i = 80.01
+0 100 200 300 400 500 600 Singular value index i
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+No rm
+al ize
+d sin
+gu la
+r v al
+ue
+i/ m
+ax
+CIFAR-FS
+w.o. SWA: ilog i = 40.94 SWA: ilog i = 33.63
+0 100 200 300 400 500 600 Singular value index i
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+No rm
+al ize
+d sin
+gu la
+r v al
+ue
+i/ m
+ax
+FC100
+w.o. SWA: ilog i = 40.22 SWA: ilog i = 34.34
+Figure 2: Normalized singular values for representation with and without SWA.",1,related,1,positive
+Note that the proposed method is fundamentally different from R2-D2 and MetaOptNet because our method requires neither episodic meta-learning nor bi-level optimization.,1,related,1,positive
+We speculate that this property is connected to R2-D2’s few-shot learning driven design and simulation of adapting to new tasks during its inner loop.,1,related,1,positive
+"As we see from Table 3, with the same fine-tune setting (See Appendix A.2), models pretrained by R2-D2 can achieve ∼ 5% higher top-1 accuracy than those pre-trained by SimCLR after fine-tuning on labeled data.",1,related,0,negative
+"From the results in Table 4, we find that R2-D2 initialized model consistently outperforms its contrastive counterpart on all 8 datasets.",1,related,1,positive
+"Now that we have established a framework for sampling tasks, we can directly apply various metalearning algorithms, such as R2-D2 and ProtoNet described in Section 2.1, in order to learn the parameters θ of the base model F .",1,related,1,positive
+We observe that representations learned via meta-learning (R2-D2 and ProtoNet) can achieve performance on par with SimCLR on CIFAR-10 but worse on ImageNet.,1,related,1,positive
+"We will see in the following experiments that although R2-D2 achieves worse linear evaluation on ImageNet with this hyperparameter setting, it actually performs better than SimCLR on downstream tasks, such as semi-supervised learning and transfer learning, other popular (and plausibly more realistic) evaluation scenarios for SSL methods.",1,related,1,positive
+"For the rotation angle predictor loss, we weight the additional loss term with coefficient λ = 1 for all experiments except for pre-training with R2-D2, where we set λ = 0.01.",1,related,1,positive
+"For CIFAR-FS, our method outperforms best baselines by 4.8% and 5.7% for 10-shot and 20-shot learning, respectively.",1,related,0,negative
+"For CIFAR-FS, our method outperforms best baselines by 1.5% and 2.3% for 10-shot and 20-shot learning, respectively.",1,related,1,positive
+"For CIFAR-FS, our method outperforms best baselines by 2.3% and 3.2% for 10-shot and 20-shot learning, respectively.",1,related,1,positive
+"To evaluate the effectiveness of the proposed method on more challenging real image datasets, we perform experiments on CIFAR-FS [Bertinetto et al., 2019] and MiniImagenet [Vinyals et al.",1,related,1,positive
+"For our proposed benchmarks with CIFAR-FS and Mini-ImageNet pre-trained models, our method improves over baselines in the range of 2% to 7%, demonstrating the effectiveness of the proposed approach.",1,related,0,negative
+"For CIFAR-FS, our method outperforms best baselines by 2.3% and 3.7% for 10-shot and 20-shot learning, respectively.",1,related,1,positive
+"To evaluate the effectiveness of the proposed method on more challenging real image datasets, we perform experiments on CIFAR-FS [Bertinetto et al., 2019] and MiniImagenet [Vinyals et al., 2016].",1,related,1,positive
+"While the authors used meta-batch size of 2 for 5-shot and 4 for 2-shot experiment to reduce training memory consumption, we stick to 4 as it leads to slightly better performance on CIFAR-FS [8] dataset during our experiments.",1,related,0,negative
+For the experiments we have used the novel CIFARFS [8] dataset.,1,related,0,negative
+"For example, in regression settings, a common choice of inner algorithm is ridge regression and the meta-parameter is a representation or embedding shared across the tasks that we wish to meta-learn [Bertinetto et al., 2018].",1,related,1,positive
+"Additionally we experiment with using a neural network random feature kernel, an extension of R2D2 [Bertinetto et al., 2018], and show competitive performance.",1,related,1,positive
+"Table 1: Validation results for meta-hyperparameter configurations for IKML, R2D2 [Bertinetto et al., 2018] and ANP [Kim et al.",1,related,1,positive
+"We evaluate our approach using four datasets: (i) Mini-ImageNet (Vinyals et al., 2016), (ii) CIFAR-FS (Bertinetto et al., 2019), (iii) FC-100 (Oreshkin et al., 2018), (iv) and EMNIST (balanced) (Cohen et al., 2017).",1,related,1,positive
+"To demonstrate this, we compared the 1- and 5-shot performance of our approach to several other few-shot learning algorithms on the Mini-ImageNet, CIFAR-FS, and FC-100 datasets, as summarized in Table 1.",1,related,1,positive
+"Therefore, we empirically investigated the dynamics of mini 6=j∈[l] ‖µf (S̃i)−µf (S̃j)‖ during training in our standard setting (WRN-28-4 with the default hyperparameters, see Section 2) on CIFAR-FS, considering a varying number source classes (l ∈ {5, 10, 20, 30, 40, 50, 60}) and learning rates (η ∈ {2−2i−2}4i=1).",1,related,1,positive
+"We consider WideResNet (WRN) [46], ResNet-12 [11] and a shallow network of 4 convolutional blocks (CONV) [2].",1,related,1,positive
+"We use three benchmarks for performance evaluation: miniImageNet [39], CUB [40] and CIFARFS [2].",1,related,1,positive
+"We meta-train the WRN, ResNet, CONV following [22], [19] and [2], respectively.",1,related,1,positive
+"For example, the overall performance of WRN outperforms CONV, and the performance boost of ADV-CE over CE with WRN in 1-shot tasks is 10.5%, which is larger than the boost with CONV (4.8%).",1,related,1,positive
+"We achieve this by leveraging a ridge regression closed-form solver [5], on top an INR, illustrated in Figure 2b.",1,related,1,positive
+"We search through the values μ = [1, 3, 5, 7, 9], and select the best value based on the validation loss.",1,related,1,positive
+"We further leverage Implicit Neural Representations [24, 36] as our choice of deep time-index models, a random Fourier features layer [38] to ensure that we are able to learn high frequency information present in time-series data, and a closed-form ridge regressor [5] to efficiently tackle the meta-learning formulation.",1,related,1,positive
+"As exhibited in Table 4, regardless of whether RRML or PN is used as the classifier, SaAML obtains some performance progress across different datasets in contrast to the published original model and MLADA.",1,related,1,positive
+"We adopt RRML (Bertinetto et al., 2018) and PN (Snell
+et al., 2017) as the classifier to build the model, respectively.",1,related,1,positive
+Results on CIFARFS The CIFARFS [3] dataset consists of 100 classes sampled from CIFAR100 [23].,1,related,1,positive
+Table 4 shows the few-shot accuracies on CIFARFS.,1,related,0,negative
+"Following [3], we divide all classes into 64, 16, and 20 classes for training, validation, and testing, respectively.",1,related,0,negative
+"Based on the Conv-4 [46] and ResNet-12 backbones, we conduct experiments on the Omniglot [24], miniImageNet [46], tieredImageNet [41], and CIFARFS [3] datasets.",1,related,1,positive
+"During the evaluation, we compared our methods on five standard datasets for few-shot classification, miniImageNet [48], tieredImageNet [40], CIFAR-FS [5], FC100 [37], and CUB [49].
+miniImageNet and tieredImageNet are subsets of ImageNet [41].miniImageNet consists of 100 classes with 600 samples per class and is randomly divided into three disjoint sets of the training set (64 classes), validation set (16 classes), and testing set (20 classes). tieredImageNet, a bigger version of miniImageNet, contains 608 classes with 1200 samples per class and is randomly split into 351/97/160 for train/val/test.",1,related,1,positive
+"During the evaluation, we compared our methods on five standard datasets for few-shot classification, miniImageNet [48], tieredImageNet [40], CIFAR-FS [5], FC100 [37], and CUB [49].",1,related,1,positive
+"From table 3, We can see that the transferring effect of miniImageNet on CUB is better than the previous method, and the mutual evaluation effect of miniImageNet and CIFAR-FS is close to the result of the intra-domain training, partly because they both are randomly divided.",1,related,1,positive
+"Besides, we also used the cifar-fs (Bertinetto et al., 2019) sampled from cifar-100 dataset (Krizhevsky et al., 2009), which consists of size 32x32 colored images.",1,related,1,positive
+"We follow the splits for this dataset according to (Bertinetto et al., 2019).",1,related,1,positive
+"Besides, we also used the cifar-fs (Bertinetto et al., 2019) sampled from cifar-100 dataset (Krizhevsky et al.",1,related,1,positive
+"Results on miniImageNet and tieredImageNet: As contending metalearning algorithms, we choose the vanilla MAML along with notable metalearners such as Meta-SGD [12], Reptile [16], LLAMA [7], R2-D2 [3], and BOIL [17].",1,related,1,positive
+"Here, for example, we examined the 5-way (5 classes) 1-shot task of CIFAR-FS, which is a kind of standard task in one-shot classification.",1,related,1,positive
+"Also, for demonstrating evaluation of DNNs in DONE, we used CIFAR-FS [26] by Torchmeta [30].",1,related,1,positive
+"The other two are linear classifiers, namely SVM (MetaSVM, Lee et al., 2019) and ridge regression (R2D2, Bertinetto et al., 2019).",1,related,1,positive
+"CIFAR-FS: The CIFAR-FS dataset (Bertinetto et al., 2019) contains all the 100 classes form CIFAR100.",1,related,1,positive
+"(15)
+Another choice of base learner is a discriminatively trained linear classifier, e.g., SVM (Lee et al., 2019) or ridge regression (Bertinetto et al., 2019).",1,related,1,positive
+"We examined the 5-way (5 classes) 1-shot task of CIFAR-FS, which is a kind of standard task in one-shot classification.",1,related,0,negative
+"Also, for transfer learning, we used CIFAR-FS [28] by Torchmeta [31].",1,related,1,positive
+"Considering that using the prototype-based nearest-neighbor classifier seems unfair for the comparison between the prototypical loss and contrastive losses, we provide the results with ridge regression classifier [6] in Fig.",1,related,1,positive
+"In practice, 1) we never specify exactly what and how big the underlying set of classes that we care about is, and 2) many of the recent meta-learning methods (svm vs pn on CIFAR-FS Table 2 in Lee et al. [18], gnn vs r2-d2 on miniImageNet Table 1 in Bertinetto et al. [3], and ironically fix-ml) sometimes only improve over the prior works by < 1%.",1,related,1,positive
+"(ii) CIFAR-FS-Mod (cifar-M) and FC-100-Mod (FC-M): As we don’t have additional samples for the base classes, we randomly partition each base class’s 600 examples into a 500, 100 split where the meta-training tasks are constructed only from the 500 examples and the remaining 100 examples are reserved to generate fresh tasks from τ(CB).",1,related,1,positive
+"2) Datasets: We consider three of the most widely-used few-shot learning benchmarks: (i) miniImageNet (mini) [31], which consists of 100 ImageNet [25] classes of 84 × 84 images, randomly split into 64 base, 16 validation, and 20 novel classes; (ii) CIFAR-FS (cifar) [3] with an identically sized random base-val-novel split of the CIFAR-100 [17] dataset of 32× 32 images; (iii) FC-100 (FC) [20], another split of the CIFAR-100 dataset, where the split is according to 20 super classes (each having 5 classes).",1,related,1,positive
+"[3] correctly claimed that methods like rr and svm outperform pn on τ(CN ) for these benchmarks, but if we consider the BaseGen performance, pn consistently performs the best.",1,related,1,positive
+"To fully evaluate the performance differences, we compare fix-ml and ml along two major axes: 1) Metalearning methods: We explore using fix-ml’s modified objective with three state-of-the-art meta-learning methods: protoypical-networks (pn) [28], MetaOptNet-SVM (svm) [18], and MetaOptNet-Ridge Regression (rr) [3, 18].",1,related,1,positive
+"We broadly divide the existing few-shot learning approaches into three categories: (1) Gradient-based methods optimize feature embedding with gradient descent during meta-test stage (Finn et al., 2017; Bertinetto et al., 2018; Lee et al., 2019).",1,related,1,positive
+"Our ResNet-12 model beats (Lee et al., 2019) 1-shot result by 2.7% on FC100, 3.4% on CIFAR-FS, and 1.72% on mini-ImageNet.",1,related,0,negative
+"1 DATASETS We adopt three standard benchmark datasets that are widely used in few-shot learning, CIFAR-FS dataset (Bertinetto et al., 2018), FC100 dataset (Oreshkin et al.",1,related,1,positive
+"We demonstrate the effectiveness of our approach on standard few-shot benchmarks, including FC100 (Oreshkin et al., 2018), CIFAR-FS (Bertinetto et al., 2018) and mini-ImageNet (Vinyals et al., 2016) by showing a significant improvement over the existing methods.",1,related,1,positive
+"We adopt three standard benchmark datasets that are widely used in few-shot learning, CIFAR-FS dataset (Bertinetto et al., 2018), FC100 dataset (Oreshkin et al., 2018), and mini-ImageNet dataset (Vinyals et al., 2016).",1,related,1,positive
+"In Table 5 of Appendix A, we also test MAML-L and TSA-MAML on CIFARFS [Bertinetto et al., 2019] and observe that TSA-MAML makes about at least 1.",1,related,1,positive
+"1 3 5 7 9 11 13 15 Number m of Initializations
+36
+38
+40
+42
+44
+46
+Cl as
+si fic
+at io
+n Ac
+cu ra
+cy (
+% )
+38.48
+40.52 39.77 40.44 40.55 40.19 39.75 39.12
+39.97
+42.91 42.18 42.59 42.67 42.57 41.91
+41.29
+1-shot 10-way on CIFARFS Non-transduction Transduction
+Figure 4: Effects of m to TSA-MAML.",1,related,0,negative
+"In TSA-MAML, the training iteration number S is 40, 000 for CIFARFS and 80, 000 for tieredImageNet and miniImageNet, and the cluster number m is five for all datasets.",1,related,1,positive
+"We evaluate TSA-MAML on three benchmarks, CIFARFS [Bertinetto et al., 2019], tieredImageNet [Ren et al., 2018] and miniImageNet [Ravi and Larochelle, 2017] .",1,related,1,positive
+"In Table 5 of Appendix A, we also test MAML-L and TSA-MAML on CIFARFS [Bertinetto et al., 2019] and observe that TSA-MAML makes about at least 1.5% average improvement on the four test settings (n-way k-shot, n = 5 or 10 and k = 1 or 5) over both MAML and MAML-L.",1,related,1,positive
+"We evaluate TSA-MAML on three benchmarks, CIFARFS [Bertinetto et al., 2019], tieredImageNet [Ren et al.",1,related,1,positive
+"Specifically, we sequentially meta-train VC-BML and baselines on: VGG-Flowers, miniImagenet, CIFAR-FS and Omniglot, and show the experimental results in Figure 1.",1,related,1,positive
+"In the setting of non-stationary task distribution, we sequentially meta-train VC-BML on four datasets: Omniglot, CIFAR-FS, miniImagenet and VGG-Flowers.",1,related,1,positive
+"We use the same split as [12]: 64 classes for meta-training, 16 classes for validation and 20 classes for meta-test.",1,related,1,positive
+"In the settings of nonstationary task distribution, we use an inner learning rate of 0.1, an outer learning rate of 0.001 on Omniglot and CIFAR-FS, and use an inner learning rate of 0.01, an outer learning rate of 0.0001 on miniImagenet and VGG-Flowers.",1,related,1,positive
+"Note that on CIFAR-FS, miniImagenet and VGG-Flowers datasets, we follow the same preprocessing steps as Omniglot to generate a sequence of tasks.",1,related,1,positive
+"From Figure 3, we can observe that similar results can also be found on CIFAR-FS and miniImagenet datasets.",1,related,1,positive
+"In the settings of non-stationary task distribution, we use 5 inner gradient descent steps with an inner learning rate of 0.01, and use an outer learning rate of 0.001 on Omniglot, 0.0001 on CIFAR-FS, miniImagenet and VGG-Flowers.",1,related,1,positive
+"To learn OSAKA, we use 3 inner gradient descent steps with an inner learning rate of 0.1, and use an outer learning rate of 0.001 on Omniglot, CIFAR-FS, 0.0001 on miniImagenet, VGG-Flowers.",1,related,1,positive
+"It can be observed from Figure 3 that Bayesian methods, i.e., VC-BML and BOMVI, always obtain the best and the second best performance on unseen tasks, i.e., miniImagenet and VGG-Flowers at CIFAR-FS meta-training stage and VGG-Flowers at miniImagenet meta-training stage.",1,related,1,positive
+"For tieredImageNet only we increased the batch size to 1024, and train on 64 classes (like miniImageNet and CIFAR-FS) and 16 images per class within a batch, as we found it being beneficial.",1,related,0,negative
+"For miniImageNet and CIFAR-FS we decrease the learning rate by a factor of 10 after 70% of epochs have been trained, and train for a total of 120 epochs.",1,related,0,negative
+Results on miniImageNet and CIFAR-FS are shown in Table 4.,1,related,0,negative
+"For CIFAR-FS and tieredImageNet, we found this did not help performance.",1,related,0,negative
+"On CIFAR-FS, we increase the number of training epochs from 120 to 240, which improved accuracy by about 0.5%.",1,related,0,negative
+"We conduct a comparison of our method to state-of-the-art methods in terms of few-shot classification accuracy on four benchmarks, including MiniImageNet (Vinyals et al., 2016), CUB-200-2011 (Wah et al., 2011), CIFAR-FS (Bertinetto et al., 2018) and FC100 (Oreshkin et al., 2018).",1,related,1,positive
+"To further validate the effectiveness of our method, we conduct a series of ablation studies on miniImageNet and CIFAR-FS datasets.",1,related,0,negative
+"As shown in Figure 3(b), we can observe that, the optimal λ for MiniImageNet in 1- shot and 5-shot cases are 0.2 and 0.3, respectively, while for the CIFAR-FS dataset, the optimal λ reaches at 0.1 for both 1-shot and 5-shot cases.",1,related,1,positive
+We sample one episode in the test split of miniImageNet and CIFAR-FS datasets under the 5-way 1-shot and 5-way 5-shot settings.,1,related,1,positive
+"To evaluate our module, we select two GNN-based few-shot models: EGNN and DPGN, and four standard few-shot learning benchmarks: mini-ImageNet [20], tiered-ImageNet [28], CUB-200-2011 [29] and CIFAR-FS [30].",1,related,1,positive
+"• The comprehensive experimental results on four benchmark datasets: mini-ImageNet, tiered-ImageNet, CUB200-2011, and CIFAR-FS show that our proposed module is effective for GNN-based few-shot model.",1,related,1,positive
+To further investigate the effect of knowledge distillation we perform multiple stages of self knowledge distillation on CIFAR-FS [1] dataset.,1,related,1,positive
+We conduct an ablation study to measure the effect of different values of the coefficient of inductive loss (without multi-head distillation) on the CIFAR-FS [1] validation set; the results of 5-way 1-shot FSL tasks are presented in fig.,1,related,0,negative
+To analyse the effect of knowledge distillation temperature (for Kullback Leibler (KL) divergence losses) we conduct an ablation study on the validation set of CIFAR-FS [1] dataset.,1,related,1,positive
+"We conducted experiments on four datasets – CIFAR-FS [16], FC100 [25], miniImageNet [9] and tieredImageNet [21] (Tables 1, 2, 3, 4).",1,related,1,positive
+"We designed several experiments settings, according to the Section 3.3, to research the relative advantage of using the multi-task loss function (3) and SPSA-based optimization against original methods: MTM Backprop, where multi-task weights in the loss function are optimized jointly with the network parameters θ; MTM Inner First-Order, where a separate gradient-based multi-task weights optimizer is used; MTM SPSA and MTM SPSA-Track where zero-order methods (5) and (6) are used as a multi-task weights optimizer respectively; MTM SPSA-Coarse (on CIFAR-FS and FC100) which used SPSA-based approach (5) but had a separate weight per coarse class as in (7).",1,related,1,positive
+"On CIFAR-FS we improve against original method up to 2.0%, with the largest improvement in 1-shot 2-way MAML MTM SPSA-Track.",1,related,0,negative
+"Note that unlike other algorithms in the literature, we evaluate our frame-
+1https://github.com/eriklindernoren/PyTorch-GAN
+Dataset CIFAR100 miniImagenet CUB200 TieredImagenet
+5way-5shot 2way-5shot 5way-5shot 2way-5shot 5way-5shot 2way-5shot 5way-5shot 2way-5shot
+Pretrain 74.93% 95.61% 69.00% 95.54% 90.00% 89.27% 46.00% 66.70% Incremental 88.57% 96.77% 83.57% 95.56% 87.00% 86.98% 69.58% 78.68%
+Table 2: 5 shot Results for SemGIF using Resnet-50 backbone encoder
+Dataset CIFAR100 miniImagenet CUB200 TieredImagenet
+pretrain Accb Inc AccH Inc Accb Inc Accn pretrain Accb Inc AccH Inc Accb Inc Accn pretrain Accb Inc AccH Inc Accb Inc Accn pretrain Accb Inc AccH Inc Accb Inc Accn
+5-way 5-shot 66.52 79.95 87.27 73.76 63.63 75.49 86.09 67.22 84.41 86.56 91.09 82.46 47.23 69.89 83.16 60.27 2-way 5-shot 93.40 91.23 84.82 98.68 95.41 95.21 92.44 98.15 88.12 83.56 88.22 79.37 69.44 79.71 94.39 68.98 5-way 1-shot 44.22 57.21 75.50 46.06 40.22 56.75 71.89 46.87 43.01 57.35 67.31 49.96 33.04 55.63 67.25 47.43 2-way 1-shot 69.08 75.74 74.46 77.06 65.21 75.16 71.32 79.44 64.13 58.44 70.30 50.00 60.03 62.23 71.19 55.28 5-way 10-shot 72.65 87.61 94.64 81.54 69.82 83.39 92.09 76.20 91.56 87.45 85.00 90.03 51.85 68.47 94.20 53.78 2-way 10-shot 96.24 97.74 96.67 98.84 96.27 96.59 94.52 98.75 90.00 89.24 88.22 79.37 71.55 81.95 95.64 71.68
+Table 3: IFSL Results on multiple combinations of N-way K-shot across the four datasets
+work across a wider variety of datasets.",1,related,1,positive
+"We consider a total of four standard datasets to evaluate the proposed SemGIF framework: CIFAR100 [3], miniImagenet [39], CUB200-2011 [40] and TieredImagenet [28].",1,related,1,positive
+"We also have employed batch-norm between the layers in the image branch, text branch, and the Visual-to-semantic mapping networks, while the embedding function also utilizes a dropout with p= 0.5 between its layers. fastText word
+Dataset CIFAR100 miniImagenet CUB200 TieredImagenet*
+Method 5way-1shot 5way-5shot 5way-1shot 5way-5shot 5way-1shot 5way-5shot 5way-1shot 5way-5shot
+ProtoNet [34] B1 40.96% 62.50% 41.07% 55.15% 29.45% 46.00% 30.04% 41.38% CADA-VAE [32] B2 - - - - 54.15% 62.05% - - aCASTLE [44] B2 - - 43.63 % 56.33% - - 22.23% 33.54% LwoF [9] - - 52.37% 59.89% - - 52.40% 62.63% Imprint [25] - - 41.25% 43.92% 47.62% 61.59% 39.13% 53.60% Attractor [27] - - 53.62% 62.83% - - 56.11% 65.52% XtarNet [45] - - 55.28% 66.86% - - 61.37% 69.58%
+Ours without semantic 42.86% 55.17% 38.98% 49.89% 39.74% 63.29% 49.65% 62.83% Ours (full) 57.21% 79.95% 56.75% 75.49% 57.35% 86.56% 55.63% 69.89%
+Table 1: A comparative study with existing algorithms in the literature.",1,related,1,positive
+"Base Dataset CIFAR100 miniImagenet CUB200 TieredImagenet
+Novel Dataset 5way-1shot 5way-5shot 5way-1shot 5way-5shot 5way-1shot 5way-5shot 5way-1shot 5way-5shot
+CIFAR100 - - 60.73% 81.00% 57.91% 78.63% 54.87% 78.45% miniImagenet 55.89% 75.95% - - 51.41% 75.68% 50.69% 74.86% CUB200 56.32% 84.61% 57.19% 83.03% - - 50.38% 82.19% TieredImagenet 55.19% 69.07% 55.88% 67.75% 51.42% 69.49% - -
+Table 4: Heterogeneous evaluation by choosing Dbase and Dnovel from different domains
+Heterogeneous evaluation study: We perform a heterogeneous evaluation study using the standard datasets considered.",1,related,1,positive
+"We use 4 datasets to evaluate few-shot learning algorithms - MiniImageNet [51], Tiered-ImageNet [39], CIFAR-FS [1] & FC100 [35]:",1,related,1,positive
+"We use 4 datasets to evaluate few-shot learning algorithms - MiniImageNet [51], Tiered-ImageNet [39], CIFAR-FS [1] & FC100 [35]:
+• Mini-ImageNet : Mini-ImageNet contains 100 randomly chosen classes from ILSVRC-2012 [41] and these classes are randomly split into 64, 16 and 20 classes for train, validation and test with each class containing 600 images.",1,related,1,positive
+"The compared methods include ProtoNet, MetaOptNet-RR and MetaOptNet-SVM, whose task-specific learners are nearest-neighbor classifier (Snell et al., 2017), ridge regression classifier (Bertinetto et al., 2019) and SVM classifier (Lee et al., 2019), respectively.",1,related,1,positive
+"We compare MetaProx with the state-of-the-arts: (i) meta-initialization: MAML [12] and its variants FOMAML [12], and REPTILE [25]; (ii) meta-regularization: iMAML [28] and Meta-MinibatchProx [43]; and (iii) metric learning: ANIL [27], R2D2 [4], ProtoNet [35], and MetaOptNet [22] with SVM using the linear kernel and cosine kernel.",1,related,1,positive
+"By setting fθ = 0, this recovers the state-of-the-arts of MetaOptNet [22], R2D2 [4], and DKT [26].",1,related,1,positive
+"We perform our experiments on four benchmark datasets: MiniImageNet [10], CUB [11], CIFAR-FS [12] and TieredImageNet [13].",1,related,1,positive
+"LaSAML with other meta-learning framework To further explore the potential of LaSAML, we incorporate it into the Ridge Regression Meta-learner (RRML) (Bertinetto et al., 2019), which is achieved by simply replacing the feature extractor f and g with the feature extractors used in LaSAML-PN.",1,related,1,positive
+"Note the trainable temperature ⌧ here allows automatic scaling to the unnormalized multi-class posterior predictive, and a similar implementation can also be found in [5].",1,related,1,positive
+"We evaluate our approach on three standard few-shot classification datasets: miniImageNet [66], tiered-ImageNet [51], and CIFAR-FS [4].",1,related,1,positive
+"We broadly divide the existing few-shot learning approaches into three categories: (1) Gradient-based methods optimize feature embedding with gradient descent during meta-test stage (Finn et al., 2017; Bertinetto et al., 2018; Lee et al., 2019).",1,related,1,positive
+"Our ResNet-12 model beats (Lee et al., 2019) 1-shot result by 2.7% on FC100, 3.4% on CIFAR-FS, and 1.72% on mini-ImageNet.",1,related,0,negative
+"We demonstrate the effectiveness of our approach on standard fewshot benchmarks, including FC100 (Oreshkin et al., 2018), CIFAR-FS (Bertinetto et al., 2018) and mini-ImageNet (Vinyals et al., 2016) by showing a significant improvement over the existing methods.",1,related,1,positive
+"We adopt three standard benchmark datasets that are widely used in few-shot learning, CIFAR-FS dataset (Bertinetto et al., 2018), FC100 dataset (Oreshkin et al., 2018), and mini-ImageNet dataset (Vinyals et al., 2016).",1,related,1,positive
+"We adopt three standard benchmark datasets that are widely used in few-shot learning, CIFAR-FS dataset (Bertinetto et al., 2018), FC100 dataset (Oreshkin et al.",1,related,1,positive
+"B Additional Experiments on Few-Shot Classification We further validate the effectiveness of our proposed dynamic inner-loop update rule ALFA, through evaluating the performance on the relatively new CIFAR100-based [6] few-shot classification datasets: FC100 (Fewshot-CIFAR100) [12] and CIFAR-FS (CIFAR100 few-shots) [3].",1,related,1,positive
+"All models are only trained with miniImageNet meta-train set and tested on various datasets (domains) without any fine-tuning.
+miniImageNet
+→ Omniglot → FC100 → CIFAR-FS ALFA + Random Init 91.02± 0.29% 62.49± 0.48% 63.49± 0.45% MAML [4] 85.68± 0.35% 55.52± 0.50% 55.82± 0.50% ALFA + MAML 93.11± 0.23% 60.12± 0.49% 59.76± 0.49% MAML + L2F [2] 94.96± 0.22% 61.99± 0.49% 63.73± 0.48% ALFA + MAML + L2F 94.10± 0.24% 63.33± 0.45% 63.87± 0.48%",1,related,0,negative
+"We further validate the effectiveness of our proposed dynamic inner-loop update rule ALFA, through evaluating the performance on the relatively new CIFAR100-based [6] few-shot classification datasets: FC100 (Fewshot-CIFAR100) [12] and CIFAR-FS (CIFAR100 few-shots) [3].",1,related,1,positive
+"Backbone FC100 CIFAR-FS
+1-shot 5-shot 1-shot 5-shot
+Random Init 4-CONV 27.50± 0.45% 35.37± 0.48% 29.74± 0.46% 39.87± 0.49% ALFA + Random Init 4-CONV 38.20± 0.49% 52.98± 0.50% 60.56± 0.49% 75.43± 0.43% MAML † [4] 4-CONV 36.67± 0.48% 49.38± 0.49% 56.80± 0.49% 74.97± 0.43% ALFA + MAML 4-CONV 37.99± 0.48% 53.01± 0.49% 59.96± 0.49% 76.79± 0.42% MAML + L2F † [2] 4-CONV 38.96± 0.49% 53.23± 0.48% 60.35± 0.48% 76.76± 0.42% ALFA + MAML + L2F 4-CONV 38.50± 0.47% 53.20± 0.50% 60.36± 0.50% 76.60± 0.42% Random Init ResNet12 32.26± 0.47% 42.00± 0.49% 36.86± 0.48% 49.46± 0.50% ALFA + Random Init ResNet12 40.57± 0.49% 53.19± 0.50% 64.14± 0.48% 78.11± 0.41% MAML † ResNet12 37.92± 0.48% 52.63± 0.50% 64.33± 0.48% 76.38± 0.42% ALFA + MAML ResNet12 41.46± 0.49% 55.82± 0.50% 66.79± 0.47% 83.62± 0.37% MAML + L2F † ResNet12 41.89± 0.47% 54.68± 0.50% 67.48± 0.46% 82.79± 0.38% ALFA + MAML + L2F ResNet12 42.37± 0.50% 55.23± 0.50% 68.25± 0.47% 82.98± 0.38% Prototypical Networks∗ [17] 4-CONV 35.3± 0.6% 48.6± 0.6% 55.5± 0.7% 72.0± 0.6% Relation Networks [18] 4-CONV+ - - 55.0± 1.0 69.3± 0.8 TADAM [12] ResNet12 40.1± 0.4% 56.1± 0.4% - - MetaOpt ‡ [8] ResNet12 41.1± 0.6% 55.5± 0.6% 72.0± 0.7% 84.2± 0.5%
+* Meta-network is trained using the union of meta-training set and meta-validation set.",1,related,0,negative
+"3We exactly reproduced MetaOptNet on CIFAR-FS, but were unable to close the gap on miniImageNet.",1,related,0,negative
+We follow this practice to use 15-shot episodes for miniImageNet and 5-shot for CIFAR-FS.,1,related,0,negative
+"We compare against a few competitive methods, including MAML [10], ProtoNets [44], Relation Networks [45], R2D2 [6], MetaOptNet [21] and RFS [48].",1,related,1,positive
+"Interestingly, We find that once we try replace the backbone feature extractor with the same ResNet-12 used in MetaOptNet, ProtoNets and R2D2 both show competitive results, and especially R2D2 already performs better than MetaOptNet just by ensuring a fair backbone.",1,related,1,positive
+"In this section, we first describe the implementation details (Section 4.1), and then benchmark MATE on two few-shot classification datasets, CIFAR-FS [6] and miniImageNet [53] (Sections 4.2 and 4.3).",1,related,1,positive
+"Then, MATE can still consistently provide improvements to both (enhanced) baselines: 1) applying MATE to ProtoNets+ResNet12 yields +0.64% 5-shot accuracy and slightly better 1-shot accuracy (+0.14%); 2) applying MATE to R2D2+ResNet12 yields +0.44% 5-shot accuracy improvement and similar 1-shot accuracy (+0.08%).",1,related,0,negative
+"B Additional Experiments on Few-Shot Classification We further validate the effectiveness of our proposed dynamic inner-loop update rule ALFA, through evaluating the performance on the relatively new CIFAR100-based [6] few-shot classification datasets: FC100 (Fewshot-CIFAR100) [12] and CIFAR-FS (CIFAR100 few-shots) [3].",1,related,1,positive
+"All models are only trained with miniImageNet meta-train set and tested on various datasets (domains) without any fine-tuning.
+miniImageNet
+→ Omniglot → FC100 → CIFAR-FS ALFA + Random Init 91.02± 0.29% 62.49± 0.48% 63.49± 0.45% MAML [4] 85.68± 0.35% 55.52± 0.50% 55.82± 0.50% ALFA + MAML 93.11± 0.23% 60.12± 0.49% 59.76± 0.49% MAML + L2F [2] 94.96± 0.22% 61.99± 0.49% 63.73± 0.48% ALFA + MAML + L2F 94.10± 0.24% 63.33± 0.45% 63.87± 0.48%",1,related,0,negative
+"We further validate the effectiveness of our proposed dynamic inner-loop update rule ALFA, through evaluating the performance on the relatively new CIFAR100-based [6] few-shot classification datasets: FC100 (Fewshot-CIFAR100) [12] and CIFAR-FS (CIFAR100 few-shots) [3].",1,related,1,positive
+"Backbone FC100 CIFAR-FS
+1-shot 5-shot 1-shot 5-shot
+Random Init 4-CONV 27.50± 0.45% 35.37± 0.48% 29.74± 0.46% 39.87± 0.49% ALFA + Random Init 4-CONV 38.20± 0.49% 52.98± 0.50% 60.56± 0.49% 75.43± 0.43% MAML † [4] 4-CONV 36.67± 0.48% 49.38± 0.49% 56.80± 0.49% 74.97± 0.43% ALFA + MAML 4-CONV 37.99± 0.48% 53.01± 0.49% 59.96± 0.49% 76.79± 0.42% MAML + L2F † [2] 4-CONV 38.96± 0.49% 53.23± 0.48% 60.35± 0.48% 76.76± 0.42% ALFA + MAML + L2F 4-CONV 38.50± 0.47% 53.20± 0.50% 60.36± 0.50% 76.60± 0.42% Random Init ResNet12 32.26± 0.47% 42.00± 0.49% 36.86± 0.48% 49.46± 0.50% ALFA + Random Init ResNet12 40.57± 0.49% 53.19± 0.50% 64.14± 0.48% 78.11± 0.41% MAML † ResNet12 37.92± 0.48% 52.63± 0.50% 64.33± 0.48% 76.38± 0.42% ALFA + MAML ResNet12 41.46± 0.49% 55.82± 0.50% 66.79± 0.47% 83.62± 0.37% MAML + L2F † ResNet12 41.89± 0.47% 54.68± 0.50% 67.48± 0.46% 82.79± 0.38% ALFA + MAML + L2F ResNet12 42.37± 0.50% 55.23± 0.50% 68.25± 0.47% 82.98± 0.38% Prototypical Networks∗ [17] 4-CONV 35.3± 0.6% 48.6± 0.6% 55.5± 0.7% 72.0± 0.6% Relation Networks [18] 4-CONV+ - - 55.0± 1.0 69.3± 0.8 TADAM [12] ResNet12 40.1± 0.4% 56.1± 0.4% - - MetaOpt ‡ [8] ResNet12 41.1± 0.6% 55.5± 0.6% 72.0± 0.7% 84.2± 0.5%
+* Meta-network is trained using the union of meta-training set and meta-validation set.",1,related,0,negative
+"Our results on three few-shot benchmark datasets – miniImageNet, CIFAR-FS, and FC100 – showed that MABAS significantly enhanced the performance of the base methods with various characteristics, and consequently achieved the state-of-the-art performance in several tasks.",1,related,0,negative
+"Our method achieves the new state-of-the-art performance on four of the six tasks (miniImageNet 5-shot, CIFAR-FS 1-shot and 5-shot, and FC100 5-shot settings) if we exclude the methods with WRN-28-10 [50], which consumes about three times more parameters than ResNet-12 [22].",1,related,1,positive
+"We ran experiments on Omniglot [14], CIFAR-FS [2], and miniImageNet [24], which are popular benchmark datasets used for few-shot learning.",1,related,1,positive
+"After the meta-training of OOD-MAML with benchmark dataset (CIFAR-FS), we compared the extracted features of in-distribution samples, OOD samples, θfake, and θifake on both θfake-classifier and (θfake + θifake)-classifier.",1,related,1,positive
+"Our base model in both OOD-MAML and MAML has a convolution neural network (CNN) architecture, which has four modules for Omniglot and CIFAR-FS and five modules for miniImageNet.",1,related,1,positive
+"On Omniglot and CIFAR-FS, we only report ours (Reptile) due to its low computation cost.",1,related,0,negative
+"We experiment with four datasets for few-shot learning: Omniglot (Lake et al., 2011), MiniImageNet (Vinyals et al., 2016b), TieredImageNet (Ren et al., 2018a), and CIFAR-FS (Bertinetto et al., 2018).",1,related,1,positive
+"Extended Experiments on Classification To further validate that our method consistently provides benefits regardless of scenarios, we compare our method against the baseline on additional datasets that have been recently introduced: FC100 (Fewshot-CIFAR100) [7] and CIFAR-FS (CIFAR100 few-shots) [1].",1,related,1,positive
+"We further conduct FSOR experiments on two fewshot benchmark datasets: CIFAR-FS [2], FC100 [29].",1,related,1,positive
+"We perform extensive experiments on two popular few-shot learning benchmarks, MiniImagenet (Snell et al., 2017), and CIFAR-FS (Bertinetto et al., 2018).",1,related,1,positive
+"It can be seen that our AdarGCN FSL method yields 2–5% improvements over the latest GCN-based FSL methods [9, 6, 5] and 2–7% improvements over the state-of-theart FSL baselines [8, 2, 1, 3, 7], validating the effectiveness of our AdarGCN module under one-shot setting.",1,related,1,positive
+"Then, we amend this MAML implementation to reproduce the results on the new CIFAR-FS dataset proposed by their paper (Bertinetto et al. [2019]). When reproducing the R2D2 algorithm, our first consideration is that the feature extractors in MAML and R2D2 are very different. MAML uses four convolutional blocks with an organization of [32, 32, 32, 32] filters. Whereas, R2D2’s four blocks employ a [96, 192, 384, 512] scheme, as shown in Figure 3. In other words, the feature extractor in R2D2 is more complex hence is expected to yield better results (Mhaskar et al. [2016]).",1,related,1,positive
+"In this work we reproduce the paper of Bertinetto et al. [2019] (referenced as ""their paper""); it falls into the class of gradient-based meta-learning algorithms that learn a model parameter intialization for rapid fine-tuning with a few shots (Finn et al.",1,related,1,positive
+com/ArnoutDevos/maml-CIFAR-FS (4)Bertinetto et al. [2019] code: https://github.,1,related,0,negative
+"In this work we reproduce the paper of Bertinetto et al. [2019] (referenced as ""their paper""); it falls into the class of gradient-based meta-learning algorithms that learn a model parameter intialization for rapid fine-tuning with a few shots (Finn et al. [2017], Nichol and Schulman [2018]).",1,related,1,positive
+"Then, we amend this MAML implementation to reproduce the results on the new CIFAR-FS dataset proposed by their paper (Bertinetto et al. [2019]).",1,related,1,positive
+"Then, we amend this MAML implementation to reproduce the results on the new CIFAR-FS dataset proposed by their paper (Bertinetto et al. [2019]). When reproducing the R2D2 algorithm, our first consideration is that the feature extractors in MAML and R2D2 are very different. MAML uses four convolutional blocks with an organization of [32, 32, 32, 32] filters. Whereas, R2D2’s four blocks employ a [96, 192, 384, 512] scheme, as shown in Figure 3. In other words, the feature extractor in R2D2 is more complex hence is expected to yield better results (Mhaskar et al. [2016]). In order to provide a meaningful comparison, we implement and evaluate both the simple and more complex feature extractors for the R2D2 algorithm, denoted by R2D2* and R2D2 respectively. In order to make a working reproduction of their paper we had to make the following assumptions. We first considered the aforementioned complex architecture and feature extractor. In particular, for the feature extractor, we made assumptions on the convolutional block options. We considered a 3x3 convolution block with a ’same’ padding and a stride of 1. For the 2x2 maximum pooling, we use a stride of 2 and no padding. Second, concerning the ridge regression base-learner, we opted for a multinomial regression that returns the class with the maximum value through one-hot encoding. Following the guidelines for the feature extractor presented in Section 4.2 of their paper, we were not successful in reproducing the exact number of features at the output of the feature extractor. In their paper, the overall numbers of features at the output of the extractor are 3584, 72576 and 8064 for Omniglot, miniImageNet and CIFAR-FS, respectively. However, by implementing the feature extractor described in their paper, we obtain 3988, 51200 and 8192 respectively. For comparison purposes, we use the same number of classes (e.g. 5) and shots during (e.g. 1) training and testing, despite their paper using a higher number of classes during training (16 for miniImageNet, 20 for CIFAR-FS) than during testing (5 for miniImageNet and CIFAR-FS). Regarding the amount of shots, their paper uses a random number of shots during training. This is different from the way most baselines are trained using the same number of shots per class during training and testing (Finn [2018], Nichol and Schulman [2018], Vinyals et al.",1,related,1,positive
+"In this paper, we present a reproduction of the paper of Bertinetto et al. [2019] ""Meta-learning with differentiable closed-form solvers"" as part of the ICLR 2019 Reproducibility Challenge.",1,related,1,positive
+∗CIFAR-FS results from Bertinetto et al. (2018). †Result from Lee et al. (2019). The best results are highlighted.,1,related,0,negative
+"To identify whether the rotation multi 90 degrees for Task Aug is better than that for Data Aug, we analyzed the experiment on CIFAR-FS and miniImageNet.",1,related,1,positive
+"Besides, Table 2 and Table 3 summarize the results on the CIFAR-FS and FC100 5-way tasks, and in most cases our method rises accuracy by 0.5%-3%.",1,related,0,negative
+"We used ProtoNets Snell et al. (2017), MetaOptNet-SVM Lee et al. (2019) (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) Bertinetto et al. (2018) as basic methods to verify the effective of Task Aug.",1,related,1,positive
+"We proved that Task Aug was valid for CIFAR-FS, FC100, and miniImageNet, and exceeded the result of the previous works.",1,related,0,negative
+"(2019) (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) Bertinetto et al. (2018) as basic methods to verify the effective of Task Aug. For ProtoNets, we did not use a higher way for training than testing like Snell et al. (2017). Instead, the equal number of shot and way were used in both training and evaluation, and its output multiplied by a learnable scale before the softmax following Oreshkin et al. (2018); Lee et al.",1,related,1,positive
+"(2019) (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) Bertinetto et al. (2018) as basic methods to verify the effective of Task Aug. For ProtoNets, we did not use a higher way for training than testing like Snell et al. (2017). Instead, the equal number of shot and way were used in both training and evaluation, and its output multiplied by a learnable scale before the softmax following Oreshkin et al. (2018); Lee et al. (2019), For M-SVM, we set training shot to 5 for CIFAR-FS; 15 for FC100; and 15 for miniImageNet; regularization parameter of SVM was set to 0.1; and a learnable scale was used following Lee et al. (2019). We did not use label smoothing like Lee et al. (2019), because we did not find that label smoothing can improve the performance in our environment.",1,related,1,positive
+"For R2-D2, we set the same training shot as for M-SVM, and used a learnable scale and bias following Bertinetto et al. (2018).",1,related,1,positive
+"(2019) (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) Bertinetto et al. (2018) as basic methods to verify the effective of Task Aug. For ProtoNets, we did not use a higher way for training than testing like Snell et al. (2017). Instead, the equal number of shot and way were used in both training and evaluation, and its output multiplied by a learnable scale before the softmax following Oreshkin et al. (2018); Lee et al. (2019), For M-SVM, we set training shot to 5 for CIFAR-FS; 15 for FC100; and 15 for miniImageNet; regularization parameter of SVM was set to 0.",1,related,1,positive
+"(2019) (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) Bertinetto et al. (2018) as basic methods to verify the effective of Task Aug. For ProtoNets, we did not use a higher way for training than testing like Snell et al. (2017). Instead, the equal number of shot and way were used in both training and evaluation, and its output multiplied by a learnable scale before the softmax following Oreshkin et al. (2018); Lee et al. (2019), For M-SVM, we set training shot to 5 for CIFAR-FS; 15 for FC100; and 15 for miniImageNet; regularization parameter of SVM was set to 0.1; and a learnable scale was used following Lee et al. (2019). We did not use label smoothing like Lee et al.",1,related,1,positive
+"Instead, the equal number of shot and way were used in both training and evaluation, and its output multiplied by a learnable scale before the softmax following Oreshkin et al. (2018); Lee et al. (2019),
+For M-SVM, we set training shot to 5 for CIFAR-FS; 15 for FC100; and 15 for miniImageNet; regularization parameter of SVM was set to 0.1; and a learnable scale was used following Lee et al. (2019).",1,related,1,positive
+"(2019) (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) Bertinetto et al. (2018) as basic methods to verify the effective of Task Aug. For ProtoNets, we did not use a higher way for training than testing like Snell et al. (2017). Instead, the equal number of shot and way were used in both training and evaluation, and its output multiplied by a learnable scale before the softmax following Oreshkin et al.",1,related,1,positive
+We set pmax to 0.5 for CIFAR-FS and FC100; 0.25 for miniImageNet; and T was set to 80000 for all experiments.,1,related,0,negative
+It was different from Bertinetto et al. (2018) we used a fixed regularization parameter of ridge regression which was set to 50 because Bertinetto et al. (2018) has confirmed that making it learnable might not be helpful.,1,related,1,positive
+∗CIFAR-FS results from Bertinetto et al. (2018). †Result from Lee et al.,1,related,0,negative
+(2019) (we write it as M-SVM) and Ridge Regression Differentiable Discriminator (R2-D2) Bertinetto et al. (2018) as basic methods to verify the effective of Task Aug.,1,related,1,positive
+[1] MAML ours R2D2* ours R2D2 ours R2D2 paper Bertinetto et al.,1,related,1,positive
+We use CIFAR-FS [46] and Omniglot [47] datasets for our few-shot learning tasks; see Appendix A for details.,1,related,1,positive

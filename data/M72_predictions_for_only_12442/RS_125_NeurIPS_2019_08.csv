@@ -1,0 +1,778 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"For the pre-training objective, we use forward dynamics prediction, as it has been shown to be useful in model-based methods (Janner et al., 2019) and auxiliary loss literature (He et al.",1,related,1,positive
+• Official codes distributed from the paper [24]: to build PMT-G.,1,related,0,negative
+"Hence, we are inclined to propose a generic algorithm similar to [23, 19, 20] that can be plugged into many SOTA MFRL algorithms [14, 27], rather than just proposing for a specific policy optimization algorithm.",1,related,1,positive
+"By minimizing this optimization objective after the model update via maximum likelihood estimation (MLE) [6, 19], we can tune the model to adaptively find appropriate updates to get a performance improvement guarantee.",1,related,1,positive
+We follow the previous work [19] to use the combination of the ensemble model technique with short model rollouts to mitigate the compounding error.,1,related,1,positive
+"We selected Deep Pilco [17], PETS [19], MBPO [20] as the MBRL baselines, and selected SAC [23], PPO [24], DDPG [25] as the model-free RL baselines2.",1,related,1,positive
+"For both algorithms, we solve the inner problem using Model-Based Policy Optimization (MBPO; [39]) which uses Soft Actor-Critic (SAC; [26]) in a dynamics model ensemble.",1,related,1,positive
+"We adopt the baseline architecture from MBPO (Janner et al., 2019) and the implementation from Pineda et al. (2021), where the posterior MDP, denoted Γψ, is represented as an ensemble of n neural networks trained via supervised learning on the environment dataset D to predict the mean and variance…",1,related,1,positive
+"We adopt the baseline architecture from MBPO (Janner et al., 2019) and the implementation from Pineda et al.",1,related,1,positive
+"Next, we use MOReL [12] as a representative of a general MBPO approach that covers both a classical (naïve) MBRL and a Pessimistic MDP-based MBRL.",1,related,1,positive
+"Following previous works (Janner et al., 2019; Yu et al., 2020; 2021b; Rigter et al., 2022), we train an ensemble of 7 such models that each contain the dynamics model and autoencoder and pick the best 5 models based on the validation prediction error on a held-out test set of 1000 transitions from…",1,related,1,positive
+"We trained an agent in the MuJoCo (Todorov et al., 2012) Hopper implementation using the Model-Based Policy Optimization (MBPO) algorithm (Janner et al., 2019)10 that learns an ensemble of dynamics models, each predicting the parameters of a multivariate Gaussian distribution over the next-step…",1,related,1,positive
+"We follow approaches in the model-based RL literature (Chua et al., 2018; Janner et al., 2019; Shyam et al., 2019; Pathak et al., 2019) where epistemic uncertainty is measured by estimating the level of disagreement between different predictive models, forming an ensemble, that are trained independently, usually by random sub-sampling of a common replay buffer.",1,related,1,positive
+"We follow approaches in the model-based RL literature (Chua et al., 2018; Janner et al., 2019; Shyam et al., 2019; Pathak et al., 2019) where epistemic uncertainty is measured by estimating the level of disagreement between different predictive models, forming an ensemble, that are trained…",1,related,1,positive
+"Based on the [10], the work in [11], [12] avoided the compounding error by generating short branched roll outs from real states, which is also used in our method.",1,related,1,positive
+"In particular, we compare to the model-based approach MBPO [16] and the model-free approaches SAC [8] and PPO [9].",1,related,1,positive
+"We will introduce a loss which learns an approximate model m̃, which can then be combined with the replay buffer D to use both experienced transitions and modelled transitions to learn π, as was done in e.g. Sutton (1991) or Janner et al. (2019).",1,related,1,positive
+"In addition, we use model-based RL strategies [43], [44], [61] to obtain the",1,related,1,positive
+"We calculate the estimation error based on the difference between the Monte Carlo return value and the Q-estimates as in [33, 6, 14].",1,related,1,positive
+"We evaluate the policy return after each epoch by calculating the undiscounted sum of rewards when running the current learnt policy [6, 14].",1,related,1,positive
+"We compare this approach to the state-of-the-art in model-based and model-free methods, with representative algorithms consisting of SAC, PPO (Schulman et al., 2017), MBPO (Janner et al., 2019), and MVE (Feinberg et al., 2018).",1,related,1,positive
+The rightmost plot depicts the value map produced by value iteration on a discretization of the same environment for reference. . . . . . . . . . . . . . . . . . . . . . . . 21 3.5 (γ-MVE control performance) Comparative performance of γ-MVE and four prior reinforcement learning algorithms on continuous control benchmark tasks. γMVE retains the asymptotic performance of SAC with sample-efficiency matching that of MBPO.,1,related,1,positive
+We also compare offline MBPO with HIPODE since it can also be seen as a method directly using dynamics-model-generated data as augmented data.,1,related,1,positive
+"We evaluate the performance of MB-BAC, which integrates the BEE operator into the MBPO algorithm, against several model-based and model-free baselines.",1,related,1,positive
+"To ensure a fair comparison, we follow the same settings as our model-based baselines (MBPO [38], AutoMBPO [46], CMLO [39]), in which observations are truncated.",1,related,1,positive
+"As for model-based methods, we compare with four state-of-the-art model-based algorithms, MBPO [38], SLBO [52], CMLO [39], AutoMBPO [46].",1,related,1,positive
+"The implementation of SLBO is taken from an open-source MBRL benchmark [84], while MBPO is implemented based on the MBRL-LIB toolbox [65].",1,related,1,positive
+"The practical implementation builds upon MBPO [38] by integrating the BAC as policy optimizer, with the pseudocode in Appendix B.",1,related,0,negative
+"Before presenting the proof of Lemma A.3, we first introduce the assumption of concentration properties from (Auer et al., 2008; Kumar et al., 2020) and a modified lemma from (Janner et al., 2019).",1,related,1,positive
+"Then we provide a lemma modified from Lemma B.3 in (Janner et al., 2019).",1,related,1,positive
+", 2020) and a modified lemma from (Janner et al., 2019).",1,related,1,positive
+The hyper-parameters are kept the same with the MBPO baseline Janner et al. (2019) across all domains and are summarized as in Table 2.,1,related,1,positive
+"We compare MEX-MB with MBPO (Janner et al., 2019), where our method differs from MBPO only in the inclusion of the value gradient in (7.3) during model updates.",1,related,1,positive
+"We compare MEX-MB with MBPO (Janner et al., 2019), where our method differs from MBPO only in the inclusion of the value gradient in (7.",1,related,1,positive
+"Moving beyond theory and into practice, we adapt famous RL baselines TD3 (Fujimoto et al., 2018) and MBPO (Janner et al., 2019) to design practical versions of MEX in model-free and model-based fashion, respectively.",1,related,1,positive
+"We note that 300K is a typical interaction step adopted widely in prior work [11, 44, 36] for examining sample efficiency.",1,related,1,positive
+"They achieve this by alleviating the overestimation bias in value estimate [29, 56, 50, 64], using high update-to-data (UTD) ratio [11, 41], adopting model-based methods [44, 51, 71, 102], etc.",1,related,1,positive
+"Our proposal shares multiple aspects already mentioned in [20], [10]; we simplify these proposals in some aspects.",1,related,0,negative
+"VGDF: We use a five-layer MLP with 200 units as the dynamics model using Swish activation following prior works [9, 27].",1,related,1,positive
+"To provide rigorous interpretations for the results, we derive a performance guarantee for the dynamicsguided methods, which mainly build on the theories proposed in prior methods [27, 14].",1,related,1,positive
+"Similar to MBPO, we pre-train dreamer’s dynamics branch with offline data before the online phase.",1,related,0,negative
+"We note that SF is performing reasonably well, likely because the method also reduces the compounding error compared to MBPO, and it has privileged information.",1,related,0,negative
+"MBPO slowly catches up with our performance with more samples, since it still needs to learn the Q function from scratch even with the dynamics branch trained.",1,related,0,negative
+"11, when we curate the labeling process of the privileged dataset to satisfy the in-distribution assumption, CQL and SF receive a significant performance boost, while the performance
+of our method and MBPO are unaffected as neither algorithm depends on the offline objectives.",1,related,1,positive
+We pre-train the dynamics model for MBPO on the offline dataset.,1,related,1,positive
+We also would like to emphasize that the training time of our approach is much less than that of MBPO (4 hours v.s. 3 days).,1,related,0,negative
+"We also compare our algorithm SAC-ASG with state-of-art Dyna-type model-based approaches, i.e., MBPO (Janner et al., 2019) on the phases criss-cross network environment (Fig.",1,related,1,positive
+"We compare TOM within the widely used MBPO framework (Janner et al., 2019) to standard MLE model learning, and two representative recent approaches that target the MBRL objective mismatch problem.",1,related,1,positive
+"Here, we consider the problem with the explicit definition of π as probability distribution, instead of Q-learning [36], which indirectly designs π fromQ(s, a), or model-based RL [37,38], which learns pe and obtains the optimal a through planning.",1,related,1,positive
+"Overall, we also observe that in easy tasks, it may be easier for MARL algorithms to learn from raw inputs rather than latent states generated by the model, which are subject to epistemic uncertainty (Janner et al., 2019).",1,related,1,positive
+"The practical implementation of TATU can be generally divided into three steps: Step 1: Training Dynamics Models: Following prior work [15], we train the dynamics model P̂ (·|s, a) with a neural network p̂ψ(s|s, a) parameterized by ψ that produces a Gaussian distribution over the next state, i.",1,related,1,positive
+MBPO improves the sample efficiency for online model-based RL by introducing the branch rollout method that queries the environmental dynamics model for short rollouts.,1,related,1,positive
+It is worth noting that Theorem 1 is not simply a multiagent version of the results that have been derived in the single-agent setting (Luo et al. 2019; Janner et al. 2019).,1,related,1,positive
+"Baselines: For all cases we compare with: model-base RL (MBPO (Janner et al., 2019)), model-free RL(SAC (Haarnoja et al.",1,related,1,positive
+"Baselines: For all cases we compare with: model-base RL (MBPO (Janner et al., 2019)), model-free RL(SAC (Haarnoja et al., 2018), PPO (Schulman et al., 2017)
+and DDPG (Lillicrap et al., 2015)) and model predictive control (MPC).",1,related,1,positive
+"We note the parallels between synthetic data generation and model-based reinforcement learning [34, 47, 75]; methods that generate synthetic samples by rolling out from observed states.",1,related,1,positive
+"Our algorithm builds on MBPO (Janner et al., 2019), which is a Dyna-style approach that learns policy with real data and simulated data.",1,related,1,positive
+"We choose MBPO, a widely-used MBRL algorithm with asymptotic performance rivaling the best modelfree algorithms, as the baseline.",1,related,1,positive
+Plotted performance of MBPO was directly taken from the official algorithm repository on GitHub.,1,related,1,positive
+"Lastly, we optimize πφ as in MBPO via SGD on the SAC policy loss, but also adding the uncertainty term from (9).",1,related,1,positive
+We adopt as a baseline architecture MBPO by Janner et al. (2019) and the implementation from Pineda et al. (2021).,1,related,1,positive
+"The optimistic approach on top of MBPO (Janner et al., 2019) is presented in Algorithm 2.",1,related,1,positive
+The original MBPO only executes the former to fill up Dmodel.,1,related,0,negative
+"D.1 Implementation Details
+The optimistic approach on top of MBPO (Janner et al., 2019) is presented in Algorithm 2.",1,related,1,positive
+"We propose a new UBE and integrate it within a model-based soft actor-critic (Haarnoja et al., 2018) architecture similar to Janner et al. (2019); Froehlich et al. (2022).",1,related,1,positive
+"Algorithm 2 MBPO-style optimistic learning
+1: Initialize policy πφ, predictive model pθ, critic ensemble {Qi}Ni=1, uncertainty net Uψ (optional), environment dataset Dt, model datasets Dmodel and { Dimodel }N i=1
+.",1,related,1,positive
+Algorithm 1 requires a few modifications from the MBPO methodology.,1,related,1,positive
+"Moreover, when using the learned latent variable model to train an agent, we adopt k-step branched model rollout in MBPO (Janner et al., 2019) to avoid compounding model error due to long-horizon rollout.",1,related,1,positive
+"of the agent even after updating the behavior more than once, we collect a large number of artificial samples Nmodel in each iteration (in [24], for example, 400 model rollouts are performed for each sample of the environment).",1,related,1,positive
+Adopting the soft-actor critic [37] as our off-policy method (as in MBPO [24]) the samples our model synthesizes in each iteration can be kept in dataset Dmodel for a number of repetitions.,1,related,1,positive
+", [24]), we make use of the elite mechanism for the ensemble.",1,related,1,positive
+"We use short model-based rollouts of policy πω for artificial data collection early on, and increase their prediction horizon once more data is available [24].",1,related,1,positive
+"In offline RL, the model is often used to augment data (Yu et al., 2020; 2021) or act as a surrogate of real environment to interact with agent (Kidambi et al., 2020), which would easily introduce bootstrapped errors along the long horizon (Janner et al., 2019).",1,related,1,positive
+"Following previous work (Janner et al., 2019; Yu et al., 2020; 2021), we implement the probabilistic dynamics model using an ensemble of deep neural networks {pθ1, . . . , pθB}.",1,related,1,positive
+"Following previous work (Janner et al., 2019; Yu et al., 2020; 2021), we implement the probabilistic dynamics model using an ensemble of deep neural networks {pθ(1), .",1,related,1,positive
+"MBRL Performance Bound
+We first present the performance bound of a policy π in the original MDPM = (S,A, µ, p, r) and its model-based MDP (Janner et al., 2019).",1,related,1,positive
+"We first present the performance bound of classic MBRL (Janner et al., 2019): Theorem 6.",1,related,1,positive
+"The first is based on MBPO (Janner et al., 2019), which we describe in Section 5.1.",1,related,0,negative
+"We first present the performance bound of classic MBRL (Janner et al., 2019):
+Theorem 6.2.",1,related,1,positive
+"(38)
+Equation (23) is the same bound as Lemma B.3 in Janner et al. (2019), but we use a milder assumption in Equation (22), which only assumes that the expectation (not the maximum) of the total variation distance between the policies is bounded.",1,related,1,positive
+"The first is based on MBPO (Janner et al., 2019), which we describe in Section 5.",1,related,0,negative
+"The model is trained using negative log likelihood loss (Janner et al.,
+2019): L(θk) = ∑N t=1[µθk(st, at) − st+1]
+⊤Σ−1θk (st, at)[µθk(st, at) − st+1] + log detΣθk(st, at) During model rollouts, the probabilistic dynamics model ensemble first randomly selects a network from the ensemble and then…",1,related,1,positive
+"For the probabilistic dynamics model ensemble, we set the ensemble size to 7 which is the setting used in the original paper of MBPO (Janner et al., 2019).",1,related,1,positive
+"We first conduct an experiment on the MuJoCo Humanoid environment with MBPO (Janner et al., 2019), the SOTA model-based algorithm using Soft Actor-Critic (SAC) (Haarnoja et al.",1,related,1,positive
+"We first conduct an experiment on the MuJoCo Humanoid environment with MBPO (Janner et al., 2019), the SOTA model-based algorithm using Soft Actor-Critic (SAC) (Haarnoja et al., 2018) as the backbone algorithm for policy and value optimization.",1,related,1,positive
+"The model is trained using negative log likelihood loss (Janner et al., 2019): L(θk) = ∑N t=1[μθk(st, at) − st+1] ⊤Σ−1 θk (st, at)[μθk(st, at) − st+1] + log detΣθk(st, at) During model rollouts, the probabilistic dynamics model ensemble first randomly selects a network from the ensemble and then samples the next state from the predicted Gaussian distribution.",1,related,1,positive
+"We compare the two training mechanisms with MBPO (Janner et al., 2019) using an ensemble of probabilistic transition models.",1,related,1,positive
+"Similar to previous work (Janner et al., 2019), we modelled state transition dynamics as a multivariate normal distribution with a diagonal covariance matrix, where the vector of means and log-standard deviations were outputted from a single feed-forward neural network with two hidden layers of 200 units each.",1,related,1,positive
+"We compare CAROL with the following methods: (1) MBPO [17], our base RL algorithm.",1,related,1,positive
+We implement CAROL on top of the MBPO [17] model-based RL algorithm using the implementation from [27].,1,related,1,positive
+"During exploration, our algorithm learns a model of the environment using an existing model-based reinforcement learning algorithm [17].",1,related,1,positive
+"3: for N epochs do 4: Train model Eθ on Denv via maximum likelihood 5: Unroll M trajectories int he model under πψ; add to Dmodel 6: Take action in environment according to πψ; add to Denv 7: for G gradient updates do 8: Calculate normal policy loss L(πψ,Dmodel) as in MBPO [17] 9: Sample ⟨st, at, st+1, rt⟩ uniformly from Dmodel 10: Rollout π starting from st under Eθ for Ttrain steps and compute the total reward R 11: Compute the worst-case reward Rmin using Algorithm 2 over horizon Ttrain.",1,related,1,positive
+"In Walker2d, the best rollout length is one step in our implementation and MBPO, thus resulting in similar performance between these two methods.",1,related,1,positive
+"In our experiments, we plug the model learning process of P2P into MBPO since it is a widely accepted strong baseline in MBRL.",1,related,1,positive
+"For MBPO (https://github.com/JannerM/ mbpo), REDQ (https://github.com/watchernyu/REDQ), TD3 (https://github.com/sfujim/TD3), and TQC (https://github. com/SamsungLabs/tqc_pytorch), we use the authors’ code.",1,related,1,positive
+"RACSAC
+REDQ MBPO TQC TQC20 REDQ/RACSAC MBPO/RACSAC TQC/RACSAC TQC20/RACSAC
+Humanoid at 2,000 63 K 109 K 154 K 145 K 147 K 1.73 2.44 2.30 2.33
+Humanoid at 5,000 134 K 250 K 295 K 445 K 258 K 1.87 2.20 3.32 1.93
+Humanoid at 10,000 552 K - - 3,260 K - - - 5.91 -
+Ant at 1,000 21 K 28 K 62 K 185 K 42 K 1.33 2.95 8.81 2.00
+Ant at 3,000 56 K 56 K 152 K 940 K 79K 1.00 2.71 16.79 1.41
+Ant at 6,000 248 K - - 3,055 K - - - 12.31 -
+Walker at 1,000 27 K 42 K 54 K 110 K 50 K 1.56 2.00 4.07 1.85
+Walker at 3,000 53 K 79 K 86 K 270 K 89K 1.49 1.62 10.75 1.68
+Walker at 5,000 147 K 272 K - 960 K 270 K 1.85 - 6.53 1.84
+Sample efficiency (Chen et al., 2021; Dorner, 2021) is measured by the ratio of the number of samples collected when RAC and some algorithms reach the specified performance.",1,related,1,positive
+"Results of MBPO are obtained at 3 × 105 time steps for Ant, Humanoid, and Walker2d, 4 × 105 for HalfCheetah and 1.25× 105 for Hopper.",1,related,1,positive
+"Taking the cumulative reward subjected to a policy in the actual environment as η and its counterpart in the constructed virtual environment model as ηM, we can achieve the relationship between η and ηM within k iteration steps as [37]:",1,related,1,positive
+"Model-based offline RL methods [9, 11, 26, 27] train a model of the environment using state-action transitions from the logged data.",1,related,1,positive
+Dashed red line indicates the standard Q-values from running MBPO [32].,1,related,1,positive
+"MBPO performs standard off-policy RL using an augmented dataset D ∪ D̂, where D̂ is synthetic data generated by simulating short rollouts in the learnt model.",1,related,1,positive
+"Thus, naive policy optimisation on a learnt model in the offline setting can result in model exploitation [32, 40, 54], i.",1,related,1,positive
+"MOPO extends MBPO [12], which combines the soft-actor critic (SAC) policy gradient67 algorithm [10, 11] with using learned dynamics models to generate short roll-outs for training.68
+3 Methods69 Our method stems from the observation that different demonstrators in an offline RL setting cor-70 respond to different domains in a domain generalization setting.",1,related,1,positive
+"Finally, the value-function effect of replacing P with P̃ , is an instance of sensitivity analysis for MDPs; see e.g. Mastin and Jaillet (2012); Ross et al. (2009) and, in model-based reinforcement learning, Janner et al. (2019); Sun et al. (2018).",1,related,1,positive
+"We choose this class of policy optimizer over others possible, such as model-free reinforcement learning (MFRL), primarily because MBRL has been shown by past studies to be more data-efficient than MFRL [30], [32]–[34].",1,related,1,positive
+"We are not the first to use RL [5], [16], [29], [30] nor RL+IL [1]–[3] for robot locomotion, and as such our methods use concepts from these prior methods.",1,related,1,positive
+"Our algorithm is inspired in particular by the algorithms of [5] and [30], and similarly iterate between collecting data, training the model, and training the policy.",1,related,1,positive
+"From the perspective of model-based on-policy SPG, MBMA builds upon on-policy Model-Based Policy Optimization (MPBO) (Janner et al., 2019) but introduces the distinction between two roles for simulated transitions: whereas MBPO calculates gradient at simulated states, we propose to use information from the dynamics model by backpropagating from real states with simulated actions (i.",1,related,1,positive
+"By comparing MBPO-PPO and MBMA-PPO we compare variance reduction of many-actions (MBMA) as opposed to extending the trajectory length (MBPO) in the MB-SPG context and validate our theoretical contribution
+2.",1,related,1,positive
+"From the perspective of model-based on-policy SPG, MBMA builds upon on-policy Model-Based Policy Optimization (MPBO) (Janner et al., 2019) but introduces the distinction between two roles for simulated transitions: whereas MBPO calculates gradient at simulated states, we propose to use information from the dynamics model by backpropagating from real states with simulated actions (i.e. simulating Q-values of those actions).",1,related,1,positive
+"From the perspective of model-based on-policy SPG, MBMA builds upon on-policy Model-Based Policy Optimization (MPBO) (Janner et al., 2019) but introduces the distinction between two roles for simulated transitions: whereas MBPO calculates gradient at simulated states, we propose to use information…",1,related,1,positive
+"We chose these three methods, because they are popular examples of each of the three main categories that most modern RL algorithms fall into: SAC is completely model-free, PETS is fully model-based and MBPO is a hybrid approach where the model is used to generate additional data for an underlying model-free agent.",1,related,1,positive
+"MoPAC [11] improved over MBPO by employing modelpredictive rollouts in the approximate MDP that is learned through the model, incentivizing the agent to explore areas of the state-space where model predictions are inefficient.",1,related,1,positive
+"Our work is also related to modelbased RL methods which jointly learn dynamics and reward models to guide planning [50–52], policy search [53, 54], or combine both [55, 56].",1,related,1,positive
+"If we restrict ourselves to states and actions in the empirical dataset (EMP) or short-horizon rollouts that start in the empirical state-action distribution (DYNA), as is typical in Dyna-style approaches [57, 20], we limit ourselves to a small neighborhood of the empirical stateaction distribution.",1,related,1,positive
+"For the model rollouts, we use the variance scaling action selection strategy for the first action only and use increasing rollout lengths for all domains, similar to [12].",1,related,1,positive
+"Consistently, we find that our policy enjoys higher performance, with an average return lead of about 1855.29 over MBPO in the first 300k steps.",1,related,0,negative
+"For practical implementation, the probabilistic models { ˆfφ1 , ˆfφ2 , . . . , ˆfφK} are fitted on shared but differently shuffled replay buffer De, and the target is to optimize the Negative Log Likelihood (NLL).",1,related,1,positive
+"To ensure a fair comparison, we run CMLO and MBPO with the same network architectures and training configurations based on MBRLLIB.",1,related,1,positive
+"Among then, we truncate some redundant observations for Hopper, Ant and Humanoid as our model-based baselines (MBPO[20], AutoMBPO[28]) do.",1,related,1,positive
+We find that CMLO achieves a more accurate model than the state-of-the-art baseline MBPO.,1,related,0,negative
+"The main difference from the general rollouts mechanism is that we restrict our rollouts to be generated from fresh models, rather than using outdated models to generate rollout data as MBPO [20] and AutoMBPO [28] do in their implementations.",1,related,1,positive
+"As for model-based methods, we compare with several algorithms including PETS [8], SLBO [34], MBPO [20] and AutoMBPO [28].",1,related,1,positive
+"In HalfCheetah, we find that our policy achieves higher coverage especially in first 4 stages than MBPO.",1,related,0,negative
+"To reduce model bias, we chose to use NLL as a loss function in our implementation, which has been shown an effective way to learn model dynamics.",1,related,1,positive
+"Here, we present the numerical comparison to MBPO in Table 5.",1,related,1,positive
+"Besides, we notice that the performance is comparable to other MBRL baselines (MBPO etc.) when fixing our model training interval at 250.",1,related,0,negative
+Our DRPO relies on MBPO as well but leverages DRC and the shield policy to reduce violations.,1,related,0,negative
+"1) Model Learning and Usage: Same as prior MBRL work [15], [17], [18], we adopt an ensemble of diagonal Gaussian dynamics model parameterized by φ as the world model approximators, denoted as {P̂φi}i=1, where P̂φi = N (μφi(s, a), σ(2) φi(s, a)).",1,related,1,positive
+We consider REDQ [60] and MBPO [61] for state-of-the-art algorithms based on the traditional model-free and model-based RL frameworks.,1,related,1,positive
+"Following REDQ [60] and MBPO [61], we employ a critic ensemble of 10 models and use the suggested task-specific target entropy values for automatic tuning of the MaxEnt coefficient, α [39].",1,related,1,positive
+"SSPG converges much earlier than other algorithms, even while performing many less optimization steps (REDQ, REDQ-FLOW, MBPO, and SAC-20 all employ a UTD of 20, while we train SSPG with a UTD of 10, see Section 4).",1,related,1,positive
+"(c) To alleviate the compounding errors (Janner et al., 2019), MuZero Unplugged unrolls the dynamics for multiple steps (5) and learns the policy, value, and reward predictions on the recurrently imagined latent state to match the real trajectory’s improvement targets.",1,related,1,positive
+(11); train P̂ and r̂ by weighted MLE (Eq.,1,related,1,positive
+"In online (off-policy) MBRL, Lambert et al. [23] identify the mismatched objectives between the MLE model-training and the model’s usage of improving the control performance.",1,related,0,negative
+"With the offline dataset Denv, P̂ is trained via the MLE [15, 16, 18] as
+arg maxP̂∈P E(s,a,s′)∼Denv [ log P̂ (s′ | s, a) ] .",1,related,1,positive
+The reward function r̂ is still estimated by the weighted-MLE objective.,1,related,1,positive
+"As in prior work using Gaussian probabilistic ensemble on model-based RL [83, 15, 16, 21, 18], we use a double-head architecture for our dynamic model, where the two output heads represent the mean and log-standard-deviation of the normal distribution of the predicted output, respectively.",1,related,1,positive
+"We initialize the dynamic model by standard MLE training, and periodically update the model by minimizing Eq.",1,related,1,positive
+"To verify the effectiveness of our MIW-weighted model (re)training scheme, we compare our AMPL with its variant of training the model only at the beginning using MLE, i.e., No Weights (dubbed as NW).",1,related,1,positive
+"Thus, given the MIW ω, we can optimize P̂ by minimizing the following loss
+`(P̂ ) , −E(s,a,s′)∼dP∗πb,γ [ ω(s, a) log P̂ (s′ | s, a) ] , (6)
+which is an MLE objective weighted by ω(s, a).",1,related,1,positive
+"Most similar to our work, Hishinuma and Senda [47] also use a MIW-weighted MLE objective for model training.",1,related,0,negative
+"Initialize: Dynamic model P̂ and r̂, policy πφ, critics Qθ1 and Qθ2 , discriminator Dψ , MIW ω. Initialize P̂ and r̂ via the MLE (Eq.",1,related,1,positive
+"Rather than using a fixed MLE-trained model, we derive an objective that trains both the policy and the dynamic model toward maximizing a lower bound of true expected return (simultaneously minimizing the policy evaluation error |J(π, P ∗)− J(π, P̂ )|).",1,related,1,positive
+"We follow the literature [83, 15, 16, 47] to assume no prior knowledge about the reward function and thus use neural network to approximate transition dynamic and the reward function.",1,related,1,positive
+The model is initialized by the MLE loss.,1,related,1,positive
+"With the offline dataset Denv, P̂ is trained via the MLE [15, 16, 18] as arg maxP̂∈P E(s,a,s′)∼Denv [ log P̂ (s′ | s, a) ] .",1,related,1,positive
+"Assume we have a bootstrapped dynamics ensemble model f̂ consisting of K different models (f̂1, . . . , f̂K) trained with different sequences of mini-batches of D (Chua et al., 2018; Janner et al., 2019).",1,related,1,positive
+"We follow the common configurations used in the literature, e.g., MBPO (Janner et al., 2019) and MOPO (Yu et al., 2020).",1,related,1,positive
+"Our learning algorithm is based on MBPO (Janner et al., 2019) using Soft Actor-Critic (Haarnoja et al., 2018a) as the underlying model-free learning algorithm.",1,related,1,positive
+"To do this, we build on top of model-based policy optimization (MBPO) (Janner et al., 2019).",1,related,1,positive
+"As mentioned in Section 6, our tool is built on top of MBPO (Janner et al., 2019) using SAC (Haarnoja et al., 2018a) as the underlying learning algorithm.",1,related,1,positive
+"Our learning algorithm is based on MBPO (Janner et al., 2019) using Soft Actor-Critic (Haarnoja et al.",1,related,1,positive
+"(Janner et al. (2019), Lemma B.3) Let the expected KL-divergence between two transition distributions be bounded by maxt Ex∼pt1(x)DKL(p1(x
+′u | x)‖p2(x′,u | x)) ≤ m and maxxDTV (π1(u | x)‖π2(u | x)) < π .",1,related,1,positive
+"Since the method proposed in this article can be used in conjunction with the system identification methods, our method in principle can be used as a model-based policy optimization method, which is similar in spirit to the modelbased RL approaches [7].",1,related,1,positive
+We then analyze the monotonic improvement for the joint policy under the world model based on Janner et al. (2019).,1,related,1,positive
+"1: for iteration t = 1, ..., T do 2: qt ← MBPO(·, f̂LSt , (4.1)) 3: Sample N models {ft,n}Nn=1 4: πt ← MBPO(qt, {ft,n}Nn=1, (4.2)) 5: Execute πt in the real MDP 6: UpdateHt+1 = Ht ∪ {sh,t, ah,t, sh+1,t}h 7: Update f̂LSt+1 and ϕ 8: end for 9: return policy πT
+The pseudocode of CDPO is in Alg.",1,related,1,positive
+"It will also be interesting to explore different choices of the MBPO solvers, which we would like to leave as future work.",1,related,0,negative
+"We also examine a broader range of MBRL algorithms, including MBPO [20], SLBO [35], and ME-TRPO [30].",1,related,1,positive
+"The model-based solver MBPO(π, f,J ) outputs the policy (qt or πt) that optimizes the objective J with access to model f .",1,related,1,positive
+Ablation on different choices of MBPO solver (Dyna and POPLIN-P [63]) shows the generalizability of CDPO.,1,related,1,positive
+*Equal contribution model for the MuJoCo Humanoid task [11].,1,related,1,positive
+"For model-based methods, we compare MPPVE with MBPO [12], the most representative model-based method so far, and BMPO [15], which proposes a bidirectional dynamics model to generate model data with less compounding error than MBPO.",1,related,1,positive
+"We also utilize model rollouts to generate fake transitions, as proposed by MBPO [12].",1,related,1,positive
+MBPO [13] generates truncated model rollouts branched from real states to cripple the influence of model error and provides the condition for the return improvement in the true dynamics.,1,related,1,positive
+"According to the definition of the return in terms of the occupancy measure and the total variation distance, the return
+discrepancy bound can be derived as:
+|η[π]− η[πe]| = | ∑ s,a kb∑ t=0 γtr(s, a)(pt(s, a)− pet (s, a))|
+≤ 2rmax ∑ s,a kb∑ t=0 γt 1 2 |pt(s, a)− pet (s, a)|
+≤ 2rmax kb∑ t=0 γtDTV (pt(s, a)||pet (s, a)),
+(18) Next, according to Lemma B.1 in MBPO [13], we convert
+joint distribution to marginal distribution, thus we have:
+DTV (pt(s, a)||pet (s, a)) ≤ DTV (pt(s)||pet (s))+ max t Es∼pt(s)[DTV (πt(a|s)||πet (a|s))]
+(19)
+Then, let ξt = DTV (pt(s)||pet (s)), and inspired by Lemma B.1 in BMPO [6], we have:
+ξt ≤E(s′,a)∼pt+1(s′,a)[DTV (p(s|s′, a)||pe(s|s′, a))] +DTV (pt+1(s ′, a)||pet+1(s′, a)) (20)
+Here, we make the assumption without loss of generality:
+m ≥ max t E(s′,a)∼pt(s′,a)[DTV (p(s|s′, a)||pe(s|s′, a))]
+(21) After that, we can iteratively do the above decomposition to obtain:
+ξt ≤ ( m + π) + ξt+1 ≤ ( m + π)(kb − t) + ξkb ≤ kb( m + π) (22)
+where ξkb = 0, because the real states sampled from D b hs are used as the starting states for the backward rollouts.",1,related,1,positive
+"To evaluate the importance of BI, we compare the performance among three models: 1)
+MBPO that optimizes the policy on forward rollout samples via RL algorithm (Baseline); 2) BMPO that adds the backward rollout samples to the baseline model (Baseline+BR); 3) the model that employs backward imitation (Baseline+BI).",1,related,1,positive
+"To be specific, for model-based methods, we compare against MBPO [13] that is the backbone model of our method, and BMPO [6] that treats the samples from backward rollouts in the same way as those from forward rollouts.",1,related,1,positive
+"More qualitative results are shown in our supplementary materials, which provides the qualitative comparisons among BIFRL, BMPO, MBPO and SAC.",1,related,0,negative
+"1 in MBPO [13], we convert joint distribution to marginal distribution, thus we have:",1,related,1,positive
+"We observe that BMPO [6] ignores the variation distance between the forward policy and the backward policy (corresponding to π in BIFRL), and consequently set kb = kf to obtain the tighter return discrepancy bound, compared to MBPO [13].",1,related,1,positive
+"In practice, we use kb = 23kf in most domains except Walker2D and Walker2D-NT where kb is set to the same as kf due to kf = 1 in the original MBPO paper.",1,related,1,positive
+"For modelbased methods, we choose MBPO (Janner et al., 2019), AMPO (Shen et al., 2020), and VaGraM (Voelcker et al., 2022).",1,related,1,positive
+"For Humanoid, we use the modified version introduced by MBPO (Janner et al., 2019).",1,related,1,positive
+"We conduct an experiment using a state-of-the-art modelbased RL method called MBPO (Janner et al., 2019) on four MuJoCo (Todorov et al.",1,related,1,positive
+"We conduct an experiment using a state-of-the-art modelbased RL method called MBPO (Janner et al., 2019) on four MuJoCo (Todorov et al., 2012) environments HalfCheetah, Hopper, Walker2d, and Ant.",1,related,1,positive
+"For modelbased methods, we choose MBPO (Janner et al., 2019), AMPO (Shen et al.",1,related,1,positive
+"To reduce the negative effect of model error, we adopt a branched rollout scheme proposed in [12], [18].",1,related,1,positive
+"To alleviate the issue of compounding model error, we adopt a branching strategy [18], [12] by replacing few long-horizon rollouts with many short-horizon rollouts to reduce compounding error in model-generated rollouts.",1,related,1,positive
+"Model-based offline RL, in part, has shown to better generalize to out-ofdistribution states because the agent’s internal world model allows for offline exploration, branched from real data (Janner et al. 2019).",1,related,1,positive
+"The learned model could also be used to extract a task policy later using model-based policy optimization [50] or to perform offline RL on the data generated during free play, which we demonstrate in Sec.",1,related,1,positive
+"Note that the bound of MBPO with the same rollout length to BMPO is C( m, π, m′ , k1 + k2).",1,related,1,positive
+MBPO begins a rollout from a state sampled in the real environment and runs k steps according to policy π and the learned model pθ.,1,related,1,positive
+"Following prior work [73, 26], we train an ensemble of bootstrapped probabilistic dynamics models, which has been widely demonstrated to be effective in model-based RL [8, 23].",1,related,1,positive
+"Perform h-step rollouts using the learned model P̂ and the current policy πφ by branching from the offline datasetDenv, and adding the generated data to a separate replay bufferDmodel, as in Janner et al. (2019) and Yu et al. (2020).",1,related,1,positive
+"With the offline dataset Denv, P̂ is typically trained using MLE (Janner et al., 2019; Yu et al., 2020; 2021) as
+arg maxP̂∈P E(s,a,s′)∼Denv [ log P̂ (s′ | s, a) ] .",1,related,1,positive
+"…and subsequently using that for policy learning, MBRL can provide a sample-efficient solution to answer the counterfactual question pertaining to action-value estimation in the online setting (Janner et al., 2019; Rajeswaran et al., 2020), and to provide an augmentation to the
+ar X
+iv :2
+20 6.",1,related,1,positive
+"We follow prior work (Chua et al., 2018; Janner et al., 2019; Yu et al., 2020) to construct our model as an ensemble of Gaussian probabilistic networks.",1,related,1,positive
+"(5) can be minimized via the MLE for P̂ , i.e., Eq.",1,related,1,positive
+"Combine Theorems 3.1 and 3.2 and Proposition 3.3, and suppose the dynamic model P̂ is trained by the MLE objective (Eq.",1,related,1,positive
+"With the learned model P̂ , we follow prior model-based RL work (Janner et al., 2019; Yu et al., 2020) to augment Denv with the replay buffer Dmodel consisting of h-horizon rollouts of the current policy πφ on the learned model P̂ , by branching from states in the offline dataset Denv.",1,related,1,positive
+"To implement this bound, we (1) train a dynamic model in a sufficiently rich function class via the maximum likelihood estimation (MLE); and (2) add a tractable regularizer into the policy optimization objective.",1,related,1,positive
+"Combining Theorem 3.1, 3.2 and Proposition 3.3, and suppose the dynamics model P̂ is trained by the MLE objective (Eq.",1,related,1,positive
+"Different from the goal of estimating the performance of some policies using offline data, our goal here is to construct a tractable regularization for policy optimization, which involves a learned transition model trained by MLE.",1,related,1,positive
+"Informally, this proposition coincides with the intuition that estimating the environmental dynamic using MLE can be helpful for matching dP̂π with d P∗
+π .",1,related,1,positive
+"Similar to Janner et al. (2019) and Yu et al. (2020) we consider the rollout horizon h ∈ {1, 3, 5}.",1,related,1,positive
+"If the function class P for the estimated dynamic P̂ is rich enough and we have sufficiently many empirical samples from dP ∗
+πb , under the classical statistical regularity condi-
+tion, we can achieve a small model error Emodel by MLE (Ferguson, 1996; Casella & Berger, 2001).",1,related,1,positive
+The first step is to minimize the model error Emodel by pre-training the dynamic model under a sufficiently rich function class via MLE.,1,related,1,positive
+"(6) contains a constraint on the policy update size, and directly solving 1The above terms and assumptions have been widely used in RL in the literature such as [9, 15, 11, 7].",1,related,1,positive
+"For the latter, we use an ensemble of dynamics models of size 7, following [7].",1,related,1,positive
+We also involve a state-of-the-art model-based method MBPO [7] as one of the baseline methods.,1,related,1,positive
+"Model We train the model as similar to [18, 24], where we train an ensemble of 7 neural networks and predict with a random sample from the ensemble predictions.",1,related,1,positive
+"As opposed to standard model based RL[24], in the imitation learning setting we provide some additional justifications as to why a longer H (up to a certain point) might be desirable in section B.",1,related,1,positive
+"Meanwhile too short of a rollout from Tl such as in[18, 24] increases the sampling bias from not sampling from dπ̂Tl , and the resulting algorithm strays too much from our analysis.",1,related,1,positive
+"Following works in the model based offline reinforcement learning literature[24], we train Tl as an ensemble of K probabilistic neural networks that each outputs a mean and a covariance matrix Σ to estimate the transition from the behavior dataset, and use the discrepancies in their predictions to estimate uncertainty.",1,related,1,positive
+"After obtaining environment-specified ẑt−k:t−1 at timestep t, we incorporate it into the dynamics prediction model f̂ to improve its generalization ability on different dynamics by optimizing the objective function following (Lee et al., 2020; Seo et al., 2020; Janner et al., 2019):",1,related,1,positive
+"Our MBRL architecture is outlined in algorithm 1, which is similar to the off-policy Dyna-style architecture presented by Holland et al. (2018), Janner et al. (2019) and Kaiser et al. (2020).",1,related,1,positive
+"Janner et al. (2019) derive bounds on policy improvement using the model, based on the choice of the rollout length and the model’s ability to generalize beyond its training distribution.",1,related,1,positive
+"In this work, we use the same FF base-model architecture and training details as MBPO [29].",1,related,1,positive
+"We also tried MBPO [35], but we found that this method takes too much memory and could not finish any test.",1,related,0,negative
+As such we need consider the aleatoric uncertainty and the epistemic uncertainty [43].,1,related,1,positive
+"To generate the synthetic data, MBPO performs k-step rollouts in M̂ starting from states s ∈ D, and adds this data to D
+M̂ .",1,related,1,positive
+"We train the policy with an actor-critic algorithm using synthetic data generated from the model in addition to data sampled from the dataset, similar to Dyna [55] and a number of recent methods [18, 68, 21, 67].",1,related,1,positive
+"Following previous approaches [68, 67, 18] we store data in D T̂φ in a first in, first out manner so that only data generated from recent iterations is stored in D T̂φ .",1,related,1,positive
+"In line with existing works [68, 67, 5], we use the model-based policy optimisation (MBPO) [18]
+approach to learn the optimal policy for M̂ .",1,related,1,positive
+"In line with existing works [68, 67, 5], we use the model-based policy optimisation (MBPO) [18] approach to learn the optimal policy for M̂ .",1,related,1,positive
+"To further illustrate the advantage of our method over model-based RL, we conduct the experiments to compare to Model-Based Policy Optimization (MBPO) (Janner et al., 2019).",1,related,1,positive
+"On the Ant-v2, we see small performance improvements above the results reported by Janner et al. (2019) and Pineda et al. (2021).",1,related,0,negative
+To assure a fair comparison we used the hyperparameters provided by Janner et al. (2019) for all experiments with our approach and the NLL loss function used for the baseline.,1,related,1,positive
+"As a deep learning based Dyna algorithm, we chose Model-based Policy Optimization (MBPO) (Janner et al., 2019) and ran all of our experiments using the implementation provided by Pineda et al.",1,related,1,positive
+"As a deep learning based Dyna algorithm, we chose Model-based Policy Optimization (MBPO) (Janner et al., 2019) and ran all of our experiments using the implementation provided by Pineda et al. (2021).",1,related,1,positive
+"F.1 ABLATION EXPERIMENT WITH DETERMINISTIC MODELS
+In our experiments in the Hopper domain, we used probabilistic models following Janner et al. (2019).",1,related,1,positive
+"Unlike prior work (Ha & Schmidhuber, 2018; Janner et al., 2019; Hafner et al., 2019; 2020; Sikchi et al., 2020), we find it sufficient to implement all components of TOLD as purely deterministic MLPs, i.e., without RNN gating mechanisms nor probabilistic models.",1,related,1,positive
+"This ablation makes our method more similar to prior work on model-based RL from states (Janner et al., 2019; Lowrey et al., 2019; Sikchi et al., 2020; Argenson & DulacArnold, 2021).",1,related,1,positive
+"Unlike prior work (Ha & Schmidhuber, 2018; Janner et al., 2019; Hafner et al., 2019; 2020; Sikchi et al., 2020), we find it sufficient to implement all components of TOLD as purely deterministic MLPs, i.",1,related,1,positive
+"With these modified reward functions in hand, we can then use classic model-based approaches to tackle offline RL problems, such as Dyna-based methods that sample transitions from the model to train a model-free algorithm [19], [34].",1,related,1,positive
+"We build on practices established in previous deep model-based algorithms, particularly MBPO [Janner et al., 2019] a state-of-the-art model-based algorithm (which does not emphasize safety).",1,related,1,positive
+"3https://github.com/abalakrishna123/recovery-rl
+MBPO is competitive in terms of sample efficiency but incurs more safety violations because it isn’t designed explicitly to avoid them.",1,related,0,negative
+"In the experimental evaluation, we compare our algorithm to several model-free safe RL algorithms, as well as MBPO, on various continuous control tasks based on the MuJoCo simulator [Todorov et al., 2012].",1,related,1,positive
+"All of the above algorithms except for MBPO are as implemented in the Recovery RL paper [Thananjeyan et al., 2020] and its publicly available codebase3.",1,related,1,positive
+"Here are some additional details regarding the (S)MBPO implementation:
+• All neural networks are implemented in PyTorch [Paszke et al., 2019] and optimized using the Adam optimizer [Kingma and Ba, 2014] and batch size 256.",1,related,1,positive
+"Algorithm 1 Safe Model-Based Policy Optimization (SMBPO) Require: Horizon H 1: Initialize empty buffers D and D̂, an ensemble of probabilistic dynamics {T̂θi} N i=1, policy πφ, critic Qψ .",1,related,1,positive
+"We compare against the following algorithms:
+• MBPO: Corresponds to SMBPO with C = 0.",1,related,1,positive
+"Following prior work [Chua et al., 2018, Janner et al., 2019], we employ an ensemble of (diagonal) Gaussian dynamics models {T̂θi}Ni=1, where T̂i(s, a) = N (µθi(s, a),diag(σ2θi(s, a))), in an attempt to capture both aleatoric and epistemic uncertainties.",1,related,1,positive
+Code is made available at https://github.com/gwthomas/Safe-MBPO.,1,related,0,negative
+"• MBPO+bonus: The same as MBPO, except adding back in the alive bonus which was subtracted
+out of the reward.",1,related,0,negative
+"Furthermore, we can used sauteed environments in the model-based RL setting (MBPO and PETS) as well.",1,related,1,positive
+"While we mostly test with model-free approaches (PPO, TRPO, SAC), the model-based methods are also “sauteable”, which we illustrate on MBPO and PETS.",1,related,1,positive
+"For our model-based implementations we used (Pineda et al., 2021) as the core library, which has PyTorch implementation of MBPO (Janner et al., 2019), and PETS (Chua et al., 2018).",1,related,1,positive
+We proceed by “sauteing” MBRL methods: MBPO and PETS.,1,related,1,positive
+"We discuss in detail these state augmentation methods in Appendix B, but note that (Calvo-Fullana et al., 2021), (Chow et al., 2017) have not extended their methods to modern model-free and model-based RL methods such as trust region policy optimization (TRPO) (Schulman et al., 2015), proximal policy optimization (PPO) (Schulman et al., 2017), soft actor critic (SAC) (Haarnoja et al., 2018), model-based policy optimization (MBPO) (Janner et al., 2019), probabilistic ensembles with trajectory sampling (PETS) (Chua et al., 2018).",1,related,1,positive
+"Our model-based algorithm can be further enhanced by using synthetic one-step transitions similarly to Janner et al. (2019), which would improve sample efficiency.",1,related,1,positive
+"…et al., 2016), we would expect analogous improvements to be possible in MBRL. Algorithms for MBRL are infamously sensitive to choice of prediction horizon, and one possible explanation is poor generalization caused by weak inductive biases (Janner et al., 2019; Pan et al., 2020; Amos et al., 2021).",1,related,1,positive
+"2 in (Janner et al., 2019), we can obtain that Dtv(ρ πo t (s, a)||ρ πc t (s, a)) ≤Dtv(ρ t (s)||ρ πc t (s)) + max s Dtv(πo(a|s)||πc(a|s)) ≤tmax s Dtv(πo(a|s)||πc(a|s)) + max s Dtv(πo(a|s)||πc(a|s))",1,related,1,positive
+"To remove the need of uncertainty quantification, COMBO (Yu et al., 2021b) is proposed by combining model-based policy optimization (Janner et al., 2019) and conservative policy evaluation (Kumar et al., 2020).",1,related,1,positive
+"Since both state-action marginals here correspond to rolling out πo and πc in the same MDP M̂, based on Lemma B.1 and B.2 in (Janner et al., 2019), we can obtain that
+Dtv(ρ πo t (s, a)||ρ πc t (s, a))
+≤Dtv(ρπot (s)||ρ πc t (s)) + max s Dtv(πo(a|s)||πc(a|s))
+≤tmax s Dtv(πo(a|s)||πc(a|s)) + max s…",1,related,1,positive
+"To verify the superiority of the system mo el desig ed in this paper, t e o el is co pared with the MLP model [37] and CNN-LSTM model [38], which are co only used in data-driven syste modeling.",1,related,1,positive
+"We compare our algorithm with multiple state-of-the-art deep RL methods including model-free algorithms such as Tpprl (Upadhyay, De, and Gomez-Rodriguez 2018), SAC (Haarnoja et al. 2018), TD3 (Fujimoto, Hoof, and Meger 2018), DDQN (Van Hasselt, Guez, and Silver 2016) and model-based ones such as Dreamer (Hafner et al. 2019a) and MBPO (Janner et al. 2019).",1,related,1,positive
+We replace the feed-forward neural network in MBPO by LSTM. 7) LSTM+SAC: The sequence encoding is obtained by the LSTM.,1,related,1,positive
+"In (a), our method SEDRL has the best result followed by Tpprl, Transformer+SAC, LSTM+ SAC, MBPO, Transformer+TD3, Dreamer and then Transformer+DDQN (Trans+Q).",1,related,1,positive
+"We compare our algorithm with three baselines, where balance replay [Lee et al., 2021] and AWAC [Nair et al., 2021] are existing offline-to-online algorithms, and MBPO [Janner et al., 2019] is a pure online RL algorithm.",1,related,1,positive
+"Lemma 3.1 (Janner et al., 2019): Let the expected total variation distance (TV-distance)6 Es∼πD,k[DTV(p(s′, r|s, a)‖pw(s′, r|s, a))] between two transition distributions be bounded at each time step by m and the policy divergence DTV [π‖πD] be bounded by π .",1,related,1,positive
+"Next, we use MOReL and MOPO as two representatives of the general MBPO [17] approach that covers both classical (näıve) MBRL and Pessimistic MDP-based MBRL.",1,related,1,positive
+"Next, we use MOReL [10] as a representative of a general MBPO approach that covers both a classical (näıve) MBRL and a Pessimistic MDPbased MBRL.",1,related,1,positive
+"In this section, we present the notation and provide a brief introduction to the state-of-the-art model-based algorithm, i.e., Model-Based Policy Optimization (Janner et al. 2019).",1,related,1,positive
+"Our work falls into the first category, i.e., the dyna-style algorithm, which has recently shown the potential to achieve high sample efficiency (Janner et al. 2019).",1,related,1,positive
+", 2020) (Algorithm 2) and we also combine ED2 with MBPO (Janner et al., 2019) in the appendix.",1,related,1,positive
+"Baselines & Benchmarks: For a comparative study, we take two state-of-the-art MBRL methods: MBPO (Janner et al., 2019) and Dreamer (Hafner et al., 2020) as the baselines, and extend them with ED2 as ED2-MBPO, ED2-Dreamer.",1,related,1,positive
+"Here we provide the practical combination implementation of ED2 with Dreamer(Hafner et al., 2020) (Algorithm 2) and we also combine ED2 with MBPO (Janner et al., 2019) in the appendix.",1,related,1,positive
+"Baselines & Benchmarks: For a comparative study, we take two state-of-the-art MBRL methods: MBPO (Janner et al., 2019) and Dreamer (Hafner et al.",1,related,1,positive
+"Lemma C.3 (Theorem 2 of (Syed, Bowling, and Schapire 2008)). if ρ ∈ D, then ρ is the occupancy measure for πρ (a|s) , ρ(s,a)∑
+a′ ρ(s,a ′) , and πρ is the only policy whose oc-
+cupancy measure is ρ. Lemma C.4 (Lemma 3.2 of (Ho and Ermon 2016)) Let H̄ (ρ) = − ∑ s,a ρ (s, a) log (ρ(s, a)/ ∑ a′ ρ (s,…",1,related,1,positive
+"When optimizing the policy, we can use merely imaginary data [17, 14] or a mixture of real data and imaginary one in a fixed ratio [12].",1,related,1,positive
+"In general, we cannot guarantee that the reward model will generalize well to regions of the state-action space that are underexplored by the logging policy (Janner et al., 2019).",1,related,1,positive
+"As the baseline of our framework is built upon MBPO implementation, we derive the “same hyperparameters” for our experiments and all the baseline algorithms.",1,related,1,positive
+"We would like to emphasize that our final rewards are eventually the same as achieved by MoPAC and MBPO, however the progress rate is faster for all our experiments with lesser true environment interactions.",1,related,0,negative
+We will compare the DeMo RL with the existing approaches MoPAC [15] and MBPO [8] on the benchmark MuJoCo control environments.,1,related,1,positive
+"For MBPO1, REDQ2, TD33 and TQC4, we use the authors’s code.",1,related,1,positive
+"L G
+] 1
+0 N
+ov 2
+02 1
+2 0.0 1.0 2.0 3.0 Time Steps 1e5 0.0 2.0 4.0 6.0 Av er ag e R et ur n 1e3 Ant 0.0 0.2 0.4 0.6 0.8 1.0 Time Steps 1e6 0.0 0.2 0.4 0.6 0.8 1.0 1.2 1e4 Humanmoid 0.0 1.0 2.0 3.0 Time Steps 1e5 0.0 1.0 2.0 3.0 4.0 1e3 Hopper
+RAC-SAC RAC-TD3 REDQ SAC TQC TQC20 MBPO
+0.0 1.0 2.0 3.0 Time Steps 1e5
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+1e3 Walker2d
+Fig.",1,related,1,positive
+"We compare to state-of-the-art algorithms: SAC [16], TD3 [6], MBPO [19], REDQ [3] and TQC [9] on 4 challenging continuous control tasks (Walker2d, HalfCheetah, Ant and Humanoid) from MuJoCo environments [18] in the OpenAI gym benchmark [17].",1,related,1,positive
+"The shaded areas denote one standard deviation.
+the-art algorithms (MBPO [19], REDQ [3] and TQC [9]), achieving state-of-the-art sample efficiency on the Humanoid benchmark.",1,related,1,positive
+"Note that in contrast to the result by Janner et al. (2019), Eq. (5) is a bound on the policy improvement instead of a lower bound on ηn+1. The first error term compares ηn+1 and η̃n+1, the performance estimation gap under the optimized policy πn+1 that we obtain in Line 4 of Algorithm 1. Since at this point we have only collected data with πn in Line 2, this term depends on the generalization properties of our model to new data; what we call the off-policy model error. For our data-based model p̃ that just replays data under πn independently of the action, this term can be bounded for stochastic policies. For example, Schulman et al. (2015) bound it by the average KL-divergence between πn and πn+1.",1,related,1,positive
+"In the following section, we investigate the impact of OPC on a range of continuous control tasks and compare it to the current state-of-the-art model-based and model-free RL algorithms MBPO (Janner et al., 2019) and SAC (Haarnoja et al.",1,related,1,positive
+"Note that in contrast to the result by Janner et al. (2019), Eq.",1,related,1,positive
+The original data for MBPO and the other baselines were provided by Janner et al. (2019).,1,related,0,negative
+"Our implementation is based on the code from MBPO (Janner et al., 2019), which is open-sourced under the MIT license.",1,related,0,negative
+"To alleviate this issue, one could extend Theorem 1 similarly to the results in Janner et al. (2019), such that the rollouts are only of length H T .",1,related,1,positive
+"For H →∞, we obtain the original result form Janner et al. (2019) with ∑ t≥1 tγ t = γ/(1−γ)2.",1,related,1,positive
+"F IMPLEMENTATION AND COMPUTATIONAL RESOURCES
+Our implementation is based on the code from MBPO (Janner et al., 2019), which is open-sourced under the MIT license.",1,related,1,positive
+"…choice of initial state distribution ρ̃(s0) depends on the optimization method: For model predictive control, Chua et al. (2018) use the current state to optimize the next action based on a rollout, while Janner et al. (2019) use the empirical state distribution observed from the true environment.",1,related,1,positive
+"…Schulman et al. (2015) to provide guarantees for MBRL. Luo et al. (2018) provide a general framework to show monotonic improvement towards a local optimum of the value function, while Janner et al. (2019) present a lower-bound on performance for different rollout schemes and horizon lengths.",1,related,1,positive
+Our implementation is based upon the code from Janner et al. (2019).,1,related,0,negative
+"In the following section, we investigate the impact of OPC on a range of continuous control tasks and compare it to the current state-of-the-art model-based and model-free RL algorithms MBPO (Janner et al., 2019) and SAC (Haarnoja et al., 2018).",1,related,1,positive
+"Consequently, for prediction horizons shorter than the effective horizon encoded in the discount factor, H   γ/(1 − γ), the on-policy error term grows as O(min(H/(1 − γ), H2)), c.f., (Janner et al., 2019) and Appendix A.3.",1,related,1,positive
+"For the dynamics model p̃model, we follow Chua et al. (2018); Janner et al. (2019) and use a probabilistic ensemble of neural networks, where each head predicts a Gaussian distribution over the next state and reward.",1,related,1,positive
+"For H →∞, we obtain the original result form Janner et al. (2019) with ∑ t≥1 tγ
+t = γ/(1−γ)2.",1,related,1,positive
+"SAC-RCBF, we leverage the partially learned dynamics, the reward function and the RCBF constraints to generate shorthorizon rollouts as in [35].",1,related,1,positive
+"Inline with the other considered state-of-the-art baselines (Chen et al. 2021; Janner et al. 2019), we use an increased ensemble size and update-to-data (UTD) ratio for the critic.",1,related,1,positive
+"(Left) On the OpenAI gym benchmark [7], MnM-approx performs on par with a prior state-of-the-art method (MBPO [24]), while consistently outperforming a recent method that addresses objective mismatch (VMBPO [9]).",1,related,1,positive
+"Following prior work [24], we learn a neural network to predict the true environment rewards.",1,related,1,positive
+We use MBPO [24] as a baseline for model-based RL because it achieves state-of-the-art results and is a prototypical example of model-based RL algorithms that use maximum likelihood models.,1,related,1,positive
+"Figure 6: Alternative model learning objectives: Using the DClawScrewFixed-v0 task, we compare MnMapprox and MBPO [24] to two additional model learning objectives suggested in the literature, VAML [17] and value-weighted maximum likelihood [29].",1,related,1,positive
+"Following Chen et al. (2021b); Janner et al. (2019), we prepared the following environments: Hopper, Walker2d, Ant, and Humanoid.",1,related,1,positive
+"We also compare against model-based approaches including MOPO (Yu et al., 2020) that follows MBPO (Janner et al., 2019) with additional reward penalties and MBOP (Argenson and Dulac-Arnold, 2020) that learns an offline model to perform online planning.",1,related,1,positive
+We hypothesize that this is because the complexity of the physical system exceeds the expressive power of the model network in MBPO.,1,related,1,positive
+"We observed that around the 100th epoch, the losses for the Q function of the MBPO method increased a lot.",1,related,1,positive
+"5 that shows our MuJoCo Ant experiment results, we observe an even faster convergence than MBPO, while MBPO already outperforms most of the RL algorithms.",1,related,1,positive
+"For example, in MBPO (Janner et al., 2019), the policy network is updated using the gradients of the critic:
+Lµ = −Q(s, µ(s)) + Z, (12)
+where Lµ is the loss for the policy network µ, Q is the value function for state-action pairs, and Z is the regularization term.",1,related,1,positive
+"We use the model-based MBPO optimizer as the main baseline (Janner et al., 2019).",1,related,1,positive
+"Based on previous works [11], [19], [38], we have the following Lemma to build the lower bound of the discrepancy of the total returns from the true model and the learned model in conventional model-based RL:",1,related,1,positive
+"As long as we improve the returns under the learned model by more than B, we can guarantee improvement under the environment [11].",1,related,1,positive
+"Since TVD requires weaker assumptions and is typically more practical than 1-Wasserstein distance, we use TVD in our analysis.",1,related,1,positive
+"The generalisation error is measured by the TVD, defined as m := DTV(T̂ (·|s, a)|T (·|s, a)) =
+Algorithm 1 FEMRL running on K clients (indexed by k) for E epochs, each consisting of Tc rounds of federated communication and G steps of policy update.",1,related,1,positive
+"We adapt Model-based Policy Optimization (MBPO) [29], one of the most popular model-based RL (MBRL) algorithm as our offline RL baseline.",1,related,1,positive
+Lemma B.1 of Janner et al. (2019) allows us to bound difference in the joint distribution of states and actions at a time step t by the sum of the individual errors.,1,related,1,positive
+We can leverage proofs from Janner et al. (2019) to simplify the analysis.,1,related,1,positive
+"Then, we have:
+DTV (p̂(a1:N,t|st)||p(a1:N,t|st)) ≤ c(N − 1)
+We can then apply Lemma B.2 of Janner et al. (2019) to bound the overall state distribution at time step t as:
+DTV (p̂(st, a1:N,t)||p(st, a1:N,t)) ≤ tc(N − 1)
+Next, we let p(s, a1:N ) = (1− γ) ∑T t=0 γ tp(st, a1:N,t) denote the discounted…",1,related,1,positive
+"In practice, we heuristically approximate a calibrated dynamics model by learning an ensemble of probabilistic dynamics models, following common practice in RL [Yu et al., 2020, Janner et al., 2019, Chua et al., 2018].",1,related,1,positive
+"For model-based methods, we compare against MBPO [16], which uses short-horizon model-based rollouts started from samples in the real environment; STEVE [30], which dynamically incorporates data from rollouts into value estimation rather than policy learning; and SLBO [31], a model-based algorithm with performance guarantees.",1,related,1,positive
+"…include baselines with moderate explo-
+ration power: b) SLBO (Luo et al., 2018) enforces entropy regularization during TRPO updates and adding OrnsteinUhlunbeck noise while collecting samples. c) MBPO (Janner et al., 2019) uses SAC (Haarnoja et al., 2018) as the planner to encourage exploration.",1,related,1,positive
+"We also include baselines with moderate explo-
+ration power: b) SLBO (Luo et al., 2018) enforces entropy regularization during TRPO updates and adding OrnsteinUhlunbeck noise while collecting samples. c) MBPO (Janner et al., 2019) uses SAC (Haarnoja et al., 2018) as the planner to encourage exploration.",1,related,1,positive
+"Here “ET” in the environment name denotes that the planner has access to the termination function, which is a common assumption in current MBRL algorithms (Janner et al., 2019; Rajeswaran et al., 2020).",1,related,1,positive
+Theorem 1 [20] indicates that as long as we improve the returns under the model RT [π] by more than,1,related,1,positive
+"We also make fair comparison with model-based RL baselines in Figure 3 (c) and (d), including Model-based Value Expansion (MVE) [10] and Model-based Policy Optimization (MBPO) [15].",1,related,1,positive
+Implementation details of MVE and MBPO are provided in Appendix D.,1,related,0,negative
+"We select two commonly adopted dyna-style MBRL algorithms – SLBO (Luo et al., 2018) and MBPO (Janner et al., 2019) as a foundation for evaluating value-aware approaches in continuous control.",1,related,1,positive
+"Next, we describe our algorithm with which we find positive results in conjunction with the SLBO algorithm (Luo et al., 2018) on Swimmer-v1, Hopper-v1 and Ant-v1 environments and in conjunction with the MBPO algorithm (Janner et al., 2019) on Walker-v2 and Hopper-v2 environments.",1,related,1,positive
+"Second, we evaluate Algorithm 2 together with our proposed and a prior value aware objective on several continuous control tasks, with two recent dyna-style MBRL algorithms – SLBO (Luo et al., 2018) and MBPO (Janner et al., 2019).",1,related,1,positive
+"In contrast, we focus on the class of MBRL methods that explicitly make predictions in the state space, allowing for simple adaptations on top of of well-known MBRL frameworks e.g. Dyna-style algorithms (Sutton, 1990) such as SLBO (Luo et al., 2018) and MBPO (Janner et al., 2019).",1,related,1,positive
+"We empirically test our proposed algorithm and novel upper bound on two recent dyna-style MBRL algorithms – SLBO (Luo et al., 2018) and MBPO (Janner et al., 2019).",1,related,1,positive
+"(12) Taking the cumulative reward subjected to a policy in the actual environment as and its counterpart in the constructed virtual environment model as , we can achieve the relationship between and within rollout steps as [28]:",1,related,1,positive
+"We learn the policy and Q-function using MBPO [31] (which itself uses SAC [38] internally), similar to MOPO.",1,related,1,positive
+"We learn a policy to solve this optimization using SAC [38], resulting in an algorithm that is similar to a behavior regularized version of Dyna [39] and MBPO [31].",1,related,1,positive
+"Our contributions can be summarized as follows:
+• We propose OMD, an end-to-end MBRL method that optimizes expected returns directly.",1,related,1,positive
+"In the previous section, we have empirically demonstrated that OMD outperforms Dyna-style (Sutton, 1991) MBRL agents when the model capacity is limited.",1,related,1,positive
+"We use the principle of value equivalence for MBRL (Grimm et al., 2020) and argue that value equivalent models are optimal solutions to (2) and (6).",1,related,1,positive
+• We demonstrate that OMD outperforms likelihoodbased MBRL agents under the model misspecification in both tabular and non-tabular settings.,1,related,1,positive
+OMD optimizes the expected returns in an end-to-end manner and alleviates the objective mismatch of standard MBRL methods that train models using a proxy of the true RL objective.,1,related,1,positive
+"In our comparisons, we compare to SAC [20] and MBPO [11], which represent the state-of-the-art in both model-free and model-based RL.",1,related,1,positive
+"In our experiments, MEEE consistently improves the performance of state-of-the-art RL methods and outperforms baselines, including SAC [20] and MBPO [11].",1,related,0,negative
+"We emphasize that the performance difference below measures the difference in returns in the true MDPM, rather than, as is commonly seen in model-based RL [23], the difference in the latent MDP defined byRZ ,PZ .",1,related,1,positive
+"All rollouts are stored in a buffer, 𝐷𝑚𝑜𝑑𝑒𝑙 .2 Notice that this is similar to the procedure used by the Model-Based Policy Optimization (MBPO) algorithm [11].",1,related,1,positive
+"To do this, we compare MBCD, MBPO, SAC, ReBAL, and GrBAL, in the nonstationary continuous particle maze domain, where the sources of non-stationarity are as discussed earlier.",1,related,1,positive
+"In our setting, MBPO can be seen as a particular case of our algorithm, where a single dynamics model and policy are tasked with optimizing behavior under changing
+0 40 k 80 k 120 k 160 k 200 k 240 k 280 k 320 k 360 k 400 k 440 k Step
+−2000
+−1500
+−1000
+−500
+0
+E pi
+so de
+T ot
+al R
+ew ar
+d
+MBCD (ours) MBPO SAC
+(a) Total reward achieved by different methods (MBCD, MBPO, and SAC) as contexts change.",1,related,1,positive
+We first evaluate ourmethod on the non-stationaryHalf-Cheetah domain and compare it with two state-of-the-art RL algorithms: MBPO [11] and SAC [8].,1,related,1,positive
+"In this paper, we expand model-based policy optimization [Janner et al., 2019] into the goal-based setting and propose Universal Model-based Policy Optimization (UMPO)
+for efficient goal-based policy learning.",1,related,1,positive
+"A.3 Details of Implementation The code of dynamics model is based on the realization of [Janner et al., 2019] and we modified it slightly to fix the bug that using an increasing number of video memory.",1,related,1,positive
+"In this paper, we expand model-based policy optimization [Janner et al., 2019] into the goal-based setting and propose Universal Model-based Policy Optimization (UMPO)",1,related,1,positive
+"Here we first investigate a k-step rollout scheme, which is a natural extension of MBPO [Janner et al., 2019] to multi-agent scenario.",1,related,1,positive
+"We use neural nets to parameterize both distributions since they are powerful function approximators that have been effective for model-based RL (Chua et al., 2018; Nagabandi et al., 2018; Janner et al., 2019).",1,related,1,positive
+"Similar to prior work (Janner et al., 2019), our baseline feedforward model outputs the mean and log variance of all state dimensions and reward simultaneously, as follows: pθ(st+1, rt+1 | st, at) = N ( μ(st, at),Diag(exp{l(st, at)}) ) , (3) where μ(st, at) ∈ R denotes the mean for the concatenation of the next state and reward, l(st, at) ∈ R denotes the log variance, and Diag(v) is an operator that creates a diagonal matrix with the main diagonal specified by the vector v.",1,related,1,positive
+"As proof of concept for MBRL-Lib, we provide implementations for two state-of-the-art MBRL algorithms, namely, PETS [Chua et al., 2018] and MBPO [Janner et al., 2019].",1,related,1,positive
+"Our aim is to better understand the practical merits and limitations of the proposed approach by assessing the results in light of the following questions:
+1) Can CMBPO maintain safety constraints throughout training in high-dimensional state- and action-spaces?",1,related,0,negative
+"1d, [8]) rewards an agent for running along a circle with the constraint of staying within a safe corridor.
+a) Comparative Evaluation: We compare CMBPO to three safe exploration algorithms, namely Constrained Policy Optimization (CPO) [8], Lagrangian Trust Region Policy Optimization (TRPO-L), Lagrangian Proximal Policy Optimization (PPO-L) [7], and two unconstrained algorithms,
+namely Trust-Region Policy Optimization (TRPO) [26], and Model-Based Policy Optimization (MBPO) [23].",1,related,1,positive
+"Lastly, we point out that preliminary experiments on the recently published benchmark suite safety-gym [7] showed poor performances of CMBPO due to partial observability and strong covariances between state dimensions.",1,related,0,negative
+"We observe that the unconstrained algorithms TRPO and MBPO exceed cost constraints on all experiments, highlighting the trade-off between greedy return maximization and constraint satisfaction in our environments.",1,related,1,positive
+"The model-based baseline MBPO exceeds CMBPO’s sample efficiency considerably, an observation we mainly attribute to its high reliance on modelgenerated and off-policy samples.",1,related,0,negative
+A comprehensive list of the hyperparameters for CMBPO in our experiments is given in Table II.,1,related,0,negative
+propose a branched rollout scheme where short model- trajectories are started from previously observed off-policy states [23].,1,related,1,positive
+"To our surprise, we find that CMBPO in some cases exceeds the asymptotic performance of model-free optimizers, which we suspect may be caused by exploration through temporary constraint violation or lower-variance gradients due to only performing expected state-transitions in model-trajectories.
+b) Ablation on Sample Mixing and Adaptive Rollouts: Our ablation studies are aimed to better our understanding of the influence of sample mixing and adaptive rollouts on CMBPO’s performance.",1,related,1,positive
+"We evaluate the efficacy of our algorithm, labeled Constrained Model-Based Policy Optimization (CMBPO), on several simulated high-dimensional robot locomotion tasks with continuous state- and action spaces.",1,related,1,positive
+We reproduce results from (Wang et al. 2019; Janner et al. 2019) and additionally run MBPO on the tasks of Slimhumanoid and Swimmer as the according experimental results are absent.,1,related,0,negative
+"We reproduce results from (Wang et al., 2019; Janner et al., 2019) and additionally run MBPO on the tasks of Slimhumanoid and Swimmer as the according experimental results are absent.",1,related,0,negative
+"We compare ReW-PE-SAC with state-of-the-art model-free and model-based RL methods, including SAC (Haarnoja et al. 2018a,b)1, TD3 (Fujimoto, Hoof, and Meger 2018), ME-TRPO (Kurutach et al. 2018), MB-MPO(Clavera et al. 2018), PETS (Chua et al. 2018), MBPO (Janner et al. 2019)
+1We select the PyTorch implement of soft actor-critic in https://github.com/pranz24/pytorch-soft-actor-critic to evaluate the performance.",1,related,1,positive
+"6: We plot the performance of our optimized MLP networks on long-term prediction
+of position and orientation with 95% confidence intervals.",1,related,1,positive
+"5: The structure of our RNN predictors. φ is a recurrent unit (GRU), while φdec is an
+MLP decoder.",1,related,1,positive
+"To make a fair comparison with our RNN’s of history-length h = 16, our MLP rollout experiments also start from the 16th time-step.",1,related,0,negative
+"The first, and most elementary, is to pick h = 1 and map xt to xt+1 with a simple multilayer perceptron (MLP) ([2], [4]).",1,related,1,positive
+"For each MLP and RNN architecture, we tried different target variables and sweep over different values of learning-rate, hidden-layer size, and weight-decay, centered around hand-tuned values.",1,related,1,positive
+"While the history-length is 1 for MLPs, for RNNs we also tried different history-lengths.",1,related,0,negative
+"Another specific model-based off-policy subclass recovers MBPO (Janner et al., 2019) which uses SAC (Haarnoja et al.",1,related,1,positive
+"We compare the average return of MoPAC over 5 trials, consisting of 1, 000 true environment interactions per epoch, against the baselines SAC [25], MBPO [14], and MBRL [10].",1,related,0,negative
+"Here, SAC and MBPO are trained according to the hyperparameter settings provided by their respective works, while for MBRL we use the same settings as MoPAC, namely using horizons 5− 15 with linear annealing for all tasks.",1,related,1,positive
+"We further underscore the efficacy of MoPAC by comparing our algorithm with SAC and MBPO on a Yale Openhand Model Q [41], [42] through two different manipulation tasks– valve rotation and finger gaiting.",1,related,1,positive
+"As we can see, while the dimensionality of the environment increases, model-based methods (including PETS and MBMF, and hybrid methods like MBPO) begin to suffer from model bias and hence produce much worse results than model-free methods.",1,related,1,positive
+"[26]): "" # ∞ Õ � ∗ = argmax E� � � � (�� , �� ) (1)",1,related,1,positive
+"a) Model-Based Learning through MBPO: To learn a world model and generate experience to train the policy on, we adapt the single-agent MBPO algorithm [2] to be suitable for multi-agent domains.",1,related,1,positive
+We also compare against model-based offline RL algorithms including MOPO (Yu et al. 2020) that follows MBPO (Janner et al. 2019) with additional reward penalties.,1,related,1,positive
+"We compare the difference in performance to SACSVG when the horizon length is varied (see MBPO environments in Table 1) and then compare the performance of our method against multiple model based methods including PETS (Chua et al., 2018), POPLIN (Wang & Ba, 2019), METRPO (Kurutach et al., 2018), and the model free SAC (Haarnoja et al., 2018) algorithm (see POPLIN environments in Table 1).",1,related,1,positive
+"On the other hand, the MBPO based environments refer to the ones used by the paper (Janner et al., 2019) and largely correspond to the ‘-v2’ versions from OpenAI Gym.",1,related,0,negative
+"While any RL or planning algorithm can be used to learn the optimal policy for M̂, we focus specifically on MBPO [20, 57] which was used in MOPO.",1,related,1,positive
+"In high-dimensional image-based domains, which we use to answer question (3), we compare to LOMPO [48], which is a latent space offline model-based RL method that handles image inputs, latent space MBPO (denoted LMBPO), similar to Janner et al. [20] which uses the model to generate additional synthetic data, the fully offline version of SLAC [32] (denoted SLAC-off), which only uses a variational model for state representation purposes, and CQL from image inputs.",1,related,1,positive
+"Specifically, at each iteration, MBPO performs k-step rollouts using T̂ starting from state s ∈ D with a particular rollout policy µ(a|s), adds the model-generated data to Dmodel, and optimizes the policy with a batch of data sampled from D ∪Dmodel where each datapoint in the batch is drawn from D with probability f ∈ [0, 1] and Dmodel with probability 1− f .",1,related,1,positive
+"To highlight the distinction between COMBO and a naïve combination of CQL and MBPO, we perform such a comparison in Table 8 in Appendix C.",1,related,1,positive
+"One can observe that the learning termination function is significantly harmful to the sample efficiency compared to the
+0 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 TimeSteps(M)
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+Ac cu
+m ul
+at ed
+R ew
+ar ds
+MBPO with Termination Ftn. MBPO without Termination Ftn.
+Hopper-v3
+Figure F.2: Learning curves of MBPO on Hopper-v3 belonging to MuJoCo environments.",1,related,1,positive
+"Moreover, as we mentioned in Section D, to show that prior knowledge is crucial to MBRL, we provide an experimental result about one of the state-of-the-art MBRL methods, i.e., MBPO (Janner et al., 2019) with and without learning a termination function.",1,related,1,positive
+"For MBPO, we use the default network architectures for the Q networks, policy network, and model ensembles (Janner et al., 2019).",1,related,1,positive
+"Since MBPO builds on top of a SAC agent, to make our comparisons fair, meaningful, and consistent with previous work, we make all SAC related hyperparameters exactly the same as used in the MBPO paper (Janner et al., 2019).",1,related,1,positive
+"As in the MBPO paper, we train for 125K for Hopper, and 300K for the other three environments (Janner et al., 2019).",1,related,0,negative
+"We evaluate an MBPO based model (Janner et al. (2019)), which also carries out policy rollouts in latent space similar to LOMPO, but does not apply an uncertainty penalty.",1,related,1,positive
+"We decided to use a short horizon to diminish the impact of the compound error [53], the accumulation error following a wrong model, as well known in DYNA-style approaches.",1,related,1,positive
+"Furthermore, as described in Figure 1, we found that SAC and MBPO fail in reset-free settings when denied access to resets if they continue gradient updates, which we attributed to gradient-based instability.",1,related,1,positive
+"To illustrate this issue, we first pre-train agents to convergence in the episodic Hopper environment (Brockman et al., 2016) with state-of-the-art model-free and model-based RL algorithms: Soft Actor Critic (SAC) (Haarnoja et al., 2018) and Model-Based Policy Optimization (MBPO) (Janner et al., 2019), respectively.",1,related,1,positive
+"To actually learn the policy, we use the model to generate short rollouts, optimizing πθ with SAC, similar to model-based policy learning works that find long rollouts to destabilize learning due to compounding model errors (Janner et al., 2019).",1,related,1,positive
+"…issue, we first pre-train agents to convergence in the episodic Hopper environment (Brockman et al., 2016) with state-of-the-art model-free and model-based RL algorithms: Soft Actor Critic (SAC) (Haarnoja et al., 2018) and Model-Based Policy Optimization (MBPO) (Janner et al., 2019), respectively.",1,related,1,positive
+"In our experiment, we have shown that our model-based algorithm outperforms Chua et al. (2018) and Janner et al. (2019) in given environments.",1,related,1,positive
+"However, in our method, there is a limitation of using MPC, which might fail in even higher-dimensional tasks as shown in Janner et al. (2019). Incorporating policy gradient techniques for action-selection might further improve the performance and we leave it for future work.",1,related,1,positive
+"However, in our method, there is a limitation of using MPC, which might fail in even higher-dimensional tasks as shown in Janner et al. (2019).",1,related,1,positive
+"Notice that Chua et al. (2018), Janner et al. (2019) have already greatly outperformed stateof-the-art model-free methods in sample efficiency as shown in their papers.",1,related,1,positive
+"Similarly, we chose the MPO update for its ease of implementation, but it is likely other forms of regularized policy gradient (e.g. TRPO [59], or more generally natural or mirror policy optimization [72, 2]) would result in quantitively similar findings.",1,related,1,positive
+"We compare this approach to the state-of-the-art in model-based and model-free methods, with representative algorithms consisting of SAC, PPO (Schulman et al., 2017), MBPO (Janner et al., 2019), and MVE (Feinberg et al., 2018).",1,related,1,positive
+"In the literature of MBRL [26], [27], we could assess the quality of the learned transition model Mu by the evaluation error of an arbitrary policy p, i.",1,related,1,positive
+"As model-based RL remains an active research area (Janner et al., 2019), we provide a proof-of-concept in this setting, using a learned deterministic model on HalfCheetah-v2 (see Appendix A.5).",1,related,1,positive
+"In addition, we enhance the results of Janner et al. (2019), by showing their constants “in maxima” can be replaced by constants “in expectation”.",1,related,1,positive
+"We evaluate SAC-SVG(H) on all of the MuJoCo (Todorov et al., 2012) locomotion experiments considered by POPLIN, MBPO, and STEVE, which are the most recent state-of-the-art related approaches that use model-based rollouts.",1,related,1,positive
+The approaches in MBPO and STEVE are complimentary to ours as MBPO augments the replay buffer with imagined model rollouts and STEVE would improve the critic target.,1,related,0,negative
+", 2018) G MF+rollout data MF+rollout data Det NN Yes Proprio MBPO (Janner et al., 2019) G MF+rollout data MF+rollout data Prob NN Yes Proprio SAC (Haarnoja et al.",1,related,0,negative
+We found that running the public MBPO code produces an agent that simply collects the keep-alive bonus by standing stock-still.,1,related,0,negative
+"Videos of our trained agents are available at sites.google.com/view/2020-svg.
+Figure 2 shows our results in comparison to MBPO and STEVE, which evaluate on the MuJoCo tasks in the OpenAI gym (Brockman et al., 2016) that are mostly the standard v2 tasks with early termination and alive bonuses, and with a truncated observation space for the humanoid and ant that discards the inertial measurement units.",1,related,0,negative
+", 2020) and MBPO (Janner et al., 2019), with values taken from the MOPO paper (Yu et al.",1,related,1,positive
+", 2018] Pix2pix MCTS + - Cheetah Policy Optim [Janner et al., 2019] Ensemble Short rollouts + - Cheetah Video-prediction [Oh et al.",1,related,1,positive
+"…Meta-ensembles Short rollouts Policy optimization Cheetah GATS [Azizzadenesheli et al., 2018] Pix2pix MCTS Deep Q Network Cheetah Policy Optim [Janner et al., 2019] Ensemble Short rollouts Soft-Actor-Critic Cheetah Video predict [Oh et al., 2015] CNN/LSTM Action Curriculum Atari VPN [Oh et…",1,related,1,positive
+"Theoretical analyses similar to the bounds we propose have also been presented in a model-based RL context (Sun et al., 2018; Janner et al., 2019).",1,related,1,positive
+"Since our transformer model performed poorly when used as a dynamics model, our Dyna baseline for batch RL adopts a state-of-the-art architecture [34] that employs a 7-model ensemble (MBPO).",1,related,1,positive
+"We also consider combining CoDA with MBPO, by first expanding the dataset with MBPO and then applying CoDA to the result.",1,related,1,positive
+"For each dataset, we train both mask and reward functions (and in case of MBPO, the dynamics model) on the provided data and use them to generate different amounts of counterfactual data.",1,related,1,positive
+"We evaluate our BMPO and previous state-of-the-art algorithms (Haarnoja et al., 2018; Janner et al., 2019) on a range of continuous control benchmark tasks.",1,related,1,positive
+"With this insight, we combine bidirectional models with recent MBPO method (Janner et al., 2019) and propose a practical MBRL algorithm called Bidirectional Modelbased Policy Optimization (BMPO).",1,related,1,positive
+"Specifically, for model-based methods, we compare against MBPO (Janner et al., 2019), as our method builds on top of it; SLBO (Luo et al., 2018) and PETS (Chua et al., 2018), both performing well in the model-based benchmarking test (Langlois et al., 2019).",1,related,1,positive
+"Specifically, for model-based methods, we compare against MBPO (Janner et al., 2019), as our method builds on top of it; SLBO (Luo et al.",1,related,1,positive
+"We notice that in MBPO (Janner et al., 2019), the authors derived a similar return discrepancy bound (refer to Theorem 4.3 therein) with only one forward dynamics model.",1,related,1,positive
+"Although bidirectional models can be incorporated into almost any Dyna-style model-based algorithms (Sutton, 1991), we choose the Model-based Policy Optimization (MBPO) (Janner et al., 2019) algorithm as the framework backbone since it is the state-of-the-art MBRL method and is sufficiently general.",1,related,1,positive
+"We notice that in MBPO (Janner et al., 2019), the authors derived a similar return discrepancy bound (refer to Theorem 4.",1,related,1,positive
+We fix k2 to be the same as Janner et al. (2019) and vary k1 from 0 to 2k2.,1,related,1,positive
+"While CARL is compatible with most PI-style (actor-critic) RL algorithms, following a recent work, MBRL [Janner et al., 2019], we choose SAC as the RL algorithm in CARL.",1,related,1,positive
+"To incorporate this extra piece of information in the representation learning process, we utilize results from variational model-based policy optimization (VMBPO) work by Chow et al. [2020].",1,related,1,positive
+"3 we compare NARL against the publicly released data from MBPO [Janner et al., 2019] on the InvertedPendulum, Hopper and HalfCheetah environments.",1,related,1,positive
+"We implement our algorithm in by using an ensemble, as is common in existing state-of-the-art methods [Janner et al., 2019, Clavera et al., 2018, Kurutach et al., 2018, Chua et al., 2018, Ball et al., 2020].",1,related,1,positive
+"Again, we are able to perform favorably vs. MBPO, demonstrating the potential for our approach to scale to larger environments.",1,related,0,negative
+"3 we compare NARL against the publicly released data from [34], setting (M = 3, M = 1) and (M = 5, M = 0.",1,related,1,positive
+"1, we must focus on term II by mitigating model errors [34].",1,related,1,positive
+"For our implementation, we focus on [34], using probabilistic dynamics models [46] and a Soft Actor Critic (SAC, [30, 31]) agent learning inside the model.",1,related,1,positive
+"We implement our algorithm in deep RL by using an ensemble, as is common in existing state-ofthe-art methods [34, 19, 42, 17, 12].",1,related,1,positive
+"A straightforward way is to optimize Q, V and π using the imaginary data from the rollout, which reduces to Luo et al. (2018); Janner et al. (2019) and many others.",1,related,1,positive
+"Follow the notion in (Janner et al., 2019), we call it k-step branched rollout.",1,related,1,positive
+Janner et al. (2019) provide an error bound on the long term return of the k-step rollout given that the total variation of model bias and policy distribution are bounded by .,1,related,1,positive
+"We assume W (p(s′|s, a), p̂(s′|s, a)) ≤ m, ∀s, a and W (π(a|s), πD(a|s)) ≤ π, ∀s. Comparing with the total variation used in (Janner et al., 2019), the Wasserstein distance has better representation in the sense of how close p̂ approximate p (Asadi et al., 2018).",1,related,1,positive
+"We use PlaNet and MBPO as generic model-based deep reinforcement learning algorithm that use neural network dynamic models, i.e., we do not anticipate a considerably higher sample efficiency from other methods with neural network dynamic models.",1,related,1,positive
+"Our method is applicable to any maximum entropy RL algorithm, including on-policy (Song et al., 2019), off-policy (Abdolmaleki et al., 2018; Haarnoja et al., 2018), and model-based (Janner et al., 2019; Williams et al., 2015) algorithms.",1,related,1,positive
+"Finally, we compared against two model-based RL methods: MBPO (Janner et al., 2019) and PETS (Chua et al.",1,related,1,positive
+"Finally, we compared against two model-based RL methods: MBPO (Janner et al., 2019) and PETS (Chua et al., 2018).",1,related,1,positive
+"Using the same control tasks, we also compare VMBPO with several state-of-the-art model-based and model-free RL algorithms, including model-based policy optimization (MBPO) [Janner et al., 2019] and maximum a posteriori policy optimization (MPO) [Abdolmaleki et al.",1,related,1,positive
+"…tasks, we also compare VMBPO with several state-of-the-art model-based and model-free RL algorithms, including model-based policy optimization (MBPO) [Janner et al., 2019] and maximum a posteriori policy optimization (MPO) [Abdolmaleki et al., 2018], and show its sample efficiency and performance.",1,related,1,positive
+"…benchmarks (Todorov et al., 2012) and the experimental results show that MEMR matches asymptotic performance and sample efficiency with MBPO (Janner et al., 2019) while significantly reduces the number of policy updates and model rollouts, which leads to faster learning speed. ar X iv :2 00…",1,related,0,negative
+"We compare our method with the state-of-the-art model-based method, MBPO (Janner et al., 2019).",1,related,1,positive
+"Uniform sampling of true states 1 to generate model rollouts is adopted in MBPO (Janner et al., 2019).",1,related,1,positive
+"Our approach combines (Janner et al., 2019) and (Sutton, 1991) by proposing an non-trivial sampling approach to significantly reduce the number of policy updates and model rollouts that obtain asymptotic performance.",1,related,1,positive
+"(5) This bound guarantees the improvement under the true returns as long as the improvement under the model returns increases by more than the slack in the bound due to m, π [22, 30].",1,related,1,positive
+"[22], we denote the generalization error of a dynamics model on the state distribution under the true behavior policy as m = maxt Es∼dπb t DTV (p(st+1|st, at)||pφ(st+1|st, at)), where DTV represents the total variation distance between true dynamics p and learned model pφ.",1,related,1,positive
+"Then, in Section 5, we conduct a theoretical analysis to justify the use of branched rollouts, which is a promising model-based rollout method proposed by Janner et al. (2019), in the meta-RL setting.",1,related,1,positive
+"We refine analyses in Janner et al. (2019) by considering multiple-model-based rollout factors (Appendix A.1), and extend our analyses results into a meta-RL setting (Section 5).",1,related,1,positive
+"Specifically, we extend the branched rollout defined originally in the state-action space (Janner et al., 2019) to a branched rollout defined in the history-action space (Figure 3).",1,related,1,positive
+"To provide our theorem, we extend the notion and theorem of the branched rollout proposed in Janner et al. (2019) into the meta-RL setting.",1,related,1,positive
+"The proof of Theorem 1 is given in Appendix A.2, where we extend the result of Janner et al. (2019) to the meta-RL setting.",1,related,1,positive
+A theorem for the performance guarantee of the branched rollout in MDPs are provided as Theorem 4.2 in Janner et al. (2019).,1,related,1,positive
+"As a proof-of-concept experiment, we evaluate two state-of-the-art off-policy model-based and model-free algorithms, MBPO [28] and SAC [26], in Figure 1.",1,related,1,positive
+"While prior approaches have used these models to select actions using planning [66, 16, 53, 50, 58], we choose to build upon Dyna-style approaches that optimize for a policy [63, 65, 71, 31, 25, 27, 43], specifically MBPO [28].",1,related,1,positive
+"To approach this question, we first hypothesize that model-based RL methods [63, 11, 41, 37, 28, 43] make a natural choice for enabling generalization, for a number of reasons.",1,related,1,positive
+"We now summarize model-based policy optimization (MBPO) [28], which we build on in this work.",1,related,1,positive
+"Following Janner et al. (2019), if we assume that the total variation distance (TVD) between the learned model Tψ and true model T is bounded by m = maxt Edπt DTV (Tψ(st+1|st, at)‖T (st+1|st, at)), and the TVD between π and πβ is likewise bounded on sampled states by π, then the true policy value…",1,related,1,positive
+"By ignoring the model if it is inaccurate, we aim to prevent the policy from exploiting deficiencies of the model (Janner et al., 2019).",1,related,0,negative
+"Specifically, we compare against the modelfree soft actor-critic (SAC) [6] as well as two state-of-the-art model-based baselines: model-based policy-optimization (MBPO) [9] and stochastic ensemble value expansion (STEVE) [1].",1,related,1,positive
+"We train both Q functions by minimizing the Bellman error (Section 2): JQ(ψ) = E[(Qψ(st, at)− (r(st, at) + γQψ(st+1, at+1)))(2)] Similar to [9], we minimize the Bellman residual on states previously visited and imagined states obtained from unrolling the learned model.",1,related,1,positive
+"Our algorithm, which learns a Q-function from model-generated data but only optimizes the policy by using real data, is related to the approaches that compute the policy gradient by using a model-based value function together with trajectories sampled in the environment [1, 10, 19, 20].",1,related,1,positive
+One may compare their methods to MBPO method (Janner et al. 2019) that also uses offline data while our method focuses on online learning.,1,related,1,positive
+"For baselines, we consider MBPO (Janner et al., 2019), PETS (Chua et al., 2018), STEVE (Buckman et al., 2018), SLBO (Xu et al., 2018), and SAC (Haarnoja et al., 2018).",1,related,1,positive
+"We chose two function approximators for the learned residual dynamics to account for model learning approaches that use global function approximators such as neural networks (NN) [14], and local function approximators such as K-nearest neighbor regression (KNN) [25, 16].",1,related,1,positive
+"For model-based baselines, we consider model-based policy optimization (MBPO) [34] and the demonstrator MPC.",1,related,1,positive
+"2For all our experiments, training datapoints: PPO: 4×106, SAC: 4×106, MBPO: 2.4× 105, NLMPC: 104 (random) + 104 (demonstrations).",1,related,0,negative
+"While several existing actor-critic algorithms either use model-based estimates [Janner et al., 2019] or use IS corrections and truncations [Wang et al., 2017], we propose a novel approach towards extending doubly robust estimators, based on a combination of direct model-based approach and…",1,related,1,positive
+"…model-free RL algorithm; (b) a computationally efficient variant of MBPO (Janner et al., 2019) that we developed using ideas from SLBO (Luo et al., 2019), which is called MBSAC, see Appendix A for details; (c) MBPO (Janner et al., 2019), the previous state-of-the-art model-based RL algorithm.",1,related,1,positive
+", 2018), the state-of-the-art model-free RL algorithm; (b) a computationally efficient variant of MBPO (Janner et al., 2019) that we developed using ideas from SLBO (Luo et al.",1,related,1,positive
+"We verify this claim on the randomly generated MDPs discussed in Section 5.1, by running DQN (Mnih et al., 2015), SLBO (Luo et al., 2019), and MBPO (Janner et al., 2019) with various architecture size.",1,related,1,positive
+"…of three algorithms: (a)
+SAC (Haarnoja et al., 2018), the state-of-the-art model-free RL algorithm; (b) a computationally efficient variant of MBPO (Janner et al., 2019) that we developed using ideas from SLBO (Luo et al., 2019), which is called MBSAC, see Appendix A for details; (c) MBPO (Janner…",1,related,1,positive
+"For example, we employ the the ensemble of policies trick which could also improve other off-policy policy-gradient based methods such as MBPO, SAC, and PPO.",1,related,1,positive
+"We evaluate Neural-PSRL on the popular and widely studied MuJoCo continuous control tasks (Todorov et al., 2012) of HalfCheetahv3 and Hopper-v3 (Erez et al., 2012), comparing our method to Model Based Policy Optimization (MBPO) (Janner et al., 2019).",1,related,1,positive
+"For each run we averaged the last 50 (for Neural-PSRL and MBPO) and last 100 (for MBPO) returns, and take the average and standard deviation of these five values to report both mean and 95% confidence intervals.",1,related,1,positive
+"Like in MBPO, we use the canonical 1000-step horizon with early termination versions of both tasks, and assume knowledge of the termination criteria, and for the sake of simplicity also assume knowledge of the reward distribution instead of learning it.",1,related,1,positive
+"For the results in table 1, we ran Neural-PSRL and MBPO for 400 epochs (so 400K steps), and used the 3000 epoch (so 3M step) runs discussed above for SAC.",1,related,1,positive
+"Further, in keeping with Janner et al. (2019) we assume knowledge of the terminal conditions.",1,related,1,positive
+", 2012), comparing our method to Model Based Policy Optimization (MBPO) (Janner et al., 2019).",1,related,1,positive
+"Since MBPO clearly outperforms by a wide margin other reinforcement learning methods such as PPO (Schulman et al., 2017) and PETS (Chua et al., 2018), we compare only to the model-based MBPO and the model-free SAC.",1,related,1,positive
+"To the best of our knowledge, MBPO is the current state-of-the-art
+on these tasks when the number of environment evaluations allowed is restricted (≤ 500K steps).",1,related,0,negative
+"0 50000 100000 150000 Number of datapoints
+−0.2
+−0.1
+0.0
+T as
+k R
+ew ar
+d
+Baoding Balls
+MBPO PETS Nagabandi et. al SAC NPG PDDM (Ours)
+Figure 8: PDDM outperforms prior model-based and modelfree methods.",1,related,1,positive
+"In this section, we compare our method to the following state-of-the-art model-based and model-free RL algorithms: Nagabandi et. al [20] learns a deterministic neural network model, combined with a random shooting MPC controller; PETS [27] combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation; NPG [33] is a model-free natural policy gradient method, and has been used in prior work on learning manipulation skills [4]; SAC [34] is an off-policy model-free RL algorithm; MBPO [35] is a recent hybrid approach that uses data from its model to accelerate policy learning.",1,related,1,positive
+"L G
+] 1
+4 O
+ct 2
+01 9
+In this work, we derive and empirically validate model-free deep RL (DRL) implementations of κ-PI and κ-VI.",1,related,1,positive
+"Furthermore, and although in this work we focused on model-free DRL, it is arguably more natural to use multi-step DP in model-based DRL (e.g.,Kumar et al., 2016; Talvitie, 2017; Luo et al., 2018; Janner et al., 2019).",1,related,1,positive
+"1), we use standard policy evaluation deep RL (DRL) algorithms.",1,related,1,positive
+"In this paper, we propose a model-based learning [13, 14, 15] framework that significantly improves sample efficiency and task generalization compared to model-free methods.",1,related,1,positive
+"3: for N epochs do 4: Train model Eθ on Denv via maximum likelihood 5: Unroll M trajectories int he model under πψ; add to Dmodel 6: Take action in environment according to πψ; add to Denv 7: for G gradient updates do 8: Calculate normal policy loss L(πψ,Dmodel) as in MBPO (Janner et al., 2019) 9: Sample 〈st, at, st+1, rt〉 uniformly from Dmodel 10: Rollout π starting from st under Eθ for Ttrain steps and compute the total reward R 11: Compute the worst-case reward Rmin using Algorithm 2 over horizon Ttrain.",1,related,1,positive
+"We implement CAROL on top of the MBPO (Janner et al., 2019) model-based RL algorithm using the implementation from Pineda et al. (2021).",1,related,1,positive
+"We compare CAROL with the following methods: (1) MBPO (Janner et al., 2019), our base algorithm for policy optimization.",1,related,1,positive
+"During exploration, our algorithm learns a model of the environment using an existing model-based policy optimization algorithm (Janner et al., 2019).",1,related,1,positive
+"…6: Take action in environment according to πψ; add to Denv 7: for G gradient updates do 8: Calculate normal policy loss Lnormal(πψ,Dmodel) as in MBPO (Janner et al., 2019) 9: Sample 〈st, at, st+1, rt〉 uniformly from Dmodel 10: Rollout π starting from st under Eθ for Ttrain steps and compute…",1,related,1,positive
+"We implement CAROL on top of the MBPO (Janner et al., 2019) model-based RL algorithm using the implementation from Pineda et al.",1,related,1,positive
+"We train
+an ensemble of seven such neural networks by following prior work [Janner et al., 2019].",1,related,1,positive
+"The practical implementation of TATU can be generally divided into three steps: Training Dynamics Models: Following prior work [Janner et al., 2019], we train the dynamics model P̂ (·|s, a) with a neural network p̂ψ(s′|s, a) parameterized by ψ that produces a Gaussian distribution over the next…",1,related,1,positive
+"The practical implementation of TATU can be generally divided into three steps: Training Dynamics Models: Following prior work [Janner et al., 2019], we train the dynamics model P̂ (·|s, a) with a neural network p̂ψ(s|s, a) parameterized by ψ that produces a Gaussian distribution over the next state, i.",1,related,1,positive
+"In our method, for a fair comparison, except the D3P planning, we keep the model learning , policy learning, and Q-function learning to be the same as prior work (Janner et al., 2019b; Clavera et al., 2019).",1,related,1,positive
+"Therefore, the sample efficiency of our method is comparable with MBPO and MAAC which also used the same state augmentation strategy.",1,related,1,positive
+"Most of the model-based RL methods make the decision by using the learned policy solely (Janner et al., 2019b; Yu et al., 2020; Clavera et al., 2019; Hafner et al., 2021).",1,related,1,positive
+"When doing planning and rollout with the learned model to generate fake data, we follow the method used by Janner et al. (2019a); Clavera et al. (2019) to truncate the trajectory and use Q-function to approximate the return after the truncation.",1,related,1,positive
+Noting that our planner is built upon the framework of MBPO and MAAC.,1,related,0,negative
+"The detailed hyper-parameters are summarized in Table 1, and refer to Janner et al. (2019b); Clavera et al. (2019) for more details.",1,related,1,positive
+"Following Janner et al. (2019a) and Clavera et al. (2019), we use parametric neural networks to approximate the transition function, reward function, policy function and Q-value function with the following objective function to be optimized Jf (ψ) = E [ log f(xt+1|xt, at) ] , Jr(ω) = E [ log…",1,related,1,positive
+"To show the effectiveness of our algorithm, we compare our method on six classical continuous control tasks against the following state-of-the-art model-free and model-based RL algorithms: (i) Soft Actor-Critic (SAC) (Haarnoja et al., 2018), a popular off-policy actor-critic RL algorithm based on maximum entropy RL framework; (ii) SVG(1) (Heess et al., 2015a), which first uses dynamics derivatives in model-based RL; (iii) STochastic Ensemble Value Expansion (STEVE) method (Buckman et al., 2018), which utilizes the learned models only when the uncertainty of the learned model is not too high; (iv) Model-based Action-Gradient-Estimator policy optimization (MAGE) method (D’Oro & Jaśkowski, 2020), which computes gradient targets in temporal difference learning by backpropagating through the learned dynamics; (v) Model-Based Policy Optimization (MBPO) method (Janner et al., 2019b), which shows that using short model-generated rollouts branched from real data could benefit model-based algorithms; (vi) Model-Augmented Actor-Critic (MAAC) (Clavera et al., 2019) method, which exploits the learned model by computing the analytic gradient of the returns with respect to the policy.",1,related,1,positive
+The results are consistent with prior work Janner et al. (2019b); Clavera et al. (2019).,1,related,0,negative
+"For the baseline methods, we consider a range of modelbased methods including SLBO (Luo et al., 2019), PETS (Chua et al., 2018), and MBPO (Janner et al., 2019), as well as a model-free approach, SAC (Haarnoja et al., 2018).",1,related,1,positive
+"These tasks are taken from the official Github repository of MBPO (Janner et al., 2019), https://github.com/jannerm/mbpo.",1,related,0,negative
+"To put this method into practice, we amalgamate deep ensembles (Lakshminarayanan et al., 2017) and Model-based Policy Optimization (MBPO) (Janner et al., 2019).",1,related,1,positive
+"In terms of the hyperparameters, our choice of them are mostly the same as the ones adopted in MBPO (Janner et al., 2019) and Pineda et al. (2021) for Ant, Halfcheetah, Hopper, Walker2D and Cartpole-swingup, and Eysenbach et al. (2022) for Window-open-v2, which are sufficiently optimized by the…",1,related,1,positive
+"Subsequently, we present a pragmatic version of the algorithm based deep ensembles (Lakshminarayanan et al., 2017) and MBPO (Janner et al., 2019).",1,related,1,positive
+"Following MBPO, we learn an ensemble of N dynamics models {T̂ iθ = N (µiθ,Σiθ)}Ni=1, each of which is a neural network that outputs a Gaussian distribution over the next state and reward and is trained independently via maximum likelihood.",1,related,1,positive
+"MBPO utilizes a standard actorcritic RL algorithm but uses an augmented dataset D ∪ Dmodel to train the policy, where Dmodel is synthetic data generated by performing h-step rollouts in M̂ starting from states in D.",1,related,1,positive
+"We are now ready to present our overall approach in Algorithm 1, which is built upon an off-the-shelf model-based off-policy online RL algorithm, model-based policy optimization (MBPO) (Janner et al., 2019).",1,related,1,positive
+"In line with some existing work, we choose model-based policy optimization (MBPO) (Janner et al., 2019) to learn the optimal policy for M̂.",1,related,1,positive
+"We train an ensemble of 7 such dynamics models following (Janner et al., 2019; Yu et al., 2020) and pick the best 5 models based on the validation prediction error on a held-out set that contains 1000 transitions in the offline dataset D.",1,related,1,positive
+"We focus on Dyna-style modelbased RL (Janner et al., 2019; Lin et al., 2022).",1,related,1,positive
+"To this end, we propose our AMPO (Adaptation augmented Model-based Policy Optimization) framework upon the existing MBPO (Janner et al., 2019) method with two variants, dubbed as FAMPO and IAMPO, respectively.",1,related,1,positive
+"Under this taxonomy, our approaches are Dyna-style methods that are inspired by the recent MBPO (Janner et al., 2019) algorithm.",1,related,1,positive
+"We demonstrate the detailed process of IAMPO upon the MBPO (Janner et al., 2019) backbone in Algorithm 2.",1,related,1,positive
+"Therefore, it is necessary in MBRL to derive an upper bound of the discrepancy between the expected return in the real environment ηT (π) and the expected return in the model ηT̂ (π) with the same policy π in the following form (Luo et al., 2018; Janner et al., 2019): ηT̂ (π)− ηT (π) ≤ C.",1,related,1,positive
+"In practice, following MBPO (Janner et al., 2019), we use an ensemble of probabilistic networks to represent the model and train the model ensemble via maximum likelihood.",1,related,1,positive
+"3 Model-based Policy Optimization We briefly summarize the model-based policy optimization (MBPO) (Janner et al., 2019) algorithm, on top of which we build our algorithm.",1,related,1,positive
+"For model-based methods, we compare to MBPO (Janner et al., 2019), PETS (Chua et al.",1,related,1,positive
+"Thereafter, in this paper, we adopt MBPO (Janner et al., 2019) as our baseline backbone framework due to its remarkable success in practice.",1,related,0,negative
+"In fact, we also tried two different MBRL methods, namely SVG(H)-SAC [Amos et al. (2020)] and MBPO [Janner et al. (2019)] and found that their performance were not on par with our modified Dreamer.",1,related,0,negative
+"To better train fM , we use D similar to [12, 22] to collect data as the training set during the interaction of agents with the environment.",1,related,1,positive
+"To train an accurate Message Estimator, we seek inspiration from model-based reinforcement learning methods [12, 22].",1,related,1,positive
+"Our work is also related to the model-based RL literature, where a predictive model is learned from data for policy optimization (Janner et al., 2019; Feinberg et al., 2018; Zhang, 2022; Amos et al., 2021) or planning (Wang & Ba, 2019; Schrittwieser et al.",1,related,1,positive
+"For MBPO (Janner et al., 2019), we use neural network (NN) models that are trained by minimizing the mean squared error.",1,related,1,positive
+"The code for building Ant and Humanoid environment is provided by Janner et al. (2019).1
+B.2.2 HYPERPARAMETER SETTINGS
+0 25k 50k 75k 100k Steps
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+Av er
+ag e
+Re tu
+rn
+Hopper
+ours(H=1) ours(H=2) ours(H",1,related,1,positive
+Use the learned model to argument data: Janner et al. (2019) use the learned model to rollout the trajectories and use both the generated and the true trajectories to train the SAC algorithm.,1,related,1,positive
+"For MBPO, we directly use the reported number given by Janner et al. (2019)2; For SAC we use the codes and hyperparameters available3; For MAGE, we use the codes available4 and hyperparameters from the author.",1,related,1,positive
+"The third step is to perform k step model rollout on the prediction model M̃pθp with the current policy, where k is increased over time which proposed by Janner et al. (2019) to achieve better performance.",1,related,1,positive
+"The prediction model M̃p is trained following Janner et al. (2019) via maximum likelihood (Equation 2) To improve the ability of models to portray complex environment, we use a bootstrap ensemble of models {M̃θ1 , . . . , M̃θB} which is consistent with Janner et al. (2019); Clavera et al. (2019).",1,related,1,positive
+"For model-based methods, we select MBPO (Janner et al., 2019) and STEVE (Buckman et al., 2019) as our baseline which both use short-horizon model-based rollouts.",1,related,1,positive
+", maximum likelihood with early stopping on a validation set (Janner et al., 2019; Clavera et al., 2019).",1,related,0,negative
+"For model-based methods, we select MBPO (Janner et al., 2019) and STEVE (Buckman et al.",1,related,1,positive
+"Appendix B
+Additional Experiments
+B.1 Individual Demonstrator MBPO Policies
+Table B.1 shows the results for training policies on individual demonstrators using rollout length h = 5.0 and MOPO penalty coefficient λ = 0.",1,related,0,negative
+B.1 Individual Demonstrator MBPO Policies . . . . . . . . . . . . . . . . . . . 72,1,related,1,positive
+"When the MOPO penalty coefficient is removed, we are left with the MBPO algorithm (Janner et al., 2019).",1,related,1,positive
+"On the Ant-v2, we see small performance improvements above the results reported by Janner et al. (2019) and Pineda et al. (2021).",1,related,0,negative
+To assure a fair comparison we used the hyperparameters provided by Janner et al. (2019) for all experiments with our approach and the NLL loss function used for the baseline.,1,related,1,positive
+"As a deep learning based Dyna algorithm, we chose Model-based Policy Optimization (MBPO) (Janner et al., 2019) and ran all of our experiments using the implementation provided by Pineda et al.",1,related,1,positive
+"As a deep learning based Dyna algorithm, we chose Model-based Policy Optimization (MBPO) (Janner et al., 2019) and ran all of our experiments using the implementation provided by Pineda et al. (2021).",1,related,1,positive
+"F.1 ABLATION EXPERIMENT WITH DETERMINISTIC MODELS
+In our experiments in the Hopper domain, we used probabilistic models following Janner et al. (2019).",1,related,1,positive
+"4 in [1], setting ε m ≤ εm and all other errors set to 0.",1,related,1,positive
+"5 Proof for Returns Estimation Error Upper Bound In this section, we prove the upper bound of the value estimation error for MBRL under the IDM framework based on Janner’s work [1].",1,related,1,positive
+"Next, we analyze the IDM framework based on Janner’s work [1].",1,related,1,positive
+"To this end, we consider components in Model-based RL (MbRL).",1,related,1,positive
+MbRL. Figure 3 shows the learning curves of the MBPO with and without MaPER on the MuJoCo environments.,1,related,1,positive
+"We validate the effectiveness of MaPER with the following algorithms: Soft Actor-Critic (SAC) (Haarnoja et al., 2018a), Twin Delayed Deep Deterministic policy gradient (TD3), Rainbow (Hessel et al., 2018), and Model-based Policy Optimization (MBPO) (Janner et al., 2019).",1,related,1,positive
+"Although our approach is fundamentally different from Model-based RL (MbRL) approaches which generate virtual experiences to train agents by planning, we briefly introduce some of them because we want to verify our method in MbRL.",1,related,1,positive
+We observe that MBPO with MaPER consistently outperforms the vanilla MBPO.,1,related,1,positive
+"In this work, we use the same FF base-model architecture and training details as MBPO (Janner et al., 2019).",1,related,1,positive
+"Thus, naive policy optimisation on a learnt model in the offline setting can result in model exploitation (Janner et al., 2019; Kurutach et al., 2018; Rajeswaran et al., 2020), i.",1,related,1,positive
+"Following previous works (Kidambi et al., 2020; Yu et al., 2021; 2020), we use model-based policy optimisation (MBPO) (Janner et al., 2019) to learn the optimal policy for M̂ .",1,related,1,positive
+"Our approach is based on Model-Based Policy Optimisation (Janner et al., 2019).",1,related,1,positive
+"To generate the synthetic data, MBPO performs k-step rollouts in M̂ starting from states s ∈ D, and adds this data to D̂.",1,related,1,positive
+MBPO utilises a standard off-policy actor-critic RL algorithm.,1,related,1,positive
+", 2021; 2020), we use model-based policy optimisation (MBPO) (Janner et al., 2019) to learn the optimal policy for M̂ .",1,related,1,positive
+"The dashed red line indicates the Q-values from running MBPO (Janner et al., 2019).",1,related,0,negative
+"If we restrict ourselves to states and actions in the empirical dataset (EMP) or short-horizon rollouts that start in the empirical state-action distribution (DYNA), as is typical in Dyna-style approaches (Sutton and Barto, 2018; Janner et al., 2019), we limit ourselves to a small neighborhood of the empirical state-action distribution.",1,related,1,positive
+"…actions in the empirical dataset (EMP) or short-horizon rollouts that start in the empirical state-action distribution (DYNA), as is typical in Dyna-style approaches (Sutton and Barto, 2018; Janner et al., 2019), we limit ourselves to a small neighborhood of the empirical state-action distribution.",1,related,1,positive
+"To alleviate the issue of compounding model error, we adopt a branching strategy [16], [12] by replacing few long-horizon rollouts with many short-horizon rollouts to reduce compounding error in model-generated rollouts.",1,related,1,positive
+"To reduce the negative effect of model error, we adopt a branched rollout scheme proposed in [12], [16].",1,related,1,positive
+"In order to estimate the model uncertainty accurately and alleviate the model exploitation problem, we follow previous works (Janner et al., 2019; Yu et al., 2020; Kidambi et al., 2020; Rafailov et al., 2021; Yu et al., 2021) and construct a bootstrap ensemble of K environment models {M̂}i=1.",1,related,1,positive
+"In order to estimate the model uncertainty accurately and alleviate the model exploitation problem, we follow previous works (Janner et al., 2019; Yu et al., 2020; Kidambi et al., 2020; Rafailov et al., 2021; Yu et al., 2021) and construct a bootstrap ensemble of K environment models {M̂i}Ki=1.",1,related,1,positive
+The results show that APEL and SSBAS correctly select MBPO as the best-performing learner and do not switch to SAC since it never (in the 10 million timesteps) starts outperforming MBPO.,1,related,0,negative
+We also run APEL and SSBAS on the Mujoco Half Cheetah domain with a SAC base learner and a MBPO base learner.,1,related,1,positive
+We select two commonly adopted dyna-style MBRL algorithms – SLBO [6] and MBPO [7] as a foundation for evaluating value-aware approaches in continuous control.,1,related,1,positive
+"Next, we describe our algorithm with which we find positive results in conjunction with the SLBO algorithm [6] on Swimmer-v1, Hopper-v1 and Ant-v1 and in conjunction with the MBPO algorithm [7] on Walker-v2 and HalfCheetah-v2.",1,related,1,positive
+We empirically test our proposed algorithm and novel upper bound on two recent dynastyle MBRL algorithms – SLBO [6] and MBPO [7].,1,related,1,positive
+"Second, we evaluate Algorithm 2 together with our proposed and a prior value aware objective on several continuous control tasks, with two recent dyna-style MBRL algorithms – SLBO [6] and MBPO [7].",1,related,1,positive
+"DROP MOPO MBPO BC SAC-off BEAR BRAC-v AWR CQL
+random hopp.",1,related,1,positive
+"By incorporating the ratio estimation and policy regularization into an effective model-based method MBPO [13], we obtain our algorithm DROP.",1,related,1,positive
+"14: end for
+By incorporating the ratio estimation and policy regularization into an effective model-based method MBPO [13], we obtain our algorithm DROP.",1,related,1,positive
+"Following previous works [4, 13], we randomly choose a state from offline data Db and use the current policy πφ to perform h-step rollouts on the model ensemble.",1,related,1,positive
+"(5)
+This bound guarantees the improvement under the true returns as long as the improvement under the model returns increases by more than the slack in the bound due to m, π (Janner et al., 2019; Levine et al., 2020).",1,related,1,positive
+"This bound guarantees the improvement under the true returns as long as the improvement under the model returns increases by more than the slack in the bound due to m, π (Janner et al., 2019; Levine et al., 2020).",1,related,1,positive
+"Following the notation of Janner et al. (2019), we denote the generalization error of a dynamics model on the state distribution under the true behavior policy as m = maxt Es∼dπbt DTV (p(st+1|st, at)||pφ(st+1|st, at)), where DTV represents the total variation distance between true dynamics p and…",1,related,1,positive
+"As the baseline of our framework is built upon MBPO implementation, we derive the “same hyperparameters” for our experiments and all the baseline algorithms.",1,related,1,positive
+"Model Based Policy Optimisation (MBPO) (Janner et al., 2019) introduced the outer loop policy to collect transition to train approximate model and sample over it to train the policy.",1,related,1,positive
+"We consider pφ as the discounted state-action visitation corresponding to fφ (similarly p for f ) and superscript h to resemble the notations of (Janner et al., 2019).",1,related,1,positive
+"Now, we will derive the bounds on the performance improvement in a similar way as demonstrated in (Janner et al., 2019) and (Morgan et al., 2021), however with consideration and assumptions related to the convexity of the losses.",1,related,1,positive
+"Let the total variation distance between them be bounded by f (see (Janner et al., 2019)).",1,related,1,positive
+"Now, to realize the maximum improvement in the approximated MDP while using the policy parameters (η̃t), obtained from the shift model, we use a formulation motivated by the bound formulated in Lemma B.3 in (Janner et al., 2019).",1,related,1,positive
+"Then the difference in the returns between the real and the approximated model (Jr and J respectively) is
+J (xt, η̃t)− Jr (xt, η̃t)≤2cmax (H−1)γH+1−HγH + γ
+(1− γ)2 f
++ γH2 VmaxH f , Rf,H
+using Lemma B.3 in (Janner et al., 2019).",1,related,1,positive
+"We would like to emphasize that our final rewards are eventually the same as achieved by MoPAC and MBPO, however the progress rate is faster for all our experiments with lesser true environment interactions.",1,related,0,negative
+"…ut,h)) c(xt,h, ut,h)
++ γH (pHφ (xt,H , ut,H)− pH(xt,H , ut,H))Vζ(xt,H)
+≤2 cmax H−1∑ h=0 γh h f + γ H2 VmaxH f
+=2 cmax (H − 1)γH+1 −HγH + γ
+(1− γ)2 f + γ
+H2 VmaxH f
+where, |(ph(x, u) − phφ(x, u))| ≤ h f is inherited from Lemma B.2 in (Janner et al., 2019), the uncertainty in dynamics approximation.",1,related,1,positive
+"Implementation details Following the recent practice (Chua et al., 2018; Janner et al., 2019; Yu et al., 2020), we model the dynamics (T̂ , R̂) using a bootstrap ensemble of neural networks.",1,related,1,positive
+"We store the generated experiences to a separate dataset D̂ and update the policy π with IPM-regularized soft actor-critic (SAC) (Haarnoja et al., 2018) using samples from both datasets D ∪ D̂ similar to MBPO (Janner et al., 2019).",1,related,1,positive
+"Further, while we do compare with a competitive MLE-based baseline [Luo et al., 2018], the current state of the art MBRL methods achieve significantly higher performance on the continuous control MuJoCo environments than seen in this paper (e.g. [Janner et al., 2019]).",1,related,1,positive
+"In standard RL, environment parameter p is fixed without any model discrepancy.",1,related,1,positive
+"In this paper, we focus on the generalization issue in RL, and aim to mitigate the model discrepancy of the transition dynamics between source and target environments.",1,related,1,positive
+"We compared
+GELATO and its variants to contemporary model-based offline RL approaches; namely, MOPO (Yu et al., 2020) and MBPO (Janner et al., 2019), as well as the standard baselines of SAC (Haarnoja et al., 2018) and imitation (behavioral cloning).",1,related,1,positive
+"Since almost all of the existing learning-based methods apply imitation learning to learn the simulator where GAIL is utilized in [36,25,24,31] and BC is adopted in most MBRL methods [1,6], we take GAIL and BC as baselines.",1,related,1,positive
+"We compared GELATO and its variants to contemporary model-based offline RL approaches; namely, MOPO (Yu et al., 2020) and MBPO (Janner et al., 2019), as well as the standard baselines of SAC (Haarnoja et al., 2018) and imitation (behavioral cloning).",1,related,1,positive
+"Our approach is similar to MBPO [23] with 1-step rollouts, except we don’t store virtual experiences in the replay buffer and instead sample fresh ones in every critic update.",1,related,0,negative
+"MBPO extends the Soft Actor-Critic (SAC) algorithm [19] (an off-policy, model-free AC method) by generating short model-based rollouts branched from real experiences that are then mixed together to augment the experience replay buffer.",1,related,1,positive
+"We use a probabilistic neural network (Nix and Weigend, 1994), which has been shown to be effective as an ensemble in model-based RL (Chua et al., 2018; Janner et al., 2019).",1,related,1,positive
+The authors of the paper [1] first formulate and analyze a general implementation for MBPO with monotonic improvement at each step which uses a predictive model to optimize policy and utilizes the policy to collect data and train the model.,1,related,1,positive

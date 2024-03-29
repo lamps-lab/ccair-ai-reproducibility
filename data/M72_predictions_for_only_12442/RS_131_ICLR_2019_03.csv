@@ -1,0 +1,60 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"In this paper, we propose to extend the VSC approach to consider convolutional sparse coding as well.",1,related,1,positive
+We adapt the framework of [2] for convolutional dictionaries and compare the results obtained against the reference VSC model.,1,related,1,positive
+"VARIATIONAL CONVOLUTIONAL SPARSE CODING
+In this paper, we extend the VSC framework introduced in [2] to consider the case of convolutional dictionaries.",1,related,1,positive
+"To address these requirements for quick inference and learned coefficient distributions from which one can sample, we build upon advances in variational sparse coding [32, 65, 2].",1,related,1,positive
+"We hypothesise that a DirVAE will allow a multimodal latent representation of CXRs to be learned through multi-peak sampling and will encourage latent disentanglement due to the sparse nature of the Dirichlet prior.(6) To evaluate the potential benefits of DirVAE over a conventional VAE with a Gaussian prior (GVAE), we use the CheXpert dataset to tackle a complex multi-label classification problem.",1,related,1,positive
+Our model can outperforms both sparse VSC model and dense short-run model in Table 2.,1,related,1,positive
+"In Figure 8, we can observe that for short-run and VSC model, they will restore wrong digits when the noise variance is high.",1,related,1,positive
+"For a fair comparison with the VSC model [29], we adopt their model structure which consists of 1 hidden layer with 400 hidden units followed by ReLU activation and sigmoid non-linearity as the output layer for MNIST and Fashion-MNIST, and we use 2 hidden layers with 2000 hidden units for CelebA and SVHN.",1,related,1,positive
+"We compare our results with VSC using same value of α (α = 0.01) [29], VAE [12], Beta-VAE (β = 4) [9] and short-run inference model [22].",1,related,1,positive
+"In Table 1, our model can outperform both VSC and β-VAE while being competitive to the dense VAE model.",1,related,1,positive
+"…interpretability
+3This visualization is from a training run where the sparsity prior is set to encourage 5% features non-zero.
+when sweeping each individual latent feature as in previous work that investigates Gaussian priors (Higgins et al., 2017) and sparse priors (Tonolini et al., 2020).",1,related,1,positive
+"…+ κ||A||2F (11)
+log pA(x k|zk) = −‖xk −Azk‖22, (12)
+where zk is either found via the inference procedure outlined in section 3.2 or by previous methods that used Gaussian (Kingma & Welling, 2014), Laplacian (Barello et al., 2018), or Spike-and-Slab (Tonolini et al., 2020) prior distributions.",1,related,1,positive
+"Our reparameterization procedure differs from the Spikeand-Slab from (Tonolini et al., 2020) in a few ways.",1,related,1,positive
+"Finally, rather than use the KL divergence for Spike-andSlabs derived in (Tonolini et al., 2020), we only penalize the base distribution with a KL divergence.",1,related,1,positive
+"For the Spike-and-Slab, we use the same warmup strategy proposed in (Tonolini et al., 2020).",1,related,1,positive
+"As baseline methods, we compare the performance of a standard VAE(2) [3], the VSC model(3) [11], and the proposed SDMVAE model.",1,related,1,positive
+"Based on the recent research [20], we choose the Spike and Slab distribution which induces sparsity to latent space as prior.",1,related,1,positive
+consider adding the constraint of sparsity to the latent space [20].,1,related,1,positive
+"Empirically, we compare the sparse VAE to existing algorithms for fitting DGMs: the VAE (Kingma and Welling, 2014), β-VAE (Higgins et al., 2017), Variational Sparse Coding (VSC, Tonolini et al., 2020), and OI-VAE (Ainsworth et al., 2018).",1,related,1,positive
+"Although the VAE is
+competitive in this setting, we see that the sparse VAE does better than methods such as OI-VAE and VSC that were designed to produce interpretable results.",1,related,1,positive
+"We compare the sparse VAE to non-negative matrix factorization (NMF) and algorithms for DGMs: the VAE (Kingma and Welling, 2014); β-VAE (Higgins et al., 2017); VSC (Tonolini et al., 2020); and OI-VAE (Ainsworth et al., 2018).",1,related,1,positive
+"…assess the ability of our approach to yield sparse representations and good quality generations, we compare against vanilla VAEs, the specially customized sparse-VAE of Tonolini et al. (2020), and the sparse version of Mathieu et al. (2019b) (DD) on FashionMNIST (Xiao et al., 2017) and MNIST.",1,related,1,positive
+"Reproduction of Sparse-VAE We tried two different code bases for Sparse-VAE (Tonolini et al., 2020).",1,related,1,positive
+We compared the performance of our SVAE model with the performance of VAE and VSC implemented in [10].,1,related,1,positive
+We illustrate that our model has a more robust architecture whereby performance on noisy inputs is higher compared to the standard VAE [1] and VSC [10].,1,related,1,positive
+We illustrate that our VAE-sleep algorithm creates latent codes which hold a high level of information about our input (image) compared to the standard VAE [1] and VSC [10].,1,related,1,positive
+"The key step in the derivation of VAE’s loss function is the definition of a lower bound on the log-likelihood log pθ(x), referred as the Evidence Lower BOund (ELBO) that depends on qφ(z|x) [10].",1,related,1,positive
+"…function of Mathieu et al. (2019) is: ⟨
+log p (x|z) ⟩
+q (z|x) − KL(q (z|x)||p (z))−
+− D(q (z), p (z)),
+where and are the scalar weight on the terms and Tonolini et al. (2019) is: ⟨
+log p (x|z) ⟩
+q (z|x) −KL(q (z|x)||q (z|xu)−
+−J × DKL ( ̄u|| ) ) ,
+where J is the dimensionality of the latent…",1,related,1,positive
+"We conclude that the holes are ubiquitous in the latent space of vanilla VAE; more advanced VAE with sparse (Tonolini et al., 2019) or disentangled (Mathieu et al.",1,related,1,positive
+"these requirements. We are exploring mixture distributions, in particular spike and slab models [27] for Bayesian variable selection, and methods to combine them with variational inference, following [64, 65]. Second, other methods exist that accelerate classic Bayesian inference. Recent works in large-scale Bayesian inference proposed approximate MCMC methods that scale to large data sets [73, 38, 59]. S",1,related,1,positive
+"here the function inside the argmin operator in (1) is the opposite of the evidence lower bound Ln(q). 7 Chérief-Abdellatif We choose a sparse spike-and-slab variational set FS,L,D - see for instance Tonolini et al. (2019) - which can be seen as an extension of the popular mean-ﬁeld variational set with a dependence assumption specifying the number of active neurons. The mean-ﬁeld approximation is based on a decomposit",1,related,1,positive
+"where pψ(wk|z) can be computed in a batch during forward propagation, and DKL[qφ(z|x)||pψ(z|wk = 1)] can be derived following (Tonolini et al., 2020) as:",1,related,1,positive
+"To automatically discover active semantic factors underlying each data environment, we model each component of the SOM mixture with a spike-and-slab distribution (Titsias & Lazaro-Gredilla, 2011; Tonolini et al., 2020), such that the sparse spike variable identifies latent dimensions explaining active semantic factors.",1,related,1,positive
+[63] extend this work and introduce an additional DNN classifier which selects pseudo-inputs and whose weights are learned instead of the pseudo-inputs themselves.,1,related,1,positive
+"4As in (Mathieu et al., 2019), we induce sparse representations for each data point.
+to encourage sparsity in VAEs via learning a deterministic selection variable (Yeung et al., 2017) or sparse priors (Barello et al., 2018; Mathieu et al., 2019; Tonolini et al., 2019).",1,related,1,positive
+"…function of Mathieu et al. (2019) is: ⟨
+log p (x|z) ⟩
+q (z|x) − KL(q (z|x)||p (z))−
+− D(q (z), p (z)),
+where and are the scalar weight on the terms and Tonolini et al. (2019) is: ⟨
+log p (x|z) ⟩
+q (z|x) −KL(q (z|x)||q (z|xu)−
+−J × DKL ( ̄u|| ) ) ,
+where J is the dimensionality of the latent…",1,related,1,positive

@@ -1,0 +1,33 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"While some researchers generate data to make their data discrimination free or more fair from a causal lens [38, 43, 44], we generate synthetic datasets, not with a de-biasing goal, but to represent different dataset compositions from which models can learn and we can study their effects on impact.",1,related,1,positive
+"In our paper (including this appendix) we reproduced the following works for comparison:
+1XGBoost library: https://xgboost.readthedocs.io/en/stable/python/python_api.html
+• TVAE [9], code from the Synthetic Data Vault [23]: https://github.com/sdv-dev/ SDV,
+• CTGAN [9], code from the Synthetic Data Vault [23]: https://github.com/sdv-dev/ SDV,
+• GReaT [27], code: https://github.com/kathrinse/be_great,
+• AIM [6], code: https://github.com/ryan112358/private-pgm,
+• MST [30], code: https://github.com/ryan112358/private-pgm,
+• GEM [8], code: https://github.com/terranceliu/iterative-dp,
+• Prefair [15], code: https://github.com/David-Pujol/Prefair,
+• DECAF [11], code from a reproduction study [45] (downloadable from the supplementary materials on OpenReview: https://openreview.net/forum?id=SVx46hzmhRK),
+• TabFairGAN [13], code: https://github.com/amirarsalan90/TabFairGAN.",1,related,1,positive
+"We compare ProgSyn to two recent non-private (DECAF [11], and TabFairGAN [13]), and one private (Prefair [15]) fair synthetic data generation methods.",1,related,1,positive
+"Second, CDG-VAE can be applied to chain graphs (i.e., Partial DAGs) unlikely Xu et al. (2019a); van Breugel et al. (2021); Wen et al. (2021) that re-
+ar X
+iv :2
+30 2.",1,related,1,positive
+"Otherwise the model can just learn the protected features by using different proxies which are correlated to them (van Breugel et al., 2021).",1,related,1,positive
+Definition 3 (Fairness Through Unawareness [23]) A predictor f : X → Y is fair if and only if protected attributes A ⊂ X are not explicitly used by f to predict Y ∈ Y.,1,related,1,positive
+Definition 4 (Demographic Parity [23]) A predictor f : X → Y is fair if and only if protected attributes A ⊂ X are independent of the predictions.,1,related,1,positive
+"Definition 3 (Fairness Through Unawareness [23]) A predictor f : X → Y is fair if and only if protected attributes A ⊂ X are not explicitly used by f to predict Y ∈ Y.
+Demographic Parity (DPa) [142], instead, requires that a predictors output’s not be correlated with the protected attributes.",1,related,1,positive
+"This is true for all GAN based methods that we discussed, including FairGAN [10], DECAF [11], and CFGAN [12].",1,related,1,positive
+"Finally, DECAF [11], is a casually-aware method which is proposed to create fair data for a few notions which does not include CF.",1,related,1,positive
+"Our definition of fair SDG can be formulated as a constrained optimization, where the goal is to find 79 a distribution P ′(X,A, Y ) such that it satisfies a certain fairness notion (adopting the notation in 80 [11], we denote it by I ((X,Y,A), P ′)-fairness), while minimizing the distance of P ′ from the real 81 data P , where d is any distance of choice: 82",1,related,1,positive
+"Our definition here is in line with the definition of fairness for SDG in FairGAN [10] and [12], while it is different from the definition proposed in DECAF [11].",1,related,1,positive
+"This is true for all 177 GAN based methods that we discussed, including FairGAN [10], DECAF [11], and CFGAN [12].",1,related,1,positive
+"Finally, DECAF [11], 45 is a casually-aware method which is proposed to create fair data for a few notions which does not 46 include CF.",1,related,1,positive
+"The most relevant works to the problem we consider here are [10, 11, 12].",1,related,1,positive
+"49 We also review the existing definitions in previous work [10, 11, 12] and compare them with our 50 definition.",1,related,0,negative
+"Our definition here is in line with the definition of fairness for SDG in FairGAN [10] and [12], while 103 it is different from the definition proposed in DECAF [11].",1,related,1,positive
+"Causally-aware Generator Besides Causal-TGAN, we explicitly leave out CGNN (Goudet et al., 2018), CausalGAN (Kocaoglu et al., 2017) and DECAF (van Breugel et al., 2021), which incorporate similar causally-aware generator.",1,related,1,positive

@@ -1,0 +1,31 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"For fairness utility we consider Balance [Chierichetti et al., 2017] and Entropy [Li et al., 2020].",1,related,1,positive
+"Similar to other deep clustering approaches [Xie et al., 2016, Li et al., 2020], we employ a clustering assignment layer based on Student t-distribution and obtain soft cluster assignments P .",1,related,1,positive
+"Since optimizing the fair clustering loss Lf can lead to a degenerate solution where the learned representation reduces to a constant function [Li et al., 2020], we employ a well-known structural preservation loss term for each protected group.",1,related,1,positive
+"MNIST-USPS: Similar to previous work in deep fair clustering [Li et al., 2020], we construct MNIST-USPS dataset using all the training digital samples from MNIST [LeCun, 1998] and USPS dataset [LeCun, 1990], and set the sample source as the protected attribute (MNIST/USPS).",1,related,1,positive
+"Fair task assignment and truthdiscovery (Goel andFaltings 2019; Li et al. 2020d) are different subproblems in the same area, focused on the subdivision of work and the aggregation of answers in crowdsourcing.",1,related,1,positive
+We compare FUFS with different baseline methods in terms of feature utility (ACC and NMI) and fairness metrics (Balance and Propotion).,1,related,1,positive
+"These four metrics are defined as follows:
+ACC =
+∑n i=1 δ (yi,map(ŷi))
+n , (8)
+NMI =
+∑ c∈C ∑ c′∈C′ p (c, c′) log (p (c, c′) /p (c) p (c′))
+mean (H(C), H(C′)) , (9)
+Balance = min i ming |Ci ∩Xg| |Ci| , (10)
+Proportion = ∑ i maxg |Ci ∩Xg| |Ci| , (11)
+where ŷi is the clustering result, yi is the true cluster label, map(·) is a permutation mapping function that maps yi to the equivalent label from the ground truth and δ is the indicator function such that δ(x, y) = 1 if x = y, and δ(x, y) = 0 otherwise.",1,related,1,positive
+"Meanwhile, we use the widely used metrics Balance [Li et al., 2020] and define a new fairness metric Proportion as a compliment since Balance may be too restrict to reflect the distribution of the clustering.",1,related,1,positive
+"We make the following observations:
+• FUFS significantly outperforms the baseline methods in terms of Balance and Proportion with the best performance in almost all cases and the second best performance in terms of Balance on CRIME.",1,related,0,negative
+"These two metrics are used to quantify how well the selected features can eliminate discrimination—the selected features are considered fairer if
+2http://archive.ics.uci.edu/ml/datasets/Communities+and+ Crime+Unnormalized
+3https://www.thearda.com/ 4http://snap.stanford.edu/data/ego-Gplus.html 5https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-
+classification/
+they can lead to a more balanced cluster structure toward protected attributes (i.e., higher value of Balance and lower value of Proportion).",1,related,1,positive
+"Due to space limit, we only show the parameter study results on GOOGLE+ in terms of ACC and Balance.",1,related,1,positive
+"Meanwhile, we use the widely adopted metrics Balance [18] and define a new fairness metric Proportion to quantify fairness—the selected features are considered fairer with higher value of Balance and lower value of Proportion.",1,related,1,positive
+We first evaluate our work on two visual data sets with binary PSV that has been used in recent work [18]: 1) MNIST-USPS consists of 67291 training images of hand-written digits.,1,related,1,positive
+"Comparing our results with the recent deep fair clustering works [29, 18] we can see that our approach consistently outperforms these two baselines in terms of both clustering performance and fairness.",1,related,1,positive
+"For a fair comparison with non-deep clustering baselines, we use pre-trained auto-encoder’s features like [18].",1,related,1,positive
+"For deep fair clustering baselines, we compare our work with the latest work [18] and the geometric-based fair clustering [29].",1,related,1,positive

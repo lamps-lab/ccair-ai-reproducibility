@@ -1,0 +1,78 @@
+text,target_M6_predict,target_predict_M6_label
+"d) Other methods: For the trajectory prediction, SocialNCE [38] considers unfavorable events like discomfort and",1,neutral
+"Multi-modal distributions can overcome the drawback of converging to average behaviors by outputting several plausible behaviors, and are used by studies such as [31], [33], [35], [38], [40], [44], [47], [50], [51], and [58].",1,neutral
+Social-NCE [38] applied LSTM model based on,2,positive
+"deep learning models such as [17], [18], [25].",1,neutral
+"Some of the most important ML-based prediction frameworks which have shown their potential in the context of social navigation are Social-LSTM [16], Social-GAN [17], Social-NCE [18], and sparse Gaussian processes [19].",1,neutral
+Reference [26] decides to deter the model from predicting collision or too uncomfortable,1,neutral
+Representation learning [15] of safer motion representations can be facilitated by contrastive estimation from simulated negative behavior.,1,neutral
+"The most popular trajectory prediction models, including [21, 23, 72, 18, 52, 66, 94, 19, 55, 73, 26, 90], are all very large with stochastic output.",1,neutral
+"Among these methods, works utilizing generation frameworks, such as [21, 23, 27, 43, 65, 72, 96, 4, 24, 48, 77] using GAN [25] and [18, 35, 45, 52, 66, 75, 94] using CAVE [71], have achieved good experimental performance.",1,neutral
+"In contrast to the introduction of additional reward functions to regulate the action trajectory of unmanned ships, such as the terms of a ship sailing with a large angular speed [9], an inappropriate distance between two ships [10], or a violation of maritime social norms [11], the knowledge distillation approach in this paper relies mainly on human crew expert strategies , i.",1,neutral
+"In spite of the progress, human trajectory prediction still remains a challenging problem since the social environments are complex and biased (Liu, Yan, and Alahi 2021; Chen et al. 2021).",1,neutral
+"Self-supervised contrastive learning (SSCL) has demonstrated remarkable performance in computer vision (CV) (He et al., 2020; Chen et al., 2020a; Kotar et al., 2021), natural language processing (NLP) (Gao et al., 2021; Liu et al., 2021a) and many other domains (Liu et al., 2021c,b).",1,neutral
+"Among multi-future trajectory prediction methods, some researches [9], [12], [13] learned the pattern of agent behavior only using the history trajectories of agents.",1,neutral
+(3)Social-NCE [13]: A method that learned socially-aware motion representations using illdistributed data.,1,neutral
+"SOTA methods have employed a variety of techniques for better modeling, such as using waypoints and goals to break the forecasting problem into a series of hierarchical steps [11, 34, 63, 7, 8, 61, 64, 54, 52], mathematical and physical modeling techniques such as social forces [17] alongside deep architectures [61, 52, 31], and other paradigms and techniques such as memory retrieval [53], contrastive learning [33], and causal disentanglement [32].",1,neutral
+"Collision Rate (CR) is a joint evaluation metric that has seen greater attention in more recent works as members of the trajectory forecasting community begin to pay more attention to social compliance and effective joint modeling [25, 46, 23, 26, 33, 43].",1,neutral
+Learning socially aware motion representations is at the core of recent advances in multiagent problems [7].,1,neutral
+"Another kind of methods [8,9,19,21,25,59,63] formulates the trajectory prediction as CVAE [45], which applies observed trajectory as condition and learn a latent random variable to model multimodality.",1,neutral
+"For a GAN-based model, pz is a multivariate normal distribution, and for a CVAEbased model, pz is a latent distribution.",1,neutral
+"Another category exploits the variational auto-encoder (VAE) [21,26,30,41,51] that uses the observed
+*Authors contributed equally and are listed alphabetically by first name.
+history trajectories as a condition to learn the latent variable.",1,neutral
+"Another category exploits the variational auto-encoder (VAE) [21,26,30,41,50] that uses the observed",1,neutral
+Trajectron++ [41] uses the observation as the condition to learn a CVAE with the learned discrete latent variable.,1,neutral
+We optimize these end-points whose prior is the learned Endpoint VAE.,1,neutral
+Social-NCE [26] uses contrastive learning to make the predictions away from their simulated collision cases.,1,neutral
+"In particular, the spatial correlation among pedestrians is attributed to the result of social factors [15, 1, 29].",1,neutral
+"Other than the deterministic approaches SocialLSTM [1] and STT [33], the rest include models with implicit density functions: SocialGAN [14], SoPhie [37], Social-BIGAT [24], MGGAN [9], as well as the explicit ones: Trajectron++ [38], S-STGCNN [32], C-STGCNN [6], N-STGCNN [29] and DMRGCN [3].",1,neutral
+"Some methods explicitly model the social interactions between pedestrians using attention [14, 29] or contrastive learning [19] in order to enhance future trajectory prediction.",1,neutral
+[21] introduced a social contrastive loss that regularizes the extracted motion representation by discerning the ground truth positive events from synthetic negative ones.,1,neutral
+"In the motion context, negative data augmentation techniques have been applied in a limited scope to reduce collisions [10] and off-road predictions [24] on new domains.",1,neutral
+"Some recent methods propose to incorporate strong priors robust to the underlying distribution shifts [9, 10, 11].",1,neutral
+"(DRL) [4], [5], [6] have outperformed classical approaches in the field of dynamic obstacle avoidance without map constraints, their performance degrades when subjected to complex layouts without pre-computed map in presence of several moving obstacles.",1,neutral
+"In the fully supervised learning domain, previous works have shown that utilizing contrastive loss as an auxiliary loss can encourage learning more robust features with higher generalization abilities through careful contrastive pair construction [22, 23].",1,neutral
+"CL has shown great promise in self-supervised regimes [6, 9, 13] while recently, it has also been applied to the supervised learning domain and achieved promising results [19, 22, 23].",1,neutral
+Social-NCE [58] adopts contrastive loss in order to encourage keeping the positive event information from the negative information.,1,neutral
+"The first part of Table V reports simple baselines and the top-3 official submissions on AICrowd made by different works literature [23], [24], [40].",0,negative
+"Since there is no ground truth, to evaluate the prediction plausibility, we employ collision rate because it is widely adopted [34] and parsimonious: regardless of the specific behaviors of agents, they do not penetrate each other in the real world.",2,positive
+"We use same evaluation metrics of previous works [1,17,61,34] for future trajectory prediction.",2,positive
+"Moreover, we also add an augmented version S ′ of the anchor trajectory as a positive sample, following [23], which is created by adding small white noise ε to the bounding box coordinates of the anchor trajectory.",1,neutral
+[23] proposed a social sampling strategy that relies on augmenting negative samples with prior knowledge about undesired scenarios in the multi-agent setting.,1,neutral
+"Few works attempt to address this issue via designing special heuristics for negative mining [23, 38, 13].",1,neutral
+"Another set of approach try to refine the learning algorithm by training the model with negative samples of knowledge-driven methods [11], or adding the processed knowledge information to the training data.",1,neutral
+"Other approaches [24, 28, 44] propose other strategies such as state refinements, spatiotemporal graph neural networks [18, 39], and social contrastive losses.",1,neutral
+"In particular, when NPSN is incorporated into the combinational approach of Trajectron++ [47] and NCE [32], it achieves the best performances on the benchmark.",2,positive
+"Our NPSN is embedded into the state-of-the-art pedestrian trajectory prediction models [6, 13, 17, 32, 34, 39, 47, 49] by simply replacing their random sampling part.",2,positive
+"The parameters of the models are initialized using the weights provided by the authors, except for four models [17, 32, 34, 47] which use weights reproduced from the authors’ source codes.",0,negative
+"We prove that all of the expected values in the generated trajectory distributions with Generative Adversarial Networks (GANs) [6, 13, 17], Conditional Variational Auto-Encoders (CVAEs) [32, 34, 47], and Gaussian methods [39, 49] are biased.",1,neutral
+"This approach provides a diverse set of plausible predictions without the variety loss, and shares inspiration to objectives in many CVAE-based models [18, 32, 34, 47, 60].",1,neutral
+"We evaluate QMC and NPSN sampling methods with representative stochastic pedestrian trajectory prediction models: 1) Gaussian distribution-based model - SocialSTGCNN [39], SGCN [49]; 2) GAN-based model - SocialGAN [13], STGAT [17], Causal-STGAT [6]; 3) CVAEbased model - Trajectron++ [47], PECNet [34], and NCETrajectron++ [32].",2,positive
+"Our NPSN is trained to only control the latent vector samples for the baseline models, and synergizes well with the inference step that comes after both the initial prediction of Trajectron++ and the collision avoidance of NCE.",2,positive
+"Some methods [6,9,12,19,37,43,54] employ GANs [11] to model the multi-modality with a noise variable, and another line of methods [3,16,20,25,38,46] apply the CVAE [41] instead.",1,neutral
+"For instance, some methods [6,9,12,19,37,43,54] utilize generative adversarial networks (GANs) to spread the distribution over all possible future trajectories, while other methods [3,16,20,25,38,46] exploit conditional variational auto-encoder (CVAE) to encode the multi-modal distribution of future trajectories.",1,neutral
+"Another issue we noticed that the recent models [36,43,26,23] which are state-of-the-art based on the ADE/FDE metric only differ by 1cm ADE and few centimeters FDE on the ETH [29] and UCY [16] datasets, one of the most commonly used datasets in this area.",2,positive
+"A large body of work on pedestrian motion prediction uses past observed trajectories to forecast the future locations [3], [4], [5].",1,neutral
+[24] introduced a method to encourage encoded motion through social contrastive loss to preserve the information to distinguish a positive trajectory from the other negative ones.,1,neutral
+"…(2012); Gaydashenko et al. (2018) CFF (Alahi et al., 2014) 2014 42 million 1 Outdoor Top-down RGB-D Trajectories, Bounding Boxes Alahi et al. (2014); Liu et al. (2020b); Kothari et al. (2020) Stanford Drone Dataset (Robicquet et al., 2016)
+2016 11 ,216 8 Outdoor Top-down Mono Trajectories…",2,positive
+"Contrastive learning has been extensively used on human motion sequences to perform action recognition using 3D pose data (Liu et al., 2020; Su et al., 2020; Lin et al., 2020) and video-based action understanding (Pan et al.",1,neutral
+"In this context, recent methods have also studied the use of RNNs [2,15,53,56,57], GANs [23,29,52], graph neural networks [11,26,70], and attention mechanisms [35,36,40,54], but also of reinforcement [32] and contrastive [39] learning.",1,neutral
+"[41] Yuejiang Liu, Qi Yan, and Alexandre Alahi.",1,neutral
+"Contrastive learning also has been applied to unimodal datasets, including the study of human motion sequences [41, 42, 43], medical imaging [44, 45], video understanding [46, 47], and pose estimation [48, 49].",1,neutral
+"The data-driven and deep learning methods have been proposed to increase the prediction accuracy [17, 20, 31, 3, 23, 7, 30, 29, 32] of the hand-crafted models.",1,neutral
+Contrastive learning is widely used to learn representations from sequential data such as videos and pedestrian trajectories [18]–[20].,1,neutral
+"In [27], a relational graph is paired with “negative examples” (e.",1,neutral
+"Most of past years research focused on improving the interaction module, with only limited new methods since SocialLSTM [1], or in developing approaches that take inspiration in popular frameworks such as Transformers [10] or contrastive learning [11].",1,neutral
+Some authors have recently applied contrastive learning with success to pedestrian trajectory prediction [11] in order to,1,neutral
+"Despite lacking theoretical collision avoidance guarantees, such approaches allow for better generalization to new environments and conditions as compared to local planning methods, with some of the most recent works enabling crowdaware navigation for physical robots [6, 29, 30] as well as fully distributed multi-robot navigation [5, 31].",1,neutral
+"As opposed to introducing additional reward terms to regularize the agent trajectories, such as penalties for large angular speeds [5] and uncomfortable distances [30] or terms that promote social norms [10], our work mainly relies on human expert policies, fe(oi,t), extracted from real crowds trajectories to shape the reward.",2,positive
+"The recent works of [11, 30, 47] on socially-aware robot navigation and of [48, 49] on generating socially compliant behaviors in multi-agent environments can provide some interesting ideas towards this research direction.",1,neutral
+"This can be done by exposing knowledgedriven negative samples to the model (Liu et al., 2020) or adding constraints to the outputs of the network (von Rueden et al.",1,neutral
+This policy uses behavior cloning using a trained SARL policy as the expert [53].,2,positive
+This policy uses a contrastive loss function to represent ‘negative’ examples such as collisions to improve social compliance [53].,1,neutral
+"They may be the front cars, another pedestrian on the left, traffic lights, a repaired road, or sudden heavy rain Kothari et al. (2021a); Liu et al. (2021).",0,negative
+There have released several public datasets Ma et al. (2018); liu; Rasouli et al.,2,positive
+"Some works adopt individual features, such as observed trajectories, motion states, and pose, to forecast future locationsKothari et al. (2021a;b); Liu et al. (2021).",1,neutral
+"Another interesting avenue of research is to deploy robots in a heterogeneous setting and extend our work to socially-intelligent agents that interact with human beings [53, 22, 41].",2,positive

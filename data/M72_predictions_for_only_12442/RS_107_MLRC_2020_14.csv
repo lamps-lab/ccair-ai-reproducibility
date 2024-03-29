@@ -1,0 +1,22 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Finally, we retrain our model from scratch each round to prevent warm starting [4].",1,related,0,negative
+"Finally, we retrain our model form scratch each round to prevent warm starting [22].",1,related,0,negative
+"Vertex for P1 only
+Vertex for P2 only
+Vertex for P1 and P2
+S3
+S2 S1
+S4
+Figure 5: The process of materialization DAG construction.
+algorithm removes 𝑝2 from all of its ancestors, i.e., ⟨Var-f, [0, 10)⟩, ⟨Scale-t, [0, 10)⟩, ⟨Scale-f, [0, 10)⟩, and ⟨FG-t, [0, 10)⟩.",1,related,1,positive
+"For example, for the second execution of p1 in interval [1, 31), we can reuse the statistics artifacts (i.",1,related,1,positive
+"Therefore, for p2, the interval for training is [1, 11) (the last 10 days) and for p1, the interval is [0, 11), since the scheduled interval of p1 (30 days) is larger than the available data (Figure 6a).",1,related,0,negative
+"On the second execution (on the interval [1, 31)), since mean and variance can be computed incrementally, we reuse the mean and variance of the interval [1, 30) and only compute the mean and variance of [30, 31).",1,related,1,positive
+"For example, if ⟨Var-f, [0, 10)⟩ is materialized, we set its compute cost to zero before computing the cost of ⟨Var-t, [0, 10)⟩ and ⟨DNN, [0, 10)⟩.",1,related,1,positive
+"Since ⟨Var-f, [1, 10)⟩ and ⟨Scale-t, [0, 10)⟩ are materialized, we prune their incoming edges.",1,related,1,positive
+"Note that materializing a vertex such as ⟨Var-f, [0, 10)⟩ does not break the dependency of its descendants (e.g., ⟨Var-t, [0, 10)⟩) from its ancestors (e.g., ⟨Scale-t, [0, 10)⟩), since there are more than one path connecting the ancestors to the descendants.",1,related,1,positive
+"We build on (Ash & Adams, 2019) and study the generalisation gap induced by pretraining the model on the same data distribution.",1,related,1,positive
+"We start with the same setup as in (Ash & Adams, 2019) training deep residual networks (He et al., 2016) to classify the CIFAR 10 data set.",1,related,1,positive
+"If the initial training sample set is selected by any measurement, then we also call it warm start or core set method [16]; otherwise, it is a good star method.",1,related,0,negative
+"We avoid warm-starting and retrain models from scratch every time new samples are queried (Ash and Adams, 2019).",1,related,0,negative
+"If the initial training sample set is selected by any measurement, we also call it warm start or core set method [16], other wise it is a cool star method.",1,related,1,positive

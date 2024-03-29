@@ -1,0 +1,119 @@
+text,label_score,label,target_predict,target_predict_label
+"Object pose estimation has shown significant progress recently, based on different techniques, such as direct pose regression [56, 7, 26], 2D reprojection regression [44, 42, 18, 19, 40], 3D keypoint prediction [30, 41, 49, 11], and differentiable PnP solver [27, 17, 2, 3].",,,0,not_related
+[9] proposed to differentiate PnP using the implicit function theorem.,,,0,not_related
+"The camera pose estimation method is improved by adopting simplified constraint equations [14] or reducing the corresponding parameters [15], more recently using end-to-end probabilistic methods [13], [16], [17].",,,0,not_related
+"On the other hand, some recent methods try to make the PnP solvers differentiable [4, 5, 17].",,,0,not_related
+"Instead of direct estimation, correspondence guided methods [48, 54, 64, 44, 22, 49, 21, 23, 77, 46, 38, 71, 10, 61] follow a two-stage framework: they first predict a set of correspondences between 3D object frame coordinates and 2D image plane coordinates, and then recover the pose from the 3D-2D correspondences with a PnP algorithm [32, 30, 11, 69, 6].",,,0,not_related
+"7, at the very beginning, when the correspondences have large errors, both EPro-PnP [7] and BPnP [6] have good correctness.",,,0,not_related
+[6] observe that the gradient of the optimal pose can be calculated by applying the implicit function theorem [26] around the optimal solution.,,,0,not_related
+"Nevertheless, to the best of our knowledge, all of these differentiable PnP layers have a common property: They first solve the PnP problem to obtain either the pose [3, 4, 6] or the posterior pose distribution [7], and then compute the error to be backpropagated based on a dedicated loss funcar X iv :2 30 3.",,,1,related
+"To enable end-to-end training, several attempts have been made to incorporate the PnP solver as a differentiable network layer [3, 4, 6].",,,0,not_related
+"We also compare our loss function with the state-of-the-art differentiable PnP methods, namely, BPnP [6] and EPro-PnP [7].",,,1,related
+"The LC loss yields 99.9% gradient correctness, generating the most dilated maps; EPro-PnP produces less dilated maps, and BPnP with about 70% correctness generates the least dilation.",,,0,not_related
+"which can be computed following the implicit function theorem [6, 26].",,,0,not_related
+"Note that BPnP [6] does not fully constrain the weights, thus we remove the scale branch as stated in Sec.",,,1,related
+[6] illustrated cases where the final pose has successfully converged to the ground truth while the correspondences had not.,,,0,not_related
+BPnP [2] considers the optimization as a layer and enables the backpropagation of network as a whole with the help of the implicit theorem.,,,0,not_related
+We also design a unique training scheme for this network by introducing a Back-propagated PnP (BPnP) layer [2] so that reprojection error can be adopted as the loss function.,,,1,related
+"We employ reprojection error as loss function which is enabled by building on the recent progress on the PnP [1], [2], [28] problem.",,,1,related
+"To obtain extrinsics and enable the network end-to-end training, we connect the network with a BPnP layer [2] to estimate [W R, C W t] from the predicted K.",,,1,related
+"(12) Following [5], we construct a constrain function F to employ the implicit function theorem:",,,1,related
+"Since the optimal so-lution T c ∗ b is a local minimum for the objective function O ( o , p , T cb , K ) , a stationary constraint of the optimization process can be constructed by taking the first order derivative of the objective function with respect to T cb : Following [5], we construct a constrain function F to employ the implicit function theorem: Substituting the Eq.",,,1,related
+"Inspired by [5], the implicit function theorem [25] is applied to obtain the gradient through implicit differentiation.",,,0,not_related
+"We used the EPnP [28] implementation from Pytorch3D [44], since we found it to be faster and more stable than the methods based on declarative layers [8, 16].",,,1,related
+"Then, we employ the backpropagatable PnP algorithm from [5] to retrieve the estimated rotation matrix R pnp and translation vector t i pnp.",,,1,related
+"The loss has an additional regularisation term, comparing pest with ppnp, to ensure convergence of the estimated key-point coordinates the desired positions [5].",,,0,not_related
+"The formal description is: given coordinates of n 3D points p in world coordinate system C and their corresponding coordinates p in pixel coordinate system C , PnP wants to search the pose (rotation R, and translation t) of camera in C [47].",,,0,not_related
+"Recent trends replace the classical solver with trainable versions [4, 6, 20, 43, 50] to infer the 6D pose directly from the intermediate geometric correspondences.",,,0,not_related
+"Recent object pose estimation research trends recognize those shortcomings and partially alleviate them by directly regressing the 6D pose from the intermediate pose correspondences to achieve tremendous results [4, 6, 20, 50].",,,0,not_related
+"Recently, a similar idea has been proposed to solve the perspective-n-points (PnP) problem [14], but we focus more on the solution to the point-to-plane registration problem defined as constrained error minimization.",,,0,not_related
+The previous study [14] proposed a similar implicit gradient to ours for the PnP problem and calculated the gradient of a camera pose in SE(3) based on the 6 DoF axis-angle representation of the rigid transformation.,,,0,not_related
+[3] proposed to differentiate PnP using the implicit function theorem.,,,0,not_related
+"One type of keypoint parameterization is object coordinates [3,6,26,29].",,,0,not_related
+"Another approach is to impose geometric knowledge in the form of implicit or declarative layers [5, 6].",,,0,not_related
+"During training, BPNP uses the implicit function theorem to backpropagate gradients through the PnP solver such that the full system can be trained end-to-end.",,,0,not_related
+BPNP [6] takes this idea a step further and implements the PnP solver as a differentiable network layer.,,,0,not_related
+"For DGECN, we replace the DG-PnP in our architecture with PnP variants [6,16,42].",,,1,related
+"There has been recent proposals for an end-to-end framework based on the Perspective-n-Points (PnP) approach [2, 4, 7, 10].",,,0,not_related
+"By differentiating the PnP operation, Brachmann and Rother [4] propose a dense correspondence network where 3D points are learnable, BPnP [10] predicts 2D keypoint locations, and BlindPnP [7] learns the corresponding weight matrix given a set of unordered 2D/3D points.",,,0,not_related
+"Previous work [4, 7, 10] only backpropagates through a local solution y∗, which is inherently unstable and non-differentiable.",,,0,not_related
+"Endto-end correspondence learning [2, 4, 7, 10] interprets the",,,0,not_related
+"It is worth noting that this regularization loss is very similar to the loss function derived from implicit differentiation [7, 10], and it can be used for training pose refinement networks within a limited scope [20].",,,0,not_related
+"However, existing work on differentiable PnP learns only a portion of the correspondences (either 2D coordinates [10], 3D coordinates [2, 4] or corresponding weights [7]), assuming other components are given a priori.",,,0,not_related
+BPnP [10] is not included as it adopts a different train/test split.,,,1,related
+"Comparison to Implicit Differentiation Method Existing work on end-to-end PnP [7,10] derives a single solution of a particular solver y∗ = PnP(X) via implicit function theorem [16].",,,0,not_related
+"The former is often used as a surrogate loss in previous work [4, 10, 11].",,,0,not_related
+(10) instead of the reprojection-metric pose loss in BPnP [10].,,,1,related
+"…a powerful and flexible tool that has been applied to a growing number of applications including video classification (Fernando et al. 2016), visual Sudoku (Amos and Kolter 2017; Wang et al. 2019), blind PnP (Campbell, Liu, and Gould 2020; Chen et al. 2020) and meta-learning (Lee et al. 2019).",,,0,not_related
+"Deep declarative networks provide a powerful and flexible tool that has been applied to a growing number of applications including video classification (Fernando et al. 2016), visual Sudoku (Amos and Kolter 2017; Wang et al. 2019), blind PnP (Campbell, Liu, and Gould 2020; Chen et al. 2020) and meta-learning (Lee et al. 2019).",,,0,not_related
+"It can also be used to find matches between sets of objects (e.g., in solving the blind PnP problem (Campbell, Liu, and Gould 2020)).",,,0,not_related
+"2019), blind PnP (Campbell, Liu, and Gould 2020; Chen et al. 2020) and meta-learning (Lee et al.",,,0,not_related
+EP:Baseline EP:PY EP:RHaug PVNet[44] CDPN[38] BPnP[11] RNNPose[55] DFPN-6D[12] 95.,,,1,related
+2D-3D correspondences based approaches are instead robust to camera changes as they simply run PnP using the new intrinsics.,,,0,not_related
+"Although inferring 2D-3D correspondences, SingleStage [56] and GDR-Net [8] directly estimate the 6D pose via learning of the PnP paradigm.",,,0,not_related
+"While it is possible to obtain gradients for PnP [88] as well as RANSAC [89], they also come with the burden of a high memory footprint and computational effort, rendering them impractical for our online learning formulation.",,,0,not_related
+"After estimating these correspondences, PnP is commonly employed to solve for the 6D pose.",,,1,related
+"Both show that learned PnP can produce more robust estimates than standard PnP, especially when the objects of interest are exposed to occlusions.",,,0,not_related
+"With the introduction of deep learning, several methods have been proposed to bridge such pose optimization into an end-to-end learned pipeline, by establishing learned correspondences to inform various pose optimization tasks, such as point cloud registration [8], PnP optimization [6], or non-rigid tracking [4].",,,0,not_related
+[8] propose a differentiable PnP method to achieve end-to-end learning.,,,0,not_related
+"In 3D reconstruction recent works address the challenge of incorporating RANSAC in an end-to-end trainable pipeline for camera pose estimation based on the Perspective-n-Point (PnP) problem, such as differentiable blind PnP [41, 42] or DSAC [45].",,,0,not_related
+"Learnable Optimization: Common methods for incorporating optimization as layers in deep neural networks include implicit function differentiation [24, 25, 40, 41, 42] and optimization unrolling [43, 44, 35]; we refer to [25, 24] for a survey.",,,0,not_related
+"To backpropagate through L-BFGS we use the implicit function theorem as described in [41, 42].",,,1,related
+"Recently, another branch of works [15, 59, 152] adopts such ideas in direct predicting methods.",,,0,not_related
+"(7)
+To further utilize the 3D structure information while reducing prediction errors, we employ BPnP [3] to compute the object pose from the predicted 2D keypoints, and then re-project the 3D keypoints on a CAD model back to 2D image space using the computed pose.",,,1,related
+"To further utilize the 3D structure information while reducing prediction errors, we employ BPnP [3] to compute the object pose from the predicted 2D keypoints, and then re-project the 3D keypoints on a CAD model back to 2D image space using the computed pose.",,,1,related
+"To be specific, given a set of keypoint predictions, k̃ = {k̃1, ..., k̃N}, corresponding 3D keypoint set, k3D, on CAD model, and camera intrinsic matrix, K, the re-projected 2D keypoints k̃P are,
+k̃P = P(k̃) = R̃k3D + t̃, (8)
+(R̃, t̃) = BPnP (k̃,k3D,K), (9)
+where R̃ and t̃ are the predicted 3D rotation and translation.",,,0,not_related
+"keypoints, dense correspondences, edge vectors, symmetry correspondences), (ii) PnP algorithm [20, 11] for pose estimation.",,,0,not_related
+"A further development is the BPnP [5], which is an exact PnP back-propagation approach.",,,0,not_related
+"End-to-End Training Incorporating the PnP backpropagation approach in [5], we apply smooth L1 loss on the Euclidean errors of estimated translation vector and yaw angle.",,,1,related
+"Learning camera pose optimization can be tackled by unrolling the optimizer for a fixed number of steps [21, 51, 53, 83,91,92], computing implicit derivatives [13,15,18,34,68], or crafting losses to mimic optimization steps [88, 89].",,,0,not_related
+"For PointNet-like PnP, we extend the PointNet in [19] to account for dense correspondences.",,,1,related
+"However, this either requires a complex training strategy in order to have good initialization of scene coordinates [4, 6, 7], or can only handle sparse correspondences of a predefined set of keypoints [8].",,,0,not_related
+"Additionally, replacing the scale-invariant δz in tSITE with the absolute distance tz or directly regressing the object center (ox, oz)
+3https://github.com/BoChenYS/BPnP
+leads to inferior poses w.r.t. translation (B0 vs. E1, E2).",,,1,related
+"For BPnP [8], we replace the Patch-PnP in our framework with their implementation of BPnP3.",,,1,related
+"We demonstrate the effectiveness of the image-like geometric features (M2D-3D,MSRA) by comparing our Patch-PnP with traditional PnP/RANSAC [28], the PointNet-like [41] PnP from [19], and a differentiable PnP (BPnP [8]).",,,1,related
+"As for PnP, [8] employs the Implicit Function Theorem [23] to enable the computation of analytical gradients w.",,,0,not_related
+"As for PnP, [8] employs the Implicit Function Theorem [23] to enable the computation of analytical gradients w.r.t. the pose loss.",,,0,not_related
+"The Rotations and translations are uniformly sampled in 3D space, and within an interval of [−2, 2] × [−2, 2] × [4, 8], respectively.",,,0,not_related
+"1b, Patch-PnP is more accurate than traditional PnP/RANSAC (B0 vs. A0), PointNet-like PnP (B0 vs. C0) and BPnP (B0 vs. C1) in estimating the 6D pose.",,,0,not_related
+"Noteworthy, Patch-PnP is much faster in inference and up to 4× faster in training than BPnP, since the latter relies on PnP/RANSAC for both phases.",,,0,not_related
+"As BPnP was originally designed for sparse keypoints, we further adapt it appropriately to deal with dense coordinates.",,,1,related
+"SSD-6D [29], BPnP [30] • Single-stage Approach",,,0,not_related
+"For pose estimation, a BPnP-based trainable pipeline achieves higher accuracy by incorporating the feature map loss with 2D–3D reprojection errors.",,,0,not_related
+"To this end, the BPnP [30] was proposed as an effective network module that computes the gradients of backpropagation by guiding parameter updates in the network using a PnP solver.",,,0,not_related
+This approach can be further split in two categories keypoint-based [26][35][4][28][40][39] and dense 2D-3D correspondence methods [44][20][25].,,,0,not_related
+"The keypoint-based methods predict either the eight 2D projections of the cuboid corners of the 3D model as keypoints [28][40][39] or choose keypoints on the object’s surface, often selected with the farthest point sampling algorithm [26][35][4].",,,0,not_related
+More recently the state-of-the-art accuracy regime of 6D object pose estimation using RGB input only is dominated by approaches that first detect 2D targets of the object in the given image and subsequently solve a Perspective-nPoint problem for their 6D pose [26][35][44][20][25][4].,,,0,not_related
+"In computer vision, the technique has been applied to video classification [21,22], action recognition [14], visual attribute ranking [37], few-shot learning for visual recognition [31], and non-blind PnP in concurrent work [13].",,,0,not_related
+We use the implementation from [3] for differentiable PnP.,,,1,related
+[13] develop a differentiable perspective-n-point (PnP) solver for estimating the pose of a camera within a 3D scene.,,,0,not_related
+"matching method, BPnP [26] regressed the pose guided by 2D-3D corresponding relations.",,,0,not_related
+"Based on the sparse points matching method, BPnP [26] regressed the pose guided by 2D-3D corresponding relations.",,,0,not_related
+"…et al., 2018), video classification (Fernando & Gould, 2016; 2017), action recognition (Cherian et al., 2017), visual attribute ranking (Santa Cruz et al., 2019), few-shot learning for visual recognition (Lee et al., 2019), and camera pose estimation (Campbell et al., 2020; Chen et al., 2020).",,,0,not_related
+", 2019), and camera pose estimation (Campbell et al., 2020; Chen et al., 2020).",,,0,not_related
+"Restrictions apply.
+a feature extraction network and Heatmap [30] is proposed to accurately calculate the matched pixels of 3-",,,1,related
+a feature extraction network and Heatmap [30] is proposed,,,0,not_related
+"BPnPfaster — Authors in [1] provided an alternative method for calculating the gradients through the PnP layer, which essentially is the samemethod as the original, although ignoring the higher-order derivatives from the coefficients graph.",,,0,not_related
+2 Results beyond the BPnP paper Apart from the experiments conducted by the authors in [1] we provide additional to further support the main claims.,,,1,related
+"More specifically, in the backpropagatable PnP [1], the authors claim that incorporating geometric optimization in a deep-learning pipeline and predicting an object s̓ pose in an end-to-end manner yields improved performance.",,,0,not_related
+"Recently, two works have been presented that seek to address these issues, BPnP [1] and HigherHRNet [2].",,,0,not_related
+"After conducting several experiments on the UAVA dataset, the central claims of [1] and [2] stand true; as they both outperform other methods.",,,0,not_related
+"We communicated with the authors of [1] through GitHub, and we would like to thank them as they provided a fast and detailed response.",,,1,related
+"In more details, the authors of BPnP [1] propose a novel differentiable module which calculates the derivatives of a PnP solver through implicit differentiation, enabling the backpropagation of its gradients to the network parameters, and as such allowing for end-to-end optimization and learning.",,,0,not_related
+Our results support the claims presented by both authors in [1] and [2] respectively.,,,1,related
+The main issue that required more effort was identifying the appropriate weights for BPnP [1] in order to balance the different optimization objectives.,,,0,not_related
+"BPnP: BPnP focuses on the Pose Retrieval stage, and following [1] we trained our model under the 3 different schemes used in the original work as well: 1We apply the proposed module in the object pose estimation task, while authors originally demonstrated it for the human-pose estimation task, but its concept still applies in our case as well.",,,1,related
+"A further development is the BPnP [5], which is an exact PnP back-propagation approach.",,,0,not_related
+"End-to-End Training Incorporating the PnP backpropagation approach in [5], we apply smooth L1 loss on the Euclidean errors of estimated translation vector and yaw angle.",,,1,related
+"Regarding differentiable PnP, we generally follow the approach in BPnP [5], with the code completely reimplemented for higher efficiency and uncertainty awareness.",,,1,related
+"keypoints, dense correspondences, edge vectors, symmetry correspondences), (ii) PnP algorithm [13, 6] for pose refinment.",,,0,not_related
+", BPnP [50] which uses 67% and 33% of samples for training and testing, in contrast",,,0,not_related
+"77736 VOLUME 9, 2021
+Noticeable in Table 2 where the ADD metric is compared, our performance will become the best without considering support from additional refinement procedure (e.g., DPOD [26]) or more training samples (e.g., BPnP [50] which uses 67% and 33% of samples for training and testing, in contrast to ours which uses 15% and 85% for training and testing).",,,1,related

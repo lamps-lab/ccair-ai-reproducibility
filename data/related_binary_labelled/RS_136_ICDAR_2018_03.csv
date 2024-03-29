@@ -1,0 +1,45 @@
+text,label_score,label,target_predict,target_predict_label
+"Graph Neural Network (GNN) based methods [3,6,17,18], as the name suggests, represent tables as graph structures.",,,0,not_related
+"On the other hand, the problem of table structure recognition (TSR) is a lot more challenging and remains a very active area of research, in which many novel machine learning algorithms are being explored [3,4,5,9,11,12,13,14,17,18,21,22].",,,0,not_related
+"For the table recognition task, [25] uses KNN to construct a graph and represent text features by encoding character embedding with GRU;[26] constructs a fully-connection graph and set weighted loss to balance between positive and negative samples.",,,0,not_related
+Xue et al.[29]1 2019 Res2TIM ICDAR CMDD + ICDAR 2013 ICDAR 2013 X X R,,,0,not_related
+"One group of bottom-up methods [3, 23, 32] treat words or cell contents as nodes in a graph and use graph neural networks to predict whether each sampled node pair is in the same cell, row, or column.",,,0,not_related
+"The TSR models of different paradigms are evaluated using different metrics, including 1) accuracy of logical locations (Xue, Li, and Tao 2019), 2) F-1 score of adjacency relationships between cells (Göbel et al. 2012, 2013), and 3) BLEU and TEDS (Papineni et al. 2002; Zhong, ShafieiBavani, and…",,,0,not_related
+"For the first question, we compare LORE with baselines directly predicting logical locations (Xue, Li, and Tao 2019; Xue et al. 2021).",,,1,related
+"First, we compare LORE with models which directly predict logical locations including Res2TIM (Xue, Li, and Tao 2019) and TGRNet (Xue et al. 2021).",,,1,related
+Res2TIM [7] focuses on table rebuilding after cell detection and positioning.,,,0,not_related
+Another effort to segment tabular structures is the ReS2TIM paper by W Xue [119] which describes the reconstruction of syntactic structures from the table.,,,0,not_related
+"W Xue [119] Graph NN + weights depending on distance For the cell relationship network, the class imbalance issue is solved using the distancebased weighting method.",,,0,not_related
+W Xue[119] ICDAR2013 Graph NN + weights depending on distance Precision 92.,,,0,not_related
+"Popular table structure recognition methods include DeepDeSRT [7], ReS2Tim [15], DeepTabStR [16], etc.",,,0,not_related
+"One group of bottom-up methods [21, 25, 75, 76] treat words or cell contents as nodes in a graph and use graph neural networks to predict whether each sampled node pair is in a same cell, row, or column.",,,0,not_related
+"To obtain the table-structure, one creates an initial graph, where each of the text-cells becomes a node in the graph similar to [33, 34, 2].",,,0,not_related
+"Table structure recognition generates a machine-interpretable output for a given table image, which encodes its layout according to a pre-defined standard [30, 17, 20, 42, 4, 39, 24].",,,0,not_related
+"To achieve this purpose, existing computer vision methods either predict cell bounding boxes [6, 13], explore the adjacency relation between different cells [11, 15], or transform a table image into the markup sequence (e.",,,0,not_related
+"A group of methods [27, 29, 41, 43] try to recover the relations of elements based on heuristic algorithms.",,,0,not_related
+"Most previous methods [4, 7, 9, 11, 12] only use the spatial or visual features without considering the textual information of each table cell to recognize the table structure.",,,0,not_related
+"Most existing literature [9, 12, 13] on table structure recognition depends on extraction of meta-features from the pdf document or on the optical character recognition (OCR) models to extract low-level layout features from the image.",,,0,not_related
+"For cell logical location prediction, we compare the proposed method with ReS2TIM [30].",,,1,related
+"Because the original dataset does not specify the training and test sets, we use half tables for training and others for test following the setting in [30].",,,1,related
+Method Cell Spatial Location Cell Logical Location WAF P R H ArowSt ArowEd AcolSt AcolEd Aall ReS2TIM [30] - - - 0.,,,0,not_related
+"For cell logical location prediction, we follow the metrics in [30] to calculate the accuracy of four logical indices (i.",,,1,related
+"Generally, these methods can be divided into the edge classification [1, 22, 11, 30] and the node classification [15].",,,0,not_related
+"2, with the success of deep learning, recent deep learning-based table structure recognition approaches can be divided into three categories: 1) identify cell bounding boxes through visual detection and segmentation methods [25, 27, 29, 28, 8]; 2) transform a table image into the markup sequence, such as LaTeX and HTML [10, 2]; and 3) explore the adjacency relation between different table cells [30, 22, 11].",,,0,not_related
+Method CMDD ICDAR13-Table 100% cells 90% cells 80% cells 100% cells 90% cells 80% cells ReS2TIM [30] 0.,,,0,not_related
+"Because ReS2TIM [30] does not contain a cell spatial location module, for a fair comparison, we use the ground truth of cell spatial locations instead.",,,1,related
+[30] combined these two kinds of methods.,,,0,not_related
+"After that, a group of methods [36,23,38] tries to recover the cell relations based on some heuristic rules and algorithms.",,,0,not_related
+"With the great success of deep neural network in computer vision field, works began to focus on the image-based table with more general structures [21,30,24,9,13,36,23,14,33].",,,0,not_related
+"Inspired by [26,36], with the annotations of text regions and row/column indices, we can easily generate the aligned bounding box annotations according to the maximum box height/width in each row/column.",,,1,related
+934 - - - - - ReS2TIM [36] ICDAR 2013† 0.,,,0,not_related
+[58] Graph Neural Networks with distance based weights (Section III-B2a).,,,0,not_related
+The system ReS2TIM [39] employed a distance-based weight technique to retrieve a syntactic table structure.,,,0,not_related
+"[39] W. Xue, Q. Li, and D. Tao, ‘‘ReS2TIM: Reconstruct syntactic structures from table images,’’ in Proc.",,,0,not_related
+The system ReS(2)TIM [25] employed a distance-based weight technique to retrieve a syntactic table structure.,,,0,not_related
+"Among these, the problem of table structure recognition has been of high interest in the community [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].",,,0,not_related
+"In the space of document images, researchers have been working on understanding equations [30,31], figures [32,33] and tables [6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+"Table structure recognition is a challenging problem due to complex structures and high variability in table layouts [4,5,6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+"It can be represented in the form of either physical [10,12,14,17] ar X iv :2 01 0.",,,1,related
+"Table structure recognition refers to representation of a table in a machinereadable format, where its layout is encoded according to a pre-defined standard [10,11,12,13,14,17].",,,0,not_related
+"For the table structure recognition, each of the text cells is represented as a vertex in the graph (Xue et al., 2019, 2021; Chi et al., 2019a).",,,0,not_related
+"Bottom-up methods [5,26,27,40] first detect cells or text segments using detection models or OCR engines, then analyze the relations between neighbouring cells using GNN or LSTM.",,,0,not_related

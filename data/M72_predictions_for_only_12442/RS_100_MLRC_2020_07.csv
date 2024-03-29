@@ -1,0 +1,423 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"In a follow-up work, PGExplainer [30] extends the same idea with an additional assumption of the graph to be a random Gilbert graph.",1,related,1,positive
+"Specifically, in the CFAD framework, we first devise a Granger causality-based [19] causal explanation method to extract the core subgraph for a given node without requiring annotation information, according to the idea that causal explanations can extract a subgraph which is considered the main cause of the corresponding prediction [17], [20].",1,related,1,positive
+"Like most GNN-interpretability methods (Luo et al., 2020; Ying et al., 2019; Yuan et al., 2020), we limit our interpretability analysis to topology.",1,related,1,positive
+"Datasets For graph classification, we use two synthetic datasets (BA2Motifs (Luo et al., 2020), SPMotifs.",1,related,1,positive
+Our implementations mainly follows the settings of officially public Pytorch code of PGExplainer [10] (https://github.com/divelab/DIG/tree/main/dig/ xgraph/PGExplainer).,1,related,1,positive
+"At λ =50%, PGExplainer fails to identity key motifs (NO2), yet sucessfully does so at λ =100%.",1,related,0,negative
+"We integrate two benchmark post-hoc explainers (GNNEXPLAINER [9] and PGEXPLAINER [10]) into a unified evaluation framework and carefully evaluate the effectiveness of explanations across four graph datasets, including two real-world datasets of different topics and two synthetic datasets.",1,related,1,positive
+"3 Empirical Study To address the aforementioned research questions, we evaluate the explanation quality in terms of Fid and Fid− of two benchmark post-hoc GNN explainers, GNNExplainer [9] and PGExplainer [10], on two GNN models, GCN [19] and GIN [20].",1,related,1,positive
+We integrate the implementations of GCN and GIN from PyG [21] and GNNExplainer and PGExplainer from the original papers into a unified framework built with DIG [22].,1,related,1,positive
+"To address the aforementioned research questions, we evaluate the explanation quality in terms of Fid+ and Fid− of two benchmark post-hoc GNN explainers, GNNExplainer [9] and PGExplainer [10], on two GNN models, GCN [19] and GIN [20].",1,related,1,positive
+"For AttentiveFP [33], GNNExplainer [35] and PGExplainer [13], we use the hyper-parameters suggested in the orginal papers.",1,related,1,positive
+"To make sure the key structures identified by different methods are comparable, for each drug, we count the number of atoms in the output of SLGNN and use the ranks generated in AttentiveFP [33], GNNExplainer [35] and PGExplainer [13] to pick the same number of atoms in the same drug.",1,related,1,positive
+"For GNNExplainer [35] and PGExplainer [13], they become applying the basic message passing algorithm on the atom-based graphs and we name them GNNExplainer(Base) and PGExplainer(Base), respectively.",1,related,1,positive
+"The competing methods we consider include our SLGNNand three state-of-the-artmethods: AttentiveFP [33], GNNExplainer [35] and PGExplainer [13].",1,related,1,positive
+"3Note that on BA-2MOTIFS and MUTAG, GNNExplainer and PGExplainer work worse than results reported in previous work [18] as we do not cherry pick the target model.",1,related,0,negative
+"We observe that 1) Our proposed methods supervised by the representation space (i.e., EGIB and EGIB-TA) outperform task-specific explanation methods (i.e., GNNExplainer, PGExplainer, and Refine).",1,related,1,positive
+"The former term can be addressed following previous works, e.g., PGExplainer [18]:
+L𝑡𝑠 (𝑌 ; 𝑆 ;Φ) = − 𝑁∑︁ 𝑖=1 𝐶∑︁ 𝑐=1 𝑃 (𝑓𝑡 (𝑔𝑖 ) = 𝑐) log 𝑃 (𝑓𝑡 (𝑠𝑖 ) = 𝑐), (12)
+where 𝑓𝑡 = 𝑓𝑑 ◦ 𝑓𝑒 denotes the composition of GNN-based encoder 𝑓𝑒 and downstream model 𝑓𝑑 .",1,related,1,positive
+"□
+B IMPLEMENTATION DETAILS B.1 Implementations of Explainers We adopt the multilayer perceptron (MLP) as the attributor TΦ to calculate the logits𝑤𝑖 𝑗 following PGExplainer [18].",1,related,1,positive
+"As there are no ground-truth explanations for our above-used muti-task datasets, we provide more visualization results on two additional single-task datasets with explanation ground-truths, i.e., MUTAG [6] and BA-2MOTIFS [18] as well as quantitative results.",1,related,1,positive
+"5, we evaluate the efficiency of three different explanation strategies: the task-specific transductive explanation strategy (e.g., GNNExplainer), the task-specific inductive explanation strategy (e.g., PGExplainer) and our proposed twostage task-agnostic explanation strategy in a muti-task setting.",1,related,1,positive
+"Compared with GNNExplainer, PGExplainer provides a global understanding of predictions made by GNNs. 3) Refine [33] is an inductive explanation method that learns the multi-grained explanations with class-wise attributors and contrastive learning.",1,related,1,positive
+"There are mainly three 3Note that on BA-2MOTIFS and MUTAG, GNNExplainer and PGExplainer work worse than results reported in previous work [18] as we do not cherry pick the target model.",1,related,0,negative
+2) We adopt the typical Bernoulli distribution assumption [18] with GumbelSoftmax reparameterization trick instead of our Categorical assumption and refer to this variant as EGIB /wo Cat.,1,related,1,positive
+"So as to illustrate the effectiveness of our model, we compare our proposed method with interpretable graph learning methods including GRAD [51], ATT [40], GNNExplainer [51], PGExplainer [31], RCExplainer [1], and CF-GNNExplainer [30].",1,related,1,positive
+"For GNNExplainer and PGExplainer, which are previously used for the classification task, we replace the Cross-Entropy loss with the MSE loss.",1,related,1,positive
+"We follow [25] to make a widely-accepted assumption that a graph can be divided by G = G∗ + GΔ, where G∗ presents the underlying sub-graph that makes important contributions to GNN’s predictions, which is the expected explanatory graph, and GΔ consists of the remaining label-independent edges for predictions made by the GNN.",1,related,1,positive
+"In practice, we follow the previous work [25, 50, 53] to implement them.",1,related,0,negative
+"In this paper, we focus on discovering the important sub-graph typologies following the previous work [25, 53].",1,related,1,positive
+PGExplainer finds more crashes on ReVeal than all other methods on Devign for Libxml2 given Table 2.,1,related,0,negative
+PGExplainer has the best MAZ for all PUTs and for both models since around 0.95− 0.98% of the code lines score an accumulated relevance lower than 50%.,1,related,0,negative
+"Although their DA is superior compared to GNNExplainer and PGExplainer, their located code lines are, however, unrelated to the actual underlying vulnerability concluding from our extrinsic results.",1,related,0,negative
+"Considering the sparsity, GNNExplainer and LineVul achieve the worst MAZ results, and PGExplainer and Smoothgrad yield the best.",1,related,0,negative
+"In particular, we focus on the graph-agnostic methods Smoothgrad [46] and GradCAM [45] that are widely applied in computer vision and the graph-specific methods GNNExplainer [54] and PGExplainer [36] tailored towards explaining GNNs.",1,related,1,positive
+"Our results are in line with Ganz et al. [21] since according to them, Smoothgrad is among the best candidates considering the DA and PGExplainer produce the most concise explanations.",1,related,0,negative
+"With the logarithmic stretch, we first assess the influence of the model on the EM’s output, for instance, GradCam, SmoothGrad, GNNExplainer and PGExplainer in Figure 5.",1,related,1,positive
+"• PGExplainer [23] is an inductive explainer, which can be directly used on new instances after training on a group of data.",1,related,0,negative
+"On the other hand, as an emerging line of works, there has not been any modelagnostic explainer for HGNNs to the best of our knowledge.",1,related,0,negative
+"Given the input data, instancelevel techniques [29, 31, 52, 54, 65, 68] have been present main stream of GNN explanation, which aim to acquire explanations for a target instance.",1,related,1,positive
+"In this paper, we compare our methods with state-of-the-art GNN explanation methods, including GNNExplainer (Ying et al. 2019), PGEXplainer (Luo et al. 2020) SubgraphX (Yuan et al. 2021) and ReFine (Wang et al. 2021), and inherently interpretable GNN methods, including GAT and GSAT (Miao, Liu, and Li 2022).",1,related,1,positive
+"Among the baseline methods, GNNExplainer, PGExplainer and OrphicX adopt the MI value for node attribution, which is less effective than LARA, especially on ogbn-arxiv.",1,related,1,positive
+"We benchmark our methods with GNNExplainer, PGExplainer, and GraphSVX on synthetic datasets in Table 9.",1,related,1,positive
+"According to the ground truth explanation, the key subgraph structure for the classification is a pentagon or a house structure on the BA-2Motifs dataset.",1,related,1,positive
+"We deploy LARA to explain node classification on BA-Shapes, BA-Community, Tree-Cycles and ogbn-arxiv; and graph classification on the BA-2Motifs and MUTAG datasets.",1,related,1,positive
+"We evaluate the faithfulness and efficiency of LARA compared to state-of-the-art methods: GNNExplainer [36], PGExplainer [24], GraphSVX [9] and OrphicX [19].",1,related,1,positive
+"Node # 102 103 104 105
+GNNExplainer 15.34 119.84 1186.43 12101.1 PGExplainer 5.63 35.52 490.48 3534.65 LARA 0.54 4.23 39.92 416.50
+Table 4: Effectiveness of explainer layer number.",1,related,1,positive
+"D.2 Target Model Details
+For each dataset, we use the target model under the settings as given in [24] for BA-Shapes, BACommunity, Tree-Cycles, BA-2Motifs and MUTAG 2.",1,related,1,positive
+"4 Code for GNNExplainer and PGExplainer is at https://github.com/LarsHoldijk/RE-ParameterizedExplainerForGraphNeuralNetworks; for
+OrphicX is at https://github.com/wanyugroup/cvpr2022-orphicx; for GraphSVX is at https://github.com/AlexDuvalinho/GraphSVX.",1,related,1,positive
+"We compare MSInterpreter with four popular explainable methods PGExplainer (Luo et al., 2020), GNNExplainer (Ying et al.",1,related,1,positive
+"For the BA2Motifs dataset, we compute the four metrics only for correctly predicted data.",1,related,1,positive
+"The statistics for the BA2Motif (Luo et al., 2020) and MUTAG0 (Tan et al., 2022) datasets are shown in Table 2.",1,related,0,negative
+"We compare MSInterpreter with four popular explainable methods PGExplainer (Luo et al., 2020), GNNExplainer (Ying et al., 2019) ,SubgraphX (Yuan et al., 2021), and GStarX (Zhang et al., 2022).",1,related,1,positive
+We compare two datasets with edge interpretation labels: MUTAG0 and BA2Motifs.,1,related,1,positive
+"Lastly, GLGExplainer [2] uses local explanations from PGExplainer [56] and projects them to a set of learned prototype or concepts (similar to ProtGNN [125]) to derive a concept vector.",1,related,1,positive
+"We highlight six popular synthetic datasets:
+BA-Shapes [115]: This graph is formed by randomly connecting a base graph to a set of motifs.",1,related,1,positive
+"The white box methods GNNExplainer [36], PGExplainer [37], and TAGE [54], have access to the target GNN’s internals.",1,related,1,positive
+PGExplainer [24] shares the same objective as GNNExplainer and trains a generative model to generate explanations.,1,related,1,positive
+"Finally, we consider inductive GNN explainers: PGExplainer [2], RCExplainer [3], TAGE [29].",1,related,1,positive
+Table 1 shows the explanation AUC and time efficiency (the training time is shown outside the parentheses for PGExplainer).,1,related,0,negative
+We also split data for baselines requiring additional training (e.g. PGExplainer).,1,related,0,negative
+"We compare with four baselines methods: GRAD (Ying et al., 2019), GAT (Veličković et al., 2017), GNNExplainer (Ying et al., 2019) and PGExplainer (Luo et al., 2020).",1,related,1,positive
+"Specifically, GNNExplainer and PGExplainer (Ying et al., 2019) maximize the mutual information between perturbed input and original input graph to identify the important features.",1,related,1,positive
+"For baselines (e.g., PGExplainer) who need training additional modules, we also split the data.",1,related,0,negative
+"We follow the graph pruning setup in [14, 37] and adapt it to the dynamic graph modeling context.",1,related,1,positive
+"Following the practice in [14, 16, 37], we utilize the binary concrete distribution to approximate the sampling process and obtain the sampled sub-",1,related,1,positive
+In the second step we apply PGExplainer with a minor modification to circumvent the “introduced evidence” [21] issue due to the presence of soft masks.,1,related,0,negative
+"While PGExplainer generates a unique explanation subgraph, we are interested in collecting
+several subgraphs to train the subgraph-based classifier.",1,related,1,positive
+"It should be noted that for other graph explanation methods [114, 213], we only remove edges to find the critical subgraph as the explanation for the current prediction.",1,related,1,positive
+"Considering the efficient optimization, we follow (Ying et al. 2019) and (Luo et al. 2020) to approximate it with cross-entropy between y and ŷ, where ŷ is the prediction with augmentation v as the input and calculated via
+v = g(x; ϵ) z = fθ(v) ŷ = hw(z), (1) where z is the representation and…",1,related,1,positive
+"We also note that, while DnX is often better than GNNExplainer and PGExplainer, its performance bests FastDnX only in 12.5% of cases.",1,related,0,negative
+"To alleviate the burden of optimizing again whenever we want to explain a different node, Luo et al. (2020, PGExplainer) propose using node embeddings to parameterize the masks, i.e., amortizing the inference.",1,related,1,positive
+"For GCN and GATED, PGExplainer yields the best results.",1,related,0,negative
+"The same is not true for the competing methods, e.g., PGExplainer loses over 15% AUC for the BA-Community (cf., GCN and ARMA).",1,related,0,negative
+"It is worth mentioning that PGExplainer and GNNExplainer — as described in the experimental section of their respective papers — output edge-level explanations, so their results are not immediately comparable to that of our methods and PGMExplainer.",1,related,0,negative
+"For all datasets, we measure performance in terms of AUC, following Luo et al. (2020).",1,related,1,positive
+"We compare DnX against three baseline explainers: GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), and PGMExplainer (Vu and Thai, 2020).",1,related,1,positive
+"Nonetheless, GNNExplainer and PGExplainer impose strong assumptions on our access to the GNN we are trying to explain.",1,related,0,negative
+"Similarly to Luo et al. (2020), we use the cross-entropy function to replace the conditional entropy function H(Y | sf ) with N given instances, and define the reward function as follows:",1,related,1,positive
+"Note that different from [27], our method is suitable for the homogeneous and heterogeneous graphs simultaneously.",1,related,1,positive
+"Next, we follow [18, 27] to re-parameter the process using the uniform distribution with the parameter Ω as follows:",1,related,1,positive
+"Note that it is a discrete process to select the important edges, similar to [27], we first use binary concrete distribution to calculate P (ei j ) for approximating the sampling process and then re-parameter the selection process to optimize the objective function.",1,related,1,positive
+"The scheme of feature attribution and selection [1, 17, 29, 30, 33] prevails towards post-hoc explanations of GNN models.",1,related,1,positive
+"Following previous works [17, 33], we adopt the Barabasi-Albert (BA) graphs as the base and attach each graph with one of three motif types: house, cycle, and grid.",1,related,1,positive
+"To make the edge dropping procedure differentiable and enable an end-toend optimization process, we relax the discrete p e to a continuous variable in [0, 1] and apply the Gumbel-Max reparameterization trick [12, 15].",1,related,1,positive
+"Since PaGE-Link and both baselines can generate masks M, we also follow [25] to compare explainers by the masks they generated using the ROC-AUC score.",1,related,1,positive
+"Thus, we extend the popular GNNExplainer [45] and PGExplainer [25] as our baselines.",1,related,1,positive
+We refer to these two adapted explainers as GNNExp-Link and PGExp-Link below.,1,related,1,positive
+"To get the importance of a path, we first use a mean-field approximation for the joint probability by multiplying 𝑃 (𝑒) together, and we normalize each
+Algorithm 1 PaGE-Link
+GNNExp [45] PGExp [25] SubgraphX [48] PaGE-Link (ours) 𝑂 ( |E𝑐 |𝑇 ) 𝑂 ( |E |𝑇 ) / 𝑂 ( |E𝑐",1,related,1,positive
+"We conduct a human evaluation by randomly picking 100 predicted links from the test set of AugCitation and generate explanations for each link using GNNExp-Link, PGExp-Link, and PaGE-Link.",1,related,1,positive
+GNNExp [43] PGExp [25] SubgraphX [46] PaGE-Link (ours),1,related,1,positive
+Therefore we extend the widespread GNNExplainer [43] and PGExplainer [25] as our baseline models.,1,related,1,positive
+"After incorporating Align Gaus on dataset TreeGrid, SHD distance of top-6 edges drops from 4.39 to 2.13 for GNNExplainer and from 1.38 to 0.13 for PGExplainer.",1,related,1,positive
+"Our proposed algorithms in Section 5.2 are implemented and incorporated into two representative GNN explanation frameworks, i.e., GNNExplainer [12] and PGExplainer [13].",1,related,1,positive
+"For PGExplainer, learning rate is initialized to 0.003 and training epoch is set as 30.",1,related,0,negative
+PGExplainer is adopted as the base method.,1,related,0,negative
+"(3) In summary, our proposal can provide more faithful explanations for both clean and mixed settings, while PGExplainer would suffer from spurious explanations and fail to faithfully explain GNN’s predictions, especially in the existence of biases.",1,related,0,negative
+We adopt GNNExplainer and PGExplainer as baselines.,1,related,0,negative
+"From the results, we can make the following observations: • Across all four datasets, with both GNNExplainer or PG-
+Explainer as the base method, incorporating embedding alignment can improve the quality of obtained explanations; • Among proposed alignment strategies, those distributionaware approaches, particularly the variant based on Gaussian mixture models, achieve the best performance.",1,related,1,positive
+"After incorporating it on dataset Mutag, SHD distance of top-6 edges drops from 4.78 to 3.85 for GNNExplainer and from 3.42 to 1.15 for
+PGExplainer.",1,related,1,positive
+"From these two experiments, we can observe that embedding alignment can obtain explanations of better faithfulness and is flexible to be incorporated into various models such as GNNExplainer and PGExplainer, which answers RQ1.",1,related,1,positive
+"For example, GNNExplainer Ying et al. (2019) and PGExplainer Luo et al. (2020) extract a compact subgraph to provide the instance-level explanations, while XGNN Yuan et al. (2020) generates the discriminative graph patterns to provide the model-level explanations.",1,related,1,positive
+"Our work is directly related to black-box perturbationbased explaining methods for GNNs, including GNNExplainer (Ying et al. 2019), PGExplainer (Luo et al. 2020), GraphLIME (Huang et al. 2020), PGMExplainer (Vu and Thai 2020), RelEx (Zhang, DeFazio, and Ramesh 2021), GraphSVX (Duval and Malliaros 2021) and ZORRO (Funke, Khosla, and Anand 2021).",1,related,1,positive
+"Our work is directly related to black-box perturbationbased explaining methods for GNNs, including GNNExplainer (Ying et al. 2019), PGExplainer (Luo et al. 2020), GraphLIME (Huang et al. 2020), PGMExplainer (Vu and Thai 2020), RelEx (Zhang, DeFazio, and Ramesh 2021), GraphSVX (Duval and Malliaros…",1,related,1,positive
+"Take PGExplainer as an example [26], which provides explanation for each instance from the global perspective of GNNs model.",1,related,1,positive
+"This approach generalizes PGExplainer (Luo et al., 2020) and learns a node mask m ∈ [0, 1]n for each sample C. Similar to BernMask, it also has mask size and entropy constraints in its loss function, and their coefficients are both tuned from {1.0, 0.1, 0.01} as well.",1,related,1,positive
+BernMask-P is extended from Luo et al. (2020) based on the authors’ code and a recent PR in PyG.,1,related,1,positive
+"This approach generalizes PGExplainer (Luo et al., 2020) and learns a node mask m ∈ [0, 1] for each sample C.",1,related,1,positive
+"We chose one instance from each dataset and visualized explanations provided by SCALE, GNNExplainer, and PGExplainer in Figure 3.",1,related,0,negative
+"For fair comparisons, we contacted the authors of GNNExplainer, PGExplainer, and SEGNN to request evaluation scripts for all datasets.",1,related,0,negative
+"Second, we compared our framework with two state-of-the-art post-hoc explanation methods [7, 8] in qualitative aspects to highlight the quality of explanations provided by SCALE.",1,related,0,negative
+"SCALE outperforms baselines on Mutag, wherein the precision score gains are 15.54% compared to PGExplainer and 51.52% in comparison with GNNExplainer.",1,related,0,negative
+1 Training the GNN f 236 For both BAMultiShapes and Mutagenicity we relied on the codebase provided by [2] for training 237 the GNN f to explain and to train the Local Explainer.,1,related,0,negative
+"For Mutagenicity we replicated the setting in the PGExplainer paper [21], while for BAMultiShapes and HIN we trained until convergence a 3-layer GCN. Details about the training of the networks and their accuracies are in the Appendix.",1,related,0,negative
+The results for Mutagenicity are in line with the one reported in [2].,1,related,0,negative
+"2 Local Explanations Processing 245 As detailed in [2], the output of PGExplainer consists in a weighted edge mask wij ∈ V × V where 246 each wij is the likelihood of the edge being an important edge.",1,related,1,positive
+"For Mutagenicity, we sticked to the 247 original implementation which was correctly able to reproduce the results presented in the paper [2].",1,related,0,negative
+"For Mutagenicity, over which PGExplainer was originally evaluated, we simply selected the threshold θ that maximises the F1 score of the local explainer over all graphs, including those that do not contain the ground-truth motif.",1,related,1,positive
+"Nonetheless, in this work, we relied on PGExplainer [2] since it allows 57 the extraction of arbitrary disconnected motifs as explanations and it gave excellent results in our 58 experiments.",1,related,1,positive
+"Finally, for BAMultiShapes and HIN, for which we extracted our own local explanations, we trained PGExplainer on the train split of the original dataset.",1,related,0,negative
+"01 For Mutagenicity we replicated the model accuracy and the local explanations presented in [2], while 116 for BAMultiShapes we trained until convergence a 3-layers GCN.",1,related,0,negative
+"For BAMultiShapes we trained a 3-layers 238 GCN [27] (20-20-20 hidden units) with mean graph pooling for the final prediction, whereas for 239 Mutagenicty we reproduced the results of [2].",1,related,1,positive
+"In this work we relied mainly on two off-the-shelf explainers, namely, PGExplainer [21] and XGNN [36].",1,related,0,negative
+"PGExplainer: For Mutagenicity and BAMultiShapes, we used the original implementation as provided by [21].",1,related,0,negative
+• PGExplainer [22]: It adopts a MLP-based explainer to obtain the important subgraphs from a global view to reduce the computation cost and obtain better explanations.,1,related,1,positive
+"To this end, we use the BA2Motifs dataset [Luo et al., 2020].",1,related,1,positive
+"We compare the proposed method with popular post-hoc explanation techniques including the GNN-Explainer Ying et al. [2019], PGE-Explainer Luo et al. [2020], GradCAM Pope et al. [2019], GNN-LRP Schnake et al. [2020], and SubgraphX Yuan et al. [2021]2.",1,related,1,positive
+are different from those reported in the original paper [6].,1,related,0,negative
+"We incorporate eight GNN explainability methods, including gradient-based: Grad29, GradCAM11, GuidedBP6, Integrated Gradients30; perturbation-based: GNNExplainer14, PGExplainer10, SubgraphX31; and surrogate-based methods: PGMExplainer13.",1,related,1,positive
+"Still, this faithfulness is relatively weak, only 0.001 better than
+Method GEA (↑) GEF (↓) GES (↓) GECF (↓) GEGF (↓)
+Random 0.148 ± 0.002 0.579 ± 0.007 0.920 ± 0.002 0.763 ± 0.003 0.023 ± 0.002
+Grad 0.193 ± 0.002 0.392 ± 0.006 0.806 ± 0.004 0.159 ± 0.004 0.039 ± 0.003
+GradCAM 0.222 ± 0.002 0.452 ± 0.006 0.263 ± 0.004 0.010 ± 0.001 0.020 ± 0.002
+GuidedBP 0.194 ± 0.001 0.557 ± 0.007 0.432 ± 0.004 0.067 ± 0.002 0.021 ± 0.002
+IG 0.142 ± 0.002 0.545 ± 0.007 0.727 ± 0.005 0.110 ± 0.003 0.021 ± 0.002
+GNNExplainer 0.102 ± 0.003 0.534 ± 0.007 0.431 ± 0.008 0.233 ± 0.006 0.027 ± 0.002
+PGMExplainer 0.133 ± 0.002 0.541 ± 0.007 0.984 ± 0.001 0.791 ± 0.003 0.096 ± 0.004
+PGExplainer 0.194 ± 0.002 0.557 ± 0.007 0.217 ± 0.004 0.009 ± 0.000 0.029 ± 0.002
+SubgraphX 0.324 ± 0.004 0.254 ± 0.006 0.745 ± 0.005 0.241 ± 0.006 0.035 ± 0.003
+Dataset Method GEA (↑) GEF (↓)
+Mutag
+Random 0.044 ± 0.007 0.590 ± 0.031
+Grad 0.022 ± 0.006 0.598 ± 0.030
+GradCAM 0.085 ± 0.012 0.672 ± 0.029
+GuidedBP 0.036 ± 0.007 0.649 ± 0.030
+Integrated Grad (IG) 0.049 ± 0.010 0.443 ± 0.031
+GNNExplainer 0.031 ± 0.005 0.618 ± 0.030
+PGMExplainer 0.042 ± 0.007 0.503 ± 0.031
+PGExplainer 0.046 ± 0.007 0.504 ± 0.031
+SubgraphX 0.039 ± 0.007 0.611 ± 0.030
+Benzene
+Random 0.108 ± 0.003 0.513 ± 0.012
+Grad 0.122 ± 0.007 0.262 ± 0.011
+GradCAM 0.291 ± 0.007 0.551 ± 0.012
+GuidedBP 0.205 ± 0.007 0.438 ± 0.012
+Integrated Grad (IG) 0.044 ± 0.003 0.182 ± 0.010
+GNNExplainer 0.129 ± 0.005 0.444 ± 0.012
+PGMExplainer 0.154 ± 0.006 0.433 ± 0.012
+PGExplainer 0.169 ± 0.007 0.375 ± 0.012
+SubgraphX 0.371 ± 0.009 0.513 ± 0.012
+Fl-Carbonyl
+Random 0.087 ± 0.007 0.440 ± 0.26
+Grad 0.132 ± 0.010 0.210 ± 0.021
+GradCAM 0.005 ± 0.007 0.500 ± 0.026
+GuidedBP 0.089 ± 0.010 0.315 ± 0.024
+Integrated Grad (IG) 0.091 ± 0.007 0.174 ± 0.019
+GNNExplainer 0.094 ± 0.009 0.423 ± 0.026
+PGMExplainer 0.078 ± 0.008 0.426 ± 0.026
+PGExplainer 0.079 ± 0.009 0.372 ± 0.025
+SubgraphX 0.008 ± 0.002 0.466 ± 0.026
+9Scientific Data | (2023) 10:144 | https://doi.org/10.1038/s41597-023-01974-x
+random explanation.",1,related,1,positive
+"We incorporate eight GNN explainability methods, including gradient-based: Grad [29], GradCAM [11], GuidedBP [6], Integrated Gradients [30]; perturbation-based: GNNExplainer [14], PGExplainer [10], SubgraphX [31]; and surrogate-based methods: PGMExplainer [13].",1,related,1,positive
+"Explanation for Graph Neural Network In this task, we follow the setting in GNNExplainer [39] and PGExplainer [17] and construct four kinds of node classification datasets.",1,related,1,positive
+"For the explanation task, we follow the quantitative evaluation settings in GNNExplainer [39] and PGExplainer [17].",1,related,0,negative
+"Datasets We perform the experiments on the same set of datasets as GNNExplainer [12], as subsequent research established them as benchmarks [13, 14, 21].",1,related,1,positive
+"Notice that we do not focus on other post-hoc explainability methods, such as GNNExplainer [12], PGExplainer [13] or PGMExplainer [14], as to the best of our knowledge GCExplainer is the only explainability method providing global concept-based explanations for GNNs.",1,related,1,positive
+PGExplainer provides explanations for GNNs by generating a probabilistic graph.,1,related,1,positive
+"Then a new graph is generated that contains only the structure necessary for the decision making by GNNs.
+Similar to the PGM-Explainer analysing the explained features from conditional probabilities, Luo et al. [16] proposed a model-agnostic method of explainable GNNs called PGExplainer.",1,related,1,positive
+"A general paradigm to generate explanations for GNNs is to find an explanation graph G′ that has the maximum agreement with the label distribution on the original graph G = (V,E,W ), where G′ can be a subgraph [39] or other variations of G [24, 40].",1,related,1,positive
+"With the trained graph models, we quantitatively and qualitatively compare our FlowX with eight baselines, including GradCAM [34], DeepLIFT [43], GNNExplainer [27], PGExplainer [28], PGMExplainer [31], SubgraphX [29], GNNGI [37], GNN-LRP [37].",1,related,1,positive
+"For GNN Explainer and PGExplainer, we modified their objective function in a similar way as the attention-based explanation.",1,related,1,positive
+"• Existing GNN explanation models (e.g., GNN Explainer and PGExplainer) do not show any superior performance over other straightforward GNN explanation approaches such as Att and Grad.",1,related,0,negative
+"For the training of PGExplainer, the learning rate is set as 0.003.",1,related,0,negative
+• PGExplainer.,1,related,0,negative
+"For PGExplainer, we adopt the implementations of [22].",1,related,1,positive
+"For all adopted GNN explanation baselines (i.e., Att, Grad, GNN Explainer, and PGExplainer), we also adopt their released implementations for a fair comparison.",1,related,1,positive
+"To evaluate how well the proposed framework can be generalized to different explanation backbones, we adopt GNN Explainer [39] and PGExplainer [22] as two backbones of explainers for evaluation.",1,related,1,positive
+PGExplainer [10] is also based on maximizing mutual information between a class label and a highly contributing graph towards GNN prediction.,1,related,1,positive
+"While both CFGExplainer and PGExplainer require an offline training procedure, PGExplainer requires an input constructed from edge embeddings, as opposed to node embeddings that are used by CFGExplainer.",1,related,1,positive
+"In this section, we provide a brief overview of Attributed Control Flow Graphs (ACFGs) used for malware classification, Graph Neural Networks (GNNs), and three graph based interpretability models used in our evaluations, namely GNNExplainer [16], SubgraphX [18] and PGExplainer [17].",1,related,1,positive
+This is in contrast to our solution CFGExplainer and PGExplainer [17] which leverage global information to provide instance-level explanations.,1,related,1,positive
+"In this section, we evaluate the classification accuracy of equisized subgraphs produced by four GNN-based interpretability models – CFGExplainer, GNNExplainer [16], SubgraphX [18] and PGExplainer [17].",1,related,1,positive
+"We have compared CFGExplainer against three state-ofthe-art GNN-oriented explainers, namely GNNExplainer [16], SubgraphX [18] and PGExplainer [17], using eleven malware families (Bagle, Bifrose, Hupigon, Ldpinch, Lmir, Rbot, Sdbot, Swizzor, Vundo, Zbot and Zlob) and one benign family.",1,related,1,positive
+"Following the existing works [25], [26], in consideration of relaxation, we adopt Bernoulli distribution P (Gs) = ∏ (i,j)∈E P ((i, j)) for edge explanation, where P ((i, j)) is the probability of the edge (i, j)’s existence.",1,related,1,positive
+"We compare ILLUMINATI with the following baseline GNN explanation methods, GNNExplainer [26], PGMExplainer [23], and PGExplainer [25].",1,related,1,positive
+"For simplicity, we assume that the selections of edges from the original graph G are conditionally independent to each other [Luo et al., 2020], that is Pw = ∏M i=1 Pwi .",1,related,1,positive
+"We discuss these for the BA-2Motifs [31], Tree-Cycle [54], and MUTAG[10] datasets in Section 4.3, and others in Appendix C.",1,related,1,positive
+"We discuss these for the BA-2Motifs [31], Tree-Cycle [54], and MUTAG[10] datasets in Section 4.",1,related,1,positive
+"We use the Infection and Negative Evidence benchmarks from Faber et al. [15], The BA-Shapes, Tree-Cycle, and Tree-Grid benchmarks from Ying et al. [54], and the BA-2Motifs dataset from Luo et al. [31].",1,related,1,positive
+We observe this in the BA-2Motifs dataset.,1,related,1,positive
+"For BA-shapes, we use node indices [400:700:5] following the choice in the previous work [37, 20, 32, 2].",1,related,1,positive
+More details on the implementaion of GNNExpl and PGExpl can be found in Appendix B.2.,1,related,0,negative
+"For subgraph explanations, we include: 1) GNNExpl as it is the building block for many follow-up works; 2) a continuous version of GNNExpl (GNNExpl (soft)) where we do not drop edges with small importance scores and we instead consider it as providing a constinous and weighted adjacency matrix Asij ≤ 1 and 3) PGExpl.",1,related,1,positive
+This paper mainly considers GNNExpl and PGExpl as the evaluation of SubgraphX using the default parameters from DIG [18] exceeds the timeout limit (10 minuteshttps://us06web.zoom.us/j/86767269620 per node) with our current computational resources (Titan RTX) on Cora.,1,related,1,positive
+The sparsity of PGExpl shows the highest sensitivity against the model’s accuracy; 2) in both datasets all explanation methods become less faithful when the model becomes more accurate.,1,related,1,positive
+"1] and can be direclty usd as “probabilities"" as the attribution scores from GNNExpl and PGExpl.",1,related,0,negative
+"Since PGExpl shares the same motivation with GNNExpl and only differs on techniques that 1) narrow down the searching space for the optimal As and 2) learn a dense layer to jointly explain a set of nodes, we therefore point the readers to Luo et al. [20] for details.",1,related,1,positive
+"B.2 Implementation GNNExpl and PGExpl
+We use the implementation on Pytorch Geometric for GNNExpl2.",1,related,1,positive
+"3a and does not apply to GNNExpl and PGExpl as they are already in the range of [0, 1].",1,related,1,positive
+"Example choices of L(Xs, As, F ) are mutual information, i.e. GNNExpl [37] and PGExpl [20], and Shapley Value, i.e. SubgraphX [2].",1,related,1,positive
+"In BAshapes, we find that training PGExpl with all points provides a slightly better results on ROC-AUC score so we train all nodes together.",1,related,1,positive
+We use the default number of epochs for GNNExpl and PGExpl in the public repository.,1,related,1,positive
+"3a, we find that the ROC-AUC scores for SoftGNNExpl and PGExpl are pretty high even when the model is in its early stage of training while the correlations of the rest methods between explanation AUC and the test accuracy are stronger.",1,related,0,negative
+"GNNExpl [37] and PGExpl [20], and Shapley Value, i.",1,related,1,positive
+Experimental details and relevant plots are included in Appendix C.3) Our results suggest that SoftGNNExpl and PGExpl may not be sensitive enough to reflect the model’s performance.,1,related,0,negative
+"On this account, we follow the Gumbel-Softmax reparametrization trick [35, 36] and relax the binary variables ei,j to a continuous edge weight variables êi,j = σ((log − log(1− ) + wi,j)/τ) ∈ [0, 1], where σ(·) is the sigmoid function; ∼ Uniform(0, 1); τ is the temperature hyperparameter such that limτ→0 p(êi,j = 1) = σ(wi,j); wi,j is the latent variables which is calculated by a neural network following previous work [10],",1,related,1,positive
+"Following the previous explanation works [9, 10], we leverage mutual information to measure the relevance and therefore formulate the explanation problem as argmaxS I(S;Z).",1,related,1,positive
+", PGExplainer [56]) provide a sample-dependant explanation for each graph sample.",1,related,1,positive
+embedding in PGExplainer [56]) because access to the GNN system may be limited (e.,1,related,0,negative
+"Consistent with prior works [11, 14, 34], we focus on explanations on graph structures.",1,related,1,positive
+"We employ several real-world datasets ENZYMES, Mutagenicity, PC-3, NCI109, NCI-H23H [40] and one synthesized dataset BA-2Motifs [39] for graph classification.",1,related,1,positive
+"Inspired by the recent research on GNN explainability [38], [39], we employ all perturbation operation DG 2 T1ðGÞ of the clean graph G (i.",1,related,1,positive
+"%) on BA-2Motifs
+current samples unseen samples
+k 1 2 3 1 2 3
+Clean 99.63 99.63 99.63 100.00 100.00 100.00 Rand 78.85 54.35 50.09 81.00 55.35 50.00 Grad 60.50 51.13 50.13 - - - RL-S2V 50.00 50.00 50.00 50.00 50.00 50.00 Ours 50.00 50.00 50.00 50.00 50.00 50.00
+Authorized licensed use limited to the terms of the applicable license agreement with IEEE.",1,related,0,negative
+"To reveal the attack strategies of the projective ranking method, we visualize the perturbations in adversarial samples on the BA-2Motifs dataset based on the GCN model.",1,related,1,positive
+"[24] requires explicit motif to generate explanations thus could not be applied on NCI1 and CiteSeer, which is the reason why it is not included.",1,related,0,negative
+"To restrict the size of subgraphs given by the explainer, we follow previous studies [15] to add a size regularization term R, computed as the averaged importance score, to the above objectives.",1,related,1,positive
+Learning Inductive Task-agnostic # explainers required Gradient- & Rule-based No 1 GNNExplainer [34] Yes No No M ∗N SubgraphX [36] Yes No No M ∗N PGExplainer [15] Yes Yes No M Task-agnostic explainers Yes Yes Yes 1,1,related,1,positive
+"In our study, we follow [15], focusing on the importance of edges to provide explanations to GNNs.",1,related,1,positive
+"We do this by comparing TAGE with multiple baseline methods including non-learning-based methods GradCAM [20] and DeepLIFT [21], as well as learning-based methods GNNExplainer [34] and PGExplainer [15].",1,related,1,positive
+"To begin with, we construct 3-class synthetic datasets based on BAMotif [58] and follow Wu et al. [104] to inject spurious correlations between motif graph and base graph during the generation.",1,related,1,positive
+"To begin with, we construct 3-class synthetic datasets based on BAMotif [58] and follow Wu et al.",1,related,1,positive
+"We construct 3-class synthetic datasets based on BAMotif [116, 58] following [104], where the model needs to tell which one of three motifs (House, Cycle, Crane) that the graph contains.",1,related,1,positive
+"Besides the models (Ying et al., 2019; Luo et al., 2020; Schlichtkrull et al., 2021; Yu et al., 2021) that we have compared with in detail in Sec.",1,related,1,positive
+"For Mutag, we split it randomly into 80%/20% to train and validate models, and following (Luo et al., 2020) we use mutagen molecules with -NO2 or -NH2 as test data (because only these samples have explanation labels).",1,related,0,negative
+"We compare interpretability with post-hoc methods GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), GraphMask (Schlichtkrull et al., 2021), and inherently interpretable models DIR (Wu et al., 2022) and IB-subgraph (Yu et al., 2021).",1,related,1,positive
+"Table 6 shows a direct comparison with PGExplainer and GNNExplainer between the interpretation ROC AUC reported in (Luo et al., 2020) and the performance of GSAT.",1,related,0,negative
+"Almost all previous GNN interpretation methods are posthoc, such as GNNExplainer (Ying et al., 2019), PGEx-
+plainer (Luo et al., 2020) and GraphMask (Schlichtkrull et al., 2021).",1,related,1,positive
+"Over Ba-2Motifs and Mutag, GNNExplainer and PGExplainer work worse than what reported in (Luo et al., 2020) as we do not cherry pick the pre-trained model.",1,related,0,negative
+"We use the tuned recommended settings from (Luo et al., 2020), including the temperature, the coefficient of `1-norm regularization and the coefficient of entropy regularization.",1,related,1,positive
+"GSAT is substantially different from previous methods, as we do not use any sparsity constraints such as `1-norm (Ying et al., 2019; Luo et al., 2020), `0-norm (Schlichtkrull et al.",1,related,1,positive
+"For interpretation evaluation, we report explanation ROC AUC following (Ying et al., 2019; Luo et al., 2020).",1,related,0,negative
+"GSAT is substantially different from previous methods, as we do not use any sparsity constraints such as `1-norm (Ying et al., 2019; Luo et al., 2020), `0-norm (Schlichtkrull et al., 2021) or `2-regression to {0, 1} (Yu et al., 2021) to select size-constrained (or connectivity-constrained)…",1,related,1,positive
+"In fact, GNNExplainer, PGExplainer, and SubgraphX can never generate explanations including only disconnected -",1,related,1,positive
+"We compare with 5 strong baselines representing the SOTA methods for GNN explanation: GNNExplainer [41], PGExplainer [25], SubgraphX [44], GraphSVX [9], and OrphicX [21].",1,related,1,positive
+"Going beyond the instance-wise explanation, PGExplainer (Luo et al., 2020) generates masks for multiple instances inductively.",1,related,1,positive
+"By “ground-truth”, we follow the prior studies (Ying et al., 2019; Yuan et al., 2020a; Luo et al., 2020) and treat the subgraphs coherent to the model knowledge (e.",1,related,1,positive
+"By “ground-truth”, we follow the prior studies (Ying et al., 2019; Yuan et al., 2020a; Luo et al., 2020) and treat the subgraphs coherent to the model knowledge (e.g., the motif subgraphs in TR3) or human knowledge (e.g., the digit subgraphs in MNISTsup) as the ground-truth explanations.",1,related,1,positive
+"…of the input features, which redistributes the probability of features according to their importance and sample the salient features as an explanatory subgraph Gs. Specifically, Gs can be a structure-wise (Ying et al., 2019; Luo et al., 2020) or featurewise (Ying et al., 2019) subgraph of G.",1,related,1,positive
+"However, the PGExplainer explicitly works on edge masks and thus requires the GNN model to internally adjust edge weights, which was not applicable in our case.",1,related,1,positive
+"As a consequence, explanations may not reflect the global decisions made by the GNN classifier [29].",1,related,0,negative
+"We leverage existing works in network graphs and GNNs such as GNNExplainer and PGExplainer [11, 20] to mine common and influential substructures from sample input graphs.",1,related,1,positive
+"We compare VGIB with various explanation model including GNNExplainer [49], PGExplainer [28], GraphMask [37], IGExplainer [41], GraphGrad-CAM [31] and GIB [52].",1,related,1,positive
+"Note that M is a soft mask with continues values instead of a binary mask, we further employ an entropy constraint to encourage discrete values in M [23]:",1,related,1,positive
+"We apply a generative probabilistic model to learn intrinsic underlying molecular graph structures as the topology-level augmentations, which are believed to make the most contribution to molecule representations readout from GNNs. Simultaneously, MolCLE also learns feature selectors that mask out unimportant atom features to generate attribute-level augmentations.",1,related,1,positive
+"Finally, we can notice that our MolCLE model shows a comparative performance to GROVER [47], which has the largest GNNs architecture tailored for molecular graph data with tens of millions of parameters.",1,related,1,positive
+"Due to the intractable number of potential subgraphs hindering the model from optimizing the objective directly [35], we follow Janson et al.",1,related,1,positive
+"Thus, we also apply the element-wise entropy [35, 68] constraint to increase the",1,related,1,positive
+"Inspired by previous works on explaining GNNs [35, 68, 70], we utilize a generative probabilistic model to obtain topological augmentations.",1,related,1,positive
+We compare ProtGNN+ with two post-hoc methods: PGExplainer (Luo et al. 2020) and GNNExplainer (Ying et al. 2019).,1,related,1,positive
+We compare ProtGNN+ with two post-hoc methods: PGExplainer (Luo et al. 2020) and GNNExplainer (Ying et al.,1,related,1,positive
+"Existing methods are GNNExplainer [13], PGExplainer [14], GraphMask [15].",1,related,1,positive
+", 1991), as we could explain the results based on the knowledge used in (Luo et al., 2020).",1,related,0,negative
+"Moreover, we also conduct the experiments on a commonly used graph classification dataset, MUTAG (Debnath et al., 1991), as we could explain the results based on the knowledge used in (Luo et al., 2020).",1,related,1,positive
+"For graph-specific approaches we consider GNNExplainer [35], PGExplainer [19], and Graph-LRP [24], which all have been specifically designed to provide insights on GNNs.",1,related,1,positive
+"Following prior work [5, 22, 43], we formalize the notion of importance using mutual information (MI) and formulate our explanation module as the following optimization framework:",1,related,1,positive
+"Yet, the results of PGExplainer over the model trained with MATE are comparable with the ones presented in [17].",1,related,0,negative
+"Concerning the explainers we use GNNExplainer [25], PGExplainer [17] and SubgraphX [28].",1,related,1,positive
+"For the graph explanation model Eд with parameters θд , we use parameterized graph explainer (PGExplainer) model [19], minimizing the entropy loss:",1,related,1,positive
+"We use the recently proposed methods of concept learning [41] for explanations using textual data, and PGExplainer [19] for explanations using graphs data.",1,related,1,positive
+"We use the recently proposed methods of concept learning [40] for explanations using textual data, and PGExplainer [18] for explanations using graphs data.",1,related,1,positive
+"For the graph explanation model 𝐸𝑔 with parameters 𝜃𝑔 , we use parameterized graph explainer (PGExplainer) model [18], minimizing the entropy loss: L𝐸𝑔 (𝜃𝑔) = E𝐺𝑆∼𝑞 (𝜃𝑔) [𝐻 (𝑴𝒐 (ℎ( ®𝑥),𝑴𝒈 (𝐺)) | 𝑴𝒐 (ℎ( ®𝑥),𝑴𝒈 (𝐺𝑆 )))]
+where 𝐺𝑆 is explanation subgraph sampled from a distribution 𝑞 parameterized by 𝜃𝑔 .",1,related,1,positive
+• PGExplainer [22]: It adopts a MLP-based explainer to obtain the important subgraphs from a global view to reduce the computation cost and obtain better explanations.,1,related,1,positive
+"BA-Shapes: To compare with the state-of-the-art GNN explainers [22, 45] which identify crucial subgraphs for predictions, we construct BA-Shapes following the setting in GNNExplainer [45].",1,related,1,positive
+"Follow-up works on GNN explanation pick up these datasets [13, 16, 18, 25, 31] or vary them slightly [7].",1,related,0,negative
+Note that similar observations on another representative explainer (PGExplainer [23]) can be found in Figure 7 (Refer to Appendix Section).,1,related,0,negative
+"In this section, in order to evaluate the effectiveness of our proposed attacking method on both GNNs and its explanations, we apply our proposed method to another representative explainer for the GNNs model (PGExplainer [23]), which adopts a deep model to parameterize the generation process of explanations in the inductive setting.",1,related,1,positive
+"In order to explain why a GNN model fθ predicts a given node vi’s label as Y , the GNNEXPLAINER acts to provide a local interpretation GS = (AS ,XS) by highlighting the relevant features XS and the relevant subgraph structure AS for its prediction [20, 23].",1,related,1,positive
+"We perform the experiments on the same set of datasets as GNNExplainer (Ying et al., 2019), as GNNExplainer has been established as a benchmark by subsequent research (Luo et al., 2020; Vu & Thai, 2020).",1,related,1,positive
+"A general approach to generate explanations for GNNs is to find a explanation graph G′ that has the maximum mutual information with the label distribution Y , where G′ can be a subgraph of G (Ying et al., 2019) or other alternations of G (Luo et al., 2020; Schlichtkrull et al., 2020; Yuan et al., 2020).",1,related,1,positive
+"To unleash the power of GNNs in brain network analysis and enable their interpretability, we propose BrainNNExplainer.",1,related,1,positive
+"…approach to generate explanations for GNNs is to find a explanation graph G′ that has the maximum mutual information with the label distribution Y , where G′ can be a subgraph of G (Ying et al., 2019) or other alternations of G (Luo et al., 2020; Schlichtkrull et al., 2020; Yuan et al., 2020).",1,related,1,positive
+PGExplainer [122] can also provided an explanation for each instance with a global view of the GNN model by incor-,1,related,1,positive
+"Dataset split is taken from the PGExplainer code [15], which splits train/validation/test sets by 80/10/10%.",1,related,0,negative
+"PGE performs worst
+Authorized licensed use limited to the terms of the applicable license agreement with IEEE.",1,related,0,negative
+"First, we compare soft-masking approaches, i.e., gradient-based approaches, PGE, andGNNExplainer.",1,related,1,positive
+"Unlike our approach, PGExplainer is not model agnostic.",1,related,0,negative
+"Since PGE and GNNExplainer return soft edge
+TABLE 1 Analysis of the Average Sparsity (Definition 2), RDT-Fidelity (Definition 4), and Validity (Definition 1) of the Explanations
+Metric Method Cora CiteSeer PubMed
+GCN GAT GIN APPNP GCN GAT GIN APPNP GCN GAT GIN APPNP
+Features-Sparsity GNNExplainer 7.27 7.27 7.27 7.27 8.21 8.21 8.21 8.21 6.21 6.21 6.21 6.21 Grad 4.08 4.22 4.45 4.08 4.19 4.28 4.41 4.18 4.41 4.51 4.89 4.46 GradInput 4.07 4.25 4.37 4.08 4.17 4.29 4.33 4.17 4.41 4.51 4.92 4.47 ZORRO ðt ¼ :85Þ 1.91 2.29 3.51 2.26 1.81 1.84 3.67 1.97 1.60 1.52 2.38 1.75 ZORRO ðt ¼ :98Þ 2.69 3.07 4.34 3.18 2.58 2.60 4.68 2.78 2.55 2.58 3.21 2.86
+Node-Sparsity GNNExplainer 2.48 2.49 2.56 2.51 1.67 1.67 1.70 1.68 2.7 2.71 2.71 2.71 PGM 2.06 1.82 1.66 1.99 1.47 1.59 1.10 1.54 1.64 1.16 1.62 2.93 PGE 1.86 1.86 1.78 1.94 1.48 1.40 1.36 1.41 1.91 1.81 1.85 1.92 Grad 2.48 2.34 2.25 2.35 1.70 1.61 1.55 1.60 2.91 2.76 3.11 2.73 GradInput 2.53 2.43 2.23 2.41 1.61 1.58 1.54 1.52 3.02 2.94 3.41 2.81 ZORRO ðt ¼ :85Þ 1.28 1.30 1.90 1.16 1.05 0.92 1.36 0.83 1.07 0.87 1.77 0.79 ZORRO ðt ¼ :98Þ 1.58 1.59 2.17 1.48 1.26 1.09 1.58 1.07 1.51 1.31 2.18 1.25
+RDT-Fidelity GNNExplainer 0.71 0.66 0.52 0.65 0.68 0.69 0.51 0.62 0.67 0.73 0.67 0.72 PGM 0.84 0.77 0.60 0.89 0.92 0.93 0.73 0.95 0.78 0.69 0.74 0.96 PGE 0.50 0.53 0.35 0.49 0.64 0.60 0.51 0.61 0.49 0.61 0.56 0.50 Grad 0.15 0.18 0.19 0.17 0.17 0.19 0.28 0.18 0.37 0.43 0.42 0.37 GradInput 0.15 0.18 0.18 0.16 0.16 0.18 0.26 0.17 0.36 0.42 0.42 0.36 Empty Explanation 0.15 0.18 0.18 0.16 0.16 0.18 0.26 0.17 0.36 0.42 0.42 0.36 ZORRO ðt ¼ :85Þ 0.87 0.88 0.86 0.88 0.87 0.86 0.87 0.86 0.86 0.88 0.88 0.87 ZORRO ðt ¼ :98Þ 0.97 0.97 0.96 0.97 0.97 0.97 0.97 0.96 0.96 0.97 0.97 0.96
+Validity GNNExplainer 0.89 0.95 0.83 0.84 0.87 0.92 0.58 0.93 0.60 0.81 0.71 0.87 PGM 0.89 0.90 0.64 0.94 0.95 0.95 0.76 0.97 0.86 0.80 0.62 0.97 PGE 0.51 0.54 0.34 0.45 0.62 0.59 0.54 0.62 0.51 0.61 0.57 0.48 Grad 0.26 0.25 0.15 0.18 0.28 0.25 0.12 0.26 0.36 0.49 0.50 0.38 GradInput 0.22 0.22 0.12 0.17 0.18 0.16 0.08 0.19 0.36 0.49 0.50 0.37 Empty Explanation 0.22 0.22 0.11 0.17 0.18 0.16 0.08 0.19 0.36 0.49 0.50 0.37 ZORRO ðt ¼ :85Þ 1.00 1.00 0.83 1.00 1.00 1.00 0.77 1.00 0.90 1.00 0.84 1.00 ZORRO ðt ¼ :98Þ 1.00 1.00 0.90 1.00 1.00 1.00 0.91 1.00 0.98 1.00 0.87 1.00
+The smaller the explanation size larger is the sparsity.",1,related,1,positive
+"For a comprehensive quantitative evaluation we chose our baselines from the three different categories of post-hoc explanations models consisting of (i) soft-masking approaches like GNNExplainer, which returns a continuous feature and edge mask and PGE [24] learns soft masks over edges in the graph (ii) surrogate model based hard-masking approach, PGM [40], which returns a binary node mask, iii) Shapely based hard masking approach SubgraphX [48], which returns a subgraph as an explanation, and (iv) gradient-basedmethodsGrad&GradInput [34] which utilize gradients to compute feature attribu-",1,related,1,positive
+"We can conclude
+TABLE 3 Experiments on Faithfulness According to [30] Measured With Kendall’s tau tKendall of the Retrieved Explanation Precision and Test Accuracy
+Method 1 200 400 600 1400 2000 tKendall
+GNNExplainer 0.50 0.54 0.41 0.40 0.37 0.40 0:73 PGM 0.83 0.47 0.68 0.71 0.76 0.75 0.20 PGE 0.20 0.19 0.23 0.21 0.23 0.20 0.36 Grad 0.94 0.80 0.62 0.73 0.84 0.87 0.07 GradInput 0.88 0.89 0.78 0.79 0.87 0.89 0.07 ZORRO ðt ¼ :85Þ 0.00 0.92 0.88 0.93 0.94 0.94 0.73 ZORRO ðt ¼ :98Þ 0.00 0.90 0.85 0.84 0.87 0.90 0.47 To simulate different model performances, we saved the GCN model during different epochs on the synthetic dataset.",1,related,1,positive
+"For a comprehensive quantitative evaluation we chose our baselines from the three different categories of post-hoc explanations models consisting of (i) soft-masking approaches like GNNExplainer, which returns a continuous feature and edge mask and PGE [24] learns soft masks over edges in the graph (ii) surrogate model based hard-masking approach, PGM [40], which returns a binary node mask, iii) Shapely based hard masking approach SubgraphX [48], which returns a subgraph as an explanation, and (iv) gradient-basedmethodsGrad&GradInput [34] which utilize gradients to compute feature attributions.",1,related,1,positive
+"In this paper, we approach the explanation problem from a new angle, proposing a unified view that regroups existing explainers under a single framework: GNNExplainer, PGExplainer, GraphLIME, PGM-Explainer, XGNN, and the proposed GraphSVX.",1,related,1,positive
+"We compare the performance of GraphSVX to the main explanation baselines that incorporate graph structure in explanations, namely GNNExplainer, PGExplainer and PGM-Explainer.",1,related,1,positive
+"In terms of efficiency, our explainer is slower than the scalable PGExplainer despite our efficient approximation, but is often comparable to GNNExplainer.",1,related,1,positive
+"Hence, we expect PGExplainer to perform better.",1,related,0,negative
+"We follow the same setting as [16] and [33], where four kinds of datasets are constructed.",1,related,1,positive
+"GNNExplainer, XGNN, GraphLIME and PGExplainer are simply selective.",1,related,0,negative
+"We consider the state-of-the-art baselines that belong to the unified framework of additive feature attribution methods (The proof is provided in Appendix A) (Lundberg & Lee, 2017): GNNExplainer (Ying et al., 2019) and PGExplainer (Luo et al., 2020)2.",1,related,1,positive
+"We do not include gradient-based method (Ying et al., 2019), graph attention method (Veličković et al., 2018), and Gradient (Pope et al., 2019), since previous explainers (Luo et al., 2020; Ying et al., 2019) have shown their superiority over these methods.",1,related,1,positive
+"For fair comparisons, we report the results of PGExplainer following its setting reported in (Luo et al., 2020) and compare them with the results of GNNExplainer and Gem when explaining on mutagen graphs, indicated as PGExplainer0, GNNExplainer-0, and Gem-0 in Table 2.",1,related,1,positive
+"For fair comparisons, we report the results of PGExplainer following its setting reported in (Luo et al., 2020) and com-",1,related,0,negative
+"For data interfaces, we consider the widely used synthetic datasets (i.e., BA-shapes, BA-Community, etc.) (Ying et al., 2019; Luo et al., 2020) and molecule datasets (i.e., BBBP, Tox21, etc.) (Wu et al., 2018).",1,related,1,positive
+"We include the following algorithms: GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), DeepLIFT (Shrikumar et al., 2017), GNN-LRP (Schnake et al., 2020), Grad-CAM (Pope et al., 2019), SubgraphX (Yuan et al., 2021), and XGNN (Yuan et al., 2020a).",1,related,1,positive
+"Then we compare our SubgraphX with several baselines, including MCTS GNN, GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020).",1,related,1,positive
+", PGExplainer [56], SubgraphX [59], and Gem [60]), we",1,related,1,positive
+"Contrary to most of the above interpretability methods that provide a post-hoc explanatory subgraph at the structure-level (e.g., PGExplainer [56], SubgraphX [59], and Gem [60]), we design an inherently interpretable message passing scheme for homogeneous graphs at the feature-level by identifying important input node capsules from the extracted subgraph.",1,related,1,positive
+"We see that for the node case, explanationmethods Pope et al. (LRP), GNN-LRP, PGExplainer and GNNExplainer, all have an AUROC score above 0.9, which shows that all these explanation methods have been able to extract from the model the class-specific motif in the input graphs.",1,related,1,positive
+The values for PGExplainer are extracted from [27].,1,related,0,negative
+"As a second quantitative evaluation, we consider the BA2motifs [27] benchmark that comeswith ‘ground-truth’ explan-",1,related,1,positive
+GNNExplainer [26] and PGExplainer [27] explain the model by extracting the subgraph that maximizes the mutual information to the prediction for the original graph.,1,related,1,positive
+GNNExplainer [26] and PGExplainer [27] explain the model by extracting the subgraph that maximizes,1,related,1,positive
+"As a second quantitative evaluation, we consider the BA2motifs [27] benchmark that comeswith ‘ground-truth’ explanations.",1,related,1,positive
+• PGExplainer: We presented players with PGExplainer’s selection probabilities of edges in subgraphs and node colors.,1,related,1,positive
+"Second, we performed qualitative assessments of our framework by comparing it with two state-of-the-art post-hoc explanation methods [7], [8], highlighting SCALE’s superior quality of explanations.",1,related,0,negative
+"For fair comparisons, we contacted the authors of GNNExplainer, PGExplainer, and SEGNN to request evaluation scripts for all datasets.",1,related,0,negative
+"Even though GNNExplainer and PGExplainer can highlight impactful edges in
+VOLUME 11, 2023 40799
+Authorized licensed use limited to the terms of the applicable license agreement with IEEE.",1,related,0,negative
+"SCALE outperforms baselines on Mutag, with precision score gains of 15.54% compared to PGExplainer and 51.52% compared to GNNExplainer.",1,related,0,negative
+"As shown in Table 4, SCALE
+outperforms post-hoc explanation methods by a significant margin in all experiments, with performance gains of up to 94x compared to GNNExplainer and 120x compared to PGExplainer.",1,related,0,negative
+"B. QUALITATIVE COMPARISON WITH BASELINES For each dataset, we chose one instance and visualized explanations provided by SCALE, GNNExplainer, and PGExplainer in Figure 3.",1,related,1,positive
+"We see that the objective tends to be positive or zero for γ ≥ 0.2, although it can be negative with significant frequency, compared to the positive frequency, in BA-2motif.",1,related,1,positive
+"For one graph each from the positive (Table 4) and the negative (Table 5) classes in BA-2motif, we list the top 100 most absolute relevant walks (before omitting the negative-relevant walks) found by EMP-neu.",1,related,1,positive
+"Note that these heuristics are compatible with all edge-level explanability methods, including GNNExplainer and PGExplainer, which however are incomparably slow.",1,related,1,positive
+"We also used the BA-2motif dataset, which provides the ground truth subgraphs as motifs, and evaluated how accurately explanation methods can detect the motifs.",1,related,1,positive
+"(a) Top-1 walk search with GIN-L for L = 2, . . . , 7 on BA-2motif.",1,related,1,positive
+"Then, we performed approximate top-K walk search by AMP-ave for different K, and evaluated its performance in terms of precision TP/K and recall TP/K∗, where TP = |{Approx. top-K walks} ∩ {True top-K∗ walks}|, on randomly chosen samples among the correctly classified test samples from each dataset.3 Figure 3 shows the precision-recall curves on BA-2motif and Mutagenicity for different K∗ and different γ of LRP-γ rules.",1,related,1,positive
+"We use common benchmark datasets including BA-2motif, MUTAG, Mutagenicity, and Graph-SST2 (see Appendix F for details on data and employed GNNs).",1,related,1,positive
+"(1) We implement PGExplainer (PG) in (Luo et al., 2020) and adapt it for the temporal graph scenario.",1,related,1,positive
+"More details about reparameterization can be found in (Luo et al., 2020).",1,related,0,negative
+"Inspired by previous parameterized explainers (Luo et al., 2020), we pretrain a navigator to provide a global understanding of the relationship among events.",1,related,1,positive
+"Explainability methods We compare non-generative methods: Saliency [6], Integrated Gradient [36], Occlusion [53], Grad-CAM [32], GNNExplainer [48], PGMExplainer [39], and SubgraphX [52], with generative ones: PGExplainer [27], GSAT [29], GraphCFE (CLEAR) [28], D4Explainer and RCExplainer [42].",1,related,1,positive
+Method Generator Information Constraint Level Scenario Output PGExplainer [27] Mask Generation size instance factual E GIB [49] Mask Generation mutual information instance factual N GSAT [29] Mask Generation variational instance factual E GNNInterpreter [43] Mask Generation size model factual N / E / NF GEM [25] VGAE size instance factual E CLEAR [28] VGAE size instance counterfactual E / NF OrphicX [26] VGAE variational & size instance factual E D4Explainer Diffusion size instance & model counterfactual E GANExplainer [24] GAN instance factual E RCExplainer [42] RL-MDP size instance factual SUBGRAPH XGNN [50] RL-MDP size model factual SUBGRAPH GFlowExplainer [22] RL-DAG size instance factual SUBGRAPH,1,related,1,positive
+"We follow the original setting to train PGExplainer, GSAT, and RCExplainer.",1,related,0,negative
+"We drew the relationship curves of fidelity and sparsity in BBBP and tree-grids data sets by adjusting parameters, and comparing them with GNNExplainer, PGExplainer, XGNN, and SubgraphX.",1,related,1,positive
+"We use the Infection and Negative Evidence benchmarks from Faber et al. (2021), The BA-Shapes, Tree-Cycle, and Tree-Grid benchmarks from Ying et al. (2019), and the BA2Motifs dataset from Luo et al. (2020).",1,related,1,positive
+"• PGExplainer PGExplainer was proposed after GNNExplainer in order to provide a more comprehensive understanding on the predictions made by GNNs.[11] It uses an optimization framework that is similar to GNNExplainer, however it uses continuous variables in the range (0, 1) for the edge weights.",1,related,1,positive
+"9
+• PGExplainer
+PGExplainer was proposed after GNNExplainer in order to provide a more comprehensive understanding on the predictions made by GNNs.[11] It uses an optimization framework that is similar to GNNExplainer, however it uses continuous variables in the range (0, 1) for the edge weights.",1,related,1,positive
+"GNNExplainer and PGExplainer choose some but not all important words, with extra neutral words appearing in the explanations as well.",1,related,0,negative
+"We compare with 4 strong baselines representing the state-of-the-art methods for GNN explanation: GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), SubgraphX (Yuan et al., 2021), and GraphSVX (Duval & Malliaros, 2021).",1,related,1,positive
+"We construct 3-class synthetic datasets based on BAMotif (Ying et al., 2019; Luo et al., 2020) following (Wu et al.",1,related,1,positive
+"To begin with, we construct 3-class synthetic datasets based on BAMotif (Luo et al., 2020) and follow Wu et al.",1,related,1,positive
+"Built upon the graph generation process, can existing methods produce a desired invariant GNN model? Using the BAMotif task (Luo et al., 2020) as Fig.",1,related,1,positive
+"2.2
+To begin with, we construct 3-class synthetic datasets based on BAMotif (Luo et al., 2020) and follow Wu et al. (2022c) to inject spurious correlations between motif graph and base graph during the generation.",1,related,1,positive
+"We construct 3-class synthetic datasets based on BAMotif (Ying et al., 2019; Luo et al., 2020) following (Wu et al., 2022c), where the model needs to tell which one of three motifs (House, Cycle, Crane) that the graph contains.",1,related,1,positive
+"Using the BAMotif task (Luo et al., 2020) as Fig.",1,related,1,positive
+"We compare the proposed method with popular post-hoc explanation techniques including the GNN-Explainer (Ying et al. 2019), PGEExplainer (Luo et al. 2020), GradCAM (Pope et al. 2019) and SubgraphX (Yuan et al. 2021)2.",1,related,1,positive
+"To this end, we use the BA2Motifs dataset (Luo et al. 2020).",1,related,1,positive
+"Methods like GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020) and PGMexplainer (Vu & Thai, 2020) allow importance analysis of nodes and edges within the input data sample.",1,related,1,positive
+"We used the following five popular datasets: BA-2motif (Luo et al., 2020), MUTAG (Debnath et al., 1991), Mutagenicity (Kazius et al., 2005b), REDDIT-BINARY (Yanardag & Vishwanathan, 2015), and Graph-SST2 (Yuan et al., 2020b).",1,related,1,positive
+"Here, we use the BA-2motif dataset to evaluate the node ordering performance of subgraph attribution.",1,related,1,positive
+"We first evaluate the node ordering performance on the BA-2motif dataset, for which the ground truth is available.",1,related,1,positive
+"Figure 4 shows the computation time for subgraph attribution on BA-2motif, as functions of (a) the network depth L and (b) the subgraph size |S|, respectively.",1,related,1,positive
+"…be developed in Section 7 belongs to the explainablility category, where the objective is to discover qualitative justifications on the learning outcome of a GCN; see (Luo et al., 2020; Lin et al., 2021; Schlichtkrull et al., 2021; Ying et al., 2019; Yuan et al., 2021) and the references therein.",1,related,1,positive
+"The statistic model to be developed in Section 7 belongs to the explainablility category, where the objective is to discover qualitative justifications on the learning outcome of a GCN; see (Luo et al., 2020; Lin et al., 2021; Schlichtkrull et al., 2021; Ying et al., 2019; Yuan et al., 2021) and the references therein.",1,related,1,positive
+"Existing methods for explaining the predictions of a GNN focus on identifying parts of the graph in the embedding space that are most relevant to a given prediction (Ying et al., 2019; Luo et al., 2020; Lin et al., 2021).",1,related,1,positive
+"Existing methods for explaining the predictions of a GNN focus on identifying parts of the graph in the embedding space that are most relevant to a given prediction (Ying et al., 2019; Luo et al., 2020; Lin et al., 2021).",1,related,1,positive
+"We follow previous works [6, 7, 10, 19] and focus on the contributions of the structural features (i.",1,related,1,positive
+"We combine the contrastive learning [17, 18] into class-wise generative probabilistic models [7], thereby approach coarser-grained explanations (i.",1,related,1,positive
+"Inspired by the success of generative models [7, 30, 31] in capturing the succinct structures from the graphs, we hire multiple generative probabilistic models [7] as our attribution models (short for attributor), i.",1,related,1,positive
+"We ascribe this to the limitations of PGExplainer’s global view, which is founded upon all the explained instances, but fails to differentiate the class-wise patterns.",1,related,1,positive
+"To approximate the importance score to the discrete distribution and optimize the generator via gradient propagation, we adopt the reparameterization trick [7], where an independent random variable ∼ Uniform(0, 1) is introduced.",1,related,1,positive
+"It is worth emphasizing that our attributors is different from PGExplainer [7], where only one generative probabilistic model is involved.",1,related,1,positive
+The inference time [7] to explain a new instance by the pre-trained ReFine is the same as PGExplainer under the same attributor construction.,1,related,1,positive
+"To be more clear, we present the difference of PGExplainer [7], ReFine and its ablation models in Table 4.2.",1,related,0,negative
+"For the parametric explanation methods (GNNExplainer, PGExplainer, PGMExplainer), we apply a grid search to tune their own hyperparameters.",1,related,1,positive
+"Through this way, ReFine can faithfully generate multigrained explanations, and we empirically show its effectiveness as compared to some state-of-the-art explainers [9, 6, 7, 19].",1,related,1,positive
+"With the reparameterization, the objective function of PGExplainer becomes:
+min Ω
+E ∼Uniform(0,1) H(Y |Gu = ĜS), (19)
+where H is the conditional entropy when the computational graph for Gu is restricted to GS .",1,related,1,positive
+Notation: Graphs and GNNs.,1,related,1,positive
+These bounds need only information about the general message passing form of GNNs [10] and do not make any assumptions about the GNN architecture.,1,related,1,positive
+PGExplainer.,1,related,0,negative
+", 1991), as we could explain the results based on the knowledge used in (Luo et al., 2020).",1,related,0,negative
+"Moreover, we also conduct the experiments on a commonly used graph classification dataset, MUTAG (Debnath et al., 1991), as we could explain the results based on the knowledge used in (Luo et al., 2020).",1,related,1,positive
+"As GNNExplainer and PGExplainer provide continuous masks, we report, for fair comparisons, the performance with both continuous and discrete masks built with the k best edges.",1,related,1,positive
+"GNNExplainer, PGExplainer, and PGM-Explainer are the methods that report the best performance on many datasets.",1,related,1,positive
+"INSIDE-GNN obtain similar scores or outperforms the other competitors (i.e., PGExplainer, PGM-Explainer, Grad) at equal sparsity on most of the datasets.",1,related,0,negative
+"Following [17], we use the cross-entropy function to replace the conditional entropy function minS H(Y |S) with N given instances.",1,related,1,positive
+"For fairness, we follow the experimental setup in [17, 12], i.",1,related,1,positive
+Then we compare RG-Explainer with two state-of-the-art baselines GNNExplainer [34] and PGExplainer [17] in both qualitative and quantitative evaluations.,1,related,1,positive
+"We use the trained GNN model in [12], whose architecture is given in [17, 34].",1,related,1,positive
+"We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF2 [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",1,related,1,positive
+"We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF(2) [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",1,related,1,positive

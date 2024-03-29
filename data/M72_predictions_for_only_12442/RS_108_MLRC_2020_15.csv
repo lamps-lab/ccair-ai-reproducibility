@@ -1,0 +1,257 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Other models compare entity embeddings from KG with question embeddings (Saxena et al., 2020) or entity embeddings extracted from the question (Razzhigaev et al.",1,related,1,positive
+"Following [30], we prune the KG to contain only relations mentioned in the questions and the triples within 2 hops of mentioned entities.",1,related,1,positive
+"We mainly compare SKP with multiple state-of-the-art baselines that use embedding-based method for KBQA as follow: GraftNet [31] , PullNet [30] , Bert-KBQA [34] , EmbedKGQA [28] , NSM [14] , SR-NSM [43] , EmQL [29] , KGT5 [27] , CBRSUBG [7] , UniK-QA [7] , DeCAF [39] , DPR [19].",1,related,1,positive
+We conducted experiments using the WebQuestion dataset and introduced the proposed component into two existing models: EmbedKGQA [22] and TransferNet [43].,1,related,1,positive
+"In EmbedKGQA, we incorporated the results of the relation-learning module into the inference module.",1,related,1,positive
+It is worth noting that both our proposed model and EmbedKGQA leverage knowledge graph embeddings.,1,related,1,positive
+1 Weuse the underlying knowledge graph as well as the QA data provided by [27].,1,related,1,positive
+"These methods align document and questions to the background KB (i.e., Wikidata5M) and perform the knowledge reasoning on the background KB. EmbedKGQA (Saxena et al., 2020) converts documents and questions into vectors in the embedding space of the background KB and performs the knowledge reasoning with operations on the embedding vector, where we use ComplEx (Trouillon et al., 2016).",1,related,1,positive
+"…methods align document and questions to the background KB (i.e., Wikidata5M) and perform the knowledge reasoning on the background KB. EmbedKGQA (Saxena et al., 2020) converts documents and questions into vectors in the embedding space of the background KB and performs the knowledge reasoning…",1,related,1,positive
+"EmbedKGQA (Saxena et al., 2020) converts documents and questions into vectors in the embedding space of the background KB and performs the knowledge reasoning with operations on the embedding vector, where we use ComplEx (Trouillon et al.",1,related,1,positive
+We improve EmbedKGQA by using our pre-training and re-training framework to learn KG embeddings.,1,related,0,negative
+Our QA method improves EmbedKGQA by replacing its KG embeddings learned by ComplEx [55] with our transferable embeddings.,1,related,1,positive
+Our MuKGE could also be used here to learn embeddings with the knowledge transferred from other background KGs. EmbedKGQA uses RoBERTa [31] to represent natural questions.,1,related,1,positive
+"In our experiment, we chose thewidely usedmulti-hopQA dataset WebQuestionsSP [70] following EmbedKGQA.",1,related,1,positive
+"We follow EmbedKGQA [40], the first embedding-based model for multi-hop KGQA, in this experiment.",1,related,1,positive
+"Following EmbedKGQA and NSM, we also use the relation pruning strategy to reduce the space of candidate entities by removing irrelevant relations.",1,related,1,positive
+"To further investigate the effect of KG incompleteness on QA performance, following EmbedKGQA, we use FB4QA in two settings, i.e., Half-KG and Full-KG.",1,related,0,negative
+"To ensure a fair comparison, other QA modules remain the same as those in EmbedKGQA.",1,related,1,positive
+We follow EmbedKGQA [40] to develop our QA method.,1,related,1,positive
+We choose EmbedKGQA as a baseline.,1,related,1,positive
+EmbedKGQA learns embeddings for the target KG using TransE [5] or ComplEx [55].,1,related,1,positive
+"Our QA method, denoted by EmbedKGQA + MuKGE, outperforms EmbedKGQA.",1,related,1,positive
+"Following EmbedKGQA and 𝜇KG, we use the extracted subset of Freebase as the target KG.",1,related,1,positive
+EmbedKGQA learns a mapping between the embeddings of a question and its answer entity.,1,related,1,positive
+EmbedKGQA is the first embedding-based method for multi-hop KGQA.,1,related,1,positive
+"For KGQA, we select KV-Mem (Miller et al., 2016), GragtNet (Sun et al., 2018), EmbedKGQA (Saxena et al., 2020), NSM (He et al., 2021), and UniKGQA (Jiang et al., 2022b).",1,related,1,positive
+"We also report the published methods in the leaderboard including KVMNet (Miller et al., 2016), SRN (Qiu et al., 2020), EmbedKGQA (Saxena et al., 2020), RGCN (Schlichtkrull et al., 2018), GraphQ IR (Nie et al., 2022).",1,related,1,positive
+The yellow part corresponds to the method EmbedKGQA [20] 2.,1,related,1,positive
+"Similar to [20], we approximate Í � �� (� |�, �� ) as ∑ log �� (� |�, �� ) ∝ � ∗ |�� ∩ �� |,",1,related,1,positive
+The yellow part shows the architecture of EmbedKGQA [20].,1,related,0,negative
+"Following the same setup as in [20], we evaluate the accuracy using the Hit@1 metrics which is the fraction of times a correct answer was retrieved within the top-1 positions.",1,related,1,positive
+EmbedKGQA [20] embeds both the input question and entities in the knowledge graph to points in the embedding space and fnds answers according to their embedding similarity.,1,related,1,positive
+• EmbedKGQA [20] conducts multi-hop reasoning through matching pre-trained entity embeddings with question embedding obtained from RoBERTa [5].,1,related,1,positive
+"Another way is to directly learn knowledge graph embeddings and then integrate the learned entity and relation embeddings into the QA pipeline [69, 109, 146].",1,related,1,positive
+"Our two base-size models outperform EmbedKGQA by approximately 6% hits@1, an English-as-pivot baseline that utilizes RoBERTabase and the KB embedding ComplEx (Trouillon et al., 2016).",1,related,1,positive
+"0 License for EmbedKGQA, BSD2-Clause License for GraftNet, and Apache-2.",1,related,1,positive
+"For information extraction style, we select EmbedKGQA (Saxena et al., 2020), GraftNet (Sun et al.",1,related,1,positive
+"Following previous works (Sun et al., 2018; Saxena et al., 2020), we further prune it to contain only those relations that are mentioned in the dataset.",1,related,1,positive
+"For information extraction style, we select EmbedKGQA (Saxena et al., 2020), GraftNet (Sun et al., 2018), NSM (with its teacherstudent variant, He et al., 2021), all of which re-
+quire no annotation of structured KB queries, as our method does.",1,related,1,positive
+"Following previous works (Sun et al., 2018; Saxena et al., 2020; He et al., 2021), we use the golden topic entities for a fair comparison with the baselines.",1,related,1,positive
+"Following previous works (Saxena et al., 2020; He et al., 2021), we use hits@1 as the evaluation metric.",1,related,1,positive
+"Specifically, we first identify the topic entity from the given question, link it to the KB, and extract its n-order neighbors to construct a KB subgraph, following traditional monolingual KBQA methods (Saxena et al., 2020; He et al., 2021).",1,related,1,positive
+"With only 10% of the training data, i.e., 310 instances, our models reach over 62% hits@1, comparable with EmbedKGQA trained with full training data.",1,related,0,negative
+", T-EaE-add and T-EaE-replace), EmbedKGQA [13] and CronKGQA [5].",1,related,1,positive
+"While our work is motivated by these, the nature of unanswerable questions is very different for KBs compared to unstructured contexts.",1,related,0,negative
+"Since these generate logical forms, we expect these to be more robust to data level incompleteness than purely retrieval-based approaches (Saxena et al., 2020; Das et al., 2021; Zhang et al., 2022; Mitra et al., 2022; Wang et al., 2022b).",1,related,1,positive
+"We focus our evaluation on EmbedKGQA [23], an approach that combines graph embeddings and reasoning using graph traversal.",1,related,1,positive
+The EmbedKGQA framework has two training stages: (i) train the knowledge graph embedding on the link prediction task; (ii) train the model for QA by leveraging the pretrained embeddings.,1,related,1,positive
+"BOLDED FONT INDICATES THE BEST PERFORMING METHOD
+Models Hits@1
+GraftNet 73.2
+SRN 74.1 EmbedKGQA 74.4
+NSM 78.7
+IR-MH 80.1
+RESULTS ANALYSIS: Table 2 shows the comparison findings of several multi-hop knowledge base approaches Q&A. Table 2 presents a comparison of experimental data, it can be observed that GraftNet performs the worst, which may be because the knowledge graph of the integrated energy service domain for which this paper is oriented contains very sufficient domain knowledge, in other words, the retrieved subgraphs contain a large number of candidate entities, the quantity of noisy entities is enormous compared to the original problem leading to interference in the performance of the graph based convolutional neural network model.",1,related,1,positive
+(4) EmbedKGQA[12]: Multi-hop inference by matching the pre-processed entity codes in the knowledge graph with the question codes obtained from RoBERTa.,1,related,1,positive
+"Second, TransferNet performs better than GraftNet, EmbedKGQA, and NSM with the same retrieval method.",1,related,1,positive
+"We consider the following baselines for performance comparison: (1) reasoning-focused methods: KV-Mem (Miller et al., 2016), GraftNet (Sun et al., 2018), EmbedKGQA (Saxena et al., 2020), NSM (He et al., 2021), TransferNet (Shi et al., 2021); (2) retrieval-augmented methods: PullNet (Sun et al., 2019), SR+NSM (Zhang et al., 2022), SR+NSM+E2E (Zhang et al., 2022).",1,related,1,positive
+"• EmbedKGQA (Saxena et al., 2020) reformulates the multi-hop reasoning of GraftNet as a link prediction task by matching pre-trained entity embeddings with question representations from a PLM.
+• NSM (He et al., 2021) first conducts retrieval following GraftNet and then adapt the neural state machine (Hudson & Manning, 2019) used in visual reasoning for multi-hop reasoning on the KG.
+• TransferNet (Shi et al., 2021) first conducts retrieval following GraftNet and then performs the multi-hop reasoning on a KG or a text-formed relation graph in a transparent framework.",1,related,1,positive
+"• EmbedKGQA (Saxena et al., 2020) reformulates the multi-hop reasoning of GraftNet as a link prediction task by matching pre-trained entity embeddings with question representations from a PLM.
+• NSM (He et al., 2021) first conducts retrieval following GraftNet and then adapt the neural state…",1,related,1,positive
+EmbedKGQA [15] improves the KBQA task by combining the idea of knowledge completion and matching the pre-trained entity embedding with the question embedding for multi-hop reasoning.,1,related,1,positive
+"The main QA model is based on EmbedKGQA [15],
+where it first learns the embedding of the Knowledge
+Graphs, the question, and the head entities.",1,related,1,positive
+"While the original WebQSP dataset [17] contains a full knowledge base, WebQSP-50 was constructed by [15] randomly omitting half of the entities to emulate a sparse knowledge base.",1,related,1,positive
+"The main QA model is based on EmbedKGQA [15], where it first learns the embedding of the Knowledge Graphs, the question, and the head entities.",1,related,1,positive
+Table 1 shows experimental results (HITS@1 score) comparing the original EmbedKGQA model with the WebQSP-50 datasets and the modified model with WebQSP-50-TH and RBP datasets.,1,related,1,positive
+EmbedKGQA [40] employs Roberta to encodes complex questions as relation vectors eq and uses the ComplEx score to determine the answer entity.,1,related,1,positive
+We use the underlying knowledge graph provided by [5] as well as the QA data.,1,related,1,positive
+"In the case of WebQuestionsSP, we use the underlying knowledge graphs provided by [5].",1,related,1,positive
+"c) Embedding-based KGQA: In the embedding-based KGQA approach [5], the questions are mapped into a vector eq in the complex space C together with the entities and relations embeddings.",1,related,1,positive
+To address this limitation our work builds on an embedding-based KGQA framework (EmbedKGQA [5]) and uses heperbolic representation to further tackle the sparsity and presence of hierarchical structures in the KG.,1,related,1,positive
+"These methods either rely on KG embeddings (Saxena et al., 2020; Ren et al., 2021) or on side information, such as text corpus (Sun et al.",1,related,1,positive
+"These methods either rely on KG embeddings (Saxena et al., 2020; Ren et al., 2021) or on side information, such as text corpus (Sun et al., 2018, 2019; Xiong et al., 2019; Han et al., 2020), to infer missing information.",1,related,0,negative
+"Entity Retriever We perform entity retrieval following a standard pipeline with three steps, i.e., mention detection, candidate generation, and entity disambiguation (Shen et al., 2021).",1,related,1,positive
+"EmbedKGQA(2020) [48] employs RoBERTa to encode a complex question as a relation vector eq , which forms a triple with the head entity and tail entity, and uses the ComplEx score to determine the answer entity.",1,related,1,positive
+"We utilize two evaluation metrics Hits@1 and F1 that are widely applied in the previous work [20,19,18,17].",1,related,1,positive
+EmbedKGQA[17] utilizes pre-trained knowledge embedding to predict answer,1,related,1,positive
+"Following [17], we prune the knowledge graph to contain the entities within 2 hops away from the mentioned entity.",1,related,1,positive
+"Following the definition in [20], we assume that all the answer entities exist in the knowledge graph and each question in multi-hop KBQA only contains a single topic entity vQ ∈ V and vQ is given.",1,related,1,positive
+We note that some work [20] treats the knowledge graph completion task as a single-hop knowledge graph question answering task due to their interchangeable properties.,1,related,1,positive
+• EmbedKGQA [20] conducts multi-hop reasoning through matching pre-trained entity embeddings with question embedding obtained from RoBERTa.,1,related,1,positive
+"Following the standard setup in KGQA [20], we evaluate the accuracy using the Hits@1 metrics.",1,related,0,negative
+"KGQA & TKGQA Baselines For EmbedKGQA, we use the trained ComplEx representations as its supporting KG information.",1,related,1,positive
+"We also consider one KGQA method EmbedKGQA [25], and two TKGQA methods, i.e., CronKGQA [24] and TempoQR [20] as baselines.",1,related,1,positive
+We use the EmbedKGQA and CronKGQA implementation provided in the repository of CronKGQA17.,1,related,1,positive
+"We also consider one KGQA method EmbedKGQA [25], and two TKGQA methods, i.",1,related,1,positive
+"We run EmbedKGQA on top of the KG representations trained with ComplEx on ICEWS21, and run TKGQA baselines on top of the TKG representations trained with TComplEx.",1,related,1,positive
+"We observe that EmbedKGQA achieves a better performance than BERT and RoBERTa, showing that employing KG representations helps TKGQA.",1,related,1,positive
+"EmbedKGQA [12] first embeds questions into the complex space, and then uses relation information in the candidate answer set to select the answer.",1,related,1,positive
+Both our method and EmbedKGQA in the Full-KG setting achieve better accuracy than the corresponding result in the Half-KG setting.,1,related,0,negative
+"Following EmbedKGQA, we limit the KG to a subset of Freebase that contains all relational triples within 2-hops of any entity specified in the WebQuestionsSP questions.",1,related,1,positive
+"We follow EmbedKGQA [32], a recent popular embedding-based KGQA method, to build a QA pipeline with our μKG.",1,related,1,positive
+"This is because our learned embeddings of FB4QA can benefit from the background KG, and thus are more expressive than those in EmbedKGQA.",1,related,1,positive
+The KG embedding model used in EmbedKGQA is ComplEx.,1,related,1,positive
+"To study the effect of KG sparsity on QA performance, following EmbedKGQA, the FB4QA is used for two settings: Half-FB4QA and Full-FB4QA.",1,related,0,negative
+"For a fair comparison, we keep other modules in our pipeline the same as those in EmbedKGQA.",1,related,1,positive
+"We follow EmbedKGQA [32], a recent popular embedding-based KGQA method, to build a QA pipeline with our µKG.",1,related,1,positive
+We can see from the table that EmbedKGQA + Wikidata outperforms the baseline EmbedKGQA in all three settings.,1,related,1,positive
+"It is worth mentioning that our method and EmbedKGQA both apply the TransE pre-trained embeddings to the KG’s initialization
+phase.",1,related,1,positive
+"EmbedKGQA [11] regard multi-hop KGQA task as link prediction and search for answer entity based on question embedding and knowledge embeddings, which mitigates the problem of KG incompleteness and can predict answer in unlimited neighbors.",1,related,1,positive
+"Embedding based methods [11, 28] measure the similarity between question embeddings and candidate answer embeddings to get the right answer.",1,related,1,positive
+"We compare our model with two state-of-the-art models, including EmbedKGQA [11] and TransferNet [28].",1,related,1,positive
+"Given a question q, following previous works (Saxena et al., 2020; Chen et al., 2020; Cai et al., 2021) we assume the topic entity of q has been obtained by preprocessing.",1,related,1,positive
+"Since Freebase has more than 338,580,000 triples, for ease of experimentation we use a light version provided by Saxena et al. (2020).",1,related,0,negative
+"• EmbedKGQA (Saxena et al., 2020) is the first method to use KG embeddings for the multi-hop KGQA task.",1,related,1,positive
+"We select several recent SOTA TKGQA models as our baselines as follow:
+• EmbedKGQA (Saxena et al., 2020) is the first method to use KG embeddings for the multi-hop KGQA task.",1,related,1,positive
+"We compare with embeddingbased KBQA models, in which EmbedKGQA (Saxena et al., 2020) directly optimizes the triplet (topic Table 1: Data statistics.",1,related,1,positive
+"Embeddingbased methods embed entities and rank them based on their relevance to the question, where the entities are extracted from the whole KB (Miller et al., 2016; Saxena et al., 2020) or restricted in a subgraph (Chen et al.",1,related,1,positive
+"We compare with embeddingbased KBQA models, in which EmbedKGQA (Saxena et al., 2020) directly optimizes the triplet (topic
+entity, question, answer) based on their direct embeddings.",1,related,1,positive
+"…retrieve a question-relevant subgraph and then perform reasoning on it (He et al., 2021; Sun et al., 2018, 2019) reduce the reasoning space, showing superiority compared with reasoning on the whole KB (Chen et al., 2019a; Saxena et al., 2020; Xu et al., 2019) (Cf. Table 2 for empirical proof).",1,related,1,positive
+"Embeddingbased methods embed entities and rank them based on their relevance to the question, where the entities are extracted from the whole KB (Miller et al., 2016; Saxena et al., 2020) or restricted in a subgraph (Chen et al., 2019a; He et al., 2021; Sun et al., 2018; Zhang et al., 2018).",1,related,1,positive
+"For other datasets, the underlying KB is the full Freebase KB containing over 45
+Model MetaQA WebQSP 1-hop 2-hop 3-hop
+KVMemNN (Miller et al., 2016) 95.8 25.1 10.1 46.7 GraftNet (Sun et al., 2018) 97.0 94.8 77.7 66.4 PullNet (Sun et al., 2019a) 97.0 99.9 91.4 68.1 SRN (Qiu et al., 2020b) 97.0 95.1 75.2 - ReifKB (Cohen et al., 2020) 96.2 81.1 72.3 52.7 EmbedKGQA (Saxena et al., 2020) 97.5 98.8 94.8 66.6 NSM (He et al., 2021) 97.2 99.9 98.9 74.3 CBR-SUBG (Ours) 97.1 99.8 99.3 72.1
+Table 2: Performance on WebQSP and MetaQA benchmarks.
+million entities (nodes) and 3 billion facts (edges).",1,related,1,positive
+"Followup KBQA works (Saxena et al., 2020; He et al., 2021, inter-alia) use the query-specific graphs provided by GraftNet from their open-source code and do not provide a mechanism to gather query-specific subgraphs.",1,related,1,positive
+"…PullNet (Sun et al., 2019a) 97.0 99.9 91.4 68.1 SRN (Qiu et al., 2020b) 97.0 95.1 75.2 - ReifKB (Cohen et al., 2020) 96.2 81.1 72.3 52.7 EmbedKGQA (Saxena et al., 2020) 97.5 98.8 94.8 66.6 NSM (He et al., 2021) 97.2 99.9 98.9 74.3 CBR-SUBG (Ours) 97.1 99.8 99.3 72.1
+Table 2: Performance on WebQSP…",1,related,1,positive
+"0e general framework defines a scoring function for triples (h, l, ?) in KG and constrains them so that the score of the correct triple is greater than that of the wrong triples [12].",1,related,1,positive
+The EmbedKGQA model proposed by Saxena A et al[1].,1,related,1,positive
+"[30] directly computes knowledge embeddings on the whole retrieved KSG, which is computationally intensive.",1,related,1,positive
+"EmbedKGQA [30] directly matched pretrained entity KG embeddings with question embedding, which is computationally intensive.",1,related,1,positive
+"We then trained STaG-QA, EmbedKGQA and GraftNet on the new reduced training set and tested the performance
+on our new development sets (seen and unseen).",1,related,0,negative
+EmbedKGQA [165] Freebase; MetaQA-KG [213] Simple and Complex KG Embedding based method,1,related,1,positive
+"EmbedKGQA (Saxena et al., 2020) expends KEQA for multi-relational KBQA by calculating the answer score from the leaned question embedding and the entity embeddings.",1,related,1,positive
+"Inspired by the KG embedding technique for KG completion, EmbedKGQA (Saxena et al., 2020) employs the pre-trained entity embeddings by KGE and the question embedding to calculate the score of each candidate answer entity.",1,related,1,positive
+"We compare PKEEQA with the state-of-the-art multi-relational KBQA baselines, including VRN (Zhang et al., 2018), KVMem (Miller et al., 2016), GraftNet (Sun et al., 2018), PullNet (Sun et al., 2019a) and EmbedKGQA (Saxena et al., 2020).",1,related,1,positive
+• EmbedKGQA [22] is a KG embedding driving method for multi-hop KGQA which matches the pretrained entity embeddings with question embeddings generated from the transformer.,1,related,1,positive
+"Following [22], for all topic entities labeled in the original Freebase, He et al.",1,related,1,positive
+"Definition 1 (Multi-hop question) [2, 5, 22] If a natural language question involves more than one predicate between the topic entity and answer, then we believe the answer is multiple hops away from the topic entity in the KG.",1,related,1,positive
+"Motivated by the previous work EmbedKGQA [22], we show how our model leverages an end-to-end neural network that employs the KG entity and relation embeddings to provide complex questions with answers from the KG.",1,related,1,positive
+"Inspired by the competitive performance of previous work EmbedKGQA [22], we observe that the global relation knowledge and structure information preserved in KG embedding could potentially be used to resolve these issues efficiently and improve the overall accuracy of question answering.",1,related,1,positive
+8% compared to EmbedKGQA [22] and an increase of 1.,1,related,0,negative
+"…into two groups: (a) Question-to-entities: where techniques output the answer entities from the knowledge graph ignoring the SPARQL query (Saxena, Tripathi, and Talukdar 2020; Sun et al. 2018; Vakulenko et al. 2019), and (b) semantic parsing based: where approaches output intermediate…",1,related,1,positive
+"We describe the performance of Emily in addressing persona-related questions via Embedded KGQA (Saxena et al., 2020).",1,related,1,positive
+"…for this task.548
+One line of KBQA approaches first constructs a 549 query-specific subgraph with information retrieved 550 from the KB and then rank entity nodes to select 551 top entities as the answer (Sun et al., 2018, 2019; 552 Saxena et al., 2020; Cohen et al., 2020; Shi et al., 553 2021).",1,related,1,positive
+"This can be generalized into a so-called multi-hop QA task [90, 91] where the topic (question) entity is known and the question is assumed to be a paraphrase of the multi-hop KG relation (there is an assumption that “nephew” is not directly a KG predicate).",1,related,1,positive
+"In this work, we aim to explore the reasoning techniques suitable for n-ary question answering over KGs (i.e., n-ary KGQA).",1,related,1,positive
+"EmbedKGQA relaxes the requirement that entities and relations must be connected when constructing a reasoning chain, which makes it more flexible in dealing with n-ary facts.",1,related,1,positive
+"Similar to (Saxena et al., 2020), we learn a scoring function s(e; {w1, w2, ..., wn}) which calculates the semantic similarity between entity and a word sequence:
+s(e; {w1, w2, ..., wn}) = σ2(e >GRU(w1,w2, ...,wn)), (3)
+where σ2(·) is the activation function, e and wi are the embeddings of the…",1,related,1,positive
+"Similar to (Saxena et al., 2020), we learn a scoring function s(e; {w1, w2, .",1,related,1,positive
+One can map a natural language (NL) question onto KGs to infer the correct answer.,1,related,1,positive
+[90] utilized pre-trained knowledge base embeddings to address the incomplete KB issue as shown at the right side of Figure 7.,1,related,0,negative
+"complete KB Supplement KB with extra corpus via adding the question related documents into the subgraph as nodes [65], [88] or fusing extra textual information into entity representations [66], [89]; utilize the global knowledge to answer the questions by injecting global KB embeddings [90].",1,related,1,positive
+"…dataset, we apply approaches based on deep language models (LM) alone, such as T5 (Raffel et al., 2020), BERT (Devlin et al., 2019), and KnowBERT (Peters et al., 2019), and also hybrid LM+KG embedding approaches, such as Entities-as-Experts (Févry et al., 2020) and EmbedKGQA (Saxena et al., 2020).",1,related,1,positive
+"We first apply EmbedKGQA (Saxena et al., 2020) directly to the task of Temporal KGQA.",1,related,1,positive
+", 2020a] or leverage KB embeddings [Saxena et al., 2020].",1,related,1,positive
+"Notations Definitions
+G The knowledge graph
+E The entity set
+R The relation set
+e An entity in E
+r A relation in R
+h The head entity in a triplet
+t The tail entity in a triplet
+(h, r , t) An atomic fact
+ψ(Ee, Er , Ee) The scoring function X A natural language question
+x The token in X
+dent The size of entity embedding drel The size of relation embedding demb The size of token embedding dhid The size of hidden representation ΦV The key embedding matrix ΦK The value embedding matrix TC The candidate triplet set AC The candidate answer set
+KG embedding representation to advance the KBQA task.",1,related,1,positive
+"Question answering over knowledge base (KBQA) is one of the important technologies of intelligent human–robot inter-
+B Quanjun Yin yinquanjun@nudt.edu.cn
+Xinmeng Li xml.nudt@gmail.com
+Mamoun Alazab mamoun.alazab@cdu.edu.au
+Qian Li liqian9510@outlook.com
+Keping Yu keping.yu@aoni.waseda.jp
+1 College of Systems Engineering, National University of Defense Technology, Changsha 410000, China
+2 College of Engineering, IT and Environment, Charles Darwin University, Darwin, Australia
+3 Global Information and Telecommunication Institute, Waseda University, Tokyo 169-0072, Japan
+action.",1,related,1,positive
+"Following (Saxena et al., 2020), we pruned the knowledge base to contain only mentioned predicates and within 2-hop triples of mentioned entities.",1,related,1,positive
+We classify MRC methods into two categories: single-hop and multi-hop reasoning.,1,related,1,positive
+"In this section, we introduce the related works of three question answering tasks including TQA, MRC and VQA due to their similarities.",1,related,0,negative
+"In addition to singlerelation questions, EmbedKGQA [105] is proposed to deal Fig.",1,related,1,positive
+EmbedKGQA selects the entity with the highest score as the answer.,1,related,0,negative
+"In addition to singlerelation questions, EmbedKGQA [105] is proposed to deal
+with the multi-hop relation questions.",1,related,1,positive
+"…al., 2020), and etc.) and then executes it against the KB and obtains the final answers; 2) information
+retrieval based methods (Miller et al., 2016; Saxena et al., 2020; Schlichtkrull et al., 2018; Zhang et al., 2018; Zhou et al., 2018; Qiu et al., 2020; Shi et al., 2021), which constructs a…",1,related,1,positive
+EmbedKGQA [19] was the state-of-the-art model that applies KB embeddings ComplEx [23] in KBQA.,1,related,1,positive
+We describe the system in Saxena et al. (2020) in detail,1,related,1,positive
+We describe the system in Saxena et al. (2020) in detail below.,1,related,1,positive
+"edu/rtw/kbbrowser/ see wide application in tasks such as questionanswering (Saxena et al., 2020; Das et al., 2017), recommendation (Zhang et al.",1,related,1,positive
+"…relation-discovery
+2https://yago-knowledge.org/ 3http://rtw.ml.cmu.edu/rtw/kbbrowser/
+see wide application in tasks such as questionanswering (Saxena et al., 2020; Das et al., 2017), recommendation (Zhang et al., 2016), and natural language inference (Peters et al., 2019).",1,related,1,positive
+"We compare the proposed with different methods, including the baseline model (i.e. KDReader (Xiong et al., 2019)) and state-of-the-arts (i.e. PullNet (Sun et al., 2019), 2HR-DR (Han et al., 2020), EmbedKGQA (Saxena et al., 2020), and RecHyperNet (Yadati et al., 2021)).",1,related,1,positive
+"Followed by the work from (Xiong et al., 2019; Saxena et al., 2020), the low-resource KB settings have been constructed by down-sampling a percentage of facts in the background KB (we randomly retain a triple with probability of 0.",1,related,1,positive
+"Followed by the work from (Xiong et al., 2019; Saxena et al., 2020), the low-resource KB settings have been constructed by down-sampling a percentage of facts in the background KB (we randomly retain a triple with probability of 0.1, 0.3, and 0.5).",1,related,1,positive
+"Following (Saxena et al., 2020), we pruned the KB to contain only mentioned relations and within 2-hop triples of mentioned entities.",1,related,1,positive
+"The results in Table 3 shows that GFC achieves 59.5% for Hits@1 and performs much better than EmbedKGQA (53.2%), which aims to handle the multi-hop KBQA on incomplete KG specially.",1,related,0,negative
+"As for the 1-hop questions of MetaQA, GFC achives 97.7% which surpasses TransferNet and EmbedKGQA.",1,related,1,positive
+"competitive methods on the incomplete WebQSP with half KG preprocessed by EmbedKGQA (Saxena et al., 2020).",1,related,0,negative
+"For embedding-based methods, they will get worse embeddings of entities and relations because the number of triplets for training KG embeddings becomes much less. we compare GFC with other
+competitive methods on the incomplete WebQSP with half KG preprocessed by EmbedKGQA (Saxena et al., 2020).",1,related,1,positive
+"The second is embedding-based methods which score the embeddings of question objectives and candidate answers (Dong et al., 2015; Miller et al., 2016; Hao et al., 2017; Saxena et al., 2020).",1,related,1,positive
+"How does our proposed approaches fare against the baselines for different KGQA prop-
+https://github.com/malllabiisc/EmbedKGQA
+erties?",1,related,0,negative
+"Each question is associated with a source entity, as noted in the dataset of Saxena et al. (2020).",1,related,0,negative
+We use the pruned version of the dataset provided by Saxena et al. (2020).,1,related,1,positive
+"We experiment with three relevant KGQA retrieval techniques, namely, EmbedKGQA (Saxena et al., 2020), Rel-GCN (Wang et al.",1,related,1,positive
+"To ensure EmbedKGQA can be applied in our setting, we carried out KGC on the KG associated with the question instead of the entire Freebase KG.",1,related,0,negative
+"We experiment with three relevant KGQA retrieval techniques, namely, EmbedKGQA (Saxena et al., 2020), Rel-GCN (Wang et al., 2020a), and GlobalGraph (Wang et al., 2020b).",1,related,1,positive
+"We limit ourselves to k=2, similar to Saxena et al. (2020).",1,related,1,positive
+"For EmbedKGQA, we use the publicly
+available code of Saxena et al. (2020) along with the default hyper-parameters for training.",1,related,1,positive
+"[30] directly computes knowledge embeddings on the whole retrieved KSG, which is computationally intensive.",1,related,1,positive
+"EmbedKGQA [30] directly matched pretrained entity KG embeddings with question embedding, which is computationally intensive.",1,related,1,positive
+"It is also039 important when adopting KG embedding methods040
+to the real-world applications (Bordes et al., 2014; 041 Zhang et al., 2016; Saxena et al., 2020).",1,related,1,positive
+"Then, these methods traverse the KG according to the computation graph to identify the answer set (Lin et al., 2018; Guo et al., 2018; Saxena et al., 2020; Sun et al., 2019).",1,related,1,positive
+"Model details Following prior work (Saxena et al., 2020), we used a long short term memory (LSTM) network to learn embeddings for words in the questions with an embedding size of 256 for MetaQA and RoBERTa (768 dimensional embeddings) (Liu et al., 2019) for WebQuestionsSP datasets.",1,related,1,positive
+"Following prior work (Saxena et al., 2020), we experimented on two different settings (for both datasets) - KG Full (in which the KG is left untouched), and the more realistic KG-50 setting in which 50% links are randomly removed.",1,related,1,positive
+"We closely follow the experimental setup of a prior work (Saxena et al., 2020) for the preprocessed versions of these datasets.",1,related,1,positive
+"Model details Following prior work (Saxena et al., 2020), we used a long short term memory (LSTM) network to learn embeddings for words in the questions with an embedding size of 256 for MetaQA and RoBERTa (768 dimensional embeddings) (Liu et al.",1,related,1,positive
+Figure 8 illustrates the basic idea of EmbedKGQA.,1,related,1,positive
+EmbedKGQA selects the entity with the highest score as the answer.,1,related,0,negative
+"In addition to singlerelation questions, EmbedKGQA [119] is proposed to deal with the multi-hop relation questions.",1,related,1,positive
+[88] train an end-to-end topic entity and query relation learning model M EmbedKGQA[119] use RoBERTa to embed the question C GQE [53] deal with conjunctive logic queries C QUERY2BOX [112] deal with disjunctive queries C EmQL [126] obtain faithful embeddings,1,related,1,positive
+"Note that EmbedKGQA (Saxena et al., 2020) use RoBERTa (Liu et al.",1,related,1,positive
+"In the “half” setting, we follow previous work (Saxena et al., 2020) to randomly drop 50% of triplets in the knowledge graph.",1,related,1,positive
+"For fair comparison with previous work (Sun et al., 2018, 2019a; Saxena et al., 2020), we set the embedding size to 300.",1,related,0,negative
+"Note that EmbedKGQA (Saxena et al., 2020) use RoBERTa (Liu et al., 2019) for word embeddings and ComplEx (Trouillon et al., 2016) for entity embeddings.",1,related,1,positive
+"Following previous work (Sun et al., 2018, 2019a; Saxena et al., 2020), we use the “vanilla” version of the dataset.",1,related,1,positive
+"We further compare between the unconscious phase of DCRN and EmbedKGQA (Saxena et al., 2020).",1,related,1,positive
+"We compare with three IR-based KBQA models: GRAFT-Net (Sun et al., 2018), EmbedKGQA (Saxena et al., 2020) and NSM (He et al., 2021).",1,related,1,positive
+"EmbedKGQA directly optimizes the triplet of (topic entity, question, answer) based on their direct embeddings.",1,related,1,positive
+"We perform any subgraph reasoning model such as GRAFT-Net (Sun et al., 2018), EmbedKGQA (Saxena et al., 2020) and NSM (He et al., 2021) on Gqr to learn the embeddings for entities in the subgraph.",1,related,1,positive
+"On both datasets, the embedding dimension is set as 200 for EmbedKGQA and 50 for NSM.",1,related,1,positive
+This work intends to reproduce and perform an ablation (removing relation matching module) as well as an extended study on EmbedKGQA[1].,1,related,1,positive
+[1] fills this gap with the proposed EmbedKGQA method.,1,related,1,positive
+"Statistics for table:{1, 2} have been taken from [1].",1,related,1,positive
+2 Methodology We have used the code provided by [1] with some customization for reproducibility.,1,related,0,negative
+"Based on the code shared by the authors, we have reproduced the results for EmbedKGQA[1].",1,related,1,positive
+"From the results of table:5 in [1] and table:6 in this report, it is evident that relationmatching(RM) is an important component inmulti-hop KGQAwhen the given KG is considerably large, i.",1,related,1,positive
+The original values for EmbedKGQA are taken from [1].,1,related,1,positive
+QA data statistics for each dataset according to [1] Dataset Triples Entities Relations Experiment-Alias MetaQA-KG-Full 135k 43k 9 MetaQA_full WebQSP-KG-Full 5.,1,related,1,positive
+"6 Communication with original authors We had a couple of virtual meetings with Apoorv Saxena1, the primary author of EmbedKGQA[1].",1,related,0,negative
+"Baselines: We have used, KV-mem Bordes et al. (2015), GraftNet Sun et al. (2018), PullNet Sun et al. (2019), VRN Zhang et al. (2018), and EmbedKGQA Saxena et al. (2020) as the baselines.",1,related,1,positive
+"Our proposed approach has outperformed PullNet and EmbedKGQA on the MetaQA dataset, as shown in Section 5.",1,related,1,positive
+"Pre-trained KB embeddings were shown to improve multi-hop KBQA where answers are entities and no operations are involved (Saxena et al., 2020).",1,related,0,negative
+"Annotation of Entity Spans As discussed in Soares et al. (2019), different markers for entity spans have a great impact on the BERT-based relation extraction task.",1,related,1,positive

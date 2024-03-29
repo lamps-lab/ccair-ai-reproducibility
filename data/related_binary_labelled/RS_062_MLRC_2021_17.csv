@@ -1,0 +1,286 @@
+text,label_score,label,target_predict,target_predict_label
+"Several works have theoretically studied the success of self-supervised learning (Arora et al., 2019; HaoChen et al., 2021; Lee et al., 2020; Tian et al., 2021; Tosh et al., 2021).",,,0,not_related
+"Several theoretical investigations have delved into the realm of feature decorrelation based methods within the domain of self-supervised learning, as evidenced by a collection of notable studies [4, 16, 30, 35, 44, 48, 51, 55].",,,0,not_related
+"Research identifies that combining asymmetrical structures and special tricks [7, 8, 12] enables contrastive learning to",,,0,not_related
+"SimSiam [8] subsequently built on BYOL to conduct abundant comparative experiments and demonstrated that the stop-grad [8, 12] is the most vital part in asymmetric method.",,,0,not_related
+"3 School of Automation, Southeast University, Nanjing 210096, Jiangsu, China collapses all outputs of the model into constant solutions [11, 12].",,,0,not_related
+"Compared to contrastive learning, they are generally more efficient and conceptually simple while maintaining state-of-the-art performance [60].",,,0,not_related
+"These methods leverage an additional learnable predictor and employ a stop-gradient operation to prevent collapsing, contributing to their successful performance [111].",,,0,not_related
+"We will use BYOL (Grill et al. (2020), Definition 2.3)6 for our investigation into scaling as it is wellstudied (Tian et al., 2021; Richemond et al., 2023), relatively simple to implement due to minimal hyper-parameters, and obtains competitive results (Grill et al., 2020; Koppula et al., 2022).",,,1,related
+"3)6 for our investigation into scaling as it is wellstudied (Tian et al., 2021; Richemond et al., 2023), relatively simple to implement due to minimal hyper-parameters, and obtains competitive results (Grill et al.",,,1,related
+"Kontrastif öğrenme, aynı nesnenin artırılmış görüntülerine ait temsil vektörlerini bir araya getirirken negatif örnekleri uzaklaştırmayı teşvik etmek olarak tanımlanabilir [3].",,,1,related
+"These models will not collapse to a trivial solution because they construct subtle asymmetry in the structure of the siamese network and create a dynamic buffer area (Tian, Chen, and Ganguli 2021).",,,0,not_related
+"Tian, Chen, and Ganguli (2021) showed that a regularizer is essential for the existence of the non-collapsed solution.",,,0,not_related
+"The linear representation setting has been widely adopted in transfer learning and self-supervised learning (Jing et al., 2021; Tian et al., 2021; Ji et al., 2021; Wu et al., 2022; Tian, 2022; Nakada et al., 2023).",,,0,not_related
+"(4)In fact, dimensional collapse is a more salient issue for non-contrastive approaches in SSL (Hua et al., 2021; Tian et al., 2021) due to the lack of negative pairs.",,,0,not_related
+"To address dimensional collapse in contrastive learning (and more so in non-contrastive SSL), a line of work proposes to refine loss functions and design structured projectors (Balestriero et al., 2023), but a systematic treatment is still lacking.",,,0,not_related
+"Among SSL methods (Chen et al., 2020a; Zbontar et al., 2021; Bardes et al., 2021), contrastive learning (Chen et al., 2020a) is arguably the most popular one, which is also the focus of this paper.",,,0,not_related
+"4In fact, dimensional collapse is a more salient issue for non-contrastive approaches in SSL (Hua et al., 2021; Tian et al., 2021) due to the lack of negative pairs.",,,0,not_related
+"Self-supervised learning (SSL) (Balestriero et al., 2023) has recently emerged as a novel paradigm to learn meaningful representations from huge unlabeled datasets (Misra and van der Maaten, 2019; Chen et al., 2020a; He et al., 2020; Dwibedi et al., 2021; HaoChen et al., 2021; Jing et al., 2021; Wang and Isola, 2020; Ji et al., 2021).",,,0,not_related
+"While there are many lenses one may take up to study the problem [18, 31, 19, 29, 28, 16], a particularly related to this work concurrent body of literature has adopted the view of the kernel or laplacian-based spectral representation learning [11, 1], which we also share in this work.",,,0,not_related
+"Various theoretical studies have also investigated non-contrastive methods for self-supervised learning [5, 18, 33, 48, 54, 58, 63, 70].",,,0,not_related
+"attempted to analyze the training dynamics [42] and build a connection between non-contrastive and contrastive methods [40, 16].",,,0,not_related
+"Mean squared error – Defined as MSE(v, v̂) = 1n ∑n
+i=1(vi − v̂i)2, the mean squared error (MSE) is employed in a number of prominent distillation-based SSL frameworks to measure feature alignment (Grill et al., 2020; Tian et al., 2021b; Caron et al., 2021).",,,0,not_related
+"…domains such as medical imaging (Ramesh et al., 2022; Chen et al., 2023a) or other tasks such as classification in the wild (Goyal et al., 2021a; Tian et al., 2021a), object detection (Mishra et al., 2021; Li et al., 2022b), pose estimation (Chen et al., 2023c), action detection as well as…",,,0,not_related
+"These losses are reminiscent of SSL, where they have been theoretically well-studied (Tian et al., 2021; Balestriero & LeCun, 2022), and their translation to VLP has the potential to solve the challenge of the batch size sensitivity and heavily reduce the computational cost.",,,0,not_related
+"Such self-distillation has been explored theoretically and empirically (Chen & He, 2021; Tian et al., 2021) to prevent the collapsing problem, but we do not discuss the distillation scheme in this paper.",,,0,not_related
+"The predictor acts as a whitening operator preventing collapse [Tian et al., 2021], and momentum network can be applied only to the projector [Pham et al.",,,0,not_related
+"Existing Theory of Contrastive Learning Besides the empirical success, theoretical foundations, which explain the efficiency of the methods in contrastive learning, are gradually gathering attention [23, 56, 65, 61, 59].",,,0,not_related
+"…learning [Chen et al. (2020); Grill et al. (2020)] yield new types of learning dynamics that can also be well modelled by deep linear networks [Tian et al. (2020, 2021)], even in settings where the learning dynamics do not correspond to gradient descent on any function [Grill et al. (2020)].",,,0,not_related
+"…hyperparameter
+Neural networks: from the perceptron to deep nets 21
+choices that work well for training deep linear models, also work well for their highly nonlinear counterparts [Tian et al. (2021)], thereby opening the door to the use of mathematical analysis to drive practical design decisions.",,,0,not_related
+"The selfsupervised learned features are typically more transferable to new tasks than features from supervised learning (Ericsson et al., 2021), even for non-contrastive objectives (Tian et al., 2021).",,,0,not_related
+", 2021), even for non-contrastive objectives (Tian et al., 2021).",,,0,not_related
+"Specifically, inspired by (Chen & He, 2021; Grill et al., 2020; Tian et al., 2021), we question the proposed usage of negative pairs for time series forecasting and the idea of augmenting the data to generate positive pairs, which is empirically investigated in several experiments with different…",,,1,related
+"Specifically, inspired by (Chen & He, 2021; Grill et al., 2020; Tian et al., 2021), we question the proposed usage of negative pairs for time series forecasting and the idea of augmenting the data to generate positive pairs, which is empirically investigated in several experiments with different contrastive methods.",,,1,related
+", 2021a;b), loss landscapes and training dynamics (Tian et al., 2020; Wang & Isola, 2020; Chen et al., 2021; Tian et al., 2021; Jing et al., 2021; Wen & Li, 2021; Pokle et al., 2022; Ziyin et al., 2022), assran:2022-ssl-hidden-clusterprior, and kernel and spectral methods (Kiani et al.",,,0,not_related
+"…(Tsai et al., 2020; 2021; Tosh et al., 2021a;b), loss landscapes and training dynamics (Tian et al., 2020; Wang & Isola, 2020; Chen et al., 2021; Tian et al., 2021; Jing et al., 2021; Wen & Li, 2021; Pokle et al., 2022; Ziyin et al., 2022; Assran et al., 2022a), and kernel and spectral methods…",,,0,not_related
+"shown in [19] that for contrastive learning, the stop-gradient operation is essential and its removal will lead to representation collapse.",,,0,not_related
+DirectPred [49] provided a theoretical understanding of this non-contrastive SSL setting.,,,0,not_related
+"UniGrad [31] unifies common contrastive learning methods [17, 5, 7, 32, 15, 45, 2] into the same form.",,,0,not_related
+"Tian et al. (2021) study the dynamics of non-contrastive learning, but only focus on the predictor parameters.",,,0,not_related
+Tian et al. (2021) investigate the collapse phenomenon in non-contrastive learning and show in a simplified setting how the stop gradient operation can prevent it.,,,0,not_related
+", 2022), partly explained by the fact that SSL composes the DN of interest fθ with a projector DN gγ appended to it during training and thrown away afterward, (ii) too many per-loss and per-projector hyper-parameters whose impact on the DN’s performances are hard to control or predict (Grill et al., 2020; Tian et al., 2021; He & Ozay, 2022), and which are even widely inconsistent across datasets and architectures Zhai et al.",,,1,related
+"…(ii) too many per-loss and per-projector hyper-parameters whose impact on the DN’s performances are hard to control or predict (Grill et al., 2020; Tian et al., 2021; He & Ozay, 2022), and which are even widely inconsistent across datasets and architectures Zhai et al. (2019); Cosentino et…",,,0,not_related
+"The linear representation setting has been widely adapted in the machine learning literature (Jing et al., 2021; Tian et al., 2021; Ji et al., 2021; Wu et al., 2022; Tian, 2022).",,,0,not_related
+"This reflects the decorrelation of features seen above and was suggested in prior work, either using eigendecomposition (Tian et al., 2021) or Cholesky factorization towards optimal whitening (Ermolov et al., 2021).",,,0,not_related
+"Despite the simplicity of the BYOL objective (1), prior work on BYOL theory has involved non-trivial matrix ordinary differential equation analysis under strong assumptions (Tian et al., 2021).",,,0,not_related
+", 2020), or also relied on strong assumptions such as isotropy and multiplicative EMA (Tian et al., 2021) and on differential equation tools for their conclusions.",,,0,not_related
+", 2020) ( Z> θ Zθ )−1 Z> θ Z ′ ξ DirectPred (Tian et al., 2021) (Z> θ Zθ) 1/2 (eigendecomp.",,,1,related
+"Yet, several works started unveiling the underlying mechanisms behind self-predictive unsupervised learning (Tian et al., 2021; Liu et al., 2022; Halvagal et al., 2022) (see Sec.",,,0,not_related
+"This reflects the decorrelation of features seen above and was suggested in prior work, either using eigendecomposition (Tian et al., 2021) or Cholesky factorization towards optimal whitening (Ermolov et al.",,,0,not_related
+"This subsumes prior work (Tian et al., 2021; Liu et al., 2022; Halvagal et al., 2022) and enables a more general view informed by optimization on Riemannian manifolds of orthogonal matrices (Edelman et al., 1998; Absil et al., 2007; Bonnabel, 2013).",,,0,not_related
+"This fact can be leveraged thanks to the balancing relationship (Tian et al., 2021), valid in the presence of a small weight decay parameter λ:
+Aθ,tA > θ,t = P > θ,tPθ,t +M0e −2λt (7)
+where Aθ,t and Pθ,t are now indexed by time t, and M0 is a constant matrix determined at initialization.",,,1,related
+"This fact can be leveraged thanks to the balancing relationship (Tian et al., 2021), valid in the presence of a small weight decay parameter λ: Aθ,tA > θ,t = P > θ,tPθ,t +M0e −2λt (7)",,,1,related
+"This subsumes prior work (Tian et al., 2021; Liu et al., 2022; Halvagal et al., 2022) and enables a more general view informed by optimization on Riemannian manifolds of orthogonal matrices (Edelman et al.",,,0,not_related
+"…at such explanation have involved implicit contrastive properties of normalizations later disproved empirically (Richemond et al., 2020), or also relied on strong assumptions such as isotropy and multiplicative EMA (Tian et al., 2021) and on differential equation tools for their conclusions.",,,0,not_related
+"And it is shown that self-supervised learning can even be performed without contrastive pairs (Grill et al., 2020; Chen & He, 2021; Tian et al., 2021) by establishing a dual pair of Siamese networks to facilitate the training.",,,0,not_related
+"Recent Siamese network based self-supervised learning methods (Grill et al., 2020; Chen & He, 2021; Tian et al., 2021; He et al., 2020; Chen et al., 2021) alleviate the huge batch challenge by deploying an momentum copy of the target model to facilitate the training and prevent trivial solutions.",,,0,not_related
+"Recent contrastive self-supervised learning methods (Grill et al., 2020; Chen & He, 2021; Tian et al., 2021; He et al., 2020; Chen et al., 2021) alleviate the huge batch challenge at the cost of deploying an momentum copy of the target model to facilitate the training and prevent trivial solutions.",,,0,not_related
+"Many efforts have been devoted to studying the loss function, and the construction of positive pairs [6, 7, 8, 9, 10, 11], while less are paid on the investigation of the architectures.",,,0,not_related
+"SimSiam [67] do not collapse [271] have been conducted, but the fundamental reason remains elusive.",,,0,not_related
+"BYOL [18] and SimSiam [19] extend similarity loss and remove the dependency on negative instances [20], [21], [22].",,,0,not_related
+"Several works have theoretically analysed self-supervised approaches, both for contrastive [48], [49], [50], [51], [52] and non-contrastive methods [53], [54], [55], [56], to motivate the reasons for their successes, identify the main underlying principles and subsequently provide more principled/simplified solutions.",,,0,not_related
+"In this regard, asymmetries, in the form of stop-gradient and diversified predictors, are sufficient to ensure well-behaved training dynamics [53], [55], [56].",,,0,not_related
+"In[34], it is mentioned that the potential representation of nodes can be better learned by not using negative samples when performing contrasting learning.",,,0,not_related
+"There are some efforts to theoretically understand the SSL methods [30, 14], the role of data augmentation [28, 26], and some empirical analyses of the contrastive loss [4] and the predictor in the so-called BYOL framework [25].",,,0,not_related
+SPIRAL proposed in-utterance contrastive loss& position randomization to avoid model collapse& positional collapse that arise on its own specific SG teacher design but not on the nonlinear learning dynamics of non-contrastive SSL[25].,,,0,not_related
+"Hence the fundamental question arises: how do multiple factors, like stop-gradients, EMA, teacher networks, and regularization, all come into play to avoid collapse? This leads to experimental studies like our TriNet and theoretical studies like [25, 26].",,,0,not_related
+"Building on DirectPred [1], we presented a simple analysis formulated in the eigenspace of representations that illustrates how BYOL/SimSiam’s asymmetric similarity loss avoids representational collapse.",,,1,related
+[1] underscored the importance of boosting small eigenvalues and suggested that evolving the weights in the target network using EMA serves as an automatic curriculum for small eigenvalues.,,,0,not_related
+"Here, by building on DirectPred [1], we lay out a theoretical framework that reconciles these two views.",,,1,related
+[1] for the case of linear feedforward and predictor networks.,,,0,not_related
+"Finally, instead of gradient-based optimization, we directly set the predictor network as a simple function of this correlation matrix as suggested in DirectPred [1].",,,1,related
+"In this work, we consider the linear network setting used previously for studying non-contrastive SSL in [1, 8], and provide a straightforward analysis of how the learning dynamics in DirectPred and DirectCopy prevent representational collapse.",,,1,related
+"The learning dynamics induced by such asymmetric loss Siamese architectures are surprisingly intricate [1, 8, 9] but not fully understood.",,,0,not_related
+"Further, compared to contrastive learning, the non-contrastive learning frameworks require smaller sized batches to train the models (Tian et al., 2021).",,,0,not_related
+"Several studies (Jaiswal et al., 2020; Tian et al., 2021; Balestriero and LeCun, 2022) have proposed theoretical analysis to form justifications for the empirical performance of selfsupervised approaches.",,,0,not_related
+[17] concluded the contrastive learning methods and present a comprehensive theoretical study of SSL without contrastive pairs.,,,0,not_related
+"Several theoretical works also study non-contrastive methods for self-supervised representation learning [Wen and Li, 2022, Tian et al., 2021, Garrido et al., 2022, Balestriero and LeCun, 2022].",,,0,not_related
+"Ideally, this model should not only perform better than BGRL in the inductive setting, but should also have the same time complexity as BGRL.",,,0,not_related
+"As such, we refer to these two methods as BGRL.",,,1,related
+This has also been shown to be true for BGRL. Tian et al. (2021) claim that the eigenspace of predictor weights will align with the correlation matrix of the online network under the assumption of a one-layer linear encoder and a one-layer linear predictor.,,,0,not_related
+"We can see that T-BGRL pushes apart unseen negative and positive pairs much better than BGRL.
+Table 3: Transductive performance of T-BGRL compared to ML-GCN and BGRL (same numbers as Table 1 above; full figure in Table 5).",,,1,related
+BGRL.,,,0,not_related
+We also evaluate the performance of T-BGRL in the transductive setting to ensure that it does not significantly reduce performance when compared to BGRL.,,,1,related
+"We experiment with several different corruptions methods, but limit ourselves to linear-time corruptions in order to maintain the efficiency of BGRL.",,,1,related
+"served that the collapse can be avoidable in carefully designed training frameworks [9, 31, 62], it is still a problem in certain settings depending on model choices and trainingdataset sizes [38].",,,0,not_related
+"Several non-contrastive methods are proposed to learn image-level representations solely based on positive samples [2, 9, 13, 26, 51, 59].",,,0,not_related
+"Instance discrimination contains several sub-frameworks, including contrastive learning [13, 31], asymmetric networks [15, 27] and feature decorrelation [6, 89], which are found of similar mechanism [66,70].",,,0,not_related
+collapse resulting from the absence of negative samples [162].,,,0,not_related
+"[43] investigated the elements of these negative-free approaches relying on architectural update (adding a predictor block) as well as new training protocol (stop-gradient policy), which enables them to substantially outperform contrastive approaches while avoiding the trivial representation.",,,0,not_related
+"3) Contrastive Learning: Most successful self-supervised or unsupervised visual representation methods [38], [39], [40] rely on contrastive learning.",,,0,not_related
+"Self-supervised learning [7, 30, 31, 35] has achieved remarkable progress in recent years, in representation learning without the need for class label supervision.",,,0,not_related
+"More recent works [4], [32], [33] have shown that we can learn high-quality representations without negative samples.",,,0,not_related
+"Indeed, it has been shown that pretraining the same joint-embedding methods on long-tailed datasets can lead to significant drops in performance (Tian et al., 2021a).",,,0,not_related
+"Recent theoretical work (Tian et al., 2021b) explores why certain joint-embedding methods with architectural constraint avoid representation collapse without explicit use of a volume maximization penalty; the implicit collapse prevention mechanisms here are not mutually exclusive.",,,0,not_related
+"…dynamics of joint-embedding methods, they do not directly explain why empirical use of these methods with real-world classimbalanced data has often led to a degradation in downstream task performance (Tian et al., 2021a; Goyal et al., 2022) (see Appendix A for a broader discussion of related work).",,,0,not_related
+"There is also theoretical work (Tian et al., 2021b) which aims to understand why certain joint-embedding methods, such as BYOL (Grill et al., 2020), can avoid representation collapse without explicit use of a volume maximization penalty.",,,0,not_related
+"8, we find that: 1) BW-based whitening loss ensures a whitened target Ẑ2, while SimSiam does not put constraint on the target Z2; 2) SimSiam uses a learnable predictor Pθp(·), which is shown to empirically avoid collapse by matching the rank of the covariance matrix by back-propagation [40], while BW-based whitening loss has an implicit predictor φ(Z1) depending on the input itself, which is a full-rank matrix by design.",,,1,related
+"It remains not clear how the asymmetric network avoids collapse without negative pairs, leaving the debates on batch normalization (BN) [14, 41, 36] and stop-gradient [8, 46], even though preliminary works have attempted to analyze the training dynamics theoretical with certain assumptions [40] and build a connection between asymmetric network with contrastive learning methods [39].",,,0,not_related
+"The success of BYOL (Grill et al., 2020) inspired empirical (Chen & He, 2021) and theoretical (Tian et al., 2021) analyses into what enables BYOL to effectively learn and avoid collapse with the EMA Teacher during pre-training.",,,0,not_related
+", 2020) inspired empirical (Chen & He, 2021) and theoretical (Tian et al., 2021) analyses into what enables BYOL to effectively learn and avoid collapse with the EMA Teacher during pre-training.",,,0,not_related
+"Preventing such collapsed representations is a frequently discussed topic in literature (Hua et al., 2021; Jing et al., 2021; Pokle et al., 2022; Tian et al., 2021) and has motivated the design of several SSL techniques (Zbontar et al., 2021; Bardes et al., 2021; Ermolov et al., 2021).",,,0,not_related
+"In practice, however, SSL training often experiences the phenomenon of dimensional collapse (Jing et al., 2021; Tian et al., 2021; Pokle et al., 2022), where the learned representation spans a low dimensional subspace of the overall available space.",,,0,not_related
+"Preventing such collapsed representations is a frequently discussed topic in literature (Hua et al., 2021; Jing et al., 2021; Pokle et al., 2022; Tian et al., 2021) and has motivated the design of several SSL techniques (Zbontar et al.",,,0,not_related
+"…causality and data-generating processes (Zimmerman et al., 2021; Kugelgen et al., 2021; Trivedi et al., 2022; Tian et al., 2020; Mitrovic et al., 2020; Wang et al., 2022), dynamics (Wang and Isola, 2020; Tian et al., 2021; Tian, 2022; Wang and Liu, 2021), and loss landscapes (Pokle et al., 2022).",,,0,not_related
+", 2022), dynamics (Wang and Isola, 2020; Tian et al., 2021; Tian, 2022; Wang and Liu, 2021), and loss landscapes (Pokle et al.",,,0,not_related
+"[107] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+"Many investigators have appreciated the importance of improving our understanding of unsupervised representation learning and taken pioneering steps to simplify SOTA methods [18; 19; 114; 22], to establish connections to classical methods [69; 4], to unify different approaches [4; 39; 97; 62; 55], to visualize the representation [9; 116; 15], and to analyze the methods from a theoretical perspective [3; 45; 107; 4].",,,0,not_related
+Tian et al. (2021) studies the effect of the non-linear predictor and stop-gradient in these methods and observe that both components are essential to prevent collapse.,,,0,not_related
+"Some prior work has analyzed non-contrastive learning dynamics in a simple linear model [34], but analysis of when collapse happens is still ad hoc and largely anecdotal.",,,0,not_related
+"Contrary to previous methods that claim that the stop-gradient, prediction head, and high predictor learning rate are enough to prevent the collapse [7,34], we show that collapse additionally depends on the model capacity relative to the data complexity.",,,0,not_related
+Understanding Self-supervised Learning [34] analyzes a surprisingly predictive linear model that represents the BYOL and SimSiam settings.,,,0,not_related
+"negative pairs, and ii) prevents representational collapse in an intuitive and explainable manner [15], unlike approaches such as BYOL [2] which are theoretically poorly understood (although some attempts have recently been made [16]).",,,0,not_related
+[24] performs a spectral analysis of DNN’s mapping induced by non-contrastive loss and the momentum encoder approach.,,,0,not_related
+"The main risk in such an approach is the so-called the feature collapse phenomenon [19, 24, 27], where the learned representations are invariant to input samples that belong to different manifolds.",,,0,not_related
+"Most work [24, 25, 34, 36, 55, 103, 107, 108] in designing and understanding non-contrastive methods concerns how to avoid the “collapsing” of the teacher to a constant.",,,0,not_related
+"Many recent work [55, 103, 107, 108] have studied how distillating SSL methods work and the importance of optimization tricks such as stop-gradients, exponential moving average, and normalizations.",,,0,not_related
+"This can be indicated using the stop-gradient operation stopgrad(·) as follows [58,59]: z′t S = stopgrad(E(ŝ ′t S )) (6)",,,1,related
+"Families of Models Model Rationale Representative Strategies and Methods
+Pretext tasks Pixel-level reconstruction [124], [125], inpainting [126], MAE [127], denoising [128], colorization [129], [130], [131] Instance-level predict image rotations [123], scaling and tiling [122], patch ordering [11], patch re-ordering [121]
+Discriminative models Instance discrimination negative sampling large batch size (SimLR [12]), memory bank (InstDis [132]), queue (MoCo [16]) input transformation data augmentation (PIRL [133]), multi-view augmentation (CMC [134]) negative-sample-free simple siamese (SimSiam [135]), Bootstrap (BYOL [136]), DirectPred [137]
+Deep clustering offline clustering DeepCluster [138], JULE [139], SeLa [140] online clustering IIC [141], PICA [142], AssociativeCluster [143], SwAV [144]
+Deep generative models Discriminator-level DCGAN [145], Self-supervised GAN [146], Transformation GAN [147] Generator-level BiGAN [148], BigBiGAN [149]
+✓",,,0,not_related
+"negative-sample-free simple siamese (SimSiam [135]), Bootstrap (BYOL [136]), DirectPred [137]",,,0,not_related
+"(12)), another alternative non-contrastive scheme for instance discrimintation operates in a negativesample-free manner [135], [136], [137], [181], as exemplified by bootstrap (BYOL) [136] and simple siamese networks (SimSiam) [135]).",,,0,not_related
+"Without contrasting negative instances, the training process of non-contrastive methods is more efficient and conceptually simple [52, 55].",,,0,not_related
+"To solve this problem, some non-contrastive approaches are developed with only using positive pairs but achieving remarkable performance, such as BYOL [53], SwAV [54], SimSiam [55], DirectPred [52], and DINO [19].",,,0,not_related
+constructed and need a large batch size or memory bank for storage [52].,,,0,not_related
+"However, an implicit contrast is applied by the batch normalization layer in the implemented network [75, 79].",,,0,not_related
+Later work [42] concentrates on the theoretical influence of the asymmetric network structures.,,,0,not_related
+"There are follow-up studies on the asymmetric structure that are mainly about the theoretical understanding [42,9] and the effectiveness for linear classification [9,10].",,,0,not_related
+"In such methods, using various architecture tricks (like prediction head, stop-gradient, momentum encoder, batch normalization or centering) is shown empirically to be sufficient to avoid collapse without instance discrimination, even though it is not fully understood how these multiple factors induce a regularization during training (Richemond et al., 2020; Tian et al., 2021).",,,0,not_related
+"Relation-based approaches learn features to increase the similarity among a sample [6, 10, 11, 25, 54] and its transformed positive instances while some also treat other training samples as negative instances.",,,0,not_related
+"Some recent works [12,27,72] introduce asymmetry in the alignment of the positive pair to learn meaningful representations without explicit uniformity.",,,0,not_related
+"Furthermore, it has been shown that the stop-grad operation is critical to avoid the problem of complete collapse in the representations (Tian et al., 2021).",,,0,not_related
+"Second, we construct a framework to abstract and maximize similarity object-level agreement (foreground and background) across different views beyond augmentations of the same image [13,18,23].",,,1,related
+"Moreover, it pushes the anchor embedding similar to positive emedding and dissimilar to negative embedding [Tian et al., 2021].",,,0,not_related
+"Then, DirectPred (Tian et al., 2021) provides theoretical analysis to verify the effectiveness of BYOL.",,,0,not_related
+"There are already some works like SimSiam [84] and [249] that try to investigate the underline theory, yet they are not enough.",,,0,not_related
+"To measure subspaces dimensionality, we compute the singular value decomposition on the covariance matrix Covx = UΣV T ,Σ = diag(σ), following general practice in SSL theory [39, 73].",,,1,related
+"[73] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+"Subsequent theoretical analysis [12, 13, 14, 15] have demonstrated why these techniques can avoid trivial solutions and learn meaningful representations from different aspects.",,,0,not_related
+", contrastive learning [7], [35], [36], [37], [38], [39], [40], self-clustering [41], [42], [43], and representation alignment [5], [6], [44], [45], [46], [47].",,,0,not_related
+The terms in Equation 1 can be decomposed using a variance-covariance perspective [31].,,,0,not_related
+The fact that a method like SimSiam does not collapse is studied in [29].,,,0,not_related
+The fact that a method like SimSiam does not collapse is studied in Tian et al. (2021).,,,0,not_related
+"Even though they do not avoid collapse explicitly through their criteria, recent works such as Halvagal et al. (2022) or Theorem 3 from Tian et al. (2021) have shown links between the training dynamics of SimSiam and variance and covariance regularization, akin to what Lnc would lead to.",,,0,not_related
+The work [32] replaces the encoder in BYOL with a two-layer model and gives a theoretical analysis of why the two models (online and target) do not collapse.,,,0,not_related
+"This is often due to the lack of proper objective functions or architectures [6, 32].",,,0,not_related
+"However, they suffer from the lack of explainability [32].",,,0,not_related
+"1Note [32] provides an analysis of their learning dynamics with twolayer models, which accounts for the reason why the two models do not fail with trivial solutions.",,,0,not_related
+"Recently, some theoretical works have tried to understand how these new methods succeed in avoiding representational collapse [15, 27].",,,0,not_related
+"To prevent trivial solutions (Tian et al., 2021), a popular trick is to apply additional repulsive force between the embeddings of semantically dissimilar images, known as contrastive learning (Chopra et al.",,,0,not_related
+"To prevent trivial solutions (Tian et al., 2021), a popular trick is to apply additional repulsive force between the embeddings of semantically dissimilar images, known as contrastive learning (Chopra et al., 2005; Schroff et al., 2015; Sohn, 2016).",,,0,not_related
+"[28, 29] on SimCLR [8], [30] on the projector of contrastive models, [14] on BYOL [31] and SimSIAM [8].",,,0,not_related
+"Theory of SSL: Recently, substantial advances have been made towards demystifying SSL methods from the perspectives of learning theory (Arora et al., 2019), information theory (Tsai et al., 2021), causality (Kugelgen et al., 2021), and dynamical systems (Tian et al., 2021a).",,,0,not_related
+"Since centralized SSL techniques are known to be sensitive to heavy-tailed gradient distributions (Tian et al., 2021b) and require large batch-sizes (Chen et al., 2020), it is unlikely their direct extensions will function well in the high heterogeneity and resource constrained setting of…",,,0,not_related
+", at least 4 GPUs or 32 TPU cores) for learning better representations from images [10].",,,0,not_related
+"What type of negative sampling scheme to use is an essential question, and the role and necessity of negative sampling in contrastive methods is an open issue [274, 277].",,,0,not_related
+"2010) (also known as Contrastive Learning) has emerged as a highly effective approach for unsupervised representation learning using deep networks (Chen et al., 2020; Chen & Li, 2020; Tian et al., 2021; Grill et al., 2020).",,,0,not_related
+"Noise contrastive estimation (NCE) (Gutmann & Hyvärinen, 2010) (also known as Contrastive Learning) has emerged as a highly effective approach for unsupervised representation learning using deep networks (Chen et al., 2020; Chen & Li, 2020; Tian et al., 2021; Grill et al., 2020).",,,0,not_related
+"Finally, there has also been recent work exploring whether contrastive learning can be performed without the use of negative samples while avoiding the phenomenon of feature collapse (Tian et al., 2021; Grill et al., 2020).",,,0,not_related
+"In particular, this technique contrasts positive pairs against negative pairs and minimizes differences between positive pairs to avoid collapsing solutions [47], [50].",,,0,not_related
+Tian et al [43] performs several experiments and report that the predictor network at the end of the online network and stop-gradients for the target network are necessary to avoid the representation collapse.,,,0,not_related
+"However, the absence of the negative pairs in BYOL stirred a lot of commotion in the community and several works [39, 44, 43, 40] have tried to understand the phenomenon.",,,0,not_related
+"It has been shown [24, 29] that this training procedure is sufficient to avoid collapsed solutions such as constant representations, since the updates to the target network parameters ξ are not in general in the direction of ∇ξL BY OL θ,ξ , due to the stop grad operation in the target network.",,,0,not_related
+Instance discrimination compares pairs of images to identify which are most similar; it then moves those together while pushing dissimilar images apart [47].,,,0,not_related
+"This interpretation echos well with the finding that the eigenspace of hweight aligns well with that of correlation matrix (Tian et al., 2021).",,,0,not_related
+"Subsequent works based on data augmentation also showed promising results for methods based on non-contrastive learning (non-CL), which do not require explicit negative samples (Grill et al., 2020; Richemond et al., 2020; Chen & He, 2021; Zbontar et al., 2021; Tian et al., 2021).",,,0,not_related
+"Namely, Tian et al. (2021) adopts a linear network and calculates the optimization dynam-
+ics of non-contrastive learning, while Wen & Li (2021) analyzes the feature learning process of contrastive learning on a single-layer linear model with ReLU activation.",,,0,not_related
+"For an input x, the augmented views a1,a2 ∈ Rp×1 are generated as ∗:
+a1 := D1x; a2 := D2x (3)
+Network architecture We use a dual network architecture inline with prior work Arora et al. (2015); Tian et al. (2021); Wen & Li (2021).",,,1,related
+"To understand how non-contrastive learning works, existing works mostly focus on analyzing what elements help it avoid learning collapsed representations (Grill et al., 2020; Richemond et al., 2020; Chen & He, 2021; Zbontar et al., 2021; Tian et al., 2021; Wang et al., 2021).",,,0,not_related
+Our model architecture gets inspirations from Tian et al. (2021) and Wen & Li (2021).,,,1,related
+"For this proof, we borrow theoretical findings from the DirectPred literature [47].",,,1,related
+[47] theoretically analyzed on why the non-contrastive methods work well.,,,0,not_related
+"Self-supervised learning (SSL) is a framework for learning representations of data [6, 13, 19, 7, 5, 56, 47, 34, 27, 36].",,,0,not_related
+"In addition, the theoretical analysis and experimental study in Tian et al.51 has raised two additional suggestions for training non-contrastive SSL models like BYOL and SimSiam.",,,0,not_related
+", the extra learnable predictor and a stop-gradient operation.(51) ll OPEN ACCESS Review",,,1,related
+"In addition, the theoretical analysis and experimental study in Tian et al.(51) has raised two additional suggestions for training non-contrastive SSL models like BYOL and SimSiam.",,,0,not_related
+"Although promising performance has been achieved, we observed that the existing deep graph clustering algorithms [9], [14], [15] suffer from the representation collapse issue [16] and easily embed the nodes from different classes into the same embedding.",,,0,not_related
+Representation collapse is a common problem that the network tends to encode samples from different classes into the same representation in the field of the self-supervised learning [16].,,,0,not_related
+"The recent focus in research has gradually shifted to only minimizing the distance between the positive pairs without simultaneously maximizing the distance between negative pairs [8, 9, 10].",,,0,not_related
+The paper[10] also highlights the impact of a potential asymmetry with the larger number of negative keys than the number of positive keys skewing the learning.,,,0,not_related
+"MSI dataset is binned between the (m/z) range of [50, 1000] to 1024 bins.",,,1,related
+"We vary k in the interval of [50, 1000] with a sensible step.",,,1,related
+"In addition to framework design, theoretical analyses and empirical studies have also been proposed to better understand the behavior and properties of contrastive learning [1, 3, 6, 9, 24, 31, 35, 39, 39, 41, 44, 52].",,,0,not_related
+"To alleviate such constraint, non-contrastive approaches that do not use negative samples have been proposed [23, 5, 71, 63].",,,0,not_related
+"The theory behind is under investigation (Chen & He, 2021; Tian et al., 2021).",,,0,not_related
+"Moreover, Tian et al. (2021) analyzed these non-contrastive siamese frameworks from a theoretical view, justifying some key designs including the stop gradient and asymmetric predictor.",,,0,not_related
+to boost downstream performance on image [165] and video tasks [161].,,,0,not_related
+"In the branch without predictor the gradient is not backpropagated during training, which was found to be crucial in preventing collapse to trivial solutions [55].",,,0,not_related
+"The second line of research further simplify the contrastive assumption, which only imposes invariant constraints between paired positive samples [9, 15, 46, 47] in the absence of the negative samples.",,,0,not_related
+"This aligns with what has been shown in self-supervised learning [41, 42].",,,0,not_related
+"[42] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+"This paper mainly investigates this phenomenon of non-contrastive representation learning for deep clustering, and the theoretical analysis can be found in [14], [54].",,,0,not_related
+", in the settings of transfer learning [8, 10, 44, 45] and self-supervised learning [26, 34, 43].",,,0,not_related
+"2) Using siamese network [8] to avoid representation collapse [36, 20, 85].",,,0,not_related
+"This module is present in a number of contrastive self-supervised learning methods (Chen et al., 2020a; Grill et al., 2020; Zbontar et al., 2021; Tian et al., 2021).",,,0,not_related
+…the dynamics of learning without contrasting pairs is far from trivial and beyond the scope of this paper; we refer the reader to the recent work by Tian et al. (2021) that studies this learning paradigm in depth and discusses why trivial solutions are avoided when learning without negatives as in…,,,0,not_related
+"As also recently noted in Tian et al. (2021), a crucial part of learning with non-contrastive pairs is the projector.",,,0,not_related
+"To reduce the annotation cost for representation learning, self-supervised representation learning (SSL) methods including (Goyal et al., 2021; Tian et al., 2021a; Zbontar et al., 2021; Tian et al., 2020b;a; Chen et al., 2020a; He et al., 2020; Tian et al., 2020b; Chen et al., 2020b) and many more…",,,0,not_related
+"…point (FP) networks (Goyal et al., 2021; Tian et al., 2021a; Zbontar et al., 2021; Li et al., 2021a; Cai et al., 2021; Ericsson et al., 2021; Tian et al., 2021b; Ermolov et al., 2021; Tian et al., 2020b; Chen et al., 2020b; Grill et al., 2020; Caron et al., 2020; He et al., 2020) that…",,,0,not_related
+"Recent years have witnessed great successes in self-supervised learning (SSL) for floating point (FP) networks (Goyal et al., 2021; Tian et al., 2021a; Zbontar et al., 2021; Li et al., 2021a; Cai et al., 2021; Ericsson et al., 2021; Tian et al., 2021b; Ermolov et al., 2021; Tian et al., 2020b; Chen…",,,0,not_related
+"A.3 DISCUSSION ON COMPARISON TO SUPERVISED PRETRAINING
+Following the previous literature (Zbontar et al., 2021; Goyal et al., 2021; Tian et al., 2021a; Grill et al., 2020; Caron et al., 2020; He et al., 2020), we used the same amount of labeled and unlabeled data for supervised pretraining or BSSL.",,,1,related
+"Several works have also theoretically studied the success of self-supervised learning [Arora et al., 2019, HaoChen et al., 2021, Wei et al., 2021, Lee et al., 2020b, Tian et al., 2021, Tosh et al., 2020, 2021].",,,0,not_related
+"In this paper, we make a first attempt towards the second question, by studying a family of algorithms named DirectSet(α), in which the DirectPred algorithm proposed by Tian et al. (2021) is a special case with α = 1/2.",,,1,related
+"The numbers for DirectPred, DirectPred (freq=5) and SGD baseline on STL-10/CIFAR-10 are obtained from Tian et al. (2021).",,,1,related
+"Comparison with Tian et al. (2021) Tian et al. (2021) only explained why the representation in nc-SSL does not collapse to zero, but did not study what representation is learned and how the representation is related to the data distribution and augmentation process.",,,0,not_related
+"Tian et al. (2021) also analyzed nc-SSL on a linear network, but did not analyze their proposed approach DirectPred.",,,0,not_related
+"Our code is adapted from (Tian et al., 2021) 5, and we follow the same data augmentation process.",,,1,related
+"Note in the previous work (Tian et al., 2021), they assumed the covariance of the augmentation distribution to be σ2I and did not study what representation is learned.",,,1,related
+"While Tian et al. (2021) addressed the first question, i.e., why the learned representation does not collapse to zero, they did not address the second question, i.e., how the training dynamics in nc-SSL leads to a meaningful representation that depends on the data augmentations and reduces the…",,,0,not_related
+"Dynamics for λB: We can write down the dynamics for λB as follows:
+λ̇B = λB [ −(1 + σ2) |λB |4α + |λB |2α − η ] Similar as the analysis in (Tian et al., 2021), when η > 14(1+σ2) , we know λ̇B < 0 for any λB > 0 and λB = 0 is a critical point.",,,1,related
+"Motivated by the analysis, we also design a simpler and more efficient algorithm (DirectCopy), which achieves comparable or even better performances than the original DirectPred proposed by Tian et al. (2021).",,,1,related
+"Note in the previous work (Tian et al., 2021), they assumed the covariance of the augmentation distribution to be σ(2)I and did not study what representation is learned.",,,1,related
+"As one of the first work towards this direction, Tian et al. (2021) showed that while the global optimum of the non-contrastive loss is indeed a trivial one, following gradient direction in nc-SSL, one can find a local optimum that admits a nontrivial representation.",,,0,not_related
+Tian et al. (2021) proposed DirectPred that directly sets the predictor based on the correlation matrix of the predictor inputs.,,,0,not_related
+"Inspired by the analysis, we designed a simpler and more efficient algorithm DirectCopy, which achieved comparable or even better performance than the original DirectPred (Tian et al., 2021) on various datasets.",,,1,related
+"Similar as the analysis in Tian et al. (2021), when η > 1 4(1+σ2) , we know λ̇B < 0 for any λB > 0 and λB = 0 is a stable stationary point, as illustrated in Figure 4 (Left).",,,1,related
+"Thresholding role of weight decay in feature learning: While Tian et al. (2021) showed why nc-SSL does not collapse, one key question is how nc-SSL learns useful features and how the method determines which feature is learned.",,,0,not_related
+"Stop-gradient For the optimization on variational representation reconstruction, related work have found that adding the stop-gradient operator (SG) as a regularizer can make the training more stable without collapse both empirically [11, 28] and theoretically [73].",,,0,not_related
+"27 [73] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+"Moreover, Wen and Li (2021) considered the representation learning under the sparse coding model and studied the optimization properties on shallow ReLU neural networks, (Tian et al., 2021; Wang et al., 2021) investigated why self-supervised learning can learn features without contrastive pairs in a linear representation setting, and (Jing et al.",,,0,not_related
+"Recent theoretical works have also shed light on why the linear predictor and gradient block help prevent collapse (Tian et al., 2021).",,,0,not_related
+"The recent advances can be classified into two categories (Tian et al., 2021): contrastive SSL and non-contrastive SSL.",,,0,not_related
+"This operation has also been shown to be crucial in siamese, non-contrastive, self-supervised learning, both empirically [21, 12] and theoretically [36].",,,0,not_related
+"We next provide a variance-covariance perspective to the new objective, following similar lines of reasoning in [41, 42].",,,1,related
+"However, though BGRL could avoid collapse empirically, it still remains as an open problem concerning its theoretical guarantee for preventing trivial solutions [41].",,,0,not_related
+"It is an interesting question to understand the design decisions in these pipelines (Tian et al., 2021), but this is outside the scope of the present paper.",,,0,not_related
+"…started exploring this direction in both nonlinear CCA and AM-SSL (see, e.g., (Lyu & Fu, 2020; von Kügelgen et al., 2021; Zimmermann et al., 2021; Tian et al., 2021; Saunshi et al., 2019; Tosh et al., 2021)), but more insights and theoretical underpinnings remain to be discovered under more…",,,0,not_related
+", (Lyu & Fu, 2020; von Kügelgen et al., 2021; Zimmermann et al., 2021; Tian et al., 2021; Saunshi et al., 2019; Tosh et al., 2021)), but more insights and theoretical underpinnings remain to be discovered under more realistic and challenging settings.",,,0,not_related
+"Interestingly, recent work shows that a variant of simple one-way consistency evades trivial solutions even in the context of self-supervised representation learning [50,51].",,,0,not_related
+"[116] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+"Some non-contrastive approaches [36], [90], [91] maximize the similarity of different output versions of the image and avoid negative pairs.",,,0,not_related
+"[41] provide a theoretical analysis and some insights on how collapse is avoided by asymmetric methods, but the complete dynamics is far from being understood and these methods might not work in other self-supervised learning setups.",,,0,not_related
+"These properties have been leveraged to better understand the role of over-parameterization [29], implicit regularization [30], network pruning [31], continual learning [58], and self-supervised learning [32].",,,0,not_related
+"This formula unifies an array of conservation properties noticed under gradient flow [1, 29, 30, 31, 32] with a formal theoretical connection to Noether’s theorem.",,,0,not_related
+"Overall, just like how Noether’s theorem [28] unified an array of conservation laws and provided a theoretical foundation to discover new ones in physics, we have further unified conservation laws previously observed in learning systems [1, 29, 30, 31, 32] and generalized these results for any combination of differentiable symmetries in neural network architectures and learning rules (e.",,,0,not_related
+provide an analysis of how various factors involved in BYOL and SimSiam work together to prevent collapse [42].,,,0,not_related
+"Recently, several self-supervised learning methods have achieved the state-of-the-art performance on the large-scale natural image dataset ImageNet [37] without negative sample pairs [38].",,,0,not_related
+"Other works (Saunshi et al., 2019; Tosh et al., 2020; Tian et al., 2021) study the generalization error of contrastive learning based SSL, whose setting is different from our paper.",,,0,not_related
+"In contrast, our method avoids trivial solutions by construction, making our method conceptually simpler and more principled than these alternatives (until their principle is discovered, see (Tian et al., 2021) for an early attempt).",,,1,related
+"The theoretical analysis on self-supervised representation algorithms without negative samples [Tian et al., 2021] cannot be applied to the contrastive learning setting.",,,0,not_related
+"This non-collapsing behavior even without relying on negatives has been studied further (Tian et al., 2021).",,,0,not_related
+"Feature learning has been widely investigated from the theoretical perspective in other domains, such as supervised learning Allen-Zhu & Li (2020); Du et al. (2021); Tripuraneni et al. (2020), constrastive learning Tian et al. (2021) and RL Agarwal et al. (2020a).",,,0,not_related
+[215] showed why algorithms without negative examples such as SimSiam [65] and BYOL [63] work: the dynamics of the eigenspace alignment between the predictor and its input correlation matrix play a vital role in preventing complete collapse.,,,0,not_related
+"For example, many studies have been conducted on why BYOL and SimSiam [65] do not collapse [215].",,,0,not_related
+"Tian et al. (2021) study the dynamics of non-contrastive learning, but only focus on the predictor parameters.",,,0,not_related
+"However, directly adding the alignment part will cause degenerate solutions (Tian et al., 2021; Wang & Isola, 2020), which means all the images are encoded to the same and collapsed representation.",,,0,not_related
+"Besides, Moco and BYOL use momentum and stop-gradient mechanisms are adopted to prevent degenerate solutions (Tian et al., 2021; Wang & Isola, 2020).",,,0,not_related
+"Many researchers [47], [48], [49], [50], [51] have endeavored to comprehend and elucidate its characteristics, along with its impacts on downstream tasks.",,,0,not_related
+"We note some dimensional collapse is still observed for Barlow Twins projectors, as found for BYOL (Grill et al., 2020; Tian et al., 2021) & SimCLR (Chen et al.",,,1,related
+"The proof of Proposition 3.3 can be found in Appendix A, & is largely inspired from previous work (Saxe et al., 2013; Ji & Telgarsky, 2018; Tian et al., 2021; Jing et al., 2021).",,,1,related
+"We note some dimensional collapse is still observed for Barlow Twins projectors, as found for BYOL (Grill et al., 2020; Tian et al., 2021) & SimCLR (Chen et al., 2020a; Jing et al., 2021), as the encoder dimension is 512 with projector width of 1024.",,,1,related
+"We point out that although we provide empirical evidence from practical settings to corroborate our theoretical results, our theory has some non-standard assumptions to ease analytical exposition, such as linear projector MLPs, much like related theoretical work in SSL (Tian et al., 2021; Wang et al., 2021; Jing et al., 2021).",,,1,related
+"Existing theoretical analyses into feature collapse & its mechanisms in SSL have focused on explaining why it does not occur in non-contrastive SSL (Tian et al., 2021; Zhang et al., 2022) or how a related notion of dimensional collapse (Hua et al., 2021), where features span a low-dimension…",,,0,not_related
+"Existing theoretical analyses into feature collapse & its mechanisms in SSL have focused on explaining why it does not occur in non-contrastive SSL (Tian et al., 2021; Zhang et al., 2022) or how a related notion of dimensional collapse (Hua et al.",,,0,not_related
+"3 can be found in Appendix A, & is largely inspired from previous work (Saxe et al., 2013; Ji & Telgarsky, 2018; Tian et al., 2021; Jing et al., 2021).",,,1,related
+"…provide empirical evidence from practical settings to corroborate our theoretical results, our theory has some non-standard assumptions to ease analytical exposition, such as linear projector MLPs, much like related theoretical work in SSL (Tian et al., 2021; Wang et al., 2021; Jing et al., 2021).",,,1,related
+"Moreover, Wei et al. (2020) and Tian et al. (2021) studied the theoretical properties of self-training and the contrastive learning without the negative pairs respectively.",,,0,not_related
+[41] conducted a theoretical analysis on why the non-contrastive methods work well.,,,0,not_related
+"We further note that the InfoMax interpretation of these objectives may not be consistent with its behavior in practice [45] and many recent studies provide theoretical understanding behind their success [46, 47].",,,0,not_related
+"Several different perspectives have recently been used to successfully analyze SSL’s behavior, including learning theory [15, 14, 34], causality [18, 17], information theory [27], and dynamical systems [35].",,,0,not_related
+"[35] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+"Several different perspectives have recently been used to successfully analyze SSL’s behavior, including learning theory [14, 15, 35], causality [17, 18], information theory [27], and dynamical systems [36].",,,0,not_related
+[254] studied the nonlinear learning dynamics of uncollated SSL in a simple linear network where SSL with only positive pairs avoids expression decay.,,,0,not_related
+"Following [44], we assume that ∂qMi ∂z is positive definite.",,,1,related
+"In practice, however, SSL training often experiences the failure mode of dimensional collapse (Jing et al., 2021; Tian et al., 2021; Pokle et al., 2022), where the learned representation spans a low dimensional subspace of the overall available space.",,,0,not_related
+"In contrast, we interpret the information loss in the context of identifiability for CL [22], learning dynamics [1, 17, 11, 18], and the content-style partitioning of latent factors [19].",,,1,related
+"1, 2 [18] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+"Currently, most works focus on linear variants of deep models [19; 2; 22; 21; 32; 33].",,,0,not_related
+"[32] Yuandong Tian, Xinlei Chen, and Surya Ganguli.",,,0,not_related
+The terms in Equation 1 can be decomposed using a variance-covariance perspective [23].,,,0,not_related
+"Note that optimizingLview(Θ) alone without stopping gradient results in a degenerated solution (Chen & He, 2021; Tian et al., 2021).",,,1,related

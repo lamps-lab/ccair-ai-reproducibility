@@ -1,0 +1,14 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Here, we compare our model with four of the latest weakly supervised models (IRNet [28], Puzzle-CAM [29], SEAM [30], and BABA [31]) for this purpose on the Corsican dataset and the Flame dataset.",1,related,1,positive
+"Instead of using fixed sources of regional information such as the off-the-shelf saliency module [47] or pre-trained classifier [36], we obtain region masks from the CAMs of SupportNet.",1,related,0,negative
+The achievements of our method and BANA suggest that bounding box annotation is promising for extracting building from RS images.,1,related,1,positive
+The pseudo-mask results from BANA and our model outperform AdvCAM and ACGC by a large margin in terms of all the metrics.,1,related,1,positive
+"Furthermore, a WSSS method using bounding box annotations is considered for comparison, called background-aware pooling and noiseaware loss (BANA) [57].",1,related,1,positive
+"Motivated by BAP [57], based on multiscale features obtained in the last section, an MFR module to discriminate buildings and nonbuildings inside the bounding boxes is designed in this article.",1,related,1,positive
+"After obtaining BAM, building features are extracted via BAP, a weighted average formulation function
+bi =
+∑ p∈box j (1 − BAMl(p)) fl(p)∑
+p∈box j (1 − BAMl(p)) , 1 ≤ j ≤ t. (4)
+With BAM, the background noise inside box j is expected to be suppressed, so the obtained building features indicate building regions better.",1,related,1,positive
+"Furthermore, compared with BANA that uses the same bounding box annotation, MFR-PGC-Net yields an improvement of 0.0163 in BP IoU and 0.0107 in BP F1-score on the WHU aerial building dataset; 0.0641 in BP IoU and 0.0416 in BP F1-score on the CrowdAI dataset; and 0.0136 in BP IoU and 0.0091 in BP F1-score on the self-annotated dataset.",1,related,0,negative
+The following paper is a reproducibility report for Background-Aware Pooling and Noise-Aware Loss for Weakly2 Supervised Semantic Segmentation [12] published in CVPR 2021 as part of the ML Reproducibility Challenge 2021.,1,related,1,positive

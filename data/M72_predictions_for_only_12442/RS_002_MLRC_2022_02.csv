@@ -1,0 +1,100 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"We further perform a user study [1, 2, 4, 35, 45, 50, 54] to investigate user preference over different stylization results.",1,related,0,negative
+"Specifically, we
+re-implement the TENT [34], BIN [19], DSU [20], Frequency Amplitude Normalization (AmpNorm) [36,37], SAN [35] and EFDMix [40].",1,related,1,positive
+"Following the methodology described in [5], we employ the OSNet architecture as the backbone for our experiments.",1,related,1,positive
+"We compare our method with several SOTA methods, including feature-level perturbation methods such as [5, 44, 45, 46, 47, 48], as well as image-level perturbation methods like [2, 8, 13, 26, 25, 49, 50, 51].",1,related,1,positive
+"ERM 71.8 76.1 44.6 36.0 57.1 MixStyle [44] 73.2 74.8 46.0 40.6 58.6 EFDMix [5] 75.3 77.4 48.0 44.2 61.2 ASA [52] 77.3 78.8 50.3 61.8 67.0 Pro-RandConv [53] - - - - 73.3 CPerb (ours) 85.1 86.1 66.6 72.6 77.6
+observations can be made from this figure.",1,related,1,positive
+"In the texture transformation comparison, 76.9% of users prefer the results of SAdaIN over AdaIN, 71.2% prefer the results of SLST results over LST, and 64.1% prefer the results of SEFDM results over EFDM.",1,related,1,positive
+"We extend this approach to various methods such as AdaIN [13], linear style transfer (LST) [21] and EFDM [44].",1,related,1,positive
+"Similarly, semantic EFDM (SEFDM) is defined as SE (VS , VT , Useg) = ∑5 i=1 SE i ( V iS , V i T , U i seg ) :
+SLi =
+{ EHM ( V iS , V i T ) U iseg, if i 6= 5,
+V 5S , if i = 5, (7)
+To increase the diversity of the texture, we also design a switch gate (SG) to stochastically exchange the part source feature V iS and the part target feature V i T in both the Eqs.",1,related,1,positive
+"Decoder is identical to the decoder of AdaIN [13] , LST [21] and EFDM [44] for our SAdaIN, SLST and SEFDM, respectively.",1,related,1,positive
+"To show the transfer capacity of our method for 3D bird creation, we compare with four shape deformation methods (i.e., NC [37], DSN [34], KPD [17] and NT [15]) and three texture style transformation methods (i.e., AdaIN [13], LST [21] and EFDM [44]).",1,related,1,positive
+"We extend AdaIN [13], LST [21], and EFDM [44] into SAdaIN, SLST, and SEFDM respectively on the UV maps for the texture transfer.",1,related,1,positive
+"Third, we introduce a semantic UV texture transfer that exploits switched gates to respectively control whether the part textural transfer or not using AdaIN [13], LST [21] and EFDM [44].",1,related,1,positive
+"• We present a semantic UV transfer method to utilize switched gates to respectively control whether the part textural transfer or not by using AdaIN [13], LST [21], and EFDM [44], and employing semantic UV segmentation for the texture style transfer.",1,related,1,positive
+"In this paper, we propose a novel method for data augmentation in domain generalization, which differs from existing methods that perform augmentation at the image or feature level [9], [7], [12] to directly enrich image style information.",1,related,1,positive
+"We compare our NormAUG method with several augmentation-based methods, including EFDMix [12], FACT [9], RSC [13], and STNP [16].",1,related,1,positive
+"In this study, we alleviate domain discrepancy by first introducing unsupervised stain augmentation using our proposed RestainNet [14] to introduce domain specific samples in an unsuperivsed learning manner and then applying EFDMix [15] to enhance the cross-domain feature representation.",1,related,1,positive
+"…feature clustering ResNet38 (ImageNet Pretrained) Imbalanced Training Samples RestainNet (Zhao et al., 2022)
+Shared Weights
+Domain 1 Domain 2 Domain � Unsupervised Stain Augmentation (UnSA)
+Input Image
+ResNet38 with EFDMix
+(Zhang et al., 2022)
+Training Samples (1st Sampler)
+Parent
+Children
+1.",1,related,1,positive
+"To tolerance the color variance across different institutions, we propose stain enhancement (SE) to augment the domain-relevant data by our previously proposed RestainNet [14] and enhance the cross-domain feature representation by EFDMix [15].",1,related,1,positive
+"Inspired by a style transfer method that augments cross-style features by mixing feature distributions, we apply an EFDMix [15] method to augment the feature representation of different stain styles.",1,related,1,positive
+"Based on EFDM, the authors of (Zhang et al., 2022) also propose EFDMix, which replaces the concept of AdaIN in MixStyle with EFDM, in a channel-wise manner as follows: EFDMix(x)τi = λxτi + (1− λ)yκi .",1,related,1,positive
+"As in the setup of (Zhang et al., 2022), we adopt Market1501 (Zheng et al., 2015) and GRID (Loy et al., 2009) datasets, and train the model in one dataset and test on the other one.",1,related,1,positive
+"Our work is built upon the official setup of EFDMix (Zhang et al., 2022).",1,related,0,negative
+"This parameter also appears in MixStyle (Zhou et al., 2021) and EFDMix (Zhang et al., 2022), and we set τ = 0.1 for all experiments as in these prior works.",1,related,1,positive
+"The term f(s)− ⟨f(s)⟩ is introduced to facilitate backpropagation of sample s as in (Zhang et al., 2022).",1,related,1,positive
+"Following the setups in (Zhou et al., 2021; Li et al., 2022; Zhang et al., 2022), we adopt ResNet-18 pre-trained on ImageNet as a backbone, where the results with ResNet50 are reported in Appendix.",1,related,1,positive
+"As in the setup of (Zhang et al., 2022), we adopt Market1501 (Zheng et al.",1,related,1,positive
+", 2021) and EFDMix (Zhang et al., 2022), and we set τ = 0.",1,related,1,positive
+"First, we consider the state-of-the-art style augmentation schemes, MixStyle (Zhou et al., 2021), DSU (Li et al., 2022), EFDMix (Zhang et al., 2022), that also work in the style space as ours.",1,related,1,positive
+"In this section, we provide a qualitative comparison of our proposed method with the three selected baseline methods: EFDM (Example-based Feature-driven Diffusion Model), CMD (In the light of feature distributions), and DSTN (Domain-Aware Universal Style Transfer).",1,related,1,positive
+"Compared to EFDM, our method better preserves the content components of the content image, ensuring that the fine-grained details and structural information are maintained throughout the style transfer process.",1,related,1,positive
+(a) Content (b) Style (c) DEPM (Ours) (d) CMD [13] (e) EFDM [30] (f) DSTN [8],1,related,1,positive
+"We used the same segmentation network and loss function to compare our TriD with seven DG methods, including (1) DCAC: dynamic structure [7], (2) SAN-SAW: based on normalization and whitening [16], (3) RandConv: input-space domain randomization [21], (4-6) MixStyle, EFDM, DSU: feature-space domain randomization [25,22,9] and (7) MaxStyle: adversarial noise [3].",1,related,1,positive
+"For example, compared with recent methods such as EFDMix [43] and XDED [19], using PBN can increase their performance by +2.9% (57.3 vs. 54.4) and +2.3% (68.8 vs. 66.5), respectively, demonstrating the effectiveness of our proposed PBN.",1,related,1,positive
+We employ OSNet [46] as the backbone and follow the experiment protocol of [43].,1,related,1,positive
+"For example, when integrating our PBN into EFDMix [43], it can still increase +2.",1,related,1,positive
+"Implementation Details: For the PACS dataset, we follow the same setting as in [19, 43], where we use ResNet-18 as the backbone.",1,related,1,positive
+"We compare our method with several state-of-the-art (SOTA) methods, including RSC [15], ADA [34], MEADA [44], EFDMix [43] and XDED [19], and integrate our PBN into these methods by replacing BN of the backbone.",1,related,1,positive
+"For example, when integrating our PBN into EFDMix [43], it can still increase +2.8% (64.0 vs. 61.2).",1,related,1,positive
+"The results indicate that improvement of the proposed AGFA over the existing DG methods is even more pronounced: averaged accuracies higher than the best prior method EFDMIX (Zhang et al., 2022) by about 10% for ResNet-18 and by about 7% for ResNet-50.",1,related,0,negative
+"Our method adopts the data augmentation strategy, more specifically, feature-based augmentation (Nuriel, Benaim, and Wolf 2021; Zhou et al. 2021c; Li et al. 2022; Zhang et al. 2022).",1,related,1,positive
+"We closely follow (Zhou et al. 2021c; Zhang et al. 2022) to perform the cross-domain instance retrieval task on person re-identification (re-ID) datasets of Market1501 (Zheng et al. 2015) and Duke (Ristani et al. 2016; Zheng, Zheng, and Yang 2017).",1,related,1,positive
+"More importantly, our AdvStyle significantly outperforms other style augmentation competitors (Zhou et al. 2021c; Li et al. 2022; Zhang et al. 2022), validating the effectiveness of expanding the style space via adversarial training.",1,related,0,negative
+"Different from most data augmentation methods that introduce augmented samples in the image space (Zhang et al. 2020; Luo et al. 2020), we generate augmented samples in the feature space, which is more computationally efficient.",1,related,1,positive
+"Particularly, we perform existing style augmentation-based DG methods (Nuriel, Benaim, and Wolf 2021; Zhou et al. 2021c; Li et al. 2022; Zhang et al. 2022) under the same setting for fair comparison.",1,related,1,positive
+"Our method also outperforms the recent work (Zhang et al. 2022) that explores broader style spaces by utilizing high-order batch statistics, revealing the advantage of exploring style spaces beyond batch statistics.",1,related,1,positive
+"For Single DG [L2D (Wang et al., 2021d), PDEN (Li et al., 2021)] and Multiple DG [PCL (Yao et al., 2022), EFDM (Zhang et al., 2022)], we use SHOT (Liang et al., 2020) to assign pseudo labels for the optimization on target domains.",1,related,1,positive
+"In EFDM, we use samples from current domain as the content images and randomly select images in the replay memory as the style images.",1,related,1,positive
+"According to the composition of the given source domain, DG can be divided into two types, Single Source (Wang et al., 2021d; Li et al., 2021) and Multi-Source (Yao et al., 2022; Zhang et al., 2022).",1,related,1,positive
+EFDM [22] implicitly performs the exact histogram matching on features to achieve style transfer.,1,related,1,positive
+Input Reference Ours (α = 0) Ours (α = 1) AdaIN [5] WCT [8] LinearWCT [7] ArtFlow [1] EFDM [16] StyleSwap [2] Avatar-Net [13] SANet [11] AdaAttN [10] StyTR2 [3] Figure A.,1,related,1,positive
+Input Reference Ours (α = 0) Ours (α = 1) AdaIN [5] WCT [8] LinearWCT [7] ArtFlow [1] EFDM [16] StyleSwap [2] Avatar-Net [13] SANet [11] AdaAttN [10] StyTR2 [3] Figure E.,1,related,1,positive
+Input Reference Ours (α = 0) Ours (α = 1) AdaIN [5] WCT [8] LinearWCT [7] ArtFlow [1] EFDM [16] StyleSwap [2] Avatar-Net [13] SANet [11] AdaAttN [10] StyTR2 [3] Figure B.,1,related,1,positive
+Input Reference Ours (α = 0) Ours (α = 1) AdaIN [5] WCT [8] LinearWCT [7] ArtFlow [1] EFDM [16] StyleSwap [2] Avatar-Net [13] SANet [11] AdaAttN [10] StyTR2 [3],1,related,1,positive
+"As shown in Table 1, the LCT module outperformed the method without jump connection and the EFDM method with a higher SSIM score, which proved the effectiveness of the LCT module.",1,related,1,positive
+"Table 1: Quantitative comparison between LCT and other methods
+LCT EFDM Without skip
+0.612 0.255 0.578
+Figure 3: The effectiveness of GLFA
+Figure 4: The effectiveness of LCT
+As shown in Figure 3, without the constraint of WCE, the local information of the style image cannot match the local information of the content image well.",1,related,1,positive
+"̃? with 𝑆𝐷𝑤 using recently proposed work by Zhang [37] to get𝑇 (𝑒 𝑓 𝑑𝑚)
+𝐷𝑤 (?",1,related,1,positive
+higher order moments of ?̃? with SDw using recently proposed work by Zhang [37] to getT (e f dm) Dw (?̃?).,1,related,1,positive
+"Among data augmentation methods, our method is related to MixStyle [71] and EFDMix [65] due to the use of style transfer (i.e., the AdaIN algorithm [15]) to create novel data samples.",1,related,1,positive
+"Among data augmentation methods, our method is related to MixStyle [71] and EFDMix [65] due to the use of style transfer (i.",1,related,1,positive
+"While all the existing methods improve upon the standard training procedure (ERM) on PACS, only EFDM, spectral decoupling [28], and our method yield better results on Office-Home.",1,related,0,negative
+"If the methods did not have quantitative hyper-parameters, such as EFDM [43] with the
+choice of mixing-layers depths, we used the ones proposed for the PACS experiments.",1,related,1,positive
+"If the methods did not have quantitative hyper-parameters, such as EFDM [43] with the choice of mixing-layers depths, we used the ones proposed for the PACS experiments.",1,related,1,positive
+"Used alongside test-time batch normalization, our method reaches a performance similar to that of EFDM [43] on the PACS datasets, but exceeds it on the Office-Home datasets.",1,related,1,positive
+"We compare our approach with the standard training procedure (expected risk minimization, ERM), with several methods designed for single-source domain generalization [38, 43, 27, 36, 44, 31], with a method designed to reduce the shortcut learning phenomenon in deep networks [28] and a multi-source domain generalization algorithm that does not explicitly require several training domains [17].",1,related,1,positive
+"See the results of RSC [18], MixStyle [59] and EFDMix [51] in Figure 1a.",1,related,1,positive
+"We choose top-performing DG methods that do not need domain labels to compare: ERM, RSC [18], MixStyle [59], and EFDMix [51].",1,related,1,positive
+"In domain generalization, EFDMix [11] applies the EHM method to gain an exact match of the eCDF by performing ranked matching in the image feature space.",1,related,1,positive
+"(2) We adopt the EFDMix (Exact Feature Distribution Mixing) method [11] to generate two different enhancements by implicitly using higher order statistics to produce more diverse feature enhancements, which is the first application of EFDMix to vehicle re-identification so far.",1,related,1,positive
+"We show the overall framework of the proposed network in section A; in section B we introduce the IBN-Net; in section C we describe the EFDMix method [11]; finally, in section D we describe the SE and CA attention mechanisms; and in section F we introduce the loss function used.",1,related,1,positive
+"EFDM(x, y) ∶ oτi = xτi + yki − 〈xτi〉 (4) where〈xτi〉represents the stop-gradient operation [11].",1,related,1,positive
+"Used alongside test-time batch normalization, our method reaches a performance similar to that of EFDM [44] on the PACS datasets but exceeds it on the Ofﬁce-Home datasets.",1,related,1,positive
+"Used alongside test-time batch normalization, our method reaches a performance similar to that of EFDM [44] on the PACS datasets but exceeds it on the Office-Home datasets.",1,related,1,positive
+"We compare our approach with the standard training procedure (expected risk minimization, abbreviated ERM), with several methods designed for single-source domain generalization [38, 44, 28, 36, 45, 32], with Spectral Decoupling [29], a method designed to reduce the shortcutlearning phenomenon in deep networks, and with RSC [18], and InfoDrop [32], that are domain generalization algorithms which do not explicitly require several training domains.",1,related,1,positive
+"While all the existing methods improve upon the standard training procedure (ERM) on PACS, only EFDM, spectral decoupling [29], and our method yield better results on Ofﬁce-Home.",1,related,0,negative
+"Note that, the purpose of data augmentation techniques, MixStyle [25], pAdaIN [24] and EFDMix [27], are to diversify the source domain as aforementioned.",1,related,1,positive
+"Among data augmentation methods, our method is related to MixStyle [65] and EFDMix [59] due to the use of style transfer [13] to create novel data samples.",1,related,1,positive
+"In addition, both MixStyle and EFDMix rely on statistical prediction, which we believe, to be sensitive to domain shift [1, 28].",1,related,1,positive

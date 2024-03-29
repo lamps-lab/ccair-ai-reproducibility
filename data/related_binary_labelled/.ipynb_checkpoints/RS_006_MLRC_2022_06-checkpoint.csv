@@ -1,0 +1,330 @@
+text,label_score,label,target_predict,target_predict_label
+"We find the optimal θ to be around [1, 20], depending on the specific attributes of interests.",,,1,related
+"Our work differ in the way that we include a contrastive loss that measures the similarity between the input embeddings and extractor embeddings, which allows the style extractor to capture more precise text style representations[1, 22].",,,1,related
+"the anchor example) by contrasting its positive and negative pairs5, which allows models to improve their capabilities on multiple dimensions, such as scalability [6], generalization ability [58], global and hierarchical local features learning [11] and performance on downstream tasks [10, 61].",,,0,not_related
+"In [25], it was shown that differences between contrastive losses are small with a deep projection head.",,,0,not_related
+"to be discarded for a better generalization [8, 22, 23, 24, 25].",,,0,not_related
+"The RandBit dataset of [25] is also similar, but their goal is to study explicit and controllable competing features.",,,0,not_related
+"needs to be discarded for a better generalization [8, 22, 23, 24, 25].",,,0,not_related
+"As the primary loss function, we use the normalized temperature-scaled cross-entropy loss (NT-Xent loss) function [27] because minimizing it also guarantees maximizing a lower bound on the mutual information between the input and the representation [41].",,,1,related
+Existing contrastive learning methods critically rely on specific data augmentation to favor certain sets of features over others [41].,,,0,not_related
+"Furthermore, the work by [27] investigated several intriguing properties of contrastive learning.",,,0,not_related
+"This is achieved through the use of contrastive loss functions, either in unsupervised contrastive learning where labels are absent [6,7,12,25,30,40], or in supervised contrastive learning where labels are available [8,22,32, 39].",,,0,not_related
+Feature Suppression in Unsupervised CL. Feature suppression has been empirically observed by Tian et al. (2020); Chen et al. (2021); Robinson et al. (2021) but we lack a theoretical formulation of this phenomenon.,,,0,not_related
+"Effect of embedding size on feature suppression in MNIST RandBit(Chen et al., 2021).",,,1,related
+"Empirically, feature suppression can be observed due to a variety of reasons (Li et al., 2020; Chen et al., 2021; Robinson et al., 2021).",,,0,not_related
+"To provide empirical evidence for this, we conduct two sets of experiments:
+First, we train 5-layer convolutional networks on the RandomBit dataset with the same setup as in (Chen et al., 2021), but we vary the embedding size (see details in Appendix H).",,,1,related
+"First, we train 5-layer convolutional networks on the RandomBit dataset with the same setup as in (Chen et al., 2021), but we vary the embedding size (see details in Appendix H).",,,1,related
+"Second, we train ResNet18 (He et al., 2016) on the CIFAR-10/100 RandBit Dataset, constructed similarly to the MNIST RandBit dataset but with images from CIFAR10/100 (Krizhevsky et al., 2009) (see Appendix H.1).",,,1,related
+"We empirically examine the impact of the joint loss on MNIST RandBit, CIFAR-100, and CIFAR-100 RandBit.",,,1,related
+"Similarly, unsupervised CL can be afflicted with feature suppression (Chen et al., 2021; Robinson et al., 2021) where easy but class-irrelevant features suppress the learning of harder class-relevant ones; deteriorating the generalizability of the obtained representations.",,,0,not_related
+"Additionally, contrastive methods can perform poorly when the task of interest is not determined by the dominant features of an image [Chen et al., 2021].",,,0,not_related
+"If the task of interest is not determined by the dominant features of an image, or is obscured by the transformations used to train the model, the self-supervised model may perform poorly at clustering the data into relevant groups [Chen et al., 2021].",,,0,not_related
+"…in the machine learning field has shown that the learned Spiro-CLF feature space may encode other latent representations of the underlying data (Chen et al., 2021) and has been used for clustering (Li et al., 2021; Caron et al., 2020) as well as combined with generative models (Kim et al.,…",,,0,not_related
+"Existing literature in the machine learning field has shown that the learned Spiro-CLF feature space may encode other latent representations of the underlying data (Chen et al., 2021) and has been used for clustering (Li et al.",,,0,not_related
+"It is shown by Tu et al. (2019) that if F0 is a function space of feedforward (deep) neural networks, where each neural networks have weight matrices whose norms are bounded by some universal constant, and Lipschitz activation functions that vanish at the origin, then D(F0, ‖ · ‖∞) < +∞ holds.",,,0,not_related
+"In this proof, we follow the proof idea of Tu et al. (2019) (see Lemma 5 in Tu et al. (2019)). Since our setup is different from Tu et al. (2019), we need to modify the proof and add several new techniques.",,,1,related
+"In this proof, we follow the proof idea of Tu et al. (2019) (see Lemma 5 in Tu et al.",,,1,related
+"In this proof, we follow the proof idea of Tu et al. (2019) (see Lemma 5 in Tu et al. (2019)).",,,1,related
+"…information theory (Tsai et al., 2020; 2021; Tosh et al., 2021a;b), loss landscapes and training dynamics (Tian et al., 2020; Wang & Isola, 2020; Chen et al., 2021; Tian et al., 2021; Jing et al., 2021; Wen & Li, 2021; Pokle et al., 2022; Ziyin et al., 2022; Assran et al., 2022a), and kernel…",,,0,not_related
+", 2021a;b), loss landscapes and training dynamics (Tian et al., 2020; Wang & Isola, 2020; Chen et al., 2021; Tian et al., 2021; Jing et al., 2021; Wen & Li, 2021; Pokle et al., 2022; Ziyin et al., 2022; Assran et al., 2022a), and kernel and spectral methods (Kiani et al.",,,0,not_related
+"Several theoretical studies show that contrastive loss optimizes data representations by aligning the same image’s two views (positive pairs) while pushing different images (negative pairs) away on the hypersphere [4, 15, 66, 68].",,,0,not_related
+"While classical approaches include colorization [38], inpainting [28] and solving jigsaw puzzles [25], recent SoTA approaches have focused on contrastive learning [7,8,11], which aims at pulling similar data points (positive samples) closer together, along with pushing apart dissimilar points (negative samples) in the embedding space.",,,0,not_related
+"It is well-known [7, 8] that contrastive approaches work better with higher batch sizes (or greater amount of data [11]), due to the availability of more negative samples.",,,0,not_related
+"Contrastive: We treat contrastive SSL as a baseline and employ the SoTA SimCLR [7] algorithm, which uses the InfoNCE [8, 15, 26] contrastive loss to push embeddings of different views of the same image closer and pull apart those of different images.",,,1,related
+"This may be attributed to the severe decrease in the local client data (as the datasets are even smaller; ≈ 10x smaller than the Organ datasets) which hurts the learning ability of self-supervision models in general [8, 9].",,,0,not_related
+"Contrastive learning methods like SimCLR are heavily dependent on the number of negative samples available, and thus perform better under higher batch sizes [7, 8], while non-contrastive methods, not having such a dependency, are not affected as much.",,,0,not_related
+"SSL techniques, on the other hand, can learn very robust features without the need for labels, making them immune to such problems [1, 10].",,,0,not_related
+"For CL, higher batch size ensures increase in negative samples [10, 4], while in NCL methods, feature normalization is done along the batch dimension [3].",,,0,not_related
+"CL methods are expected to show improvement with increase in batch size [1, 10] due to the rise in negative samples.",,,0,not_related
+"We attribute this to the fact that NCL learning algorithms can work effectively with fewer number of data samples, since there is no explicit need for a higher number of samples, as in the case of CL methods [1, 10].",,,1,related
+We note that this loss is similar to the generalized InfoNCE loss proposed by Chen et al. (2021).,,,1,related
+"The work in Chen et al. (2021) generalizes the InfoNCE loss to a larger family of losses with alignment
+and uniformity terms weighted according to a hyperparameter.",,,0,not_related
+"This is consistent with the observations uncovered by the recent empirical findings [19, 92].",,,0,not_related
+"Several theoretical studies show that self-supervised contrastive loss optimizes data representations by aligning the same image’s two views (positive pairs) while pushing different images (negative pairs) away on the hypersphere [2, 15, 81, 82].",,,0,not_related
+"Several recent works have demonstrated SB on a variety of semi-real constructed datasets (Geirhos et al., 2018; Shah et al., 2020; Chen et al., 2021), and have hypothesized SB to be the key reason for NN’s brittleness to distribution shifts (Shah et al.",,,0,not_related
+"Existing works like (Geirhos et al., 2018; Shah et al., 2020; Chen et al., 2021) avoid this challenge of vague feature defini-",,,0,not_related
+"Existing works like (Geirhos et al., 2018; Shah et al., 2020; Chen et al., 2021) avoid this challenge of vague feature defini-
+2Image source: Wikipedia (swa), (bea).
+ar X
+iv :2
+30 2.",,,0,not_related
+"Several recent works have demonstrated SB on a variety of semi-real constructed datasets (Geirhos et al., 2018; Shah et al., 2020; Chen et al., 2021), and have hypothesized SB to be the key reason for NN’s brittleness to distribution shifts (Shah et al., 2020).",,,0,not_related
+"Abstract Recent works (Shah et al., 2020; Chen et al., 2021) have demonstrated that neural networks exhibit extreme simplicity bias (SB).",,,0,not_related
+"There are some efforts to theoretically understand the SSL methods [30, 14], the role of data augmentation [28, 26], and some empirical analyses of the contrastive loss [4] and the predictor in the so-called BYOL framework [25].",,,0,not_related
+"Furthermore, even with prior knowledge of downstream tasks designing data augmentations to cover the whole style space without affecting the content information is unrealistic [4].",,,0,not_related
+"Contrastive learning implicitly learns relations among instances by optimizing alignment and matching a prior distribution (Wang and Isola, 2020; Chen and Li, 2020).",,,0,not_related
+"Followup work (Chen et al., 2021) explores this phenomenon in more detail, characterizing how different hyperparameters and dataset features affect feature suppression.",,,0,not_related
+"Another distinction is that autoencoders encourage information preservation in latent representations, whilst contrastive learning could suppress features (Chen et al., 2021a; Robinson et al., 2021b).",,,0,not_related
+"Works such as DINO (Caron et al., 2021) and MoCo-v3 (Chen et al., 2021b) demonstrated that techniques developed with ConvNet backbones in mind could also perform competitively using ViTs after proper tuning to suit the new architecture.",,,0,not_related
+"Finetuning CAN achieves 83.6% with ViT-B, outperforming other contrastive approaches such as MoCo-v3 (83.0%), and is competitive with other state-of-theart approaches such as CAE (83.9%).",,,0,not_related
+"CAN is only outperformed by MoCo-v3 and DINO, both of which use momentum encoders and two full image views, and in the case of DINO a further 10 multi-crop views.",,,0,not_related
+"CAN on ViT-L outperforms MoCLR with R200×2 backbone (similar parameter counts), where we note that MoCLR performs as well or better than BYOL and MoCo-v3 on IN-1K (Tian et al., 2021).",,,1,related
+"Furthermore, several works [11, 7] indicate that contrastive loss tends to learn more global and coarse-grained features.",,,0,not_related
+"Blocked masking also better synergizes with the contrastive objective, which is biased to learn global features [7, 11].",,,0,not_related
+"Therefore, we identify two main drawbacks of Masked Siamese ConvNets: (I) Regular erase-based masking operation disrupts the global features that are important for the contrastive objective [7, 11].",,,1,related
+"Other related works [6, 33] generalize the instancewise contrastive loss to the alignment of representations from positive pairs and uniformity of the induced distribution of the normalized embeddings on the hyper-sphere.",,,0,not_related
+80 SWD [6] ResNet-50+MLP 28 2048 800 70.,,,0,not_related
+"Currently, a large body of works on self-supervised learning focus on discriminative approaches [1], [2], [3], [4], [5], [21], [22], [23], [24], [25], [26], [27], [28], [29], [30], which regard each image as a different class and trains the model by discriminating them up to data augmentations.",,,0,not_related
+"Following this observation, other works (Chen et al., 2021) have sought to reformulate contrastive losses to scatter representations either (a) uniformly on the unit hypercube, or (b) onto Gaussian distributions (which have the highest entropy amongst all distributions with a given variance).",,,0,not_related
+"Moreover, recent works on self-supervised learning have reported that self-supervised learning may still suffer from poor OOD generalization (Geirhos et al., 2020; Chen et al., 2021; Robinson et al., 2021; Tsai et al., 2021) when such dataset bias still remains after applying data augmentations.",,,0,not_related
+Figure 4b shows that the rank regularization exacerbates the “feature suppression” phenomenon revealed by Chen et al. (2021).,,,0,not_related
+"The standard choice of optimization function for contrastive ICR methods is the triplet loss with in-batch hard negative mining [9, 13, 16, 18, 20, 21, 28] or the cross-entropy based NT-Xent loss [10, 19].",,,0,not_related
+"From the results, we can reach to three observations: (1) The GCL-based methods generally yield higher performances than classical unsupervised learning methods, indicating the effectiveness of utilizing instance-level supervision; (2) RGCL, AD-GCL, and GASSL achieve better performances than GraphCL, which empirically proves the conclusion that InfoMax object could bring overwhelmed redundant information and thus suffer from feature suppression issue; (3) Our proposed GraphCV and DGCL consistently outperform other baselines, proving the advantage of disentangled representation.",,,1,related
+"There exist the situation (e.g., OOD setting) that the latent space of learned representation is dominated by non-predictive features in SSL [7] and it is no more informative enough to make correct prediction.",,,0,not_related
+"The results are shown in left two subplots of Figure 4, we compare our method with GASSL under different perturbation bounds and attack steps to demonstrate its robustness against adversarial attacks.",,,1,related
+"Therefore, many recent works [29, 14, 33] study how to fully utilize the unlabeled information on graph and further stimulate the application of self-supervised learning (SSL) for GRL where only limited or even no label is needed.",,,0,not_related
+"As a prevalent and effective strategy of SSL, contrastive learning follows the mutual information maximization principle (InfoMax) [39] to maximize the agreements of the positive pairs while minimizing that of the negative pairs in the embedding space.",,,0,not_related
+"(2)
+Although GCL-based methods are usaully capable to extract useful information for label identification, it is unavoidable to include non-predictive features under the SSL setting owing lack of explicit domain knowledge.",,,0,not_related
+"Under the unsupervised representation learning setting, we compare GraphCV with the eight SOTA self-supervised learning methods GraphCL [51], InfoGraph[33], MVGRL [14], AD-GCL[34], GASSL[48], InfoGCL[45], RGCL [22] and DGCL[21], as well as three classical unsupervised representation learning methods, including node2vec [11], graph2vec [28], and GVAE[19].",,,1,related
+", OOD setting) that the latent space of learned representation is dominated by non-predictive features in SSL [7] and it is no more informative enough to make correct prediction.",,,0,not_related
+"Although aggressive adversarial attacks can largely deteriorate the performance, our proposed GraphCV still achieves more robust performance than GASSL.",,,0,not_related
+"Since both our model and GASSL use GIN as the backbone network, we hereby add the performance of GIN as the compared baseline.",,,1,related
+"Therefore, feature suppression is not just a prevalent issue in
+supervised learning, but also in SSL. Due to the page limitation, we provide more discussion about the relation between feature suppression and GCL in Appendix B",,,1,related
+"Furthermore, our theory suggests why projection heads empirically improve performances [1, 25, 43] in general SSL, i.",,,0,not_related
+"On the contrary, appropriate optimization strategies are often shown to be useful in learning complicated systems Chen et al. (2021b); Steiner et al. (2021).",,,0,not_related
+"It is worth mentioning that, in recent studies Radford et al. (2021); Chen et al. (2021c), the contrastive loss is usually implemented as the cross-entropy between one-hot labels and the class probability obtained by softmax within a mini-batch SM .",,,0,not_related
+"Contrastive Learning: Following the definition in Oord et al. (2018); Wang & Isola (2020); Chen et al. (2021a); Radford et al. (2021), we formulate the contrastive loss as
+Lc(fθ, gφ; τ,S) := E U ,V ∼S U−i 6=U V −j 6=V
+[ − log e
+−τd(fθ(U),gφ(V ))∑ j∈[M ] e −τd(fθ(U),gφ(V −j )) + ∑ i∈[M ] e…",,,1,related
+"…feature representations Bojanowski & Joulin (2017); Mettes et al. (2019), researchers also demonstrate that given a properly defined prior distribution of samples, the performance of the contrastive loss will not degrade regardless of the topology where samples are embedded on Chen et al. (2021a).",,,0,not_related
+"Other hyperparameters follow the setup of MoCo v3 (Chen et al., 2021c).",,,0,not_related
+A generalized version of contrastive learning with data augmentation in [28] performs representation learning by computing the cosine similarity in the feature space to group same-class samples and repel different classes.,,,0,not_related
+"Because the learned feature spaces closely match the distribution of ImageNet, which easily overfit some similar downstream tasks but hamper others [27, 28, 29].",,,0,not_related
+"As a result, different images with similar visual concepts are grouped together, inducing a latent space with rich semantic information [62,10,63].",,,0,not_related
+"Since InfoNCE can be decomposed into alignment and uniformity terms [9, 76], many works introduce new forms of uniformity (and/or alignment) to design new objectives.",,,0,not_related
+Chen and Li [9] propose to explicitly match the distribution of representations to a prior distribution of high entropy as a new uniformity term.,,,0,not_related
+Another problem that may arise is insufficient informativeness: the contrastive objective does not prevent ignoring some of the relevant attributes [30].,,,0,not_related
+"[8] identifies three intriguing properties of contrastive learning: a generalized version of the loss, learning with the presence of multiple objects, and feature suppression induced by competing augmentations.",,,0,not_related
+"Such hypothesis aligns well with several recent attempts to understand CL better [8,39,68].",,,0,not_related
+"Our use of uniform distribution as negative examples is inspired by that feature uniformity is a desirable property for contrastive loss [56, 5], and so a good representation prefers such uniformity.",,,0,not_related
+"To the best of our knowledge, the highest top-1 accuracies reported on ImageNet with SimCLR in 100 epochs are around 66.8% (Chen et al., 2021a).",,,1,related
+Practical properties of contrastive methods have been studied in Chen et al. (2021a).,,,0,not_related
+"One such modification is illustrated in MoCo (He et al., 2020; Chen et al., 2020b; 2021b) where a memory bank of sample is combined with an exponential moving average (EMA) of the encoder to provide better negative pairs and thus improve training.",,,0,not_related
+"Many works in this direction have recently flourished (Chen et al., 2020a; He et al., 2020; Chen et al., 2020b; 2021b; Yeh et al., 2021), most of them using the InfoNCE criterion (Oord et al., 2018), except HaoChen et al. (2021), that uses squared similarities between the samples.",,,0,not_related
+"…Grill et al., 2020; Lee et al., 2021b; Caron et al., 2020; Zbontar et al., 2021; Bardes et al., 2021; Tomasev et al., 2022; Caron et al., 2021; Chen et al., 2021b; Li et al., 2022a; Zhou et al., 2022a;b; HaoChen et al., 2021), approaching, and sometime even surpassing, the performance of…",,,0,not_related
+"Previous investigations (Chen et al., 2021) have shown that a few easy-tolearn irrelevant features not removed by augmentations can prevent CL model from learning all semantic features inside images.",,,0,not_related
+"We propose here a first solution to this issue by studying RandBits-CIFAR10 (Chen et al., 2021), a CIFAR10 based dataset where k noisy bits are added and shared between views of the same image (see Appendix D.3).",,,1,related
+", 2021) (which is not apparent in object-centric datasets such as ImageNet) and few, irrelevant and easy-to-learn features, that are shared among views, are sufficient to collapse the representation (Chen et al., 2021) (a.",,,0,not_related
+"Specifically, dominant objects inside images can prevent the model from learning features of smaller objects (Chen et al., 2021) (which is not apparent in object-centric datasets such as ImageNet) and few, irrelevant and easy-to-learn features, that are shared among views, are sufficient to…",,,0,not_related
+"…learning features of smaller objects (Chen et al., 2021) (which is not apparent in object-centric datasets such as ImageNet) and few, irrelevant and easy-to-learn features, that are shared among views, are sufficient to collapse the representation (Chen et al., 2021) (a.k.a feature suppression).",,,0,not_related
+"RandBits-CIFAR10 (Chen et al., 2021).",,,0,not_related
+"noted previously (Chen et al., 2021), that β-VAE is the only method insensitive to the number of added bits, but its representation quality remains low compared to other selfsupervised approaches.",,,0,not_related
+"We propose here a first solution to this issue by studying RandBits-CIFAR10 (Chen et al., 2021), a CIFAR10 based dataset where k noisy bits are added and shared between views of the same image (see Appendix D.",,,1,related
+"Once trained, we use its representation to define the kernel KV AE .
+noted previously (Chen et al., 2021), that β-VAE is the only method insensitive to the number of added bits, but its representation quality remains low compared to other selfsupervised approaches.",,,1,related
+"We provide a solution to the feature suppression issue in CL (Chen et al., 2021) and also demonstrate SOTA results with weaker augmentations on visual benchmarks (both on natural and medical images).",,,1,related
+"Specifically, dominant objects inside images can prevent the model from learning features of smaller objects (Chen et al., 2021) (which is not apparent in object-centric datasets such as ImageNet) and few, irrelevant and easy-to-learn features, that are shared among views, are sufficient to collapse the representation (Chen et al.",,,0,not_related
+"For RandBits experiments, the VAE is trained with the same setup as for CIFAR-10/100 on RandBits-CIFAR10.",,,0,not_related
+"The principles behind the success of all these methods are still the subject of active research [10, 40, 44].",,,0,not_related
+"…)
+= − 1
+N
+∑
+i,j∈MB
+sim(zi, zj)/τ
+︸ ︷︷ ︸
+Lalignment
++ 1
+N
+N∑
+i
+log ( 2N∑
+k=1
+1[k 6=i]exp(sim(zi, zk)/τ)
+︸ ︷︷ ︸
+Ldistribution
+) (3)
+and as such there are two parts of the loss, namely, alignment and distribution, as proposed by [Wang and Isola, 2020] and further studied by [Chen et al., 2020b].",,,1,related
+"Here, the authors propose the temperature scaled loss NT-Xent which is based on noise contrastive estimation and cross entropy [Chen et al., 2020a].",,,0,not_related
+"Equation (2) can be rewritten accordingly by applying the logarithmic rules
+LNT−Xent = − 1
+N
+∑
+i,j∈MB
+(
+sim(zi, zj)/τ − log
+2N∑
+k=1
+1[k 6=i]exp(sim(zi, zk)/τ) )
+= − 1
+N
+∑
+i,j∈MB
+sim(zi, zj)/τ
+︸ ︷︷ ︸
+Lalignment
++ 1
+N
+N∑
+i
+log ( 2N∑
+k=1
+1[k 6=i]exp(sim(zi, zk)/τ)
+︸ ︷︷ ︸
+Ldistribution
+) (3)
+and as such there are two parts of the loss, namely, alignment and distribution, as proposed by [Wang and Isola, 2020] and further studied by [Chen et al., 2020b].",,,1,related
+"Self-supervised learning models and frameworks like CPC[van den Oord et al., 2019], SimCLR [Chen et al., 2020a], BYOL [Grill et al., 2020], and SimSIAM [Chen and He, 2020] show promising results in low-labeled data regimes, with representations generalizing well in downstream tasks like visual…",,,0,not_related
+"The simple framework for contrastive learning on visual representations (SimCLR) proposed by [Chen et al., 2020a] builds upon properties of noise contrastive estimation (NCE) and is inspired by previous work in the related field.",,,0,not_related
+"2010) (also known as Contrastive Learning) has emerged as a highly effective approach for unsupervised representation learning using deep networks (Chen et al., 2020; Chen & Li, 2020; Tian et al., 2021; Grill et al., 2020).",,,0,not_related
+"Chen et al. (2021) conclude that contrastive losses rely on easy-to-detect features that solve the contrastive objective, while suppressing the remaining (partly irrelevant) information.",,,0,not_related
+", 2021) and mainly relies on easy-to-detect features to contrast between positive and negative pairs (Chen et al., 2021).",,,0,not_related
+"Chen et al. (2021) add artificially generated features (i.e., MNIST digits) as an extra overlay to images.",,,0,not_related
+Chen et al. (2021) introduce the notion of feature suppression among competing features.,,,0,not_related
+"The contrastive InfoNCE objective itself does not guarantee that all the predictive features in the input data are learned (Robinson et al., 2021) and mainly relies on easy-to-detect features to contrast between positive and negative pairs (Chen et al., 2021).",,,0,not_related
+Chen et al. (2021) refer to this phenomenon as feature suppression among competing features.,,,0,not_related
+"Can alignment and uniformity properties be preserved in supervised contrastive loss? For self-supervised learning, [8] claims that contrastive loss [7, 33] (see Eq.",,,0,not_related
+"In addition, purely contrastive models tend to incorporate center bias [9, 8], which makes them less transferable for tasks such as segmentation where non-object centric regions need to be modeled.",,,0,not_related
+"For example, the center-bias [9] and small-object feature suppression [8] have been observed in prior works.",,,0,not_related
+"This is a case of the documented phenomenon of feature suppression [8, 9, 10].",,,0,not_related
+"But such an assumption inevitably fails due to inconsistent learning signals in scene images full of diverse objects [9, 33, 40].",,,0,not_related
+"However, as a number of prior works have identified, the semantic context provided by extra “distractor” classes outside of the main object classes can serve as a useful signal for clustering [5, 9, 24].",,,0,not_related
+"Finally, we broadcast the class assignments back to the original dimensions of the image I via nearest neighbor interpolation, akin to [9].",,,1,related
+"Moreover, video-based methods have not incorporated data augmentation, thereby resulting in feature suppression which degrades representation quality [43].",,,0,not_related
+"A related idea of feature suppression (Chen et al., 2021) and shortcut solutions found by contrastive learning was recently studied in Robinson et al.",,,0,not_related
+"A related idea of feature suppression (Chen et al., 2021) and shortcut solutions found by contrastive learning was recently studied in Robinson et al. (2021) in certain stylized settings, with a proposed fix through better augmentations strategies.",,,0,not_related
+We follow Chen & Li (2020) to see how local features are agglomerated across layers.,,,1,related
+"However, this line of works focus on pre-training on ImageNet-like images, and recent attention has been attracted to images with multi-objects and multi-texture presented (Chen & Li, 2020).",,,0,not_related
+"To study why the large generalization gap exists, in Figure 4, we follow Chen & Li (2020) to see how features aggregate in space.",,,1,related
+"A lot of recent work on ICR relies on (1) pre-training on large amounts of data [16, 26, 35], and (2) more sophisticated (and data-hungry) model architectures [5, 11, 12, 24, 25, 31].",,,0,not_related
+"To learn the similarity between a query and candidate representations, most ICR work relies on the standard Triplet loss with semi-hard negatives (Triplet SH) [4, 5, 11, 12, 24, 25, 31] or on the cross-entropy based NT-Xent [6, 16] loss.",,,0,not_related
+"The Triplet loss is commonly used as a loss function for ICR methods [5, 11, 12, 24, 25, 31].",,,0,not_related
+"In addition to framework design, theoretical analyses and empirical studies have also been proposed to better understand the behavior and properties of contrastive learning [1, 3, 6, 9, 24, 31, 35, 39, 39, 41, 44, 52].",,,0,not_related
+"Contrastive learning implicitly learns relations among instances by optimizing alignment and matching a prior distribution [51, 9].",,,0,not_related
+"In contrastive learning, augmentations can be used to exploit domain-specific inductive biases, e.g., know symmetries or equivariances [Chen and Li, 2020].",,,0,not_related
+"To further understand why unsupervised finetuning is nontrivial, we follow the analysis in the work [8] about the contrastive loss, which represents the generalized contrastive loss in the below form:",,,1,related
+"We follow [5, 42] and rewrite L̂ in terms of explicit ‘pull‘ and ‘push‘ terms as :",,,1,related
+"While their claim agrees with the large-K benefit, their bound holds only when K > C+1, and hence does not explain the empirical observation that contrastive learning works to some extent even with small K (Chen et al., 2021; Tomasev et al., 2022).",,,0,not_related
+"7Unlike the reported results by Chen et al. (2021), smaller dimensionality, i.e., 32 gives better downstream accuracy on CIFAR-100 than 64 or 128.",,,1,related
+"This inability contradicts the real experiments including Chen et al. (2021); Tomasev et al. (2022), which showed that CURL exhibits reasonable performance even with small K.",,,0,not_related
+"Contrastive learning of is amongst the most successful self-supervised method to achieve linear classification accuracy and outperforming supervised learning tasks by suitable architectures and loss (Caron et al. 2020; Chen et al. 2020a,b; Chen and Li 2020; Zbontar et al. 2021), using pretraining in a task-agnostic fashion (Kolesnikov, Zhai, and Beyer 2019; Shen et al.",,,0,not_related
+"To further understand why unsupervised pretraining has worse clustering quality than supervised pretraining, we follow [34, 9] and decouple the widely used unsupervised learning loss, i.",,,1,related
+[34] showed that contrastive loss encourages consistent representation of augmented view and matches prior distribution.,,,0,not_related
+"Several work demonstrates that mapping the representations into a unit hyperspherical space, where all embeddings are represented as unit vectors, helps to keep a smooth embedding space and brings improvement for various tasks [3, 4, 24, 35, 36].",,,0,not_related
+[4] further adjust the temperature and balance the influence of “alignment” and “uniformity” to learn a better embedding space with contrastive training.,,,0,not_related
+"Bias towards shortcut decision rules also hampers transferability in contrastive learning [4], where it is in addition influenced by the instance discrimination task.",,,0,not_related
+1 shows that empirical observations of feature suppression [4] (see also Fig.,,,0,not_related
+", discard) certain input features [4, 11].",,,1,related
+"While feature learning in contrastive learning has received less attention, recent work finds that low- and mid-level features are more important for transfer learning [55], and feature suppression can occur [4] just as with supervised learning [10, 16].",,,0,not_related
+"Later theories suggest that contrastive losses balance alignment of individual features and uniformity of the feature distribution [23], or in general alignment and some loss-defined distribution [36].",,,0,not_related
+"As a follow-up work, [9] even showed that when the network is trained using Lalign + λLuniform as a loss function, the weight λ is inversely related to the temperature scaling τ used in contrastive loss.",,,0,not_related
+This raises an important question — which features will the augmentation choose to solve the pretext task in the presence of image samples where there are competing features? This question has been studied in [4] where it was shown that it is difficult to predict the dominant feature a method relies on when there are competing features in the augmented views.,,,0,not_related
+"If the contrastive task is too easy, the quality of the representation suffers [4, 10].",,,0,not_related
+"[38] examined the invariances learned, [10] showed that easily learned features can inhibit the learning of more discriminative ones, [8, 50, 60] explored the impact of different image augmentations, [10, 50] compared representations from single vs.",,,0,not_related
+"Nonetheless, recent studies in contrastive learning [124, 125] showed that the features learned through the contrastive loss, a variant of cross-entropy loss (3), exhibit properties analogous to NC.",,,0,not_related
+"The study of contrastive losses has shown that this repulsion effect between dissimilar views is matching the distribution of features in representational space to a distribution of high entropy [7], in otherwords, encouraging uniformity of representations in space [8].",,,0,not_related
+"Additionally, [7] extends this work proposing a generic form of the contrastive loss, also identifying the same relations of uniformity to pairwise potential in a Gaussian kernel, tomatch representations to a prior distribution (of high entropy).",,,0,not_related
+Reconstruction can help in capturing features that are suppressed by contrastive learning/clustering [14].,,,0,not_related
+"This limitation occurs because CSI uses a hypersphere embedding space that is uniformly distributed [7, 40].",,,0,not_related
+"According to [10], increasing the temperature coefficient concentate the network on the dissimilarity be-",,,0,not_related
+"Past work addresses this problem by designing handcrafted data augmentations that eliminate the irrelevant features, so that the network may learn the relevant information [24, 5, 6, 8, 7].",,,0,not_related
+"task with pre-trained ResNet-50 and ResNet-152 weights. Temperature Hyperparameter. The temperature scaling hyperparameter is known to play a signiﬁcant role in the quality of the simCLR pre-training [8, 9, 10]. It motivates us to investigate the impact of the temperature scaling factor on the transferability of pre-training winning tickets found in Section4. Without loss of the generality, we consider the ",,,0,not_related
+The alignment part encourages representations of positive pairs to be similar whereas the distribution part ‘‘encourages representations to match a prior distribution’’ [58].,,,0,not_related
+family of loss functions with an alignment and a distribution part [58].,,,0,not_related
+"This policy requires the model to match each instance’s embedding into the predefined prior distribution with high entropy (Chen and Li, 2020; Wang and Isola, 2020).",,,1,related
+"Additionally, contrastive methods can perform poorly when the task of interest is not determined by the dominant features of an image [Chen et al., 2021].",,,0,not_related
+"If the task of interest is not determined by the dominant features of an image, or is obscured by the transformations used to train the model, the self-supervised model may perform poorly at clustering the data into relevant groups [Chen et al., 2021].",,,0,not_related
+[26] find three interesting properties of contrastive learning.,,,0,not_related
+"Dynamicmargin can push boundaries between neighbor classes, they become more separately as mentioned in [56].",,,0,not_related
+Previous investigations [10] have shown that a few easy-to-learn irrelevant features not removed by augmentations can prevent the model from learning all semantic features inside images.,,,0,not_related
+We provide a solution to the feature suppression issue in CL [10] and also demonstrate SOTA results with weaker augmentations on visual benchmarks.,,,1,related
+g medical imaging [17] or multi-objects images [10]) is still an open question.,,,0,not_related
+"Specifically, dominant objects inside images can prevent the model from learning features of smaller objects [10] (which is not apparent in object-centric datasets such as ImageNet) and few, irrelevant and easy-to-learn features, that are shared among views, are sufficient to collapse the representation [10] (a.",,,0,not_related
+"[10] Ting Chen, Calvin Luo, and Lala Li.",,,0,not_related
+"As noted previously [10], β-VAE is the only method insensitive to the number of added bits, but its representation quality remains low compared to other discriminative approaches.",,,0,not_related
+[7] and extended to a wider set of prior distributions (e.,,,0,not_related
+"Given MI(x,y) = H(x)−H(x|y), the two right-hand side terms can be linked to the following two properties [7, 31]: ∗ Uniformity H(x): Maximizing entropy leads to uniformly distributed latent vectors.",,,1,related
+"1) In this work, we investigate the dense feature representation in terms of alignment and uniformity inspired by the pioneering analyses of [7, 31].",,,1,related
+"To understand the semantic structures and behavior of this method, a few recent studies [7, 31] analyzed the latent space (e.",,,0,not_related
+"In contrast to numerous theoretical [1, 13, 20, 28, 29] and empirical analyses [7, 19, 22, 27, 31, 36, 39] to understand instance-level CL, no attempt has been made to understand dense CL.",,,0,not_related
+"…)
+= − 1
+N
+∑
+i,j∈MB
+sim(zi, zj)/τ
+︸ ︷︷ ︸
+Lalignment
++ 1
+N
+N∑
+i
+log ( 2N∑
+k=1
+1[k 6=i]exp(sim(zi, zk)/τ)
+︸ ︷︷ ︸
+Ldistribution
+) (3)
+and as such there are two parts of the loss, namely, alignment and distribution, as proposed by [Wang and Isola, 2020] and further studied by [Chen et al., 2020b].",,,1,related
+"Here, the authors propose the temperature scaled loss NT-Xent which is based on noise contrastive estimation and cross entropy [Chen et al., 2020a].",,,0,not_related
+"Equation (2) can be rewritten accordingly by applying the logarithmic rules
+LNT−Xent = − 1
+N
+∑
+i,j∈MB
+(
+sim(zi, zj)/τ − log
+2N∑
+k=1
+1[k 6=i]exp(sim(zi, zk)/τ) )
+= − 1
+N
+∑
+i,j∈MB
+sim(zi, zj)/τ
+︸ ︷︷ ︸
+Lalignment
++ 1
+N
+N∑
+i
+log ( 2N∑
+k=1
+1[k 6=i]exp(sim(zi, zk)/τ)
+︸ ︷︷ ︸
+Ldistribution
+) (3)
+and as such there are two parts of the loss, namely, alignment and distribution, as proposed by [Wang and Isola, 2020] and further studied by [Chen et al., 2020b].",,,1,related
+"Self-supervised learning models and frameworks like CPC[van den Oord et al., 2019], SimCLR [Chen et al., 2020a], BYOL [Grill et al., 2020], and SimSIAM [Chen and He, 2020] show promising results in low-labeled data regimes, with representations generalizing well in downstream tasks like visual…",,,0,not_related
+"The simple framework for contrastive learning on visual representations (SimCLR) proposed by [Chen et al., 2020a] builds upon properties of noise contrastive estimation (NCE) and is inspired by previous work in the related field.",,,0,not_related
+"Chen et al. (2021a) identifies three intriguing properties of contrastive learning: a generalized version of the loss, learning with the presence of multiple objects, and feature suppression induced by competing augmentations.",,,0,not_related
+"For transformer, we leverage pre-trained models on ImageNet (Deng et al., 2009) from ViT (Dosovitskiy et al., 2021), DeiT (Touvron et al., 2021), DINO (Caron et al., 2021), MoCo-v3 (Chen et al., 2021b), and MAE (He et al., 2022).",,,1,related
+"Specifically, we leverage MoCo-v3 (Chen et al., 2021b), the ViT version of MoCo, and Supervised ViT.",,,1,related
+"We find that the MoCo-v3 degradation is larger with patch shuffling, but smaller with gamma distortion.",,,1,related
+"To prevent trivial solution, contrastive learning pushes negative examples apart (MoCo (He et al., 2020; Chen et al., 2020d; 2021b), SimCLR (Chen et al., 2020a;b)), makes use of stop-gradient operation or asymmetric predictor without using negatives (SimSiam (Chen & He, 2021), BYOL (Grill et al.,…",,,0,not_related
+"…that capture feature compositionality are more favorable than solutions that capture a single dominant feature under strong augmentation, addressing empirical puzzles (Chen et al., 2021; Tian et al., 2020b) that strong data augmentation seems to be the key for self-supervised learning to work.",,,0,not_related
+"This is consistent with the observation in (Chen et al., 2021; Tian et al., 2020b) where the amount of augmentation leads to different learned features, and one feature may overwhelm the other.",,,0,not_related
+"In the case of multiple hidden nodes with disjoint receptive fields, we prove that weight solutions that capture feature compositionality are more favorable than solutions that capture a single dominant feature under strong augmentation, addressing empirical puzzles (Chen et al., 2021; Tian et al., 2020b) that strong data augmentation seems to be the key for self-supervised learning to work.",,,0,not_related
+"Previous work [Chen and Li, 2020] states that the InfoNCE loss, a widely used objective function in contrastive learning [Chen et al., 2020; You et al., 2020], can not guarantee to avoid shortcut solutions that only capture easy-to-learn features.",,,0,not_related
+"Previous work [Chen and Li, 2020] states that the InfoNCE loss, a widely used objective function in contrastive learning [Chen et al.",,,0,not_related
+"However, recent studies [Tschannen et al., 2020; Chen and Li, 2020] have pointed out that there are gaps between the InfoMax principle and the performance of embeddings in the downstream tasks.",,,0,not_related
+"In CPCL-A, the first term is the common alignment loss for augmented data and the second term is a form of uniformity loss [36, 37].",,,0,not_related
+"[37] Ting Chen, Calvin Luo, and Lala Li.",,,0,not_related
+"[10], where it is referred to as the ‘distribution’ property.",,,0,not_related
+"However, as demonstrated in [2], such a contrastive loss suffers from the feature suppression problem where the model only learns the most important feature.",,,0,not_related
+"However, current contrastive loss used in both the self-supervised methods and VLC methods suffered from the feature suppression problem [2].",,,0,not_related
+"The models usually fail to distinguish textual similarity and semantic similarity, which has been discussed deeply in the vision field (Robinson et al., 2021; Chen et al., 2021).",,,0,not_related
+"The first and the second terms in (2) relates to the alignment and distribution terms [3] and reassemble the formulation of the normalized temperature cross entropy loss (InfoNCE) [9, 1] up to a normalization constant.",,,0,not_related
+"Mô hình học máy đầu tiên bị tấn công là Máy học vectơ hỗ trợ [12], sau đó, trong các tác giả phát hiện ra rằng NN có xu hướng tấn công một cách khá đơn giản bằng cách sử dụng một số thuật toán dựa trên gradient [13], bằng cách thu thập thông tin gradient của hình ảnh bị tấn công và do đó đánh lừa mô hình.",,,0,not_related
+"Note that SimCLR style loss functions have been shown to lead to ""linearly separable"" representations [20] and hence aligns well with the clustering objective [55, 10].",,,0,not_related
+"We make several observations: 1) Even without using any attribute information, our method performs significantly better as compared to other structure-only based methods like Spectral Clustering and Node2Vec, which demonstrates the effectiveness of our loss formulation and training methodology that promotes clusterability, which is also in line with recent observations [10, 55].",,,1,related
+"…popularity of discriminative unsupervised representational learning, specifically contrastive methods, has sparked keen interest in the theoretical understanding of their underpinnings, emerging from their performance rivaling that of supervised methodologies [Chen et al., 2020a; He et al., 2020].",,,0,not_related
+"…contrastive methods [Caron et al., 2020] have been proposed alleviating some of the computational drawbacks associated to contrastive losses, primarily the necessity of large numbers of negative pairs generally requiring increased batch sizes [Chen et al., 2020a] or memory banks [He et al., 2020].",,,0,not_related
+"For all three datasets we omit the Gaussian blur and solarization as described in [Chen et al.,
+2020a].",,,1,related
+"As to correspond with the BYOL procedure, we employ the same image augmentations as described in [Chen et al., 2020a; Grill et al., 2020].",,,1,related
+"M = 2B − 1 in [Chen et al., 2020a] whereB is the batch size.",,,1,related
+"This 0.4% improvement in CIFAR-10 is comparable to the improvements found between SimCLR and BYOL, a substantial move towards the supervised baseline of 95.1% reported in [Chen et al., 2020a].",,,0,not_related
+"Unsupervised visual representational learning methods [Chen et al., 2020a; Grill et al., 2020] have recently demonstrated performance on downstream tasks that continues to narrow the gap to supervised pre-training, excelling specifically in classification and few-shot learning tasks [Caron et al.,…",,,0,not_related
+"To evaluate the quality of representations learned during selfsupervised training we employ the standard linear evaluation protocol described in [Chen et al., 2020a; Grill et al., 2020].",,,1,related
+"Augmentation procedure is key to the success of selfsupervised learning, therefore to compare our performance against BYOL, we employ the same image augmentations reported in [Grill et al., 2020; Chen et al., 2020a].",,,1,related
+"Past work addresses this problem by designing handcrafted data augmentations to break such shortcuts, so that the network may learn the relevant information [18, 6, 7, 9, 8].",,,0,not_related
+Chen & Li (2020) have since systematically demonstrated that the suppression of certain features by the presence or emphasis (e.g. through augmentations) of others is a demonstrably important influence on the learned representation and its usefulness for downstream tasks.,,,0,not_related
+"This is in line with the findings of Chen & Li (2020), who have studied contrastive learning with artificial data-sets, for which independent features can be specifically controlled, and summarize that ""a few bits of easy-to-learn features could suppress, or even fully prevent, the learning of…",,,0,not_related
+"Moreover, the choice of which inputs are contrasted is highly influential on the learned representations and consequently their usefulness for a given downstream task (Chen & Li, 2020).",,,0,not_related

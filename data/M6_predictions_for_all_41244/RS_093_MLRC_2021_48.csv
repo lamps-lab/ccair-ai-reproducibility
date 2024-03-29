@@ -1,0 +1,37 @@
+text,target_M6_predict,target_predict_M6_label
+"Non-determinism of GPU operations also produces churn even when all initial parameters are the same [Summers and Dinneen, 2021].",1,neutral
+"Summers and Dinneen [6], and Jordan [7] argue that variance matters only during initial conditions of the training procedure.",0,negative
+"Since the training of neural networks is strongly influenced by the initialized parameters Summers and Dinneen (2021), sometimes the pre-trained model outperforms the randomly initialized one by a large margin most likely because the initialized position leads to bad local minima.",1,neutral
+"normalisation, tooling and hardware [55,66].",1,neutral
+"For future work, we think it would be interesting to quantify to what extent classification decisions and explanations are influenced by nondeterminism in part-prototype models, taking inspiration from existing experiments on nondeterminism and randomness [55,66].",2,positive
+"One of the mysteries in deep learning is the stability and consistency of their training processes and solutions, despite of the multiple sources of randomness such as random initialization, data ordering and data augmentation [11, 6, 50, 26].",1,neutral
+"These models are considered functionally similar in this context, as they are typically similar in terms of performance [122].",1,neutral
+"Our findings confirm the work of Summers and Dinneen (2021), who reach similar conclusions.",0,negative
+"In particular we show, confirming the results of Summers and Dinneen (2021), that varying just a single weight at initialization produces only 1% less churn than all three sources of randomness combined.",2,positive
+"We recently became aware of Summers and Dinneen (2021), who reach the same conclusions; our results further confirm their findings via several new experiments.",0,negative
+"Most relevant to our work is (Qian et al., 2021; Zhuang et al., 2022; Madhyastha & Jain, 2019; Summers & Dinneen, 2021) that evaluates how stochasticity in training impacts fairness in DNN Systems.",2,positive
+"An often overlooked robustness challenge with DNN optimization is their uncertainty in performance [Summers and Dinneen, 2021].",1,neutral
+"To better assess the instability of fine-tuning pretrained language models (PLMs), we study more measures concerning instability at different granularity levels (Summers and Dinneen, 2021; Khurana et al., 2021; Raghu et al., 2017; Kornblith et al., 2019; Ding et al., 2021) and develop a framework to assess their validity.",2,positive
+"Across repeated stochastic retrainings, a training instance’s influence may vary – potentially substantially [BPF21; SD21; Ras+22].",1,neutral
+"When neural networks are trained with random data shuffling tricks [54, 55], we theoretically suggests the possibility that maximizing I (φ (X) ; X) in Eq.",1,neutral
+"During encoding, we suggest to continue to maximize I (φ (X) ; X) and apply random data shuffling, a standard trick in real training processes [54, 55], to make the neural network learn samples rather than over-fit sample index.",1,neutral
+"This is due to nondeterminism during training (Nagarajan and Warnell; Summers and Dinneen, 2021; Madhyastha and Jain, 2019), which includes:",0,negative
+"Many factors contribute to irreproducibility [29, 30, 54, 59, 60, 75], including random initialization,",1,neutral
+[83] Cecilia Summers and Michael J Dinneen.,0,negative
+intra-rater and inter-rater variability) [55] Consider multiple test set runs to address the variability of results resulting from non-determinism [50] and [83],1,neutral
+"As noted in many studies on the reproducibility of neural network training, the learning stochasticity can introduce large variations into the predictive performance of deep learning models (Summers and Dinneen, 2021; Zhuang et al., 2022; Raste et al., 2022).",1,neutral
+"For example, by regularizing labels [1,13], distillation [2,7], ensembling techniques [16,18], or data augmentation",1,neutral
+"Due to this importance, there has been a recent surge of work studying the prediction instability of machine learning models [2,7,10,13,16,18,22].",1,neutral
+"However, recent research has found that due to random factors, such as random initializations or undetermined orderings of parallel operations on GPUs, different training runs can lead to significantly different predictions for a significant part of the (test) instances, see for example [2,18,22].",1,neutral
+"For the CNNs in the work by Summers and Dineen [18], even single bit changes lead to significantly different models.",1,neutral
+"Reproducibility:Many factors contribute to irreproducibility in deep models [13, 18, 19, 44, 48, 49, 56].",1,neutral
+"The highly non-convex objective [18], combined with nondterminism in training [49] and",1,neutral
+"…may be caused by multiple factors [D’Amour et al., 2020, Fort et al., 2020, Frankle et al., 2020, Shallue et al., 2018, Snapp and Shamir, 2021, Summers and Dinneen, 2021], such as nonconvexity of the objective, random initialization, nondeterminism in training such as data shuffling,…",1,neutral
+"Recent papers [Chen et al., 2020, D’Amour et al., 2020, Dusenberry et al., 2020, Snapp and Shamir, 2021, Summers and Dinneen, 2021, Yu et al., 2021] have also demonstrated that even when models are trained on identical datasets with identical optimization algorithms, architectures, and…",1,neutral
+"26 Recent work has disproportionately focused on the impact of algorithm design choices on model 27 replicability [52, 46, 77, 74, 69, 45, 22].",1,neutral
+"[77] benchmark the separate impact of choices of initialization, data shuffling and augmentation.",1,neutral
+"Recent work has disproportionately focused on the impact of algorithm design choices on model replicability (Nagarajan et al., 2018; Madhyastha & Jain, 2019; Summers & Dinneen, 2021; Snapp & Shamir, 2021; Shamir et al., 2020; Lucic et al., 2018; Henderson et al., 2017).",2,positive
+"(Summers & Dinneen, 2021) benchmark the separate impact of choices of initialization, data shuffling and augmentation.",2,positive
+"While augmentation of data in training and stochastic regularization randomly applied in training (Summers & Dinneen, 2021) also influence irreproducibility, we do not consider these here, as they are in a different category of directly and intentionally adding randomness.",1,neutral
+"For such models, nondeterminism in training may lead optimizers to different optima (Summers & Dinneen, 2021) (see also Nagarajan et al. (2018)), that depend on the training randomness (Achille et al., 2017; Bengio et al., 2009).",1,neutral
+D’Amour et al. (2020); Summers & Dinneen (2021) recently studied the irreproducibitily problem on benchmark data-sets.,1,neutral

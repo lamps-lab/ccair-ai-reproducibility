@@ -1,0 +1,416 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Technically speaking, we implemented and applied the GANSpace algorithm at each of the five layers of our trained WaveGAN.",1,related,1,positive
+"On the left panel, we put three sliders which we respectively connected to the three latent parameters computed with GANSpace.",1,related,1,positive
+"Additional qualitative comparisons for editing We conducted additional comparative experiments of the proposed WRanGAN approach and the PTI inversion method for the StyleGAN 2 model in two domains: the FFHQ domain, with semantic directions corresponding to binary image attributes [23], and the LSUN Church domain, with the first 4 vectors obtained by PCA approach [10].",1,related,1,positive
+"Such a direction can be found by either using explicit supervision of image attribute annotations [Abdal et al. 2021; Shen et al. 2020; Wu et al. 2020], or in an unsupervised manner [Härkönen et al. 2020; Shen and Zhou 2021; Voynov and Babenko 2020].",1,related,1,positive
+"Differently, the unsupervised methods [1,2,9,14,20,35,37] do not need the valuable annotated data.",1,related,0,negative
+Our method can be adapted to use other editing methods like InterfaceGAN [40] and GANSpace [20].,1,related,1,positive
+"Finally, we can edit an inverted image by manipulating the latent code, which can be described as:
+I′edit = G(w + + ∆w+; θp), (4)
+where ∆w+ could be any editing directions from InterfaceGAN [40] or GANSpace [20].",1,related,1,positive
+"Unsupervised methods [Cherepkov et al. 2021; Härkönen et al. 2020; Shen and Zhou 2021; Voynov
+and Babenko 2020; Wei et al. 2021] find the interpretable direction without using annotated samples, e.g., by a PCA decomposition on the network weights or on the latent codes.",1,related,1,positive
+"Our StyleIPSB outperforms Ganspace [13], which is also a basis constructed in W+ space using unsupervised learning.",1,related,1,positive
+We compare our method with GANSpace [13] and InterfaceGAN [34] in the editing of facial expression.,1,related,1,positive
+"We compare our method with InterFaceGAN [34], GANSpace [13], GIF [12] and SeFa [36].",1,related,1,positive
+"StyleGAN-based image editing requires either an encoder trained to map a given image to the latent space [2, 35], or specifying latent update direction which requires explicit ground-truth annotations [1, 16, 52, 57].",1,related,1,positive
+"Specifically, we focused on a state-of-the-art (SOTA) unsupervised method - GANSpace (Härkönen et al., 2020), which utilizes Principal Component Analysis (PCA) (Pearson, 1901) to find orthogonal directions along which new semantic axes can be located.",1,related,1,positive
+"Specifically, we focused on a state-of-the-art (SOTA) unsupervised method - GANSpace (Härkönen et al., 2020), which utilizes Principal Component Analysis (PCA) (Pearson, 1901) to find orthogonal directions along which new semantic axes can be located.",1,related,1,positive
+"4 RESULTS AND DISCUSSION The examples of manipulations obtained by GANSpace (Härkönen et al., 2020) are shown in Fig.",1,related,1,positive
+"For StyleGAN2, as was done by Härkönen et al. (2020) we applied GANSpace in W latent space.",1,related,1,positive
+"In this work, we evaluated the transformations obtained by GANSpace (Härkönen et al., 2020) for both StyleGAN2 (Karras et al., 2020) and GAN from Liu et al. (2021) both visually and quantitatively.",1,related,1,positive
+"3 METHODS In this work, we evaluated the transformations obtained by GANSpace (Härkönen et al., 2020) for both StyleGAN2 (Karras et al.",1,related,1,positive
+"Note that in contrast to the original GANSpace algorithm [22], we do not apply PCA in the W-space.",1,related,1,positive
+"To this end, explore latent directions in an unsupervised way like [22], as we do not have additional supervision from synthetic data like [21] or attribute classifier networks like [24].",1,related,1,positive
+Our work belongs to the last category (unsupervised latent exploration) and is based on GANSpace [22].,1,related,0,negative
+"For this, we first show the directions obtained by GANSpace [22] applied to StyleGAN2.",1,related,1,positive
+"In Figure 5, we also explore applying GANSpace in the W+-space of Urban-StyleGAN and in the S-space of different layers.",1,related,1,positive
+"Applying GANSpace in
+the W+-space of the class ’car’ gives only one meaningful direction of control (increasing car number and size on both sides).",1,related,1,positive
+"Note that in contrast to the original GANSpace algorithm [22], we do not apply PCA in the W+-space.",1,related,1,positive
+"We compute the style codes by simply adding these two different codes based on the linearity [11, 30] of the latent space W+.",1,related,1,positive
+"Furthermore, thanks to the continuous and linear nature of the latent space [16, 11, 30], we linearly manipulate the style codes using the audio input to generate lip-synced video frames.",1,related,1,positive
+"By contrast, unsupervised methods discover interpretable directions without any prior knowledge (Härkönen et al., 2020; Kwon et al., 2023; Choi et al., 2022; Karmali et al., 2022; Spingarn-Eliezer et al., 2021; Ren et al., 2022; Oldfield et al., 2023).",1,related,1,positive
+"By contrast, unsupervised methods discover interpretable directions without any prior knowledge (Härkönen et al., 2020; Kwon et al., 2023; Choi et al., 2022; Karmali et al., 2022; Spingarn-Eliezer et al., 2021; Ren et al., 2022; Oldfield et al., 2023).",1,related,1,positive
+"Following GANSpace [20], we empirically set the first 8 layers of latents as pose latents (denoted as w), the remaining 8 layers of latents as shape and appearance latents.",1,related,1,positive
+We draw aspiration from GANSpace [20] and SeFa [32] to disentangle StyleGAN2.,1,related,1,positive
+"Pose Difference Range (FFHQ-P) [0,15) [15,30) [30,45) [45,60) [60,75) [75,90)",1,related,1,positive
+"• Pose Misalignment: When the yaw difference is between [15-30) or [30-45), a single checkmark or double checkmarks are used, respectively in Table 1.",1,related,0,negative
+"In the latent space W defined asw ∈W,Gmapping(z) = w, significant semantic directions have already been found [16], [17].",1,related,1,positive
+"As first demonstrated by StyleCLIP [34], the requirements for large amounts of annotated data [25] and manual efforts [14, 44] were considerably alleviated.",1,related,0,negative
+"Inspired by DiffAE [40] and similar approaches in GANs [29], we introduce a content encoder Ec( · ;ψ) and a style encoderEs( · ;φ) in our framework as shown in Fig.",1,related,1,positive
+We apply PCA on the style and content latent spaces and identify meaningful attribute specific manipulation directions similar to [15] as shown in Fig.,1,related,1,positive
+"1(a), we can observe that applying the 70-th GANspace direction manipulates the source image to become a man with wide smile, showing that pre-trained StyleGAN itself is capable of such manipulation.",1,related,1,positive
+"Finally, we compute the similarity score for 30 instances of source images and 1024 directions from SeFa and GANspace whose average is reported in Tab.",1,related,1,positive
+"To avoid this unrealistic assumption, we substitute ŝt with the known directions α ∈ Rn derived from unsupervised methods (Härkönen et al., 2020; Shen & Zhou, 2021).",1,related,1,positive
+"The dictionary learning process of Multi2One employs the directions α ∈ Rn from unsupervised methods (Shen & Zhou, 2021; Härkönen et al., 2020).",1,related,1,positive
+"1 to show that GlobalDirection (Patashnik et al., 2021) cannot effectively recover the directions found by unsupervised methods (Härkönen et al., 2020; Shen & Zhou, 2021).",1,related,1,positive
+"(4) by using all 512 directions found by GANspace and directions with top 80 eigenvalues out of 512 from SeFa4 (Härkönen et al., 2020; Shen & Zhou, 2021).",1,related,1,positive
+"We emphasize that despite the dictionary of our method is learned from the known directions in unsupervised approaches (Shen & Zhou, 2021; Härkönen et al., 2020), the manipulation results show that our learned dictionary could adapt to previously unseen combination of semantics such as red hair,…",1,related,1,positive
+", 2021) cannot effectively recover the directions found by unsupervised methods (Härkönen et al., 2020; Shen & Zhou, 2021).",1,related,0,negative
+"On the other hand, GANspace (Härkönen et al., 2020) relies on the randomly sampled latent codes in W and 2",1,related,1,positive
+"First, we show that many edits using unsupervised methods (Härkönen et al., 2020; Shen & Zhou, 2021) cannot be recovered by GlobalDirection.",1,related,0,negative
+"We use unsupervised directions from SeFa and GANspace, both of which are found in intermediate space W limiting the maximum number of directions to 512, which is the dimension of the intermediate latent space.",1,related,1,positive
+"To avoid this unrealistic assumption, we substitute ŝt with the known directions α ∈ R derived from unsupervised methods (Härkönen et al., 2020; Shen & Zhou, 2021).",1,related,1,positive
+"…fast inference and is applicable to any images once found using supervised (Jahanian et al., 2019), unsupervised (Shen & Zhou, 2021; Wang & Ponce, 2021; Härkönen et al., 2020; Voynov & Babenko, 2020), or text-guided methods (Global Mapper & GlobalDirection1 of StyleCLIP (Patashnik et al., 2021)).",1,related,1,positive
+"On the other hand, GANspace (Härkönen et al., 2020) relies on the randomly sampled latent codes in W and
+the eigenvectors from the latent codes proved to be global directions that share an image-agnostic modification ability.",1,related,1,positive
+"Therefore, we conduct an ablation study on the effect of using unsupervised directions by comparing the two cases where directions α come from supervised method (Shen et al., 2020) and unsupervised methods (Shen & Zhou, 2021; Härkönen et al., 2020).",1,related,1,positive
+"We emphasize that despite the dictionary of our method is learned from the known directions in unsupervised approaches (Shen & Zhou, 2021; Härkönen et al., 2020), the manipulation results show that our learned dictionary could adapt to previously unseen combination of semantics such as red hair, pale skin, and big eyes to represent ‘Little Mermaid’ and unnatural smiles with red lipstick and pale face to represent ‘Joker smile’.",1,related,0,negative
+"As we introduce the first unsupervised editing in DMs, we compare our method with GANSpace (Härkönen et al., 2020) considering the mapping from X to H instead of Z to W in GANs.",1,related,1,positive
+"Since unsupervised editing is not available for DMs, we consider GANSpace for image editing.",1,related,1,positive
+"As we introduce the first unsupervised editing in DMs, we compare our method with GANSpace (Härkönen et al., 2020) considering the mapping from X to H instead of Z to W in GANs.",1,related,1,positive
+Appendix C describes more details for GANSpace.,1,related,0,negative
+We use 1k random images with DDIM generative process for GANSpace.,1,related,1,positive
+Note that the GANSpace method is obtaining directions inW thus we used GANSpace to add directions directly toH.,1,related,1,positive
+The unsupervised path aims to unveil the domain’s structure by applying PCA [18] or eigenvalue decomposition [43].,1,related,1,positive
+"We also compare with some other SOTA methods in the experiments, i.e., StyleRig [7], InterfaceGAN [8], GANSpace [9], StyleFlow [10].",1,related,1,positive
+"through latent space edits proposed by [13, 33].",1,related,1,positive
+"With our GAN inversion, we can modify the latent code to perform high-quality semantic image editing [18, 24, 40, 45] or video editing [53, 58, 60].",1,related,1,positive
+"2022], and utilize latent edit directions [Abdal et al. 2022; Härkönen et al. 2020; Patashnik et al. 2021; Shen et al. 2020].",1,related,1,positive
+"Without label annotation, other methods explore the latent space by unsupervised [13, 29, 32, 33] or self-supervised ways [15, 24] to find more semantic directions way.",1,related,1,positive
+"For a certain attribute, they search for a certain direction in the latent space, and then alter the target attribute via moving the latent code z along the searched direction [6], [9], [10], [11], [12].",1,related,1,positive
+"To edit a facial attribute of an input image, one needs to project the image to a latent code in GANs’ latent space [1] such that the generator reconstructs the input image from the latent code.",1,related,1,positive
+"We
+3 also show this behavior in the Results section 4.3 when comparing our method with state-of-the-art editing with pretrained GANs methods.",1,related,1,positive
+"Since our 3D domain adaptation is designed to preserve the properties of W and S spaces, we can perform semantic edits via InterFaceGAN [51], GANSpace [22], StyleSpace [62] etc.",1,related,1,positive
+"Since our 3D domain adaptation is designed to preserve the properties of W and S spaces, we can perform semantic edits via InterFaceGAN [53], GANSpace [23], StyleSpace [63] etc., and geometric edits using TPS (Sec.",1,related,1,positive
+"We run extensive experiments with directions explored with InterfaceGAN [30], GANSpace [15], StyleClip [26], and GradCtrl [7] methods.",1,related,1,positive
+"Note that prior works that manipulate one feature at a time in latent space [1, 9, 31, 36, 40, 43] are not applicable in our context.",1,related,1,positive
+"Identity disentanglement in latent space has not been addressed by prior work and is not possible with existing methods [9, 31, 43].",1,related,1,positive
+"Also, we have compared our method with state-of-the-art methods [36, 4, 5, 24] on face attribute manipulation [17, 25].",1,related,1,positive
+"For unsupervised approaches, GANSpace [11] finds editable directions for some attributes by performing PCA of latent codes.",1,related,1,positive
+"For StyleNeRF and EG3D, we apply 2D editing method [7] on the frontal image and get an inverted latent code.",1,related,1,positive
+"We can apply any existing latent code editing methods [7, 21] on the frontal latent code w̄ to get wstyle.",1,related,1,positive
+"To ensure the high-fidelity, we restrict the camera pose range to lie in StyleGAN’s training pose distribution [1,16,26].",1,related,0,negative
+"Furthermore, when we vary the pose, the baselines degrade quickly: GANSpace incurs obvious background; InterFaceGAN has a large shift; EG3D obtains blurry results.",1,related,1,positive
+"For GANSpace and InterFaceGAN, we use their own stylization
+method for editing.",1,related,1,positive
+w/o Editing w Editing ID↑ PSNR↑ SSIM↑ LPIPS↓ APS↑ Pose ↓ GANSpace [7] 44.,1,related,1,positive
+"For 2D manipulation baselines, we choose GANSpace [7] and InterFaceGAN [21], both of which are able to control the pose direction.",1,related,1,positive
+"To realize this, we restrict the pose range to StyleGAN’s training pose domain and align the images on FaceScape.",1,related,1,positive
+"Our experiments show that latent directions found by prior methods adapted to SIS [10, 29] lead to weaker class edits, comparable to random directions (see Sec.",1,related,1,positive
+"Following GANSpaceStyleGAN2 [10] and SeFA-StyleGAN2 [29], we train all latent direction methods on features extracted from the normalization layers of each ResNet block in the generator.",1,related,1,positive
+Härkönen et al.25 summarized the previous work and realized unsupervised latent space.,1,related,1,positive
+Härkönen et al.(25) summarized the previous work and realized unsupervised latent space.,1,related,1,positive
+"0730-0301/2022/12-ART269 $15.00 https://doi.org/10.1145/3550454.3555472
+Additional Key Words and Phrases: GANs, example-based media, digital brushes
+ACM Reference Format: Maria Shugrina, Chin-Ying Li, and Sanja Fidler.",1,related,1,positive
+"We follow the same methodology and instead apply deep convolutional GANs to model a distribution of interactive drawing tools, showing a range of novel and expressive applications in control and discovery of digital brushes.",1,related,1,positive
+"Like other GANs, our model is challenging to evaluate.",1,related,0,negative
+…an age code explicitly or by traversing the latent space along a linear or non-linear path (a “semantic dimension”) as steered by a pre-trained age classifier [Abdal et al. 2021; Alaluf et al. 2021; Antipov et al. 2017; Härkönen et al. 2020; Or-El et al. 2020; Shen et al. 2020; Yang et al. 2021].,1,related,1,positive
+"We thus seek to achieve this goal using photorealisc synthetic faces, taking inspiration in recent work that leverages semantic manipulations within the latent space of powerful neural face models pre-trained on thousands of real faces [Abdal et al. 2021; Alaluf et al. 2021; Härkönen et al. 2020; Shen et al. 2020].",1,related,1,positive
+"Broadly speaking, we can divide image editing with GANs into two subgroups: (i) Unconditional GAN-based methods [16, 54], which find editing vectors using unsupervised learning methods like PCA [16] or activation maps [54].",1,related,1,positive
+Comparison of part-level object manipulation results of 3DLatNav with unsupervised latent disentanglement methods; Closed-form [42] and GANSpace [13].,1,related,1,positive
+"InterFaceGAN [97] CVPR 2020 Face N/A ✗ ✓ synthetic image & label GANSpace [27] NeurIPS 2020 Face, ImageNet N/A ✗ ✓ Unsup.",1,related,1,positive
+"Method Name Publication Navigation Type Latent Space Resolution Quantitative Metrics StyleGAN2Distillation [167] ECCV 2020 Linear Interpolation W , W+ 1024× 1024 FID, US
+StyleSpaceAnalysis [92] CVPR 2021 Linear Interpolation S 1024× 1024 FID, TARR, DCI [168], Attribute Dependency (AD) InterFaceGAN [33] CVPR 2020 Linear Interpolation ZPG, Z, W 1024× 1024 Correlation of Attribute Distributions
+ACU [169] ACM MM 2021 Linear Interpolation S 1024× 1024 FID, AD [92], Success Rate of Local Editing, Region Purity AdvStyle [83] CVPR 2021 Linear Interpolation W 1024× 1024 Correlation of Attribute Distributions
+EditGAN [170] NeurIPS 2021 Linear Interpolation W+ 1024× 1024 FID, KID, TARR, CSIM EnjoyEditingGAN [171] ICLR 2021 Linear Interpolation ZPG, W 1024× 1024 NAPR, CSIM, US Latent-Transformer [40] ICCV 2021 Linear Interpolation W+ 1024× 1024 The Relation between NAPR/CSIM and Attribute Change Style-Transformer [172] CVPR 2022 Linear Interpolation W+ 1024× 1024 FID, LPIPS, AD [92], SWD [173], Cost Analysis
+UDID [174] ICML 2020 Linear Interpolation ZSN , ZPG, ZBig 1024× 1024 TARR, US WarpedGANSpace [175] ICCV 2021 Linear Interpolation ZSN , ZPG, ZBig , Z 1024× 1024 TARR, L1-normalized Correlation of Attribute Distributions
+GANSpace [176] NeurIPS 2020 Linear Interpolation ZBig , W 1024× 1024 - SeFa [86] CVPR 2021 Linear Interpolation ZPG, ZBig , Z 1024× 1024 FID, US, Attribute Re-scoring Analysis
+LowRankGAN [177] NeurIPS 2021 Linear Interpolation ZBig , Z 1024× 1024 FID, Masked L2 Error of Pixel Value, US, SWD [173] LatentCLR [178] ICCV 2021 Linear Interpolation ZBig , Z 512× 512 US, Attribute Re-scoring Analysis NeuralODE [179] ICCV 2021 Non-linear Traversal W 256× 256 US, Control-Disentanglement Curve
+SGF [180] CVPR 2021 Non-linear Traversal ZPG, W -",1,related,1,positive
+"Then, each PCA result on the texture code of a fashion item is formulated as
+pt = G (Tt (xt + ϱ × tk ) ,Ts (xs )) , (15) where ϱ ∈ Ω and ϱ×tk denotes moving along the component tk in the ϱ edit direction.",1,related,1,positive
+"Here, sk (k ∈ [1, 5]) denotes the five principal shape components decomposed by PCA; and each PCA result on the shape code of
+ACM Trans.",1,related,1,positive
+"For texture codes, we use PCA important directions in the latent space.",1,related,1,positive
+"Likewise, for shape codes, we also use PCA to learn the first five critical directions in the latent space.",1,related,1,positive
+Figure 9 illustrates certain samples generated by PCA.,1,related,1,positive
+"In line with this, we use principal component analysis (PCA) [13] to calculate the vector-based texture and shape in the orthogonal direction in order to obtain texture and shape principal components.",1,related,1,positive
+"Here, tk (k ∈ [1, 5]) denotes the five principal texture components decomposed by PCA; Ω = [−1, 1] indicates the edit directions of the texture codes.",1,related,1,positive
+"In line with this, we use principal component analysis (PCA) [13] to calculate the vector-based texture and shape in the orthogonal direction to obtain texture and shape principal components.",1,related,1,positive
+We employ GANSpace [17] method to quantitatively evaluate the manipulation capability of the acquired latent code.,1,related,1,positive
+"In this work, we leverage GANSpace [17], which performs principal component analysis in the latent space, to demonstrate latent-based manipulation of 3D shape.",1,related,1,positive
+We perform various edits [17] over latent codes and camera pose acquired by each method.,1,related,1,positive
+"For a fair comparison, we took the annotated basis in GANSpace [12] and compared those with Fréchet basis onW-space of three StyleGAN models.",1,related,1,positive
+"Following the experiments in [6], we assessed the global-basis-compatibility by the FID [13] Gap between Local Basis and GANSpace [12] under the same perturbation intensity.",1,related,1,positive
+"In this work, we focus on the global methods [12, 35].",1,related,1,positive
+"We ran this basis refinement on the subspace generated by the existing global methods, GANSpace [12] and SeFa [35].",1,related,1,positive
+"We use the model ranked first by our image-based model retrieval algorithm for inverting the real image, and then we perform editing using GANspace [49].",1,related,1,positive
+"There are multiple methods [9, 14, 17, 24, 36, 44, 45, 54, 57, 63] to manipulate the latent code, most of them are based on algebraic operations on the latent code.",1,related,1,positive
+"The second step is latent code manipulation [9, 14, 17, 24, 36, 44, 45, 54, 57, 63]",1,related,1,positive
+"We compare our method with the related works [10,21,28] by measuring the accuracy and the level of attribute entanglement.",1,related,1,positive
+"For the unsupervised approach [CDH*16; VB20; Här*20; SZ21; HKS21; YSEY21; ZFS*21], for example, GANSpace [Här*20] discovered that moving a latent code toward principal directions in a latent space leads to interpretable control.",1,related,1,positive
+"We adopt hierarchical fitting similar to that used with StyleGAN [Abdal et al. 2019]: we first fit an id code to initialize idw and idc, which are then optimized further in their own subspaces.",1,related,1,positive
+"Unlike the previous methods [55,19,56] that allows implicit pose control, we make StyleGAN enable explicit control over pose.",1,related,1,positive
+"Of course, the discovery using SURF-GAN is one of many applicable approaches and we can also utilize the existing semantic analysis methods [55,19,56] because our model is flexibly compatible with well-studied StyleGAN-based techniques.",1,related,1,positive
+"We compare FLAME quantitatively and quantitatively with three recent face editing methods - InterFaceGAN [27], GANSpace [13] and StyleFlow [3].",1,related,1,positive
+Our method performs at par with the best performing GANSpace [13] method on both CS and ED metrics.,1,related,1,positive
+"The widespread use of GANs as opposed to other generative models in the interpretability is done due to the availability of an disentangled latent space [18, 49], which is a property we utilize in our work.",1,related,1,positive
+"Borrowing the FFHQ dataset, we evaluate the human face editing task for image synthesis by collecting and summarizing results from Abdal et al. [213] in Table 6.",1,related,1,positive
+"One is StyleGAN’s native latent space W [3, 20, 23, 43, 47], where the style code is a 512dimensional vector, and the other is an extended latent space W+ [1, 2, 41, 49, 62], where the style code consists of 18 different 512dimensional vectors.",1,related,1,positive
+"For postprocessing, we applied PCA to 1,024 randomly-sampled latent codes to obtain bases W.",1,related,1,positive
+"Inspired by GANSpace [12], we solve this problem by restricting the latent code exploration to certain principal directions.",1,related,1,positive
+"• Relevance feedback:We implement relevance feedback by combining unsupervised interpretable controls based on principal component analysis (PCA) [6] with Thompson sampling, a Bayesian contextual bandit algorithm based on probability matching [3].",1,related,1,positive
+"In particular, we obtain the controls from the pre-trained sourcemodels using the latent discovery method GANSpace [Härkönen et al. 2020].",1,related,1,positive
+"In particular, we obtain the controls from the pre-trained source models using the latent discovery method GANSpace [26].",1,related,1,positive
+We can also apply GANSpace edits [26] to our models to change the object attributes such as poses or colors.,1,related,1,positive
+"Second, we observe that it is easier to introduce out-of-thedistribution geometric changes (e.g., deform a cat ear into a curly shape) compared to using latent directions [Härkönen et al. 2020].",1,related,1,positive
+We use the GANSpace approach [Härkönen et al. 2020] to discover interpretable directions in the intermediate latent spacew .,1,related,1,positive
+We use the GANSpace approach [Härkönen et al. 2020] to discover interpretable directions in the intermediate latent space𝒘 .,1,related,1,positive
+"We refer to an in-domain editing [51,22,52,60] as the editing that only manipulates the latent code, given a fixed pretrained generator.",1,related,1,positive
+"In our work, we use a similar method to GANSpace [14], which applies PCA to latent vectors sampled",1,related,1,positive
+"In this section, we first compare the proposed method, which discovers non-linear paths in the GAN’s latent space and may adopt non-linear or linear paths in the text space, with GANSpace [11] and WGS [32], which discover linear or non-linear paths, respectively, in the GAN latent space in an unsupervised manner.",1,related,1,positive
+Figure 9: Comparison of the proposed method with GANSpace [11] and WGS [32].,1,related,1,positive
+"We use an open-
+source implementation from [5] of a VQGAN generation model [6] which steers the image generation based on a text prompt.",1,related,1,positive
+"Like these methods, we investigate the ability of CLIP to steer VQGAN, however instead of generating individual images, we ask whether the broad ability of CLIP to read and draw visual words can be controlled.",1,related,1,positive
+"We generate 1000 images conditioned on real English words from our validation set, and 1000 images conditioned on nonsense strings from the validation text string set using VQGAN+CLIP and both of our projection models.",1,related,1,positive
+We use GANSpace [21] and StyleCLIP [40] for finding an editing direction δw in the W latent space.,1,related,1,positive
+"After inversion, we can edit the inverted code by traversing semantically meaningful directions computed using supervised [9, 25, 47] or unsupervised approaches [17, 21, 41, 48, 52].",1,related,1,positive
+We use GANSpace [21] and StyleCLIP [40] for finding an editing direction δw+ in the W+ latent space.,1,related,1,positive
+The latent space distiller [34] is used to achieve attribute disentanglement and GANSpace [11] performs PCA on the sampled data to find primary directions in the latent space.,1,related,1,positive
+"For the StyleGAN architecutre, InterFaceGAN [Shen et al. 2020], GANSpace [Härkönen et al. 2020], StyleFlow [Abdal et al. 2021b], and StyleRig [Tewari et al. 2020a] propose linear and non-linear edits of the underlying𝑊 and𝑊 + spaces.",1,related,1,positive
+We chose GANSpace [14] as a global basis because of its broad applicability.,1,related,0,negative
+We chose the Fréchet Inception Distance (FID) [15] gap between Local Basis and GANSpace as a measure of global-basis-compatibility.,1,related,1,positive
+"On the other hand, unsupervised methods [20,39] were proposed to find semantic direction without using attribute classifier.",1,related,1,positive
+"For pre-trained GAN-based baselines, we adopt GANspace (GS) [20], LatentDiscovery (LD) [39], ClosedForm (CF) [37], DeepSpectral (DS) [26] and DisCo [36].",1,related,1,positive
+We compared the rotation and smile directions found by our approach to those previously found by InterFaceGAN [33] and GANSpace [17].,1,related,1,positive
+"To perform rotations with GANSpace [17], we initially used the 2nd principal component applied to the first three style vectors.",1,related,1,positive
+"Hence, our approach is still compatible with unsupervised editing techniques such as GANSpace [22] (fig.",1,related,1,positive
+"In global manipulation works, interpolations in the latent space are located which correspond to edits over the entire image, either via visual attribute classifiers [10, 33, 57, 71], unsupervised disentanglement [26, 47, 56, 63, 67], or via image-text similarity [3, 11, 22, 40, 46, 55, 68].",1,related,1,positive
+"Smile Age Gender Glass InterfaceGAN 0.0515 0.1294 0.1225 0.0916 GANspace 0.1081 0.0975 0.0507 0.1420 Ours 0.0047 0.0660 0.0491 0.0279
+Identity-agnostic Analysis It is essential to preserve the identity in face editing.",1,related,1,positive
+"We consider the following two methods: InterfaceGAN (Shen et al., 2020b) and GANspace (Härkönen et al., 2020).",1,related,1,positive
+"Note that unsupervised methods (e.g., GANSpace, SeFa) might fail to edit unnatural attributes (i.e., glass) due to the lack of supervision from attribute labels.",1,related,1,positive
+", GANSpace[12], and SeFa [25]) on the estimated latent codes from both encoders.",1,related,1,positive
+"We show comparison with different editing methods including InterfaceGAN [24], AdvStyle [30], GANSpace[12], and SeFa [25].",1,related,1,positive
+"Our framework is motivated by the following observation [1, 13] – objects generated by BigGAN, despite originating from different domains, share high content correspondences when generated from the same latent code.",1,related,1,positive
+"For example, as shall be shown, pairing StyleFusion with GANSpace [Härkönen et al. 2020] or StyleCLIP [Patashnik et al.",1,related,1,positive
+"For InterFaceGAN and GANSpace we use their official implementation and latent directions, while for StyleCLIP we adapt the official implementation to train a latent mapper which manipulates only the desired image region.",1,related,1,positive
+"In Figure 14 we show the advantage of using StyleFusion’s disentangled representation when editing images using three latent traversal editing methods: InterFaceGAN [Shen et al. 2020], GANSpace [Härkönen et al. 2020], and StyleCLIP [Patashnik et al. 2021].",1,related,1,positive
+"We then manipulate the resulting code to obtain the edited representation wedit (e.g., via a traversal along a latent path learned by InterFaceGAN or GANSpace).",1,related,1,positive
+"Next, the resulting latent code can be semantically edited using a wide range of methods [2, 21, 36, 43, 49].",1,related,1,positive
+"Here, we can find many interesting fine-grained directions for component editing by applying PCA [6] to the latent space of each component.",1,related,1,positive
+"The first stream usually leverages the captured semantics in GAN’s latent space after the generator is trained [1, 6, 29].",1,related,1,positive
+) We further apply unsupervised methods [6] to find interpretable directions in the latent space of each component.,1,related,1,positive
+"We used the official implementations for both methods2 and obtained the top 10 principal components for Ganspace
+2http://github.com/harskish/ganspace, http:// github.com/genforce/sefa
+and the top 10 eigenvectors for SeFa methods using the default parameters.",1,related,1,positive
+"As can be seen from Figure 6, our method yields more disentangled and diverse directions compared to Ganspace and SeFa.",1,related,1,positive
+"Comparison of the top 10 directions for Ganspace [8], SeFa [25] and our method.",1,related,1,positive
+"We conduct several qualitative experiments to demonstrate the effectiveness of the submodular framework and compare our method to supervised [34] and unsupervised methods [8, 25].",1,related,1,positive
+"Next, we compare our results with the state-of-theart unsupervised methods Ganspace [8] and SeFa [25].",1,related,1,positive
+"For cars, we use the directions provided in GANSpace [11] for editing.",1,related,1,positive
+"For car domain, we apply GANSpace [11] to find the semantic directions.",1,related,1,positive
+"limited to the semantics identified in the latent space via a pre-trained classifier [1,41,57] or through a semi-automatic manner [22, 48].",1,related,1,positive
+"Other methods [22,48] operate without a pre-trained classifier and find the transformations in an unsupervised manner, requiring a manual labelling process to interpret and annotate the “discovered” transformations.",1,related,1,positive
+"In addition, we mathematically show that Semantic Factorization (SeFa) [6], GANSpace [7] and regular PCA [11] typically achieve almost the identical results when sampling enough data for GANSpace.",1,related,1,positive
+"Figure 9: Visualization of individual components within the latent codes, for (1) SeFa [6], (2) GANSpace [7] and (3) regular PCA.",1,related,1,positive
+"9 plots the latent-code manipulation results of SeFa [6], GANSpace [7] and regular PCA on the CUB bird and COCO data sets.",1,related,1,positive
+"Since different hyperplanes for different facial attributes in StyleGAN latent space (Shen et al., 2020; Härkönen et al., 2020) can be found, our method can be used to modify the memorability of the images conditionally.",1,related,1,positive
+"Since different hyperplanes for different facial attributes in StyleGAN latent space (Shen et al., 2020; Härkönen et al., 2020) can be found, our method can be used to modify the memorability of the images conditionally.",1,related,1,positive
+"Since there are no existing approaches for this task, we propose a simple PCA-based baseline inspired by GANSpace [22].",1,related,1,positive
+"Given an input latent code w, let us consider that we have a latent code w̃ corresponding to a desired editing, where w̃ is obtained from a latent space editing method [16, 33, 34].",1,related,1,positive
+"[4]) or “discover” meaningful concepts in a model: For our study, we used the GANSpace approach [12] to automatically select the dimensions from StyleGAN to be controlled via sliders in our study (Section 4.",1,related,1,positive
+"Beyond allowing for entering text labels [12, 30], our insights motivate exploring concepts from infovis and information retrieval (e.",1,related,1,positive
+"Principal Component Analysis, PCA, on StyleGAN ’s w vectors, see [12] for details): Concretely, for a task with N sliders, we use this to extract the N top dimensions as ranked by PCA.",1,related,1,positive
+We then apply different manipulation directions obtained by GANspace [20] and StyleMC [31].,1,related,1,positive
+"In this section, we qualitatively compare our approach with three state-of-the-art methods for face editing: InterFaceGAN [23], GANSpace [6], and StyleFlow [1].",1,related,1,positive
+"We find that our generation time is somewhat longer than the InterFaceGAN and GANSpace approaches, but more than four times faster than StyleFlow.",1,related,1,positive
+"IG, SF, GS, and L2L refer to InterFaceGAN, StyleFlow, GANSpace and our proposed method.",1,related,1,positive
+"For GANSpace, we used components provided by Härkönen [6] that best match these attributes.",1,related,1,positive
+"For GANSpace, we used components provided by Härkönen [6] that best match these attributes.",1,related,1,positive
+"1StyleFlow: https://github.com/RameenAbdal/StyleFlow, GANSpace: https://github.com/harskish/ganspace , InterFaceGAN: https://github.com/a312863063/generators-with-stylegan2
+Figure 4 (top left) compares the approaches in adjusting the Age attribute.",1,related,1,positive
+"This can be done by operating directly on the latent codes [17,18] or by analysing the activation space of latent codes to discover interpretable directions of manipulation in latent space [19].",1,related,1,positive
+We compare against GANSpace [10] and SeFA [35] by identifying the attributes above in their basis of interpretable directions.,1,related,1,positive
+Analyses for latent space of the generator were also performed to manipulate the semantic of the generation (Peebles et al. 2020; Härkönen et al. 2020).,1,related,1,positive
+Analyses for latent space of the generator were also performed to manipulate the semantic of the generation (Peebles et al. 2020; Härkönen et al. 2020).,1,related,1,positive
+"We use the Zero-Shot scores to compare three sets of images; (a) the positive images in X+ as a baseline, (b) the results of applying an edit using our approach in StyleGAN W+ space, and (c) the result of a GANSpace edit that was labeled with the same attribute by [21].",1,related,1,positive
+We identify GANSpace [21] as the closest (unsupervised) method to compare with.,1,related,1,positive
+Note that in GANSpace the labels are assigned manually and all directions are curated.,1,related,0,negative
+We identify GANSpace [Härkönen et al. 2020] as the closest (unsupervised) method to compare with.,1,related,1,positive
+"We use the Zero-Shot scores to compare three sets of images; (a) the positive images in X+ as a baseline, (b) the results of applying an edit using our approach in StyleGANW + space, and (c) the result of a GANSpace edit that was labeled with the same attribute by [Härkönen et al. 2020].",1,related,1,positive
+"Instead, we parameterize c as a linear combination of the top-N principal directions ofW space [28, 74]:",1,related,1,positive
+"For a certain attribute, they search for a certain direction in the latent space, and then alter the target attribute via moving the latent code z along the searched direction [3,4,8,10,11].",1,related,1,positive
+"We perform various edits [24, 48, 56] over latent codes obtained by each inversion method.",1,related,1,positive
+"The latent space Ω can be any of Z,W,W+,S for StyleGAN generator as in [16], and Z,Z+ for BigGAN generator as in [10].",1,related,1,positive
+"Meanwhile, we allow layer-wise (both coarse and fine-grained) semantic editing similar to [10] for both style-based GANs and BigGAN.",1,related,1,positive
+We see qualitatively in our GANSpace comparison in Fig.,1,related,1,positive
+"1 Mapping edits to latent space To use these directions found in the activation space to edit the original latent code, we transform this edit tensor back to the original latent space [12].",1,related,1,positive
+"In Section 3.3, we introduce the proposed multilinear approach (formulating GANSpace as a special case), and finally in Section 3.4 we detail how we use these learnt directions to modify the latent code.",1,related,1,positive
+We show how the linear approach of [12] can be framed as a special case.,1,related,1,positive
+From this it is clear that the GANSpace [12] approach as we formulate it using the mode-1 product in Eq.,1,related,1,positive
+To further shed light on the connection between our formulation and the linear approach of GANSpace in Eq.,1,related,1,positive
+"A user can transform the generated outputs by tweaking the latent code [15, 20, 32, 33].",1,related,1,positive
+11: To find the optimal interpolation strength α for rotation transfer for InterFaceGAN [24] and GANSpace [15] we compare the images generated by shifting the latent code corresponding to an image from the one rotation towards the other and compare the result with the ground truth.,1,related,1,positive
+"Finally, we compare τGAN to InterFaceGAN [24] and GANSpace [15] for the application of semantic face editing by using rotation transfer as one example.",1,related,1,positive
+Härkönen et al. create controls by sampling Z space and performing PCA on an intermediate representation of the GAN (W space in StyleGAN or feature space in BigGAN) [15].,1,related,1,positive
+"Note that, our proposed method can perform various local attribute editing tasks, which is much more than previous methods [10, 25, 26, 33].",1,related,1,positive
+"In this section, we compare our methods against five concurrent works: Sefa [43], GANSpace [16], Image2StyleGAN [2], InterfaceGAN [42] and StyleFlow [3].",1,related,1,positive
+"Finally, let us note that in contrast to the global linear directions discovered by [34, 11], in our case the directions along each warping are different for different latent codes.",1,related,1,positive
+"More specifically, for a given method that discovers a set of paths, that is, linear in the cases of [34, 11] or non-linear in our case, in the latent space of a pretrained GAN, we generate an image sequence for each path, starting from a random latent code and “walking” towards the positive and the negative ways of the path for a certain amount of steps.",1,related,1,positive
+"We compare with the corresponding linear directions obtained by [34, 11] and we note that our method both leads to greater variation in the respective generative factors (e.",1,related,1,positive
+"Finally, our method is closely related to those of [34, 11], since we are also learning a set of interpretable paths in an unsupervised and model-agnostic manner.",1,related,1,positive
+"1 below, where the x is the scale parameter customed by user [3]:",1,related,1,positive
+"In this paper, by training the state-of-the-art GAN based image generation model, StyleGAN2 [2], with high-resolution building façade image dataset, and exploring its latent space by applying PCA and GANSpace analysis, we could overcome above challenges in different extend [3].",1,related,1,positive
+"(2) We realize controllable and disentangled facial attribute manipulations without any manual intervention, contrary to previous approaches [5, 6].",1,related,1,positive
+We compare our manipulation results with two recent state-of-the-art methods: GANSpace [6] and InterFaceGAN [5].,1,related,1,positive
+"In each subfigure, from left to right are the original image, the manipulation result of GANSpace [6], that of InterFaceGAN [5] and ours.",1,related,1,positive
+"For attribute
+editing, we adopt InterfaceGAN [30] for face images and GANSpace [13] for car images.",1,related,1,positive
+"editing, we adopt InterfaceGAN [30] for face images and GANSpace [13] for car images.",1,related,1,positive
+"Supervised methods find directions to edit the attributes of interest using attribute labels [40, 41, 59], while unsupervised methods exploit semantics learned by the pretrained GAN to discover the most important and distinguishable directions [45, 11, 42].",1,related,1,positive
+"Finally, interpretable directions can be discovered on w via supervised methods [21], [28], which also can be discovered in unsupervised methods [29], [30], i.",1,related,1,positive
+"When we remove the pretrained GANs, our method degrades to a common automatic colorization method without guidance.",1,related,0,negative
+"Generative priors of pretrained GANs [3, 26, 27, 28] is previously exploited by GAN inversion [1, 13, 38, 41, 62, 63], which aims to find the closest latent codes given an input image.",1,related,1,positive
+"In this work, we have developed a framework to produce vivid and diverse colorization results by leveraging generative color priors encapsulated in pretrained GANs.",1,related,1,positive
+"Furthermore, we showed the image can be further edited using GANSpace [22] (d).",1,related,1,positive
+"To investigate this, we apply the latent discovery method GANSpace [22] to the original models.",1,related,1,positive
+"We achieve this by making use of the advantageous properties of StyleGAN’sW+ space, that have been used for face editing before [9, 25, 26]: Our main assumption is that given a point inW+, the directions into which one would need to shift this point in order to change the identity of the actor that it depicts are mostly orthogonal to those directions that would change the pose/expression/articulation of the actor.",1,related,1,positive
+"From the 3rd column in each subfigure, from left to right are the manipulation result of GANSpace [18], that of InterFaceGAN [34] and ours.",1,related,1,positive
+We compare our results with two state-of-the-art methods: InterFaceGAN [34] and GANSpace [18].,1,related,1,positive
+These properties alleviate us to search for directions in the latent space as in [22] or to directly hardcode conditional features in the architecture as in [23].,1,related,1,positive
+"In Fig 5, we compare the semantic factorizations of Local Basis and GANSpace [15] for the particular semantics discovered by GANSpace.",1,related,1,positive
+We compare the semantic-factorizing directions of GANSpace provided by the authors [15] with Local Basis of the highest cosine similarity.,1,related,1,positive
+We use the popular GANSpace [14] and InterfaceGAN [34] methods for latent-based editing.,1,related,1,positive
+"We use the popular GANSpace [Härkönen et al. 2020] and InterfaceGAN [Shen et al. 2020] methods for latent-based editing. hese approaches are orthogonal to ours, as they require the use of an inversion algorithm to edit real images.",1,related,1,positive
+Methods FID↓ SWD↓ User Study GANSpace [15] 7.,1,related,1,positive
+"C V
+] 3
+0 N
+ov 2
+beyond well-defined annotations) and proposed to find steerable directions of the latent space in an unsupervised manner, such as using Principal Component Analysis (PCA) [15].",1,related,1,positive
+"And then, we project the principal vectors into the null space of PCA.",1,related,1,positive
+"We compare our method with GANSpace [15] and SeFa [28] on StyleGAN2, which are the two state-of-the-art unsupervised approaches to image editing.",1,related,1,positive
+"Rigorously, simply conducting PCA onM in Eq.4 in the main paper does not possess a null space since all the eigenvalues are not equal to zeros.",1,related,1,positive
+"We find the most relevant vectors that can control the smile and hair in GANSpace and SeFa, according to their papers.",1,related,0,negative
+We further compare with an unsupervised method [15] in Fig.,1,related,1,positive
+"Each person was randomly assigned 18 groups of data and asked to choose all of the results they are satisfied with according to three criteria: the result looks natural, the primal attribute is
+1For InterfaceGAN, GANSpace and our method, we firstly embed the given images into the W+ latent space of StyleGAN using [Abdal et al., 2019] and then edit them.
+well changed, and condition attribute is well preserved.",1,related,1,positive
+"We compare our IALS method with several state-of-the-art face attribute editing method proposed recently, including InterfaceGAN [Shen et al., 2020], GANSpace [Härkönen et al., 2020], and STGAN [Liu et al., 2019].",1,related,1,positive
+"Härkönen et al. [Härkönen et al., 2020] sample a collection of latent codes and perform PCA on them to find principle semantic directions.",1,related,1,positive
+"7 show that our method obtained the highest average satisfactory rate (69.66% for ours vs. 62.06% for InterfaceGAN, 35.44% for GANSpace and 6.48% for STGAN).",1,related,0,negative
+"We assign the directions found by GANSpace to interpretable meanings following [Shen and Zhou, 2020].",1,related,1,positive
+"Finally, the transferred latent code ls2t ∈ Ls2t can be predicted as
+ls2t = σ(ω)l̂ high t + (1− σ(ω))l̂highs (3)
+where ω ∈ R1×512 is a trainable weight vector, and σ stands for the sigmoid activation.",1,related,1,positive
+Comparisons with Latent Space Manipulation Methods: We then compare our method with GANSpace and InterFaceGAN that perform semantic image control via latent space manipulation in Fig.,1,related,1,positive
+"TABLE 2 User Study Results
+Method shape exp. illum. pose
+GANSpace 10.57 0.86 13.71 0.57 First Order - 4.29 - 2.86 InterFaceGAN - 2.86 - 2.00 MLS 0.57 0.57 - -",1,related,1,positive
+We compare the proposed method SGF with two stateof-the-art latent space manipulation methods: InterfaceGAN [31] † and GANSpace [11] .,1,related,1,positive
+"We further demonstrate the benefit of our content-aware compressed StyleGAN2 for editing tasks of style mixing, latent space image morphing, and a recent proposed tech-
+nique, GANSpace [18].",1,related,1,positive
+We further deploy our compressed 1024px model for GANSpace [18] editing.,1,related,1,positive
+"We further deploy our compressed
+1024px model for GANSpace [18] editing.",1,related,1,positive
+"6, where we use the same latent code as in the original paper [18] and traverse it in the direction of the first principal component, u0.",1,related,1,positive
+"To this end, we perform latent space manipulations [16, 36, 37] on the inverted latent codes to see if the embeddings are semantically meaningful.",1,related,1,positive
+"For performing the edits in the human facial domain we use InterFaceGAN [36], for the cars domain we use GANSpace [16], and for the horse domain we use SeFa [37].",1,related,1,positive
+We believe that the closest methods to our work are Ganspace [7] and SeFa [22] methods which we extensively compare in Section 4.,1,related,1,positive
+"(b) A comparison of rotate, zoom and background change directions between our method and Ganspace [7].",1,related,1,positive
+Q4: How successful are the obtained directions comparing to other methods? We visually compare† the directions obtained by our method with Ganspace[7] using Husky class.,1,related,1,positive
+"Similar to [7, 22, 26], we limit ourselves to the unsupervised setting, where we aim to identify such edit directions without any external supervision utilized in works such as [4, 21, 8].",1,related,1,positive
+"We also compare our method to state-of-the-art unsupervised methods [7, 22]*, and run several qualitative and quantitative experiments to demonstrate the effectiveness of our approach.",1,related,1,positive
+Figure 4: (a) Comparison of manipulation results on FFHQ dataset with Ganspace [7] and SeFa [22] methods.,1,related,1,positive
+"We attempt to interpret the latent space of the model trained to synthesize all classes (setting B), following [13].",1,related,1,positive
+", add smiling to a portrait) by tweaking the latent code [61, 38, 42, 24, 65].",1,related,0,negative
+"For discovering-based methods, we consider serveral recent methods: GANspace (GS) (Härkönen et al., 2020), LatentDiscovery (LD) (Voynov & Babenko, 2020), ClosedForm (CF) (Shen & Zhou, 2021) and DeepSpectral (DS) (Khrulkov et al., 2021).",1,related,1,positive
+"For discovering-based methods, we consider serveral recent methods: GANspace (GS) (Härkönen et al., 2020), LatentDiscovery (LD) (Voynov & Babenko, 2020), ClosedForm (CF) (Shen & Zhou, 2021) and DeepSpectral (DS) (Khrulkov et al.",1,related,1,positive
+"We consider several recently proposed methods: ClosedForm (Shen & Zhou, 2020), GANspace (Härkönen et al., 2020), LatentDiscovery (Voynov & Babenko, 2020).",1,related,1,positive
+"We consider several recently proposed methods: ClosedForm (Shen & Zhou, 2020), GANspace (Härkönen et al., 2020), LatentDiscovery (Voynov & Babenko, 2020).",1,related,1,positive
+"To this end, we follow our inversion method with several existing editing techniques: StyleFlow [3], InterFaceGAN [34], GANSpace [14], and SeFa [35].",1,related,1,positive
+"To this end, we follow our inversion with several existing editing techniques: StyleFlow [Abdal et al. 2020b], InterFaceGAN [Shen et al. 2020], GANSpace [Härkönen et al. 2020], and SeFa [Shen and Zhou 2020].",1,related,1,positive
+"For cars, we use directions obtained by GANSpace [14]; for faces we use StyleFlow [3]; and for horses, cats, and churches we use SeFa [35].",1,related,1,positive
+"In Figure 1, we show inversions obtained by our encoder in multiple domains, followed by several manipulations performed using various editing methods [Abdal et al. 2020b; Härkönen et al. 2020; Shen and Zhou 2020].",1,related,1,positive
+"For performing editing on the inversions, we use editing directions obtained by GANSpace [Härkönen et al. 2020].",1,related,1,positive
+"For performing editing on the inversions, we use editing directions obtained by GANSpace [14].",1,related,1,positive
+"In Figure 1, we show inversions obtained by our encoder in multiple domains, followed by several manipulations performed using various editing methods [3, 14, 34, 35].",1,related,1,positive
+"For cars, we use directions obtained by GANSpace [Härkönen et al. 2020]; for faces we use StyleFlow [Abdal et al. 2020b]; and for horses, cats, and churches we use SeFa [Shen and Zhou 2020].",1,related,1,positive
+We also test the gender change direction of GANSpace (See Table 3).,1,related,1,positive
+"For the pose change experiments, we use the right-left
+pose edit from GANSpace.",1,related,1,positive
+"Specifically, for a latent code in the GANSpace coordinate system, we can set the coordinate corresponding to pose to five different values: -2σ, -σ, 0, σ, and +2σ, where σ is the eigenvalue for the direction.",1,related,1,positive
+"For its simplicity and interpretability, we choose GANSpace [11] as our main evaluation method for editing quality.",1,related,1,positive
+"In this section we compare the ability of our approach to achieve disentangled manipulation of visual attributes to that of two state-of-the-art methods, specifically GANSpace [12] and InterFaceGAN [29].",1,related,1,positive
+"In response, we design a pipeline that combines GANs, the GAN manipulation techniques, and 3D reconstruction networks.",1,related,1,positive
+"Once the disentangling capability of the GANs’ latent space is improved, we believe our pipeline can be enhanced as well.",1,related,0,negative
+"We compare our method with other unsupervised methods that also achieve face rotation with GANs, including HoloGAN (Nguyen-Phuoc et al., 2019), GANSpace (Härkönen et al., 2020), and SeFa (Shen & Zhou, 2020).",1,related,1,positive
+"↓ HoloGAN 47.38 69.24 GANSpace 41.17 58.93 SeFa 41.79 60.73 Ours (3D) 28.93 43.02 Ours (GAN) 39.85 57.21
+Identity-preserving Face Rotation.",1,related,1,positive
+"We compare with HoloGAN, GANSpace, and SeFa.",1,related,1,positive
+"Performing SVD on the weight space enables two critical differences between our work and Härkönen et al. (2020): (i) we edit the entire output distribution rather than one image, and (ii) rather than manual editing, we adapt to a new domain.",1,related,1,positive
+Most approaches linearly change the StyleGAN latent codes for editing [HÃďrkÃűnen et al. 2020; Shen et al. 2020; Tewari et al. 2020].,1,related,1,positive
+"Unlike the previous methods (Abdal et al. 2019; Härkönen et al. 2020; Shen et al. 2019) the semantic edits performed on the latent vectors w forces the resultant vector to remain in the distribution of W space (p(w)). is enables us to do stable sequential edits which, to the best of our…",1,related,1,positive
+(iii) GANSpace (Härkönen et al. 2020): We used the code provided by the authors and use the version using layer subsets.,1,related,1,positive
+"Nevertheless, we believe it will be useful for the reader to judge our work in competition with these recent papers (Härkönen et al. 2020; Nitzan et al. 2020; Tewari et al. 2020a), because they provide beer results than other work.",1,related,0,negative
+"We would like to reiterate that the three competing methods were only available on arXiv at the time of submission and were independently developed (GANSpace (Härkönen et al. 2020), StyleRig (Tewari et al. 2020a), InterfaceGAN (Shen et al. 2019)).",1,related,0,negative
+"Here we relied on a simple PCA approach for creating a reduced basis of the generative space, but there are other promising approaches in the literature that could also be applied to this task (e.g., [27, 28]).",1,related,1,positive
+"We tested an alternative aggregation approach, where we summarized the five responses for each item with a KDE (Gaussian kernel, standard deviation of 0.5 in units of PCA standard deviations), and took the mode of the resulting distribution (Exp. 4c, Fig.",1,related,1,positive
+"We used the top 10 PCA components to parameterize our stimulus space, allowing these components to vary up to two standard deviations from the mean, and fixing the input latent code (z in the original papers) to the mean to control variability.",1,related,1,positive
+"Following [50], we apply this approach to the generative adversarial network ‘StyleGAN’ [51, 52], pretrained on the FFHQ dataset of faces from Flickr [51], and applying PCA to the intermediate latent code (termed w in the original papers).",1,related,1,positive
+"In addition to the original PCA, we tested sparse PCA using a sparsity parameter of 1.0 (see the alpha parameter of SparsePCA from the scikit-learn package) and independent component analysis (ICA).",1,related,1,positive
+We also tested the effect of retaining dimensions 71–80 instead of dimensions 1–10 of the PCA solution.,1,related,1,positive
+"71−80)
+Sparse PCA
+ICA
+Figure S24: Validation results for Exp. 4e (exploring different basis construction methods), as collected in Exp. 4f.",1,related,1,positive
+"We compare our method with some unsupervised alternatives, including the sampling-based method [10] and the learning-based method [5].",1,related,1,positive
+"In this part, we compare SeFa with GANSpace on the StyleGAN model trained on FF-HQ dataset [17].",1,related,1,positive
+SeFa and GANSpace show close FID score since this is mostly determined by the generator itself as well as the manipulation model in Eq.,1,related,1,positive
+But SeFa outperforms GANSpace on attribute re-scoring and user study.,1,related,0,negative
+"…and qualitative results for the baseline methods, we use the following directions annotated from the pre-trained models by the authors, where available:
+• GANSpace (Härkönen et al., 2020): we use the following author-annotated directions: Eye_Openness, Nose_length, Screaming, and Smile.",1,related,1,positive
+"For both the quantitative and qualitative results for the baseline methods, we use the following directions annotated from the pre-trained models by the authors, where available:
+• GANSpace (Härkönen et al., 2020): we use the following author-annotated directions: Eye_Openness, Nose_length, Screaming, and Smile.",1,related,1,positive
+"…tasks such as generative
+∗Corresponding author: j.a.oldfield@qmul.ac.uk
+model interpretability (Shen et al., 2020a; Bau et al., 2019; Yang et al., 2021) and image editing (Härkönen et al., 2020; Shen & Zhou, 2021; Shen et al., 2020c; Voynov & Babenko, 2020; Tzelepis et al., 2021; Bau et al., 2020).",1,related,1,positive
+"Instead, we parameterize c as a linear combination of the top-N principal directions of W space [189,190]:",1,related,1,positive
+We derive disentanglement of latent space in Style-GAN2 [6] from GANSpace [5].,1,related,1,positive
+We derive disentanglement of latent space in StyleGAN2 [6] from GANSpace [5].,1,related,1,positive
+"Our current work seeks to design GANspire using a specific method, called diffractive [10], which enables to include joint art and health perspectives in deep learning and interaction prototyping.",1,related,1,positive
+"We proposed to call GANspire this deep learning tool, which enables to generate expressive breathing waveforms for art and health applications (see workflow in Figure 1).",1,related,1,positive
+"Ethical Implications
+The breathing waveform dataset scraped for training GANspire was fully anonymised.",1,related,0,negative
+We used TouchDesigner to map pressure waveform values generated by GANspire to that of the mechanical ventilator.,1,related,1,positive
+"We implemented GANspace, a technique for analysing and defining interpretable controls for image GANs [12], within our trained GAN.",1,related,1,positive
+"We eventually applied GANspire to create a soft inflatable object, whose inflatings and deflatings would be controlled by our generative model.",1,related,1,positive
+"Additional quantitative results In addition to the experimental evaluation in the main paper, we provide accuracy for the synthesis of specific hair tone using PGAN 1: [2]: 91%, [5]: 97%, Ours: 99%.",1,related,0,negative
+We set α := 1.0 for GANSpace to generate the edited latent codes in the target attribute.,1,related,1,positive
+GANSpace We train GANSpace [2] on the pre-trained ProgressiveGAN that is used for the other methods.,1,related,1,positive
+We use GANSpace [21] and StyleCLIP [40] for finding an editing direction δw in the W latent space.,1,related,1,positive
+"After inversion, we can edit the inverted code by traversing semantically meaningful directions computed using supervised [9, 25, 47] or unsupervised approaches [17,21,41,48,52].",1,related,1,positive
+We use GANSpace [21] and StyleCLIP [40] for finding an editing direction δw+ in the W+ latent space.,1,related,1,positive
+"Given a latent code w, let us consider that we have a modified latent code w̃ = w+∆w corresponding to a desired editing, obtained from a latent space editing method [34,17,35].",1,related,1,positive
+"Also, we have compared our method with state-of-the-art methods [2, 3, 21, 33] on face attribute manipulation [15, 22].",1,related,1,positive
+"…generation is to identify directions of variation in the latent space for each meta-attribute and
+manipulate the latent code for an input image along these directions to achieve the desired control, e.g., Shen et al. (2020); Härkönen et al. (2020); Voynov & Babenko (2020); Khrulkov et al. (2021).",1,related,1,positive
+11 contains additional HyperStyle editing results on the cars domain obtained with GANSpace [6].,1,related,1,positive
+10 provides additional editing comparisons on the cars domain obtained with GANSpace [6].,1,related,1,positive
+0 Model Source License StyleGAN2 [11] Nvidia Source Code License-NC pSp [20] MIT License e4e [26] MIT License ReStyle [1] MIT License PTI [21] MIT License IDInvert [30] MIT License InterFaceGAN [24] MIT License StyleCLIP [18] MIT License GANSpace [6] Apache 2.,1,related,1,positive
+"In this work, we used GANSpace [17], which allows us to discover",1,related,1,positive
+"Available: http://arxiv.org/abs/1912.04958 [17] E. Härkönen, A. Hertzmann, J. Lehtinen, and S. Paris, ‘‘GANSpace: Discovering interpretable GAN controls,’’ 2020, arXiv:2004.02546.",1,related,1,positive
+"In this work, we used GANSpace [17], which allows us to discover
+80518 VOLUME 9, 2021
+interpretable editions in an unsupervised way via the use of PCA.",1,related,0,negative
+"Inspired by work on latent-space manipulation [4, 16, 30, 31, 41], we also link the latent space with the image space, but here with the explicit goal to supervise our loss.",1,related,1,positive
+"Here, the editing method is to male with GANSpace.",1,related,0,negative
+"We evaluate our projection on four well-known editing methods: InterfaceGAN [30], GANSpace [16], StyleFlow [4] and random interpolation between latent vectors [19].",1,related,1,positive
+"InterfaceGAN StyleFlow GANSpace Interpolations realism t realism t realism realism
+Im2StyleGAN++ 0.973 0.096 0.929 0.211 0.960 1.00 w/o MAGEC loss 0.994 0.097 0.976 0.148 0.985 1.03 Full Method 0.998 0.122 0.982 0.202 0.984 1.04
+Table 2: Realism scores and “improved target” scores of random image edits.",1,related,1,positive
+"Importantly, notice how our method gives better scores for an editing method not utilized to supervise the loss (GANSpace), suggesting that the latent vector doesn’t overfit to one editing method, but is encouraged to become “in-domain”.",1,related,0,negative
+"From the 3rd column in each subfigure, from left to right are the manipulation result of GANSpace [18], that of InterFaceGAN [35] and ours.",1,related,1,positive
+"We project the real images of FFHQ to the latent spaceW+ of StyleGAN using the pretrained encoder [34], and manipulate the latent codes using each method with the suggested magnitude of edits (3 for InterFaceGAN, specified range based on attributes for GANSpace and 1 for our method).",1,related,1,positive
+We compare our results with two state-of-the-art methods: InterFaceGAN [35] and GANSpace [18].,1,related,1,positive
+"We compare our method quantitatively with GANSpace and InterFaceGAN using three metrics: target attribute change rate, attribute preservation rate and identity preservation score.",1,related,1,positive
+The official implementation of GANSpace on StyleGAN2 is available.,1,related,1,positive
+"For GANbased methods that extract disentangled representations from pretrained GANs, we consider serveral recent methods: GANspace (GS) (Härkönen et al., 2020), LatentDiscovery (LD) (Voynov & Babenko, 2020), ClosedForm (CF) (Shen & Zhou, 2020) and DeepSpectral (DS) (Khrulkov et al., 2021).",1,related,1,positive
+"For GANbased methods that extract disentangled representations from pretrained GANs, we consider serveral recent methods: GANspace (GS) (Härkönen et al., 2020), LatentDiscovery (LD) (Voynov & Babenko, 2020), ClosedForm (CF) (Shen & Zhou, 2020) and DeepSpectral (DS) (Khrulkov et al.",1,related,1,positive
+"For 40 CelebA attributes, we first remove inactivated (9), ambiguous (2) or neutral (3) attributes.",1,related,1,positive
+"In the main text, we define three methods for perturbations in the latent code of a GAN: 1) adding isotropic Gaussian noise, 2) moving along principle component axes [2], and 3) style-mixing the optimized latent code with a random latent code.",1,related,1,positive
+"We will observe result quality and then explore semantic editing capabilities using [7], which should be exactly what is shown in GANSpace [14].",1,related,1,positive
+"Similar to Figure 9 in the main text, we show additional results of applying GANSpace [3] edits to our customized models, horse rider (top) and gabled church (bottom).",1,related,1,positive
+"Next, we describe the unsupervised attribute discovery problem for a single generative model formulated in [7], which we extend to multiple models subsequently.",1,related,1,positive
+"For example, for the ffhq manifold, we use the first two PCA components identified by GANSpace, which correspond to head pose and gender, as visible in figure 4.",1,related,1,positive
+"Specifically we use GANSpace [10] to find interpretable semantic directions in the W space of StyleGAN2 [16], using PCA.",1,related,1,positive
+"This can be done by operating directly on the latent codes [15, 16] or by analysing the activation space of latent codes to discover interpretable directions of manipulation in latent space [17].",1,related,1,positive
+We also plot the FID values for one of the directions discovered with the GANSpace [4] approach in the latent space.,1,related,1,positive
+"In order to define consistent and semantically meaningful latent factors, we follow GANSpace [4] and perform PCA analysis on the W space of StyleGAN2.",1,related,1,positive
+"In a second step, we then analyze the most salient hyper-directions in the learned latent space with the help of the GANspace method.",1,related,1,positive

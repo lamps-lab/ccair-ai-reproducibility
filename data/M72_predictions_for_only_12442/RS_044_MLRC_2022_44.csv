@@ -1,0 +1,125 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+Type Perturbation # Test SMBOP [34] T5-3B LK [37] Picard [36] RESDSQL [17] ChatGPT ChatGPT + ZeroNL2SQL,1,related,1,positive
+"To support Text-to-SQL, similar to [24, 26], we fine-tune the model in an end-to-end manner.",1,related,1,positive
+"(2) Because finding the most probable string t2 from pθ(t2|t1) is NP-hard (Sima’an, 1996; Lyngsø and Pedersen, 2002), we follow Kim (2021) to use a decoding strategy with heavy sampling.",1,related,1,positive
+", 2021b) and NLP fields (Shaw et al., 2021; Furrer et al., 2020), but it’s under-explored in dialogue, and also, we argue that data-level explicit dividing is simple and more interpretable than that of implicit representation-level dividing.",1,related,1,positive
+"…disenchanted representation effectively improves the zero-shot generalization in the CV (Chen et al., 2021; Ye et al., 2021b) and NLP fields (Shaw et al., 2021; Furrer et al., 2020), but it’s under-explored in dialogue, and also, we argue that data-level explicit dividing is simple and more…",1,related,1,positive
+Shaw et al. (2021) define the atom and compound for SQL statements and propose the TMCD split to repartition the dataset.,1,related,1,positive
+Shaw et al. (2021) define the atom and compound for SQL statements and prop se the TMCD split to repartition the dataset.,1,related,1,positive
+"From another point of view, our compositional generalization scenario could also be viewed as a special case of TMCD split (Shaw et al., 2021), where the SQL templates and modification templates could be seen as atoms and their combination results are the compounds.",1,related,1,positive
+"The state table is passed into the dialogue context by simple “linearisation” (Suhr et al., 2020; Scholak et al., 2021; Shaw et al., 2021): the rows are converted to slot-value tuples, cast to a string using the template {slot} = {value}, and concatenated together using ; as a separator.2 During…",1,related,1,positive
+"Following Shaw et al. (2021); Scholak, Schucher, and Bahdanau (2021), we treat Text-to-SQL as a translation task, which can be solved by an encoder-decoder transformer model.",1,related,1,positive
+"We use the standard (i.i.d.) and compositional splits created by Shaw et al. (2021): (1) template split, where target programs are anonymized into templates and then the templates are randomly split between training and test sets (Finegan-Dollak et al., 2018); (2) TMCD split, which makes the…",1,related,1,positive
+We take the serialization scheme mentioned in [45] and enable database content by appending database values to the column names [15].,1,related,1,positive
+"Following Shaw et al. (2021), we benchmark the competitive T5-base model (Raffel et al., 2020) on all splits of the SPIDER dataset.",1,related,1,positive
+"For SPIDER, we follow Shaw et al. (2021) and tune the learning rate, batch size and maximum training steps for a T5-base model (Raffel et al., 2020) on a random split of the SPIDER dataset.",1,related,1,positive
+"Shaw et al. (2021), one of the alternative splits that we compare against, use a subset of 4000 examples from the 7000 training examples.",1,related,1,positive
+We follow Shaw et al. (2021) and swap examples between the train and evaluation sets such that every logical program atom in the evaluation set appears at least once in the train set.,1,related,1,positive
+"Following Shaw et al. (2021), we report atom and compound divergences of the various splits in Table 13 of Appendix A.4.",1,related,1,positive
+"Correspondence to: ramild.yar@gmail.com
+Shaw et al. (2021) continued the study in the multidatabase setting and showed that the compositional generalization was hard to achieve, and even to measure it, one should be very careful with splits.",1,related,1,positive
+"C L
+] 3
+0 Se
+p 20
+22
+We evaluate our approach on two realistic benchmarks that, like SCAN, are designed to measure compositional generalization: CFQ (Keysers et al., 2020) and COGS (Kim & Linzen, 2020).",1,related,1,positive
+"Single Prompt Insufficient to Represent Full Label Space In the case of SCAN, the knowledge needed to translate a command into a sequence of actions is small enough that it can be captured with about a dozen examples.",1,related,1,positive
+"Shaw et al. (2021) already reported that T5-Base model struggles in most splitting strategies, particularly when using length-based split and TMCD split; we reproduce those results in Table 1 in rows T5-Base and T5-3B.",1,related,1,positive
+"We evaluate T5QL on three benchmark datasets: Spider (Raffel et al., 2019), Spider-SSP (Shaw et al., 2021), and CoSQL (Yu et al., 2019).",1,related,1,positive
+"To the best of our knowledge, Shaw et al. (2021) were the first to propose a method that uses an LLM, namely T5, and evaluate it on Spider.",1,related,0,negative
+"Thus, we evaluate two different models: T5-Base, which is similar to the model evaluated by Shaw et al. (2021), and T5QL-Base wo/ CD which is T5QL without the constrained decoding component (and without the ranker).",1,related,1,positive
+"Following previous implementation5, α in DBCA is set as 0.1 and 0.5 for DBCAa and DBCAc, respectively.",1,related,1,positive
+The detailed algorithm could be found in original work [5].,1,related,0,negative
+"C L
+] 3
+S ep
+2 02
+2
+on the one hand, we adopt a data splitting method, which is built upon DBCA [5] and holds the objective of maximizing the compositional gap with control of constituent difference between training and test.",1,related,1,positive
+"Therefore, it is reasonable for us to split MWPs data and obtain the compositional data sets with DBCAc performing as the measurement criteria.
+b) Effect of Different Composition Types: SD dataset that we introduced in Sec.",1,related,1,positive
+"We choose k value from range {5, 10, 20} based on the highest DBCAc it could achieve after splitting.",1,related,1,positive
+"As we can see, the performance of MathEN on both Math23K and MAWPS datasets decreases dramatically with the increase of compound divergence DBCAc.",1,related,1,positive
+"To obtain DBCAc, we exhaustively search sub-expression trees in a complete expression tree.",1,related,1,positive
+"• Starting from a data pool D, they apply a greedy algorithm to assign each data to form Dp and Dq , the objective of which is to maximize DBCAc with the control of an upper bound of DBCAa.",1,related,1,positive
+"We report results on the standard data split as well as three compositional splits based on those introduced in Shaw et al. (2021): (1) the template split, where abstract output templates in training and test data are disjoint (Finegan-Dollak et al., 2018); (2) the TMCD split, which makes the…",1,related,1,positive
+"We define compounds as combinations of parent and child symbols in the output, similarly to Shaw et al. (2021).",1,related,1,positive
+"In the prompt constructed to solve SCAN, we actually used both natural language and Python notation.",1,related,1,positive
+The full prompt contexts for SCAN are shown in Appendix B.1.,1,related,0,negative
+"One contains 8 command-reduction examples to demonstrate how to reduce a long command to a list of short commands (see some of them in Table 6), and the other contains 14 command-mapping examples to demonstrate how
+4See the “length train-test split” section in https://github.com/brendenlake/SCAN.",1,related,1,positive
+In this section we present the prompt contexts used for the SCAN benchmark in Section 3.2.,1,related,1,positive
+"We show here that SCAN can essentially be solved using least-to-most prompting with 14 examples, compared to those neural-symbolic methods where the full training set is used.",1,related,1,positive
+We align most of the hyperparameter settings with Shaw et al. (2021) to provide a fair comparison.,1,related,1,positive
+We mostly follow Shaw et al. (2021) and Scholak et al. (2021) to serialize the inputs.,1,related,1,positive
+"Experiments with111 RATSQL+GAP (Shi et al., 2021) show that our112 Spider-CG is more challenging than the existing113 TMCD split (Shaw et al., 2021).114 To improve the generalization performance of115
+text-to-SQL models, we modify several previous 116 state-of-the-art models so that they can be…",1,related,1,positive
+"Ensuring a 049 reasonable data split may also lead to a reduction in 050 dataset size: e.g., the training set drops from 7000 051 to 3282 in the Spider TCMD split (Yu et al., 2018b; 052 Shaw et al., 2021).",1,related,0,negative
+"We compare GPT-3 and Codex against methods from Shaw et al. (2021) using the T5 encoder-decoder
+1See Appendix A.2 for a discussion on parameter counts.
+ar X
+iv :2
+20 4.",1,related,1,positive
+"Similarly to TMCD, we define atoms and compounds over the program tree T , over the graph defined in §4.1.",1,related,1,positive
+"As discussed (§4.4), Maximum Compound Divergence (MCD) and its variation TMCD, are recently proposed metrics for estimating the difficulty of a test set, while we measure difficulty at the in-
+stance level.",1,related,1,positive
+"Measuring compositional difficulty The most closely related methods to our work are MCD and its variation TMCD (Keysers et al., 2020; Shaw et al., 2021), designed to create compositional splits.",1,related,1,positive
+"In addition, while in TMCD the difficulty is over an entire test set, we predict the difficulty of specific instances.",1,related,1,positive
+"In MCD, it is created from the tree of derivation rules that generates the program, and in TMCD from the program parse tree, similar to our approach.",1,related,1,positive
+"We measure compound divergence of the distributions of compounds and atoms on the program graph, following Keysers et al. (2020) and Shaw et al. (2021).",1,related,1,positive
+"TMCD The MCD and TMCD methods (Keysers et al., 2020; Shaw et al., 2021) have been used to create compositional splits, by maximizing compound divergence across the training and test splits.",1,related,1,positive
+"While the two
+methods are not directly comparable, since we focus on instance-level generalization, we extend our approach for computing the easiness of a split and compare to TMCD in §5.",1,related,1,positive
+"For TMCD, we compute the compound divergence of each split (high compound divergence indicates a more difficult split, or lower easiness) following Shaw et al. (2021), see details in App.",1,related,1,positive
+"Instancelevel analysis can better characterize the challenges of compositional generalization, and as we show in §5.2 it is a better predictor of difficulty compared to TMCD even at the split level.",1,related,1,positive
+"Automatic methods include splitting examples by output length (Lake and Baroni, 2018), by anonymizing programs (Finegan-Dollak et al., 2018), and by maximizing divergence between distribution across the training and test set (Keysers et al., 2020; Shaw et al., 2021).",1,related,1,positive
+18We do not show LeAR results for SCAN and GeoQuery as Liu et al. (2021) did not report results for SCAN and reported GeoQuery results using a different template split and a different evaluation metric.,1,related,0,negative
+"GeoQuery We use the same variant of FunQL (Kate et al., 2005) as Shaw et al. (2021), with entities replaced with placeholder values.",1,related,1,positive
+"19Some of our results for NQG-T5 are different than those reported in Shaw et al. (2021) as we average over 3 new GeoQuery template and TMCD splits, as described in §4.1.",1,related,1,positive
+"For the TMCD splits, we changed the atom constraint slightly, based on the error analysis in Shaw et al. (2021) which found that a disproportionate amount of the errors on the TMCD test set were in cases where an “atom” was seen in only a single context during training.",1,related,0,negative
+T5 Fine-Tuning We started with the same configuration for fine-tuning T5 as Shaw et al. (2021).,1,related,1,positive
+"…(x ∈ XCSL) to x /∈ XCSL.
+Comparison with NQG We cannot compare using CSL for data augmentation directly with using its closely related predecessor NQG (Shaw et al., 2021) for data augmentation, as NQG is a discriminative parsing model and not a probabilistic generative model that enables sampling…",1,related,1,positive
+"Comparison with NQG We cannot compare using CSL for data augmentation directly with using its closely related predecessor NQG (Shaw et al., 2021) for data augmentation, as NQG is a discriminative parsing model and not a probabilistic generative model that enables sampling new examples.",1,related,1,positive
+"We report results on the standard data split as well as three compositional splits based on those introduced in Shaw et al. (2021): the template split (where abstract output templates in training and test data are disjoint (Finegan-Dollak et al., 2018)), the TMCD split (an extension of MCD for…",1,related,1,positive
+Using CSL for data augmentation outperforms using GECA on SCAN and GeoQuery.,1,related,1,positive
+"Our method for inducing a QCFG is based on that of Shaw et al. (2021), but with several modifications, which improve the computational scalability of the algorithm as well as the precision and coverage of the induced grammar.",1,related,1,positive
+"CSL builds on the NQG model of Shaw et al. (2021), a discriminative parsing model over an induced QCFG backbone, which Shaw et al. (2021) proposed to ensemble with T5.",1,related,1,positive
+"CSL builds on the NQG model of Shaw et al. (2021), with several key differences discussed in the following sections:
+• Unlike NQG, which is discriminative, CSL is a generative model that admits efficient sampling from the joint distribution p(x, y).",1,related,1,positive
+"…rules in §3.
+be quasi-synchronous (Smith and Eisner, 2006) because we allow a one-to-many alignment between non-terminals.6 Unlike the formalism of Shaw et al. (2021), which limited rules to contain ≤ 2 nonterminals, in the current work the maximal number of non-terminals is a configurable…",1,related,1,positive
+"We generate new length, template, and TMCD splits following the methodology of Shaw et al. (2021), so that we could evaluate our method on dev sets, which the original splits did not include.",1,related,1,positive
+"…and θ given D would be to find the MAP estimate based on some prior, p(G, θ), that encourages compositionality:
+argmax G,θ p(G, θ)× ∏ 〈x,y〉∈D pG,θ(x, y) (5)
+However, since optimizing G and θ jointly is computationally challenging, we adopt a two-stage process similar to that of Shaw et al. (2021).",1,related,1,positive
+"Following past work (Shaw et al., 2021; Herzig et al., 2021), we fine-tune T5 to map text to SQL.",1,related,1,positive
+We use the MCD split generated for SCAN from Keysers et al. (2020) and the Target Maximum Compound Divergence (TMCD) splits generated for GeoQuery from Shaw et al. (2021).,1,related,1,positive
+"We use the same pre-processing as in Shaw et al. (2021), replacing entity mentions with placeholders in the Functional Query Language (FunQL; Kate et al. 2005) output representations.",1,related,1,positive
+"For GEO cd, our approach beats the state-of-the-art, established by a hybrid neurosymbolic model (Shaw et al., 2021); for GEO len, we substantially improved over the baselines.",1,related,1,positive
+"The state-of-the-art results on this task is 52.2% from the NQG-T5 model (Shaw et al., 2021).",1,related,0,negative
+We adopt the length and TMCD splits from Shaw et al. (2021).,1,related,1,positive
+"These predicates correspond to the “compounds” defined in (Keysers et al., 2020; Shaw et al., 2020), and the objective is to maximize the divergence between compound distribution of the evaluation data to the training data.",1,related,1,positive
+"To generate evaluations of compositional generalization, we use a method similar to that of Shaw et al. (2020) and Keysers et al. (2020) which maximizes compound divergence between the distribution of compounds in the evaluation set and in the training set.",1,related,1,positive
+"We validate the generalization capability of COMPOSER by designing an evaluation procedure for a more challenging compositional generalization task that uses test examples with maximum compound divergence (MCD) to the training data (Shaw et al., 2020; Keysers et al., 2020).",1,related,1,positive
+"As mentioned in the main text, we generate compositional generalization (CG) splits with 1,000 images and 5,000 text queries, maximizing the Compound Divergence (MCD) as Shaw et al. (2020)3, to assess models’ capability in generalizing to the data with different predicate distribution.",1,related,1,positive
+"Following Shaw et al. (2021); Hazoom et al. (2021), we use T5 as our baseline model.",1,related,1,positive
+"Similar to Shaw et al. (2021), we identify examples from training set databases that contain more than 50 examples to ensure sufficient coverage over table and column names in the training data.",1,related,0,negative
+"Following Shaw et al. (2021), we adopt a setting similar to an alternative setting called the example split in the original dataset (Yu et al., 2018) where the databases are shared between train and test examples.",1,related,1,positive
+We use the same serialization scheme used by Shaw et al. (2021).,1,related,1,positive
+"We are encouraged by results by Shaw et al. (2021), who showed that a pre-trained T5-Base or T5-3B model can not only learn the text-toSQL task, but also generalize to unseen databases, and even that T5-3B can be competitive with the then-state-of-the-art (Choi et al., 2021; Wang et al., 2020)—all…",1,related,1,positive
+Our reproductions of Shaw et al. (2021)’s results with T5 cannot compete with the current state of the art on Spider.,1,related,0,negative
+"Thus, following Shaw et al. (2020), we use a general-purpose pretrained sequence-to-sequence model, T5 (Raffel et al., 2020), which was shown to be competitive with Spider’s state-of-the-art models.",1,related,1,positive
+"Thus, our model bridges the gap between conventional seq2seq models and specialized state-of-the-art grammar-based models [18, 41].",1,related,1,positive
+"6 We use the varaible-free form, as opposed to other alternatives such lambda calculus, for two reasons: 1) variable-free programs have been commonly used in systematic generalization settings [18, 41], probably it is easier to construct generalization splits using this form; 2) the variable-free form is more suitable for modeling alignments since variables in programs usually make alignments hard to define.",1,related,1,positive
+"For both our T5 baseline and LIRd+RIR, further increasing model capacity beyond T5-base does not give further improvements, which is consistent with previous work on similar tasks with small train set sizes (Shaw et al., 2020; Furrer et al., 2020).",1,related,0,negative
+"our T5 baseline and LIRd+RIR, further increasing model capacity beyond T5-base does not give further improvements, which is consistent with previous work on similar tasks with small train set sizes (Shaw et al., 2020; Furrer et al., 2020).",1,related,0,negative
+"Following previous works, we conduct the “productivity” experiment (Lake and Baroni, 2018; Shaw et al., 2021), which focuses on generalization to longer sequences or to greater compositional depths than have been seen in training (for example, from a length 4 program to a length 5 program).",1,related,1,positive
+"To support Text-to-SQL, similar to [24, 26], we fine-tune the model in an end-to-end manner.",1,related,1,positive
+"Following Shaw et al. (2021); Scholak, Schucher, and Bahdanau (2021), we treat Text-to-SQL as a translation task, which can be solved by an encoder-decoder transformer model.",1,related,1,positive
+"…been created automatically from existing semantic parsing datasets by splitting by output length (Lake and Baroni, 2018), holding out program templates (Finegan-Dollak et al., 2018), and by maximizing compound divergence between the training and test sets (Keysers et al., 2020; Shaw et al., 2021).",1,related,1,positive
+"Our work, especially that on sampling diverse test sets, is also related to work on creating compositional splits from existing datasets (Keysers et al., 2020; Shaw et al., 2021; Bogin et al., 2022) and reducing biases in datasets via adversarial filtering or other means (Bras et al.",1,related,1,positive
+"Following past work [23, 48] we use T5-large as our NL-to-SQL model.",1,related,1,positive
+"As our NLIDB of choice, we follow past work [23, 48] and fine-tune the state-of-the-art T5 language model [40] on mapping NL-to-SQL.",1,related,1,positive
+"Specifically, we use theT5-large model [40] as it has been previously shown to perform competitively with state-of-the-art methods [11, 48].",1,related,1,positive

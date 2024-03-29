@@ -1,0 +1,99 @@
+text,target_M6_predict,target_predict_M6_label
+"The perk of direct inference without training after feature fusion, as observed in [9], does not exist with the selected baseline TOMP.",1,neutral
+"For evaluation, we mainly use the Transparent Object Tracking Benchmark (TOTB) [9] dataset.",2,positive
+"Given the lack of any labeled training data sets, we split TOTB into two sections: a small section comprising 45 video sequences belonging to 3 object classes (Beaker, GlassBall, and WubbleBubble) is used for training while the remaining 180 sequences (belonging to other 12 object classes) are used for testing.",0,negative
+"1: Qualitative comparison of the proposed TOTEM tracking algorithm with state-of-the-arts [1], [9] on three challenging sequences from TOTB [9].",2,positive
+"Motivated by the transfer learning approach in [9], we adopt a similar approach of using the feature extractor from a segmentation network.",2,positive
+All the trackers follow their original configuration and are not pre-trained on TOTB.,0,negative
+• We perform extensive experiments over the transparent object tracking benchmark TOTB [9] and perform ablation studies to showcase the benefit of our design choices.,2,positive
+"To establish baselines for comparison, we employ the recent transparent object tracker TransATOM [9] and its base ATOM [12].",2,positive
+"These works mainly benefit from the fusion techniques [23], [24], [25] like concatenation [9], feature pruning [26], and re-weighting [27], [28].",1,neutral
+"Further, we use different portions of the Transparent Object Tracking Benchmark (TOTB) dataset [9] for training and benchmarking our tracker algorithm.",2,positive
+[9] constructed a large tracking benchmark dedicated to transparent objects.,1,neutral
+We train our tracker on above mentioned splits of TOTB and LaSOT datasets for 25 epochs with 4000 image triplets sampled at every epoch.,2,positive
+"• We perform extensive experiments over the transparent
+object tracking benchmark TOTB [9] and perform ablation studies to showcase the benefit of our design choices.",2,positive
+"Following other tracking datasets [35, 18, 11], we provide challenging factors (also called attributes in other datasets) for each sequence in PlanarTrack to enable further in-depth analysis of different algorithms.",2,positive
+OTB2015 [36] VOT2021 [15] UAV123 [23] TrackingNet [24] GOT-10k [11] LaSOT [9] HOB [17] TOTB [10] HOOT,2,positive
+"Another evaluation benchmark focused on transparent targets, TOTB [10], also provides per-frame absence and full-occlusion labels.",2,positive
+"In (Fan et al., 2021), the authors proposed the first dataset for transparent object tracking (TOTB).",2,positive
+"We use the general one-pass evaluation (OPE) criteria as in Fan et al. (2021), Fan et al. (2019) to compare the trackers using precision measure, normalized precision measure and success measure.",2,positive
+"In Fan et al. (2021), the existing datasets are divided into two types: generic and specific, while in Valmadre et al. (2018) the authors divide existing datasets into long-term and short-term.",2,positive
+"In the following years, several other benchmark datasets are released, including TC128 (Liang et al., 2015), NFS (Galoogahi et al., 2017), LaSOT (Fan et al., 2019), UAV123 (Mueller et al., 2016), GOT10K (Huang et al., 2021), AMTSet (Wang et al., 2022) and TOTB (Fan et al., 2021).",2,positive
+"applied the detection of transparent objects to dynamic scenes, and proposed a recognition tracking network TransATOM, which can stably track the transparent objects appearing in the video and obtain more robust extraction results [17].",1,neutral
+"We selected state-of-the-art learning-based trackers that cover the major trends in modern architecture designs for validating Trans2k: (i) two siamese trackers SiamRPN++ [31] and SiamBAN [6], (ii) two deep correlation filter trackers ATOM [10] and DiMP [11], (iii) the recent state-of-the-art transparent object tracker TransATOM [15], and (iv) a transfomer-
+1.9%
+9.9%
+2.4%
+4.0% 3.3%
+3.8% 2.4%
+0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5
+Location error threshold
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+P re
+ci si
+o n
+Normalized Precision plots of OPE on TOTB
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1
+Overlap threshold
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+S u
+c ce
+s s
+ra te
+Success plots of OPE on TOTB Absolute peformance improvements on TOTB
+[0.847] Stark* [0.817] Stark [0.813] DiMP* [0.791] SiamBAN* [0.773] TransATOM* [0.764] SiamRPN++* [0.762] SiamBAN [0.749] D3S* [0.747] ATOM* [0.735] TransATOM [0.719] SiamRPN++ [0.712] ATOM [0.695] D3S [0.679] DiMP
+[0.738] Stark* [0.719] Stark [0.699] DiMP* [0.680] SiamBAN* [0.667] D3S* [0.664] TransATOM* [0.656] SiamBAN [0.655] SiamRPN++* [0.642] ATOM* [0.631] TransATOM [0.627] D3S [0.618] ATOM [0.617] SiamRPN++ [0.600] DiMP
+Opaque Trans2k+OTD
+Figure 4: Trackers evaluated on TOTB dataset shown in precision and success plots.",2,positive
+The trained trackers were evaluated on TOTB [15].,0,negative
+Trans2k was validated on the recent transparent object tracking benchmark TOTB [48].,2,positive
+"In summary, our contributions are: (i) Trans2k, the first training dataset for transparent object tracking that unlocks the power of deep trainable trackers and allows training bounding box or segmentation trackers, (ii) a complementary analysis on [15] with new findings indicating future research directions.",2,positive
+"Presented with these challenges, various sequence selection and annotation protocols have emerged [15, 21, 25, 27].",1,neutral
+"Deep trackers excel across various benchmarks [14, 15, 21, 28, 35, 48] compared to their hand-crafted counterparts.",2,positive
+"Recently, the TOTB benchmark [15] was proposed to facilitate research in transparent object tracking.",2,positive
+"We selected state-of-the-art learning-based trackers that cover the major trends in modern architecture designs for validating Trans2k: (i) two siamese trackers SiamRPN++ [31] and SiamBAN [6], (ii) two deep correlation filter trackers ATOM [10] and DiMP [11], (iii) the recent state-of-the-art transparent object tracker TransATOM [15], and (iv) a transfomer-",2,positive
+"In fact, a transparent object tracking benchmark [15] has been proposed only recently and reported a performance gap between transparent and opaque object tracking.",2,positive
+"All these benchmarks focus on opaque objects, while recently as transparent object tracking evaluation dataset [15] has been proposed.",2,positive
+A set of trackers representing the major modern deep learning approaches is evaluated on [15].,1,neutral
+"Contrary to [15], we show that deep backbones outperform shallow ones on transparent object tracking, which is consistent with observations in opaque tracking.",2,positive
+"The original versions trained by the authors were evaluated on TOTB [15] along with the versions re-trained using the following variations of the training set: (i) only Trans2k without OTD, (ii) only OTD, (iii) Trans2k+OTD.",0,negative
+We first validated the contribution of Trans2k by measuring performance of trackers on the recent transparent object tracking benchmark TOTB [15].,2,positive
+"In this research, we proposed a novel object tracking model regarding sequential RNN [10, 11] forecasting and action-based target tracking structure.",2,positive
+"The drone agent tracks the target by the
+following prediction and feature information from RNN layers
+feature prediction information allows choosing desired Q-value
+actions from the Dense layer as targeted Q-value actions for
+tracking, illustrated in Figure 5.",2,positive
+The network will decide what direction to move the drone agent by applying information from RNN-based layers prediction output as an active decision and tracking performance.,2,positive
+We propose a network architecture combination between RL and RNN layers where the RNN is applied to sequential processing and for forecasting environmental target attributes.,2,positive
+"Furthermore, the combination of RNN layers to the RL tracking
+architecture gives the advantage of predicting the object location from sequential input and transmitting as a bounding
+box from each frame.",2,positive
+"Proposal DQN model integrated with RNN to use sequential input images, while some authors applied CNN model [13] instead.",1,neutral
+"A following Figure 4 illustrates the RNN-based DQN learning model with the number of output actions at the end of the training process:
+The given network architecture above allows the drone agent to learn the unknown environment properly with a policy where the gained rewards will be summed up if the rewards are positive with 1, negative the result with -1, and 0 output remained unchanged.",2,positive
+Existing benchmarks can be roughly divided into two types: generic benchmarks and specific benchmarks [42].,2,positive
+TOTB [42] collects 225 videos from 15 transparent object categories and focus on transparent object tracking.,2,positive
+"In this study, we created a novel tracker that was based on a sequential recurrent neural network [20,21] prediction and tracking architecture.",2,positive
+"As a sub-task of concealed object detection, transparent object detection [47] and transparent object tracking [95] have shown promise.",1,neutral

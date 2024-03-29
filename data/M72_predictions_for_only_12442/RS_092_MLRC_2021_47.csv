@@ -1,0 +1,32 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"1) Base train: We follow GNN-PPI [Lv et al., 2021] for protein-independent encoding to extract protein features from protein sequences as inputs to our framework.",1,related,1,positive
+"We follow partition algorithms in GNN-PPI [Lv et al., 2021], including random, breath-first search (BFS), and depth-first search (DFS) to split the trainsets and testsets.",1,related,1,positive
+Such a setting makes GNN-PPI impractical to find true PPIs from not yet verified pairs.,1,related,1,positive
+"Baselines Following Zhang et al. (2022), we introduce DPPI (Hashemifar et al., 2018), DNN-PPI (Li et al., 2018), PIPR (Chen et al., 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",1,related,1,positive
+"In the second setting, KeAP outperforms OntoProtein by about 4%, 3%, and 1% on SHS27K, SHS148K, and STRING, respectively.",1,related,0,negative
+"We perform experiments on SHS27K (Chen et al., 2019), SHS148K (Chen et al., 2019), and STRING (Lv et al., 2021).",1,related,1,positive
+"In contrast, our KeAP still performs competitively and surpasses GNN-PPI by an obvious margin on BFS. Table 3: Comparisons on PPI identification.",1,related,0,negative
+"Under GNN-PPI evaluation framework, experiment results showe that our model outperforms several state-of-the-art methods, especially in the prediction of unknown protein interactions.",1,related,0,negative
+"Our model show a marked improvement compared to GNN-PPI under ES and NS, especially as data size increases (e.g. under NS in String all-BFS dataset, our model improves by nearly 10%).",1,related,1,positive
+"For example, in the case of Sring all-BFS, the miroc-F1 value of our model reaches 80.28 ± 0.43, compared to 75.87 ± 0.37 for GNN-PPI and 62.30 ± 0.41 for PIPR.",1,related,1,positive
+"F. In-depth Analysis
+In addition to the comparison with the baseline model, we go ahead with a more in-depth analysis of the performance between GNN-PPI and our model, as shown in Table II.",1,related,1,positive
+"In this study, we use the GNN-PPI partitioning method to divide String 3000, String 9000 and String all into nine datasets according to BFS, DFS and Random for scientific evaluation, where each dataset is set aside 80% for training and the remaining 20% is used for testing.",1,related,1,positive
+Our experiment is inspired by GNN-PPI [26].,1,related,1,positive
+"In these two partition schemes, our LDMGNN model has a large improvement in accuracy compared with the GNN-PPI model.",1,related,1,positive
+"And for the SHS148k dataset, our method achieves an absolute improvement of 0.12% , 2.61% , 1.12% when compared with the GNN-PPI method in random, BFS, and DFS partitioning methods, respectively.",1,related,1,positive
+"Unlike the baseline GNN-PPI, we construct a THPPI network and simultaneously aggregates first-order and second-order neighbor information, increasing the spatial receptive field in the model.",1,related,1,positive
+This is not available in the GNN-PPI model.,1,related,0,negative
+"At the same time, inspired by [26], in order to evaluate the generalization ability of the LDMGNN model more realistically, we choose three partition schemes to divide the test set, i.",1,related,1,positive
+"(2)Recallm = TP1 + TP2 + · · · + TPn
+TP1 + TP2 + · · · + TPn + FN1 + FN2 + · · · + FNn ,
+(3)Precisionm = TP1 + TP2 + · · · + TPn
+TP1 + TP2 + · · · + TPn + FP1 + FP2 + · · · + FPn ,
+Our experiment is inspired by GNN-PPI [26].",1,related,1,positive
+"Compared with the baseline GNN-PPI, our LDMGNN not only captures the long-distance dependency information in the sequence but also increases the spatial receptive field in space.",1,related,1,positive
+"For the SHS27k dataset, our method achieves an absolute improvement of 1.43% , 10.75% , 3.48% when compared with the GNN-PPI model in random, BFS, and DFS partitioning methods, respectively.",1,related,1,positive
+"We use GNN-PPI as the baseline for PPIs prediction, which processes amino acid sequences using RNN and aggregates only first-order neighbor information.",1,related,1,positive
+"Inspired by [39,57], we use the SHS27k and SHS148k datasets in this study and follow the major seven protein–protein interaction types, i.",1,related,1,positive
+"Following Zhang et al. (2022), we introduce DPPI (Hashemifar et al., 2018), DNNPPI (Li et al., 2018), PIPR (Chen et al., 2019), and GNN-PPI (Lv et al., 2021) as 4 more baselines in addition to ProtBert, ESM-1b, and OntoProtein.",1,related,1,positive
+"Specifically, we follow the hyperparameter settings in GNN-PPI (Lv et al., 2021) for PPI prediction.",1,related,1,positive
+"We perform experiments on SHS27K (Chen et al., 2019), SHS148K (Chen et al., 2019), and STRING (Lv et al., 2021).",1,related,1,positive

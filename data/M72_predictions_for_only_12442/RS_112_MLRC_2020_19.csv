@@ -1,0 +1,51 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"We retain the computational simplifications of [2] and use a channel grouping, where the G attention heads process mutually exclusive subsets of D/G channels of the embedding.",1,related,1,positive
+"Unlike [2], we employ data-driven queries to preserve the temporal dimension of the input.",1,related,1,positive
+"The L-TAE’s parameters are kept to their default values nhead = 16, and key dimension dk = 4.",1,related,1,positive
+"We use a dropout rate of 0.1 on the attention masks after upsampling, and the temporal aggregation is done with L-TAE’s channel grouping strategy [21].",1,related,1,positive
+"Contrary to previous work, we only use the L-TAE’s attention masks, and omit attentionweighting of the sequence of low resolution feature maps.",1,related,1,positive
+"For mono-temporal considera-
+tions, we use the same architecture and simply discard the unnecessary L-TAE-based aggregation.",1,related,1,positive
+"In the Attn column: T = Transformer, P = PSE-TAE (Garnot et al., 2020) and a tick indicates any other transformer-like attention.",1,related,1,positive
+"We propose that unlike the previous works that build methods on arbitrary sequence lengths [3,8,14,15,19,23] we need some ‘standards’ for driving a solution to become more robust, trustworthy and logically correct instead of being data hungry.",1,related,1,positive
+"In this work, we decided to follow (PSE + TAE) (Sainte-Fare Garnot et al., 2020) and (PSE+LTAE) (Sainte-Fare Garnot et Landrieu, 2020) approaches since they are well suited to classify satellite image time series and map land cover in agricultural environments while using far fewer parameters and…",1,related,1,positive
+"We adopted the PSE-TAE architecture [Sainte Fare Garnot et al., 2020] to utilize the spatio-temporal resolution of the satellites.",1,related,0,negative
+"In particular, for each time step t, we concatenate GDD(t) to the intermediate PSE embedding ê(t) before the final PSE output layer MLP2:
+e(t) = MLP2([ê (t) || GDD(t)]), (3)
+where [· || ·] indicates concatenation.",1,related,1,positive
+"To explore different fusion strategies, we adopted pixel set encoder–temporal attention encoder (PSE–TAE) [43] as the deep learning architecture over existing supervised learning algorithms dedicated to SITS classification.",1,related,1,positive
+We adapt and extend the original GitHub implementation of the PSE-TAE [43] to (i) accommodate multi-sensor inputs and (ii) design the different fusion strategies.,1,related,1,positive
+"For domain-invariant methods, we align the LTAE feature vector input to the final classifier ( i.e. , o i in Fig.",1,related,1,positive
+We reproduce these methods for SITS by replacing the original feature extractor with PSE + LTAE.,1,related,1,positive
+"Overview of the PSE + LTAE model (Sainte Fare Garnot et al., 2020; Sainte Fare Garnot and Landrieu, 2020).",1,related,1,positive
+"Our implementation is based on the source code of PSE + LTAE (Sainte Fare Garnot and Land-rieu, 2020).",1,related,0,negative
+We consider the following baseline methods: • Source-Trained is PSE + LTAE trained on the source domain and applied to the target domain without domain adaptation.,1,related,1,positive
+"To initialize models on the labeled source domain, we follow the original training approach of PSE+LTAE [12].",1,related,1,positive
+"To initialize models on the labeled source domain, we follow the original training approach of PSE + LTAE (Sainte Fare Garnot et al., 2020).",1,related,1,positive
+"As model, we use the existing object-based crop classifier PSE + LTAE introduced by Sainte Fare Garnot et al. (2020), Sainte Fare Garnot and Landrieu (2020).",1,related,1,positive
+"As an alternative, we include the MMD comparison, which is similar to PAN, except the crop classifier is changed to PSE + LTAE.",1,related,0,negative
+The result is temporally processed by LTAE to a single embedding o i which is then passed to the classifier.,1,related,1,positive
+• Target-Trained is PSE + LTAE trained with labeled target data using the same classes as the source-trained.,1,related,0,negative
+"The additional input τ i is input to LTAE by encoding the days with sinusoidal positional encoding (Vaswani et al., 2017) and adding the result to the output of PSE.",1,related,1,positive
+"Figure 3: Overview of the PSE+LTAE model [12, 53].",1,related,0,negative
+"Given the sequence of PSE-embeddings and the encoded τ i , LTAE outputs a single embedding o i , which is then classified by a multi-layer perceptron to produce class probabilities p ( y",1,related,1,positive
+"This is the same AOI as [2], however, we extend the time period of interest to three years and provide dense annotations for crop types and parcel identities.",1,related,0,negative
+As a sanity check we run further tests with the label groupings from [2] who reported overall accuracy 0.,1,related,0,negative
+We run Sainte Fare Garnot and Landrieu’s [27] model since they achieve state-of-the-art performance for an object-based crop mapping task on the Sentinel2-Agri dataset [26].,1,related,1,positive
+"Compared to our method, the earth mover distance regularizer XE-EMD performs worse on CIFAR100 and NYUDv2, but better on S2-Agri.",1,related,1,positive
+"1 Datasets and Backbones We evaluate our approach on different public datasets and classification tasks: image classification on CIFAR100 [21], RGB-D image segmentation on NYUDv2 [25], and image sequence classification on S2-Agri [29].",1,related,1,positive
+"Our models also improve the ER compared to XE by 4%, 4%, and 15% for CIFAR100, NYUDv2, and S2-Agri respectively.",1,related,0,negative
+"For S2-Agri, we built the hierarchy by combining the two levels available in the dataset S2 of Garnot et al. with the fine-grained description of the agricutltural parcel classes on the French Payment Agency’s website (in French):
+https://www1.telepac.agriculture.gouv.fr/telepac/pdf/tas/2017/ Dossier-PAC-2017_notice_cultures-precisions.pdf.",1,related,1,positive
+"We use the PSE+TAE architecture [29] as the backbone, and follow their 5-fold cross-validation scheme for training.",1,related,0,negative
+"To address the high class imbalance of S2-Agri, we weight each terms in Ldata by the inverse of the square root of the classes’ frequency.",1,related,1,positive
+"We show on three public datasets (CIFAR100 [21], NYUDv2 [25], Sentinel2-Agri [29]) that our method can easily be combined with state-of-the-art backbone networks to decrease the cost of their predictions.",1,related,1,positive
+"We evaluate our approach on different public datasets and classification tasks: image classification on CIFAR100 [21], RGB-D image segmentation on NYUDv2 [25], and image sequence classification on S2-Agri [29].",1,related,1,positive
+We evaluate the performance of our approach on the openaccess dataset Sentinel2-Agri [5].,1,related,1,positive
+"In Table 1, we report the performances of competing methods (taken from [5]) and the L-TAE architecture, all obtained with a 5-fold cross-validation scheme.",1,related,1,positive
+"In order to remove the effects of the different spatial encoders, we use the same spatial encoder (a pixel set encoder [5]) in all experiments.",1,related,1,positive
+"We evaluate our proposed method with the public dataset Sentinel2-Agri [5], comprised of 191 703 sequences of 24 superspectral images of agricultural parcels",1,related,0,negative
+"We argue [43] shows similarity to our work in the methodology part, because both proposed methods are applied to time-series Earth observation images.",1,related,0,negative
+"Third, we follow [38] by randomly sampling pixels from a parcel as input to a temporal self-attention model.",1,related,1,positive
+"We evaluate our approach with different tasks on public datasets with fine-grained class hierarchies: image classification on CIFAR100 (Krizhevsky et al., 2009) and iNaturalist-19 (Van Horn et al., 2018), RGB-D image segmentation on NYUDv2 (Nathan Silberman & Fergus, 2012), and image sequence classification on S2-Agri (Sainte Fare Garnot et al., 2020).",1,related,1,positive
+"We use the PSE+TAE architecture (Sainte Fare Garnot et al., 2020) as the backbone, and follow their 5-fold cross-validation scheme for training.",1,related,0,negative

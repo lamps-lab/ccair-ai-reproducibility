@@ -1,0 +1,543 @@
+text,target_M6_predict,target_predict_M6_label
+"[62] Hao Yuan, Haiyang Yu, Jie Wang, Kang Li, and Shuiwang Ji.",0,negative
+"• Perturbation-based: These methods [59, 30, 62, 18, 29, 43, 27, 6, 31, 1, 50] utilize perturbations of the input to identify important subgraphs that serve as factual or counterfactual explanations.",1,neutral
+"However, GraphFrameX and GraphXAI collectively assess only GnnExplainer [59], PGExplainer [30], and SubgraphX [62].",2,positive
+com/wanyu-lin/ICML2021-Gem/ SubgraphX [62] https://github.,2,positive
+"Gradient: SA [7] , Guided-BP [7] , Grad-CAM [33]; Decomposition: Excitation-BP [33], GNN-LRP [38], CAM [33]; Perturbation: GNNExplainer [59], PGExplainer [30], SubgraphX [62], GEM [27], TAGExplainer [51], CF(2) [43], RCExplainer [6],CF-GNNexplainer [29], CLEAR [31]; Surrogate: GraphLime [18], Relex [64], PGM-Explainer [47]; Global: XGNN [60], GLG-Explainer [5], Xuanyuan et al.",1,neutral
+SubgraphX [62] and GStarX [63] use cooperative game theoretic techniques.,1,neutral
+"Explanations can be broadly classified into two categories: factual reasoning [59, 30, 40, 62, 18] and counterfactual reasoning [29, 43, 31, 6, 1, 50].",1,neutral
+"• Instance-level: Instance-level or local explainers [59, 30, 40, 62, 18, 61, 29, 43, 27, 6, 1, 50] provide explanations for specific predictions made by a model.",1,neutral
+"GNNExplainer [57] Continuous relaxation Mutual Information Size Yes GC+NC Transductive PGExplainer [30] Parameterized edge selection Mutual Information Size and/or connectivity No GC+NC Inductive TAGExplainer [51] Sampling Mutual Information Size, Entropy No GC+NC Inductive GEM [27] Granger Causality+Autoencoder Causal Contribution Size, Connectivity No GC+NC Inductive SubgraphX [62] Monte Carlo Tree Search Shapley Value Size, connectivity No GC Transductive GstarX [63] Monte Carlo sampling HN-value Size No GC Inductive",1,neutral
+"To address this challenge, several techniques have been proposed to explain GNNs, most commonly focusing on identifying a subgraph that dominates the model’s prediction (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021).",2,positive
+"lieu of this, Fidelity metrics, namely Fid+, Fid−, and Fid∆, have become the prevailing standards to gauge the faithfulness of explanation subgraphs (Yuan et al., 2021; 2022; Azzolin et al., 2023a; Zhang et al., 2022b; Rong et al., 2023; Xie et al., 2022).",2,positive
+"Within these methodologies, these methods can be classified as post-hoc explanations (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021) and self-explainable GNNs (Baldassarre & Azizpour, 2019; Dai & Wang, 2021; Miao et al.",2,positive
+"Following routinely adopted settings (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021), we can safely assume that both models can correctly use the informative components(motifs) in the input graphs to make predictions.",2,positive
+"As analyzed in previous works (Yuan et al., 2021), fidelity measurements ignore the size of the explanation.",1,neutral
+"In our experiments, we employ the Fidelity+ and Fidelity− [28] to evaluate the fidelity of the explanations.",1,neutral
+"These methods have provided some elucidation of GNNs; however, substantial work is still required in the following aspects: 1) Explanation scale (local or global explanation): whether the explanation is linked to a specific instance or whether it has captured the archetypal patterns shared by the same group; 2) Gen-eralizability : whether an explainer can be generalized to unseen graphs without retraining; 3) Fidelity : whether the explanations are real important subgraphs; 4) Versatility : whether an explainer is able to generate accurate explanations for different tasks such as node classification and graph classification.",1,neutral
+", 2019), PGMExplainer (Vu & Thai, 2020) and SubgraphX (Yuan et al., 2021).",2,positive
+"We compare non-generative methods, including the heuristic Occlusion (Zeiler & Fergus, 2014), gradient-based meth-ods Saliency (Baldassarre & Azizpour, 2019), Integrated Gradient (Sundararajan et al., 2017), and Grad-CAM (Pope et al., 2019), and perturbation-based methods GNNExplainer (Ying et al., 2019), PGMExplainer (Vu & Thai, 2020) and SubgraphX (Yuan et al., 2021).",2,positive
+"While Truth, PGMExplainer, SubgraphX, and GraphCFE constrain their explanations to be sparse, the rest of the methods include most of the edges in the explanations, assigning a different importance weight to each edge.",2,positive
+"Moreover, the explainability of graph-based learning can offer significant insights in the biomedical domain [2, 451, 464, 470].",1,neutral
+"To evaluate the performance of explanation quantitatively, we adopt the metrics of fidelity score and the sparsity score following previous works [39, 45, 46].",2,positive
+"Brought to GML, perturbation-based explainers learn masks that assign an importance to edges and/or features of the graph [24, 29, 48].",1,neutral
+"Finally, the third strategy is called SubgraphX (Yuan et al. 2021).",1,neutral
+"Perturbation-based methods, such as GNNExplainer [66], PGExplainer [35], ZORRO [15], GraphMask [52], RC-Explainer [60], SubgraphX [70], measure the impact of the perturbation of the input features on the output of the classifier, to detect the most important features.",1,neutral
+"Explainable Graph Neural Network NN) techniques that apply specifically to Graph Neural Networks are broadly classified into several classes: Gradients/features based Guided
+Back-propagation (BP) [155], Perturbation Based GNN Explainer [156], SubgraphX [157],
+Decomposition Based, Surrogates GraphLIME [158] and Generation [159].",1,neutral
+"Explainable Graph Neural Network NN) techniques that apply specifically to Graph Neural Networks are broadly classified into several classes: Gradients/features based Guided Back-propagation (BP) [155], Perturbation Based GNN Explainer [156], SubgraphX [157], Decomposition Based, Surrogates GraphLIME [158] and Generation [159].",1,neutral
+"GNN explainability: The explanation methods for GNN models could be categorized into two types based on their granularity: instance-level [25, 34, 53, 58] and model-level [56], where the former methods explain the prediction for each instance by identifying important sub-graphs, and the latter method aims to understand the global decision rules captured by the GNN.",1,neutral
+"Recent studies [33, 58] have contributed to the development of these methods.",1,neutral
+"could also be classified into two categories based on their methodology: self-explainable GNNs [1, 8] and post-hoc explanation methods [25, 53, 58], where the former methods provide both predictions and explanations, while the latter methods use an additional model or strategy to explain the target GNN.",1,neutral
+", 2020), PGMExplainer (Yuan et al., 2021), and SubgraphX (Vu & Thai, 2020), followed (Ying et al.",2,positive
+"The subsequent work, such as PGExplainer (Luo et al., 2020), PGMExplainer (Yuan et al., 2021), and SubgraphX (Vu & Thai, 2020), followed (Ying et al., 2019) and evaluated GNN explainers on the suggested synthetic datasets or their close variants.",2,positive
+"For example, our dataset measure method can be used to select relatively complex chemical molecular samples for drug discovery [43].",1,neutral
+"Given the input data, instancelevel techniques [29, 31, 52, 54, 65, 68] have been present main stream of GNN explanation, which aim to acquire explanations for a target instance.",1,neutral
+"The dataset is widely used in GNN explanation works [65, 66, 68] given its distinct structural feature with respect to the underlying domain (see Figure 1(b)).",1,neutral
+"As shown in Case 1. of Figure 1(a) is a 6-carbon ring found by SubgraphX [68] as an explanation for the mutagenic class in the MUTAG dataset; however its prediction score from the GNN for the underlying label is only 0.0028, which means the model does not recognize this structure asmutagenic.",0,negative
+of Figure 1(a) is a 6-carbon ring found by SubgraphX [68] as an explanation for the mutagenic class in the MUTAG dataset; however its prediction score from the GNN for the underlying label is only 0.,2,positive
+"Second, among the adaptations of four advanced explanation methods, SubgraphX is superior in all cases.",1,neutral
+"These methods attribute model predictions to graph objects, such as nodes (Vu and Thai 2020), edges (Ying et al. 2019; Luo et al. 2020; Schlichtkrull, De Cao, and Titov 2020; Wang et al. 2021b; Lin, Lan, and Li 2021) and subgraphs (Yuan et al. 2021).",1,neutral
+"On probability fidelity, xPath performs slightly worse than SubgraphX on DBLP.",2,positive
+"2021b; Lin, Lan, and Li 2021) and subgraphs (Yuan et al. 2021).",1,neutral
+(6) SubgraphX (Yuan et al. 2021) provides subgraph-level explanations.,0,negative
+ReFine generally runs faster than PGM-Explainer and SubgraphX.,2,positive
+"The sampling process in PGM-Explainer and the Monte Carlo search in SubgraphX incur high time costs when the target node has a large neighborhood, e.g., SIM3 on DBLP. GEM is efficient in many cases but also suffers in explaining SIM3 due to large node neighborhood, because it calculates the probability of edges between pairwise nodes in the neighborhood.",1,neutral
+"This is because the influence score is defined to be less sensitive to the change in probabilities and xPath pays more attention to avoiding label change, i.e., better accuracy fidelity than SubgraphX.",2,positive
+SubgraphX [75] explains its predictions by efficiently exploring different subgraphs with a Monte Carlo tree search.,1,neutral
+"Others only apply to simple graphs, which cannot handle signed and weighted brain graphs [29, 75].",1,neutral
+"In this paper, we compare our methods with state-of-the-art GNN explanation methods, including GNNExplainer (Ying et al. 2019), PGEXplainer (Luo et al. 2020) SubgraphX (Yuan et al. 2021) and ReFine (Wang et al. 2021), and inherently interpretable GNN methods, including GAT and GSAT (Miao, Liu, and Li 2022).",2,positive
+2020) SubgraphX (Yuan et al. 2021) and ReFine (Wang et al.,2,positive
+[24] propose SubgraphX to efficiently explain GNNs by identifying the important subgraphs.,1,neutral
+"Perturbations-based methods monitor the change of prediction with respect to different input perturbations, including GNNExplainer [8], PGExplainer [9], GraphMask [10], SubgraphX [24], and so on.",1,neutral
+SubgraphX uses subgraphs as nodes in its search process and assigns a score to each subgraph based on its Shapley value.,2,positive
+Yuan’s experimental results show that SubgraphX achieves significantly improved explanations compared with PGExplainer [9] and GNNExplainer [8].,2,positive
+"SubgraphX uses Fidelity and Infidelity metrics to study predictive changes by retaining important input features and removing unimportant features, respectively.",1,neutral
+Yuan et al. [24] propose SubgraphX to efficiently explain GNNs by identifying the important subgraphs.,1,neutral
+"Similar to global explanations, there exist a variety of approaches, such as perturbation-based methods [36, 51, 60], surrogate methods [21], gradient-based methods [46], and additive methods [12, 64], each with their benefits and limitations.",1,neutral
+"To this end, there exist a variety of explanation techniques and explanation types [12,21,36,46,51,60,62,64], the most popular of which are subgraph explanation techniques.",1,neutral
+"For instance, to obtain an explanation, GNNExplainer [36] requires learning a mask of input neighbors; ZORRO [12] and SubgraphX [37] utilize on greedy algorithms and Monte Carlo Tree Search to sample important subgraph that can maximize the",1,neutral
+"For instance, to obtain an explanation, GNNExplainer [36] requires learning a mask of input neighbors; ZORRO [12] and SubgraphX [37] utilize on greedy algorithms and Monte Carlo Tree Search to sample important subgraph that can maximize the
+Preprint.",1,neutral
+"To address the weakness of whole-graph aggregation washing out the influence of small malicious subgraph modifications, PROVEXPLAINER’s DT explanations can be combined with other subgraph explanations techniques (e.g., SubgraphX) which were originally not suitable for security domain, but can be tied to problem space actions by PROVEXPLAINER’s interpretable features.",1,neutral
+"In future work, we plan on combining the strengths of PROVEXPLAINER with those of generic GNNbased explainers e.g., GNNExplainer and SubgraphX, we hope to contextualize the relative degrees of global trends and edge-case logic involved in a particular prediction.",2,positive
+"Black box methods, such as XGNN [55] and SubgraphX [38], only need to access the inputs and outputs of the GNN.",1,neutral
+"Subgraph explanation [93, 94] is one of the most persuasive ways to explain GNNs.",1,neutral
+"[93] Hao Yuan, Haiyang Yu, Jie Wang, Kang Li, and Shuiwang Ji.",0,negative
+"the unique contributions of each feature to the final prediction, we calculated the SHapley Additive exPlanations (SHAP) values for each model [28].",1,neutral
+"To examine the unique contributions of each feature to the final prediction, we calculated the SHapley Additive exPlanations (SHAP) values for each model [28].",2,positive
+"The potential causes can be found with the aid of existing GNN explanation tools such as PGExplainer [26], SubgraphX [50], FexIoT [41] which identify important subgraphs or nodes accounting for the GNN prediction.",2,positive
+"Hence, recent studies focus on discovering core substructures that are highly related to the functionalities of the given graph [83, 84].",1,neutral
+"Several post-hoc explainers have been proposed for explaining Graph Neural Networks’ predictions using subgraphs [1, 2, 30, 3, 31, 29].",1,neutral
+"We also used transductive explainers (GNNExplainer [1], SubgraphX [30], CF2 [31]) for a Planted Clique case study (Supp.",2,positive
+"We also used transductive explainers (GNNExplainer [1], SubgraphX [30], CF(2) [31]) for a Planted Clique case study (Supp.",2,positive
+We randomly select a number of similar molecules and visualize the explanations generated by DEGREE and SubgraphX.,2,positive
+We can find that DEGREE has competitive performance compared to GNN-LRP and SubgraphX.,2,positive
+"F.2 QUALITATIVE COMPARISON
+In this section we make a qualitative comparison between DEGREE and SubgraphX.",1,neutral
+"Figure 8 shows the ACC of DEGREE, GNN-LRP and SubgraphX under various sparsity.",1,neutral
+We can find that none of the subgraphs generated by SubgraphX include the ’N-,1,neutral
+"F.1 QUANTITATIVE EVALUATION
+In this section, we perform additional experiments comparing DEGREE with GNN-LRP Schnake et al. (2020) and SubgraphX Yuan et al. (2021).",2,positive
+"Due to the intended objective to learn the CFG node importance, the model is capable of addressing adversarial evasion techniques such as XOR obfuscation, Sematic NOP obfuscation, code manipulation, etc. Experiments with YANCFG dataset [20] over three state-of-the-art models (GNNExplainer [30], SubgraphX [31], and PGExplainer [32]) justify the feasibility of the approach.",2,positive
+"Experiments with YANCFG dataset [20] over three state-of-the-art models (GNNExplainer [30], SubgraphX [31], and PGExplainer [32]) justify the feasibility of the approach.",2,positive
+"…et al., 2018; Zhao & Akoglu, 2020; Oono & Suzuki, 2020a; Rong et al., 2020), interpretability (Ying et al., 2019; Luo et al., 2020; Vu & Thai, 2020; Yuan et al., 2020; 2021), expressiveness (Xu et al., 2019; Chen et al., 2019; Maron et al., 2019; Dehmamy et al., 2019; Feng et al., 2022), and…",1,neutral
+"[52] Hao Yuan, Haiyang Yu, Jie Wang, Kang Li, and Shuiwang Ji.",0,negative
+"Recently, the explainability of graph neural networks (GNNs) [19, 20, 21, 22, 23, 24] has been explored [25, 26, 27, 28, 29, 30, 31], but these studies are limited to understanding supervised GNNs.",1,neutral
+"For example, GNNExplainer [25], SubgraphX [28], CP-Explainer [48], and GraphMask [47] leverage mutual information, Shapley values, conformal prediction, and divergence, respectively, using both the original and affected label predictions, which are predicted on the candidate explanation subgraph.",1,neutral
+"A small subset of GNN explainers, especially local, perturbation-based methods (such as Yuan et al. (2021); Duval & Malliaros (2021); Luo et al. (2020); Ying et al. (2019)) can be applied to black-box models.",1,neutral
+"Some present a new version of SHAP adapted to a particular type of input data—e.g., text (Chen et al. 2020) and graphs (Yuan et al. 2021)—and to specific models, e.g., random forests (Lundberg et al. 2018).",2,positive
+"Concerning this particular task, CFGExplainer outperforms other explainability frameworks like GNNExplainer [139], SubgraphX [140] and PGExplainer [141].",2,positive
+Q3: how to analyze and interpret dynamic node representations or model predictions on large scale graphs over time? Existing works on interpretable GRL often analyze the importance of neighboring nodes’ features to a query node (mostly indicated by the learned attention weights [16] and the gradient-based weights [48]) as well as the importance of the (sub)graph topologies based on the Shapley value [67].,1,neutral
+"In particular, it enables model-level interpretation instead of instance-level interpretation as done in most existing explainable graph learning works [16], [48], [66], [67].",1,neutral
+", in terms of the importance of node attributes indicated by the learned attention coefficients [16] and (sub)graph topologies based on the Shapley value [67].",1,neutral
+"For this explainability problem, we could use GNNExplainer [51], which is designed to derive insights from the hidden layers of GNNs, and SubgraphX [53].",2,positive
+"Although GNN explanations can come in different flavors (Ying et al., 2019; Yuan et al., 2021; Wang et al., 2021; Lucic et al., 2022; Yuan et al., 2020), they usually take the form of (minimal) substructures of input graphs that are highly influential to the prediction we want to explain.",1,neutral
+"Various modifications of SHAP have been developed to explain different machine learning models and tools [46, 47, 48, 49, 50, 51, 52].",1,neutral
+"GNNExplainer [206], GraphMask [207], PGMExplainer [208], SubgraphX [209], and XGNN [210] are among some methods that attempt to explain the decision-making process of GNNs.",1,neutral
+"Even though PGExplainer Luo et al. (2020) and GraphMask Schlichtkrull et al. (2020) could provide some global insights, they require a reparameterization trick and could not guarantee that the outputs of the subgraph are connected, which lacks explanations for the message passing scheme in GNNs. Shapley-value based approaches SubgraphX Yuan et al. (2021) and GraphSVX Duval & Malliaros (2021) are computationally expensive especially for exploring different subgraphs with the MCTS algorithm.",2,positive
+"…the outputs of the subgraph are connected, which lacks explanations for the message passing scheme in GNNs. Shapley-value based approaches SubgraphX Yuan et al. (2021) and GraphSVX Duval & Malliaros (2021) are computationally expensive especially for exploring different subgraphs with the MCTS…",2,positive
+"In this section, we compare GFlowExplainer with a shapley-value based approache SubgraphX Yuan et al. (2021) and DEGREE on accuracy.",2,positive
+"As for the accuracy calculation, we follow similar setting in SubgraphX and DEGREE for fair comparison.",1,neutral
+"As the determinant subgraphs are expected to be connected, connective constraints [17, 37] are used to allocate more selective probabilities to the edges, which connect with the part selected already.",1,neutral
+SubgraphX [37] employs Monte Carlo Tree to search different subgraphs and leverages Shapley value to evaluate their importance.,1,neutral
+"Perturbation-based line [15, 33, 37] studies the output variations in response to different input perturbations.",1,neutral
+"Given a data instance, most methods generate an explanation by learning a mask to select an edge-induced subgraph [25, 43] or searching over the space of subgraphs [46].",1,neutral
+SubgraphX [48] uses the Shapley value [34] and performs Monte Carlo Tree Search (MCTS) on subgraphs.,1,neutral
+"SubgraphX has a much higher time complexity exponential in |V𝑐 |, so a size budget of 𝐵𝑛𝑜𝑑𝑒 nodes is forced to replace |V𝑐 |, and ?",1,neutral
+"To get the importance of a path, we first use a mean-field approximation for the joint probability by multiplying 𝑃 (𝑒) together, and we normalize each
+Algorithm 1 PaGE-Link
+GNNExp [45] PGExp [25] SubgraphX [48] PaGE-Link (ours) 𝑂 ( |E𝑐 |𝑇 ) 𝑂 ( |E |𝑇 ) / 𝑂 ( |E𝑐",1,neutral
+SubgraphX [46] uses the Shapley value [32] and performs Monte Carlo Tree Search (MCTS) on subgraphs.,1,neutral
+"For example, SubgraphX finds all connected subgraphs with at most 𝐵𝑛𝑜𝑑𝑒 nodes, which has complexity Θ( |V𝑐 |?",1,neutral
+"We do not compare to other search-based explainers like SubgraphX [48]
+because of their high computational complexity (see Section 5.4).",1,neutral
+"We do not compare to other search-based explainers like SubgraphX [46] because they have high computational complexity, as discussed in Section 5.",1,neutral
+GNNExp [43] PGExp [25] SubgraphX [46] PaGE-Link (ours),2,positive
+SubgraphX [5] efficiently explores subgraphs using a Monte Carlo tree search to identify structures that play an important role in the prediction.,1,neutral
+"The proposed method outperformed GNNExplainer and PGExplainer, whereas SubgraphX displayed the best performance.",0,negative
+"As HSIC lasso solvers,
+scikit-learn [21], SPAMS [22, 23], and CVXPY [24, 25] were used, and the DIG library [26] was adapted for use in PGExplainer and SubgraphX.",2,positive
+Table 3 demonstrates that the proposed methods could detect the bridge better than baselines other than SubgraphX in Top-5 Acc.,0,negative
+"For SubgraphX, the maximum number of nodes in subgraph was set to the output of the aforementioned values.",1,neutral
+"Following [5], the sparsity and fidelity scores were adapted to make quantitative evaluations.",0,negative
+graphX [5] efficiently explores subgraphs using a Monte Carlo tree search to identify structures that play an important role in the prediction.,1,neutral
+"Although SubgraphX displayed a higher ability in identifying either hub node than other methods, the ability to identify both was inferior to our method and equivalent to GNNExplainer and PGExplainer.",0,negative
+This is because SubgraphX always outputs a connected graph and is difficult to detect with a small number of candidates when the critical nodes are isolated.,1,neutral
+SubgraphX[5] finds significant subgraphs for GNNs by using the Monte Carlo tree search algorithm and the Shapley values from game theory.,1,neutral
+Table 2 demonstrates that our method and SubgraphX can detect the hub nodes more accurately than the other methods.,2,positive
+"A random explainer (which places a random score on each node), GNNExplainer [3], PGExpaliner [4], and SubgraphX [5] were adopted as the baselines for graph classification.",2,positive
+"Although SubgraphX always generates a connected graph as a human-friendly explanation, it cannot simultaneously detect separate important nodes.",1,neutral
+tion and interpretability performance [36].,1,neutral
+"Adopting a simple numeric operation for all node embeddings is a common graph pooling method [81, 107], since it is easy to use and obeys the permutation invariant.",1,neutral
+The intimate connection between GL-GNNs and 1-WL is exploited in the Graph Isomorphism Network (GIN) [52].,1,neutral
+"Further, GIN also allows us to analyze the efficacy of different functions: summation, maximization, and mean functions.",1,neutral
+"Inspired by GIN, Principal Neighbourhood Aggregation (PNA) [108] employs all three of these functions to pool the node embeddings, while TextING [109] includes both mean and maximization pooling to capture the label distribution and strengthen the keyword features.",2,positive
+"Similarly, GIN [107] shows us that the injective relabeling function in the WL algorithm can be replaced with a simple numeric operation.",1,neutral
+"tation learning [65], graph adversarial attack [66], relational reasoning [67], GNN explainer [68] and combination optimization [69].",1,neutral
+", 2019), PGM-Explainer (Vu & Thai, 2020) and SubgraphX (Yuan et al., 2021).",2,positive
+"…signals (Baldassarre & Azizpour, 2019; Pope et al., 2019; Schnake et al., 2020), mask or attention scores (Ying et al., 2019; Luo et al., 2020), or prediction changes on perturbed features (Schwab & Karlen, 2019; Yuan et al., 2021), and then choose a salient substructure as the explanation.",2,positive
+"Notably, instead of merely optimizing the information hidden in GS , another line of research (Yuan et al., 2021) seeks to reduce the mutual information between the remaining subgraph G − GS and the original one G as:",1,neutral
+", 2020), or prediction changes on perturbed features (Schwab & Karlen, 2019; Yuan et al., 2021), and then choose a salient substructure as the explanation.",2,positive
+"Notably, instead of merely optimizing the information hidden in GS , another line of research (Yuan et al., 2021) seeks to reduce the mutual information between the remaining subgraph G − GS and the original one G as:
+min GS⊂G,|GS |≤K
+I(G − GS , Th).",1,neutral
+"Some explainer models are optimized toward local fidelity (Chen et al., 2018), such as GNNExplainer (Ying et al., 2019), PGM-Explainer (Vu & Thai, 2020) and SubgraphX (Yuan et al., 2021).",2,positive
+"These black-box models cannot be fully trusted and do not meet the demands of fairness, security, and robustness Yuan et al. (2020, 2021); Zeng et al. (2022), which severely hinders their real-world applications, particularly in medical diagnosis in which a transparent decision-making process is a…",2,positive
+", 2022; Vu & Thai, 2020), Shapley values (Lundberg & Lee, 2017; Chen et al., 2019a; Liu et al., 2020; Yuan et al., 2021; Ancona et al., 2019), and causality (Pearl, 2018; Chattopadhyay et al.",2,positive
+"…et al., 2017), surrogate model based (Ribeiro et al., 2016; Huang et al., 2022; Vu & Thai, 2020), Shapley values (Lundberg & Lee, 2017; Chen et al., 2019a; Liu et al., 2020; Yuan et al., 2021; Ancona et al., 2019), and causality (Pearl, 2018; Chattopadhyay et al., 2019; Parafita & Vitrià, 2019).",2,positive
+SubgraphX [10] proposes to use shapley values as the importance scoring function.,1,neutral
+SubgraphX [10] proposed to use subgraphs to interpret the model and use shapley values [11] to score its importance.,1,neutral
+"While several categories of GNN explanation methods have been proposed: gradient-based [5, 10, 14], perturbation-based [8, 9, 11, 13, 15], and surrogatebased [7, 12], their utility is limited to generating post hoc node- and edge-level explanations for a given pre-trained GNN model.",1,neutral
+"Disturbance based methods [9], [18], [25], [26] monitor the changes of predicted values under different input disturbances, to learn the importance score of input characteristics.",1,neutral
+"For example, selecting and extracting subgraphs for graph pooling [34], identifying important subgraphs to explain graph neural network [51], fusing subgraph hierarchical features for link prediction [25], classifying subgraphs for link prediction [23], and incorporating subgraphs for reasoning [35] and link prediction [19] on knowledge graphs.",1,neutral
+"In [8], SubgraphX identified the most relevant subgraph explaining the model prediction via Monte Carlo tree search using Shapley values as a measure of subgraph importance.",1,neutral
+") input graph that contributed most towards the underlying GNN model’s prediction [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15].",1,neutral
+"Shapley values have been extensively applied to machine learning model explanations (Lundberg & Lee, 2017; Lundberg et al., 2018; Štrumbelj & Kononenko, 2014; Sundararajan & Najmi, 2020; Wang et al., 2021a; Zhang et al., 2021; Frye et al., 2020; Yuan et al., 2021) and feature importance (Covert et al.",1,neutral
+"…have been extensively applied to machine learning model explanations (Lundberg & Lee, 2017; Lundberg et al., 2018; Štrumbelj & Kononenko, 2014; Sundararajan & Najmi, 2020; Wang et al., 2021a; Zhang et al., 2021; Frye et al., 2020; Yuan et al., 2021) and feature importance (Covert et al., 2020).",1,neutral
+"Some methods to interpret graph neural networks can be applied to geometric data (Ying et al., 2019; Luo et al., 2020; Schlichtkrull et al., 2021; Yuan et al., 2021).",1,neutral
+"Independently from this categorization, a further fundamental distinction is among explainers providing explanations in terms of edge [91, 53, 69, 96] or node masks [79, 80, 57, 6, 57, 70].",1,neutral
+"[95], and choose to investigate instance-based explainers[105, 74, 78, 80, 79, 84, 91, 6, 71, 38, 65, 96, 54, 75, 52, 101, 70, 24], i.",1,neutral
+"[91], is a widely used dataset for benchmarking GNN explainers [91, 53, 75, 95, 96, 104].",1,neutral
+"Despite the existence of other works proposing explainers, which occasionally fall outside the aforementioned categorization [96, 54, 75, 52, 38, 101, 70], we limited our analysis on a subset.",1,neutral
+"explainability in GNNs (for example, via subgraph exploration [31]) to Multiplex GNNs to automatically highlight patterns relevant to downstream prediction.",1,neutral
+"[7], is an active research area with several following research papers [8, 22, 23].",1,neutral
+"Furthermore, most explanation methods for GNNs’ focus on providing factual explanations [9, 14, 26].",1,neutral
+"A second class of methods [6],[9],[15],[13] perturbs input features by learning masks to investigate the change in class prediction due to these perturbations.",1,neutral
+"More specifically, we fall short of understanding the influence of the input graph elements on both the changes in model parameters and the generalizability of a trained model [Ying et al., 2019, Huang et al., 2022, Yuan et al., 2021, Xu et al., 2019b, Zheng et al., 2021].
+ar X
+iv :2
+21 0.",2,positive
+"Explanation models for graphs [Ying et al., 2019, Huang et al., 2022, Yuan et al., 2021] provide an accessible relationship between the model’s predictions and corresponding elements in graphs.",1,neutral
+"We believe that threshold selection for Local Explainers is a fundamental problem to make local explainers actionable, but it is often left behind in favor of top-k selections where k is chosen based on the ground-truth motif.",1,neutral
+"In the process, we use one of the available Local Explainers [35,21,38,30,26,24] to obtain a local explanation for each sample in the dataset.",2,positive
+"We leave to [37,18] a detailed overview about Local Explainers, who recently proposed a taxonomy to categorize the heterogeneity of those.",2,positive
+"In this work, we will broadly refer to all of those whose output can be mapped to a subgraph of the input graph (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021; Vu & Thai, 2020; Shan et al., 2021; Pope et al., 2019).",2,positive
+"Over the last years, many works proposed Local Explainers [35,21,38,30,26,24] to explain the decision process of a GNN in terms of factual explanations, often represented as subgraphs for each sample in the dataset.",1,neutral
+"Over the last years, many works proposed Local Explainers (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021; Vu & Thai, 2020; Shan et al., 2021; Pope et al., 2019; Magister et al., 2021) to explain the decision process of a GNN in terms of factual explanations, often represented as subgraphs for each sample in the dataset.",2,positive
+"In principle, every Local Explainer whose output can be mapped to a subgraph of the input sample is compatible with our pipeline (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021; Vu & Thai, 2020; Shan et al., 2021; Pope et al., 2019).",2,positive
+Many works recently proposed Local Explainers to explain the behaviour of a GNN [37].,1,neutral
+"Overall, Local Explainers shed light over why the network predicted a certain value for a specific input sample.",1,neutral
+Other methods analyze the output of the model on the perturbation of the input [33] or determine contribution of a given feature to a prediction [44].,1,neutral
+"Recently, some initial efforts [14, 22, 38, 41, 43] have been taken to address the explainability issue of GNNs.",1,neutral
+", 2022), most instance-level explanation methods can be classified into six categories: gradient-based methods(Baldassarre & Azizpour, 2019), perturbation-based methods (Yuan et al., 2021), decomposition methods (Schwarzenberg et al.",1,neutral
+"These explanations can be given with respect to node attributes Ma ∈ R, nodes Mn ∈ R , or edges Me ∈ RN×N , depending on specific GNN explainer, such as GNNExplainer [14], PGExplainer [10], and SubgraphX [31].",1,neutral
+"The visualization tools in GraphXAI allow users to compare the explanations of different GNN explainers, such as gradient-based methods (Gradient and Grad-CAM) and perturbation-based methods (GNNExplainer and SubgraphX).",2,positive
+"These explanations can be given with respect to node attributes Ma d∈ , nodes ∈ Mn N , or edges ∈ ×Me
+N N , depending on specific GNN explainer, such as GNNExplainer14, PGExplainer10, and SubgraphX31.",1,neutral
+"Results in Tables 1–5 show that, while no explanation method performs well across all properties, across different ShapeGGen node classification datasets (Table 6), SubgraphX outperforms other methods on average.",2,positive
+"We incorporate eight GNN explainability methods, including gradient-based: Grad29, GradCAM11, GuidedBP6, Integrated Gradients30; perturbation-based: GNNExplainer14, PGExplainer10, SubgraphX31; and surrogate-based methods: PGMExplainer13.",2,positive
+"Still, this faithfulness is relatively weak, only 0.001 better than
+Method GEA (↑) GEF (↓) GES (↓) GECF (↓) GEGF (↓)
+Random 0.148 ± 0.002 0.579 ± 0.007 0.920 ± 0.002 0.763 ± 0.003 0.023 ± 0.002
+Grad 0.193 ± 0.002 0.392 ± 0.006 0.806 ± 0.004 0.159 ± 0.004 0.039 ± 0.003
+GradCAM 0.222 ± 0.002 0.452 ± 0.006 0.263 ± 0.004 0.010 ± 0.001 0.020 ± 0.002
+GuidedBP 0.194 ± 0.001 0.557 ± 0.007 0.432 ± 0.004 0.067 ± 0.002 0.021 ± 0.002
+IG 0.142 ± 0.002 0.545 ± 0.007 0.727 ± 0.005 0.110 ± 0.003 0.021 ± 0.002
+GNNExplainer 0.102 ± 0.003 0.534 ± 0.007 0.431 ± 0.008 0.233 ± 0.006 0.027 ± 0.002
+PGMExplainer 0.133 ± 0.002 0.541 ± 0.007 0.984 ± 0.001 0.791 ± 0.003 0.096 ± 0.004
+PGExplainer 0.194 ± 0.002 0.557 ± 0.007 0.217 ± 0.004 0.009 ± 0.000 0.029 ± 0.002
+SubgraphX 0.324 ± 0.004 0.254 ± 0.006 0.745 ± 0.005 0.241 ± 0.006 0.035 ± 0.003
+Dataset Method GEA (↑) GEF (↓)
+Mutag
+Random 0.044 ± 0.007 0.590 ± 0.031
+Grad 0.022 ± 0.006 0.598 ± 0.030
+GradCAM 0.085 ± 0.012 0.672 ± 0.029
+GuidedBP 0.036 ± 0.007 0.649 ± 0.030
+Integrated Grad (IG) 0.049 ± 0.010 0.443 ± 0.031
+GNNExplainer 0.031 ± 0.005 0.618 ± 0.030
+PGMExplainer 0.042 ± 0.007 0.503 ± 0.031
+PGExplainer 0.046 ± 0.007 0.504 ± 0.031
+SubgraphX 0.039 ± 0.007 0.611 ± 0.030
+Benzene
+Random 0.108 ± 0.003 0.513 ± 0.012
+Grad 0.122 ± 0.007 0.262 ± 0.011
+GradCAM 0.291 ± 0.007 0.551 ± 0.012
+GuidedBP 0.205 ± 0.007 0.438 ± 0.012
+Integrated Grad (IG) 0.044 ± 0.003 0.182 ± 0.010
+GNNExplainer 0.129 ± 0.005 0.444 ± 0.012
+PGMExplainer 0.154 ± 0.006 0.433 ± 0.012
+PGExplainer 0.169 ± 0.007 0.375 ± 0.012
+SubgraphX 0.371 ± 0.009 0.513 ± 0.012
+Fl-Carbonyl
+Random 0.087 ± 0.007 0.440 ± 0.26
+Grad 0.132 ± 0.010 0.210 ± 0.021
+GradCAM 0.005 ± 0.007 0.500 ± 0.026
+GuidedBP 0.089 ± 0.010 0.315 ± 0.024
+Integrated Grad (IG) 0.091 ± 0.007 0.174 ± 0.019
+GNNExplainer 0.094 ± 0.009 0.423 ± 0.026
+PGMExplainer 0.078 ± 0.008 0.426 ± 0.026
+PGExplainer 0.079 ± 0.009 0.372 ± 0.025
+SubgraphX 0.008 ± 0.002 0.466 ± 0.026
+9Scientific Data | (2023) 10:144 | https://doi.org/10.1038/s41597-023-01974-x
+random explanation.",0,negative
+"In particular, SubgraphX generates 145.95% more accurate and 64.80% less unfaithful explanations than other GNN explanation methods.",2,positive
+"We incorporate eight GNN explainability methods, including gradient-based: Grad [29], GradCAM [11], GuidedBP [6], Integrated Gradients [30]; perturbation-based: GNNExplainer [14], PGExplainer [10], SubgraphX [31]; and surrogate-based methods: PGMExplainer [13].",2,positive
+"Some explainers can capture portions of the ground-truth explanation, such as SubgraphX and GNNExplainer, but others attribute no importance to the ground-truth shape, such as CAM and Gradient.",1,neutral
+(Ying et al. 2019; Luo et al. 2020; Yuan et al. 2021) propose to adopt an explanation method to figure out the causal relationship between the model’s inputs and outputs.,2,positive
+"– Interpretability [14] – Robustness [17] – Accountability [6] • Part V: Future Trends In this part, we elucidate open challenges and future directions from the following perspectives.",2,positive
+"In this part, we firstly introduce several explanation methods like SubgraphX [13] and XGNN [11].",2,positive
+"In GNN prediction interpretation, SubgraphX [43] is the first work that utilizes the Shapley value.",1,neutral
+"While several GNN explanation methods have been proposed lately, they mainly focus on finding essential subgraphs via edge selection processes [19, 26, 41, 42] or Monte Carlo tree search [43].",1,neutral
+"Following GNNExplainer [41], multiple perturbation methods [19, 26, 43] have been proposed to explain GNNs by extracting essential subgraphs.",1,neutral
+", via subgraph explorations [54] or counterfactual explanations [24].",1,neutral
+"The majority of existing methods provide a factual explanation in the form of a subgraph of the original graph that is deemed to be important for the prediction [3,9,22,27,30,36,46,51,54].",1,neutral
+[37] proposed SubgraphX to explain GNNs by identifying important subgraphs.,1,neutral
+"Fidelity+ = 1
+N N∑ i=1 (f(Gi)yi − f(G 1−mi i )yi) (4)
+Fidelity− = 1
+N N∑ i=1 (f(Gi)yi − f(G mi i )yi) (5)
+Where N is the total number of samples, and yi is the class label. f(Gi)yi and f(G1−mii )yi are the prediction probabilities of yi when using the original graph Gi and the occluded graph G 1−mi i , which is gained by occluding important features found by explainers from the original graph.",1,neutral
+"Explainability Evaluation
+Fidelity.",1,neutral
+Thus a lower Fidelity− (↓) is desired.,1,neutral
+"Specifically, Fidelity+ and
+Fidelity− are used to quantify the necessity and sufficiency of the explanations, respectively.",1,neutral
+"On the contrary, the lower Fidelity−, the more sufficient the explanation.",1,neutral
+"The characterization score is the weighted harmonic mean of Fidelity+ and Fidelity- as defined below:
+Charact = 2× Fidelity+ × (1− Fidelity−) Fidelity+ + (1− Fidelity−)
+(6)
+Sparsity.",1,neutral
+"The Fidelity+ [36,37] metric indicates the difference in predicted probability between the original predictions and the new prediction after removing important input features.",1,neutral
+"The higher Fidelity+, the more necessary the explanation.",1,neutral
+"Thus, a higher Fidelity+ (↑) is desired. f(Gmii )yi is the prediction probabilities of yi when using the explanation graph Gmii , which is obtained by important structures found by explainable methods.",1,neutral
+"In contrast, the metric Fidelity− [36] represents prediction changes by keeping important input features and removing unimportant structures.",1,neutral
+"It measures the fraction of features selected as important by explanation methods [20,37], which is defined in Eq.",1,neutral
+"The Fidelity [36,37] metric indicates the difference in predicted probability between the original predictions and the new prediction after removing important input features.",1,neutral
+"• Sparsity: Sparsity measures the fraction of nodes that are selected for an explanation [8], [25].",1,neutral
+SubgraphX [27] adopts Monte Carlo tree search to obtain the important subgraph of the GNN’s prediction.,1,neutral
+The perturbation-based approaches (6; 38; 20; 41; 27) learns the important features and structural information by observing the predictive power of the model when noise is added to the input.,1,neutral
+"Thus, different methods have been proposed to explain the predictions of GNNs, such as GraphLime [30], GNNExplainer [27], PGExplainer [28], PGMExplainer [31], SubgraphX [29], TAGE [32], XGNN [26], and GraphSVX [33].",1,neutral
+"Recently, several techniques have been proposed to explain GNNs, such as XGNN [26], GNNExplainer [27], PGExplainer [28], and SubgraphX [29], etc.",1,neutral
+"Another recent study proposes SubgraphX [29], which employs a search algorithm to explore and identify subgraphs with high Shapley scores.",1,neutral
+"With the trained graph models, we quantitatively and qualitatively compare our FlowX with eight baselines, including GradCAM [34], DeepLIFT [43], GNNExplainer [27], PGExplainer [28], PGMExplainer [31], SubgraphX [29], GNNGI [37], GNN-LRP [37].",2,positive
+"Specially, for subgraph-based method SubgraphX [29], we pick the explainable subgraph out, then assign the edges in this subgraph instead of nodes as the explanation.",1,neutral
+"Next, the recent study SubgraphX [29] proposes to explain GNNs via subgraphs.",1,neutral
+"The metrics we apply are Fidelity [29], [42], Accuracy [27], and Sparsity [42].",1,neutral
+"In our experiments, we compare the following methods: Random gives every edge and node feature a random value between 0 and 1; Distance assigns higher importance to edges that have lower distance to the target node; PageRank measures the importance of edges following the personalized PageRank strategy with automatic restart on the target node [9, 40]; Saliency (SA) measures node importance as the weight on every node after computing the gradient of the output with respect to node features [6]; Integrated Gradient (IG) avoids the saturation problem of the gradient-based method Saliency by accumulating gradients over the path from a baseline input (zero-vector) and the input at hand [36]; Grad-CAM is a generalization of class activation maps (CAM) [33]; Occlusion attributes the importance of an edge as the difference of the model initial prediction prediction on the graph after removing this edge [10]; GNNExplainer computes the importance of graph entities (node/edge/node feature) using the mutual information [46]; PGExplainer is very similar to GNNExplainer, but generates explanations only for the graph structure (nodes/edges) using the reparameterization trick to overcome computation intractability [22]; PGM-Explainer perturbs the input and uses probabilistic graphical models to find the dependencies between the nodes and the output [38]; and SubgraphX explores possible explanatory subgraphs with Monte Carlo Tree Search and assigns them a score using the Shapley value [49].",2,positive
+"To explain the decisions made by the GNNs, we adopt different classes of explainers including structure-based methods such as Distance and personalized PageRank [8, 36], gradient/featurebased methods such as SA [5], IG [5] and Grad-CAM [30], and perturbation-based methods such as GNNExplainer [41], PGM-Explainer [34], SubgraphX [44], PGExplainer [20] and Occlusion to generate the explanatory subgraphs.",2,positive
+"To make them comparable, most papers propose to fix a sparsity level to apply to all explanations and compare the same-sized explanations [4, 22, 44].",1,neutral
+"Furthermore, most explanation methods for GNNs’ focus on providing factual explanations [16,29,11].",1,neutral
+"SubgraphX [20] derived connected subgraph sequences from the input graph, to overcome the relevant information flow breaks that may arise in PGExplainer or GNNExplainer.",1,neutral
+"On the other hand, several GNN explanation methods are proposed recently [23], [24], [25], [26], [27].",1,neutral
+"SubgraphX [24] explains graph in node-assembled subgraph level by Monte Carlo tree search with Shapley value
+as the scoring function.",1,neutral
+SubgraphX [24] explains graph in node-assembled subgraph level by Monte Carlo tree search with Shapley value as the scoring function.,1,neutral
+"In particular, PGMExplainer [23] and SubgraphX [24] apply a node-centric strategy to identify the important nodes as the explanation result.",1,neutral
+There are several works [11; 31; 54; 55; 56] that use the Mutagenicity dataset but call it MUTAG.,1,neutral
+Previous explanation methods[11; 14; 54; 56] use the existence of NO2 subgraphs as correct explanations [10].,1,neutral
+[56] search the space of all subgraphs as possible explanations.,1,neutral
+We can also observe a limitation of USIB that it considers edges independently but ignores the substructures of graphs whose importance is emphasized in previous work [41].,1,neutral
+"Generally, they highlight the important patterns of the input graphs such as nodes [52, 96], edges [145, 79] and sub-graphs [148, 153] which are crucial for the model predictions.",1,neutral
+SubgraphX [153] explains the trained GNNs by generating subgraphs that are highly correlated with model predictions.,1,neutral
+GNNExplainer [22] Explainability Perturbation-based Grey-box Instance/Group NC/GC Edge/Feature PGExplainer [56] Explainability Perturbation-based Grey-box Instance NC/GC Edge ZORRO [159] Explainability Perturbation-based Grey-box Instance NC Node/Feature Causal Screening [149] Explainability Perturbation-based Grey-box Instance GC Edge GraphMask [160] Explainability Perturbation-based White-box Instance SRL/MQA Edge SubgraphX [161] Explainability Perturbation-based Black-box Instance NC/GC Subgraph CF-GNNExplainer [162] Explainability Perturbation-based Grey-box Instance NC Edge RCExplainer [136] Explainability Perturbation-based Grey-box Instance NC/GC Edge ReFine [163] Explainability Perturbation-based Grey-box Instance GC Edge CF2 [164] Explainability Perturbation-based Grey-box Instance NC/GC Edge/Feature,0,negative
+"ture; (2) masks or attention scores of edges [16], [17], [18], which are derived from the masking functions or attention networks to approximate the target prediction via the fractional (masked or attentive) graph; or (3) prediction changes on perturbed edges [4], [19], [20], which are fetched by per-",1,neutral
+"Alongside performance, explainability becomes central to the practical impact of GNNs, especially in real-world applications on fairness, security, and robustness [3], [4], [5].",1,neutral
+"More recently, SubgraphX [4] employs the Monte Carlo tree search algorithm to explore differ-",1,neutral
+"Prediction changes on structure perturbations [4], [19], [20], [35]: To get the node attributions, PGMExplainer [19] applies random perturbations on nodes and learns a Bayesian network upon the per-",1,neutral
+"More recently, SubgraphX [4] employs the Monte Carlo tree search algorithm to explore different subgraphs and uses Shapley values to measure each subgraph’s importance.",1,neutral
+"However, given extrinsic drug and gene features and a graph neural network trained on these modern explanation techniques could allow the creation of such post-hoc explanations of the drug-drug interaction predictions [28, 37, 45, 46].",1,neutral
+"There are several surveys of GNNs in robustness [87, 171, 197, 243] and explainability [221].",1,neutral
+SubgraphX explores the subgraphs with Monte Carlo tree search and evaluates the importance of the subgraphs with Shapley values [35].,1,neutral
+"Other prior works, including GNNExplainer [32], PGExplainer [14], PGM-Explainer [25], SubgraphX [35], GraphMask [23], XGNN [34] and others [21] are provided in Appendix A.",2,positive
+"Other prior works, including GNNExplainer [32], PGExplainer [14], PGM-Explainer [25], SubgraphX [35], GraphMask [23], XGNN [34] and others [21] are provided in Appendix A.4.",2,positive
+"In addition, SubgraphX [Yuan et al., 2021] adopts Monte Carlo Tree Search [Silver et al., 2017] to identify important subgraphs.",1,neutral
+The drawback of SubgraphX is similar to PGM-Explainer: it can only provide instance-level explanations and cannot be applied to large graphs as the size of search trees increase exponentially.,1,neutral
+"While some of the explainability methods just output the subgraphs [Vu and Thai, 2020; Yuan et al., 2021; Yuan et al., 2020a], most of them assign an importance score to every edge of the graph; and, to get the important subgraph, thresholding based on these importance scores is needed [Ying et…",1,neutral
+"In addition, SubgraphX [Yuan et al., 2021] adopts Monte Carlo Tree Search [Silver et al.",1,neutral
+"Another way is based on perturbation [Luo et al., 2020; Schlichtkrull et al., 2021; Vu and Thai, 2020; Ying et al., 2019; Yuan et al., 2021; Yuan et al., 2020a].",2,positive
+"Another way is based on
+perturbation [Luo et al., 2020; Schlichtkrull et al., 2021; Vu and Thai, 2020; Ying et al., 2019; Yuan et al., 2021; Yuan et al., 2020a].",2,positive
+"To evaluate the importance of subgraphs, SubgraphX forms a cooperative game with generated subgraphs as players and uses the Shapley value [Kuhn and Tucker, 1953] as the scoring function.",1,neutral
+PGM-Explainer and SubgraphX do not scale to big graphs and XGNN can not be applied to the node classification task.,1,neutral
+"While some of the explainability methods just output the subgraphs [Vu and Thai, 2020; Yuan et al., 2021; Yuan et al., 2020a], most of them assign an importance score to every edge of the graph; and, to get the important subgraph, thresholding based on these importance scores is needed [Ying et al.",1,neutral
+"SubgraphX [Yuan et al., 2021] explains GNNs on a subgraph level by efficiently exploring different subgraphs with Monte Carlo Tree Search (MCTS).",1,neutral
+"To be more specific, SubgraphX builds the MCTS by setting the input graph as the root node and each of the other nodes corresponds to a connected subgraph.",1,neutral
+"Our method is related to graph explainability in that the predicted transformation probabilities from our augmentation model g is similar to explainability scores of some graph explainability methods (Maruhashi et al., 2018; Yuan et al., 2020; 2021).",2,positive
+"However, there are key differences between our approach and SubgraphX: (i) in SubgraphX the explanation corresponds to a set of nodes and its induced subgraph, while GRAPHSHAP computes attribution scores, and therefore relative numerical importance, for an arbitrary set of motifs, that can be mined or user-defined; (ii) our approach is deterministic, while SubgraphX is based on MonteCarlo tree search; and (iii) GRAPHSHAP can assign an importance score to any subgraph, spanning from a single edge to complex patterns, while SubgraphX is limited to the unique subgraph induced by a set of nodes.",2,positive
+"In order to correlate this explanation with our motif-based expected explanation scored, for each graph we computed the six Jaccard similarities between the single SubgraphX-produced motif and the six injected motifs.",2,positive
+"based [23]–[25], perturbation-based [26]–[29], and surrogate methods [30]–[32].",1,neutral
+"Similarly to our proposal, SubgraphX [29] considers a connected subgraph (or motif) as more comprehensible explanation than isolated edges/nodes.",1,neutral
+"SubgraphX return a single set of nodes, so that the produced explanation is the subgraph induced by that set of nodes.",1,neutral
+"sion of the differences with two relatively similar explainers, GNNExplainer [27] and SubgraphX [29]; we use the same experimental settings of the previous section, results are shown in Figure 3.",0,negative
+"However, for the sake of comparison, we include a brief discussion of the differences with two relatively similar explainers, GNNExplainer [27] and SubgraphX [29]; we use the same experimental settings of the previous section, results are shown in Figure 3.",0,negative
+SubgraphX produces subgraphs as explanations that are neither motifs nor human-understandable.,1,neutral
+"The only method that considers subgraphs is SubgraphX [10], which searches all possible subgraphs and identifies the most significant one.",1,neutral
+SubgraphX [10] proposed to employ subgraphs for GNN explanation.,1,neutral
+"However, the subgraphs identified by SubgraphX may not be recurrent or statistically important.",1,neutral
+"In addition, subgraph-based explainers like SubgraphX need to handle a large searching space, which leads to efficiency issues when generating explanations for dense or large scale graphs.",1,neutral
+SubgraphX [10] employs the Monte Carlo Tree Search algorithm to search possible subgraphs and uses the Shapley value to measure the importance of subgraphs and choose a subgraph as the explanation.,1,neutral
+"Following previous works [7], [8], [9], [10], [12], we focus on instance-level methods with explanations using graph sub-structures.",1,neutral
+"We compare our MotifExplainer model with several state-of-the-art baselines: GNNExplainer, Sub-
+graphX, PGExplainer, and ReFine.",2,positive
+"Table 10 shows the comparison results with four state-of-the-art GNN explanation models: MotifExplainer, SubgraphX, PGExplainer, GNNExplainer, and ReFine.",0,negative
+Another limitation of SubgraphX is that it needs to pre-determine a maximum number of nodes for its searching space.,1,neutral
+SubgraphX [10] is the first work that proposed a method to explain GNN models by generating the most significant subgraph for an input graph.,1,neutral
+"Some GNN explainers also use motif knowledge to generate subgraphs to explain GNNs (Ying et al., 2019; Yuan et al., 2021).",1,neutral
+", 2020a) or Monte Carlo tree search (Yuan et al., 2021).",2,positive
+"They adopt either reinforcement learning (Yuan et al., 2020a) or Monte Carlo tree search (Yuan et al., 2021).",1,neutral
+"Many works have been recently proposed to extract critical data patterns for the prediction by interpreting GNNs in post-hoc ways (Ying et al., 2019; Yuan et al., 2020a; Vu & Thai, 2020; Luo et al., 2020; Schlichtkrull et al., 2021; Yuan et al., 2021; Lin et al., 2021; Henderson et al., 2021).",2,positive
+"Two research lines of rationalization have recently emerged in GNNs. Post-hoc explainability (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021; Wang et al., 2021c) attributes a model’s prediction to the input graph with a separate explanation method, while intrinsic interpretability…",1,neutral
+"Among baselines, SubgraphX gives more reasonable results.",1,neutral
+"However, it cannot cover two groups of important nodes with a limited budget because it can only select a connected subgraph as the explanation; e.g.
+to cover the negative word “lameness” in the lower sentence, SubgraphX needs at least three more nodes along the way, which will significantly decrease Sparsity while including undesirable, neutral words.",1,neutral
+"While SubgraphX and GraphSVX were shown to perform better than prior alternatives, as we show in Section 3, the Shapley value they try to approximate is non-ideal as it is non-structure-aware.",1,neutral
+"3, we further evaluate on GIN [40] and GAT [36] on certain datasets following [44].",1,neutral
+"In fact, GNNExplainer, PGExplainer, and SubgraphX can never generate explanations including only disconnected -",1,neutral
+"Moreover, SubgraphX is the only baseline that has better H-Fidelity than the “ground truth”, but it
+3Carbon rings were also claimed as mutagenic by human experts, but we found it is not discriminative as they exist in both mutagenic and non-mutagenic molecules in MUTAG.
+can only capture one -NO2 because its search algorithm requires the explanation to be connected, so its Inv-Fidelity is not optimal.",2,positive
+"Although SubgraphX and GraphSVX use L-hop subgraphs and thus technically they use the graph structure, such structure usage are very limited in achieving structure-awareness as we show in Appendix G.",1,neutral
+"The Shapley value has recently been extended to explain GNNs on graphs through feature importance scoring as above, where features are nodes [9] or supernodes [44].",1,neutral
+"In particular, SubgraphX and GraphSVX use Shapley-value-based scoring functions.",1,neutral
+"We compare with 5 strong baselines representing the SOTA methods for GNN explanation: GNNExplainer [41], PGExplainer [25], SubgraphX [44], GraphSVX [9], and OrphicX [21].",2,positive
+"We follow [44, 43] to employ Fidelity, Inverse Fidelity (Inv-Fidelity), and Sparsity as our evaluation metrics.",1,neutral
+"SubgraphX [44] uses the Shapley value as its scoring function on subgraphs
+4As some baselines take over 24 hours on full GraphSST2, we randomly select 30 graphs for this analysis.
+selected by Monte Carlo Tree Search (MCTS), and GraphSVX [9] uses a least-square approximation to the Shapley value to score nodes and their features.",2,positive
+"SubgraphX [44] uses the Shapley value as its scoring function on subgraphs (4)As some baselines take over 24 hours on full GraphSST2, we randomly select 30 graphs for this analysis.",1,neutral
+"Following [44], we study the empirical efficiency of GStarX by explaining 50 randomly selected graphs from BBBP.",2,positive
+Our results for the baselines are similar to [44].,2,positive
+We also follow [44] to show the Fidelity vs.,1,neutral
+"GStarX is not the fastest method, but it is more than two times faster than SubgraphX.",2,positive
+"We follow [44] to train GIN on MUTAG and GAT on GraphSST24, and show results in Table 2.",0,negative
+"Lately, SubgraphX (Yuan et al., 2021) explores different subgraphs with Monte-Carlo tree search and evaluates subgraphs with the Shapley value (Kuhn & Tucker, 1953).",1,neutral
+"Furthermore, it is worth exploring explainable graph neural network algorithms, such as SubgraphX [48], as it can help researchers analyze and explain the working process of GNNs to detect malware by highlighting suspicious function call paths for automatic malware forensics.",2,positive
+We employ the fidelity score to evaluate how the explanation is faithful to the GCN model [55].,2,positive
+SubgraphX [55] explains the prediction of GCN with a subgraph found by Monte Carlo Tree Search.,1,neutral
+Fidelity: The fidelity scores evaluate how the explanations are faithful to the GNN model [39].,1,neutral
+"The discrete and combinatorial nature of graph-structured data hinders the development of GNNs’ explanation models [39, 36].",1,neutral
+"Different from the practice in GNNEXPLAINER [35], we do not mask node features since we only highlight the critical topology of the biological graph to GNN’s prediction, which is more intuitive and human-intelligible [39].",2,positive
+The explainers such as SubgraphX [39] and XGNN [38] formulate the generation of explanations as a reinforcement learning task.,1,neutral
+"…gradients/features-based methods (Baldassarre and Azizpour 2019; Pope et al. 2019), perturbationbased methods (Ying et al. 2019; Luo et al. 2020; Yuan et al. 2021; Schlichtkrull, De Cao, and Titov 2020), decomposition methods (Schwarzenberg et al. 2019; Schnake et al. 2020), and surrogate…",2,positive
+"2019), perturbationbased methods (Ying et al. 2019; Luo et al. 2020; Yuan et al. 2021; Schlichtkrull, De Cao, and Titov 2020), decomposition methods (Schwarzenberg et al.",1,neutral
+"In [54], Monte Carlo search is used for exploration.",1,neutral
+"Stochastic explaining subgraph search have been proposed [53], [46], [54] using reinforcement learning and hill-climbing.",1,neutral
+Techniques also exist to extract explainable substructures of graphs that are associated with certain outcomes (Yuan et al. 2021).,1,neutral
+"[109] show how GNNs’ decisions can be explained by (often large) subgraphs, further motivating our use of graph reconstruction as a powerful inductive bias for GRL.",1,neutral
+", GNNExplainer [25], PGExplainer [17] and SubgraphX [28].",0,negative
+"Explanation methods can be broadly categorized as model-level explainers [17], [20], [26], which try to extract global explanatory patterns from the trained model, and instance-level algorithms [5], [12], [16], [25], [28], which try to explain individual predictions performed by the model.",1,neutral
+SubgraphX [28] explains its predictions by exploring different subgraphs with Monte Carlo tree search.,1,neutral
+"Concerning the explainers we use GNNExplainer [25], PGExplainer [17] and SubgraphX [28].",2,positive
+For SubgraphX we used the hyperparameters of the original implementation [28].,1,neutral
+Other methods such as SubgraphX [151] provide subgraph-level explanations which may be more intuitive and human-intelligible for digital pathology.,1,neutral
+Other methods such as SubgraphX [119] provide subgraph-level explanations which could be more intuitive and human-intelligible for digital pathology.,1,neutral
+", 2020), (Vu & Thai, 2020), (Yuan et al., 2021), (Schlichtkrull et al.",2,positive
+"Similar visualizations can be obtained from other GNN explainability techniques like (Ying et al., 2019), (Yuan et al., 2020), (Vu & Thai, 2020), (Yuan et al., 2021), (Schlichtkrull et al., 2020).",2,positive
+", 2020), (Vu & Thai, 2020), (Yuan et al., 2021), (Schlichtkrull et al.",2,positive
+"Recent works in GNN explanations include (Ying et al., 2019), (Yuan et al., 2020), (Vu & Thai, 2020), (Yuan et al., 2021), (Schlichtkrull et al., 2020).",2,positive
+"Although SubgraphX assures to offer connected subgraphs as explanation for every single input, this approach is highly sensitive to actions being considered while looking for a path using Monte-Carlo Tree Search (MCTS) being utilized for SubgraphX method.",1,neutral
+"The most recent subgraph-based approach is SubgraphX (Yuan et al., 2021), which aims to explore different subgraphs and identify only those that mostly impact the final predictions.",2,positive
+This is because different actions cause SubgraphX to output different explanations.,1,neutral
+"SubgraphX retrieves explanations similar to Grad, but has the drawback of very high runtime, see Appendix B, available in the online supplemental material.",2,positive
+"We could only run SubgraphX for the small synthetic dataset, due to its long runtime (see Appendix B), available in the online supplementalmaterial.",2,positive
+"Explainability approaches for explaining node level decisions include soft-masking approaches [11], [22], [24], [31], [32], [44], Shapely based approaches [8], [48], surrogate",1,neutral
+"For a comprehensive quantitative evaluation we chose our baselines from the three different categories of post-hoc explanations models consisting of (i) soft-masking approaches like GNNExplainer, which returns a continuous feature and edge mask and PGE [24] learns soft masks over edges in the graph (ii) surrogate model based hard-masking approach, PGM [40], which returns a binary node mask, iii) Shapely based hard masking approach SubgraphX [48], which returns a subgraph as an explanation, and (iv) gradient-basedmethodsGrad&GradInput [34] which utilize gradients to compute feature attribu-",2,positive
+SubgraphX [48] optimizes for Shapely values based on a Monte Carlo tree search.,1,neutral
+"Others adopt existing explanations approaches such as Shapely [8], [48], layer-wise relevance propagation [32], causal effects [22] or LIME [13], [17], to graph data.",1,neutral
+SubgraphX [48] optimizes for Shapely values based on,1,neutral
+"For a comprehensive quantitative evaluation we chose our baselines from the three different categories of post-hoc explanations models consisting of (i) soft-masking approaches like GNNExplainer, which returns a continuous feature and edge mask and PGE [24] learns soft masks over edges in the graph (ii) surrogate model based hard-masking approach, PGM [40], which returns a binary node mask, iii) Shapely based hard masking approach SubgraphX [48], which returns a subgraph as an explanation, and (iv) gradient-basedmethodsGrad&GradInput [34] which utilize gradients to compute feature attributions.",2,positive
+"PGExplainer [47], and SubgraphX [48], etc.",1,neutral
+SubgraphX [48] explores subgraph-level explanations for deep graph models.,1,neutral
+"SA [54], [55] Instance-level ✗ GC/NC N/E/NF ✗ Backward ✗ Guided BP [54] Instance-level ✗ GC/NC N/E/NF ✗ Backward ✗ CAM [55] Instance-level ✗ GC N ✗ Backward ✗ Grad-CAM [55] Instance-level ✗ GC N ✗ Backward ✗ GNNExplainer [46] Instance-level ✓ GC/NC E/NF ✓ Forward ✓ PGExplainer [47] Instance-level ✓ GC/NC E ✗ Forward ✓ GraphMask [57] Instance-level ✓ GC/NC E ✗ Forward ✓ ZORRO [56] Instance-level ✗ GC/NC N/NF ✓ Forward ✓ Causal Screening [58] Instance-level ✗ GC/NC E ✓ Forward ✓ SubgraphX [48] Instance-level ✓ GC/NC Subgraph ✓ Forward ✓ LRP [54], [59] Instance-level ✗ GC/NC N ✗ Backward ✗ Excitation BP [55] Instance-level ✗ GC/NC N ✗ Backward ✗ GNN-LRP [60] Instance-level ✗ GC/NC Walk ✗ Backward ✓ GraphLime [61] Instance-level ✓ NC NF ✓ Forward ✗ RelEx [62] Instance-level ✓ NC N/E ✓ Forward ✓ PGM-Explainer [63] Instance-level ✓ GC/NC N ✓ Forward ✓ XGNN [45] Model-level ✓ GC Subgraph ✓ Forward ✓",0,negative
+"For the instance-level methods, the gradients/features-based methods include SA [54], Guided BP [54], CAM [55], and GradCAM [55]; the perturbation-based methods are GNNExplainer [46], PGExplainer [47], ZORRO [56], GraphMask [57], Causal Screening [58], and SubgraphX [48]; the decomposition methods contains LRP [54], [59], Excitation BP [55] and GNN-LRP [60]; the surrogate methods include GraphLime [61], RelEx [62], and PGM-Explainer [63].",2,positive
+"To explain deep graph models, several perturbationbased methods are proposed, including GNNExplainer [46], PGExplainer [47], ZORRO [56], GraphMask [57], Causal Screening [58], and SubgraphX [48].",1,neutral
+"Themethods can be divided into two categories: the instance-levelmethods provide example-specific explanations by identifying important input features for its prediction [3, 123, 194]; the model-level methods provide high-level interpretations and a generic understanding of how deep graph models work [192].",1,neutral
+"Some explanation techniques such as GNNExplainer [26], PGExplainer [27] and SubgraphX [32] are based solely on evaluating the function or its gradient multiple times.",1,neutral
+The method SubgraphX [32] attributes the prediction to subgraphs of the input graph and is closely related to our subgraph selection technique presented in Section 4.1.,2,positive
+"[26], PGExplainer [27] and SubgraphX [32] are based solely",0,negative
+[32] proposes a Monte-Carlo tree search to find relevant sub-,1,neutral
+"SubgraphX uses a Monte-Carlo optimization algorithm to find the most relevant subgraph, whereas we use either a local best guess or a random sampling approach (cf. Appendix D of the Supplement, which can be found on the Computer Society Digital Library at http://doi.ieeecomputersociety.org/ 10.1109/TPAMI.2021.3115452).",2,positive
+"SubgraphX uses Shapley values for the subgraph scoring, whereas we use a backward propagation pass.",2,positive
+The method SubgraphX [32] attributes the prediction to subgraphs of the input graph and is closely related to our subgraph selection technique presented in Section 4.,2,positive
+The method SubgraphX [32] proposes a Monte-Carlo tree search to find relevant subgraphs in the input graph and uses Shapley values as an attribution function for subgraphs.,1,neutral
+"For example, [9] was proposed to utilize mutual information to find a subgraph with associated features for interpreting GNN models; PGExplainer [16] learns a parameterized model to predict whether an edge is important; SubgraphX [17] explains GNNs by exploring and identifying important subgraphs; GraphSVX [18] utilizes decomposition technique to explain GNNs based on the Shapley Values from game theory.",1,neutral
+"GNNExplainer [15], SubgraphX [18], and GraphMask [38] leveragemutual information, Shapley values, and divergence, respectively, using both the original and affected label predictions, which are predicted on the candidate explanation subgraph.",2,positive
+"Recently, although the explainability of graph neural networks (GNNs) [9], [10], [11], [12], [13], [14] has been explored as in [15], [16], [17], [18], [19], [20], and [21], they are limited to understanding",1,neutral
+"The Fidelity score [18], [35], [62] is used to determine the impact of the found local explanations in downstream tasks.",1,neutral
+"For example, GNNExplainer [15], SubgraphX [18], and GraphMask [38] leveragemutual information, Shapley values, and divergence, respectively, using both the original and affected label predictions, which are predicted on the candidate explanation subgraph.",1,neutral
+", 2020) and SubgraphX (Yuan et al., 2021)) for static GNNs are the most related.",1,neutral
+"Previous works expand all possible children for any selected node (Yuan et al., 2021).",2,positive
+"Besides, search-based methods (Yuan et al. (2021); Wang et al. (2021a)) utilize heuristic search algorithms with a score function (e.g., defined by Shapley value or causality) to find an important input subset.",1,neutral
+"While currently there are no methods for explaining temporal graph models, some recent explanation methods (e.g., GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020) and SubgraphX (Yuan et al., 2021)) for static GNNs are the most related.",1,neutral
+"Alternatively, SubgraphX [139] samples a group of nodes’ neighborhoods as subgraphs.",1,neutral
+"research area with several subsequent papers [8], [23], [24] exploring the topic.",1,neutral
+"Perturbation-based methods [16], [17], [18], [19], [20], [21] measure importance scores by masking the",1,neutral
+Yuan et al. (2021) consider each subgraph as possible explanation.,1,neutral
+"…neural networks (GNNs) attract increasing attentions due to their remarkable performance (Gao et al., 2021; Gao & Ji, 2019; Liu et al., 2021a;b; Yuan et al., 2021) in many applications, such as knowledge graphs (Hamaguchi et al., 2017), molecular property prediction (Liu et al., 2022; 2020;…",1,neutral
+"Recently, graph neural networks (GNNs) attract increasing attentions due to their remarkable performance (Gao et al., 2021; Gao & Ji, 2019; Liu et al., 2021a;b; Yuan et al., 2021) in many applications, such as knowledge graphs (Hamaguchi et al.",1,neutral
+SubgraphX [14] uses the Shapley value and onbtain the most important subgraphs with Monte Carlo Tree Search (MCTS).,1,neutral
+"Numerous explanation methods have been extensively studied for GNNs, including gradient-based attribution methods [32, 6, 36], perturbation-based methods [48, 41, 52, 34, 16], etc.",1,neutral
+"Other methods utilize more advanced frameworks such as mask optimization [48], surrogate model [39], and Monte Carlo Tree Search [52] to search the explanation subgraphs for each individual instance.",1,neutral
+"Explainability methods We compare non-generative methods: Saliency [6], Integrated Gradient [36], Occlusion [53], Grad-CAM [32], GNNExplainer [48], PGMExplainer [39], and SubgraphX [52], with generative ones: PGExplainer [27], GSAT [29], GraphCFE (CLEAR) [28], D4Explainer and RCExplainer [42].",2,positive
+"SubgraphX (Yuan et al., 2021) searches the most relevant subgraph using MonteCarlo Tree Search (MCTS) with Shapley value (Lundberg & Lee, 2017), and applied approximation methods in computing Shapley values, which is otherwise too computationintensive.",1,neutral
+"Independently from this categorization, a further fundamental distinction is among explainers providing explanations in terms of edge [87, 52, 66, 92] or node masks [75, 76, 55, 6, 55, 67].",1,neutral
+"[91], and choose to investigate instance-based explainers[101, 71, 74, 76, 75, 80, 87, 6, 68, 36, 62, 92, 53, 72, 51, 97, 67, 23], i.",1,neutral
+"Despite the existence of other works proposing explainers, which occasionally fall outside the aforementioned categorization [92, 53, 72, 51, 36, 97, 67], we limited our analysis on a subset.",1,neutral
+"In fact, GNNExplainer, PGExplainer, and SubgraphX can never generate explanations including only disconnected oxygen atoms but not nitrogen atoms like GStarX, because the former two solve the explanation problem by optimizing edges (as opposed to Equation 3), and the latter requires connectedness.",1,neutral
+"GStarX is not as fast as GNNExplainer, PGExplainer, and GraphSVX, but it is about more than two times faster than SubgraphX.",2,positive
+", 2021) or a supernode covering a subgraph (Yuan et al., 2021).",1,neutral
+"SubgraphX (Yuan et al., 2021) uses the Shapley value as scoring function on subgraphs selected by Monte Carlo Tree Search (MCTS), while GraphSVX (Duval & Malliaros, 2021) uses a least-square approximation of the Shapley value to score nodes and node features.",1,neutral
+"SubgraphX gives reasonable results, but because it can only select a connected subgraph as the explanation, it cannot cover two groups of important nodes with limited budget; e.g. to cover the negative word “lameness” in the second sentence, SubgraphX needs at least 3 more nodes along the way, which will significantly decrease Sparsity while including undesirable, neutral words.",1,neutral
+"In particular, both SubgraphX and GraphSVX use Shapley-value-based scoring functions.",1,neutral
+"While SubgraphX and GraphSVX were shown to perform better than prior alternatives, as we show in Section 4, the Shapley value they try to approximate is unideal due to not having structure-awareness.",2,positive
+", 2020), SubgraphX (Yuan et al., 2021), and GraphSVX (Duval & Malliaros, 2021).",2,positive
+"The idea is to do feature importance scoring as above, where the features are nodes (Yuan et al., 2021) or a supernode covering a subgraph (Yuan et al.",1,neutral
+"Although SubgraphX and GraphSVX use L-hop subgraphs and thus technically they use the graph structure, we discuss why this approach has limitations in achieving structure-awareness in Appendix F.",1,neutral
+"We compare with 4 strong baselines representing the state-of-the-art methods for GNN explanation: GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), SubgraphX (Yuan et al., 2021), and GraphSVX (Duval & Malliaros, 2021).",2,positive
+SubgraphX shows the best HFidelity among these baselines.,2,positive
+[35] propose to employ the Monte Carlo tree search method [137] to explore the critical subgraphs and thus explain the prediction problem of GNNs from subgraph-level.,1,neutral
+An illustration of the SubgraphX architecture [35].,1,neutral
+"A Summary of Open-source Implementations
+Model ear Framework Link Sourc
+e
+AGILE 2022 PyTorch https://github.com/clvrai/agile [30] GTA-RL 2022 PyTorch https://github.com/udeshmg/GTA-RL [34] SubgraphX 2021 PyTorch https://github.com/divelab/DIG [35] SUGAR 2021 Tensorflow https://github.com/RingBDStack/SUGAR [15]
+CORL 2021 PyTorch https://github.com/huawei-
+noah/trustworthyAI/tree/master/gcastle
+[124]
+RioGNN 2021 PyTorch https://github.com/safe-graph/RioGNN [73] IG-RL 2021 PyTorch https://github.com/FXDevailly/IG-RL [142] TITer 2021 Python https://github.com/JHL-HUST/TITer/ [128] SparRL 2021 PyTorch https://github.com/rwickman/SparRL-PyTorch [37] PAAR 2021 PyTorch https://github.com/seukgcode/PAAR [87] Policy-GNN 2020 PyTorch https://github.com/lhenry15/Policy-GNN [41] CARE-GNN 2020 PyTorch https://github.com/YingtongDou/CARE-GNN [36]
+RL-BIC 2020 Tensorflow https://github.com/huawei-
+noah/trustworthyAI/tree/master/Causal_Structure_Learning
+/Causal_Discovery_RL
+[123]
+RL-based
+Graph2Seq
+2020 PyTorch https://github.com/hugochan/RL-based-Graph2Seq-for-
+NQG
+[126]
+DGN 2020 Tensorflow https://github.com/PKU-AI-Edge/DGN/ [27]
+DeepGraphM
+olGen
+2020 PyTorch https://github.com/dbkgroup/prop_gen [154]
+KG-A2C 2020 PyTorch https://github.com/rajammanabrolu/KG-A2C [171]
+GPA 2020 PyTorch https://github.com/ShengdingHu/GraphPolicyNetworkActi
+veLearning
+[14]
+GAEA 2020 Tensorflow https://github.com/salesforce/GAEA [172] CompNet 2019 PyTorch https://github.com/WOW5678/CompNet [7]
+GRPI 2019 Python https://github.com/LASP-UCL/Graph-RL [111]
+DRL+GNN 2019 PyTorch https://github.com/knowledgedefinednetworking/DRL-
+GNN
+[145]
+GPN 2019 PyTorch https://github.com/qiang-ma/graph-pointer-network [161] PGPR 2019 PyTorch https://github.com/orcax/PGPR [173] DGN 2018 PyTorch https://github.com/PKU-AI-Edge/DGN [27] GCPN 2018 Python https://github.com/bowenliu16/rl_graph_generation [10] KG-DQN 2018 PyTorch https://github.com/rajammanabrolu/KG-DQN [174] ASNets 2018 Tensorflow https://github.com/qxcv/asnets [150]
+S2V-DQN 2017 C+Python https://github.com/Hanjun-Dai/graph_comb_opt [148] DeepPath 2017 Tensorflow https://github.com/xwhan/DeepPath [3] MINERVA 2017 Tensorflow https://github.com/shehzaadzd/MINERVA [92] KBGAN 2017 PyTorch https://github.com/cai-lw/KBGAN [95]",2,positive
+"(Redrawn from [35]) In addition, the scholars believe that explaining GNNs from the model level could enhance human trust for certain application domains.",2,positive
+"3 mining for co-learning are divided into two main categories: (1) Solving RL problems by exploiting graph structures [26-32], (2) Solving graph mining tasks with RL methods [15, 22, 33-35].",1,neutral
+95 [103] SubgraphX[35] Graph Classification,1,neutral
+"Source Citation Task
+MUTAG 188 17.93 19.79 [97] SUGAR[15], SubgraphX[35], XGNN[18],
+GraphAug[98]
+Graph Classification
+PTC 344 14.29 14.69 [99] SUGAR[15] Graph Classification
+PROTEINS 1113 39.06 72.82 [100] SUGAR[15], GraphAug[98] Graph Classification
+D&D 1178 284.32 715.66 [101] SUGAR[15] Graph Classification
+NCI1 4110 29.87 32.30 [102] SUGAR[15], GraphAug[98] Graph Classification
+NCI109 4127 29.68 32.13 [102] SUGAR[15], GraphAug[98] Graph Classification
+BBBP 2039 24.06 25.95 [103] SubgraphX[35] Graph Classification
+GRAPH-SST2 70042 10.19 9.20 [104] SubgraphX[35] Graph Classification
+Table .",0,negative
+"79 [97] SUGAR[15], SubgraphX[35], XGNN[18], GraphAug[98] Graph Classification",1,neutral
+20 [104] SubgraphX[35] Graph Classification,1,neutral
+", 2021)—any of the previous methods can be combined with SubGraphX (Yuan et al., 2021) to also produce explanations for the graph component of the input.",1,neutral
+", 2021) features and produce more realistic explanations R SPVIM (C4) (C5) Global variable importance measure using an efficient Not Relevant (Williamson and Feng, 2020) regression-based Shapley value estimator Python and R SubgraphX (C1) (C2) Explain GNNs by identifying important subgraphs Not Relevant (Yuan et al., 2021) (C5) using Shapley values as importance measures PyTorch SurrogateSHAP (C5) An XGBoost tree model is trained as a surrogate model Potentially Applicable (Messalas et al.",2,positive
+"Some present a new ver-034 sion of SHAP tailored to a certain type of input035 data—e.g. graphs (Yuan et al., 2021) and text036 (Chen et al., 2020)—or to specific models such037 as random forests (Lundberg et al., 2018).",2,positive
+"291
+For models trained on graph data, especially 292 graph DNNs, Yuan et al. (2021) proposed to ex- 293 plain predictions by using Shapley values as a 294 measure of subgraph importance.",1,neutral
+"For use cases involving graphs as480 part of multi-modal inputs—e.g. modeling a social481 network (Wich et al., 2021)—any of the previous482 methods can be combined with SubGraphX (Yuan483 et al., 2021) to also produce explanations for the484 graph component of the input.485
+When it comes to more sequence-to-sequence486 tasks such as question answering or machine trans-487 lation, SHAP-based methods seem in general not488 suitable as they are particularly tailored to classifi-489 cation settings.",1,neutral
+", based on signals from gradients [19, 3], perturbed predictions [33, 16, 36, 23], decomposition [3, 21], etc.",1,neutral
+SubgraphX [36] employs Monte Carlo Tree Search (MCTS) to find connected subgraphs that preserve predictions as explanation.,1,neutral
+[36] constraints explanations as connected sub-graphs and conducts Monte Carlo tree search.,1,neutral
+"For each group, existing methods can be further categorized as (1) self-explainable GNNs [38, 6], where the GNN can simultaneously give prediction and explanations on the prediction; and (2) post-hoc explanations [33, 16, 36], which adopt another model or strategy to provide explanations of a target GNN.",1,neutral
+"Furthermore, it is worth exploring explainable graph neural network algorithms, such as SubgraphX [42], as it can help",1,neutral
+"Furthermore, it is worth exploring explainable graph neural network algorithms, such as SubgraphX [42], as it can help
+researchers analyze and explain the working process of GNNs to detect the malware by highlighting specious function call paths for automatic malware forensics.",2,positive
+"Some GNN explainers also use motif knowledge to generate subgraphs to explain GNNs (Ying et al., 2019; Yuan et al., 2021).",1,neutral
+"In this context, the most important features are those that lead to similar predictions once retained [24,52,33,54].",1,neutral
+"…be developed in Section 7 belongs to the explainablility category, where the objective is to discover qualitative justifications on the learning outcome of a GCN; see (Luo et al., 2020; Lin et al., 2021; Schlichtkrull et al., 2021; Ying et al., 2019; Yuan et al., 2021) and the references therein.",2,positive
+"The statistic model to be developed in Section 7 belongs to the explainablility category, where the objective is to discover qualitative justifications on the learning outcome of a GCN; see (Luo et al., 2020; Lin et al., 2021; Schlichtkrull et al., 2021; Ying et al., 2019; Yuan et al., 2021) and the references therein.",2,positive
+"More generally, as also reported in Yuan et al. (2021), studying connected subgraphs results in more natural motifs compared to the motifs obtained without the connectedness constraint.",1,neutral
+"We compare the proposed method with popular post-hoc explanation techniques including the GNN-Explainer (Ying et al. 2019), PGEExplainer (Luo et al. 2020), GradCAM (Pope et al. 2019) and SubgraphX (Yuan et al. 2021)2.",2,positive
+"(Ying et al. 2019; Luo et al. 2020; Funke, Khosla, and Anand 2021; Loveland et al. 2021;
+Schlichtkrull, Cao, and Titov 2021; Yuan et al. 2021; Perotti et al. 2022).",2,positive
+"Recently, it has been adopted for explanations of machine learning models (Lundberg & Lee, 2017; Štrumbelj & Kononenko, 2014; Sundararajan & Najmi, 2020; Wang et al., 2021a; Zhang et al., 2021; Frye et al., 2020; Yuan et al., 2021) or feature importance (Covert et al., 2020).",2,positive
+"Recently, it has been adopted for explanations of machine learning models (Lundberg & Lee, 2017; Štrumbelj & Kononenko, 2014; Sundararajan & Najmi, 2020; Wang et al., 2021a; Zhang et al., 2021; Frye et al., 2020; Yuan et al., 2021) or feature importance (Covert et al.",1,neutral
+"Several approaches are proposed to explain the predictions of GNNs, such as SubgraphX [293], RC-Explainer [294], SE-GNN [295] and ProtGNN [296], etc.",1,neutral
+"Researchers are still working on opening the ’black-box’ of embedding-based methods [9, 10].",1,neutral
+", 2020), PGMExplainer (Vu & Thai, 2020), SubgraphX (Yuan et al., 2021), XGNN (Yuan et al.",2,positive
+"Specially, for subgraph-based method SubgraphX (Yuan et al., 2021), we pick the explainable subgraph out, then assign the edges in this subgraph instead of nodes as the explanation.",1,neutral
+"Another recent study proposes SubgraphX (Yuan et al., 2021), which employs a search algorithm to explore and identify subgraphs with high Shapley scores.",1,neutral
+"Next, the recent study SubgraphX (Yuan et al., 2021) proposes to explain GNNs via subgraphs.",1,neutral
+"…our FlowX with eight baselines, including GradCAM (Pope et al., 2019), DeepLIFT (Shrikumar et al., 2017), GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), PGMExplainer (Vu & Thai, 2020), SubgraphX (Yuan et al., 2021), GNN-GI (Schnake et al., 2020), GNN-LRP (Schnake et al., 2020).",2,positive
+"…methods have been proposed to explain the predictions of GNNs, such as GraphLime (Huang et al., 2020), GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), PGMExplainer (Vu & Thai, 2020), SubgraphX (Yuan et al., 2021), XGNN (Yuan et al., 2020b), and GraphSVX (Duval & Malliaros, 2021).",2,positive
+"Recently, several techniques have been proposed to explain GNNs, such as XGNN (Yuan et al., 2020b), GNNExplainer (Ying et al., 2019), PGExplainer (Luo et al., 2020), and SubgraphX (Yuan et al., 2021), etc.",2,positive
+", 2020), PGMExplainer (Vu & Thai, 2020), SubgraphX (Yuan et al., 2021), GNN-GI (Schnake et al.",2,positive
+"SubgraphX [37] uses Monte Carlo tree search and Shapley value as a score function to find the best connected subgraphs as explanations for GNNs. Causal Screening [31] is another search-based method, but it uses greedy search and causality measure to generate the explanations.",1,neutral
+"Some recent works, such as SubgraphX [37] and Causal Screening [31], design the search criteria and use search-based methods to solve the optimization problem.",1,neutral
+"To enhance the interpretability of GNNs, a line of works [34, 17, 30, 37, 31] focused on developing GNN explainers.",1,neutral
+SubgraphX [37] uses Monte Carlo tree search and Shapley value as a score function to find the best connected subgraphs as explanations for GNNs.,1,neutral
+"(2) Parametric explanation methods [6, 19, 51, 52] additionally train a parametrized explainer model to generate the saliency maps or explanatory subgraphs for individual instances.",1,neutral
+SubgraphX uses Monte Carlo tree search to select the most important subgraph with Shapley value-based formulation.,1,neutral
+"Several works [9], [21], [23], [24], [26], [39], [51]– [53] theoretically and empirically compared GNN-based interpretability methods.",1,neutral
+"We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF2 [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",2,positive
+"We shall discuss and compare 19 recent GNN interpretability methods from the aforementioned categories: GNNExplainer [36], PGExplainer [37], GraphMask [38], SubgraphX [39], PGMExplainer [40], RelEx [41], GraphLime [42], RCExplainer [43], DnX [44], GCFExplainer [45], CF(2) [46], SA [26], GuidedBP [26], CAM [21], Grad-CAM [47], LRP [48], GNNLRP [49], ExcitationBP [21], and XGNN [50].",2,positive

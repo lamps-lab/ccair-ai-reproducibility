@@ -1,0 +1,30 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"C IMPLEMENTATION DETAILS
+C.1 IMPLEMENTATION OF ID-SPT
+Beyond VIN, SymVIN and ConvGPPN, we also tried implementing an implicit differentiation version of Spatial Planning Transformers (SPT) (Chaplot et al., 2021).",1,related,1,positive
+"We follow the setup in (Lee et al., 2018; Chaplot et al., 2021) and further discuss in Section D.",1,related,1,positive
+"We also run on other tasks including visual navigation, 2-DOF configuration space manipulation, and 2-DOF workspace manipulation, where all these tasks can be represented as taking a form of map “signal” over grid Z(2), as previously been done (Zhao et al., 2022; Chaplot et al., 2021).",1,related,1,positive
+"We also run on other tasks including visual navigation, 2-DOF configuration space manipulation, and 2-DOF workspace manipulation, where all these tasks can be represented as taking a form of map “signal” over grid Z2, as previously been done (Zhao et al., 2022; Chaplot et al., 2021).",1,related,1,positive
+"We can handle tasks with more challenging input, such as visual navigation and workspace manipulation (Lee et al., 2018; Chaplot et al., 2021; Zhao et al., 2022), by learning an additional mapping network (mapper) to first map the input to a 2D map.",1,related,1,positive
+"During testing, we follow the pipeline in Chaplot et al. (2021) that the mapper-planner only have access to the manipulator workspace.",1,related,1,positive
+"We us a lightweight 3layer MLP hloc ([64, 32, 3]) as the localization task decoder (Fig.",1,related,1,positive
+"matmul(A, X_hw) y_sim = process_height(xyz_hw[1]) X_sim = [X_sim_homo[0]/X_sim_homo[2], y_sim, X_sim_homo[1]/X_sim_homo[2]] return X_sim",1,related,1,positive
+"array) -> List: xz_hw = [xyz_hw[0], xyz_hw[2]] X_hw = get_homogenous_coordinates(xz_hw) X_sim_homo = np.",1,related,1,positive
+"Once we compute the transformation A, we store it for later to process arbitrary coordinates from real to sim, as shown below.
+def get_simulation_coordinates(xyz_hw: List[float], A: np.array) -> List:
+xz_hw = [xyz_hw[0], xyz_hw[2]]
+X_hw = get_homogenous_coordinates(xz_hw)
+X_sim_homo = np.matmul(A, X_hw)
+y_sim = process_height(xyz_hw[1])
+X_sim = [X_sim_homo[0]/X_sim_homo[2], y_sim, X_sim_homo[1]/X_sim_homo[2]]
+return X_sim
+The objects used in simulation training are different from hardware objects, even though they belong to the same categories.",1,related,1,positive
+"Our choice of small and toyish maps (100× 100 or smaller) is in line with prior work, such as VIN, GPPN, and SPT, which mainly experimented on 15 × 15 and 28 × 28 maps.",1,related,1,positive
+"For all environments, the planning domain is the 2D regular grid as in VIN, GPPN and SPT S = Ω = Z2, and the action space is to move in 4 directions1: A = (north, west, south, east).",1,related,1,positive
+"In 2-DOF manipulation in configuration space, we adopt the setting in (Chaplot et al., 2021) and train networks to take as input of configuration space, represented by two joints.",1,related,1,positive
+"…ability of handling symmetry in differentiable planning, we consider more complicated state space input: visual navigation and workspace manipulation, and discuss how to use mapper networks to convert the state input and use end-to-end learned maps, as in (Lee et al., 2018; Chaplot et al., 2021).",1,related,1,positive
+"To demonstrate the ability of handling symmetry in differentiable planning, we consider more complicated state space input: visual navigation and workspace manipulation, and discuss how to use mapper networks to convert the state input and use end-to-end learned maps, as in (Lee et al., 2018; Chaplot et al., 2021).",1,related,1,positive
+"During testing, we follow the pipeline in Chaplot et al. (2021) that the mapper-planner only have access to the manipulator workspace.",1,related,1,positive
+"We focus on the 2D regular grid setting for path planning, as adopted in prior work [17, 18, 19].",1,related,1,positive
+"In 2-DOF manipulation in configuration space, we adopt the setting in [19] and train networks to take as input of configuration space, represented by two joints.",1,related,1,positive
+"[19] propose SPT based on Transformers, while integrating symmetry to Transformers is beyond steerable convolutions, thus we do not consider it but still adopt some useful setup.",1,related,1,positive

@@ -1,0 +1,71 @@
+text,label_score,label,target_predict,target_predict_label
+"In recent years, a split-merge approach has emerged as a popular technique for TSR, in which the separators between cells are initially detected and then subsequently merged [45,14,48,19,25].",,,0,not_related
+"The source codes of 6 papers were not executable [30, 33, 34, 36, 38, 39].",,,1,related
+Khan et al.[33]3 2020 No name ICDAR UNLV ICDAR 2013 - X NR,,,0,not_related
+"To alleviate this problem, methods like [4, 6, 29] tried different context enhancement techniques, e.",,,0,not_related
+"With the same goal, bidirectional GRUs [15] extracts the boundaries of rows and columns in a context-driven manner.",,,0,not_related
+"With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",,,0,not_related
+"the filed, which can be mainly categorized into boundary extraction-based methods [38, 31, 15, 41, 25] and element relationship-based methods [23, 4, 34, 36] according to the component type leveraged.",,,0,not_related
+"The first group are the single component-based methods, which rely on either boundary extraction [15, 25, 31, 38, 41] or element relationship [4, 23, 34, 36].",,,0,not_related
+"To date, several pioneers works [18, 47, 38, 15, 41, 4, 34, 36, 45, 35, 23, 25] have achieved significant progress in",,,0,not_related
+"We build the TFE as an attention bi-directional GRU network [38], [39] to recurrently process word embeddings in",,,1,related
+"[12] tried to use a variant of recurrent neural network (RNN) [13–15], gated recurrent units (GRU) [16], to identify table structure.",,,0,not_related
+SA Khan [113] RNN The reduced receptive field of CNNs is solved by the bi-directional GRU.,,,0,not_related
+SA Khan [113] presents a robust deep learning-based solution for extracting rows and columns from a recognized table in document pictures in this work.,,,0,not_related
+SA Khan[113] ICDAR2013 Bi-directional RNN Precision 96.,,,0,not_related
+"Recurring neural networks [27] were also utilized to tackle the task of tabular structure extraction [28], [29].",,,0,not_related
+"Targeting wide classes of documents, many recent works often use neural networks [19, 20, 21, 22] to recognize table structures in documents by means of large training sets.",,,0,not_related
+[36] provides a bidirectional GRU recurrent neural network to detect rows and columns in a table.,,,0,not_related
+[36] uses Gated Recurrent Unit (GRU) based sequential deep models for table structure extraction.,,,0,not_related
+"To alleviate this problem, methods like [13, 43, 45] tried different context enhancement techniques, e.",,,0,not_related
+"There are three approaches in the literature to handle table detection in documents: conventional rule-based [30, 87], metadata extraction [6, 31, 57], and machine learning and deep learning approaches [5, 25, 41, 47, 89].",,,0,not_related
+[41] used the CNNmodel introduced by Gilani et al.,,,0,not_related
+[41] used the CNN model introduced by Gilani et al.,,,0,not_related
+"We unfortunately could not directly evaluate the approaches presented in References [5, 25, 30, 41, 47, 89] using our cybersecurity corpus documents, because their respective implementations were not available online.",,,1,related
+"Researchmodels trained on reference datasets such as References [5, 25, 30, 41, 47, 89] often have difficulties coping with the complexity of real world document layouts [15].",,,0,not_related
+(2019) [41] Faster R-CNN + PDF Table Boundary Detection Relies on heuristics Gated Recurrent Columns and Rows Detection Fails to return text Unit (GRU) Fails to detect cell structures Zheng et al.,,,0,not_related
+"Thus, this paper proposes a novel token-level metaphor identification method based on pre-training of deep bidirectional transformers (BERT) [6], Bi-Gated Recurrent Unit (Bi-GRU) [10] and Conditional Random Field (CRF) [13].",,,0,not_related
+[18] proposed to use sequential models like bi-directional gated recurrent unit networks,,,0,not_related
+"Experimentation achieved the highest accuracy of 90.17 for Bi-GRU, applying learned word class features along with embedding with GloVe.",,,1,related
+"(ii) LSTM [42], Bi-LSTM [43], GRU [44], and Bi-GRU [45] are investigated as classifiers (with one-dimensional convolution layer).",,,1,related
+"Maximum average accuracy is achieved by the GloVe-WCFBi-GRU model, which is 90.41% for the Saraiki-Hindi dataset, while for the English-Bengali-Saraiki-Hindi-Roman Urdu mix dataset, minimum accuracy is observed (i.e., 85% in Figure 7).",,,1,related
+"Moreover, through experimental investigation, different architectures are optimized for the task associated with Long Short-Term Memory (LSTM), Bidirectional LSTM, Gated Recurrent Unit (GRU), and Bidirectional Gated Recurrent Unit (Bi-GRU).",,,0,not_related
+"*e highest average accuracy is achieved for the GloVe-WCFBi-GRU model for which the optimized approach is presented
+in Figure 7.",,,1,related
+"On the other hand, for the Parzen estimator, highest accuracy is achieved by Bi-GRU implemented on top of GloVe for Eng-Bengali scripts.",,,1,related
+"It is done with its variants LSTM, Bi-LSTM, GRU, and Bi-GRU.",,,0,not_related
+"More variations in standard LSTM such as Bi-LST [60], GRU [5], and Bi-GRU [61] are found to be adequate to address the mentioned issues.",,,0,not_related
+"According to [4, 45, 62], Bi-LSTM can capture or calculate both directions of contexts, such as upcoming and previous hidden layers.",,,0,not_related
+"*e architecture gets data and performs on dataset word-by-word analysis and feeds the representation into LSTM, Bi-LSTM, GRU, and Bi-GRU.",,,1,related
+"In our work, the input is captured by tweet as the token as an underlying layer of RNN variants as LSTM, BI-LSTM, GRU, and Bi-GRU as word embedding.",,,1,related
+"*erefore, dataset consisting of five different languages (3 cursive and 2 noncursive) is selected for effective validation of the proposed method
+*e significance of this study is to explore (1) two kinds of word embeddings; (2) four classifiers (LSTM, Bi-LSTM, GRU, and Bi-GRU); (3) various deep neural network architectures; (4) optimal value of different hyperparameters to find the optimal language detection for the mixed-script dataset consisting of Roman Urdu, English, Saraiki, Hindi, and Bengali languages.",,,1,related
+"With the development of deep learning, table structure recognition methods have recently advanced substantially on performance, which can be classified into three categories: boundary extractionbased [13, 22, 27, 35, 40], generative model-based [18, 46], and graph-based [2, 20, 30, 34] methods.",,,0,not_related
+"Although many previous algorithms [2,13,18,20,22,30,31,34,35,40,45,46] have achieved impressive progress in the community, TSR is still a challenging task due to two factors of complicated tables.",,,0,not_related
+"Besides, another technique [13] exploits bi-directional GRUs to establish row and column boundaries in a context driven manner.",,,0,not_related
+"Table structure recognition (TSR) aims to recognize the table internal structure to the machine readable data mainly presented in two formats: logical structure [18, 46] and physical structure [2, 13, 20, 22, 27, 30, 31, 34, 35, 40, 45].",,,0,not_related
+"Cognitive methods in this space broadly classified into five categories — image-to-sequence models [17, 2, 14], segmentation networks [26, 18, 20, 23], graph formulations [22, 4, 24], conditional generative adversarial networks [16] and a recent multi-modal method by [40].",,,0,not_related
+"To achieve this purpose, existing computer vision methods either predict cell bounding boxes [6, 13], explore the adjacency relation between different cells [11, 15], or transform a table image into the markup sequence (e.",,,0,not_related
+"[13, 25, 32] attempt to predict row/column boundaries or even invisible grid lines, which are limited in identifying cells spanning multiple rows and columns.",,,0,not_related
+"They can be categorized into two groups: non-table-element-based approaches [13, 17, 25, 32, 35, 44] and tableelement-based approaches [2, 19, 27–29, 31, 41, 43].",,,0,not_related
+"2, with the success of deep learning, recent deep learning-based table structure recognition approaches can be divided into three categories: 1) identify cell bounding boxes through visual detection and segmentation methods [8], [25], [27]–[29]; 2)",,,0,not_related
+"In [8], [28], [29], they classify an entire row or column into the cell or non-cell categories instead of the pixel-wise classification.",,,0,not_related
+"With the great success of deep neural network in computer vision field, works began to focus on the image-based table with more general structures [21,30,24,9,13,36,23,14,33].",,,0,not_related
+[102] has experimented with bi-directional recurrent neural networks along with Gated Recurrent Units (GRU) [103] to extract the structure of the table.,,,0,not_related
+"Recurrent neural networks [29] have also been employed to handle the problem of table structure extraction [30], [31].",,,0,not_related
+[9] proposed to use the recurrent neural networks (RNN) to identify the table structure according to the characteristics that the cells have repetitive sequence characteristics on the row and column.,,,0,not_related
+[21] exploit RNN based sequence model to capture the repetitive row/column structures.,,,0,not_related
+Recurrent neural networks (RNNs) are used to predict independent outputs and future input information [2].,,,0,not_related
+"and scanned tables, and bidirectional RNNs and LSTMs are frequently adopted in web tables to capture the order of rows and columns [15, 16, 21, 28].",,,0,not_related
+"Among these, the problem of table structure recognition has been of high interest in the community [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].",,,0,not_related
+"In the space of document images, researchers have been working on understanding equations [30,31], figures [32,33] and tables [6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+"Table structure recognition is a challenging problem due to complex structures and high variability in table layouts [4,5,6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+"[15], through their gru based sequential models, showed improvements over several cnn based methods for table structure extraction.",,,0,not_related
+"Many cognitive methods [6,7,8,9,10,11,12,14,15,16,37,38,39,40,41,42,43] have also been presented to understand table structures as they are robust to the input type (whether being scanned images or native digital).",,,0,not_related
+"We compare the performance of our tabstruct-net against seven benchmark methods — deepdesrt [7], tablenet [12], graphtsr [14], splerge [10], dgcnn [9], Bi-directional gru [15] and Image-to-Text [11].",,,1,related
+[46] Marmot 2K ICDAR-2013 204 ICDAR-2013 34 0.,,,0,not_related
+" 57.40 52.20 pdf2table [40] N 59.51 57.52 58.50 TABFIND [36] N 70.52 68.74 69.62 Ours GTE N 94.70 94.49 94.57 Academic Systems Tensmeyer [37] Y 94.64 95.89 95.26 Nurminen [7] Y 94.09 95.12 94.60 Khan [17] Y 90.12 96.92 93.39 TABFIND [36] Y 64.01 61.44 62.70 Ours GTE Y 95.74 95.39 95.55 Cell Structure Ablation Study To analyze our GTE-Cell network further, we compare the several variations in Table 4 u",,,1,related
+"Disadvantages of neural networks:  a high probability of the training and adaptation method hitting a local extremum [13];  inaccessibility for human understanding of the knowledge accumulated by the network (it is impossible to represent the relationship between input and output in the form of rules), since they are distributed among all of the elements of the neural network and are presented in the form of its weight coefficients [14, 15];  difficulty in determining the structure of the network, since there are no algorithms for calculating the number of layers and neurons in each layer for specific applications [8, 16];  difficulty in forming a representative sample [17, 18].",,,0,not_related
+"The following recurrent networks are most often used as neural networks for translation: • Elman neural network (ENN or SRN) [12, 13], the simplest of recurrent neural networks; • bidirectional recurrent neural network (BRNN) [14, 15], which is built based on two Elman neural networks; • long short-term memory (LSTM) [16, 17]; • bidirectional recurrent neural network (BLSTM) [18, 19], which is built based on two LSTM neural networks; • gated recurrent unit (GRU) [20, 21]; • bidirectional recurrent neural network (BGRU) [22], which is built based on two GRU neural networks.",,,0,not_related
+"The disadvantages are a higher complexity of determining the architecture, a lower learning rate than in a conventional Elman neural network; • idirectional recurrent neural network (BGRU) [25], which is a recurrent network and is built on the basis of two GRU neural networks.",,,0,not_related
+"Top-down methods [19,33,34,37] try to split entire table images into rows and columns using detection or segmentation models, then cells can be obtained through row-column intersection.",,,0,not_related

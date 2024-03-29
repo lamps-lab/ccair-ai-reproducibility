@@ -1,0 +1,63 @@
+text,target_M6_predict,target_predict_M6_label
+", [7, 13, 17, 18, 21, 29, 37, 44, 55, 56]) utilize a deep learning (DL)-based approach, focusing on either one, two, or all three steps.",1,neutral
+"[44] leveraged the ICDAR 2017 POD dataset to add table structural information in the annotations and propose TabStructDB, which includes just over a thousand table images.",2,positive
+"[14] came up with a new table detection dataset (from document images) consisting of 1081 dense tables, collected from the ICDAR 2013 dataset, with the addition of structural information for all the tables in the dataset; and Li et al.",2,positive
+Class Labels TabStructDB [14] TableBank [7] TNCR [6] TERED,2,positive
+Fully convolutional networks minimize the complexity of recognizing table structure [90].,1,neutral
+"On the other hand, the problem of table structure recognition (TSR) is a lot more challenging and remains a very active area of research, in which many novel machine learning algorithms are being explored [3,4,5,9,11,12,13,14,17,18,21,22].",1,neutral
+"Object-detection based methods [11,12,13,14,21] rely on tablestructure annotation using (overlapping) bounding boxes for training, and produce bounding-box predictions to define table cells, rows, and columns on a table image.",1,neutral
+"Researchers in [37,41,40] have proposed to detect row/column regions based on segmentation and off-the-shelf object detectors.",1,neutral
+[28] 2019 DeeptabSTR ICDAR TabStructDB ICDAR 2013 - - NR,0,negative
+"Another group of approaches [3, 30, 31] treated TSR as an object detection problem and used some object detection methods to directly detect the bounding boxes of rows and columns.",1,neutral
+Early works (Schreiber et al. 2017; Siddiqui et al. 2019) introduce segmentation or detection frameworks to locate and extract splitting lines of table rows and columns.,1,neutral
+"In this scenario, TSR usually deals with tables which are subareas of document images (Zuyev, 1997; Schreiber et al., 2017; Siddiqui et al., 2019a, 2019b; Zheng et al., 2021; Hashmi et al., 2021c), lines of plain-text (Kieninger, 1998; Ng et al., 1999; Hu et al., 2000), or text chunks and rulings…",1,neutral
+SA Siddiqui[51] ICDAR2013 Deformable CNN Precision 99.,2,positive
+SA Siddiqui[51] ICDAR2013 Deformable CNN Precision 93.,2,positive
+"Using the potential of deformable convolutional networks, SA Siddiqui [51] proposes a unique approach for analyzing tabular patterns in document",1,neutral
+SA Siddiqui[51] ICDAR2017 Deformable CNN Precision - - 96.,1,neutral
+SA Siddiqui [51] deformable CNN + Faster R-CNN 1) The use of deformable convolution can handle various tabular structures.,1,neutral
+TabStructDB TabStructDB is a different publicly available image-based table structure recognition dataset that was promoted by SA Siddiqui [51].,2,positive
+"Although [34] treated tabular structure analysis as an objectfinding problem, there were significant dissimilarities between the two approaches.",1,neutral
+"Similar to previous works [8, 38, 46, 49, 51], the text content and structure information are obtained separately.",0,negative
+"The first group of methods [49, 51, 52] starts by detecting the row and columns of a",1,neutral
+"Popular table structure recognition methods include DeepDeSRT [7], ReS2Tim [15], DeepTabStR [16], etc.",1,neutral
+"Quite a number of table recognition techniques have been reported in recent years [14]–[16], and most of them can be broadly classified into three categories.",1,neutral
+"Another group of approaches [8, 42] treated TSR as an object detection problem and used some object detection methods to directly detect the bounding boxes of rows and columns.",1,neutral
+"ICDAR-2017 [85], TabStructDB [94] 2017, 2019 1081 digital image yes",2,positive
+"Information on datasets related to table recognition
+Datasets Year Number of tables Source Format
+Official split
+train/val/ test
+FUNSD [2] (IIT-CDIP [90])
+2006, 2019 199 (15k) scan image yes
+UNLV [91] 2010 558 scan image no Marmot [92] 2012 958 digital image no ICDAR-2013 [84] 2013 254 digital pdf yes CamCap [93] 2015 75 camera image no ICDAR-2017 [85], TabStructDB [94] 2017, 2019 1081 digital image yes ICDAR-2019 [86] modern 2019 340 digital image no ICDAR-2019 [86] historical 2019 1099 scan image yes ICDAR-2019 SROIE [95] 2019 1000 scan image yes IIIT-AR-13K [96] 2020 16k+ digital image no
+Open datasets mainly consist of images of tables in digital sources, such as articles and open business documents (IIIT-AR-13K), mostly financial reports.",0,negative
+"[19] proposed to formulate the problem of row/column identification in a tabular structure as an object detection problem instead of a semantic segmentation problem, and leveraged three",1,neutral
+"Hybrid Deep Learning-Rule-Based approach: A popular current model for table-structure identification is the use of a hybrid Deep Learning-Rule-Based approach similar to [27, 29].",1,neutral
+"For instance, in [26, 29, 30, 32], the authors considered columns and rows as object types and reconstructed table structures from the detected rows and columns.",1,neutral
+"[29] used a detection framework to alleviate the burden of the post-processing task of recovering spanning cells, but this method often failed to handle cells of multi-line contents.",1,neutral
+"In order to avoid the shortcoming of fCN-based table structure recognition method [9], which relies heavily on post-processing, [10] regards row and column recognition in table structure as a target detection problem, in which documents can be regarded as scenes, and rows and columns can be regarded as objects.",1,neutral
+[17] propose to use a combination of deformable convolutional networks with Faster R-CNN and FPN.,1,neutral
+[17] ICDAR 2013 ICDAR 2013 (Complete) N/A Í ü Í Row/Column Adjacency Custom ICDAR 2017 ICDAR 2013 (Test Set) relations Paliwal et al.,2,positive
+"In the literatures [28, 27], methods were evaluated on ICDAR13-Table with table cell boxes instead of the original text-level bounding box annotations.",1,neutral
+"Recently, segmentation-based methods have been popular in table cell detection due to its statistical significance along table rows and columns [25, 27, 28].",1,neutral
+"For cell spatial location detection, we use the same evaluation metrics with recent methods [25, 27, 29, 28, 20].",1,neutral
+"2, with the success of deep learning, recent deep learning-based table structure recognition approaches can be divided into three categories: 1) identify cell bounding boxes through visual detection and segmentation methods [25, 27, 29, 28, 8]; 2) transform a table image into the markup sequence, such as LaTeX and HTML [10, 2]; and 3) explore the adjacency relation between different table cells [30, 22, 11].",1,neutral
+"Works of [30,31,32] firstly obtain the rows and columns regions using the detection or segmentation models and then intersect these two regions to obtain the grids of cells.",1,neutral
+"Though recent works [30,22,32,31] attempt to predict row/column regions or even invisible grid lines [33], they are limited to handle tables that cross span multiple rows/columns.",1,neutral
+868 - - - - - DeepTabStR [31] ICDAR 2013 0.,1,neutral
+The traditional anchors are given as input to K-means clustering technique along with the training datasets of ICDAR 2013 [18] and TabStructDB [33] in order to retrieve optimized anchors for each dataset.,2,positive
+"[33] has treated the table structure analysis as an object detection problem, there are various considerable differences between the two methods.",1,neutral
+"Although few considerable efforts have also been made to recognize the tabular structures straight from images [28], [32], accurate structural recognition is far from achievable [33].",1,neutral
+"The pre-condition for the task of table structure recognition is the accurately detected tabular regions [32], [33].",1,neutral
+"While the system DeepTabStr [33] relied on memory-intensive deformable convolutions [34], our approach consists of intuitive utilization of Mask R-CNN [37] with optimized anchors along with a simple and effective post-processing method.",2,positive
+This paper extends the idea of treating the problem of table structure recognition as an object detection problem [33].,1,neutral
+"Considering the diversity in the structures of rows and columns, it has been settled that the separate model performs better [33].",1,neutral
+"Furthermore, we have also surpassed the baseline results on the TabStructDB dataset [33].",2,positive
+The system DeepTabStr [33] has adopted Faster R-CNN [35] with deformable convolutions [34] while our proposed approach works with Mask R-CNN [37] exploiting optimized anchors to directly detect boundaries of respective rows and columns in a tabular image.,2,positive
+"[27] in order to implement a direct comparison against the similar approaches [27], [32], [33].",1,neutral
+[10] introduced the concept of deformed convolution [11] and regarded the rows and columns of the table as the objects to be detected.,1,neutral
+Some other works use applied graph convolutional neural network technique [15] and segmentation-based method for table structure decomposition [2].,1,neutral
+"There are attempts of applying deep learning to detect tables and decompose table structure [2], [3].",1,neutral
+"DeepDeSRT[28] and DeepTabStr[32] split the ICDAR2013 test set into two parts, leaving only 31 of 156 tables for testing and the rest incorporated into training.",0,negative
+"Top-down methods [19,33,34,37] try to split entire table images into rows and columns using detection or segmentation models, then cells can be obtained through row-column intersection.",1,neutral

@@ -1,0 +1,141 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"OE = M∑ i=1 |Bi| |D| · 1(Ci > Ai) · |Ci −Ai|, (29)
+We adapt OE to different binning schemes of ECEEW, ECEEM, ECESWEEP to produce OEEW, OEEM, OESWEEP respectively.",1,related,1,positive
+"Evaluation Metrics: We use Equal-Width Expected Calibration Error (ECEEW) [18] and Equal-Width Overconfidence Error (OEEW) [62] with 10 bins (B = 10) to
+evaluate the model calibration degrees.",1,related,1,positive
+"We also compare with model calibration methods include: Temperature Scaling (TS) [18], Brier Loss [4], MMCE [30], Label Smoothing [46], Mixup [62], Focal Loss [45] and AdaFocal [17] implemented on our baseline model.",1,related,1,positive
+Evaluation Metrics: We use Equal-Width Expected Calibration Error (ECEEW) [18] and Equal-Width Overconfidence Error (OEEW) [62] with 10 bins (B = 10) to evaluate the model calibration degrees.,1,related,1,positive
+We report model calibration results evaluated in terms of Equal-Width Expected Calibration Error (ECEEW) and Equal-Width Over-confidence Error (OEEW) with 10 bins in Tab.,1,related,1,positive
+"To convert ECE to a calibration score, we normalize it by a maximum error ECEmax and subtract the result from 1.",1,related,1,positive
+We use ECEmax = 0.5 as this corresponds with the pathological case of a binary classifier that is correct 50% of the time but always predicts with 100% confidence.,1,related,1,positive
+"We therefore choose to compute the calibration score by averaging the calibration of the model across the in-distribution and distribution-shifted
+datasets, giving
+sCAL = 1− 1
+(N + 1)ECEmax
+[ ECE ID +
+N∑ i=1 ECE i
+] , (6)
+where ECE ID is the expected calibration error on the in-distribution data and ECE i is measured on the ith distribution-shifted dataset.",1,related,1,positive
+"In this work, since we focus on classification tasks we use ECE .",1,related,1,positive
+"As we mentioned in above sections, there are some contradictory results on mixup’s calibration performance in previous studies [16,27].",1,related,0,negative
+"We notice there are some contradictory results on mixup’s calibration performance in previous studies [16, 27].",1,related,0,negative
+"In this research, we evaluate the calibration using the Expected Calibration Error (ECE) metric which measures the deviation be-
+tween predicted confidence and accuracy.",1,related,1,positive
+"A properly calibrated classifier should have predictive scores that accurately reflect the probability of correctness (Thulasidasan et al., 2019; Minderer et al., 2021).",1,related,0,negative
+"In addition, a regularization termwas also introduced into the confidence calibration, such asMixup (Thulasidasan et al 2019) and label smoothing (Müller et al 2019).",1,related,1,positive
+"In our experiments, for mixup, we follow the setting in [19] to use α = 0.",1,related,1,positive
+"For comparison, we include a standard singleloss one-head classifier (SL1H), plus models trained with Label Smoothing (LS [27]), Margin-based Label Smoothing (MbLS [22]), MixUp [30], and using the DCA loss [20].",1,related,1,positive
+"The calibrated model can be obtained via data augmentation [22, 57, 62], adversarial training [7, 10, 20], and uncertainty modelling [5, 40].",1,related,1,positive
+"However, the point estimation of DNN parameters tends to be overfitting and overconfident [131].",1,related,1,positive
+"…a transformation that maps the raw outputs of classifiers to their expected probabilities Kull et al. (2019); Guo et al. (2017a); Gupta and Ramdas (2021), and ad-hoc methods that adapt the training process to produce better calibrated models Thulasidasan et al. (2019); Hendrycks et al. (2019a).",1,related,1,positive
+"Mathematically, xλ = λx1 + (1 − λ)x2 (4) yλ ∼ Pyλ = λPy1 + (1 − λ)Py2 (5)",1,related,1,positive
+"Label smoothing and Mixup tend to regularize the DNN to prevent overconfidence (Müller et al., 2019; Thulasidasan et al., 2019).",1,related,0,negative
+"Label smoothing and Mixup tend to regularize the DNN to prevent overconfidence (Müller et al., 2019; Thulasidasan et al., 2019).",1,related,0,negative
+"To demonstrate the superiority of classAug over dataAug, we have made comparison between classAug and state-of-the-art data augmentation techniques, such as mixup [24], Cutmix [12], and RandAug [74].",1,related,1,positive
+"For Mixup and Cutmix, we perform experiments using all combinations of α values in the set {0.1, 0.4, 0.8, 1.0, 1.2}.",1,related,1,positive
+"For AutoAugment, we utilize the ImageNet augmentation policy, and α values of 0.1 and 0.8 are again adopted for Mixup and CutMix, respectively.",1,related,1,positive
+"The results of these experiments, reported in terms of Top-1 Ωall, are provided in Table 10, where it can be seen that the best results are achieved by combining Mixup, Cutmix, and AutoAugment techniques into a single augmentation policy.",1,related,1,positive
+"In particular, we perform experiments with Mixup, CutMix, and SamplePairing interpolation strategies13 for class-incremental learning on the CIFAR100 dataset, adopting the same experimental setting as described in Section 6.1.",1,related,1,positive
+"In particular, CSSL combines random crops and flips, Mixup, Cutmix, and
+Autoaugment into a single, sequential augmentation policy5; see Appendix B.1 for further details.",1,related,1,positive
+"We test all combinations of the Mixup, Cutmix, AutoAugment, and RandAugment data augmentation strategies to arrive at the final, optimal augmentation policy used within the proposed methodology for CSSL.",1,related,1,positive
+"13The α values used for Mixup and Cutmix are tuned by searching over the set {0.1, 0.4, 0.8, 1.0, 1.2} using a hold-out validation set, and we present the results of the best-performing α for each method.",1,related,1,positive
+"Mixup and Cutmix use α values of 0.1 and 0.8, respectively, and AutoAugment adopts the Imagenet learned augmentation policy.",1,related,1,positive
+Our policy randomly chooses between Mixup or Cutmix for each data example with equal probability.,1,related,1,positive
+"For Mixup and Cutmix, we utilize α values of 0.1 and 0.8, respectively.",1,related,1,positive
+"Representative methods include Mixup [74], CutMix [75], and PixMix [76].",1,related,1,positive
+"For the quantitative analysis of the confidence calibration, we used two popular metrics, the expected calibration error (ECE) [Naeini et al., 2015] and the overconfidence error (OE) [Thulasidasan et al., 2019].",1,related,1,positive
+"We would like to highlight that our observation is in contrast to the prior work [Thulasidasan et al., 2019] which suggests that Mixup provides reliable uncertainty estimates for OOD data as well.",1,related,0,negative
+"…a transformation that maps from classifiers raw outputs to their expected probabilities [Kull et al., 2019, Guo et al., 2017a, Gupta and Ramdas, 2021b], and ad-hoc methods that adapt the training process to generate better calibrated design [Thulasidasan et al., 2019, Hendrycks et al., 2019a].",1,related,1,positive
+"Thus, we reasonably guess that VQAMix may contribute to the model’s interpretability by taking the soft label as the supervision during the training process according to [56].",1,related,0,negative
+"Among calibration methods in the literature, we explore mixup [69] for two main reasons: (1) mixup has shown to improve calibration in the balanced setting [58] and to some extent in the longtailed setting [71].",1,related,1,positive
+"Furthermore, we apply mixup [41, 33], an effective data augmentation method.",1,related,1,positive
+"As such, the authors used a form of ECE in their evaluation that measures the miscalibration of the most probable class output by the classifier, a choice mirrored in a number of subsequent works (Thulasidasan et al., 2019; Müller et al., 2019; Mukhoti et al., 2020; Alexandari et al., 2020).",1,related,1,positive
+"As such, the authors used a form of ECE in their evaluation that measures the miscalibration of the most probable class output by the classifier, a choice mirrored in a number of subsequent works (Thulasidasan et al., 2019; Müller et al., 2019; Mukhoti et al., 2020; Alexandari et al., 2020).",1,related,1,positive
+"feature layout indicates that we can learn a more compact and disjoint decision boundary, which has been evaluated to be critical in machine learning applications such mixup [66,49] and uncertainty estimation in deep learning [15].",1,related,1,positive
+The calibration of a model can be measured by the expected calibration error (ECE) [17] and the overconfidence error (OE) [29].,1,related,1,positive
+The confidence data is obtained by the average Softmax winning score in a test mini-batch [58].,1,related,0,negative
+"In this article, we identify that the over-confidence in deep radar classifiers, which emanates from using hard labels, can be fixed using soft labels [6, 7, 8, 9] and propose two novel heuristics to compute sample-specific smoothing factors to refine the hard labels.",1,related,1,positive
+"Baselines We compare our approach with nine baseline methods: MC-Dropout [7], Temperature Scaling [14], Mixup [37], Label Smoothing [36], TrustScore [20], JEM [12], DBLE [40], and OvA DM [34].",1,related,1,positive
+"To avoid possible misleading, maxl zl is referred to as winning score v (i.e., v = maxl zl) [Thulasidasan et al., 2019] hereinafter.",1,related,1,positive
+Training with MixUp data augmentation [281] is also found to beneit model calibration [225].,1,related,0,negative
+"through data augmentation, better calibrated DNNs (Mixup [23]) or alleviate the over-confidence of the model (CutMix [24]).",1,related,1,positive
+"• Mixup As shown in Thulasidasan et al. [2019], Mixup can be an effective OoD detector, so we also use this as one of our baselines.",1,related,0,negative
+We used object recognition datasets (CIFAR-10 and CIFAR-100 [8]) and a fashion-product recognition dataset (Fashion MNIST [21]) as in the previous study [17].,1,related,1,positive
+"MixConf basically follows the scheme of Mixup, which is known to contribute to model’s calibration [17], but is more carefully designed for confidence calibration.",1,related,1,positive
+"When trained naively with cross entropy loss on unambiguously annotated data (examples with a single label), models generate a over-confident distribution (Thulasidasan et al., 2019) putting a strong weight on a single label.",1,related,1,positive
+"When
+trained naively with cross entropy loss on unambiguously annotated data (examples with a single label), models generate a over-confident distribution (Thulasidasan et al., 2019) putting a strong weight on a single label.",1,related,1,positive
+"Since the output prediction with mixup augmentation is better calibrated (Thulasidasan et al., 2019) we use relaxed thresholds for τp (0.50) and κp (0.10).",1,related,1,positive
+Data augmentation methods include Mixup [19] and AugMix [21].,1,related,1,positive
+"…overconfidence is caused by the training samples with same winning scores due to the one-hot labels, and adding noise perturbation in the training process is a way to mitigate aleatoric uncertainty, we apply mix-up (Zhang et al., 2017; Thulasidasan et al., 2019) to jointly address the two issues.",1,related,0,negative
+"Since the overconfidence is caused by the training samples with same winning scores due to the one-hot labels, and adding noise perturbation in the training process is a way to mitigate aleatoric uncertainty, we apply mix-up (Zhang et al., 2017; Thulasidasan et al., 2019) to jointly address the two issues.",1,related,0,negative
+"…1, 2.5, 5}; for VAT, we search the perturbation size in {10−3, 10−4, 10−5} as in (Jiang et al., 2020); for Mixup, we search the interpolation parameter from {0.1, 0.2, 0.3, 0.4} as suggested in (Zhang et al., 2018; Thulasidasan et al., 2019); for Manifold-mixup, we search from {0.2, 0.4, 1, 2, 4}.",1,related,1,positive
+"However, the same idea can be used on metadata that we’d like to balance uncertainty estimates, e.g., gender and age groups.
+et al. (2020) report 1.7% ECE with Rank-1 Bayesian neural nets and 3.0% with Deep Ensembles; Thulasidasan et al. (2019a) report 3.2% for ResNet-50 with Mixup, 2.9% for ResNet-50 with an entropy-regularized loss, and 1.8% for ResNet-50 with label smoothing.",1,related,1,positive
+"This is counterintuitive as we would expect Mixup, which improves calibration of individual models (Thulasidasan et al., 2019a), to also improve the calibration of their ensemble.",1,related,1,positive
+"Following the calibration metrics in Guo et al. (2017) and Thulasidasan et al. (2019), we evaluate the calibration of the model in Figure 4.",1,related,1,positive
+"In this section, we introduce some existing calibration methods, including temperature scaling [19, 16], entropy regularization [14], MMCE regularization [15], label smoothing [20, 21], and Mixup training [22, 23].",1,related,1,positive
+"Following the uncertainty calibration approaches [7,33], we also investigate the relationship between statistical metrics (e.",1,related,1,positive
+"As the model is trained on noisy web labels, we employ mixup [39], which is known as an effective regularization to make DNNs less prone to over-confident predictions and predicted scores of DNNs better calibrated to the actual confidence of a correct prediction [33].",1,related,1,positive
+"Since the original classification network could easily obtain high confidence, in which the generated CAM only attends to small discriminative object parts, we utilize mixup data augmentation to calibrate the uncertainty in prediction [38].",1,related,1,positive
+"First, inspired by the mixup data augmentation in [49], we observe that including mixup could effectively calibrate the model uncertainty on overconfident predictions [38] and in return enables the model to attend to more object regions.",1,related,1,positive
+"In this paper, we propose to integrate the idea of mixup data augmentation [49], thereby calibrating the uncertainty in prediction [38] as well as allowing the model to attend to other regions of the image.",1,related,1,positive
+"Based on the suggestions and findings in other papers [23,22], for our experiments we set α = 0.",1,related,1,positive
+"In addition, the mixup method [17] was used.",1,related,0,negative
+A Mixup data augmentation [23] using an alpha of 0.,1,related,1,positive
+"To find the best hyperparameter for label smoothing, previous methods (Szegedy et al., 2016; Thulasidasan et al., 2019) sweep in a range and choose the one that has the best validation",1,related,1,positive
+"Note that AR-AdaLS is only trained on the clean training data without any data augmentation compared to mixup (Thulasidasan et al., 2019) and CCAT (Stutz et al., 2020).",1,related,0,negative
+"Note that AR-AdaLS is only trained on the clean training data without any data augmentation compared to mixup (Thulasidasan et al., 2019) and CCAT (Stutz et al.",1,related,0,negative
+"To find the best hyperparameter for label smoothing, previous methods (Szegedy et al., 2016; Thulasidasan et al., 2019) sweep in a range and choose the one that has the best validation
+1Note, predicted confidence is not a good indicator for splitting the training dataset as the model can easily…",1,related,1,positive
+"DNNs are not only overconfident on the data they are trained on but also on unseen out-of-distribution data [9,25].",1,related,0,negative
+"We compare the four variants of our proposed method with L1 distance, L2 distance, Autoencoder distance (AE) and Word Embedding distance (WE) to the vanilla training using one-hot labels, as well as various techniques that improve confidence calibration: temperature scaling (TS) [7], uniform label smoothing [24,18], mixup training [25], Dirichlet calibration with off-diagonal regularization (Dir-ODIR) [10], and ensemble temperature scaling (ETS) [31].",1,related,1,positive
+"We compare our proposed method to the vanilla training using one-hot labels, as well as three other techniques that improve confidence calibration: temperature scaling [10], uniform label smoothing [28, 20], and mixup training [29].",1,related,1,positive
+"A WRN CIFAR100 classifier is trained in three modes: 1) no during-training calibration; 2) using entropy regularization (Pereyra et al., 2017); and 3) using Mixup data augmentation (Zhang et al., 2018; Thulasidasan et al., 2019).",1,related,1,positive
+"Additionally, we adopt Mixup (Zhang et al., 2018) which is a data augmentation shown to improve calibration (Thulasidasan et al., 2019).",1,related,1,positive
+"Among the former, the main idea is to increase the entropy of the classifier to avoid overconfident predictions, which is accomplished via modifying the training loss [12, 15, 23], label smoothing [16, 21], and data augmentation techniques [25, 28, 32].",1,related,1,positive
+"We also investigated the calibration of our scNym models by comparing the prediction confidence scores to prediction accuracy (Thulasidasan et al., 2019).",1,related,1,positive
+"56]. The basic idea is to generate new training data-label pairs by convex combinations of training samples. Several studies demonstrated it’s benet for various tasks such as calibrating uncertainty [42] and domain adaptation for images [23,51,54]. 3 Approach In this section, we present the main building blocks of our approach. We rst describe our general pipeline and training procedure, and then exp",1,related,1,positive
+"In the experimental section, we show that some models trained with Mixup do not necessarily improve the calibration, as recently noted in [30].",1,related,0,negative
+"By comparing with the results reported in [30], we can conclude that Mixup behaves particularly well in CIFAR100, probably because the intersection between classes can be explained through a linear relation.",1,related,1,positive
+"In general, our results contrast with those reported in [30] where they provide general improvement in calibration performance due to Mixup.",1,related,0,negative
+"In the experimental section, we show that some models trained with Mixup do not necessarily improve the calibration, as recently noted in [30].",1,related,0,negative
+"By comparing with the results reported in [30], we can conclude that Mixup behaves particularly well in CIFAR100, probably because the intersection between classes can be explained through a linear relation.",1,related,1,positive
+"In general, our results contrast with those reported in [30] where they provide general improvement in calibration performance due to Mixup.",1,related,0,negative
+"Here we follow the calibration literature [30, 7, 14] and use the negative log likelihood (NLL) loss, i.",1,related,1,positive
+"We measure the Expected Calibration Error (ECE) (Thulasidasan et al., 2019; Guo et al., 2017) of the proposed method, following (Thulasidasan et al.",1,related,1,positive
+"We measure the Expected Calibration Error (ECE) [26, 8] of the proposed method, following [26].",1,related,1,positive
+"We measure the Expected Calibration Error(ECE) [42,16] of our trained networks, following [42]: predictions (total N predictions) are grouped into M interval bins (Bm) of equal size.",1,related,1,positive
+"To do this, we use ResNet-110 and Wide-ResNet-26-10 trained on CIFAR-10 and consider the SVHN [23] test set and CIFAR-10-C [9] with Gaussian noise corruption at severity 5 as OoD data.",1,related,1,positive
+"Furthermore, we empirically observe that models trained using focal loss are not only better calibrated under i.i.d. assumptions, but can also be better at detecting OoD samples which we show by taking CIFAR-10 as the in-distribution dataset and SVHN and CIFAR-10-C as out-of-distribution datasets, something which temperature scaling fails to achieve.",1,related,1,positive
+"Finally, we also make the interesting observation that whilst temperature scaling may not work for detecting out-ofdistribution (OoD) samples, our approach can.",1,related,1,positive
+"Since focal loss has implicit regularisation effects on the network (see §4), we investigate if it helps to learn representations that are more robust to OoD data.",1,related,1,positive
+In this work we aim to replicate the results reported by [7] on their analysis of the effect of Mixup [5] on a network’s calibration.,1,related,1,positive
+"We also compare the additional baselines verified uncertainty calibration (VUC) (Kumar, Liang, and Ma 2019), and MixUp (Thulasidasan et al. 2019); to illustrate that the different modeling assumptions of OOD detection methods do not translate into calibrated predicted uncertainty under domain drift, we also jointly trained a classifier and a GAN (Lee et al. 2017).",1,related,1,positive
+"Our findings for baseline methods confirm their results, in particular for deep ensembles and SVI (they did not consider EDL, MNF, VUC and MixUp).",1,related,0,negative
+"We also compare the additional baselines verified uncertainty calibration (VUC) (Kumar, Liang, and Ma 2019), and MixUp (Thulasidasan et al. 2019); to illustrate that the different modeling assumptions of OOD detection methods do not translate into calibrated predicted uncertainty under domain…",1,related,1,positive
+"We also compare the additional baselines verified uncertainty calibration (VUC) (Kumar, Liang, and Ma 2019), and MixUp (Thulasidasan et al. 2019); to illustrate that the different modeling assumptions of OOD detection methods do not translate into calibrated predicted uncertainty under domain drift, we also jointly trained a classifier and a GAN (Lee et al.",1,related,1,positive
+"uts to decide works even better when many classes are presented. We speculate that recent advances in data augmentation techniques may help to improve IsoMax+ES OOD detection performance even further [52], [53]. 4.3 Robustness Analysis Fig. 3 presents OOD detection performance of SoftMax and IsoMax losses in many models (DenseNet and ResNet), metrics (AUROC and TNR@TPR95), and datasets (SVHN, CIFAR10,",1,related,1,positive
+"However, we speculate this could also be achieved in a better way using isotropic regularization or special data augmentation techniques (Thulasidasan et al., 2019; Yun et al., 2019) to avoid the need for out-of-distribution or adversarial samples.",1,related,1,positive
+"We speculate that recent advances in data augmentation techniques may help to improve IsoMax+ES OOD detection performance even further [51], [52].",1,related,0,negative
+"To deal with this issue, we propose to use mixup augmentation [25] as an effective regularization that helps calibrate deep neural networks [26] and, therefore, alleviates confirmation bias.",1,related,1,positive
+"To improve the diversity and variation of the perturbed samples (thus increasing the learnable information from a limited-size buffer), we investigate the role of MixUp [58, 67, 68], a data augmentation technique applied together with RAR — we find that it brings substantial improvements when there are strict buffer size constraints.",1,related,1,positive
+"Moreover, we conduct an ablation study showing that the key components such as replay samples selection strategy, sample pairing & adversarial perturbation, MixUp, etc, each bring appreciable improvements.",1,related,1,positive
+"The proposed MixUp strategy is different from [21, 40] as we apply mixup among the replay samples and then generate RAR perturbed samples anchored around them.",1,related,1,positive
+"Moreover, we study the role of MixUp in increasing the variation of replay augmentations, which significantly improves CL in the small buffer regime.",1,related,0,negative
+Table 3 lists the over-confidence error (OE); the equation for OE is presented in Thulasidasan et al. (2019).,1,related,1,positive
+"Moreover, we evaluated the ability to separate TPs and FPs by evaluating the area under the receiver operator characteristic (AU-ROC) applied in [37, 5].",1,related,1,positive
+"Specifically, we evaluated the calibration error using measures, such as the negative log likelihood (NLL) applied in [4, 5, 31], expected calibration error (ECE) applied in [13, 8, 12], and Brier score (BS) applied in [4].",1,related,1,positive
+"For MX, we use α = 0.2 based on the results provided by (Thulasidasan et al. 2019; Singh and Bay 2020).",1,related,1,positive
+"For ERL, we use the strength to be 0.1 based on the experiments of Thulasidasan et al. (2019).",1,related,1,positive
+The strength of the entropy regularizer in ERL is set to 0.1 based on the experiments of Thulasidasan et al. (2019).,1,related,1,positive
+"For LS, we use = 0.1 as utilized by Müller et al. (2019) and Thulasidasan et al. (2019).",1,related,1,positive
+"For the quantitative analysis of the confidence calibration, we used two popular metrics, the expected calibration error (ECE, Naeini et al. (2015)) and the overconfidence error (OE, Thulasidasan et al. (2019)).",1,related,1,positive
+"Deep ensemble We train M standard DNNs independently of each other following [13] and combine the predictions as
+p(y = k|x, θ) = 1 M M∑ m=1 pm(y = k|x, θm) (5)
+Mixup Recently proposed as a simple method by [25] for training better DNNs where two random input samples (xi, xj) and their corresponding labels (yi, yj) are combined using:
+x̃ = λxi + (1− λ)xj ỹ = λyi + (1− λ)yj
+(6)
+where λ ∈ [0, 1] determines the mixing ratio of the linear interpolation. λ is drawn from a symmetric Beta distribution Beta(α, α), where α controls the strength of the input interpolation and the label smoothing.",1,related,1,positive
+"In this section, we introduce some existing calibration methods, including temperature scaling [4, 7], entropy regularization [24], MMCE regularization [16], label smoothing [22, 32], and Mixup training [33, 39].",1,related,1,positive

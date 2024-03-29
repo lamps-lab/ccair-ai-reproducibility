@@ -1,0 +1,522 @@
+text,label_score,label,target_predict,target_predict_label
+"While tables with simple structures and clean backgrounds can be recognized well [6, 12, 14, 15, 23, 24, 30, 35, 38, 41, 47], recognizing complicated table structures remains a challenging problem, which is primarily due to two main difficulties: 1) Firstly, tables in images vary widely in terms of structure and shape.",,,0,not_related
+"Note that, there are fundamental differences between the representation in [8, 20, 36, 38, 46] and ours despite the representation is also termed as ""grid"".",,,0,not_related
+"In the works of [8, 20, 27, 36, 38, 46], a table is depicted as a grid of regions.",,,0,not_related
+"For instance, region-based methods [8, 20, 36, 38, 46] employ a split model to divide input table images into a grid of regions, and a merge model to combine over-split spanning cells.",,,0,not_related
+"Early works [37, 34] directly use visual features encoded by convolutional neural networks (CNN) [19] for layout units detection [36, 30, 35, 17], and have been proven to be effective.",,,0,not_related
+"Recent deep learning works [37, 34] consider DLA as a classic visual object detection or segmentation problem and utilize convolutional neural networks (CNN) [19] to solve this task [36, 30, 35, 17].",,,0,not_related
+"for tables [21,20,4,27] or structured diagrams [12,16,31,8].",,,0,not_related
+"former takes the document as an image input and frames entity detection as object detection or instance segmentation [40, 31].",,,0,not_related
+"For example, Sebastian Schreiber in 2017 [15] presented a deep learning-based solution called DeepDeSRT for table detection in document images and table structure recognition, using the concept of transfer learning and domain adaptation from a pre-trained model of Faster R-CNN [16].",,,0,not_related
+"Subsequent research introduced end-to-end deep learning systems capable of not only detecting tables but also recognising their structure in document images, without the need for metadata or heuristics [23].",,,0,not_related
+"The experimental results of CascadeTabNet [4], TableDet [3], DeCNT [36], YOLOv3TD [33], DeepDeSRT [35], TableNet [45], GAN-TD [46], TableRadar [43] and NLPR-PAL [43] in Table 2, 3 and 4 are from study [3].",,,0,not_related
+"There are many other studies discussing the TD problem, including DeepDeSRT [35], TableDet [3] and many others [36, 37] .",,,0,not_related
+"In order to provide a new state-of-the-art benchmark for table detection and table structure recognition, DeepDeSRT [40] utilizes a novel image transformation strategy to identify the visual features of the table structures and feed them into a fully convolution network with skip pooling.",,,0,not_related
+"On the other hand, the problem of table structure recognition (TSR) is a lot more challenging and remains a very active area of research, in which many novel machine learning algorithms are being explored [3,4,5,9,11,12,13,14,17,18,21,22].",,,0,not_related
+"Object-detection based methods [11,12,13,14,21] rely on tablestructure annotation using (overlapping) bounding boxes for training, and produce bounding-box predictions to define table cells, rows, and columns on a table image.",,,0,not_related
+"Deep learning approaches [16,17,18] do not rely on rules and can accurately generalize the problem.",,,0,not_related
+"Later, more efficient single-stage object detectors like RetinaNet [58] and YOLO [59] and two-stage object detectors like Fast R-CNN [11], Faster R-CNN [12], Mask R-CNN [60], and Cascade Mask R-CNN [61] were applied for other document objects such as figures and formulas detection in document images [62,63,64,65,66,67,68,16,17,18].",,,0,not_related
+"Recently, researchers employed statistical methods [28] and deep learning approaches to make the table detection systems more generalizable [16,29,30,31].",,,0,not_related
+"There are also many other studies discussing the TD problem, such as TableDet [7], DeCNT [32], DeepDeSRT [33], TableNet [34], and most of these studies follow the object detection formulation and utilize different types of object detection models that are mentioned above.",,,0,not_related
+"Since the advent of deep learning and CNN-based approaches [53,55], the segmentation of document layouts has been reformulated as DOD.",,,0,not_related
+"Researchers in [37,41,40] have proposed to detect row/column regions based on segmentation and off-the-shelf object detectors.",,,0,not_related
+"For example, Faster R-CNN was adopted by [37,6,42,36,44], and YOLO was used in [11].",,,0,not_related
+"[7,26] focused on extracting tabular data from documents by combining heuristic rules and convolutional networks to detect and recognize tabular data.",,,0,not_related
+Earlier methods attempted to solve these two tasks separately [15].,,,0,not_related
+[15] 2017 DeepDeSRT ICDAR Marmot Marmot - - NR,,,0,not_related
+DeepDeSRT [1] first applied an FCN-based semantic segmentation method [28] to table structure extraction.,,,0,not_related
+"In view of visual saliency, DeepDeSRT [38] and TableNet [31] are two rep-
+resentative works exploiting semantic segmentation to obtain table cell boundaries.",,,0,not_related
+"With the fast-paced development of digital transformation, Table Structure Recognition (TSR) task, aiming at parsing table structure from a table image into machineinterpretable formats, which are often presented by both table cell physical coordinates [38, 31, 15, 41, 4, 34, 36, 45, 35, 23, 25] and their logical relationships [18, 47].",,,0,not_related
+"In view of visual saliency, DeepDeSRT [38] and TableNet [31] are two rep-",,,0,not_related
+"the filed, which can be mainly categorized into boundary extraction-based methods [38, 31, 15, 41, 25] and element relationship-based methods [23, 4, 34, 36] according to the component type leveraged.",,,0,not_related
+"The first group are the single component-based methods, which rely on either boundary extraction [15, 25, 31, 38, 41] or element relationship [4, 23, 34, 36].",,,0,not_related
+"To date, several pioneers works [18, 47, 38, 15, 41, 4, 34, 36, 45, 35, 23, 25] have achieved significant progress in",,,0,not_related
+"In recent years, inspired by the success of deep learning in various tasks, especially object detection and semantic segmentation, many deep learning-based methods (Raja et al., 2020; Schreiber et al., 2017) have been presented to recognize table structures.",,,0,not_related
+"S. Schreiber et al. (Schreiber et al., 2017) proposed a two-fold system named DeepDeSRT that applies Faster RCNN (Ren et al., 2015) and FCN(Long et al., 2015) for both table detection and row/column segmentation.",,,0,not_related
+"(Schreiber et al., 2017) proposed a two-fold system named DeepDeSRT that applies Faster RCNN (Ren et al.",,,0,not_related
+", 2021), many researchers only focused on the table structure recognition problem (Prasad et al., 2020; Raja et al., 2020; Schreiber et al., 2017).",,,0,not_related
+"(Schreiber et al., 2017) proposed a two-fold system named DeepDeSRT that applies Faster RCNN (Ren et al.",,,0,not_related
+"In recent years, motivated by the success of deep learning, especially in object detection and semantic segmentation, many deep learning-based methods (Prasad et al., 2020; Raja et al., 2020; Schreiber et al., 2017) have been proposed and proven to be powerful models for table structure recognition.",,,0,not_related
+"For example, DeepDeSRT [40] and TableNet [32] adjusted FCN from the semantic segmentation to segment rows and columns.",,,0,not_related
+"Limited by the training datasets [7, 2, 37, 36] used for TSR, most previous works [28, 24, 35, 26] focus on document images that are obtained from digital documents (e.",,,0,not_related
+"Therefore, TSR as a precursor to contextual table understanding will be beneficial in a wide range of applications [27, 26].",,,0,not_related
+"Distinct from previous segmentationbased methods [35, 26, 28, 20] in the “split” stage, we aim to distinguish each table separation line and formulate table separation line detection as an instance segmentation task.",,,1,related
+Early works (Schreiber et al. 2017; Siddiqui et al. 2019) introduce segmentation or detection frameworks to locate and extract splitting lines of table rows and columns.,,,0,not_related
+[31] proposed DeepDeSRT that employs the Faster R-CNN model for table row and column detection followed by a semantic segmentation approach for TSR.,,,0,not_related
+DeepDeSRT [18] split the competition dataset into a training set and a test set of just 34 samples.,,,0,not_related
+"These developments have enabled significant advances in deep learning (DL) modeling for TE [18,16,25,21,13,12].",,,0,not_related
+"Several deep learning-based methods and datasets from the literature (TabStructNet [17], TableNet [14], CDeCNet [1], UNLV [19], DeepDeSRT [18], TableBank [11], PubTabNet [23], ICDAR 2013 Table Competition [9], DeepFigures [20], PubLayNet [24]) explore solutions to table detection and table structure recognition tasks.",,,0,not_related
+DeepDeSRT [3] uses the fuzzy cognitive network (FCN) [18] to split the table structure based on semantic segmentation.,,,0,not_related
+"For table region detection, DeepDeSRT [34] built an end-to-end system based on deep learning for table detection in image documents, which can identify the row, column, and cell positions in detected tables without relying on any heuristics or metadata.",,,0,not_related
+[14] brought forward a novel deep learning based solution not only for table detection but also would recognize the structure of the tables as two separate parts for born- digital PDFs and scanned documents.,,,0,not_related
+"In DTE, there are three main cases: TD predicts bounding boxes of table candidates on document images (Shafait and Smith, 2010; Schreiber et al., 2017; Siddiqui et al., 2018; Paliwal et al., 2019; Prasad et al., 2020; Hashmi et al., 2021b; Zheng et al., 2021); TD searches for text lines signaling table candidates in plain-text (Hu et al.",,,0,not_related
+"In this scenario, TSR usually deals with tables which are subareas of document images (Zuyev, 1997; Schreiber et al., 2017; Siddiqui et al., 2019a, 2019b; Zheng et al., 2021; Hashmi et al., 2021c), lines of plain-text (Kieninger, 1998; Ng et al.",,,0,not_related
+"In DTE, there are three main cases: TD predicts bounding boxes of table candidates on document images (Shafait and Smith, 2010; Schreiber et al., 2017; Siddiqui et al., 2018; Paliwal et al., 2019; Prasad et al., 2020; Hashmi et al., 2021b; Zheng et al., 2021); TD searches for text lines signaling…",,,0,not_related
+"In this scenario, TSR usually deals with tables which are subareas of document images (Zuyev, 1997; Schreiber et al., 2017; Siddiqui et al., 2019a, 2019b; Zheng et al., 2021; Hashmi et al., 2021c), lines of plain-text (Kieninger, 1998; Ng et al., 1999; Hu et al., 2000), or text chunks and rulings…",,,0,not_related
+S Schreiber[20] ICDAR2013 Mask R-CNN Precision 97.,,,0,not_related
+"As a result, the network misses out on critical visual cues that may aid in the detection and recognition of tables [20].",,,0,not_related
+"Deep learning models are now widely used in many aspects of computer vision, including general table detection[20, 21, 22, 23, 24].",,,0,not_related
+"S Schreiber[20] transfer learning methods + Faster R-CNN end-to-end strategy for detecting tables and table structures that is straightforward and efficient When compared to other state-of-the-art techniques, it is less accurate.",,,0,not_related
+[20] were the first to perform table detection and structure recognition using Faster RCNN.,,,0,not_related
+S Schreiber[20] ICDAR2013 Fully CNN Precision 95.,,,0,not_related
+Sebastian Schreiber et al. [20] were the first to perform table detection and structure recognition using Faster RCNN.,,,0,not_related
+This can further be split into a problem of detecting rows and columns and then combined at a later stage to obtain respective cells [5].,,,0,not_related
+[5] published an in-depth picture-based study program that examined the task of tabular structure extraction.,,,0,not_related
+"DeepDeSRT [11] is a typical top-down approach that uses a segmentation method to segment table columns and table rows directly, which can be implemented by Fully Convolution Networks.",,,0,not_related
+DeepDeSRT [24] is simple and effective end-to-end approach to detect tables but is not as accurate as compared to other state-of-the-art approaches [12].,,,0,not_related
+"The original dataset suffered from incorrect ground truth annotations, hence we list the corrected version of the dataset from [24], which has 1967 images, in Table 2.",,,1,related
+[24] also apply Faster R-CNN [13] for detecting tables in scanned document images.,,,0,not_related
+"Similar to previous works [8, 38, 46, 49, 51], the text content and structure information are obtained separately.",,,0,not_related
+"The first group of methods [49, 51, 52] starts by detecting the row and columns of a",,,0,not_related
+"[3] proposed DeepDeSRT, an end-to-end system for table understanding in document images and detecting PDF documents.",,,0,not_related
+"Video Salient Document Detection (VSDD) is an essential task in several real-world applications, such as video document recognition [1], video document compression [2], video document captioning [3] and many more.",,,0,not_related
+"the range of object detection using models like YOLO [32, 38, 47] to, more recently, Faster R-CNN [16, 34, 37, 43, 49] and Mask-CNN [2, 18, 26].",,,0,not_related
+"Methods span
+5 makesense.ai 6 http://www.astroexplorer.org/
+the range of object detection using models like YOLO [32, 38, 47] to, more recently, Faster R-CNN [16, 34, 37, 43, 49] and Mask-CNN [2, 18, 26].",,,1,related
+"Furthermore, table detection and structure recognition is performed with a two-fold deep-learning-based system using Faster R-CNN in [12].",,,0,not_related
+"More recent studies have thus focused mostly on developing deep CNN-based table detection and recognition approaches (see [2, 26, 9, 13, 27, 23] and references therein), leading to significant performance improvements.",,,0,not_related
+"As addressed in Section 3.1, there are lots of state-of-theart methods for table detection, which include but not limited to YOLOv5 [14], DETR-R50 [3], deformable DETR [32], CascadeTabNet [26], DeCNT [28], DeepDeSRT [27], TableNet [23], CDeC-Net [2], and TableRadar [8].",,,0,not_related
+It was shown in [27] how to fine-tune a pre-trained faster R-CNN model.,,,0,not_related
+"1, there are lots of state-of-theart methods for table detection, which include but not limited to YOLOv5 [14], DETR-R50 [3], deformable DETR [32], CascadeTabNet [26], DeCNT [28], DeepDeSRT [27], TableNet [23], CDeC-Net [2], and TableRadar [8].",,,0,not_related
+"Popular table structure recognition methods include DeepDeSRT [7], ReS2Tim [15], DeepTabStR [16], etc.",,,0,not_related
+"Unfortunately, the Component-based approaches such as DeepDeSRT [7], TableNet [8] and LGPMA [9] still suffer from boundary ambiguity problems in unlined tables and cannot achieve decent performance in complex scenarios such as tables with empty cells.",,,0,not_related
+"[17] uses a deep learning-based method to detect tables and identify table structure by detecting rows, columns, and table cells.",,,0,not_related
+"ICDAR2013 UNLV Method Prec Recall F1 Prec Recall F1
+TabbyPDF 78.90 84.50 81.60 − − − GraphTSR 81.90 85.50 83.70 − − − DeepDeSRT 57.30 56.40 56.80 − − − CATT-Net 94.10 90.70 92.30 86.28 88.31 87.24 Ours 92.85 93.29 93.04 92.66 86.78 89.52",,,1,related
+"For the TSR task, we list TabbyPDF [19], GraphTSR [7], DeepDeSRT [8] and CATT-Net [17] as benchmark models.",,,1,related
+"The performance scores of TabbyPDF, GraphTSR, and DeepDeSRT on the ICDAR2013 dataset come from the study [7].",,,1,related
+"In contrast, some work, such as DeepDeSRT [8], CascadeTabNet [9] and TableDet [10], using top-down approaches would define the structural recognition as object detection or segmentation problem, often together with table detection problem.",,,0,not_related
+[42] presents a data-driven system and does not need any heuristics or metadata to detect and recognize tabular structures on the ICDAR 2013 dataset [19].,,,0,not_related
+DeepDeSRT [39] first applied an FCN-based semantic segmentation method [25] to table structure extraction.,,,0,not_related
+Faster R-CNN uses an end-to-end region suggestor instead of selective search method to improve training speed [13][19].,,,0,not_related
+"The authors employed, with the model learned features, some heuristic rules and document meta-information to enhance the output result [3][13].",,,0,not_related
+ICDAR2013 Table Competition database [13].,,,0,not_related
+"Moreover, the model is independent to the size of input image [13][19].",,,0,not_related
+Their approach is identified as DeepDeSRT [13].,,,0,not_related
+"For the past decade, table detection, extraction and annotation have been key research areas [17], leading to a variety of extraction approaches [11, 22, 26, 27, 50, 61, 70, 71, 86].",,,0,not_related
+[18] proposed the deep transfer learning-based algorithm DeepDeSRT for table detection and table structure recognition.,,,0,not_related
+"With the surge in deep learning, various CNN based architectures [6, 7, 10, 15,16,18,22] have been proposed for table detection and cell extraction.",,,0,not_related
+"We approach table detection as a general object detection problem, as was done by Schreiber et al. ((Schreiber et al. 2017)), and use a Faster-RCNN model to detect and localize tables in page images (Ren et al. 2015).",,,1,related
+"For example, DeepDeSRT is another approach which uses a Fast-RCNN to detect the tables (Schreiber et al. 2017).",,,0,not_related
+"((Schreiber et al. 2017)), and use a Faster-RCNN model to detect and localize tables in page images (Ren et al.",,,0,not_related
+"The table can therefore be represented as a grid [68,78].",,,0,not_related
+DeepDeSRT [41] proposes a novel end-to-end system for table understanding in document images called DeepDeSRT.,,,0,not_related
+"The RoI segmentation is basically categorized into four different ategories: Hough Transform [ 26 ], Projection profiles [ 23 , 28 ], Smearing [ 29 ], and segmentation
+CM Trans.",,,0,not_related
+"Second, the RoIs class type (title, text, table, figure, and list) [26] within each image.",,,0,not_related
+"The RoI segmentation is basically categorized into four different categories: Hough Transform [26], Projection profiles [23, 28], Smearing [29], and segmentation based on connected components.",,,0,not_related
+"The segmentaion techniques are basically characterized into four categories: Hough Transform [ 20 ], Projection rofiles [ 21 ], Smearing [ 22 ], and segmentation based on connected components.",,,0,not_related
+"Driven by the success of object detection [17, 42] and semantic segmentation [8, 31] in images, layout analysis in documents is also framed as detection and segmentation tasks in some works [26,43,62], where detector models are trained to detect semantically coherent text blocks as objects.",,,0,not_related
+[15] is the first to apply FCN based semantic segmentation models to the TSR task.,,,0,not_related
+"Generally speaking, early attempts can be divided into the categories of textual-based [4,6,10], convolution-based [12,15, 24,26,34] and GCN-based [19] methods.",,,0,not_related
+"One such method [2] trains a deep learning network on Marmot dataset [9] for locating structural components like rows, columns and cells.",,,0,not_related
+"Recent methods such as TableNet [1], DeepDeSRT [2], Graph Neural Networks based table recognition [3] often fail to work on very complex tables due to their low generalization ability.",,,0,not_related
+Table 1: Performance Comparison of TSR-DSAW against TableNet [1] and DeepDeSRT [2].,,,1,related
+"Experimental Results: Now, we present comparison results of TSR-DSAW against two previous methods of TSR - TableNet [1] and DeepDeSRT [2].",,,1,related
+DeepDeSRT [24] is a deep learning based approach that aims at detecting tables and recognizing table structures.,,,0,not_related
+"DeepDeSRT [24] uses semantic segmentation to segment the rows and columns in a table, meaning that it only relies on the visual features.",,,0,not_related
+"Several published works [46,42,56] exploit the advances in object detection [40,19] to further improve the accuracy in document layout analysis.",,,0,not_related
+DeepDeSRT [18] became the first popular object detection approach for table detection,,,0,not_related
+"The DL-based methods in [7, 11] are among the first to apply neural networks designed for object detection to table parsing.",,,0,not_related
+"As pioneering works in table structure parsing, [3] and [7] have both included a review of works in table structure recognition prior to DL.",,,0,not_related
+"After [7], researchers have started to revisit table structure parsing with DL methods, which turned out highly promising compared to the rule-based (e.",,,0,not_related
+"Table detection is a popular task with a large body of literature, table structure parsing and table recognition were revisited2 after the pioneering work of [7] using state-of-the-art deep neural networks.",,,0,not_related
+"The success of DL has marked the revisiting of table structure parsing by [7], which inspired follow-up research [27, 1, 6, 2, 28, 29, 30, 19, 31, 18, 32, 17].",,,0,not_related
+"Other researchers have used transfer learning to alleviate the lack of training data  [23, 26].",,,0,not_related
+"For instance, in [26, 29, 30, 32], the authors considered columns and rows as object types and reconstructed table structures from the detected rows and columns.",,,0,not_related
+", object detection and segmentation), table recognition has not been formulated in a principled way so far, and deep neural networks have only been used to address sub-tasks in heuristically designed steps [26, 30].",,,0,not_related
+[26] suggested the first method to address the table detection and structure recognition problems using deep learning.,,,0,not_related
+"Due to recent rapid development of image acquisition devices, data storage and processing capacity, document processing has made a great advancements [6, 26].",,,0,not_related
+"With the development of deep learning, DeepDeSRT [7] was proposed, which uses deep learning to conduct table detection and table structure recognition, that is, to identify the positions of rows, columns and cells in the detected table.",,,0,not_related
+"Therefore, subsequent post-processing steps are necessary [16], [18], [20].",,,0,not_related
+"In the field of document analysis, the combination of Support Vector Machine and Deep Neural Network initially replaced traditional machine learning to promote RPA to help solve unstructured document data [22], thus, the convolution model has been gradually used for document analysis [23,24].",,,0,not_related
+"[24] proposed that DeepDeSRT could conduct table detection and structure identification, as based on Faster R-CNN, to identify the positions of rows, columns, and cells in a table.",,,0,not_related
+"We also compare performance of several best methods on this dataset in Table 5, including rule-based method using text extracted from PDF files [43] and page images [2], deep CNN-basedmethods likeDeepDeSRT [16], TableNet [23], CascadeTableNet [18], and the result of two commercial systems ABBYY FineReader 11.0 and OmniPage 18 Professional.",,,1,related
+"The DeepDeSRT [16], DeCNT [17], and CascadeTableNet [18] use Faster R-CNN as the basic framework for table detection.",,,0,not_related
+"For example, the DeepDeSRT and TableNet were tested on a set of randomly chosen 34 images since the remaining images were used for training [16,23].",,,0,not_related
+"We also compare performance of several best methods on this dataset in Table 5, including rule-based method using text extracted from PDF files [43] and page images [2], deep CNN-basedmethods likeDeepDeSRT [16], TableNet [23], CascadeTableNet [18], and the result of two commercial systems ABBYY FineReader 11.",,,1,related
+"For learning feature maps, DeepDeSRT uses ZFNet [19] and VGG-16 [10] as the backbone, while DeCNT uses the deformable convolution.",,,0,not_related
+"In Section 2.1, we introduced the application of the Convolutional Neural Network (CNN) in document layout analysis (He et al., 2015; Ren et al., 2016; He et al., 2018; Liu et al., 2016; Redmon & Farhadi, 2018; Yang et al., 2017a; Schreiber et al., 2017).",,,1,related
+"Schreiber et al. (2017) first apply the Faster R-CNN model to table detection and recognition in document layout analysis as shown in Figure 2, achieving SOTA performance in the ICDAR 2013 table detection dataset (Göbel et al., 2013).",,,0,not_related
+"1, we introduced the application of the Convolutional Neural Network (CNN) in document layout analysis (He et al., 2015; Ren et al., 2016; He et al., 2018; Liu et al., 2016; Redmon & Farhadi, 2018; Yang et al., 2017a; Schreiber et al., 2017).",,,0,not_related
+"Cognitive methods in this space broadly classified into five categories — image-to-sequence models [17, 2, 14], segmentation networks [26, 18, 20, 23], graph formulations [22, 4, 24], conditional generative adversarial networks [16] and a recent multi-modal method by [40].",,,0,not_related
+"For DeepDeSRT [26], we use our implementation.",,,1,related
+"In order to compare our method against others on TUCD dataset, we develop our implementation of DeepDeSRT [26], and use open source implementations of DGCNN (TIES) [22], SPLERGE [30], and TabStruct-Net [24].",,,1,related
+"DeepDeSRT, a deep learning neural network, performs image analysis to identify table formats and constructs templates [27].",,,0,not_related
+Method Train Dataset P R F1 DeepDeSRT [32] ICDAR-2013 0.,,,1,related
+DeepDeSRT [32] - - SPLERGE [35] SciTSR + ICDAR-2019 0.,,,0,not_related
+"[13, 25, 32] attempt to predict row/column boundaries or even invisible grid lines, which are limited in identifying cells spanning multiple rows and columns.",,,0,not_related
+"They can be categorized into two groups: non-table-element-based approaches [13, 17, 25, 32, 35, 44] and tableelement-based approaches [2, 19, 27–29, 31, 41, 43].",,,0,not_related
+[16] ICDAR 2013 ICDAR 2013 (Test Set) N/A ü ü ü Row/Column Adjacency [19] relations,,,0,not_related
+[16] propose a deep learning based model for Faster-RCNN-based table detection and Fully Convolutional Network (FCN)-based structure recognition to segment the rows and columns in detected table regions.,,,0,not_related
+"TE is challenging for automated systems [8, 11, 16, 22] due to the wide variety of formats, styles, and layouts found in presented tables.",,,0,not_related
+"Recently, there has been a shift in the research literature from traditional rule-based methods [3,10,17] for TE to data-driven methods based on deep learning (DL) [13,16,21].",,,0,not_related
+"To get around deficiencies in training data, some approaches model TSR in ways that are only partial solutions to the task, such as row and column detection in DeepDeSRT [16], which ignores spanning cells, or image-tomarkup without text content, as in models trained on TableBank [8].",,,0,not_related
+"Modeling approaches One of the most common modeling approaches for TSR is to frame the task as some form of object detection [13, 16, 21].",,,0,not_related
+"DeepDeSRT, a deep learning neural network performs image analysis to identify table formats, constructs templates [17].",,,0,not_related
+"Limited by this, existing TSP approaches can only handle table structure parsing in a relative simple scenario by grouping detected cells into tables [11, 16, 9, 23].",,,0,not_related
+"For a more practical requirement of parsing table structures from images taken by hand-held cameras in the wild, the existing state-of-the-art approaches [13, 14, 11, 16, 9, 23] are prone to fail as the commonly-used assumption of tabular images no longer holds.",,,0,not_related
+"However, these methods mainly focuses on the well-conditioned document images, where the tables [16, 23, 12, 9, 23, 14] are well-aligned to the image axes.",,,0,not_related
+"For direct comparison with previous work [20], we used the cleaned version of the dataset by Reference [7] and did not incorporate any sample of the dataset in the training set.",,,1,related
+"Moreover, in Reference [33], the authors employed Faster RCNN with a coronerocating an approach to improve the predicted tabular boundaries in document images.",,,0,not_related
+"For a comprehensive explanation of the RFP module, please refer to Reference [24].",,,1,related
+"(4)
+In case of SAC explained in Reference [24], the above convolutionalayer converts into:
+Con(i, w, 1) SAC−−→ S(i) .",,,1,related
+"It is important to emphasize that methods introduced in References [1,20] either rely on the heavy backbone with memory-intensive deformable convolutions [53] or are dependent on multiple preand post-processing methods to achieve the results.",,,0,not_related
+"Analogous to Reference [55], the network in the final cascaded stage segments the object in a bounding box, along with classification and regression.",,,0,not_related
+"We direct our readers to References [15,16,38–40] for a thorough understanding of these rule-based methods.",,,1,related
+We refer readers to Reference [24] for a detailed explanation on SAC.,,,1,related
+[7] presented another method that exploits Faster R-CNN [50] equipped with pre-trained base networks (ZFNet [51] and VGG-16 [52]) to detect tables in document images.,,,0,not_related
+"If we include feature transformations Tj before joining
+the feedback connections from FPN to the bottom-up backbone, then, the output feature f j of RFP is explained in Reference [24] as:
+f j = Fj( f j+1, ij), ij = Nj(ij−1, Tj( f j)), (2)
+where j enumerates over S, and the transformation of FPN to RFP makes it a recursive function.",,,1,related
+"As depicted in Figure 5, the architecture of our utilized cascade Mask R-CNN closely follows the cascaded architecture introduced in Reference [25], along with the addition of segmentation branch at the final network head [55].",,,0,not_related
+"Different from Census; CDC; BLS; IMF that only provide PDF reports where table hierarchies are hard to extract precisely (Schreiber et al., 2017), StaCan and NSF also provide reports in HTML, from which cell information such as text and formats can be extracted precisely using HTML tags.",,,1,related
+[28] proposed a deep learning architecture for detecting table location and identifying the row and column positions.,,,0,not_related
+"[42] then devised a very standard deep learning approach called DeepDeSRT for table detection and structure recognition, where no prior knowledge or assumption about table structures was necessary.",,,0,not_related
+"These specific tasks range from document content understanding, document structural and syntactic analysis [6, 42, 48] and so on.",,,0,not_related
+"However, [4, 11] do not consider that complex tables which contain spanning cells, so that they cannot handle the structure recognition of complex tables well.",,,0,not_related
+"Although significant efforts have been made in the past to recognize the internal structure of tables through an automated process [4, 6, 7, 8, 9, 10], most of these methods [4, 11] only focus on simple tables and are hard to accurately recognize the structure of complex tables.",,,0,not_related
+"[4, 11] utilize recently published insights from semantic segmentation [14] research for identifying rows, columns, and cell positions within tables to recognize table structures.",,,0,not_related
+"Comparing with other methods [9, 4, 7], our method achieves state-of-the-art.",,,0,not_related
+"Analyzing tabular data in unstructured documents focuses mainly on three problems: i) table detection: localizing the bounding boxes of tables in documents [18, 19], ii) table structure recognition: parsing only the structural (row and column layout) information of tables [4, 7, 8], and iii) table recognition: parsing both the structural information and content of table cells [6].",,,0,not_related
+"Numerous efforts have been made in the past to automatically extract the relevant information from documents [1, 2, 3, 4, 5].",,,0,not_related
+"Due to the rapid development of deep learning and the massive amounts of tabular data in documents on the Web, many deep learning-based methods [4, 6, 7, 9, 11] have also been presented to understand table structures as they are robust to the input type (whether being scanned images or native digital).",,,0,not_related
+"Most previous methods [4, 7, 9, 11, 12] only use the spatial or visual features without considering the textual information of each table cell to recognize the table structure.",,,0,not_related
+"Document understanding methods in the literature have used various combinations of image, spatial and text features in order to understand and extract information from structurally rich documents such as forms [18, 57, 12], tables [44, 56, 24], receipts [27, 26] and invoices [35, 42, 37].",,,0,not_related
+DeepDeSRT [25] is a 2- fold system that applies Faster RCNN [24] and FCN [16] for both table detection and row/column segmentation.,,,0,not_related
+"For example, the DeepDeSRT [25] model was evaluated on a random subset of ICDAR13-Table.",,,0,not_related
+"For cell spatial location detection, we use the same evaluation metrics with recent methods [25, 27, 29, 28, 20].",,,0,not_related
+"2, with the success of deep learning, recent deep learning-based table structure recognition approaches can be divided into three categories: 1) identify cell bounding boxes through visual detection and segmentation methods [25, 27, 29, 28, 8]; 2) transform a table image into the markup sequence, such as LaTeX and HTML [10, 2]; and 3) explore the adjacency relation between different table cells [30, 22, 11].",,,0,not_related
+"Recently, segmentation-based methods have been popular in table cell detection due to its statistical significance along table rows and columns [25, 27, 28].",,,0,not_related
+DeepDeSRT [25] is a 2fold system that applies Faster RCNN [24] and FCN [16] for both table detection and row/column segmentation.,,,0,not_related
+DeepDeSRT [1] is contain two steps: first step is deep learning method for table detection where using fine-tuning a pre-trained model of Faster RCNN and second step is deep learning method for table structure recognition by using fine-tuning FCN proposed by Shelhamer et al.,,,0,not_related
+"Deep learning has recently achieving state-of-the-art using convolutional neural network (CNN) [9] in many tasks including object detection [10], face recognition [11], sequence to sequence learning [12, 13], speech recognition [14], semantic segmentation [15], image classification [16], handwritten recognition [17, 18, 19], and table detection [1, 8, 6] is demanding because they need to classify tables among the texts and other figures.",,,0,not_related
+"A few studies have been conducted on the identification of tables in documents [1, 2, 3, 4, 5].",,,0,not_related
+[8] proposed a deep learning-based approach for table detection and table structure recognition in documents or images.,,,0,not_related
+Schreiber et al. (2017) proposed DeepDeSRT that employs the Faster R-CNN model for table detection and a semantic segmentation approach for structure recognition.,,,0,not_related
+[15] addressed TD and TSR in a single approach using a two-fold system based on Faster R-CNN [12] for TD and DL-based semantic segmentation for TSR that utilizes transfer learning.,,,0,not_related
+"Conclusion: Despite the extensive interest of the NLP community in leveraging document structures (e. g., Apostolova and Tomuro 2014; Schäfer et al. 2011; Schäfer and Weitz 2012; Schreiber et al. 2018; Katti et al. 2018), the task of parsing complete document structures from renderings has been overlooked.",,,0,not_related
+"…for structure parsing on documents focused on a subset of simpler tasks such as segmentation of text regions (Antonacopoulos et al. 2009), locating tables (Zanibbi, Blostein, and Cordy 2004; Embley et al. 2006), or parsing them (Schreiber et al. 2018), but not parsing complete document structures.",,,0,not_related
+"On the other hand, efficient learning is prevented as large-scale training sets are lacking (cf. Arif and Shafait 2018; Schreiber et al. 2018).",,,0,not_related
+"The works by Schreiber et al. (2018); Qasim, Mahmood, and Shafait (2019) draw upon deep neural networks to identify table structures for rendered inputs.",,,0,not_related
+"Altogether, our weak supervision outperforms the state-of-theart (Schreiber et al. 2018) by a considerable margin.",,,1,related
+"…Despite the extensive interest of the NLP community in leveraging document structures (e. g., Apostolova and Tomuro 2014; Schäfer et al. 2011; Schäfer and Weitz 2012; Schreiber et al. 2018; Katti et al. 2018), the task of parsing complete document structures from renderings has been overlooked.",,,0,not_related
+"For instance, nested tables are fairly easy to recognize for human readers, yet detecting them is known to impose computational hurdles (cf. Schreiber et al. 2018).",,,0,not_related
+"2006), or parsing them (Schreiber et al. 2018), but not parsing complete document structures.",,,0,not_related
+"Works of [30,31,32] firstly obtain the rows and columns regions using the detection or segmentation models and then intersect these two regions to obtain the grids of cells.",,,0,not_related
+"With the great success of deep neural network in computer vision field, works began to focus on the image-based table with more general structures [21,30,24,9,13,36,23,14,33].",,,0,not_related
+"Though recent works [30,22,32,31] attempt to predict row/column regions or even invisible grid lines [33], they are limited to handle tables that cross span multiple rows/columns.",,,0,not_related
+"Thus, table structure recognition [10,21,34,30,5,4,39] becomes one of the important techniques in current document understanding systems.",,,0,not_related
+"DeepDeSRT can segment cells, which are large enough and fully filled with texts.",,,0,not_related
+"We also compared the performance of CluSTi to DeepDeSRT [34], which is known as the best",,,1,related
+"(2017) proposed a deep learning method called DeepDeSRT to detect tables in document images like PDF, as well as to recognize their structure [34].",,,0,not_related
+"In DeepDeSRT, the cell’s boundaries were recognized using a pre-trained Fully Convolutional Networks (FCN) for semantic segmentation [12, 21].",,,0,not_related
+"We also compared the performance of CluSTi to DeepDeSRT [34], which is known as the best
+recent method for table structure recognition on the ICDAR 2013 and ICDAR 2019 competition’s datasets.",,,1,related
+"In this case, the table structure can not be recognized using DeepDeSRT due to the fact that there exist many empty cells.",,,0,not_related
+table cells relying on their boundaries [34].,,,0,not_related
+"This approach overcome the limitations of DeepDeSRT method, which segments table cells relying on their boundaries [34].",,,0,not_related
+"That’s why when cells are empty or not large enough, they are still recognized by CluSTi but not by DeepDeSRT.",,,0,not_related
+"For instance, Schreiber et al. (2017) proposed a deep learning method called DeepDeSRT to detect tables in document images like PDF, as well as to recognize their structure [34].",,,0,not_related
+"This result also outperformed DeepDeSRT, which is known as the best recent method applied on document images.",,,1,related
+CluSTi outperforms DeepDeSRT with an overall F1-score of 98.48% on 193 document images compared to 91.44% on 34 images (Table 2).,,,1,related
+"TableNet showed comparable results to DeepDeSRT method [34], and their model is end-to-end which means further improvements can be made with richer semantic knowledge, and additional branches for learning row-based segmentation.",,,0,not_related
+"This method outperformed DeepDeSRT and TableNet with a significant higher F1-score on the 34 test images of ICDAR 2013 competition dataset, that demonstrated for the efficiency of our method.",,,1,related
+"Table 2 Comparison of detection accuracy (%) among CluSTi, DeepDeSRT [34], and TableNet [23] on ICDAR 2013 dataset",,,0,not_related
+"In contrast, DeepDeSRT is based on Faster RCNN, a semantic segmentation model which focuses on cell object detection [28].",,,0,not_related
+The authors have reported the F1-score of 93.42% with an IOU of 0.5 on the ICDAR 2013 dataset [66].,,,1,related
+"[7], they have formulated the problem of structure recognition as the semantic segmentation problem.",,,0,not_related
+DeepDeSRT [7] Faster R-CNN with transfer learning techniques (Section III-A1a) Simple and effective end-to-end approach to detect tables and structures of the tables.,,,0,not_related
+Deep learning leverages huge datasets [7].,,,0,not_related
+The threshold of Intersection Over Union (IOU) for calculating precision and recall is also defined in Table 6.,,,0,not_related
+These three metrics are calculated on a specific IOU threshold established by the authors.,,,0,not_related
+"The performance of deep neural networks has a direct relation with the size of the dataset [7], [24].",,,0,not_related
+"Their end to end system known as DeepDeSRT not only detects the tabular region but also distinguishes the structure of the table and both of these tasks are dealt with by applying distinctive
+87666 VOLUME 9, 2021
+deep learning techniques.",,,0,not_related
+"[45] S. Schreiber, S. Agne, I. Wolf, A. Dengel, and S. Ahmed, ‘‘DeepDeSRT: Deep learning for detection and structure recognition of tables in document images,’’ in Proc.",,,0,not_related
+"The task of table structural segmentation is evaluated based on how accurate the rows or columns of the tables are separated [7], [44], [47].",,,0,not_related
+We strongly believe that the threshold value for IOU needs to be standardized in order to have an impartial comparison.,,,0,not_related
+"For table detection, one of the most exploited evaluation metrics is IOU [45], [46].",,,0,not_related
+"To recognize the structure in tables, the authors of DeepDeSRT [7] have exploited the concept of semantic segmentation.",,,0,not_related
+"The author tries to convince the readers that due to the interdependence between the table detection and structural segmentation, both of the problems can be solved efficiently by using a single network.
+a: FULLY CONVOLUTIONAL NETWORKS To recognize the structure in tables, the authors of DeepDeSRT [45] have exploited the concept of semantic segmentation.",,,0,not_related
+"For table detection, one of the most exploited evaluation metrics is IOU [7], [40], [44].",,,0,not_related
+"It is crucial to mention that some of the approaches have not quoted the threshold value for IOU; however, they have compared their results with other methods where the threshold value is defined.",,,0,not_related
+"[8], [18], [1] and [22] made use of Faster R-CNN [17] with their own take on handcrafted features and preprocessing methodologies.",,,0,not_related
+[18] mentions the unnatural approach of detecting rows and columns through Faster R-CNN [17] and instead proposes fine-grained image segmentation through FCN-X’s architecture by Shelhamer et al.,,,0,not_related
+"To achieve convergence, datasets with a massive amount of images are required to train these networks optimally [14,19].",,,0,not_related
+[14] where they implemented Faster R-CNN for detection of tables in document images.,,,0,not_related
+DeepDeSRT [14] Faster R-CNN [50] with transfer learning Straightforward and effective approach to detect tables.,,,0,not_related
+"DeepDeSRT [26], uses separate, specially made neural networks to identify tables and extract their data.",,,0,not_related
+"However, extracting tabular structures directly from images is perplexing compared to operating over digital-born PDFs [17].",,,0,not_related
+[27] published the first natural image-based deep learning system which explored the problem of table structure analysis.,,,0,not_related
+"ICDAR-2013 [18] dataset has been used to standardize the state-of-the-art results for the task of table detection and table structure recognition [27], [32].",,,0,not_related
+"However, extracting tabular structures directly from images is perplexing as compared to operating over digital-born PDFs [27].",,,0,not_related
+"In this paper, we exhibit that current object detectors that have already shown remarkable improvements in resolving the problem of table detection [27], [42], are also extremely effective in improving the performance of table structure recognition systems.",,,0,not_related
+This problem can be further dissolved into detecting rows and columns in a table that can be later combined to produce the respective cells [27].,,,0,not_related
+"In order to compare our approach with state-of-the-art methods [27], [32], [33], we have used the identical evaluation metrics which are explained below:",,,1,related
+"[27] in order to implement a direct comparison against the similar approaches [27], [32], [33].",,,0,not_related
+All these techniques are heavily dependent on the meta-data available in digital-born PDFs.,,,0,not_related
+"Borrowing from computer vision, other works [1, 5, 6, 12] showed that a trained object detection or image semantic model, such as a convolutional neural network, can learn to detect boundaries of tables, figures, lists, paragraphs with satisfying results; however, they do not tackle the issue of parsing smaller elements such as list items or sentences with computer vision techniques.",,,0,not_related
+"Many previous works [22, 26, 23] and tools 16 have been developed to identify and parse table structures.",,,0,not_related
+"Object detection-based methods like Faster R-CNN [24] and Mask R-CNN [11] are used for identifying document elements [34] and detecting tables [26, 22].",,,0,not_related
+"…Fu, & Zhang, 2019; Holeček, Hoskovec, Baudiš, & Klinger, 2019; Schreiber, Agne, Wolf, Dengel, & Ahmed, 2017) through convolutional (Dong et al., 2019; Holeček et al., 2019) layers and recurrent neural
+networks (Schreiber et al., 2017) trained either on the imaged document or on other formats.",,,0,not_related
+"Examples include detecting tables, equations, figures [53, 43, 44], signatures and logos [46, 47].",,,0,not_related
+"Examples for table and cell region detection include [2, 4, 6] while [4–7, 9] address table structure extraction.",,,0,not_related
+"Convolutional neural networks [150, 151], fully-convolutional neural networks [152, 153], region-based convolutional neural networks [154, 155, 156, 157], and graph neural networks [158, 159] have all been exploited to parse the physical layout of documents or to detect elements of interest (e.",,,0,not_related
+"For example, Schreiber et al. (2017) [4]) proposed a method based on Faster-RCNN network; Li et al. (2019) [5]) presented a method combined with GAN and so on.",,,0,not_related
+(2017) [4]) used the FCN to recognize rows and columns in tables.,,,0,not_related
+(2017) [4]) proposed a method based on Faster-RCNN network; Li et al.,,,0,not_related
+Schreiber et al. (2017) [4]) used the FCN to recognize rows and columns in tables.,,,0,not_related
+"For example, Schreiber et al. (2017) [4]) proposed a method based on Faster-RCNN network; Li et al. (2019) [5]) presented a method combined with GAN and so on.",,,0,not_related
+(2017) [4]) used the FCN to recognize rows and columns in tables.,,,0,not_related
+(2017) [4]) proposed a method based on Faster-RCNN network; Li et al.,,,0,not_related
+Schreiber et al. (2017) [4]) used the FCN to recognize rows and columns in tables.,,,0,not_related
+"been restricted to structure detection only [6, 9, 11].",,,0,not_related
+"Such approaches include the following: (i) binary classification based on convolutional neural networks [10], (ii) fine-tuning pre-trained models for object detection in images [1], [6], [30], [34], [35], (iii) semantic segmentation [11], [14], and (iv) feature generation [19].",,,0,not_related
+[30] discovered that the table detection in document images is similar to detection of objects in natural scene images.,,,0,not_related
+"The contemporary deep neural networks for table detection in document images [1], [6], [13], [24], [30], [34], [35] demonstrate a high accuracy on the competition datasets.",,,0,not_related
+[30] for developing a DNN-model for table detection.,,,0,not_related
+"We explore three neural models used in previous works on abusive language classi-
+cation: Convolutional Neural Network (CNN)
+GRU
+fasttext .887 .661 .312 .284
+word2vec .887 .633 .301 .254
+-GRU random .868 .586 .236 .219 fasttext .891 .639 .324 .365 word2vec .890 .631 .315 .306
+Table 4: Results on st. False negative/positive equality differences are larger when pre-trained embedding is used and CNN or -RNN is trained
+(Park and Fung, 2017), Gated Recurrent Unit (GRU) (Cho et al., 2014), and Bidirectional GRU with self-attention ( -GRU) (Pavlopoulos et al.,
+2017), but with a simpler mechanism used in
+Felbo et al. (2017).",,,1,related
+"CNN: Convolution layers with 3 lters with the size of [3,4,5], feature map size=100, Embedding Size=300, Maxpooling, Dropout=0.5
+2.",,,1,related
+In: IJCNN. pp. 1–8 (2019) 38.,,,1,related
+"More recently, some deep learning methods based on Convolutional Neural Networks (CNN) [34], Conditional Generative Adversarial Networks (CGAN) [37], and a combination of a CNN, saliency and graphical models [20] have been evaluated.",,,0,not_related
+The natural language approach has been widely researched and implemented in recent years [5].,,,0,not_related
+"…using convolutional neural networks (CNNs) provide considerably better performance (Xu et al., 2020; Kavasidis et al., 2019; Siegel et al., 2018; Schreiber et al., 2017; Gilani et al., 2017; Hao et al., 2016), the quality of the labeled training data often determines the success of these…",,,0,not_related
+"Among these, the problem of table structure recognition has been of high interest in the community [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].",,,0,not_related
+"In the space of document images, researchers have been working on understanding equations [30,31], figures [32,33] and tables [6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+deepdesrt [7] scitsr 12K S-A 0.,,,1,related
+"Table structure recognition is a challenging problem due to complex structures and high variability in table layouts [4,5,6,7,8,9,10,11,12,13,14,15,16,17].",,,0,not_related
+"In S-A, we observe that our model outperforms deepdesrt [7] method by a 27.",,,1,related
+"Many cognitive methods [6,7,8,9,10,11,12,14,15,16,37,38,39,40,41,42,43] have also been presented to understand table structures as they are robust to the input type (whether being scanned images or native digital).",,,0,not_related
+"We compare the performance of our tabstruct-net against seven benchmark methods — deepdesrt [7], tablenet [12], graphtsr [14], splerge [10], dgcnn [9], Bi-directional gru [15] and Image-to-Text [11].",,,1,related
+"Deep learning-based approaches can be used for document layout analysis and content parsing (Shen et al., 2021; Zhong et al., 2019; Schreiber et al., 2017).",,,0,not_related
+"Deep learning-based approaches have recently been widely applied to document layout analysis and content parsing (Zhong, Tang, and Yepes 2019; Schreiber et al. 2017).",,,0,not_related
+"applied to document layout analysis and content parsing (Zhong, Tang, and Yepes 2019; Schreiber et al. 2017).",,,0,not_related
+"For analysing the tables in scanned documents, (Schreiber et al. 2017; Paliwal et al. 2019; Prasad et al. 2020) propose different modifications to standard CNN network architectures such as VGGNet (Si-
+.
+monyan and Zisserman 2014) used for classification and Faster R-CNN (Ren et al. 2015) for…",,,0,not_related
+"For analysing the tables in scanned documents, (Schreiber et al. 2017; Paliwal et al. 2019; Prasad et al. 2020) propose different modifications to standard CNN network architectures such as VGGNet (SiFigure 3: Results of Table Token Classification.",,,0,not_related
+"We refer the readers to [25, 26] for table detection and [27, 28] for figure detection algorithms.",,,1,related
+"The contemporary deep neural network models for the table detection [1], [5], [16], [18] show a high accuracy on the competition datasets such as UNLV [17], Marmot1, ICDAR 2013 [7], and ICDAR 2017 [4]).",,,0,not_related
+"The current trend involves deep learning techniques: binary classification based on convolutional neural networks [8], fine-tuned object detection models [1], [5], [16], [18], and semantic segmentation [9], [10].",,,0,not_related
+"Thanks to the development of several public databases, document processing has made a great progress in recent years [1], [2].",,,0,not_related
+"There also exist deep learning methods to detect tables from images (Schreiber et al., 2017); (Paliwal et al., 2019).",,,0,not_related
+"There also exist deep learning methods to detect tables from images (Schreiber et al., 2017); (Paliwal et al.",,,0,not_related
+"[22], Siddiqui et al.",,,0,not_related
+"State of the art algorithms (such as [7, 13, 14, 21, 22, 24, 26]) for graphical object detection are motivated by the success of object detection in computer vision (such as faster r-cnn and mask r-cnn).",,,0,not_related
+"Recent advances in object detection in natural scene images using deep learning inspire researchers [7, 13, 14, 16, 18, 21, 22, 24, 26] to develop deep learning based algorithms for detecting graphical objects in documents.",,,0,not_related
+"a lot of attention in the research community [7, 10, 13–16, 18, 21, 22, 24, 26, 27].",,,0,not_related
+There have been many deep learning models that have been successful at tabular structure detection [4] [29] .,,,0,not_related
+Schreiber et al.11 presented a system that is completely data driven and not require heuristics or meta data to detect and recognize table structures on the ICDAR 2013 dataset.,,,0,not_related
+"The comparison of performance between open source F. Shafait et al.5 technique (Tesseract),Schreiber et al. Hao et al.10 , Gilani et al.12 and our method is shown in Table 2.",,,1,related
+Performance Measures Accuracy (%) Tesseract(5) Schreiber et al.(11) Gilani et al.,,,0,not_related
+Schreiber et al.(11) presented a system that is completely data driven and not require heuristics or meta data to detect and recognize table structures on the ICDAR 2013 dataset.,,,0,not_related
+"One particular area where automation is of utmost importance and desirable is digitization of scanned documents like bank application forms, receipts and insurance claim forms [22, 20, 16, 14] to facilitate easy and quick retrieval and management of information for faster processing.",,,0,not_related
+"For converting the image into a binary image adaptive thresholding algorithm can be used and for removing the noise, algorithms such as KFILL algorithms can be utilized [24].",,,0,not_related
+"Table Detection and Tabular Structure Identification: Often real world invoices and other documents contain data in tables with highly variable structure, and while deep learning has made important strides in table detection [12, 16], extraction techniques that generalize well across unseen table formats remains a challenge.",,,0,not_related
+"Most existing work on object detection-based methods detect entire rows and column separately, and represents the intersection of detected rows and columns as cells [26, 33].",,,0,not_related
+"Deep learning approaches include two categories: (a) End-to-end image-to-sequence models [18, 36]; (b) Object detection based methods [26, 33, 23].",,,0,not_related
+"However, few vision-based deep learning models for table extraction that have been proposed, with most existing deep learning approaches directly use off-the-shelf object detectors [24, 26, 18] without any major architectural adaptation.",,,0,not_related
+"Also, [23, 26] used different train/test split from the original competition without publishing their split and so cannot be compared directly.",,,0,not_related
+"used to detect tables by adapting state-of-the-art object detectors such as Faster-RCNN to table detection [26, 18, 6].",,,0,not_related
+[19] adapt Faster R-CNN [17] and FCN to identify their structures and parse the contents.,,,0,not_related
+"We only use 40 images from the dataset for fine-tuning the general model and 198 images for testing, while [18] and [21] used only 34 images for testing and rest of the dataset for training.",,,1,related
+"As done by DeepDeSRT [21], to achieve the best possible results, we removed the errors in the ground-truth annotations of the dataset.",,,1,related
+"[21] were the first to perform table detection and structure recognition together with a 2 fold system which Faster RCNN for table detection and, Subsequently, deep learning-based semantic segmentation for table structure recognition.",,,0,not_related
+Figure 1: Table Detection Result on ICDAR 2013 dataset [3],,,0,not_related
+1) Faster Recurrent Conventional Neural Network (FRCNN) [2] [3] algorithm to detect the table.,,,0,not_related
+"[3], proposed a deep learning-based approach to detect table and structure recognition of table in Document or Image by using the ICDAR 2013 table completion dataset which containing 67 documents with 238 pages.",,,0,not_related
+"Method proposed in [1, 2] handles the unavailability of large training data by using transfer learning approach with very carefully tuned parameters [2] also uses data augmentation to handle annotated data problem.",,,0,not_related
+"Although both are validated on totally different data sets, F1 score in [1] is 0.",,,0,not_related
+"DL-based techniques are reasonably good in localization [19, 20], and taking inspiration from it [1, 9] have proposed the use of Faster-RCNN.",,,0,not_related
+"In [1, 2], a framework for table detection and recognition is proposed.",,,0,not_related
+"In [1, 2], efforts are made to apply DL-based methods for table localization and detection from image or scanned documents.",,,0,not_related
+The results of the method presented in [2] are validated on publicly available UNLV data set [23] and [1] on ICDAR 2013 data.,,,1,related
+"The literature focuses on using NLP-based techniques for data that has a model, template-based techniques for data that does not have a meta-dictionary available and deep learning-based extraction techniques for sequence [26] and image [9] based analysis of the unstructured data.",,,0,not_related
+"Thus, the problem of pattern or relationship extraction is extremely challenging due to the uneven distribution and high degree of variation between different structures [9].",,,0,not_related
+"After that, [21, 24, 29] also leveraged more advanced Faster R-CNN model [19] or Mask R-CNN model [9] to further improve the accuracy of document layout analysis.",,,0,not_related
+Nowadays document image analysis is still a relevant and challenging problem in computer vision [1-4].,,,0,not_related
+"Currently, deep learning techniques are the state of the art approach to deal with computer vision tasks [32]; and, this is also the case for table detection in document images [21, 23, 34].",,,0,not_related
+"This is the approach followed in [11, 34, 36], where they use models trained on natural images to fine-tune their models for table detection.",,,0,not_related
+"Namely, the main algorithm applied in this context is Faster R-CNN [31], that has been directly employed using different backbone architectures [21,23,34], and combined with deformable CNNs [36] or with image transformations [11].",,,0,not_related
+"With the introduction of deep-learning methods, major developments have been made for page objects segmentation and detection [4, 8, 9, 10].",,,0,not_related
+Significant efforts have been invested in the domain of table detection [11] and table structure detection [8].,,,0,not_related
+"Faster-RCNN has been successfully used for page object detection from document images in the recent past [8, 11, 21], but mask-RCNN is used for the very first time to detect objects from document images to the best of the authors’ knowledge.",,,0,not_related
+"For instance, deep networks trained on ImageNet data, which comprises of natural images of various objects, have been shown to perform surprisingly well on various document analysis tasks such as document classification [11] and table detection [12].",,,0,not_related
+[12] as the baseline for our experiment as their approach provides the unprocessed image as an input to the Faster R-CNN for table detection.,,,1,related
+"[12] presented a data-driven, deep learning approach for table detection.",,,0,not_related
+", paragraphs, figures, lists, tables [48, 38, 30].",,,0,not_related
+"While there are other works [33, 38] that perform table decomposition into rows and columns (which our model is capable of doing), we discuss table detection only in the scope of this paper.",,,0,not_related
+"ion [23]–[25]. In addition, deep neural networks for object detection, such as Faster-RCNN [26], Mask-RCNN [27], and YOLO [28] have been exploited for table detection and row/column segmentation [7], [29]–[31]. Furthermore, graph neural networks are used for table detection and recognition by encoding document images as graphs [5], [32]. There are several tools (see Table II) that can convert tables i",,,0,not_related
+"Altogether, our weak supervision outperforms the state-of-the-art with image-based input (Schreiber et al., 2018) by a considerable margin.",,,1,related
+The work by Schreiber et al. (2018) draws upon a CNN to perform semantic segmentation of row and column pixels and identifies structure via postprocessing.,,,0,not_related
+"The ICDAR labels now serve as the target dataset, while we continue to use arXivdocs-weak for weak supervision.7 Following (Schreiber et al., 2018), we use a random subset of 50 % of the ICDAR 2013 competition dataset for testing.",,,1,related
+"On the other hand, efficient learning is prevented as large-scale training sets are lacking (cf. Arif and Shafait, 2018; Schreiber et al., 2018).",,,0,not_related
+"Earlier attempts for structure parsing on documents focused on a subset of simpler tasks such as segmentation of text regions (Antonacopoulos et al., 2009), locating tables (Zanibbi et al., 2004; Embley et al., 2006), or detecting hierarchical structures in tables (Schreiber et al., 2018).",,,0,not_related
+"Furthermore, (Schreiber et al., 2018) chooses the best system based on the test set as indicated by F1*.",,,0,not_related
+"For instance, nested tables are fairly easy to recognize for human readers, yet detecting them is known to impose computational hurdles (cf. Schreiber et al., 2018).",,,0,not_related
+"(Schreiber et al., 2018) uses a different, non-public 50 % random subset.",,,1,related
+"7 Following (Schreiber et al., 2018), we use a random subset of 50 % of the ICDAR 2013 competition dataset for testing.",,,1,related
+"The dataset comes without predefined train/test split; hence, we follow Schreiber et al. (2018) and split the so-called “competition” part of the dataset with a 50%/50%-ratio.",,,1,related
+"Others build models specifically to extract tables [6, 12, 22, 23, 14, 9], figures [15], and equations [11, 18, 26, 7].",,,0,not_related
+Deep learning based semantic segmentation has been used by Schreiber et al. (2017) where an image of a document is fed to the neural network to identify the rows and columns of a table.,,,0,not_related
+"We can enhance the novel deep learning-based approach for table structure detection, DeepDeSRT [14], as proposed by Sebastian Schreiber et al. The PDF documents can be converted to image format.",,,1,related
+"We can enhance the novel deep learning-based approach for table structure detection, DeepDeSRT [14], as proposed by Sebastian Schreiber et al.",,,1,related
+"Recently, DeepDeSRT [8] was proposed which uses deep learning for both table detection and table structure recognition, i.",,,0,not_related
+"In DeepDSert, separate models are made for Table detection and structure recognition, which were trained on different datasets such as Marmot for table detection, and the ICDAR 2013 table dataset for table structure recognition.",,,0,not_related
+"While the results are not conclusively better than DeepDSert, they are certainly comparable and the fact that our model is end-to-end means further improvements can be made with richer semantic knowledge, and additional branches for learning row based segmentation.",,,1,related
+"Recently, DeepDeSRT [8] was proposed which uses deep learning for both table detection and table structure recognition, i.e. identifying rows, columns, and cell positions in the detected tables.",,,0,not_related
+"Average time taken for our system for each document image is 0.3765 seconds, however this could not be compared with DeepDSert as their model was not publicly available.",,,1,related
+"Additionally, Experiment 3 was carried out to compare TableNet with the closest deep-learning based solution, DeepDSert [8].",,,0,not_related
+"As done in DeepDSert, we also randomly chose 34 images for testing and used the rest of the data images for fine-tuning our model.",,,1,related
+We reimplemented the DeepDeSRT table structure model [6] and trained it on the same private data as our proposed model.,,,1,related
+We did so by reimplementing the DeepDeSRT model [6] and training on the same data as our proposed model.,,,1,related
+"However, we were unable to obtain reasonable performance, even after exploring a variety of values for post processing thresholds and training hyperparameters (values not specified in [6]).",,,1,related
+The Deep DeSRT model [6] uses a neural network originally designed for semantic segmentation of natural scenes and thus primarily uses local information to classify pixels.,,,0,not_related
+The DeepDeSRT [6] learning model formulates table structure extraction as two independent pixel labeling tasks to respectively segment row objects and segment column objects.,,,0,not_related
+"Recently, deep learning has been proposed to learn table structure directly from images [6].",,,0,not_related
+"In [6], better results were obtained when resizing the initial input to make the separator regions bigger.",,,0,not_related
+"We were unable to find any official implementations of prior works, so for comparison, we use the commercial software system Acrobat Pro DC and our reimplementation of the DeepDeSRT model [6].",,,1,related
+"Category Method F-measure Recall Precision PDF Input Image Input
+Proposed Models
+Split 86.79 86.64 86.93 Split-PDF 91.63 91.26 92.00 SPLERGE-PDF 90.89 90.44 91.36 SPLERGE-PDF + Heuristics 91.95 91.46 92.45
+Split + Heuristics 93.00 92.24 93.78 Split-PDF + Heuristics 95.26 94.64 95.89
+Previously Reported Results
+Nurminen [3] 94.60 94.09 95.12 TEXUS [4] 82.59 84.23 81.02 Shigarov [5] C1 91.50 91.21 91.80 Shigarov [5] C2 93.64 92.33 94.99 DeepDeSRT [6] 91.44† 87.36† 95.93†
+† result not directly comparable due to evaluation on a random subset of 34 tables.",,,1,related
+[2] proposed a deep learning based approach for recognizing rows and columns of tables in document images.,,,0,not_related
+[2] table structure extraction system based on semantic segmentation by a significant margin.,,,0,not_related
+"This approach provides a significant improvement over heuristic algorithms and CNN based models [2], owing to the powerful representation of the sequence models that capture",,,0,not_related
+[2] which is the state-of-the-art deep learning based approach towards table structure recognition.,,,0,not_related
+[2] proposed a deep learning based approach for table structure recognition.,,,0,not_related
+"For that purpose, we used the publicly available ICDAR 2013 table competition dataset containing 67 documents with 238 pages, since this dataset was used in [2].",,,1,related
+"However, this limits the applicability of these systems to only PDFs where many of the documents are scanned or present in the form of images [2].",,,0,not_related
+Schreiber et al. (2017) [2] used only 31 images to test their model.,,,0,not_related
+Automatic extraction of such information for the purpose of digitization/processing is highly valuable for organizations [2].,,,0,not_related
+(2017) [2] used only 31 images to test their model.,,,0,not_related
+"Following the work of Schreiber et al. (2017) [2], we converted the cell-based annotations to the corresponding annotations for rows and columns.",,,1,related
+"In contrast to the annotations generated by Schreiber et al. (2017) [2], we label the complete row regardless of the textual region for consistency.",,,1,related
+"Training data-driven models for the task of table structure analysis requires access to a large amount of labeled data, specifically for deep models [2].",,,0,not_related
+"Significant efforts have been made in the past for automated extraction of information from documents [1], [2], [3], [4], [5].",,,0,not_related
+"The same evaluation scheme was used for the ICDAR-13 table structure recognition competition and Schreiber et al. (2017) [6], [2].",,,0,not_related
+Schreiber et al. (2017) [2] translated the dataset to labels for rows and columns in order for the image-based models to be trained.,,,0,not_related
+[2] and our custom ICDAR-17) neglect row/column span (hierarchical labels).,,,1,related
+"Once a table is detected, the structure of the table is analyzed [2].",,,0,not_related
+"detection of the table itself [7], [3], [2].",,,0,not_related
+One of the recent image-based deep learning methods for table structure analysis has been proposed by Schreiber et al. (2017) [2].,,,0,not_related
+We used the same train and test split as used by Schreiber et al. (2017) [2] in order to enable a direct comparison against their approach.,,,1,related
+"hand-designed heuristics to data-driven methodologies [1], [2].",,,0,not_related
+"In contrast to the Fully-Convolutional Network (FCN) based formulation presented by Schreiber et al. (2017) [2], we treat the problem of row/column identification in a tabular structure as that of object detection where the document can be considered analogous to scene and row/column can be…",,,1,related
+(2017) [2] translated the dataset to labels for rows and columns in order for the image-based models to be trained.,,,0,not_related
+This is consistent with ICDAR-13 image-based table structure recognition dataset generated by Schreiber et al. (2017) [2] where row/column span (hierarchical labels) were also discarded.,,,0,not_related
+"Significant efforts have been made in the past to extract this tabular information from documents through an automated process [1], [2], [3], [6], [7].",,,0,not_related
+"Similarly, we follow an identical data split (with the same files segregated into train and test sets) as the one defined by Schreiber et al. (2017) [1] comprising of 125 training and 31 test table images.",,,1,related
+This problem of cell region detection can be further decomposed into row and column identification which can ultimately be combined together for the discovery of the corresponding cells in the table [1].,,,0,not_related
+This intermediate representation can also be the output of the system as in the case of Schreiber et al. (2017) [1].,,,0,not_related
+We compare our method using these image-based row and column-level statistics [1].,,,1,related
+[1] proposed a table recognition system where they computed precision and recall based on the rows and columns instead of using the cell-level information from the ICDAR-2013 table competition dataset [7].,,,0,not_related
+• Benchmarking of the results obtained by the proposed prediction tiling approach using the evaluation metrics used by Schreiber et al. (2017) [1] on the publicly available ICDAR-13 table structure recognition dataset [7].,,,0,not_related
+Schreiber et al. (2017) [1] made a recent attempt for the incorporation of deep learning based techniques for the task of table structure recognition where they used two different fully-convolutional networks for the identification of the corresponding rows and columns.,,,0,not_related
+"Therefore, automated extraction of these tabular regions can be useful in a wide range of applications [1], [2], [3].",,,0,not_related
+Our post-processing is similar to the one used by Schreiber et al. (2017) [1].,,,1,related
+"Abstract—Based on the recent advancements in the domain of semantic segmentation, Fully-Convolutional Networks (FCN) have been successfully applied for the task of table structure recognition in the past [1].",,,0,not_related
+Minor efforts have also been made on performing analysis of tabular regions directly on images [1].,,,0,not_related
+"Numerous efforts have been made in the past to automatically extract the relevant information from documents [1], [2], [3], [4], [5].",,,0,not_related
+"Numerous methods have dealt with this problem in the past [1], [2], [3] and achieved near perfect detection rates on publicly available datasets.",,,0,not_related
+(2017) [1] on the publicly available ICDAR-13 table structure recognition dataset [7].,,,0,not_related
+We use Marmot data set for training our model similar to DeepDeSRT [6].,,,1,related
+"[6] proposed a deep learning based solution for table detection and structure identification, which does not require any assumption about the structure of the tables.",,,0,not_related
+"The GOD is compared to state-of-the-arts: Kavasidis et al. [8], DeepDeSRT [6] and Tran et al. [26] on ICDAR-2013 table competition data set.",,,0,not_related
+"precision, recall and F1 measures [6], [8], [26] to evaluate the performance of our algorithm for detecting graphical objects in the document images.",,,0,not_related
+[3] used a pre-trained model over Faster RCNN.,,,0,not_related
+"There are also proposed methods [2], [3] for table detection based on Faster R-CNN [10] architecture; however, Schreiber et al.",,,0,not_related
+[3] have used data-driven deep learning approach using fully convolutional networks (FCN) for semantic segmentation architectures [17] with skip connections.,,,0,not_related
+"Recently deep learning techniques are used to localize a table but mostly applied on contemporary documents [2], [3], [4].",,,0,not_related
+"It is interesting to note that [9] also uses FRCNN to detect multiple line-items regions, but their task-oriented evaluation measure makes the comparison with [7] difficult (and most of the invoices in their dataset have only less than three items).",,,0,not_related
+"[7] uses Faster R-CNN for the table recognition task, and also offers a complementary",,,0,not_related
+"A follow-up work of [7] proposes DeCNT [8], an approach based on a",,,0,not_related
+[17] and Gilani et al.,,,0,not_related
+"A similar approach based on a region proposal network is also proposed in DeepDeSRT [24] for detecting tables, they further extended it to rows and column detection.",,,0,not_related
+"Table detection and recognition in unconstrained documents is considered a challenging task and recently has received significant attention within the community [2], [7], [11], [16], [19], [22], [24].",,,0,not_related
+"[5] presented a deep learning-based solution for the identification of rows, columns, and cells, where transfer learning is performed by augmenting and fine-tuning a FCN semantic segmentation model [15].",,,0,not_related
+"The first is to classify table cells into specific categories [4], [5], e.",,,0,not_related
+"More recent works [4], [5] have used deep-learning methods to recognize table structure.",,,0,not_related
+"Recently deep learning approaches have been attempted for table detection [19], [20] and are showing very good results.",,,0,not_related
+"Recently, [6] proposes DeepDeSRT, a combination of two deep learning systems, one for table detection, and a second for table understanding.",,,0,not_related
+"The fine tuned F-RCNN model achieves the state-of-the-art performance reported in [6], where the F-RCNN model was fine tuned with 1600 samples from a pre-trained object detection model.",,,0,not_related
+"More recently, image analytics methods based on deep learning are becoming available [5] and are used to train document layout understanding pipelines [1], [6].",,,0,not_related
+"In 2017, Schreiber et al. first proposed a model called DeepDeSRT, which treats the table structure recognition task as an image semantic segmentation problem, and then recognizes the regions of columns and rows respectively (Schreiber et al., 2017).",,,0,not_related
+"first proposed a model called DeepDeSRT, which treats the table structure recognition task as an image semantic segmentation problem, and then recognizes the regions of columns and rows respectively (Schreiber et al., 2017).",,,0,not_related
+"The existing approaches can be classified into two categories: rule-based methods (Ramel et al., 2003; Yildiz et al., 2005; Hassan and Baumgartner, 2007) and data-driven methods (Schreiber et al., 2017; Li et al., 2019).",,,0,not_related
+", 2005; Hassan and Baumgartner, 2007) and data-driven methods (Schreiber et al., 2017; Li et al., 2019).",,,0,not_related
+"I R
+] 2
+8 A
+ug 2
+01 9
+DeSRT (Schreiber et al., 2017) and Tabby (Shigarov et al., 2016).",,,1,related
+"• DeepDeSRT: DeepDeSRT (Schreiber et al., 2017) is a data-driven method that utilizes a semantic segmentation model to recognize the table structure as a set of segmented rows and columns.",,,0,not_related
+is good and is comparable to [16] which uses FCN.,,,0,not_related
+"A variety of methods tackled this problem [16], [18]–[20] on publicly available datasets.",,,0,not_related
+DeepDeSRT [16] uses Fully Convolutional Networks (FCN) [17] to segment the rows and columns of tables.,,,0,not_related
+DeepDeSRT [24] 0.,,,0,not_related
+Approaches like [15] partially solve the issue but it is still not a natural approach.,,,0,not_related
+[15] also used Faster RCNN for table detection and extraction of rows and columns.,,,0,not_related
+Approaches like [15] partially solve the issue but it is still not a natural approach.,,,0,not_related
+[15] also used Faster RCNN for table detection and extraction of rows and columns.,,,0,not_related
+Reference [17] also uses (pretrained) Fast R-CNN and FCN semantic segmentation model for table extraction problem.,,,0,not_related
+Reference [17] also uses (pretrained) Fast R-CNN and FCN semantic segmentation,,,0,not_related
+"Recently, (Schreiber et al., 2017) used the deep learningbased object detection model with pre-processing to recognize the row and column structures for the ICDAR 2013 dataset.",,,0,not_related
+"(Schreiber et al., 2017) presented a system that is totally data-driven and does not need any heuristics or metadata to detect as well as to recognize tabular structures on the ICDAR 2013 dataset.",,,0,not_related
+"Table II provides A comparison of the proposed system with the approaches presented in [15] and [14], trained on our proposed dataset.",,,1,related
+[14] used ICDAR 2013 table competition dataset for testing.,,,0,not_related
+[14] focuses on table detection and structure analysis as well.,,,0,not_related
+"This evaluation scheme is different from [5], [30] where they first compute",,,0,not_related
+the problem of table detection and recognition which makes the problem significantly harder to tackle [5]–[7].,,,0,not_related
+[5] (2017) where they utilized Faster R-CNN for detection of documents achieving state-of-the-art performance on ICDAR-2013.,,,0,not_related
+"5 for IoU to compute the F1-measure [5], we also evaluated our model based on this threshold.",,,1,related
+[6] and Gilani et al.,,,0,not_related
+"The latest approaches use deep learning for table detection and recognition [8], [9].",,,0,not_related
+"we compared the performance of the four different configurations of our method to those achieved by DeepDeSRT [59], Tran [34] and Hao [27] in detecting only tables on the ICDAR 2013 dataset.",,,1,related
+"To ground our work with state of the art in table detection, we compared the performance of the four different configurations of our method to those achieved by DeepDeSRT [59], Tran [34] and Hao [27] in detecting only tables on the ICDAR
+2013 dataset.",,,1,related
+"915 for the tablestructure recognition and data extraction task, which outperformed that of a deep neural network-based method, DeepDeSRT (Schreiber et al., 2017), by 0.",,,0,not_related
+"As a result, their method achieved an F-measure value of 0.915 for the tablestructure recognition and data extraction task, which outperformed that of a deep neural network-based method, DeepDeSRT (Schreiber et al., 2017), by 0.07 percentage points.",,,0,not_related
+"2016) and (Schreiber et al. 2017) proposed table detection model in document image based on CNN and Faster R-CNN, respectively.",,,0,not_related
+"(Hao et al. 2016) and (Schreiber et al. 2017) proposed table detection model in document image based on CNN and Faster R-CNN, respectively.",,,0,not_related
+[18] proposed DeepDeSRT that employs the Faster R-CNN model for table detection and a semantic segmentation approach for structure recognition.,,,0,not_related
+"Recently, there has been a shift in the research literature from traditional rule-based methods [7–9] for TE to data-driven methods based on deep learning (DL) [2, 10, 11].",,,0,not_related
+"Recently, there has been a shift in the research literature from traditional rule-based methods [7–9] for TE to data-driven methods based on deep learning (DL) [2, 10, 11].",,,0,not_related
+"[20] use a fine-tuned version of popular object detection framework, Faster RCNN [4], to detect tables in document images.",,,0,not_related
+[5] first discovered that deep learning (DL) based “object detection” [6] in natural scene images can be successfully applied to the table detection in document images via the transfer learning.,,,0,not_related
+"From 2013 to date, in addition to the enhancement of these deterministic approaches, several new techniques based on machine learning algorithms have been introduced, like a method based on the identification of the horizontal and vertical lines classified through Support Vector Machine (SVM) [15] or methods based on Fast-RCNN (FRCNN) [34] trained on the Marmot dataset for table recognition [35].",,,0,not_related
+"Recently, there has been a shift in the research literature from traditional rule-based methods [7–9] 34 for table extraction to data-driven methods based on deep learning (DL) [2, 10, 11].",,,0,not_related
+"With the recent and rapid development of deep learning techniques, approaches employing convolutional neural networks (CNNs) have been proposed and have shown a superior detection accuracy [1], [2], [11].",,,0,not_related
+"However, table detection is a challenging task due to the high degree of intra-class variability and inter-class similarity between tables, as shown in 1(b) [2].",,,0,not_related
+[2] proposed a table detection system applying a completely data-driven method that does not require metadata of the document or heuristic rules for detection.,,,0,not_related
+"And we can see these problems in the multitude of methods currently available to detect tables in PDF documents [26, 27, 28, 29], where there is no author who proposes a general deterministic solution to identify tables in PDF documents[25].",,,1,related
+Trying to teach computers to see and also“understand” what is a table has proven be extremely difficult [25].,,,0,not_related
+", paragraphs, figures, lists, tables [49,41,30].",,,0,not_related
+"While there are other works [34,41] that perform table decomposition into rows and columns (which our model is capable of doing), we discuss table detection only in the scope of this paper.",,,0,not_related
+"The solution is suggested to be a deep neural network, which typically consists of several stacked deep neural networks ([2]), which reduces the problem to the object detection task.",,,0,not_related
+"In particular, deep neural networks and machine learning were shown to be very effective in the context of tabulating (see [2], [3], [4], [5]).",,,0,not_related
+"As contemporary works [47, 26, 2, 58] show the deep neural network models provide a good performance for the table detection.",,,0,not_related
+"The current trend involves deep learning techniques: binary classification based on convolutional neural networks [29], fine-tuned object detection models [47, 26, 2, 58], and semantic segmentation [30, 33].",,,0,not_related

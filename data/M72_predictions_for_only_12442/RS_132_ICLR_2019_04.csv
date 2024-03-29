@@ -1,0 +1,19 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Using, for example, the special activation function σ(x) = ReLU(x) := max{0, x} ≥ 0, the above iterative process can be naturally modified to preserve the constraint (1.2):
+ui = ui−1 + σ ◦Bi ∗ σ(f − A ∗ ui−1), i = 1 : ν. (1.4)
+This forms the basic block of MgNet, precisely as in [15]. partial differential equations (PDEs) [52, 53], we introduce this residual
+ri = f − A ∗ ui.",1,related,1,positive
+The other multilevel solver that we tried is a U-Net from [17].,1,related,1,positive
+"As we pointed in Section VI, we cannot be sure that we reproduce results from [17] because the paper contains omissions.",1,related,0,negative
+"Given that, the whole scheme from [17] is a generalized Richardson iteration for the preconditioned system.",1,related,1,positive
+"As suggested in [Hsieh et al., 2019], we also choose different iteration number k, 1 ≤ k ≤ b in the training, so that H learns to converge at each iteration, where larger b mimics the behavior of solving problems to higher accuracy while smaller b mimics inexpensive smoothing steps in multigrid.",1,related,1,positive
+"Inspired by the recently proposed deep PDE solver [2], we introduce a deep learning-based thickness solver.",1,related,1,positive
+"raight forward with graph convolution operations. Another approach is to solve the problem inside a larger bounding box and then ﬁlter out the solutions that does not belong to the region of interest [25]. Acknowledgement We would like to thank Dr. Yi Ren for the helpful suggestions in experiments and paper writing, Dr. Yuzhong Chen for proofreading the paper, and Haoyang Wei, Dr. Yang Yu for helping ",1,related,1,positive
+Motivated by [6] we construct a neural iterator from a semi-implicit update rule.,1,related,1,positive
+"Implementation Details: Following [6], we use a three-layer convolutional neural network to model each of the Hi.",1,related,1,positive
+"On a stark contrast with previous work [6], we have several sets of parameters {Θi}i=1:N , δx, δt, and attached to the PDEs governing equation.",1,related,1,positive
+2 Neural Solver We propose the following iterator using similar notation as in [6],1,related,1,positive
+A common approach to build T and c is to splitA intoA = M −N and by rewritingAu = f asMu = Nu+f the following updating rule naturally arises: u = M−1Nuk +M−1f For more details we refer readers to [4] or to [1].,1,related,1,positive
+For more information we kindly refer to the original paper [1].,1,related,0,negative
+"With k ∈ DU(1, 20) we denote the sampling of k from a discrete uniform distribution on the interval [1, 20].",1,related,1,positive
+"This is the reason why our work was focused on reproducing the results of [1], and on empirically proving the generalization of their model to arbitrary shapes and grid sizes.",1,related,1,positive

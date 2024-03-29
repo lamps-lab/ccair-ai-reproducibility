@@ -1,0 +1,363 @@
+text,target_M6_predict,target_predict_M6_label
+"Micaelli et al. [5] exploited adversarial distillation o transfer the knowledge (i.e., ZSKT) from teacher to student by
+ullback-Leibler (KL) divergence and spatial attention.",1,neutral
+DAFL [4] ZSKT [5] DFAD [25] ADI [6] DFQ [26] CMI [7] Ours,1,neutral
+[5] exploited adversarial distillation o transfer the knowledge (i.,1,neutral
+"As exhibited in Table 2 , we compare the proposed learning aradigm with the other representative approaches for data-free nowledge distillation, including DAFL [4] , ZSKT [5] , DFQ [26] , FAD [25] , ADI [6] , and CMI [7] .",2,positive
+"Through dversarial training, GANs can synthesize fake images to support istillation between teacher and student [4,5] .",2,positive
+"Comparison of DFKD methods
+As exhibited in Table 2 , we compare the proposed learning aradigm with the other representative approaches for data-free nowledge distillation, including DAFL [4] , ZSKT [5] , DFQ [26] , FAD [25] , ADI [6] , and CMI [7] .",2,positive
+[5] mainly exploited adersarial distillation with Kullback-Leibler (KL) divergence between he outputs of the teacher and student.,1,neutral
+"DFKD methods incline to exploit a generator to synthesize masive samples to support the knowledge distillation learning beween teacher and student [4,5,25] .",1,neutral
+"Besides, in the DFAD framework, the generator is more prone o model collapse due to inadequate optimization [4,5,25] .",1,neutral
+"(1) DAFL, ZSKT, and DFAD mainly imitate the teacher by educing the discrepancy in the output layer.",1,neutral
+ZSKT [33] and DFAD [12] train an adversarial generator to search for images where the prediction of the student poorly matches the teacher’s prediction.,2,positive
+"Given the aforementioned context, we present a pipeline that extracts the functionality of a black-box classification model (named teacher) into a locally created copymodel (called student) via knowledge distillation [1, 7, 27, 29, 53] and self-paced active learning, as shown in Figure 1.",2,positive
+"Recently, there have been developments in Zero-Shot Knowledge Distillation frameworks [37] that can distill knowledge from a teacher to a student model, even without training data.",1,neutral
+"Some works (Nayak et al. 2019; Micaelli and Storkey 2019) have explored distillation through pseudodata generation from the weights of the teacher model or through a generator adversarially trained with the student model, particularly when real data are unavailable for training.",1,neutral
+"Specifically, these cases are known as few-shot [18], [19] and zero-shot unlearning [10], [20], [21], respectively.",1,neutral
+"Assuming sufficiently, through this approach, one can possibly simultaneously use a simpler and more reliable model that clinicians would be familiar with while preserving higher performance, apply a model trained on a large amount of data to a smaller dataset thereby avoiding overfitting, and reducing computational costs by simply ’cut-and-pasting’ a pre-trained model to the problem at hand [11, 69].",1,neutral
+"[53] are motivated by the framework of datafree knowledge distillation [9, 40] and proposed data-free model",1,neutral
+"First, their trained generators are abandoned after the students’ training [5, 17, 33, 20, 14, 51].",0,negative
+"One is to have to spend extra computing costs to obtain generation data by generation module, including: DeepInv [50], CMI [18], DAFL [5], ZSKT [33], DFED [20], DFQ [11], Fast [16], MAD [14], DFD [32], and DFAD [17].",2,positive
+"Compared Methods: We compare our proposed KD(3) with representative data-free methods, including DataFree Learning (DAFL) [7], Data-Free Adversarial Learning (DFAD) [15], Dual Discriminator Adversarial Distillation (DDAD) [50], DeepInversion (DI) [45], Zero-Shot Knowledge Transfer (ZSKT) [30], Pseudo Replay Enhanced Data-Free Knowledge Distillation (PRE) [3], DataFree Quantization (DFQ) [10], Contrastive Model Inversion (CMI) [16], and Data-Free Noisy Distillation (DFND) [6] (the only existing method using the webly collected data).",2,positive
+"Inspired by the Generative Adversarial Networks [20], a series of works [7, 15, 30] treat the teacher network as the discriminator to supervise a generator to produce pseudo data from random noise.",1,neutral
+"Compared Methods: We compare our proposed KD3 with representative data-free methods, including DataFree Learning (DAFL) [7], Data-Free Adversarial Learning (DFAD) [15], Dual Discriminator Adversarial Distillation (DDAD) [50], DeepInversion (DI) [45], Zero-Shot Knowledge Transfer (ZSKT) [30], Pseudo Replay Enhanced Data-Free Knowledge Distillation (PRE) [3], DataFree Quantization (DFQ) [10], Contrastive Model Inversion (CMI) [16], and Data-Free Noisy Distillation (DFND) [6] (the only existing method using the webly collected data).",2,positive
+"Except for synthesizing real-looking images, researchers also integrate GANs into downstream tasks of network training, such as knowledge distillation [37, 20, 36], data augmentation [1, 7], continual learning [58, 59], dataset distillation [82, 13] and privacy-preserving learning [70, 63, 19].",1,neutral
+"Different from generating synthesized images solely from the generator in ZSKT and DFKD, ADI [11] proposes to synthesize images by directly training the noises to images without the generator, and leverage the batch norm statistics recorded in the teacher network to better mimic the real images.",2,positive
+ZSKT [10] takes the student network into image synthesis and proposes the adversarial DFKD framework.,2,positive
+ZSKT [10] extends the basic DFKD framework to the adversarial DFKD framework by making the prediction mismatch between the teacher and student.,2,positive
+It also establishes the basic framework of DFKD. ZSKT [10] takes the student network into image synthesis and proposes the adversarial DFKD framework.,2,positive
+"We compare IFHE with advanced DFKD methods including DAFL [9], ZSKT [10], ADI [11], DFQ [22] and CMI [12].",2,positive
+"DFKD methods generate hard samples on which the student disagree with the teacher by enlarging the divergence between their prediction distribution [11], [14]–[16] (see Fig.",1,neutral
+"The first one is traditional adversarial manner as the previous work [11], [14]–[16], whose adversarial loss is to calculate the divergence between predictions of the teacher and student.",1,neutral
+"Different from the traditional adversarial objective [11], [14]–[16], we use the student model itself rather than the pre-trained teacher model to estimate the sample difficulty of the synthetic data (see Fig.",2,positive
+DAFL [9] and ZSKT [14] are generator-based methods.,1,neutral
+"Recently, many methods further exploited the teacherstudent alignment of intermediate feature maps [18], instance relational graphs [64], similarity attention maps [65], [66] and generative adversarial predictions [67].",1,neutral
+"2021), henceforth DFME, and MAZE (Kariyappa, Prakash, and Qureshi 2021) adapt techniques used in knowledge distillation (Fang et al. 2019; Micaelli and Storkey 2019) to generate synthetic data to train clone models for model extraction.",2,positive
+"Data-Free Model Extraction (Truong et al. 2021), henceforth DFME, and MAZE (Kariyappa, Prakash, and Qureshi 2021) adapt techniques used in knowledge distillation (Fang et al. 2019; Micaelli and Storkey 2019) to generate synthetic data to train clone models for model extraction.",2,positive
+Other techniques utilize a GAN for training (Micaelli and Storkey 2019; Fang et al. 2019; Chen et al. 2019).,1,neutral
+"2019), similarity attention maps (Ji, Heo, and Park 2021) and generative adversarial predictions (Micaelli and Storkey 2019).",2,positive
+[86] optimized an adversarial generator to search for difficult images and then used these images to train the student.,1,neutral
+"Beyond the final output, the target data can be generated using the information from the teacher’s feature representations [86,90].",1,neutral
+"For example, [25] finds that arbitrary transfer sets can be useful, and work such as [4] and [19] have found success in performing knowledge distillation using samples out of the distribution of the teacher model.",1,neutral
+"Some methods generate pseudo samples via adversarial training [9], [13].",1,neutral
+"We use ZSKT (Micaelli & Storkey, 2019), CMI (Fang et al., 2021), and OOD (Asano & Saeed, 2021) as the baseline distillation methods.",2,positive
+"We evaluated one vanilla KD using clean training data (Hinton et al., 2015) and three training-datafree KD method which use synthetic data (ZSKT (Micaelli & Storkey, 2019) & CMI (Fang et al., 2021)) or
+out-of-distribution (OOD) data as surrogate distillation data (Asano & Saeed, 2021).",2,positive
+"The key difference between data-free KD and vanilla KD is that the samples used for KD are synthetic (Chen et al., 2019; Micaelli & Storkey, 2019) or sampled from out-of-distribution (OOD) domains (Asano & Saeed, 2021).",2,positive
+"Following the setup of ZSKT (Micaelli & Storkey, 2019), we use WideResNet (Zagoruyko & Komodakis, 2016) for training 10-way or 43-way classifiers on CIFAR10 and GTSR-B, respectively.",2,positive
+"Here, representative implementations include the first adversarial data-free distillation, Zero-Shot Knowledge Transfer (ZSKT) (Micaelli & Storkey, 2019), the state-of-theart data-free KD methods, CMI (Fang et al., 2021).",2,positive
+"DFKD can be leveraged successfully in FDG, wherein the student model is trained using multiple teachers that have been trained on diverse source domains, facilitating the generalization capability to previously unseen target domains.",2,positive
+"Knowledge distillation: Data-free knowledge distillation (DFKD) [113], [156], [157] is a technique used to transfer knowledge from a large, well-trained model to a smaller, more compact model without the need for labeled training data.",1,neutral
+"(DFKD) [113], [156], [157] is a technique used to transfer knowledge from a large, well-trained model to a smaller, more compact model without the need for labeled training data.",1,neutral
+"[113] developed a training approach in which a student network learns to align its predictions with those of a teacher network, solely relying on an adversarial generator to discover images where the student exhibits poor alignment with the teacher and utilizing them for student training, without relying",1,neutral
+"For data-free knowledge distillation [46, 47], generators are optimized to maximize the divergence between teacher and student predictions.",1,neutral
+"Unlike previous DFKD methods, which store synthetic images [7, 10, 13, 27, 29, 43], we use a feature pool to store the hidden features of the synthetic images when optimizing G and use them to improve the diversity of later training image generation.",2,positive
+"Recently, data-free knowledge distillation (DFKD) [4,7,10,13,14,22,25,27,29,43,46] seeks to perform KD by generating synthetic data instead of accessing the original training data used by the teacher network to train the student network.",1,neutral
+"Since the existing complete opensource SOTA methods do not report results on ImageNet or
+*https://github.com/fastai/imagenette †https : / / www . kaggle . com / datasets / ambityga /
+imagenet100
+its subsets in their papers, we use two open-sourced methods CMI and ZSKT for comparison.",2,positive
+"As shown in Table 2, when evaluated on high-resolution datasets, CMI and ZSKT-trained student networks perform significantly worse than the teacher network, while the student network trained by our method only has a small performance gap with the teacher network.",2,positive
+"Some KD work [16, 18, 29, 32, 49] differs from previous KD via logit distillation, in that they impose consistency constraints on the middle layer features of the network.",1,neutral
+", methods based on generative networks [8, 9, 12, 13, 27, 29, 45].",1,neutral
+", DAFL [7], ZSKT [29], ADI [43], DFQ [10], LS-GDFD [27], and CMI [13]) when using the same teacher network.",1,neutral
+"Table 1 shows the DFKD results by our method and several state-of-the-art (SOTA) methods, i.e., DAFL [7], ZSKT [29], ADI [43], DFQ [10], LS-GDFD [27], and CMI [13]) when using the same teacher network.",2,positive
+DAFL [7] ZSKT [29] ADI [43] DFQ [10] LS-GDFD [27] CMI [13] SpaceshipNet,2,positive
+", non-conditional generative network-based methods [8,9,12,13,29] and conditional generative network-based methods [27, 45].",1,neutral
+"Synthetic data generation methods in DFKD mainly consist of noise image optimization-based methods [4, 26, 31, 44] and generative network-based methods [8,9,12,13,27,29,45].",1,neutral
+"Next, we compare our mSARC with the feature-level constraint used in several feature-level constraints used in recent KD methods [16, 18, 29, 32, 49].",2,positive
+"Considering that the proxy dataset may not always exist, some recent works proposed distillation in a data-free manner including reconstructing samples used for training the teacher [20,23] or learning a generator [35].",1,neutral
+"Inspired by adversarial knowledge distillation (AKD), which aims to iteratively improve the student model’s performance by forcing it to learn from generated hard samples (Fang et al., 2019; Micaelli and Storkey, 2019a; Heo et al., 2019), we propose an adversarial framework for distilling a proprietary LLM into a compact student model.",2,positive
+This innovative use of AKD in LLMs underscores the transformative potential of iterative knowledge transfer.,1,neutral
+"To verify the efficiency and efficacy of our method, we apply our AKD framework to transfer the knowledge of ChatGPT 2 onto an open-source foundation LLM, known as LLaMA (Touvron et al., 2023), consisting of 7 billion parameters.",2,positive
+"This paper presents an innovative adversarial knowledge distillation (AKD) framework for distilling a proprietary large language model (LLM) into a compact, open-source student model.",2,positive
+"We select Alpaca’s training data (generated from only 175 manually selected seed instructions) as the initial training instructions and execute three iterations of AKD, resulting in a total of 70K data that our model is trained on. we’ve christened our model as Lion, drawing inspiration from the art of “distillation”.",2,positive
+"Inspired by the success of adversarial knowledge distillation (AKD) (Fang et al., 2019; Micaelli and Storkey, 2019a; Heo et al., 2019), we turn to optimize an upper bound of the expectation —the expectation of the model discrepancy on “hard samples”, where the teacher T and the student S have a relatively large performance gap.",2,positive
+"Nevertheless, these AKD methodologies necessitate accessibility to the weights or gradients of the teacher model, which can not be directly adapted to our setting.",2,positive
+Michaeli and Storkey [60] also proposed a novel method to transfer knowledge to students using a generative adversarial network for a zero-shot knowledge transfer.,1,neutral
+"Current data-free KD methods can be roughly divided into two categories: adversarial training [77], [78], [79], which focuses on generating worstcase synthetic samples for student learning, and data prior matching [80], [81], [82], where synthetic samples are forced to satisfy priors like class prior, activation regularization, and batch normalization statistics.",1,neutral
+"Similarly, ZSKT [29] only uses adversarial loss in the generation process to widen the prediction gap between teacher and student, ignoring the diversity of data.",1,neutral
+[29] introduce the method of adversarial generation.,1,neutral
+"We compare our proposed method with different data-free generation methods, including: Dream [1], DeepInv [44], DAFL [4], ZSKT [29], DFQ [7], CMI [12], and Fast [11].",2,positive
+"Metric-Agnostic Adversarial Estimation: Inspired by robust optimization [2], existing literature on data-free knowledge distillation [10,35] has shown that the efficiency of the distillation process can be significantly improved by identifying the samples which are the hardest for the student to classify.",1,neutral
+"This restrains us from measuring the agreement between teachers and students in a straightforward way, thus preventing the direct application of state-of-the-art approaches from the DFKD literature like data-free adversarial distillation [10, 35].",2,positive
+"The standard approach for performing DFL is based on the principle of model inversion [33] – given a pre-trained model (teacher), the aim is to reconstruct its train set distribution by analyzing its activation patterns [8, 30, 35, 57].",1,neutral
+"As previously observed in the data-free knowledge distillation literature [10, 35], training the encoder on such samples ensures its robustness to semantic variations.",1,neutral
+"Student update strategies: (a) Typical student update by optimizing the Knowledge-Acquisition loss (LAcq) with the batch pseudo samples (x̂), produced by the generator (G) [5, 10, 20].",1,neutral
+"Adversarial DFKD methods [10, 19, 20] investigate an adversarial exploration framework to seek pseudo-samples.",1,neutral
+"Noise optimization [11,22,30] and generative reconstruction [4,10,20] are the two primary ways to replace the original training data used in the distillation process with synthetic or pseudo samples.",1,neutral
+ZSKT [20] attempts data-free knowledge transfer by first training a generator in an adversarial fashion to look for samples on which the student and teacher do not match well.,2,positive
+ZSKDa [22] ADIb [30] CMIb [11] DeGANc [1] EATSKDc [21] KEGNETa [31] ZSKTb [20] DDADa [34] DAFLd [4] DFADd [10] DFQd [5] MB-DFKDd [3] PRE-DFKDd [2] Ours-1 Ours-2,2,positive
+[20] use the generated samples that can confuse the discriminator to make student learning more efficient.,1,neutral
+"It most closely resembles a form of data-free distillation (Micaelli and Storkey, 2019; Nayak et al., 2019; Shen et al., 2021), where the",1,neutral
+"The adversary can train a duplication through zero-knowledge distillation [15] or datafree knowledge distillation [7], or use a local independent dataset to fine-tune the victim model.",2,positive
+"…al. 2022), 2) teacher-student architecture, e.g., simplified (Li et al. 2020), quantized (Polino, Pascanu, and Alistarh 2018), condensed (Xie et al. 2020), and 3) distillation strategy, e.g., multi-teacher (Yuan et al. 2021), graph-based (Yao et al. 2020), adversarial (Micaelli and Storkey 2019).",2,positive
+"This can be achieved either by looking at some of the teacher model statistics to generate synthetic transfer data [34, 37, 6], or by training a GAN in parallel [36, 10, 2].",1,neutral
+AVKD [16] extends the ZSKT [12] and formulates the adversarial exploration process as variational autoencoders (VAE).,2,positive
+"ZSKT [12] achieves data-free knowledge transfer by firstly training an adversarial generator to search for images on which student poorly matches the teacher, and then using them to train the student.",2,positive
+"Finally, we optimize the closeness of activations [41] between the last k layers of model M and B on the forget set Df",1,neutral
+Micaelli and Storkey [166] achieved data-free distillation by training an adversarial generator to search for samples on which the student poorly matches the teacher and then using them to teach the student model.,1,neutral
+This increases the total training time of by about 40% compared to ABM.,0,negative
+Adversarial Belief Matching (ABM) [31] proposed an adversarial learning framework between S and G via optimizing the following min-max objective:,1,neutral
+We consider two related baselines of MAD which are ABM [31] and DFKD-Mem [3].,1,neutral
+"In this experiment, we found that DFKD-Mem often performs worse than ABM on CIFAR100 and TinyImageNet.",2,positive
+"For example, MAD achieves about 1.5/2.8%, 2.5/3.6%, and 4.2/2.2% higher accuracy than ABM/DFKD-Mem on CIFAR100, TinyImageNet, and ImageNet, respectively.",2,positive
+"Through extensive experiments on three small and three large image datasets, we demonstrate that our proposed method is far better than related baselines [3, 31] in dealing with the large distribution shift problem.",2,positive
+"2, it is clear that MAD significantly outperforms both ABM and DFKD-Mem on all datasets.",2,positive
+"A common DFKD approach is to use a generator network to synthesize training data and jointly train the generator and the student in an adversarial manner [13, 31, 46].",1,neutral
+Most methods of this type are derived from the ABM [31] discussed in Section 2 with additional objectives to improve the quality and/or diversity of synthetic data.,2,positive
+2 Comparison with related baselines We consider two related baselines of MAD which are ABM [31] and DFKD-Mem [3].,2,positive
+"In ABM, LKD(x) is the Kullback-Leibler (KL) divergence between class probabilities of T and S computed on x:
+LKD(x) , DKL (Tp(x)‖Sp(x)) = C∑ c=1 Tp(x)[c] · (log Tp(x)[c]− log Sp(x)[c]) , (3)
+where Tp(x) = softmax(T(x)) and Sp(x) = softmax(S(x)) denote the class probabilities of T and S computed on x, respectively; and C is the total number of classes.",1,neutral
+We trained ABM and DFKD-Mem using exactly the same settings for training MAD.,2,positive
+"Adversarial Belief Matching (ABM) [31] proposed an adversarial learning framework between S and G via optimizing the following min-max objective:
+min S max G
+Ez∼p(z) [LKD(G(z))] (1)
+⇔min S max G Ez∼p(z),x=G(z) [LKD(x)] , (2)
+where LKD(x) denotes the knowledge distillation (KD) loss, i.e., the discrepancy between S(x) and T(x).",1,neutral
+"ABM learns the student S with only synthetic samples from G. DFKD-Mem, on the other hand, stores past synthetic samples in a memory bank, and uses samples from this memory bank (dubbed “memory samples”) as well as those generated by G as training data for S.",2,positive
+"Hence, inspired by [107], Chundawat et al.",1,neutral
+"To address this challenge, Data-Free Knowledge Distillation (DFKD) or Zero-Shot Knowledge Distillation (ZSKD) [40] has been proposed.",2,positive
+"For the baselines, we compare state-of-the-art DFKD methods as DAFL[7], ZSKT[41], ADI[61], DFQ[9], CMI[16] and PRE-DFKD[4].",2,positive
+"ZSKD[43, 57, 41] and SoftTarget[56] model the output label distribution or intermediate feature maps by simple distributions.",1,neutral
+"Data-Free Knowledge Distillation (DFKD, or ZSKD[43, 57, 41]) aims at training student models without training data.",2,positive
+"ZSKD [29, 40, 27] and SoftTarget [39] model the output label distribution or intermediate feature maps with simple distributions.",1,neutral
+"For the baselines, we compare SOTA DFKD methods as DAFL[7], ZSKT[27], ADI[43], DFQ[9], CMI[14] and PRE-DFKD[4].",2,positive
+"overcome the real-world dataset dependency for KD, data-free KD was proposed in which synthetic data or metadata was used for KD [20].",1,neutral
+"Note that we adopt mean square error (MSE) as objective in both phases other than KL divergence adopted in [20], because logit matching has better generalization capacity [16].",1,neutral
+"[4,20] alternatively uses a GAN architecture to synthesize images, where they fix a trained network as a discriminator and optimize a generator to derive images that can be adopted to distill knowledge from the fixed network to a new network.",1,neutral
+"In addition to the adopted method [20], DeepInversion [30] provides an alternative solution to data-free replay.",2,positive
+"In [20], the authors also indicate that the uncertain samples (i.",1,neutral
+"In observing the fact that distilling knowledge using uncertain data is more effective since they are usually close to the model’s decision boundaries [20], we introduce an entropy-regularized method to explicitly encourage the replayed data to be close to decision boundaries given by the reference model.",1,neutral
+"In a few-shot incrementally trained model, the high entropy response of input usually can be identified as the case that the input is on its decision boundary [20] or is learned in a few-shot incremental session (i.",1,neutral
+We follow [20] to train the generator by including an auxiliary model A(·; θA) as a helper to assist the convergence of the generator.,1,neutral
+We use the toy experiment proposed by [20] to illustrate the effects of our entropy regularization in Figure 5.,1,neutral
+"Another approach to deal with the absence of source data is highly related to the Datafree Knowledge Distillation [9, 10, 11] through reconstructing source distribution from the source model.",1,neutral
+"However, because the reconstructed source samples tend to fall on the decision boundaries of source model [11], the reconstructed distribution may not well represent the source distribution.",1,neutral
+Data-free Knowledge Distillation Data-free knowledge distillation transfers knowledge of a teacher model to a student model without original dataset [35].,1,neutral
+"A generative model is trained to synthesize data samples for students to query teacher in data-free manner [9, 12, 35].",1,neutral
+"Moreover, some papers [8, 11, 30] transferred knowledge in an adversarial strategy.",1,neutral
+Adversarial distillation is a typical training scheme for generator-based data-free KD approaches [35].,1,neutral
+"Adversarial distillation [3], [35] is an efficient scheme that trains the generator and the student together by a min-max game.",1,neutral
+"Remarkably, SKD is very robust against the scale of the problem in terms of input resolution (from 32× 32 to 224× 224) and network architecture, which is also a significant advancement over existing knowledge transfer works [14], [15], [17], [45], [46].",2,positive
+"However, these methods [14], [15], [17] can only work well on simple and low-resolution datasets such as MNIST and CIFAR-100, and fail on high-resolution and fine-grained datasets.",1,neutral
+"In the extreme case where no real images are available, networks can be trained using data-free knowledge distillation methods [8, 34, 55].",1,neutral
+"GAN-based methods [8, 34, 54, 62] synthesized training samples through maximizing response on the discriminator.",1,neutral
+"To unconditionally distill knowledge from a given DNN, Data-Free Distillation (DFD) methods have been proposed [14, 15].",1,neutral
+"Four candidate trigger encoders were considered: the Gaussian noise [7], a random image generator network [20], the DFD generator itself [14, 15], and Wonder Filter (WF) [5].",2,positive
+"For adversarial training, this paper uses the training scheme of AdvProp [10], which uses two separate batch normalization (BN) layers for clean and adversarial examples, arg ∑   ∝ , ; , + ∑   , ; ∗, = arg + (7)",1,neutral
+"∗ =   ( , ) (8) To avoid estimating the tricky ∗ the data, a generative network is introduced G( , g) to control the data distribution [10].",1,neutral
+"For adversarial training, this paper uses the training scheme of AdvProp [10], which uses two separate batch normalization (BN) layers for clean and adversarial examples,arg ∑ ∝ , ; , +∑ , ; ∗, = arg + (7)
+where balances the contrast loss with parameterized contrast loss and the contrast loss with ∗ parametric .",1,neutral
+"When real data is not available (black-box) for inference, attackers can only imitate the target model through querying synthetic examples [18, 20, 27, 37].",1,neutral
+"For the latter, the two main investigated techniques are (i) adversarially perturbing pure noise samples to minimize the OOD loss [5, 14, 28], and (ii) including a generative adversarial network [13] in the loop [6, 7, 27].",1,neutral
+Another one is that they should be optimal to close the information gap between the teacher and the student (Micaelli and Storkey 2019; Fang et al. 2019).,2,positive
+"To this end, some researchers [39], [40], [104] study an adversarial exploration framework to synthesize alternative data, as shown in Fig.",1,neutral
+Rashid et al. [142] extend the ZSKT [39] to NLP models and introduce out-of-domain data to assist the text classification tasks.,1,neutral
+"ZSKT [39] achieves data-free knowledge transfer by firstly training an adversarial generator to search for images on which the student poorly matches the teacher, and then using them to train the student.",2,positive
+[142] extend the ZSKT [39] to NLP models and introduce out-of-domain data to assist the text classification tasks.,2,positive
+AVKD [119] extends the ZSKT [39] and formulates the adversarial exploration process as variational autoencoders (VAE).,2,positive
+"Two types of DFKD methods are compared in our experiments: (1) generative methods that train a generative model for synthesis, including DAFL (Chen et al. 2019), ZSKT (Micaelli and Storkey 2019), DFQ (Choi et al. 2020), and Generative DFD (Luo et al. 2020) (2) non-generative methods that craft transfer set in a batch-by-batch manner including DeepInv (Yin et al. 2019) and CMI (Fang et al. 2021b).",2,positive
+"…are compared in our experiments: (1) generative methods that train a generative model for synthesis, including DAFL (Chen et al. 2019), ZSKT (Micaelli and Storkey 2019), DFQ (Choi et al. 2020), and Generative DFD (Luo et al. 2020) (2) non-generative methods that craft transfer set in a…",2,positive
+"In Table 2, we find that there is something unique about using a single image, as our method outperforms several synthetic datasets, such as FractalDB Kataoka et al. (2020), randomly initialized StyleGAN Baradad et al. (2021), as well as the GAN-based approach of (Micaelli & Storkey, 2019).",2,positive
+"These approaches are typically generation based (Chen et al., 2019; Ye et al., 2020; Micaelli & Storkey, 2019; Yin et al., 2020) and e.g. yield datasets of synthetic images that maximally activate neurons in the final layer of teacher.",1,neutral
+"Adversarial belief matching [23] and data-free adversarial distillation [24] methods suggested adversarially training the generator, such that the generated samples become harder to train.",1,neutral
+"More recent studies have employed generator architectures similar to GAN [21] to generate synthetic samples replacing the original data [22, 23, 24, 25].",1,neutral
+[30] proposed an adversarial method that trains a generator iteratively to craft images that cause the student to poorly match the teacher and subsequently used them to perform distillation.,1,neutral
+"Recently several works have identified such issues [4, 30, 31] for classification setting.",1,neutral
+"The solutions proposed for classification problems either synthesize transfer set directly using the trained Teacher model [31, 49] or learn the target data distribution through generative models [4, 30].",1,neutral
+"Recently, data-free knowledge distillation [30, 33, 10, 61, 59] has attracted attention from various research communities, which trains student model only with synthetic data.",1,neutral
+"We compare the proposed MosaicKD to various baselines, including data-free KD methods (DAFL [7], ZSKT [33], DeepInv.",2,positive
+"original training data is available during distillation, which is vulnerable in real-world applications due to privacy or copyright reasons [33, 58, 44, 57, 45, 21, 43].",0,negative
+"In light of increasing data privacy concerns, this alternative has recently enjoyed a surge of interest [47, 8, 53, 40, 36, 31, 82, 1].",1,neutral
+"Hereby, knowledge is transferred from one [47, 53, 8, 10, 82, 43, 87] or multiple [39] teacher(s) to the student model via the generation of synthetic data, either by optimizing random noise examples [53, 82, 87] or by training a generator network [47, 8, 10, 43].",1,neutral
+"While these methods rely on the original data, Data-Free Knowledge Distillation (DFKD) methods were recently developed [42, 47, 53, 8].",1,neutral
+"Although Data-Free Knowledge Distillation (DFKD) methods were developed to transfer knowledge from a teacher model to a student model without any access to the original data [42, 47, 8, 53, 82, 10], only single-teacher scenarios with no domain shift were studied.",1,neutral
+"Moreover, the upper-bound of performance for both these works and generative works is often considered to be the student’s performance with full data on supervised training, or on original knowledge distillation [24, 28, 40, 2].",1,neutral
+"Another line of related work is zero-shot distillation, where synthesized data impressions from the teacher are used as surrogates to train the student [24, 28].",1,neutral
+The concept of data leaving its impression on a trained model has also been observed in prior work in model inversion attacks in computer vision (Micaelli and Storkey 2019; Nayak et al. 2019).,1,neutral
+"It should be mentioned that most prior knowledge distillation approaches perform well when extracting a small student model from a large teacher model, while some recent research [33], [35] has shown that high distillation accuracy can be achieved even when the teacher model has a smaller and different architecture than the student’s.",1,neutral
+"The first one is that, using only newly generated samples to train the student after each time generator’s weights are updated [4, 6, 10, 18, 19], could cause the student network to forget the knowledge it acquired in the earlier steps.",0,negative
+"teacher have maximum disagreement [6, 19], could yield a student that is optimal for a different distribution than the original data.",1,neutral
+"Recognition of this problematic coupling of KD with data has recently attracted attention from the scientific community [19, 5, 18].",1,neutral
+"2, targeting the generation of novel samples has demonstrated promising results on several benchmarks [6, 19].",2,positive
+"Further, [44, 45], also encourage generating samples the student and teacher disagree on.",1,neutral
+"Generative adversarial networks (GANs) (Goodfellow et al., 2014) are leveraged in (Chen et al., 2019; Micaelli & Storkey, 2019) to solve this task so that pseudo sample synthesis and student network training can be conducted simultaneously.",2,positive
+"Another line of related work is zero-shot distillation, where synthesized data impressions from the teacher are used as surrogates to train the student [24, 28].",1,neutral
+"Moreover, the upper-bound of performance for both these works and generative works is often considered to be the student’s performance with full data on supervised training, or on original knowledge distillation [2, 24, 28, 40].",1,neutral
+"Along the same spirit, (Micaelli & Storkey, 2019) learns a generator by adversarial training.",2,positive
+"Later there emerges data-free KD approaches which aim to reconstruct samples used for training the teacher (Yoo et al., 2019; Micaelli & Storkey, 2019).",2,positive
+"Adversarial Distillation is motivated by robust optimization, where the x is forced to produce large disagreement between teacher ft(x; θt) and student fs(x; θs) [Micaelli and Storkey, 2019; Fang et al., 2019], i.",1,neutral
+"Adversarial training is motivated by robust optimization, where worst-case samples are synthesized for student learning [Micaelli and Storkey, 2019; Fang et al., 2019].",1,neutral
+"…Distillation is motivated by robust optimization, where the x is forced to produce large disagreement between teacher ft(x; θt) and student fs(x; θs) [Micaelli and Storkey, 2019; Fang et al., 2019], i.e., maximize a Kullback–Leibler divergence term:
+Ladv(x) = −KL(ft(x)/τ‖fs(x)/τ) (3) Unified…",1,neutral
+"We compare our approach with the following baselines: DAFL [Chen et al., 2019], ZSKT [Micaelli and Storkey, 2019], ADI [Yin et al., 2020], DFQ [Choi et al., 2020] and
+LS-GDFD [Luo et al., 2020].",2,positive
+"Such low entropy predictions are characteristics of the members of Dtr, however, non-members with low entropy can be obtained (or generated using GANs (Micaelli and Storkey 2019)) due to large input feature space.",1,neutral
+"Finally, to achieve the desired tradeoffs, we give a criterion to tune the selection or generation (e.g., using GANs) of reference data used in DMP.
+Notations Dtr is a private training data.",2,positive
+"When ZSL is implemented via KD strategies, it is common to use data synthesis techniques through generative adversarial frameworks where the generator generates fake samples [19, 20] or through KD using activation or output statistics from pre-trained teacher models to synthesize pseudo samples [21, 22].",1,neutral
+"The adversary has complete access to the victim model, and uses data-free knowledge transfer (Micaelli & Storkey, 2019; Fang et al., 2019) to train a student model.",2,positive
+"Instead of distilling teacher knowledge on a given training dataset, data-free knowledge distillation (DFKD) [30, 35, 3, 33, 8, 47] first generates training data and then learns a student network on this generated dataset.",1,neutral
+"Training data can be generated by aligning feature statistics [30, 8, 47], enforcing high teacher confidence [30, 35, 3, 8, 47], and adversarial generation of hard examples for the student [33, 47].",1,neutral
+"Multiple works have also looked into training GANs given only a pretrained model [6, 34], but result in images that lack details or perceptual similarities to original data.",0,negative
+[33] conduct pilot research on data-free knowledge distillation.,2,positive
+[33] further distill knowledge by generated samples from an adversarial generator.,1,neutral
+", ZSKT [33], KEGNET [36], DAFL [32], DFAD [38], DFQ [58] and CMI [59], achieve the test accuracies of 85.",0,negative
+"As can be seen, our approach achieves 42.4% mIoU on Cityscapes, which gains the improvements of DFAD, DAFL and ZSKT by 3%, 12.3% and 36.1%, respectively.",2,positive
+", ZSKT [33], KEGNET [36], DAFL [32], DFAD [38], DFQ [58] and CMI [59].",1,neutral
+"For baselines, we adopt the vanilla KD [24] method and several very recent data-free knowledge distillation works that achieve strong performance, including two non-generative based methods ZSKD [34] and BNS [39], and some generative based data-free methods, i.e., ZSKT [33], KEGNET [36], DAFL [32], DFAD [38], DFQ [58] and CMI [59].",2,positive
+Zero-Shot Transfer(ZSKT) [33] ResNet-18 – 85.,0,negative
+"The other generative based data-free methods, i.e., ZSKT [33], KEGNET [36], DAFL [32], DFAD [38], DFQ [58] and CMI [59], achieve the test accuracies of 85.95%, 91.83%, 92.22%, 93.30%, 93.26% and 94.08% on CIFAR-10 dataset, 66.29%, 73.91%, 74.47%, 69.43%, 67.01% and 74.01% on CIFAR-100 dataset.",0,negative
+"For VOC dataset, our method yields mIoU 40.7%, which boosts the performance of DFAD, DAFL and ZSKT by 5%, 11.4% and 29.9%, respectively.",2,positive
+[33] also utilize a simple adversarial fashion to train a generator for searching images on which the student network poorly matches the teacher network.,1,neutral
+[33] propose to search images that poorly match the teacher network.,1,neutral
+"The student model is trained simultaneously with the generator via KD. Adversarial Belief Matching (ABM) was proposed in (Micaelli and Storkey 2019), which trains a generative adversarial network (Goodfellow et al. 2014) to search for samples on which the student model poorly matches the teacher,…",2,positive
+"Adversarial Belief Matching (ABM) was proposed in (Micaelli and Storkey 2019), which trains a generative adversarial network (Goodfellow et al.",2,positive
+"Although a few studies have been proposed (Nayak et al. 2019; Chen et al. 2019; Micaelli and Storkey 2019), KD in the absence of prior training data is still not well studied and there are clear opportunities to improve on the performance of existing approaches.",0,negative
+"Recent works [13]–[15] have demonstrated that KD can pass the knowledge in a teacher pre-trained with specific domains to a student, while unseen domains can also be added to increase the robustness of models and reduce over-fitting on seen domains.",1,neutral
+Recent works show that KD yields a great success in preserving previously learned knowledge when learning new knowledge and confessing robustness to pretrained models with unseen data [13]–[16].,1,neutral
+", 2018), data-free distillation (Lopes et al., 2017; Nayak et al., 2019; Micaelli and Storkey, 2019; Chen et al., 2019; Fang et al., 2019), data distillation (Radosavovic et al.",1,neutral
+"…the transfer procedure, such as self-distillation (Furlanello et al., 2018), data-free distillation (Lopes et al., 2017; Nayak et al., 2019; Micaelli and Storkey, 2019; Chen et al., 2019; Fang et al., 2019), data distillation (Radosavovic et al., 2018), residual knowledge distillation (Gao…",1,neutral
+"Data-free knowledge distillation[8, 9, 10, 11, 12, 13, 14, 15, 16] can utilize these pre-trained models to accomplish model compression without accessing original data.",1,neutral
+Typical data-free adversarial framework [16][15] deploys a generator to transfer the knowledge of the pre-trained teacher model to a student model without access to original data.,1,neutral
+"Summary of Differences With Data-Free Methods: Several methods such as [5], [12], [13], [15], [17], [18], [23], [29], [30], [31] have been proposed in the data-free set up towards different applications which are specifically designed.",2,positive
+"While multiple works such as [12], [13] have studied data-free approaches for training deep neural networks, to",1,neutral
+"train the GAN with multiple objectives to ensure learning (i) difficult pseudo (or proxy) samples on which the Teacher and Student differ ([13]), (ii) uniform distributions over the underlying classes ([14]), and (iii) samples predicted with a strong confidence by the Teacher model, ([12]) etc.",2,positive
+"involved in the loop, this scheme is application dependent and is also very similar to [13].",1,neutral
+"Alternatively, Chen et al. [5] and Micaelli and Storkey [25] reformulate the classification network as a discriminator and train an external generator network to synthesize images that maximize the discriminator’s response.",1,neutral
+[5] and Micaelli and Storkey [25] reformulate the classification network as a discriminator and train an external generator network to synthesize images that maximize the discriminator’s response.,1,neutral
+"Inspired by (Micaelli and Storkey, 2019) and on the promise of adversarial training for NLP (Zhu et al.",2,positive
+"Some of the concerns preventing access include data privacy, intellectual property, size and transience (Micaelli and Storkey, 2019).",2,positive
+"There are also a few methods that synthesize input data via generative image modeling [5, 11, 41], which create substitute data much more efficiently than optimizing input noise.",1,neutral
+ZSKT (Micaelli and Storkey 2019) and DFAD (Fang et al.,2,positive
+ZSKT (Micaelli and Storkey 2019) and DFAD (Fang et al. 2019) introduce an adversarial strategy to synthesize training samples for knowledge distillation.,2,positive
+"Prior work on knowledge distillation showed that a student model S can learn from a teacher and reach high accuracy even though its architecture is smaller and different [9, 27].",1,neutral
+"Our work builds on recent advances in data-free knowledge distillation, which involve a generative model to synthesize queries that maximize disagreement between the student and teacher models [27, 14].",2,positive
+"Techniques addressing data-free knowledge distillation have relied on training a generative model to synthesize the queries that the student makes to the teacher [10, 27].",1,neutral
+"Our work systematically transitions from a data-free knowledge distillation paradigm [14, 27] to a data-free model extraction scenario.",2,positive
+"While the model owner usually performs knowledge distillation, the original dataset used to train the teacher model may not be available during distillation [27], e.",1,neutral
+", data-free knowledge distillation [14, 27].",1,neutral
+"Naively, one could generate these queries randomly [27, 14].",1,neutral
+Similar GAN-based formulations have been developed [41]–[45].,1,neutral
+"[17, 15]) since it is common now-a-days that many popular pre-trained models are released without providing access to the training data (e.",0,negative
+"[15, 17, 2, 1]) compose synthetic transfer set and achieve effective distillation.",1,neutral
+"[15, 4, 1] show that properly optimized generative models can generate samples to be strongly classified by the Teacher models.",1,neutral
+"In order to cope with the constrained operational conditions, recent efforts [15, 4, 17, 1] attempt to distill in a data-free scenario via artificially generated transfer set.",2,positive
+"An interesting future direction is to explore the performance of data-free distillation strategies on dynamic graph representation learning approaches [43], [44].",1,neutral
+"The existing approaches either create a sample generator [9, 16] or synthesize a number of data impressions from the teacher directly [17, 18, 19].",1,neutral
+"Among the generator-based data-free KD techniques, the generator can be trained either separately [9] or simultaneously with the student model [16].",1,neutral
+Micaelli and Storkey [17] also make use of an adversarial framework.,1,neutral
+"Our work is related to zero-shot knowledge distillation methods [1, 3, 4, 8, 24, 28, 38], with the difference that we regard the teacher model as a black box, and to model stealing methods [17, 30, 31, 32, 35, 36], with the difference that we focus on accuracy and not on minimizing the number of API calls to the black box.",2,positive
+"In this context, we train the student on a proxy data set with images and classes different from those used to train the black-box, in a setting known as zero-shot or data-free knowledge distillation [1, 3, 4, 8, 24, 28, 38].",2,positive
+"Many formulations have been developed to alleviate this requirement [1, 8, 4, 24, 28], with methods either requiring a small subset of the original data [3, 4], or none at all [1].",1,neutral
+"[24] developed a method for zero-shot knowledge transfer by jointly training a generative model and the student, such that the generated samples are easily classified by the teacher, but hard for the student.",1,neutral
+"Exploratory researches (Micaelli and Storkey, 2019; Fang et al., 2019) also show that GANs can synthesize harder and more diversified images by exploiting disagreements between teachers and students.",2,positive
+"Prior works (Micaelli and Storkey, 2019; Fang et al., 2019) maximize the discrepancy between the teacher and student to encourage difficulty in samples and avoid synthesizing redundant images.",1,neutral
+We do not include Modified-ZSKT because samples of Modified-ZSKT vastly outnumber the other two approaches.,2,positive
+ZSKT trains an adversarial generator to search for images in which the student’s prediction poorly matches that of the teacher’s and reaches state-of-the-art performance.,2,positive
+ModifiedZSKT performs worse than Random Text on DBPedia.,2,positive
+"Modified-ZSKT Modified-ZSKT is extended from ZSKT (Micaelli and Storkey, 2019).",2,positive
+"Train-
+ing epochs are 2.5k(AG News), 10k(DBPedia), 10k(IMDb) with 48 samples per batch for all methods except ZSKT, which needs to train its generator from scratch (25k epochs in Modified-ZSKT).",0,negative
+"The idea of transferring knowledge from a complex model (the teacher) to a simpler one (the student) been explored in other works, for example (Bucila et al., 2006; Hinton et al., 2015; Micaelli and Storkey, 2019).",1,neutral
+"They focus on the problem of distilling a dataset or model [20] into a small number of example images, which are then used to train a new model.",1,neutral
+"Furthermore, Micaelli and Storkey (2019) utilized an adversarial generator to generate hard examples for knowledge transfer.",1,neutral
+"d to generate synthetic data, which is either directly used as the training dataset (Chen et al., 2019a) or used to augment the training dataset (Liu et al., 2018b), shown in Fig. 8 (a). Furthermore, Micaelli and Storkey (2019) utilized an adversarial generator to generate hard examples for knowledge transfer. 2) A discriminator is introduced to distinguish the samples from the student and the teacher models by using either",1,neutral
+…to enable the teacher and student networks to have a better understanding of the true data distribution (Wang et al. 2018e; Xu et al. 2018a; Micaelli and Storkey 2019; Xu et al. 2018b; Liu et al. 2018; Wang et al. 2018f; Chen et al. 2019a; Shen et al. 2019d; Shu et al. 2019; Liu et al.…,2,positive
+"Specifically, in (Chen et al. 2019a; Ye et al. 2020;Micaelli and Storkey 2019; Yoo et al. 2019; Hu et al. 2020), the transfer data is generated by a GAN.",2,positive
+"In fact, the target data in (Micaelli and Storkey 2019; Nayak et al. 2019) is generated by using the information from the feature representations of teacher networks.",2,positive
+"…have been proposed to overcome problems with unavailable data arising from privacy, legality, security and confidentiality concerns (Chen et al. 2019a; Lopes et al. 2017; Nayak et al. 2019; Micaelli and Storkey 2019; Haroush et al. 2020; Ye et al. 2020; Nayak et al. 2021; Chawla et al. 2021).",2,positive
+"sarial knowledge distillation methods have been proposed to enable the teacher and student networks to have a better understanding of the true data distribution (Wang et al., 2018d; Xu et al., 2018a; Micaelli and Storkey, 2019; Xu et al., 2018b; Liu et al., 2018b; Wang et al., 2018e; Chen et al., 2019a; Shen et al., 2019b; Shu et al., 2019; Liu et al., 2018a; Belagiannis et al., 2018). T/D S Distillation G Data (a) T S Dis",2,positive
+"free KD methods have been proposed to overcome problems with unavailable data arising from privacy,legality,securityandconﬁdentialityconcerns(Chen et al., 2019a; Lopes et al.,2017; Nayak et al., 2019;Micaelli and Storkey, 2019). Just as “data free” implies, there is no training data. Instead, the data is newly or synthetically generated.In (Chen et al., 2019a; Micaelli and Storkey, 2019), the transfer data is generated by a",2,positive
+"o-shot knowledgedistillationmethod that doesnot useexistingdata. The transfer data is produced by modelling the softmax space using the parameters of the teacher network. In fact, the target data in (Micaelli and Storkey, 2019; Nayak et al., 2019) is generated by using the information from the feature representations of teacher networks. Similar to zero-shot learning, a knowledge distillation method with few-shot learning ",2,positive
+"Recently, data-free distillation, a novel scenario in which the original data for the teacher is unavailable to students, has also been extensively studied [6, 7, 25, 40].",1,neutral
+"Not used N/A [45]* Inferred in the image domain [33], [34] [43], [41]* Generated from generators N/A [35], [36], Ours*",1,neutral
+"We compare our scheme to the previous data-free KD methods in [35,36,41] and show that we achieve the state-of-the-art data-free KD performance in all evaluation cases.",2,positive
+"In [36], adversarial examples can be any images far different from the original data, which degrade the KD performance.",1,neutral
+[36] used the mismatch between the teacher and the student as an adversarial loss for training a generator to produce adversarial examples for KD.,1,neutral
+Adversarial learning was introduced to produce dynamic samples for which the teacher and the student poorly matched in their classification output and to perform KD on those adversarial samples [36].,1,neutral
+"On the other hand, in [35, 36], generators are introduced to produce synthetic samples for KD.",1,neutral
+"The proposed scheme shows the state-of-the-art data-free KD performance on residual networks [37] and wide residual networks [38] for SVHN [39], CIFAR-10, CIFAR-100 [40], and Tiny-ImageNet1, compared to the previous work [35, 36, 41].",2,positive
+"The key difference from [36] lies in the fact that given any metadata, we utilize them to constrain a generator in the adversarial learning framework.",2,positive
+"If α = 0 in (2), the proposed scheme reduces to the adversarial belief matching presented in [36].",1,neutral
+"On the other hand, some of the previous approaches introduce another network, called generator, that yields synthetic samples for training student networks [35, 36, 44].",1,neutral
+"Note that, much like ABM, DTD also requires white-box access to the target model since the optimization problem in Eqn.",1,neutral
+"Due to these requirements, ABM cannot be directly used in the black-box setting of model stealing attacks.",1,neutral
+Adversarial BeliefMatching (ABM) [24]:ABMperforms knowledge distillation by using images generated from a generative model G(z;φ).,1,neutral
+"Moreover, ABM also uses AT, which requires access to the intermediate activations of T .",1,neutral
+The training process of the generator model in ABM assumes white-box access to the target model as the loss function of G (Eqn.,1,neutral
+"Recent works on data-free KD [3, 8, 15, 24, 41, 42] have shown that it is possible to perform KD without knowledge of the training data, however, they require white-box access to the teacher model.",1,neutral
+Adversarial BeliefMatching (ABM) [24]:ABMperforms knowledge distillation by using images generated from a generative model G(z;ϕ).,1,neutral
+"Similar objectives have been used by recent work on data-free Knowledge Distillation (KD) [24, 41].",1,neutral
+"By iteratively updating the generator and student model, ABM performs knowledge distillation between T and S .
+x = G(z) (19) LG = −DKL (T (x) ∥ S (x)) (20) LS = DKL (T (x) ∥ S (x)) (21)
+In addition to the basic idea presented above, ABM also uses an additional Attention Transfer [43] term in the loss function of the student.",2,positive
+"Similar to recent works in data-free KD [8, 24, 41], MAZE trains the generator to produce queries that maximize the disagreement between the predictions of the teacher and the student by maximizing the KL-divergence between ® yT and ® yC .",1,neutral
+"Considering the limitation of metadata and similarity-based distillation methods, some works [31], [52], [157], [251], [255], [257] propose novel data-free KD methods via adversarial learning [65], [222], [224].",1,neutral
+"To handle this problem, data-free KD paradigms [21], [31], [52], [78], [112], [143], [157], [169], [251], [255], [257] are newly developed.",1,neutral
+"…has shown merit for improving model performance across a range of scenarios, including student models lacking access to portions of training data (Micaelli & Storkey, 2019), quantized low-precision networks (Polino et al., 2018; Mishra & Marr, 2017), protection against adversarial attacks…",2,positive
+the model [10] which exploits the increased confidence of the model on the training data to reconstruct images used for training; [23] proposes a method for performing zero-shot knowledge distillation by adversarially generating a set of exciting images to train a student network.,2,positive
+"…work (Tramèr et al., 2016) reports successful extraction on SVMs and 1-layer networks using i.i.d noise, but no prior work has scaled this idea to deeper neural networks for which a single class tends to dominate model predictions on most noise inputs (Micaelli & Storkey, 2019; Pal et al., 2019).",1,neutral
+"Our work is related to prior work on data-efficient distillation, which attempts to distill knowledge from a larger model to a small model with access to limited input data (Li et al., 2018) or in a zeroshot setting (Micaelli & Storkey, 2019; Nayak et al., 2019).",2,positive
+"This is a natural assumption for a theft-motivated adversary who wishes to steal the oracle for local use—the adversary has data they want to learn the labels of without querying the model! For other adversaries, progress in generative modeling is likely to offer ways to remove this assumption [29].",1,neutral
+"For other adversaries, progress in generative modeling is likely to offer ways to remove this assumption [29].",1,neutral
+Zero shot knowledge transfer [29] has been proposed to transfer knowledge without assumptions on training data.,1,neutral
+"In this framework, Micaelli & Storkey (2019) targeted generating samples that would cause maximum information gain to the student when learned, however, it also suffers from similar drawbacks as MATE-KD noted above.",2,positive
+"We adopt a public library4 to reproduce the results of compared approaches: ZSKT [10], DAFL [3] and CMI [5], with the default model hyper-parameters.",2,positive
+ZSKD [8]–[10] and SoftTarget [23] models the output label distribution or intermediate feature maps by simple distributions.,1,neutral
+"Data-Free Knowledge Distillation (DFKD, or ZSKD [8]– [10]) aims at training student models without training data.",2,positive
+"For the baselines, we compare state-of-the-art DFKD methods as DAFL [11], ZSKT [10], ADI [12], DFQ [13], CMI [16] and PRE-DFKD [17].",2,positive
+"Recently, there has been work [42; 47; 19; 70; 12; 45] on data-free knowledge distillation.",1,neutral
+"• To solve an inherent biased sample generation problem of AL-based C-ZSKD, we propose a method to increase the variance of the adversarial sample distribution by using the convolution of probability distributions and Taylor series approximation.",2,positive
+"Therefore, it was experimentally proved that the proposed method greatly mitigates the biased sample generation problem, which is an inherent problem of AL-based C-ZSKD.",2,positive
+A state-of-the-art AL-based C-ZSKD [7] realized AL using Eqs.,1,neutral
+The tops of (b) to (d) are the distribution of adversarial samples generated by [7].,1,neutral
+The numerical figures in the last row indicate the performance improvements compared to [7].,0,negative
+"Performance comparison of the proposed method, [6] and [7] for the teacher model trained with the CIFAR-10 dataset.",2,positive
+B. ANALYSIS FOR EFFECTIVE ADVERSARIAL SAMPLES This section analyzes the characteristics of adversarial samples effective for AL-based C-ZSKD.,1,neutral
+"On the other hand, the ALbased method [7] need not select the parametric probability distribution for each task.",1,neutral
+"The other one is complete ZSKD (C-ZSKD) [6], [7] that does not use external training data at all.",1,neutral
+"In the future, we will expand the AL-based C-ZSKD study in the direction of generating adversarial samples with high entropy in the embedding space.",2,positive
+Numerical figures in the last row indicate improvements over [7].,0,negative
+The second approach is to create adversarial samples to transfer decision boundary information of T to S [7].,1,neutral
+"As for [7], attention transfer [14] was used as a constraint term for the stability of training, and the distillation loss of [3] was jointly used.",1,neutral
+"Additionally, by analyzing the distribution of adversarial samples on the embedding space, the characteristic of the most effective
+45460 VOLUME 9, 2021
+adversarial samples for AL-based C-ZSKD is qualitatively demonstrated.",1,neutral
+"• By analyzing the distribution of adversarial samples in the embedding space, this paper provides an insight into the characteristics of adversarial samples that are useful for AL-based C-ZSKD.",1,neutral
+The numerical figures in the last row indicate improvements over [7].,0,negative
+"Therefore, this paper adopts the AL-based C-ZSKD approach for further effective training of the student model.",2,positive
+A. BIASED SAMPLE GENERATION PROBLEM AND A SOLUTION A state-of-the-art AL-based C-ZSKD [7] realized AL using Eqs.,1,neutral
+We used the same training hyperparameters as in [20] with the proposed loss introduced in Eq.,2,positive
+"To further evaluate the influence of the hyperparameter τ on the student distillation, we performed ablation with τ ∈ [2, 5, 10, 15, 20].",1,neutral
+"Similar to the original paper [20], we also use an attention-transfer loss LAT .",2,positive
+"However, recent research [31, 20, 2] has shown the efficacy of KD even under the ""data-free"" scenario where the training data may not be available for the student to get trained.",0,negative
+skeptical student on data-free distillation [20] from a teacher.,1,neutral
+"To evaluate this, we use recently proposed zero-shot knowledge transfer [20] with the skeptical students using a loss function enhanced by the auxiliary self KD, LSDF = LKL ( σ(gΦS (x, y), τ), σ(gΦT (x, y), τ) ) + LKL ( σ(gΦS (x, y), τ), σ(gΦS (x, y), τ) ) + γatLAT (4) The first term takes care of knowledge transfer from the teacher, while the second term helps train the final classifier.",2,positive
+"To demonstrate skeptical student’s performance under data-free scenario, we leverage the idea of zero shot knowledge transfer [20], a state-of-the-art data-free distillation technique.",2,positive
+Here the teacher model is WideR40-2 and student is WideR40-1 for comparability to [45].,1,neutral
+"In Table 4, we find that there is something unique about using a single image, as our method outperforms several synthetic datasets, as well as the GAN-based approach of [45].",2,positive
+CIFAR-10 Fractals [32] StyleGAN [4] ZeroSKD [45] 1-Image (Ours),1,neutral
+"These approaches are typically GAN based [14, 45, 80], for example generating datasets of synthetic images that maximally activate neurons in the final layer of teacher.",1,neutral
+"While several works such as [10], [11] have studied datafree approaches to training deep neural networks, to the best of our knowledge, we are the first to study the effectiveness of our approach from an adversarial robustness perspective.",1,neutral
+"Unlike the similar works [10], [11] we perform robustness study on student models trained in data-free setup.",2,positive
+"For all of the methods used to derive the results of this paper, we used the PyTorch framework to train our deep networks along with external components such as Adversarial Belief Matching.",2,positive
+"In the experiments of [1], the Kullback-Leibler divergence is used.",1,neutral
+"• In attention transfer, the authors in [3] suggest that the best way to extract the spatial attention map would be to use the sum of the square of each individual pixel per channel, but the authors of [1] use the squared mean instead.",1,neutral
+"In detail, we had to integrate the following settings in our work, which were not mentioned in the paper[1] but implemented in the official repository of the authors: • To our knowledge, there is no mention about weight initialization in [2] or [3] from the authors of Wide ResNets.",0,negative
+1 Wide Residual Networks Wide Residual Networks (WRNs) were originally proposed in [2] and are used as the main framework for both the teacher and student network in the few-shot knowledge distillation setting of [3] and zero-shot knowledge transfer setting of [1].,1,neutral
+"Following the notations of [1], we let T (x), S(x; θ) and G(z;φ) be pretrained teacher network, student network and generator, where the weights θ and φ parameterize their respective networks that are to be trained.",1,neutral
+To follow the notation of [3] and [1] for the rest of this paper we refer to this method as KD-AT.,1,neutral
+• In the zero-shot method of [1] the paper does not mention that weight clipping is performed on both the student and generator networks.,0,negative
+"In this work, we reproduce the paper Zero-shot Knowledge Transfer via Adversarial Belief Matching [1], where the authors present a method for distilling the knowledge of a larger pre-trained network to a smaller one, without the use of real data from the side of the student network.",2,positive
+"However, in both the few-shot KD and zero-shot settings of [1] teacher and student are compared with the use of KL divergence between the softmax activations of the former and the log-softmax of the latter (KL for the zero-shot model is stated in the paper).",1,neutral
+"• There is no description of the Generator network in [1] apart from ""We use a generic generator with only three convolutional layers, and our input noise z has 100 dimensions"".",2,positive
+Performing KD pre-training using random garbage inputs yields a strong baseline when compared to ABM pre-training.,1,neutral
+"We adapt the original ABM method for discrete sequences of text by applying first permuting the input sequence within the continuous embedding space, then quantizing the input such that it becomes a valid discrete sequence.",1,neutral
+We propose a more nuanced approach based on Adversarial Belief Matching (ABM) [10] which crafts a targeted input that maximizes the KL divergence between the teacher’s output distribution and the student’s output distribution.,2,positive
+We also reduce the need for collecting and learning from personal data [76].,2,positive
+"The adversary has complete access to the victim model, and uses data-free knowledge transfer (Micaelli & Storkey, 2019; Fang et al., 2019) to train a student model.",2,positive

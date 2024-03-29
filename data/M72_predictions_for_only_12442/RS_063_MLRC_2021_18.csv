@@ -1,0 +1,75 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"Hence, with reference to [5, 33], we make the following assumption for components of the Fourier transform:",1,related,1,positive
+"When contrastive pairs are available, we can directly apply CIP constraints to the feature extractor f as in MatchDG, or apply CIP constraints to the whole model g◦f as in ReLIC and CoRE.",1,related,1,positive
+This is done in CoRE and MatchDG.,1,related,1,positive
+"To address the above problem, the widely concerned Domain Generalization (DG) methods provide us with some inspiration [19, 32, 38, 42].",1,related,1,positive
+"Mahajan et al. (2021) focus on cases where the distribution of causal features vary across domains; we additionally allow for xd:robust to be non-causal, such as habitat features in iWildCam and BirdCalls.",1,related,1,positive
+"We compare our framework with previous domain generalization works including domain-invariant based methods [30, 41, 11, 45, 14, 31, 35, 8] and other state-of-the-art methods [15, 4, 9, 28, 13, 46, 34, 22, 7, 44, 10] including data augmentation based methods [34, 46, 7], meta-learning based methods [4, 28, 13], etc.",1,related,1,positive
+48 ResNet50 Target Baseline Metareg DSON DMG ER RSC MatchDG SWAD Fishr mDSDI LRDG [4] [38] [11] [45] [22] [31] [10] [35] [8] (ours) A 82.,1,related,1,positive
+One drawback of MatchDG is its reliance on the availability of domain labels.,1,related,0,negative
+"Following previous works [29, 31, 69], we evaluate our proposed methods on three standard OOD generalisation benchmark datasets described below.",1,related,0,negative
+We follow the same settings as in [44] to create spurious correlation.,1,related,1,positive
+"…literature on images Zhou et al. (2021b); Wang et al. (2022), the goal then is use one of these methods to learn Xc/Zc from observed data: regularization Mahajan et al. (2021); Lee et al. (2022), weighting Sagawa et al. (2019); Yao et al. (2022) or data augmentation Zhou et al. (2021b).",1,related,1,positive
+"Therefore, assuming zc → zs is more persuasive and consistent with previous works (Gong et al., 2016; Stojanov et al., 2019; Mahajan et al., 2021).",1,related,1,positive
+"Particularly, these two different labels, ŷ and y, has been simultaneously considered in Mahajan et al. (2021).
+zc causes zs: Here we consider having the object essence zc first, from which a latent style zs springs to render x.",1,related,1,positive
+"We also compare our proposed method with a variety of state-of-the-art domain generalization methods, including DeepAll [64], Jigen [3], CCSA [26], MMD-AAE [19] , CrossGrad [38], DDAIG [65], L2AOT [64], ATSRL [55], MetaReg [2] , Epi-FCR [18], MMLD [24], CSD [32], InfoDrop [40], MASF [9], Mixstyle [66], EISNet [48], MDGH [23], RSC [14] and FACT [53].",1,related,1,positive
+"Compared with the state-of-the-art methods, our method clearly beats the methods based on the GAN-based data augmentation and meta-learning methods, such as the latest L2A-OT [64], MDGH [23] and ATSRL [55].",1,related,1,positive
+"We also compare our proposed method with a variety of state-of-the-art domain generalization methods, including DeepAll [58], Jigen [3], CCSA [23], MMD-AAE [16] , CrossGrad [35], DDAIG [59], L2A-OT [58], ATSRL [50], MetaReg [2] , Epi-FCR [15], MMLD [21], CSD [29], InfoDrop [37], MASF [7], Mixstyle [60], EISNet [44], MDGH [20], RSC [11] and FACT [48].",1,related,1,positive
+"Backbones We take MatchDG (Mahajan et al., 2021), FISH (Shi et al., 2021b) and DANN (Ganin et al., 2016) as backbone algorithms.",1,related,1,positive
+"Backbones We take MatchDG (Mahajan et al., 2021), FISH (Shi et al.",1,related,1,positive
+"If the spurious attributes are domain labels, the conditional independence in Theorem 1 becomes the ones in (Liu et al., 2015; Hu et al., 2020; Mahajan et al., 2021), while they do not explore its correlation with the OOD generalization.",1,related,1,positive
+"Besides, the counterexample in Mahajan et al. (2021) violates our conditional invariant assumption in (1) and hence is not contrary to our theorem.",1,related,1,positive
+"Notably, in contrast to the existing metrics related to OOD generalization (Hu et al., 2020; Mahajan et al., 2021), our CSV can control the OOD generalization error.",1,related,1,positive
+"Our definition is different from the ones in (Mahajan et al., 2021; Makar & D’Amour, 2022), as they rely on a causal directed acyclic graph and the existence of a sufficient statistic such that Y only affects X through it.",1,related,1,positive
+"Then the main classifier is regularized to have the same representation for such pairs of inputs ([3, 26]).",1,related,1,positive
+"Given a dataset with auxiliary attributes and their relationship with the target label, CACM constrains the model’s representation to obey the conditional independence constraints satisfied by causal features of the label, generalizing past work on causality-based regularization [10, 14, 15] to multi-attribute shifts.",1,related,1,positive
+"Here, we compare the performance of two popular independence constraints in the literature [10]: unconditional Xc ⊥⊥ A|E, and conditional on label Xc ⊥⊥ A|Y,E (we condition on E for fully generality) on Synthetic Causal, Confounded and Selected shift datasets (Table 6).",1,related,1,positive
+"Our synthetic dataset is constructed based on the data-generating processes of the slab dataset [10, 30].",1,related,1,positive
+Our canonical multi-attribute graph generalizes the DG graph from [10] that considered an Independent domain/environment as the only attribute.,1,related,1,positive
+"We evaluate two constraints motivated by DG literature [10]: unconditional Xc ⊥⊥ A|E, and conditional on label Xc ⊥⊥ A|Y,E.",1,related,1,positive
+"Our extended slab dataset, adds to the setting from [10] by using non-binary attributes and class labels to create a more challenging task and allows us to study DG algorithms in the presence of linear spurious features.",1,related,1,positive
+"We utilize a strategy from past work [10, 14] to use graph structure of the underlying data-generating process (DGP).",1,related,1,positive
+"Mahajan et al. (2021) show that class-conditional invariance can fail if P (zc|y) does not remain the same across domains, which also applies to our method.",1,related,1,positive
+"…invariance of Ee[y|f(x)] (Arjovsky et al., 2019) with information bottleneck constraint (Ahuja et al. (2021)), imposing object-invariant condition (Mahajan et al. (2021)), using domain inference (Creager et al., 2021), model calibration (Wald et al., 2021), and others (Krueger et al., 2021; Li et…",1,related,1,positive
+"Lastly, (v) RM [30]: Also used in [28], RandMatch (RM) learns invariant representations on samples across sites that ”match” in terms of the class label (we match based on both Y and C values) .",1,related,1,positive
+"IRM and its variants (Krueger et al., 2021; Xie et al., 2020; Mahajan et al., 2021) posit the existence of a feature embedder such that the optimal classifier on top of these features is the same for every environment from which data can be drawn.",1,related,1,positive
+IRM [4] Yes R Yes PIIF IB-IRM [2] Yes R Yes PIIF&FIIF EIIL [23] Yes R No PIIF DANN [31] N/A R Yes N/A MatchDG [61] N/A R Yes FIIF GroupDro [81] N/A R Yes N/A CNC [124] N/A R No N/A GIB [120] Yes G No FIIF DIR [104] No G No FIIF CIGA (Ours) Yes G No PIIF&FIIF,1,related,1,positive
+Algorithm OODGuarantee Regime E Known SCMSupport IRM[4] Yes Yes PIIF IB-IRM[2] Yes Yes PIIF&FIIF EIIL[23] Yes No PIIF DANN[31] N/A Yes N/A MatchDG[61] N/A Yes FIIF GroupDro[81] N/A Yes N/A CNC[124] N/A No N/A GIB[120] Yes G No FIIF DIR[104] No Figure 1: (a) Illustration of C ausality Inspired I nvariant G raph Le A rning (CIGA): GNNs need to classify graphs based on the specific motif (“House” or “Cycle”).,1,related,1,positive
+"Inspired from Theorem 2 in [19], we are able to derive the following theorem under our problem setting.",1,related,1,positive
+"Inspired from [19], for this unsupervised contrastive learning process, we initialize Ω with a random match based on classes and keep updating Ω by minimizing the contrastive loss (3) until convergence.",1,related,1,positive
+"In table 1, we summarize key differences between NURD and the related work: invariant learning [2, 10], distribution matching [11, 12], shift-stable prediction [13], group-DRO [14], and causal regularization [15, 16].",1,related,1,positive
+"Like other casual related works (Chang et al. 2020; Mahajan, Tople, and Sharma 2020), we begin with a structural causal model, shown in Figure 2.",1,related,1,positive
+"According to [40], T = T ∗ holds when the training data are large enough.",1,related,0,negative
+", 2019] and MatchDG [Mahajan et al., 2020], and use the same hyper-parameters suggested by the original paper.",1,related,1,positive
+"We use a learning rate of 1e-4 for DIVA and HDUVA, a learning rate of 1e-5 (better than 1e-4) for Deep-All and the suggested learning rate for MatchDG.",1,related,1,positive
+"For the second domain nominal domain, we rotate the same
+ColorMnist (Figure 5 ) Test Domain 1 Test Domain 3
+DIVA 0.53 ± 0.05 0.63 ± 0.05 HDUVA 0.56 ± 0.05 0.68 ± 0.05 Deep-All 0.53 ± 0.06 0.61 ± 0.06 Match-DG 0.44 ± 0.04 0.67 ± 0.10
+subset of MNIST, by 30, 45 and 60 degrees respectively.",1,related,1,positive
+"For comparing algorithms, we implemented DIVA [Ilse et al., 2019] and MatchDG [Mahajan et al., 2020], and use the same hyper-parameters suggested by the original paper.",1,related,1,positive
+"We use a learning rate of 1e-5 for HDUVA, DIVA, Deep-All and use default learning rate of MatchDG.",1,related,1,positive
+"Our approach is able to implicitly learn the unobserved domain substructure of the data, resulting is substantially better accuracy on unseen test domains (i.e. a new hospital) compared to state-of-the-art approaches DIVA and MatchDG.",1,related,1,positive
+"(2019) only assume invariance of E[y | Φ(x)]; follow-up works rely on a stronger assumption of invariance of higher conditional moments (Krueger et al., 2020; Xie et al., 2020; Jin et al., 2020; Mahajan et al., 2020; Bellot & van der Schaar, 2020).",1,related,1,positive
+"We compare our method with most related methods that introduces causal inference into generalization (MatchDG [14], CSGind [12], CIRL [13]), and existing popular domain generalization methods (MetaReg [1], GUD [18], Epi-FCR [10], MASF [5], JiGen [2], DMG [3], DDAIG [24], CSD [16], L2A-OT [25], EISNet [19], RSC [8], ME-ADA [23], MMLD [15], L2D [20], FACT [21]).",1,related,1,positive
+"The goal is to ""learn representations independent of the domain after conditioning on the class label"" [21].",1,related,1,positive
+"Following previous works [25, 27, 62], we evaluate our proposed methods on three standard OOD generalisation benchmark datasets described below.",1,related,0,negative
+"Besides that, the counterexample in (Mahajan et al., 2021) violates our invariant conditional distribution assumption in (1) and hence is not contrary to our theorem.",1,related,1,positive
+"But none of them directly control the OOD generalization error as our CSV (Seo et al., 2022; Hu et al., 2020; Liu et al., 2021b; Heinze-Deml and Meinshausen, 2021; Mahajan et al., 2021; Ben-David et al., 2007, 2010; Muandet et al., 2013; Ganin et al., 2016).",1,related,1,positive
+"To the best of our knowledge, this property has not been explored by existing metrics related to OOD generalization (Hu et al., 2020; Seo et al., 2022; Mahajan et al., 2021; Heinze-Deml and Meinshausen, 2021; Krueger et al., 2021).",1,related,1,positive
+"If the spurious attributes are domain labels, the conditional independence in Theorem 1 reduces to the conditional independence discussed in (Liu et al., 2015; Hu et al., 2020; Mahajan et al., 2021), while they do not explore its correlation with the OOD generalization.",1,related,1,positive
+", 2016) N/A R Yes N/A MatchDG (Mahajan et al., 2021) N/A R Yes FIIF GroupDro (Sagawa* et al.",1,related,1,positive
+"Given a dataset with auxiliary attributes and their relationship with the target label, CACM constrains the model’s representation to obey the conditional independence constraints satisfied by causal features of the label, generalizing past work on causality-based regularization [10, 14, 15] to multi-attribute shifts.",1,related,1,positive
+Our canonical multi-attribute graph generalizes the DG graph from [10] that considered an Independent domain/environment as the only attribute.,1,related,1,positive
+"We evaluate two constraints motivated by DG literature [10]: unconditional Xc ⊥⊥ A|E, and conditional on label Xc ⊥⊥ A|Y,E.",1,related,1,positive
+"We utilize a strategy from past work [10, 14] to use graph structure of the underlying data-generating process (DGP).",1,related,1,positive
+"We also compare our proposed method with a variety of state-of-the-art domain generalization methods, including DeepAll [59], Jigen [3], CCSA [23], MMD-AAE [16] , CrossGrad [35], DDAIG [60], L2A-OT [59], ATSRL [51], MetaReg [2] , Epi-FCR [15], MMLD [21], CSD [29], InfoDrop [37], MASF [7], Mixstyle [61], EISNet [44], MDGH [20], RSC [11] and FACT [49].",1,related,1,positive
+"[51], we introduce the causal domain features in this work to learn the domain-independent representation and reduce the domain gap, as shown in Fig.",1,related,1,positive
+"From OOD generalization literature on images [32, 24], we may use one of these 192 methods to learn Xc, Zc from observed data: regularization [15, 13], weighting [19, 29], or data 193 augmentation [32].",1,related,1,positive
+"110 Benchmarking OOD algorithms, especially those that proposed to view distribution shift from a 111 causal perspective [6, 1, 3, 10, 11, 8] since we have mimicked many of their assumptions about the 112 underlying data generating process in our dataset.",1,related,1,positive
+We follow the same procedure as in [33] for the OOD training and evaluation of methods.,1,related,0,negative
+"To evaluate on a more practical scenario, we use the dataset of Chest X-rays images from [33], that comprises of data from different hospital systems: NIH [54], ChexPert [24] and RSNA [1].",1,related,0,negative
+"We consider two types of ML models: standard empirical risk minimizers, and state-of-theart domain generalization learning algorithms that claim to learn stable features for OOD generalization [4,33,41].",1,related,1,positive
+"For simulated datasets like Rotated-MNIST and Fashion-MNIST, we know the groundtruth matches for each input and use that to evaluate the mean rank metric (the same matches are not provided to the DG methods, except to the ideal Perfect-Match method).",1,related,1,positive
+"For the matching based methods (Random-Match, MatchDG, Perfect-Match), we use the final classification layer of the network as φ and for the matching loss regularizer (Eq 2 ).",1,related,1,positive
+"Instead, we use the property described by causal domain generalization work [19, 33] that input images that share the base object have the same stable (or causal) features.",1,related,1,positive

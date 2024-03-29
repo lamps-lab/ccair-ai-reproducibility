@@ -1,0 +1,40 @@
+text,target_predict,target_predict_label,target_model_6_predict,target_predict_model_6_label
+"…on the CIFAR-10 dataset classifies “cat” and “ship” at approximately 89% and 96% accuracy, respectively, while the robust accuracy of “cat” and “ship” produced by an adversarially trained PreactResNet-18 on PGD-attacked CIFAR-10 dataset are approximately 17% and 59% respectively (Xu et al., 2021).",1,related,0,negative
+"We consider a binary classification task of natural examples sampled from a Gaussian mixture distribution, following the settings described in (Carmon et al., 2019; Schmidt et al., 2018; Xu et al., 2021; Ma et al., 2022).",1,related,1,positive
+"Based on the findings in (Xu et al., 2021; Ma et al., 2022), supported by the confusion matrices in Figure 1, it is clear that adversarial training hurts adversarial examples of certain classes more than others, especially adversarial examples crafted from natural examples which are harder to…",1,related,1,positive
+"Theorem 1 ((Xu et al., 2021)) Given a Gaussian distribution D∗, a naturally trained classifier fnat which minimizes the expected natural risk: fnat(x) = arg minf E(x,y)∼D∗(1(f(x) 6= y).",1,related,1,positive
+"For example, a naturally trained PreactResNet-18 on the CIFAR-10 dataset classifies “cat” and “ship” at approximately 89% and 96% accuracy, respectively, while the robust accuracy of “cat” and “ship” produced by an adversarially trained PreactResNet-18 on PGD-attacked CIFAR-10 dataset are approximately 17% and 59% respectively (Xu et al., 2021).",1,related,0,negative
+"Based on the findings in (Xu et al., 2021; Ma et al., 2022), supported by the confusion matrices in Figure 1, it is clear that adversarial training hurts adversarial examples of certain classes more than others, especially adversarial examples crafted from natural examples which are harder to classify under natural training.",1,related,1,positive
+"Specifically, adversarial training involves training a separate (adversarial) classifier network by adding an adversarial loss so that the adversarial network cannot distinguish gender given the encoded image features (Edwards and Storkey, 2015; Berg et al., 2022; Xu et al., 2021).",1,related,1,positive
+linear classifier which minimizes the following classification error [28]2 f∗ = arg min f Pr(f(x) 6= y).,1,related,1,positive
+"[28], it is easy to obtain that fopt(x) = x + b (that is, w = 1).",1,related,1,positive
+We also compare our approach with FRL [29].,1,related,1,positive
+"Finally, we compare our approach with FRL [29], the only existing adversarial training algorithm that focuses on improving the fairness of classwise robustness.",1,related,1,positive
+"Following (Xu et al. 2021), we use average natural accuracy, average robust accuracy, worst-class natural accuracy and worst-class robust accuracy to evaluate the performance of all methods.",1,related,1,positive
+"To overcome the limitations of Benz et al. (2020); Xu et al. (2021), this paper proposes a novel min-max learning paradigm to optimize worst-class robust risk and leverages noregret dynamics to solve the proposed min-max problem, our goal is to achieve a classifier with great performance on…",1,related,1,positive
+"Following (Xu et al. 2021), we set τ1 = τ2 = 0.05, α1 = α2 = 0.05 for FRL on CIFAR-10.",1,related,1,positive
+"Xu et al. (2021) focus on a balanced class setting but with varying “difficulty levels” as measured by the magnitude of variance, whereas we address class imbalance.",1,related,1,positive
+"The notion of accuracy disparity in our context focuses on the performance gap of a model on different sub-groups of the overall population, where each group is indexed by the corresponding class label (Santurkar et al., 2021; Xu et al., 2021).",1,related,1,positive
+"Following prior works (Tsipras et al., 2019; Xu et al., 2021), for the model, we consider a linear classifier and couple it with a sign function sgn to obtain the output f(x;w, b) := sgn(w⊤x+ b).",1,related,1,positive
+"[Extended from Xu et al. (2021)] By Xu et al. (2021, Lemma 2), according to the data symmetry in (5), the optimal linear classifier has the form
+1, · · · , 1, bγ = arg min w,b Rγ(f(·; w, b)).",1,related,1,positive
+"Proof 5 in Xu et al. (2021) shows that dbγ dγ ≤ −K−1K+1d < 0, thus bγ is strictly decreasing in γ.",1,related,1,positive
+"We use the published codes for TRADES (Zhang et al. 2019)3, FRL (Xu et al. 2021)4.",1,related,0,negative
+"For fair comparisons, we follow (Xu et al. 2021) and use the average and worst-class error rate of
+2We use the official data https://github.com/fastai/imagenette 3https://github.com/yaodongyu/TRADES 4https://github.com/hannxu123/fair robust
+standard (Avg.",1,related,1,positive
+"In this paper, we follow (Xu et al. 2021) and use PGD attacks regarding cross entropy loss with 20 steps and step size of 2/255 to evaluate the robust fairness in our main experiment.",1,related,1,positive
+"For fair comparisons, we follow (Xu et al. 2021) and use the average and worst-class error rate of",1,related,1,positive
+We compare the previously proposed method FRL (Xu et al. 2021) which is the only method that address robust fairness problem to the best of our knowledge.,1,related,1,positive
+The class “+1” is harder because an optimal linear classifier will give a larger error for the class “+1” than that for the class “1” when σ(2) + > σ 2 − [31].,1,related,1,positive
+"We see developing robust mechanisms for fairness-aware algorithms as a crucial step towards fighting bias (Xu et al, 2021).",1,related,1,positive
+"At present, considerable efforts had been developed to improve the robustness of the DNN-implemented classifier against adversarial examples, which can be categorized as adversarial training (AT) [41, 46, 64, 73, 74, 70, 66, 72], randomization [19, 65, 12, 17, 68, 38, 58, 7] and input purification [53, 51].",1,related,1,positive
+"We follow a common approach in bias mitigation [18, 19, 65, 57] and employ an adversarial classifier, θadv, whose aim is to predict the attribute label A of image I given only its similarity logits from the set of sensitive text queries T",1,related,1,positive
+"Algorithm 1 Adversarial Learning Input: Ground truth labels y, protected variable c, input features X Models: Filter E, Predictor P , Discriminator D for e epochs do
+Train the models P,E one step by minimising: MSE(y, P (E(X)))− λ1CE(c, D(E(X))) Train the model D one step by minimising: αλ2CE(c, D(E(X)))
+end for
+This mechanism ensures that the embedding is representative enough for the predictor model to perform well, while not being representative enough for the discriminator to identify the protected variable.",1,related,1,positive
+"Furthermore, we will also discuss several other intriguing properties of robust DNNs [6], from the perspectives such as interpretability, fairness and so on.",1,related,1,positive
+"In this section, we draw some theoretical understandings, mainly from the optimization and generalization properties of robust DNNs.",1,related,1,positive
+"We first give our audience a brief introduction about what is the phenomenon of adversarial examples [3, 7], and why it can be a huge concern for the applications of DNNs.",1,related,1,positive
+"adversarial robustness enhancement [19], [20], we propose a method to represent the decision boundary in the sample space using adversarial attacks.",1,related,1,positive
