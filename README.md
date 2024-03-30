@@ -1,4 +1,4 @@
-# Citation Contexts for AI Reproducibility [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10871052.svg)](https://doi.org/10.5281/zenodo.10871052)
+# Citation Contexts for AI Reproducibility [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10895748.svg)](https://doi.org/10.5281/zenodo.10895748)
 
  Users can reproduce the results in Table
 2, Table 3, Table 4, Figure 3, and Figure 4 using the Jupyter
