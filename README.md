@@ -21,7 +21,7 @@ PyTorch frameworks."
 
 
 ## Dependencies ##
-All the required dependencies included in the `requirements.txt` file. To prevent dependency conflicts, <b>refrain from manually installing TensorFlow and Keras</b>. When installing keras-nlp via requirements.txt, it will automatically download and install the appropriate TensorFlow and Keras versions. Artifact is tested on below python library versions.
+All the required dependencies included in the `requirements.txt` file. To prevent dependency conflicts, <b>refrain from manually installing TensorFlow and Keras</b>. When installing keras-nlp via requirements.txt, it will automatically download and install the appropriate TensorFlow and Keras versions. Codebase is tested on below python library versions.
 
 * tensorflow==2.16.1
 * keras==3.1.1
@@ -55,14 +55,14 @@ Avaialable in the `data` directory
     - R_001_Extract_Citing_Paper_Details_from_S2GA.ipynb
     - R_001_JSON_to_csv_contexts_conversion.ipynb
 
-Note: <b>If you are using the existing data in the `data` directory, you can skip this step.</b>
+    Note: <i>If you are using the existing data in the `data` directory, you can skip this step.</i>
 
 5. After the environment setup, execute the below jupyter notebooks in sequential order (available inside 'notebooks' directory).
 
     - **R_001_M1_to_M5_Sentiment_Analysis_models.ipynb**
         - This will generate the performance measures for the selected five open-source multiclass sentiment analysis models (Table 3).
 
-    - R_001_M6_3_class_sentiment_classification.ipynb**
+    - **R_001_M6_3_class_sentiment_classification.ipynb**
         - This will custom train a multiclass DistilBert sentiment classifier and perform 5-fold cross validation for model evaluation. At the end of model evaluation, this generates the predicted class labels {'negative','neutral','positive'} for all 41244 citation contexts (Table 4).
 
     - **R_001_M7_1_binary_classification_related_not_related.ipynb**
