@@ -70,11 +70,26 @@ Avaialable in the `data` directory
         - This will parse all the data files created by previous notebooks and generate the results in Table 2, figure 3, and Figure 4.
 
 
-<!-- ## Citation ## -->
+## Citation ##
 
 ```BibTeX
-
-```
+@article{acm-rep-24,
+author = {Obadage, Rochana R. and Rajtmajer, Sarah M. and Wu, Jian},
+title = {SHORT: Can citations tell us about a paper's reproducibility? A case study of machine learning papers},
+year = {2024},
+isbn = {9798400705304},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3641525.3663628},
+howpublished = {\url{https://doi.org/10.1145/3641525.3663628}},
+abstract = {The iterative character of work in machine learning (ML) and artificial intelligence (AI) and reliance on comparisons against benchmark datasets emphasize the importance of reproducibility in that literature. Yet, resource constraints and inadequate documentation can make running replications particularly challenging. Our work explores the potential of using downstream citation contexts as a signal of reproducibility. We introduce a sentiment analysis framework applied to citation contexts from papers involved in Machine Learning Reproducibility Challenges in order to interpret the positive or negative outcomes of reproduction attempts. Our contributions include training classifiers for reproducibility-related contexts and sentiment analysis, and exploring correlations between citation context sentiment and reproducibility scores. Study data, software, and an artifact appendix are publicly available at https://github.com/lamps-lab/ccair-ai-reproducibility.},
+booktitle = {Proceedings of the 2nd ACM Conference on Reproducibility and Replicability},
+pages = {96–100},
+numpages = {5},
+keywords = {Citation Contexts, Machine Learning, Reproducibility, Science of Science, Sentiment Analysis},
+location = {Rennes, France},
+series = {ACM REP '24}
+}
 
 ```
 Rochana R. Obadage
