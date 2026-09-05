@@ -1,4 +1,15 @@
 # Citation Contexts for AI Reproducibility [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10895748.svg)](https://doi.org/10.5281/zenodo.10895748)
+
+<p align="left">
+  <a href="https://dl.acm.org/doi/10.1145/3641525.3663628">
+    <img src="https://img.shields.io/badge/Published_Paper-Read_Now-2ea44f?style=flat-square&logo=readthedocs&logoColor=white" alt="Published Paper">
+  </a> 
+    
+  <a href="https://arxiv.org/pdf/2405.03977">
+    <img src="https://img.shields.io/badge/Preprint-arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Preprint">
+  </a>
+</p>
+
 This repository is for the proof of concept project for identifying the correlation between citation context of citing papers and the reproducibility of cited paper (original paper) within the field  of Artificial Intelligence. The repository contains the code and the data to reproduce results for the work titled: <b>"Can citations tell us about a paper’s reproducibility? A
 case study of machine learning papers.</b> The project requires
 Python GPU-based processing capabilities, TensorFlow, Keras and
